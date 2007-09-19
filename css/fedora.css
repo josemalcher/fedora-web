@@ -1,0 +1,355 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+html, body
+{
+  height: 100%;
+}
+
+body
+{
+  height: 100%;
+  font-size: 76%;
+  background: #FFFFFF url(../images/border-left.png) 0 0 repeat-y;
+}
+
+a img
+{
+  border: none;
+}
+
+#wrapper
+{
+  margin-left: 18px;
+  font: normal 2.3ex/1.5 sans-serif;
+  min-height: 100%;
+  background: #FFFFFF url(../images/border-right.png) 100% 0 repeat-y;
+  padding-right: 18px;
+}
+
+#head
+{
+  border-top: 10px solid #337ACC;
+  padding: 1ex 2ex 17px;
+  background: #FFFFFF url(../images/line.png) 0 100% repeat-x;
+}
+
+#head h1 a
+{
+  display: block;
+  text-indent: -9999px;
+  background: url(../images/fedora-logo.png) 20px 50% no-repeat;
+  height: 73px;
+  width: 138px;
+  overflow: hidden;
+}
+
+#sidebar
+{
+  float: left;
+  width: 425px;
+  margin: 2ex 0;
+  background: #FFFFFF;
+}
+
+#banner
+{
+  text-indent: -9999px;
+  background: url(../images/banner.jpg) 0 0 no-repeat;
+  height: 75px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#get
+{
+  text-align: center;
+  margin: 1ex 0.5ex;
+  font-weight: bold;
+}
+
+#get ul
+{
+  font-weight: normal;
+  list-style: none;
+  display: inline;
+  font-size: 1.7ex;
+}
+
+#get li
+{
+  display: inline;
+  border-left: 1px solid #CCCCCC;
+  margin-left: -1px;
+  padding: 0 1ex;
+}
+
+#get li.first
+{
+  border-left: none;
+}
+
+#get a
+{
+  color: #00356B;
+}
+
+.nav
+{
+  margin: 0 10px;
+  padding: 0 1.5ex;
+}
+
+.nav h2
+{
+  border-bottom: 1px dotted #AAAAAA;
+  color: #444444;
+  font-size: 1.725ex;
+  margin: 2ex 0 1ex;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.nav ul
+{
+  list-style: url(../images/arrow.png);
+  margin-left: 15px;
+}
+
+.nav li
+{
+  margin: 0.25ex 1ex;
+  color: #777777;
+  font-size: 1.6ex;
+}
+
+.nav a
+{
+  font-weight: bold;
+  margin-right: 0.75ex;
+  color: #729FCF;
+  font-size: 2.4ex;
+}
+
+.home #nav-home a, .get #nav-get a, .join #nav-join a
+{
+  color: #777777;
+  text-decoration: none;
+}
+
+#content
+{
+  height: 1%; /* Haslayout fix */
+  margin-left: 425px;
+  padding: 1ex 1ex 120px;
+  color: #666666;
+  background: #FFFFFF;
+}
+
+#content h2
+{
+  font-size: 3.25ex;
+}
+
+#content h2 div {
+  font-size: 1ex;
+  font-weight: normal;
+}
+
+#content h3
+{
+  color: #337acc;
+  margin: 1.5ex 0;
+  font-size: 2.5ex;
+}
+
+#content table
+{
+  border-collapse: collapse;
+}
+
+#content table th
+{
+  background: #DDDDDD;
+}
+
+#content table th, #content table td
+{
+  border: 1px solid #000000;
+  padding: 0.6ex;
+}
+
+#content p
+{
+  margin: 1ex 5ex 1ex 0;
+}
+
+#content ul
+{
+  list-style: square;
+  margin: 0 3ex;
+}
+
+#content img
+{
+  margin: 2ex 0;
+}
+
+#content a
+{
+  color: #337ACC;
+}
+
+.download
+{
+  list-style-image: url(../images/arrow.png);
+  list-style-position: outside;
+  margin: 1.6ex 3ex;
+}
+
+.download li
+{
+  color: #777777;
+  font-size: 1.8ex;
+  background: #EFEFEF;
+  padding: 1ex;
+  border-bottom: 1px dotted #AAAAAA;
+}
+
+.download a
+{
+  font-weight: bold;
+}
+
+.roles
+{
+  margin: 0!important;
+  list-style: none!important;
+  background: red;
+  display: inline;
+}
+
+.roles li
+{
+  float: left;
+  margin-bottom: 0.5ex;
+}
+
+.roles a
+{
+  line-height: 1;
+  width: 130px;
+  height: 150px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.roles a:hover
+{
+  background-color: #EFEFEF;
+}
+
+.roles img
+{
+}
+
+#footer
+{
+  position: relative;
+  font: normal 1.5ex/1.5 sans-serif;
+  clear: both;
+  text-align: center;
+  background: #FFFFFF url(../images/line-bottom.png) 0 0 repeat-x;
+  margin: -90px 0 0;
+  border-bottom: 10px solid #337ACC;
+  height: 80px;
+  color: #AAAAAA;
+}
+
+#bottom
+{
+  background: #FFFFFF url(../images/border-right.png) 100% 0 repeat-y;
+  margin-left: 18px;
+  padding-right: 18px;
+}
+
+#footer ul
+{
+  list-style: none;
+}
+
+#footer li
+{
+  display: inline;
+  border-left: 1px solid #AAAAAA;
+  padding: 0 0.75ex;
+  margin-left: -1px;
+}
+
+#footer li.first
+{
+  border-left: none;
+}
+
+#footer a
+{
+  color: #223344;
+}
+
+#footer a:hover
+{
+  color: #112233;
+}
+
+#footer .copy
+{
+  padding-top: 3ex;
+}
+
+#footer .disclaimer
+{
+}
+
+#screenshot-banner a {
+  font-size: 1.6ex;
+  text-align: left;
+}
+
+#screenshot-banner ul
+{
+  list-style: none;
+}
+
+#screenshot-banner li
+{
+  display: inline;
+}
+
+#screenshot-banner img
+{
+  vertical-align: bottom;
+  border: 0;
+}
+
+.doc-nav {
+	text-align: center;
+	position: relative;
+	padding: 1em;
+	margin-top: 2em;
+	border-top: 1px solid #ccc;
+}
+.doc-nav a {
+	padding: 0 1em;
+}
+.doc-nav-left {
+	position: absolute;
+	left: 0;
+}
+.doc-nav-right {
+	position: absolute;
+	right: 0;
+}

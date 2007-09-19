@@ -1,0 +1,27 @@
+Introduction:
+fedora-web contains the build script, templates, and static files used to
+build Fedora's website.  The build script, build/build.py generates static
+website pages by walking through the input directory processing templates
+with Genshi (http://genshi.edgewall.org/)
+
+Requirements: python-genshi
+
+Usage: Run make in this directory to build the website in all available
+       languages.  To build a specific language, use make LANG, where LANG
+       is the two-letter abbreviation for the translation.  A list of available
+       translations is available in the header of the Makefile.  
+
+       See build/build.py --help for more descriptions of specific options.
+
+Editing/creating pages:
+For general information about Genshi templates, see:
+http://genshi.edgewall.org/wiki/Documentation, and in particular,
+http://genshi.edgewall.org/wiki/Documentation/xml-templates.html
+
+Currently, two variables are made available to all templates:
+lang - The language code for the page
+path - The base path for the site (eg. /, or http://fedoraproject.org/)
+
+Adding languages:
+To add a language, place the PO file in the po/ directory, and add the
+language to LANGUAGES in the Makefile.
