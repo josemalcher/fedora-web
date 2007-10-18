@@ -8,7 +8,8 @@
     <xi:include href="css.html" />
     <meta py:replace="select('*|text()')" />
   </head>
-  <body py:match="body">
+  <py:match path="body" once="true">
+  <body py:attrs="select('@*')">
     <div id="wrapper">
       <xi:include href="head.html" />
       <xi:include href="sidebar.html" />
@@ -18,4 +19,5 @@
     </div>
     <xi:include href="foot.html" />
   </body>
+  </py:match>
 </html>
