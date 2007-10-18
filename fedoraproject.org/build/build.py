@@ -16,6 +16,8 @@ from gettext import GNUTranslations
 from genshi.filters import Translator
 from genshi.template import TemplateLoader
 
+from genshi.core import Markup
+
 def process(args):
     if os.path.exists(options.output) and options.erase:
         shutil.rmtree(options.output)
@@ -44,12 +46,9 @@ def process_dir(dirpath, filenames):
     '''
     Process a directory
     '''
-    if (options.lang != None) and (options.lang != 'en'):
-        translations = GNUTranslations(open(os.path.join(options.podir, options.lang + '.mo')))
-        loader = TemplateLoader(['.'], callback=lambda template: template.filters.insert(0, Translator(translations.ugettext)))
-    else:
-        loader = TemplateLoader(['.'])
-        options.lang = 'en'
+    translations = GNUTranslations(open(os.path.join(options.podir, options.lang + '.mo')))
+    translations = GNUTranslations(open(os.path.join(options.podir, options.lang + '.mo')))
+    loader = TemplateLoader(['.'], callback=lambda template: template.filters.insert(0, Translator(translations.ugettext)))
     for fn in filenames:
         if fn.endswith('~') or fn.endswith('.swp'):
             continue
@@ -60,6 +59,7 @@ def process_dir(dirpath, filenames):
         template = loader.load(src_file)
         # Variables made availble to all templates
         page = template.generate(
+            _=lambda text: Markup(translations.ugettext(text)),
             lang=options.lang,
             path=options.basepath,
             ).render(method='html', doctype='html')

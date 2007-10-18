@@ -1,15 +1,17 @@
 LANGUAGES = en
-MO_FILES = $(patsubst %, %.mo, $(filter-out en ,$(LANGUAGES)))
+PO_FILES = $(patsubst %, po/%.po, $(LANGUAGES))
+MO_FILES = $(patsubst %, po/%.mo, $(LANGUAGES))
 
 PYTHON = python
 PYBABEL = pybabel
 BASEPATH = /
 
-all: po $(MO_FILES) $(LANGUAGES)
+all: po/fedora-web.pot $(MO_FILES) $(LANGUAGES)
 
 $(LANGUAGES):
-	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -s images,css -b $(BASEPATH) -e
+	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -s images,css -b $(BASEPATH)
 
+# FIXME: This apparently doesn't run when the po files already exist.
 %.po: po/fedora-web.pot
 	msgmerge --no-wrap --update $@ $^
 
@@ -18,6 +20,7 @@ $(LANGUAGES):
 
 po/fedora-web.pot:
 	${PYBABEL} extract -F build/pybabel.cfg data -o po/fedora-web.pot
+	cp po/fedora-web.pot po/en.po
 
 clean:
 	rm -rf out
