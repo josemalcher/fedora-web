@@ -1,4 +1,4 @@
-LANGUAGES = en es
+LANGUAGES = en
 PO_FILES = $(patsubst %, po/%.po, $(LANGUAGES))
 MO_FILES = $(patsubst %, po/%.mo, $(LANGUAGES))
 
