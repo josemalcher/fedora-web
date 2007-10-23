@@ -1,4 +1,4 @@
-LANGUAGES = en
+LANGUAGES = en es
 PO_FILES = $(patsubst %, po/%.po, $(LANGUAGES))
 MO_FILES = $(patsubst %, po/%.mo, $(LANGUAGES))
 
@@ -21,6 +21,7 @@ po/en.po: po/fedora-web.pot
 %.mo: %.po
 	msgfmt -o $@ $<
 
+# FIXME: This apparently doesn't run when the POT file already exists.
 po/fedora-web.pot:
 	${PYBABEL} extract -F build/pybabel.cfg data -o po/fedora-web.pot
 

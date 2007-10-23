@@ -22,7 +22,7 @@ def process(args):
     if os.path.exists(options.output) and options.erase:
         shutil.rmtree(options.output)
     if not os.path.exists(options.output):
-        os.makedirs(os.path.join(options.output, options.lang))
+        os.makedirs(options.output)
     if options.static is not None:
         static = options.static.split(',');
         for dir in static:
@@ -53,7 +53,7 @@ def process_dir(dirpath, filenames):
         if fn.endswith('~') or fn.endswith('.swp'):
             continue
         src_file = os.path.join(dirpath, fn)
-        dest_file = os.path.join(options.output, options.lang, src_file[len(options.input):]) # Hideous
+        dest_file = os.path.join(options.output, src_file[len(options.input):]) + '.' + options.lang # Hideous
         if not os.path.exists(os.path.dirname(dest_file)):
             os.makedirs(os.path.dirname(dest_file))
         template = loader.load(src_file)
