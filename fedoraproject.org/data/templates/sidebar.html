@@ -1,15 +1,17 @@
 <div id="sidebar">
+  <?python
+  from datetime import date
+
+  today = date.today();
+  release = date(2007, 11, 8)
+
+  difference = release - today
+  days = difference.days
+  if days < 0: days = 0
+  image = str(days) + '.png'
+  ?>
   <div id="banner">
-    <h2>Fedora 7 now available!</h2>
-    <p>${_('The operating system that reaches higher.')}</p>
-  </div>
-  <div id="get">
-    ${_('Get it now:')}
-    <ul>
-      <li class="first"><a href="http://torrent.fedoraproject.org/">${_('Torrents')}</a></li>
-      <li><a href="http://mirrors.fedoraproject.org/publiclist/Fedora/7/">${_('Download Mirrors')}</a></li>
-      <li><a href="http://fedoraproject.org/wiki/Distribution">${_('Get Media')}</a></li>
-    </ul>
+    <img src="${path}/images/counter/${image}" alt="${_('Fedora 8 Werewolf unleased in %s days.') % days}" />
   </div>
   <div class="nav">
     <h2>${_('Navigation')}</h2>
