@@ -1,9 +1,9 @@
 <div id="sidebar">
   <?python
-  from datetime import date
+  from datetime import datetime
 
-  today = date.today();
-  release = date(2007, 11, 8)
+  today = datetime.utcnow();
+  release = datetime(2007, 11, 8, 14)
 
   difference = release - today
   days = difference.days
