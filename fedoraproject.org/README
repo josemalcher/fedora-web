@@ -24,4 +24,5 @@ path - The base path for the site (eg. /, or http://fedoraproject.org/)
 
 Adding languages:
 To add a language, place the PO file in the po/ directory, and add the
-language to LANGUAGES in the Makefile.
+language to LANGUAGES in the Makefile.  Also, ask for the language to
+be added to the Apache configuration (needed for /xx/ URLs to work).  
