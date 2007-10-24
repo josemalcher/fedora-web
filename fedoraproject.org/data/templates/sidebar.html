@@ -1,32 +1,47 @@
-<div id="sidebar">
-  <?python
-  from datetime import datetime
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  py:strip="">
+  <div id="sidebar">
+    <?python
+    from datetime import datetime
 
-  today = datetime.utcnow()
-  release = datetime(2007, 11, 8, 14)
+    today = datetime.utcnow()
+    release = datetime(2007, 11, 8, 14)
 
-  difference = release - today
-  days = difference.days
-  if difference.seconds > 0: days += 1
-  if days < 0: days = 0
-  image = str(days) + '.png'
-  ?>
-  <div id="banner">
-    <img src="${relpath}/images/counter/${image}" alt="${_('Fedora 8 Werewolf released in %s days!') % str(days)}" />
+    difference = release - today
+    days = difference.days
+    if difference.seconds > 0: days += 1
+    if days < 0: days = 0
+    image = str(days) + '.png'
+    ?>
+    <div id="banner">
+      <img src="${relpath}/images/counter/${image}" alt="${_('Fedora 8 Werewolf released in %s days!') % str(days)}" />
+    </div>
+    <div class="nav">
+      <h2>${_('Navigation')}</h2>
+      <ul>
+        <li id="nav-home"><a href="${relpath}/index">${_('Home')}</a></li>
+        <li id="nav-get"><a href="${relpath}/get-fedora">${_('Get Fedora')}</a></li>
+        <li id="nav-join"><a href="${relpath}/join-fedora">${_('Join Fedora')}</a></li>
+      </ul>
+      <h2>${_('Tools')}</h2>
+      <ul>
+        <li><a href="http://docs.fedoraproject.org/">${_('Docs')}</a> ${_('Fedora documentation.')}</li>
+        <li><a href="http://fedoraproject.org/wiki/">${_('Wiki')}</a> ${_('Collaborative knowledge.')}</li>
+        <li><a href="http://planet.fedoraproject.org/">${_('Planet')}</a> ${_('The voices of the Fedora community.')}</li>
+        <li><a href="http://fedoraproject.org/wiki/Communicate">${_('Communicate')}</a> ${_('Speak with Fedora.')}</li>
+      </ul>
+      <!--
+      <h2>${_('Website Language')}</h2>
+      <form action="" method="GET">
+        <select name="lang">
+          <xi:include href="translations.html" />
+        </select>
+        <input type="submit" value="OK" />
+      </form>
+      -->
+    </div>
   </div>
-  <div class="nav">
-    <h2>${_('Navigation')}</h2>
-    <ul>
-      <li id="nav-home"><a href="${relpath}/index">${_('Home')}</a></li>
-      <li id="nav-get"><a href="${relpath}/get-fedora">${_('Get Fedora')}</a></li>
-      <li id="nav-join"><a href="${relpath}/join-fedora">${_('Join Fedora')}</a></li>
-    </ul>
-    <h2>${_('Tools')}</h2>
-    <ul>
-      <li><a href="http://docs.fedoraproject.org/">${_('Docs')}</a> ${_('Fedora documentation.')}</li>
-      <li><a href="http://fedoraproject.org/wiki/">${_('Wiki')}</a> ${_('Collaborative knowledge.')}</li>
-      <li><a href="http://planet.fedoraproject.org/">${_('Planet')}</a> ${_('The voices of the Fedora community.')}</li>
-      <li><a href="http://fedoraproject.org/wiki/Communicate">${_('Communicate')}</a> ${_('Speak with Fedora.')}</li>
-    </ul>
-  </div>
-</div>
+</html>
