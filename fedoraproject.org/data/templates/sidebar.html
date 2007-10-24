@@ -11,14 +11,14 @@
   image = str(days) + '.png'
   ?>
   <div id="banner">
-    <img src="${path}/images/counter/${image}" alt="${_('Fedora 8 Werewolf released in %s days!') % str(days)}" />
+    <img src="${relpath}/images/counter/${image}" alt="${_('Fedora 8 Werewolf released in %s days!') % str(days)}" />
   </div>
   <div class="nav">
     <h2>${_('Navigation')}</h2>
     <ul>
-      <li id="nav-home"><a href="${path}/index">${_('Home')}</a></li>
-      <li id="nav-get"><a href="${path}/get-fedora">${_('Get Fedora')}</a></li>
-      <li id="nav-join"><a href="${path}/join-fedora">${_('Join Fedora')}</a></li>
+      <li id="nav-home"><a href="${relpath}/index">${_('Home')}</a></li>
+      <li id="nav-get"><a href="${relpath}/get-fedora">${_('Get Fedora')}</a></li>
+      <li id="nav-join"><a href="${relpath}/join-fedora">${_('Join Fedora')}</a></li>
     </ul>
     <h2>${_('Tools')}</h2>
     <ul>

@@ -47,13 +47,15 @@ def process_dir(dirpath, filenames):
     Process a directory
     '''
     translations = GNUTranslations(open(os.path.join(options.podir, options.lang + '.mo')))
-    translations = GNUTranslations(open(os.path.join(options.podir, options.lang + '.mo')))
     loader = TemplateLoader(['.'], callback=lambda template: template.filters.insert(0, Translator(translations.ugettext)))
     for fn in filenames:
         if fn.endswith('~') or fn.endswith('.swp'):
             continue
         src_file = os.path.join(dirpath, fn)
         dest_file = os.path.join(options.output, src_file[len(options.input):]) + '.' + options.lang # Hideous
+        relpath = '../' * (dest_file.count('/') - 1)
+        relpath = relpath.rstrip('/')
+        if relpath == '': relpath = '.'
         if not os.path.exists(os.path.dirname(dest_file)):
             os.makedirs(os.path.dirname(dest_file))
         template = loader.load(src_file)
@@ -62,6 +64,7 @@ def process_dir(dirpath, filenames):
             _=lambda text: Markup(translations.ugettext(text)),
             lang=options.lang,
             path=options.basepath,
+            relpath=relpath,
             ).render(method='html', doctype='html')
         output = open(dest_file, 'w')
         output.write(page)
