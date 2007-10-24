@@ -12,7 +12,7 @@
 
     difference = release - today
     days = difference.days
-    if difference.seconds > 0: days += 1
+    if difference.seconds > 0 or difference.minutes > 0 or difference.hours > 0: days += 1
     if days < 0: days = 0
     image = str(days) + '.png'
     ?>
