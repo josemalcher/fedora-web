@@ -13,7 +13,8 @@ print '''
 try:
     for lang in f:
         lang = lang.strip()
-        print '    <option value="' + lang + '" py:attrs="{\'selected\': lang == \'' + lang + '\' and \'selected\' or None}">' + lang + '</option>'
+        if lang and not lang.startswith('#'):
+            print '    <option value="' + lang + '" py:attrs="{\'selected\': lang == \'' + lang + '\' and \'selected\' or None}">' + lang + '</option>'
 finally:
     f.close()
 print '''</html>
