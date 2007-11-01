@@ -143,7 +143,7 @@ a img
 {
   height: 1%; /* Haslayout fix */
   margin-left: 33ex;
-  padding: 1ex 0 120px;
+  padding: 1ex 2ex 120px;
   color: #666666;
   background: #FFFFFF;
 }
@@ -370,3 +370,38 @@ input, textarea, option
   display: block;
 }
 
+#content ul.downloadbox
+{
+  overflow: hidden;
+  list-style: none;
+  margin: 0 2ex;
+  padding: 6ex 2ex 4ex 190px;
+  border-radius: 1.5ex;
+  -webkit-border-radius: 1.5ex;
+  -moz-border-radius: 1.5ex;
+  background: #C0DBDD 30px 50% no-repeat;
+  font-size: 1.7ex;
+}
+
+#content ul.installdvd { background-image: url(../images/installdvd.png); }
+#content ul.gnomelive { background-image: url(../images/gnomelive.png); }
+#content ul.kdelive { background-image: url(../images/kdelive.png); }
+
+.get #content h3
+{
+  margin: 1.5ex 0 0.5ex;
+}
+
+.downloadbox li
+{
+  width: 25ex;
+  float: left;
+  padding: 0 0 2ex;
+}
+
+.downloadbox li li
+{
+  width: auto;
+  float: none;
+  padding: 0;
+}
