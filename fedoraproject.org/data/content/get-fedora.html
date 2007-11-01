@@ -5,16 +5,106 @@
   <xi:include href="../templates/master.html" />
   <head>
     <title>${_('Fedora Project')}</title>
+    <style type="text/css">
+      #content ul.downloadbox
+      {
+        overflow: hidden;
+        list-style: none;
+        margin: 0 2ex 0 0;
+        padding: 2.5ex 2ex 1.5ex 190px;
+        -moz-border-radius: 1.5ex;
+        background: #C0DBDD 30px 50% no-repeat;
+        font-size: 1.7ex;
+      }
+
+      #content ul.installdvd { background-image: url(images/installdvd.png); }
+      #content ul.gnomelive { background-image: url(images/gnomelive.png); }
+      #content ul.kdelive { background-image: url(images/kdelive.png); }
+
+      #content h3
+      {
+        margin: 1.5ex 0 0.5ex;
+      }
+
+      .downloadbox li
+      {
+        width: 25ex;
+        float: left;
+        margin: 0 0 2ex;
+        padding: 0;
+      }
+
+      .downloadbox li li
+      {
+        width: auto;
+        float: none;
+        margin: 0;
+      }
+    </style>
   </head>
   <body class="get">
     <h2>${_('Fedora, For You.')}</h2>
-    <h3>${_('High-speed Internet?')}</h3>
-    <p>${_('Download Fedora via the web or via &lt;a href="http://en.wikipedia.org/wiki/Bit_torrent"&gt;BitTorrent&lt;/a&gt;. Links to each are below.')}</p>
-    <p>${_('Read through our &lt;a href="http://fedoraproject.org/wiki/Distribution/Download/ExportRegulations"&gt;export regulations&lt;/a&gt; before downloading Fedora. &lt;strong&gt;If this is your first time downloading Fedora&lt;/strong&gt;, review the &lt;a href="http://fedoraproject.org/wiki/Distribution/Download#Understand"&gt;installation instructions&lt;/a&gt; before choosing one of the three download methods below.')}</p>
+
+    <h3>${_('Install DVD')}</h3>
+    <ul class="downloadbox installdvd">
+      <li>
+      <h4>BitTorrent</h4>
+      <ul>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-7-i386.torrent">${_('i386')}</a> - ${_('Install DVD')}</li>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-7-x86_64.torrent">${_('x86_64')}</a> - ${_('Install DVD')}</li>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-7-ppc.torrent">${_('ppc')}</a> - ${_('Install DVD')}</li>
+      </ul>
+      </li>
+      <li>
+      <h4>Direct Download</h4>
+      <ul>
+        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/7/Fedora/i386/iso/F-7-i386-DVD.iso">${_('i386')}</a> - ${_('Install DVD')}</li>
+        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/7/Fedora/x86_64/iso/F-7-x86_64-DVD.iso">${_('x86_64')}</a> - ${_('Install DVD')}</li>
+        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/7/Fedora/ppc/iso/F-7-ppc-DVD.iso">${_('ppc')}</a> - ${_('Install DVD')}</li>
+      </ul>
+      </li>
+    </ul>
+    <h3>${_('GNOME Live Media')}</h3>
+    <ul class="downloadbox gnomelive">
+      <li>
+      <h4>BitTorrent</h4>
+      <ul>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-7-i386.torrent">${_('i386')}</a> - ${_('Live CD')}</li>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-7-Live-x86_64.torrent">${_('x86_64')}</a> - ${_('Live DVD')}</li>
+      </ul>
+      </li>
+      <li>
+      <h4>Direct Download</h4>
+      <ul>
+        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/7/Live/i386/Fedora-7-Live-i686.iso">${_('i386')}</a> - ${_('Live CD')}</li>
+        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/7/Live/x86_64/Fedora-7-Live-x86_64.iso">${_('x86_64')}</a> - ${_('Live DVD')}</li>
+      </ul>
+      </li>
+    </ul>
+
+    <h3>${_('KDE Live Media')}</h3>
+    <ul class="downloadbox kdelive">
+      <li>
+      <h4>BitTorrent</h4>
+      <ul>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-7-KDE-Live-i686.torrent">${_('i386')}</a> - ${_('Live CD')}</li>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-7-KDE-Live-x86_64.torrent">${_('x86_64')}</a> - ${_('Live DVD')}</li>
+      </ul>
+      </li>
+      <li>
+      <h4>Direct Download</h4>
+      <ul>
+        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/7/Live/i386/Fedora-7-KDE-Live-i686.iso">${_('i386')}</a> - ${_('Live CD')}</li>
+        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/7/Live/x86_64/Fedora-7-KDE-Live-x86_64.iso">${_('x86_64')}</a> - ${_('Live DVD')}</li>
+      </ul>
+      </li>
+    </ul>
+
+    <h3>${_('Let me look around...')}</h3>
     <ul class="download">
-      <li>${_('&lt;a name="bittorrent" href="http://torrent.fedoraproject.org/"&gt;Download from BitTorrent&lt;/a&gt;: requires a BitTorrent client.')}</li>
-      <li>${_('&lt;a name="mirrors" href="http://mirrors.fedoraproject.org/publiclist/Fedora/7/"&gt;Download from Mirrors&lt;/a&gt;: choose a mirror close to you geographically for a faster download.')}</li>
-      <li>${_('&lt;a name="networkinstall" href="http://docs.fedoraproject.org/install-guide/f7/en_US/sn-which-files.html"&gt;Network Install&lt;/a&gt;: Download a small boot image and download Fedora as you install. &lt;strong&gt;Recommended for advanced users only.&lt;/strong&gt;')}</li>
+      <li><a href="http://spins.fedoraproject.org/">${_('See all custom spins')}</a></li>
+      <li><a href="http://torrent.fedoraproject.org/">${_('See all torrents')}</a></li>
+      <li><a href="http://mirrors.fedoraproject.org/publiclist/Fedora/7/">${_('See all mirrors')}</a></li>
     </ul>
     <h3>${_('Slow Internet? No Internet?')}</h3>
     <p>${_('Get a copy of Fedora Media sent via postal mail.')}</p>
