@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora web 8\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2007-10-31 22:46-0400\n"
+"POT-Creation-Date: 2007-10-31 23:27-0400\n"
 "PO-Revision-Date: 2007-10-25 13:03+0800\n"
 "Last-Translator: Yijun Yuan <bbbush@fedoraproject.org>\n"
 "Language-Team: fedora-cn <fedora-trans-zh_cn@redhat.com>\n"
@@ -111,7 +111,8 @@ msgid "F7 Screenshot"
 msgstr "F7 屏幕截图"
 
 #: data/content/index.html:17
-msgid "What's new in Fedora 7? Read the release notes. >>"
+#, fuzzy
+msgid "What's new in Fedora 7? Read the release notes. &gt;&gt;"
 msgstr "Fedora 7 中的新内容？请阅读发行注记。>>"
 
 #: data/content/index.html:20
@@ -123,8 +124,8 @@ msgid "The Fedora Project is out front for you, <strong>leading the advancement 
 msgstr "Fedora 项目是助你<strong>推动自由、开放的软件和内容进步</strong>的领跑者。"
 
 #: data/content/index.html:26
-msgid "Learn more. >>"
-msgstr "了解更多。>>"
+msgid "<a href=\"http://fedoraproject.org/wiki/Overview\">Learn more. &gt;&gt;</a>"
+msgstr ""
 
 #: data/content/join-fedora.html:10
 msgid "Join Fedora."
@@ -138,33 +139,35 @@ msgstr "如果你希望帮助 Fedora 变得更好，有很多方式可以参与�
 msgid "Click on a role below to learn more about how you can help the Fedora Project."
 msgstr "点击下面的角色，了解更多如何帮助 Fedora 项目的途径。"
 
-#: data/content/join-fedora.html:15 data/content/join-fedora.html:16
-msgid "Content Writer"
-msgstr "文档工作"
+#: data/content/join-fedora.html:15
+#, python-format
+msgid "<a href=\"http://fedoraproject.org/wiki/Join#ContentWriter\"><img src=\"%s/images/ContentDeveloper.png\" alt=\"Content Writer\"><br>Content Writer</a>"
+msgstr ""
 
-#: data/content/join-fedora.html:19 data/content/join-fedora.html:20
-msgid "Designer"
-msgstr "艺术设计"
+#: data/content/join-fedora.html:18
+#, python-format
+msgid "<a href=\"http://fedoraproject.org/wiki/Join#Designer\"><img src=\"%s/images/Designer.png\" alt=\"Designer\"><br>Designer</a>"
+msgstr ""
 
-#: data/content/join-fedora.html:23 data/content/join-fedora.html:24
-msgid "People Person"
-msgstr "与人沟通"
+#: data/content/join-fedora.html:21
+#, python-format
+msgid "<a href=\"http://fedoraproject.org/wiki/Join#PeoplePerson\"><img src=\"%s/images/PeoplePerson.png\" alt=\"People Person\"><br>People Person</a>"
+msgstr ""
 
-#: data/content/join-fedora.html:27 data/content/join-fedora.html:28
-msgid "OS Developer"
-msgstr "操作系统开发"
+#: data/content/join-fedora.html:24
+#, python-format
+msgid "<a href=\"http://fedoraproject.org/wiki/Join#OSDeveloper\"><img src=\"%s/images/OSDeveloper.png\" alt=\"OS Developer\"><br>OS Developer</a>"
+msgstr ""
 
-#: data/content/join-fedora.html:31 data/content/join-fedora.html:32
-msgid "Translator"
-msgstr "翻译工作"
+#: data/content/join-fedora.html:27
+#, python-format
+msgid "<a href=\"http://fedoraproject.org/wiki/Join#Translator\"><img src=\"%s/images/Translator.png\" alt=\"Translator\"><br>Translator</a>"
+msgstr ""
 
-#: data/content/join-fedora.html:35
-msgid "Web Developer or Administrator"
-msgstr "网站开发及维护"
-
-#: data/content/join-fedora.html:36
-msgid "Web Developer<br />or Administrator"
-msgstr "网站开发<br />及维护"
+#: data/content/join-fedora.html:30
+#, python-format
+msgid "<a href=\"http://fedoraproject.org/wiki/Join#WebDeveloperAdministrator\"><img src=\"%s/images/WebDeveloper.png\" alt=\"Web Developer or Administrator\"><br>Web Developer<br>or Administrator</a>"
+msgstr ""
 
 #: data/content/relnotes.html:10
 msgid "Fedora 7 Release Notes"
@@ -199,7 +202,8 @@ msgid "The Fedora Project is proud to have the following organizations as sponso
 msgstr "Fedora 项目有下列组织赞助："
 
 #: data/templates/foot.html:9
-msgid "Copyright © 2007 Red Hat, Inc. and others.  All Rights Reserved.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
+#, fuzzy
+msgid "Copyright &copy; 2007 Red Hat, Inc. and others.  All Rights Reserved.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
 msgstr "Copyright © 2007 Red Hat, Inc. 及其他。所有权力保留。请将意见和更正发送到 <a href=\"mailto:webmaster@fedoraproject.org\">网站团队</a>。"
 
 #: data/templates/foot.html:12
@@ -282,6 +286,30 @@ msgstr "与 Fedora 自由沟通。"
 #: data/templates/sidebar.html:36
 msgid "Website Language"
 msgstr ""
+
+#~ msgid "Content Writer"
+#~ msgstr "文档工作"
+
+#~ msgid "Designer"
+#~ msgstr "艺术设计"
+
+#~ msgid "People Person"
+#~ msgstr "与人沟通"
+
+#~ msgid "OS Developer"
+#~ msgstr "操作系统开发"
+
+#~ msgid "Translator"
+#~ msgstr "翻译工作"
+
+#~ msgid "Web Developer or Administrator"
+#~ msgstr "网站开发及维护"
+
+#~ msgid "Web Developer<br />or Administrator"
+#~ msgstr "网站开发<br />及维护"
+
+#~ msgid "Learn more. >>"
+#~ msgstr "了解更多。>>"
 
 #~ msgid "High-speed Internet?"
 #~ msgstr "高速互联网？"

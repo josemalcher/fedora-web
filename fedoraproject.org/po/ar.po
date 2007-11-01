@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2007-10-31 22:46-0400\n"
+"POT-Creation-Date: 2007-10-31 23:27-0400\n"
 "PO-Revision-Date: 2007-10-27 02:25+0400\n"
 "Last-Translator: Laith Juwaidah <ljuwaidah@gmail.com>\n"
 "Language-Team: Arabic\n"
@@ -113,7 +113,8 @@ msgid "F7 Screenshot"
 msgstr "صور شاشة فيدورا 7"
 
 #: data/content/index.html:17
-msgid "What's new in Fedora 7? Read the release notes. >>"
+#, fuzzy
+msgid "What's new in Fedora 7? Read the release notes. &gt;&gt;"
 msgstr "ما الجديد في فيدورا 7؟ إقرأ ملاحظات الإصدار >>"
 
 #: data/content/index.html:20
@@ -125,8 +126,8 @@ msgid "The Fedora Project is out front for you, <strong>leading the advancement 
 msgstr "مشروع فيدورا مقدم لكم, <strong>يقود التطور في البرامج الحرة, المفتوحة المصدر و المحتوى</strong>."
 
 #: data/content/index.html:26
-msgid "Learn more. >>"
-msgstr "إعرف أكثر. >>"
+msgid "<a href=\"http://fedoraproject.org/wiki/Overview\">Learn more. &gt;&gt;</a>"
+msgstr ""
 
 #: data/content/join-fedora.html:10
 msgid "Join Fedora."
@@ -140,33 +141,35 @@ msgstr "إذا كنت تريد أن تأخذ يدا نشطة في جعل فيد�
 msgid "Click on a role below to learn more about how you can help the Fedora Project."
 msgstr "إضغط على دور أسفله لتعرف أكثر كيف يمكنك أن تساعد مشروع فيدورا."
 
-#: data/content/join-fedora.html:15 data/content/join-fedora.html:16
-msgid "Content Writer"
-msgstr "كاتب محتوى"
+#: data/content/join-fedora.html:15
+#, python-format
+msgid "<a href=\"http://fedoraproject.org/wiki/Join#ContentWriter\"><img src=\"%s/images/ContentDeveloper.png\" alt=\"Content Writer\"><br>Content Writer</a>"
+msgstr ""
 
-#: data/content/join-fedora.html:19 data/content/join-fedora.html:20
-msgid "Designer"
-msgstr "مصمم"
+#: data/content/join-fedora.html:18
+#, python-format
+msgid "<a href=\"http://fedoraproject.org/wiki/Join#Designer\"><img src=\"%s/images/Designer.png\" alt=\"Designer\"><br>Designer</a>"
+msgstr ""
 
-#: data/content/join-fedora.html:23 data/content/join-fedora.html:24
-msgid "People Person"
-msgstr "شخص علاقات"
+#: data/content/join-fedora.html:21
+#, python-format
+msgid "<a href=\"http://fedoraproject.org/wiki/Join#PeoplePerson\"><img src=\"%s/images/PeoplePerson.png\" alt=\"People Person\"><br>People Person</a>"
+msgstr ""
 
-#: data/content/join-fedora.html:27 data/content/join-fedora.html:28
-msgid "OS Developer"
-msgstr "مطور نظام"
+#: data/content/join-fedora.html:24
+#, python-format
+msgid "<a href=\"http://fedoraproject.org/wiki/Join#OSDeveloper\"><img src=\"%s/images/OSDeveloper.png\" alt=\"OS Developer\"><br>OS Developer</a>"
+msgstr ""
 
-#: data/content/join-fedora.html:31 data/content/join-fedora.html:32
-msgid "Translator"
-msgstr "مترجم"
+#: data/content/join-fedora.html:27
+#, python-format
+msgid "<a href=\"http://fedoraproject.org/wiki/Join#Translator\"><img src=\"%s/images/Translator.png\" alt=\"Translator\"><br>Translator</a>"
+msgstr ""
 
-#: data/content/join-fedora.html:35
-msgid "Web Developer or Administrator"
-msgstr "مشرف او مطور شبكة"
-
-#: data/content/join-fedora.html:36
-msgid "Web Developer<br />or Administrator"
-msgstr "مشرف او<br />مطور شبكة"
+#: data/content/join-fedora.html:30
+#, python-format
+msgid "<a href=\"http://fedoraproject.org/wiki/Join#WebDeveloperAdministrator\"><img src=\"%s/images/WebDeveloper.png\" alt=\"Web Developer or Administrator\"><br>Web Developer<br>or Administrator</a>"
+msgstr ""
 
 #: data/content/relnotes.html:10
 msgid "Fedora 7 Release Notes"
@@ -201,7 +204,8 @@ msgid "The Fedora Project is proud to have the following organizations as sponso
 msgstr "مشروع فيدورا فخور أن يكون له المنظمات التالية ككفلاء:"
 
 #: data/templates/foot.html:9
-msgid "Copyright © 2007 Red Hat, Inc. and others.  All Rights Reserved.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
+#, fuzzy
+msgid "Copyright &copy; 2007 Red Hat, Inc. and others.  All Rights Reserved.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
 msgstr "حقوق الطبع © 2007 مؤسسة ريد هات و آخرين.  كل الحقوق محفوظة.  الرجاء إرسال أي تعليقات او تصحيحات إلى <a href=\"mailto:webmaster@fedoraproject.org\">فريق المواقع</a>."
 
 #: data/templates/foot.html:12
@@ -284,6 +288,30 @@ msgstr "تكلم مع فيدورا"
 #: data/templates/sidebar.html:36
 msgid "Website Language"
 msgstr "لغة الموقع"
+
+#~ msgid "Content Writer"
+#~ msgstr "كاتب محتوى"
+
+#~ msgid "Designer"
+#~ msgstr "مصمم"
+
+#~ msgid "People Person"
+#~ msgstr "شخص علاقات"
+
+#~ msgid "OS Developer"
+#~ msgstr "مطور نظام"
+
+#~ msgid "Translator"
+#~ msgstr "مترجم"
+
+#~ msgid "Web Developer or Administrator"
+#~ msgstr "مشرف او مطور شبكة"
+
+#~ msgid "Web Developer<br />or Administrator"
+#~ msgstr "مشرف او<br />مطور شبكة"
+
+#~ msgid "Learn more. >>"
+#~ msgstr "إعرف أكثر. >>"
 
 #~ msgid "High-speed Internet?"
 #~ msgstr "إنترنت عالي السرعة؟"
