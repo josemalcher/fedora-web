@@ -4,20 +4,8 @@
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
   <div id="sidebar">
-    <?python
-    from datetime import datetime
-
-    today = datetime.utcnow()
-    release = datetime(2007, 11, 8, 14)
-
-    difference = release - today
-    days = difference.days
-    if difference.seconds > 0 or difference.minutes > 0 or difference.hours > 0: days += 1
-    if days < 0: days = 0
-    image = str(days) + '.png'
-    ?>
     <div id="banner">
-      <img src="${relpath}/images/counter/${image}" alt="${_('Fedora 8 Werewolf released in %s days!') % str(days)}" />
+      <img src="${relpath}/images/banner/release.png" alt="${_('Fedora 8 Werewolf is here!')}" />
     </div>
     <div id="nav">
       <h2>${_('Navigation')}</h2>
