@@ -146,7 +146,11 @@ a img
   padding: 1ex 2ex 120px;
   color: #666666;
   background: #FFFFFF;
+  display: inline-block;
 }
+
+/* Blame IE6 and the guillotine bug for this one */
+#content { display: block; }
 
 #content h2
 {
