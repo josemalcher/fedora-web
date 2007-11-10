@@ -10,7 +10,7 @@ BASEPATH = /
 all: po/fedora-web.pot $(MO_FILES) $(LANGUAGES)
 
 $(LANGUAGES): data/templates/translations.html
-	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -s images,css,js -b $(BASEPATH)
+	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -s static -b $(BASEPATH)
 
 po/en.po: po/fedora-web.pot
 	cp po/fedora-web.pot po/en.po
