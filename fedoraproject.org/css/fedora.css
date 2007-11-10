@@ -165,7 +165,7 @@ a img
 #content h3
 {
   color: #337acc;
-  margin: 1.5ex 0;
+  margin: 1.5ex 0 0.5ex;
   font-size: 2.5ex;
 }
 
@@ -391,11 +391,6 @@ input, textarea, option
 #content ul.gnomelive { background-image: url(../images/gnomelive.png); }
 #content ul.kdelive { background-image: url(../images/kdelive.png); }
 
-.get #content h3
-{
-  margin: 1.5ex 0 0.5ex;
-}
-
 .downloadbox li
 {
   width: 26ex;
@@ -408,4 +403,23 @@ input, textarea, option
   width: auto;
   float: none;
   padding: 0;
+}
+
+
+#content pre.command
+{
+  font-size: 3.75ex;
+  border: solid #DDDDDD;
+  border-width: 1px 1px 1px 5px;
+  background: #F2F5F6;
+  padding: 0.5ex 2ex;
+}
+
+
+#content p.note
+{
+  padding: 1ex 2ex;
+  font-size: 1.75ex;
+  border: 1px solid #DDDDDD;
+  background: #F2F5F6;
 }

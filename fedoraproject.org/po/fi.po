@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2007-11-08 16:44-0500\n"
+"POT-Creation-Date: 2007-11-09 21:14-0500\n"
 "PO-Revision-Date: 2007-11-06 20:16+0200\n"
 "Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
 "Language-Team: Finnish <laatu@lokalisointi.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 
 #: data/content/get-fedora.html:7 data/content/index.html:7 data/content/join-
 #: fedora.html:7 data/content/relnotes.html:7 data/content/sponsors.html:7
+#: data/content/verify.html:7
 msgid "Fedora Project"
 msgstr "Fedora-projekti"
 
@@ -214,6 +215,34 @@ msgstr "Fedoran sponsorit"
 #: data/content/sponsors.html:11
 msgid "The Fedora Project is proud to have the following organizations as sponsors:"
 msgstr "Fedora-projekti on ylpeä, että seuraavat organisaatiot sponsoroivat sitä:"
+
+#: data/content/verify.html:10
+msgid "Verify your ISO download."
+msgstr ""
+
+#: data/content/verify.html:12
+msgid "Windows user?  Follow <a href=\"http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html\">these instructions</a> instead."
+msgstr ""
+
+#: data/content/verify.html:15
+msgid "Once you have downloaded an ISO, verify it for security and integrity.  If you downloaded your ISO via BitTorrent, the file has already been verified as part of the download process (just make sure that you got the torrent from <a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a>).  Otherwise, to verify your ISO, start by downloading the proper SHA1SUM file into the same directory as the ISO:"
+msgstr ""
+
+#: data/content/verify.html:29
+msgid "Next, import Fedora's GPG key:"
+msgstr ""
+
+#: data/content/verify.html:34
+msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID 4F2A6FD2."
+msgstr ""
+
+#: data/content/verify.html:38
+msgid "Finally, now that the SHA1SUM file has been verified, check that the ISO's checksum matches:"
+msgstr ""
+
+#: data/content/verify.html:42
+msgid "If the output states that the file is valid, you're good to go!"
+msgstr ""
 
 #: data/templates/foot.html:9
 msgid "Copyright &copy; 2007 Red Hat, Inc. and others.  All Rights Reserved.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Fedora Project')}</title>
+  </head>
+  <body>
+    <h2>${_('Verify your ISO download.')}</h2>
+    <p class="note">
+    ${_('Windows user?  Follow &lt;a href="http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html"&gt;these instructions&lt;/a&gt; instead.')}
+    </p>
+    <p>
+    ${_('Once you have downloaded an ISO, verify it for security and integrity.  If you downloaded your ISO via BitTorrent, the file has already been verified as part of the download process (just make sure that you got the torrent from &lt;a href="http://torrent.fedoraproject.org/"&gt;torrent.fedoraproject.org&lt;/a&gt;).  Otherwise, to verify your ISO, start by downloading the proper SHA1SUM file into the same directory as the ISO:')}
+    </p>
+    <h3>Install DVD / Rescue CD</h3>
+    <ul>
+      <li><a href="http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/releases/8/Fedora/i386/iso/SHA1SUM&amp;redirect=1">i386</a></li>
+      <li><a href="http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/releases/8/Fedora/x86_64/iso/SHA1SUM&amp;redirect=1">x86_64</a></li>
+      <li><a href="http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/releases/8/Fedora/ppc/iso/SHA1SUM&amp;redirect=1">ppc</a></li>
+    </ul>
+    <h3>Live Media (both GNOME and KDE)</h3>
+    <ul>
+      <li><a href="http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/releases/8/Live/i686/SHA1SUM&amp;redirect=1">i386</a></li>
+      <li><a href="http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/releases/8/Live/x86_64/SHA1SUM&amp;redirect=1">x86_64</a></li>
+    </ul>
+    <p>
+    ${_('Next, import Fedora\'s GPG key:')}
+    </p>
+    <pre class="command">$ wget https://fedoraproject.org/fedora.gpg
+$ gpg --import fedora.gpg</pre>
+    <p>
+    ${_('Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID 4F2A6FD2.')}
+    </p>
+    <pre class="command">gpg --verify SHA1SUM</pre>
+    <p>
+    ${_('Finally, now that the SHA1SUM file has been verified, check that the ISO\'s checksum matches:')}
+    </p>
+    <pre class="command">$ sha1sum -c SHA1SUM</pre>
+    <p>
+    ${_('If the output states that the file is valid, you\'re good to go!')}
+    </p>
+  </body>
+</html>
