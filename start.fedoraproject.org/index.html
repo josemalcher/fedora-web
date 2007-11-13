@@ -8,9 +8,19 @@
       @import url("css/style.css");
     </style>
 
+    <!--[if lt IE 7]>
+    <style type="text/css">
+      #wrapper
+      {
+      height: 100%;
+      overflow: visible!important;
+      }
+    </style>
+    <![endif]-->
+
   </head>
 
-  <body>
+  <body onload="document.f.q.focus()">
     <div id="wrapper">
       <div id="head">
         <h1><a href="http://fedoraproject.org/index.html">Fedora</a></h1>
@@ -20,7 +30,7 @@
           </div>        
       </div>
       <div id="content">
-         <form action="http://www.google.com/search">
+         <form action="http://www.google.com/search" name="f">
 				  <table cellpadding="0" cellspacing="0">
 					<tbody>
 					 <tr valign="middle">
@@ -74,7 +84,7 @@
     <div id="bottom">
       <div id="footer">
         <p class="copy">
-        Copyright © 2007 Red Hat, Inc. and others.  All Rights Reserved.
+        Copyright &copy; 2007 Red Hat, Inc. and others.  All Rights Reserved.
         Please send any comments or corrections to the <a href="mailto:webmaster@fedoraproject.org">websites team</a>.
         </p>
 
