@@ -1,24 +1,26 @@
 var banners = [
-  ["banner1", "alt text 1", 1],
-  ["banner2", "alt text 2", 2],
-  ["banner3", "alt text 3", 3],
-  ["banner4", "alt text 4", 4]
+  ["/static/images/banners/f8-banner-animation.gif", "Fedora 8 Werewolf is here!", "http://fedoraproject.org/get-fedora", 1],
+  ["/static/images/banners/fudcon2008.png", "FUDCon Raleigh 2008", "http://barcamp.org/FUDConRaleigh2008", 1],
 ];
 
-window.onload = function()
-{
+window.onload = function() {
   var total = 0;
-  for (var i = 0; i < banners.length; ++i) { total += banners[i][2]; }
+  for (var i = 0; i < banners.length; ++i) { total += banners[i][3]; }
 
   var choices = [];
   var k = 0;
   for (var i = 0; i < banners.length; ++i) {
-      for (var j = 0; j < banners[i][2]; ++j) { choices[++k] = [banners[i][0], banners[i][1]]; }
+      for (var j = 0; j < banners[i][3]; ++j) { choices[++k] = i; }
   }
 
   var choice = Math.floor(Math.random()*(choices.length+1))
-  var image = choices[choice][0]
-  var alt = choices[choice][1]
+  var image = banners[choices[choice]][0]
+  var alt = banners[choices[choice]][1]
+  var url = banners[choices[choice]][2]
+
+  var bannerlink = document.getElementById("banner").getElementsByTagName("a")[0];
+  bannerlink.setAttribute("href", url);
+
   var bannerimg = document.getElementById("banner").getElementsByTagName("img")[0];
   bannerimg.setAttribute("src", image);
   bannerimg.setAttribute("alt", alt);

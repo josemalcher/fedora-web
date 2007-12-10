@@ -5,7 +5,7 @@
   py:strip="">
   <head py:match="head" py:attrs="select('@*')">
     <xi:include href="css.html" />
-    <!--<xi:include href="js.html" />-->
+    <xi:include href="js.html" />
     <meta py:replace="select('*|text()')" />
   </head>
   <py:match path="body" once="true">
