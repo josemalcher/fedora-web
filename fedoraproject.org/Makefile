@@ -8,6 +8,7 @@ PYBABEL = pybabel
 BASEPATH = /
 
 all: po/fedora-web.pot $(MO_FILES) $(LANGUAGES)
+	cp data/robots.txt	out/
 
 $(LANGUAGES): data/templates/translations.html
 	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -s static -b $(BASEPATH)
