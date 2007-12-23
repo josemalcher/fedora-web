@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Hosted Projects - Fedora Project')}</title>
+    <style type="text/css">
+    </style>
+  </head>
+  <body>
+    <h2>${_('Available Projects')}</h2>
+    <table>
+      <tr py:for="row, project in enumerate(projects)" class="row${row and 'sub' or 'first'}">
+        <td class="desccol"><a href="${project['id']}">${project['desc']}</a></td>
+        <td class="vcscol"><img src="static/images/blank.png"/></td>
+        <td class="vcscol"><img py:if="'vcs' in project and project['vcs']" class="vcsimg" src="static/images/vcs/${project['vcs']}.png" alt="[${project['vcs']}]" title="${project['vcs']}"/></td>
+        <td class="vcscol"><a py:if="'vcsuri' in project and project['vcsuri']" href="${project['vcsuri']}" onClick="javascript:return false;"><img src="static/images/copy.png" alt="copy" title="${_('Right-click and copy the VCS URI to your clipboard')}" /></a></td>
+        <td class="vcscol"><a py:if="'vcsweburl' in project and project['vcsweburl']" href="${project['vcsweburl']}" target="_blank"><img src="static/images/web.png" alt="browse"/></a></td>
+      </tr>
+    </table>
+  </body>
+</html>
