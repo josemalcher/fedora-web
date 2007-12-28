@@ -424,19 +424,35 @@ input, textarea, option
   background: #F2F5F6;
 }
 
-img.resource-icon {
-  float: left;
-  clear: right;
-  margin-right: 16px;
+#content ul#resources
+{
+  list-style: none;
 }
 
-div.resource {
-  width: 80%;
-  margin-bottom: 12px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid #eee;
+#content ul#resources a
+{
+  padding-left: 20px;
+  background: url(../images/arrow.png) 0 50% no-repeat;
 }
 
-img.resource-link {
-  margin-right: 8px;
+#content ul#resources li
+{
+  padding-left: 70px;
+  margin-bottom: 3.5ex;
 }
+
+ul#resources li.resource-docs
+{
+  background: url(../images/icon-docs.png) 0 50% no-repeat;
+}
+
+ul#resources li.resource-communicate
+{
+  background: url(../images/icon-communicate.png) 0 50% no-repeat;
+}
+
+ul#resources li.resource-download
+{
+  background: url(../images/icon-download.png) 0 50% no-repeat;
+}
+
