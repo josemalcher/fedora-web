@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Fedora Project')}</title>
+  </head>
+  <body>
+    <h2>${_('GPG keys used by Fedora Project')}</h2>
+    <h3>${_('How does Fedora Project use GPG keys to sign packages')}</h3>
+    <p>
+      ${_('Each stable RPM package that is published by Fedora Project is signed with a GPG signature.  By default, yum and the graphical update tools will verify these signatures and refuse to install any packages that are not signed or have bad signatures.  You should always verify the signature of a package before you install it.  These signatures ensure that the packages you install are what was produced by the Fedora Project and have not been altered (accidentally or maliciously) by any mirror or website that is providing the packages.')}
+    </p>
+    <p>
+      ${_('Packages that can be downloaded from koji build system do not contain signatures, so you should use them with caution.  Similarly, bleeding-edge packages in Rawhide are not necessarily signed.')}
+    </p>
+
+    <h3>${_('Importing keys')}</h3>
+    <p>
+      ${_('The keys are included in &lt;b&gt;fedora-release&lt;/b&gt; package, you can find them in &lt;b&gt;/etc/pki/rpm-gpg&lt;/b&gt; directory.  Please note that not all keys in this directory are used by Fedora project -- some are used for signing Red Hat Enterprise Linux packages or are no longer used at all. If you use Red Hat Enterprise Linux packages, see &lt;a href="http://www.redhat.com/security/team/key/"&gt;http://www.redhat.com/security/team/key&lt;/a&gt;.  The keys used by Fedora are enabled in the yum repository configuration, so you generally don\'t need to manually import them into the rpm database.')}
+    </p>
+    <p>
+      ${_('In addition to the fedora-release package and this web page, you can download the Fedora keys from a public key server, such as &lt;a href="http://pgp.mit.edu/"&gt;http://pgp.mit.edu/&lt;/a&gt;.')}
+    </p>
+    <p>
+      ${_('For some repositories, such as repositories with stable and testing packages in default configuration, &lt;b&gt;yum&lt;/b&gt; is able to find a proper key for the repository and asks the user for confirmation before importing the key if the key is not already imported into the rpm database.')}
+    </p>
+    <p>
+      ${_('You can always import a key into RPM\'s database by hand using the following command:')}
+      <pre class="command">rpm --import PUBKEY ...</pre>
+    </p>
+    <p>
+      ${_('Refer to &lt;b&gt;rpm&lt;/b&gt; manual for more information.')}
+    </p>
+    <p>
+      ${_('If you want to verify that the keys installed on your system match the keys listed here, you can import the key into GnuPG\'s keyring and check that the fingerprint of the key matches.  For example:')}
+
+      <pre class="command">$ gpg --import /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora
+...
+gpg: key 4F2A6FD2: public key "Fedora Project &lt;fedora@redhat.com&gt;" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+
+$ gpg --fingerprint fedora@redhat.com
+pub   1024D/4F2A6FD2 2003-10-27
+      Key fingerprint = CAB4 4B99 6F27 744E 8612  7CDF B442 69D0 4F2A 6FD2
+uid                  Fedora Project &lt;fedora@redhat.com&gt;
+sub   1024g/FB939E34 2003-10-27</pre>
+
+    </p>
+
+    <h3>Verifying a package</h3>
+    <p>
+      ${_('When using default configuration of &lt;b&gt;yum&lt;/b&gt; package updating and installation tool in stable releases, signature of each package is verified before it is installed.  Signature verification can be turned off and on globally or for specific repository with &lt;b&gt;gpgcheck&lt;/b&gt; directive.  Do not override the default setting of this directive unless you have a very good reason to do so.')}
+    </p>
+    <p>
+      ${_('If you do not use yum, you can check the signature of the package using the following command')}
+
+      <pre class="command">rpm {-K|--checksig} PACKAGE_FILE ...</pre>
+    </p>
+
+    <br/>
+
+    <h2>Currently used keys</h2>
+
+    <h3>RPM-GPG-KEY-fedora</h3>
+    <p>
+      <pre class="command">pub   1024D/4F2A6FD2 2003-10-27
+      Key fingerprint = CAB4 4B99 6F27 744E 8612  7CDF B442 69D0 4F2A 6FD2
+uid                  Fedora Project &lt;fedora@redhat.com&gt;
+sub   1024g/FB939E34 2003-10-27</pre>
+    </p>
+    <p>
+      <ul>
+        <li>${_('Fedora Core (version 6 and earlier)')}</li>
+        <li>${_('Fedora (version 7 and newer)')}</li>
+        <li>${_('Both GA and updates')}</li>
+      </ul>
+    </p>
+    <p>
+      ${_('If you use a recent stable release, this is the only key you will use.  Packages on installation media and all the updates you will install are signed with this key.  The relevant yum repositories are &lt;b&gt;fedora&lt;/b&gt;, &lt;b&gt;fedora-updates&lt;/b&gt; for Fedora 7 and later, and &lt;b&gt;core&lt;/b&gt; and &lt;b&gt;core-updates&lt;/b&gt; for Fedora Core (Version 6 and earlier).')}
+    </p>
+    <p>
+      <ul>
+        <li>${_('Path: &lt;a href="file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora"&gt;/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora&lt;/a&gt;')}</li>
+        <li>${_('Download: &lt;a href="http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&amp;op=index"&gt;pgp.mit.edu&lt;/a&gt;')}</li>
+      </ul>
+    </p>
+
+    <h3>RPM-GPG-KEY-fedora-test</h3>
+    <p>
+      <pre class="command">pub   1024D/30C9ECF8 2003-10-27
+      Key fingerprint = 3166 C14A AE72 30D9 3B7A  B2F6 DA84 CBD4 30C9 ECF8
+uid                  Fedora Project (Test Software) &lt;rawhide@redhat.com&gt;</pre>
+
+    </p>
+    <p>
+      <ul>
+        <li>${_('Fedora (version 7 and newer) testing updates')}</li>
+      </ul>
+    </p>
+    <p>
+      ${_('If you participate in testing of the packages, this is the key you will use to verify the testing packages.  This key signs the packages that are in &lt;b&gt;fedora-testing&lt;/b&gt; repository.')}
+    </p>
+    <p>
+      <ul>
+        <li>${_('Path: &lt;a href="file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test"&gt;/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test&lt;/a&gt;')}</li>
+        <li>${_('Download: &lt;a href="http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&amp;op=index"&gt;pgp.mit.edu&lt;/a&gt;')}</li>
+      </ul>
+    </p>
+
+    <h2>Obsolete keys</h2>
+
+    <h3>RPM-GPG-KEY-fedora-extras</h3>
+    <p>
+      <pre class="command">pub   1024D/1AC70CE6 2004-12-14
+      Key fingerprint = 5389 DD00 C5BC 5168 12B4  3272 82ED 9504 1AC7 0CE6
+uid                  Fedora Project &lt;fedora-extras@fedoraproject.org&gt;
+uid                  Fedora Pre Extras Release &lt;pre-extras@fedoraproject.org&gt;
+uid                  Fedora Project &lt;fedora-extras@redhat.com&gt;
+sub   1024g/4E1A9D43 2004-12-14</pre>
+    </p>
+    <p>
+      <ul>
+        <li>${_('Fedora Extras (version 6 and earlier)')}</li>
+      </ul>
+    </p>
+    <p>
+      ${_('If you are using Fedora Extras with Fedora Core 6, use this package from &lt;b&gt;extras&lt;/b&gt; repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007).  This key is not included in the &lt;b&gt;fedora-release&lt;/b&gt; package in Fedora 7 and later releases.')}
+    </p>
+    <p>
+      <ul>
+        <li>${_('Path: &lt;a href="file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora"&gt;/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras&lt;/a&gt;')}</li>
+        <li>${_('Download: &lt;a href="http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&amp;op=index"&gt;pgp.mit.edu&lt;/a&gt;')}</li>
+      </ul>
+    </p>
+
+    <h3>RPM-GPG-KEY-legacy</h3>
+    <p>
+      <pre class="command">pub   1024D/731002FA 2004-01-19
+      Key fingerprint = D66D 121F 9784 5E7B 2757  8C46 108C 4512 7310 02FA
+uid                  Fedora Legacy (http://www.fedoralegacy.org) &lt;secnotice@fedoralegacy.org&gt;
+sub   2048g/D12E351D 2004-01-19</pre>
+    </p>
+    <p>
+      <ul>
+        <li>Fedora Legacy</li>
+      </ul>
+    </p>
+    <p>
+      ${_('This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the &lt;b&gt;fedora-release&lt;/b&gt; package in Fedora 7 and later releases.')}
+    </p>
+
+  </body>
+</html>
