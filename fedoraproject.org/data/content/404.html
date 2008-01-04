@@ -8,33 +8,27 @@
   </head>
   <body class="404">
     <h2>${_("Sorry!  We couldn't find that file")}</h2>
-      <p>${_('We apologize, but the file you requested could not be found.')}</p>
-      <ul>
-        <li>${_('Double-check the URL if you entered it manually. Did you copy it correctly?')}</li>
-        <li>${_('Did a bad link bring you here? Contact ')}<a href="mailto:webmaster@fedoraproject.org">${_('the fedoraproject.org webmaster')}</a>${_(' and let them know which link brought you here.')}</li>
-        <li>${_('The file you are looking for may have moved. Check our main site at ')}<a href="http://fedoraproject.org/wiki/FedoraMain">http://fedoraproject.org/wiki/FedoraMain</a>${_(' and use the search box at the top to search for the file you are looking for')}.</li>
-      </ul>
+    <p>${_('We apologize, but the file you requested could not be found.')}</p>
+    <ul>
+      <li>${_('Double-check the URL if you entered it manually. Did you copy it correctly?')}</li>
+      <li>${_('Did a bad link bring you here? Contact ')}<a href="mailto:webmaster@fedoraproject.org">${_('the fedoraproject.org webmaster')}</a>${_(' and let them know which link brought you here.')}</li>
+      <li>${_('The file you are looking for may have moved. Check our main site at &lt;a href="http://fedoraproject.org/"&gt;http://fedoraproject.org/&lt;/a&gt; or search our &lt;a href="http://fedoraproject.org/wiki/"&gt;wiki&lt;/a&gt;.')}</li>
+    </ul>
     <h2>${_('Fedora Resources')}</h2>
-    <div class="resource">
-      <img class="resource-icon" src="static/images/icon-docs.png" alt="docs icon" />
+    <ul id="resources">
+      <li class="resource-docs">
       <h3>${_('Fedora Documentation')}</h3>
-      <br />
-      <img src="static/images/arrow.png" alt="" class="resource-link" /><a class="resource-link" href="http://docs.fedoraproject.org">http://docs.fedoraproject.org/</a>
-    </div>
-    <div class="resource">
-      <img class="resource-icon" src="static/images/icon-communicate.png" alt="community icon" />
-      <h3>Connect with the Fedora Community</h3>
-      <br />
-      <img src="static/images/arrow.png" alt="" class="resource-link" /><a class="resource-link" href="http://fedoraproject.org/wiki/Communicate">http://fedoraproject.org/wiki/Communicate</a>
-    </div>
-
-    <div class="resource">
-      <img class="resource-icon" src="static/images/icon-download.png" alt="download icon" />
-      <h3>Download Fedora!</h3>
-      <br />
-      <img src="static/images/arrow.png" alt="" class="resource-link" /><a class="resource-link" href="http://fedoraproject.org/wiki/Distribution/Download">http://fedoraproject.org/wiki/Distribution/Download</a>
-    </div>
-
+      <a href="http://docs.fedoraproject.org">http://docs.fedoraproject.org/</a>
+      </li>
+      <li class="resource-communicate">
+      <h3>${_('Connect with the Fedora Community')}</h3>
+      <a href="http://fedoraproject.org/wiki/Communicate">http://fedoraproject.org/wiki/Communicate</a>
+      </li>
+      <li class="resource-download">
+      <h3>${_('Download Fedora!')}</h3>
+      <a href="${relpath}/get-fedora">http://fedoraproject.org/get-fedora</a>
+      </li>
+    </ul>
   </body>
 </html>
 

@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: fpo static website\n"
-"Report-Msgid-Bugs-To: fedora-trans-de@redhat.com\n"
-"POT-Creation-Date: 2007-12-18 13:04-0600\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2007-12-28 16:29-0500\n"
 "PO-Revision-Date: 2007-12-22 23:50+0100\n"
 "Last-Translator: Robert Scheck <robert@fedoraproject.org>\n"
 "Language-Team: Fedora Translation <fedora-trans-de@redhat.com>\n"
@@ -49,12 +49,8 @@ msgid " and let them know which link brought you here."
 msgstr " und teilen Sie uns mit, welcher Link Sie auf diese Seite geführt hat."
 
 #: data/content/404.html:15
-msgid "The file you are looking for may have moved. Check our main site at "
-msgstr "Die Seite, die Sie sich ansehen wollten, wurde vielleicht verschoben. Besuchen Sie unsere Hauptseite unter "
-
-#: data/content/404.html:15
-msgid " and use the search box at the top to search for the file you are looking for"
-msgstr " und benutzen Sie das Suchfeld oben auf der Seite, um die eigentliche Seite zu finden, die Sie sich ansehen wollten."
+msgid "The file you are looking for may have moved. Check our main site at <a href=\"http://fedoraproject.org/\">http://fedoraproject.org/</a> or search our <a href=\"http://fedoraproject.org/wiki/\">wiki</a>."
+msgstr ""
 
 #: data/content/404.html:17
 msgid "Fedora Resources"
@@ -63,6 +59,16 @@ msgstr "Fedora-Ressourcen"
 #: data/content/404.html:20
 msgid "Fedora Documentation"
 msgstr "Fedora-Dokumentation"
+
+#: data/content/404.html:24
+#, fuzzy
+msgid "Connect with the Fedora Community"
+msgstr "Stimmen der Fedora-Community"
+
+#: data/content/404.html:28
+#, fuzzy
+msgid "Download Fedora!"
+msgstr "Mithelfen"
 
 #: data/content/get-fedora.html:12
 msgid "Fedora, For You."
@@ -262,6 +268,10 @@ msgstr "Fedora-Sponsoren"
 msgid "The Fedora Project is proud to have the following organizations as sponsors:"
 msgstr "Das Fedora-Projekt ist stolz darauf, die folgenden Organisationen als Sponsoren zu haben:"
 
+#: data/content/sponsors.html:24
+msgid "Interested in sponsoring something for Fedora?  Contact admin at fedoraproject * org or stop by #fedora-admin on irc.freenode.net."
+msgstr ""
+
 #: data/content/verify.html:10
 msgid "Verify your ISO download."
 msgstr "ISO-Dateien überprüfen"
@@ -282,19 +292,19 @@ msgstr "DVD / Rettungs-CD"
 msgid "Live Media (both GNOME and KDE)"
 msgstr "Live-Medien (GNOME und KDE)"
 
-#: data/content/verify.html:29
+#: data/content/verify.html:30
 msgid "Next, import Fedora's GPG key:"
 msgstr "Importieren Sie danach den GPG-Schlüssel von Fedora:"
 
-#: data/content/verify.html:34
+#: data/content/verify.html:35
 msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID 4F2A6FD2."
 msgstr "Um zu überprüfen, ob die SHA1SUM-Datei gültig ist, müssen Sie sicherstellen, dass die Signatur von der Schlüssel-ID 4F2A6FD2 stammt."
 
-#: data/content/verify.html:38
+#: data/content/verify.html:39
 msgid "Finally, now that the SHA1SUM file has been verified, check that the ISO's checksum matches:"
 msgstr "Abschließend, nachdem die SHA1SUM-Datei überprüft worden ist, können Sie nun kontrollieren, ob die Prüfsumme der ISO-Datei stimmt:"
 
-#: data/content/verify.html:42
+#: data/content/verify.html:43
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "Wenn die Ausgabe ergibt, dass die Datei korrekt ist, können Sie loslegen!"
 
@@ -386,3 +396,9 @@ msgstr "Fedora kontaktieren"
 #: data/templates/sidebar.html:24
 msgid "Website Language"
 msgstr "Sprache"
+
+#~ msgid "The file you are looking for may have moved. Check our main site at "
+#~ msgstr "Die Seite, die Sie sich ansehen wollten, wurde vielleicht verschoben. Besuchen Sie unsere Hauptseite unter "
+
+#~ msgid " and use the search box at the top to search for the file you are looking for"
+#~ msgstr " und benutzen Sie das Suchfeld oben auf der Seite, um die eigentliche Seite zu finden, die Sie sich ansehen wollten."

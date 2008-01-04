@@ -1,4 +1,4 @@
-# translation of el.po to Greek
+# translation of fedora-web.master.po to Greek
 # Translations template for PROJECT.
 # Copyright (C) 2007 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
@@ -7,16 +7,17 @@
 # Dimitris Glezos <dimitris@glezos.com>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: el\n"
+"Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2007-12-18 13:04-0600\n"
-"PO-Revision-Date: 2007-11-10 16:35-0500\n"
-"Last-Translator: NikosCharonitakis <nikosx@gmail.com>\n"
+"POT-Creation-Date: 2007-12-28 16:29-0500\n"
+"PO-Revision-Date: 2007-12-23 17:11+0200\n"
+"Last-Translator: Dimitris Glezos <dimitris@glezos.com>\n"
 "Language-Team: Greek <fedora-trans-el@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.11.4\n"
 
 #: data/content/404.html:7 data/content/get-fedora.html:7
 #: data/content/index.html:7 data/content/join-fedora.html:7
@@ -27,45 +28,49 @@ msgstr "Έργο Fedora"
 
 #: data/content/404.html:10
 msgid "Sorry!  We couldn't find that file"
-msgstr ""
+msgstr "Ουπς! Το αρχείο αυτό δε μπόρεσε να βρεθεί"
 
 #: data/content/404.html:11
 msgid "We apologize, but the file you requested could not be found."
-msgstr ""
+msgstr "Λυπούμαστε, αλλά το αρχείο που ζητήσατε δε μπόρεσε να βρεθεί."
 
 #: data/content/404.html:13
 msgid "Double-check the URL if you entered it manually. Did you copy it correctly?"
-msgstr ""
+msgstr "Ελέγξτε το URL αν το έχετε εισάγει χειροκίνητα."
 
 #: data/content/404.html:14
 msgid "Did a bad link bring you here? Contact "
-msgstr ""
+msgstr "Αν ακολουθήσατε ένα λανθασμένο σύνδεσμο για να φτάσετε εδώ, επικοινωνήστε με τον "
 
 #: data/content/404.html:14
 msgid "the fedoraproject.org webmaster"
-msgstr ""
+msgstr "διαχειριστή ιστότοπων του fedoraproject.org"
 
 #: data/content/404.html:14
 msgid " and let them know which link brought you here."
-msgstr ""
+msgstr "και ενημερώστε τον για το σύνδεσμο που σας έφερε εδώ."
 
 #: data/content/404.html:15
-msgid "The file you are looking for may have moved. Check our main site at "
-msgstr ""
-
-#: data/content/404.html:15
-msgid " and use the search box at the top to search for the file you are looking for"
+msgid "The file you are looking for may have moved. Check our main site at <a href=\"http://fedoraproject.org/\">http://fedoraproject.org/</a> or search our <a href=\"http://fedoraproject.org/wiki/\">wiki</a>."
 msgstr ""
 
 #: data/content/404.html:17
-#, fuzzy
 msgid "Fedora Resources"
-msgstr "Χορηγοί του Fedora"
+msgstr "Μέσα Fedora"
 
 #: data/content/404.html:20
-#, fuzzy
 msgid "Fedora Documentation"
-msgstr "Τεκμηρίωση Fedora."
+msgstr "Τεκμηρίωση Fedora"
+
+#: data/content/404.html:24
+#, fuzzy
+msgid "Connect with the Fedora Community"
+msgstr "Η φωνή της κοινότητας Fedora."
+
+#: data/content/404.html:28
+#, fuzzy
+msgid "Download Fedora!"
+msgstr "Συμμετοχή στο Fedora"
 
 #: data/content/get-fedora.html:12
 msgid "Fedora, For You."
@@ -265,42 +270,45 @@ msgstr "Χορηγοί του Fedora"
 msgid "The Fedora Project is proud to have the following organizations as sponsors:"
 msgstr "Το Έργο Fedora είναι υπερήφανο που έχει τους παρακάτω οργανισμούς ως χορηγούς:"
 
+#: data/content/sponsors.html:24
+msgid "Interested in sponsoring something for Fedora?  Contact admin at fedoraproject * org or stop by #fedora-admin on irc.freenode.net."
+msgstr ""
+
 #: data/content/verify.html:10
 msgid "Verify your ISO download."
-msgstr ""
+msgstr "Πιστοποιήστε τη λήψη του ISO σας."
 
 #: data/content/verify.html:12
 msgid "Windows user?  Follow <a href=\"http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html\">these instructions</a> instead."
-msgstr ""
+msgstr "Χρήστης Windows;  Ακολουθήστε <a href=\"http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html\">αυτές τις οδηγίες</a>."
 
 #: data/content/verify.html:15
 msgid "Once you have downloaded an ISO, verify it for security and integrity.  If you downloaded your ISO via BitTorrent, the file has already been verified as part of the download process (just make sure that you got the torrent from <a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a>).  Otherwise, to verify your ISO, start by downloading the proper SHA1SUM file into the same directory as the ISO:"
-msgstr ""
+msgstr "Όταν λάβετε μια εικόνα ISO, πιστοποιήστε την για ασφάλεια και εγκυρότητα. Αν έρχετε λάβει το ISO σας μέσω BitTorrent, το αρχείο έχει ήδη πιστοποιηθεί κατά τη διαδικασία λήψης (απλά βεβαιωθείτε πως το torrent προέρχεται από το <a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a>).  Αλλιώς, για να βεβαιώσετε το ISO σας, αρχίστε τη λήψη του αντίστοιχου SHA1SUM αρχείο στον ίδιο κατάλογο με το ISO:"
 
 #: data/content/verify.html:17
-#, fuzzy
 msgid "Install DVD / Rescue CD"
-msgstr "Εγκατάσταση DVD"
+msgstr "Εγκατάσταση DVD / CD διάσωσης"
 
 #: data/content/verify.html:23
 msgid "Live Media (both GNOME and KDE)"
-msgstr ""
+msgstr "Ζωντανές εικόνες (τόσο GNOME όσο και KDE)"
 
-#: data/content/verify.html:29
+#: data/content/verify.html:30
 msgid "Next, import Fedora's GPG key:"
-msgstr ""
+msgstr "Κατόπιν, εισάγετε το κλειδί GPG του Fedora:"
 
-#: data/content/verify.html:34
+#: data/content/verify.html:35
 msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID 4F2A6FD2."
-msgstr ""
+msgstr "Τώρα, για να πιστοποιήσετε ότι το αρχείο SHA1SUM είναι έγκυρο, βεβαιωθείτε ότι έχει μια καλή υπογραφή από το κλειδί με ID 4F2A6FD2."
 
-#: data/content/verify.html:38
+#: data/content/verify.html:39
 msgid "Finally, now that the SHA1SUM file has been verified, check that the ISO's checksum matches:"
-msgstr ""
+msgstr "Τέλος, τώρα που το αρχείο SHA1SUM έχει πιστοποιηθεί, ελέγξτε ότι το checksum του ISO ταιριάζει:"
 
-#: data/content/verify.html:42
+#: data/content/verify.html:43
 msgid "If the output states that the file is valid, you're good to go!"
-msgstr ""
+msgstr "Αν η έξοδος δηλώνει ότι το αρχείο είναι έγκυρο, όλα πήγαν καλά!"
 
 #: data/templates/foot.html:9
 msgid "Copyright &copy; 2007 Red Hat, Inc. and others.  All Rights Reserved.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
@@ -390,3 +398,9 @@ msgstr "Μιλήστε με το Fedora."
 #: data/templates/sidebar.html:24
 msgid "Website Language"
 msgstr "Γλώσσα ιστοσελίδας"
+
+#~ msgid "The file you are looking for may have moved. Check our main site at "
+#~ msgstr "Το αρχείο που ψάχνετε πιθανώς έχει μετακινηθεί. Ελέγξτε τον κύριο ιστότοπο μας στο "
+
+#~ msgid " and use the search box at the top to search for the file you are looking for"
+#~ msgstr " και χρησιμοποιήστε το κουτί αναζήτησης στην κορυφή για να βρείτε το αρχείο που ψάχνετε"

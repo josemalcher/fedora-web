@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora web 8\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2007-12-18 13:04-0600\n"
+"POT-Creation-Date: 2007-12-28 16:29-0500\n"
 "PO-Revision-Date: 2007-11-16 15:54+0800\n"
 "Last-Translator: 王剑 <wj2552@163.com>\n"
 "Language-Team: fedora-cn <fedora-trans-zh_cn@redhat.com>\n"
@@ -47,11 +47,7 @@ msgid " and let them know which link brought you here."
 msgstr ""
 
 #: data/content/404.html:15
-msgid "The file you are looking for may have moved. Check our main site at "
-msgstr ""
-
-#: data/content/404.html:15
-msgid " and use the search box at the top to search for the file you are looking for"
+msgid "The file you are looking for may have moved. Check our main site at <a href=\"http://fedoraproject.org/\">http://fedoraproject.org/</a> or search our <a href=\"http://fedoraproject.org/wiki/\">wiki</a>."
 msgstr ""
 
 #: data/content/404.html:17
@@ -63,6 +59,16 @@ msgstr "Fedora 赞助者"
 #, fuzzy
 msgid "Fedora Documentation"
 msgstr "Fedora 文档。"
+
+#: data/content/404.html:24
+#, fuzzy
+msgid "Connect with the Fedora Community"
+msgstr "Fedora 社区的声音。"
+
+#: data/content/404.html:28
+#, fuzzy
+msgid "Download Fedora!"
+msgstr "加入 Fedora"
 
 #: data/content/get-fedora.html:12
 msgid "Fedora, For You."
@@ -262,6 +268,10 @@ msgstr "Fedora 赞助者"
 msgid "The Fedora Project is proud to have the following organizations as sponsors:"
 msgstr "Fedora 项目有下列组织赞助："
 
+#: data/content/sponsors.html:24
+msgid "Interested in sponsoring something for Fedora?  Contact admin at fedoraproject * org or stop by #fedora-admin on irc.freenode.net."
+msgstr ""
+
 #: data/content/verify.html:10
 msgid "Verify your ISO download."
 msgstr "验证你的 ISO 下载"
@@ -282,19 +292,19 @@ msgstr "安装 DVD / Rescue CD"
 msgid "Live Media (both GNOME and KDE)"
 msgstr "Live 介质(包括 GNOME 和 KDE)"
 
-#: data/content/verify.html:29
+#: data/content/verify.html:30
 msgid "Next, import Fedora's GPG key:"
 msgstr "下一步，导入 Fedora 的 GPG 密钥;"
 
-#: data/content/verify.html:34
+#: data/content/verify.html:35
 msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID 4F2A6FD2."
 msgstr "现在，为了验证 SHA1SUM 文件的有效性，确认来自 key ID 为 4F2A6FD2 的正确的签名。"
 
-#: data/content/verify.html:38
+#: data/content/verify.html:39
 msgid "Finally, now that the SHA1SUM file has been verified, check that the ISO's checksum matches:"
 msgstr "既然已经验证完毕 SHA1SUM 文件，最后，检查 ISO 文件的校验和是否正确。 "
 
-#: data/content/verify.html:42
+#: data/content/verify.html:43
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "如果输出显示文件是有效的，你可以继续下一个步骤了！"
 
