@@ -4,7 +4,7 @@
   xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="../templates/master.html" />
   <head>
-    <title>${_('Hosted Projects - Fedora Project')}</title>
+    <title>${_('Hosted Projects - Fedora Hosted')}</title>
     <style type="text/css">
     </style>
   </head>
@@ -19,6 +19,5 @@
         <td class="vcscol"><a py:if="'vcsweburl' in project and project['vcsweburl']" href="${project['vcsweburl']}" target="_blank"><img src="static/images/web.png" alt="browse"/></a></td>
       </tr>
     </table>
-    <p><a href="new">${_('Request a New Project')}</a></p>
   </body>
 </html>
