@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2007-12-28 16:29-0500\n"
+"POT-Creation-Date: 2008-01-16 15:03-0500\n"
 "PO-Revision-Date: 2007-12-23 17:11+0200\n"
 "Last-Translator: Dimitris Glezos <dimitris@glezos.com>\n"
 "Language-Team: Greek <fedora-trans-el@redhat.com>\n"
@@ -21,8 +21,8 @@ msgstr ""
 
 #: data/content/404.html:7 data/content/get-fedora.html:7
 #: data/content/index.html:7 data/content/join-fedora.html:7
-#: data/content/relnotes.html:7 data/content/sponsors.html:7
-#: data/content/verify.html:7
+#: data/content/keys.html:7 data/content/relnotes.html:7
+#: data/content/sponsors.html:7 data/content/verify.html:7
 msgid "Fedora Project"
 msgstr "Έργο Fedora"
 
@@ -112,8 +112,9 @@ msgid "Direct Download"
 msgstr "Άμεση λήψη"
 
 #: data/content/get-fedora.html:33
-msgid "GNOME Live Media"
-msgstr "Ζωντανή εικόνα GNOME"
+#, fuzzy
+msgid "Fedora Desktop Live Media"
+msgstr "Ζωντανή εικόνα KDE"
 
 #: data/content/get-fedora.html:38 data/content/get-fedora.html:46
 #: data/content /get-fedora.html:58 data/content/get-fedora.html:65
@@ -132,7 +133,8 @@ msgid "Live DVD"
 msgstr "Ζωντανό DVD"
 
 #: data/content/get-fedora.html:53
-msgid "KDE Live Media"
+#, fuzzy
+msgid "Fedora KDE Live Media"
 msgstr "Ζωντανή εικόνα KDE"
 
 #: data/content/get-fedora.html:71
@@ -237,6 +239,131 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/Join#Translator\"><img src=\"%s/
 #, python-format
 msgid "<a href=\"http://fedoraproject.org/wiki/Join#WebDeveloperAdministrator\"><img src=\"%s/static/images/WebDeveloper.png\" alt=\"Web Developer or Administrator\"><br>Web Developer<br>or Administrator</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Join#WebDeveloperAdministrator\"><img src=\"%s/static/images/WebDeveloper.png\" alt=\"Προγραμματιστής Ιστού ή Διαχειριστής\"><br>Προγραμματιστής Ιστού ή Διαχειριστής</a>"
+
+#: data/content/keys.html:10
+#, fuzzy
+msgid "GPG keys used by Fedora Project"
+msgstr "Έργο Fedora"
+
+#: data/content/keys.html:11
+msgid "How does Fedora Project use GPG keys to sign packages"
+msgstr ""
+
+#: data/content/keys.html:13
+msgid "Each stable RPM package that is published by Fedora Project is signed with a GPG signature.  By default, yum and the graphical update tools will verify these signatures and refuse to install any packages that are not signed or have bad signatures.  You should always verify the signature of a package before you install it.  These signatures ensure that the packages you install are what was produced by the Fedora Project and have not been altered (accidentally or maliciously) by any mirror or website that is providing the packages."
+msgstr ""
+
+#: data/content/keys.html:16
+msgid "Packages that can be downloaded from koji build system do not contain signatures, so you should use them with caution.  Similarly, bleeding-edge packages in Rawhide are not necessarily signed."
+msgstr ""
+
+#: data/content/keys.html:19
+msgid "Importing keys"
+msgstr ""
+
+#: data/content/keys.html:21
+msgid "The keys are included in <strong>fedora-release</strong> package, you can find them in <strong>/etc/pki/rpm-gpg</strong> directory.  Please note that not all keys in this directory are used by Fedora project -- some are used for signing Red Hat Enterprise Linux packages or are no longer used at all. If you use Red Hat Enterprise Linux packages, see <a href=\"http://www.redhat.com/security/team/key/\">http://www.redhat.com/security/team/key</a>.  The keys used by Fedora are enabled in the yum repository configuration, so you generally don't need to manually import them into the rpm database."
+msgstr ""
+
+#: data/content/keys.html:24
+msgid "In addition to the fedora-release package and this web page, you can download the Fedora keys from a public key server, such as <a href=\"http://pgp.mit.edu/\">http://pgp.mit.edu/</a>."
+msgstr ""
+
+#: data/content/keys.html:27
+msgid "For some repositories, such as repositories with stable and testing packages in default configuration, <strong>yum</strong> is able to find a proper key for the repository and asks the user for confirmation before importing the key if the key is not already imported into the rpm database."
+msgstr ""
+
+#: data/content/keys.html:30
+msgid "You can always import a key into RPM's database by hand using the following command:"
+msgstr ""
+
+#: data/content/keys.html:34
+msgid "Refer to <strong>rpm</strong> manual for more information."
+msgstr ""
+
+#: data/content/keys.html:37
+msgid "If you want to verify that the keys installed on your system match the keys listed here, you can import the key into GnuPG's keyring and check that the fingerprint of the key matches.  For example:"
+msgstr ""
+
+#: data/content/keys.html:53
+msgid "Verifying a package"
+msgstr ""
+
+#: data/content/keys.html:55
+msgid "When using default configuration of <strong>yum</strong> package updating and installation tool in stable releases, signature of each package is verified before it is installed.  Signature verification can be turned off and on globally or for specific repository with <strong>gpgcheck</strong> directive.  Do not override the default setting of this directive unless you have a very good reason to do so."
+msgstr ""
+
+#: data/content/keys.html:58
+msgid "If you do not use yum, you can check the signature of the package using the following command"
+msgstr ""
+
+#: data/content/keys.html:63
+msgid "Currently used keys"
+msgstr ""
+
+#: data/content/keys.html:74
+msgid "Fedora Core (version 6 and earlier)"
+msgstr ""
+
+#: data/content/keys.html:75
+msgid "Fedora (version 7 and newer)"
+msgstr ""
+
+#: data/content/keys.html:76
+msgid "Both GA and updates"
+msgstr ""
+
+#: data/content/keys.html:80
+msgid "If you use a recent stable release, this is the only key you will use.  Packages on installation media and all the updates you will install are signed with this key.  The relevant yum repositories are <strong>fedora</strong>, <strong>fedora-updates</strong> for Fedora 7 and later, and <strong>core</strong> and <strong>core-updates</strong> for Fedora Core (Version 6 and earlier)."
+msgstr ""
+
+#: data/content/keys.html:84
+msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
+msgstr ""
+
+#: data/content/keys.html:85
+msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
+msgstr ""
+
+#: data/content/keys.html:98
+msgid "Fedora (version 7 and newer) testing updates"
+msgstr ""
+
+#: data/content/keys.html:102
+msgid "If you participate in testing of the packages, this is the key you will use to verify the testing packages.  This key signs the packages that are in <strong>fedora-testing</strong> repository."
+msgstr ""
+
+#: data/content/keys.html:106
+msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
+msgstr ""
+
+#: data/content/keys.html:107
+msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
+msgstr ""
+
+#: data/content/keys.html:111
+msgid "Obsolete keys"
+msgstr ""
+
+#: data/content/keys.html:124
+msgid "Fedora Extras (version 6 and earlier)"
+msgstr ""
+
+#: data/content/keys.html:128
+msgid "If you are using Fedora Extras with Fedora Core 6, use this package from <strong>extras</strong> repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007).  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
+msgstr ""
+
+#: data/content/keys.html:132
+msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
+msgstr ""
+
+#: data/content/keys.html:133
+msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&op=index\">pgp.mit.edu</a>"
+msgstr ""
+
+#: data/content/keys.html:150
+msgid "This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
+msgstr ""
 
 #: data/content/relnotes.html:10
 msgid "Fedora 8 Release Notes"
@@ -398,6 +525,9 @@ msgstr "Μιλήστε με το Fedora."
 #: data/templates/sidebar.html:24
 msgid "Website Language"
 msgstr "Γλώσσα ιστοσελίδας"
+
+#~ msgid "GNOME Live Media"
+#~ msgstr "Ζωντανή εικόνα GNOME"
 
 #~ msgid "The file you are looking for may have moved. Check our main site at "
 #~ msgstr "Το αρχείο που ψάχνετε πιθανώς έχει μετακινηθεί. Ελέγξτε τον κύριο ιστότοπο μας στο "
