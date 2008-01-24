@@ -77,7 +77,10 @@ cat << EOM>> $outfile
           padding-top: 0.5ex;
           ">
           Contact: <a href="mailto:admin at fedoraproject.org">admin at fedoraproject.org</a><br />
-          <a href="http://linux.dell.com"><img src="http://torrent.fedoraproject.org/images/poweredby_horizontal_lr.gif" alt="Powered by Dell" /></a>
+          <ul id="sponsors">
+            <li><a href="http://linux.dell.com"><img src="http://torrent.fedoraproject.org/images/poweredby_horizontal_lr.gif" alt="Powered by Dell" width="106" height="35"/></a></li>
+            <li><a href="http://linux.duke.edu/"><img src="http://fedoraproject.org/static/images/sponsors/duke.png" width="81" height="68" alt="Duke Linux edu" /></a></li>
+          </ul>
         </div>
       </div>
     </div>
