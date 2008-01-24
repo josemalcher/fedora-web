@@ -1,13 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
-  
   <head>
     <title>Fedora Project - Start Page</title>
-    <style type="text/css" media="screen">
-      @import url("css/fedora.css");
-      @import url("css/style.css");
-    </style>
-
+    <script type="text/javascript" src="http://fedoraproject.org/static/js/banner.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="http://fedoraproject.org/static/css/fedora.css">
+    <link rel="stylesheet" type="text/css" media="all" href="static/css/style.css">
     <!--[if lt IE 7]>
     <style type="text/css">
       #wrapper
@@ -17,68 +14,69 @@
       }
     </style>
     <![endif]-->
-
   </head>
-
   <body onload="document.f.q.focus();">
     <div id="wrapper">
       <div id="head">
         <h1><a href="http://fedoraproject.org/index.html">Fedora</a></h1>
       </div>
       <div id="sidebar">
-         <div class="nav">
-          </div>        
+        <div id="banner">
+          <a href="http://fedoraproject.org/get-fedora"><img style="border: none;" src="http://fedoraproject.org/static/images/banners/f8-banner-animation.gif" alt="Fedora 8 Werewolf is here!"></a>
+        </div>
+        <div class="nav">
+        </div>        
       </div>
       <div id="content">
-         <form action="http://www.google.com/search" name="f">
-				  <table cellpadding="0" cellspacing="0">
-					<tbody>
-					 <tr valign="middle">
-					  <td colspan="2" align="left">
-					    <div><span>Web</span></div>
-				   	  </td>
-				   	  <td><!--Cell above Search button--></td>
-					 </tr>
-					 <tr>
-					  <td colspan="2">
-						<div style="position: relative; margin-right: 8px; margin-top: 4px; margin-bottom: 4px;">
-				  		  <input name="q" style="width: 100%;">
-						</div>
-					  </td>
-   					  <td>
-						<div style="margin-top: 4px; margin-bottom: 4px;">
-						  <input type="submit" value="Search"/>
-						</div>
-					   </td>
-					  </tr>
-					  <tr>
-					   <td>
-						<div style="margin-right: 4px;">Return results that are
-   						  <select name="as_rights">
-   						      <option value="">Not filtered by license</option>
-							  <option value="(cc_publicdomain|cc_attribute|cc_sharealike|cc_noncommercial|cc_nonderived)">Free to use or share</option>
-  							  <option value="(cc_publicdomain|cc_attribute|cc_sharealike|cc_nonderived).-(cc_noncommercial)">Free to use or share commercially</option>
-				 			  <option value="(cc_publicdomain|cc_attribute|cc_sharealike|cc_noncommercial).-(cc_nonderived)">Free to use, share or modify</option>
-				 			  <option value="(cc_publicdomain|cc_attribute|cc_sharealike).-(cc_noncommercial|cc_nonderived)">Free to use, share or modify commercially</option>
-						  </select>
-						</div>
-  					  </td>
-					  <td align="right"><a href="http://creativecommons.org/"><img src="images/cc_logo_76x18.png" style="width: 76px; height: 18px;"/></a></td>
-					  <td><!--Cell below Search button--></td>
-					</tr>
-                    <tr>
-                     <td colspan=4>
-                        <center>
-                        Fedora: <a href="http://fedoraproject.org/relnotes">Release Notes</a> | 
-                        <a href="http://fedoraproject.org/join-fedora">Join</a> | 
-                        <a href="http://fedoraproject.org/wiki/Communicate">Speak</a> | 
-                        <a href="http://docs.fedoraproject.org">Documentation</a>
-                        </center>
-                     </td>
-                    </tr> 
-				   </tbody>
-   		          </table>
-            </form>
+        <form action="http://www.google.com/search" name="f">
+          <table cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr valign="middle">
+                <td colspan="2" align="left">
+                  <div><span>Web</span></div>
+                </td>
+                <td><!--Cell above Search button--></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <div style="position: relative; margin-right: 8px; margin-top: 4px; margin-bottom: 4px;">
+                    <input name="q" style="width: 100%;">
+                  </div>
+                </td>
+                <td>
+                  <div style="margin-top: 4px; margin-bottom: 4px;">
+                    <input type="submit" value="Search"/>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="margin-right: 4px;">Return results that are
+                    <select name="as_rights">
+                      <option value="">Not filtered by license</option>
+                      <option value="(cc_publicdomain|cc_attribute|cc_sharealike|cc_noncommercial|cc_nonderived)">Free to use or share</option>
+                      <option value="(cc_publicdomain|cc_attribute|cc_sharealike|cc_nonderived).-(cc_noncommercial)">Free to use or share commercially</option>
+                      <option value="(cc_publicdomain|cc_attribute|cc_sharealike|cc_noncommercial).-(cc_nonderived)">Free to use, share or modify</option>
+                      <option value="(cc_publicdomain|cc_attribute|cc_sharealike).-(cc_noncommercial|cc_nonderived)">Free to use, share or modify commercially</option>
+                    </select>
+                  </div>
+                </td>
+                <td align="right"><a href="http://creativecommons.org/"><img src="static/images/cc_logo_76x18.png" style="width: 76px; height: 18px;"/></a></td>
+                <td><!--Cell below Search button--></td>
+              </tr>
+              <tr>
+                <td colspan=4>
+                  <center>
+                    Fedora: <a href="http://fedoraproject.org/relnotes">Release Notes</a> | 
+                    <a href="http://fedoraproject.org/join-fedora">Join</a> | 
+                    <a href="http://fedoraproject.org/wiki/Communicate">Speak</a> | 
+                    <a href="http://docs.fedoraproject.org">Documentation</a>
+                  </center>
+                </td>
+              </tr> 
+            </tbody>
+          </table>
+        </form>
       </div>
     </div>
     <div id="bottom">
