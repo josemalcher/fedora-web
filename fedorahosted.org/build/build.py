@@ -13,6 +13,8 @@ import timing
 import re
 import shutil
 import csv
+import iniparse
+import urlparse
 
 from optparse import OptionParser
 
@@ -35,20 +37,13 @@ def process(args):
             if os.path.exists(outpath):
                 shutil.rmtree(outpath)
             copytree(dir, outpath)
-    projects = []
-    for line in csv.reader(open(options.data, 'r')):
-        if not line[0].startswith('#'):
-            project={
-                    'id': line[0],
-                    'desc': line[1]
-            }
-            if len(line) > 2:
-                project['vcs'] = line[2]
-            if len(line) > 3:
-                project['vcsuri'] = line[3]
-            if len(line) > 4:
-                project['vcsweburl'] = line[4]
-            projects.append(project)
+    if options.trac and os.path.isdir(options.trac):
+        projects = read_trac(options.trac)
+    else:
+        if options.data:
+            projects = read_data(options.data)
+        else:
+            projects = []
     timing.start()
     for dirpath, dirnames, filenames in os.walk(options.input):
         try:
@@ -60,6 +55,43 @@ def process(args):
                 raise
     timing.finish()
     print 'Website build time: %s' % timing.milli()
+
+def read_data(filename):
+    projects = []
+    for line in csv.reader(open(filename, 'r')):
+        if not line[0].startswith('#'):
+            project = {
+                'id': line[0],
+                'desc': line[1]
+            }
+            if len(line) > 2:
+                project['vcs'] = line[2]
+            if len(line) > 3:
+                project['vcsuri'] = line[3]
+            if len(line) > 4:
+                project['vcsweburl'] = line[4]
+            projects.append(project)
+    return projects
+
+def read_trac(path):
+    projects = []
+    for dir in os.listdir(path):
+        filename = os.path.join(path, dir, 'conf', 'trac.ini')
+        if os.path.isfile(filename):
+            conf = iniparse.INIConfig(file(filename, 'r'))
+            project = {
+                'id': conf['project']['url'],
+                'desc': conf['project']['name'],
+                'title': conf['project']['descr']
+            }
+            if 'repository_type' in conf['trac']:
+                project['vcs'] = conf['trac']['repository_type']
+                project['vcsweburl'] = urlparse.urljoin(
+                    conf['project']['url'], 'browser')
+                if 'vcsuri' in conf['trac']:
+                    project['vcsuri'] = conf['trac']['vcsuri']
+            projects.append(project)
+    return projects
 
 def process_dir(dirpath, filenames, projects):
     '''
@@ -129,8 +161,10 @@ def main():
     parser.add_option('-e', '--erase',
         action='store_true', dest='erase', default=False,
         help='Erase any existing output directory first')
-    parser.add_option('-d', '--data', dest='data',
+    parser.add_option('-d', '--data', dest='data', default=None,
         help='Filename to read project data from')
+    parser.add_option('-t', '--trac', dest='trac', default=None,
+        help='Path to read Trac project data from under')
     base_path = os.path.dirname(os.path.abspath(__file__))
     (options, args) = parser.parse_args()
     options.basepath = options.basepath.rstrip('/')
