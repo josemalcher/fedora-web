@@ -1,14 +1,8 @@
-#!/bin/bash
-tmpdir=`mktemp -d`
-
-outfile=$tmpdir/index.html
-finalfile=/srv/people/site/index.html
-cat <<EOM>>$outfile
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>Fedora Project</title>
-    <link rel="stylesheet" type="text/css" media="all" href="http://fedoraproject.org/static/css/fedora.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="https://fedoraproject.org/static/css/fedora.css" />
     <!--[if lt IE 7]>
     <style type="text/css">
       #wrapper
@@ -18,23 +12,19 @@ cat <<EOM>>$outfile
     </style>
     <![endif]-->
     <style type="text/css">
-      table
-        {
-          width: 50%
-        }
-
       #content
         {
           margin-left: 2ex!important;
         }
 
-      td, th
+      ul
         {
-           width: 50%;
-           border: none!important;
-           padding: 0.5ex 2ex!important;
+           padding: 0 3.5ex;
+           list-style: square;
+           line-height: 1.5;
         }
     </style>
+    <link rel="alternate" type="application/xml" title="RSS"  href="rss20.xml">
   </head>
   <body>
     <div id="wrapper">
@@ -42,45 +32,25 @@ cat <<EOM>>$outfile
         <h1><a href="http://fedoraproject.org/index.html">Fedora</a></h1>
       </div>
       <div id="content">
-        <h2>Fedora People</h2>
-        <p>
-        <a href="http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org">FAQ</a>
-        </p>
-        <table>
-          <tr>
-            <th>Home Page</th>
-            <th>Name</th>
-          </tr>
-EOM
-
-users=`getent passwd | sort| cut -d: -f1,6 | grep '/home/fedora/'`
-for useranddir in $users
-   do
-    user=`echo $useranddir| cut -d: -f1`
-    homedir=`echo $useranddir| cut -d: -f2`
-    name="`getent passwd $user | cut -d: -f5`"
-    if [ -d $homedir/public_html/ ]; then
-     cat <<EOM>> $outfile
- <tr>
-    <td><a href="http://${user}.fedorapeople.org">$user</a></td>
-    <td>$name</td>
- </tr>
-EOM
-    fi
-   done
-   
-cat << EOM>> $outfile
-        </table>
+      <h2>Available Projects</h2>
+        <ul><?cs
+         each:project = projects ?><li><?cs
+          if:project.href ?>
+           <a href="<?cs var:project.href ?>" title="<?cs var:project.description ?>">
+            <?cs var:project.name ?></a><?cs
+          else ?>
+           <small><?cs var:project.name ?>: <em>Error</em> <br />
+           (<?cs var:project.description ?>)</small><?cs
+          /if ?>
+          </li><?cs
+         /each ?></ul>
         <div style="
           border-top: 1px solid #CCCCCC;
           margin-top: 2ex;
           padding-top: 0.5ex;
           ">
+	To request a project be added please open a ticket in the <a href="http://fedoraproject.org/wiki/Infrastructure/ProjectHosting/RequestingNewProject">Fedora Infrastructure Ticket Tracker</a>.<br />
           Contact: <a href="mailto:admin at fedoraproject.org">admin at fedoraproject.org</a><br />
-          <ul id="sponsors">
-            <li><a href="http://linux.dell.com"><img src="http://torrent.fedoraproject.org/images/poweredby_horizontal_lr.gif" alt="Powered by Dell" width="106" height="35"/></a></li>
-            <li><a href="http://linux.duke.edu/"><img src="http://fedoraproject.org/static/images/sponsors/duke.png" width="81" height="68" alt="Duke Linux edu" /></a></li>
-          </ul>
         </div>
       </div>
     </div>
@@ -101,9 +71,4 @@ cat << EOM>> $outfile
     </div>
   </body>
 </html>
-EOM
-
-cp -f $outfile  $finalfile
-chgrp web $finalfile
-chmod g+w $finalfile
 
