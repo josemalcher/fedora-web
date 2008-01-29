@@ -15,6 +15,8 @@ import shutil
 import csv
 import iniparse
 import urlparse
+import operator
+import locale
 
 from optparse import OptionParser
 
@@ -24,6 +26,8 @@ from genshi.filters import Translator
 from genshi.template import TemplateLoader
 
 from genshi.core import Markup
+
+locale.setlocale(locale.LC_COLLATE, 'en_US')
 
 def process(args):
     if os.path.exists(options.output) and options.erase:
@@ -44,6 +48,7 @@ def process(args):
             projects = read_data(options.data)
         else:
             projects = []
+    projects.sort(key=operator.itemgetter('desc'), cmp=locale.strcoll)
     timing.start()
     for dirpath, dirnames, filenames in os.walk(options.input):
         try:
@@ -87,7 +92,7 @@ def read_trac(path):
             if 'repository_type' in conf['trac']:
                 project['vcs'] = conf['trac']['repository_type']
                 project['vcsweburl'] = urlparse.urljoin(
-                    conf['project']['url'], 'browser')
+                    conf['project']['url'] + '/', 'browser')
                 if 'vcsuri' in conf['trac']:
                     project['vcsuri'] = conf['trac']['vcsuri']
             projects.append(project)
