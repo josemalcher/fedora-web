@@ -85,14 +85,14 @@ def read_trac(path):
         if os.path.isfile(filename):
             conf = iniparse.INIConfig(file(filename, 'r'))
             project = {
-                'id': conf['project']['url'],
+                'id': conf['trac']['base_url'],
                 'desc': conf['project']['name'],
                 'title': conf['project']['descr']
             }
             if 'repository_type' in conf['trac']:
                 project['vcs'] = conf['trac']['repository_type']
                 project['vcsweburl'] = urlparse.urljoin(
-                    conf['project']['url'] + '/', 'browser')
+                    conf['trac']['base_url'] + '/', 'browser')
                 if 'vcsuri' in conf['trac']:
                     project['vcsuri'] = conf['trac']['vcsuri']
             projects.append(project)
