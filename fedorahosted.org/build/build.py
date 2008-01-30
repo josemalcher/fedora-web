@@ -67,14 +67,13 @@ def read_data(filename):
         if not line[0].startswith('#'):
             project = {
                 'id': line[0],
-                'desc': line[1]
+                'url': 'https://fedorahosted.org/%s/' % (line[0]),
+                'desc': line[1],
+                'title': line[1]
             }
             if len(line) > 2:
                 project['vcs'] = line[2]
-            if len(line) > 3:
-                project['vcsuri'] = line[3]
-            if len(line) > 4:
-                project['vcsweburl'] = line[4]
+                project['vcsweburl'] = 'https://fedorahosted.org/%s/browser/' % (line[0])
             projects.append(project)
     return projects
 
@@ -85,7 +84,8 @@ def read_trac(path):
         if os.path.isfile(filename):
             conf = iniparse.INIConfig(file(filename, 'r'))
             project = {
-                'id': conf['trac']['base_url'],
+                'id': conf['trac']['base_url'].rstrip('/').split('/')[-1],
+                'url': conf['trac']['base_url'],
                 'desc': conf['project']['name'],
                 'title': conf['project']['descr']
             }
@@ -93,8 +93,6 @@ def read_trac(path):
                 project['vcs'] = conf['trac']['repository_type']
                 project['vcsweburl'] = urlparse.urljoin(
                     conf['trac']['base_url'].rstrip('/') + '/', 'browser')
-                if 'vcsuri' in conf['trac']:
-                    project['vcsuri'] = conf['trac']['vcsuri']
             projects.append(project)
     return projects
 
