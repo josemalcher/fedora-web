@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fho static website\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-01-21 14:25-0500\n"
+"POT-Creation-Date: 2008-01-30 15:54-0500\n"
 "PO-Revision-Date: 2008-01-29 11:13+0100\n"
 "Last-Translator: Fabian Affolter <fab@fedoraproject.org>\n"
 "Language-Team: Fedora Translation <fedora-trans-de@redhat.com>\n"
@@ -17,8 +17,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: data/content/about.html:7
-msgid "About - Fedora Project"
-msgstr "Über - Fedora-Projekt"
+#, fuzzy
+msgid "About - Fedora Hosted"
+msgstr "Über Fedora Hosted"
 
 #: data/content/about.html:12
 msgid "About Fedora Hosted"
@@ -33,11 +34,11 @@ msgid "Your new project is just a <a href=\"new\">work ticket</a> away."
 msgstr "Ihr neues Projekt ist nur eine <a href=\"new\">Arbeitsanforderung</a> entfernt."
 
 #: data/content/faq.html:7
-msgid "FAQs - Fedora Project"
+#, fuzzy
+msgid "FAQs - Fedora Hosted"
 msgstr "FAQs - Fedora-Projekt"
 
-#: data/content/faq.html:12
-#: data/templates/sidebar.html:15
+#: data/content/faq.html:12 data/templates/sidebar.html:15
 msgid "Frequently-Asked Questions"
 msgstr "Häufig gefragte Fragen"
 
@@ -73,20 +74,36 @@ msgstr "Wie kann ich einen Fedora Hosted-Konto bekommen?"
 msgid "Your normal Fedora Project account works with Fedora Hosted. Simply <a href=\"https://admin.fedoraproject.org/accounts/\">apply</a> for a Fedora Project account if you haven't already. Do note that you must sign a Contributor License Agreement with the Fedora Project in order to contribute code."
 msgstr "Ihr normales Fedora-Projekt-Benutzerkonto funktioniert auch mit Fedora Hosted. <a href=\"https://admin.fedoraproject.org/accounts/\">Legen</a> Sie sich einfach ein Fedora-Projekt-Konto an, wenn Sie noch keines haben. Beachten Sie, dass Sie das Contributor License Agreement des Fedora-Projets unterschreiben müsse, wenn Sie Code beisteuern wollen."
 
+#: data/content/faq.html:21
+msgid "How can I publish archive releases (tgz, zip, etc) for my project?"
+msgstr ""
+
+#: data/content/faq.html:22
+msgid "Create the archive on your workstation and run <code>scp myProject-0.1.tar.gz fedorahosted.org:&lt;Project Name&gt;</code>. The archive will be located under <a href=\"http://fedorahosted.org/releases/\">http://fedorahosted.org/releases/</a>"
+msgstr ""
+
 #: data/content/index.html:7
-msgid "Hosted Projects - Fedora Project"
+#, fuzzy
+msgid "Hosted Projects - Fedora Hosted"
 msgstr "Gehostete Projekte des Fedora-Projekts"
 
 #: data/content/index.html:12
 msgid "Available Projects"
 msgstr "Vorhandene Projekte"
 
-#: data/content/index.html:18
-msgid "Right-click and copy the VCS URI to your clipboard"
+#: data/content/index.html:19
+#, fuzzy
+msgid "Right-click and copy the anonymous VCS URI to your clipboard"
+msgstr "Mit der rechten Maustaste klicken und die Adresse des Versionskontrollsystems in die Zwischenablage kopieren"
+
+#: data/content/index.html:20
+#, fuzzy
+msgid "Right-click and copy the authorized VCS URI to your clipboard"
 msgstr "Mit der rechten Maustaste klicken und die Adresse des Versionskontrollsystems in die Zwischenablage kopieren"
 
 #: data/content/new.html:7
-msgid "Request a New Project - Fedora Project"
+#, fuzzy
+msgid "Request a New Project - Fedora Hosted"
 msgstr "Anfordern eines neuen Projekt - Fedora-Projekt"
 
 #: data/content/new.html:12
@@ -114,11 +131,11 @@ msgid "Use the following template for the full description of the ticket:"
 msgstr "Benutzen Sie folgende Vorlage für eine komplette Beschreibung ihrer Anforderung:"
 
 #: data/content/terms.html:7
-msgid "Terms of Use - Fedora Project"
+#, fuzzy
+msgid "Terms of Use - Fedora Hosted"
 msgstr "Nutzungsbedingungen - Fedora-Projekt"
 
-#: data/content/terms.html:12
-#: data/templates/sidebar.html:16
+#: data/content/terms.html:12 data/templates/sidebar.html:16
 msgid "Terms of Use"
 msgstr "Nutzungsbedingungen"
 
@@ -144,7 +161,8 @@ msgid "We will always do our best to contact missing developers and ensure that 
 msgstr "Wir werden immer unser bestes tun, um verschwundene Entwickler zu kontaktieren und um sicherzustellen, dass der Code, die Trac-Datenkank und alle relevanten Daten bereitgehalten werden, im Falle das Projekt entfernt werden muss, um sie dem Projekt-Eigentümer zu geben."
 
 #: data/templates/foot.html:9
-msgid "Copyright &copy; 2007 Red Hat, Inc. and others.  All Rights Reserved.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
+#, fuzzy
+msgid "Copyright &copy; 2008 Red Hat, Inc. and others.  All Rights Reserved.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
 msgstr "Copyright &copy; 2007 Red Hat, Inc. und andere. Alle Rechte vorbehalten. Bitte senden Sie alle Kommentare oder Korrekturen an das <a href=\"mailto:webmaster@fedoraproject.org\">Webseiten-Team</a>."
 
 #: data/templates/foot.html:12
@@ -187,3 +205,14 @@ msgstr "Neues Projekt"
 msgid "Website Language"
 msgstr "Sprache"
 
+#: data/templates/sidebar.html:26
+#, fuzzy
+msgid "Hosting Sponsor"
+msgstr "Sponsoren"
+
+#: data/templates/sidebar.html:27
+msgid "Sponsored by ServerBeach"
+msgstr ""
+
+#~ msgid "About - Fedora Project"
+#~ msgstr "Über - Fedora-Projekt"
