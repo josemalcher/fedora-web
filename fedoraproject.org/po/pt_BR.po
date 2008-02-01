@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-01-16 15:03-0500\n"
-"PO-Revision-Date: 2008-01-24 11:06-0300\n"
+"PO-Revision-Date: 2008-02-01 09:23-0300\n"
 "Last-Translator: Frederico Madeira <fred@madeira.eng.br>\n"
 "Language-Team: Portuguese/Brazil <fedora-trans-pt_br@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -269,7 +269,7 @@ msgstr "Como o Projet Fedora usa as chaves GPG para assinar os pacotes"
 
 #: data/content/keys.html:13
 msgid "Each stable RPM package that is published by Fedora Project is signed with a GPG signature.  By default, yum and the graphical update tools will verify these signatures and refuse to install any packages that are not signed or have bad signatures.  You should always verify the signature of a package before you install it.  These signatures ensure that the packages you install are what was produced by the Fedora Project and have not been altered (accidentally or maliciously) by any mirror or website that is providing the packages."
-msgstr ""
+msgstr "Cada pacote RPM estável que é publicado pelo Projeto Fedora é assinado com uma assinatura GPG. Por padrão, o yum e a ferramenta de atualização gráfica irão verificar essas assinaturas e recusar a instalação de pacotes que não estejam assinados ou possuam assinaturas inválidas. Você deve sempre verificar a assinatura do pacote antes de instalá-lo. Essas assinaturas garantem que os pacotes que você instala são os que foram produzidos pelo Projeto Fedora e não foram alterados (acidentalmente ou maliciosamente) por qualquer espelho ou website que esteja fornecendo os pacotes."
 
 #: data/content/keys.html:16
 msgid "Packages that can be downloaded from koji build system do not contain signatures, so you should use them with caution.  Similarly, bleeding-edge packages in Rawhide are not necessarily signed."
@@ -281,7 +281,7 @@ msgstr "Importando as chaves"
 
 #: data/content/keys.html:21
 msgid "The keys are included in <strong>fedora-release</strong> package, you can find them in <strong>/etc/pki/rpm-gpg</strong> directory.  Please note that not all keys in this directory are used by Fedora project -- some are used for signing Red Hat Enterprise Linux packages or are no longer used at all. If you use Red Hat Enterprise Linux packages, see <a href=\"http://www.redhat.com/security/team/key/\">http://www.redhat.com/security/team/key</a>.  The keys used by Fedora are enabled in the yum repository configuration, so you generally don't need to manually import them into the rpm database."
-msgstr ""
+msgstr "As chaves são incuídas no pacote <strong>fedora-release</strong>, você pode encontrá-las no diretório <strong>/etc/pki/rpm-gpg</strong>. Nem todas as chaves dentro desse diretório são usadas pelo projeto Fedora -- algumas são usadas para assinar pacotes do Red Hat Enterprise Linux ou não são mais utilizadas. Se você utiliza pacotes do Red Hat Enterprise Linux, acesse <a href=\"http://www.redhat.com/security/team/key/\">http://www.redhat.com/security/team/key</a>.  As chaves usadas pelo Fedora são ativadas na configuração do repositório no yum, então geralmente você não precisará importá-las manualmente para a base de dados rpm."
 
 #: data/content/keys.html:24
 msgid "In addition to the fedora-release package and this web page, you can download the Fedora keys from a public key server, such as <a href=\"http://pgp.mit.edu/\">http://pgp.mit.edu/</a>."
@@ -289,7 +289,7 @@ msgstr "Em adição aos pacotes do fedora-release e a esta página web, você po
 
 #: data/content/keys.html:27
 msgid "For some repositories, such as repositories with stable and testing packages in default configuration, <strong>yum</strong> is able to find a proper key for the repository and asks the user for confirmation before importing the key if the key is not already imported into the rpm database."
-msgstr ""
+msgstr "Para alguns repositórios, como repositórios com pacotes estáveis e de teste em sua configuração padrão, o <strong>yum</strong> é capaz de encontrar a chave apropriada para o repositório e pedir ao usuário uma confirmação antes de importar a chave caso e a chave já não tiver sido importada dentro do banco de dados rpm."
 
 #: data/content/keys.html:30
 msgid "You can always import a key into RPM's database by hand using the following command:"
@@ -309,7 +309,7 @@ msgstr "Verificando o pacote"
 
 #: data/content/keys.html:55
 msgid "When using default configuration of <strong>yum</strong> package updating and installation tool in stable releases, signature of each package is verified before it is installed.  Signature verification can be turned off and on globally or for specific repository with <strong>gpgcheck</strong> directive.  Do not override the default setting of this directive unless you have a very good reason to do so."
-msgstr ""
+msgstr "Quando usamos a configuração padrão da ferramenta de atualização e instalação de pacotes  <strong>yum</strong> em versões estáveis, a assinatura de cada pacote é verificada antes que ele seja instalado. Verificação de assinatura pode ser desativada de forma global ou para um repositório específico com a diretiva <strong>gpgcheck</strong>. Não substitua a configuração padrão dessa diretiva a não ser que você tenha uma razão muito boa para isso."
 
 #: data/content/keys.html:58
 msgid "If you do not use yum, you can check the signature of the package using the following command"
@@ -333,7 +333,7 @@ msgstr "Ambas GA e atualizações"
 
 #: data/content/keys.html:80
 msgid "If you use a recent stable release, this is the only key you will use.  Packages on installation media and all the updates you will install are signed with this key.  The relevant yum repositories are <strong>fedora</strong>, <strong>fedora-updates</strong> for Fedora 7 and later, and <strong>core</strong> and <strong>core-updates</strong> for Fedora Core (Version 6 and earlier)."
-msgstr ""
+msgstr "Se você usa uma versão recente estável, essa é a única chave que você usará. Os pacotes da midia de instalação e de todas as atualizações que você instalará são assinadas com essa chave. Os repositórios relevantes do yum são <strong>fedora</strong>, <strong>fedora-updates</strong> para o  Fedora 7 e anteriores, e <strong>core</strong> e <strong>core-updates</strong> para  o Fedora Core (Versão 6 e posteriores)."
 
 #: data/content/keys.html:84
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
@@ -381,7 +381,7 @@ msgstr "Baixe: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&o
 
 #: data/content/keys.html:150
 msgid "This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
-msgstr ""
+msgstr "Essa chave é usada para pacotes que foram liberadas pelo projeto Fedora Legacy para atualizar versões que alcançaram o EOL oficial. O projeto Fedora Legacy não existe mais, então essa chavão não será usada para assinar pacotes. Essa chave não está incluída no pacote <strong>fedora-release</strong> no Fedora 7 e versões anteriores."
 
 #: data/content/relnotes.html:10
 msgid "Fedora 8 Release Notes"
