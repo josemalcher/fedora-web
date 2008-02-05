@@ -2,6 +2,7 @@ var banners = [
   ["http://fedoraproject.org/static/images/banners/f8-banner-animation.gif", "Fedora 8 Werewolf is here!", "http://fedoraproject.org/get-fedora", 2],
   ["http://fedoraproject.org/static/images/banners/fedorawn.png", "Fedora Weekly News", "http://fedoraproject.org/wiki/FWN/LatestIssue", 1],
   ["http://fedoraproject.org/static/images/banners/paul-interview.png", "Paul Frields Interview", "http://www.redhatmagazine.com/2008/01/24/fudcon-video-new-face-of-fedora/", 2],
+  ["http://fedoraproject.org/static/images/banners/f9-alpha-promo.png", "F9 Alpha", "http://fedoraproject.org/get-prerelease", 5],
 ];
 
 window.onload = function() {
