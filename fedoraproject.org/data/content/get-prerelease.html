@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Prerelease Version - Fedora Project')}</title>
+    <style type="text/css">
+    </style>
+  </head>
+  <body class="get">
+    <h2>${_('Fedora, For the Future.')}</h2>
+    <p class="warning">${_('This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the &lt;a href="https://bugzilla.redhat.com/"&gt;Red Hat Bugzilla&lt;/a&gt;.')}</p>
+    <h3>${_('Install Media')}</h3>
+    <ul class="downloadbox installdvd">
+      <li>
+      <h4>${_('BitTorrent')}</h4>
+      <ul>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-Alpha-DVD-i386.torrent">${_('i386')}</a> - ${_('Install DVD')}</li>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-Alpha-DVD-x86_64.torrent">${_('x86_64')}</a> - ${_('Install DVD')}</li>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-Alpha-DVD-ppc.torrent">${_('ppc')}</a> - ${_('Install DVD')}</li>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-Alpha-i386.torrent">${_('i386')}</a> - ${_('Install CDs')}</li>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-Alpha-x86_64.torrent">${_('x86_64')}</a> - ${_('Install CDs')}</li>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-Alpha-ppc.torrent">${_('ppc')}</a> - ${_('Install CDs')}</li>
+      </ul>
+      </li>
+      <li>
+      <h4>${_('Direct Download')}</h4>
+      <ul>
+        <li><a href="${'http://download.fedoraproject.org/pub/fedora/linux/releases/test/9-Alpha/Fedora/i386/iso/Fedora-9-Alpha-i386-DVD.iso'}">${_('i386')}</a> - ${_('Install DVD')}</li>
+        <li><a href="${'http://download.fedoraproject.org/pub/fedora/linux/releases/test/9-Alpha/Fedora/x86_64/iso/Fedora-9-Alpha-x86_64-DVD.iso'}">${_('x86_64')}</a> - ${_('Install DVD')}</li>
+        <li><a href="${'http://download.fedoraproject.org/pub/fedora/linux/releases/test/9-Alpha/Fedora/ppc/iso/Fedora-9-Alpha-ppc-DVD.iso'}">${_('ppc')}</a> - ${_('Install DVD')}</li>
+      </ul>
+      </li>
+    </ul>
+    <h3>${_('Fedora Desktop Live Media')}</h3>
+    <ul class="downloadbox gnomelive">
+      <li>
+      <h4>${_('BitTorrent')}</h4>
+      <ul>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-Alpha-Live-i686.torrent">${_('i686')}</a> - ${_('Live CD')}</li>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-Alpha-Live-x86_64.torrent">${_('x86_64')}</a> - ${_('Live DVD')}</li>
+      </ul>
+      </li>
+      <li>
+      <h4>${_('Direct Download')}</h4>
+      <ul>
+        <li><a href="${'http://download.fedoraproject.org/pub/fedora/linux/releases/test/9-Alpha/Live/i686/Fedora-9-Alpha-Live-i686.iso'}">${_('i686')}</a> - ${_('Live CD')}</li>
+        <li><a href="${'http://download.fedoraproject.org/pub/fedora/linux/releases/test/9-Alpha/Live/x86_64/Fedora-9-Alpha-Live-x86_64.iso'}">${_('x86_64')}</a> - ${_('Live DVD')}</li>
+      </ul>
+      </li>
+    </ul>
+
+    <h3>${_('Fedora KDE Live Media')}</h3>
+    <ul class="downloadbox kdelive">
+      <li>
+      <h4>${_('BitTorrent')}</h4>
+      <ul>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-Alpha-Live-KDE-i686.torrent">${_('i686')}</a> - ${_('Live CD')}</li>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-Alpha-Live-KDE-x86_64.torrent">${_('x86_64')}</a> - ${_('Live DVD')}</li>
+      </ul>
+      </li>
+      <li>
+      <h4>${_('Direct Download')}</h4>
+      <ul>
+        <li><a href="${'http://download.fedoraproject.org/pub/fedora/linux/releases/test/9-Alpha/Live/i686/Fedora-9-Alpha-Live-KDE-i686.iso'}">${_('i686')}</a> - ${_('Live CD')}</li>
+        <li><a href="${'http://download.fedoraproject.org/pub/fedora/linux/releases/test/9-Alpha/Live/x86_64/Fedora-9-Alpha-Live-KDE-x86_64.iso'}">${_('x86_64')}</a> - ${_('Live DVD')}</li>
+      </ul>
+      </li>
+    </ul>
+  </body>
+</html>
+
