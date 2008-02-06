@@ -34,4 +34,9 @@ clean:
 	rm -f po/*.mo
 	rm -f data/templates/translations.html
 
-.PHONY: all clean
+push:
+	git rebase master live
+	git checkout master
+	git push
+
+.PHONY: all clean push
