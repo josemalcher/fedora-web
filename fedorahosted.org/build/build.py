@@ -29,6 +29,10 @@ from genshi.core import Markup
 
 locale.setlocale(locale.LC_COLLATE, 'en_US')
 
+vcsprefix = {
+  'hg': '/'
+}
+
 def process(args):
     if os.path.exists(options.output) and options.erase:
         shutil.rmtree(options.output)
@@ -73,6 +77,7 @@ def read_data(filename):
             }
             if len(line) > 2:
                 project['vcs'] = line[2]
+                project['vcsprefix'] = vcsprefix.get(project['vcs'], '')
                 project['vcsweburl'] = 'https://fedorahosted.org/%s/browser/' % (line[0])
             projects.append(project)
     return projects
@@ -91,6 +96,7 @@ def read_trac(path):
             }
             if 'repository_type' in conf['trac']:
                 project['vcs'] = conf['trac']['repository_type']
+                project['vcsprefix'] = vcsprefix.get(project['vcs'], '')
                 project['vcsweburl'] = urlparse.urljoin(
                     conf['trac']['base_url'].rstrip('/') + '/', 'browser')
             projects.append(project)

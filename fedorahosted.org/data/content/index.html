@@ -18,9 +18,7 @@
         <td class="vcscol"><a py:if="'vcsweburl' in project and project['vcsweburl']" href="${project['vcsweburl']}" target="_blank"><img src="static/images/web.png" alt="browse"/></a></td>
 
         <td class="vcscol"><a py:if="'vcs' in project" href="${'http://%s.fedorahosted.org/%s/%s' % (project['vcs'], project['vcs'], project['id'])}" onClick="javascript:return false;"><img src="static/images/copy.png" alt="anon" title="${_('Right-click and copy the anonymous VCS URI to your clipboard')}" /></a></td>
-        <td class="vcscol"><a py:if="'vcs' in project and project['vcs'] == 'hg'" href="${'ssh://%s.fedorahosted.org//%s/%s' % (project['vcs'], project['vcs'], project['id'])}" onClick="javascript:return false;"><img src="static/images/edit.png" alt="auth" title="${_('Right-click and copy the authorized VCS URI to your clipboard')}" /></a></td>
-
-        <td class="vcscol"><a py:if="'vcs' in project and project['vcs'] != 'hg'" href="${'ssh://%s.fedorahosted.org/%s/%s' % (project['vcs'], project['vcs'], project['id'])}" onClick="javascript:return false;"><img src="static/images/edit.png" alt="auth" title="${_('Right-click and copy the authorized VCS URI to your clipboard')}" /></a></td>
+        <td class="vcscol"><a py:if="'vcs' in project" href="${'ssh://%(vcs)s.fedorahosted.org/%(vcsprefix)s%(vcs)s/%(id)s' % project}" onClick="javascript:return false;"><img src="static/images/edit.png" alt="auth" title="${_('Right-click and copy the authorized VCS URI to your clipboard')}" /></a></td>
       </tr>
     </table>
   </body>
