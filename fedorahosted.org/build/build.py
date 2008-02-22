@@ -72,8 +72,8 @@ def read_data(filename):
             project = {
                 'id': line[0],
                 'url': 'https://fedorahosted.org/%s/' % (line[0]),
-                'desc': line[1],
-                'title': line[1]
+                'desc': line[1].decode('utf-8'),
+                'title': line[1].decode('utf-8')
             }
             if len(line) > 2:
                 project['vcs'] = line[2]
@@ -91,8 +91,8 @@ def read_trac(path):
             project = {
                 'id': conf['trac']['base_url'].rstrip('/').split('/')[-1],
                 'url': conf['trac']['base_url'],
-                'desc': conf['project']['name'],
-                'title': conf['project']['descr']
+                'desc': conf['project']['name'].decode('utf-8'),
+                'title': conf['project']['descr'].decode('utf-8')
             }
             if 'repository_type' in conf['trac']:
                 project['vcs'] = conf['trac']['repository_type']
