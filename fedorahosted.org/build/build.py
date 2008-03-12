@@ -97,6 +97,8 @@ def read_trac(path):
             if 'repository_type' in conf['trac']:
                 project['vcs'] = conf['trac']['repository_type']
                 project['vcsprefix'] = vcsprefix.get(project['vcs'], '')
+                project['vcsbase'] = os.path.splitext(os.path.basename(
+                    conf['trac']['repository_dir']))[0]
                 project['vcsweburl'] = urlparse.urljoin(
                     conf['trac']['base_url'].rstrip('/') + '/', 'browser')
             projects.append(project)
