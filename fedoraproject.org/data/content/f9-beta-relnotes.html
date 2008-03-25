@@ -444,17 +444,20 @@
 	  Fedora 9 Beta features a 2.6.25-rc5 based kernel. 2.6.25-rc5
 	  includes:
 	</p><ul type="disc"><li><p>CPU "group scheduling" </p></li><li><p>memory fragmentation avoidance </p></li><li><p>tickless support for x86-64/ppc and other architectures </p></li><li><p>many new wireless drivers and a new wireless configuration interface </p></li><li><p>SPI/SDIO MMC support </p></li><li><p>USB authorization </p></li><li><p>per-device dirty memory thresholds </p></li><li><p>support for PID and network namespaces </p></li><li><p>support for static probe markers </p></li><li><p>read-only bind mounts </p></li><li><p>SELinux performance improvements </p></li><li><p>SATA link power management and port multiplier support </p></li><li><p>Large Receive Offload in network devices </p></li><li><p>memory hot-remove support </p></li><li><p>a new framework for controlling the idle processor power management </p></li><li><p>CIFS ACLs support </p></li><li><p>many new drivers, and other features and fixes </p></li></ul><p></p><h4 class="title"><a name="id3003031"></a>Information For Testers</h4><ul type="disc"><li><p>
-              pam_mount now uses a config file written in xml.
-              <code class="code">/etc/security/pam_mount.conf</code> will be
-              converted to <code class="code">/etc/security/pam_mount.conf.xml</code>
-              during update with
-              <code class="code">/usr/bin/convert_pam_mount_conf.pl</code>, this will
-              remove all comments. If you use per user config files,
-              they need to be converted manually (you can use the
-              conversion script, off course). A sample
-              pam_mount.conf.xml file with detailed comments about the
-              available options can be found at
-		<code class="code">/usr/share/doc/pam_mount-*/pam_mount.conf.xml</code>.
+              The <code class="code">pam_mount</code> facility now
+              uses a configuration file written in
+              XML. The <code class="code">/etc/security/pam_mount.conf</code>
+              file will be converted
+              to <code class="code">/etc/security/pam_mount.conf.xml</code>
+              during update
+              with <code class="code">/usr/bin/convert_pam_mount_conf.pl</code>,
+              which removes all comments. Any per-user configuration
+              files must be converted manually, with the conversion
+              script if desired. A
+              sample <code class="code">pam_mount.conf.xml</code> file
+              with detailed comments about the available options
+              appears
+              at <code class="code">/usr/share/doc/pam_mount-*/pam_mount.conf.xml</code>.
 	      </p></li></ul><hr></hr>
 	</div>
       </div>
