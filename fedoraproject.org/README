@@ -13,6 +13,11 @@ Usage: Run make in this directory to build the website in all available
 
        See build/build.py --help for more descriptions of specific options.
 
+       To get a test instance at http://localhost:5000/, run make test
+       (httpd is required).  Use make stoptest to take it down.  
+
+       To push, first git checkout --track -b live origin/live, then make push.
+
 Editing/creating pages:
 For general information about Genshi templates, see:
 http://genshi.edgewall.org/wiki/Documentation, and in particular,
