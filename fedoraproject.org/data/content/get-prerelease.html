@@ -10,7 +10,8 @@
   </head>
   <body class="get">
     <h2>${_('Fedora, For the Future.')}</h2>
-    <p class="warning">${_('This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the &lt;a href="https://bugzilla.redhat.com/"&gt;Red Hat Bugzilla&lt;/a&gt;.  Read the &lt;a href="http://fedoraproject.org/f9-beta-relnotes.html"&gt;Beta release notes&lt;/a&gt; for more information.')}</p>
+    <!-- Skipped lang - en only? -->
+    <p class="warning">${_('This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the &lt;a href="https://bugzilla.redhat.com/"&gt;Red Hat Bugzilla&lt;/a&gt;.  Read the &lt;a href="${path}/f9-beta-relnotes"&gt;Beta release notes&lt;/a&gt; for more information.')}</p>
     <h3>${_('Install Media')}</h3>
     <ul class="downloadbox installdvd">
       <li>
@@ -30,6 +31,14 @@
         <li><a href="${'http://download.fedoraproject.org/pub/fedora/linux/releases/test/9-Beta/Fedora/i386/iso/Fedora-9-Beta-i386-DVD.iso'}">${_('i386')}</a> - ${_('Install DVD')}</li>
         <li><a href="${'http://download.fedoraproject.org/pub/fedora/linux/releases/test/9-Beta/Fedora/x86_64/iso/Fedora-9-Beta-x86_64-DVD.iso'}">${_('x86_64')}</a> - ${_('Install DVD')}</li>
         <li><a href="${'http://download.fedoraproject.org/pub/fedora/linux/releases/test/9-Beta/Fedora/ppc/iso/Fedora-9-Beta-ppc-DVD.iso'}">${_('ppc')}</a> - ${_('Install DVD')}</li>
+      </ul>
+      </li>
+      <li>
+      <h4>${_('Jigdo')}</h4>
+      <ul>
+        <li><a href="${'http://download.fedoraproject.org/pub/fedora/linux/releases/test/9-Beta/Fedora/i386/jigdo/Fedora-9-Beta-i386-DVD.jigdo'}">${_('i386')}</a> - ${_('Install DVD')}</li>
+        <li><a href="${'http://download.fedoraproject.org/pub/fedora/linux/releases/test/9-Beta/Fedora/x86_64/jigdo/Fedora-9-Beta-x86_64-DVD.jigdo'}">${_('x86_64')}</a> - ${_('Install DVD')}</li>
+        <li><a href="${'http://download.fedoraproject.org/pub/fedora/linux/releases/test/9-Beta/Fedora/ppc/jigdo/Fedora-9-Beta-ppc-DVD.jigdo'}">${_('ppc')}</a> - ${_('Install DVD')}</li>
       </ul>
       </li>
     </ul>
