@@ -34,6 +34,7 @@ clean:
 	rm -f po/en.po
 	rm -f po/*.mo
 	rm -f data/templates/translations.html
+	rm -f build/rss.cache
 
 push:
 	git rebase master live
