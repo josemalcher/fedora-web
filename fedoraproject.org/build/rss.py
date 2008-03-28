@@ -2,11 +2,10 @@ import os
 import cPickle
 import feedparser
 
-# TODO: This fetches once for every build.py run.  Need to make it
-# cache the results (pickle?) and delete after a full website build.  
-
 def feedparse(url):
     feeds = dict()
+    # TODO: Should the directory be hardcoded like this? 
+    # Maybe use ConfigParser to get some stuff?
     cachefile = os.path.join(os.getcwd(), 'build/rss.cache')
     if os.path.isfile(cachefile):
         f = open(cachefile)
