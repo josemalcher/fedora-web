@@ -15,7 +15,9 @@
       <ul>
         <li py:for="entry in rhm.entries[:5]">
         <h4><a href="${entry.link}">${entry.title}</a></h4>
+        <p>
         ${Markup(entry.description)}
+        </p>
         </li>
       </ul>
   </body>
