@@ -11,7 +11,7 @@ def feedparse(url):
         f = open(cachefile)
         feeds = cPickle.load(f)
         f.close()
-    if not feeds.has_key(url):
+    if not url in feeds:
         feeds[url] = feedparser.parse(url)
         f = open(cachefile, 'w')
         cPickle.dump(feeds, f)
