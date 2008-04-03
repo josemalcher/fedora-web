@@ -1001,6 +1001,7 @@ AddLanguage es .es
 AddLanguage fa .fa
 AddLanguage fi .fi
 AddLanguage fr .fr
+AddLanguage id .id
 AddLanguage it .it
 AddLanguage ja .ja
 AddLanguage nl .nl
@@ -1016,14 +1017,14 @@ LanguagePriority en
 ForceLanguagePriority Prefer Fallback
 
 RewriteEngine on
-RewriteCond %{QUERY_STRING} ^lang=(ar|bal|ca|de|el|en|es|fa|fi|fr|it|ja|nl|pl|pt_BR|ro|ru|sk|sr|zh_CN)$
-RewriteRule ^(?:/(?:ar|bal|ca|de|el|en|es|fa|fi|fr|it|ja|nl|pl|pt_BR|ro|ru|sk|sr|zh_CN))?(/.*)$ /%1$1? [R=301]
-AliasMatch ^(?:/(?:ar|bal|ca|de|el|en|es|fa|fi|fr|it|ja|nl|pl|pt_BR|ro|ru|sk|sr|zh_CN))(/.*)?$ @DOCUMENTROOT@$1
+RewriteCond %{QUERY_STRING} ^lang=(ar|bal|ca|de|el|en|es|fa|fi|fr|id|it|ja|nl|pl|pt_BR|ro|ru|sk|sr|zh_CN)$
+RewriteRule ^(?:/(?:ar|bal|ca|de|el|en|es|fa|fi|fr|id|it|ja|nl|pl|pt_BR|ro|ru|sk|sr|zh_CN))?(/.*)$ /%1$1? [R=301]
+AliasMatch ^(?:/(?:ar|bal|ca|de|el|en|es|fa|fi|fr|id|it|ja|nl|pl|pt_BR|ro|ru|sk|sr|zh_CN))(/.*)?$ @DOCUMENTROOT@$1
 
 <Directory @DOCUMENTROOT@>
   Options MultiViews
 
-  SetEnvIf Request_URI ^/(ar|bal|ca|de|el|en|es|fa|fi|fr|it|ja|nl|pl|ro|ru|sk|sr)/ prefer-language=$1
+  SetEnvIf Request_URI ^/(ar|bal|ca|de|el|en|es|fa|fi|fr|id|it|ja|nl|pl|ro|ru|sk|sr)/ prefer-language=$1
   SetEnvIf Request_URI ^/pt_BR/ prefer-language=pt-br
   SetEnvIf Request_URI ^/zh_CN/ prefer-language=zh-cn
 </Directory>
