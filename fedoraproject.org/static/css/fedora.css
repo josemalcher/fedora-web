@@ -51,6 +51,7 @@ pre{
   height: 73px;
   width: 138px;
   overflow: hidden;
+  text-decoration: none;
 }
 
 #sidebar
@@ -212,14 +213,14 @@ pre{
   color: #337ACC;
 }
 
-.download
+#content .download
 {
   list-style-image: url(../images/arrow.png);
   list-style-position: outside;
   margin: 1.6ex 3ex;
 }
 
-.download li
+#content .download li
 {
   color: #777777;
   font-size: 1.8ex;
@@ -228,26 +229,25 @@ pre{
   border-bottom: 1px dotted #AAAAAA;
 }
 
-.download a
+#content .download a
 {
   font-weight: bold;
 }
 
-.roles
+#content .roles
 {
   margin: 0!important;
   list-style: none!important;
-  background: red;
   display: inline;
 }
 
-.roles li
+#content .roles li
 {
   float: left;
   margin-bottom: 0.5ex;
 }
 
-.roles a
+#content .roles a
 {
   line-height: 1;
   width: 130px;
@@ -257,13 +257,9 @@ pre{
   text-decoration: none;
 }
 
-.roles a:hover
+#content .roles a:hover
 {
   background-color: #EFEFEF;
-}
-
-.roles img
-{
 }
 
 #footer
@@ -446,12 +442,6 @@ input, textarea, option
 #content ul#resources
 {
   list-style: none;
-}
-
-#content ul#resources a
-{
-  padding-left: 20px;
-  background: url(../images/arrow.png) 0 50% no-repeat;
 }
 
 #content ul#resources li
