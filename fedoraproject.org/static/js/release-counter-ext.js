@@ -1,9 +1,23 @@
+var available_langs = [ "de", "en", "fi", "fr", "he", "is", "pt_BR", "ro", "sk", "sr" ];
+
+
 var today = new Date();
 var release = new Date("April 29, 2008 14:00:00 UTC");
 var millisBetweenDates = release - today;
 var days = Math.ceil(millisBetweenDates/1000/60/60/24);
 
 var script = document.getElementById('fedora-banner');
+var lang = "en"
+var lang_match = script.src.match(/release-counter-ext\.js\?lang=(.*)$/);
+
+if (lang_match) {
+    for (var i = 0; i < available_langs.length; ++i) {
+        if (available_langs[i] == lang_match[1]) {
+            lang = lang_match[1];
+            break;
+        }
+    }
+}
 
 var url = "http://fedoraproject.org/wiki/Releases/9/Schedule"
 
@@ -20,7 +34,7 @@ if (days < 0) {
     bannerimg.setAttribute("src", "http://fedoraproject.org/static/images/banner/f9release.png");
     bannerimg.setAttribute("alt", "Fedora 9 is here!");
 } else {
-    bannerimg.setAttribute("src", "http://fedoraproject.org/static/images/counter/fedora9-countdown-" + (days < 10? '0' + days : days) + ".png");
+    bannerimg.setAttribute("src", "http://fedoraproject.org/static/images/counter/" + lang + "/fedora9-countdown-" + (days < 10? '0' + days : days) + "." + lang + ".png");
     bannerimg.setAttribute("alt", "Fedora 9 Sulfur released in " + days + " days.");
 }
 
