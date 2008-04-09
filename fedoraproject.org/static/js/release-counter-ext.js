@@ -29,7 +29,7 @@ bannerlink.setAttribute("href", url);
 var bannerimg = document.createElement("img");
 bannerimg.style.border = "none";
 
-if (days < 0) {
+if (days <= 0) {
     // TODO: Get an actual image here!
     bannerimg.setAttribute("src", "http://fedoraproject.org/static/images/banner/f9release.png");
     bannerimg.setAttribute("alt", "Fedora 9 is here!");
