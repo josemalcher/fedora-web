@@ -41,8 +41,7 @@ window.onload = function() {
         bannerimg.setAttribute("src", "http://fedoraproject.org/static/images/banner/f9release.png");
         bannerimg.setAttribute("alt", "Fedora 9 is here!");
     } else {
-        //bannerimg.setAttribute("src", "http://fedoraproject.org/static/images/counter/" + lang + "/fedora9-countdown-" + (days < 10? '0' + days : days) + "." + lang + ".png");
-        bannerimg.setAttribute("src", "http://fedora/static/images/counter/" + lang + "/fedora9-countdown-" + (days < 10? '0' + days : days) + "." + lang + ".png");
+        bannerimg.setAttribute("src", "http://fedoraproject.org/static/images/counter/" + lang + "/fedora9-countdown-" + (days < 10? '0' + days : days) + "." + lang + ".png");
         bannerimg.setAttribute("alt", "Fedora 9 Sulfur released in " + days + " days.");
     }
 }
