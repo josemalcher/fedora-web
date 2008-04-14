@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master.es\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-04-08 22:23-0400\n"
+"POT-Creation-Date: 2008-04-11 18:38-0400\n"
 "PO-Revision-Date: 2008-02-17 22:27-0200\n"
 "Last-Translator: Domingo Becker <domingobecker@gmail.com>\n"
 "Language-Team: Spanish <fedora-trans-es@redhat.com>\n"
@@ -14,57 +14,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: data/content/404.html:7 data/content/counter.html:7 data/content/get-
-#: fedora.html:7 data/content/index.html:7 data/content/join-fedora.html:7
+#: data/content/counter.html:7 data/content/get-fedora.html:7
+#: data/content/index.html:7 data/content/join-fedora.html:7
 #: data/content/keys.html:7 data/content/relnotes.html:7
 #: data/content/rss.html:7 data/content/sponsors.html:7
-#: data/content/verify.html:7
+#: data/content/verify.html:7 data/content/error/404.html:7
 msgid "Fedora Project"
 msgstr "Proyecto Fedora"
-
-#: data/content/404.html:10
-msgid "Sorry!  We couldn't find that file"
-msgstr "¡Lo siento! No se pudo encontrar ese archivo"
-
-#: data/content/404.html:11
-msgid "We apologize, but the file you requested could not be found."
-msgstr "Le pedimos disculpas, pero el archivo que Ud. pidió no se encuentra."
-
-#: data/content/404.html:13
-msgid "Double-check the URL if you entered it manually. Did you copy it correctly?"
-msgstr "Chequee nuevamente el URL si lo ingresó manualmente. ¿Lo copió correctamente?"
-
-#: data/content/404.html:14
-msgid "Did a bad link bring you here? Contact "
-msgstr "¿Lo trajo un enlace incorrecto hasta aquí? Contactar a"
-
-#: data/content/404.html:14
-msgid "the fedoraproject.org webmaster"
-msgstr "el webmaster de fedoraproject.org"
-
-#: data/content/404.html:14
-msgid " and let them know which link brought you here."
-msgstr " y hágale saber cuál enlace lo trajo aquí."
-
-#: data/content/404.html:15
-msgid "The file you are looking for may have moved. Check our main site at <a href=\"http://fedoraproject.org/\">http://fedoraproject.org/</a> or search our <a href=\"http://fedoraproject.org/wiki/\">wiki</a>."
-msgstr "El archivo que está buscando pude haber sido movido. Verifique nuestro sitio principal en <a href=\"http://fedoraproject.org/\">http://fedoraproject.org/</a> o busque en nuestra <a href=\"http://fedoraproject.org/wiki/\">wiki</a>."
-
-#: data/content/404.html:17
-msgid "Fedora Resources"
-msgstr "Recursos de Fedora"
-
-#: data/content/404.html:20
-msgid "Fedora Documentation"
-msgstr "Documentación de Fedora"
-
-#: data/content/404.html:24
-msgid "Connect with the Fedora Community"
-msgstr "Conectarse con la Comunidad de Fedora."
-
-#: data/content/404.html:28
-msgid "Download Fedora!"
-msgstr "¡Descargar Fedora!"
 
 #: data/content/counter.html:12
 #, fuzzy
@@ -76,7 +32,7 @@ msgid "To add a Fedora Release counter to your own site, simply place the follow
 msgstr ""
 
 #: data/content/counter.html:18
-msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, fi, fr, he, is, pt_BR, ro, sk, and sr are supported.  When no language is specified, English will be used."
+msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, fi, fr, he, is, it, pt_BR, ro, sk, and sr are supported.  When no language is specified, English will be used."
 msgstr ""
 
 #: data/content/get-fedora.html:12
@@ -508,6 +464,50 @@ msgstr "Finalmente, ahora que el archivo SHA1SUM ha sido verificado, verifique q
 #: data/content/verify.html:43
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "Si la salida indica que el archivo es válido, ¡puede continuar!"
+
+#: data/content/error/404.html:10
+msgid "Sorry!  We couldn't find that file"
+msgstr "¡Lo siento! No se pudo encontrar ese archivo"
+
+#: data/content/error/404.html:11
+msgid "We apologize, but the file you requested could not be found."
+msgstr "Le pedimos disculpas, pero el archivo que Ud. pidió no se encuentra."
+
+#: data/content/error/404.html:13
+msgid "Double-check the URL if you entered it manually. Did you copy it correctly?"
+msgstr "Chequee nuevamente el URL si lo ingresó manualmente. ¿Lo copió correctamente?"
+
+#: data/content/error/404.html:14
+msgid "Did a bad link bring you here? Contact "
+msgstr "¿Lo trajo un enlace incorrecto hasta aquí? Contactar a"
+
+#: data/content/error/404.html:14
+msgid "the fedoraproject.org webmaster"
+msgstr "el webmaster de fedoraproject.org"
+
+#: data/content/error/404.html:14
+msgid " and let them know which link brought you here."
+msgstr " y hágale saber cuál enlace lo trajo aquí."
+
+#: data/content/error/404.html:15
+msgid "The file you are looking for may have moved. Check our main site at <a href=\"http://fedoraproject.org/\">http://fedoraproject.org/</a> or search our <a href=\"http://fedoraproject.org/wiki/\">wiki</a>."
+msgstr "El archivo que está buscando pude haber sido movido. Verifique nuestro sitio principal en <a href=\"http://fedoraproject.org/\">http://fedoraproject.org/</a> o busque en nuestra <a href=\"http://fedoraproject.org/wiki/\">wiki</a>."
+
+#: data/content/error/404.html:17
+msgid "Fedora Resources"
+msgstr "Recursos de Fedora"
+
+#: data/content/error/404.html:20
+msgid "Fedora Documentation"
+msgstr "Documentación de Fedora"
+
+#: data/content/error/404.html:24
+msgid "Connect with the Fedora Community"
+msgstr "Conectarse con la Comunidad de Fedora."
+
+#: data/content/error/404.html:28
+msgid "Download Fedora!"
+msgstr "¡Descargar Fedora!"
 
 #: data/templates/foot.html:9
 msgid "Copyright &copy; 2008 Red Hat, Inc. and others.  All Rights Reserved.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
