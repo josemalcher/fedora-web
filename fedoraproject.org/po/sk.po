@@ -7,71 +7,43 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-24 21:41-0400\n"
-"PO-Revision-Date: 2008-04-13 22:05+0200\n"
+"POT-Creation-Date: 2008-04-11 19:16-0400\n"
+"PO-Revision-Date: 2008-04-14 23:49+0200\n"
 "Last-Translator: Pavol Šimo <palo.simo@gmail.com>\n"
 "Language-Team: Fedora Slovak Translation team <trans-list-sk@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
 
-#: data/content/404.html:7 data/content/get-fedora.html:7
+#: data/content/counter.html:7 data/content/get-fedora.html:7
 #: data/content/index.html:7 data/content/join-fedora.html:7
 #: data/content/keys.html:7 data/content/relnotes.html:7
-#: data/content/sponsors.html:7 data/content/verify.html:7
+#: data/content/rss.html:7 data/content/sponsors.html:7
+#: data/content/verify.html:7 data/content/error/404.html:7
 msgid "Fedora Project"
 msgstr "Projekt Fedora"
 
-#: data/content/404.html:10
-msgid "Sorry!  We couldn't find that file"
-msgstr "Je nám to ľúto, ale tento súbor nebolo možné nájsť."
+#: data/content/counter.html:12
+msgid "Fedora Release Counter"
+msgstr "Počítadlo vydania Fedory"
 
-#: data/content/404.html:11
-msgid "We apologize, but the file you requested could not be found."
-msgstr "Ospravedlňujeme sa, ale súbor o ktorý ste žiadali nebolo možné nájsť."
-
-#: data/content/404.html:13
+#: data/content/counter.html:14
 msgid ""
-"Double-check the URL if you entered it manually. Did you copy it correctly?"
-msgstr "Prekontrolujte URL, ak ste ju písali ručne. Opísali ste ju správne?"
-
-#: data/content/404.html:14
-msgid "Did a bad link bring you here? Contact "
-msgstr "Zaviedol vás sem zlý odkaz? Kontaktujte "
-
-#: data/content/404.html:14
-msgid "the fedoraproject.org webmaster"
-msgstr "webmastrov fedoraproject.org"
-
-#: data/content/404.html:14
-msgid " and let them know which link brought you here."
-msgstr " a dajte im vedieť, ktorý odkaz vás sem zaviedol."
-
-#: data/content/404.html:15
-msgid ""
-"The file you are looking for may have moved. Check our main site at <a href="
-"\"http://fedoraproject.org/\">http://fedoraproject.org/</a> or search our <a "
-"href=\"http://fedoraproject.org/wiki/\">wiki</a>."
+"To add a Fedora Release counter to your own site, simply place the following "
+"code wherever you want it to appear:"
 msgstr ""
-"Súbor, ktorý hľadáte, bol možno premiestnený. Pozrite sa na hlavnú stránku "
-"<a href=\"http://fedoraproject.org/\">http://fedoraproject.org/</a>, alebo "
-"prehľadajte našu <a href=\"http://fedoraproject.org/wiki/\">wiki</a>."
+"Ak chcete pridať na svoje stránky počítadlo vydania Fedory, jednoducho pridajte "
+"nasledujúci kód tam, kde ho chcete mať:"
 
-#: data/content/404.html:17
-msgid "Fedora Resources"
-msgstr "Zdroje Fedory"
-
-#: data/content/404.html:20
-msgid "Fedora Documentation"
-msgstr "Dokumentácia Fedory"
-
-#: data/content/404.html:24
-msgid "Connect with the Fedora Community"
-msgstr "Spoj sa s Fedora komunitou"
-
-#: data/content/404.html:28
-msgid "Download Fedora!"
-msgstr "Stiahnite si Fedoru!"
+#: data/content/counter.html:18
+msgid ""
+"The lang parameter can be changed to display the counter in a different "
+"language.  Currently, the values de, en, fi, fr, he, is, it, pt_BR, ro, sk, "
+"and sr are supported.  When no language is specified, English will be used."
+msgstr ""
+"Parameter lang môže byť zmenený na zobrazenie počítadla v inom jazyku. "
+"Momentálne sú podporované hodnoty de, en, fi, fr, he, is, it, pt_BR, ro, sk a "
+"sr. Ak nebude určený žiaden jazyk, použije sa anglický."
 
 #: data/content/get-fedora.html:12
 msgid "Fedora, For You."
@@ -80,99 +52,102 @@ msgstr "Fedora, pre Vás."
 #: data/content/get-fedora.html:13
 msgid ""
 "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
-msgstr "Niekto určite povedal... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
+msgstr ""
+"Niekto určite povedal... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
 
-#: data/content/get-fedora.html:14 data/content/get-prerelease.html:14
+#: data/content/get-fedora.html:14 data/content/get-prerelease.html:15
 msgid "Install Media"
 msgstr "Inštalačné médiá"
 
 #: data/content/get-fedora.html:17 data/content/get-fedora.html:36
-#: data/content/get-fedora.html:56 data/content/get-prerelease.html:17
-#: data/content/get-prerelease.html:39 data/content/get-prerelease.html:57
+#: data/content /get-fedora.html:56 data/content/get-prerelease.html:18
+#: data/content/get- prerelease.html:51 data/content/get-prerelease.html:69
 msgid "BitTorrent"
 msgstr "BitTorrent"
 
 #: data/content/get-fedora.html:19 data/content/get-fedora.html:27
-#: data/content/get-prerelease.html:19 data/content/get-prerelease.html:22
-#: data/content/get-prerelease.html:30
+#: data/content /get-prerelease.html:20 data/content/get-prerelease.html:23
+#: /get-prerelease.html:31 data/content/get-prerelease.html:34
+#: /get-prerelease.html:42
 msgid "i386"
 msgstr "i386"
 
 #: data/content/get-fedora.html:19 data/content/get-fedora.html:20
-#: data/content/get-fedora.html:21 data/content/get-fedora.html:27
-#: data/content/get-fedora.html:28 data/content/get-fedora.html:29
-#: data/content/get-prerelease.html:19 data/content/get-prerelease.html:20
-#: data/content/get-prerelease.html:21 data/content/get-prerelease.html:30
-#: data/content/get-prerelease.html:31 data/content/get-prerelease.html:32
+#: data/content /get-fedora.html:21 data/content/get-fedora.html:27
+#: data/content/get- fedora.html:28 data/content/get-fedora.html:29
+#: prerelease.html:20 data/content/get-prerelease.html:21 prerelease.html:22
+#: data/content/get-prerelease.html:31 prerelease.html:32
+#: data/content/get-prerelease.html:33 prerelease.html:42
+#: data/content/get-prerelease.html:43 prerelease.html:44
 msgid "Install DVD"
 msgstr "Inštalačné DVD"
 
 #: data/content/get-fedora.html:20 data/content/get-fedora.html:28
-#: data/content/get-fedora.html:39 data/content/get-fedora.html:47
-#: data/content/get-fedora.html:59 data/content/get-fedora.html:66
-#: data/content/get-prerelease.html:20 data/content/get-prerelease.html:23
-#: data/content/get-prerelease.html:31 data/content/get-prerelease.html:42
-#: data/content/get-prerelease.html:49 data/content/get-prerelease.html:60
-#: data/content/get-prerelease.html:67
+#: data/content /get-fedora.html:39 data/content/get-fedora.html:47
+#: data/content/get- fedora.html:59 data/content/get-fedora.html:66
+#: prerelease.html:21 data/content/get-prerelease.html:24 prerelease.html:32
+#: data/content/get-prerelease.html:35 prerelease.html:43
+#: data/content/get-prerelease.html:54 prerelease.html:61
+#: data/content/get-prerelease.html:72 prerelease.html:79
 msgid "x86_64"
 msgstr "x86_64"
 
 #: data/content/get-fedora.html:21 data/content/get-fedora.html:29
-#: data/content/get-fedora.html:40 data/content/get-fedora.html:48
-#: data/content/get-prerelease.html:21 data/content/get-prerelease.html:24
-#: data/content/get-prerelease.html:32
+#: data/content /get-fedora.html:40 data/content/get-fedora.html:48
+#: data/content/get- prerelease.html:22 data/content/get-prerelease.html:25
+#: prerelease.html:33 data/content/get-prerelease.html:36 prerelease.html:44
 msgid "ppc"
 msgstr "ppc"
 
 #: data/content/get-fedora.html:25 data/content/get-fedora.html:44
-#: data/content/get-fedora.html:63 data/content/get-prerelease.html:28
-#: data/content/get-prerelease.html:46 data/content/get-prerelease.html:64
+#: data/content /get-fedora.html:63 data/content/get-prerelease.html:29
+#: data/content/get- prerelease.html:58 data/content/get-prerelease.html:76
 msgid "Direct Download"
 msgstr "Priame stiahnutie"
 
-#: data/content/get-fedora.html:33 data/content/get-prerelease.html:36
+#: data/content/get-fedora.html:33 data/content/get-prerelease.html:48
 msgid "Fedora Desktop Live Media"
 msgstr "Fedora Desktop Live Médium"
 
 #: data/content/get-fedora.html:38 data/content/get-fedora.html:46
-#: data/content/get-fedora.html:58 data/content/get-fedora.html:65
-#: data/content/get-prerelease.html:41 data/content/get-prerelease.html:48
-#: data/content/get-prerelease.html:59 data/content/get-prerelease.html:66
+#: data/content /get-fedora.html:58 data/content/get-fedora.html:65
+#: data/content/get- prerelease.html:53 data/content/get-prerelease.html:60
+#: prerelease.html:71 data/content/get-prerelease.html:78
 msgid "i686"
 msgstr "i686"
 
 #: data/content/get-fedora.html:38 data/content/get-fedora.html:46
-#: data/content/get-fedora.html:58 data/content/get-fedora.html:65
-#: data/content/get-prerelease.html:41 data/content/get-prerelease.html:48
-#: data/content/get-prerelease.html:59 data/content/get-prerelease.html:66
+#: data/content /get-fedora.html:58 data/content/get-fedora.html:65
+#: data/content/get- prerelease.html:53 data/content/get-prerelease.html:60
+#: prerelease.html:71 data/content/get-prerelease.html:78
 msgid "Live CD"
 msgstr "Live CD"
 
 #: data/content/get-fedora.html:39 data/content/get-fedora.html:40
-#: data/content/get-fedora.html:47 data/content/get-fedora.html:48
-#: data/content/get-fedora.html:59 data/content/get-fedora.html:66
-#: data/content/get-prerelease.html:42 data/content/get-prerelease.html:49
-#: data/content/get-prerelease.html:60 data/content/get-prerelease.html:67
+#: data/content /get-fedora.html:47 data/content/get-fedora.html:48
+#: data/content/get- fedora.html:59 data/content/get-fedora.html:66
+#: prerelease.html:54 data/content/get-prerelease.html:61 prerelease.html:72
+#: data/content/get-prerelease.html:79
 msgid "Live DVD"
 msgstr "Live DVD"
 
-#: data/content/get-fedora.html:53 data/content/get-prerelease.html:54
+#: data/content/get-fedora.html:53 data/content/get-prerelease.html:66
 msgid "Fedora KDE Live Media"
 msgstr "Fedora KDE Live Médium"
 
-#: data/content/get-fedora.html:71 data/content/get-prerelease.html:71
+#: data/content/get-fedora.html:71 data/content/get-prerelease.html:83
 msgid "Let me look around..."
 msgstr "Chcel by som vidieť..."
 
-#: data/content/get-fedora.html:73 data/content/get-prerelease.html:73
+#: data/content/get-fedora.html:73 data/content/get-prerelease.html:85
 msgid "See all torrents"
 msgstr "Všetky torrenty"
 
-#: data/content/get-fedora.html:74 data/content/get-prerelease.html:74
+#: data/content/get-fedora.html:74 data/content/get-prerelease.html:86
 msgid "See all mirrors"
 msgstr "Všetky mirrory"
 
-#: data/content/get-fedora.html:75 data/content/get-prerelease.html:75
+#: data/content/get-fedora.html:75 data/content/get-prerelease.html:87
 msgid "See all custom spins"
 msgstr "Všetky spiny"
 
@@ -191,10 +166,10 @@ msgid ""
 "<a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">local "
 "vendor</a> in your area."
 msgstr ""
-"Kúpte si inštalačné médium Fedory <a name=\"media\" href=\"http://fedoraproject."
-"org/wiki/Distribution/OnlineVendors\">online</a> alebo od <a href=\"http://"
-"fedoraproject.org/wiki/Distribution/LocalVendors\">miestnych predajcov</a> "
-"blízko Vás."
+"Kúpte si inštalačné médium Fedory <a name=\"media\" href=\"http://"
+"fedoraproject.org/wiki/Distribution/OnlineVendors\">online</a> alebo od <a "
+"href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">miestnych "
+"predajcov</a> blízko Vás."
 
 #: data/content/get-fedora.html:81
 msgid ""
@@ -227,27 +202,37 @@ msgid "Prerelease Version - Fedora Project"
 msgstr "Verzia pred vydaním - Projekt Fedora"
 
 #: data/content/get-prerelease.html:12
-msgid "Fedora, For the Future."
-msgstr "Fedora, pre Budúcnosť."
+msgid "Get the Fedora 9 Beta."
+msgstr "Získajte Fedoru 9 Beta."
 
-#: data/content/get-prerelease.html:13
+#: data/content/get-prerelease.html:14
 msgid ""
 "This is pre-release software. The Fedora Project makes no guarantees as to "
 "its suitability or usefulness. All issues should be reported via the <a href="
-"\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>.  Read the <a href="
-"\"http://fedoraproject.org/f9-beta-relnotes.html\">Beta release notes</a> "
-"for more information."
+"\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>.  Read the "
 msgstr ""
 "Toto je softvér pred vydaním. Projekt Fedora neposkytuje žiadne záruky ani "
 "na vhodnosť alebo užitočnosť. Všetky problémy by mali byť hlásené cez <a "
 "href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a> systém. Pre viac "
-"informácií si prečítajte <a href=\"http://fedoraproject.org/f9-beta-relnotes."
-"html\">poznámky k vydaniu Beta</a>."
+"informácií si prečítajte "
 
-#: data/content/get-prerelease.html:22 data/content/get-prerelease.html:23
-#: data/content/get-prerelease.html:24
+#: data/content/get-prerelease.html:14
+msgid "Beta release notes"
+msgstr "poznámky k vydaniu Beta"
+
+#: data/content/get-prerelease.html:14
+msgid " for more information."
+msgstr "."
+
+#: data/content/get-prerelease.html:23 data/content/get-prerelease.html:24
+#: data/content/get-prerelease.html:25 data/content/get-prerelease.html:34
+#: data/content/get-prerelease.html:35 data/content/get-prerelease.html:36
 msgid "Install CDs"
 msgstr "Inštalačné CD"
+
+#: data/content/get-prerelease.html:40
+msgid "Jigdo"
+msgstr "Jigdo"
 
 #: data/content/index.html:10
 msgid "Fedora 8.  Infinite Possibilities."
@@ -280,8 +265,8 @@ msgid ""
 "The Fedora Project is out front for you, <strong>leading the advancement of "
 "free, open software and content</strong>."
 msgstr ""
-"Projekt Fedora je v čele pre Vás, <strong>vedúc pokrok slobodného a open source "
-"softvéru a obsahu</strong>."
+"Projekt Fedora je v čele pre Vás, <strong>vedúc pokrok slobodného a open "
+"source softvéru a obsahu</strong>."
 
 #: data/content/index.html:26
 msgid ""
@@ -678,6 +663,10 @@ msgstr "Mirror ATRPMs"
 msgid "RPMFind.net mirror"
 msgstr "Mirror RPMFind.net"
 
+#: data/content/rss.html:10
+msgid "RSS Feed Test"
+msgstr "Skúška RSS kanála"
+
 #: data/content/sponsors.html:10
 msgid "Fedora Sponsors"
 msgstr "Sponzori Fedory"
@@ -756,6 +745,57 @@ msgid "If the output states that the file is valid, you're good to go!"
 msgstr ""
 "Ak výstup tvrdí, že súbor je v poriadku, môžete ISO súbor bez obáv používať!"
 
+#: data/content/error/404.html:10
+msgid "Sorry!  We couldn't find that file"
+msgstr "Je nám to ľúto, ale tento súbor nebolo možné nájsť."
+
+#: data/content/error/404.html:11
+msgid "We apologize, but the file you requested could not be found."
+msgstr "Ospravedlňujeme sa, ale súbor o ktorý ste žiadali nebolo možné nájsť."
+
+#: data/content/error/404.html:13
+msgid ""
+"Double-check the URL if you entered it manually. Did you copy it correctly?"
+msgstr "Prekontrolujte URL, ak ste ju písali ručne. Opísali ste ju správne?"
+
+#: data/content/error/404.html:14
+msgid "Did a bad link bring you here? Contact "
+msgstr "Zaviedol vás sem zlý odkaz? Kontaktujte "
+
+#: data/content/error/404.html:14
+msgid "the fedoraproject.org webmaster"
+msgstr "webmastrov fedoraproject.org"
+
+#: data/content/error/404.html:14
+msgid " and let them know which link brought you here."
+msgstr " a dajte im vedieť, ktorý odkaz vás sem zaviedol."
+
+#: data/content/error/404.html:15
+msgid ""
+"The file you are looking for may have moved. Check our main site at <a href="
+"\"http://fedoraproject.org/\">http://fedoraproject.org/</a> or search our <a "
+"href=\"http://fedoraproject.org/wiki/\">wiki</a>."
+msgstr ""
+"Súbor, ktorý hľadáte, bol možno premiestnený. Pozrite sa na hlavnú stránku "
+"<a href=\"http://fedoraproject.org/\">http://fedoraproject.org/</a>, alebo "
+"prehľadajte našu <a href=\"http://fedoraproject.org/wiki/\">wiki</a>."
+
+#: data/content/error/404.html:17
+msgid "Fedora Resources"
+msgstr "Zdroje Fedory"
+
+#: data/content/error/404.html:20
+msgid "Fedora Documentation"
+msgstr "Dokumentácia Fedory"
+
+#: data/content/error/404.html:24
+msgid "Connect with the Fedora Community"
+msgstr "Spoj sa s Fedora komunitou"
+
+#: data/content/error/404.html:28
+msgid "Download Fedora!"
+msgstr "Stiahnite si Fedoru!"
+
 #: data/templates/foot.html:9
 msgid ""
 "Copyright &copy; 2008 Red Hat, Inc. and others.  All Rights Reserved.  "
@@ -796,78 +836,92 @@ msgstr ""
 msgid "Fedora"
 msgstr "Fedora"
 
-#: data/templates/sidebar.html:8
+#: data/templates/sidebar.html:26
 #, python-format
-msgid "%s/%s/static/images/banners/f8-banner-animation.gif"
-msgstr "%s/%s/static/images/banners/f8-banner-animation.gif"
+msgid "%s/static/images/counter/%s"
+msgstr "%s/static/images/counter/%s"
 
-#: data/templates/sidebar.html:8
-msgid "Fedora 8 Werewolf is here!"
-msgstr "Fedora 8 Werewolf je tu!"
+#: data/templates/sidebar.html:26
+#, python-format
+msgid "Fedora 9 Sulfur released in %s days!"
+msgstr "Fedora 9 Sulfur vyjde o %s dní!"
 
-#: data/templates/sidebar.html:11
+#: data/templates/sidebar.html:27
+msgid "Add a counter to your own site!"
+msgstr "Pridaj toto počítadlo na svoju stránku!"
+
+#: data/templates/sidebar.html:30
 msgid "Navigation"
 msgstr "Navigácia"
 
-#: data/templates/sidebar.html:13
+#: data/templates/sidebar.html:32
 msgid "Home"
 msgstr "Domov"
 
-#: data/templates/sidebar.html:14
+#: data/templates/sidebar.html:33
 msgid "Get Fedora"
 msgstr "Získajte Fedoru"
 
-#: data/templates/sidebar.html:15
+#: data/templates/sidebar.html:34
 msgid "Join Fedora"
 msgstr "Pridajte sa k Fedore"
 
-#: data/templates/sidebar.html:17
+#: data/templates/sidebar.html:36
 msgid "Tools"
 msgstr "Nástroje"
 
-#: data/templates/sidebar.html:19
+#: data/templates/sidebar.html:38
 msgid "Docs"
 msgstr "Dokumentácia"
 
-#: data/templates/sidebar.html:19
+#: data/templates/sidebar.html:38
 msgid "Fedora documentation."
 msgstr "Dokumentácia Fedory"
 
-#: data/templates/sidebar.html:20
+#: data/templates/sidebar.html:39
 msgid "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 
-#: data/templates/sidebar.html:20
+#: data/templates/sidebar.html:39
 msgid "Collaborative knowledge."
 msgstr "Kolektívna zbierka znalostí"
 
-#: data/templates/sidebar.html:21
+#: data/templates/sidebar.html:40
 msgid "Planet"
 msgstr "Planéta"
 
-#: data/templates/sidebar.html:21
+#: data/templates/sidebar.html:40
 msgid "The voices of the Fedora community."
 msgstr "Ohlasy komunity"
 
-#: data/templates/sidebar.html:22
+#: data/templates/sidebar.html:41
 msgid "<a href=\"http://fedoraproject.org/wiki/Communicate\">Communicate</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Communicate\">Komunikujte</a>"
 
-#: data/templates/sidebar.html:22
+#: data/templates/sidebar.html:41
 msgid "Speak with Fedora."
 msgstr "Porozprávajte sa s Fedorou"
 
-#: data/templates/sidebar.html:23
+#: data/templates/sidebar.html:42
 msgid "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Events</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Udalosti</a>"
 
-#: data/templates/sidebar.html:23
+#: data/templates/sidebar.html:42
 msgid "Meet the Fedora community."
 msgstr "Stretnutia s komunitou Fedory"
 
-#: data/templates/sidebar.html:25
+#: data/templates/sidebar.html:44
 msgid "Website Language"
 msgstr "Jazyk WWW stránok"
+
+#~ msgid "Fedora, For the Future."
+#~ msgstr "Fedora, pre Budúcnosť."
+
+#~ msgid "%s/%s/static/images/banners/f8-banner-animation.gif"
+#~ msgstr "%s/%s/static/images/banners/f8-banner-animation.gif"
+
+#~ msgid "Fedora 8 Werewolf is here!"
+#~ msgstr "Fedora 8 Werewolf je tu!"
 
 #~ msgid "GNOME Live Media"
 #~ msgstr "GNOME Live Media"
