@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-04-16 13:28-0400\n"
+"POT-Creation-Date: 2008-04-16 15:42-0400\n"
 "PO-Revision-Date: 2008-02-14 00:50+0200\n"
 "Last-Translator: Dimitris Glezos <dimitris@glezos.com>\n"
 "Language-Team: Greek Fedora team <fedora-trans-el@redhat.com>\n"
@@ -45,7 +45,8 @@ msgid "Fedora, For You."
 msgstr "Fedora, για εσάς."
 
 #: data/content/get-fedora.html:13
-msgid "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
+#, python-format
+msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
 msgstr ""
 
 #: data/content/get-fedora.html:14 data/content/get-prerelease.html:15
@@ -198,34 +199,31 @@ msgid "Jigdo"
 msgstr ""
 
 #: data/content/index.html:10
-msgid "Fedora 8.  Infinite Possibilities."
+#, fuzzy
+msgid "Fedora 9.  Infinite Possibilities."
 msgstr "Fedora 8.  Απεριόριστες δυνατότητες."
 
-#: data/content/index.html:13 data/content/index.html:14
-#: data/content/index.html:15
+#: data/content/index.html:16 data/content/index.html:17
+#: data/content/index.html:18
 msgid "F8 Screenshot"
 msgstr "Στιγμιότυπο οθόνης F8"
 
-#: data/content/index.html:17
-msgid "What's new in Fedora 8? Read the release notes. &gt;&gt;"
+#: data/content/index.html:20
+#, fuzzy
+msgid "What's new in Fedora 9? Read the release notes. &gt;&gt;"
 msgstr "Τι νέο υπάρχει στο Fedora 8; Διαβάστε τις σημειώσεις κυκλοφορίας. &gt;&gt;"
 
-#: data/content/index.html:20
+#: data/content/index.html:23
 msgid "Fedora is a Linux-based operating system that showcases the latest in free and open source software. Fedora is <strong>always free for anyone to use, modify, and distribute.</strong>  It is built by people across the globe who work together as a community: the Fedora Project. The Fedora Project is open and anyone is welcome to join."
 msgstr "Το Fedora είναι ένα λειτουργικό σύστημα βασισμένο στο Linux και διαθέτει ό,τι νεότερο υπάρχει στο ελεύθερο λογισμικό και λογισμικό ανοιχτού κώδικα. Το Fedora είναι <strong>πάντα ελεύθερο για οποιονδήποτε να το χρησιμοποιήσει, τροποποιήσει και διανέμει.</strong>  Δημιουργείται από ανθρώπους σε ολόκληρο τον κόσμο οι οποίοι δουλεύουν μαζί σαν μία κοινότητα. Το Έργο Fedora είναι ανοιχτό και οποιοσδήποτε είναι ελεύθερος να συμμετάσχει σε αυτό."
 
-#: data/content/index.html:23
+#: data/content/index.html:26
 msgid "The Fedora Project is out front for you, <strong>leading the advancement of free, open software and content</strong>."
 msgstr "Το Έργο Fedora είναι μπροστά για εσάς, <strong>οδηγώντας την πρόοδο του ελεύθερου λογισμικού και περιεχομένου</strong>."
 
-#: data/content/index.html:26
+#: data/content/index.html:29
 msgid "<a href=\"http://fedoraproject.org/wiki/Overview\">Learn more. &gt;&gt;</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Overview\"> Μάθετε περισσότερα. &gt;&gt;</a>"
-
-#: data/content/index.html:30
-#, fuzzy
-msgid "Looking forward to Fedora 9?  Read the Beta release notes."
-msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 
 #: data/content/join-fedora.html:10
 msgid "Join Fedora."
@@ -395,11 +393,13 @@ msgid "This key was used for packages that were released by Fedora Legacy projec
 msgstr ""
 
 #: data/content/relnotes.html:10
-msgid "Fedora 8 Release Notes"
+#, fuzzy
+msgid "Fedora 9 Release Notes"
 msgstr "Σημειώσεις κυκλοφορίας Fedora 8"
 
 #: data/content/relnotes.html:12
-msgid "Here are places you can find the Fedora 8 release notes.  If one location is unresponsive, try a different one."
+#, fuzzy
+msgid "Here are places you can find the Fedora 9 release notes.  If one location is unresponsive, try a different one."
 msgstr "Οι παρακάτω είναι τοποθεσίες που μπορείτε να βρείτε τις σημειώσεις κυκλοφορίας του Fedora 8.  Αν κάποια τοποθεσία δεν ανταποκρίνεται, παρακαλούμε δοκιμάστε κάποια άλλη."
 
 #: data/content/relnotes.html:15
@@ -407,7 +407,8 @@ msgid "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedo
 msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 
 #: data/content/relnotes.html:18
-msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>8/</em> directory.  For example:"
+#, fuzzy
+msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/9/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>8/</em> directory.  For example:"
 msgstr "Δοκιμάστε οποιαδήποτε <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">εναλλακτική τοποθεσία</a> χρησιμοποιώντας ένα μονοπάτι παρόμοιο με το <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>.  Οι εναλλακτικές τοποθεσίες διαθέτουν μόνο την αγγλική έκδοση, <em>RELEASE-NOTES-en_US.html</em>.  Παρακαλούμε σημειώστε ότι οποιαδήποτε τοποθεσία μπορεί να έχει ένα ελαφρώς διαφορετικό μονοπάτι, ωστόσο θα πρέπει να είναι συνεπής κάτω από τον κατάλογο <em>8/</em>.  Για παράδειγμα:"
 
 #: data/content/relnotes.html:21
@@ -618,6 +619,10 @@ msgstr "Η φωνή της κοινότητας Fedora."
 #: data/templates/sidebar.html:44
 msgid "Website Language"
 msgstr "Γλώσσα ιστοσελίδας"
+
+#, fuzzy
+#~ msgid "Looking forward to Fedora 9?  Read the Beta release notes."
+#~ msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 
 #~ msgid "%s/%s/static/images/banners/f8-banner-animation.gif"
 #~ msgstr "%s/%s/static/images/banners/f8-banner-animation.gif"

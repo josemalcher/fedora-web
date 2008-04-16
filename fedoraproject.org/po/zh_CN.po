@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-04-16 13:28-0400\n"
+"POT-Creation-Date: 2008-04-16 15:42-0400\n"
 "PO-Revision-Date: 2008-04-01 15:36+1000\n"
 "Last-Translator: Leah Liu <lliu@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
@@ -44,8 +44,9 @@ msgid "Fedora, For You."
 msgstr "Fedora，一切为你。"
 
 #: data/content/get-fedora.html:13
-msgid "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
-msgstr "绝对有人说... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
+#, python-format
+msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
+msgstr ""
 
 #: data/content/get-fedora.html:14 data/content/get-prerelease.html:15
 msgid "Install Media"
@@ -194,34 +195,31 @@ msgid "Jigdo"
 msgstr "Jigdo"
 
 #: data/content/index.html:10
-msgid "Fedora 8.  Infinite Possibilities."
+#, fuzzy
+msgid "Fedora 9.  Infinite Possibilities."
 msgstr "Fedora 8。无尽可能。"
 
-#: data/content/index.html:13 data/content/index.html:14
-#: data/content/index.html:15
+#: data/content/index.html:16 data/content/index.html:17
+#: data/content/index.html:18
 msgid "F8 Screenshot"
 msgstr "F8 屏幕截图"
 
-#: data/content/index.html:17
-msgid "What's new in Fedora 8? Read the release notes. &gt;&gt;"
+#: data/content/index.html:20
+#, fuzzy
+msgid "What's new in Fedora 9? Read the release notes. &gt;&gt;"
 msgstr "Fedora 8 中的新内容？请阅读发行注记。>>"
 
-#: data/content/index.html:20
+#: data/content/index.html:23
 msgid "Fedora is a Linux-based operating system that showcases the latest in free and open source software. Fedora is <strong>always free for anyone to use, modify, and distribute.</strong>  It is built by people across the globe who work together as a community: the Fedora Project. The Fedora Project is open and anyone is welcome to join."
 msgstr "Fedora 是基于 Linux 的操作系统，包含了自由和开源软件最新的成果。Fedora <strong>允许所有人自由使用、修改和重新发布</strong>。它由遍布全球的贡献者合作开发，他们构成了 Fedora 项目社区。Fedora 项目对所有人都是开放的。"
 
-#: data/content/index.html:23
+#: data/content/index.html:26
 msgid "The Fedora Project is out front for you, <strong>leading the advancement of free, open software and content</strong>."
 msgstr "Fedora 项目是助你<strong>推动自由、开放的软件和内容进步</strong>的领跑者。"
 
-#: data/content/index.html:26
+#: data/content/index.html:29
 msgid "<a href=\"http://fedoraproject.org/wiki/Overview\">Learn more. &gt;&gt;</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Overview\">更多. &gt;&gt;</a>"
-
-#: data/content/index.html:30
-#, fuzzy
-msgid "Looking forward to Fedora 9?  Read the Beta release notes."
-msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 
 #: data/content/join-fedora.html:10
 msgid "Join Fedora."
@@ -390,11 +388,13 @@ msgid "This key was used for packages that were released by Fedora Legacy projec
 msgstr "这个密钥用于由 Fedora Legacy 项目发布的软件包，这些软件包可用来更新发行版本以达到其官方 EOL。Fedora Legacy 项目不再存在了，因此也不会再使用这个密钥为软件包进行签名。Fedora 7 以及之后的 <strong>fedora-release</strong> 软件包中没有这个密钥。"
 
 #: data/content/relnotes.html:10
-msgid "Fedora 8 Release Notes"
+#, fuzzy
+msgid "Fedora 9 Release Notes"
 msgstr "Fedora 8 发行注记"
 
 #: data/content/relnotes.html:12
-msgid "Here are places you can find the Fedora 8 release notes.  If one location is unresponsive, try a different one."
+#, fuzzy
+msgid "Here are places you can find the Fedora 9 release notes.  If one location is unresponsive, try a different one."
 msgstr "这是 Fedora 8 发行注记所在位置。如果某个链接失效，尝试另一个。"
 
 #: data/content/relnotes.html:15
@@ -402,7 +402,8 @@ msgid "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedo
 msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 
 #: data/content/relnotes.html:18
-msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>8/</em> directory.  For example:"
+#, fuzzy
+msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/9/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>8/</em> directory.  For example:"
 msgstr "访问某个 <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">镜像</a>，地址可能类似 <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>。镜像只包含美国英语版本，<em>RELEASE-NOTES-en_US.html</em>。注意有些镜像可能有略为不同的路径，但是在 <em>8/</em> 之后的部分应当是一致的。例如："
 
 #: data/content/relnotes.html:21
@@ -610,6 +611,13 @@ msgstr "接触 Fedora 社区。"
 #: data/templates/sidebar.html:44
 msgid "Website Language"
 msgstr "网站语言"
+
+#~ msgid "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
+#~ msgstr "绝对有人说... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
+
+#, fuzzy
+#~ msgid "Looking forward to Fedora 9?  Read the Beta release notes."
+#~ msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 
 #~ msgid "%s/%s/static/images/banners/f8-banner-animation.gif"
 #~ msgstr "%s/%s/static/images/banners/f8-banner-animation.gif"

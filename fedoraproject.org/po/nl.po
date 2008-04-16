@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nl\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-04-16 13:28-0400\n"
+"POT-Creation-Date: 2008-04-16 15:42-0400\n"
 "PO-Revision-Date: 2008-03-25 13:51+0100\n"
 "Last-Translator: Bart Couvreur <couf@fedoraproject.org>\n"
 "Language-Team:  <nl@li.org>\n"
@@ -44,8 +44,9 @@ msgid "Fedora, For You."
 msgstr "Fedora, Voor U."
 
 #: data/content/get-fedora.html:13
-msgid "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
-msgstr "Iemand zei daadwerkelijk... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
+#, python-format
+msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
+msgstr ""
 
 #: data/content/get-fedora.html:14 data/content/get-prerelease.html:15
 msgid "Install Media"
@@ -195,33 +196,31 @@ msgid "Jigdo"
 msgstr "Jigdo"
 
 #: data/content/index.html:10
-msgid "Fedora 8.  Infinite Possibilities."
+#, fuzzy
+msgid "Fedora 9.  Infinite Possibilities."
 msgstr "Fedora 8.  Ongekende mogelijkheden."
 
-#: data/content/index.html:13 data/content/index.html:14
-#: data/content/index.html:15
+#: data/content/index.html:16 data/content/index.html:17
+#: data/content/index.html:18
 msgid "F8 Screenshot"
 msgstr "F8 Schermafbeelding"
 
-#: data/content/index.html:17
-msgid "What's new in Fedora 8? Read the release notes. &gt;&gt;"
+#: data/content/index.html:20
+#, fuzzy
+msgid "What's new in Fedora 9? Read the release notes. &gt;&gt;"
 msgstr "Wat is er nieuw in Fedora 8? Lees de release notes. &gt;&gt;"
 
-#: data/content/index.html:20
+#: data/content/index.html:23
 msgid "Fedora is a Linux-based operating system that showcases the latest in free and open source software. Fedora is <strong>always free for anyone to use, modify, and distribute.</strong>  It is built by people across the globe who work together as a community: the Fedora Project. The Fedora Project is open and anyone is welcome to join."
 msgstr "Fedora is een op Linux gebaseerd besturingssysteem dat het laatste in vrije en open software naar voor wil brengen. Fedora is <strong>altijd vrij voor iedereen om te gebruiken, aan te passen en te herdistribueren.</strong> Het wordt wereldwijd ontwikkeld door een grote gemeenschap van mensen: het Fedora Project. Het Fedora Project is open en iedereen is welkom om eraan deel te nemen."
 
-#: data/content/index.html:23
+#: data/content/index.html:26
 msgid "The Fedora Project is out front for you, <strong>leading the advancement of free, open software and content</strong>."
 msgstr "Het Fedora Project is er voor U, <strong>de innovatie van vrije, open software en inhoud leidend</strong>."
 
-#: data/content/index.html:26
+#: data/content/index.html:29
 msgid "<a href=\"http://fedoraproject.org/wiki/Overview\">Learn more. &gt;&gt;</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Overview\">Meer weten. &gt;&gt;</a>"
-
-#: data/content/index.html:30
-msgid "Looking forward to Fedora 9?  Read the Beta release notes."
-msgstr "Benieuwd naar de toekomstige Fedora 9?  Lees de Beta uitgave informatie."
 
 #: data/content/join-fedora.html:10
 msgid "Join Fedora."
@@ -390,11 +389,13 @@ msgid "This key was used for packages that were released by Fedora Legacy projec
 msgstr ""
 
 #: data/content/relnotes.html:10
-msgid "Fedora 8 Release Notes"
+#, fuzzy
+msgid "Fedora 9 Release Notes"
 msgstr "Fedora 8 Release Notes"
 
 #: data/content/relnotes.html:12
-msgid "Here are places you can find the Fedora 8 release notes.  If one location is unresponsive, try a different one."
+#, fuzzy
+msgid "Here are places you can find the Fedora 9 release notes.  If one location is unresponsive, try a different one."
 msgstr "Hier vindt U de locaties van de Fedora 8 release notes. Mocht een locatie niet reageren, probeer dan een andere."
 
 #: data/content/relnotes.html:15
@@ -402,7 +403,8 @@ msgid "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedo
 msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 
 #: data/content/relnotes.html:18
-msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>8/</em> directory.  For example:"
+#, fuzzy
+msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/9/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>8/</em> directory.  For example:"
 msgstr "Kijk ook op een <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">download mirror</a> gebruikmakend van een pad gelijkaardig met <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>. De download mirrors bevatten enkel de Engelse versie, <em>RELEASE-NOTES-en_US.html</em>. Iedere download mirror kan wel een lichte variatie op het bovenstaande pad hebben, maar het zou consistent moeten zijn onder de <em>8/</em> directory.  Als voorbeeld:"
 
 #: data/content/relnotes.html:21
@@ -610,6 +612,12 @@ msgstr "Ontmoet de Fedora gemeenschap."
 #: data/templates/sidebar.html:44
 msgid "Website Language"
 msgstr "Website taal"
+
+#~ msgid "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
+#~ msgstr "Iemand zei daadwerkelijk... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
+
+#~ msgid "Looking forward to Fedora 9?  Read the Beta release notes."
+#~ msgstr "Benieuwd naar de toekomstige Fedora 9?  Lees de Beta uitgave informatie."
 
 #~ msgid "%s/%s/static/images/banners/f8-banner-animation.gif"
 #~ msgstr "%s/%s/static/images/banners/f8-banner-animation.gif"

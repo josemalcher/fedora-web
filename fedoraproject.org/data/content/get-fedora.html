@@ -10,23 +10,23 @@
   </head>
   <body class="get">
     <h2>${_('Fedora, For You.')}</h2>
-    <p class="note"><img src="static/images/smirk.png" class="smirk"/>${_('Someone definitely said... &amp;ldquo;&lt;a href="get-prerelease"&gt;Beta&lt;/a&gt;&amp;rdquo;')}</p>
+    <p class="note">${Markup(_('After downloading an ISO, &lt;a href="%s/%s/verify"&gt;verify&lt;/a&gt; it.') % (path, lang))}</p>
     <h3>${_('Install Media')}</h3>
     <ul class="downloadbox installdvd">
       <li>
       <h4>${_('BitTorrent')}</h4>
       <ul>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-8-dvd-i386.torrent">${_('i386')}</a> - ${_('Install DVD')}</li>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-8-dvd-x86_64.torrent">${_('x86_64')}</a> - ${_('Install DVD')}</li>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-8-dvd-ppc.torrent">${_('ppc')}</a> - ${_('Install DVD')}</li>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-dvd-i386.torrent">${_('i386')}</a> - ${_('Install DVD')}</li>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-dvd-x86_64.torrent">${_('x86_64')}</a> - ${_('Install DVD')}</li>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-dvd-ppc.torrent">${_('ppc')}</a> - ${_('Install DVD')}</li>
       </ul>
       </li>
       <li>
       <h4>${_('Direct Download')}</h4>
       <ul>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/8/Fedora/i386/iso/Fedora-8-i386-DVD.iso">${_('i386')}</a> - ${_('Install DVD')}</li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/8/Fedora/x86_64/iso/Fedora-8-x86_64-DVD.iso">${_('x86_64')}</a> - ${_('Install DVD')}</li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/8/Fedora/ppc/iso/Fedora-8-ppc-DVD.iso">${_('ppc')}</a> - ${_('Install DVD')}</li>
+        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Fedora/i386/iso/Fedora-9-i386-DVD.iso">${_('i386')}</a> - ${_('Install DVD')}</li>
+        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Fedora/x86_64/iso/Fedora-9-x86_64-DVD.iso">${_('x86_64')}</a> - ${_('Install DVD')}</li>
+        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Fedora/ppc/iso/Fedora-9-ppc-DVD.iso">${_('ppc')}</a> - ${_('Install DVD')}</li>
       </ul>
       </li>
     </ul>
@@ -35,17 +35,17 @@
       <li>
       <h4>${_('BitTorrent')}</h4>
       <ul>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-8-Live-i686.torrent">${_('i686')}</a> - ${_('Live CD')}</li>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-8-Live-x86_64.torrent">${_('x86_64')}</a> - ${_('Live DVD')}</li>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-8-Live-ppc.torrent">${_('ppc')}</a> - ${_('Live DVD')}</li>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-Live-i686.torrent">${_('i686')}</a> - ${_('Live CD')}</li>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-Live-x86_64.torrent">${_('x86_64')}</a> - ${_('Live DVD')}</li>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-Live-ppc.torrent">${_('ppc')}</a> - ${_('Live DVD')}</li>
       </ul>
       </li>
       <li>
       <h4>${_('Direct Download')}</h4>
       <ul>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/8/Live/i686/Fedora-8-Live-i686.iso">${_('i686')}</a> - ${_('Live CD')}</li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/8/Live/x86_64/Fedora-8-Live-x86_64.iso">${_('x86_64')}</a> - ${_('Live DVD')}</li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/8/Live/ppc/Fedora-8-Live-ppc.iso">${_('ppc')}</a> - ${_('Live DVD')}</li>
+        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Live/i686/Fedora-9-Live-i686.iso">${_('i686')}</a> - ${_('Live CD')}</li>
+        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Live/x86_64/Fedora-9-Live-x86_64.iso">${_('x86_64')}</a> - ${_('Live DVD')}</li>
+        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Live/ppc/Fedora-9-Live-ppc.iso">${_('ppc')}</a> - ${_('Live DVD')}</li>
       </ul>
       </li>
     </ul>
@@ -55,15 +55,15 @@
       <li>
       <h4>${_('BitTorrent')}</h4>
       <ul>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-8-Live-KDE-i686.torrent">${_('i686')}</a> - ${_('Live CD')}</li>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-8-Live-KDE-x86_64.torrent">${_('x86_64')}</a> - ${_('Live DVD')}</li>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-Live-KDE-i686.torrent">${_('i686')}</a> - ${_('Live CD')}</li>
+        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-Live-KDE-x86_64.torrent">${_('x86_64')}</a> - ${_('Live DVD')}</li>
       </ul>
       </li>
       <li>
       <h4>${_('Direct Download')}</h4>
       <ul>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/8/Live/i686/Fedora-8-Live-KDE-i686.iso">${_('i686')}</a> - ${_('Live CD')}</li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/8/Live/x86_64/Fedora-8-Live-KDE-x86_64.iso">${_('x86_64')}</a> - ${_('Live DVD')}</li>
+        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Live/i686/Fedora-9-Live-KDE-i686.iso">${_('i686')}</a> - ${_('Live CD')}</li>
+        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Live/x86_64/Fedora-9-Live-KDE-x86_64.iso">${_('x86_64')}</a> - ${_('Live DVD')}</li>
       </ul>
       </li>
     </ul>
@@ -71,7 +71,7 @@
     <h3>${_('Let me look around...')}</h3>
     <ul class="download">
       <li><a href="http://torrent.fedoraproject.org/">${_('See all torrents')}</a></li>
-      <li><a href="http://mirrors.fedoraproject.org/publiclist/Fedora/8/">${_('See all mirrors')}</a></li>
+      <li><a href="http://mirrors.fedoraproject.org/publiclist/Fedora/9/">${_('See all mirrors')}</a></li>
       <li><a href="http://spins.fedoraproject.org/">${_('See all custom spins')}</a></li>
     </ul>
     <h3>${_('Slow Internet? No Internet?')}</h3>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-04-16 13:28-0400\n"
+"POT-Creation-Date: 2008-04-16 15:42-0400\n"
 "PO-Revision-Date: 2008-04-06 02:04GMT\n"
 "Last-Translator: Oron Peled <oron@actcom.co.il>\n"
 "Language-Team: Hebrew\n"
@@ -45,8 +45,9 @@ msgid "Fedora, For You."
 msgstr "פדורה, עבורך."
 
 #: data/content/get-fedora.html:13
-msgid "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
-msgstr "בהחלט דובר על גרסת... &ldquo;<a href=\"get-prerelease\">בטא</a>&rdquo;"
+#, python-format
+msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
+msgstr ""
 
 #: data/content/get-fedora.html:14 data/content/get-prerelease.html:15
 msgid "Install Media"
@@ -195,33 +196,31 @@ msgid "Jigdo"
 msgstr "Jigdo"
 
 #: data/content/index.html:10
-msgid "Fedora 8.  Infinite Possibilities."
+#, fuzzy
+msgid "Fedora 9.  Infinite Possibilities."
 msgstr "פדורה 8. אינסוף אפשרויות."
 
-#: data/content/index.html:13 data/content/index.html:14
-#: data/content/index.html:15
+#: data/content/index.html:16 data/content/index.html:17
+#: data/content/index.html:18
 msgid "F8 Screenshot"
 msgstr "תמונת מסך F8"
 
-#: data/content/index.html:17
-msgid "What's new in Fedora 8? Read the release notes. &gt;&gt;"
+#: data/content/index.html:20
+#, fuzzy
+msgid "What's new in Fedora 9? Read the release notes. &gt;&gt;"
 msgstr "מה חדש בפדורה 8? ניתן לקרוא בהודעת השחרור. &gt;&gt;"
 
-#: data/content/index.html:20
+#: data/content/index.html:23
 msgid "Fedora is a Linux-based operating system that showcases the latest in free and open source software. Fedora is <strong>always free for anyone to use, modify, and distribute.</strong>  It is built by people across the globe who work together as a community: the Fedora Project. The Fedora Project is open and anyone is welcome to join."
 msgstr "פדורה היא מערכת הפעלה מבוססת לינוקס המציגה את החידושים האחרונים בתוכנה חופשית וקוד פתוח. פדורה הנה <strong>חופשית תמיד לשימוש, שינויים והפצה על ידי כל אדם.</strong>  היא נבנתה על ידי אנשים מכל העולם העובדים יחד כקהילה: פרויקט פדורה. פרויקט פדורה פתוח ומזמין כל אדם להצטרף."
 
-#: data/content/index.html:23
+#: data/content/index.html:26
 msgid "The Fedora Project is out front for you, <strong>leading the advancement of free, open software and content</strong>."
 msgstr "פרוייקט פדורה מצטרף אליך  <strong>להובלת הקידום של קוד פתוח, תוכנה ותוכן חופשיים</strong>."
 
-#: data/content/index.html:26
+#: data/content/index.html:29
 msgid "<a href=\"http://fedoraproject.org/wiki/Overview\">Learn more. &gt;&gt;</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Overview\">אני רוצה ללמוד עוד. &gt;&gt;</a>"
-
-#: data/content/index.html:30
-msgid "Looking forward to Fedora 9?  Read the Beta release notes."
-msgstr "מצפים קדימה לפדורה 9? ניתן לקרוא את גרסת הבטא של הודעת השחרור."
 
 #: data/content/join-fedora.html:10
 msgid "Join Fedora."
@@ -390,11 +389,13 @@ msgid "This key was used for packages that were released by Fedora Legacy projec
 msgstr "מפתח זה היה בשימוש עבור חבילות ששוחררו על ידי פרויקט מורשת פדורה כדי לעדכן גרסאות שהגיעו לסוף מחזור החיים הרשמי שלהן. פרויקט מורשת פדורה אינו מתקיים עוד ועל כן מפתח זה לא ישמש יותר לחתימה על חבילות. מפתח זה לא יכלל בחבילת <strong>fedora-release</strong> החל מפדורה 7 והלאה."
 
 #: data/content/relnotes.html:10
-msgid "Fedora 8 Release Notes"
+#, fuzzy
+msgid "Fedora 9 Release Notes"
 msgstr "הודעת שחרור עבור פדורה 8"
 
 #: data/content/relnotes.html:12
-msgid "Here are places you can find the Fedora 8 release notes.  If one location is unresponsive, try a different one."
+#, fuzzy
+msgid "Here are places you can find the Fedora 9 release notes.  If one location is unresponsive, try a different one."
 msgstr "להלן המקומות בהן ניתן למצוא את הודעת השחרור של פדורה 8. אם אחד האתרים אינו מגיב, ניתן לנסות את אחד האחרים."
 
 #: data/content/relnotes.html:15
@@ -402,7 +403,8 @@ msgid "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedo
 msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 
 #: data/content/relnotes.html:18
-msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>8/</em> directory.  For example:"
+#, fuzzy
+msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/9/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>8/</em> directory.  For example:"
 msgstr "כל אחד מאתרי <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">המראה</a> משתמש בנתיב דומה ל- <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>.  אתרי המראה מחזיקים רק את הגרסה האנגלית, <em>RELEASE-NOTES-en_US.html</em>.  יש לשים לב שהנתיב בכל אתר מראה עלול להיות מעט שונה, אבל צריך להיות עקבי החל מהנקודה שאחרי תיקיית ה-<em>8/</em>.  למשל:"
 
 #: data/content/relnotes.html:21
@@ -610,6 +612,12 @@ msgstr "פגשו את קהיליית פדורה."
 #: data/templates/sidebar.html:44
 msgid "Website Language"
 msgstr "שפת האתר"
+
+#~ msgid "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
+#~ msgstr "בהחלט דובר על גרסת... &ldquo;<a href=\"get-prerelease\">בטא</a>&rdquo;"
+
+#~ msgid "Looking forward to Fedora 9?  Read the Beta release notes."
+#~ msgstr "מצפים קדימה לפדורה 9? ניתן לקרוא את גרסת הבטא של הודעת השחרור."
 
 #~ msgid "%s/%s/static/images/banners/f8-banner-animation.gif"
 #~ msgstr "%s/%s/static/images/banners/f8-banner-animation.gif"

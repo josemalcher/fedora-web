@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Website\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-04-16 13:28-0400\n"
+"POT-Creation-Date: 2008-04-16 15:42-0400\n"
 "PO-Revision-Date: 2008-04-14 23:49+0200\n"
 "Last-Translator: Pavol Šimo <palo.simo@gmail.com>\n"
 "Language-Team: Fedora Slovak Translation team <trans-list-sk@redhat.com>\n"
@@ -41,8 +41,9 @@ msgid "Fedora, For You."
 msgstr "Fedora, pre Vás."
 
 #: data/content/get-fedora.html:13
-msgid "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
-msgstr "Niekto určite povedal... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
+#, python-format
+msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
+msgstr ""
 
 #: data/content/get-fedora.html:14 data/content/get-prerelease.html:15
 msgid "Install Media"
@@ -191,33 +192,31 @@ msgid "Jigdo"
 msgstr "Jigdo"
 
 #: data/content/index.html:10
-msgid "Fedora 8.  Infinite Possibilities."
+#, fuzzy
+msgid "Fedora 9.  Infinite Possibilities."
 msgstr "Fedora 8. Nekonečné možnosti."
 
-#: data/content/index.html:13 data/content/index.html:14
-#: data/content/index.html:15
+#: data/content/index.html:16 data/content/index.html:17
+#: data/content/index.html:18
 msgid "F8 Screenshot"
 msgstr "Snímok obrazovky F8"
 
-#: data/content/index.html:17
-msgid "What's new in Fedora 8? Read the release notes. &gt;&gt;"
+#: data/content/index.html:20
+#, fuzzy
+msgid "What's new in Fedora 9? Read the release notes. &gt;&gt;"
 msgstr "Čo je nové vo Fedore 8? Prečítajte si poznámky k vydaniu. &gt;&gt;"
 
-#: data/content/index.html:20
+#: data/content/index.html:23
 msgid "Fedora is a Linux-based operating system that showcases the latest in free and open source software. Fedora is <strong>always free for anyone to use, modify, and distribute.</strong>  It is built by people across the globe who work together as a community: the Fedora Project. The Fedora Project is open and anyone is welcome to join."
 msgstr "Fedora je operačný systém založený na Linuxe a najnovších slobodných a open source technológiách. Fedoru môže každý <strong>slobodne používať, upravovať a šíriť.</strong> Fedora je vytváraná ľuďmi z celého sveta, ktorí pracujú spolu ako komunita. Projekt Fedora je otvorený a každý je vítaný sa pridať."
 
-#: data/content/index.html:23
+#: data/content/index.html:26
 msgid "The Fedora Project is out front for you, <strong>leading the advancement of free, open software and content</strong>."
 msgstr "Projekt Fedora je v čele pre Vás, <strong>vedúc pokrok slobodného a open source softvéru a obsahu</strong>."
 
-#: data/content/index.html:26
+#: data/content/index.html:29
 msgid "<a href=\"http://fedoraproject.org/wiki/Overview\">Learn more. &gt;&gt;</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Overview\">Dozveďte sa viac. &gt;&gt;</a>"
-
-#: data/content/index.html:30
-msgid "Looking forward to Fedora 9?  Read the Beta release notes."
-msgstr "Očakávate Fedoru 9? Prečítajte si poznámky k vydaniu Beta."
 
 #: data/content/join-fedora.html:10
 msgid "Join Fedora."
@@ -386,11 +385,13 @@ msgid "This key was used for packages that were released by Fedora Legacy projec
 msgstr "Tento kľúč používali balíčky vydané projektom Fedora Legacy na aktualizáciu vydaní, ktorých oficiálna doba podpory skončila.  Projekt Fedora Legacy už neexistuje, takže týmto kľúčom sa už nebudú podpisovať žiadne balíčky. Tento kľúč nie je v balíčku <strong>fedora-release</strong> vo Fedora 7 a neskorších vydaniach."
 
 #: data/content/relnotes.html:10
-msgid "Fedora 8 Release Notes"
+#, fuzzy
+msgid "Fedora 9 Release Notes"
 msgstr "Poznámky k vydaniu Fedora 8"
 
 #: data/content/relnotes.html:12
-msgid "Here are places you can find the Fedora 8 release notes.  If one location is unresponsive, try a different one."
+#, fuzzy
+msgid "Here are places you can find the Fedora 9 release notes.  If one location is unresponsive, try a different one."
 msgstr "Tu sú miesta, kde môžete nájsť poznámky k vydaniu Fedory 8. Ak nejaké miesto nefunguje, skúste iné."
 
 #: data/content/relnotes.html:15
@@ -398,7 +399,8 @@ msgid "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedo
 msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 
 #: data/content/relnotes.html:18
-msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>8/</em> directory.  For example:"
+#, fuzzy
+msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/9/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>8/</em> directory.  For example:"
 msgstr "Prezrite ľubovoľný <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">mirror</a> použitím cesty ako <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>. Tieto mirrory obsahujú iba US Anglickú verziu, <em>RELEASE-NOTES-en_US.html</em>.  Mirrory môžu mat trochu inú cestu, ale mali by sa nachádzať v adresári <em>8/</em>. Napríklad: "
 
 #: data/content/relnotes.html:21
@@ -606,6 +608,12 @@ msgstr "Stretnutia s komunitou Fedory"
 #: data/templates/sidebar.html:44
 msgid "Website Language"
 msgstr "Jazyk WWW stránok"
+
+#~ msgid "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
+#~ msgstr "Niekto určite povedal... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
+
+#~ msgid "Looking forward to Fedora 9?  Read the Beta release notes."
+#~ msgstr "Očakávate Fedoru 9? Prečítajte si poznámky k vydaniu Beta."
 
 #~ msgid "Fedora, For the Future."
 #~ msgstr "Fedora, pre Budúcnosť."

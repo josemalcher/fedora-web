@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-04-16 13:28-0400\n"
+"POT-Creation-Date: 2008-04-16 15:42-0400\n"
 "PO-Revision-Date: 2008-04-09 11:48+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -40,8 +40,9 @@ msgid "Fedora, For You."
 msgstr "Pobierz Fedorę."
 
 #: data/content/get-fedora.html:13
-msgid "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
-msgstr "Chyba ktoś powiedział... &ldquo;<a href=\"get-prerelease\">beta</a>&rdquo;"
+#, python-format
+msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
+msgstr ""
 
 #: data/content/get-fedora.html:14 data/content/get-prerelease.html:15
 msgid "Install Media"
@@ -190,33 +191,31 @@ msgid "Jigdo"
 msgstr "Jigdo"
 
 #: data/content/index.html:10
-msgid "Fedora 8.  Infinite Possibilities."
+#, fuzzy
+msgid "Fedora 9.  Infinite Possibilities."
 msgstr "Fedora 8. Nieskończone możliwości."
 
-#: data/content/index.html:13 data/content/index.html:14
-#: data/content/index.html:15
+#: data/content/index.html:16 data/content/index.html:17
+#: data/content/index.html:18
 msgid "F8 Screenshot"
 msgstr "Zrzut ekranu Fedory 8"
 
-#: data/content/index.html:17
-msgid "What's new in Fedora 8? Read the release notes. &gt;&gt;"
+#: data/content/index.html:20
+#, fuzzy
+msgid "What's new in Fedora 9? Read the release notes. &gt;&gt;"
 msgstr "Co nowego w Fedorze 8? Przeczytaj informacje o wydaniu. &gt;&gt;"
 
-#: data/content/index.html:20
+#: data/content/index.html:23
 msgid "Fedora is a Linux-based operating system that showcases the latest in free and open source software. Fedora is <strong>always free for anyone to use, modify, and distribute.</strong>  It is built by people across the globe who work together as a community: the Fedora Project. The Fedora Project is open and anyone is welcome to join."
 msgstr "Fedora to oparty na Linuksie system operacyjny prezentujący wszystko to, co najlepsze w wolnym i otwartym oprogramowaniu. <strong>Zawsze można ją swobodnie używać, zmieniać i rozprowadzać.</strong>. Tworzą ją ludzie na całym świecie pracując wspólnie jako społeczność Projektu Fedora. Projekt jest otwarty dla wszystkich, każdy jest tutaj mile widziany."
 
-#: data/content/index.html:23
+#: data/content/index.html:26
 msgid "The Fedora Project is out front for you, <strong>leading the advancement of free, open software and content</strong>."
 msgstr "Projekt Fedora wychodzi Ci naprzeciw dostarczając <strong>najlepsze wolne i otwarte oprogramowanie</strong>."
 
-#: data/content/index.html:26
+#: data/content/index.html:29
 msgid "<a href=\"http://fedoraproject.org/wiki/Overview\">Learn more. &gt;&gt;</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Overview\">Dowiedz się więcej. &gt;&gt;</a>"
-
-#: data/content/index.html:30
-msgid "Looking forward to Fedora 9?  Read the Beta release notes."
-msgstr "Nie możesz doczekać się Fedory 9? Przeczytaj informacje o wydaniu beta."
 
 #: data/content/join-fedora.html:10
 msgid "Join Fedora."
@@ -385,11 +384,13 @@ msgid "This key was used for packages that were released by Fedora Legacy projec
 msgstr "Ten klucz był używany dla pakietów, które zostały wydane przez projekt Fedora Legacy, aby aktualizować wydania, które oficjalnie osiągnęły stan EOL. Projekt Fedora Legacy już nie istnieje, więc ten klucz nie będzie już używany do podpisywania pakietów. Ten klucz nie jest zawarty w pakiecie <strong>fedora-release</strong> w Fedorze 7 i późniejszych wydaniach."
 
 #: data/content/relnotes.html:10
-msgid "Fedora 8 Release Notes"
+#, fuzzy
+msgid "Fedora 9 Release Notes"
 msgstr "Informacje o wydaniu Fedory 8"
 
 #: data/content/relnotes.html:12
-msgid "Here are places you can find the Fedora 8 release notes.  If one location is unresponsive, try a different one."
+#, fuzzy
+msgid "Here are places you can find the Fedora 9 release notes.  If one location is unresponsive, try a different one."
 msgstr "Poniżej jest lista stron, na których znajdują się informacje o wydaniu Fedory 8. Gdyby któryś odnośnik nie zadziałał, spróbuj użyć innego."
 
 #: data/content/relnotes.html:15
@@ -397,7 +398,8 @@ msgid "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedo
 msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 
 #: data/content/relnotes.html:18
-msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>8/</em> directory.  For example:"
+#, fuzzy
+msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/9/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>8/</em> directory.  For example:"
 msgstr "Sprawdź dowolny <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">serwer lustrzany</a> używając ścieżki podobnej do <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>. Serwery lustrzane zawierają tylko angielską wersję informacji o wydaniu, <em>RELEASE-NOTES-en_US.html</em>. Zauważ, że na każdym z serwerów ścieżka może być trochę inna, ale nie powinna się różnić od folderu <em>8<em/>. Na przykład:"
 
 #: data/content/relnotes.html:21
@@ -605,3 +607,9 @@ msgstr "Spotkaj społeczność Fedory."
 #: data/templates/sidebar.html:44
 msgid "Website Language"
 msgstr "Język strony WWW"
+
+#~ msgid "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
+#~ msgstr "Chyba ktoś powiedział... &ldquo;<a href=\"get-prerelease\">beta</a>&rdquo;"
+
+#~ msgid "Looking forward to Fedora 9?  Read the Beta release notes."
+#~ msgstr "Nie możesz doczekać się Fedory 9? Przeczytaj informacje o wydaniu beta."
