@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: fedora-web\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2008-04-16 15:42-0400\n"
-"PO-Revision-Date: 2008-04-13 00:04+0100\n"
+"PO-Revision-Date: 2008-04-21 20:37+0100\n"
 "Last-Translator: Sulyok Péter <peti@sulyok.hu>\n"
 "Language-Team: Hungarian <<fedora-trans-hu@redhat.com>>\n"
 "MIME-Version: 1.0\n"
@@ -14,11 +14,16 @@ msgstr ""
 "X-Poedit-Country: HUNGARY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: data/content/counter.html:7 data/content/get-fedora.html:7
-#: data/content/index.html:7 data/content/join-fedora.html:7
-#: data/content/keys.html:7 data/content/relnotes.html:7
-#: data/content/rss.html:7 data/content/sponsors.html:7
-#: data/content/verify.html:7 data/content/e/404.html:7
+#: data/content/counter.html:7
+#: data/content/get-fedora.html:7
+#: data/content/index.html:7
+#: data/content/join-fedora.html:7
+#: data/content/keys.html:7
+#: data/content/relnotes.html:7
+#: data/content/rss.html:7
+#: data/content/sponsors.html:7
+#: data/content/verify.html:7
+#: data/content/e/404.html:7
 msgid "Fedora Project"
 msgstr "Fedora Terv"
 
@@ -27,13 +32,12 @@ msgid "Fedora Release Counter"
 msgstr "Fedora kiadásszámláló"
 
 #: data/content/counter.html:14
-#, fuzzy
 msgid "To add a Fedora Release counter to your own site, simply place the following code wherever you want it to appear:"
-msgstr "A Fedora kiadásszámlálót a következő módon lehet hozzáadni egy helyhez. Egyszerűen oda kell másolni a következő sorokat:"
+msgstr "A Fedora kiadás visszaszámlálóját a úgy lehet hozzáadni egy helyhez, hogy egyszerűen odamásoljuk a következő sorokat:"
 
 #: data/content/counter.html:18
 msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk, and sr are supported.  When no language is specified, English will be used."
-msgstr ""
+msgstr "A lang paraméter megváltoztatható, hogy a visszaszámláló egy másik nyelven jelenjen meg. Jelenleg a de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk és sr értékeket lehet használni. Amikor nincs nyelv megadva, az angolt használják."
 
 #: data/content/get-fedora.html:12
 msgid "Fedora, For You."
@@ -42,101 +46,151 @@ msgstr "Fedora, Önökért."
 #: data/content/get-fedora.html:13
 #, python-format
 msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
-msgstr ""
+msgstr "Az ISO-t letöltése után <a href=\"%s/%s/verify\">ellenőrizzük</a>."
 
-#: data/content/get-fedora.html:14 data/content/get-prerelease.html:15
+#: data/content/get-fedora.html:14
+#: data/content/get-prerelease.html:15
 msgid "Install Media"
 msgstr "Telepítő média"
 
-#: data/content/get-fedora.html:17 data/content/get-fedora.html:36
-#: data/content /get-fedora.html:56 data/content/get-prerelease.html:18
-#: data/content/get- prerelease.html:51 data/content/get-prerelease.html:69
+#: data/content/get-fedora.html:17
+#: data/content/get-fedora.html:36
+#: data/content /get-fedora.html:56
+#: data/content/get-prerelease.html:18
+#: data/content/get- prerelease.html:51
+#: data/content/get-prerelease.html:69
 msgid "BitTorrent"
 msgstr "BitTorrent"
 
-#: data/content/get-fedora.html:19 data/content/get-fedora.html:27
-#: data/content /get-prerelease.html:20 data/content/get-prerelease.html:23
-#: /get-prerelease.html:31 data/content/get-prerelease.html:34
+#: data/content/get-fedora.html:19
+#: data/content/get-fedora.html:27
+#: data/content /get-prerelease.html:20
+#: data/content/get-prerelease.html:23
+#: /get-prerelease.html:31
+#: data/content/get-prerelease.html:34
 #: /get-prerelease.html:42
 msgid "i386"
 msgstr "i386"
 
-#: data/content/get-fedora.html:19 data/content/get-fedora.html:20
-#: data/content /get-fedora.html:21 data/content/get-fedora.html:27
-#: data/content/get- fedora.html:28 data/content/get-fedora.html:29
-#: prerelease.html:20 data/content/get-prerelease.html:21 prerelease.html:22
-#: data/content/get-prerelease.html:31 prerelease.html:32
-#: data/content/get-prerelease.html:33 prerelease.html:42
-#: data/content/get-prerelease.html:43 prerelease.html:44
+#: data/content/get-fedora.html:19
+#: data/content/get-fedora.html:20
+#: data/content /get-fedora.html:21
+#: data/content/get-fedora.html:27
+#: data/content/get- fedora.html:28
+#: data/content/get-fedora.html:29
+#: prerelease.html:20
+#: data/content/get-prerelease.html:21
+#: prerelease.html:22
+#: data/content/get-prerelease.html:31
+#: prerelease.html:32
+#: data/content/get-prerelease.html:33
+#: prerelease.html:42
+#: data/content/get-prerelease.html:43
+#: prerelease.html:44
 msgid "Install DVD"
 msgstr "Telepítő DVD"
 
-#: data/content/get-fedora.html:20 data/content/get-fedora.html:28
-#: data/content /get-fedora.html:39 data/content/get-fedora.html:47
-#: data/content/get- fedora.html:59 data/content/get-fedora.html:66
-#: prerelease.html:21 data/content/get-prerelease.html:24 prerelease.html:32
-#: data/content/get-prerelease.html:35 prerelease.html:43
-#: data/content/get-prerelease.html:54 prerelease.html:61
-#: data/content/get-prerelease.html:72 prerelease.html:79
+#: data/content/get-fedora.html:20
+#: data/content/get-fedora.html:28
+#: data/content /get-fedora.html:39
+#: data/content/get-fedora.html:47
+#: data/content/get- fedora.html:59
+#: data/content/get-fedora.html:66
+#: prerelease.html:21
+#: data/content/get-prerelease.html:24
+#: prerelease.html:32
+#: data/content/get-prerelease.html:35
+#: prerelease.html:43
+#: data/content/get-prerelease.html:54
+#: prerelease.html:61
+#: data/content/get-prerelease.html:72
+#: prerelease.html:79
 msgid "x86_64"
 msgstr "x86_64"
 
-#: data/content/get-fedora.html:21 data/content/get-fedora.html:29
-#: data/content /get-fedora.html:40 data/content/get-fedora.html:48
-#: data/content/get- prerelease.html:22 data/content/get-prerelease.html:25
-#: prerelease.html:33 data/content/get-prerelease.html:36 prerelease.html:44
+#: data/content/get-fedora.html:21
+#: data/content/get-fedora.html:29
+#: data/content /get-fedora.html:40
+#: data/content/get-fedora.html:48
+#: data/content/get- prerelease.html:22
+#: data/content/get-prerelease.html:25
+#: prerelease.html:33
+#: data/content/get-prerelease.html:36
+#: prerelease.html:44
 msgid "ppc"
 msgstr "ppc"
 
-#: data/content/get-fedora.html:25 data/content/get-fedora.html:44
-#: data/content /get-fedora.html:63 data/content/get-prerelease.html:29
-#: data/content/get- prerelease.html:58 data/content/get-prerelease.html:76
+#: data/content/get-fedora.html:25
+#: data/content/get-fedora.html:44
+#: data/content /get-fedora.html:63
+#: data/content/get-prerelease.html:29
+#: data/content/get- prerelease.html:58
+#: data/content/get-prerelease.html:76
 msgid "Direct Download"
 msgstr "Közvetlen letöltés"
 
-#: data/content/get-fedora.html:33 data/content/get-prerelease.html:48
+#: data/content/get-fedora.html:33
+#: data/content/get-prerelease.html:48
 msgid "Fedora Desktop Live Media"
 msgstr "Fedora munkaasztal élő média"
 
-#: data/content/get-fedora.html:38 data/content/get-fedora.html:46
-#: data/content /get-fedora.html:58 data/content/get-fedora.html:65
-#: data/content/get- prerelease.html:53 data/content/get-prerelease.html:60
-#: prerelease.html:71 data/content/get-prerelease.html:78
+#: data/content/get-fedora.html:38
+#: data/content/get-fedora.html:46
+#: data/content /get-fedora.html:58
+#: data/content/get-fedora.html:65
+#: data/content/get- prerelease.html:53
+#: data/content/get-prerelease.html:60
+#: prerelease.html:71
+#: data/content/get-prerelease.html:78
 msgid "i686"
 msgstr "i686"
 
-#: data/content/get-fedora.html:38 data/content/get-fedora.html:46
-#: data/content /get-fedora.html:58 data/content/get-fedora.html:65
-#: data/content/get- prerelease.html:53 data/content/get-prerelease.html:60
-#: prerelease.html:71 data/content/get-prerelease.html:78
+#: data/content/get-fedora.html:38
+#: data/content/get-fedora.html:46
+#: data/content /get-fedora.html:58
+#: data/content/get-fedora.html:65
+#: data/content/get- prerelease.html:53
+#: data/content/get-prerelease.html:60
+#: prerelease.html:71
+#: data/content/get-prerelease.html:78
 msgid "Live CD"
 msgstr "Élő CD"
 
-#: data/content/get-fedora.html:39 data/content/get-fedora.html:40
-#: data/content /get-fedora.html:47 data/content/get-fedora.html:48
-#: data/content/get- fedora.html:59 data/content/get-fedora.html:66
-#: prerelease.html:54 data/content/get-prerelease.html:61 prerelease.html:72
+#: data/content/get-fedora.html:39
+#: data/content/get-fedora.html:40
+#: data/content /get-fedora.html:47
+#: data/content/get-fedora.html:48
+#: data/content/get- fedora.html:59
+#: data/content/get-fedora.html:66
+#: prerelease.html:54
+#: data/content/get-prerelease.html:61
+#: prerelease.html:72
 #: data/content/get-prerelease.html:79
 msgid "Live DVD"
 msgstr "Élő DVD"
 
-#: data/content/get-fedora.html:53 data/content/get-prerelease.html:66
+#: data/content/get-fedora.html:53
+#: data/content/get-prerelease.html:66
 msgid "Fedora KDE Live Media"
 msgstr "Fedora KDE élő média"
 
-#: data/content/get-fedora.html:71 data/content/get-prerelease.html:83
+#: data/content/get-fedora.html:71
+#: data/content/get-prerelease.html:83
 msgid "Let me look around..."
 msgstr "Hadd nézzek körül..."
 
-#: data/content/get-fedora.html:73 data/content/get-prerelease.html:85
+#: data/content/get-fedora.html:73
+#: data/content/get-prerelease.html:85
 msgid "See all torrents"
 msgstr "Lássunk minden torrentet"
 
-#: data/content/get-fedora.html:74 data/content/get-prerelease.html:86
+#: data/content/get-fedora.html:74
+#: data/content/get-prerelease.html:86
 msgid "See all mirrors"
 msgstr "Lássunk minden tükröt"
 
-#: data/content/get-fedora.html:75 data/content/get-prerelease.html:87
+#: data/content/get-fedora.html:75
+#: data/content/get-prerelease.html:87
 msgid "See all custom spins"
 msgstr "Lássunk minden egyedi eltérést"
 
@@ -180,9 +234,12 @@ msgstr "Béta kiadási tudnivalókat"
 msgid " for more information."
 msgstr " további tájékoztatásért."
 
-#: data/content/get-prerelease.html:23 data/content/get-prerelease.html:24
-#: data/content/get-prerelease.html:25 data/content/get-prerelease.html:34
-#: data/content/get-prerelease.html:35 data/content/get-prerelease.html:36
+#: data/content/get-prerelease.html:23
+#: data/content/get-prerelease.html:24
+#: data/content/get-prerelease.html:25
+#: data/content/get-prerelease.html:34
+#: data/content/get-prerelease.html:35
+#: data/content/get-prerelease.html:36
 msgid "Install CDs"
 msgstr "Telepítő CD-k."
 
@@ -191,19 +248,18 @@ msgid "Jigdo"
 msgstr "Jigdo"
 
 #: data/content/index.html:10
-#, fuzzy
 msgid "Fedora 9.  Infinite Possibilities."
-msgstr "Fedora 8. Végtelen lehetőségek."
+msgstr "Fedora 9. Végtelen lehetőségek."
 
-#: data/content/index.html:16 data/content/index.html:17
+#: data/content/index.html:16
+#: data/content/index.html:17
 #: data/content/index.html:18
 msgid "F8 Screenshot"
 msgstr "F8 képernyőkép"
 
 #: data/content/index.html:20
-#, fuzzy
 msgid "What's new in Fedora 9? Read the release notes. &gt;&gt;"
-msgstr "Mi újság a Fedora 8-ban? Elolvashatják a kiadási tudnivalókban. &gt;&gt;"
+msgstr "Mi újság a Fedora 9-ben? Elolvashatják a kiadási tudnivalókban. &gt;&gt;"
 
 #: data/content/index.html:23
 msgid "Fedora is a Linux-based operating system that showcases the latest in free and open source software. Fedora is <strong>always free for anyone to use, modify, and distribute.</strong>  It is built by people across the globe who work together as a community: the Fedora Project. The Fedora Project is open and anyone is welcome to join."
@@ -384,23 +440,20 @@ msgid "This key was used for packages that were released by Fedora Legacy projec
 msgstr "E kulcsot használták a Fedora Örökség terv által kiadott csomagokban, hogy frissítsék a hivatalos EOL-t elérő kiadásokat. A Fedora Örökség terv már nem létezik, így e kulcsot már nem használják csomagok aláírására. E kulcsot nem tartalmazza a <strong>fedora-release</strong> csomag a Fedora 7 és későbbi kiadásokban."
 
 #: data/content/relnotes.html:10
-#, fuzzy
 msgid "Fedora 9 Release Notes"
-msgstr "Fedora 8 kiadási tudnivalók"
+msgstr "Fedora 9 kiadási tudnivalók"
 
 #: data/content/relnotes.html:12
-#, fuzzy
 msgid "Here are places you can find the Fedora 9 release notes.  If one location is unresponsive, try a different one."
-msgstr "Ezeken a helyeken találhatók a Fedora 8 kiadási tájékoztatói. Ha egyik hely nem válaszol, probálkozhat egy másikkal."
+msgstr "Ezeken a helyeken találhatók a Fedora 9 kiadási tájékoztatói. Ha egyik hely nem reagál, lehet másikkal probálkozni."
 
 #: data/content/relnotes.html:15
 msgid "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 
 #: data/content/relnotes.html:18
-#, fuzzy
 msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/9/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>8/</em> directory.  For example:"
-msgstr "Nézze meg bármely <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">tükröt</a> a <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em> útvonalhoz hasonlót használva. A tükrök csak az amerikai angol változatot tartalmazzák, <em>RELEASE-NOTES-en_US.html</em>.  Vegyék észre, hogy néhány tükrön eltérő elérési úton lehet, de konzisztens a <em>8/</em> mappa alatt. Például:"
+msgstr "Nézze meg bármely <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/\">tükröt</a> a <em>http://URL/fedora/linux/releases/9/Fedora/i386/os/</em> útvonalhoz hasonlót használva. A tükrök csak az amerikai angol változatot tartalmazzák (<em>RELEASE-NOTES-en_US.html</em>).  Vegyék észre, hogy néhány tükrön eltérő elérési úton lehet, de konzisztens a <em>9/</em> mappa alatt. Például:"
 
 #: data/content/relnotes.html:21
 msgid "ATRPMs mirror"
@@ -531,9 +584,9 @@ msgid "Fedora"
 msgstr "Fedora"
 
 #: data/templates/sidebar.html:26
-#, fuzzy, python-format
+#, python-format
 msgid "%s/static/images/counter/%s"
-msgstr "%s/%s/static/images/counter/%s"
+msgstr "%s/static/images/counter/%s"
 
 #: data/templates/sidebar.html:26
 #, python-format
@@ -608,8 +661,13 @@ msgstr "Találkozzon a Fedora közösséggel!"
 msgid "Website Language"
 msgstr "Webhely nyelv"
 
-#~ msgid "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
-#~ msgstr "Valaki határozottan kijelentette... &bdquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
-
+#~ msgid ""
+#~ "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Beta</"
+#~ "a>&rdquo;"
+#~ msgstr ""
+#~ "Valaki határozottan kijelentette... &bdquo;<a href=\"get-prerelease"
+#~ "\">Beta</a>&rdquo;"
 #~ msgid "Looking forward to Fedora 9?  Read the Beta release notes."
-#~ msgstr "Alig várja már a Fedora 9-et? Elolvashatja a Béta kiadási tudnivalókat."
+#~ msgstr ""
+#~ "Alig várja már a Fedora 9-et? Elolvashatja a Béta kiadási tudnivalókat."
+
