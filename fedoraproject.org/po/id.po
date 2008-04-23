@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Fedora Project Web Site\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2008-04-16 15:42-0400\n"
-"PO-Revision-Date: 2008-04-11 09:37+0700\n"
+"PO-Revision-Date: 2008-04-23 11:02+0700\n"
 "Last-Translator: Dapid Candra <dapidc@gmail.com>\n"
 "Language-Team: Indonesian <fedora-trans-id@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -18,11 +18,16 @@ msgstr ""
 "X-Poedit-Language: Indonesian\n"
 "X-Poedit-Country: INDONESIA\n"
 
-#: data/content/counter.html:7 data/content/get-fedora.html:7
-#: data/content/index.html:7 data/content/join-fedora.html:7
-#: data/content/keys.html:7 data/content/relnotes.html:7
-#: data/content/rss.html:7 data/content/sponsors.html:7
-#: data/content/verify.html:7 data/content/e/404.html:7
+#: data/content/counter.html:7
+#: data/content/get-fedora.html:7
+#: data/content/index.html:7
+#: data/content/join-fedora.html:7
+#: data/content/keys.html:7
+#: data/content/relnotes.html:7
+#: data/content/rss.html:7
+#: data/content/sponsors.html:7
+#: data/content/verify.html:7
+#: data/content/e/404.html:7
 msgid "Fedora Project"
 msgstr "Proyek Fedora"
 
@@ -35,7 +40,6 @@ msgid "To add a Fedora Release counter to your own site, simply place the follow
 msgstr "Untuk menambahkan Penghitung Rilis Fedora ke situs web Anda sendiri, salin saja baris berikut di mana pun Anda ingin tampilkan:"
 
 #: data/content/counter.html:18
-#, fuzzy
 msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk, and sr are supported.  When no language is specified, English will be used."
 msgstr "Parameter lang dapat diubah untuk menampilkan penghitung dalam bahasa lain. Sekarang, yang didukung adalah de, en, fi, fr, he, is, pt_BR, ro, sk dan sr. Ketika tidak ditentukan, bahasa Inggris yang akan dipakai."
 
@@ -46,101 +50,151 @@ msgstr "Fedora, Untuk Anda."
 #: data/content/get-fedora.html:13
 #, python-format
 msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
-msgstr ""
+msgstr "Setelah mengunduh sebuah berkas ISO, <a href=\"%s/%s/verify\">check kesahihahnya</a> ."
 
-#: data/content/get-fedora.html:14 data/content/get-prerelease.html:15
+#: data/content/get-fedora.html:14
+#: data/content/get-prerelease.html:15
 msgid "Install Media"
 msgstr "Media Install"
 
-#: data/content/get-fedora.html:17 data/content/get-fedora.html:36
-#: data/content /get-fedora.html:56 data/content/get-prerelease.html:18
-#: data/content/get- prerelease.html:51 data/content/get-prerelease.html:69
+#: data/content/get-fedora.html:17
+#: data/content/get-fedora.html:36
+#: data/content /get-fedora.html:56
+#: data/content/get-prerelease.html:18
+#: data/content/get- prerelease.html:51
+#: data/content/get-prerelease.html:69
 msgid "BitTorrent"
 msgstr "BitTorrent"
 
-#: data/content/get-fedora.html:19 data/content/get-fedora.html:27
-#: data/content /get-prerelease.html:20 data/content/get-prerelease.html:23
-#: /get-prerelease.html:31 data/content/get-prerelease.html:34
+#: data/content/get-fedora.html:19
+#: data/content/get-fedora.html:27
+#: data/content /get-prerelease.html:20
+#: data/content/get-prerelease.html:23
+#: /get-prerelease.html:31
+#: data/content/get-prerelease.html:34
 #: /get-prerelease.html:42
 msgid "i386"
 msgstr "i386"
 
-#: data/content/get-fedora.html:19 data/content/get-fedora.html:20
-#: data/content /get-fedora.html:21 data/content/get-fedora.html:27
-#: data/content/get- fedora.html:28 data/content/get-fedora.html:29
-#: prerelease.html:20 data/content/get-prerelease.html:21 prerelease.html:22
-#: data/content/get-prerelease.html:31 prerelease.html:32
-#: data/content/get-prerelease.html:33 prerelease.html:42
-#: data/content/get-prerelease.html:43 prerelease.html:44
+#: data/content/get-fedora.html:19
+#: data/content/get-fedora.html:20
+#: data/content /get-fedora.html:21
+#: data/content/get-fedora.html:27
+#: data/content/get- fedora.html:28
+#: data/content/get-fedora.html:29
+#: prerelease.html:20
+#: data/content/get-prerelease.html:21
+#: prerelease.html:22
+#: data/content/get-prerelease.html:31
+#: prerelease.html:32
+#: data/content/get-prerelease.html:33
+#: prerelease.html:42
+#: data/content/get-prerelease.html:43
+#: prerelease.html:44
 msgid "Install DVD"
 msgstr "Install DVD"
 
-#: data/content/get-fedora.html:20 data/content/get-fedora.html:28
-#: data/content /get-fedora.html:39 data/content/get-fedora.html:47
-#: data/content/get- fedora.html:59 data/content/get-fedora.html:66
-#: prerelease.html:21 data/content/get-prerelease.html:24 prerelease.html:32
-#: data/content/get-prerelease.html:35 prerelease.html:43
-#: data/content/get-prerelease.html:54 prerelease.html:61
-#: data/content/get-prerelease.html:72 prerelease.html:79
+#: data/content/get-fedora.html:20
+#: data/content/get-fedora.html:28
+#: data/content /get-fedora.html:39
+#: data/content/get-fedora.html:47
+#: data/content/get- fedora.html:59
+#: data/content/get-fedora.html:66
+#: prerelease.html:21
+#: data/content/get-prerelease.html:24
+#: prerelease.html:32
+#: data/content/get-prerelease.html:35
+#: prerelease.html:43
+#: data/content/get-prerelease.html:54
+#: prerelease.html:61
+#: data/content/get-prerelease.html:72
+#: prerelease.html:79
 msgid "x86_64"
 msgstr "x86_64"
 
-#: data/content/get-fedora.html:21 data/content/get-fedora.html:29
-#: data/content /get-fedora.html:40 data/content/get-fedora.html:48
-#: data/content/get- prerelease.html:22 data/content/get-prerelease.html:25
-#: prerelease.html:33 data/content/get-prerelease.html:36 prerelease.html:44
+#: data/content/get-fedora.html:21
+#: data/content/get-fedora.html:29
+#: data/content /get-fedora.html:40
+#: data/content/get-fedora.html:48
+#: data/content/get- prerelease.html:22
+#: data/content/get-prerelease.html:25
+#: prerelease.html:33
+#: data/content/get-prerelease.html:36
+#: prerelease.html:44
 msgid "ppc"
 msgstr "ppc"
 
-#: data/content/get-fedora.html:25 data/content/get-fedora.html:44
-#: data/content /get-fedora.html:63 data/content/get-prerelease.html:29
-#: data/content/get- prerelease.html:58 data/content/get-prerelease.html:76
+#: data/content/get-fedora.html:25
+#: data/content/get-fedora.html:44
+#: data/content /get-fedora.html:63
+#: data/content/get-prerelease.html:29
+#: data/content/get- prerelease.html:58
+#: data/content/get-prerelease.html:76
 msgid "Direct Download"
 msgstr "Unduh Langsung"
 
-#: data/content/get-fedora.html:33 data/content/get-prerelease.html:48
+#: data/content/get-fedora.html:33
+#: data/content/get-prerelease.html:48
 msgid "Fedora Desktop Live Media"
 msgstr "Media Langsung Fedora Desktop"
 
-#: data/content/get-fedora.html:38 data/content/get-fedora.html:46
-#: data/content /get-fedora.html:58 data/content/get-fedora.html:65
-#: data/content/get- prerelease.html:53 data/content/get-prerelease.html:60
-#: prerelease.html:71 data/content/get-prerelease.html:78
+#: data/content/get-fedora.html:38
+#: data/content/get-fedora.html:46
+#: data/content /get-fedora.html:58
+#: data/content/get-fedora.html:65
+#: data/content/get- prerelease.html:53
+#: data/content/get-prerelease.html:60
+#: prerelease.html:71
+#: data/content/get-prerelease.html:78
 msgid "i686"
 msgstr "i686"
 
-#: data/content/get-fedora.html:38 data/content/get-fedora.html:46
-#: data/content /get-fedora.html:58 data/content/get-fedora.html:65
-#: data/content/get- prerelease.html:53 data/content/get-prerelease.html:60
-#: prerelease.html:71 data/content/get-prerelease.html:78
+#: data/content/get-fedora.html:38
+#: data/content/get-fedora.html:46
+#: data/content /get-fedora.html:58
+#: data/content/get-fedora.html:65
+#: data/content/get- prerelease.html:53
+#: data/content/get-prerelease.html:60
+#: prerelease.html:71
+#: data/content/get-prerelease.html:78
 msgid "Live CD"
-msgstr "Live CD"
+msgstr "Media Langsung CD"
 
-#: data/content/get-fedora.html:39 data/content/get-fedora.html:40
-#: data/content /get-fedora.html:47 data/content/get-fedora.html:48
-#: data/content/get- fedora.html:59 data/content/get-fedora.html:66
-#: prerelease.html:54 data/content/get-prerelease.html:61 prerelease.html:72
+#: data/content/get-fedora.html:39
+#: data/content/get-fedora.html:40
+#: data/content /get-fedora.html:47
+#: data/content/get-fedora.html:48
+#: data/content/get- fedora.html:59
+#: data/content/get-fedora.html:66
+#: prerelease.html:54
+#: data/content/get-prerelease.html:61
+#: prerelease.html:72
 #: data/content/get-prerelease.html:79
 msgid "Live DVD"
-msgstr "Live DVD"
+msgstr "Media Langsung DVD"
 
-#: data/content/get-fedora.html:53 data/content/get-prerelease.html:66
+#: data/content/get-fedora.html:53
+#: data/content/get-prerelease.html:66
 msgid "Fedora KDE Live Media"
 msgstr "Media Langsung Fedora KDE"
 
-#: data/content/get-fedora.html:71 data/content/get-prerelease.html:83
+#: data/content/get-fedora.html:71
+#: data/content/get-prerelease.html:83
 msgid "Let me look around..."
 msgstr "Cari cari dulu ..."
 
-#: data/content/get-fedora.html:73 data/content/get-prerelease.html:85
+#: data/content/get-fedora.html:73
+#: data/content/get-prerelease.html:85
 msgid "See all torrents"
 msgstr "Lihat semua torrents"
 
-#: data/content/get-fedora.html:74 data/content/get-prerelease.html:86
+#: data/content/get-fedora.html:74
+#: data/content/get-prerelease.html:86
 msgid "See all mirrors"
 msgstr "Lihat semua mirror"
 
-#: data/content/get-fedora.html:75 data/content/get-prerelease.html:87
+#: data/content/get-fedora.html:75
+#: data/content/get-prerelease.html:87
 msgid "See all custom spins"
 msgstr "Lihat semua spin custom"
 
@@ -184,9 +238,12 @@ msgstr "Catatan rilis Beta"
 msgid " for more information."
 msgstr " untuk informasi lebih lanjut."
 
-#: data/content/get-prerelease.html:23 data/content/get-prerelease.html:24
-#: data/content/get-prerelease.html:25 data/content/get-prerelease.html:34
-#: data/content/get-prerelease.html:35 data/content/get-prerelease.html:36
+#: data/content/get-prerelease.html:23
+#: data/content/get-prerelease.html:24
+#: data/content/get-prerelease.html:25
+#: data/content/get-prerelease.html:34
+#: data/content/get-prerelease.html:35
+#: data/content/get-prerelease.html:36
 msgid "Install CDs"
 msgstr "Install CD"
 
@@ -195,19 +252,18 @@ msgid "Jigdo"
 msgstr "Jigdo"
 
 #: data/content/index.html:10
-#, fuzzy
 msgid "Fedora 9.  Infinite Possibilities."
-msgstr "Fedora 8.  Kemungkinan tanpa batas."
+msgstr "Fedora 9.  Kemungkinan Tanpa Batas."
 
-#: data/content/index.html:16 data/content/index.html:17
+#: data/content/index.html:16
+#: data/content/index.html:17
 #: data/content/index.html:18
 msgid "F8 Screenshot"
 msgstr "F8 Screenshot"
 
 #: data/content/index.html:20
-#, fuzzy
 msgid "What's new in Fedora 9? Read the release notes. &gt;&gt;"
-msgstr "Apa yang baru di Fedora 8? Baca catatan rilis. &gt;&gt;"
+msgstr "Apa yang baru di Fedora 9? Baca catatan rilis. &gt;&gt;"
 
 #: data/content/index.html:23
 msgid "Fedora is a Linux-based operating system that showcases the latest in free and open source software. Fedora is <strong>always free for anyone to use, modify, and distribute.</strong>  It is built by people across the globe who work together as a community: the Fedora Project. The Fedora Project is open and anyone is welcome to join."
@@ -388,23 +444,20 @@ msgid "This key was used for packages that were released by Fedora Legacy projec
 msgstr "Kunci ini digunakan untuk paket - paket yang dirilis oleh proyek Fedora Legacy untuk memutakhirkan rilis yang telah mencapai EOL.  Sekarang proyek Fedora Legacy sudah tidak dilanjutkan, jadi kunci ini tidak lagi digunakan untuk menandai paket - paket. Kunci ini tidak lagi dimasukkan ke dalam paket <strong>fedora-release</strong> di Fedora 7 dan rilis berikutnya."
 
 #: data/content/relnotes.html:10
-#, fuzzy
 msgid "Fedora 9 Release Notes"
-msgstr "Catatan Rilis Fedora 8"
+msgstr "Catatan Rilis Fedora 9"
 
 #: data/content/relnotes.html:12
-#, fuzzy
 msgid "Here are places you can find the Fedora 9 release notes.  If one location is unresponsive, try a different one."
-msgstr "Berikut adalah tempat di mana Anda dapat menemukan catatan rilis Fedora 8.  Jika satu lokasi tidak bisa diakses, coba yang lain."
+msgstr "Berikut adalah tempat di mana Anda dapat menemukan catatan rilis Fedora 9.  Jika satu lokasi tidak bisa diakses, coba yang lain."
 
 #: data/content/relnotes.html:15
 msgid "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 
 #: data/content/relnotes.html:18
-#, fuzzy
 msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/9/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>8/</em> directory.  For example:"
-msgstr "Periksa <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">mirror</a> menggunakan path yang mirip dengan <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>.  Mirrors hanya dapat memuat versi US English, <em>RELEASE-NOTES-en_US.html</em>.  Harap dicatat bahwa setiap mirror mungkin memiliki path yang sedikit berbeda, tapi harusnya konsisten mulai dari di bawah direktori <em>8/</em>.  Sebagai contoh:"
+msgstr "Periksa <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/\">mirror</a> menggunakan path yang mirip dengan <em>http://URL/fedora/linux/releases/9/Fedora/i386/os/</em>.  Mirrors hanya dapat memuat versi US English, <em>RELEASE-NOTES-en_US.html</em>.  Harap dicatat bahwa setiap mirror mungkin memiliki path yang sedikit berbeda, tapi harusnya konsisten mulai dari di bawah direktori <em>9/</em>.  Sebagai contoh:"
 
 #: data/content/relnotes.html:21
 msgid "ATRPMs mirror"
@@ -448,7 +501,7 @@ msgstr "Install DVD / Rescue CD"
 
 #: data/content/verify.html:23
 msgid "Live Media (both GNOME and KDE)"
-msgstr "Live Media  (GNOME dan KDE)"
+msgstr "Media Langsung  (GNOME dan KDE)"
 
 #: data/content/verify.html:30
 msgid "Next, import Fedora's GPG key:"
@@ -562,11 +615,11 @@ msgstr "Dapatkan Fedora"
 
 #: data/templates/sidebar.html:34
 msgid "Join Fedora"
-msgstr "Gabung dengan Fedora"
+msgstr "Bergabung dengan Fedora"
 
 #: data/templates/sidebar.html:36
 msgid "Tools"
-msgstr "Tools"
+msgstr "Perangkat"
 
 #: data/templates/sidebar.html:38
 msgid "Docs"
@@ -606,20 +659,21 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Events</a>"
 
 #: data/templates/sidebar.html:42
 msgid "Meet the Fedora community."
-msgstr "Temukan komunitas Fedora."
+msgstr "Bertemu Komunitas Fedora."
 
 #: data/templates/sidebar.html:44
 msgid "Website Language"
 msgstr "Bahasa Situs Web"
 
-#~ msgid "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
-#~ msgstr "Ada yang bilang ... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
-
+#~ msgid ""
+#~ "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Beta</"
+#~ "a>&rdquo;"
+#~ msgstr ""
+#~ "Ada yang bilang ... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
 #~ msgid "Looking forward to Fedora 9?  Read the Beta release notes."
 #~ msgstr "Menunggu Fedora 9? Baca catatan rilis Beta."
-
 #~ msgid "%s/%s/static/images/banners/f8-banner-animation.gif"
 #~ msgstr "%s/%s/static/images/banners/f8-banner-animation.gif"
-
 #~ msgid "Fedora 8 Werewolf is here!"
 #~ msgstr "Fedora 8 Werewolf di sini!"
+
