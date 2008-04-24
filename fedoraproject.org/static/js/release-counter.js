@@ -38,7 +38,7 @@ window.onload = function() {
 
     if (days <= 0) {
         // TODO: Get an actual image here!
-        bannerimg.setAttribute("src", "http://fedoraproject.org/static/images/banner/f9release.png");
+        bannerimg.setAttribute("src", "http://fedoraproject.org/static/images/banners/f9release.png");
         bannerimg.setAttribute("alt", "Fedora 9 is here!");
     } else {
         bannerimg.setAttribute("src", "http://fedoraproject.org/static/images/counter/" + lang + "/fedora9-countdown-" + (days < 10? '0' + days : days) + "." + lang + ".png");
