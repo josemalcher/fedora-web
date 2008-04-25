@@ -4,22 +4,22 @@
   xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="../templates/master.html" />
   <head>
-    <title>${_('Fedora Project')}</title>
+    <title>${Markup(_('Fedora Project'))}</title>
   </head>
   <body class="home">
-    <h2>${_('Fedora 9 Release Notes')}</h2>
+    <h2>${Markup(_('Fedora 9 Release Notes'))}</h2>
     <p>
-    ${_('Here are places you can find the Fedora 9 release notes.  If one location is unresponsive, try a different one.')}
+    ${Markup(_('Here are places you can find the Fedora 9 release notes.  If one location is unresponsive, try a different one.'))}
     </p>
     <ul>
-      <li>${_('&lt;a href="http://docs.fedoraproject.org/release-notes/"&gt;http://docs.fedoraproject.org/release-notes/&lt;/a&gt;')}</li>
+      <li>${Markup(_('&lt;a href="http://docs.fedoraproject.org/release-notes/"&gt;http://docs.fedoraproject.org/release-notes/&lt;/a&gt;'))}</li>
     </ul>
     <p>
-    ${_('Check any &lt;a href="http://mirrors.fedoraproject.org/publiclist/Fedora/9/"&gt;mirror&lt;/a&gt; using a path similar to &lt;em&gt;http://URL/fedora/linux/releases/9/Fedora/i386/os/&lt;/em&gt;.  The mirrors only carry the US English version, &lt;em&gt;RELEASE-NOTES-en_US.html&lt;/em&gt;.  Note that each mirror may have a slightly different path, but should be consistent below the &lt;em&gt;8/&lt;/em&gt; directory.  For example:')}
+    ${Markup(_('Check any &lt;a href="http://mirrors.fedoraproject.org/publiclist/Fedora/9/"&gt;mirror&lt;/a&gt; using a path similar to &lt;em&gt;http://URL/fedora/linux/releases/9/Fedora/i386/os/&lt;/em&gt;.  The mirrors only carry the US English version, &lt;em&gt;RELEASE-NOTES-en_US.html&lt;/em&gt;.  Note that each mirror may have a slightly different path, but should be consistent below the &lt;em&gt;8/&lt;/em&gt; directory.  For example:'))}
     </p>
     <ul>
-      <li><a href="http://mirror.atrpms.net/fedora/linux/releases/9/Fedora/i386/os/RELEASE-NOTES-en_US.html">${_('ATRPMs mirror')}</a></li>
-      <li><a href="http://fr2.rpmfind.net/linux/fedora/releases/9/Fedora/i386/os/RELEASE-NOTES-en_US.html">${_('RPMFind.net mirror')}</a></li>
+      <li><a href="http://mirror.atrpms.net/fedora/linux/releases/9/Fedora/i386/os/RELEASE-NOTES-en_US.html">${Markup(_('ATRPMs mirror'))}</a></li>
+      <li><a href="http://fr2.rpmfind.net/linux/fedora/releases/9/Fedora/i386/os/RELEASE-NOTES-en_US.html">${Markup(_('RPMFind.net mirror'))}</a></li>
     </ul>
   </body>
 </html>

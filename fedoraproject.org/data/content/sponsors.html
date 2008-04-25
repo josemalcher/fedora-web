@@ -4,11 +4,11 @@
   xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="../templates/master.html" />
   <head>
-    <title>${_('Fedora Project')}</title>
+    <title>${Markup(_('Fedora Project'))}</title>
   </head>
   <body>
-    <h2>${_('Fedora Sponsors')}</h2>
-    <p>${_('The Fedora Project is proud to have the following organizations as sponsors:')}</p>
+    <h2>${Markup(_('Fedora Sponsors'))}</h2>
+    <p>${Markup(_('The Fedora Project is proud to have the following organizations as sponsors:'))}</p>
     <ul id="sponsors">
       <!-- Please note!  All images here should be roughly the following dimensions:
             Horizontal: 120x50
@@ -28,7 +28,7 @@
       -->
     </ul>
     <p>
-    ${_('Interested in sponsoring something for Fedora?  Contact admin at fedoraproject * org or stop by #fedora-admin on irc.freenode.net.')}
+    ${Markup(_('Interested in sponsoring something for Fedora?  Contact admin at fedoraproject * org or stop by #fedora-admin on irc.freenode.net.'))}
     </p>
   </body>
 </html>
