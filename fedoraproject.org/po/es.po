@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: fedora-web.master.es\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2008-04-26 15:58-0400\n"
-"PO-Revision-Date: 2008-04-13 22:53-0300\n"
-"Last-Translator: Domingo Becker <domingobecker@gmail.com>\n"
+"PO-Revision-Date: 2008-04-27 17:00-0600\n"
+"Last-Translator: Juan M. Rodriguez <nushio@fedoraproject.org>\n"
 "Language-Team: Spanish <fedora-trans-es@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,11 +15,16 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: data/content/counter.html:7 data/content/get-fedora.html:7
-#: data/content/index.html:7 data/content/join-fedora.html:7
-#: data/content/keys.html:7 data/content/relnotes.html:7
-#: data/content/rss.html:7 data/content/sponsors.html:7
-#: data/content/verify.html:7 data/content/e/404.html:7
+#: data/content/counter.html:7
+#: data/content/get-fedora.html:7
+#: data/content/index.html:7
+#: data/content/join-fedora.html:7
+#: data/content/keys.html:7
+#: data/content/relnotes.html:7
+#: data/content/rss.html:7
+#: data/content/sponsors.html:7
+#: data/content/verify.html:7
+#: data/content/e/404.html:7
 msgid "Fedora Project"
 msgstr "Proyecto Fedora"
 
@@ -32,9 +37,8 @@ msgid "To add a Fedora Release counter to your own site, simply place the follow
 msgstr "Para agregar un contador del Lanzamiento de Fedora a su propio sitio, simplemente ponga el siguiente código donde sea que quiera que aparezca:"
 
 #: data/content/counter.html:18
-#, fuzzy
 msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk, and sr are supported.  When no language is specified, English will be used."
-msgstr "El parámetro lang puede ser cambiado para mostrar el contador en un idioma diferente. Actualmente los valores de, en, fi, fr, he, is, pt_BR, ro, sk y sr son soportados. Cuando no se especifique un idioma, se usará Inglés."
+msgstr "El parámetro lang puede ser cambiado para mostrar el contador en un idioma diferente. Actualmente los valores de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk y sr son soportados. Cuando no se especifique un idioma, se usará Inglés."
 
 #: data/content/get-fedora.html:12
 msgid "Fedora, For You."
@@ -43,39 +47,50 @@ msgstr "Fedora, para Ud."
 #: data/content/get-fedora.html:13
 #, python-format
 msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
-msgstr ""
+msgstr "Despues de descargar un ISO, <a href=\"%s/%s/verify\">verificalo</a>."
 
 #: data/content/get-fedora.html:14
 msgid "Install Media"
 msgstr "Medio de Instalación"
 
-#: data/content/get-fedora.html:17 data/content/get-fedora.html:36
+#: data/content/get-fedora.html:17
+#: data/content/get-fedora.html:36
 #: data/content /get-fedora.html:56
 msgid "BitTorrent"
 msgstr "BitTorrent"
 
-#: data/content/get-fedora.html:19 data/content/get-fedora.html:27
+#: data/content/get-fedora.html:19
+#: data/content/get-fedora.html:27
 msgid "i386"
 msgstr "i386"
 
-#: data/content/get-fedora.html:19 data/content/get-fedora.html:20
-#: data/content /get-fedora.html:21 data/content/get-fedora.html:27
-#: data/content/get- fedora.html:28 data/content/get-fedora.html:29
+#: data/content/get-fedora.html:19
+#: data/content/get-fedora.html:20
+#: data/content /get-fedora.html:21
+#: data/content/get-fedora.html:27
+#: data/content/get- fedora.html:28
+#: data/content/get-fedora.html:29
 msgid "Install DVD"
 msgstr "Instalar DVD"
 
-#: data/content/get-fedora.html:20 data/content/get-fedora.html:28
-#: data/content /get-fedora.html:39 data/content/get-fedora.html:47
-#: data/content/get- fedora.html:59 data/content/get-fedora.html:66
+#: data/content/get-fedora.html:20
+#: data/content/get-fedora.html:28
+#: data/content /get-fedora.html:39
+#: data/content/get-fedora.html:47
+#: data/content/get- fedora.html:59
+#: data/content/get-fedora.html:66
 msgid "x86_64"
 msgstr "x86_64"
 
-#: data/content/get-fedora.html:21 data/content/get-fedora.html:29
-#: data/content /get-fedora.html:40 data/content/get-fedora.html:48
+#: data/content/get-fedora.html:21
+#: data/content/get-fedora.html:29
+#: data/content /get-fedora.html:40
+#: data/content/get-fedora.html:48
 msgid "ppc"
 msgstr "ppc"
 
-#: data/content/get-fedora.html:25 data/content/get-fedora.html:44
+#: data/content/get-fedora.html:25
+#: data/content/get-fedora.html:44
 #: data/content /get-fedora.html:63
 msgid "Direct Download"
 msgstr "Descarga Directa"
@@ -84,19 +99,26 @@ msgstr "Descarga Directa"
 msgid "Fedora Desktop Live Media"
 msgstr "Medio Vivo Fedora de Escritorio"
 
-#: data/content/get-fedora.html:38 data/content/get-fedora.html:46
-#: data/content /get-fedora.html:58 data/content/get-fedora.html:65
+#: data/content/get-fedora.html:38
+#: data/content/get-fedora.html:46
+#: data/content /get-fedora.html:58
+#: data/content/get-fedora.html:65
 msgid "i686"
 msgstr "i686"
 
-#: data/content/get-fedora.html:38 data/content/get-fedora.html:46
-#: data/content /get-fedora.html:58 data/content/get-fedora.html:65
+#: data/content/get-fedora.html:38
+#: data/content/get-fedora.html:46
+#: data/content /get-fedora.html:58
+#: data/content/get-fedora.html:65
 msgid "Live CD"
 msgstr "CD Vivo"
 
-#: data/content/get-fedora.html:39 data/content/get-fedora.html:40
-#: data/content /get-fedora.html:47 data/content/get-fedora.html:48
-#: data/content/get- fedora.html:59 data/content/get-fedora.html:66
+#: data/content/get-fedora.html:39
+#: data/content/get-fedora.html:40
+#: data/content /get-fedora.html:47
+#: data/content/get-fedora.html:48
+#: data/content/get- fedora.html:59
+#: data/content/get-fedora.html:66
 msgid "Live DVD"
 msgstr "DVD Vivo"
 
@@ -141,19 +163,18 @@ msgid "When you place an order with a <a href=\"http://fedoraproject.org/wiki/Di
 msgstr "Cuando ponga una orden en un <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">vendedor participante</a>, puede también patrocinar el costo del medio para los usuarios que no pueden pagarlo, como por ejemplo, en naciones en vía de desarrollo. Considere participar en el <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Programa de Patrocinio de Medios de Instalación de Fedora</a>."
 
 #: data/content/index.html:10
-#, fuzzy
 msgid "Fedora 9.  Make waves."
-msgstr "Notas del Lanzamiento de Fedora 8"
+msgstr "Fedora 9. Haz olas. "
 
-#: data/content/index.html:16 data/content/index.html:17
+#: data/content/index.html:16
+#: data/content/index.html:17
 #: data/content/index.html:18
 msgid "F8 Screenshot"
 msgstr "Pantallazo de F8"
 
 #: data/content/index.html:20
-#, fuzzy
 msgid "What's new in Fedora 9? Read the release notes. &gt;&gt;"
-msgstr "¿Qué hay de nuevo en Fedora 8? Lea las notas del lanzamiento. &gt;&gt;"
+msgstr "¿Qué hay de nuevo en Fedora 9? Lea las notas del lanzamiento. &gt;&gt;"
 
 #: data/content/index.html:23
 msgid "Fedora is a Linux-based operating system that showcases the latest in free and open source software. Fedora is <strong>always free for anyone to use, modify, and distribute.</strong>  It is built by people across the globe who work together as a community: the Fedora Project. The Fedora Project is open and anyone is welcome to join."
@@ -174,7 +195,7 @@ msgstr "Unirse a Fedora."
 #: data/content/join-fedora.html:12
 #, python-format
 msgid "To get started, <a href=\"%(fasurl)s\">set up an account</a> using the <a href=\"%(fasurl)s\">Fedora Account System</a>."
-msgstr ""
+msgstr "Para comenzar, <a href=\"%(fasurl)s\">crea una cuenta</a> utilizando el <a href=\"%(fasurl)s\">Fedora Account System</a>"
 
 #: data/content/join-fedora.html:15
 msgid "If you want to take an active hand in making Fedora even better, there are many ways to help. What role do you want to fill?"
@@ -339,23 +360,20 @@ msgid "This key was used for packages that were released by Fedora Legacy projec
 msgstr "Esta clave fue usada para paquetes que fueron lanzados por el Proyecto Legado de Fedora, para actualizar versiones que ya llegaron al final de su ciclo de vida oficial. El Proyecto Legado de Fedora ya no existe, por lo que no se usará más esta clave para firmar paquetes. Esta clave no se incluye en el paquete <strong>fedora-release</strong> en Fedora 7 y posteriores."
 
 #: data/content/relnotes.html:10
-#, fuzzy
 msgid "Fedora 9 Release Notes"
-msgstr "Notas del Lanzamiento de Fedora 8"
+msgstr "Notas del Lanzamiento de Fedora 9"
 
 #: data/content/relnotes.html:12
-#, fuzzy
 msgid "Here are places you can find the Fedora 9 release notes.  If one location is unresponsive, try a different one."
-msgstr "Aquí están los lugares donde puede encontrar las Notas del Lanzamiento de Fedora 8.  Si algún sitio no responde, intente con otro."
+msgstr "Aquí están los lugares donde puede encontrar las Notas del Lanzamiento de Fedora 9.  Si algún sitio no responde, intente con otro."
 
 #: data/content/relnotes.html:15
 msgid "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 
 #: data/content/relnotes.html:18
-#, fuzzy
 msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/9/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>8/</em> directory.  For example:"
-msgstr "Verifique cualquier <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">espejo</a> usando una dirección similar a <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>.  Los espejos solo tienen la versión en Inglés de EEUU, <em>RELEASE-NOTES-en_US.html</em>.  Note que cada espejo puede tener una dirección un poco diferente, pero deben ser consistentes a partir del directorio <em>8/</em> .  Por ejemplo:"
+msgstr "Verifique cualquier <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/\">espejo</a> usando una dirección similar a <em>http://URL/fedora/linux/releases/9/Fedora/i386/os/</em>.  Los espejos solo tienen la versión en Inglés de EEUU, <em>RELEASE-NOTES-en_US.html</em>.  Note que cada espejo puede tener una dirección un poco diferente, pero deben ser consistentes a partir del directorio <em>8/</em> .  Por ejemplo:"
 
 #: data/content/relnotes.html:21
 msgid "ATRPMs mirror"
@@ -486,9 +504,8 @@ msgid "Fedora"
 msgstr "Fedora"
 
 #: data/templates/sidebar.html:9
-#, fuzzy
 msgid "Fedora 9 Sulphur is here!"
-msgstr "¡Fedora 9 Sulfuro se lanzará en %s días!"
+msgstr "¡Fedora 9 Sulfuro esta aquí!"
 
 #: data/templates/sidebar.html:13
 msgid "Navigation"
@@ -556,37 +573,36 @@ msgstr "Idioma del Sitio Web"
 
 #~ msgid "Prerelease Version - Fedora Project"
 #~ msgstr "Versión Prelanzamiento - Proyecto Fedora"
-
 #~ msgid "Get the Fedora 9 Beta."
 #~ msgstr "Obtener Fedora 9 Beta."
-
-#~ msgid "This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>.  Read the "
-#~ msgstr "Esto es software de prelanzamiento. El Proyecto Fedora no garantiza su utilidad. Todas las cuestiones deben ser reportadas a través de <a href=\"https://bugzilla.redhat.com/\">Bugzilla de Red Hat</a>. Vea las "
-
+#~ msgid ""
+#~ "This is pre-release software. The Fedora Project makes no guarantees as "
+#~ "to its suitability or usefulness. All issues should be reported via the "
+#~ "<a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>.  Read the "
+#~ msgstr ""
+#~ "Esto es software de prelanzamiento. El Proyecto Fedora no garantiza su "
+#~ "utilidad. Todas las cuestiones deben ser reportadas a través de <a href="
+#~ "\"https://bugzilla.redhat.com/\">Bugzilla de Red Hat</a>. Vea las "
 #~ msgid "Beta release notes"
 #~ msgstr "Notas del Lanzamiento Beta"
-
 #~ msgid " for more information."
 #~ msgstr " para más información."
-
 #~ msgid "Install CDs"
 #~ msgstr "CDs de Instalación"
-
 #~ msgid "Jigdo"
 #~ msgstr "Jigdo"
 
 #, fuzzy
 #~ msgid "Fedora 9.  Infinite Possibilities."
 #~ msgstr "Fedora 8. Posibilidades Infinitas."
-
 #~ msgid "%s/static/images/counter/%s"
 #~ msgstr "%s/static/images/counter/%s"
-
 #~ msgid "Add a counter to your own site!"
 #~ msgstr "¡Agregue un contador a su propio sitio!"
-
-#~ msgid "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
+#~ msgid ""
+#~ "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Beta</"
+#~ "a>&rdquo;"
 #~ msgstr "¿Alguien dijo...&ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
-
 #~ msgid "Looking forward to Fedora 9?  Read the Beta release notes."
 #~ msgstr "¿Quiere conocer Fedora 9? Lea las notas del lanzamiento Beta."
+
