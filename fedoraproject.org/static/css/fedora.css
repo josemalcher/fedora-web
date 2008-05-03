@@ -25,11 +25,10 @@ pre
   font-size: 2.6ex;
 }
 
-
 #wrapper
 {
+  font: normal 1em/1.5 sans-serif;
   margin-left: 18px;
-  font: normal 2.3ex/1.5 sans-serif;
   min-height: 100%;
   background: #FFFFFF url(../images/border-right.png) 100% 0 repeat-y;
   padding-right: 18px;
@@ -63,49 +62,11 @@ pre
   padding-bottom: 100px;
 }
 
-#banner
-{
-  text-align: center;
-}
-
 #banner img
 {
   display: block;
   width: 200px;
   margin: 0 auto;
-}
-
-#get
-{
-  text-align: center;
-  margin: 1ex 0.5ex;
-  font-weight: bold;
-}
-
-#get ul
-{
-  font-weight: normal;
-  list-style: none;
-  display: inline;
-  font-size: 1.7ex;
-}
-
-#get li
-{
-  display: inline;
-  border-left: 1px solid #CCCCCC;
-  margin-left: -1px;
-  padding: 0 1ex;
-}
-
-#get li.first
-{
-  border-left: none;
-}
-
-#get a
-{
-  color: #00356B;
 }
 
 #nav
@@ -116,9 +77,9 @@ pre
 
 #nav h2
 {
+  font-size: 0.9em;
   border-bottom: 1px dotted #AAAAAA;
   color: #444444;
-  font-size: 1.725ex;
   margin: 2ex 0 1ex;
   text-transform: uppercase;
   font-weight: normal;
@@ -134,7 +95,7 @@ pre
 {
   margin: 0.25ex 1ex;
   color: #777777;
-  font-size: 1.4ex;
+  font-size: 0.9em;
 }
 
 #nav a
@@ -142,7 +103,7 @@ pre
   font-weight: bold;
   margin-right: 0.75ex;
   color: #729FCF;
-  font-size: 2.4ex;
+  font-size: 1.1em;
   display: block;
 }
 
@@ -161,24 +122,24 @@ pre
   display: inline-block;
 }
 
+#content p, #content ul, #content ol
+{
+  font-size: 1em;
+}
+
 /* Blame IE6 and the guillotine bug for this one */
 #content { display: block; }
 
 #content h2
 {
-  font-size: 3.25ex;
-}
-
-#content h2 div {
-  font-size: 1ex;
-  font-weight: normal;
+  font-size: 1.6em;
 }
 
 #content h3
 {
   color: #337acc;
   margin: 1.5ex 0 0.5ex;
-  font-size: 2.5ex;
+  font-size: 1.4em;
 }
 
 #content table
@@ -228,7 +189,7 @@ pre
 #content .download li
 {
   color: #777777;
-  font-size: 1.8ex;
+  font-size: 1.1em;
   background: #EFEFEF;
   padding: 1ex;
   border-bottom: 1px dotted #AAAAAA;
@@ -270,7 +231,7 @@ pre
 #footer
 {
   position: relative;
-  font: normal 1.5ex/1.5 sans-serif;
+  font: normal 0.8em/1.5 sans-serif;
   text-align: center;
   background: #FFFFFF url(../images/line-bottom.png) 0 0 repeat-x;
   margin: -90px 0 0;
@@ -328,7 +289,6 @@ pre
 }
 
 #screenshot-banner a {
-  font-size: 1.6ex;
   text-align: left;
 }
 
@@ -391,7 +351,7 @@ input, textarea, option
   -webkit-border-radius: 1.5ex;
   -moz-border-radius: 1.5ex;
   background: #C0DBDD 30px 50% no-repeat;
-  font-size: 1.7ex;
+  font-size: 0.9em;
   display: inline-block;
 }
 
@@ -416,6 +376,7 @@ input, textarea, option
 
 #content pre.command
 {
+  font-size: 1.3em;
   border: solid #DDDDDD;
   border-width: 1px 1px 1px 5px;
   background: #F2F5F6;
@@ -426,7 +387,6 @@ input, textarea, option
 #content p.note
 {
   padding: 1ex 2ex;
-  font-size: 1.75ex;
   border: 1px solid #DDDDDD;
   background: #F2F5F6;
 }
@@ -434,20 +394,24 @@ input, textarea, option
 #content p.warning
 {
   padding: 1ex 2ex;
-  font-size: 1.75ex;
   border: 1px solid #DDDDDD;
   background: #FF3232;
-  color: black;
+  color: #000000;
 }
 
 #content p.warning a
 {
-  color: #00154F;  
+  color: #00154F;
 }
-
 #content ul#resources
 {
   list-style: none;
+}
+
+#content ul#resources a
+{
+  padding-left: 20px;
+  background: url(../images/arrow.png) 0 50% no-repeat;
 }
 
 #content ul#resources li
