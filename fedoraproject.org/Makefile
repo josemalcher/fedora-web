@@ -1,4 +1,6 @@
-LANGUAGES = $(shell grep -v "^\#" po/LINGUAS)
+ifndef LANGUAGES
+LANGUAGES := $(shell grep -v "^\#" po/LINGUAS)
+endif
 PO_FILES = $(patsubst %, po/%.po, $(LANGUAGES))
 MO_FILES = $(patsubst %, po/%.mo, $(LANGUAGES))
 HTML_FILES = $(shell find . -name "*.html")
