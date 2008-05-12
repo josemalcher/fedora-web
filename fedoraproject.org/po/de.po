@@ -1,17 +1,17 @@
 # German translation of the fedoraproject.org static website.
-# Copyright (C) 2007 Fedora Project
+# Copyright (C) 2007-2008 Fedora Project
 # This file is distributed under the same license as the project.
-# Fabian Affolter <fab@fedoraproject.org>, 2007.
+# Fabian Affolter <fab@fedoraproject.org>, 2007-2008.
 # Matthias Wiora <counterroot@openwallet.de>, 2007.
-# Robert Scheck <robert@fedoraproject.org>, 2007.
+# Robert Scheck <robert@fedoraproject.org>, 2007-2008.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: fpo static website\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"Report-Msgid-Bugs-To: fedora-trans-de@redhat.com\n"
 "POT-Creation-Date: 2008-05-10 17:25-0400\n"
-"PO-Revision-Date: 2008-05-08 14:01+0100\n"
-"Last-Translator: Fabian Affolter <fab@fedoraproject.org>\n"
+"PO-Revision-Date: 2008-05-13 00:20+0200\n"
+"Last-Translator: Robert Scheck <robert@fedoraproject.org>\n"
 "Language-Team: Fedora Translation <fedora-trans-de@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,15 +27,15 @@ msgstr "Fedora-Projekt"
 
 #: data/content/counter.html:12
 msgid "Fedora Release Counter"
-msgstr "Fedora Release Counter"
+msgstr "Fedora-Versionszähler"
 
 #: data/content/counter.html:14
 msgid "To add a Fedora Release counter to your own site, simply place the following code wherever you want it to appear:"
-msgstr "Um einen Fedora Version Counter zur Ihrer Seite hinzuzufügen, kopieren Sie einfach die folgenden Zeilen dorthin, wo Sie ihn haben wollen:"
+msgstr "Um einen Fedora-Versionszähler zu Ihrer Seite hinzuzufügen, kopieren Sie einfach die folgenden Zeilen dorthin, wo Sie ihn haben möchten:"
 
 #: data/content/counter.html:18
 msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk, and sr are supported.  When no language is specified, English will be used."
-msgstr "Der lang-Parameter kann geändert werden, um den Counter in verschiedenen Sprachen anzeigen zu lassen. Momentan werden de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk und sr unterstützt. Wenn keine Sprache angegeben wurde, wird Englisch benutzt."
+msgstr "Der &quot;lang&quot;-Parameter kann geändert werden, um den Zähler in verschiedenen Sprachen anzeigen zu lassen. Momentan werden de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk und sr unterstützt. Wenn keine Sprache angegeben wurde, wird die englische verwendet."
 
 #: data/content/get-fedora.html:12
 msgid "Fedora, For You."
@@ -44,7 +44,7 @@ msgstr "Fedora - für Sie"
 #: data/content/get-fedora.html:13
 #, python-format
 msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
-msgstr "Nach Herunterladen der ISO-Datei, <a href=\"%s/%s/verify\">überprüfen</a> Sie sie."
+msgstr "<a href=\"%s/%s/verify\">Überprüfen</a> Sie eine ISO-Datei nach dem Herunterladen."
 
 #: data/content/get-fedora.html:14
 msgid "Install Media"
@@ -150,7 +150,7 @@ msgstr "Wenn Sie Fedora bei einem <a href=\"http://fedoraproject.org/wiki/Distri
 
 #: data/content/index.html:10
 msgid "Fedora 9.  Make waves."
-msgstr "Fedora 9 - Schlägt Wellen"
+msgstr "Fedora 9 - schlägt Wellen"
 
 #: data/content/index.html:15
 msgid "Fedora is a Linux-based operating system that showcases the latest in free and open source software. Fedora is <strong>always free for anyone to use, modify, and distribute.</strong>  It is built by people across the globe who work together as a community: the Fedora Project. The Fedora Project is open and anyone is welcome to join."
@@ -171,11 +171,11 @@ msgstr "Fedora unterstützen"
 #: data/content/join-fedora.html:12
 #, python-format
 msgid "To get started, <a href=\"%(fasurl)s\">set up an account</a> using the <a href=\"%(fasurl)s\">Fedora Account System</a>."
-msgstr "Um zu starten, <a href=\"%(fasurl)s\">richten Sie sich ein Konto</a> im <a href=\"%(fasurl)s\">Fedora-Kontosystem</a> ein."
+msgstr "Um zu beginnen, <a href=\"%(fasurl)s\">richten</a> Sie sich ein Konto im <a href=\"%(fasurl)s\">Fedora Account System</a> ein."
 
 #: data/content/join-fedora.html:15
 msgid "If you want to take an active hand in making Fedora even better, there are many ways to help. What role do you want to fill?"
-msgstr "Wenn Sie aktiv am Verbessern von Fedora teilnehmen möchten, gibt es sehr viele Möglichkeiten zu helfen. Welche Rolle möchten Sie übernehmen?"
+msgstr "Wenn Sie aktiv beim Verbessern von Fedora teilnehmen möchten, gibt es sehr viele Möglichkeiten zu helfen. Welche Rolle möchten Sie übernehmen?"
 
 #: data/content/join-fedora.html:16
 msgid "Click on a role below to learn more about how you can help the Fedora Project."
@@ -281,7 +281,7 @@ msgstr "Fedora (Version 7 und neuer)"
 
 #: data/content/keys.html:76
 msgid "Both GA and updates"
-msgstr "Neue Versionen und Updates"
+msgstr "Neue Versionen und Aktualisierungen"
 
 #: data/content/keys.html:80
 msgid "If you use a recent stable release, this is the only key you will use.  Packages on installation media and all the updates you will install are signed with this key.  The relevant yum repositories are <strong>fedora</strong>, <strong>fedora-updates</strong> for Fedora 7 and later, and <strong>core</strong> and <strong>core-updates</strong> for Fedora Core (Version 6 and earlier)."
@@ -333,7 +333,7 @@ msgstr "Herunterladen: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1A
 
 #: data/content/keys.html:150
 msgid "This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
-msgstr "Dieser Schlüssel wurde für Pakete verwendet, die von Fedora Legacy veröffentlicht worden sind, um Updates bereitzustellen, nachdem die stabile Version das offizielle Ende der Produktlebenszeit erreicht hatte. Da Fedora Legacy nicht mehr existiert, wird dieser Schlüssel auch nicht mehr verwendet, um Pakete zu signieren. Der Schlüssel ist seit Fedora 7 zudem nicht mehr im Paket <strong>fedora-release</strong> enthalten."
+msgstr "Dieser Schlüssel wurde für Pakete verwendet, die von Fedora Legacy veröffentlicht worden sind, um Aktualisierungen bereitzustellen, nachdem die stabile Version das offizielle Ende der Produktlebenszeit erreicht hatte. Da Fedora Legacy nicht mehr existiert, wird dieser Schlüssel auch nicht mehr verwendet, um Pakete zu signieren. Der Schlüssel ist seit Fedora 7 zudem nicht mehr im Paket <strong>fedora-release</strong> enthalten."
 
 #: data/content/relnotes.html:10
 msgid "Fedora 9 Release Notes"
@@ -361,7 +361,7 @@ msgstr "RPMFind.net Spiegel-Server"
 
 #: data/content/rss.html:10
 msgid "RSS Feed Test"
-msgstr "RSS Feed Test"
+msgstr "RSS-Feedtest"
 
 #: data/content/sponsors.html:10
 msgid "Fedora Sponsors"
@@ -429,7 +429,7 @@ msgstr "Hat Sie ein kaputter Link auf diese Seite geführt? Kontaktieren Sie das
 
 #: data/content/e/404.html:14
 msgid "the fedoraproject.org webmaster"
-msgstr "der Fedoraproject.org-Webmaster"
+msgstr "Webseiten-Team"
 
 #: data/content/e/404.html:14
 msgid " and let them know which link brought you here."
@@ -449,7 +449,7 @@ msgstr "Fedora-Dokumentation"
 
 #: data/content/e/404.html:24
 msgid "Connect with the Fedora Community"
-msgstr "Fedora-Gemeinschaft kontaktieren"
+msgstr "Fedora-Community kontaktieren"
 
 #: data/content/e/404.html:28
 msgid "Download Fedora!"
@@ -461,7 +461,7 @@ msgstr "Copyright &copy; 2008 Red Hat, Inc. und andere. Alle Rechte vorbehalten.
 
 #: data/templates/foot.html:12
 msgid "The Fedora Project is maintained and driven by the community and sponsored by Red Hat.  This is a community maintained site.  Red Hat is not responsible for content."
-msgstr "Das Fedora-Projekt wird durch die Gemeinschaft verwaltet und von Red Hat unterstützt. Diese Seite wird von der Gemeinschaft gepflegt, Red Hat ist für den Inhalt nicht verantwortlich."
+msgstr "Das Fedora-Projekt wird durch die Community verwaltet und von Red Hat unterstützt. Diese Seite wird von der Community gepflegt, Red Hat ist für den Inhalt nicht verantwortlich."
 
 #: data/templates/foot.html:15
 msgid "Sponsors"
@@ -525,7 +525,7 @@ msgstr "Planet"
 
 #: data/templates/sidebar.html:23
 msgid "The voices of the Fedora community."
-msgstr "Stimmen der Fedora-Gemeinschaft"
+msgstr "Stimmen der Fedora-Community"
 
 #: data/templates/sidebar.html:24
 msgid "<a href=\"http://fedoraproject.org/wiki/Communicate\">Communicate</a>"
@@ -541,63 +541,12 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Veranstaltungen</
 
 #: data/templates/sidebar.html:25
 msgid "Meet the Fedora community."
-msgstr "Treffe die Fedora-Gemeinschaft"
+msgstr "Die Fedora-Community treffen"
 
 #: data/templates/sidebar.html:27
 msgid "Website Language"
 msgstr "Sprache"
 
-#~ msgid "F8 Screenshot"
-#~ msgstr "Bildschirmfotos von Fedora 8"
-
 msgid "What's new in Fedora 9? Read the release notes. &gt;&gt;"
 msgstr "Was ist neu an Fedora 9? Lesen Sie die Versionshinweise. &gt;&gt;"
 
-#~ msgid "Prerelease Version - Fedora Project"
-#~ msgstr "Vorversion - Fedora-Projekt"
-
-#~ msgid "Get the Fedora 9 Beta."
-#~ msgstr "Beziehen von Fedora 9 Beta."
-
-#~ msgid "This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>.  Read the "
-#~ msgstr "Dies ist Vorversionssoftware. Das Fedora-Projekt gibt keine Garantien für die Tauglichkeit und Nützlichkeit. Alle Probleme sollte via <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a> gemeldet werden. Lesen Sie "
-
-#~ msgid "Beta release notes"
-#~ msgstr "Beta-Versionshinweise"
-
-#~ msgid " for more information."
-#~ msgstr " für mehr Informationen."
-
-#~ msgid "Install CDs"
-#~ msgstr "Installations-CDs"
-
-#~ msgid "Fedora 9.  Infinite Possibilities."
-#~ msgstr "Fedora 9 - unendliche Möglichkeiten"
-
-#~ msgid "%s/static/images/counter/%s"
-#~ msgstr "%s/static/images/counter/%s"
-
-#~ msgid "Fedora 9 Sulfur released in %s days!"
-#~ msgstr "Fedora 9 Sulfur wird in %s Tagen veröffentlicht!"
-
-#~ msgid "Add a counter to your own site!"
-#~ msgstr "Fügen Sie einen Counter zu Ihrer Seite hinzu!"
-
-#~ msgid "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;"
-#~ msgstr "Sagte jemand... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;?"
-
-#~ msgid "Looking forward to Fedora 9?  Read the Beta release notes."
-#~ msgstr "Freuen Sie sich auf Fedora 9? Lesen Sie die Beta-Versionshinweise."
-
-#~ msgid "%s/%s/static/images/banners/f8-banner-animation.gif"
-#~ msgstr "%s/%s/static/images/banners/f8-banner-animation.gif"
-
-#~ msgid "Fedora, For the Future."
-#~ msgstr "Fedora - für die Zukunft"
-
-#, fuzzy
-#~ msgid "Install CD directory"
-#~ msgstr "Installations-CDs"
-
-#~ msgid "GNOME Live Media"
-#~ msgstr "GNOME Live-Medien"
