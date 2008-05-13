@@ -1,9 +1,9 @@
 var banners = [
   ["http://fedoraproject.org/static/images/banners/f9release.png", "Fedora 9 Sulphur is here!", "http://fedoraproject.org/get-fedora", 2],
-  ["http://fedoraproject.org/static/images/banners/fedorawn.png", "Fedora Weekly News", "http://fedoraproject.org/wiki/FWN/LatestIssue", 1],
-  ["http://fedoraproject.org/static/images/banners/fedora.org_devfu_widget.jpg", "Dev Fu", "http://developer.redhatmagazine.com/", 1],
-  ["http://fedoraproject.org/static/images/banners/fedora.org_rhm_widget.jpg", "Red Hat Magazine", "http://redhatmagazine.com/", 1],
-  ["http://fedoraproject.org/static/images/banners/fedora.org_th_widget.jpg", "Truth Happens", "http://truthhappens.redhatmagazine.com/", 1],
+//  ["http://fedoraproject.org/static/images/banners/fedorawn.png", "Fedora Weekly News", "http://fedoraproject.org/wiki/FWN/LatestIssue", 1],
+//  ["http://fedoraproject.org/static/images/banners/fedora.org_devfu_widget.jpg", "Dev Fu", "http://developer.redhatmagazine.com/", 1],
+//  ["http://fedoraproject.org/static/images/banners/fedora.org_rhm_widget.jpg", "Red Hat Magazine", "http://redhatmagazine.com/", 1],
+//  ["http://fedoraproject.org/static/images/banners/fedora.org_th_widget.jpg", "Truth Happens", "http://truthhappens.redhatmagazine.com/", 1],
 ];
 
 window.onload = function() {
