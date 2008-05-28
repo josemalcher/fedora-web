@@ -77,10 +77,10 @@ class FedoraTemplate extends QuickTemplate {
 <?php	if($this->data['jsvarurl'  ]) { ?>
 		<script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('jsvarurl'  ) ?>"><!-- site js --></script>
 <?php	} ?>
-<?php	if($this->data['pagecss'   ]) { ?>
+<?php	if($this->data['pagecss'   ] and 0) { ?>
 		<style type="text/css"><?php $this->html('pagecss'   ) ?></style>
 <?php	}
-		if($this->data['usercss'   ]) { ?>
+		if($this->data['usercss'   ] and 0) { ?>
 		<style type="text/css"><?php $this->html('usercss'   ) ?></style>
 <?php	}
 		if($this->data['userjs'    ]) { ?>
