@@ -59,7 +59,7 @@ class FedoraTemplate extends QuickTemplate {
 		<?php $this->html('headlinks') ?>
 		<title><?php $this->text('pagetitle') ?></title>
 
-  <link rel="stylesheet" type="text/css" media="all" href="http://fedoraproject.org/static/css/fedora.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="/static/css/fedora.css" />
 
 		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "<?php $this->text('stylepath') ?>/<?php $this->text('stylename') ?>/main.css?<?php echo $GLOBALS['wgStyleVersion'] ?>"; /*]]>*/</style>
 		<link rel="stylesheet" type="text/css" <?php if(empty($this->data['printable']) ) { ?>media="print"<?php } ?> href="<?php $this->text('stylepath') ?>/common/commonPrint.css?<?php echo $GLOBALS['wgStyleVersion'] ?>" />
@@ -77,10 +77,10 @@ class FedoraTemplate extends QuickTemplate {
 <?php	if($this->data['jsvarurl'  ]) { ?>
 		<script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('jsvarurl'  ) ?>"><!-- site js --></script>
 <?php	} ?>
-<?php	if($this->data['pagecss'   ]) { ?>
+<?php	if($this->data['pagecss'   ] and 0) { ?>
 		<style type="text/css"><?php $this->html('pagecss'   ) ?></style>
 <?php	}
-		if($this->data['usercss'   ]) { ?>
+		if($this->data['usercss'   ] and 0) { ?>
 		<style type="text/css"><?php $this->html('usercss'   ) ?></style>
 <?php	}
 		if($this->data['userjs'    ]) { ?>
