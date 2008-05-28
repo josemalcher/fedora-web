@@ -4,31 +4,25 @@
   xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="../templates/master.html" />
   <head>
-    <title>${_('Fedora Project')}</title>
+    <title>${Markup(_('Fedora Project'))}</title>
   </head>
   <body class="home">
-    <h2>${_('Fedora 8.  Infinite Possibilities.')}</h2>
+    <h2>${Markup(_('Fedora 9.  Make waves.'))}</h2>
     <div id="screenshot-banner">
-      <ul>
-        <li><a href="${path}/${lang}/static/images/screenshots/booting-screen.png"><img src="${path}/${lang}/static/images/screenshot-1.png" alt="${_('F8 Screenshot')}" /></a></li>
-        <li><a href="${path}/${lang}/static/images/screenshots/login-screen.png"><img src="${path}/${lang}/static/images/screenshot-2.png" alt="${_('F8 Screenshot')}" /></a></li>
-        <li><a href="${path}/${lang}/static/images/screenshots/default-desktop.png"><img src="${path}/${lang}/static/images/screenshot-3.png" alt="${_('F8 Screenshot')}" /></a></li>
-      </ul>
-      <a href="${path}/${lang}/relnotes">${_("What\'s new in Fedora 8? Read the release notes. &amp;gt;&amp;gt;")}</a>
+      <img src="${path}/static/images/f9launch.png" alt="Fedora 9" />
     </div>
     <p>
-    ${_('Fedora is a Linux-based operating system that showcases the latest in free and open source software. Fedora is &lt;strong&gt;always free for anyone to use, modify, and distribute.&lt;/strong&gt;  It is built by people across the globe who work together as a community: the Fedora Project. The Fedora Project is open and anyone is welcome to join.')}
+    <a href="http://docs.fedoraproject.org/release-notes/f9/">${Markup(_('What\'s new in Fedora 9?  Read the release notes. &amp;gt;&amp;gt;'))}</a>
     </p>
     <p>
-    ${_('The Fedora Project is out front for you, &lt;strong&gt;leading the advancement of free, open software and content&lt;/strong&gt;.')}
+    ${Markup(_('Fedora is a Linux-based operating system that showcases the latest in free and open source software. Fedora is &lt;strong&gt;always free for anyone to use, modify, and distribute.&lt;/strong&gt;  It is built by people across the globe who work together as a community: the Fedora Project. The Fedora Project is open and anyone is welcome to join.'))}
     </p>
     <p>
-      ${_('&lt;a href="http://fedoraproject.org/wiki/Overview"&gt;Learn more. &amp;gt;&amp;gt;&lt;/a&gt;')}
+    ${Markup(_('The Fedora Project is out front for you, &lt;strong&gt;leading the advancement of free, open software and content&lt;/strong&gt;.'))}
     </p>
-      <hr />
-      <p>
-      <a href="http://docs.fedoraproject.org/release-notes">${_('Looking forward to Fedora 9?  Read the Preview release notes.')}</a>
-      </p>
+    <p>
+    ${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Overview"&gt;Learn more. &amp;gt;&amp;gt;&lt;/a&gt;'))}
+    </p>
   </body>
 </html>
 

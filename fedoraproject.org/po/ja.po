@@ -1,17 +1,17 @@
 # Translations template for PROJECT.
 # Copyright (C) 2007 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# Makoto Mizukami <mmk9060@aol.com>, 2007.
+# Makoto Mizukami <mmk9060@aol.com>, 2007, 2008.
 #
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-04-19 16:36-0400\n"
-"PO-Revision-Date: 2008-02-26 23:38-0500\n"
+"POT-Creation-Date: 2008-05-16 17:53-0400\n"
+"PO-Revision-Date: 2008-05-07 20:56+0900\n"
 "Last-Translator: Makoto Mizukami <mmk9060@aol.com>\n"
-"Language-Team: Fedora translation discussion in Japanese <fedora-trans-ja@redhat.com>\n"
+"Language-Team: Japanese <fedora-trans-ja@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,427 +25,381 @@ msgid "Fedora Project"
 msgstr "Fedora Project"
 
 #: data/content/counter.html:12
-#, fuzzy
 msgid "Fedora Release Counter"
-msgstr "Fedora 8 リリースノート"
+msgstr "Fedora リリースカウンター"
 
 #: data/content/counter.html:14
 msgid "To add a Fedora Release counter to your own site, simply place the following code wherever you want it to appear:"
-msgstr ""
+msgstr "Fedora リリースカウンタをあなたのサイトで表示させるには、以下のコードをお好きなところに記述して下さい。"
 
 #: data/content/counter.html:18
-msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, fi, fr, he, hu, is, it, pl, pt_BR, ro, sk, and sr are supported.  When no language is specified, English will be used."
-msgstr ""
+msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk, and sr are supported.  When no language is specified, English will be used."
+msgstr "\"lang\" パラメータを編集することによって、どの言語でカウンタを表示するか指定することができます。現在、\"de\"(ドイツ語)、\"en\"(英語)、\"fi\"(フィンランド語)、\"fr\"(フランス語)、\"he\"(ヘブライ語)、\"hu\"(ハンガリー語)、\"is\"(アイスランド語)、\"it\"(イタリア語)、\"pt_BR\"(ブラジルのポルトガル語)、\"ro\"(ロシア語)、\"sk\"(スロバキア語)、\"sr\"(セルビア語)がサポートされています。何も指定しないと、英語で表示されます。"
 
 #: data/content/get-fedora.html:12
 msgid "Fedora, For You."
-msgstr "Fedoraをあなたの元へ。"
+msgstr "Fedora をあなたの元へ。"
 
 #: data/content/get-fedora.html:13
-msgid "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Preview Release</a>&rdquo;"
-msgstr ""
+#, python-format
+msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
+msgstr "ISO ファイルをダウンロードしたら、<a href=\"%s/%s/verify\">ファイルの検証</a>を行って下さい。"
 
-#: data/content/get-fedora.html:14 data/content/get-prerelease.html:15
+#: data/content/get-fedora.html:14
 msgid "Install Media"
-msgstr "インストールディスク"
+msgstr "インストールメディア"
 
-#: data/content/get-fedora.html:17 data/content/get-fedora.html:36
-#: data/content /get-fedora.html:56 data/content/get-prerelease.html:18
-#: data/content/get- prerelease.html:30 data/content/get-prerelease.html:41
+#: data/content/get-fedora.html:17 data/content/get-fedora.html:54
+#: data/content/get-fedora.html:74
 msgid "BitTorrent"
-msgstr "BitTorrentを利用"
+msgstr "BitTorrent を利用"
 
-#: data/content/get-fedora.html:19 data/content/get-fedora.html:27
-#: data/content /get-prerelease.html:20 data/content/get-prerelease.html:22
+#: data/content/get-fedora.html:19 data/content/get-fedora.html:23
+#: data/content/get-fedora.html:32 data/content/get-fedora.html:36
+#: data/content/get-fedora.html:45
 msgid "i386"
 msgstr "i386"
 
 #: data/content/get-fedora.html:19 data/content/get-fedora.html:20
-#: data/content /get-fedora.html:21 data/content/get-fedora.html:27
-#: data/content/get- fedora.html:28 data/content/get-fedora.html:29
-#: prerelease.html:20 data/content/get-prerelease.html:21
+#: data/content/get-fedora.html:21 data/content/get-fedora.html:32
+#: data/content/get-fedora.html:33 data/content/get-fedora.html:34
 msgid "Install DVD"
-msgstr "インストールDVD"
+msgstr "インストール DVD"
 
-#: data/content/get-fedora.html:20 data/content/get-fedora.html:28
-#: data/content /get-fedora.html:39 data/content/get-fedora.html:47
-#: data/content/get- fedora.html:59 data/content/get-fedora.html:66
-#: prerelease.html:21 data/content/get-prerelease.html:23 prerelease.html:33
-#: data/content/get-prerelease.html:44
+#: data/content/get-fedora.html:20 data/content/get-fedora.html:24
+#: data/content/get-fedora.html:33 data/content/get-fedora.html:37
+#: data/content/get-fedora.html:46 data/content/get-fedora.html:57
+#: data/content/get-fedora.html:65 data/content/get-fedora.html:77
+#: data/content/get-fedora.html:84
 msgid "x86_64"
 msgstr "x86_64"
 
-#: data/content/get-fedora.html:21 data/content/get-fedora.html:29
-#: data/content /get-fedora.html:40 data/content/get-fedora.html:48
+#: data/content/get-fedora.html:21 data/content/get-fedora.html:25
+#: data/content/get-fedora.html:34 data/content/get-fedora.html:38
+#: data/content/get-fedora.html:47
 msgid "ppc"
 msgstr "ppc"
 
-#: data/content/get-fedora.html:25 data/content/get-fedora.html:44
-#: data/content /get-fedora.html:63
+#: data/content/get-fedora.html:23 data/content/get-fedora.html:24
+#: data/content/get-fedora.html:25 data/content/get-fedora.html:36
+#: data/content/get-fedora.html:37 data/content/get-fedora.html:38
+msgid "Install CDs"
+msgstr "インストール CD"
+
+#: data/content/get-fedora.html:30 data/content/get-fedora.html:62
+#: data/content/get-fedora.html:81
 msgid "Direct Download"
 msgstr "直接ダウンロード"
 
-#: data/content/get-fedora.html:33 data/content/get-prerelease.html:27
-#, fuzzy
-msgid "Fedora Desktop Live Media"
-msgstr "KDE ライブメディア"
+#: data/content/get-fedora.html:43
+msgid "Jigdo"
+msgstr "Jigdo"
 
-#: data/content/get-fedora.html:38 data/content/get-fedora.html:46
-#: data/content /get-fedora.html:58 data/content/get-fedora.html:65
-#: data/content/get- prerelease.html:32 data/content/get-prerelease.html:43
+#: data/content/get-fedora.html:51
+msgid "Fedora Desktop Live Media"
+msgstr "Fedora デスクトップ ライブメディア"
+
+#: data/content/get-fedora.html:56 data/content/get-fedora.html:64
+#: data/content/get-fedora.html:76 data/content/get-fedora.html:83
 msgid "i686"
 msgstr "i686"
 
-#: data/content/get-fedora.html:38 data/content/get-fedora.html:46
-#: data/content /get-fedora.html:58 data/content/get-fedora.html:65
-#: data/content/get- prerelease.html:32 data/content/get-prerelease.html:43
+#: data/content/get-fedora.html:56 data/content/get-fedora.html:64
+#: data/content/get-fedora.html:76 data/content/get-fedora.html:83
 msgid "Live CD"
-msgstr "ライブCD"
+msgstr "ライブ CD"
 
-#: data/content/get-fedora.html:39 data/content/get-fedora.html:40
-#: data/content /get-fedora.html:47 data/content/get-fedora.html:48
-#: data/content/get- fedora.html:59 data/content/get-fedora.html:66
-#: prerelease.html:33 data/content/get-prerelease.html:44
+#: data/content/get-fedora.html:57 data/content/get-fedora.html:65
+#: data/content/get-fedora.html:77 data/content/get-fedora.html:84
 msgid "Live DVD"
-msgstr "ライブDVD"
+msgstr "ライブ DVD"
 
-#: data/content/get-fedora.html:53 data/content/get-prerelease.html:38
-#, fuzzy
+#: data/content/get-fedora.html:71
 msgid "Fedora KDE Live Media"
-msgstr "KDE ライブメディア"
+msgstr "Fedora KDE ライブメディア"
 
-#: data/content/get-fedora.html:71 data/content/get-prerelease.html:48
+#: data/content/get-fedora.html:89
 msgid "Let me look around..."
 msgstr "その他"
 
-#: data/content/get-fedora.html:73 data/content/get-prerelease.html:50
+#: data/content/get-fedora.html:91
 msgid "See all torrents"
-msgstr "すべてのBitTorrentを表示"
+msgstr "すべての BitTorrent を表示"
 
-#: data/content/get-fedora.html:74
+#: data/content/get-fedora.html:92
 msgid "See all mirrors"
 msgstr "すべてのミラーサーバーを表示"
 
-#: data/content/get-fedora.html:75 data/content/get-prerelease.html:52
+#: data/content/get-fedora.html:93
 msgid "See all custom spins"
 msgstr "すべてのカスタムスピンを表示"
 
-#: data/content/get-fedora.html:77
+#: data/content/get-fedora.html:95
 msgid "Slow Internet? No Internet?"
-msgstr "インターネット環境がない・回線が遅い場合"
+msgstr "インターネット環境がない/回線が遅い場合"
 
-#: data/content/get-fedora.html:78
+#: data/content/get-fedora.html:96
 msgid "Get a copy of Fedora Media sent via postal mail."
-msgstr "Fedoraのインストールメディアを郵送で入手することができます。"
+msgstr "Fedora のインストールメディアを郵送で入手することができます。"
 
-#: data/content/get-fedora.html:80
+#: data/content/get-fedora.html:98
 msgid "Purchase installation media for Fedora from <a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">online vendors</a> or a <a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">local vendor</a> in your area."
 msgstr "<a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">オンラインベンダー</a>もしくはお近くの<a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">ローカルベンダー</a>にメディアを注文します。"
 
-#: data/content/get-fedora.html:81
+#: data/content/get-fedora.html:99
 msgid "Can't afford the price of installation media? Request Fedora installation media from the <a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Fedora Free Media Program</a>."
-msgstr "インストールメディアの費用負担が困難な場合は、<a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Fedora Free Media Program</a>にメディアの郵送をリクエストします。"
+msgstr "インストールメディアの費用負担が困難な場合は、<a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Fedora Free Media Program</a> にメディアの郵送をリクエストします。"
 
-#: data/content/get-fedora.html:84
+#: data/content/get-fedora.html:102
 msgid "When you place an order with a <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">participating vendor</a>, you may also sponsor the cost of media for users who cannot afford it, such as people in developing nations. Consider participating in the <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora Sponsored Media Program</a>."
-msgstr "<a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">スポンサーベンダー</a>を通してメディアを入手すると、発展途上国に住む人々のようにインストールメディアの費用負担が困難な人々を資金援助することができます。<a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora Sponsored Media Program</a>への参加も検討してみてください。"
-
-#: data/content/get-prerelease.html:7
-#, fuzzy
-msgid "Prerelease Version - Fedora Project"
-msgstr "Fedora Project"
-
-#: data/content/get-prerelease.html:12
-#, fuzzy
-msgid "Get the Fedora 9 Beta."
-msgstr "Fedoraな人々の声"
-
-#: data/content/get-prerelease.html:14
-msgid "This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>.  Read the "
-msgstr ""
-
-#: data/content/get-prerelease.html:14
-#, fuzzy
-msgid "Beta release notes"
-msgstr "Fedora 8 リリースノート"
-
-#: data/content/get-prerelease.html:14
-msgid " for more information."
-msgstr ""
-
-#: data/content/get-prerelease.html:22 data/content/get-prerelease.html:23
-#, fuzzy
-msgid "Install CDs"
-msgstr "インストールDVD"
+msgstr "<a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">スポンサーベンダー</a>を通してメディアを入手すると、発展途上国に住む人々のようにインストールメディアの費用負担が困難な人々を資金援助することができます。<a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora Sponsored Media Program</a> への参加も検討してみてください。"
 
 #: data/content/index.html:10
-msgid "Fedora 8.  Infinite Possibilities."
-msgstr "無限の可能性を。Fedora 8"
+msgid "Fedora 9.  Make waves."
+msgstr "新しい波。Fedora 9"
 
-#: data/content/index.html:13 data/content/index.html:14
 #: data/content/index.html:15
-msgid "F8 Screenshot"
-msgstr "F8 スクリーンショット"
+msgid "What's new in Fedora 9?  Read the release notes. &gt;&gt;"
+msgstr "Fedora 9 の新機能については、リリースノートをご覧ください。&gt;&gt;"
 
-#: data/content/index.html:17
-msgid "What's new in Fedora 8? Read the release notes. &gt;&gt;"
-msgstr "Fedora 8の変更点は、リリースノートをご覧ください。&gt;&gt;"
-
-#: data/content/index.html:20
+#: data/content/index.html:18
 msgid "Fedora is a Linux-based operating system that showcases the latest in free and open source software. Fedora is <strong>always free for anyone to use, modify, and distribute.</strong>  It is built by people across the globe who work together as a community: the Fedora Project. The Fedora Project is open and anyone is welcome to join."
-msgstr "Fedoraは、最先端のフリーソフトウェアやオープンソースソフトウェアを提供する、Linuxベースのオペレーティングシステムです。<strong>使用・改変・配布を誰でも自由にすることができます</strong>。Fedoraは、Fedora Projectに参加する世界中の人々によって支えられています。Fedora Projectは誰もが自由に参加できる、オープンなコミュニティです。"
+msgstr "Fedora は、最先端のフリーソフトウェアやオープンソースソフトウェアを提供する、Linux ベースのオペレーティングシステムです。<strong>誰でも自由に使用し、改変し、そして配布することができます</strong>。Fedora は、Fedora Project に参加する世界中の人々によって支えられています。Fedora Project は誰もが自由に参加できる、オープンなコミュニティです。"
 
-#: data/content/index.html:23
+#: data/content/index.html:21
 msgid "The Fedora Project is out front for you, <strong>leading the advancement of free, open software and content</strong>."
-msgstr "Fedora Projectはあなたと共に、<strong>フリーでオープンなソフトウェア・コンテンツの発展を推進していきます</strong>。"
+msgstr "Fedora Project はあなたと共に、<strong>自由でオープンなソフトウェアやコンテンツの発展を推進していきます</strong>。"
 
-#: data/content/index.html:26
+#: data/content/index.html:24
 msgid "<a href=\"http://fedoraproject.org/wiki/Overview\">Learn more. &gt;&gt;</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Overview\">もっと詳しく&gt;&gt;</a>"
 
-#: data/content/index.html:30
-#, fuzzy
-msgid "Looking forward to Fedora 9?  Read the Beta release notes."
-msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
-
 #: data/content/join-fedora.html:10
 msgid "Join Fedora."
-msgstr "Fedoraに参加"
-
-#: data/content/join-fedora.html:11
-msgid "If you want to take an active hand in making Fedora even better, there are many ways to help. What role do you want to fill?"
-msgstr "あなたがFedoraをもっとよくする手段はたくさんあります。どの部門に参加しますか?"
+msgstr "Fedora に参加"
 
 #: data/content/join-fedora.html:12
+#, python-format
+msgid "To get started, <a href=\"%(fasurl)s\">set up an account</a> using the <a href=\"%(fasurl)s\">Fedora Account System</a>."
+msgstr "始めるには、<a href=\"%(fasurl)s\">Fedora Account System</a> で<a href=\"%(fasurl)s\">アカウントをセットアップ</a>します。"
+
+#: data/content/join-fedora.html:15
+msgid "If you want to take an active hand in making Fedora even better, there are many ways to help. What role do you want to fill?"
+msgstr "あなたが Fedora をもっとよくする手段はたくさんあります。どの部門に参加しますか?"
+
+#: data/content/join-fedora.html:16
 msgid "Click on a role below to learn more about how you can help the Fedora Project."
 msgstr "気に入った部門をクリックしてみてください。詳細のページに移動します。"
 
-#: data/content/join-fedora.html:15
+#: data/content/join-fedora.html:19
 #, python-format
 msgid "<a href=\"http://fedoraproject.org/wiki/Join#ContentWriter\"><img src=\"%s/%s/static/images/ContentDeveloper.png\" alt=\"Content Writer\"><br>Content Writer</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Join#ContentWriter\"><img src=\"%s/%s/static/images/ContentDeveloper.png\" alt=\"Content Writer\"><br>コンテンツ作成</a>"
 
-#: data/content/join-fedora.html:18
+#: data/content/join-fedora.html:22
 #, python-format
 msgid "<a href=\"http://fedoraproject.org/wiki/Join#Designer\"><img src=\"%s/%s/static/images/Designer.png\" alt=\"Designer\"><br>Designer</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Join#Designer\"><img src=\"%s/%s/static/images/Designer.png\" alt=\"Designer\"><br>デザイン</a>"
 
-#: data/content/join-fedora.html:21
+#: data/content/join-fedora.html:25
 #, python-format
 msgid "<a href=\"http://fedoraproject.org/wiki/Join#PeoplePerson\"><img src=\"%s/%s/static/images/PeoplePerson.png\" alt=\"People Person\"><br>People Person</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Join#PeoplePerson\"><img src=\"%s/%s/static/images/PeoplePerson.png\" alt=\"People Person\"><br>相談役</a>"
 
-#: data/content/join-fedora.html:24
+#: data/content/join-fedora.html:28
 #, python-format
 msgid "<a href=\"http://fedoraproject.org/wiki/Join#OSDeveloper\"><img src=\"%s/%s/static/images/OSDeveloper.png\" alt=\"OS Developer\"><br>OS Developer</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Join#OSDeveloper\"><img src=\"%s/%s/static/images/OSDeveloper.png\" alt=\"OS Developer\"><br>OS開発</a>"
 
-#: data/content/join-fedora.html:27
+#: data/content/join-fedora.html:31
 #, python-format
 msgid "<a href=\"http://fedoraproject.org/wiki/Join#Translator\"><img src=\"%s/%s/static/images/Translator.png\" alt=\"Translator\"><br>Translator</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Join#Translator\"><img src=\"%s/%s/static/images/Translator.png\" alt=\"Translator\"><br>翻訳</a>"
 
-#: data/content/join-fedora.html:30
+#: data/content/join-fedora.html:34
 #, python-format
 msgid "<a href=\"http://fedoraproject.org/wiki/Join#WebDeveloperAdministrator\"><img src=\"%s/%s/static/images/WebDeveloper.png\" alt=\"Web Developer or Administrator\"><br>Web Developer<br>or Administrator</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Join#WebDeveloperAdministrator\"><img src=\"%s/%s/static/images/WebDeveloper.png\" alt=\"Web Developer or Administrator\"><br>ウェブサイトの開発・管理</a>"
 
 #: data/content/keys.html:10
-#, fuzzy
 msgid "GPG keys used by Fedora Project"
-msgstr "Fedora Project"
+msgstr "Fedora Project で使用される GPG キー"
 
 #: data/content/keys.html:11
 msgid "How does Fedora Project use GPG keys to sign packages"
-msgstr ""
+msgstr "Fedora Project はどのようなパッケージに GPG キーによる署名を行うの?"
 
 #: data/content/keys.html:13
 msgid "Each stable RPM package that is published by Fedora Project is signed with a GPG signature.  By default, yum and the graphical update tools will verify these signatures and refuse to install any packages that are not signed or have bad signatures.  You should always verify the signature of a package before you install it.  These signatures ensure that the packages you install are what was produced by the Fedora Project and have not been altered (accidentally or maliciously) by any mirror or website that is providing the packages."
-msgstr ""
+msgstr "Fedora Project が公開するそれぞれの安定版 RPM パッケージは、GPG で署名されています。yum やグラフィカルなアップデートツールは通常、これらの署名を検証し、署名されていなかったり、署名が不正だったりするとパッケージのインストールを中止します。パッケージをインストールする前には、かならず署名を検証するべきです。署名は、そのパッケージが Fedora Project によって供給されていることと、(事故にしろ悪意にしろ)パッケージがダウンロード元のミラーサーバーやウェブサイトで偽造されていないことを確実に証明します。"
 
 #: data/content/keys.html:16
 msgid "Packages that can be downloaded from koji build system do not contain signatures, so you should use them with caution.  Similarly, bleeding-edge packages in Rawhide are not necessarily signed."
-msgstr ""
+msgstr "\"koji build system\" からダウンロードできるパッケージは署名されていません。注意して扱うべきです。同様に、\"Rawhide\" の \"bleeding-edge\" パッケージもサインされているとは限りません。"
 
 #: data/content/keys.html:19
 msgid "Importing keys"
-msgstr ""
+msgstr "キーのインポート"
 
 #: data/content/keys.html:21
 msgid "The keys are included in <strong>fedora-release</strong> package, you can find them in <strong>/etc/pki/rpm-gpg</strong> directory.  Please note that not all keys in this directory are used by Fedora project -- some are used for signing Red Hat Enterprise Linux packages or are no longer used at all. If you use Red Hat Enterprise Linux packages, see <a href=\"http://www.redhat.com/security/team/key/\">http://www.redhat.com/security/team/key</a>.  The keys used by Fedora are enabled in the yum repository configuration, so you generally don't need to manually import them into the rpm database."
-msgstr ""
+msgstr "キーは、<strong>fedora-release</strong> パッケージに同梱されており、<strong>/etc/pki/rpm-gpg</strong> に保存されています。ただし、このディレクトリ内のすべてのキーが Fedora Project で使われているとは限りません - いくつかのキーは Red Hat Enterprise Linux のパッケージの署名に使われているかもしれませんし、既に使われていないかもしれません。Red Hat Enterprise Linux のパッケージを使用する際には、<a href=\"http://www.redhat.com/security/team/key/\">http://www.redhat.com/security/team/key</a> をご覧下さい。Fedora で使用されるキーは、yum レポジトリの設定で有効にされていますので、通常、手動でキーをインポートする必要はありません。"
 
 #: data/content/keys.html:24
 msgid "In addition to the fedora-release package and this web page, you can download the Fedora keys from a public key server, such as <a href=\"http://pgp.mit.edu/\">http://pgp.mit.edu/</a>."
-msgstr ""
+msgstr "fedora-release パッケージやこのウェブページ以外に、<a href=\"http://pgp.mit.edu/\">http://pgp.mit.edu/</a> のような、公共の鍵サーバーからFedora のキーをダウンロードすることもできます。"
 
 #: data/content/keys.html:27
 msgid "For some repositories, such as repositories with stable and testing packages in default configuration, <strong>yum</strong> is able to find a proper key for the repository and asks the user for confirmation before importing the key if the key is not already imported into the rpm database."
-msgstr ""
+msgstr "標準設定で、安定版とテスト版の両方のレポジトリが存在するようなレポジトリについて、もしも rpm データベースにキーがインポートされていない場合、<strong>yum</strong> は、レポジトリに適切なキーを探しだし、ユーザーにキーをインポートするかどうか尋ねます。"
 
 #: data/content/keys.html:30
 msgid "You can always import a key into RPM's database by hand using the following command:"
-msgstr ""
+msgstr "以下のコマンドで、キーを手動で RPM のデータベースにインポートすることができます:"
 
 #: data/content/keys.html:34
 msgid "Refer to <strong>rpm</strong> manual for more information."
-msgstr ""
+msgstr "詳細は <strong>rpm</strong> のマニュアルをご覧下さい。"
 
 #: data/content/keys.html:37
 msgid "If you want to verify that the keys installed on your system match the keys listed here, you can import the key into GnuPG's keyring and check that the fingerprint of the key matches.  For example:"
-msgstr ""
+msgstr "システムにインストールされているキーとこのリストにあるキーが一致しているかどうかを確かめるには、キーを GnuPG のキーリングにインポートし、キーの指紋が合致するかどうかチェックします。たとえば:"
 
 #: data/content/keys.html:53
 msgid "Verifying a package"
-msgstr ""
+msgstr "パッケージの検証"
 
 #: data/content/keys.html:55
 msgid "When using default configuration of <strong>yum</strong> package updating and installation tool in stable releases, signature of each package is verified before it is installed.  Signature verification can be turned off and on globally or for specific repository with <strong>gpgcheck</strong> directive.  Do not override the default setting of this directive unless you have a very good reason to do so."
-msgstr ""
+msgstr "安定版リリースの <strong>yum</strong> パッケージ管理ツールをデフォルトの設定で使用すると、それぞれのパッケージはインストールされる前に検証されます。署名検証の有効・無効は、<strong>gpgcheck</strong> ディレクティブによって、システム全体もしくは特定のレポジトリに適用することができます。ただし、特別な理由がない限り、デフォルトの設定は上書きしないでください。"
 
 #: data/content/keys.html:58
 msgid "If you do not use yum, you can check the signature of the package using the following command"
-msgstr ""
+msgstr "yum を使わない場合、以下のコマンドでパッケージの署名を検証することができます"
 
 #: data/content/keys.html:63
 msgid "Currently used keys"
-msgstr ""
+msgstr "現在使われているキー"
 
 #: data/content/keys.html:74
 msgid "Fedora Core (version 6 and earlier)"
-msgstr ""
+msgstr "Fedora Core (バージョン 6 以前)"
 
 #: data/content/keys.html:75
 msgid "Fedora (version 7 and newer)"
-msgstr ""
+msgstr "Fedora (バージョン 7 以降)"
 
 #: data/content/keys.html:76
 msgid "Both GA and updates"
-msgstr ""
+msgstr "双方のリリース及びアップデート"
 
 #: data/content/keys.html:80
 msgid "If you use a recent stable release, this is the only key you will use.  Packages on installation media and all the updates you will install are signed with this key.  The relevant yum repositories are <strong>fedora</strong>, <strong>fedora-updates</strong> for Fedora 7 and later, and <strong>core</strong> and <strong>core-updates</strong> for Fedora Core (Version 6 and earlier)."
-msgstr ""
+msgstr "最近の安定版を使用している場合は、これが使用する唯一のキーです。インストールメディアやそのアップデートパッケージは、このキーで署名されます。尚、これに該当するレポジトリは、Fedora 7 以降の<strong>fedora</strong>、<strong>fedora-updates</strong>レポジトリと、Fedora Core (バージョン 6 以前)の<strong>core</strong>、<strong>core-updates</strong> です。"
 
 #: data/content/keys.html:84
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
-msgstr ""
+msgstr "パス: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 
 #: data/content/keys.html:85
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
-msgstr ""
+msgstr "ダウンロード: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
 
 #: data/content/keys.html:98
 msgid "Fedora (version 7 and newer) testing updates"
-msgstr ""
+msgstr "Fedora (バージョン 7 以降) テストアップデート"
 
 #: data/content/keys.html:102
 msgid "If you participate in testing of the packages, this is the key you will use to verify the testing packages.  This key signs the packages that are in <strong>fedora-testing</strong> repository."
-msgstr ""
+msgstr "このキーは、テスト版パッケージの検証に使われます。このキーで、<strong>fedora-testing</strong> レポジトリ内のパッケージは署名されています。"
 
 #: data/content/keys.html:106
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
-msgstr ""
+msgstr "パス: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
 
 #: data/content/keys.html:107
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
-msgstr ""
+msgstr "ダウンロード: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
 
 #: data/content/keys.html:111
 msgid "Obsolete keys"
-msgstr ""
+msgstr "古いキー"
 
 #: data/content/keys.html:124
 msgid "Fedora Extras (version 6 and earlier)"
-msgstr ""
+msgstr "Fedora Extras (バージョン 6 以前)"
 
 #: data/content/keys.html:128
 msgid "If you are using Fedora Extras with Fedora Core 6, use this package from <strong>extras</strong> repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007).  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
-msgstr ""
+msgstr "Fedora Core 6 で Fedora Extras を使用している場合、<strong>extras</strong> レポジトリのこのパッケージを使用します。このキーは、Fedora Core 6 と Extras の公式メンテナンスが終了(2007年12月7日)すると使われなくなります。このキーは、Fedora 7 以降の <strong>fedora-release</strong> パッケージには含まれていません。"
 
 #: data/content/keys.html:132
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
-msgstr ""
+msgstr "パス: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 
 #: data/content/keys.html:133
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&op=index\">pgp.mit.edu</a>"
-msgstr ""
+msgstr "ダウンロード: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&op=index\">pgp.mit.edu</a>"
 
 #: data/content/keys.html:150
 msgid "This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
-msgstr ""
+msgstr "このキーは、Fedora Legacy project によって公開された、公式メンテナンスが終了したリリースのアップデートパッケージに使われています。Fedora Legacy Project は解散したため、今後このキーがパッケージの署名に使用されることはありません。このキーは、Fedora 7 以降の <strong>fedora-release</strong> パッケージには含まれていません。"
 
 #: data/content/relnotes.html:10
-msgid "Fedora 8 Release Notes"
-msgstr "Fedora 8 リリースノート"
+msgid "Fedora 9 Release Notes"
+msgstr "Fedora 9 リリースノート"
 
 #: data/content/relnotes.html:12
-msgid "Here are places you can find the Fedora 8 release notes.  If one location is unresponsive, try a different one."
-msgstr "Fedora 8のリリースノートです。必要な情報を見つけるためには、複数のものを参照してみてください。"
-
-#: data/content/relnotes.html:15
 msgid "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 
-#: data/content/relnotes.html:18
-msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>8/</em> directory.  For example:"
-msgstr "他の<a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">ミラーサイト</a>もチェックしてください。ミラーサイトでは、英語版のリリースノート、<em>\"RELEASE-NOTES-en_US.html\"</em>のみ公開しています。尚、ミラーサイトによって、ディレクトリのパスが異なるかもしれませんが、それぞれのサイトに共通して必ずどこかに<em>\"8/\"</em>というディレクトリが存在します。例えば:"
-
-#: data/content/relnotes.html:21
-msgid "ATRPMs mirror"
-msgstr "ATRPMs mirror"
-
-#: data/content/relnotes.html:22
-msgid "RPMFind.net mirror"
-msgstr "RPMFind.net mirror"
-
 #: data/content/rss.html:10
 msgid "RSS Feed Test"
-msgstr ""
+msgstr "RSS フィード テスト"
 
 #: data/content/sponsors.html:10
 msgid "Fedora Sponsors"
-msgstr "Fedoraのスポンサー"
+msgstr "Fedora のスポンサー"
 
 #: data/content/sponsors.html:11
 msgid "The Fedora Project is proud to have the following organizations as sponsors:"
-msgstr "Fedora Projectは以下の団体の協力によって運営されています。"
+msgstr "Fedora Project は以下の団体の協力によって運営されています。"
 
 #: data/content/sponsors.html:31
 msgid "Interested in sponsoring something for Fedora?  Contact admin at fedoraproject * org or stop by #fedora-admin on irc.freenode.net."
-msgstr ""
+msgstr "Fedora に協力してみませんか?  fedoraproject * org の管理者に問い合わせるか、irc.freenode.net. の #fedora-admin チャンネルに立ち寄ってみて下さい。"
 
 #: data/content/verify.html:10
 msgid "Verify your ISO download."
-msgstr "ISOファイルを検証する"
+msgstr "ISO ファイルを検証する"
 
 #: data/content/verify.html:12
 msgid "Windows user?  Follow <a href=\"http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html\">these instructions</a> instead."
-msgstr "Windowsユーザーですか?<a href=\"http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html\">こちら</a>を参照してください。"
+msgstr "Windows ユーザーですか?  <a href=\"http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html\">こちら</a>を参照してください。"
 
 #: data/content/verify.html:15
 msgid "Once you have downloaded an ISO, verify it for security and integrity.  If you downloaded your ISO via BitTorrent, the file has already been verified as part of the download process (just make sure that you got the torrent from <a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a>).  Otherwise, to verify your ISO, start by downloading the proper SHA1SUM file into the same directory as the ISO:"
-msgstr "セキュリティ対策とデータ欠落発見のために、ISOファイルをダウンロードしたらまず、ファイルの検証を行ってください。最初に、適切なSHA1SUMファイルをダウンロードし、検証するISOファイルと同じディレクトリに入れます。尚、ISOファイルを<a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a>にあるBitTorrentから入手した場合は、ダウンロード時にファイルの検証が自動で行われていますので、このセクションをスキップすることができます。"
+msgstr "セキュリティ対策とデータ欠落発見のために、ISO ファイルをダウンロードしたら、まずはファイルの検証を行ってください。最初に、適切な SHA1SUM ファイルをダウンロードし、検証する ISO ファイルと同じディレクトリに入れます。尚、ISO ファイルを <a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a> にある BitTorrent から入手した場合は、ダウンロード時にファイルの検証が自動で行われていますので、このセクションをスキップすることができます。"
 
 #: data/content/verify.html:17
 msgid "Install DVD / Rescue CD"
-msgstr "インストールDVD / レスキューCD"
+msgstr "インストール DVD / レスキュー CD"
 
 #: data/content/verify.html:23
 msgid "Live Media (both GNOME and KDE)"
-msgstr "ライブメディア(GNOME,KDE共に)"
+msgstr "ライブメディア(GNOME, KDE 共に)"
 
 #: data/content/verify.html:30
 msgid "Next, import Fedora's GPG key:"
-msgstr "次に、FedoraのGPGキーを入手します:"
+msgstr "次に、Fedora の GPGキー を入手します:"
 
 #: data/content/verify.html:35
 msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID 4F2A6FD2."
-msgstr "SHA1SUMファイルがキーID「4F2A6FD2」によって正しく署名されていることを確認します:"
+msgstr "SHA1SUM ファイルがキー ID「4F2A6FD2」によって正しく署名されていることを確認します:"
 
 #: data/content/verify.html:39
 msgid "Finally, now that the SHA1SUM file has been verified, check that the ISO's checksum matches:"
-msgstr "SHA1SUMファイルの検証が完了しました。最後にISOファイルのチェックサムがSHA1SUMファイルに含まれているものと一致するかを検証します:"
+msgstr "SHA1SUM ファイルの検証が完了しました。最後に ISO ファイルのチェックサムが SHA1SUM ファイルに含まれているものと一致するかを検証します:"
 
 #: data/content/verify.html:43
 msgid "If the output states that the file is valid, you're good to go!"
@@ -453,60 +407,47 @@ msgstr "検証成功の旨が出力されたら、準備完了です！"
 
 #: data/content/e/404.html:10
 msgid "Sorry!  We couldn't find that file"
-msgstr ""
+msgstr "Sorry!  ファイルがみつかりません"
 
 #: data/content/e/404.html:11
 msgid "We apologize, but the file you requested could not be found."
-msgstr ""
+msgstr "リクエストされたファイルが見つかりませんでした。"
 
 #: data/content/e/404.html:13
 msgid "Double-check the URL if you entered it manually. Did you copy it correctly?"
-msgstr ""
+msgstr "手動で URL を入力した場合は、もう一度入力内容を確認して下さい。正しくコピーされていますか?"
 
 #: data/content/e/404.html:14
-msgid "Did a bad link bring you here? Contact "
-msgstr ""
-
-#: data/content/e/404.html:14
-msgid "the fedoraproject.org webmaster"
-msgstr ""
-
-#: data/content/e/404.html:14
-msgid " and let them know which link brought you here."
-msgstr ""
+msgid "Did a bad link bring you here? Contact <a href=\"mailto:webmaster@fedoraproject.org\">the fedoraproject.org webmaster</a> and let them know which link brought you here."
+msgstr "無効リンクがありましたか? <a href=\"mailto:webmaster@fedoraproject.org\">fedoraproject.org ウェブマスター</a> に、どのリンクが無効だったかをお知らせ下さい。"
 
 #: data/content/e/404.html:15
 msgid "The file you are looking for may have moved. Check our main site at <a href=\"http://fedoraproject.org/\">http://fedoraproject.org/</a> or search our <a href=\"http://fedoraproject.org/wiki/\">wiki</a>."
-msgstr ""
+msgstr "お探しのファイルは移動したかもしれません。メインサイト <a href=\"http://fedoraproject.org/\">http://fedoraproject.org/</a> をご覧になるか、<a href=\"http://fedoraproject.org/wiki/\">wiki</a> で検索してみてください。"
 
 #: data/content/e/404.html:17
-#, fuzzy
 msgid "Fedora Resources"
-msgstr "Fedoraのスポンサー"
+msgstr "Fedora のリソース"
 
 #: data/content/e/404.html:20
-#, fuzzy
 msgid "Fedora Documentation"
-msgstr "Fedoraに関する文書"
+msgstr "Fedora に関する文書"
 
 #: data/content/e/404.html:24
-#, fuzzy
 msgid "Connect with the Fedora Community"
-msgstr "Fedoraな人々の声"
+msgstr "Fedora のコミュニティに接続"
 
 #: data/content/e/404.html:28
-#, fuzzy
 msgid "Download Fedora!"
-msgstr "Fedoraに参加"
+msgstr "Fedora をダウンロード!"
 
 #: data/templates/foot.html:9
-#, fuzzy
 msgid "Copyright &copy; 2008 Red Hat, Inc. and others.  All Rights Reserved.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
-msgstr "Copyright &copy; 2007 Red Hat, Inc. and others.  All Rights Reserved.  ウェブサイトに関するご意見・ご感想は、<a href=\"mailto:webmaster@fedoraproject.org\">ウェブサイトチーム</a>へ。"
+msgstr "Copyright &copy; 2008 Red Hat, Inc. and others.  All Rights Reserved.  すべてのコメントや訂正は <a href=\"mailto:webmaster@fedoraproject.org\">ウェブサイトチーム</a>へ。"
 
 #: data/templates/foot.html:12
 msgid "The Fedora Project is maintained and driven by the community and sponsored by Red Hat.  This is a community maintained site.  Red Hat is not responsible for content."
-msgstr "Fedora Projectは、Red Hatの後援により、コミュニティが管理・運営しています。このサイトは、コミュニティが維持しています。Red Hatは内容に関する一切の責任を負いかねます。"
+msgstr "Fedora Project は、Red Hat の後援により、コミュニティが管理・運営しています。このサイトは、コミュニティが維持しています。Red Hat は内容に関する一切の責任を負いかねます。"
 
 #: data/templates/foot.html:15
 msgid "Sponsors"
@@ -518,105 +459,115 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/Legal\">使用規約</a>"
 
 #: data/templates/foot.html:17
 msgid "<a href=\"http://fedoraproject.org/wiki/Legal/TrademarkGuidelines\">Trademark Guidelines</a>"
-msgstr "<a href=\"http://fedoraproject.org/wiki/Legal/TrademarkGuidelines\">トレードマークに関するガイドライン</a>"
+msgstr "<a href=\"http://fedoraproject.org/wiki/Legal/TrademarkGuidelines\">登録商標に関するガイドライン</a>"
 
 #: data/templates/head.html:7
 msgid "Fedora"
 msgstr "Fedora"
 
-#: data/templates/sidebar.html:26
-#, python-format
-msgid "%s/static/images/counter/%s"
-msgstr ""
+#: data/templates/sidebar.html:9
+msgid "Fedora 9 Sulphur is here!"
+msgstr "Fedora 9 Sulfur がやって来た!"
 
-#: data/templates/sidebar.html:26
-#, python-format
-msgid "Fedora 9 Sulfur released in %s days!"
-msgstr ""
-
-#: data/templates/sidebar.html:27
-msgid "Add a counter to your own site!"
-msgstr ""
-
-#: data/templates/sidebar.html:30
+#: data/templates/sidebar.html:13
 msgid "Navigation"
 msgstr "ナビゲーション"
 
-#: data/templates/sidebar.html:32
+#: data/templates/sidebar.html:15
 msgid "Home"
 msgstr "ホーム"
 
-#: data/templates/sidebar.html:33
+#: data/templates/sidebar.html:16
 msgid "Get Fedora"
-msgstr "Fedoraを入手"
+msgstr "Fedora を入手"
 
-#: data/templates/sidebar.html:34
+#: data/templates/sidebar.html:17
 msgid "Join Fedora"
-msgstr "Fedoraに参加"
+msgstr "Fedora に参加"
 
-#: data/templates/sidebar.html:36
+#: data/templates/sidebar.html:19
 msgid "Tools"
 msgstr "ツール"
 
-#: data/templates/sidebar.html:38
+#: data/templates/sidebar.html:21
 msgid "Docs"
 msgstr "各種文書"
 
-#: data/templates/sidebar.html:38
+#: data/templates/sidebar.html:21
 msgid "Fedora documentation."
-msgstr "Fedoraに関する文書"
+msgstr "Fedora に関する文書"
 
-#: data/templates/sidebar.html:39
+#: data/templates/sidebar.html:22
 msgid "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/ja_JP\">Wiki</a>"
 
-#: data/templates/sidebar.html:39
+#: data/templates/sidebar.html:22
 msgid "Collaborative knowledge."
 msgstr "知識の共有"
 
-#: data/templates/sidebar.html:40
+#: data/templates/sidebar.html:23
 msgid "Planet"
 msgstr "Planet"
 
-#: data/templates/sidebar.html:40
+#: data/templates/sidebar.html:23
 msgid "The voices of the Fedora community."
-msgstr "Fedoraな人々の声"
+msgstr "Fedora な人々の声"
 
-#: data/templates/sidebar.html:41
+#: data/templates/sidebar.html:24
 msgid "<a href=\"http://fedoraproject.org/wiki/Communicate\">Communicate</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Communicate\">交流</a>"
 
-#: data/templates/sidebar.html:41
+#: data/templates/sidebar.html:24
 msgid "Speak with Fedora."
-msgstr "Fedoraを肴にお喋り"
+msgstr "Fedora を肴にお喋り"
 
-#: data/templates/sidebar.html:42
-#, fuzzy
+#: data/templates/sidebar.html:25
 msgid "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Events</a>"
-msgstr "<a href=\"http://fedoraproject.org/wiki/Legal\">使用規約</a>"
+msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">イベント</a>"
 
-#: data/templates/sidebar.html:42
-#, fuzzy
+#: data/templates/sidebar.html:25
 msgid "Meet the Fedora community."
-msgstr "Fedoraな人々の声"
+msgstr "Fedora コミュニティとの出会い"
 
-#: data/templates/sidebar.html:44
+#: data/templates/sidebar.html:27
 msgid "Website Language"
 msgstr "他の言語を選択"
 
-#~ msgid "%s/%s/static/images/banners/f8-banner-animation.gif"
-#~ msgstr "%s/%s/static/images/banners/f8-banner-animation.gif"
+#~ msgid "Here are places you can find the Fedora 9 release notes.  If one location is unresponsive, try a different one."
+#~ msgstr "Fedora 9 のリリースノートです。応答無きものがある場合は、他のものを試してみてください。"
 
-#~ msgid "Fedora 8 Werewolf is here!"
-#~ msgstr "Fedora 8 Werewolfがやってきた!"
+#~ msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/9/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>9/</em> directory.  For example:"
+#~ msgstr "<em>http://URL/fedora/linux/releases/9/Fedora/i386/os/</em> のようなリンク構造のある、他の<a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/\">ミラーサイト</a>もチェックしてください。ミラーサイトでは、アメリカ英語版のリリースノート、<em>\"RELEASE-NOTES-en_US.html\"</em>のみを公開しています。尚、ミラーサイトによって、ディレクトリのパスが異なるかもしれませんが、それぞれのサイトに共通して必ずどこかに<em>\"9/\"</em>というディレクトリが存在します。例えば:"
 
-#, fuzzy
-#~ msgid "Fedora, For the Future."
-#~ msgstr "Fedoraをあなたの元へ。"
+#~ msgid "ATRPMs mirror"
+#~ msgstr "ATRPMs mirror"
 
-#, fuzzy
-#~ msgid "Install CD directory"
-#~ msgstr "インストールDVD"
+#~ msgid "RPMFind.net mirror"
+#~ msgstr "RPMFind.net mirror"
 
-#~ msgid "GNOME Live Media"
-#~ msgstr "GNOME ライブメディア"
+#~ msgid "F8 Screenshot"
+#~ msgstr "F8 スクリーンショット"
+
+#~ msgid "Prerelease Version - Fedora Project"
+#~ msgstr "プリリリースバージョン - Fedora Project"
+
+#~ msgid "Get the Fedora 9 Beta."
+#~ msgstr "Fedora 9 Beta を入手"
+
+#~ msgid "This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>.  Read the "
+#~ msgstr "これのソフトウェアは、プリリリース版です。Fedora Project は、安定性や有用性に関する一切の保証をしかねます。このリリースに関するすべての問題は、<a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a> に報告して下さい。詳細は"
+
+#~ msgid "Beta release notes"
+#~ msgstr "ベータ版リリースノート"
+
+#~ msgid " for more information."
+#~ msgstr "をお読み下さい。"
+
+#~ msgid "Fedora 9.  Infinite Possibilities."
+#~ msgstr "無限の可能性を。Fedora 9"
+
+#~ msgid "%s/static/images/counter/%s"
+#~ msgstr "%s/static/images/counter/%s"
+
+#~ msgid "Add a counter to your own site!"
+#~ msgstr "あなたのサイトにカウンターを貼ろう!"

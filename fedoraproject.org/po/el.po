@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-04-19 16:36-0400\n"
-"PO-Revision-Date: 2008-02-14 00:50+0200\n"
+"POT-Creation-Date: 2008-05-16 17:53-0400\n"
+"PO-Revision-Date: 2008-05-07 12:25+0300\n"
 "Last-Translator: Dimitris Glezos <dimitris@glezos.com>\n"
 "Language-Team: Greek Fedora team <fedora-trans-el@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -18,6 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 "X-Generator: KBabel 1.11.4\n"
+"X-Poedit-Language: Greek\n"
 
 #: data/content/counter.html:7 data/content/get-fedora.html:7
 #: data/content/index.html:7 data/content/join-fedora.html:7
@@ -28,16 +29,15 @@ msgid "Fedora Project"
 msgstr "Έργο Fedora"
 
 #: data/content/counter.html:12
-#, fuzzy
 msgid "Fedora Release Counter"
-msgstr "Σημειώσεις κυκλοφορίας Fedora 8"
+msgstr "Μετρητής κυκλοφορίας Fedora"
 
 #: data/content/counter.html:14
 msgid "To add a Fedora Release counter to your own site, simply place the following code wherever you want it to appear:"
 msgstr ""
 
 #: data/content/counter.html:18
-msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, fi, fr, he, hu, is, it, pl, pt_BR, ro, sk, and sr are supported.  When no language is specified, English will be used."
+msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk, and sr are supported.  When no language is specified, English will be used."
 msgstr ""
 
 #: data/content/get-fedora.html:12
@@ -45,215 +45,190 @@ msgid "Fedora, For You."
 msgstr "Fedora, για εσάς."
 
 #: data/content/get-fedora.html:13
-msgid "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Preview Release</a>&rdquo;"
-msgstr ""
+#, python-format
+msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
+msgstr "Όταν έχει ολοκληρωθεί η λήψη μιας εικόνας ISO, <a href=\"%s/%s/verify\">πιστοποιήστε</a> την."
 
-#: data/content/get-fedora.html:14 data/content/get-prerelease.html:15
+#: data/content/get-fedora.html:14
 msgid "Install Media"
 msgstr "Μέσα εγκατάστασης"
 
-#: data/content/get-fedora.html:17 data/content/get-fedora.html:36
-#: data/content /get-fedora.html:56 data/content/get-prerelease.html:18
-#: data/content/get- prerelease.html:30 data/content/get-prerelease.html:41
+#: data/content/get-fedora.html:17 data/content/get-fedora.html:54
+#: data/content/get-fedora.html:74
 msgid "BitTorrent"
 msgstr "BitTorrent"
 
-#: data/content/get-fedora.html:19 data/content/get-fedora.html:27
-#: data/content /get-prerelease.html:20 data/content/get-prerelease.html:22
+#: data/content/get-fedora.html:19 data/content/get-fedora.html:23
+#: data/content/get-fedora.html:32 data/content/get-fedora.html:36
+#: data/content/get-fedora.html:45
 msgid "i386"
 msgstr "i386"
 
 #: data/content/get-fedora.html:19 data/content/get-fedora.html:20
-#: data/content /get-fedora.html:21 data/content/get-fedora.html:27
-#: data/content/get- fedora.html:28 data/content/get-fedora.html:29
-#: prerelease.html:20 data/content/get-prerelease.html:21
+#: data/content/get-fedora.html:21 data/content/get-fedora.html:32
+#: data/content/get-fedora.html:33 data/content/get-fedora.html:34
 msgid "Install DVD"
 msgstr "Εγκατάσταση DVD"
 
-#: data/content/get-fedora.html:20 data/content/get-fedora.html:28
-#: data/content /get-fedora.html:39 data/content/get-fedora.html:47
-#: data/content/get- fedora.html:59 data/content/get-fedora.html:66
-#: prerelease.html:21 data/content/get-prerelease.html:23 prerelease.html:33
-#: data/content/get-prerelease.html:44
+#: data/content/get-fedora.html:20 data/content/get-fedora.html:24
+#: data/content/get-fedora.html:33 data/content/get-fedora.html:37
+#: data/content/get-fedora.html:46 data/content/get-fedora.html:57
+#: data/content/get-fedora.html:65 data/content/get-fedora.html:77
+#: data/content/get-fedora.html:84
 msgid "x86_64"
 msgstr "x86_64"
 
-#: data/content/get-fedora.html:21 data/content/get-fedora.html:29
-#: data/content /get-fedora.html:40 data/content/get-fedora.html:48
+#: data/content/get-fedora.html:21 data/content/get-fedora.html:25
+#: data/content/get-fedora.html:34 data/content/get-fedora.html:38
+#: data/content/get-fedora.html:47
 msgid "ppc"
 msgstr "ppc"
 
-#: data/content/get-fedora.html:25 data/content/get-fedora.html:44
-#: data/content /get-fedora.html:63
+#: data/content/get-fedora.html:23 data/content/get-fedora.html:24
+#: data/content/get-fedora.html:25 data/content/get-fedora.html:36
+#: data/content/get-fedora.html:37 data/content/get-fedora.html:38
+#, fuzzy
+msgid "Install CDs"
+msgstr "Εγκατάσταση DVD"
+
+#: data/content/get-fedora.html:30 data/content/get-fedora.html:62
+#: data/content/get-fedora.html:81
 msgid "Direct Download"
 msgstr "Άμεση λήψη"
 
-#: data/content/get-fedora.html:33 data/content/get-prerelease.html:27
+#: data/content/get-fedora.html:43
+msgid "Jigdo"
+msgstr ""
+
+#: data/content/get-fedora.html:51
 msgid "Fedora Desktop Live Media"
 msgstr "Ζωντανές εικόνες επιφάνειας εργασίας Fedora"
 
-#: data/content/get-fedora.html:38 data/content/get-fedora.html:46
-#: data/content /get-fedora.html:58 data/content/get-fedora.html:65
-#: data/content/get- prerelease.html:32 data/content/get-prerelease.html:43
+#: data/content/get-fedora.html:56 data/content/get-fedora.html:64
+#: data/content/get-fedora.html:76 data/content/get-fedora.html:83
 msgid "i686"
 msgstr "i686"
 
-#: data/content/get-fedora.html:38 data/content/get-fedora.html:46
-#: data/content /get-fedora.html:58 data/content/get-fedora.html:65
-#: data/content/get- prerelease.html:32 data/content/get-prerelease.html:43
+#: data/content/get-fedora.html:56 data/content/get-fedora.html:64
+#: data/content/get-fedora.html:76 data/content/get-fedora.html:83
 msgid "Live CD"
 msgstr "Ζωντανό CD"
 
-#: data/content/get-fedora.html:39 data/content/get-fedora.html:40
-#: data/content /get-fedora.html:47 data/content/get-fedora.html:48
-#: data/content/get- fedora.html:59 data/content/get-fedora.html:66
-#: prerelease.html:33 data/content/get-prerelease.html:44
+#: data/content/get-fedora.html:57 data/content/get-fedora.html:65
+#: data/content/get-fedora.html:77 data/content/get-fedora.html:84
 msgid "Live DVD"
 msgstr "Ζωντανό DVD"
 
-#: data/content/get-fedora.html:53 data/content/get-prerelease.html:38
+#: data/content/get-fedora.html:71
 msgid "Fedora KDE Live Media"
 msgstr "Ζωντανή εικόνα Fedora KDE"
 
-#: data/content/get-fedora.html:71 data/content/get-prerelease.html:48
+#: data/content/get-fedora.html:89
 msgid "Let me look around..."
 msgstr "Να ρίξω μια ματιά..."
 
-#: data/content/get-fedora.html:73 data/content/get-prerelease.html:50
+#: data/content/get-fedora.html:91
 msgid "See all torrents"
 msgstr "Εμφάνιση όλων των torrent"
 
-#: data/content/get-fedora.html:74
+#: data/content/get-fedora.html:92
 msgid "See all mirrors"
 msgstr "Εμφάνιση όλων των εναλλακτικών τοποθεσιών αρχείων (mirrors)"
 
-#: data/content/get-fedora.html:75 data/content/get-prerelease.html:52
+#: data/content/get-fedora.html:93
 msgid "See all custom spins"
 msgstr "Εμφάνιση όλων των προσαρμοσμένων εκδοχών"
 
-#: data/content/get-fedora.html:77
+#: data/content/get-fedora.html:95
 msgid "Slow Internet? No Internet?"
 msgstr "Αργό Διαδίκτυο; Καθόλου Διαδίκτυο;"
 
-#: data/content/get-fedora.html:78
+#: data/content/get-fedora.html:96
 msgid "Get a copy of Fedora Media sent via postal mail."
 msgstr "Λάβετε ένα αντίγραφο του Fedora μέσω ταχυδρομείου."
 
-#: data/content/get-fedora.html:80
+#: data/content/get-fedora.html:98
 msgid "Purchase installation media for Fedora from <a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">online vendors</a> or a <a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">local vendor</a> in your area."
 msgstr "Αγοράστε μέσα εγκατάστασης Fedora από <a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">online πωλητές</a> ή από έναν <a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">τοπικό πωλητή</a> στην περιοχή σας."
 
-#: data/content/get-fedora.html:81
+#: data/content/get-fedora.html:99
 msgid "Can't afford the price of installation media? Request Fedora installation media from the <a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Fedora Free Media Program</a>."
 msgstr "Δε μπορείτε να διαθέσετε το αντίτιμο για μέσα εγκατάστασης; Ζητήστε μέσα εγκατάστασης Fedora από το <a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Πρόγραμμα δωρεάν διάθεσης μέσων Fedora</a>."
 
-#: data/content/get-fedora.html:84
+#: data/content/get-fedora.html:102
 msgid "When you place an order with a <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">participating vendor</a>, you may also sponsor the cost of media for users who cannot afford it, such as people in developing nations. Consider participating in the <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora Sponsored Media Program</a>."
 msgstr "Όταν κάνετε μια παραγγελία με ένα <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">συμμετέχον κατάστημα</a>, μπορείτε επίσης να καλύψετε το κόστος για μέσα σε χρήστες που δε διαθέτουν τα ανάλογα χρήματα, όπως για παράδειγμα ανθρώπους σε αναπτυσσόμενα κράτη. Παρακαλούμε σκεφτείτε να συμμετάσχετε στο <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Πρόγραμμα επιχορήγησης μέσων Fedora</a>."
 
-#: data/content/get-prerelease.html:7
-#, fuzzy
-msgid "Prerelease Version - Fedora Project"
-msgstr "Έργο Fedora"
-
-#: data/content/get-prerelease.html:12
-#, fuzzy
-msgid "Get the Fedora 9 Beta."
-msgstr "Η φωνή της κοινότητας Fedora."
-
-#: data/content/get-prerelease.html:14
-msgid "This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>.  Read the "
-msgstr ""
-
-#: data/content/get-prerelease.html:14
-#, fuzzy
-msgid "Beta release notes"
-msgstr "Σημειώσεις κυκλοφορίας Fedora 8"
-
-#: data/content/get-prerelease.html:14
-msgid " for more information."
-msgstr ""
-
-#: data/content/get-prerelease.html:22 data/content/get-prerelease.html:23
-msgid "Install CDs"
-msgstr "Εγκατάσταση CDs"
-
 #: data/content/index.html:10
-msgid "Fedora 8.  Infinite Possibilities."
-msgstr "Fedora 8.  Απεριόριστες δυνατότητες."
+msgid "Fedora 9.  Make waves."
+msgstr "Fedora 9.  Κύματα αλλαγής."
 
-#: data/content/index.html:13 data/content/index.html:14
 #: data/content/index.html:15
-msgid "F8 Screenshot"
-msgstr "Στιγμιότυπο οθόνης F8"
+msgid "What's new in Fedora 9?  Read the release notes. &gt;&gt;"
+msgstr "Τι νέο υπάρχει στο Fedora 9; Διαβάστε τις σημειώσεις κυκλοφορίας. &gt;&gt;"
 
-#: data/content/index.html:17
-msgid "What's new in Fedora 8? Read the release notes. &gt;&gt;"
-msgstr "Τι νέο υπάρχει στο Fedora 8; Διαβάστε τις σημειώσεις κυκλοφορίας. &gt;&gt;"
-
-#: data/content/index.html:20
+#: data/content/index.html:18
 msgid "Fedora is a Linux-based operating system that showcases the latest in free and open source software. Fedora is <strong>always free for anyone to use, modify, and distribute.</strong>  It is built by people across the globe who work together as a community: the Fedora Project. The Fedora Project is open and anyone is welcome to join."
 msgstr "Το Fedora είναι ένα λειτουργικό σύστημα βασισμένο στο Linux και διαθέτει ό,τι νεότερο υπάρχει στο ελεύθερο λογισμικό και λογισμικό ανοιχτού κώδικα. Το Fedora είναι <strong>πάντα ελεύθερο για οποιονδήποτε να το χρησιμοποιήσει, τροποποιήσει και διανέμει.</strong>  Δημιουργείται από ανθρώπους σε ολόκληρο τον κόσμο οι οποίοι δουλεύουν μαζί σαν μία κοινότητα. Το Έργο Fedora είναι ανοιχτό και οποιοσδήποτε είναι ελεύθερος να συμμετάσχει σε αυτό."
 
-#: data/content/index.html:23
+#: data/content/index.html:21
 msgid "The Fedora Project is out front for you, <strong>leading the advancement of free, open software and content</strong>."
 msgstr "Το Έργο Fedora είναι μπροστά για εσάς, <strong>οδηγώντας την πρόοδο του ελεύθερου λογισμικού και περιεχομένου</strong>."
 
-#: data/content/index.html:26
+#: data/content/index.html:24
 msgid "<a href=\"http://fedoraproject.org/wiki/Overview\">Learn more. &gt;&gt;</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Overview\"> Μάθετε περισσότερα. &gt;&gt;</a>"
-
-#: data/content/index.html:30
-#, fuzzy
-msgid "Looking forward to Fedora 9?  Read the Beta release notes."
-msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 
 #: data/content/join-fedora.html:10
 msgid "Join Fedora."
 msgstr "Συμμετοχή στο Fedora."
 
-#: data/content/join-fedora.html:11
+#: data/content/join-fedora.html:12
+#, python-format
+msgid "To get started, <a href=\"%(fasurl)s\">set up an account</a> using the <a href=\"%(fasurl)s\">Fedora Account System</a>."
+msgstr ""
+
+#: data/content/join-fedora.html:15
 msgid "If you want to take an active hand in making Fedora even better, there are many ways to help. What role do you want to fill?"
 msgstr "Αν θέλετε να βάλετε το χέρι σας για να γίνει το Fedora ακόμη καλύτερο, υπάρχουν πολλοί τρόποι να βοηθήσετε. Τι ρόλος σας ταιριάζει;"
 
-#: data/content/join-fedora.html:12
+#: data/content/join-fedora.html:16
 msgid "Click on a role below to learn more about how you can help the Fedora Project."
 msgstr "Επιλέξτε έναν ρόλο παρακάτω για να μάθετε περισσότερα για το πώς να βοηθήσετε το Έργο Fedora."
 
-#: data/content/join-fedora.html:15
+#: data/content/join-fedora.html:19
 #, python-format
 msgid "<a href=\"http://fedoraproject.org/wiki/Join#ContentWriter\"><img src=\"%s/%s/static/images/ContentDeveloper.png\" alt=\"Content Writer\"><br>Content Writer</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Join#ContentWriter\"><img src=\"%s/%s/static/images/ContentDeveloper.png\" alt=\"Συγγραφέας περιεχομένου\"><br>Συγγραφέας περιεχομένου</a>"
 
-#: data/content/join-fedora.html:18
+#: data/content/join-fedora.html:22
 #, python-format
 msgid "<a href=\"http://fedoraproject.org/wiki/Join#Designer\"><img src=\"%s/%s/static/images/Designer.png\" alt=\"Designer\"><br>Designer</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Join#Designer\"><img src=\"%s/%s/static/images/Designer.png\" alt=\">Σχεδιαστής\"><br>Σχεδιαστής</a>"
 
-#: data/content/join-fedora.html:21
+#: data/content/join-fedora.html:25
 #, python-format
 msgid "<a href=\"http://fedoraproject.org/wiki/Join#PeoplePerson\"><img src=\"%s/%s/static/images/PeoplePerson.png\" alt=\"People Person\"><br>People Person</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Join#PeoplePerson\"><img src=\"%s/%s/static/images/PeoplePerson.png\" alt=\"Άνθρωπος κοινωνικών σχέσεων\"><br>Άνθρωπος κοινωνικών σχέσεων</a>"
 
-#: data/content/join-fedora.html:24
+#: data/content/join-fedora.html:28
 #, python-format
 msgid "<a href=\"http://fedoraproject.org/wiki/Join#OSDeveloper\"><img src=\"%s/%s/static/images/OSDeveloper.png\" alt=\"OS Developer\"><br>OS Developer</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Join#OSDeveloper\"><img src=\"%s/%s/static/images/OSDeveloper.png\" alt=\"Προγραμματιστής OS\"><br>Σχεδιαστής OS</a>"
 
-#: data/content/join-fedora.html:27
+#: data/content/join-fedora.html:31
 #, python-format
 msgid "<a href=\"http://fedoraproject.org/wiki/Join#Translator\"><img src=\"%s/%s/static/images/Translator.png\" alt=\"Translator\"><br>Translator</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Join#Translator\"><img src=\"%s/%s/static/images/Translator.png\" alt=\"Μεταφραστής\"><br>Μεταφραστής</a>"
 
-#: data/content/join-fedora.html:30
+#: data/content/join-fedora.html:34
 #, python-format
 msgid "<a href=\"http://fedoraproject.org/wiki/Join#WebDeveloperAdministrator\"><img src=\"%s/%s/static/images/WebDeveloper.png\" alt=\"Web Developer or Administrator\"><br>Web Developer<br>or Administrator</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Join#WebDeveloperAdministrator\"><img src=\"%s/%s/static/images/WebDeveloper.png\" alt=\"Προγραμματιστής Ιστού ή Διαχειριστής\"><br>Προγραμματιστής Ιστού ή Διαχειριστής</a>"
 
 #: data/content/keys.html:10
-#, fuzzy
 msgid "GPG keys used by Fedora Project"
-msgstr "Έργο Fedora"
+msgstr "Κλειδιά GPG που χρησιμοποιούνται από το Έργο Fedora"
 
 #: data/content/keys.html:11
 msgid "How does Fedora Project use GPG keys to sign packages"
@@ -269,7 +244,7 @@ msgstr ""
 
 #: data/content/keys.html:19
 msgid "Importing keys"
-msgstr ""
+msgstr "Εισαγωγή κλειδιών"
 
 #: data/content/keys.html:21
 msgid "The keys are included in <strong>fedora-release</strong> package, you can find them in <strong>/etc/pki/rpm-gpg</strong> directory.  Please note that not all keys in this directory are used by Fedora project -- some are used for signing Red Hat Enterprise Linux packages or are no longer used at all. If you use Red Hat Enterprise Linux packages, see <a href=\"http://www.redhat.com/security/team/key/\">http://www.redhat.com/security/team/key</a>.  The keys used by Fedora are enabled in the yum repository configuration, so you generally don't need to manually import them into the rpm database."
@@ -297,7 +272,7 @@ msgstr ""
 
 #: data/content/keys.html:53
 msgid "Verifying a package"
-msgstr ""
+msgstr "Επαλήθευση ενός πακέτου"
 
 #: data/content/keys.html:55
 msgid "When using default configuration of <strong>yum</strong> package updating and installation tool in stable releases, signature of each package is verified before it is installed.  Signature verification can be turned off and on globally or for specific repository with <strong>gpgcheck</strong> directive.  Do not override the default setting of this directive unless you have a very good reason to do so."
@@ -317,7 +292,7 @@ msgstr ""
 
 #: data/content/keys.html:75
 msgid "Fedora (version 7 and newer)"
-msgstr ""
+msgstr "Fedora (έκδοση 7 και νεότερη)"
 
 #: data/content/keys.html:76
 msgid "Both GA and updates"
@@ -333,7 +308,7 @@ msgstr ""
 
 #: data/content/keys.html:85
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
-msgstr ""
+msgstr "Λήψη: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
 
 #: data/content/keys.html:98
 msgid "Fedora (version 7 and newer) testing updates"
@@ -345,15 +320,15 @@ msgstr ""
 
 #: data/content/keys.html:106
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
-msgstr ""
+msgstr "Διαδρομή: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
 
 #: data/content/keys.html:107
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
-msgstr ""
+msgstr "Λήψη: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
 
 #: data/content/keys.html:111
 msgid "Obsolete keys"
-msgstr ""
+msgstr "Ξεπερασμένα κλειδιά"
 
 #: data/content/keys.html:124
 msgid "Fedora Extras (version 6 and earlier)"
@@ -365,39 +340,23 @@ msgstr ""
 
 #: data/content/keys.html:132
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
-msgstr ""
+msgstr "Διαδρομή: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 
 #: data/content/keys.html:133
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&op=index\">pgp.mit.edu</a>"
-msgstr ""
+msgstr "Λήψη: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&op=index\">pgp.mit.edu</a>"
 
 #: data/content/keys.html:150
 msgid "This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
 msgstr ""
 
 #: data/content/relnotes.html:10
-msgid "Fedora 8 Release Notes"
-msgstr "Σημειώσεις κυκλοφορίας Fedora 8"
+msgid "Fedora 9 Release Notes"
+msgstr "Σημειώσεις κυκλοφορίας Fedora 9"
 
 #: data/content/relnotes.html:12
-msgid "Here are places you can find the Fedora 8 release notes.  If one location is unresponsive, try a different one."
-msgstr "Οι παρακάτω είναι τοποθεσίες που μπορείτε να βρείτε τις σημειώσεις κυκλοφορίας του Fedora 8.  Αν κάποια τοποθεσία δεν ανταποκρίνεται, παρακαλούμε δοκιμάστε κάποια άλλη."
-
-#: data/content/relnotes.html:15
 msgid "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
-
-#: data/content/relnotes.html:18
-msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>8/</em> directory.  For example:"
-msgstr "Δοκιμάστε οποιαδήποτε <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">εναλλακτική τοποθεσία</a> χρησιμοποιώντας ένα μονοπάτι παρόμοιο με το <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>.  Οι εναλλακτικές τοποθεσίες διαθέτουν μόνο την αγγλική έκδοση, <em>RELEASE-NOTES-en_US.html</em>.  Παρακαλούμε σημειώστε ότι οποιαδήποτε τοποθεσία μπορεί να έχει ένα ελαφρώς διαφορετικό μονοπάτι, ωστόσο θα πρέπει να είναι συνεπής κάτω από τον κατάλογο <em>8/</em>.  Για παράδειγμα:"
-
-#: data/content/relnotes.html:21
-msgid "ATRPMs mirror"
-msgstr "Εναλλακτική τοποθεσία ATRPMs"
-
-#: data/content/relnotes.html:22
-msgid "RPMFind.net mirror"
-msgstr "Εναλλακτική τοποθεσία RPMFind.net"
 
 #: data/content/rss.html:10
 msgid "RSS Feed Test"
@@ -464,20 +423,12 @@ msgid "Double-check the URL if you entered it manually. Did you copy it correctl
 msgstr "Ελέγξτε το URL αν το έχετε εισάγει χειροκίνητα."
 
 #: data/content/e/404.html:14
-msgid "Did a bad link bring you here? Contact "
-msgstr "Αν ακολουθήσατε ένα λανθασμένο σύνδεσμο για να φτάσετε εδώ, επικοινωνήστε με τον "
-
-#: data/content/e/404.html:14
-msgid "the fedoraproject.org webmaster"
-msgstr "διαχειριστή ιστότοπων του fedoraproject.org"
-
-#: data/content/e/404.html:14
-msgid " and let them know which link brought you here."
-msgstr "και ενημερώστε τον για το σύνδεσμο που σας έφερε εδώ."
+msgid "Did a bad link bring you here? Contact <a href=\"mailto:webmaster@fedoraproject.org\">the fedoraproject.org webmaster</a> and let them know which link brought you here."
+msgstr "Αν ακολουθήσατε ένα λανθασμένο σύνδεσμο για να φτάσετε εδώ, επικοινωνήστε με τον <a href=\"mailto:webmaster@fedoraproject.org\">διαχειριστή ιστότοπων του fedoraproject.org</a> και ενημερώστε τον για το σύνδεσμο που σας έφερε εδώ."
 
 #: data/content/e/404.html:15
 msgid "The file you are looking for may have moved. Check our main site at <a href=\"http://fedoraproject.org/\">http://fedoraproject.org/</a> or search our <a href=\"http://fedoraproject.org/wiki/\">wiki</a>."
-msgstr ""
+msgstr "Το αρχείο που ψάχνετε μπορεί να έχει μετακινηθεί. Ελέγξτε την κεντρική σελίδα <a href=\"http://fedoraproject.org/\">http://fedoraproject.org/</a> ή κάντε αναζήτηση στο  <a href=\"http://fedoraproject.org/wiki/\">wiki μας</a>."
 
 #: data/content/e/404.html:17
 msgid "Fedora Resources"
@@ -496,9 +447,8 @@ msgid "Download Fedora!"
 msgstr "Λάβετε το Fedora!"
 
 #: data/templates/foot.html:9
-#, fuzzy
 msgid "Copyright &copy; 2008 Red Hat, Inc. and others.  All Rights Reserved.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
-msgstr "Πνευματικά δικαιώματα &copy; 2007 Red Hat, Inc. και άλλοι.  Με την επιφύλαξη κάθε δικαιώματος.  Παρακαλούμε στείλετε οποιαδήποτε σχόλια ή διορθώσεις στην <a href=\"mailto:webmaster@fedoraproject.org\">ομάδα ιστότοπων</a>."
+msgstr "Πνευματικά δικαιώματα &copy; 2008 Red Hat, Inc. και άλλοι.  Με την επιφύλαξη κάθε δικαιώματος.  Παρακαλούμε στείλετε οποιαδήποτε σχόλια ή διορθώσεις στην <a href=\"mailto:webmaster@fedoraproject.org\">ομάδα ιστότοπων</a>."
 
 #: data/templates/foot.html:12
 msgid "The Fedora Project is maintained and driven by the community and sponsored by Red Hat.  This is a community maintained site.  Red Hat is not responsible for content."
@@ -520,95 +470,85 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/Legal/TrademarkGuidelines\">Σή
 msgid "Fedora"
 msgstr "Fedora"
 
-#: data/templates/sidebar.html:26
-#, python-format
-msgid "%s/static/images/counter/%s"
-msgstr ""
+#: data/templates/sidebar.html:9
+msgid "Fedora 9 Sulphur is here!"
+msgstr "Το Fedora 9 Sulpuhr είναι εδώ!"
 
-#: data/templates/sidebar.html:26
-#, python-format
-msgid "Fedora 9 Sulfur released in %s days!"
-msgstr ""
-
-#: data/templates/sidebar.html:27
-msgid "Add a counter to your own site!"
-msgstr ""
-
-#: data/templates/sidebar.html:30
+#: data/templates/sidebar.html:13
 msgid "Navigation"
 msgstr "Περιήγηση"
 
-#: data/templates/sidebar.html:32
+#: data/templates/sidebar.html:15
 msgid "Home"
 msgstr "Αρχική"
 
-#: data/templates/sidebar.html:33
+#: data/templates/sidebar.html:16
 msgid "Get Fedora"
 msgstr "Λήψη Fedora"
 
-#: data/templates/sidebar.html:34
+#: data/templates/sidebar.html:17
 msgid "Join Fedora"
 msgstr "Συμμετοχή στο Fedora"
 
-#: data/templates/sidebar.html:36
+#: data/templates/sidebar.html:19
 msgid "Tools"
 msgstr "Εργαλεία"
 
-#: data/templates/sidebar.html:38
+#: data/templates/sidebar.html:21
 msgid "Docs"
 msgstr "Τεκμηρίωση"
 
-#: data/templates/sidebar.html:38
+#: data/templates/sidebar.html:21
 msgid "Fedora documentation."
 msgstr "Τεκμηρίωση Fedora."
 
-#: data/templates/sidebar.html:39
+#: data/templates/sidebar.html:22
 msgid "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 
-#: data/templates/sidebar.html:39
+#: data/templates/sidebar.html:22
 msgid "Collaborative knowledge."
 msgstr "Συλλογική γνώση."
 
-#: data/templates/sidebar.html:40
+#: data/templates/sidebar.html:23
 msgid "Planet"
 msgstr "Πλανήτης"
 
-#: data/templates/sidebar.html:40
+#: data/templates/sidebar.html:23
 msgid "The voices of the Fedora community."
 msgstr "Η φωνή της κοινότητας Fedora."
 
-#: data/templates/sidebar.html:41
+#: data/templates/sidebar.html:24
 msgid "<a href=\"http://fedoraproject.org/wiki/Communicate\">Communicate</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Communicate\">Επικοινωνία</a>"
 
-#: data/templates/sidebar.html:41
+#: data/templates/sidebar.html:24
 msgid "Speak with Fedora."
 msgstr "Μιλήστε με το Fedora."
 
-#: data/templates/sidebar.html:42
-#, fuzzy
+#: data/templates/sidebar.html:25
 msgid "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Events</a>"
-msgstr "<a href=\"http://fedoraproject.org/wiki/Legal\">Νομικά</a>"
+msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Γεγονότα</a>"
 
-#: data/templates/sidebar.html:42
-#, fuzzy
+#: data/templates/sidebar.html:25
 msgid "Meet the Fedora community."
-msgstr "Η φωνή της κοινότητας Fedora."
+msgstr "Συναντήστε την κοινότητα του Fedora."
 
-#: data/templates/sidebar.html:44
+#: data/templates/sidebar.html:27
 msgid "Website Language"
 msgstr "Γλώσσα ιστοσελίδας"
 
-#~ msgid "%s/%s/static/images/banners/f8-banner-animation.gif"
-#~ msgstr "%s/%s/static/images/banners/f8-banner-animation.gif"
+#~ msgid "Here are places you can find the Fedora 9 release notes.  If one location is unresponsive, try a different one."
+#~ msgstr "Οι παρακάτω είναι τοποθεσίες που μπορείτε να βρείτε τις σημειώσεις κυκλοφορίας του Fedora 9.  Αν κάποια τοποθεσία δεν ανταποκρίνεται, παρακαλούμε δοκιμάστε κάποια άλλη."
 
-#~ msgid "Fedora 8 Werewolf is here!"
-#~ msgstr "Το Fedora 8 Werewolf είναι εδώ!"
+#~ msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/9/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>9/</em> directory.  For example:"
+#~ msgstr "Δοκιμάστε οποιαδήποτε <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/\">εναλλακτική τοποθεσία</a> χρησιμοποιώντας ένα μονοπάτι παρόμοιο με το <em>http://URL/fedora/linux/releases/9/Fedora/i386/os/</em>.  Οι εναλλακτικές τοποθεσίες διαθέτουν μόνο την αγγλική έκδοση, <em>RELEASE-NOTES-en_US.html</em>.  Παρακαλούμε σημειώστε ότι οποιαδήποτε τοποθεσία μπορεί να έχει ένα ελαφρώς διαφορετικό μονοπάτι, ωστόσο θα πρέπει να είναι συνεπής κάτω από τον κατάλογο <em>9/</em>.  Για παράδειγμα:"
 
-#~ msgid "Fedora, For the Future."
-#~ msgstr "Fedora, για το μέλλον."
+#~ msgid "ATRPMs mirror"
+#~ msgstr "Εναλλακτική τοποθεσία ATRPMs"
 
-#, fuzzy
-#~ msgid "Install CD directory"
-#~ msgstr "Εγκατάσταση CDs"
+#~ msgid "RPMFind.net mirror"
+#~ msgstr "Εναλλακτική τοποθεσία RPMFind.net"
+
+#~ msgid "F8 Screenshot"
+#~ msgstr "Στιγμιότυπο οθόνης F8"

@@ -4,28 +4,28 @@
   xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="../../templates/master.html" />
   <head>
-    <title>${_('Fedora Project')}</title>
+    <title>${Markup(_('Fedora Project'))}</title>
   </head>
   <body class="404">
-    <h2>${_("Sorry!  We couldn't find that file")}</h2>
-    <p>${_('We apologize, but the file you requested could not be found.')}</p>
+    <h2>${Markup(_("Sorry!  We couldn't find that file"))}</h2>
+    <p>${Markup(_('We apologize, but the file you requested could not be found.'))}</p>
     <ul>
-      <li>${_('Double-check the URL if you entered it manually. Did you copy it correctly?')}</li>
-      <li>${_('Did a bad link bring you here? Contact ')}<a href="mailto:webmaster@fedoraproject.org">${_('the fedoraproject.org webmaster')}</a>${_(' and let them know which link brought you here.')}</li>
-      <li>${_('The file you are looking for may have moved. Check our main site at &lt;a href="http://fedoraproject.org/"&gt;http://fedoraproject.org/&lt;/a&gt; or search our &lt;a href="http://fedoraproject.org/wiki/"&gt;wiki&lt;/a&gt;.')}</li>
+      <li>${Markup(_('Double-check the URL if you entered it manually. Did you copy it correctly?'))}</li>
+      <li>${Markup(_('Did a bad link bring you here? Contact &lt;a href="mailto:webmaster@fedoraproject.org"&gt;the fedoraproject.org webmaster&lt;/a&gt; and let them know which link brought you here.'))}</li>
+      <li>${Markup(_('The file you are looking for may have moved. Check our main site at &lt;a href="http://fedoraproject.org/"&gt;http://fedoraproject.org/&lt;/a&gt; or search our &lt;a href="http://fedoraproject.org/wiki/"&gt;wiki&lt;/a&gt;.'))}</li>
     </ul>
-    <h2>${_('Fedora Resources')}</h2>
+    <h2>${Markup(_('Fedora Resources'))}</h2>
     <ul id="resources">
       <li class="resource-docs">
-      <h3>${_('Fedora Documentation')}</h3>
+      <h3>${Markup(_('Fedora Documentation'))}</h3>
       <a href="http://docs.fedoraproject.org">http://docs.fedoraproject.org</a>
       </li>
       <li class="resource-communicate">
-      <h3>${_('Connect with the Fedora Community')}</h3>
+      <h3>${Markup(_('Connect with the Fedora Community'))}</h3>
       <a href="http://fedoraproject.org/wiki/Communicate">http://fedoraproject.org/wiki/Communicate</a>
       </li>
       <li class="resource-download">
-      <h3>${_('Download Fedora!')}</h3>
+      <h3>${Markup(_('Download Fedora!'))}</h3>
       <a href="${path}/${lang}/get-fedora">http://fedoraproject.org/get-fedora</a>
       </li>
     </ul>

@@ -1,18 +1,18 @@
-# translation of fedora-web.master.ru.po to Russian
+# translation of fedora-web.master.po to Russian
 # Translations template for PROJECT.
 # Copyright (C) 2007 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 #
-# Andrew Martynov <andrewm@inventa.ru>, 2007.
+# Andrew Martynov <andrewm@inventa.ru>, 2007, 2008.
 # Valeriy Kruchko <kruvalig@tl.ru>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: fedora-web.master.ru\n"
+"Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-04-19 16:36-0400\n"
-"PO-Revision-Date: 2007-12-31 11:53+0300\n"
+"POT-Creation-Date: 2008-05-16 17:53-0400\n"
+"PO-Revision-Date: 2008-05-12 23:31+0400\n"
 "Last-Translator: Andrew Martynov <andrewm@inventa.ru>\n"
-"Language-Team: Russian <fedora-trans-ru@redhat.com>\n"
+"Language-Team: Russian <fedora-trans-ru@redhat,com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,383 +28,339 @@ msgid "Fedora Project"
 msgstr "Fedora Проект"
 
 #: data/content/counter.html:12
-#, fuzzy
 msgid "Fedora Release Counter"
-msgstr "Fedora 8, замечания к выпуску"
+msgstr "Счетчик до выпуска Fedora"
 
 #: data/content/counter.html:14
 msgid "To add a Fedora Release counter to your own site, simply place the following code wherever you want it to appear:"
-msgstr ""
+msgstr "Хотите разместить счетчик до выпуска Fedora на вашем сайте, поместите следующий код там, где вы хотите его отобразить:"
 
 #: data/content/counter.html:18
-msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, fi, fr, he, hu, is, it, pl, pt_BR, ro, sk, and sr are supported.  When no language is specified, English will be used."
-msgstr ""
+msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk, and sr are supported.  When no language is specified, English will be used."
+msgstr "Параметр lang может быть изменен для отображения счетчика на разных языках.  В данный момент поддерживаются следующие значения: de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk и sr.  Если язык не указан, то используется английский."
 
 #: data/content/get-fedora.html:12
 msgid "Fedora, For You."
 msgstr "Fedora, для Вас."
 
 #: data/content/get-fedora.html:13
-msgid "Someone definitely said... &ldquo;<a href=\"get-prerelease\">Preview Release</a>&rdquo;"
-msgstr ""
+#, python-format
+msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
+msgstr "После скачивания ISO файла <a href=\"%s/%s/verify\">проверьте</a> его."
 
-#: data/content/get-fedora.html:14 data/content/get-prerelease.html:15
+#: data/content/get-fedora.html:14
 msgid "Install Media"
 msgstr "Установочный носитель"
 
-#: data/content/get-fedora.html:17 data/content/get-fedora.html:36
-#: data/content /get-fedora.html:56 data/content/get-prerelease.html:18
-#: data/content/get- prerelease.html:30 data/content/get-prerelease.html:41
+#: data/content/get-fedora.html:17 data/content/get-fedora.html:54
+#: data/content/get-fedora.html:74
 msgid "BitTorrent"
 msgstr "BitTorrent"
 
-#: data/content/get-fedora.html:19 data/content/get-fedora.html:27
-#: data/content /get-prerelease.html:20 data/content/get-prerelease.html:22
+#: data/content/get-fedora.html:19 data/content/get-fedora.html:23
+#: data/content/get-fedora.html:32 data/content/get-fedora.html:36
+#: data/content/get-fedora.html:45
 msgid "i386"
 msgstr "i386"
 
 #: data/content/get-fedora.html:19 data/content/get-fedora.html:20
-#: data/content /get-fedora.html:21 data/content/get-fedora.html:27
-#: data/content/get- fedora.html:28 data/content/get-fedora.html:29
-#: prerelease.html:20 data/content/get-prerelease.html:21
+#: data/content/get-fedora.html:21 data/content/get-fedora.html:32
+#: data/content/get-fedora.html:33 data/content/get-fedora.html:34
 msgid "Install DVD"
 msgstr "Скачать DVD"
 
-#: data/content/get-fedora.html:20 data/content/get-fedora.html:28
-#: data/content /get-fedora.html:39 data/content/get-fedora.html:47
-#: data/content/get- fedora.html:59 data/content/get-fedora.html:66
-#: prerelease.html:21 data/content/get-prerelease.html:23 prerelease.html:33
-#: data/content/get-prerelease.html:44
+#: data/content/get-fedora.html:20 data/content/get-fedora.html:24
+#: data/content/get-fedora.html:33 data/content/get-fedora.html:37
+#: data/content/get-fedora.html:46 data/content/get-fedora.html:57
+#: data/content/get-fedora.html:65 data/content/get-fedora.html:77
+#: data/content/get-fedora.html:84
 msgid "x86_64"
 msgstr "x86_64"
 
-#: data/content/get-fedora.html:21 data/content/get-fedora.html:29
-#: data/content /get-fedora.html:40 data/content/get-fedora.html:48
+#: data/content/get-fedora.html:21 data/content/get-fedora.html:25
+#: data/content/get-fedora.html:34 data/content/get-fedora.html:38
+#: data/content/get-fedora.html:47
 msgid "ppc"
 msgstr "ppc"
 
-#: data/content/get-fedora.html:25 data/content/get-fedora.html:44
-#: data/content /get-fedora.html:63
-msgid "Direct Download"
-msgstr "Прямые ссылки"
-
-#: data/content/get-fedora.html:33 data/content/get-prerelease.html:27
-#, fuzzy
-msgid "Fedora Desktop Live Media"
-msgstr "KDE Live носитель"
-
-#: data/content/get-fedora.html:38 data/content/get-fedora.html:46
-#: data/content /get-fedora.html:58 data/content/get-fedora.html:65
-#: data/content/get- prerelease.html:32 data/content/get-prerelease.html:43
-msgid "i686"
-msgstr "i686"
-
-#: data/content/get-fedora.html:38 data/content/get-fedora.html:46
-#: data/content /get-fedora.html:58 data/content/get-fedora.html:65
-#: data/content/get- prerelease.html:32 data/content/get-prerelease.html:43
-msgid "Live CD"
-msgstr "Live CD"
-
-#: data/content/get-fedora.html:39 data/content/get-fedora.html:40
-#: data/content /get-fedora.html:47 data/content/get-fedora.html:48
-#: data/content/get- fedora.html:59 data/content/get-fedora.html:66
-#: prerelease.html:33 data/content/get-prerelease.html:44
-msgid "Live DVD"
-msgstr "Live DVD"
-
-#: data/content/get-fedora.html:53 data/content/get-prerelease.html:38
-#, fuzzy
-msgid "Fedora KDE Live Media"
-msgstr "KDE Live носитель"
-
-#: data/content/get-fedora.html:71 data/content/get-prerelease.html:48
-msgid "Let me look around..."
-msgstr "Дайте мне взглянуть..."
-
-#: data/content/get-fedora.html:73 data/content/get-prerelease.html:50
-msgid "See all torrents"
-msgstr "Просмотреть все torrent-ы"
-
-#: data/content/get-fedora.html:74
-msgid "See all mirrors"
-msgstr "Просмотреть все зеркала"
-
-#: data/content/get-fedora.html:75 data/content/get-prerelease.html:52
-msgid "See all custom spins"
-msgstr "Просмотреть все доступные сборки"
-
-#: data/content/get-fedora.html:77
-msgid "Slow Internet? No Internet?"
-msgstr "Медленный интернет? Нет интернета?"
-
-#: data/content/get-fedora.html:78
-msgid "Get a copy of Fedora Media sent via postal mail."
-msgstr "Получить Fedora носитель по почте."
-
-#: data/content/get-fedora.html:80
-msgid "Purchase installation media for Fedora from <a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">online vendors</a> or a <a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">local vendor</a> in your area."
-msgstr "Купить установочный носитель Федора у <a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">он-лайн поставщиков</a> или через <a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">локальных поставщиков</a> в вашем регионе."
-
-#: data/content/get-fedora.html:81
-msgid "Can't afford the price of installation media? Request Fedora installation media from the <a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Fedora Free Media Program</a>."
-msgstr "Не можете позволить себе платить за установочный носитель? Закажите установочный Fedora носитель через <a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Программу Бесплатных носителей Fedora</a>."
-
-#: data/content/get-fedora.html:84
-msgid "When you place an order with a <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">participating vendor</a>, you may also sponsor the cost of media for users who cannot afford it, such as people in developing nations. Consider participating in the <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora Sponsored Media Program</a>."
-msgstr "Когда вы делаете заказ как <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">участвующий поставщик</a>, вы можете финансировать расходы на носители для пользователей которые не могут себе этого позволить, например, людей в развивающихся странах. Рассмотрите возможность участия в Программе Финансирования <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">носителей Fedora</a>."
-
-#: data/content/get-prerelease.html:7
-#, fuzzy
-msgid "Prerelease Version - Fedora Project"
-msgstr "Fedora Проект"
-
-#: data/content/get-prerelease.html:12
-#, fuzzy
-msgid "Get the Fedora 9 Beta."
-msgstr "Голос Fedora сообщества."
-
-#: data/content/get-prerelease.html:14
-msgid "This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>.  Read the "
-msgstr ""
-
-#: data/content/get-prerelease.html:14
-#, fuzzy
-msgid "Beta release notes"
-msgstr "Fedora 8, замечания к выпуску"
-
-#: data/content/get-prerelease.html:14
-msgid " for more information."
-msgstr ""
-
-#: data/content/get-prerelease.html:22 data/content/get-prerelease.html:23
+#: data/content/get-fedora.html:23 data/content/get-fedora.html:24
+#: data/content/get-fedora.html:25 data/content/get-fedora.html:36
+#: data/content/get-fedora.html:37 data/content/get-fedora.html:38
 #, fuzzy
 msgid "Install CDs"
 msgstr "Скачать DVD"
 
+#: data/content/get-fedora.html:30 data/content/get-fedora.html:62
+#: data/content/get-fedora.html:81
+msgid "Direct Download"
+msgstr "Прямые ссылки"
+
+#: data/content/get-fedora.html:43
+msgid "Jigdo"
+msgstr "Jigdo"
+
+#: data/content/get-fedora.html:51
+msgid "Fedora Desktop Live Media"
+msgstr "Носитель Fedora Desktop Live"
+
+#: data/content/get-fedora.html:56 data/content/get-fedora.html:64
+#: data/content/get-fedora.html:76 data/content/get-fedora.html:83
+msgid "i686"
+msgstr "i686"
+
+#: data/content/get-fedora.html:56 data/content/get-fedora.html:64
+#: data/content/get-fedora.html:76 data/content/get-fedora.html:83
+msgid "Live CD"
+msgstr "Live CD"
+
+#: data/content/get-fedora.html:57 data/content/get-fedora.html:65
+#: data/content/get-fedora.html:77 data/content/get-fedora.html:84
+msgid "Live DVD"
+msgstr "Live DVD"
+
+#: data/content/get-fedora.html:71
+msgid "Fedora KDE Live Media"
+msgstr "Fedora KDE Live носитель"
+
+#: data/content/get-fedora.html:89
+msgid "Let me look around..."
+msgstr "Дайте мне взглянуть..."
+
+#: data/content/get-fedora.html:91
+msgid "See all torrents"
+msgstr "Просмотреть все torrent-ы"
+
+#: data/content/get-fedora.html:92
+msgid "See all mirrors"
+msgstr "Просмотреть все зеркала"
+
+#: data/content/get-fedora.html:93
+msgid "See all custom spins"
+msgstr "Просмотреть все доступные сборки"
+
+#: data/content/get-fedora.html:95
+msgid "Slow Internet? No Internet?"
+msgstr "Медленный интернет? Нет интернета?"
+
+#: data/content/get-fedora.html:96
+msgid "Get a copy of Fedora Media sent via postal mail."
+msgstr "Получить Fedora носитель по почте."
+
+#: data/content/get-fedora.html:98
+msgid "Purchase installation media for Fedora from <a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">online vendors</a> or a <a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">local vendor</a> in your area."
+msgstr "Купить установочный носитель Федора у <a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">он-лайн поставщиков</a> или через <a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">локальных поставщиков</a> в вашем регионе."
+
+#: data/content/get-fedora.html:99
+msgid "Can't afford the price of installation media? Request Fedora installation media from the <a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Fedora Free Media Program</a>."
+msgstr "Не можете позволить себе платить за установочный носитель? Закажите установочный Fedora носитель через <a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Программу Бесплатных носителей Fedora</a>."
+
+#: data/content/get-fedora.html:102
+msgid "When you place an order with a <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">participating vendor</a>, you may also sponsor the cost of media for users who cannot afford it, such as people in developing nations. Consider participating in the <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora Sponsored Media Program</a>."
+msgstr "Когда вы делаете заказ как <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">участвующий поставщик</a>, вы можете финансировать расходы на носители для пользователей которые не могут себе этого позволить, например, людей в развивающихся странах. Рассмотрите возможность участия в Программе Финансирования <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">носителей Fedora</a>."
+
 #: data/content/index.html:10
-msgid "Fedora 8.  Infinite Possibilities."
-msgstr "Fedora 8. Безграничные возможности."
+msgid "Fedora 9.  Make waves."
+msgstr "Fedora 9.  Заглядывая в будущее."
 
-#: data/content/index.html:13 data/content/index.html:14
 #: data/content/index.html:15
-msgid "F8 Screenshot"
-msgstr "F8 Скриншот"
-
-#: data/content/index.html:17
-msgid "What's new in Fedora 8? Read the release notes. &gt;&gt;"
+#, fuzzy
+msgid "What's new in Fedora 9?  Read the release notes. &gt;&gt;"
 msgstr "Что нового в Fedora 8? Прочитайте замечания к выпуску."
 
-#: data/content/index.html:20
+#: data/content/index.html:18
 msgid "Fedora is a Linux-based operating system that showcases the latest in free and open source software. Fedora is <strong>always free for anyone to use, modify, and distribute.</strong>  It is built by people across the globe who work together as a community: the Fedora Project. The Fedora Project is open and anyone is welcome to join."
 msgstr "Fedora является операционной системой на базе Linux которая демонстрирует последние достижения в области свободного и открытого программного обеспечения. Fedora является <strong>всегда бесплатной для любых применений, изменений и распространения.</strong>  Она создана людьми со всего мира, которые работают вместе  как сообщество: Проект Fedora. Проект Fedora является открытым и любой может присоединиться."
 
-#: data/content/index.html:23
+#: data/content/index.html:21
 msgid "The Fedora Project is out front for you, <strong>leading the advancement of free, open software and content</strong>."
 msgstr "Проект Fedora находится на переднем крае технологий, <strong>выполняя продвижение свободного и открытого программного обеспечения и содержания.</strong>"
 
-#: data/content/index.html:26
+#: data/content/index.html:24
 msgid "<a href=\"http://fedoraproject.org/wiki/Overview\">Learn more. &gt;&gt;</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Overview\">Узнать больше. &gt;&gt;</a>"
-
-#: data/content/index.html:30
-#, fuzzy
-msgid "Looking forward to Fedora 9?  Read the Beta release notes."
-msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 
 #: data/content/join-fedora.html:10
 msgid "Join Fedora."
 msgstr "Присоединиться к Fedora."
 
-#: data/content/join-fedora.html:11
+#: data/content/join-fedora.html:12
+#, python-format
+msgid "To get started, <a href=\"%(fasurl)s\">set up an account</a> using the <a href=\"%(fasurl)s\">Fedora Account System</a>."
+msgstr "Для начала <a href=\"%(fasurl)s\">создайте учетную запись</a> в <a href=\"%(fasurl)s\">Fedora Account System</a>."
+
+#: data/content/join-fedora.html:15
 msgid "If you want to take an active hand in making Fedora even better, there are many ways to help. What role do you want to fill?"
 msgstr "Если вы хотите сделать Fedora лучше, существует много способов помочь сделать это. Какую работу вы хотели бы выполнять?"
 
-#: data/content/join-fedora.html:12
+#: data/content/join-fedora.html:16
 msgid "Click on a role below to learn more about how you can help the Fedora Project."
 msgstr "Выберите вид деятельности ниже, чтобы узнать о том как вы можете помочь Проекту Fedora"
 
-#: data/content/join-fedora.html:15
+#: data/content/join-fedora.html:19
 #, python-format
 msgid "<a href=\"http://fedoraproject.org/wiki/Join#ContentWriter\"><img src=\"%s/%s/static/images/ContentDeveloper.png\" alt=\"Content Writer\"><br>Content Writer</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Join#ContentWriter\"><img src=\"%s/%s/static/images/ContentDeveloper.png\" alt=\"Автор содержимого\"><br>Автор содержимого</a>"
 
-#: data/content/join-fedora.html:18
+#: data/content/join-fedora.html:22
 #, python-format
 msgid "<a href=\"http://fedoraproject.org/wiki/Join#Designer\"><img src=\"%s/%s/static/images/Designer.png\" alt=\"Designer\"><br>Designer</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Join#Designer\"><img src=\"%s/%s/static/images/Designer.png\" alt=\"Дизайнер\"><br>Дизайнер</a>"
 
-#: data/content/join-fedora.html:21
+#: data/content/join-fedora.html:25
 #, python-format
 msgid "<a href=\"http://fedoraproject.org/wiki/Join#PeoplePerson\"><img src=\"%s/%s/static/images/PeoplePerson.png\" alt=\"People Person\"><br>People Person</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Join#PeoplePerson\"><img src=\"%s/%s/static/images/PeoplePerson.png\" alt=\"Люди \"><br>Общение с людьми</a>"
 
-#: data/content/join-fedora.html:24
+#: data/content/join-fedora.html:28
 #, python-format
 msgid "<a href=\"http://fedoraproject.org/wiki/Join#OSDeveloper\"><img src=\"%s/%s/static/images/OSDeveloper.png\" alt=\"OS Developer\"><br>OS Developer</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Join#OSDeveloper\"><img src=\"%s/%s/static/images/OSDeveloper.png\" alt=\"Разработчик ОС\"><br> Разработчик ОС</a>"
 
-#: data/content/join-fedora.html:27
+#: data/content/join-fedora.html:31
 #, python-format
 msgid "<a href=\"http://fedoraproject.org/wiki/Join#Translator\"><img src=\"%s/%s/static/images/Translator.png\" alt=\"Translator\"><br>Translator</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Join#Translator\"><img src=\"%s/%s/static/images/Translator.png\" alt=\"Переводчик\"><br>Переводчик</a>"
 
-#: data/content/join-fedora.html:30
+#: data/content/join-fedora.html:34
 #, python-format
 msgid "<a href=\"http://fedoraproject.org/wiki/Join#WebDeveloperAdministrator\"><img src=\"%s/%s/static/images/WebDeveloper.png\" alt=\"Web Developer or Administrator\"><br>Web Developer<br>or Administrator</a>"
-msgstr "<a href=\"http://fedoraproject.org/wiki/Join#WebDeveloperAdministrator\"><img src=\"%s/%s/static/images/WebDeveloper.png\" alt=\"Веб разрабочик или Администратор\"><br>Веб разработчик<br>или Администратор</a>"
+msgstr "<a href=\"http://fedoraproject.org/wiki/Join#WebDeveloperAdministrator\"><img src=\"%s/%s/static/images/WebDeveloper.png\" alt=\"Веб разработчик или Администратор\"><br>Веб разработчик<br>или Администратор</a>"
 
 #: data/content/keys.html:10
-#, fuzzy
 msgid "GPG keys used by Fedora Project"
-msgstr "Fedora Проект"
+msgstr "GPG ключи используемые Проектом Fedora"
 
 #: data/content/keys.html:11
 msgid "How does Fedora Project use GPG keys to sign packages"
-msgstr ""
+msgstr "Как Проект Fedora применяет GPG ключи для цифровой подписи пакетов"
 
 #: data/content/keys.html:13
 msgid "Each stable RPM package that is published by Fedora Project is signed with a GPG signature.  By default, yum and the graphical update tools will verify these signatures and refuse to install any packages that are not signed or have bad signatures.  You should always verify the signature of a package before you install it.  These signatures ensure that the packages you install are what was produced by the Fedora Project and have not been altered (accidentally or maliciously) by any mirror or website that is providing the packages."
-msgstr ""
+msgstr "Каждый стабильный RPM пакет, опубликованный Проектом Fedora подписан GPG подписью.  По умолчанию, yum и графическая утилита обновления проверяют эту подпись и откажут в установке пакета, не имеющего такой подписи или с неверной подписью.  Вам необходимо всегда проверять подписи пакетов прежде чем выполнять их установку.  Эти подписи гарантируют, что устанавливаемый пакет выпущен Проектом Fedora и не был изменен (случайно или намеренно) зеркальным сервером или веб-сайтом, распространяющим пакеты."
 
 #: data/content/keys.html:16
 msgid "Packages that can be downloaded from koji build system do not contain signatures, so you should use them with caution.  Similarly, bleeding-edge packages in Rawhide are not necessarily signed."
-msgstr ""
+msgstr "Пакеты, которые могут быть скачаны из системы сборки koji, не содержат подписей. Таким образом вам необходимо использовать их с осторожностью.  Аналогично, самые свежие версии пакетов в Rawhide не обязательно имеют подпись."
 
 #: data/content/keys.html:19
 msgid "Importing keys"
-msgstr ""
+msgstr "Импорт ключей"
 
 #: data/content/keys.html:21
 msgid "The keys are included in <strong>fedora-release</strong> package, you can find them in <strong>/etc/pki/rpm-gpg</strong> directory.  Please note that not all keys in this directory are used by Fedora project -- some are used for signing Red Hat Enterprise Linux packages or are no longer used at all. If you use Red Hat Enterprise Linux packages, see <a href=\"http://www.redhat.com/security/team/key/\">http://www.redhat.com/security/team/key</a>.  The keys used by Fedora are enabled in the yum repository configuration, so you generally don't need to manually import them into the rpm database."
-msgstr ""
+msgstr "Эти ключи входят в пакет <strong>fedora-release</strong>, и вы можете найти их в каталоге <strong>/etc/pki/rpm-gpg</strong>.  Обратите внимание на то, что не все ключи в этом каталоге используются в проекте Fedora -- некоторые используются для подписи пакетов Red Hat Enterprise Linux или не используются вовсе. Если вы используете пакеты Red Hat Enterprise Linux, обратитесь к <a href=\"http://www.redhat.com/security/team/key/\">http://www.redhat.com/security/team/key</a>.  Ключи используемые в Fedora включены в конфигурацию репозиториев yum, таким образом скорее всего вам не понадобится вручную импортировать в базу rpm."
 
 #: data/content/keys.html:24
 msgid "In addition to the fedora-release package and this web page, you can download the Fedora keys from a public key server, such as <a href=\"http://pgp.mit.edu/\">http://pgp.mit.edu/</a>."
-msgstr ""
+msgstr "В дополнение к пакету fedora-release package и этой веб странице, вы можете скачать ключи Fedora с общедоступного сервера ключей, например с <a href=\"http://pgp.mit.edu/\">http://pgp.mit.edu/</a>."
 
 #: data/content/keys.html:27
 msgid "For some repositories, such as repositories with stable and testing packages in default configuration, <strong>yum</strong> is able to find a proper key for the repository and asks the user for confirmation before importing the key if the key is not already imported into the rpm database."
-msgstr ""
+msgstr "Для некоторых репозиториев, таких как репозитории со стабильными или тестируемыми пакетами в стандартной конфигурации, <strong>yum</strong> может самостоятельно обнаружить требуемый ключ и запросить у пользователя подтверждение на импорт ключа, если он не был импортирован заранее в базу rpm."
 
 #: data/content/keys.html:30
 msgid "You can always import a key into RPM's database by hand using the following command:"
-msgstr ""
+msgstr "Вы всегда можете импортировать ключи в базу RPM вручную при помощи команды:"
 
 #: data/content/keys.html:34
 msgid "Refer to <strong>rpm</strong> manual for more information."
-msgstr ""
+msgstr "Обратитесь к руководству <strong>rpm</strong> за дополнительной информацией."
 
 #: data/content/keys.html:37
 msgid "If you want to verify that the keys installed on your system match the keys listed here, you can import the key into GnuPG's keyring and check that the fingerprint of the key matches.  For example:"
-msgstr ""
+msgstr "Если вы хотите проверить, что ключи на вашей системе совпадают с ключами, приведенными здесь, вы можете импортировать их в хранилище ключей GnuPG и проверить, совпадают ли отпечатки ключей.  Например:"
 
 #: data/content/keys.html:53
 msgid "Verifying a package"
-msgstr ""
+msgstr "Проверка пакета"
 
 #: data/content/keys.html:55
 msgid "When using default configuration of <strong>yum</strong> package updating and installation tool in stable releases, signature of each package is verified before it is installed.  Signature verification can be turned off and on globally or for specific repository with <strong>gpgcheck</strong> directive.  Do not override the default setting of this directive unless you have a very good reason to do so."
-msgstr ""
+msgstr "При использовании стандартной конфигурации утилиты обновления и установки пактов <strong>yum</strong> в стабильном выпуске, для всех пакетов выполняется проверка подписей перед их установкой.  Проверка подписей может быть выключена или включена глобально, или для конкретного репозитория в частности, при помощи параметра <strong>gpgcheck</strong>.  Не изменяйте стандартное значение этого параметра, если только на это у вас нет веских причин."
 
 #: data/content/keys.html:58
 msgid "If you do not use yum, you can check the signature of the package using the following command"
-msgstr ""
+msgstr "Если вы не используете yum, вы можете проверить цифровые подписи пакетов при помощи команды"
 
 #: data/content/keys.html:63
 msgid "Currently used keys"
-msgstr ""
+msgstr "Используемые в данный момент ключи"
 
 #: data/content/keys.html:74
 msgid "Fedora Core (version 6 and earlier)"
-msgstr ""
+msgstr "Fedora Core (версия 6 и более ранние)"
 
 #: data/content/keys.html:75
 msgid "Fedora (version 7 and newer)"
-msgstr ""
+msgstr "Fedora (версия 7 и новее)"
 
 #: data/content/keys.html:76
 msgid "Both GA and updates"
-msgstr ""
+msgstr "Как основной выпуск, так и обновления"
 
 #: data/content/keys.html:80
 msgid "If you use a recent stable release, this is the only key you will use.  Packages on installation media and all the updates you will install are signed with this key.  The relevant yum repositories are <strong>fedora</strong>, <strong>fedora-updates</strong> for Fedora 7 and later, and <strong>core</strong> and <strong>core-updates</strong> for Fedora Core (Version 6 and earlier)."
-msgstr ""
+msgstr "Если вы используете самый последний стабильный выпуск, это единственный ключ, из тех что вам потребуются.  Пакеты на установочных носителях и все обновления, которые вы будите устанавливать, подписаны этим ключом.  Соответствующие yum репозитории называются <strong>fedora</strong>, <strong>fedora-updates</strong> для Fedora 7 и более поздних, и <strong>core</strong> и <strong>core-updates</strong> для Fedora Core (Версия 6 и более ранних)."
 
 #: data/content/keys.html:84
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
-msgstr ""
+msgstr "Путь: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 
 #: data/content/keys.html:85
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
-msgstr ""
+msgstr "Скачать: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
 
 #: data/content/keys.html:98
 msgid "Fedora (version 7 and newer) testing updates"
-msgstr ""
+msgstr "Fedora (версия 7 и новее) тестируемые обновления"
 
 #: data/content/keys.html:102
 msgid "If you participate in testing of the packages, this is the key you will use to verify the testing packages.  This key signs the packages that are in <strong>fedora-testing</strong> repository."
-msgstr ""
+msgstr "Если вы принимаете участие в тестировании пакетов, этот ключ вы будите использовать для проверки тестируемых пакетов.  Этим ключом подписаны пакеты в репозитории <strong>fedora-testing</strong>."
 
 #: data/content/keys.html:106
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
-msgstr ""
+msgstr "Путь: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
 
 #: data/content/keys.html:107
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
-msgstr ""
+msgstr "Скачать: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
 
 #: data/content/keys.html:111
 msgid "Obsolete keys"
-msgstr ""
+msgstr "Устаревшие ключи"
 
 #: data/content/keys.html:124
 msgid "Fedora Extras (version 6 and earlier)"
-msgstr ""
+msgstr "Fedora Extras (версия 6 и более ранние)"
 
 #: data/content/keys.html:128
 msgid "If you are using Fedora Extras with Fedora Core 6, use this package from <strong>extras</strong> repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007).  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
-msgstr ""
+msgstr "Если вы пользуетесь Fedora Extras из Fedora Core 6, используйте этот пакет из репозитория <strong>extras</strong>.  Этот ключ не будет более использоваться после достижения конца жизни версиями Fedora Core 6 и Extras (7 декабря 2007).  Этот ключ не входит в состав пакета <strong>fedora-release</strong> в Fedora 7 и последующих выпусков."
 
 #: data/content/keys.html:132
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
-msgstr ""
+msgstr "Путь: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 
 #: data/content/keys.html:133
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&op=index\">pgp.mit.edu</a>"
-msgstr ""
+msgstr "Скачать: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&op=index\">pgp.mit.edu</a>"
 
 #: data/content/keys.html:150
 msgid "This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
-msgstr ""
+msgstr "Этот ключ использовался для пакетов, выпущенных проектом Fedora Legacy для обновления выпусков, достигших своего окончания времени жизни.  Проект Fedora Legacy более не существует, таким образом этот ключ более не используется для подписи пакетов.  Этот ключ не входит в состав пакета <strong>fedora-release</strong> в Fedora 7 и более поздних выпусков."
 
 #: data/content/relnotes.html:10
-msgid "Fedora 8 Release Notes"
-msgstr "Fedora 8, замечания к выпуску"
+msgid "Fedora 9 Release Notes"
+msgstr "Fedora 9, замечания к выпуску"
 
 #: data/content/relnotes.html:12
-msgid "Here are places you can find the Fedora 8 release notes.  If one location is unresponsive, try a different one."
-msgstr "Здесь находятся адреса по которым вы можете найти замечания к выпуску Fedora 8.  Если один адрес не отвечает, попробуйте другой."
-
-#: data/content/relnotes.html:15
 msgid "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 
-#: data/content/relnotes.html:18
-msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>8/</em> directory.  For example:"
-msgstr "Проверьте любое <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">зеркало</a>, используя путь подобный следующему <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>.  Зеркала обеспечивают только Английскую версию, <em>RELEASE-NOTES-en_US.html</em>.  Заметьте что каждое из зеркал может иметь слегка отличающийся путь, но он долженбыть идентичным ниже каталога <em>8/</em>.  Например:"
-
-#: data/content/relnotes.html:21
-msgid "ATRPMs mirror"
-msgstr "ATRPMs зеркало"
-
-#: data/content/relnotes.html:22
-msgid "RPMFind.net mirror"
-msgstr "RPMFind.net зеркало"
-
 #: data/content/rss.html:10
 msgid "RSS Feed Test"
-msgstr ""
+msgstr "Тест ленты RSS"
 
 #: data/content/sponsors.html:10
 msgid "Fedora Sponsors"
@@ -436,7 +392,7 @@ msgstr "Установочный DVD / Rescue CD"
 
 #: data/content/verify.html:23
 msgid "Live Media (both GNOME and KDE)"
-msgstr "Live аноситель (и GNOME и KDE)"
+msgstr "Live носитель (и GNOME и KDE)"
 
 #: data/content/verify.html:30
 msgid "Next, import Fedora's GPG key:"
@@ -467,16 +423,8 @@ msgid "Double-check the URL if you entered it manually. Did you copy it correctl
 msgstr "Проверьте еще раз введенный вами адрес, если вы набивали его вручную. Верно ли вы скопировали ссылку?"
 
 #: data/content/e/404.html:14
-msgid "Did a bad link bring you here? Contact "
-msgstr "Вы попали сюда по неверной ссылке? Свяжитесь с  "
-
-#: data/content/e/404.html:14
-msgid "the fedoraproject.org webmaster"
-msgstr "веб-мастером fedoraproject.org"
-
-#: data/content/e/404.html:14
-msgid " and let them know which link brought you here."
-msgstr " и сообщите ему, какая ссылка привела вас сюда."
+msgid "Did a bad link bring you here? Contact <a href=\"mailto:webmaster@fedoraproject.org\">the fedoraproject.org webmaster</a> and let them know which link brought you here."
+msgstr ""
 
 #: data/content/e/404.html:15
 msgid "The file you are looking for may have moved. Check our main site at <a href=\"http://fedoraproject.org/\">http://fedoraproject.org/</a> or search our <a href=\"http://fedoraproject.org/wiki/\">wiki</a>."
@@ -499,9 +447,8 @@ msgid "Download Fedora!"
 msgstr "Скачать Fedora!"
 
 #: data/templates/foot.html:9
-#, fuzzy
 msgid "Copyright &copy; 2008 Red Hat, Inc. and others.  All Rights Reserved.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
-msgstr "Copyright &copy; 2007 Red Hat, Inc. and others.  All Rights Reserved.  Пожалуйста отправляйте любые комментарии и изменения  <a href=\"mailto:webmaster@fedoraproject.org\">команде websites</a>."
+msgstr "Copyright &copy; 2008 Red Hat, Inc. and others.  All Rights Reserved.  Пожалуйста отправляйте любые комментарии и изменения  <a href=\"mailto:webmaster@fedoraproject.org\">команде websites</a>."
 
 #: data/templates/foot.html:12
 msgid "The Fedora Project is maintained and driven by the community and sponsored by Red Hat.  This is a community maintained site.  Red Hat is not responsible for content."
@@ -523,91 +470,120 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/Legal/TrademarkGuidelines\">Ру
 msgid "Fedora"
 msgstr "Fedora"
 
-#: data/templates/sidebar.html:26
-#, python-format
-msgid "%s/static/images/counter/%s"
-msgstr ""
+#: data/templates/sidebar.html:9
+msgid "Fedora 9 Sulphur is here!"
+msgstr "Fedora 9 Sulphur уже здесь!"
 
-#: data/templates/sidebar.html:26
-#, python-format
-msgid "Fedora 9 Sulfur released in %s days!"
-msgstr ""
-
-#: data/templates/sidebar.html:27
-msgid "Add a counter to your own site!"
-msgstr ""
-
-#: data/templates/sidebar.html:30
+#: data/templates/sidebar.html:13
 msgid "Navigation"
 msgstr "Навигация"
 
-#: data/templates/sidebar.html:32
+#: data/templates/sidebar.html:15
 msgid "Home"
 msgstr "Домой"
 
-#: data/templates/sidebar.html:33
+#: data/templates/sidebar.html:16
 msgid "Get Fedora"
 msgstr "Получить Fedora"
 
-#: data/templates/sidebar.html:34
+#: data/templates/sidebar.html:17
 msgid "Join Fedora"
 msgstr "Присоединиться к Fedora"
 
-#: data/templates/sidebar.html:36
+#: data/templates/sidebar.html:19
 msgid "Tools"
 msgstr "Сервис"
 
-#: data/templates/sidebar.html:38
+#: data/templates/sidebar.html:21
 msgid "Docs"
 msgstr "Документация"
 
-#: data/templates/sidebar.html:38
+#: data/templates/sidebar.html:21
 msgid "Fedora documentation."
 msgstr "Документация Fedora."
 
-#: data/templates/sidebar.html:39
+#: data/templates/sidebar.html:22
 msgid "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/\">Вики</a>"
 
-#: data/templates/sidebar.html:39
+#: data/templates/sidebar.html:22
 msgid "Collaborative knowledge."
 msgstr "Совместные знания."
 
-#: data/templates/sidebar.html:40
+#: data/templates/sidebar.html:23
 msgid "Planet"
 msgstr "Планета"
 
-#: data/templates/sidebar.html:40
+#: data/templates/sidebar.html:23
 msgid "The voices of the Fedora community."
 msgstr "Голос Fedora сообщества."
 
-#: data/templates/sidebar.html:41
+#: data/templates/sidebar.html:24
 msgid "<a href=\"http://fedoraproject.org/wiki/Communicate\">Communicate</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Communicate\">Общение</a>"
 
-#: data/templates/sidebar.html:41
+#: data/templates/sidebar.html:24
 msgid "Speak with Fedora."
 msgstr "Поговорить с Fedora."
 
-#: data/templates/sidebar.html:42
-#, fuzzy
+#: data/templates/sidebar.html:25
 msgid "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Events</a>"
-msgstr "<a href=\"http://fedoraproject.org/wiki/Legal\">Правовые вопросы</a>"
+msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">События</a>"
 
-#: data/templates/sidebar.html:42
-#, fuzzy
+#: data/templates/sidebar.html:25
 msgid "Meet the Fedora community."
-msgstr "Голос Fedora сообщества."
+msgstr "Встретиться с сообществом Fedora."
 
-#: data/templates/sidebar.html:44
+#: data/templates/sidebar.html:27
 msgid "Website Language"
 msgstr "Язык вебсайта"
 
+#~ msgid "Here are places you can find the Fedora 9 release notes.  If one location is unresponsive, try a different one."
+#~ msgstr "Здесь находятся адреса по которым вы можете найти замечания к выпуску Fedora 9.  Если один адрес не отвечает, попробуйте другой."
+
+#~ msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/9/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>9/</em> directory.  For example:"
+#~ msgstr "Проверьте любое <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/\">зеркало</a>, используя путь подобный следующему <em>http://URL/fedora/linux/releases/9/Fedora/i386/os/</em>.  Зеркала обеспечивают только Английскую версию, <em>RELEASE-NOTES-en_US.html</em>.  Заметьте что каждое из зеркал может иметь слегка отличающийся путь, но он долженбыть идентичным ниже каталога <em>9/</em>.  Например:"
+
+#~ msgid "ATRPMs mirror"
+#~ msgstr "ATRPMs зеркало"
+
+#~ msgid "RPMFind.net mirror"
+#~ msgstr "RPMFind.net зеркало"
+
+#~ msgid "Did a bad link bring you here? Contact "
+#~ msgstr "Вы попали сюда по неверной ссылке? Свяжитесь с  "
+
+#~ msgid "the fedoraproject.org webmaster"
+#~ msgstr "веб-мастером fedoraproject.org"
+
+#~ msgid " and let them know which link brought you here."
+#~ msgstr " и сообщите ему, какая ссылка привела вас сюда."
+
+#~ msgid "F8 Screenshot"
+#~ msgstr "F8 Скриншот"
+
+#, fuzzy
+#~ msgid "Prerelease Version - Fedora Project"
+#~ msgstr "Fedora Проект"
+
+#, fuzzy
+#~ msgid "Get the Fedora 9 Beta."
+#~ msgstr "Голос Fedora сообщества."
+
+#, fuzzy
+#~ msgid "Beta release notes"
+#~ msgstr "Fedora 8, замечания к выпуску"
+
+#, fuzzy
+#~ msgid "Fedora 9.  Infinite Possibilities."
+#~ msgstr "Fedora 8. Безграничные возможности."
+
+#, fuzzy
+#~ msgid "Looking forward to Fedora 9?  Read the Beta release notes."
+#~ msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
+
 #~ msgid "%s/%s/static/images/banners/f8-banner-animation.gif"
 #~ msgstr "%s/%s/static/images/banners/f8-banner-animation.gif"
-
-#~ msgid "Fedora 8 Werewolf is here!"
-#~ msgstr "Fedora 8 Werewolf уже здесь!"
 
 #, fuzzy
 #~ msgid "Fedora, For the Future."
