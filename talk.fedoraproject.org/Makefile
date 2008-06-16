@@ -33,4 +33,14 @@ clean:
 	rm -f po/*.mo
 	rm -f data/templates/translations.html
 
+test:
+	cp httpd/conf/httpd.conf.in httpd/conf/httpd.conf
+	sed -i -e 's#@SERVERROOT@#$(PWD)/httpd#g' httpd/conf/httpd.conf
+	sed -i -e 's#@DOCUMENTROOT@#$(PWD)/out#g' httpd/conf/httpd.conf
+	/usr/sbin/httpd -d httpd -f conf/httpd.conf
+
+stoptest:
+	pid=`cat httpd/run/httpd.pid` && \
+	kill -TERM $$pid
+
 .PHONY: all clean
