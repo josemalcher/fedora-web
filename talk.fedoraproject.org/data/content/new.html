@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Request a New Project - Fedora Hosted')}</title>
+    <style type="text/css">
+    </style>
+  </head>
+  <body>
+    <h2>${_('Request a New Project')}</h2>
+    <p>${_('New project requests must be filed via a ticket in the &lt;a href="https://talk.fedoraproject.org/fedora-infrastructure"&gt;Fedora Infrastructure Trac instance&lt;/a&gt;. Be sure to log in before attempting to create a ticket.')}</p>
+    <p>${_('Fill in the fields as follows:')}</p>
+    <ul>
+    	<li><b>Short Summary:</b> <code>Hosting request for </code>${_('&amp;lt;name of project&amp;gt;')}</li>
+    	<li><b>Type:</b> <code>task</code></li>
+    	<li><b>Priority:</b> ${_('&lt;code&gt;minor&lt;/code&gt; unless this is an urgent request. If you are uncertain whether or not the request is urgent then set this field to &lt;code&gt;minor&lt;/code&gt;.')}</li>
+    	<li><b>Component:</b> <code>Hosted Projects</code></li>
+    </ul>
+    <p>${_('Use the following template for the full description of the ticket:')}</p>
+    <pre>Project name:
+
+Project short summary:
+
+SCM choice (git/hg/svn):
+
+Importing from another SCM?  If yes, which?
+
+Project admin Fedora Account System account name:
+
+Trac Instance?  (Yes/No)</pre>
+  </body>
+</html>
