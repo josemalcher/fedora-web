@@ -4,19 +4,12 @@
   xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="../templates/master.html" />
   <head>
-    <title>${_('Hosted Projects - Fedora Hosted')}</title>
+    <title>${_('Fedora Talk')}</title>
     <style type="text/css">
     </style>
   </head>
   <body>
-    <h2>${_('Available Projects')}</h2>
-    <table>
-      <tr py:for="row, project in enumerate(projects)" class="row${row and 'sub' or 'first'}">
-        <td class="desccol"><a href="${project['url']}">${project['desc']}</a></td>
-        <td class="vcscol"><img src="static/images/blank.png"/></td>
-        <td class="vcscol"><img py:if="'vcs' in project and project['vcs']" class="vcsimg" src="static/images/vcs/${project['vcs']}.png" alt="[${project['vcs']}]" title="${project['vcs']}"/></td>
-        <td class="vcscol"><a py:if="'vcsweburl' in project and project['vcsweburl']" href="${project['vcsweburl']}" target="_blank"><img src="static/images/web.png" alt="browse"/></a></td>
-      </tr>
-    </table>
+    <h2>${_('Fedora Talk')}</h2>
+    <p>${_('Content here.')}</p>
   </body>
 </html>
