@@ -1,4 +1,6 @@
-LANGUAGES = $(shell grep -v "^\#" po/LINGUAS)
+ifndef LANGUAGES
+LANGUAGES := $(shell grep -v "^\#" po/LINGUAS)
+endif
 PO_FILES = $(patsubst %, po/%.po, $(LANGUAGES))
 MO_FILES = $(patsubst %, po/%.mo, $(LANGUAGES))
 HTML_FILES = $(shell find . -name "*.html")
@@ -6,11 +8,13 @@ HTML_FILES = $(shell find . -name "*.html")
 PYTHON = python
 PYBABEL = pybabel
 BASEPATH = /
+PWD = $(shell pwd)
 
 all: po/talk.fedoraproject.pot $(MO_FILES) $(LANGUAGES)
+	cp static/robots.txt	out/
 
 $(LANGUAGES): data/templates/translations.html
-	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -s static -b $(BASEPATH) -d data/projects.csv -t /srv/web/talk
+	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -s static -b $(BASEPATH)
 
 po/en.po: po/talk.fedoraproject.pot
 	cp po/talk.fedoraproject.pot po/en.po
@@ -32,6 +36,12 @@ clean:
 	rm -f po/en.po
 	rm -f po/*.mo
 	rm -f data/templates/translations.html
+	rm -f build/rss.cache
+
+push:
+	git rebase master live
+	git checkout master
+	git push
 
 test:
 	cp httpd/conf/httpd.conf.in httpd/conf/httpd.conf
@@ -43,4 +53,4 @@ stoptest:
 	pid=`cat httpd/run/httpd.pid` && \
 	kill -TERM $$pid
 
-.PHONY: all clean
+.PHONY: all clean push test stoptest
