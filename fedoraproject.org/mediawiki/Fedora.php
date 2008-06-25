@@ -76,7 +76,6 @@ class FedoraTemplate extends QuickTemplate {
 		<script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('stylepath' ) ?>/common/wikibits.js?<?php echo $GLOBALS['wgStyleVersion'] ?>"><!-- wikibits js --></script>
 <?php	if($this->data['jsvarurl'  ]) { ?>
 		<script type="<?php $this->text('jsmimetype') ?>" src="<?php $this->text('jsvarurl'  ) ?>"><!-- site js --></script>
-<?php	} ?>
 <?php	}
 		if($this->data['usercss'   ]) { ?>
 		<style type="text/css"><?php $this->html('usercss'   ) ?></style>
