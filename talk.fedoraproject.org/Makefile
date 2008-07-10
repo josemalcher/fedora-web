@@ -39,8 +39,6 @@ clean:
 	rm -f build/rss.cache
 
 push:
-	git rebase master live
-	git checkout master
 	git push
 
 test:
