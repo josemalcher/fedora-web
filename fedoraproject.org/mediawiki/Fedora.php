@@ -60,6 +60,7 @@ class FedoraTemplate extends QuickTemplate {
 		<title><?php $this->text('pagetitle') ?></title>
 
   <link rel="stylesheet" type="text/css" media="all" href="/static/css/fedora.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="${path}/static/css/print.css" />
 
 		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "<?php $this->text('stylepath') ?>/<?php $this->text('stylename') ?>/main.css?<?php echo $GLOBALS['wgStyleVersion'] ?>"; /*]]>*/</style>
 		<link rel="stylesheet" type="text/css" <?php if(empty($this->data['printable']) ) { ?>media="print"<?php } ?> href="<?php $this->text('stylepath') ?>/common/commonPrint.css?<?php echo $GLOBALS['wgStyleVersion'] ?>" />
