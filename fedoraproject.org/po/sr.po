@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-07-30 18:55-0400\n"
+"POT-Creation-Date: 2008-08-05 02:03-0400\n"
 "PO-Revision-Date: 2008-05-07 21:08-0000\n"
 "Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
 "Language-Team: Serbian (sr) <fedora-trans-sr@redhat.com>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #: data/content/counter.html:7 data/content/get-fedora.html:7
-#: data/content/get-help.html:7 data/content/index.html:7
-#: data/content/join-fedora.html:7 data/content/keys.html:7
-#: data/content/relnotes.html:7 data/content/rss.html:7
-#: data/content/sponsors.html:7 data/content/verify.html:7
-#: data/content/e/404.html:7
+#: data/content/get-help.html:7 data/content/get-prerelease.html:7
+#: data/content/index.html:7 data/content/join-fedora.html:7
+#: data/content/keys.html:7 data/content/relnotes.html:7
+#: data/content/rss.html:7 data/content/sponsors.html:7
+#: data/content/verify.html:7 data/content/e/404.html:7
 msgid "Fedora Project"
 msgstr "Fedora пројекат"
 
@@ -38,119 +38,134 @@ msgstr "Да бисте додали бројач до Fedora издања на 
 msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk, and sr are supported.  When no language is specified, English will be used."
 msgstr "Параметар lang се може променити како би бројач био приказан на другом језику.  Тренутно подржане вредности су de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk, и sr.  Ако језик није наведен, биће употребљен енглески."
 
-#: data/content/get-fedora.html:12
+#: data/content/get-fedora.html:12 data/content/get-prerelease.html:12
 msgid "Fedora, For You."
 msgstr "Fedora, за вас."
 
 #: data/content/get-fedora.html:13
+msgid "Did someone say... &ldquo;<a href=\"get-prerelease\">Alpha</a>&rdquo;?"
+msgstr ""
+
+#: data/content/get-fedora.html:14
 #, python-format
 msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
 msgstr "Након преузимања ISO-а, <a href=\"%s/%s/verify\">проверите</a> га."
 
-#: data/content/get-fedora.html:14
+#: data/content/get-fedora.html:15 data/content/get-prerelease.html:14
 msgid "Install Media"
 msgstr "Инсталациона медија"
 
-#: data/content/get-fedora.html:17 data/content/get-fedora.html:54
-#: data/content/get-fedora.html:74
+#: data/content/get-fedora.html:18 data/content/get-fedora.html:55
+#: data/content/get-fedora.html:75 data/content/get-prerelease.html:17
 msgid "BitTorrent"
 msgstr "Битторент"
 
-#: data/content/get-fedora.html:19 data/content/get-fedora.html:23
-#: data/content/get-fedora.html:32 data/content/get-fedora.html:36
-#: data/content/get-fedora.html:45
+#: data/content/get-fedora.html:20 data/content/get-fedora.html:24
+#: data/content/get-fedora.html:33 data/content/get-fedora.html:37
+#: data/content/get-fedora.html:46 data/content/get-prerelease.html:19
+#: data/content/get-prerelease.html:27 data/content/get-prerelease.html:35
 msgid "i386"
 msgstr "i386"
 
-#: data/content/get-fedora.html:19 data/content/get-fedora.html:20
-#: data/content/get-fedora.html:21 data/content/get-fedora.html:32
-#: data/content/get-fedora.html:33 data/content/get-fedora.html:34
+#: data/content/get-fedora.html:20 data/content/get-fedora.html:21
+#: data/content/get-fedora.html:22 data/content/get-fedora.html:33
+#: data/content/get-fedora.html:34 data/content/get-fedora.html:35
+#: data/content/get-prerelease.html:19 data/content/get-prerelease.html:20
+#: data/content/get-prerelease.html:21 data/content/get-prerelease.html:27
+#: data/content/get-prerelease.html:28 data/content/get-prerelease.html:29
 msgid "Install DVD"
 msgstr "Инсталациони ДВД"
 
-#: data/content/get-fedora.html:20 data/content/get-fedora.html:24
-#: data/content/get-fedora.html:33 data/content/get-fedora.html:37
-#: data/content/get-fedora.html:46 data/content/get-fedora.html:57
-#: data/content/get-fedora.html:65 data/content/get-fedora.html:77
-#: data/content/get-fedora.html:84
+#: data/content/get-fedora.html:21 data/content/get-fedora.html:25
+#: data/content/get-fedora.html:34 data/content/get-fedora.html:38
+#: data/content/get-fedora.html:47 data/content/get-fedora.html:58
+#: data/content/get-fedora.html:66 data/content/get-fedora.html:78
+#: data/content/get-fedora.html:85 data/content/get-prerelease.html:20
+#: data/content/get-prerelease.html:28 data/content/get-prerelease.html:36
+#: data/content/get-prerelease.html:47 data/content/get-prerelease.html:58
 msgid "x86_64"
 msgstr "x86_64"
 
-#: data/content/get-fedora.html:21 data/content/get-fedora.html:25
-#: data/content/get-fedora.html:34 data/content/get-fedora.html:38
-#: data/content/get-fedora.html:47
+#: data/content/get-fedora.html:22 data/content/get-fedora.html:26
+#: data/content/get-fedora.html:35 data/content/get-fedora.html:39
+#: data/content/get-fedora.html:48 data/content/get-prerelease.html:21
+#: data/content/get-prerelease.html:29 data/content/get-prerelease.html:37
 msgid "ppc"
 msgstr "ppc"
 
-#: data/content/get-fedora.html:23 data/content/get-fedora.html:24
-#: data/content/get-fedora.html:25 data/content/get-fedora.html:36
-#: data/content/get-fedora.html:37 data/content/get-fedora.html:38
+#: data/content/get-fedora.html:24 data/content/get-fedora.html:25
+#: data/content/get-fedora.html:26 data/content/get-fedora.html:37
+#: data/content/get-fedora.html:38 data/content/get-fedora.html:39
 #, fuzzy
 msgid "Install CDs"
 msgstr "Инсталациони ДВД"
 
-#: data/content/get-fedora.html:30 data/content/get-fedora.html:62
-#: data/content/get-fedora.html:81
+#: data/content/get-fedora.html:31 data/content/get-fedora.html:63
+#: data/content/get-fedora.html:82 data/content/get-prerelease.html:25
+#: data/content/get-prerelease.html:44 data/content/get-prerelease.html:55
 msgid "Direct Download"
 msgstr "Директно преузимање"
 
-#: data/content/get-fedora.html:43
+#: data/content/get-fedora.html:44 data/content/get-prerelease.html:33
 msgid "Jigdo"
 msgstr "Jigdo"
 
-#: data/content/get-fedora.html:51
+#: data/content/get-fedora.html:52 data/content/get-prerelease.html:41
 msgid "Fedora Desktop Live Media"
 msgstr "Fedora десктоп жива медија"
 
-#: data/content/get-fedora.html:56 data/content/get-fedora.html:64
-#: data/content/get-fedora.html:76 data/content/get-fedora.html:83
+#: data/content/get-fedora.html:57 data/content/get-fedora.html:65
+#: data/content/get-fedora.html:77 data/content/get-fedora.html:84
+#: data/content/get-prerelease.html:46 data/content/get-prerelease.html:57
 msgid "i686"
 msgstr "i686"
 
-#: data/content/get-fedora.html:56 data/content/get-fedora.html:57
-#: data/content/get-fedora.html:64 data/content/get-fedora.html:65
-#: data/content/get-fedora.html:76 data/content/get-fedora.html:77
-#: data/content/get-fedora.html:83 data/content/get-fedora.html:84
+#: data/content/get-fedora.html:57 data/content/get-fedora.html:58
+#: data/content/get-fedora.html:65 data/content/get-fedora.html:66
+#: data/content/get-fedora.html:77 data/content/get-fedora.html:78
+#: data/content/get-fedora.html:84 data/content/get-fedora.html:85
+#: data/content/get-prerelease.html:46 data/content/get-prerelease.html:47
+#: data/content/get-prerelease.html:57 data/content/get-prerelease.html:58
 msgid "Live CD"
 msgstr "Живи ЦД"
 
-#: data/content/get-fedora.html:71
+#: data/content/get-fedora.html:72 data/content/get-prerelease.html:52
 msgid "Fedora KDE Live Media"
 msgstr "Fedora KDE Жива медија"
 
-#: data/content/get-fedora.html:89
+#: data/content/get-fedora.html:90 data/content/get-prerelease.html:63
 msgid "Let me look around..."
 msgstr "Пусти ме да разгледам..."
 
-#: data/content/get-fedora.html:91
+#: data/content/get-fedora.html:92 data/content/get-prerelease.html:65
 msgid "See all torrents"
 msgstr "Прегледајте све торенте"
 
-#: data/content/get-fedora.html:92
+#: data/content/get-fedora.html:93
 msgid "See all mirrors"
 msgstr "Прегледајте све одразе"
 
-#: data/content/get-fedora.html:93
+#: data/content/get-fedora.html:94 data/content/get-prerelease.html:66
 msgid "See all custom spins"
 msgstr "Прегледајте сва прилагођена издања"
 
-#: data/content/get-fedora.html:95
+#: data/content/get-fedora.html:96
 msgid "Slow Internet? No Internet?"
 msgstr "Спори Интернет? Немате Интернет?"
 
-#: data/content/get-fedora.html:96
+#: data/content/get-fedora.html:97
 msgid "Get a copy of Fedora Media sent via postal mail."
 msgstr "Набавите умножак Fedora-ине медије послате поштом."
 
-#: data/content/get-fedora.html:98
+#: data/content/get-fedora.html:99
 msgid "Purchase installation media for Fedora from <a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">online vendors</a> or a <a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">local vendor</a> in your area."
 msgstr "Купите инсталациону медију за Fedora-у кроз <a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">Интернет продавце</a> или <a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">локалне продавце</a> у вашој околини."
 
-#: data/content/get-fedora.html:99
+#: data/content/get-fedora.html:100
 msgid "Can't afford the price of installation media? Request Fedora installation media from the <a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Fedora Free Media Program</a>."
 msgstr "Не можете приуштити инсталациону медију? Пошаљите захтев за Fedora-ину инсталациону медију <a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Програму за бесплатну Fedora медију</a>."
 
-#: data/content/get-fedora.html:102
+#: data/content/get-fedora.html:103
 msgid "When you place an order with a <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">participating vendor</a>, you may also sponsor the cost of media for users who cannot afford it, such as people in developing nations. Consider participating in the <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora Sponsored Media Program</a>."
 msgstr "Када наручите преко <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">учествујућег продавца</a>, имаћете могућност спонзорисања корисника који не могу приуштити цену медије, попут људи из земаља у развоју. Размислите о учествовању у <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Програму за бесплатну Fedora медију</a>."
 
@@ -233,6 +248,10 @@ msgstr ""
 #, fuzzy
 msgid "These guides are available at <a href=\"http://docs.fedoraproject.org\">docs.fedoraproject.org</a>."
 msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
+
+#: data/content/get-prerelease.html:13
+msgid "This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>.  Read the <a href=\"http://fedoraproject.org/wiki/Releases/10/Alpha/ReleaseNotes\">Beta release notes</a> for more information."
+msgstr ""
 
 #: data/content/index.html:10
 msgid "Fedora 9.  Make waves."
