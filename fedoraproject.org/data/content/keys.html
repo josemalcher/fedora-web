@@ -62,6 +62,22 @@ sub   1024g/FB939E34 2003-10-27</pre>
 
     <h2>${Markup(_('Currently used keys'))}</h2>
 
+    <h3>RPM-GPG-KEY-fedora-8-and-9-primary</h3>
+    <p>
+      <pre class="command">pub   1024D/6DF2196F 2008-08-27
+uid                  Fedora (8 and 9) <fedora@fedoraproject.org>
+sub   4096g/9E198F60 2008-08-27</pre>
+    </p>
+
+    <h3>RPM-GPG-KEY-fedora-test-8-and-9-primary</h3>
+    <p>
+      <pre class="command">pub   1024D/DF9B0AE9 2008-08-27
+uid                  Fedora (8 and 9 testing) <fedora@fedoraproject.org>
+sub   4096g/80E34F98 2008-08-27</pre>
+    </p>
+
+    <h2>${Markup(_('Obsolete keys'))}</h2>
+
     <h3>RPM-GPG-KEY-fedora</h3>
     <p>
       <pre class="command">pub   1024D/4F2A6FD2 2003-10-27
@@ -71,13 +87,13 @@ sub   1024g/FB939E34 2003-10-27</pre>
     </p>
     <p>
       <ul>
-        <li>${Markup(_('Fedora Core (version 6 and earlier)'))}</li>
-        <li>${Markup(_('Fedora (version 7 and newer)'))}</li>
+        <li>${Markup(_('Fedora Core (version 6 earlier)'))}</li>
+        <li>${Markup(_('Fedora (version 7, 8, and 9)'))}</li>
         <li>${Markup(_('Both GA and updates'))}</li>
       </ul>
     </p>
     <p>
-      ${Markup(_('If you use a recent stable release, this is the only key you will use.  Packages on installation media and all the updates you will install are signed with this key.  The relevant yum repositories are &lt;strong&gt;fedora&lt;/strong&gt;, &lt;strong&gt;fedora-updates&lt;/strong&gt; for Fedora 7 and later, and &lt;strong&gt;core&lt;/strong&gt; and &lt;strong&gt;core-updates&lt;/strong&gt; for Fedora Core (Version 6 and earlier).'))}
+      ${Markup(_('Packages on installation media are signed with this key.  The relevant yum repositories are &lt;strong&gt;fedora&lt;/strong&gt;, &lt;strong&gt;fedora-updates&lt;/strong&gt; for Fedora 7-9, and &lt;strong&gt;core&lt;/strong&gt; and &lt;strong&gt;core-updates&lt;/strong&gt; for Fedora Core (Version 6 and earlier).'))}
     </p>
     <p>
       <ul>
@@ -108,7 +124,6 @@ uid                  Fedora Project (Test Software) &lt;rawhide@redhat.com&gt;</
       </ul>
     </p>
 
-    <h2>${Markup(_('Obsolete keys'))}</h2>
 
     <h3>RPM-GPG-KEY-fedora-extras</h3>
     <p>
