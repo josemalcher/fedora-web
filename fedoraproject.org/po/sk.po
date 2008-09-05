@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Website\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-08-06 14:52-0400\n"
+"POT-Creation-Date: 2008-09-05 14:12-0400\n"
 "PO-Revision-Date: 2008-05-07 17:23+0200\n"
 "Last-Translator: Pavol Šimo <palo.simo@gmail.com>\n"
 "Language-Team: Fedora Slovak Translation team <trans-list-sk@redhat.com>\n"
@@ -262,23 +262,19 @@ msgstr "Toto je softvér pred vydaním. Projekt Fedora neposkytuje žiadne záru
 msgid "Fedora 9.  Make waves."
 msgstr "Fedora 9.  Rozvlňte to."
 
-#: data/content/index.html:12
-msgid "Please note that the <a href=\"http://fedoraproject.org/wiki/Legal/PrivacyPolicy\">Fedora Privacy Policy</a> was updated on August 5th, 2008."
-msgstr ""
-
-#: data/content/index.html:18
+#: data/content/index.html:15
 msgid "What's new in Fedora 9?  Read the release notes. &gt;&gt;"
 msgstr "Čo je nové vo Fedore 9? Prečítajte si poznámky k vydaniu. &gt;&gt;"
 
-#: data/content/index.html:21
+#: data/content/index.html:18
 msgid "Fedora is a Linux-based operating system that showcases the latest in free and open source software. Fedora is <strong>always free for anyone to use, modify, and distribute.</strong>  It is built by people across the globe who work together as a community: the Fedora Project. The Fedora Project is open and anyone is welcome to join."
 msgstr "Fedora je operačný systém založený na Linuxe a najnovších slobodných a open source technológiách. Fedoru môže každý <strong>slobodne používať, upravovať a šíriť.</strong> Fedora je vytváraná ľuďmi z celého sveta, ktorí pracujú spolu ako komunita. Projekt Fedora je otvorený a každý je vítaný sa pridať."
 
-#: data/content/index.html:24
+#: data/content/index.html:21
 msgid "The Fedora Project is out front for you, <strong>leading the advancement of free, open software and content</strong>."
 msgstr "Projekt Fedora je v čele pre Vás, <strong>vedúc pokrok slobodného a open source softvéru a obsahu</strong>."
 
-#: data/content/index.html:27
+#: data/content/index.html:24
 msgid "<a href=\"http://fedoraproject.org/wiki/Overview\">Learn more. &gt;&gt;</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Overview\">Dozveďte sa viac. &gt;&gt;</a>"
 
@@ -385,71 +381,75 @@ msgstr "Ak používate v stabilnom vydaní na inštaláciu a aktualizáciu balí
 msgid "If you do not use yum, you can check the signature of the package using the following command"
 msgstr "Ak nepoužívate yum, môžete podpis balíčka skontrolovať nasledovným príkazom:"
 
-#: data/content/keys.html:63
+#: data/content/keys.html:65
 msgid "Currently used keys"
 msgstr "Kľúče používané v súčasnosti"
 
-#: data/content/keys.html:74
-msgid "Fedora Core (version 6 and earlier)"
-msgstr "Fedora Core (verzia 6 a skoršie)"
-
-#: data/content/keys.html:75
-msgid "Fedora (version 7 and newer)"
-msgstr "Fedora (verzia 7 a novšie)"
-
-#: data/content/keys.html:76
-msgid "Both GA and updates"
-msgstr "Vydanie (GA) a aktualizácie"
-
-#: data/content/keys.html:80
-msgid "If you use a recent stable release, this is the only key you will use.  Packages on installation media and all the updates you will install are signed with this key.  The relevant yum repositories are <strong>fedora</strong>, <strong>fedora-updates</strong> for Fedora 7 and later, and <strong>core</strong> and <strong>core-updates</strong> for Fedora Core (Version 6 and earlier)."
-msgstr "Ak používate novšie stabilné vydanie, toto je jediný kľúč, ktorý budete potrebovať. Balíčky na inštalačnom médiu a všetky aktualizácie, ktoré sa budú inštalovať, budú podpísané týmto kľúčom.Príslušné yum repozitáre sú <strong>fedora</strong>, <strong>fedora-updates</strong> pre Fedora 7 a neskoršie, a <strong>core</strong> a <strong>core-updates</strong> pre Fedora Core (verziu 6 a skoršie)."
-
-#: data/content/keys.html:84
-msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
-msgstr "Cesta: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
-
 #: data/content/keys.html:85
-msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
-msgstr "Stiahnuť: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
-
-#: data/content/keys.html:98
-msgid "Fedora (version 7 and newer) testing updates"
-msgstr "Fedora (verzia 7 a novšie) testovacie aktualizácie"
-
-#: data/content/keys.html:102
-msgid "If you participate in testing of the packages, this is the key you will use to verify the testing packages.  This key signs the packages that are in <strong>fedora-testing</strong> repository."
-msgstr "Ak sa zapájate do testovania balíčkov, toto je kľúč, ktorým budete overovať testovacie aktualizácie. Týmto kľúčom sú podpísané balíčky v repozitári <strong>fedora-testing</strong>."
-
-#: data/content/keys.html:106
-msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
-msgstr "Cesta: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
-
-#: data/content/keys.html:107
-msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
-msgstr "Stiahnuť: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
-
-#: data/content/keys.html:111
 msgid "Obsolete keys"
 msgstr "Zastarané kľúče"
 
+#: data/content/keys.html:96
+#, fuzzy
+msgid "Fedora Core (version 6 earlier)"
+msgstr "Fedora Core (verzia 6 a skoršie)"
+
+#: data/content/keys.html:97
+#, fuzzy
+msgid "Fedora (version 7, 8, and 9)"
+msgstr "Fedora (verzia 7 a novšie)"
+
+#: data/content/keys.html:98
+msgid "Both GA and updates"
+msgstr "Vydanie (GA) a aktualizácie"
+
+#: data/content/keys.html:102
+#, fuzzy
+msgid "Packages on installation media are signed with this key.  The relevant yum repositories are <strong>fedora</strong>, <strong>fedora-updates</strong> for Fedora 7-9, and <strong>core</strong> and <strong>core-updates</strong> for Fedora Core (Version 6 and earlier).  See <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> for information on why this key is obsolete."
+msgstr "Ak používate novšie stabilné vydanie, toto je jediný kľúč, ktorý budete potrebovať. Balíčky na inštalačnom médiu a všetky aktualizácie, ktoré sa budú inštalovať, budú podpísané týmto kľúčom.Príslušné yum repozitáre sú <strong>fedora</strong>, <strong>fedora-updates</strong> pre Fedora 7 a neskoršie, a <strong>core</strong> a <strong>core-updates</strong> pre Fedora Core (verziu 6 a skoršie)."
+
+#: data/content/keys.html:106
+msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
+msgstr "Cesta: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
+
+#: data/content/keys.html:107
+msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
+msgstr "Stiahnuť: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
+
+#: data/content/keys.html:120
+msgid "Fedora (version 7 and newer) testing updates"
+msgstr "Fedora (verzia 7 a novšie) testovacie aktualizácie"
+
 #: data/content/keys.html:124
+#, fuzzy
+msgid "If you participate in testing of the packages, this is the key you will use to verify the testing packages.  This key signs the packages that are in <strong>fedora-testing</strong> repository.  See <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> for information on why this key is obsolete."
+msgstr "Ak sa zapájate do testovania balíčkov, toto je kľúč, ktorým budete overovať testovacie aktualizácie. Týmto kľúčom sú podpísané balíčky v repozitári <strong>fedora-testing</strong>."
+
+#: data/content/keys.html:128
+msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
+msgstr "Cesta: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
+
+#: data/content/keys.html:129
+msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
+msgstr "Stiahnuť: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
+
+#: data/content/keys.html:145
 msgid "Fedora Extras (version 6 and earlier)"
 msgstr "Fedora Extras (verzia 6 a skoršie)"
 
-#: data/content/keys.html:128
+#: data/content/keys.html:149
 msgid "If you are using Fedora Extras with Fedora Core 6, use this package from <strong>extras</strong> repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007).  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
 msgstr "Ak používate Fedora Extras s Fedora Core 6, použite tento kľúč s repozitárom <strong>extras</strong>.  Tento kľúč sa prestane používať po skončení podpory Fedora Core 6 a Extras (7. decembra 2007).  Tento kľúč nie je v balíčku <strong>fedora-release</strong> vo Fedora 7 a neskorších vydaniach."
 
-#: data/content/keys.html:132
+#: data/content/keys.html:153
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 msgstr "Cesta: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 
-#: data/content/keys.html:133
+#: data/content/keys.html:154
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&op=index\">pgp.mit.edu</a>"
 msgstr "Stiahnuť: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&op=index\">pgp.mit.edu</a>"
 
-#: data/content/keys.html:150
+#: data/content/keys.html:171
 msgid "This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
 msgstr "Tento kľúč používali balíčky vydané projektom Fedora Legacy na aktualizáciu vydaní, ktorých oficiálna doba podpory skončila.  Projekt Fedora Legacy už neexistuje, takže týmto kľúčom sa už nebudú podpisovať žiadne balíčky. Tento kľúč nie je v balíčku <strong>fedora-release</strong> vo Fedora 7 a neskorších vydaniach."
 

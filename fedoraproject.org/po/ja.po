@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-08-06 14:52-0400\n"
+"POT-Creation-Date: 2008-09-05 14:12-0400\n"
 "PO-Revision-Date: 2008-05-07 20:56+0900\n"
 "Last-Translator: Makoto Mizukami <mmk9060@aol.com>\n"
 "Language-Team: Japanese <fedora-trans-ja@redhat.com>\n"
@@ -261,23 +261,19 @@ msgstr "これのソフトウェアは、プリリリース版です。Fedora Pr
 msgid "Fedora 9.  Make waves."
 msgstr "新しい波。Fedora 9"
 
-#: data/content/index.html:12
-msgid "Please note that the <a href=\"http://fedoraproject.org/wiki/Legal/PrivacyPolicy\">Fedora Privacy Policy</a> was updated on August 5th, 2008."
-msgstr ""
-
-#: data/content/index.html:18
+#: data/content/index.html:15
 msgid "What's new in Fedora 9?  Read the release notes. &gt;&gt;"
 msgstr "Fedora 9 の新機能については、リリースノートをご覧ください。&gt;&gt;"
 
-#: data/content/index.html:21
+#: data/content/index.html:18
 msgid "Fedora is a Linux-based operating system that showcases the latest in free and open source software. Fedora is <strong>always free for anyone to use, modify, and distribute.</strong>  It is built by people across the globe who work together as a community: the Fedora Project. The Fedora Project is open and anyone is welcome to join."
 msgstr "Fedora は、最先端のフリーソフトウェアやオープンソースソフトウェアを提供する、Linux ベースのオペレーティングシステムです。<strong>誰でも自由に使用し、改変し、そして配布することができます</strong>。Fedora は、Fedora Project に参加する世界中の人々によって支えられています。Fedora Project は誰もが自由に参加できる、オープンなコミュニティです。"
 
-#: data/content/index.html:24
+#: data/content/index.html:21
 msgid "The Fedora Project is out front for you, <strong>leading the advancement of free, open software and content</strong>."
 msgstr "Fedora Project はあなたと共に、<strong>自由でオープンなソフトウェアやコンテンツの発展を推進していきます</strong>。"
 
-#: data/content/index.html:27
+#: data/content/index.html:24
 msgid "<a href=\"http://fedoraproject.org/wiki/Overview\">Learn more. &gt;&gt;</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Overview\">もっと詳しく&gt;&gt;</a>"
 
@@ -384,71 +380,75 @@ msgstr "安定版リリースの <strong>yum</strong> パッケージ管理ツ�
 msgid "If you do not use yum, you can check the signature of the package using the following command"
 msgstr "yum を使わない場合、以下のコマンドでパッケージの署名を検証することができます"
 
-#: data/content/keys.html:63
+#: data/content/keys.html:65
 msgid "Currently used keys"
 msgstr "現在使われているキー"
 
-#: data/content/keys.html:74
-msgid "Fedora Core (version 6 and earlier)"
-msgstr "Fedora Core (バージョン 6 以前)"
-
-#: data/content/keys.html:75
-msgid "Fedora (version 7 and newer)"
-msgstr "Fedora (バージョン 7 以降)"
-
-#: data/content/keys.html:76
-msgid "Both GA and updates"
-msgstr "双方のリリース及びアップデート"
-
-#: data/content/keys.html:80
-msgid "If you use a recent stable release, this is the only key you will use.  Packages on installation media and all the updates you will install are signed with this key.  The relevant yum repositories are <strong>fedora</strong>, <strong>fedora-updates</strong> for Fedora 7 and later, and <strong>core</strong> and <strong>core-updates</strong> for Fedora Core (Version 6 and earlier)."
-msgstr "最近の安定版を使用している場合は、これが使用する唯一のキーです。インストールメディアやそのアップデートパッケージは、このキーで署名されます。尚、これに該当するレポジトリは、Fedora 7 以降の<strong>fedora</strong>、<strong>fedora-updates</strong>レポジトリと、Fedora Core (バージョン 6 以前)の<strong>core</strong>、<strong>core-updates</strong> です。"
-
-#: data/content/keys.html:84
-msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
-msgstr "パス: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
-
 #: data/content/keys.html:85
-msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
-msgstr "ダウンロード: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
-
-#: data/content/keys.html:98
-msgid "Fedora (version 7 and newer) testing updates"
-msgstr "Fedora (バージョン 7 以降) テストアップデート"
-
-#: data/content/keys.html:102
-msgid "If you participate in testing of the packages, this is the key you will use to verify the testing packages.  This key signs the packages that are in <strong>fedora-testing</strong> repository."
-msgstr "このキーは、テスト版パッケージの検証に使われます。このキーで、<strong>fedora-testing</strong> レポジトリ内のパッケージは署名されています。"
-
-#: data/content/keys.html:106
-msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
-msgstr "パス: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
-
-#: data/content/keys.html:107
-msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
-msgstr "ダウンロード: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
-
-#: data/content/keys.html:111
 msgid "Obsolete keys"
 msgstr "古いキー"
 
+#: data/content/keys.html:96
+#, fuzzy
+msgid "Fedora Core (version 6 earlier)"
+msgstr "Fedora Core (バージョン 6 以前)"
+
+#: data/content/keys.html:97
+#, fuzzy
+msgid "Fedora (version 7, 8, and 9)"
+msgstr "Fedora (バージョン 7 以降)"
+
+#: data/content/keys.html:98
+msgid "Both GA and updates"
+msgstr "双方のリリース及びアップデート"
+
+#: data/content/keys.html:102
+#, fuzzy
+msgid "Packages on installation media are signed with this key.  The relevant yum repositories are <strong>fedora</strong>, <strong>fedora-updates</strong> for Fedora 7-9, and <strong>core</strong> and <strong>core-updates</strong> for Fedora Core (Version 6 and earlier).  See <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> for information on why this key is obsolete."
+msgstr "最近の安定版を使用している場合は、これが使用する唯一のキーです。インストールメディアやそのアップデートパッケージは、このキーで署名されます。尚、これに該当するレポジトリは、Fedora 7 以降の<strong>fedora</strong>、<strong>fedora-updates</strong>レポジトリと、Fedora Core (バージョン 6 以前)の<strong>core</strong>、<strong>core-updates</strong> です。"
+
+#: data/content/keys.html:106
+msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
+msgstr "パス: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
+
+#: data/content/keys.html:107
+msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
+msgstr "ダウンロード: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
+
+#: data/content/keys.html:120
+msgid "Fedora (version 7 and newer) testing updates"
+msgstr "Fedora (バージョン 7 以降) テストアップデート"
+
 #: data/content/keys.html:124
+#, fuzzy
+msgid "If you participate in testing of the packages, this is the key you will use to verify the testing packages.  This key signs the packages that are in <strong>fedora-testing</strong> repository.  See <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> for information on why this key is obsolete."
+msgstr "このキーは、テスト版パッケージの検証に使われます。このキーで、<strong>fedora-testing</strong> レポジトリ内のパッケージは署名されています。"
+
+#: data/content/keys.html:128
+msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
+msgstr "パス: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
+
+#: data/content/keys.html:129
+msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
+msgstr "ダウンロード: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
+
+#: data/content/keys.html:145
 msgid "Fedora Extras (version 6 and earlier)"
 msgstr "Fedora Extras (バージョン 6 以前)"
 
-#: data/content/keys.html:128
+#: data/content/keys.html:149
 msgid "If you are using Fedora Extras with Fedora Core 6, use this package from <strong>extras</strong> repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007).  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
 msgstr "Fedora Core 6 で Fedora Extras を使用している場合、<strong>extras</strong> レポジトリのこのパッケージを使用します。このキーは、Fedora Core 6 と Extras の公式メンテナンスが終了(2007年12月7日)すると使われなくなります。このキーは、Fedora 7 以降の <strong>fedora-release</strong> パッケージには含まれていません。"
 
-#: data/content/keys.html:132
+#: data/content/keys.html:153
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 msgstr "パス: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 
-#: data/content/keys.html:133
+#: data/content/keys.html:154
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&op=index\">pgp.mit.edu</a>"
 msgstr "ダウンロード: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&op=index\">pgp.mit.edu</a>"
 
-#: data/content/keys.html:150
+#: data/content/keys.html:171
 msgid "This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
 msgstr "このキーは、Fedora Legacy project によって公開された、公式メンテナンスが終了したリリースのアップデートパッケージに使われています。Fedora Legacy Project は解散したため、今後このキーがパッケージの署名に使用されることはありません。このキーは、Fedora 7 以降の <strong>fedora-release</strong> パッケージには含まれていません。"
 
