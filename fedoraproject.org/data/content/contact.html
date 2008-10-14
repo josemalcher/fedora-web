@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${Markup(_('Contact - Fedora Project'))}</title>
+  </head>
+  <body class="home">
+    <h2>${Markup(_('Contact'))}</h2>
+    <p>${Markup(_('The following are a list of contacts for various projects, queries and issues related to the Fedora Project.'))}</p>
+
+    <h3>${Markup(_('End User Support'))}</h3>
+    <p>${Markup(_('For end-user help or to work with the development team, &lt;a href="https://fedoraproject.org/wiki/Communicate"&gt;communicate with the Fedora community&lt;/a&gt;. For other requests, email the appropriate team lead or contact listed here.'))}</p>
+
+    <h3>${Markup(_('Legal Issues'))}</h3>
+    <p>${Markup(_('If you have any legal questions that can be discussed in public, post to &lt;a href="http://www.redhat.com/mailman/listinfo/fedora-legal-list"&gt;fedora-legal-list&lt;/a&gt; or if you have any private legal questions send a mail to legal AT fedoraproject.org.'))}</p>
+
+    <h3>${Markup(_('Press'))}</h3>
+    <p>${Markup(_('For Press related questions, please contact &lt;a href="mailto:press@fedoraproject.org"&gt;press@fedoraproject.org&lt;/a&gt;.'))}</p>
+    
+    <h3>${Markup(_('Website Issues'))}</h3>
+    <p>${Markup(_('If you have any queries or issues related to Fedora Project websites (fedoraproject.org, fedorahosted.org, and fedorapeople.org), please contact &lt;a href="mailto:webmaster@fedoraproject.org"&gt;webmaster@fedoraproject.org&lt;/a&gt;.'))}</p>
+    <p>${Markup(_('&lt;strong&gt;NOTE: &lt;a href="mailto:webmaster@fedoraproject.org"&gt;webmaster@fedoraproject.org&lt;/a&gt; is NOT to be used for support requests. If you need End User support please visit the &lt;a href="https://fedoraproject.org/wiki/Communicate"&gt;Communicate page on the Wiki&lt;/a&gt;.&lt;/strong&gt;'))}</p>
+    <p>${Markup(_('&lt;strong&gt;NOTE: All emails to &lt;a href="mailto:webmaster@fedoraproject.org"&gt;webmaster@fedoraproject.org&lt;/a&gt; are publicly archived.&lt;/strong&gt;'))}</p>
+
+    <h3>${Markup(_('Apache Test Page'))}</h3>
+    <p><img src="${path}/static/images/fedora-test-page.jpg" alt="${Markup(_('Fedora Test page'))}" /></p>
+    <p>${Markup(_('If you visit a website and see a Fedora Test page similar to the one pictured above, don&rsquo;t be alarmed. It simply means that the website you are visiting is running an Apache web server that has either has not been configured, is currently experiencing problems or is undergoing routine maintenance. Read more about the &lt;a href="http://fedoraproject.org/wiki/Server_Test_Page"&gt;Fedora Test page via our Wiki&lt;/a&gt;.'))}</p>
+    <p>${Markup(_('&lt;strong&gt;NOTE: If the domain is not one of fedoraproject.org, fedorahosted.org, or fedorapeople.org, then it is NOT owned by the Fedora Project and as such we are NOT to be contacted with questions about that domain. Please contact the owner of the website and ask them to fix the problem. In general, mail sent to the name &ldquo;webmaster&rdquo; and directed to the website&rsquo;s domain should reach the appropriate person. So for example, if you experienced problems while visiting www.example.com, you should send e-mail to &ldquo;webmaster@example.com&rdquo;.&lt;/strong&gt;'))}</p>
+
+    <h3>${Markup(_('Mirror Problems'))}</h3>
+    <p>${Markup(_('If you encounter any problems or have questions regarding Fedora project mirrors, please contact &lt;a href="mailto:mirror-admin@fedoraproject.org"&gt;mirror-admin@fedoraproject.org&lt;/a&gt;.'))}</p>
+
+    <h3>${Markup(_('Other Contacts'))}</h3>
+    <p>${Markup(_('For a list of other contacts please see the &lt;a href="https://fedoraproject.org/wiki/Contact"&gt;Contact page on the Wiki&lt;/a&gt;.'))}</p>
+  </body>
+</html>
