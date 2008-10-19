@@ -70,20 +70,20 @@ function set_url(){
                       
             if( arch == 'i386')
             {
-                var architecture = "32 bit PC";
+                var architecture = "32-bit PC";
             }
             else {
                 if(arch == 'x86_64')
                 {
-                    var architecture = "64 bit PC";
+                    var architecture = "64-bit PC";
                 }
                 else {
                        var architecture = "PPC"; 
                 }
             }
             
-            var string1 = "Fedora 9 " + flavor + " for " + architecture +" - ISO file";
-            var string2 = "Fedora 9 " + flavor + " for " + architecture +" - Torrent File";
+            var string1 = "Fedora 9 " + flavor.toUpperCase() + " for " + architecture +" - ISO file";
+            var string2 = "Fedora 9 " + flavor.toUpperCase() + " for " + architecture +" - Torrent File";
             
             document.getElementById('dd-link').href = ddlink;
             document.getElementById('torrent-link').href = torrentlink;

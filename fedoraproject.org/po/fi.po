@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-10-19 16:38-0500\n"
+"POT-Creation-Date: 2008-10-19 18:29-0400\n"
 "PO-Revision-Date: 2008-10-17 17:56+0300\n"
 "Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
 "Language-Team: Finnish <laatu@lokalisointi.org>\n"
@@ -128,7 +128,7 @@ msgstr "Hanki Fedora"
 msgid "1. Download the latest Fedora release"
 msgstr ""
 
-#: data/content/get-fedora.html:16 data/content/get-fedora.html:36
+#: data/content/get-fedora.html:16
 #, fuzzy
 msgid "Installation media"
 msgstr "Asennusmedia"
@@ -164,20 +164,24 @@ msgstr ""
 msgid "2. Select the type of computer"
 msgstr ""
 
-#: data/content/get-fedora.html:40
-msgid "32Bits processors"
+#: data/content/get-fedora.html:36
+msgid "Architecture"
 msgstr ""
 
 #: data/content/get-fedora.html:40
-msgid " - For Destkops and Laptops with Intel and AMD processors. "
+msgid "32-bit processors"
+msgstr ""
+
+#: data/content/get-fedora.html:40
+msgid " - For destkops and laptops with Intel and AMD processors. "
 msgstr ""
 
 #: data/content/get-fedora.html:45
-msgid "64Bits processors "
+msgid "64-bit processors "
 msgstr ""
 
 #: data/content/get-fedora.html:45
-msgid " - For newer computers with 64bits procesors like AMD(turion)64 and Intel Core 2 Duo."
+msgid " - For newer computers with 64bits procesors like AMD (Turion) 64 and Intel Core 2 Duo."
 msgstr ""
 
 #: data/content/get-fedora.html:50
@@ -232,21 +236,9 @@ msgid "Get a copy of Fedora Media sent via postal mail."
 msgstr "Tilaa kopio Fedora-mediasta postitse."
 
 #: data/content/get-fedora.html:78
-msgid "Purchase installation media for Fedora from "
-msgstr ""
-
-#: data/content/get-fedora.html:78
 #, fuzzy
-msgid "online vendors"
-msgstr "Liity Fedoraan"
-
-#: data/content/get-fedora.html:78
-msgid "or a "
-msgstr ""
-
-#: data/content/get-fedora.html:78
-msgid "local vendor"
-msgstr ""
+msgid "Purchase installation media for Fedora from <a href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">online vendors</a> or a <a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">local vendor</a>."
+msgstr "Osta Fedoran asennusmedia joko <a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">verkkokaupasta</a> tai alueesi <a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">paikalliselta myyjältä</a>."
 
 #: data/content/get-fedora.html:79
 msgid "in your area."
@@ -257,29 +249,14 @@ msgid "Can't afford the price of installation media?"
 msgstr ""
 
 #: data/content/get-fedora.html:82
-msgid "Request Fedora installation media from the"
-msgstr ""
-
-#: data/content/get-fedora.html:82
-msgid "Fedora Free Media Program."
-msgstr ""
-
-#: data/content/get-fedora.html:84
-msgid "When you place an order with a "
-msgstr ""
-
-#: data/content/get-fedora.html:84
-msgid "participating vendor "
-msgstr ""
-
-#: data/content/get-fedora.html:84
-msgid ", you may also sponsor the cost of media for users who cannot afford it, such as people in developing nations. Consider participating in the "
-msgstr ""
+#, fuzzy
+msgid "Request Fedora installation media from the <a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Fedora Free Media Program.</a>"
+msgstr "Jos asennusmedian ostamiseen ei ole varaa, voit pyytää asennusmedioita <a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Fedora Free Media Programista</a>."
 
 #: data/content/get-fedora.html:84
 #, fuzzy
-msgid "Fedora Sponsored Media Program"
-msgstr "Fedoran sponsorit"
+msgid "When you place an order with a <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\"> participating vendor</a>, you may also sponsor the cost of media for users who cannot afford it, such as people in developing nations. Consider participating in the <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora Sponsored Media Program</a>."
+msgstr "Kun tilaat  <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">kumppanuusmyyjiltämme</a>, voit myös sponsoroida median hinnan käyttäjille, joilla ei ole siihen varaa, kuten kehitysmaiden asukkaille. Harkitse <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora Sponsored Media Programiin</a> osallistumista."
 
 #: data/content/get-help.html:10
 msgid "Get Help."
@@ -836,20 +813,19 @@ msgstr "Tapaa Fedora-yhteisö."
 msgid "Website Language"
 msgstr "Sivuston kieli"
 
+#, fuzzy
+#~ msgid "online vendors"
+#~ msgstr "Liity Fedoraan"
+
+#, fuzzy
+#~ msgid "Fedora Sponsored Media Program"
+#~ msgstr "Fedoran sponsorit"
+
 #~ msgid "Did someone say... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;?"
 #~ msgstr "Sanoiko joku... ”<a href=\"get-prerelease\">Beta</a>”?"
 
 #~ msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
 #~ msgstr "ISOn lataamisen jälkeen se kannattaa <a href=\"%s/%s/verify\">tarkistaa</a>."
-
-#~ msgid "Purchase installation media for Fedora from <a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">online vendors</a> or a <a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">local vendor</a> in your area."
-#~ msgstr "Osta Fedoran asennusmedia joko <a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">verkkokaupasta</a> tai alueesi <a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">paikalliselta myyjältä</a>."
-
-#~ msgid "Can't afford the price of installation media? Request Fedora installation media from the <a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Fedora Free Media Program</a>."
-#~ msgstr "Jos asennusmedian ostamiseen ei ole varaa, voit pyytää asennusmedioita <a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Fedora Free Media Programista</a>."
-
-#~ msgid "When you place an order with a <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">participating vendor</a>, you may also sponsor the cost of media for users who cannot afford it, such as people in developing nations. Consider participating in the <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora Sponsored Media Program</a>."
-#~ msgstr "Kun tilaat  <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">kumppanuusmyyjiltämme</a>, voit myös sponsoroida median hinnan käyttäjille, joilla ei ole siihen varaa, kuten kehitysmaiden asukkaille. Harkitse <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora Sponsored Media Programiin</a> osallistumista."
 
 #~ msgid "Live DVD"
 #~ msgstr "Live-DVD"
