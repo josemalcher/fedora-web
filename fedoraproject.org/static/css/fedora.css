@@ -175,10 +175,7 @@ pre
   margin: 2ex 0;
 }
 
-#content a
-{
-  color: #337ACC;
-}
+
 
 #content .download
 {
@@ -325,8 +322,7 @@ input, textarea, option
 {
   overflow: hidden;
   list-style: none;
-  margin: 0 2ex;
-  padding: 6ex 2ex 4ex 180px;
+  padding: 10px 15px 10px 20px;
   border-radius: 1.5ex;
   -webkit-border-radius: 1.5ex;
   -moz-border-radius: 1.5ex;
@@ -341,9 +337,10 @@ input, textarea, option
 
 .downloadbox li
 {
-  width: 32ex;
+  width: 180px;
   float: left;
-  padding: 0 0 2ex;
+  padding:5px;
+  margin:5px 10px 5px 10px;
 }
 
 .downloadbox li li
@@ -434,4 +431,94 @@ ul#resources li.resource-download
 {
   margin-right: 5ex;
   padding-top: 1ex;
+}
+
+.darker 
+{
+  font-weight:bold;
+}
+
+
+.left-side 
+{
+  float:left;
+  
+  padding-top:20px;
+
+}
+
+ul.selection li {
+  list-style:none;
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-left:100px;
+  margin-right:0px;
+
+}
+.cleared
+{
+  clear:both;
+}
+a {
+ color:black;
+}
+#content .download-button
+{
+  font-size:2.2ex;
+  color: #666666;
+  display:block;
+  width:200px;  
+  height:50px;
+  margin:10px;
+  padding: 3px 4px 3px 55px;
+  float:left;
+  text-decoration:none;
+  background:url(../images/arrow-down.png) 0% 50% no-repeat;
+  font-weight:bold;
+  
+}
+.download-button span 
+{
+ color: #666666;
+ font-size:1.3ex;
+ font-weight:normal;
+}
+#content a
+{
+  color: #337ACC;
+}
+
+.nopossible{
+  color: #cccccc;
+  
+}
+
+#centered 
+{
+ width:60%;
+ min-width:30%;
+ padding-right:40px;
+ float:left;
+}
+
+#rightside 
+{
+  margin-left:67%;
+  width:30%;
+  padding-left:20px;
+  padding-bottom:100px;
+
+ }
+ 
+ #rightside li
+ {
+   list-style:none; 
+   background: url(../images/arrow.png) 0 50% no-repeat;
+   padding-left:20px;
+ }
+
+#rightside li a
+{
+  font-weight:bold;
+  font-size:2ex;
 }

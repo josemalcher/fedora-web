@@ -9,98 +9,82 @@
     </style>
   </head>
   <body class="get">
-    <h2>${Markup(_('Fedora, For You.'))}</h2>
-    <p class="note"><img src="${path}/static/images/smirk.png" class="smirk" />${Markup(_('Did someone say... &amp;ldquo;&lt;a href="get-prerelease"&gt;Beta&lt;/a&gt;&amp;rdquo;?'))}</p>
-    <p class="note">${Markup(_('After downloading an ISO, &lt;a href="%s/%s/verify"&gt;verify&lt;/a&gt; it.') % (path, lang))}</p>
-    <h3>${Markup(_('Install Media'))}</h3>
-    <ul class="downloadbox installdvd">
-      <li>
-      <h4>${Markup(_('BitTorrent'))}</h4>
-      <ul>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-i386-DVD.torrent">${Markup(_('i386'))}</a> - ${Markup(_('Install DVD'))}</li>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-x86_64-DVD.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Install DVD'))}</li>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-ppc-DVD.torrent">${Markup(_('ppc'))}</a> - ${Markup(_('Install DVD'))}</li>
-
-        <li style="margin-top: 1.25ex;"><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-i386-CDs.torrent">${_('i386')}</a> - ${_('Install CDs')}</li>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-x86_64-CDs.torrent">${_('x86_64')}</a> - ${_('Install CDs')}</li>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-ppc-CDs.torrent">${_('ppc')}</a> - ${_('Install CDs')}</li>
-
-      </ul>
-      </li>
-      <li>
-      <h4>${Markup(_('Direct Download'))}</h4>
-      <ul>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Fedora/i386/iso/Fedora-9-i386-DVD.iso">${Markup(_('i386'))}</a> - ${Markup(_('Install DVD'))}</li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Fedora/x86_64/iso/Fedora-9-x86_64-DVD.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Install DVD'))}</li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Fedora/ppc/iso/Fedora-9-ppc-DVD.iso">${Markup(_('ppc'))}</a> - ${Markup(_('Install DVD'))}</li>
-
-        <li style="margin-top: 1.25ex;"><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Fedora/i386/iso/">${_('i386')}</a> - ${_('Install CDs')}</li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Fedora/x86_64/iso/">${_('x86_64')}</a> - ${_('Install CDs')}</li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Fedora/ppc/iso/">${_('ppc')}</a> - ${_('Install CDs')}</li>
-      </ul>
-      </li>
-      <li>
-      <h4>${_('Jigdo')}</h4>
-      <ul>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Fedora/i386/jigdo/">${_('i386')}</a></li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Fedora/x86_64/jigdo/">${_('x86_64')}</a></li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Fedora/ppc/jigdo/">${_('ppc')}</a></li>
-      </ul>
-      </li>
-    </ul>
-    <h3>${Markup(_('Fedora Desktop Live Media'))}</h3>
-    <ul class="downloadbox gnomelive">
-      <li>
-      <h4>${Markup(_('BitTorrent'))}</h4>
-      <ul>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-i686-Live.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live CD'))}</li>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-x86_64-Live.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live CD'))}</li>
-        <!--<li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-ppc-Live.torrent">${Markup(_('ppc'))}</a> - ${Markup(_('Live DVD'))}</li>-->
-      </ul>
-      </li>
-      <li>
-      <h4>${Markup(_('Direct Download'))}</h4>
-      <ul>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Live/i686/Fedora-9-i686-Live.iso">${Markup(_('i686'))}</a> - ${Markup(_('Live CD'))}</li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Live/x86_64/Fedora-9-x86_64-Live.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live CD'))}</li>
-        <!--<li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Live/ppc/Fedora-9-ppc-Live.iso">${Markup(_('ppc'))}</a> - ${Markup(_('Live DVD'))}</li>-->
-      </ul>
-      </li>
-    </ul>
-
-    <h3>${Markup(_('Fedora KDE Live Media'))}</h3>
-    <ul class="downloadbox kdelive">
-      <li>
-      <h4>${Markup(_('BitTorrent'))}</h4>
-      <ul>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-i686-Live-KDE.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live CD'))}</li>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-9-x86_64-Live-KDE.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live CD'))}</li>
-      </ul>
-      </li>
-      <li>
-      <h4>${Markup(_('Direct Download'))}</h4>
-      <ul>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Live/i686/Fedora-9-i686-Live-KDE.iso">${Markup(_('i686'))}</a> - ${Markup(_('Live CD'))}</li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/9/Live/x86_64/Fedora-9-x86_64-Live-KDE.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live CD'))}</li>
-      </ul>
-      </li>
-    </ul>
-
-    <h3>${Markup(_('Let me look around...'))}</h3>
-    <ul class="download">
-      <li><a href="http://torrent.fedoraproject.org/">${Markup(_('See all torrents'))}</a></li>
-      <li><a href="http://mirrors.fedoraproject.org/publiclist/Fedora/9/">${Markup(_('See all mirrors'))}</a></li>
-      <li><a href="http://spins.fedoraproject.org/">${Markup(_('See all custom spins'))}</a></li>
-    </ul>
-    <h3>${Markup(_('Slow Internet? No Internet?'))}</h3>
-    <p>${Markup(_('Get a copy of Fedora Media sent via postal mail.'))}</p>
-    <ul class="download">
-      <li>${Markup(_('Purchase installation media for Fedora from &lt;a name="media" href="http://fedoraproject.org/wiki/Distribution/OnlineVendors"&gt;online vendors&lt;/a&gt; or a &lt;a href="http://fedoraproject.org/wiki/Distribution/LocalVendors"&gt;local vendor&lt;/a&gt; in your area.'))}</li>
-      <li>${Markup(_('Can\'t afford the price of installation media? Request Fedora installation media from the &lt;a href="http://fedoraproject.org/wiki/Distribution/FreeMedia"&gt;Fedora Free Media Program&lt;/a&gt;.'))}</li>
-    </ul>
-    <p>
-    ${Markup(_('When you place an order with a &lt;a href="http://fedoraproject.org/wiki/Distribution/SponsoredMedia"&gt;participating vendor&lt;/a&gt;, you may also sponsor the cost of media for users who cannot afford it, such as people in developing nations. Consider participating in the &lt;a href="http://fedoraproject.org/wiki/Distribution/SponsoredMedia"&gt;Fedora Sponsored Media Program&lt;/a&gt;.'))}
-    </p>
+  <div id="centered">
+  	<h2>${Markup(_('Get Fedora'))}</h2>
+  	<form> 
+	<h3>${Markup(_('1. Download the latest Fedora release'))}</h3>
+		<img src="${path}/static/images/dvd-logo.png" alt="${_('Installation media')}" width="100px" height="100px" class="left-side" />
+		<ul class="selection">
+			<li>
+			 	<input type="radio" name="flavor" value="gnome" id="gnome" /><label id="gnome-text">
+				<span class="darker">${Markup(_('Fedora Desktop LiveCD'))}</span> - ${Markup(_('This spin is for Fedora users on desktops and laptops. (It combines the most typical software a home user would use)'))}
+				</label>
+			</li>
+			<li>
+			  	<input type="radio" name="flavor" value="kde" id="kde" /><label id="kde-text">
+				<span class="darker">${Markup(_('Fedora KDE LiveCD'))}</span>${Markup(_(' - This spin is a alternative to the Fedora Desktop Live CD (showcases and focuses on KDE)'))}
+				</label>
+			</li>
+			<li>
+				<input type="radio" name="flavor" value="dvd" id="dvd" /><label id="dvd-text">
+				<span class="darker">${Markup(_('DVD installation media'))}</span>${Markup(_(' - This media has a large amount of packages, and includes both Gnome and KDE desktop environments.'))}
+				</label>
+			</li>
+		</ul>
+	<br />
+	<h3>${Markup(_('2. Select the type of computer'))}</h3>
+	<img src="${path}/static/images/arc-logo.png" alt="${_('Installation media')}" width="100px" height="100px" class="left-side" />
+	<ul class="selection">
+		<li>
+			<input type="radio" name="arc" value="i386" id="i386" /><label id="32-text">
+			<span class="darker">${Markup(_('32Bits processors'))}</span>${Markup(_(' - For Destkops and Laptops with Intel and AMD processors. '))}
+			</label>
+     	</li>
+     	<li>
+		  	<input type="radio" name="arc" value="x86_64" id="x86_64" /><label id="64-text">
+			<span class="darker">${Markup(_('64Bits processors '))}</span>${Markup(_(' - For newer computers with 64bits procesors like AMD(turion)64 and Intel Core 2 Duo.'))}
+			</label>
+		</li>
+		<li>
+			<input type="radio" name="arc" value="ppc" id="ppc" /><label id="ppc-text">
+			<span class="darker">${Markup(_('PowerPC processors'))} </span>${Markup(_(' - For Apple Macintosh G3, G4, G5, PowerBook, and other non-Intel models.'))} 
+			</label>
+		</li>
+	</ul>
+	<br />
+	<h3>${Markup(_('3. Start download'))}</h3>
+		<a href="" class="download-button" id="torrent-link">
+			${Markup(_('Bit Torrent'))}<br />
+			<span id="torrent-dl" >(Gnome-LiveCD-i386.torrent</span>
+		</a>
+		<a href="" class="download-button" id="dd-link">
+			${Markup(_('Direct Download)'))} <br />
+			<span id="dd-dl" >Gnome-LiveCD-i386.torrent)'))}</span>
+		</a>
+    </form>
+ 
+  </div>
+    
+    <div id="rightside">
+    	<h3>Let me look around...</h3>
+    	<ul>
+    		<li><a href="http://torrent.fedoraproject.org/">See all Torrents</a></li>
+    		<li><a href="http://mirrors.fedoraproject.org/publiclist/Fedora/9/">See all Mirrors</a></li>
+    		<li><a href="http://spins.fedoraproject.org/">See all custom Spins</a></li>
+    	</ul>
+    	<br />
+		<h3>Slow internet? No internet?</h3>
+   		<p>Get a copy of Fedora Media sent via postal mail.</p>
+   			<p>Purchase installation media for Fedora from <a href="http://fedoraproject.org/wiki/Distribution/OnlineVendors" >online vendors</a> 
+   			 or a <a href="http://fedoraproject.org/wiki/Distribution/LocalVendors" >local vendor</a> in your area.</p>
+   		<br />
+			<h3>Can't afford the price of installation media? </h3>
+			<p>Request Fedora installation media from the <a href="http://fedoraproject.org/wiki/Distribution/FreeMedia" >Fedora Free Media Program</a>.</p>
+			<br />
+   		    <p>When you place an order with a <a href="http://fedoraproject.org/wiki/Distribution/SponsoredMedia" >participating vendor </a>, you may also sponsor the cost of media for users who cannot afford it, such as people in developing nations. Consider participating in the <a href="http://fedoraproject.org/wiki/Distribution/SponsoredMedia" >Fedora Sponsored Media Program</a>. </p>
+    </div>
+    <div class="cleared">
+  </div>
   </body>
 </html>
 
