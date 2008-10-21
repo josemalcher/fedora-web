@@ -1,90 +1,137 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:py="http://genshi.edgewall.org/"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
-  <xi:include href="../templates/master.html" />
-  <head>
-    <title>${Markup(_('Fedora Project'))}</title>
-    <style type="text/css">
-    </style>
-  </head>
-  <body class="get">
-  <div id="centered">
-  	<h2>${Markup(_('Get Fedora'))}</h2>
-  	<form> 
-	<h3>${Markup(_('1. Download the latest Fedora release'))}</h3>
-		<img src="${path}/static/images/dvd-logo.png" alt="${_('Installation media')}" width="100px" height="100px" class="left-side" />
-		<ul class="selection">
-			<li>
-			 	<input type="radio" name="flavor" value="gnome" id="gnome" /><label id="gnome-text">
-				<span class="darker">${Markup(_('Fedora Desktop LiveCD'))}</span> - ${Markup(_('This spin is for Fedora users on desktops and laptops. (It combines the most typical software a home user would use)'))}
-				</label>
-			</li>
-			<li>
-			  	<input type="radio" name="flavor" value="kde" id="kde" /><label id="kde-text">
-				<span class="darker">${Markup(_('Fedora KDE LiveCD'))}</span>${Markup(_(' - This spin is a alternative to the Fedora Desktop Live CD (showcases and focuses on KDE)'))}
-				</label>
-			</li>
-			<li>
-				<input type="radio" name="flavor" value="dvd" id="dvd" /><label id="dvd-text">
-				<span class="darker">${Markup(_('DVD installation media'))}</span>${Markup(_(' - This media has a large amount of packages, and includes both Gnome and KDE desktop environments.'))}
-				</label>
-			</li>
-		</ul>
-	<br />
-	<h3>${Markup(_('2. Select the type of computer'))}</h3>
-	<img src="${path}/static/images/arc-logo.png" alt="${_('Architecture')}" width="100px" height="100px" class="left-side" />
-	<ul class="selection">
-		<li>
-			<input type="radio" name="arc" value="i386" id="i386" /><label id="32-text">
-			<span class="darker">${Markup(_('32-bit processors'))}</span>${Markup(_(' - For destkops and laptops with Intel and AMD processors. '))}
-			</label>
-     	</li>
-     	<li>
-		  	<input type="radio" name="arc" value="x86_64" id="x86_64" /><label id="64-text">
-			<span class="darker">${Markup(_('64-bit processors '))}</span>${Markup(_(' - For newer computers with 64bits procesors like AMD (Turion) 64 and Intel Core 2 Duo.'))}
-			</label>
-		</li>
-		<li>
-			<input type="radio" name="arc" value="ppc" id="ppc" /><label id="ppc-text">
-			<span class="darker">${Markup(_('PowerPC processors'))} </span>${Markup(_(' - For Apple Macintosh G3, G4, G5, PowerBook, and other non-Intel models.'))} 
-			</label>
-		</li>
-	</ul>
-	<br />
-	<h3>${Markup(_('3. Start download'))}</h3>
-		<a href="" class="download-button" id="torrent-link">
-			${Markup(_('Bit Torrent'))}<br />
-			<span id="torrent-dl" >Gnome-LiveCD-i386.torrent</span>
-		</a>
-		<a href="" class="download-button" id="dd-link">
-			${Markup(_('Direct Download)'))} <br />
-			<span id="dd-dl" >Gnome-LiveCD-i386.torrent</span>
-		</a>
-    </form>
- 
-  </div>
-    
-    <div id="rightside">
-    	<h3>${Markup(_('Let me look around...'))}</h3>
-    	<ul>
-    		<li><a href="http://torrent.fedoraproject.org/">${Markup(_('See all Torrents'))}</a></li>
-    		<li><a href="http://mirrors.fedoraproject.org/publiclist/Fedora/9/">${Markup(_('See all Mirrors'))}</a></li>
-    		<li><a href="http://spins.fedoraproject.org/">${Markup(_('See all custom Spins'))}</a></li>
-    	</ul>
-    	<br />
-		<h3>${Markup(_('Slow internet? No internet?'))}</h3>
-   		<p>${Markup(_('Get a copy of Fedora Media sent via postal mail.'))}</p>
-        <p>${Markup(_('Purchase installation media for Fedora from &lt;a href="http://fedoraproject.org/wiki/Distribution/OnlineVendors"&gt;online vendors&lt;/a&gt; or a &lt;a href="http://fedoraproject.org/wiki/Distribution/LocalVendors"&gt;local vendor&lt;/a&gt;.'))}
-   			${Markup(_('in your area.'))}</p>
-   		<br />
-			<h3>${Markup(_('Can\'t afford the price of installation media?'))}</h3>
-            <p>${Markup(_('Request Fedora installation media from the &lt;a href="http://fedoraproject.org/wiki/Distribution/FreeMedia"&gt;Fedora Free Media Program.&lt;/a&gt;'))}</p>
-			<br />
-            <p>${Markup(_('When you place an order with a &lt;a href="http://fedoraproject.org/wiki/Distribution/SponsoredMedia"&gt; participating vendor&lt;/a&gt;, you may also sponsor the cost of media for users who cannot afford it, such as people in developing nations. Consider participating in the &lt;a href="http://fedoraproject.org/wiki/Distribution/SponsoredMedia"&gt;Fedora Sponsored Media Program&lt;/a&gt;.'))}</p>
-    </div>
-    <div class="cleared">
-  </div>
-  </body>
+    xmlns:py="http://genshi.edgewall.org/"
+    xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="../templates/master.html" />
+    <head>
+        <title>${Markup(_('Fedora Project'))}</title>
+        <style type="text/css">
+            .download-block input.button:hover {
+                background-color: #9ecfff !important;
+            }
+
+            #content { padding-top: 20px; }
+
+            div.download-block {
+                width: 50%;
+                padding: 1.5em 2em;
+            }
+
+            div#upgrade {
+                background-color: #f0f0f0 !important;
+            }
+
+            div.download-block h3 {
+                margin-top: 0px !important;
+            }
+
+
+            div.download-block em.byline {
+                display: block;
+                color: #999;
+                font-size: 80%;
+            }
+
+            div.download-block .button {
+                -moz-border-radius: 5px;
+                color: white;
+                font-weight: bold;
+                padding: 6px;
+                border: 1px solid #446382;
+                background-color: #5F94C9 !important;
+                margin-top: 10px;
+
+            }
+
+            div.download-block .fine-print {
+                font-size: xx-small !important;
+                color: #999;
+                font-style: italic;
+            }
+
+            div.download-block .fine-print li {
+                list-style-type: none !important;
+                list-style-position: outside !important;
+            }
+
+            ,
+            div.download-block .fine-print ul {
+                padding: 0px !important;
+                margin: 0px !important;
+            }
+
+            div.resources-pane {
+                float: right;
+                background-color: #e5e5e5;
+                padding: 5px 9px;
+                -moz-border-radius: 5px;
+                margin-left: 12px;
+            }
+
+            div.download-block p img {
+                float: left;
+                margin-right: 15px !important;
+            }
+        </style>
+    </head>
+    <body class="get">
+        <h2>${Markup(_('Fedora, For You.'))}</h2>
+        <div class="download-block" id="new">
+            <h3>${Markup(_('Get Fedora 10 Desktop Edition Now &lt;em class="byline"&gt;Live Media Enabled!&lt;/em&gt;'))}</h3>
+            <div class="resources-pane">
+                <h4>${Markup(_('Resources'))}</h4>
+                <ul>
+                    <li><a href="#">${Markup(_('Fedora 10 Installation Guide'))}</a></li>
+
+                    <li><a href="#">${Markup(_('Fedora 10 Desktop Guide'))}</a></li>
+                </ul>
+            </div>
+
+            <p>
+            <img src="${path}/static/images/media.png" alt="${Markup(_('Live CD'))}" />
+            ${Markup(_('This is the latest version of the Fedora Linux operating system featuring the GNOME desktop. It\'s everything you need to start using Fedora!'))}
+            </p>
+            <p class="fine-print">
+            ${Markup(_('650MB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs'))} | <strong><a href="#">${Markup(_('How do I use this file?'))}</a></strong>
+</p>
+            <input type="submit" class="button" value="${Markup(_('Download Now!'))}" />
+        </div>
+
+        <div class="download-block" id="upgrade">
+            <h3>${Markup(_('Upgrade to Fedora 10 from an Older Fedora'))}</h3>
+            <div class="resources-pane">
+                <h4>${Markup(_('Resources'))}</h4>
+                <ul>
+                    <li><a href="#">${Markup(_('Fedora 10 Upgrade Guide'))}</a></li>
+                    <li><a href="#">${Markup(_('Fedora 10 Release Notes'))}</a></li>
+                    <li><a href="#">${Markup(_('Help &amp;amp; Support'))}</a></li>
+                </ul>
+            </div>
+
+            <p>
+            <img src="${path}/static/images/media.png" alt="${Markup(_('Install DVD'))}" />
+            ${Markup(_('Already have Fedora and want to upgrade to Fedora 10? Check out the &lt;a href="#"&gt;Upgrading Fedora&lt;/a&gt; instructions, and download the DVD ISO you\'ll need to start the upgrade process below.'))}</p>
+            <p class="fine-print">${Markup(_('4.3GB, ISO format, 1 DVD disc image for Intel-compatible PCs'))} | <strong><a href="#">${Markup(_('How do I use this file?'))}</a></strong></p>
+            <input type="submit" class="button" value="${Markup(_('Download Now!'))}" />
+        </div>
+        <div class="download-block">
+            <h3>${Markup(_('Other Download Options'))}</h3>
+            <h4>${Markup(_('Let me look around...'))}</h4>
+            <ul class="download">
+                <li><a href="http://torrent.fedoraproject.org/">${Markup(_('See all torrents'))}</a></li>
+                <li><a href="http://mirrors.fedoraproject.org/publiclist/Fedora/9/">${Markup(_('See all mirrors'))}</a></li>
+                <li><a href="http://spins.fedoraproject.org/">${Markup(_('See all custom spins'))}</a></li>
+            </ul>
+            <h4>${Markup(_('Slow Internet? No Internet?'))}</h4>
+            <p>${Markup(_('Get a copy of Fedora Media sent via postal mail.'))}</p>
+            <ul class="download">
+                <li>${Markup(_('Purchase installation media for Fedora from &lt;a name="media" href="http://fedoraproject.org/wiki/Distribution/OnlineVendors"&gt;online vendors&lt;/a&gt; or a &lt;a href="http://fedoraproject.org/wiki/Distribution/LocalVendors"&gt;local vendor&lt;/a&gt; in your area.'))}</li>
+                <li>${Markup(_('Can\'t afford the price of installation media? Request Fedora installation media from the &lt;a href="http://fedoraproject.org/wiki/Distribution/FreeMedia"&gt;Fedora Free Media Program&lt;/a&gt;.'))}</li>
+            </ul>
+            <p>
+            ${Markup(_('When you place an order with a &lt;a href="http://fedoraproject.org/wiki/Distribution/SponsoredMedia"&gt;participating vendor&lt;/a&gt;, you may also sponsor the cost of media for users who cannot afford it, such as people in developing nations. Consider participating in the &lt;a href="http://fedoraproject.org/wiki/Distribution/SponsoredMedia"&gt;Fedora Sponsored Media Program&lt;/a&gt;.'))}
+            </p>
+        </div>
+    </body>
 </html>
 
