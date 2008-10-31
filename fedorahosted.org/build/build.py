@@ -98,7 +98,7 @@ def read_trac(path):
                 project['vcs'] = conf['trac']['repository_type']
                 project['vcsprefix'] = vcsprefix.get(project['vcs'], '')
                 project['vcsbase'] = os.path.realpath(
-                        conf['trac']['repository_dir']).replace('/srv/%s' % project['vcs'], '', 1)
+                        conf['trac']['repository_dir']).replace('/srv/%s/' % project['vcs'], '', 1)
                 project['vcsweburl'] = urlparse.urljoin(
                     conf['trac']['base_url'].rstrip('/') + '/', 'browser')
             projects.append(project)
