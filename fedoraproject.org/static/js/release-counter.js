@@ -31,8 +31,7 @@ window.onload = function() {
     }
 
     var url = "http://fedoraproject.org/wiki/Releases/9/Schedule"
-      var bannerlink = document.getElementById("banner").getElementsByTagName("a")[0];
-    bannerlink.setAttribute("href", url);
+    var bannerlink = document.getElementById("banner").getElementsByTagName("a")[0];
 
     var bannerimg = document.getElementById("banner").getElementsByTagName("img")[0];
 
@@ -40,9 +39,11 @@ window.onload = function() {
         // TODO: Get an actual image here!
         bannerimg.setAttribute("src", "http://fedoraproject.org/static/images/banners/f9release.png");
         bannerimg.setAttribute("alt", "Fedora 9 is here!");
+        url = "http://fedoraproject.org/get-fedora";
     } else {
         bannerimg.setAttribute("src", "http://fedoraproject.org/static/images/counter/" + lang + "/fedora9-countdown-" + (days < 10? '0' + days : days) + "." + lang + ".png");
         bannerimg.setAttribute("alt", "Fedora 9 Sulfur released in " + days + " days.");
     }
+    bannerlink.setAttribute("href", url);
 }
 
