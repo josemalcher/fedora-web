@@ -522,3 +522,24 @@ a {
   font-weight:bold;
   font-size:2ex;
 }
+
+/** sidebar boxes for get-fedora **/
+
+div.download-sidebar a {
+  -moz-border-radius: 8px;
+  background: #337acc url(http://localhost:5000/en/static/images/gradient_bg.png) repeat-x;
+}
+
+div.download-sidebar a#kde-banner {
+  background: #1855a2 url(http://localhost:5000/en/static/images/gradient_bg.png) repeat-x;
+}
+
+div.download-sidebar a:link,
+div.download-sidebar a:active,
+div.download-sidebar a:visited {
+  color: white;
+  font-size: medium;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 18px;
+}
