@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-03 13:10-0500\n"
+"POT-Creation-Date: 2008-11-04 09:58-0500\n"
 "PO-Revision-Date: 2008-05-07 20:56+0900\n"
 "Last-Translator: Makoto Mizukami <mmk9060@aol.com>\n"
 "Language-Team: Japanese <fedora-trans-ja@redhat.com>\n"
@@ -123,7 +123,8 @@ msgid "To add a Fedora Release counter to your own site, simply place the follow
 msgstr "Fedora リリースカウンタをあなたのサイトで表示させるには、以下のコードをお好きなところに記述して下さい。"
 
 #: data/content/counter.html:18
-msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk, and sr are supported.  When no language is specified, English will be used."
+#, fuzzy
+msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values en and it are supported.  When no language is specified, English will be used."
 msgstr "\"lang\" パラメータを編集することによって、どの言語でカウンタを表示するか指定することができます。現在、\"de\"(ドイツ語)、\"en\"(英語)、\"fi\"(フィンランド語)、\"fr\"(フランス語)、\"he\"(ヘブライ語)、\"hu\"(ハンガリー語)、\"is\"(アイスランド語)、\"it\"(イタリア語)、\"pt_BR\"(ブラジルのポルトガル語)、\"ro\"(ロシア語)、\"sk\"(スロバキア語)、\"sr\"(セルビア語)がサポートされています。何も指定しないと、英語で表示されます。"
 
 #: data/content/get-fedora.html:12 data/content/get-prerelease.html:12
@@ -670,77 +671,90 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/Legal/TrademarkGuidelines\">登�
 msgid "Fedora"
 msgstr "Fedora"
 
-#: data/templates/sidebar.html:9
-msgid "Fedora 9 Sulphur is here!"
-msgstr "Fedora 9 Sulfur がやって来た!"
+#: data/templates/sidebar.html:26
+#, python-format
+msgid "%s/static/images/counter/%s"
+msgstr "%s/static/images/counter/%s"
 
-#: data/templates/sidebar.html:13
+#: data/templates/sidebar.html:26
+#, python-format
+msgid "Fedora 10 Cambridge released in %s days!"
+msgstr ""
+
+#: data/templates/sidebar.html:27
+msgid "Add a counter to your own site!"
+msgstr "あなたのサイトにカウンターを貼ろう!"
+
+#: data/templates/sidebar.html:30
 msgid "Navigation"
 msgstr "ナビゲーション"
 
-#: data/templates/sidebar.html:15
+#: data/templates/sidebar.html:32
 msgid "Home"
 msgstr "ホーム"
 
-#: data/templates/sidebar.html:16
+#: data/templates/sidebar.html:33
 msgid "Get Fedora"
 msgstr "Fedora を入手"
 
-#: data/templates/sidebar.html:17
+#: data/templates/sidebar.html:34
 msgid "Join Fedora"
 msgstr "Fedora に参加"
 
-#: data/templates/sidebar.html:18
+#: data/templates/sidebar.html:35
 msgid "Get Help"
 msgstr ""
 
-#: data/templates/sidebar.html:20
+#: data/templates/sidebar.html:37
 msgid "Tools"
 msgstr "ツール"
 
-#: data/templates/sidebar.html:22
+#: data/templates/sidebar.html:39
 msgid "Docs"
 msgstr "各種文書"
 
-#: data/templates/sidebar.html:22
+#: data/templates/sidebar.html:39
 msgid "Fedora documentation."
 msgstr "Fedora に関する文書"
 
-#: data/templates/sidebar.html:23
+#: data/templates/sidebar.html:40
 msgid "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/ja_JP\">Wiki</a>"
 
-#: data/templates/sidebar.html:23
+#: data/templates/sidebar.html:40
 msgid "Collaborative knowledge."
 msgstr "知識の共有"
 
-#: data/templates/sidebar.html:24
+#: data/templates/sidebar.html:41
 msgid "Planet"
 msgstr "Planet"
 
-#: data/templates/sidebar.html:24
+#: data/templates/sidebar.html:41
 msgid "The voices of the Fedora community."
 msgstr "Fedora な人々の声"
 
-#: data/templates/sidebar.html:25
+#: data/templates/sidebar.html:42
 msgid "<a href=\"http://fedoraproject.org/wiki/Communicate\">Communicate</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Communicate\">交流</a>"
 
-#: data/templates/sidebar.html:25
+#: data/templates/sidebar.html:42
 msgid "Speak with Fedora."
 msgstr "Fedora を肴にお喋り"
 
-#: data/templates/sidebar.html:26
+#: data/templates/sidebar.html:43
 msgid "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Events</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">イベント</a>"
 
-#: data/templates/sidebar.html:26
+#: data/templates/sidebar.html:43
 msgid "Meet the Fedora community."
 msgstr "Fedora コミュニティとの出会い"
 
-#: data/templates/sidebar.html:28
+#: data/templates/sidebar.html:45
 msgid "Website Language"
 msgstr "他の言語を選択"
+
+#~ msgid "Fedora 9 Sulphur is here!"
+#~ msgstr "Fedora 9 Sulfur がやって来た!"
 
 #~ msgid "Live DVD"
 #~ msgstr "ライブ DVD"
@@ -774,9 +788,3 @@ msgstr "他の言語を選択"
 
 #~ msgid "Fedora 9.  Infinite Possibilities."
 #~ msgstr "無限の可能性を。Fedora 9"
-
-#~ msgid "%s/static/images/counter/%s"
-#~ msgstr "%s/static/images/counter/%s"
-
-#~ msgid "Add a counter to your own site!"
-#~ msgstr "あなたのサイトにカウンターを貼ろう!"

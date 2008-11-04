@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-03 13:10-0500\n"
+"POT-Creation-Date: 2008-11-04 09:58-0500\n"
 "PO-Revision-Date: 2008-10-17 17:56+0300\n"
 "Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
 "Language-Team: Finnish <laatu@lokalisointi.org>\n"
@@ -117,7 +117,8 @@ msgid "To add a Fedora Release counter to your own site, simply place the follow
 msgstr "Lisätäksesi Fedora-julkaisulaskurin omalle sivullesi, laita seuraava koodi siihen, missä haluat laskurin näkyvän:"
 
 #: data/content/counter.html:18
-msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk, and sr are supported.  When no language is specified, English will be used."
+#, fuzzy
+msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values en and it are supported.  When no language is specified, English will be used."
 msgstr "Lang-parametria voidaan muuttaa laskurin näyttämiseksi eri kielellä. Tällä hetkellä tuetaan arvoja de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk ja sr. Kun kieltä ei ole määritelty, käytetään englantia."
 
 #: data/content/get-fedora.html:12 data/content/get-prerelease.html:12
@@ -656,77 +657,90 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/Legal/TrademarkGuidelines\">Tava
 msgid "Fedora"
 msgstr "Fedora"
 
-#: data/templates/sidebar.html:9
-msgid "Fedora 9 Sulphur is here!"
-msgstr "Fedora 9 Sulphur on täällä!"
+#: data/templates/sidebar.html:26
+#, python-format
+msgid "%s/static/images/counter/%s"
+msgstr "%s/static/images/counter/%s"
 
-#: data/templates/sidebar.html:13
+#: data/templates/sidebar.html:26
+#, fuzzy, python-format
+msgid "Fedora 10 Cambridge released in %s days!"
+msgstr "Fedora 9 Sulfur julkaistaan %s päivän kuluttua!"
+
+#: data/templates/sidebar.html:27
+msgid "Add a counter to your own site!"
+msgstr "Lisää laskuri omalle sivullesi!"
+
+#: data/templates/sidebar.html:30
 msgid "Navigation"
 msgstr "Navigointi"
 
-#: data/templates/sidebar.html:15
+#: data/templates/sidebar.html:32
 msgid "Home"
 msgstr "Koti"
 
-#: data/templates/sidebar.html:16
+#: data/templates/sidebar.html:33
 msgid "Get Fedora"
 msgstr "Hanki Fedora"
 
-#: data/templates/sidebar.html:17
+#: data/templates/sidebar.html:34
 msgid "Join Fedora"
 msgstr "Liity Fedoraan"
 
-#: data/templates/sidebar.html:18
+#: data/templates/sidebar.html:35
 msgid "Get Help"
 msgstr "Hanki ohjeita"
 
-#: data/templates/sidebar.html:20
+#: data/templates/sidebar.html:37
 msgid "Tools"
 msgstr "Työkalut"
 
-#: data/templates/sidebar.html:22
+#: data/templates/sidebar.html:39
 msgid "Docs"
 msgstr "Dokumentaatio"
 
-#: data/templates/sidebar.html:22
+#: data/templates/sidebar.html:39
 msgid "Fedora documentation."
 msgstr "Fedoran dokumentaatio."
 
-#: data/templates/sidebar.html:23
+#: data/templates/sidebar.html:40
 msgid "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 
-#: data/templates/sidebar.html:23
+#: data/templates/sidebar.html:40
 msgid "Collaborative knowledge."
 msgstr "Yhteistä tietoa."
 
-#: data/templates/sidebar.html:24
+#: data/templates/sidebar.html:41
 msgid "Planet"
 msgstr "Planeetta"
 
-#: data/templates/sidebar.html:24
+#: data/templates/sidebar.html:41
 msgid "The voices of the Fedora community."
 msgstr "Fedora-yhteisön äänet."
 
-#: data/templates/sidebar.html:25
+#: data/templates/sidebar.html:42
 msgid "<a href=\"http://fedoraproject.org/wiki/Communicate\">Communicate</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Communicate\">Yhteydenpito</a>"
 
-#: data/templates/sidebar.html:25
+#: data/templates/sidebar.html:42
 msgid "Speak with Fedora."
 msgstr "Keskustele Fedoran kanssa."
 
-#: data/templates/sidebar.html:26
+#: data/templates/sidebar.html:43
 msgid "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Events</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Tapahtumat</a>"
 
-#: data/templates/sidebar.html:26
+#: data/templates/sidebar.html:43
 msgid "Meet the Fedora community."
 msgstr "Tapaa Fedora-yhteisö."
 
-#: data/templates/sidebar.html:28
+#: data/templates/sidebar.html:45
 msgid "Website Language"
 msgstr "Sivuston kieli"
+
+#~ msgid "Fedora 9 Sulphur is here!"
+#~ msgstr "Fedora 9 Sulphur on täällä!"
 
 #~ msgid "5years-banner-large.png"
 #~ msgstr "5years-banner-large.png"
@@ -766,15 +780,6 @@ msgstr "Sivuston kieli"
 
 #~ msgid "Fedora 9.  Infinite Possibilities."
 #~ msgstr "Fedora 9.  Äärettömiä mahdollisuuksia."
-
-#~ msgid "%s/static/images/counter/%s"
-#~ msgstr "%s/static/images/counter/%s"
-
-#~ msgid "Fedora 9 Sulfur released in %s days!"
-#~ msgstr "Fedora 9 Sulfur julkaistaan %s päivän kuluttua!"
-
-#~ msgid "Add a counter to your own site!"
-#~ msgstr "Lisää laskuri omalle sivullesi!"
 
 #, fuzzy
 #~ msgid "Looking forward to Fedora 9?  Read the Beta release notes."

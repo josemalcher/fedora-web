@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master.it\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-03 13:10-0500\n"
+"POT-Creation-Date: 2008-11-04 09:58-0500\n"
 "PO-Revision-Date: 2008-07-25 16:36+0200\n"
 "Last-Translator: Francesco Tombolini <tombo@adamantio.net>\n"
 "Language-Team: Italiano <fedora-trans-it@redhat.com>\n"
@@ -125,7 +125,8 @@ msgid "To add a Fedora Release counter to your own site, simply place the follow
 msgstr "Per aggiungere un contatore di Release Fedora al proprio sito, copiare il seguente codice dove si desidera che appaia il contatore:"
 
 #: data/content/counter.html:18
-msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk, and sr are supported.  When no language is specified, English will be used."
+#, fuzzy
+msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values en and it are supported.  When no language is specified, English will be used."
 msgstr "Il parametro lang può essere cambiato per mostrare il contatore in una lingua differente.  Attualmente, sono supportati i valori de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk, ed sr.  Quando non è specificato alcun linguaggio, verrà utilizzato l'inglese."
 
 #: data/content/get-fedora.html:12 data/content/get-prerelease.html:12
@@ -668,77 +669,90 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/Legal/TrademarkGuidelines\">Line
 msgid "Fedora"
 msgstr "Fedora"
 
-#: data/templates/sidebar.html:9
-msgid "Fedora 9 Sulphur is here!"
-msgstr "Fedora 9 Sulphur è qui!"
+#: data/templates/sidebar.html:26
+#, python-format
+msgid "%s/static/images/counter/%s"
+msgstr ""
 
-#: data/templates/sidebar.html:13
+#: data/templates/sidebar.html:26
+#, python-format
+msgid "Fedora 10 Cambridge released in %s days!"
+msgstr ""
+
+#: data/templates/sidebar.html:27
+msgid "Add a counter to your own site!"
+msgstr ""
+
+#: data/templates/sidebar.html:30
 msgid "Navigation"
 msgstr "Navigazione"
 
-#: data/templates/sidebar.html:15
+#: data/templates/sidebar.html:32
 msgid "Home"
 msgstr "Home"
 
-#: data/templates/sidebar.html:16
+#: data/templates/sidebar.html:33
 msgid "Get Fedora"
 msgstr "Ottenere Fedora"
 
-#: data/templates/sidebar.html:17
+#: data/templates/sidebar.html:34
 msgid "Join Fedora"
 msgstr "Partecipare a Fedora"
 
-#: data/templates/sidebar.html:18
+#: data/templates/sidebar.html:35
 msgid "Get Help"
 msgstr "Ottenere aiuto"
 
-#: data/templates/sidebar.html:20
+#: data/templates/sidebar.html:37
 msgid "Tools"
 msgstr "Strumenti"
 
-#: data/templates/sidebar.html:22
+#: data/templates/sidebar.html:39
 msgid "Docs"
 msgstr "Documenti"
 
-#: data/templates/sidebar.html:22
+#: data/templates/sidebar.html:39
 msgid "Fedora documentation."
 msgstr "Documentazione Fedora."
 
-#: data/templates/sidebar.html:23
+#: data/templates/sidebar.html:40
 msgid "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/it_IT/\">Wiki</a>"
 
-#: data/templates/sidebar.html:23
+#: data/templates/sidebar.html:40
 msgid "Collaborative knowledge."
 msgstr "Conoscenza collaborativa."
 
-#: data/templates/sidebar.html:24
+#: data/templates/sidebar.html:41
 msgid "Planet"
 msgstr "Pianeta"
 
-#: data/templates/sidebar.html:24
+#: data/templates/sidebar.html:41
 msgid "The voices of the Fedora community."
 msgstr "Le voci della comunità Fedora."
 
-#: data/templates/sidebar.html:25
+#: data/templates/sidebar.html:42
 msgid "<a href=\"http://fedoraproject.org/wiki/Communicate\">Communicate</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/it_IT/Communicate\">Comunicare</a>"
 
-#: data/templates/sidebar.html:25
+#: data/templates/sidebar.html:42
 msgid "Speak with Fedora."
 msgstr "Parlare con Fedora"
 
-#: data/templates/sidebar.html:26
+#: data/templates/sidebar.html:43
 msgid "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Events</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Eventi</a>"
 
-#: data/templates/sidebar.html:26
+#: data/templates/sidebar.html:43
 msgid "Meet the Fedora community."
 msgstr "Incontra la comunità Fedora."
 
-#: data/templates/sidebar.html:28
+#: data/templates/sidebar.html:45
 msgid "Website Language"
 msgstr "Linguaggio del sito"
+
+#~ msgid "Fedora 9 Sulphur is here!"
+#~ msgstr "Fedora 9 Sulphur è qui!"
 
 #~ msgid "5years-banner-large.png"
 #~ msgstr "5years-banner-large.it.png"

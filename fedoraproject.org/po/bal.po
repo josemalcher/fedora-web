@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master.bal\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-03 13:10-0500\n"
+"POT-Creation-Date: 2008-11-04 09:58-0500\n"
 "PO-Revision-Date: 2008-05-10 15:14+0430\n"
 "Last-Translator: Mostafa Daneshvar <mostafa@daneshvar.org.uk>\n"
 "Language-Team:  <fedora-trans-bal@redhat.com>\n"
@@ -126,7 +126,8 @@ msgid "To add a Fedora Release counter to your own site, simply place the follow
 msgstr "په هور کتن یک کنتور نشر فدور په وتی سایت، راحت جهلیگی خطآ هر جایی که شما لوٹیت آی جاه کیت کپی کنیت:"
 
 #: data/content/counter.html:18
-msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk, and sr are supported.  When no language is specified, English will be used."
+#, fuzzy
+msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values en and it are supported.  When no language is specified, English will be used."
 msgstr "پارامتر زبان په پیش دارگ کتنور په یک متفاوتین زبانی تونیت عوض بیت. هنو ارزشآن de, en, fi, fr, he, is, pt_BR, ro, sk وsr  حمایت بنت. وهدی که زبانی مشخص مبیت انگلیسی کامرز بیت"
 
 #: data/content/get-fedora.html:12 data/content/get-prerelease.html:12
@@ -673,77 +674,90 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/Legal/TrademarkGuidelines\">ره
 msgid "Fedora"
 msgstr "فدورا"
 
-#: data/templates/sidebar.html:9
-msgid "Fedora 9 Sulphur is here!"
-msgstr "فدورا 9 سولفور اداننت!"
+#: data/templates/sidebar.html:26
+#, python-format
+msgid "%s/static/images/counter/%s"
+msgstr ""
 
-#: data/templates/sidebar.html:13
+#: data/templates/sidebar.html:26
+#, python-format
+msgid "Fedora 10 Cambridge released in %s days!"
+msgstr ""
+
+#: data/templates/sidebar.html:27
+msgid "Add a counter to your own site!"
+msgstr ""
+
+#: data/templates/sidebar.html:30
 msgid "Navigation"
 msgstr "گردگ"
 
-#: data/templates/sidebar.html:15
+#: data/templates/sidebar.html:32
 msgid "Home"
 msgstr "لوگ"
 
-#: data/templates/sidebar.html:16
+#: data/templates/sidebar.html:33
 msgid "Get Fedora"
 msgstr "گرگ فدورا"
 
-#: data/templates/sidebar.html:17
+#: data/templates/sidebar.html:34
 msgid "Join Fedora"
 msgstr "هور فدورا بوگ"
 
-#: data/templates/sidebar.html:18
+#: data/templates/sidebar.html:35
 msgid "Get Help"
 msgstr ""
 
-#: data/templates/sidebar.html:20
+#: data/templates/sidebar.html:37
 msgid "Tools"
 msgstr "وسایل"
 
-#: data/templates/sidebar.html:22
+#: data/templates/sidebar.html:39
 msgid "Docs"
 msgstr "نوشتانک"
 
-#: data/templates/sidebar.html:22
+#: data/templates/sidebar.html:39
 msgid "Fedora documentation."
 msgstr "نوشتاک فدورا"
 
-#: data/templates/sidebar.html:23
+#: data/templates/sidebar.html:40
 msgid "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/\">وی کی</a>"
 
-#: data/templates/sidebar.html:23
+#: data/templates/sidebar.html:40
 msgid "Collaborative knowledge."
 msgstr "هورگی زانگ"
 
-#: data/templates/sidebar.html:24
+#: data/templates/sidebar.html:41
 msgid "Planet"
 msgstr "سیارگ"
 
-#: data/templates/sidebar.html:24
+#: data/templates/sidebar.html:41
 msgid "The voices of the Fedora community."
 msgstr "توران انجمن فدورا"
 
-#: data/templates/sidebar.html:25
+#: data/templates/sidebar.html:42
 msgid "<a href=\"http://fedoraproject.org/wiki/Communicate\">Communicate</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Communicate\">ارتباط کنگ</a>"
 
-#: data/templates/sidebar.html:25
+#: data/templates/sidebar.html:42
 msgid "Speak with Fedora."
 msgstr "گون فدورا هبر کنیت"
 
-#: data/templates/sidebar.html:26
+#: data/templates/sidebar.html:43
 msgid "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Events</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">رویداد</a>"
 
-#: data/templates/sidebar.html:26
+#: data/templates/sidebar.html:43
 msgid "Meet the Fedora community."
 msgstr "گندوک گون انجمن فدورا"
 
-#: data/templates/sidebar.html:28
+#: data/templates/sidebar.html:45
 msgid "Website Language"
 msgstr "زبان سایت"
+
+#~ msgid "Fedora 9 Sulphur is here!"
+#~ msgstr "فدورا 9 سولفور اداننت!"
 
 #~ msgid "Live DVD"
 #~ msgstr "دی وی دی لایو"

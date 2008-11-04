@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Website\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-03 13:10-0500\n"
+"POT-Creation-Date: 2008-11-04 09:58-0500\n"
 "PO-Revision-Date: 2008-05-07 17:23+0200\n"
 "Last-Translator: Pavol Šimo <palo.simo@gmail.com>\n"
 "Language-Team: Fedora Slovak Translation team <trans-list-sk@redhat.com>\n"
@@ -123,7 +123,8 @@ msgid "To add a Fedora Release counter to your own site, simply place the follow
 msgstr "Ak chcete pridať na svoje stránky počítadlo vydania Fedory, jednoducho pridajte nasledujúci kód tam, kde ho chcete mať:"
 
 #: data/content/counter.html:18
-msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, fi, fr, he, hu, is, it, pt_BR, ro, sk, and sr are supported.  When no language is specified, English will be used."
+#, fuzzy
+msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values en and it are supported.  When no language is specified, English will be used."
 msgstr "Parameter lang môže byť zmenený na zobrazenie počítadla v inom jazyku. Momentálne sú podporované hodnoty de, en, fi, fr, he, is, it, pt_BR, ro, sk a sr. Ak nebude určený žiaden jazyk, použije sa anglický."
 
 #: data/content/get-fedora.html:12 data/content/get-prerelease.html:12
@@ -671,77 +672,90 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/Legal/TrademarkGuidelines\">Smer
 msgid "Fedora"
 msgstr "Fedora"
 
-#: data/templates/sidebar.html:9
-msgid "Fedora 9 Sulphur is here!"
-msgstr "Fedora 9 Sulphur je tu!"
+#: data/templates/sidebar.html:26
+#, python-format
+msgid "%s/static/images/counter/%s"
+msgstr "%s/static/images/counter/%s"
 
-#: data/templates/sidebar.html:13
+#: data/templates/sidebar.html:26
+#, fuzzy, python-format
+msgid "Fedora 10 Cambridge released in %s days!"
+msgstr "Fedora 9 Sulfur vyjde o %s dní!"
+
+#: data/templates/sidebar.html:27
+msgid "Add a counter to your own site!"
+msgstr "Pridaj toto počítadlo na svoju stránku!"
+
+#: data/templates/sidebar.html:30
 msgid "Navigation"
 msgstr "Navigácia"
 
-#: data/templates/sidebar.html:15
+#: data/templates/sidebar.html:32
 msgid "Home"
 msgstr "Domov"
 
-#: data/templates/sidebar.html:16
+#: data/templates/sidebar.html:33
 msgid "Get Fedora"
 msgstr "Získajte Fedoru"
 
-#: data/templates/sidebar.html:17
+#: data/templates/sidebar.html:34
 msgid "Join Fedora"
 msgstr "Pridajte sa k Fedore"
 
-#: data/templates/sidebar.html:18
+#: data/templates/sidebar.html:35
 msgid "Get Help"
 msgstr ""
 
-#: data/templates/sidebar.html:20
+#: data/templates/sidebar.html:37
 msgid "Tools"
 msgstr "Nástroje"
 
-#: data/templates/sidebar.html:22
+#: data/templates/sidebar.html:39
 msgid "Docs"
 msgstr "Dokumentácia"
 
-#: data/templates/sidebar.html:22
+#: data/templates/sidebar.html:39
 msgid "Fedora documentation."
 msgstr "Dokumentácia Fedory"
 
-#: data/templates/sidebar.html:23
+#: data/templates/sidebar.html:40
 msgid "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 
-#: data/templates/sidebar.html:23
+#: data/templates/sidebar.html:40
 msgid "Collaborative knowledge."
 msgstr "Kolektívna zbierka znalostí"
 
-#: data/templates/sidebar.html:24
+#: data/templates/sidebar.html:41
 msgid "Planet"
 msgstr "Planéta"
 
-#: data/templates/sidebar.html:24
+#: data/templates/sidebar.html:41
 msgid "The voices of the Fedora community."
 msgstr "Ohlasy komunity"
 
-#: data/templates/sidebar.html:25
+#: data/templates/sidebar.html:42
 msgid "<a href=\"http://fedoraproject.org/wiki/Communicate\">Communicate</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Communicate\">Komunikujte</a>"
 
-#: data/templates/sidebar.html:25
+#: data/templates/sidebar.html:42
 msgid "Speak with Fedora."
 msgstr "Porozprávajte sa s Fedorou"
 
-#: data/templates/sidebar.html:26
+#: data/templates/sidebar.html:43
 msgid "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Events</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Udalosti</a>"
 
-#: data/templates/sidebar.html:26
+#: data/templates/sidebar.html:43
 msgid "Meet the Fedora community."
 msgstr "Stretnutia s komunitou Fedory"
 
-#: data/templates/sidebar.html:28
+#: data/templates/sidebar.html:45
 msgid "Website Language"
 msgstr "Jazyk WWW stránok"
+
+#~ msgid "Fedora 9 Sulphur is here!"
+#~ msgstr "Fedora 9 Sulphur je tu!"
 
 #~ msgid "Live DVD"
 #~ msgstr "Live DVD"
@@ -775,15 +789,6 @@ msgstr "Jazyk WWW stránok"
 
 #~ msgid "Fedora 9.  Infinite Possibilities."
 #~ msgstr "Fedora 9. Nekonečné možnosti."
-
-#~ msgid "%s/static/images/counter/%s"
-#~ msgstr "%s/static/images/counter/%s"
-
-#~ msgid "Fedora 9 Sulfur released in %s days!"
-#~ msgstr "Fedora 9 Sulfur vyjde o %s dní!"
-
-#~ msgid "Add a counter to your own site!"
-#~ msgstr "Pridaj toto počítadlo na svoju stránku!"
 
 #~ msgid "Looking forward to Fedora 9?  Read the Beta release notes."
 #~ msgstr "Očakávate Fedoru 9? Prečítajte si poznámky k vydaniu Beta."
