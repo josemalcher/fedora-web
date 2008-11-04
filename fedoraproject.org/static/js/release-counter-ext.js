@@ -1,8 +1,8 @@
-var available_langs = [ "bal", "de", "en", "fi", "fr", "he", "hu", "is", "it", "ja", "pt_BR", "ro", "sk", "sr" ];
+var available_langs = [ "en" ];
 
 
 var today = new Date();
-var release = new Date("May 13, 2008 14:00:00 UTC");
+var release = new Date("November 25, 2008 14:00:00 UTC");
 var millisBetweenDates = release - today;
 var days = Math.ceil(millisBetweenDates/1000/60/60/24);
 
@@ -19,24 +19,26 @@ if (lang_match) {
     }
 }
 
-var url = "http://fedoraproject.org/wiki/Releases/9/Schedule"
+var url = "http://fedoraproject.org/wiki/Releases/10/Schedule";
 
 var banner = document.createElement('div');
 
 var bannerlink = document.createElement('a');
-bannerlink.setAttribute("href", url);
 
 var bannerimg = document.createElement("img");
 bannerimg.style.border = "none";
 
 if (days <= 0) {
     // TODO: Get an actual image here!
-    bannerimg.setAttribute("src", "http://fedoraproject.org/static/images/banners/f9release.png");
-    bannerimg.setAttribute("alt", "Fedora 9 is here!");
+    bannerimg.setAttribute("src", "http://fedoraproject.org/static/images/banners/f10release.png");
+    bannerimg.setAttribute("alt", "Fedora 10 is here!");
+    url = "http://fedoraproject.org/get-fedora";
 } else {
-    bannerimg.setAttribute("src", "http://fedoraproject.org/static/images/counter/" + lang + "/fedora9-countdown-" + (days < 10? '0' + days : days) + "." + lang + ".png");
-    bannerimg.setAttribute("alt", "Fedora 9 Sulfur released in " + days + " days.");
+    bannerimg.setAttribute("src", "http://fedoraproject.org/static/images/counter/" + lang + "/fedora10-countdown-banner-" + days + "." + lang + "." + "png");
+    bannerimg.setAttribute("alt", "Fedora 10 Cambridge released in " + days + " days.");
 }
+
+bannerlink.setAttribute("href", url);
 
 bannerlink.appendChild(bannerimg);
 banner.appendChild(bannerlink);
