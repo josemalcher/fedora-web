@@ -122,7 +122,7 @@ pre
 #content
 {
   margin-left: 250px;
-  padding: 1ex 2ex 120px;
+  padding: 2ex 2ex 120px;
   color: #666666;
   background: #FFFFFF;
   display: inline-block;
@@ -328,9 +328,9 @@ input, textarea, option
   overflow: hidden;
   list-style: none;
   padding: 10px 15px 10px 20px;
-  border-radius: 1.5ex;
-  -webkit-border-radius: 1.5ex;
-  -moz-border-radius: 1.5ex;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
   background: #C0DBDD 30px 50% no-repeat;
   font-size: 0.9em;
   display: inline-block;
@@ -438,113 +438,115 @@ ul#resources li.resource-download
   padding-top: 1ex;
 }
 
-.darker 
-{
-  font-weight:bold;
-}
-
-
-.left-side 
-{
-  float:left;
-  
-  padding-top:20px;
-
-}
-
-ul.selection li {
-  list-style:none;
-  margin-top:10px;
-  margin-bottom:10px;
-  margin-left:100px;
-  margin-right:0px;
-
-}
-.cleared
-{
-  clear:both;
-}
-a {
- color:black;
-}
-#content .download-button
-{
-  font-size:2.2ex;
-  color: #666666;
-  display:block;
-  width:200px;  
-  height:50px;
-  margin:10px;
-  padding: 3px 4px 3px 55px;
-  float:left;
-  text-decoration:none;
-  background:url(../images/arrow-down.png) 0% 50% no-repeat;
-  font-weight:bold;
-  
-}
-.download-button span 
-{
- color: #666666;
- font-size:1.3ex;
- font-weight:normal;
-}
 #content a
 {
   color: #337ACC;
 }
 
-.nopossible{
-  color: #cccccc;
-  
+/* get-fedora styles */
+
+.download-block .button:hover {
+  background-color: #9ECFFF !important;
 }
 
-#centered 
-{
- width:60%;
- min-width:30%;
- padding-right:40px;
- float:left;
+.download-block {
+  overflow: auto;
+  padding: 1.5em 2em;
+  margin-right: 24%;
 }
 
-#rightside 
-{
-  margin-left:67%;
-  width:30%;
-  padding-left:20px;
-  padding-bottom:100px;
+.download-sidebar {
+  float: right;
+  width: 22%;
+}
 
- }
- 
- #rightside li
- {
-   list-style:none; 
-   background: url(../images/arrow.png) 0 50% no-repeat;
-   padding-left:20px;
- }
+.download-sidebar a {
+  font-size: 1.5em;
+  display: block;
+  padding: 1em;
+  margin: 1em 0;
+}
 
-#rightside li a
-{
-  font-weight:bold;
-  font-size:2ex;
+#upgrade {
+  background-color: #F0F0F0!important;
+}
+
+.download-block h3 {
+  margin-top: 0!important;
+}
+
+
+.download-block em.byline {
+  display: block;
+  color: #999999;
+  font-size: 0.8em;
+}
+
+.download-block .button {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  color: #FFFFFF!important;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 3;
+  margin: 0;
+  padding: 0.4em 0.5em;
+  border: 1px solid #446382;
+  background-color: #5F94C9 !important;
+  margin-top: 0.9em;
+
+}
+
+.download-block .fine-print {
+  font-size: xx-small !important;
+  color: #999999;
+  font-style: italic;
+}
+
+.resources-pane {
+  float: right;
+  background-color: #E5E5E5;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  margin-left: 1em;
+}
+
+.download-block p img {
+  float: left;
+  margin-right: 1.4em !important;
 }
 
 /** sidebar boxes for get-fedora **/
 
-div.download-sidebar a {
+.download-sidebar a {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
-  background: #337acc url(http://localhost:5000/en/static/images/gradient_bg.png) repeat-x;
+  background: #337ACC url(../images/gradient_bg.png) repeat-x;
 }
 
-div.download-sidebar a#kde-banner {
-  background: #1855a2 url(http://localhost:5000/en/static/images/gradient_bg.png) repeat-x;
+.download-sidebar a.even {
+    background-color: #1855A2;
 }
 
-div.download-sidebar a:link,
-div.download-sidebar a:active,
-div.download-sidebar a:visited {
-  color: white;
+.download-sidebar a:hover {
+    background-color: #1158AA;
+}
+
+.download-sidebar a.even:hover {
+    background-color: #074491;
+}
+
+.download-sidebar a:link,
+.download-sidebar a:active,
+.download-sidebar a:visited {
+  color: #FFFFFF!important;
   font-size: medium;
   text-decoration: none;
   font-weight: bold;
-  line-height: 18px;
+  line-height: 1.5;
 }
+
