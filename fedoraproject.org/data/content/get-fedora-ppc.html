@@ -7,9 +7,11 @@
         <title>${Markup(_('Fedora Project'))}</title>
     </head>
     <body class="get">
+        <div id="breadcrumbs">
+            <a href="${path}/${lang}/get-fedora">${Markup(_('&amp;#8592; Back to the main "Get Fedora" page'))}</a>
+        </div>
         <h2>${Markup(_('Fedora, For You.'))}</h2>
         <div class="download-sidebar" >
-            <a id="desktop-banner" href="${path}/${lang}/get-fedora">${_('Desktop Live CD or Install DVD')}</a>
             <a id="kde-banner" href="${path}/${lang}/get-fedora-kde" class="even">${_('KDE fans, go here!')}</a>
             <a id="advanced-banner" href="${path}/${lang}/get-fedora-all">${_('Show me all download options in one page!')}</a>
         </div>
@@ -31,11 +33,11 @@
             ${Markup(_('This is everything you need to install or upgrade to Fedora 10 on PowerPC machines!'))}
             </p>
             <p class="fine-print">
-            ${Markup(_('4.3GB, ISO format, 1 DVD disc image for PowerPC-compatible PCs'))} | <strong>${Markup(_('&lt;a href="http://docs.fedoraproject.org/install-guide/f10/en_US/sn-making-media.html"&gt;How do I use this file?&lt;/a&gt;'))}</strong>
+            ${Markup(_('4.3GB, ISO format, 1 DVD disc image for PowerPC-compatible computers'))} | <strong>${Markup(_('&lt;a href="http://docs.fedoraproject.org/install-guide/f10/en_US/sn-making-media.html"&gt;How do I use this file?&lt;/a&gt;'))}</strong>
             </p>
             <a href="http://download.fedoraproject.org/pub/fedora/linux/releases/10/Fedora/i386/iso/Fedora-10-i386-DVD.iso" class="button">${Markup(_('Download Now!'))}</a>
         </div>
-        <div class="download-block">
+        <div class="download-block" id="other">
             <h3>${Markup(_('Other Download Options'))}</h3>
             <h4>${Markup(_('Let me look around...'))}</h4>
             <ul class="download">

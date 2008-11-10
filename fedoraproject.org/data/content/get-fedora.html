@@ -9,13 +9,13 @@
     <body class="get">
         <h2>${Markup(_('Fedora, For You.'))}</h2>
         <div class="download-sidebar" >
-            <a id="ppc-banner" href="${path}/${lang}/get-fedora-ppc">${_('Need PPC?  Go here!')}</a>
-            <a id="kde-banner" href="${path}/${lang}/get-fedora-kde" class="even">${_('KDE fans, go here!')}</a>
-            <a id="advanced-banner" href="${path}/${lang}/get-fedora-all">${_('Show me all download options in one page!')}</a>
+            <a id="kde-banner" href="${path}/${lang}/get-fedora-kde" class="even"><span>${_('KDE fans, go here!')}</span></a>
+            <a id="ppc-banner" href="${path}/${lang}/get-fedora-ppc"><span>${_('Need PPC?  Go here!')}</span></a>
+            <a id="advanced-banner" href="${path}/${lang}/get-fedora-all"><span>${_('Show me all download options in one page!')}</span></a>
         </div>
 
         <div class="download-block" id="new">
-            <h3>${Markup(_('Get Fedora 10 Desktop Edition Now &lt;em class="byline"&gt;Live Media Enabled!&lt;/em&gt;'))}</h3>
+            <h3>${Markup(_('Get Fedora 10 Desktop Edition Now &lt;em class="byline"&gt;Installable Live CD&lt;/em&gt;'))}</h3>
             <div class="resources-pane">
                 <h4>${Markup(_('Resources'))}</h4>
                 <ul>
@@ -34,7 +34,7 @@
             <a href="http://download.fedoraproject.org/pub/fedora/linux/releases/10/Live/i686/Fedora-10-i686-Live.iso" class="button">${Markup(_('Download Now!'))}</a>
         </div>
         <div class="download-block" id="upgrade">
-            <h3>${Markup(_('Upgrade to Fedora 10 from an Older Fedora'))}</h3>
+            <h3>${Markup(_('Upgrade to Fedora 10 from an older version'))}</h3>
             <div class="resources-pane">
                 <h4>${Markup(_('Resources'))}</h4>
                 <ul>
@@ -52,7 +52,7 @@
             </p>
             <a href="http://download.fedoraproject.org/pub/fedora/linux/releases/10/Fedora/i386/iso/Fedora-10-i386-DVD.iso" class="button">${Markup(_('Download Now!'))}</a>
         </div>
-        <div class="download-block">
+        <div class="download-block" id="other">
             <h3>${Markup(_('Other Download Options'))}</h3>
             <h4>${Markup(_('Let me look around...'))}</h4>
             <ul class="download">

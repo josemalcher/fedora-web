@@ -122,7 +122,7 @@ pre
 #content
 {
   margin-left: 250px;
-  padding: 2ex 2ex 120px;
+  padding: 1.5ex 2ex 120px;
   color: #666666;
   background: #FFFFFF;
   display: inline-block;
@@ -450,14 +450,15 @@ ul#resources li.resource-download
 }
 
 .download-block {
-  overflow: auto;
+  overflow: hidden;
   padding: 1.5em 2em;
-  margin-right: 24%;
+  margin-right: 23em;
 }
 
 .download-sidebar {
   float: right;
-  width: 22%;
+  width: 21em;
+  margin-left: 2em;
 }
 
 .download-sidebar a {
@@ -467,7 +468,8 @@ ul#resources li.resource-download
   margin: 1em 0;
 }
 
-#upgrade {
+#other {
+  margin-top: 2ex;
   background-color: #F0F0F0!important;
 }
 
@@ -526,6 +528,10 @@ ul#resources li.resource-download
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   background: #337ACC url(../images/gradient_bg.png) repeat-x;
+  display: block;
+}
+
+#kde-banner span {
 }
 
 .download-sidebar a.even {
@@ -550,3 +556,14 @@ ul#resources li.resource-download
   line-height: 1.5;
 }
 
+#breadcrumbs {
+  border-bottom: 1px solid #DDDDDD;
+  margin-bottom: 1ex;
+  margin-right: 24%;
+}
+
+#breadcrumbs a {
+  text-decoration: none;
+  font-size: 1em;
+  color: #7788DD;
+}
