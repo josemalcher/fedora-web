@@ -1,4 +1,4 @@
-var available_langs = [ "en" ];
+var available_langs = [ "en", "es", "it", "pt_BR" ];
 
 
 var today = new Date();
