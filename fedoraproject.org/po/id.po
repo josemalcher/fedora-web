@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Project Web Site\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-10 02:52-0500\n"
+"POT-Creation-Date: 2008-11-10 03:12-0500\n"
 "PO-Revision-Date: 2008-05-08 18:18+0700\n"
 "Last-Translator: Dapid Candra <dapidc@gmail.com>\n"
 "Language-Team: Indonesian <fedora-trans-id@redhat.com>\n"
@@ -333,7 +333,7 @@ msgstr ""
 
 #: data/content/get-fedora-kde.html:34 data/content/get-fedora-ppc.html:34
 #: data/content/get-fedora.html:32 data/content/get-fedora.html:51
-msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f9/en_US/sn-making-media.html\">How do I use this file?</a>"
+msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/sn-making-media.html\">How do I use this file?</a>"
 msgstr ""
 
 #: data/content/get-fedora-kde.html:36 data/content/get-fedora-ppc.html:36
@@ -486,7 +486,8 @@ msgid "Fedora 9.  Make waves."
 msgstr "Fedora 9.  Membuat gelombang."
 
 #: data/content/index.html:15
-msgid "What's new in Fedora 9?  Read the release notes. &gt;&gt;"
+#, fuzzy
+msgid "What's new in Fedora 10?  Read the release notes. &gt;&gt;"
 msgstr "Apa yang baru di Fedora 9? Baca catatan rilis. &gt;&gt;"
 
 #: data/content/index.html:18
@@ -591,90 +592,91 @@ msgid "Refer to <strong>rpm</strong> manual for more information."
 msgstr "Lihat panduan <strong>rpm</strong> untuk informasi lebih."
 
 #: data/content/keys.html:37
-msgid "If you want to verify that the keys installed on your system match the keys listed here, you can import the key into GnuPG's keyring and check that the fingerprint of the key matches.  For example:"
+#, fuzzy
+msgid "If you want to verify that the keys installed on your system match the keys listed here, you can use GnuPG to check that the fingerprint of the key matches.  For example:"
 msgstr "Jika Anda ingin periksa apakah kunci yang diinstall dalam sistem anda cocok dengan kunci yang terdaftar di sini, Anda dapat mengimpor kunci tersebut ke dalam GnuPG's keyring dan memeriksa apakah sidik jari dari kunci tersebut cocok. Sebagai contoh:"
 
-#: data/content/keys.html:53
+#: data/content/keys.html:47
 msgid "Verifying a package"
 msgstr "Memeriksa Paket"
 
-#: data/content/keys.html:55
+#: data/content/keys.html:49
 msgid "When using default configuration of <strong>yum</strong> package updating and installation tool in stable releases, signature of each package is verified before it is installed.  Signature verification can be turned off and on globally or for specific repository with <strong>gpgcheck</strong> directive.  Do not override the default setting of this directive unless you have a very good reason to do so."
 msgstr "Ketika menggunakan paket <strong>yum</strong> untuk memutakhirkan dan perangkat instalasi di rilis stabil dengan konfigurasi default, tandatangan dari tiap paket diperiksa sebelum paket diinstall.  Pemeriksaan tandatangan dapat dinayalakan atau dimatikan secara global atau untuk repositori tertentudengan direktif <strong>gpgcheck</strong>.  Jangan mengubah seting default dari direktif ini kecuali Anda memiliki alasan luar biasa bagus untuk melakukannya."
 
-#: data/content/keys.html:58
+#: data/content/keys.html:52
 msgid "If you do not use yum, you can check the signature of the package using the following command"
 msgstr "Jika anda tidak menggunakan yum, anda dapat memeriksa tandatangan dari paket tersebut dengan menggunakan perintah berikut"
 
-#: data/content/keys.html:65
+#: data/content/keys.html:59
 msgid "Currently used keys"
 msgstr "Kunci yang sekarang digunakan"
 
-#: data/content/keys.html:101
+#: data/content/keys.html:95
 msgid "Obsolete keys"
 msgstr "Kunci - kunci yang sudah obsolete."
 
-#: data/content/keys.html:112
+#: data/content/keys.html:106
 #, fuzzy
 msgid "Fedora Core (version 6 earlier)"
 msgstr "Fedora Core (versi 6 dan sebelumnya)"
 
-#: data/content/keys.html:113
+#: data/content/keys.html:107
 #, fuzzy
 msgid "Fedora (version 7, 8, and 9)"
 msgstr "Fedora (versi 7 dan lebih baru)"
 
-#: data/content/keys.html:114
+#: data/content/keys.html:108
 msgid "Both GA and updates"
 msgstr "GA dan pemutakhiran"
 
-#: data/content/keys.html:118
+#: data/content/keys.html:112
 #, fuzzy
 msgid "Packages on installation media are signed with this key.  The relevant yum repositories are <strong>fedora</strong>, <strong>fedora-updates</strong> for Fedora 7-9, and <strong>core</strong> and <strong>core-updates</strong> for Fedora Core (Version 6 and earlier).  See <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> for information on why this key is obsolete."
 msgstr "Jika Anda menggunakan rilis terakhir yang stabil, hanya ini kumci yang anda akan gunakan.  Paket dalam media instalasi dan semua pemutakhiran yang akan Anda install di tandai dengan kunci ini.  Repositori yum yang relevan adalah <strong>fedora</strong>, <strong>fedora-updates</strong> untuk Fedora 7 dan lebih baru, dan <strong>core</strong> dan <strong>core-updates</strong> untuk Fedora Core (Versi 6 dan sebelumnya)."
 
-#: data/content/keys.html:122
+#: data/content/keys.html:116
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 msgstr "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 
-#: data/content/keys.html:123
+#: data/content/keys.html:117
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
 msgstr "Unduh: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
 
-#: data/content/keys.html:136
+#: data/content/keys.html:130
 msgid "Fedora (version 7 and newer) testing updates"
 msgstr "Hasil pengujian terakhir Fedora (versi 7 dan lebih baru)"
 
-#: data/content/keys.html:140
+#: data/content/keys.html:134
 #, fuzzy
 msgid "If you participate in testing of the packages, this is the key you will use to verify the testing packages.  This key signs the packages that are in <strong>fedora-testing</strong> repository.  See <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> for information on why this key is obsolete."
 msgstr "Jika Anda membantu dalam mencoba paket, ini kunci yang Anda akan gunakan untuk memeriksa paket yang dicoba. Kunci ini menandai paket - paket yang ada di repositori <strong>fedora-testing</strong>"
 
-#: data/content/keys.html:144
+#: data/content/keys.html:138
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
 msgstr "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
 
-#: data/content/keys.html:145
+#: data/content/keys.html:139
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
 msgstr "Unduh: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
 
-#: data/content/keys.html:161
+#: data/content/keys.html:155
 msgid "Fedora Extras (version 6 and earlier)"
 msgstr "Fedora Extras (versi 6 dan sebelumnya)"
 
-#: data/content/keys.html:165
+#: data/content/keys.html:159
 msgid "If you are using Fedora Extras with Fedora Core 6, use this package from <strong>extras</strong> repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007).  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
 msgstr "Jika Anda menggunakan Fedora Extras dengan Fedora Core 6, gunakan paket paket dari repositori <strong>extras</strong>.  Kunci ini tidak akan disediakan lagi setelah Fedora Core 6 dan Extras mencapai akhir EOL (December 7th 2007).  Kunci ini tidak dimasukkan ke dalam paket <strong>fedora-release</strong> dalam Fedora 7 dan rilis berikutnya."
 
-#: data/content/keys.html:169
+#: data/content/keys.html:163
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 msgstr "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 
-#: data/content/keys.html:170
+#: data/content/keys.html:164
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&op=index\">pgp.mit.edu</a>"
 msgstr "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&op=index\">pgp.mit.edu</a>"
 
-#: data/content/keys.html:187
+#: data/content/keys.html:181
 msgid "This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
 msgstr "Kunci ini digunakan untuk paket - paket yang dirilis oleh proyek Fedora Legacy untuk memutakhirkan rilis yang telah mencapai EOL.  Sekarang proyek Fedora Legacy sudah tidak dilanjutkan, jadi kunci ini tidak lagi digunakan untuk menandai paket - paket. Kunci ini tidak lagi dimasukkan ke dalam paket <strong>fedora-release</strong> di Fedora 7 dan rilis berikutnya."
 

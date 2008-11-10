@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-10 02:52-0500\n"
+"POT-Creation-Date: 2008-11-10 03:12-0500\n"
 "PO-Revision-Date: 2008-05-12 23:31+0400\n"
 "Last-Translator: Andrew Martynov <andrewm@inventa.ru>\n"
 "Language-Team: Russian <fedora-trans-ru@redhat,com>\n"
@@ -335,7 +335,7 @@ msgstr ""
 
 #: data/content/get-fedora-kde.html:34 data/content/get-fedora-ppc.html:34
 #: data/content/get-fedora.html:32 data/content/get-fedora.html:51
-msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f9/en_US/sn-making-media.html\">How do I use this file?</a>"
+msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/sn-making-media.html\">How do I use this file?</a>"
 msgstr ""
 
 #: data/content/get-fedora-kde.html:36 data/content/get-fedora-ppc.html:36
@@ -488,7 +488,7 @@ msgstr "Fedora 9.  Заглядывая в будущее."
 
 #: data/content/index.html:15
 #, fuzzy
-msgid "What's new in Fedora 9?  Read the release notes. &gt;&gt;"
+msgid "What's new in Fedora 10?  Read the release notes. &gt;&gt;"
 msgstr "Что нового в Fedora 8? Прочитайте замечания к выпуску."
 
 #: data/content/index.html:18
@@ -593,90 +593,91 @@ msgid "Refer to <strong>rpm</strong> manual for more information."
 msgstr "Обратитесь к руководству <strong>rpm</strong> за дополнительной информацией."
 
 #: data/content/keys.html:37
-msgid "If you want to verify that the keys installed on your system match the keys listed here, you can import the key into GnuPG's keyring and check that the fingerprint of the key matches.  For example:"
+#, fuzzy
+msgid "If you want to verify that the keys installed on your system match the keys listed here, you can use GnuPG to check that the fingerprint of the key matches.  For example:"
 msgstr "Если вы хотите проверить, что ключи на вашей системе совпадают с ключами, приведенными здесь, вы можете импортировать их в хранилище ключей GnuPG и проверить, совпадают ли отпечатки ключей.  Например:"
 
-#: data/content/keys.html:53
+#: data/content/keys.html:47
 msgid "Verifying a package"
 msgstr "Проверка пакета"
 
-#: data/content/keys.html:55
+#: data/content/keys.html:49
 msgid "When using default configuration of <strong>yum</strong> package updating and installation tool in stable releases, signature of each package is verified before it is installed.  Signature verification can be turned off and on globally or for specific repository with <strong>gpgcheck</strong> directive.  Do not override the default setting of this directive unless you have a very good reason to do so."
 msgstr "При использовании стандартной конфигурации утилиты обновления и установки пактов <strong>yum</strong> в стабильном выпуске, для всех пакетов выполняется проверка подписей перед их установкой.  Проверка подписей может быть выключена или включена глобально, или для конкретного репозитория в частности, при помощи параметра <strong>gpgcheck</strong>.  Не изменяйте стандартное значение этого параметра, если только на это у вас нет веских причин."
 
-#: data/content/keys.html:58
+#: data/content/keys.html:52
 msgid "If you do not use yum, you can check the signature of the package using the following command"
 msgstr "Если вы не используете yum, вы можете проверить цифровые подписи пакетов при помощи команды"
 
-#: data/content/keys.html:65
+#: data/content/keys.html:59
 msgid "Currently used keys"
 msgstr "Используемые в данный момент ключи"
 
-#: data/content/keys.html:101
+#: data/content/keys.html:95
 msgid "Obsolete keys"
 msgstr "Устаревшие ключи"
 
-#: data/content/keys.html:112
+#: data/content/keys.html:106
 #, fuzzy
 msgid "Fedora Core (version 6 earlier)"
 msgstr "Fedora Core (версия 6 и более ранние)"
 
-#: data/content/keys.html:113
+#: data/content/keys.html:107
 #, fuzzy
 msgid "Fedora (version 7, 8, and 9)"
 msgstr "Fedora (версия 7 и новее)"
 
-#: data/content/keys.html:114
+#: data/content/keys.html:108
 msgid "Both GA and updates"
 msgstr "Как основной выпуск, так и обновления"
 
-#: data/content/keys.html:118
+#: data/content/keys.html:112
 #, fuzzy
 msgid "Packages on installation media are signed with this key.  The relevant yum repositories are <strong>fedora</strong>, <strong>fedora-updates</strong> for Fedora 7-9, and <strong>core</strong> and <strong>core-updates</strong> for Fedora Core (Version 6 and earlier).  See <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> for information on why this key is obsolete."
 msgstr "Если вы используете самый последний стабильный выпуск, это единственный ключ, из тех что вам потребуются.  Пакеты на установочных носителях и все обновления, которые вы будите устанавливать, подписаны этим ключом.  Соответствующие yum репозитории называются <strong>fedora</strong>, <strong>fedora-updates</strong> для Fedora 7 и более поздних, и <strong>core</strong> и <strong>core-updates</strong> для Fedora Core (Версия 6 и более ранних)."
 
-#: data/content/keys.html:122
+#: data/content/keys.html:116
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 msgstr "Путь: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 
-#: data/content/keys.html:123
+#: data/content/keys.html:117
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
 msgstr "Скачать: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
 
-#: data/content/keys.html:136
+#: data/content/keys.html:130
 msgid "Fedora (version 7 and newer) testing updates"
 msgstr "Fedora (версия 7 и новее) тестируемые обновления"
 
-#: data/content/keys.html:140
+#: data/content/keys.html:134
 #, fuzzy
 msgid "If you participate in testing of the packages, this is the key you will use to verify the testing packages.  This key signs the packages that are in <strong>fedora-testing</strong> repository.  See <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> for information on why this key is obsolete."
 msgstr "Если вы принимаете участие в тестировании пакетов, этот ключ вы будите использовать для проверки тестируемых пакетов.  Этим ключом подписаны пакеты в репозитории <strong>fedora-testing</strong>."
 
-#: data/content/keys.html:144
+#: data/content/keys.html:138
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
 msgstr "Путь: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
 
-#: data/content/keys.html:145
+#: data/content/keys.html:139
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
 msgstr "Скачать: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
 
-#: data/content/keys.html:161
+#: data/content/keys.html:155
 msgid "Fedora Extras (version 6 and earlier)"
 msgstr "Fedora Extras (версия 6 и более ранние)"
 
-#: data/content/keys.html:165
+#: data/content/keys.html:159
 msgid "If you are using Fedora Extras with Fedora Core 6, use this package from <strong>extras</strong> repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007).  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
 msgstr "Если вы пользуетесь Fedora Extras из Fedora Core 6, используйте этот пакет из репозитория <strong>extras</strong>.  Этот ключ не будет более использоваться после достижения конца жизни версиями Fedora Core 6 и Extras (7 декабря 2007).  Этот ключ не входит в состав пакета <strong>fedora-release</strong> в Fedora 7 и последующих выпусков."
 
-#: data/content/keys.html:169
+#: data/content/keys.html:163
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 msgstr "Путь: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 
-#: data/content/keys.html:170
+#: data/content/keys.html:164
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&op=index\">pgp.mit.edu</a>"
 msgstr "Скачать: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&op=index\">pgp.mit.edu</a>"
 
-#: data/content/keys.html:187
+#: data/content/keys.html:181
 msgid "This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
 msgstr "Этот ключ использовался для пакетов, выпущенных проектом Fedora Legacy для обновления выпусков, достигших своего окончания времени жизни.  Проект Fedora Legacy более не существует, таким образом этот ключ более не используется для подписи пакетов.  Этот ключ не входит в состав пакета <strong>fedora-release</strong> в Fedora 7 и более поздних выпусков."
 

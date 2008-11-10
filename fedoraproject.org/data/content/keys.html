@@ -34,19 +34,13 @@
       ${Markup(_('Refer to &lt;strong&gt;rpm&lt;/strong&gt; manual for more information.'))}
     </p>
     <p>
-      ${Markup(_('If you want to verify that the keys installed on your system match the keys listed here, you can import the key into GnuPG\'s keyring and check that the fingerprint of the key matches.  For example:'))}
+      ${Markup(_('If you want to verify that the keys installed on your system match the keys listed here, you can use GnuPG to check that the fingerprint of the key matches.  For example:'))}
 
-      <pre class="command">$ gpg --import /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora
+      <pre class="command">$ gpg --with-fingerprint /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora
 ...
-gpg: key 4F2A6FD2: public key "Fedora Project &lt;fedora@redhat.com&gt;" imported
-gpg: Total number processed: 1
-gpg:               imported: 1
-
-$ gpg --fingerprint fedora@redhat.com
-pub   1024D/4F2A6FD2 2003-10-27
+pub  1024D/4F2A6FD2 2003-10-27 Fedora Project &lt;fedora@redhat.com&gt;
       Key fingerprint = CAB4 4B99 6F27 744E 8612  7CDF B442 69D0 4F2A 6FD2
-uid                  Fedora Project &lt;fedora@redhat.com&gt;
-sub   1024g/FB939E34 2003-10-27</pre>
+sub  1024g/FB939E34 2003-10-27</pre>
 
     </p>
 
