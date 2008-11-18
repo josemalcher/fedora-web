@@ -993,6 +993,7 @@ ErrorDocument 404 /404
 
 AddLanguage ar .ar
 AddLanguage bal .bal
+AddLanguage bn_IN .bn_IN
 AddLanguage ca .ca
 AddLanguage de .de
 AddLanguage el .el
@@ -1002,30 +1003,35 @@ AddLanguage fa .fa
 AddLanguage fi .fi
 AddLanguage fr .fr
 AddLanguage he .he
+AddLanguage hu .hu
 AddLanguage id .id
 AddLanguage it .it
 AddLanguage ja .ja
+AddLanguage mr .mr
 AddLanguage nl .nl
+AddLanguage or .or
 AddLanguage pl .pl
 AddLanguage pt-br .pt_BR
 AddLanguage ro .ro
 AddLanguage ru .ru
 AddLanguage sk .sk
 AddLanguage sr .sr
+AddLanguage tg .tg
 AddLanguage zh-cn .zh_CN
 
 LanguagePriority en
 ForceLanguagePriority Prefer Fallback
 
 RewriteEngine on
-RewriteCond %{QUERY_STRING} ^lang=(ar|bal|ca|de|el|en|es|fa|fi|fr|he|id|it|ja|nl|pl|pt_BR|ro|ru|sk|sr|zh_CN)$
-RewriteRule ^(?:/(?:ar|bal|ca|de|el|en|es|fa|fi|fr|he|id|it|ja|nl|pl|pt_BR|ro|ru|sk|sr|zh_CN))?(/.*)$ /%1$1? [R=301]
-AliasMatch ^(?:/(?:ar|bal|ca|de|el|en|es|fa|fi|fr|he|id|it|ja|nl|pl|pt_BR|ro|ru|sk|sr|zh_CN))(/.*)?$ @DOCUMENTROOT@$1
+RewriteCond %{QUERY_STRING} ^lang=(ar|bal|bn_IN|ca|de|el|en|es|fa|fi|fr|he|hu|id|it|ja|mr|nl|or|pl|pt_BR|ro|ru|sk|sr|tg|zh_CN)$
+RewriteRule ^(?:/(?:ar|bal|bn_IN|ca|de|el|en|es|fa|fi|fr|he|hu|id|it|ja|mr|nl|or|pl|pt_BR|ro|ru|sk|sr|tg|zh_CN))?(/.*)$ /%1$1? [R=301]
+AliasMatch ^(?:/(?:ar|bal|bn_IN|ca|de|el|en|es|fa|fi|fr|he|hu|id|it|ja|mr|nl|or|pl|pt_BR|ro|ru|sk|sr|tg|zh_CN))(/.*)?$ @DOCUMENTROOT@$1
 
 <Directory @DOCUMENTROOT@>
   Options MultiViews
 
-  SetEnvIf Request_URI ^/(ar|bal|ca|de|el|en|es|fa|fi|fr|he|id|it|ja|nl|pl|ro|ru|sk|sr)/ prefer-language=$1
+  SetEnvIf Request_URI ^/(ar|bal|ca|de|el|en|es|fa|fi|fr|he|hu|id|it|ja|mr|nl|or|pl|ro|ru|sk|sr|tg)/ prefer-language=$1
+  SetEnvIf Request_URI ^/bn_IN/ prefer-language=bn-in
   SetEnvIf Request_URI ^/pt_BR/ prefer-language=pt-br
   SetEnvIf Request_URI ^/zh_CN/ prefer-language=zh-cn
 </Directory>
