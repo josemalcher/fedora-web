@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2008-11-10 17:19-0500\n"
-"PO-Revision-Date: 2008-11-18 18:44+0530\n"
+"PO-Revision-Date: 2008-11-19 17:07+0530\n"
 "Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <en@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,6 +19,7 @@ msgstr ""
 "Generated-By: Babel 0.9.2\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"\n"
 
 #: data/content/contact.html:7
 msgid "Contact - Fedora Project"
@@ -953,6 +954,9 @@ msgid ""
 "download the Fedora keys from a public key server, such as <a href=\"http"
 "://http-keys.gnupg.net/\">keys.gnupg.net</a>."
 msgstr ""
+"ఈ వెబ్ పేజీకు మరియు fedora-విడుదల ప్యాకేజీకి అదనముగా, మీరు Fedora కీలను "
+"పబ్లిక్ కీ సేవికనుండి డౌనులోడు చేసుకొనగలరు, <a href=\"http"
+"://http-keys.gnupg.net/\">keys.gnupg.net</a> వంటిది."
 
 #: data/content/keys.html:27
 msgid ""
@@ -962,16 +966,22 @@ msgid ""
 "importing the key if the key is not already imported into the rpm "
 "database."
 msgstr ""
+"స్థిరమైన మరియు పరిశీలనా ప్యాకేజీలను అప్రమేయ ఆకృతీకరణనందు కలిగివున్న, కొన్ని "
+"రిపోజిటరీలకు, <strong>yum</strong> అనునది రిపోజిటరీ కొరకు సరియగు కీను కనుగొన "
+"గలదు మరియు ఆ కీ యిప్పటికే rpm డాటాబేస్‌నందు దిగుమతైలేకపోతే దిగుమతి చేయుటకు "
+"వినియోగదారి నిర్ధారణను అడుగుతుంది."
 
 #: data/content/keys.html:30
 msgid ""
 "You can always import a key into RPM's database by hand using the "
 "following command:"
 msgstr ""
+"మీరు యెప్పుడైనా కీను RPMయొక్క డాటాబేస్‌కు ఈ క్రింది ఆదేశమును వుపయోగించి "
+"దిగుమతి చేయవచ్చు:"
 
 #: data/content/keys.html:34
 msgid "Refer to <strong>rpm</strong> manual for more information."
-msgstr ""
+msgstr "అదిక సమాచారము కొరకు <strong>rpm</strong> మాన్యువల్‌ను చూడుము."
 
 #: data/content/keys.html:37
 msgid ""
@@ -979,10 +989,13 @@ msgid ""
 "keys listed here, you can use GnuPG to check that the fingerprint of the "
 "key matches.  For example:"
 msgstr ""
+"మీరు మీ సిస్టమ్‌నందు సంస్థాపించబడిన కీలను నిర్ధారించుకోవాలంటే వాటిని యిక్కడ "
+"జాబితాచేసిన కీలతో సరిపోల్చుము, కీ సరిజోడీల వేలిముద్రలు(ఫింగర్‌ప్రింట్)ను "
+"పరిశీలించుటకు మీరు GnuPGను వుపయోగించవచ్చు. ఉదాహరణకు:"
 
 #: data/content/keys.html:47
 msgid "Verifying a package"
-msgstr ""
+msgstr "ప్యాకేజీని నిర్ధారిస్తోంది"
 
 #: data/content/keys.html:49
 msgid ""
@@ -993,32 +1006,39 @@ msgid ""
 "<strong>gpgcheck</strong> directive.  Do not override the default setting"
 " of this directive unless you have a very good reason to do so."
 msgstr ""
+"స్థిరమైన విడుదలలనందు <strong>yum</strong> ప్యాకేజీ నవీకరణము మరియు సంస్థాపనము "
+"టూల్‌యొక్క అప్రమేయ ఆకృతీకరణను వుపయోగిస్తున్నప్పుడు, ప్రతి ప్యాకేజీయొక్క సంతకము "
+"అది సంస్థాపించుటకు ముందుగా నిర్ధారించబడుతుంది.  సంతకపు నిర్ధారణ అనునది సార్వత్రికంగాకాని "
+"లేదా ఫలానా రిపోజిటరీకికాని <strong>gpgcheck</strong> డైరెక్టివ్‌తో ఆఫ్‌చేయవచ్చు. మీకు "
+"మంచి కారణంవుంటే తప్ప ఈ డైరెక్టవ్‌యొక్క అప్రమేయ ఆకృతీకరణను ఓవర్‌రైడ్ చేయవద్దు."
 
 #: data/content/keys.html:52
 msgid ""
 "If you do not use yum, you can check the signature of the package using "
 "the following command"
 msgstr ""
+"మీరు yumను వుపయోగించకపోతే, మీరు క్రింది ఆదేశమును వుపయోగించి ప్యాకేజీయొక్క "
+"సంతకమును పరిశీలించవచ్చు"
 
 #: data/content/keys.html:59
 msgid "Currently used keys"
-msgstr ""
+msgstr "ప్రస్తుతం వుపయోగించిన కీలు"
 
 #: data/content/keys.html:95
 msgid "Obsolete keys"
-msgstr ""
+msgstr "తీసివేసిన కీలు"
 
 #: data/content/keys.html:106
 msgid "Fedora Core (version 6 earlier)"
-msgstr ""
+msgstr "Fedora Core (వర్షన్ 6 ముందలి)"
 
 #: data/content/keys.html:107
 msgid "Fedora (version 7, 8, and 9)"
-msgstr ""
+msgstr "Fedora (వర్షన్ 7, 8, మరియు 9)"
 
 #: data/content/keys.html:108
 msgid "Both GA and updates"
-msgstr ""
+msgstr "GA మరియు నవీకరణలు రెండూ"
 
 #: data/content/keys.html:112
 msgid ""
@@ -1031,22 +1051,33 @@ msgid ""
 "announce-list/2008-August/msg00012.html</a> for information on why this "
 "key is obsolete."
 msgstr ""
+"సంస్థాపనా మాధ్యమంపైని ప్యాకేజీలు ఈ కీతో సైనైవుంటాయి.   Fedora 7-9కు <strong>fedora</strong>, "
+"<strong>fedora-updates</strong>, మరియు Fedora Core (6 కన్నాముందలి వర్షన్)కు "
+"strong>core</strong> మరియు <strong>core-updates</strong> సారూప్యమైన రిపోజిటరీలు. "
+"ఈ కీ యెందుకు తీసివేయబడిందో సమాచారముకొరకు <a "
+"href=\"http://www.redhat.com/archives/fedora-announce-"
+"list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-"
+"announce-list/2008-August/msg00012.html</a> చూడండి."
 
 #: data/content/keys.html:116
 msgid ""
 "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki"
 "/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 msgstr ""
+"Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki"
+"/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 
 #: data/content/keys.html:117
 msgid ""
 "Download: <a "
 "href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
 msgstr ""
+"డౌనులోడు: <a "
+"href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
 
 #: data/content/keys.html:130
 msgid "Fedora (version 7 and newer) testing updates"
-msgstr ""
+msgstr "Fedora (7 మరియు అంతకన్నా కొత్తవర్షన్) పరిశీలనా నవీకరణలు"
 
 #: data/content/keys.html:134
 msgid ""
@@ -1058,22 +1089,32 @@ msgid ""
 "announce-list/2008-August/msg00012.html</a> for information on why this "
 "key is obsolete."
 msgstr ""
+"మీరు ప్యాకీజీల పరిశీలననందు పాల్గొంటుంటే, పరిశీలనా ప్యాకీజీలను నిర్ధారించుటకు మీరు "
+"వుపయోగించవలసిన కీ యిదే.  ఈ కీ <strong>fedora-testing</strong> రిపోజిటరీ "
+"నందలి ప్యాకేజీలను సైన్‌చేస్తుంది. ఈ కీ యెందుకు తీసివేయబడినదో సమాచారము కొరకు <a "
+"href=\"http://www.redhat.com/archives/fedora-announce-"
+"list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-"
+"announce-list/2008-August/msg00012.html</a>ను పరిశీలించండి."
 
 #: data/content/keys.html:138
 msgid ""
 "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-"
 "test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
 msgstr ""
+"Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-"
+"test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
 
 #: data/content/keys.html:139
 msgid ""
 "Download: <a "
 "href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
 msgstr ""
+"డౌనులోడు: <a "
+"href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
 
 #: data/content/keys.html:155
 msgid "Fedora Extras (version 6 and earlier)"
-msgstr ""
+msgstr "Fedora Extras (వర్షన్ 6 మరియు అంతకన్నాముందువి)"
 
 #: data/content/keys.html:159
 msgid ""
@@ -1083,18 +1124,26 @@ msgid ""
 "is not included in the <strong>fedora-release</strong> package in Fedora "
 "7 and later releases."
 msgstr ""
+"మీరు Fedora Extrasను Fedora Core 6తో వుపయోగిస్తుంటే, ఈ ప్యాకేజీని <strong>extras</strong> "
+"రిపోజిటరీనుండి వుపయోగించుము.  Fedora Core 6 మరియు Extras EOL (December 7th 2007) "
+"చేరుకొనిన తర్వాత ఈ కీ యిక వుపయోగించబడదు. ఈ కీ fedora 7 మరియు తర్వాతి విడుదలల నందలి "
+"<strong>fedora-release</strong> ప్యాకేజీనందు చేర్చబడిలేదు."
 
 #: data/content/keys.html:163
 msgid ""
 "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki"
 "/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 msgstr ""
+"Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki"
+"/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 
 #: data/content/keys.html:164
 msgid ""
 "Download: <a "
 "href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&op=index\">pgp.mit.edu</a>"
 msgstr ""
+"డౌనులోడు: <a "
+"href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&op=index\">pgp.mit.edu</a>"
 
 #: data/content/keys.html:181
 msgid ""
@@ -1104,40 +1153,50 @@ msgid ""
 " sign packages.  This key is not included in the <strong>fedora-"
 "release</strong> package in Fedora 7 and later releases."
 msgstr ""
+"అధికారిక EOLను చేరిన విడుదలలను నవీకరించుటకు Fedora Legacy project ద్వారా "
+"విడుదలైన ప్యాకేజీలకు ఈ కీ వుపయోగపడుతుంది. Fedora Legacy project యింకా "
+"లేదు, అందువలన యెటువంటి ఈ కీ ప్యాకేజీలను సైన్‌చేయుటకు వుపయోగపడదు.  ఈ "
+"కీ Fedora 7 మరియు తర్వాతి విడుదలలనందలి <strong>fedora-release</strong> "
+"ప్యాకేజీనందు చేర్చబడిలేదు."
 
 #: data/content/relnotes.html:10
 msgid "Fedora 9 Release Notes"
-msgstr ""
+msgstr "Fedora 9 విడుదల నోడ్సు"
 
 #: data/content/relnotes.html:12
 msgid ""
 "<a href=\"http://docs.fedoraproject.org/release-"
 "notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 msgstr ""
+"<a href=\"http://docs.fedoraproject.org/release-"
+"notes/\">http://docs.fedoraproject.org/release-notes/</a>"
 
 #: data/content/rss.html:10
 msgid "RSS Feed Test"
-msgstr ""
+msgstr "RSS ఫీడ్ పరిశీలన"
 
 #: data/content/sponsors.html:10
 msgid "Fedora Sponsors"
-msgstr ""
+msgstr "Fedora ప్రాయోజకులు"
 
 #: data/content/sponsors.html:11
 msgid ""
 "The Fedora Project is proud to have the following organizations as "
 "sponsors:"
-msgstr ""
+msgstr "ఈ క్రింది సంస్థలను ప్రాయోజకులుగా కలిగివుండుటకు Fedora Project గర్విస్తోంది:"
 
 #: data/content/sponsors.html:32
 msgid ""
 "Interested in sponsoring something for Fedora?  Contact admin at "
 "fedoraproject * org or stop by #fedora-admin on irc.freenode.net."
 msgstr ""
+"Fedoraకు ప్రాయోజకత్వం అందించుటలో అభిరుచివుందా? నిర్వాహకుని "
+"fedoraproject * org వద్దకాని లేదా irc.freenode.net నందు #fedora-admin "
+"వద్దకాని సంప్రదించండి."
 
 #: data/content/verify.html:10
 msgid "Verify your ISO download."
-msgstr ""
+msgstr "మీ ISO డౌనులోడును నిర్ధారించుము."
 
 #: data/content/verify.html:12
 msgid ""
@@ -1145,6 +1204,8 @@ msgid ""
 "burning-isos/en_US/sn-validating-files.html\">these instructions</a> "
 "instead."
 msgstr ""
+"Windows వినియోగదారి?  బదులుగా <a href=\"http://docs.fedoraproject.org/readme-"
+"burning-isos/en_US/sn-validating-files.html\">ఈ సూచనలు</a>ను అనుసరించుము."
 
 #: data/content/verify.html:15
 msgid ""
@@ -1156,48 +1217,60 @@ msgid ""
 "  Otherwise, to verify your ISO, start by downloading the proper SHA1SUM "
 "file into the same directory as the ISO:"
 msgstr ""
+"ఒకసారి మీరు ISOను డౌనులోడు చేసినతర్వాత, దానిని రక్షణకొరకు మరియు సమైఖ్యతకొరకు "
+"నిర్ధారించుకొనుము. మీరు ISOను BitTorrent ద్వారా డౌనులోడు చేస్తే, ఆ ఫైలు డౌనులోడు "
+"కార్యక్రమములో భాగంగానే నిర్ధారించబడుతుంది (మీరు టోరెంటును <a "
+"href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a> నుండి "
+"పొందునట్లు చూసుకోండి).  లేదంటే, మీ ISOను నిర్ధారించుకొనుటకు, సరైన SHA1SUM ఫైలును "
+"ISOవున్న డైరెక్టరీకు డౌనులోడు చేసుకొనుము."
 
 #: data/content/verify.html:17
 msgid "Install DVD / Rescue CD"
-msgstr ""
+msgstr "DVD / సమస్యాహరిణి(రెస్క్యూ) CD సంస్థాపించుము"
 
 #: data/content/verify.html:23
 msgid "Live Media (both GNOME and KDE)"
-msgstr ""
+msgstr "లైవ్ మాధ్యమం (GNOME మరియు KDE రెండూ)"
 
 #: data/content/verify.html:30
 msgid "Next, import Fedora's GPG key:"
-msgstr ""
+msgstr "తర్వాత, Fedoraయొక్క GPG కీను దిగుమతిచేయుము:"
 
 #: data/content/verify.html:35
 msgid ""
 "Now, to verify that the SHA1SUM file is valid, make sure that it has a "
 "good signature from the key ID 4F2A6FD2."
 msgstr ""
+"ఇప్పుడు, SHA1SUM ఫైలు చెల్లునదేనని నిర్ధారించుకొనుటకు, అది కీ ID 4F2A6FD2 "
+"నుండి మంచి సంతకమును కలిగివుండునట్లు చూసుకోండి."
 
 #: data/content/verify.html:39
 msgid ""
 "Finally, now that the SHA1SUM file has been verified, check that the "
 "ISO's checksum matches:"
 msgstr ""
+"చివరిగా, యిప్పుడు SHA1SUM ఫైలు నిర్ధారించబడింది, ISOయొక్క చెక్‌సమ్ సరిపోలినదేమో "
+"పరిశీలించుము:"
 
 #: data/content/verify.html:43
 msgid "If the output states that the file is valid, you're good to go!"
-msgstr ""
+msgstr "ఆ అవుట్‌పుట్ ఫైలు చెల్లునదేనని చెబితే, మీరు ముందుకు కొనసాగవచ్చు!"
 
 #: data/content/e/404.html:10
 msgid "Sorry!  We couldn't find that file"
-msgstr ""
+msgstr "క్షమించాలి!  మేము ఆ ఫైలును కనుగొనలేక పోయాము"
 
 #: data/content/e/404.html:11
 msgid "We apologize, but the file you requested could not be found."
-msgstr ""
+msgstr "మన్నించాలి, మీరు అభ్యర్ధించినటువంటి ఫైలు కనుగొనబడలేదు."
 
 #: data/content/e/404.html:13
 msgid ""
 "Double-check the URL if you entered it manually. Did you copy it "
 "correctly?"
 msgstr ""
+"మీ URLను మానవీయంగా ప్రవేశపెట్టివుంటే వొకటికి రెండుసార్లు సరిచూసుకొనుము. "
+"మీరు దానిని సరిగానే నకలుతీసారా?"
 
 #: data/content/e/404.html:14
 msgid ""
@@ -1205,6 +1278,10 @@ msgid ""
 "href=\"mailto:webmaster@fedoraproject.org\">the fedoraproject.org "
 "webmaster</a> and let them know which link brought you here."
 msgstr ""
+"మిమ్ములను చెడ్డలింకు యిక్కడకు తీసుకొనివచ్చిందా? అయితే <a "
+"href=\"mailto:webmaster@fedoraproject.org\">the fedoraproject.org "
+"webmaster</a>ను సంప్రదించి యేలింకు మిమ్ములను యిక్కడకు తీసుకొని "
+"వచ్చిందో వారికి తెలుపుము."
 
 #: data/content/e/404.html:15
 msgid ""
@@ -1212,22 +1289,26 @@ msgid ""
 "href=\"http://fedoraproject.org/\">http://fedoraproject.org/</a> or "
 "search our <a href=\"http://fedoraproject.org/wiki/\">wiki</a>."
 msgstr ""
+"మీరు దేనికొరకు చూస్తున్నారో ఆఫైలు కదల్చబడి వుండవచ్చు. మా ముఖ్యసైటును <a "
+"href=\"http://fedoraproject.org/\">http://fedoraproject.org/</a> వద్ద "
+"పరిశీలించుము లేదా మా <a href=\"http://fedoraproject.org/wiki/\">wiki</a>ను "
+"శోధించుము."
 
 #: data/content/e/404.html:17
 msgid "Fedora Resources"
-msgstr ""
+msgstr "Fedora వనరులు"
 
 #: data/content/e/404.html:20
 msgid "Fedora Documentation"
-msgstr ""
+msgstr "Fedora పత్రికీకరణ"
 
 #: data/content/e/404.html:24
 msgid "Connect with the Fedora Community"
-msgstr ""
+msgstr "Fedora కమ్యూనిటీతో కలిసివుండుము"
 
 #: data/content/e/404.html:28
 msgid "Download Fedora!"
-msgstr ""
+msgstr "Fedora డౌనులోడుచేయుము!"
 
 #: data/templates/foot.html:9
 #, python-format
@@ -1235,6 +1316,8 @@ msgid ""
 "Copyright &copy; 2008 Red Hat, Inc. and others.  All Rights Reserved.  "
 "For comments or queries, please <a href=\"%s/%s/contact\">contact us</a>."
 msgstr ""
+"కాపీరైట్ &copy; 2008 Red Hat, Inc. మరియు ఇతరులు.  అన్ని హక్కులు పొందివున్నవి.  వ్యాఖ్యానములు "
+"మరియు క్వరీల కొరకు, దయచేసి <a href=\"%s/%s/contact\">మమ్ములను సంప్రదించండి</a>."
 
 #: data/templates/foot.html:12
 msgid ""
@@ -1242,14 +1325,17 @@ msgid ""
 "sponsored by Red Hat.  This is a community maintained site.  Red Hat is "
 "not responsible for content."
 msgstr ""
+"Fedora Project కమ్యూనిటీచేత నిర్వహించబడుతోంది మరియు నడుపబడుతోంది మరియు "
+"Red Hat చేత సమర్పించబడుతోంది.  ఇది కమ్యూనిటి నిర్వహించు సైటు.  దీనినందలి "
+"విషయసంగ్రహమునకు Red Hat భాద్యతవహించదు."
 
 #: data/templates/foot.html:15
 msgid "Sponsors"
-msgstr ""
+msgstr "ప్రాయోజకులు"
 
 #: data/templates/foot.html:16
 msgid "<a href=\"http://fedoraproject.org/wiki/Legal\">Legal</a>"
-msgstr ""
+msgstr "<a href=\"http://fedoraproject.org/wiki/Legal\">చట్టబద్దత</a>"
 
 #: data/templates/foot.html:17
 msgid ""
@@ -1257,90 +1343,93 @@ msgid ""
 "href=\"http://fedoraproject.org/wiki/Legal/TrademarkGuidelines\">Trademark"
 " Guidelines</a>"
 msgstr ""
+"<a "
+"href=\"http://fedoraproject.org/wiki/Legal/TrademarkGuidelines\">వ్యాపారగుర్తు "
+" మార్గదర్<కాలు/a>"
 
 #: data/templates/head.html:7
 msgid "Fedora"
-msgstr ""
+msgstr "Fedora"
 
 #: data/templates/sidebar.html:26
 #, python-format
 msgid "%s/static/images/counter/%s"
-msgstr ""
+msgstr "%s/static/images/counter/%s"
 
 #: data/templates/sidebar.html:26
 #, python-format
 msgid "Fedora 10 Cambridge released in %s days!"
-msgstr ""
+msgstr "Fedora 10 Cambridge %s రోజులలో విడుదలౌతుంది!"
 
 #: data/templates/sidebar.html:27
 msgid "Add a counter to your own site!"
-msgstr ""
+msgstr "మీ స్వంత సైటుకు సూచకి(కౌంటర్)ను జతచేయుము!"
 
 #: data/templates/sidebar.html:30
 msgid "Navigation"
-msgstr ""
+msgstr "నావిగేషన్"
 
 #: data/templates/sidebar.html:32
 msgid "Home"
-msgstr ""
+msgstr "నివాసము"
 
 #: data/templates/sidebar.html:33
 msgid "Get Fedora"
-msgstr ""
+msgstr "Fedora పొందుము"
 
 #: data/templates/sidebar.html:34
 msgid "Join Fedora"
-msgstr ""
+msgstr "Fedora నందు చేరుము"
 
 #: data/templates/sidebar.html:35
 msgid "Get Help"
-msgstr ""
+msgstr "సహాయమును పొందుము"
 
 #: data/templates/sidebar.html:37
 msgid "Tools"
-msgstr ""
+msgstr "సాధనములు"
 
 #: data/templates/sidebar.html:39
 msgid "Docs"
-msgstr ""
+msgstr "పత్రములు"
 
 #: data/templates/sidebar.html:39
 msgid "Fedora documentation."
-msgstr ""
+msgstr "Fedora పత్రికీకరణ."
 
 #: data/templates/sidebar.html:40
 msgid "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
-msgstr ""
+msgstr "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 
 #: data/templates/sidebar.html:40
 msgid "Collaborative knowledge."
-msgstr ""
+msgstr "సమీకృత(కొలాబరేటివ్) ప్రావీణ్యత(నాలెడ్జి)."
 
 #: data/templates/sidebar.html:41
 msgid "Planet"
-msgstr ""
+msgstr "ప్లానెట్"
 
 #: data/templates/sidebar.html:41
 msgid "The voices of the Fedora community."
-msgstr ""
+msgstr "Fedora కమ్యూనిటీయొక్క గొంతులు."
 
 #: data/templates/sidebar.html:42
 msgid "<a href=\"http://fedoraproject.org/wiki/Communicate\">Communicate</a>"
-msgstr ""
+msgstr "<a href=\"http://fedoraproject.org/wiki/Communicate\">సంప్రదించు</a>"
 
 #: data/templates/sidebar.html:42
 msgid "Speak with Fedora."
-msgstr ""
+msgstr "Fedoraతో మాట్లాడు."
 
 #: data/templates/sidebar.html:43
 msgid "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Events</a>"
-msgstr ""
+msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">సంఘటనలు</a>"
 
 #: data/templates/sidebar.html:43
 msgid "Meet the Fedora community."
-msgstr ""
+msgstr "Fedora కమ్యూనిటీను కలుసుకొనుము."
 
 #: data/templates/sidebar.html:45
 msgid "Website Language"
-msgstr ""
+msgstr "వెబ్‌సైటు భాష"
 
