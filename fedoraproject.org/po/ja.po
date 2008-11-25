@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master.ja\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-25 11:13-0500\n"
+"POT-Creation-Date: 2008-11-25 11:43-0500\n"
 "PO-Revision-Date: 2008-11-13 13:48+1000\n"
 "Last-Translator: Kiyoto Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <jp@li.org>\n"
@@ -718,8 +718,9 @@ msgid "Next, import Fedora's GPG key:"
 msgstr "次に、Fedora の GPGキー を入手します:"
 
 #: data/content/verify.html:34
-msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID 4F2A6FD2."
-msgstr "SHA1SUM ファイルがキー ID「4F2A6FD2」によって正しく署名されていることを確認します:"
+#, python-format
+msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
+msgstr "SHA1SUM ファイルがキー ID「%s」によって正しく署名されていることを確認します:"
 
 #: data/content/verify.html:38
 msgid "Finally, now that the SHA1SUM file has been verified, check that the ISO's checksum matches:"

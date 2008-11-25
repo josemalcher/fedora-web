@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-25 11:13-0500\n"
+"POT-Creation-Date: 2008-11-25 11:43-0500\n"
 "PO-Revision-Date: 2008-11-23 12:28+0200\n"
 "Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
 "Language-Team: Finnish <laatu@lokalisointi.org>\n"
@@ -715,8 +715,9 @@ msgid "Next, import Fedora's GPG key:"
 msgstr "Seuraavaksi, tuo Fedoran GPG-avain:"
 
 #: data/content/verify.html:34
-msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID 4F2A6FD2."
-msgstr "Varmista, että SHA1SUM-tiedostolla on oikea allekirjoitus avaimesta, jonka ID on 4F2A6FD2. Näin varmennetaan, että SHA1SUM-tiedosto on oikea."
+#, python-format
+msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
+msgstr "Varmista, että SHA1SUM-tiedostolla on oikea allekirjoitus avaimesta, jonka ID on %s. Näin varmennetaan, että SHA1SUM-tiedosto on oikea."
 
 #: data/content/verify.html:38
 msgid "Finally, now that the SHA1SUM file has been verified, check that the ISO's checksum matches:"

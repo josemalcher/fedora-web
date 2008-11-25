@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-25 11:13-0500\n"
+"POT-Creation-Date: 2008-11-25 11:43-0500\n"
 "PO-Revision-Date: 2008-11-19 21:32+0800\n"
 "Last-Translator: Han Guokai <dev.hgk@gmail.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
@@ -716,8 +716,9 @@ msgid "Next, import Fedora's GPG key:"
 msgstr "下一步，导入 Fedora 的 GPG 密钥;"
 
 #: data/content/verify.html:34
-msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID 4F2A6FD2."
-msgstr "现在，为了验证 SHA1SUM 文件的有效性，确认来自 key ID 为 4F2A6FD2 的正确的签名。"
+#, python-format
+msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
+msgstr "现在，为了验证 SHA1SUM 文件的有效性，确认来自 key ID 为 %s 的正确的签名。"
 
 #: data/content/verify.html:38
 msgid "Finally, now that the SHA1SUM file has been verified, check that the ISO's checksum matches:"
