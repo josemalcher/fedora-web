@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Project Web Site\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-20 23:30-0500\n"
+"POT-Creation-Date: 2008-11-25 11:43-0500\n"
 "PO-Revision-Date: 2008-05-08 18:18+0700\n"
 "Last-Translator: Dapid Candra <dapidc@gmail.com>\n"
 "Language-Team: Indonesian <fedora-trans-id@redhat.com>\n"
@@ -741,7 +741,8 @@ msgid "Next, import Fedora's GPG key:"
 msgstr "Kemudian, import kunci GPG Fedora:"
 
 #: data/content/verify.html:34
-msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID 4F2A6FD2."
+#, fuzzy, python-format
+msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
 msgstr "Sekarang, untuk memeriksa apakah SHA1SUM berkas tersebut valid, pastikan bahwa berkas tersebut memiliki signature dari kunci ID 4F2A6FD2."
 
 #: data/content/verify.html:38
@@ -813,87 +814,83 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/Legal/TrademarkGuidelines\">Pand
 msgid "Fedora"
 msgstr "Fedora"
 
-#: data/templates/sidebar.html:26
-#, python-format
-msgid "%s/static/images/counter/%s"
-msgstr "%s/static/images/counter/%s"
-
-#: data/templates/sidebar.html:26
-#, fuzzy, python-format
-msgid "Fedora 10 Cambridge released in %s days!"
-msgstr "Fedora 9 Sulfur akan dirilis dalam %s hari!"
-
-#: data/templates/sidebar.html:27
-msgid "Add a counter to your own site!"
-msgstr "Tambahkan penghitung ke situs Anda!"
-
-#: data/templates/sidebar.html:30
+#: data/templates/sidebar.html:13
 msgid "Navigation"
 msgstr "Navigasi"
 
-#: data/templates/sidebar.html:32
+#: data/templates/sidebar.html:15
 msgid "Home"
 msgstr "Home"
 
-#: data/templates/sidebar.html:33
+#: data/templates/sidebar.html:16
 msgid "Get Fedora"
 msgstr "Dapatkan Fedora"
 
-#: data/templates/sidebar.html:34
+#: data/templates/sidebar.html:17
 msgid "Join Fedora"
 msgstr "Bergabung dengan Fedora"
 
-#: data/templates/sidebar.html:35
+#: data/templates/sidebar.html:18
 msgid "Get Help"
 msgstr ""
 
-#: data/templates/sidebar.html:37
+#: data/templates/sidebar.html:20
 msgid "Tools"
 msgstr "Perangkat"
 
-#: data/templates/sidebar.html:39
+#: data/templates/sidebar.html:22
 msgid "Docs"
 msgstr "Docs"
 
-#: data/templates/sidebar.html:39
+#: data/templates/sidebar.html:22
 msgid "Fedora documentation."
 msgstr "Dokumentasi Fedora."
 
-#: data/templates/sidebar.html:40
+#: data/templates/sidebar.html:23
 msgid "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 
-#: data/templates/sidebar.html:40
+#: data/templates/sidebar.html:23
 msgid "Collaborative knowledge."
 msgstr "Pengetahuan bersama."
 
-#: data/templates/sidebar.html:41
+#: data/templates/sidebar.html:24
 msgid "Planet"
 msgstr "Planet"
 
-#: data/templates/sidebar.html:41
+#: data/templates/sidebar.html:24
 msgid "The voices of the Fedora community."
 msgstr "Suara komunitas Fedora."
 
-#: data/templates/sidebar.html:42
+#: data/templates/sidebar.html:25
 msgid "<a href=\"http://fedoraproject.org/wiki/Communicate\">Communicate</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Communicate\">Komunikasi</a>"
 
-#: data/templates/sidebar.html:42
+#: data/templates/sidebar.html:25
 msgid "Speak with Fedora."
 msgstr "Bicara dengan Fedora."
 
-#: data/templates/sidebar.html:43
+#: data/templates/sidebar.html:26
 msgid "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Events</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Perhelatan</a>"
 
-#: data/templates/sidebar.html:43
+#: data/templates/sidebar.html:26
 msgid "Meet the Fedora community."
 msgstr "Bertemu Komunitas Fedora."
 
-#: data/templates/sidebar.html:45
+#: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "Bahasa Situs Web"
+
+#~ msgid "%s/static/images/counter/%s"
+#~ msgstr "%s/static/images/counter/%s"
+
+#, fuzzy
+#~ msgid "Fedora 10 Cambridge released in %s days!"
+#~ msgstr "Fedora 9 Sulfur akan dirilis dalam %s hari!"
+
+#~ msgid "Add a counter to your own site!"
+#~ msgstr "Tambahkan penghitung ke situs Anda!"
 
 #~ msgid "Fedora 9.  Make waves."
 #~ msgstr "Fedora 9.  Membuat gelombang."

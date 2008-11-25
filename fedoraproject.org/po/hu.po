@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-20 23:30-0500\n"
+"POT-Creation-Date: 2008-11-25 11:43-0500\n"
 "PO-Revision-Date: 2008-10-01 07:55+0200\n"
 "Last-Translator: Sulyok Péter <peti@fedoraproject.org>\n"
 "Language-Team: Hungarian <fedora-trans-hu@redhat.com>\n"
@@ -728,7 +728,8 @@ msgid "Next, import Fedora's GPG key:"
 msgstr "Következő, Fedora GPG kulcs importálás:"
 
 #: data/content/verify.html:34
-msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID 4F2A6FD2."
+#, fuzzy, python-format
+msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
 msgstr "Most ellenőrizzük, hogy az SHA1SUM fájl érvényes. Megbizonyosodunk arról, hogy jó aláírással rendelkezik az ID 4F2A6FD2 kulcstól."
 
 #: data/content/verify.html:38
@@ -800,87 +801,79 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/Legal/TrademarkGuidelines\">Véd
 msgid "Fedora"
 msgstr "Fedora"
 
-#: data/templates/sidebar.html:26
-#, python-format
-msgid "%s/static/images/counter/%s"
-msgstr "%s/static/images/counter/%s"
-
-#: data/templates/sidebar.html:26
-#, python-format
-msgid "Fedora 10 Cambridge released in %s days!"
-msgstr ""
-
-#: data/templates/sidebar.html:27
-msgid "Add a counter to your own site!"
-msgstr "Számláló hozzáadása egy helyhez."
-
-#: data/templates/sidebar.html:30
+#: data/templates/sidebar.html:13
 msgid "Navigation"
 msgstr "Navigáció"
 
-#: data/templates/sidebar.html:32
+#: data/templates/sidebar.html:15
 msgid "Home"
 msgstr "Otthon"
 
-#: data/templates/sidebar.html:33
+#: data/templates/sidebar.html:16
 msgid "Get Fedora"
 msgstr "Fedora beszerzése"
 
-#: data/templates/sidebar.html:34
+#: data/templates/sidebar.html:17
 msgid "Join Fedora"
 msgstr "Beállás Fedorába"
 
-#: data/templates/sidebar.html:35
+#: data/templates/sidebar.html:18
 msgid "Get Help"
 msgstr "Segítség"
 
-#: data/templates/sidebar.html:37
+#: data/templates/sidebar.html:20
 msgid "Tools"
 msgstr "Eszközök"
 
-#: data/templates/sidebar.html:39
+#: data/templates/sidebar.html:22
 msgid "Docs"
 msgstr "Doksik"
 
-#: data/templates/sidebar.html:39
+#: data/templates/sidebar.html:22
 msgid "Fedora documentation."
 msgstr "Fedora dokumentáció."
 
-#: data/templates/sidebar.html:40
+#: data/templates/sidebar.html:23
 msgid "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 
-#: data/templates/sidebar.html:40
+#: data/templates/sidebar.html:23
 msgid "Collaborative knowledge."
 msgstr "Közösségi tudás."
 
-#: data/templates/sidebar.html:41
+#: data/templates/sidebar.html:24
 msgid "Planet"
 msgstr "Bolygó"
 
-#: data/templates/sidebar.html:41
+#: data/templates/sidebar.html:24
 msgid "The voices of the Fedora community."
 msgstr "A Fedora közösség hangjai."
 
-#: data/templates/sidebar.html:42
+#: data/templates/sidebar.html:25
 msgid "<a href=\"http://fedoraproject.org/wiki/Communicate\">Communicate</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Communicate\">Komunikáció</a>"
 
-#: data/templates/sidebar.html:42
+#: data/templates/sidebar.html:25
 msgid "Speak with Fedora."
 msgstr "Szóljon Fedorához!"
 
-#: data/templates/sidebar.html:43
+#: data/templates/sidebar.html:26
 msgid "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Events</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Rendezvények</a>"
 
-#: data/templates/sidebar.html:43
+#: data/templates/sidebar.html:26
 msgid "Meet the Fedora community."
 msgstr "Találkozzon a Fedora közösséggel!"
 
-#: data/templates/sidebar.html:45
+#: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "Webhely nyelv"
+
+#~ msgid "%s/static/images/counter/%s"
+#~ msgstr "%s/static/images/counter/%s"
+
+#~ msgid "Add a counter to your own site!"
+#~ msgstr "Számláló hozzáadása egy helyhez."
 
 #~ msgid "Fedora 9.  Make waves."
 #~ msgstr "Fedora 9.  Hullámokat kelt."
