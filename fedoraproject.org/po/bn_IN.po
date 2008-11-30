@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-25 11:43-0500\n"
+"POT-Creation-Date: 2008-11-30 14:57-0500\n"
 "PO-Revision-Date: 2008-11-22 02:00+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <fedora-trans-bn_IN@redhat.com>\n"
@@ -316,16 +316,19 @@ msgstr "Fedora ১০ ইনস্টলেশন সহায়িকা (ইং�
 msgid "Fedora 10 Release Notes"
 msgstr "Fedora ১০ রিলিজ নোট"
 
-#: data/content/get-fedora-kde.html:29 data/content/get-fedora.html:24
-msgid "Fedora 10 Desktop Guide"
-msgstr "Fedora ১০ ডেস্কটপ সহায়িকা (ইংরাজি সংস্করণ)"
+#: data/content/get-fedora-kde.html:29 data/content/get-fedora-kde.html:48
+#: data/content/get-fedora-ppc.html:28 data/content/get-fedora.html:24
+#: data/content/get-fedora.html:43
+msgid "Help &amp; Support"
+msgstr "সাহায্য &amp; সহায়তা"
 
 #: data/content/get-fedora-kde.html:34
 msgid "This is the latest version of the Fedora Linux operating system featuring the KDE desktop.  It's everything you need to try out Fedora&#8212;and if you like it, install it right from the desktop!"
 msgstr "KDE ডেস্কটপ সহ Fedora Linux অপারেটিং সিস্টেমের এটি সাম্প্রতিকতম সংস্করণ।  Fedora পরীক্ষা করার জন্য সব কিছু এর মধ্যে উপস্থিত রয়েছে&#8212;ও ইনস্টল করতে হলে সরাসরি ডেস্কটপ থেকে ইনস্টল করুন!"
 
 #: data/content/get-fedora-kde.html:37 data/content/get-fedora.html:32
-msgid "650MB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs"
+#, fuzzy, python-format
+msgid "%sMB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs"
 msgstr "Intel-র সাথে সুসংগত কম্পিউটারের জন্য ৬৫০ মেগাবাইট, ISO বিন্যাসের, ১-টি CD-ROM ডিস্ক ইমেজ"
 
 #: data/content/get-fedora-kde.html:37 data/content/get-fedora-kde.html:56
@@ -348,17 +351,13 @@ msgstr "পুরোনো সংস্করণ থেকে Fedora ১০-এ 
 msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Fedora 10 Upgrade Guide</a>"
 msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Fedora ১০ আপগ্রেড সহায়িকা (ইংরেজি সংস্করণ)</a>"
 
-#: data/content/get-fedora-kde.html:48 data/content/get-fedora-ppc.html:28
-#: data/content/get-fedora.html:43
-msgid "Help &amp; Support"
-msgstr "সাহায্য &amp; সহায়তা"
-
 #: data/content/get-fedora-kde.html:53 data/content/get-fedora.html:48
 msgid "Already have Fedora and want to upgrade to Fedora 10? Check out the <a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Upgrading Fedora</a> instructions, and download the DVD ISO you'll need to start the upgrade process below."
 msgstr "Fedora ব্যবহারকারীরা Fedora ১০-এ আপগ্রেড করতে ইচ্ছুক হলে, অনুগ্রহ করে <a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Fedora আপগ্রেড প্রণালী (ইংরেজি সংস্করণ)</a> পড়ুন ও DVD ISO ডাউনলোড করুন। আপগ্রেড প্রণালী নীচে আরম্ভ করুন।"
 
 #: data/content/get-fedora-kde.html:56 data/content/get-fedora.html:51
-msgid "4.3GB, ISO format, 1 DVD disc image for Intel-compatible PCs"
+#, fuzzy, python-format
+msgid "%sGB, ISO format, 1 DVD disc image for Intel-compatible PCs"
 msgstr "Intel-র সাথে সুসংগত কম্পিউটারের জন্য ৪.৩ গিগাবাইট, ISO বিন্যাসের, ১-টি DVD ডিস্ক ইমেজ"
 
 #: data/content/get-fedora-kde.html:61 data/content/get-fedora-ppc.html:41
@@ -388,7 +387,8 @@ msgid "This is everything you need to install or upgrade to Fedora 10 on PowerPC
 msgstr "PowerPC মেশিনে Fedora পরীক্ষা করার জন্য সব কিছু এর মধ্যে উপস্থিত রয়েছে!"
 
 #: data/content/get-fedora-ppc.html:36
-msgid "4.3GB, ISO format, 1 DVD disc image for PowerPC-compatible computers"
+#, fuzzy, python-format
+msgid "%sGB, ISO format, 1 DVD disc image for PowerPC-compatible computers"
 msgstr "PowerPC-র সাথে সুসংগত কম্পিউটারের জন্য ৪.৩ গিগাবাইট, ISO বিন্যাসের, ১-টি DVD ডিস্ক ইমেজ"
 
 #: data/content/get-fedora.html:18
@@ -862,6 +862,9 @@ msgstr "Fedora সম্প্রদায়ের সাথে পরিচিত
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "ওয়েব-সাইটে ব্যবহৃত ভাষা"
+
+#~ msgid "Fedora 10 Desktop Guide"
+#~ msgstr "Fedora ১০ ডেস্কটপ সহায়িকা (ইংরাজি সংস্করণ)"
 
 #~ msgid "%s/static/images/counter/%s"
 #~ msgstr "%s/static/images/counter/%s"

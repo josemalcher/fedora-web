@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-25 11:43-0500\n"
+"POT-Creation-Date: 2008-11-30 15:12-0500\n"
 "PO-Revision-Date: 2008-11-19 21:32+0800\n"
 "Last-Translator: Han Guokai <dev.hgk@gmail.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
@@ -313,17 +313,20 @@ msgstr "Fedora 10 安装向导"
 msgid "Fedora 10 Release Notes"
 msgstr "Fedora 10 发行注记"
 
-#: data/content/get-fedora-kde.html:29 data/content/get-fedora.html:24
-msgid "Fedora 10 Desktop Guide"
-msgstr "Fedora 10 桌面用户向导"
+#: data/content/get-fedora-kde.html:29 data/content/get-fedora-kde.html:48
+#: data/content/get-fedora-ppc.html:28 data/content/get-fedora.html:24
+#: data/content/get-fedora.html:43
+msgid "Help &amp; Support"
+msgstr "帮助和支持"
 
 #: data/content/get-fedora-kde.html:34
 msgid "This is the latest version of the Fedora Linux operating system featuring the KDE desktop.  It's everything you need to try out Fedora&#8212;and if you like it, install it right from the desktop!"
 msgstr "这是最新版的 Fedora Linux 操作系统，配置了 KDE 桌面环境。如果想尝试 Fedora&#8212;，只要下载这份光盘。如果喜欢的话，也可以随时安装它！"
 
 #: data/content/get-fedora-kde.html:37 data/content/get-fedora.html:32
-msgid "650MB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs"
-msgstr "650MB, ISO 格式, 1 CD-ROM 光盘镜像，适于 Intel 兼容 PC"
+#, python-format
+msgid "%sMB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs"
+msgstr "%sMB, ISO 格式, 1 CD-ROM 光盘镜像，适于 Intel 兼容 PC"
 
 #: data/content/get-fedora-kde.html:37 data/content/get-fedora-kde.html:56
 #: data/content/get-fedora-ppc.html:36 data/content/get-fedora.html:32
@@ -345,18 +348,14 @@ msgstr "从旧版本 Fedora 升级到 Fedora 10"
 msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Fedora 10 Upgrade Guide</a>"
 msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Fedora 10 升级向导</a>"
 
-#: data/content/get-fedora-kde.html:48 data/content/get-fedora-ppc.html:28
-#: data/content/get-fedora.html:43
-msgid "Help &amp; Support"
-msgstr "帮助和支持"
-
 #: data/content/get-fedora-kde.html:53 data/content/get-fedora.html:48
 msgid "Already have Fedora and want to upgrade to Fedora 10? Check out the <a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Upgrading Fedora</a> instructions, and download the DVD ISO you'll need to start the upgrade process below."
 msgstr "已经安装了 Fedora，希望升级到 Fedora 10？一定要看 <a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">升级 Fedora 的步骤</a>，下载下面的 DVD ISO，升级时会用到。"
 
 #: data/content/get-fedora-kde.html:56 data/content/get-fedora.html:51
-msgid "4.3GB, ISO format, 1 DVD disc image for Intel-compatible PCs"
-msgstr "4.3GB, ISO 格式, 1 DVD 光盘镜像，适于 Intel 兼容 PC"
+#, python-format
+msgid "%sGB, ISO format, 1 DVD disc image for Intel-compatible PCs"
+msgstr "%sGB, ISO 格式, 1 DVD 光盘镜像，适于 Intel 兼容 PC"
 
 #: data/content/get-fedora-kde.html:61 data/content/get-fedora-ppc.html:41
 #: data/content/get-fedora.html:56
@@ -385,8 +384,9 @@ msgid "This is everything you need to install or upgrade to Fedora 10 on PowerPC
 msgstr "如果要在 PowerPC 系统中安装 Fedora 10，只要看这里！"
 
 #: data/content/get-fedora-ppc.html:36
-msgid "4.3GB, ISO format, 1 DVD disc image for PowerPC-compatible computers"
-msgstr "4.3GB, ISO 格式, 1 DVD 光盘镜像，适于 PowerPC 兼容机"
+#, python-format
+msgid "%sGB, ISO format, 1 DVD disc image for PowerPC-compatible computers"
+msgstr "%sGB, ISO 格式, 1 DVD 光盘镜像，适于 PowerPC 兼容机"
 
 #: data/content/get-fedora.html:18
 msgid "Get Fedora 10 Desktop Edition Now <em class=\"byline\">Installable Live CD</em>"
@@ -856,6 +856,9 @@ msgstr "接触 Fedora 社区。"
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "网站语言"
+
+#~ msgid "Fedora 10 Desktop Guide"
+#~ msgstr "Fedora 10 桌面用户向导"
 
 #~ msgid "%s/static/images/counter/%s"
 #~ msgstr "%s/static/images/counter/%s"

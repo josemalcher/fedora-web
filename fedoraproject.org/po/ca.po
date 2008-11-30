@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-25 11:43-0500\n"
+"POT-Creation-Date: 2008-11-30 14:57-0500\n"
 "PO-Revision-Date: 2008-11-14 13:48+0100\n"
 "Last-Translator: Xavier Conde Rueda <xavi.conde@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
@@ -325,17 +325,20 @@ msgstr "Guia d'instal·lació de Fedora 10"
 msgid "Fedora 10 Release Notes"
 msgstr "Notes de l'alliberament de Fedora 10"
 
-#: data/content/get-fedora-kde.html:29 data/content/get-fedora.html:24
-msgid "Fedora 10 Desktop Guide"
-msgstr "Guia de l'escriptori de Fedora 10"
+#: data/content/get-fedora-kde.html:29 data/content/get-fedora-kde.html:48
+#: data/content/get-fedora-ppc.html:28 data/content/get-fedora.html:24
+#: data/content/get-fedora.html:43
+msgid "Help &amp; Support"
+msgstr "Ajuda tècnica"
 
 #: data/content/get-fedora-kde.html:34
 msgid "This is the latest version of the Fedora Linux operating system featuring the KDE desktop.  It's everything you need to try out Fedora&#8212;and if you like it, install it right from the desktop!"
 msgstr "Aquesta és la darrera versió del sistema operatiu Fedora Linux amb escriptori KDE. Diposa de tot el que us cal per provar Fedora&#8212; i, si us agrada, podeu instal·lar-la des del propi escriptori!"
 
 #: data/content/get-fedora-kde.html:37 data/content/get-fedora.html:32
-msgid "650MB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs"
-msgstr "650 MB, format ISO, 1 imatge de disc CD-ROM per a PC compatible amb Intel"
+#, python-format
+msgid "%sMB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs"
+msgstr "%s MB, format ISO, 1 imatge de disc CD-ROM per a PC compatible amb Intel"
 
 #: data/content/get-fedora-kde.html:37 data/content/get-fedora-kde.html:56
 #: data/content/get-fedora-ppc.html:36 data/content/get-fedora.html:32
@@ -357,18 +360,14 @@ msgstr "Actualitzeu a Fedora 10 des d'una versió antiga"
 msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Fedora 10 Upgrade Guide</a>"
 msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Guia d'actualització de Fedora 10</a>"
 
-#: data/content/get-fedora-kde.html:48 data/content/get-fedora-ppc.html:28
-#: data/content/get-fedora.html:43
-msgid "Help &amp; Support"
-msgstr "Ajuda tècnica"
-
 #: data/content/get-fedora-kde.html:53 data/content/get-fedora.html:48
 msgid "Already have Fedora and want to upgrade to Fedora 10? Check out the <a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Upgrading Fedora</a> instructions, and download the DVD ISO you'll need to start the upgrade process below."
 msgstr "Teniu Fedora i voleu actualizar-vos a Fedora 10? Comproveu les instruccions a <a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Actualització de Fedora</a>, i baixeu la imatge de DVD que necessiteu per iniciar el procés d'actualització."
 
 #: data/content/get-fedora-kde.html:56 data/content/get-fedora.html:51
-msgid "4.3GB, ISO format, 1 DVD disc image for Intel-compatible PCs"
-msgstr "4.3GB, format ISO, 1 imatge de disc DVD per a PC compatibles amb Intel"
+#, python-format
+msgid "%sGB, ISO format, 1 DVD disc image for Intel-compatible PCs"
+msgstr "%sGB, format ISO, 1 imatge de disc DVD per a PC compatibles amb Intel"
 
 #: data/content/get-fedora-kde.html:61 data/content/get-fedora-ppc.html:41
 #: data/content/get-fedora.html:56
@@ -397,8 +396,9 @@ msgid "This is everything you need to install or upgrade to Fedora 10 on PowerPC
 msgstr "Això és tot el que us cal per instal·lar o actualitzar-vos a Fedora 10 en ordinadors PowerPC!"
 
 #: data/content/get-fedora-ppc.html:36
-msgid "4.3GB, ISO format, 1 DVD disc image for PowerPC-compatible computers"
-msgstr "4.3 GB, fomrat ISO, 1 imatge de disc DVD per a ordinadors compatibles amb PowerPC"
+#, python-format
+msgid "%sGB, ISO format, 1 DVD disc image for PowerPC-compatible computers"
+msgstr "%s GB, fomrat ISO, 1 imatge de disc DVD per a ordinadors compatibles amb PowerPC"
 
 #: data/content/get-fedora.html:18
 msgid "Get Fedora 10 Desktop Edition Now <em class=\"byline\">Installable Live CD</em>"
@@ -868,6 +868,9 @@ msgstr "Coneixeu la comunitat Fedora"
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "Idioma del lloc web"
+
+#~ msgid "Fedora 10 Desktop Guide"
+#~ msgstr "Guia de l'escriptori de Fedora 10"
 
 #~ msgid "%s/static/images/counter/%s"
 #~ msgstr "%s/static/images/counter/%s"

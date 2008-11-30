@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-25 11:43-0500\n"
+"POT-Creation-Date: 2008-11-30 14:57-0500\n"
 "PO-Revision-Date: 2008-11-22 12:51-0300\n"
 "Last-Translator: Robert Pereira <robertjs@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <fedora-trans-pt_br@redhat.com>\n"
@@ -313,17 +313,20 @@ msgstr "Guia de instalação do Fedora 10"
 msgid "Fedora 10 Release Notes"
 msgstr "Notas de lançamento do Fedora 10"
 
-#: data/content/get-fedora-kde.html:29 data/content/get-fedora.html:24
-msgid "Fedora 10 Desktop Guide"
-msgstr "Guia de desktop do Fedora 10"
+#: data/content/get-fedora-kde.html:29 data/content/get-fedora-kde.html:48
+#: data/content/get-fedora-ppc.html:28 data/content/get-fedora.html:24
+#: data/content/get-fedora.html:43
+msgid "Help &amp; Support"
+msgstr "Ajuda &amp; Suporte"
 
 #: data/content/get-fedora-kde.html:34
 msgid "This is the latest version of the Fedora Linux operating system featuring the KDE desktop.  It's everything you need to try out Fedora&#8212;and if you like it, install it right from the desktop!"
 msgstr "Esta é a última versão do sistema operacional Fedora Linux utilizando o ambiente de trabalho KDE.  Ela é tudo o que você precisa para experimentar o Fedora&#8212;e se você gostar dele, instale-o diretamente a partir da área de trabalho!"
 
 #: data/content/get-fedora-kde.html:37 data/content/get-fedora.html:32
-msgid "650MB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs"
-msgstr "650MB, formato ISO, 1 imagem de disco para CD-ROM para PCs compatíveis com Intel"
+#, python-format
+msgid "%sMB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs"
+msgstr "%sMB, formato ISO, 1 imagem de disco para CD-ROM para PCs compatíveis com Intel"
 
 #: data/content/get-fedora-kde.html:37 data/content/get-fedora-kde.html:56
 #: data/content/get-fedora-ppc.html:36 data/content/get-fedora.html:32
@@ -345,18 +348,14 @@ msgstr "Atualize para o Fedora 10 a partir de uma versão mais antiga"
 msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Fedora 10 Upgrade Guide</a>"
 msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Guia de atualização do Fedora 10</a>"
 
-#: data/content/get-fedora-kde.html:48 data/content/get-fedora-ppc.html:28
-#: data/content/get-fedora.html:43
-msgid "Help &amp; Support"
-msgstr "Ajuda &amp; Suporte"
-
 #: data/content/get-fedora-kde.html:53 data/content/get-fedora.html:48
 msgid "Already have Fedora and want to upgrade to Fedora 10? Check out the <a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Upgrading Fedora</a> instructions, and download the DVD ISO you'll need to start the upgrade process below."
 msgstr "Já tem o Fedora e quer atualizar para Fedora 10? Verifique as  instruções de <a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Atualizar o Fedora</a>, e baixe o ISO de DVD que você precisará para iniciar o processo de atualização abaixo."
 
 #: data/content/get-fedora-kde.html:56 data/content/get-fedora.html:51
-msgid "4.3GB, ISO format, 1 DVD disc image for Intel-compatible PCs"
-msgstr "4.3GB, formato ISO, 1 imagem de disco para DVD para PCs compatíveis com Intel"
+#, python-format
+msgid "%sGB, ISO format, 1 DVD disc image for Intel-compatible PCs"
+msgstr "%sGB, formato ISO, 1 imagem de disco para DVD para PCs compatíveis com Intel"
 
 #: data/content/get-fedora-kde.html:61 data/content/get-fedora-ppc.html:41
 #: data/content/get-fedora.html:56
@@ -385,8 +384,9 @@ msgid "This is everything you need to install or upgrade to Fedora 10 on PowerPC
 msgstr "Isto é tudo o que você precisa para instalar ou atualizar para o Fedora 10 em máquinas PowerPC!"
 
 #: data/content/get-fedora-ppc.html:36
-msgid "4.3GB, ISO format, 1 DVD disc image for PowerPC-compatible computers"
-msgstr "4.3GB, formato ISO, 1 imagem de disco para DVD para computadores compatíveis com PowerPC"
+#, python-format
+msgid "%sGB, ISO format, 1 DVD disc image for PowerPC-compatible computers"
+msgstr "%sGB, formato ISO, 1 imagem de disco para DVD para computadores compatíveis com PowerPC"
 
 #: data/content/get-fedora.html:18
 msgid "Get Fedora 10 Desktop Edition Now <em class=\"byline\">Installable Live CD</em>"
@@ -856,6 +856,9 @@ msgstr "Encontre a comunidade Fedora."
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "Idioma do site"
+
+#~ msgid "Fedora 10 Desktop Guide"
+#~ msgstr "Guia de desktop do Fedora 10"
 
 #~ msgid "%s/static/images/counter/%s"
 #~ msgstr "%s/static/images/counter/%s"

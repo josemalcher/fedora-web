@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-25 11:43-0500\n"
+"POT-Creation-Date: 2008-11-30 14:57-0500\n"
 "PO-Revision-Date: 2008-11-20 15:53+0530\n"
 "Last-Translator: I. Felix <ifelix@redhat.com>\n"
 "Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
@@ -321,17 +321,20 @@ msgstr "Fedora 10 நிறுவல் கையேடு"
 msgid "Fedora 10 Release Notes"
 msgstr "Fedora 10 வெளியீட்டு அறிக்கை"
 
-#: data/content/get-fedora-kde.html:29 data/content/get-fedora.html:24
-msgid "Fedora 10 Desktop Guide"
-msgstr "Fedora 10 பணிமேடை கையேடு"
+#: data/content/get-fedora-kde.html:29 data/content/get-fedora-kde.html:48
+#: data/content/get-fedora-ppc.html:28 data/content/get-fedora.html:24
+#: data/content/get-fedora.html:43
+msgid "Help &amp; Support"
+msgstr "உதவி &amp; சேவை"
 
 #: data/content/get-fedora-kde.html:34
 msgid "This is the latest version of the Fedora Linux operating system featuring the KDE desktop.  It's everything you need to try out Fedora&#8212;and if you like it, install it right from the desktop!"
 msgstr "Fedora லினக்ஸ் இயக்கத்தளத்தின் சமீபத்திய வசதி KDE பணிமேடையாகும்.  இதற்கு நீங்கள் Fedora&#8212;ஐ முயற்சிக்க வேண்டும், உங்களுக்கு பிடித்திருந்தால் உங்கள் பணிமேடையில் அதை நிறுவ வேண்டும்!"
 
 #: data/content/get-fedora-kde.html:37 data/content/get-fedora.html:32
-msgid "650MB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs"
-msgstr "650MB, ISO வடிவம், 1 CD-ROM வட்டு உரு Intel-ஏற்ற கணினிகளில்"
+#, fuzzy, python-format
+msgid "%sMB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs"
+msgstr "%sMB, ISO வடிவம், 1 CD-ROM வட்டு உரு Intel-ஏற்ற கணினிகளில்"
 
 #: data/content/get-fedora-kde.html:37 data/content/get-fedora-kde.html:56
 #: data/content/get-fedora-ppc.html:36 data/content/get-fedora.html:32
@@ -353,18 +356,14 @@ msgstr "ஒரு பழைய பதிப்பிலிருந்து Fed
 msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Fedora 10 Upgrade Guide</a>"
 msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Fedora 10 மேம்படுத்தும் கையேடு</a>"
 
-#: data/content/get-fedora-kde.html:48 data/content/get-fedora-ppc.html:28
-#: data/content/get-fedora.html:43
-msgid "Help &amp; Support"
-msgstr "உதவி &amp; சேவை"
-
 #: data/content/get-fedora-kde.html:53 data/content/get-fedora.html:48
 msgid "Already have Fedora and want to upgrade to Fedora 10? Check out the <a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Upgrading Fedora</a> instructions, and download the DVD ISO you'll need to start the upgrade process below."
 msgstr "ஏற்கனவே Fedoraவை கொண்டு Fedora 10க்கு மேம்படுத்த வேண்டுமா? <a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Fedoraஐ மேம்படுத்துங்கள்</a>  என்ற தகவல்களை சோதித்து DVD ISOஐ பதிவிறக்கி கீழேயுள்ளவாறு மேம்படுத்தலை துவக்கலாம்."
 
 #: data/content/get-fedora-kde.html:56 data/content/get-fedora.html:51
-msgid "4.3GB, ISO format, 1 DVD disc image for Intel-compatible PCs"
-msgstr "4.3GB, ISO வடிவம், 1 DVD வட்டு உரு Intel-ஏற்ற கணிணிகளுக்கு"
+#, python-format
+msgid "%sGB, ISO format, 1 DVD disc image for Intel-compatible PCs"
+msgstr "%sGB, ISO வடிவம், 1 DVD வட்டு உரு Intel-ஏற்ற கணிணிகளுக்கு"
 
 #: data/content/get-fedora-kde.html:61 data/content/get-fedora-ppc.html:41
 #: data/content/get-fedora.html:56
@@ -393,8 +392,9 @@ msgid "This is everything you need to install or upgrade to Fedora 10 on PowerPC
 msgstr "PowerPC கணினிகளில் Fedora 10 உள்ள அனைத்தையும் நிறுவ வேண்டுமா அல்லது மேம்படுத்த வேண்டுமா!"
 
 #: data/content/get-fedora-ppc.html:36
-msgid "4.3GB, ISO format, 1 DVD disc image for PowerPC-compatible computers"
-msgstr "4.3GB, ISO வடிவம், 1 DVD உரு PowerPC-ஏற்ற கணினிகளில்"
+#, python-format
+msgid "%sGB, ISO format, 1 DVD disc image for PowerPC-compatible computers"
+msgstr "%sGB, ISO வடிவம், 1 DVD உரு PowerPC-ஏற்ற கணினிகளில்"
 
 #: data/content/get-fedora.html:18
 msgid "Get Fedora 10 Desktop Edition Now <em class=\"byline\">Installable Live CD</em>"
@@ -864,6 +864,9 @@ msgstr "Fedora சமூகத்தை சந்தித்தல்."
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "இணைய தள மொழி"
+
+#~ msgid "Fedora 10 Desktop Guide"
+#~ msgstr "Fedora 10 பணிமேடை கையேடு"
 
 #~ msgid "%s/static/images/counter/%s"
 #~ msgstr "%s/static/images/counter/%s"

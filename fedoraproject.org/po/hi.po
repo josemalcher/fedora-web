@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master.hi\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-25 11:43-0500\n"
+"POT-Creation-Date: 2008-11-30 14:57-0500\n"
 "PO-Revision-Date: 2008-11-20 15:04+0530\n"
 "Last-Translator: Rajesh Ranjan <rranjan@redhat.com>\n"
 "Language-Team: Hindi <hindi.sf.net>\n"
@@ -322,17 +322,20 @@ msgstr "Fedora 10 संस्थापन गाइड"
 msgid "Fedora 10 Release Notes"
 msgstr "Fedora 10 रिलीज नोट्स"
 
-#: data/content/get-fedora-kde.html:29 data/content/get-fedora.html:24
-msgid "Fedora 10 Desktop Guide"
-msgstr "Fedora 10 डेस्कटॉप गाइड"
+#: data/content/get-fedora-kde.html:29 data/content/get-fedora-kde.html:48
+#: data/content/get-fedora-ppc.html:28 data/content/get-fedora.html:24
+#: data/content/get-fedora.html:43
+msgid "Help &amp; Support"
+msgstr "मदद &amp; समर्थन"
 
 #: data/content/get-fedora-kde.html:34
 msgid "This is the latest version of the Fedora Linux operating system featuring the KDE desktop.  It's everything you need to try out Fedora&#8212;and if you like it, install it right from the desktop!"
 msgstr "यह Fedora Linux ऑपरेटिंग सिस्टम का नवीनतम संस्करण है जो कि KDE डेस्कटॉप में फीचर करता है.  यहाँ सबकुछ है जिसे आप Fedora&#8212; के लिए आजमाना चाहेंगे और यदि आप पसंद करते हैं, इसे सीधे डेस्कटॉप से संस्थापित करें!"
 
 #: data/content/get-fedora-kde.html:37 data/content/get-fedora.html:32
-msgid "650MB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs"
-msgstr "650MB, ISO प्रारूप, 1 CD-ROM डिस्क छवि Intel-संगत PC के लिए"
+#, python-format
+msgid "%sMB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs"
+msgstr "%sMB, ISO प्रारूप, 1 CD-ROM डिस्क छवि Intel-संगत PC के लिए"
 
 #: data/content/get-fedora-kde.html:37 data/content/get-fedora-kde.html:56
 #: data/content/get-fedora-ppc.html:36 data/content/get-fedora.html:32
@@ -354,18 +357,14 @@ msgstr "Fedora 10 में पुराने संस्करण से उ�
 msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Fedora 10 Upgrade Guide</a>"
 msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Fedora 10 Upgrade Guide</a>"
 
-#: data/content/get-fedora-kde.html:48 data/content/get-fedora-ppc.html:28
-#: data/content/get-fedora.html:43
-msgid "Help &amp; Support"
-msgstr "मदद &amp; समर्थन"
-
 #: data/content/get-fedora-kde.html:53 data/content/get-fedora.html:48
 msgid "Already have Fedora and want to upgrade to Fedora 10? Check out the <a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Upgrading Fedora</a> instructions, and download the DVD ISO you'll need to start the upgrade process below."
 msgstr "पहले से Fedora है और Fedora 10 में उन्नयन करना चाहते हैं? <a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Upgrading Fedora</a> निर्देश को जाँचें, और DVD ISO डाउनलोड करें जिसे आपको उन्नयन प्रक्रिया को आरंभ करने की जरूरत होगी."
 
 #: data/content/get-fedora-kde.html:56 data/content/get-fedora.html:51
-msgid "4.3GB, ISO format, 1 DVD disc image for Intel-compatible PCs"
-msgstr "4.3GB, ISO प्रारूप, 1 DVD डिस्क छवि Intel-संगत PC के लिए"
+#, python-format
+msgid "%sGB, ISO format, 1 DVD disc image for Intel-compatible PCs"
+msgstr "%sGB, ISO प्रारूप, 1 DVD डिस्क छवि Intel-संगत PC के लिए"
 
 #: data/content/get-fedora-kde.html:61 data/content/get-fedora-ppc.html:41
 #: data/content/get-fedora.html:56
@@ -394,8 +393,9 @@ msgid "This is everything you need to install or upgrade to Fedora 10 on PowerPC
 msgstr "यही वह है जिसे आपको संस्थापित या उन्नयन करने की जरूरत है Fedora 10 में PowerPC मशीन पर!"
 
 #: data/content/get-fedora-ppc.html:36
-msgid "4.3GB, ISO format, 1 DVD disc image for PowerPC-compatible computers"
-msgstr "4.3GB, ISO प्रारूप, PowerPC-संगत कंप्यूटर का 1 DVD डिस्क छवि"
+#, python-format
+msgid "%sGB, ISO format, 1 DVD disc image for PowerPC-compatible computers"
+msgstr "%sGB, ISO प्रारूप, PowerPC-संगत कंप्यूटर का 1 DVD डिस्क छवि"
 
 #: data/content/get-fedora.html:18
 msgid "Get Fedora 10 Desktop Edition Now <em class=\"byline\">Installable Live CD</em>"
@@ -865,6 +865,9 @@ msgstr "Fedora समुदाय से मिलें."
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "वेबसाइट भाषा"
+
+#~ msgid "Fedora 10 Desktop Guide"
+#~ msgstr "Fedora 10 डेस्कटॉप गाइड"
 
 #~ msgid "%s/static/images/counter/%s"
 #~ msgstr "%s/static/images/counter/%s"

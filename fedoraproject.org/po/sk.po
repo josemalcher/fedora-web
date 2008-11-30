@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Website\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-25 11:43-0500\n"
+"POT-Creation-Date: 2008-11-30 14:57-0500\n"
 "PO-Revision-Date: 2008-11-11 16:32+0100\n"
 "Last-Translator: Pavol Šimo <palo.simo@gmail.com>\n"
 "Language-Team: Fedora Slovak Translation team <trans-list-sk@redhat.com>\n"
@@ -312,17 +312,20 @@ msgstr "Inštalačná príručka Fedora 10"
 msgid "Fedora 10 Release Notes"
 msgstr "Poznámky k vydaniu Fedora 10"
 
-#: data/content/get-fedora-kde.html:29 data/content/get-fedora.html:24
-msgid "Fedora 10 Desktop Guide"
-msgstr "Príručka prostredia pre Fedora 10"
+#: data/content/get-fedora-kde.html:29 data/content/get-fedora-kde.html:48
+#: data/content/get-fedora-ppc.html:28 data/content/get-fedora.html:24
+#: data/content/get-fedora.html:43
+msgid "Help &amp; Support"
+msgstr "Pomoc a podpora"
 
 #: data/content/get-fedora-kde.html:34
 msgid "This is the latest version of the Fedora Linux operating system featuring the KDE desktop.  It's everything you need to try out Fedora&#8212;and if you like it, install it right from the desktop!"
 msgstr "Toto je najnovšia verzia operačného systému Fedora Linux obsahujúca prostredie KDE.  Je tam všetko, čo potrebujete na vyskúšanie Fedory - ak sa bude páčiť, nainštalujte si ju priamo z pracovnej plochy!"
 
 #: data/content/get-fedora-kde.html:37 data/content/get-fedora.html:32
-msgid "650MB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs"
-msgstr "650MB, ISO format, 1 obraz disku CD-ROM pre Intel-kompatibilné PC"
+#, python-format
+msgid "%sMB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs"
+msgstr "%sMB, ISO format, 1 obraz disku CD-ROM pre Intel-kompatibilné PC"
 
 #: data/content/get-fedora-kde.html:37 data/content/get-fedora-kde.html:56
 #: data/content/get-fedora-ppc.html:36 data/content/get-fedora.html:32
@@ -344,18 +347,14 @@ msgstr "Aktualizujte na Fedoru 10 zo staršieho vydania"
 msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Fedora 10 Upgrade Guide</a>"
 msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Príručka aktualizácie na Fedora 10</a>"
 
-#: data/content/get-fedora-kde.html:48 data/content/get-fedora-ppc.html:28
-#: data/content/get-fedora.html:43
-msgid "Help &amp; Support"
-msgstr "Pomoc a podpora"
-
 #: data/content/get-fedora-kde.html:53 data/content/get-fedora.html:48
 msgid "Already have Fedora and want to upgrade to Fedora 10? Check out the <a href=\"http://docs.fedoraproject.org/install-guide/f10/en_US/ch-upgrading-system.html\">Upgrading Fedora</a> instructions, and download the DVD ISO you'll need to start the upgrade process below."
 msgstr ""
 
 #: data/content/get-fedora-kde.html:56 data/content/get-fedora.html:51
-msgid "4.3GB, ISO format, 1 DVD disc image for Intel-compatible PCs"
-msgstr "4.3GB, ISO format, 1 obraz disku DVD pre Intel-kompatibilné PC"
+#, python-format
+msgid "%sGB, ISO format, 1 DVD disc image for Intel-compatible PCs"
+msgstr "%sGB, ISO format, 1 obraz disku DVD pre Intel-kompatibilné PC"
 
 #: data/content/get-fedora-kde.html:61 data/content/get-fedora-ppc.html:41
 #: data/content/get-fedora.html:56
@@ -384,8 +383,9 @@ msgid "This is everything you need to install or upgrade to Fedora 10 on PowerPC
 msgstr "Je tu všetko čo potrebujete pre nainštalovanie alebo aktualizáciu Fedory 10 na strojoch PowerPC!"
 
 #: data/content/get-fedora-ppc.html:36
-msgid "4.3GB, ISO format, 1 DVD disc image for PowerPC-compatible computers"
-msgstr "4.3GB, ISO format, 1 obraz disku DVD pre PowerPC-kompatibilné počítače"
+#, python-format
+msgid "%sGB, ISO format, 1 DVD disc image for PowerPC-compatible computers"
+msgstr "%sGB, ISO format, 1 obraz disku DVD pre PowerPC-kompatibilné počítače"
 
 #: data/content/get-fedora.html:18
 msgid "Get Fedora 10 Desktop Edition Now <em class=\"byline\">Installable Live CD</em>"
@@ -855,6 +855,9 @@ msgstr "Stretnutia s komunitou Fedory"
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "Jazyk WWW stránok"
+
+#~ msgid "Fedora 10 Desktop Guide"
+#~ msgstr "Príručka prostredia pre Fedora 10"
 
 #~ msgid "%s/static/images/counter/%s"
 #~ msgstr "%s/static/images/counter/%s"
