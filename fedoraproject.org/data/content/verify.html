@@ -27,13 +27,25 @@
       <!--<li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/10/Live/ppc/SHA1SUM">ppc</a></li>-->
     </ul>
     <p>
-    ${Markup(_('Next, import Fedora\'s GPG key:'))}
+    ${Markup(_('Next, import Fedora\'s GPG key(s):'))}
     </p>
     <pre class="command">$ curl https://fedoraproject.org/static/fedora.gpg | gpg --import</pre>
     <p>
-    ${Markup(_('Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s.') % '4EBFC273')}
+    ${Markup(_('You can verify the details of the GPG key(s) &lt;a href="/keys"&gt;here&lt;/a&gt;.'))}
+    </p>
+    <p>
+    ${Markup(_('Now, verify that the SHA1SUM file is valid:'))}
     </p>
     <pre class="command">$ gpg --verify SHA1SUM</pre>
+    <p>
+    ${Markup(_('The SHA1SUM file should have a good signature from one of the following keys:'))}
+    </p>
+    <ul>
+        <li><code>4EBFC273</code> - ${Markup(_('Fedora 10'))}</li>
+        <li><code>0B86274E</code> - ${Markup(_('Fedora 10 pre-releases'))}</li>
+        <li><code>4F2A6FD2</code> - ${Markup(_('Fedora 9 and earlier'))}</li>
+        <li><code>30C9ECF8</code> - ${Markup(_('Fedora 9 and earlier pre-releases'))}</li>
+    </ul>
     <p>
     ${Markup(_('Finally, now that the SHA1SUM file has been verified, check that the ISO\'s checksum matches:'))}
     </p>
@@ -41,5 +53,5 @@
     <p>
     ${Markup(_('If the output states that the file is valid, you\'re good to go!'))}
     </p>
-  </body>
+</body>
 </html>
