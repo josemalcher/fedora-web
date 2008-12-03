@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master.bal\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-30 15:20-0500\n"
+"POT-Creation-Date: 2008-12-03 17:29-0500\n"
 "PO-Revision-Date: 2008-05-10 15:14+0430\n"
 "Last-Translator: Mostafa Daneshvar <mostafa@daneshvar.org.uk>\n"
 "Language-Team:  <fedora-trans-bal@redhat.com>\n"
@@ -728,19 +728,46 @@ msgid "Live Media (both GNOME and KDE)"
 msgstr "میدیا لایو(هر دو کا دی ای و گنوم)"
 
 #: data/content/verify.html:30
-msgid "Next, import Fedora's GPG key:"
+#, fuzzy
+msgid "Next, import Fedora's GPG key(s):"
 msgstr "بعدی؛ کلید جی پی جی وارد کنیت:"
 
 #: data/content/verify.html:34
-#, fuzzy, python-format
-msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
-msgstr "هنون, په حاطر تایید کرتن فایل SHA1SUM, مطمین بیت که آی یا یک هوبین امضای چه کلید ID 4F2A6FD2 هست."
+msgid "You can verify the details of the GPG key(s) <a href=\"/keys\">here</a>."
+msgstr ""
 
-#: data/content/verify.html:38
+#: data/content/verify.html:37
+msgid "Now, verify that the SHA1SUM file is valid:"
+msgstr ""
+
+#: data/content/verify.html:41
+msgid "The SHA1SUM file should have a good signature from one of the following keys:"
+msgstr ""
+
+#: data/content/verify.html:44
+#, fuzzy
+msgid "Fedora 10"
+msgstr "فدورا"
+
+#: data/content/verify.html:45
+#, fuzzy
+msgid "Fedora 10 pre-releases"
+msgstr "یادداشت نشر فدورا 9"
+
+#: data/content/verify.html:46
+#, fuzzy
+msgid "Fedora 9 and earlier"
+msgstr "هستگ فدورا ( نشخه 6 یا نوک پیشگین) "
+
+#: data/content/verify.html:47
+msgid "Fedora 9 and earlier pre-releases"
+msgstr ""
+
+#: data/content/verify.html:50
 msgid "Finally, now that the SHA1SUM file has been verified, check that the ISO's checksum matches:"
 msgstr "آهر سر الان فایل  SHA1SUM تایید بوت, ؛کنترل کنیت که مجموع ISO یک کنت."
 
-#: data/content/verify.html:42
+#: data/content/verify.html:54
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "اگه خروجی فایل پیش داریت که فایل معتبرنت؛ شما په روگا هوبیت"
 
@@ -872,6 +899,10 @@ msgstr "گندوک گون انجمن فدورا"
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "زبان سایت"
+
+#, fuzzy
+#~ msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
+#~ msgstr "هنون, په حاطر تایید کرتن فایل SHA1SUM, مطمین بیت که آی یا یک هوبین امضای چه کلید ID 4F2A6FD2 هست."
 
 #~ msgid "Fedora 9 Release Notes"
 #~ msgstr "یادداشت نشر فدورا 9"

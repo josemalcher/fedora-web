@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-30 15:20-0500\n"
+"POT-Creation-Date: 2008-12-03 17:29-0500\n"
 "PO-Revision-Date: 2008-11-24 23:21-0000\n"
 "Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
 "Language-Team: Serbian (sr) <fedora-trans-sr@redhat.com>\n"
@@ -702,19 +702,46 @@ msgid "Live Media (both GNOME and KDE)"
 msgstr "Жива медија (и GNOME и KDE)"
 
 #: data/content/verify.html:30
-msgid "Next, import Fedora's GPG key:"
+#, fuzzy
+msgid "Next, import Fedora's GPG key(s):"
 msgstr "Следеће, унесите Fedora-ине GPG кључеве:"
 
 #: data/content/verify.html:34
-#, python-format
-msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
-msgstr "Сада, да бисте проверили исправност SHA1SUM датотеке, осигурајте да има добар потпис кључем са ИБ %s."
+msgid "You can verify the details of the GPG key(s) <a href=\"/keys\">here</a>."
+msgstr ""
 
-#: data/content/verify.html:38
+#: data/content/verify.html:37
+msgid "Now, verify that the SHA1SUM file is valid:"
+msgstr ""
+
+#: data/content/verify.html:41
+msgid "The SHA1SUM file should have a good signature from one of the following keys:"
+msgstr ""
+
+#: data/content/verify.html:44
+#, fuzzy
+msgid "Fedora 10"
+msgstr "Fedora"
+
+#: data/content/verify.html:45
+#, fuzzy
+msgid "Fedora 10 pre-releases"
+msgstr "Белешке о Fedora 10 издању"
+
+#: data/content/verify.html:46
+#, fuzzy
+msgid "Fedora 9 and earlier"
+msgstr "Fedora Core (верзија 6 и раније)"
+
+#: data/content/verify.html:47
+msgid "Fedora 9 and earlier pre-releases"
+msgstr ""
+
+#: data/content/verify.html:50
 msgid "Finally, now that the SHA1SUM file has been verified, check that the ISO's checksum matches:"
 msgstr "Напокон, пошто сте проверили исправност SHA1SUM датотеке, проверите да се контролна сума поклапа:"
 
-#: data/content/verify.html:42
+#: data/content/verify.html:54
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "Ако излаз показује да је датотека исправна, можете наставити са инсталацијом!"
 
@@ -846,6 +873,9 @@ msgstr "Упознајте Fedora-ину заједницу."
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "Језик веб странице"
+
+#~ msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
+#~ msgstr "Сада, да бисте проверили исправност SHA1SUM датотеке, осигурајте да има добар потпис кључем са ИБ %s."
 
 #~ msgid "Fedora 9 Release Notes"
 #~ msgstr "Белешке о Fedora 9 издању"

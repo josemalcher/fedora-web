@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-12-01 12:46-0500\n"
+"POT-Creation-Date: 2008-12-03 17:29-0500\n"
 "PO-Revision-Date: 2008-11-25 17:48+0530\n"
 "Last-Translator: Sweta Kothari <swkothar@redhat.com>\n"
 "Language-Team: Gujarati\n"
@@ -706,19 +706,46 @@ msgid "Live Media (both GNOME and KDE)"
 msgstr "જીવંત મીડિયા (બંને GNOME અને KDE)"
 
 #: data/content/verify.html:30
-msgid "Next, import Fedora's GPG key:"
+#, fuzzy
+msgid "Next, import Fedora's GPG key(s):"
 msgstr "પછીની, Fedora ની GPG કી ને આયાત કરો:"
 
 #: data/content/verify.html:34
-#, fuzzy, python-format
-msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
-msgstr "હવે, ચકાસવા માટે કે જે SHA1SUM ફાઇલ યોગ્ય છે, ખાતરી કરો કે જે તે કી ID 4F2A6FD2 માંથી તેની પાસે સારા હસ્તાક્ષર છે."
+msgid "You can verify the details of the GPG key(s) <a href=\"/keys\">here</a>."
+msgstr ""
 
-#: data/content/verify.html:38
+#: data/content/verify.html:37
+msgid "Now, verify that the SHA1SUM file is valid:"
+msgstr ""
+
+#: data/content/verify.html:41
+msgid "The SHA1SUM file should have a good signature from one of the following keys:"
+msgstr ""
+
+#: data/content/verify.html:44
+#, fuzzy
+msgid "Fedora 10"
+msgstr "Fedora"
+
+#: data/content/verify.html:45
+#, fuzzy
+msgid "Fedora 10 pre-releases"
+msgstr "Fedora 10 પ્રકાશન નોંધો"
+
+#: data/content/verify.html:46
+#, fuzzy
+msgid "Fedora 9 and earlier"
+msgstr "Fedora Core (આવૃત્તિ 6 પહેલાની)"
+
+#: data/content/verify.html:47
+msgid "Fedora 9 and earlier pre-releases"
+msgstr ""
+
+#: data/content/verify.html:50
 msgid "Finally, now that the SHA1SUM file has been verified, check that the ISO's checksum matches:"
 msgstr "અંતમાં, હવે SHA1SUM ફાઇલ ચકાસી દેવામાં આવી છે, ચકાસો કે જે ISO નાં checksum બંધબેસે છે:"
 
-#: data/content/verify.html:42
+#: data/content/verify.html:54
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "જો આઉટપુટ સ્થિતિઓ કે જે ફાઇલ યોગ્ય છે, તમને જવા માટે સારુ છે!"
 
@@ -850,6 +877,10 @@ msgstr "Fedora સમુદાયને મળો."
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "વેબસાઇટ ભાષા"
+
+#, fuzzy
+#~ msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
+#~ msgstr "હવે, ચકાસવા માટે કે જે SHA1SUM ફાઇલ યોગ્ય છે, ખાતરી કરો કે જે તે કી ID 4F2A6FD2 માંથી તેની પાસે સારા હસ્તાક્ષર છે."
 
 #~ msgid "Fedora 10 Desktop Guide"
 #~ msgstr "Fedora 10 ડેસ્કટોપ માર્ગદર્શિકા"

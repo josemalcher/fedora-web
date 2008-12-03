@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-30 15:20-0500\n"
+"POT-Creation-Date: 2008-12-03 17:29-0500\n"
 "PO-Revision-Date: 2008-11-21 16:22+0530\n"
 "Last-Translator: Jaswinder Singh <jsingh@redhat.com>\n"
 "Language-Team: Punjabi <Punjabi-users@lists.sourceforge.net>\n"
@@ -705,19 +705,46 @@ msgid "Live Media (both GNOME and KDE)"
 msgstr "ਲਾਈਵ ਮੀਡੀਆ ( ਦੋਨੋ GNOME ਅਤੇ KDE)"
 
 #: data/content/verify.html:30
-msgid "Next, import Fedora's GPG key:"
+#, fuzzy
+msgid "Next, import Fedora's GPG key(s):"
 msgstr "ਅੱਗੇ, ਫੇਡੋਰਾ ਦੀ GPG ਕੁੰਜੀ ਅਯਾਤ ਕਰੋ:"
 
 #: data/content/verify.html:34
-#, python-format
-msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
-msgstr "ਹੁਣ, ਇਹ ਜਾਂਚ ਕਰਨ ਲਈ ਕਿ SHA1SUM ਫਾਇਲ ਯੋਗ ਹੈ, ਇਹ ਵੇਖੋ ਕਿ ਇਸ ਦੇ ਕੁੰਜੀ ID %s ਤੋਂ ਵਧੀਆ ਦਸਤਖਤ ਹਨ।"
+msgid "You can verify the details of the GPG key(s) <a href=\"/keys\">here</a>."
+msgstr ""
 
-#: data/content/verify.html:38
+#: data/content/verify.html:37
+msgid "Now, verify that the SHA1SUM file is valid:"
+msgstr ""
+
+#: data/content/verify.html:41
+msgid "The SHA1SUM file should have a good signature from one of the following keys:"
+msgstr ""
+
+#: data/content/verify.html:44
+#, fuzzy
+msgid "Fedora 10"
+msgstr "ਫੇਡੋਰਾ"
+
+#: data/content/verify.html:45
+#, fuzzy
+msgid "Fedora 10 pre-releases"
+msgstr "ਫੇਡੋਰਾ 10 ਜਾਰੀ ਸੂਚਨਾ"
+
+#: data/content/verify.html:46
+#, fuzzy
+msgid "Fedora 9 and earlier"
+msgstr "ਫੇਡੋਰਾ ਕੋਰ (ਵਰਜਨ 6 ਤੋਂ ਪਹਿਲੇ)"
+
+#: data/content/verify.html:47
+msgid "Fedora 9 and earlier pre-releases"
+msgstr ""
+
+#: data/content/verify.html:50
 msgid "Finally, now that the SHA1SUM file has been verified, check that the ISO's checksum matches:"
 msgstr "ਅੰਤ ਵਿੱਚ, ਹੁਣ SHA1SUM ਫਾਇਲ ਦੀ ਜਾਂਚ ਹੋ ਗਈ ਹੈ, ਇਹ ਵੇਖੋ ਕਿ ISO's ਚੈੱਕਸਮ ਮੇਲ ਖਾਂਦੇ ਹਨ:"
 
-#: data/content/verify.html:42
+#: data/content/verify.html:54
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "ਜੇ ਆਊਟਪੁੱਟ ਤੋਂ ਇਹ ਪਤਾ ਚੱਲਦਾ ਹੈ ਕਿ ਫਾਇਲ ਯੋਗ ਹੈ, ਤਾਂ ਤੁਸੀਂ ਅੱਗੇ ਜਾ ਸਕਦੇ ਹੋ!"
 
@@ -849,6 +876,9 @@ msgstr "ਫੇਡੋਰਾ ਕਮਿਊਨਿਟੀ ਨੂੰ ਮਿਲੋ"
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "ਵੈੱਬਸਾਈਟ ਭਾਸ਼ਾ"
+
+#~ msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
+#~ msgstr "ਹੁਣ, ਇਹ ਜਾਂਚ ਕਰਨ ਲਈ ਕਿ SHA1SUM ਫਾਇਲ ਯੋਗ ਹੈ, ਇਹ ਵੇਖੋ ਕਿ ਇਸ ਦੇ ਕੁੰਜੀ ID %s ਤੋਂ ਵਧੀਆ ਦਸਤਖਤ ਹਨ।"
 
 #~ msgid "Fedora 9 Release Notes"
 #~ msgstr "ਫੇਡੋਰਾ 9 ਜਾਰੀ ਸੂਚਨਾ"

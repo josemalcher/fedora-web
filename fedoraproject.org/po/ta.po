@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-30 15:20-0500\n"
+"POT-Creation-Date: 2008-12-03 17:29-0500\n"
 "PO-Revision-Date: 2008-11-20 15:53+0530\n"
 "Last-Translator: I. Felix <ifelix@redhat.com>\n"
 "Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
@@ -711,19 +711,46 @@ msgid "Live Media (both GNOME and KDE)"
 msgstr "நேரடி ஊடகம் (GNOME மற்றும் KDE இரண்டும்)"
 
 #: data/content/verify.html:30
-msgid "Next, import Fedora's GPG key:"
+#, fuzzy
+msgid "Next, import Fedora's GPG key(s):"
 msgstr "அடுத்து, Fedoraவின் GPG விசையை ஏற்றுமதி செய்யவும்:"
 
 #: data/content/verify.html:34
-#, python-format
-msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
-msgstr "இப்போது, SHA1SUM கோப்பு சரியானது எனில், இது விசை ID %s சரியான கையொப்பத்தை கொண்டுள்ளது என உறுதிபடுத்தவும்."
+msgid "You can verify the details of the GPG key(s) <a href=\"/keys\">here</a>."
+msgstr ""
 
-#: data/content/verify.html:38
+#: data/content/verify.html:37
+msgid "Now, verify that the SHA1SUM file is valid:"
+msgstr ""
+
+#: data/content/verify.html:41
+msgid "The SHA1SUM file should have a good signature from one of the following keys:"
+msgstr ""
+
+#: data/content/verify.html:44
+#, fuzzy
+msgid "Fedora 10"
+msgstr "Fedora"
+
+#: data/content/verify.html:45
+#, fuzzy
+msgid "Fedora 10 pre-releases"
+msgstr "Fedora 10 வெளியீட்டு அறிக்கை"
+
+#: data/content/verify.html:46
+#, fuzzy
+msgid "Fedora 9 and earlier"
+msgstr "Fedora Core (பதிப்பு 6 க்கு முந்தியவை)"
+
+#: data/content/verify.html:47
+msgid "Fedora 9 and earlier pre-releases"
+msgstr ""
+
+#: data/content/verify.html:50
 msgid "Finally, now that the SHA1SUM file has been verified, check that the ISO's checksum matches:"
 msgstr "கடைசியாக, இப்போது SHA1SUM கோப்பு சரிபார்க்கப்பட்டது, ISO's checksum பொருத்தங்களை சரிபார்க்கவும்:"
 
-#: data/content/verify.html:42
+#: data/content/verify.html:54
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "வெளிப்பாடு நிலைகளில் கோப்பு சரியானது எனில், நீங்கள் தொடர்வது நல்லது!"
 
@@ -855,6 +882,9 @@ msgstr "Fedora சமூகத்தை சந்தித்தல்."
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "இணைய தள மொழி"
+
+#~ msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
+#~ msgstr "இப்போது, SHA1SUM கோப்பு சரியானது எனில், இது விசை ID %s சரியான கையொப்பத்தை கொண்டுள்ளது என உறுதிபடுத்தவும்."
 
 #~ msgid "Fedora 9 Release Notes"
 #~ msgstr "Fedora 9 வெளியீட்டு அறிக்கை"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-30 15:20-0500\n"
+"POT-Creation-Date: 2008-12-03 17:29-0500\n"
 "PO-Revision-Date: 2008-11-21 17:13+0530\n"
 "Last-Translator: Manoj Kumar Giri <mgiri@redhat.com>\n"
 "Language-Team: Oriya\n"
@@ -706,19 +706,46 @@ msgid "Live Media (both GNOME and KDE)"
 msgstr "ଜୀବନ୍ତ ମେଡ଼ିଆ (ଉଭୟ GNOME ଏବଂ KDE)"
 
 #: data/content/verify.html:30
-msgid "Next, import Fedora's GPG key:"
+#, fuzzy
+msgid "Next, import Fedora's GPG key(s):"
 msgstr "ପରବର୍ତ୍ତି, ଫେଡ଼ୋରାର GPG କିକୁ ଆମଦାନୀ କରନ୍ତୁ:"
 
 #: data/content/verify.html:34
-#, python-format
-msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
-msgstr "ବର୍ତ୍ତମାନ, SHA1SUM ଫାଇଲଟି ବୈଧ ବୋଲି ପ୍ରମାଣ କରିବା ପାଇଁ, ନିଶ୍ଚିତ କରନ୍ତୁ ଯେ କି ପରିଚୟ ଏହି %s ରୁ ଉତ୍ତମ ହସ୍ତାକ୍ଷର ପ୍ରାପ୍ତ କରିଛି."
+msgid "You can verify the details of the GPG key(s) <a href=\"/keys\">here</a>."
+msgstr ""
 
-#: data/content/verify.html:38
+#: data/content/verify.html:37
+msgid "Now, verify that the SHA1SUM file is valid:"
+msgstr ""
+
+#: data/content/verify.html:41
+msgid "The SHA1SUM file should have a good signature from one of the following keys:"
+msgstr ""
+
+#: data/content/verify.html:44
+#, fuzzy
+msgid "Fedora 10"
+msgstr "ଫେଡ଼ୋରା"
+
+#: data/content/verify.html:45
+#, fuzzy
+msgid "Fedora 10 pre-releases"
+msgstr "ଫେଡ଼ୋରା 10 ପ୍ରକାଶନ ଟିପ୍ପଣୀ"
+
+#: data/content/verify.html:46
+#, fuzzy
+msgid "Fedora 9 and earlier"
+msgstr "ଫେଡ଼ୋରା କୋର (ପୂର୍ବ ସଂସ୍କରଣ 6)"
+
+#: data/content/verify.html:47
+msgid "Fedora 9 and earlier pre-releases"
+msgstr ""
+
+#: data/content/verify.html:50
 msgid "Finally, now that the SHA1SUM file has been verified, check that the ISO's checksum matches:"
 msgstr "ଶେଷରେ, ବର୍ତ୍ତମାନ SHA1SUM ଫାଇଲଗୁଡ଼ିକର ଯାଞ୍ଚ କରାସରିଛି, ଯାଞ୍ଚ କରନ୍ତୁ ଯେ ISO's ଜାଞ୍ଚ ଯୋଗ ମେଳଖାଉଛି:"
 
-#: data/content/verify.html:42
+#: data/content/verify.html:54
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "ଯଦି ଫଳାଫଳଟି ସୂଚାଏ ଯେ ଫାଇଲଟି ବୈଧ ଅଛି, ତେବେ ଆପଣ ଯାଇପାରିବେ!"
 
@@ -850,6 +877,9 @@ msgstr "ଫେଡ଼ୋରା ସମ୍ପ୍ରଦାୟ ସହିତ ସାକ
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "ୱେବସାଇଟ ଭାଷା"
+
+#~ msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
+#~ msgstr "ବର୍ତ୍ତମାନ, SHA1SUM ଫାଇଲଟି ବୈଧ ବୋଲି ପ୍ରମାଣ କରିବା ପାଇଁ, ନିଶ୍ଚିତ କରନ୍ତୁ ଯେ କି ପରିଚୟ ଏହି %s ରୁ ଉତ୍ତମ ହସ୍ତାକ୍ଷର ପ୍ରାପ୍ତ କରିଛି."
 
 #~ msgid "Fedora 9 Release Notes"
 #~ msgstr "ଫେଡ଼ୋରା 9 ପ୍ରକାଶନ ଟିପ୍ପଣୀ"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-30 15:20-0500\n"
+"POT-Creation-Date: 2008-12-03 17:29-0500\n"
 "PO-Revision-Date: 2008-05-07 15:40+0300\n"
 "Last-Translator: Omar Elzanaty <omar@fedoraproject.org>\n"
 "Language-Team: Arabic\n"
@@ -718,19 +718,45 @@ msgstr "وسائط حية ·(كى دى إى و جنوم )"
 
 #: data/content/verify.html:30
 #, fuzzy
-msgid "Next, import Fedora's GPG key:"
+msgid "Next, import Fedora's GPG key(s):"
 msgstr "ثم استورد :Fedora's·GPG·key"
 
 #: data/content/verify.html:34
-#, python-format
-msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
+msgid "You can verify the details of the GPG key(s) <a href=\"/keys\">here</a>."
 msgstr ""
 
-#: data/content/verify.html:38
+#: data/content/verify.html:37
+msgid "Now, verify that the SHA1SUM file is valid:"
+msgstr ""
+
+#: data/content/verify.html:41
+msgid "The SHA1SUM file should have a good signature from one of the following keys:"
+msgstr ""
+
+#: data/content/verify.html:44
+#, fuzzy
+msgid "Fedora 10"
+msgstr "فيدورا"
+
+#: data/content/verify.html:45
+#, fuzzy
+msgid "Fedora 10 pre-releases"
+msgstr "ملاحظات إصدار فيدورا 9"
+
+#: data/content/verify.html:46
+#, fuzzy
+msgid "Fedora 9 and earlier"
+msgstr "فيدورا كور·(النسخة 6 وما قبلها)"
+
+#: data/content/verify.html:47
+msgid "Fedora 9 and earlier pre-releases"
+msgstr ""
+
+#: data/content/verify.html:50
 msgid "Finally, now that the SHA1SUM file has been verified, check that the ISO's checksum matches:"
 msgstr ""
 
-#: data/content/verify.html:42
+#: data/content/verify.html:54
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "اذا كان الناتج يوضح ان الملف صحيح ,يمكنك الإستمرار!"
 

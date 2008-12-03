@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-11-30 15:20-0500\n"
+"POT-Creation-Date: 2008-12-03 17:29-0500\n"
 "PO-Revision-Date: 2008-11-19 21:32+0800\n"
 "Last-Translator: Han Guokai <dev.hgk@gmail.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
@@ -703,19 +703,46 @@ msgid "Live Media (both GNOME and KDE)"
 msgstr "Live 介质(包括 GNOME 和 KDE)"
 
 #: data/content/verify.html:30
-msgid "Next, import Fedora's GPG key:"
+#, fuzzy
+msgid "Next, import Fedora's GPG key(s):"
 msgstr "下一步，导入 Fedora 的 GPG 密钥;"
 
 #: data/content/verify.html:34
-#, python-format
-msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
-msgstr "现在，为了验证 SHA1SUM 文件的有效性，确认来自 key ID 为 %s 的正确的签名。"
+msgid "You can verify the details of the GPG key(s) <a href=\"/keys\">here</a>."
+msgstr ""
 
-#: data/content/verify.html:38
+#: data/content/verify.html:37
+msgid "Now, verify that the SHA1SUM file is valid:"
+msgstr ""
+
+#: data/content/verify.html:41
+msgid "The SHA1SUM file should have a good signature from one of the following keys:"
+msgstr ""
+
+#: data/content/verify.html:44
+#, fuzzy
+msgid "Fedora 10"
+msgstr "Fedora"
+
+#: data/content/verify.html:45
+#, fuzzy
+msgid "Fedora 10 pre-releases"
+msgstr "Fedora 10 发行注记"
+
+#: data/content/verify.html:46
+#, fuzzy
+msgid "Fedora 9 and earlier"
+msgstr "Fedora Core(6 或更早的版本)"
+
+#: data/content/verify.html:47
+msgid "Fedora 9 and earlier pre-releases"
+msgstr ""
+
+#: data/content/verify.html:50
 msgid "Finally, now that the SHA1SUM file has been verified, check that the ISO's checksum matches:"
 msgstr "既然已经验证完毕 SHA1SUM 文件，最后，检查 ISO 文件的校验和是否正确。 "
 
-#: data/content/verify.html:42
+#: data/content/verify.html:54
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "如果输出显示文件是有效的，你可以继续下一个步骤了！"
 
@@ -847,6 +874,9 @@ msgstr "接触 Fedora 社区。"
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "网站语言"
+
+#~ msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
+#~ msgstr "现在，为了验证 SHA1SUM 文件的有效性，确认来自 key ID 为 %s 的正确的签名。"
 
 #~ msgid "Fedora 9 Release Notes"
 #~ msgstr "Fedora 9 发行注记"
