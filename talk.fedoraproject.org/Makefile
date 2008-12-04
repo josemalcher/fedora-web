@@ -46,6 +46,7 @@ test:
 	sed -i -e 's#@SERVERROOT@#$(PWD)/httpd#g' httpd/conf/httpd.conf
 	sed -i -e 's#@DOCUMENTROOT@#$(PWD)/out#g' httpd/conf/httpd.conf
 	/usr/sbin/httpd -d httpd -f conf/httpd.conf
+	@echo "Test instance started at: http://localhost:5000/"
 
 stoptest:
 	pid=`cat httpd/run/httpd.pid` && \
