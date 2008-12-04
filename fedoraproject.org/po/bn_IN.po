@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-12-03 17:29-0500\n"
+"POT-Creation-Date: 2008-12-04 12:40-0500\n"
 "PO-Revision-Date: 2008-11-22 02:00+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <fedora-trans-bn_IN@redhat.com>\n"
@@ -567,7 +567,8 @@ msgid "Importing keys"
 msgstr "কি ইম্পোর্ট করার প্রণালী"
 
 #: data/content/keys.html:21
-msgid "The keys are included in <strong>fedora-release</strong> package, you can find them in <strong>/etc/pki/rpm-gpg</strong> directory.  Please note that not all keys in this directory are used by Fedora project -- some are used for signing Red Hat Enterprise Linux packages or are no longer used at all. If you use Red Hat Enterprise Linux packages, see <a href=\"https://www.redhat.com/security/team/key/\">https://www.redhat.com/security/team/key</a>.  The keys used by Fedora are enabled in the yum repository configuration, so you generally don't need to manually import them into the rpm database."
+#, fuzzy
+msgid "The keys are included in the <strong>fedora-release</strong> package, you can find them in the <strong>/etc/pki/rpm-gpg</strong> directory.  Please note that not all keys in this directory are used by Fedora project -- some are used for signing Red Hat Enterprise Linux packages or are no longer used at all. If you use Red Hat Enterprise Linux packages, see <a href=\"https://www.redhat.com/security/team/key/\">https://www.redhat.com/security/team/key</a>.  The keys used by Fedora are enabled in the yum repository configuration, so you generally don't need to manually import them into the rpm database."
 msgstr "<strong>fedora-release</strong> প্যাকেজের মধ্যে কি-গুলি অন্তর্ভুক্ত করা হয় ও find them in <strong>/etc/pki/rpm-gpg</strong> ডিরেক্টরির অধীন এইগুলি প্রাপ্ত করা যাবে।  উল্লেখ্য, এই ডিরেক্টরির মধ্যে উপস্থিত সকল কিFedora প্রজেক্টের জন্য ব্যবহৃত হবে না -- এর মধ্যে কয়েকটি কি Red Hat Enterprise Linux-র প্যাকেজ স্বাক্ষর করতে ব্যবহার করা হবে অথবা প্রয়োগ করা হবে না। Red Hat Enterprise Linux প্যাকেজ ব্যবহার করে থাকলে <a href=\"https://www.redhat.com/security/team/key/\">https://www.redhat.com/security/team/key</a>-এ উপস্থিত তথ্য পড়ুন।  Fedora দ্বারা ব্যবহৃত কি-গুলি yum সংগ্রহস্থল কনফিগারেশনের মধ্যে সক্রিয় করা হয় এবং এর ফলে ব্যবহারকারীদেরকে rpm ডাটাবেসের মধ্যে এইগুলি ইম্পোর্ট করার প্রয়োজন হবে না।"
 
 #: data/content/keys.html:24
@@ -590,83 +591,120 @@ msgstr "অধিক বিবরণের জন্য <strong>rpm</strong> স
 msgid "If you want to verify that the keys installed on your system match the keys listed here, you can use GnuPG to check that the fingerprint of the key matches.  For example:"
 msgstr "আপনার সিস্টেমে ইনস্টল করা কি ও এইখানে উল্লিখিত কি-র মধ্যে বিসংগতি পরীক্ষা করার জন্য GnuPG সহযোগে পরীক্ষা করতে পারবেন, কি-র ফিঙ্গারপ্রিন্টে কোনো গরমিল রয়েছে কি না।  উদাহরণস্বরূপ:"
 
-#: data/content/keys.html:47
+#: data/content/keys.html:46
 msgid "Verifying a package"
 msgstr "প্যাকেজ পরীক্ষণ"
 
-#: data/content/keys.html:49
+#: data/content/keys.html:48
 msgid "When using default configuration of <strong>yum</strong> package updating and installation tool in stable releases, signature of each package is verified before it is installed.  Signature verification can be turned off and on globally or for specific repository with <strong>gpgcheck</strong> directive.  Do not override the default setting of this directive unless you have a very good reason to do so."
 msgstr "স্থায়ী রিলিজের মধ্যে প্যাকেজ আপডেট ও ইনস্টলেশনের জন্য <strong>yum</strong>-র ডিফল্ট কনফিগারেশন ব্যবহার করা হলে, ইনস্টলেশনের পূর্বে প্রতিটি প্যাকেজের স্বাক্ষর যাচাই করা হয়।  <strong>gpgcheck</strong> ডিরেক্টিভের মান পরিবর্তন করে, সকল অথবা সুনির্দিষ্ট সংগ্রহস্থলের জন্য স্বাক্ষর পরীক্ষণ বন্ধ করা যাবে।  কোনো গুরুত্বপূর্ণ কারণ না থাকলে, এই ডিরেক্টিভের ডিফল্ট মান পরিবর্তন না করা বাঞ্ছনীয়।"
 
-#: data/content/keys.html:52
+#: data/content/keys.html:51
 msgid "If you do not use yum, you can check the signature of the package using the following command"
 msgstr "yum ব্যবহার না করা হলে, নিম্নলিখিত কমান্ড সহযোগে প্যাকেজের স্বাক্ষর পরীক্ষা করা যাবে"
 
-#: data/content/keys.html:59
+#: data/content/keys.html:58
 msgid "Currently used keys"
 msgstr "বর্তমানে ব্যবহৃত কি (key)"
 
-#: data/content/keys.html:95
+#: data/content/keys.html:69
+msgid "Download: <a href=\"/static/4EBFC273.txt\">Fedora Project</a>"
+msgstr ""
+
+#: data/content/keys.html:70
+#, fuzzy
+msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4EBFC273&op=get\">keys.gnupg.net</a>"
+msgstr "ডাউনলোড করুন: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
+
+#: data/content/keys.html:83
+msgid "Download: <a href=\"/static/0B86274E.txt\">Fedora Project</a>"
+msgstr ""
+
+#: data/content/keys.html:84
+#, fuzzy
+msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x0B86274E&op=get\">keys.gnupg.net</a>"
+msgstr "ডাউনলোড করুন: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
+
+#: data/content/keys.html:97
+msgid "Download: <a href=\"/static/6DF2196F.txt\">Fedora Project</a>"
+msgstr ""
+
+#: data/content/keys.html:98
+#, fuzzy
+msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x6DF2196F&op=get\">keys.gnupg.net</a>"
+msgstr "ডাউনলোড করুন: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
+
+#: data/content/keys.html:111
+msgid "Download: <a href=\"/static/DF9B0AE9.txt\">Fedora Project</a>"
+msgstr ""
+
+#: data/content/keys.html:112
+#, fuzzy
+msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0xDF9B0AE9&op=get\">keys.gnupg.net</a>"
+msgstr "ডাউনলোড করুন: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
+
+#: data/content/keys.html:118
 msgid "Obsolete keys"
 msgstr "অবচিত কি (key)"
 
-#: data/content/keys.html:106
-msgid "Fedora Core (version 6 earlier)"
+#: data/content/keys.html:129
+#, fuzzy
+msgid "Fedora Core (version 6 and earlier)"
 msgstr "Fedora Core (সংস্করণ সংখ্যা ৬ ও পূর্ববর্তী)"
 
-#: data/content/keys.html:107
+#: data/content/keys.html:130
 msgid "Fedora (version 7, 8, and 9)"
 msgstr "Fedora (সংস্করণ ৭, ৮, ও ৯)"
 
-#: data/content/keys.html:108
+#: data/content/keys.html:131
 msgid "Both GA and updates"
 msgstr "GA এবং আপডেট, উভয় ক্ষেত্রে প্রযোজ্য"
 
-#: data/content/keys.html:112
+#: data/content/keys.html:135
 msgid "Packages on installation media are signed with this key.  The relevant yum repositories are <strong>fedora</strong>, <strong>fedora-updates</strong> for Fedora 7-9, and <strong>core</strong> and <strong>core-updates</strong> for Fedora Core (Version 6 and earlier).  See <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> for information on why this key is obsolete."
 msgstr "ইনস্টলেশন মিডিয়ার মধ্যে উপস্থিত প্যাকেজগুলি, এই কি সহযোগে স্বাক্ষরিত হয়েছে।  Fedora ৭-৯-র জন্য প্রযোজ্য yum সংগ্রহস্থলগুলি হল <strong>fedora</strong>, <strong>fedora-updates</strong>, ও Fedora Core (সংস্করণ ৬ ও পূর্ববর্তী)-র ক্ষেত্রে <strong>core</strong> ও <strong>core-updates</strong>।  এই কি অবচিত হওয়ার কারণ <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> বার্তায় লেখা হয়েছে।"
 
-#: data/content/keys.html:116
+#: data/content/keys.html:139
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 msgstr "পাথ: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 
-#: data/content/keys.html:117
+#: data/content/keys.html:140
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
 msgstr "ডাউনলোড করুন: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x4F2A6FD2&op=index\">pgp.mit.edu</a>"
 
-#: data/content/keys.html:130
+#: data/content/keys.html:153
 msgid "Fedora (version 7 and newer) testing updates"
 msgstr "Fedora (সংস্করণ সংখ্যা ৭ ও ঊর্ধ্বতন) আপডেট পরীক্ষণ"
 
-#: data/content/keys.html:134
+#: data/content/keys.html:157
 msgid "If you participate in testing of the packages, this is the key you will use to verify the testing packages.  This key signs the packages that are in <strong>fedora-testing</strong> repository.  See <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> for information on why this key is obsolete."
 msgstr "প্যাকেজ পরীক্ষা করতে ইচ্ছুক হলে, পরীক্ষামূলক প্যাকেজগুলি এই কি সহযোগে যাচাই করা হবে।  This key signs the packages that are in <strong>fedora-testing</strong> সংগ্রহস্থলের মধ্যে উপস্থিত প্যাকেজগুলি এই কি দ্বারা স্বাক্ষিত হয়।  এই কি অবচিত হওয়ার কারণ <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> বার্তায় আলোচনা করা হয়েছে।"
 
-#: data/content/keys.html:138
+#: data/content/keys.html:161
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
 msgstr "পাথ: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
 
-#: data/content/keys.html:139
+#: data/content/keys.html:162
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
 msgstr "ডাউনলোড করুন: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x30C9ECF8&op=index\">pgp.mit.edu</a>"
 
-#: data/content/keys.html:155
+#: data/content/keys.html:178
 msgid "Fedora Extras (version 6 and earlier)"
 msgstr "Fedora Extras (সংস্করণ সংখ্যা ৬ ও পূর্ববর্তী)"
 
-#: data/content/keys.html:159
+#: data/content/keys.html:182
 msgid "If you are using Fedora Extras with Fedora Core 6, use this package from <strong>extras</strong> repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007).  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
 msgstr "Fedora Core ৬-র সাথে Fedora Extras ব্যবহারের সময় <strong>extras</strong> নামক সংগ্রহস্থল থেকে এই প্যাকেজটি ব্যবহার করুন। Fedora Core ৬ ও Extras-র আয়ুকাল সমাপ্ত হলে (৭ই ডিসেম্বর ২০০৭) এই কি অবচিত হবে।  Fedora ৭ ও ঊর্ধ্বতন সংস্করণে উপস্থিত <strong>fedora-release</strong> প্যাকেজের মধ্যে এই কি অন্তর্ভুক্ত করা হয়নি।"
 
-#: data/content/keys.html:163
+#: data/content/keys.html:186
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 msgstr "পাথ: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 
-#: data/content/keys.html:164
+#: data/content/keys.html:187
 msgid "Download: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&op=index\">pgp.mit.edu</a>"
 msgstr "ডাউনলোড করুন: <a href=\"http://pgp.mit.edu:11371/pks/lookup?search=0x1AC70CE6&op=index\">pgp.mit.edu</a>"
 
-#: data/content/keys.html:181
+#: data/content/keys.html:204
 msgid "This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
 msgstr "Fedora-র যে সকল সংস্করণের আয়ুকাল সমাপ্ত হয়েছে, সেই সংস্করণগুলি আপডেট করার জন্য Fedora Legacy প্রজেক্ট দ্বারা প্রকাশিত প্যাকেজের জন্য এই কি ব্যবহার করা হত। Fedora Legacy প্রজেক্ট বর্তমানে বাতিল করা হয়েছে এবং এই কি সহযোগে কোনো প্যাকেজ স্বাক্ষর করা সম্ভব নয়। Fedora ৭ ও ঊর্ধ্বতন সংস্করণে উপস্থিত <strong>fedora-release</strong> প্যাকেজের মধ্যে এই কি অন্তর্ভুক্ত করা হয়নি।"
 
