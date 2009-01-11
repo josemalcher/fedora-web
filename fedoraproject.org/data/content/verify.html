@@ -31,7 +31,7 @@
     </p>
     <pre class="command">$ curl https://fedoraproject.org/static/fedora.gpg | gpg --import</pre>
     <p>
-    ${Markup(_('You can verify the details of the GPG key(s) &lt;a href="/keys"&gt;here&lt;/a&gt;.'))}
+    ${Markup(_('You can verify the details of the GPG key(s) &lt;a href="%s/%s/keys"&gt;here&lt;/a&gt;.') % (path, lang))}
     </p>
     <p>
     ${Markup(_('Now, verify that the SHA1SUM file is valid:'))}
