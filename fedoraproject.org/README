@@ -4,7 +4,7 @@ build Fedora's website.  The build script, build/build.py generates static
 website pages by walking through the input directory processing templates
 with Genshi (http://genshi.edgewall.org/)
 
-Requirements: python-genshi
+Requirements: python-genshi, babel
 
 Usage: Run make in this directory to build the website in all available
        languages.  To build a specific language, use make LANG, where LANG
