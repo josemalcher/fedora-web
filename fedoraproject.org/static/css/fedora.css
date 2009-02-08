@@ -565,3 +565,73 @@ ul#resources li.resource-download
   font-size: 1em;
   color: #7788DD;
 }
+
+#login-box form .field {
+  margin: 0 0 1ex;
+  overflow: hidden;
+  text-align: left;
+}
+
+#login-box .field label {
+  clear: left
+  float:left;
+  padding:0 2ex 0 0;
+  text-align:right;
+  width:32ex;
+}
+
+a.bodhi {
+  padding-left: 20px;
+  background: url(../images/icons/fedora-infra-icon_bodhi.png) 0 50% no-repeat;
+}
+
+a.koji {
+  padding-left: 20px;
+  background: url(../images/icons/fedora-infra-icon_koji.png) 0 50% no-repeat;
+}
+
+a.bugz {
+  padding-left: 20px;
+  background: url(../images/icons/fedora-infra-icon_bugzilla.png) 0 50% no-repeat;
+}
+
+a.pkgdb {
+  padding-left: 20px;
+  background: url(../images/icons/fedora-infra-icon_pkgdb.png) 0 50% no-repeat;
+}
+
+a.cvs {
+  padding-left: 20px;
+  background: url(../images/icons/fedora-infra-icon_source-control.png) 0 50% no-repeat;
+}
+
+.tooltip {
+  display: block;
+  position: absolute;
+  border: 1px solid black;
+  background-color: lightyellow;
+  width: 200px;
+}
+
+.invisible {
+  display: none;
+}
+
+.flash {
+  background: #DEE681;
+  border: 1px solid #CCBBAA;
+  padding: 1.5ex 15px 1.5ex 43px;
+  margin: 1ex 0;
+}
+
+.flash .success {
+  background: #DEE681 url(../images/success.png) 10px 50% no-repeat;
+}
+
+.flash .warning {
+  background: #DEE681 url(../images/important.png) 10px 50% no-repeat;
+}
+
+.flash .info {
+  background: #DEE681 url(../images/info.png) 10px 50% no-repeat;
+}
