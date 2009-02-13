@@ -87,7 +87,7 @@ cat << EOM>> $outfile
     <div id="bottom">
       <div id="footer">
         <p class="copy">
-        Copyright &copy; 2008 Red Hat, Inc. and others.  All Rights Reserved.
+        Copyright &copy; 2009 Red Hat, Inc. and others.  All Rights Reserved.
         Please send any comments or corrections to the <a href="mailto:webmaster@fedoraproject.org">websites team</a>.
         </p>
         <p class="disclaimer">
