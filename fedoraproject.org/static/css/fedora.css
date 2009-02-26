@@ -567,20 +567,8 @@ ul#resources li.resource-download
   color: #7788DD;
 }
 
-#login-box form .field {
-  margin: 0 0 1ex;
-  overflow: hidden;
-  text-align: left;
-}
-
-#login-box .field label {
-  clear: left
-  float:left;
-  padding:0 2ex 0 0;
-  text-align:right;
-  width:32ex;
-}
-
+/** Web App Styles **/
+/* Links to other web apps */
 a.bodhi {
   padding-left: 20px;
   background: url(../images/icons/fedora-infra-icon_bodhi.png) 0 50% no-repeat;
@@ -606,6 +594,7 @@ a.cvs {
   background: url(../images/icons/fedora-infra-icon_source-control.png) 0 50% no-repeat;
 }
 
+/* tooltip */
 .tooltip {
   display: block;
   position: absolute;
@@ -614,10 +603,12 @@ a.cvs {
   width: 200px;
 }
 
+/* style to hide an element */
 .invisible {
   display: none;
 }
 
+/* styles for tg flash messages */
 .flash {
   background: #DEE681;
   border: 1px solid #CCBBAA;
@@ -637,6 +628,7 @@ a.cvs {
   background: #DEE681 url(../images/info.png) 10px 50% no-repeat;
 }
 
+/* toolbar styles */
 .toolbar {
   list-style: none;
   list-style-image: none;
@@ -667,4 +659,85 @@ a.cvs {
   padding: 2px;
   text-transform: uppercase;
   vertical-align: middle;
+}
+
+/* panel styles */
+#content .panel {
+  border: medium none;
+  margin-top: 12px;
+}
+
+#content .panel h3 {
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-topleft: 12px;
+  -moz-border-radius-topright: 12px;
+  background-color: #D2D2D2;
+  color: white;
+  font-size: 1em;
+  padding: 8px 6px 6px;
+  text-transform: uppercase;
+  margin: 0;
+}
+i
+/* Login panel */
+#login-box form .field {
+  margin: 0 0 1ex;
+  overflow: hidden;
+  text-align: left;
+}
+
+#login-box .field label {
+  clear: left
+  float:left;
+  padding:0 2ex 0 0;
+  text-align:left;
+  width:32ex;
+}
+
+#content .login {
+  -moz-border-radius-bottomleft: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  background-color: #5F94C9;
+  color: white;
+  padding: 8px 12px;
+}
+
+#content div.login * {
+  color: white;
+  scroll 0 0;
+  padding: 0;
+  margin: 0;
+}
+
+#content .login h3 {
+  background-color: #5F94C9;
+}
+
+#content .login input {
+  padding: 2px 5px;
+  margin-bottom: 5px;
+  color: black;
+}
+
+#content .login label {
+  color: white;
+  display: block;
+  float: left;
+  font-size: 0.8em;
+  margin-right: 10px;
+  width: 60px;
+  text-align: left;
+}
+
+#content .login .button {
+  background-color: #777777;
+  border: 1px solid #555555;
+  color: white;
+}
+
+#content .login ul {
+  list-style-position: inside;
 }
