@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2008-12-11 05:24-0500\n"
+"POT-Creation-Date: 2009-03-17 01:03-0400\n"
 "PO-Revision-Date: 2009-01-24 10:15-0300\n"
 "Last-Translator: Robert Pereira <robertjs@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <fedora-docs-br@redhat.com>\n"
@@ -21,8 +21,7 @@ msgstr ""
 "Generated-By: Babel 0.9.1\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: data/content/410.html:7
-#: data/content/index.html:7
+#: data/content/410.html:7 data/content/index.html:7
 msgid "Hosted Projects - Fedora Hosted"
 msgstr "Projetos Hospedados - Fedora Hosted"
 
@@ -54,8 +53,7 @@ msgstr "Seu novo projeto é apenas um <a href=\"new\">ticket de trabalho</a>."
 msgid "FAQs - Fedora Hosted"
 msgstr "FAQs - Fedora Hosted"
 
-#: data/content/faq.html:12
-#: data/templates/sidebar.html:13
+#: data/content/faq.html:12 data/templates/sidebar.html:13
 msgid "Frequently-Asked Questions"
 msgstr "Perguntas Frequentes"
 
@@ -100,12 +98,28 @@ msgid "Create the archive on your workstation and run <code>scp myProject-0.1.ta
 msgstr "Crie o arquivo na sua máquina local e execute <code>scp meuProjeto-0.1.tar.gz fedorahosted.org:&lt;Nome do Projeto&gt;</code>. O arquivo estará localizado abaixo de  <a href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>"
 
 #: data/content/faq.html:23
+msgid "Is there a more convenient way to access releases than the path <code>/releases/m/y/myproject</code>?"
+msgstr ""
+
+#: data/content/faq.html:24
+msgid "There is. <code>https://fedorahosted.org/released/myproject</code> will go to the same place. The disadvantage of this is you must know the project name and can't browse for projects."
+msgstr ""
+
+#: data/content/faq.html:25
 msgid "I just got a new git repository, how can I push/pull?"
 msgstr "Eu obtive um novo repositório git, como eu posso enviar/resgatar (push/pull) arquivos?"
 
-#: data/content/faq.html:24
+#: data/content/faq.html:26
 msgid "Before anyone can clone/push the new repository a master push must be done with the command (from your local git repo): git push ssh://git.fedorahosted.org/git/yourproject.git/ master"
 msgstr "Antes de qualquer \"clone/push\" de um novo repositório um \"push master\" deve ser feito com o comando (a partir de um repo git local): git push ssh://git.fedorahosted.org/git/seuprojeto.git/ master"
+
+#: data/content/faq.html:27
+msgid "While I wait for my repository to be created, can I work on my code elsewhere?"
+msgstr ""
+
+#: data/content/faq.html:28
+msgid "Of course. Visit <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> for instructions on how to set up a temporary repository in your fedorapeople.org space."
+msgstr ""
 
 #: data/content/index.html:12
 msgid "Available Projects"
@@ -151,8 +165,7 @@ msgstr "Use o seguinte modelo para a descrição completa do ticket:"
 msgid "Terms of Use - Fedora Hosted"
 msgstr "Termos de Uso - Fedora Hosted"
 
-#: data/content/terms.html:12
-#: data/templates/sidebar.html:14
+#: data/content/terms.html:12 data/templates/sidebar.html:14
 msgid "Terms of Use"
 msgstr "Termos de Uso"
 
@@ -227,4 +240,3 @@ msgstr "Patrocinadores de Hospedagem"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "Patrocinado por ServerBeach"
-
