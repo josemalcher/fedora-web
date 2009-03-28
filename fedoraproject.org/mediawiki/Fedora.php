@@ -289,8 +289,8 @@ class FedoraTemplate extends QuickTemplate {
 		}
 ?>
         <li><a href="http://fedoraproject.org/en/sponsors">Sponsors</a></li>
-        <li><a href="http://fedoraproject.org/wiki/Legal">Legal</a></li>
-        <li><a href="http://fedoraproject.org/wiki/Legal/TrademarkGuidelines">Trademark Guidelines</a></li>
+        <li><a href="http://fedoraproject.org/wiki/Legal:Main">Legal</a></li>
+        <li><a href="http://fedoraproject.org/wiki/Legal:Trademark_guidelines">Trademark Guidelines</a></li>
       </ul>
 		</div>
 		</div>
