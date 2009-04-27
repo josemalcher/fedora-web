@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-03-31 08:16-0400\n"
+"POT-Creation-Date: 2009-04-27 19:35-0400\n"
 "PO-Revision-Date: 2008-12-11 16:35+0300\n"
 "Last-Translator: \n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -119,7 +119,8 @@ msgid "To add a Fedora Release counter to your own site, simply place the follow
 msgstr "Хотите разместить счетчик до выпуска Fedora на вашем сайте, поместите следующий код там, где вы хотите его отобразить:"
 
 #: data/content/counter.html:18
-msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values en, es, it, and pt_BR are supported.  When no language is specified, English will be used."
+#, fuzzy
+msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values en and it are supported.  When no language is specified, English will be used."
 msgstr "Параметр lang может быть изменен для отображения счетчика на разных языках.  В данный момент поддерживаются следующие значения: en, es, it и pt_BR.  Если язык не указан, то используется английский."
 
 #: data/content/get-fedora-all.html:13 data/content/get-fedora-kde.html:11
@@ -489,7 +490,7 @@ msgstr "Эти руководства вы найдете на <a href=\"http://
 
 #: data/content/get-prerelease.html:13
 #, fuzzy
-msgid "This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>.  Read the <a href=\"https://fedoraproject.org/wiki/Fedora_11_Beta_release_notes\">Beta release notes</a> for more information."
+msgid "This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>.  Read the <a href=\"http://docs.fedoraproject.org/release-notes/\">Preview release notes</a> for more information."
 msgstr "Это предварительный выпуск. Проект Fedora не дает ни каких гарантий того, что он вам подойдет и будет полезен. Обо всех проблемах следует сообщать через  <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>.  Дополнительную информацию вы найдете, прочитав <a href=\"http://docs.fedoraproject.org/release-notes/\">предварительные замечанию к выпуску</a>."
 
 #: data/content/index.html:10
@@ -619,99 +620,109 @@ msgstr "Если вы не используете yum, вы можете про�
 msgid "Currently used keys"
 msgstr "Используемые в данный момент ключи"
 
+#: data/content/keys.html:68
+#, fuzzy
+msgid "Download: <a href=\"https://fedoraproject.org/static/D22E77F2.txt\">Fedora Project</a>"
+msgstr "Скачать: <a href=\"https://fedoraproject.org/static/4EBFC273.txt\">Проект Fedora</a>"
+
 #: data/content/keys.html:69
+#, fuzzy
+msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0xD22E77F2&op=get\">keys.gnupg.net</a>"
+msgstr "Скачать: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4EBFC273&op=get\">keys.gnupg.net</a>"
+
+#: data/content/keys.html:82
 msgid "Download: <a href=\"https://fedoraproject.org/static/4EBFC273.txt\">Fedora Project</a>"
 msgstr "Скачать: <a href=\"https://fedoraproject.org/static/4EBFC273.txt\">Проект Fedora</a>"
 
-#: data/content/keys.html:70
+#: data/content/keys.html:83
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4EBFC273&op=get\">keys.gnupg.net</a>"
 msgstr "Скачать: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4EBFC273&op=get\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:83
+#: data/content/keys.html:96
 msgid "Download: <a href=\"https://fedoraproject.org/static/0B86274E.txt\">Fedora Project</a>"
 msgstr "Скачать: <a href=\"https://fedoraproject.org/static/0B86274E.txt\">Проект Fedora</a>"
 
-#: data/content/keys.html:84
+#: data/content/keys.html:97
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x0B86274E&op=get\">keys.gnupg.net</a>"
 msgstr "Скачать: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x0B86274E&op=get\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:97
+#: data/content/keys.html:110
 msgid "Download: <a href=\"https://fedoraproject.org/static/6DF2196F.txt\">Fedora Project</a>"
 msgstr "Скачать: <a href=\"https://fedoraproject.org/static/6DF2196F.txt\">Проект Fedora</a>"
 
-#: data/content/keys.html:98
+#: data/content/keys.html:111
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x6DF2196F&op=get\">keys.gnupg.net</a>"
 msgstr "Скачать: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x6DF2196F&op=get\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:111
+#: data/content/keys.html:124
 msgid "Download: <a href=\"https://fedoraproject.org/static/DF9B0AE9.txt\">Fedora Project</a>"
 msgstr "Скачать: <a href=\"https://fedoraproject.org/static/DF9B0AE9.txt\">Проект Fedora</a>"
 
-#: data/content/keys.html:112
+#: data/content/keys.html:125
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0xDF9B0AE9&op=get\">keys.gnupg.net</a>"
 msgstr "Скачать: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0xDF9B0AE9&op=get\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:118
+#: data/content/keys.html:131
 msgid "Obsolete keys"
 msgstr "Устаревшие ключи"
 
-#: data/content/keys.html:129
+#: data/content/keys.html:142
 msgid "Fedora Core (version 6 and earlier)"
 msgstr "Fedora Core (версия 6 и более ранние)"
 
-#: data/content/keys.html:130
+#: data/content/keys.html:143
 msgid "Fedora (version 7, 8, and 9)"
 msgstr "Fedora (версии 7,8 и 9)"
 
-#: data/content/keys.html:131
+#: data/content/keys.html:144
 msgid "Both GA and updates"
 msgstr "Как основной выпуск, так и обновления"
 
-#: data/content/keys.html:135
+#: data/content/keys.html:148
 msgid "Packages on installation media are signed with this key.  The relevant yum repositories are <strong>fedora</strong>, <strong>fedora-updates</strong> for Fedora 7-9, and <strong>core</strong> and <strong>core-updates</strong> for Fedora Core (Version 6 and earlier).  See <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> for information on why this key is obsolete."
 msgstr "Пакеты на установочном носителе подписаны этим ключем. Соответствующие репозитории yum - это <strong>fedora</strong>, <strong>fedora-updates</strong> для Fedora 7-9, а так же <strong>core</strong> и <strong>core-updates</strong> для Fedora Core (версия 6 и ранее).  Прочтите <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a>, где описано почему эти ключи объявлены устаревшими."
 
-#: data/content/keys.html:139
+#: data/content/keys.html:152
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 msgstr "Путь: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 
-#: data/content/keys.html:140
+#: data/content/keys.html:153
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4F2A6FD2&op=index\">keys.gnupg.net</a>"
 msgstr "Скачать: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4F2A6FD2&op=index\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:153
+#: data/content/keys.html:166
 msgid "Fedora (version 7 and newer) testing updates"
 msgstr "Fedora (версия 7 и новее) тестируемые обновления"
 
-#: data/content/keys.html:157
+#: data/content/keys.html:170
 msgid "If you participate in testing of the packages, this is the key you will use to verify the testing packages.  This key signs the packages that are in <strong>fedora-testing</strong> repository.  See <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> for information on why this key is obsolete."
 msgstr "Если вы принимаете участие в тестировании пакетов, этот ключ вы будите использовать для проверки тестируемых пакетов.  Этим ключом подписаны пакеты в репозитории <strong>fedora-testing</strong>. Прочтите сообщение <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> о том, почему этот ключ объявлен устаревшим."
 
-#: data/content/keys.html:161
+#: data/content/keys.html:174
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
 msgstr "Путь: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
 
-#: data/content/keys.html:162
+#: data/content/keys.html:175
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x30C9ECF8&op=index\">keys.gnupg.net</a>"
 msgstr "Скачать: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x30C9ECF8&op=index\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:178
+#: data/content/keys.html:191
 msgid "Fedora Extras (version 6 and earlier)"
 msgstr "Fedora Extras (версия 6 и более ранние)"
 
-#: data/content/keys.html:182
+#: data/content/keys.html:195
 msgid "If you are using Fedora Extras with Fedora Core 6, use this package from <strong>extras</strong> repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007).  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
 msgstr "Если вы пользуетесь Fedora Extras из Fedora Core 6, используйте этот пакет из репозитория <strong>extras</strong>.  Этот ключ не будет более использоваться после достижения конца жизни версиями Fedora Core 6 и Extras (7 декабря 2007).  Этот ключ не входит в состав пакета <strong>fedora-release</strong> в Fedora 7 и последующих выпусков."
 
-#: data/content/keys.html:186
+#: data/content/keys.html:199
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 msgstr "Путь: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 
-#: data/content/keys.html:187
+#: data/content/keys.html:200
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x1AC70CE6&op=index\">keys.gnupg.net</a>"
 msgstr "Скачать: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x1AC70CE6&op=index\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:204
+#: data/content/keys.html:217
 msgid "This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
 msgstr "Этот ключ использовался для пакетов, выпущенных проектом Fedora Legacy для обновления выпусков, достигших своего окончания времени жизни.  Проект Fedora Legacy более не существует, таким образом этот ключ более не используется для подписи пакетов.  Этот ключ не входит в состав пакета <strong>fedora-release</strong> в Fedora 7 и более поздних выпусков."
 
@@ -853,71 +864,85 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Р�
 msgid "Fedora"
 msgstr "Fedora"
 
-#: data/templates/sidebar.html:13
+#: data/templates/sidebar.html:26
+#, python-format
+msgid "%s/static/images/counter/%s"
+msgstr ""
+
+#: data/templates/sidebar.html:26
+#, python-format
+msgid "Fedora 11 Leonidas released in %s days!"
+msgstr ""
+
+#: data/templates/sidebar.html:27
+msgid "Add a counter to your own site!"
+msgstr ""
+
+#: data/templates/sidebar.html:32
 msgid "Navigation"
 msgstr "Навигация"
 
-#: data/templates/sidebar.html:15
+#: data/templates/sidebar.html:34
 msgid "Home"
 msgstr "Домой"
 
-#: data/templates/sidebar.html:16
+#: data/templates/sidebar.html:35
 msgid "Get Fedora"
 msgstr "Получить Fedora"
 
-#: data/templates/sidebar.html:17
+#: data/templates/sidebar.html:36
 msgid "Join Fedora"
 msgstr "Присоединиться к Fedora"
 
-#: data/templates/sidebar.html:18
+#: data/templates/sidebar.html:37
 msgid "Get Help"
 msgstr "Получить помощь"
 
-#: data/templates/sidebar.html:20
+#: data/templates/sidebar.html:39
 msgid "Tools"
 msgstr "Сервис"
 
-#: data/templates/sidebar.html:22
+#: data/templates/sidebar.html:41
 msgid "Docs"
 msgstr "Документация"
 
-#: data/templates/sidebar.html:22
+#: data/templates/sidebar.html:41
 msgid "Fedora documentation."
 msgstr "Документация Fedora."
 
-#: data/templates/sidebar.html:23
+#: data/templates/sidebar.html:42
 msgid "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/\">Вики</a>"
 
-#: data/templates/sidebar.html:23
+#: data/templates/sidebar.html:42
 msgid "Collaborative knowledge."
 msgstr "Совместные знания."
 
-#: data/templates/sidebar.html:24
+#: data/templates/sidebar.html:43
 msgid "Planet"
 msgstr "Планета"
 
-#: data/templates/sidebar.html:24
+#: data/templates/sidebar.html:43
 msgid "The voices of the Fedora community."
 msgstr "Голос Fedora сообщества."
 
-#: data/templates/sidebar.html:25
+#: data/templates/sidebar.html:44
 msgid "<a href=\"http://fedoraproject.org/wiki/Communicate\">Communicate</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Communicate\">Общение</a>"
 
-#: data/templates/sidebar.html:25
+#: data/templates/sidebar.html:44
 msgid "Speak with Fedora."
 msgstr "Поговорить с Fedora."
 
-#: data/templates/sidebar.html:26
+#: data/templates/sidebar.html:45
 msgid "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Events</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">События</a>"
 
-#: data/templates/sidebar.html:26
+#: data/templates/sidebar.html:45
 msgid "Meet the Fedora community."
 msgstr "Встретиться с сообществом Fedora."
 
-#: data/templates/sidebar.html:28
+#: data/templates/sidebar.html:47
 msgid "Website Language"
 msgstr "Язык вебсайта"
 

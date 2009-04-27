@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-03-31 08:16-0400\n"
+"POT-Creation-Date: 2009-04-27 19:35-0400\n"
 "PO-Revision-Date: 2008-11-22 02:00+0530\n"
 "Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
 "Language-Team: Bengali INDIA <fedora-trans-bn_IN@redhat.com>\n"
@@ -119,7 +119,8 @@ msgid "To add a Fedora Release counter to your own site, simply place the follow
 msgstr "আপনার সাইটে Fedora রিলিজের গণনা যোগ করার জন্য, নিম্নলিখিত কমান্ডটি প্রয়োজনীয় স্থানে যোগ করুন:"
 
 #: data/content/counter.html:18
-msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values en, es, it, and pt_BR are supported.  When no language is specified, English will be used."
+#, fuzzy
+msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values en and it are supported.  When no language is specified, English will be used."
 msgstr "রিলিজের গণনার জন্য প্রযোজ্য ভাষা নির্ধারণের জন্য lang পরামিতির মান ব্যবহার করা যাবে। বর্তমানে en, es, it, ও pt_BR সমর্থন করা হয়। কোনো ভাষা উল্লিখিত না হলে ইংরাজি ব্যবহার করা হবে।"
 
 #: data/content/get-fedora-all.html:13 data/content/get-fedora-kde.html:11
@@ -489,7 +490,7 @@ msgstr "<a href=\"http://docs.fedoraproject.org\">docs.fedoraproject.org</a>-এ
 
 #: data/content/get-prerelease.html:13
 #, fuzzy
-msgid "This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>.  Read the <a href=\"https://fedoraproject.org/wiki/Fedora_11_Beta_release_notes\">Beta release notes</a> for more information."
+msgid "This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>.  Read the <a href=\"http://docs.fedoraproject.org/release-notes/\">Preview release notes</a> for more information."
 msgstr "এই সফ্টওয়্যারের এটি প্রাক-রিলিজ সংস্করণ এবং Fedora Project-র পক্ষ থেকে এটির ব্যবহারযোগ্য সম্পর্কে কোনো গ্যারান্টি দেওয়া হবে না। সর্বধরনের সমস্যার সূচনা, <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>-র মাধ্যমে দেওয়া আবশ্যক।  অধিক বিবরণের জন্য <a href=\"http://docs.fedoraproject.org/release-notes/\">প্রি-ভিউ রিলিজ নোট</a> পাঠ করুন।"
 
 # not changing at the moment
@@ -621,104 +622,114 @@ msgstr "yum ব্যবহার না করা হলে, নিম্নল
 msgid "Currently used keys"
 msgstr "বর্তমানে ব্যবহৃত কি (key)"
 
+#: data/content/keys.html:68
+#, fuzzy
+msgid "Download: <a href=\"https://fedoraproject.org/static/D22E77F2.txt\">Fedora Project</a>"
+msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">কার্যক্রম</a>"
+
 #: data/content/keys.html:69
+#, fuzzy
+msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0xD22E77F2&op=get\">keys.gnupg.net</a>"
+msgstr "ডাউনলোড করুন: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4F2A6FD2&op=index\">keys.gnupg.net</a>"
+
+#: data/content/keys.html:82
 msgid "Download: <a href=\"https://fedoraproject.org/static/4EBFC273.txt\">Fedora Project</a>"
 msgstr ""
 
-#: data/content/keys.html:70
+#: data/content/keys.html:83
 #, fuzzy
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4EBFC273&op=get\">keys.gnupg.net</a>"
 msgstr "ডাউনলোড করুন: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4F2A6FD2&op=index\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:83
+#: data/content/keys.html:96
 msgid "Download: <a href=\"https://fedoraproject.org/static/0B86274E.txt\">Fedora Project</a>"
 msgstr ""
 
-#: data/content/keys.html:84
+#: data/content/keys.html:97
 #, fuzzy
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x0B86274E&op=get\">keys.gnupg.net</a>"
 msgstr "ডাউনলোড করুন: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4F2A6FD2&op=index\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:97
+#: data/content/keys.html:110
 msgid "Download: <a href=\"https://fedoraproject.org/static/6DF2196F.txt\">Fedora Project</a>"
 msgstr ""
 
-#: data/content/keys.html:98
+#: data/content/keys.html:111
 #, fuzzy
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x6DF2196F&op=get\">keys.gnupg.net</a>"
 msgstr "ডাউনলোড করুন: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4F2A6FD2&op=index\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:111
+#: data/content/keys.html:124
 msgid "Download: <a href=\"https://fedoraproject.org/static/DF9B0AE9.txt\">Fedora Project</a>"
 msgstr ""
 
-#: data/content/keys.html:112
+#: data/content/keys.html:125
 #, fuzzy
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0xDF9B0AE9&op=get\">keys.gnupg.net</a>"
 msgstr "ডাউনলোড করুন: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4F2A6FD2&op=index\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:118
+#: data/content/keys.html:131
 msgid "Obsolete keys"
 msgstr "অবচিত কি (key)"
 
-#: data/content/keys.html:129
+#: data/content/keys.html:142
 #, fuzzy
 msgid "Fedora Core (version 6 and earlier)"
 msgstr "Fedora Core (সংস্করণ সংখ্যা ৬ ও পূর্ববর্তী)"
 
-#: data/content/keys.html:130
+#: data/content/keys.html:143
 msgid "Fedora (version 7, 8, and 9)"
 msgstr "Fedora (সংস্করণ ৭, ৮, ও ৯)"
 
-#: data/content/keys.html:131
+#: data/content/keys.html:144
 msgid "Both GA and updates"
 msgstr "GA এবং আপডেট, উভয় ক্ষেত্রে প্রযোজ্য"
 
-#: data/content/keys.html:135
+#: data/content/keys.html:148
 msgid "Packages on installation media are signed with this key.  The relevant yum repositories are <strong>fedora</strong>, <strong>fedora-updates</strong> for Fedora 7-9, and <strong>core</strong> and <strong>core-updates</strong> for Fedora Core (Version 6 and earlier).  See <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> for information on why this key is obsolete."
 msgstr "ইনস্টলেশন মিডিয়ার মধ্যে উপস্থিত প্যাকেজগুলি, এই কি সহযোগে স্বাক্ষরিত হয়েছে।  Fedora ৭-৯-র জন্য প্রযোজ্য yum সংগ্রহস্থলগুলি হল <strong>fedora</strong>, <strong>fedora-updates</strong>, ও Fedora Core (সংস্করণ ৬ ও পূর্ববর্তী)-র ক্ষেত্রে <strong>core</strong> ও <strong>core-updates</strong>।  এই কি অবচিত হওয়ার কারণ <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> বার্তায় লেখা হয়েছে।"
 
-#: data/content/keys.html:139
+#: data/content/keys.html:152
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 msgstr "পাথ: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 
-#: data/content/keys.html:140
+#: data/content/keys.html:153
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4F2A6FD2&op=index\">keys.gnupg.net</a>"
 msgstr "ডাউনলোড করুন: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4F2A6FD2&op=index\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:153
+#: data/content/keys.html:166
 msgid "Fedora (version 7 and newer) testing updates"
 msgstr "Fedora (সংস্করণ সংখ্যা ৭ ও ঊর্ধ্বতন) আপডেট পরীক্ষণ"
 
-#: data/content/keys.html:157
+#: data/content/keys.html:170
 msgid "If you participate in testing of the packages, this is the key you will use to verify the testing packages.  This key signs the packages that are in <strong>fedora-testing</strong> repository.  See <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> for information on why this key is obsolete."
 msgstr "প্যাকেজ পরীক্ষা করতে ইচ্ছুক হলে, পরীক্ষামূলক প্যাকেজগুলি এই কি সহযোগে যাচাই করা হবে।  This key signs the packages that are in <strong>fedora-testing</strong> সংগ্রহস্থলের মধ্যে উপস্থিত প্যাকেজগুলি এই কি দ্বারা স্বাক্ষিত হয়।  এই কি অবচিত হওয়ার কারণ <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> বার্তায় আলোচনা করা হয়েছে।"
 
-#: data/content/keys.html:161
+#: data/content/keys.html:174
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
 msgstr "পাথ: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
 
-#: data/content/keys.html:162
+#: data/content/keys.html:175
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x30C9ECF8&op=index\">keys.gnupg.net</a>"
 msgstr "ডাউনলোড করুন: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x30C9ECF8&op=index\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:178
+#: data/content/keys.html:191
 msgid "Fedora Extras (version 6 and earlier)"
 msgstr "Fedora Extras (সংস্করণ সংখ্যা ৬ ও পূর্ববর্তী)"
 
-#: data/content/keys.html:182
+#: data/content/keys.html:195
 msgid "If you are using Fedora Extras with Fedora Core 6, use this package from <strong>extras</strong> repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007).  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
 msgstr "Fedora Core ৬-র সাথে Fedora Extras ব্যবহারের সময় <strong>extras</strong> নামক সংগ্রহস্থল থেকে এই প্যাকেজটি ব্যবহার করুন। Fedora Core ৬ ও Extras-র আয়ুকাল সমাপ্ত হলে (৭ই ডিসেম্বর ২০০৭) এই কি অবচিত হবে।  Fedora ৭ ও ঊর্ধ্বতন সংস্করণে উপস্থিত <strong>fedora-release</strong> প্যাকেজের মধ্যে এই কি অন্তর্ভুক্ত করা হয়নি।"
 
-#: data/content/keys.html:186
+#: data/content/keys.html:199
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 msgstr "পাথ: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 
-#: data/content/keys.html:187
+#: data/content/keys.html:200
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x1AC70CE6&op=index\">keys.gnupg.net</a>"
 msgstr "ডাউনলোড করুন: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x1AC70CE6&op=index\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:204
+#: data/content/keys.html:217
 msgid "This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
 msgstr "Fedora-র যে সকল সংস্করণের আয়ুকাল সমাপ্ত হয়েছে, সেই সংস্করণগুলি আপডেট করার জন্য Fedora Legacy প্রজেক্ট দ্বারা প্রকাশিত প্যাকেজের জন্য এই কি ব্যবহার করা হত। Fedora Legacy প্রজেক্ট বর্তমানে বাতিল করা হয়েছে এবং এই কি সহযোগে কোনো প্যাকেজ স্বাক্ষর করা সম্ভব নয়। Fedora ৭ ও ঊর্ধ্বতন সংস্করণে উপস্থিত <strong>fedora-release</strong> প্যাকেজের মধ্যে এই কি অন্তর্ভুক্ত করা হয়নি।"
 
@@ -865,72 +876,86 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">ট
 msgid "Fedora"
 msgstr "Fedora"
 
-#: data/templates/sidebar.html:13
+#: data/templates/sidebar.html:26
+#, python-format
+msgid "%s/static/images/counter/%s"
+msgstr "%s/static/images/counter/%s"
+
+#: data/templates/sidebar.html:26
+#, fuzzy, python-format
+msgid "Fedora 11 Leonidas released in %s days!"
+msgstr "Fedora ১০ Cambridge %s দিনে প্রকাশিত হবে!"
+
+#: data/templates/sidebar.html:27
+msgid "Add a counter to your own site!"
+msgstr "আপনার ওয়েব-সাইটে এই গণনা সংযোজন করুন!"
+
+#: data/templates/sidebar.html:32
 msgid "Navigation"
 msgstr "চলাচল"
 
-#: data/templates/sidebar.html:15
+#: data/templates/sidebar.html:34
 msgid "Home"
 msgstr "প্রধান পাতা"
 
-#: data/templates/sidebar.html:16
+#: data/templates/sidebar.html:35
 msgid "Get Fedora"
 msgstr "Fedora প্রাপ্ত করুন"
 
-#: data/templates/sidebar.html:17
+#: data/templates/sidebar.html:36
 msgid "Join Fedora"
 msgstr "Fedora-এ যোগদান করুন"
 
-#: data/templates/sidebar.html:18
+#: data/templates/sidebar.html:37
 msgid "Get Help"
 msgstr "সাহায্য প্রাপ্ত করুন"
 
-#: data/templates/sidebar.html:20
+#: data/templates/sidebar.html:39
 msgid "Tools"
 msgstr "সরঞ্জাম"
 
-#: data/templates/sidebar.html:22
+#: data/templates/sidebar.html:41
 msgid "Docs"
 msgstr "নথিপত্র"
 
-#: data/templates/sidebar.html:22
+#: data/templates/sidebar.html:41
 msgid "Fedora documentation."
 msgstr "Fedora-র নথিপত্র।"
 
-#: data/templates/sidebar.html:23
+#: data/templates/sidebar.html:42
 msgid "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 
 # might need to be changed
-#: data/templates/sidebar.html:23
+#: data/templates/sidebar.html:42
 msgid "Collaborative knowledge."
 msgstr "সকলের সহযোগিতায় একত্রিত তথ্য ভান্ডার।"
 
-#: data/templates/sidebar.html:24
+#: data/templates/sidebar.html:43
 msgid "Planet"
 msgstr "প্ল্যানেট"
 
-#: data/templates/sidebar.html:24
+#: data/templates/sidebar.html:43
 msgid "The voices of the Fedora community."
 msgstr "Fedora সম্প্রদায়ের মতামত।"
 
-#: data/templates/sidebar.html:25
+#: data/templates/sidebar.html:44
 msgid "<a href=\"http://fedoraproject.org/wiki/Communicate\">Communicate</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Communicate\">যোগাযোগ</a>"
 
-#: data/templates/sidebar.html:25
+#: data/templates/sidebar.html:44
 msgid "Speak with Fedora."
 msgstr "Fedora-র সাথে কথা বলুন।"
 
-#: data/templates/sidebar.html:26
+#: data/templates/sidebar.html:45
 msgid "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Events</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">কার্যক্রম</a>"
 
-#: data/templates/sidebar.html:26
+#: data/templates/sidebar.html:45
 msgid "Meet the Fedora community."
 msgstr "Fedora সম্প্রদায়ের সাথে পরিচিত হন।"
 
-#: data/templates/sidebar.html:28
+#: data/templates/sidebar.html:47
 msgid "Website Language"
 msgstr "ওয়েব-সাইটে ব্যবহৃত ভাষা"
 
@@ -945,12 +970,3 @@ msgstr "ওয়েব-সাইটে ব্যবহৃত ভাষা"
 
 #~ msgid "Fedora 10 Desktop Guide"
 #~ msgstr "Fedora ১০ ডেস্কটপ সহায়িকা (ইংরাজি সংস্করণ)"
-
-#~ msgid "%s/static/images/counter/%s"
-#~ msgstr "%s/static/images/counter/%s"
-
-#~ msgid "Fedora 10 Cambridge released in %s days!"
-#~ msgstr "Fedora ১০ Cambridge %s দিনে প্রকাশিত হবে!"
-
-#~ msgid "Add a counter to your own site!"
-#~ msgstr "আপনার ওয়েব-সাইটে এই গণনা সংযোজন করুন!"
