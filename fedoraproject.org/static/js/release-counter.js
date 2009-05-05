@@ -1,4 +1,4 @@
-var available_langs = [ "de", "en", "hu", "is", "it" ];
+var available_langs = [ "de", "en", "hu", "is", "it", "pt_BR" ];
 
 function getLang() {
     var scripts = document.getElementsByTagName("script");
