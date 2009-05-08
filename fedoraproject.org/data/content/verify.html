@@ -12,19 +12,19 @@
     ${Markup(_('Windows user?  Follow &lt;a href="http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html"&gt;these instructions&lt;/a&gt; instead.'))}
     </p>
     <p>
-    ${Markup(_('Once you have downloaded an ISO, verify it for security and integrity.  If you downloaded your ISO via BitTorrent, the file has already been verified as part of the download process (just make sure that you got the torrent from &lt;a href="http://torrent.fedoraproject.org/"&gt;torrent.fedoraproject.org&lt;/a&gt;).  Otherwise, to verify your ISO, start by downloading the proper SHA1SUM file into the same directory as the ISO:'))}
+    ${Markup(_('Once you have downloaded an ISO, verify it for security and integrity.  If you downloaded your ISO via BitTorrent, the file has already been verified as part of the download process (just make sure that you got the torrent from &lt;a href="http://torrent.fedoraproject.org/"&gt;torrent.fedoraproject.org&lt;/a&gt;).  Otherwise, to verify your ISO, start by downloading the proper CHECKSUM file into the same directory as the ISO:'))}
     </p>
     <h3>${Markup(_('Install DVD / Rescue CD'))}</h3>
     <ul>
-      <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/10/Fedora/i386/iso/SHA1SUM">i386</a></li>
-      <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/10/Fedora/x86_64/iso/SHA1SUM">x86_64</a></li>
-      <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/10/Fedora/ppc/iso/SHA1SUM">ppc</a></li>
+      <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/11/Fedora/i386/iso/Fedora-11-i386-CHECKSUM">i386</a></li>
+      <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/11/Fedora/x86_64/iso/Fedora-11-x86_64-CHECKSUM">x86_64</a></li>
+      <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/11/Fedora/ppc/iso/Fedora-11-ppc-CHECKSUM">ppc</a></li>
     </ul>
     <h3>${Markup(_('Live Media (both GNOME and KDE)'))}</h3>
     <ul>
-      <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/10/Live/i686/SHA1SUM">i386</a></li>
-      <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/10/Live/x86_64/SHA1SUM">x86_64</a></li>
-      <!--<li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/10/Live/ppc/SHA1SUM">ppc</a></li>-->
+      <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/11/Live/i686/F11-i686-Live-CHECKSUM">i386</a></li>
+      <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/11/Live/x86_64/F11-x86_64-Live-CHECKSUM">x86_64</a></li>
+      <!--<li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/11/Live/ppc/F11-ppc-Live-CHECKSUM">ppc</a></li>-->
     </ul>
     <p>
     ${Markup(_('Next, import Fedora\'s GPG key(s):'))}
@@ -34,22 +34,23 @@
     ${Markup(_('You can verify the details of the GPG key(s) &lt;a href="%s/%s/keys"&gt;here&lt;/a&gt;.') % (path, lang))}
     </p>
     <p>
-    ${Markup(_('Now, verify that the SHA1SUM file is valid:'))}
+    ${Markup(_('Now, verify that the CHECKSUM file is valid:'))}
     </p>
-    <pre class="command">$ gpg --verify SHA1SUM</pre>
+    <pre class="command">$ gpg --verify *-CHECKSUM</pre>
     <p>
-    ${Markup(_('The SHA1SUM file should have a good signature from one of the following keys:'))}
+    ${Markup(_('The CHECKSUM file should have a good signature from one of the following keys:'))}
     </p>
     <ul>
+        <li><code>FIXME</code> - ${Markup(_('Fedora 11'))}</li>
         <li><code>4EBFC273</code> - ${Markup(_('Fedora 10'))}</li>
         <li><code>0B86274E</code> - ${Markup(_('Fedora 10 pre-releases'))}</li>
         <li><code>4F2A6FD2</code> - ${Markup(_('Fedora 9 and earlier'))}</li>
         <li><code>30C9ECF8</code> - ${Markup(_('Fedora 9 and earlier pre-releases'))}</li>
     </ul>
     <p>
-    ${Markup(_('Finally, now that the SHA1SUM file has been verified, check that the ISO\'s checksum matches:'))}
+    ${Markup(_('Finally, now that the CHECKSUM file has been verified, check that the ISO\'s checksum matches:'))}
     </p>
-    <pre class="command">$ sha1sum -c SHA1SUM</pre>
+    <pre class="command">$ sha256sum -c *-CHECKSUM</pre>
     <p>
     ${Markup(_('If the output states that the file is valid, you\'re good to go!'))}
     </p>
