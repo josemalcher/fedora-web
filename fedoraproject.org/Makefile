@@ -1,8 +1,8 @@
 ifndef LANGUAGES
 LANGUAGES := $(shell grep -v "^\#" po/LINGUAS)
 endif
-PO_FILES = $(patsubst %, po/%.po, $(LANGUAGES))
-MO_FILES = $(patsubst %, po/%.mo, $(LANGUAGES))
+PO_FILES = $(wildcard po/*.po)
+MO_FILES = $(wildcard po/*.mo)
 HTML_FILES = $(shell find . -name "*.html")
 
 PYTHON = python
