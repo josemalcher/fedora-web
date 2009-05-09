@@ -36,11 +36,10 @@
     <p>
       ${Markup(_('If you want to verify that the keys installed on your system match the keys listed here, you can use GnuPG to check that the fingerprint of the key matches.  For example:'))}
 
-      <pre class="command">$ gpg --quiet --with-fingerprint /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-10-primary
+      <pre class="command">$ gpg --quiet --with-fingerprint /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-11-primary
 ...
-pub  1024D/4EBFC273 2008-08-27 Fedora (10) &lt;fedora@fedoraproject.org&gt;
-      Key fingerprint = 61A8 ABE0 91FF 9FBB F4B0  7709 BF22 6FCC 4EBF C273
-sub  4096g/C1527A5F 2008-08-27</pre>
+pub  4096R/D22E77F2 2009-01-19 Fedora (11) &lt;fedora@fedoraproject.org&gt;
+      Key fingerprint = AEE4 0C04 E345 60A7 1F04  3D7C 1DC5 C758 D22E 77F2</pre>
     </p>
 
     <h3>${Markup(_('Verifying a package'))}</h3>
@@ -56,6 +55,19 @@ sub  4096g/C1527A5F 2008-08-27</pre>
     <br/>
 
     <h2>${Markup(_('Currently used keys'))}</h2>
+
+    <h3>RPM-GPG-KEY-fedora-11-primary</h3>
+    <p>
+      <pre class="command">pub   4096R/D22E77F2 2009-01-19
+      Key fingerprint = AEE4 0C04 E345 60A7 1F04  3D7C 1DC5 C758 D22E 77F2
+uid                  Fedora (11) &lt;fedora@fedoraproject.org&gt;</pre>
+    </p>
+    <p>
+      <ul>
+        <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/D22E77F2.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
+        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0xD22E77F2&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
+      </ul>
+    </p>
 
     <h3>RPM-GPG-KEY-fedora-test-11-primary</h3>
     <p>
