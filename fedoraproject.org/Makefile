@@ -1,8 +1,8 @@
 ifndef LANGUAGES
 LANGUAGES := $(shell grep -v "^\#" po/LINGUAS)
 endif
-PO_FILES = $(wildcard po/*.po)
-MO_FILES = $(wildcard po/*.mo)
+PO_FILES = $(filter-out po/en.po,$(wildcard po/*.po))
+MO_FILES = $(PO_FILES:.po=.mo)
 HTML_FILES = $(shell find . -name "*.html")
 
 PYTHON = python
@@ -19,10 +19,10 @@ $(LANGUAGES): data/templates/translations.html
 po/en.po: po/fedora-web.pot
 	cp po/fedora-web.pot po/en.po
 
-%.po: po/fedora-web.pot
+$(PO_FILES): po/fedora-web.pot
 	msgmerge --no-wrap --update $@ $^
 
-%.mo: %.po
+$(MO_FILES): $(PO_FILES)
 	msgfmt -o $@ $<
 
 po/fedora-web.pot: $(HTML_FILES)
