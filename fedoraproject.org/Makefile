@@ -10,7 +10,7 @@ PYBABEL = pybabel
 BASEPATH = /
 PWD = $(shell pwd)
 
-all: po/fedora-web.pot $(MO_FILES) $(LANGUAGES)
+all: po/fedora-web.pot $(MO_FILES) po/en.mo $(LANGUAGES)
 	cp static/robots.txt	out/
 
 $(LANGUAGES): data/templates/translations.html
