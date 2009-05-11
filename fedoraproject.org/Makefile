@@ -22,7 +22,7 @@ po/en.po: po/fedora-web.pot
 $(PO_FILES): po/fedora-web.pot
 	msgmerge --no-wrap --update $@ $^
 
-$(MO_FILES): $(PO_FILES)
+$(MO_FILES) po/en.mo: $(PO_FILES) po/en.po
 	msgfmt -o $@ $<
 
 po/fedora-web.pot: $(HTML_FILES)
