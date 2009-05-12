@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: fedora-web.master-fedoraproject\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2009-05-10 05:34-0400\n"
-"PO-Revision-Date: 2009-05-12 15:29+1000\n"
+"PO-Revision-Date: 2009-05-12 20:17+1000\n"
 "Last-Translator: Leah Liu <lliu@redhat.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -374,6 +374,8 @@ msgid ""
 "fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora Sponsored Media "
 "Program</a>."
 msgstr ""
+"当您在<a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">加入的经销商</a>下订单时，您还可以资助那些负担不起介质费用的用户，比如发展中国家的人民。请在<a href=\"http://"
+"fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora 资助介质项目</a>申请加入。"
 
 #: data/content/get-fedora-kde.html:15 data/content/get-fedora.html:13
 msgid "Have a PowerPC?  Go here!"
@@ -563,7 +565,6 @@ msgid "Get Help."
 msgstr "获得帮助。"
 
 #: data/content/get-help.html:11
-#, fuzzy
 msgid ""
 "Being new to Fedora can seem daunting, fortunately there are lots of "
 "resources available to help make the transition easy. This page ties "
@@ -682,7 +683,7 @@ msgid ""
 "available, including the Fedora User Guide, aimed at basic day to day "
 "operation of Fedora and the Fedora Admin Guide, aimed at explaining how to "
 "look after and maintain Fedora."
-msgstr ""
+msgstr "Fedora 还有一个多才多艺的作家团队，他们努力完成了出色的书面文档。有很多不同的文档可用，其中包括用于日常 Fedora 操作的《Fedora 用户指南》以及用于如何维护 Fedora 的《Fedora 管理员指南》。"
 
 #: data/content/get-help.html:44
 msgid ""
@@ -877,7 +878,7 @@ msgid ""
 "in default configuration, <strong>yum</strong> is able to find a proper key "
 "for the repository and asks the user for confirmation before importing the "
 "key if the key is not already imported into the rpm database."
-msgstr ""
+msgstr "在有些程序库中，比如带默认配置中的稳定和测试的软件包的程序库，如果没有将该密钥导入到 rpm 数据库，<strong>yum</strong> 可找到该程序库的正确密钥并在导入密钥前询问用户以便确认。"
 
 #: data/content/keys.html:30
 msgid ""
@@ -894,7 +895,7 @@ msgid ""
 "If you want to verify that the keys installed on your system match the keys "
 "listed here, you can use GnuPG to check that the fingerprint of the key "
 "matches.  For example:"
-msgstr ""
+msgstr "如果您想要验证您在系统中安装的密钥与在这里列出的密钥匹配，您可以使用 GnuPG 检查密钥指纹匹配。例如："
 
 #: data/content/keys.html:45
 msgid "Verifying a package"
@@ -908,7 +909,7 @@ msgid ""
 "and on globally or for specific repository with <strong>gpgcheck</strong> "
 "directive.  Do not override the default setting of this directive unless you "
 "have a very good reason to do so."
-msgstr ""
+msgstr "当使用稳定发行本中的默认 <strong>yum</strong> 软件包配置更新和安装工具时，安装每个软件包之前要验证其签名。可使用 <strong>gpgcheck</strong> 指令在全局范围或者特定程序库中关闭签名验证。不要覆盖这个指令的默认设置除非您有一个非常好的理由。"
 
 #: data/content/keys.html:50
 msgid ""
@@ -1014,7 +1015,7 @@ msgstr "Fedora ( 7，8，9)"
 
 #: data/content/keys.html:156
 msgid "Both GA and updates"
-msgstr ""
+msgstr "GA 和更新"
 
 #: data/content/keys.html:160
 msgid ""
@@ -1123,7 +1124,7 @@ msgid ""
 "project no longer exists, so no this key will no longer be used to sign "
 "packages.  This key is not included in the <strong>fedora-release</strong> "
 "package in Fedora 7 and later releases."
-msgstr ""
+msgstr "这个密钥用于 Fedora 继承项目发布的软件包来更新将要达到法定生命周期的发行本。Fedora 继承项目不再存在，因此不会再使用这个密钥为软件包签名。在 Fedora 7 以及其后的发行本的 <strong>fedora-release</strong> 软件包中不包含这个密钥。"
 
 #: data/content/rss.html:10
 msgid "RSS Feed Test"
@@ -1298,17 +1299,15 @@ msgid "Sponsors"
 msgstr "赞助者"
 
 #: data/templates/foot.html:16
-#, fuzzy
 msgid "<a href=\"http://fedoraproject.org/wiki/Legal:Main\">Legal</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Main\">法律条款</a>"
 
 #: data/templates/foot.html:17
-#, fuzzy
 msgid ""
 "<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines"
 "\">Trademark Guidelines</a>"
 msgstr ""
-"<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">商标向导"
+"<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">商标指南"
 "</a>"
 
 #: data/templates/head.html:7
@@ -1371,7 +1370,7 @@ msgstr "协作知识库。"
 
 #: data/templates/sidebar.html:43
 msgid "Planet"
-msgstr ""
+msgstr "Planet"
 
 #: data/templates/sidebar.html:43
 msgid "The voices of the Fedora community."
@@ -1391,7 +1390,7 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">事件</a>"
 
 #: data/templates/sidebar.html:45
 msgid "Meet the Fedora community."
-msgstr ""
+msgstr "接触 Fedora 社区。"
 
 #: data/templates/sidebar.html:47
 msgid "Website Language"
