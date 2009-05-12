@@ -1,0 +1,206 @@
+#!/usr/bin/python
+
+"""Update gpg keys used on fedoraproject.org.  This script helps automate the
+process of maintaining the fedora key files used on the website.  It manages
+both the individual key files, stored as static/$KEYID.txt, and the full Fedora
+keyblock, stored as static/fedora.gpg.  To add or update individual keyfiles,
+specify the path to a key, e.g. /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora.  Removing
+keys may be done using the --remove (-r) option, specifying a path or keyid.
+"""
+
+# TODO
+#
+# Allow removal of keys based on userid or release version (i.e. 10, to remove
+# all Fedora 10 keys).
+#
+# Automatically download fedora-release packages and/or RPM-GPG-KEY-* files for
+# supported releases and extract the keys from them, prompting to verify the
+# keys, of course.
+
+import os
+import re
+import glob
+import shutil
+import optparse
+import tempfile
+from stat import *
+from subprocess import Popen, PIPE, STDOUT
+
+# Match keyids
+keyid_re = re.compile('^[0-9a-z]{8}$', re.IGNORECASE)
+
+# Match '10 testing' in Fedora (10 testing) <fedora@fedoraproject.org>
+version_re = re.compile('[^(]*\(([^)]*)\).*')
+
+class GpgError(EnvironmentError):
+    pass
+
+def get_keyinfo(path):
+    """Return some basic information about a gpg key."""
+    cmd = ['gpg', '--with-colons', path]
+    p = Popen(cmd, stdout=PIPE, stderr=PIPE)
+    stdout, stderr = p.communicate()
+    if p.returncode:
+        raise GpgError(-1, stderr)
+    for line in stdout.split('\n'):
+        if line.startswith('pub:'):
+            info = line.split(':')
+            keyid, userid = info[4][8:], info[9]
+    return { 'keyid': keyid, 'userid': userid }
+
+def natsorted(l):
+    """ Sort the given list in the way that humans expect."""
+    # Taken from http://nedbatchelder.com/blog/200712/human_sorting.html
+    convert = lambda text: int(text) if text.isdigit() else text
+    alphanum_key = lambda key: [convert(c) for c in re.split('([0-9]+)', key)]
+    return sorted(l, key=alphanum_key)
+
+usage = '%prog [options] keyfile [keyfile...]'
+parser = optparse.OptionParser(usage=usage, epilog=__doc__)
+parser.add_option('-d', '--keydir', dest='keydir',
+                  metavar='dir', default='static',
+                  help='Location of fedora keyblock and key files [%default/]')
+parser.add_option('-k', '--keyblock', dest='keyblock',
+                  metavar='file', default='fedora.gpg',
+                  help='Name of fedora keyblock [%default]')
+parser.add_option('-f', '--fingerprint', dest='fingerprint',
+                  action='store_true', default=True,
+                  help='Add fingerprints to key files and output [%default]')
+parser.add_option('--no-fingerprint', dest='fingerprint',
+                  action='store_false',
+                  help='Do not add fingerprints to key files and output')
+parser.add_option('-r', '--remove', dest='rmkeys', action='append',
+                  metavar='file|keyid', default=[],
+                  help='Remove key (may be used more than once)')
+parser.add_option('-v', '--verbose', dest='verbose', action='count', default=0,
+                  help='Increase verbosity (may be used more than once)')
+opts, args = parser.parse_args()
+
+# Ensure keydir exists and has reasonable perms
+if os.path.isdir(opts.keydir):
+    if not os.access(opts.keydir, os.R_OK | os.W_OK | os.X_OK):
+        msg = 'read, write, and search perms are required for %s' % opts.keydir
+        raise SystemExit('Error: %s' % msg)
+else:
+    if opts.verbose:
+        print 'Creating keydir: %s' % opts.keydir
+    try:
+        os.makedirs(opts.keydir)
+    except Exception, e:
+        raise SystemExit('Failed to create %s: %s' % (opts.keydir, e.strerror))
+
+# Handle removal requests
+for k in opts.rmkeys:
+    path = ''
+    if os.path.exists(k):
+        path = k
+    elif keyid_re.match(k):
+        f = os.path.join(opts.keydir, k.upper() + '.txt')
+        if os.path.exists(f):
+            path = f
+        else:
+            print '%s appears to be keyid, but %s not found' % (k, f)
+            continue
+    else:
+        f = os.path.join(opts.keydir, k)
+        if os.path.exists(f):
+            path = f
+        else:
+            print 'No matches found for %s' % k
+            continue
+    if path:
+        try:
+            os.remove(path)
+        except Exception, e:
+            print 'Failed to remove %s: %s' % (path, e.strerror)
+            continue
+        print 'Removed %s' % path
+
+# Process any key files passed in as arguments
+for f in args:
+    if not os.path.isfile(f):
+        print '%s is not a file, skipping...' % f
+        continue
+    if '-----BEGIN PGP PUBLIC KEY BLOCK-----' not in open(f).read():
+        print '%s does not appear to be a gpg key file, skipping...' % f
+        continue
+    try:
+        keyinfo = get_keyinfo(f)
+    except Exception, e:
+        print 'Failed to get keyinfo for %s: %s' % (f, e.strerror)
+        continue
+    keyfile = os.path.join(opts.keydir, '%s.txt' % keyinfo['keyid'])
+    cmd = ['gpg']
+    if opts.fingerprint:
+        cmd.append('--with-fingerprint')
+    try:
+        keydata = open(f).read()
+        p = Popen(cmd, stdin=PIPE, stdout=PIPE, stderr=PIPE)
+        output, stderr = p.communicate(input=keydata)
+        if p.returncode:
+            raise GpgError(-1, stderr)
+    except Exception, e:
+        print 'Failed to read %s: %s' % (f, e.strerror)
+        continue
+    keydata = output + '\n' + keydata
+    if opts.verbose:
+        print 'Adding key data to %s:\n%s' % (keyfile, output)
+    kf = open(keyfile, 'w')
+    kf.write(keydata)
+    kf.close()
+
+# Update the fedora.gpg keyblock
+keys = {}
+for keyfile in glob.glob('%s/*.txt' % opts.keydir):
+    if '-----BEGIN PGP PUBLIC KEY BLOCK-----' not in open(keyfile).read():
+        continue
+    try:
+        keyinfo = get_keyinfo(keyfile)
+    except GpgError, e:
+        print 'Skipping %s: %s' % (keyfile, e.strerror)
+    try:
+        version = version_re.findall(keyinfo['userid'])[0]
+    except:
+        raise SystemExit('Unable to find version string for %s' % keyfile)
+    keys[version] = (keyinfo['keyid'], keyfile)
+
+if not keys:
+    raise SystemExit('No keys were found')
+
+# Create a temporary homedir for gpg
+gpgdir = tempfile.mkdtemp(prefix='gpg', dir='.')
+
+# Import key(s) to tmp keyring
+cmd = ['gpg', '--homedir', gpgdir, '--quiet', '--import']
+cmd.extend([keys[k][1] for k in natsorted(keys.keys())])
+try:
+    p = Popen(cmd, stdout=PIPE, stderr=PIPE)
+    stdout, stderr = p.communicate()
+    if p.returncode:
+        raise GpgError(-1, stderr)
+except Exception, e:
+    shutil.rmtree(gpgdir)
+    raise SystemExit('Failed to import key(s): %s' % e.strerror)
+
+# Export key(s) from tmp keyring
+cmd = ['gpg', '--homedir', gpgdir, '--armor', '--export']
+try:
+    p = Popen(cmd, stdout=PIPE, stderr=PIPE)
+    stdout, stderr = p.communicate()
+    if p.returncode:
+        raise GpgError(-1, stderr)
+except Exception, e:
+    shutil.rmtree(gpgdir)
+    raise SystemExit('Failed to export key(s): %s' % e.strerror)
+
+# Remove tmp gpgdir
+shutil.rmtree(gpgdir)
+
+# Write fedora keyblock
+keyblock = os.path.join(opts.keydir, opts.keyblock)
+try:
+    f = open(keyblock, 'w')
+    f.write(stdout)
+    f.close()
+except Exception, e:
+    print 'Failed to write %s keyblock: %s' % (keyblock, e.strerror)
