@@ -441,9 +441,14 @@ ul#resources li.resource-download
   padding-top: 1ex;
 }
 
-#content a
+#content a:link
 {
   color: #337ACC;
+}
+
+#content a:visited
+{
+  color: #804080;
 }
 
 /* get-fedora styles */
@@ -545,9 +550,7 @@ ul#resources li.resource-download
     background-color: #003380;
 }
 
-.download-sidebar a:link,
-.download-sidebar a:active,
-.download-sidebar a:visited {
+.download-sidebar a {
   color: #FFFFFF!important;
   font-size: medium;
   text-decoration: none;
