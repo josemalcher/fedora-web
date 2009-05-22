@@ -1,16 +1,16 @@
-# translation of fedorahosted.master.po to marathi
+# translation of fedora-web.master-fedorahosted.mr.po to marathi
 # Translations template for PROJECT.
 # Copyright (C) 2008 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 #
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
-# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008.
+# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: fedorahosted.master\n"
+"Project-Id-Version: fedora-web.master-fedorahosted.mr\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2009-03-17 01:03-0400\n"
-"PO-Revision-Date: 2008-11-14 12:39+0530\n"
+"PO-Revision-Date: 2009-05-21 14:26+0530\n"
 "Last-Translator: Sandeep Shedmake <sandeep.shedmake@gmail.com>\n"
 "Language-Team: marathi\n"
 "MIME-Version: 1.0\n"
@@ -26,12 +26,11 @@ msgstr "प्रदर्शीत प्रकल्प - Fedora Hosted"
 
 #: data/content/410.html:12
 msgid "No such project."
-msgstr ""
+msgstr "असा प्रकल्प अस्तित्वात नाही."
 
 #: data/content/410.html:14
-#, fuzzy
 msgid "The requested project does not exist on Fedora Hosted."
-msgstr "नविन प्रकल्प करीता विनंती करा - Fedora Hosted"
+msgstr "विनंतीकृत प्रकल्प Fedora Hosted वर अस्तित्वात नाही."
 
 #: data/content/about.html:7
 msgid "About - Fedora Hosted"
@@ -42,8 +41,16 @@ msgid "About Fedora Hosted"
 msgstr "Fedora Hosted वियषी"
 
 #: data/content/about.html:13
-msgid "Fedora Hosted is a <a href=\"http://fedoraproject.org\">Fedora Project</a>-sponsored way for developers to host their code and collaborate online. We provide each project with source control via git, Mercurial, bzr, and others, as well as a bug tracker and wiki via Trac."
-msgstr "Fedora Hosted हे डेव्हलपर करीता कोड प्रदर्शीत करण्याचे व ऑनलाइन एकत्र कार्य करण्यासाठी <a href=\"http://fedoraproject.org\">Fedora Project</a>-द्वारे निर्मीत मार्ग आहे. स्त्रोत नियंत्रण जसे की git, Mercurial, bzr, व इतर, त्याचबरोबर बग नियंत्रण व wiki, Trac द्वारे प्रत्येक प्रकल्प पुरविले जाते."
+msgid ""
+"Fedora Hosted is a <a href=\"http://fedoraproject.org\">Fedora Project</a>-"
+"sponsored way for developers to host their code and collaborate online. We "
+"provide each project with source control via git, Mercurial, bzr, and "
+"others, as well as a bug tracker and wiki via Trac."
+msgstr ""
+"Fedora Hosted हे डेव्हलपर करीता कोड प्रदर्शीत करण्याचे व ऑनलाइन एकत्र कार्य करण्यासाठी "
+"<a href=\"http://fedoraproject.org\">Fedora Project</a>-द्वारे निर्मीत मार्ग आहे. "
+"स्त्रोत नियंत्रण जसे की git, Mercurial, bzr, व इतर, त्याचबरोबर बग नियंत्रण व wiki, "
+"Trac द्वारे प्रत्येक प्रकल्प पुरविले जाते."
 
 #: data/content/about.html:14
 msgid "Your new project is just a <a href=\"new\">work ticket</a> away."
@@ -62,8 +69,14 @@ msgid "What is Fedora Hosted?"
 msgstr "Fedora Hosted काय आहे?"
 
 #: data/content/faq.html:14
-msgid "Fedora Hosted is a project sponsored by <a href=\"http://fedoraproject.org/\">the Fedora Project</a> to allow upstream developers to host their code and collaborate online."
-msgstr "Fedora Hosted <a href=\"http://fedoraproject.org/\">the Fedora Project</a> द्वारे निर्मीत प्रकल्प आहे जे अपस्ट्रीम डेव्हलपर यांस कोड प्रदर्शन करीता व ऑनलाइन एकत्र कार्य करण्याकरीता परवानगी पुरविते."
+msgid ""
+"Fedora Hosted is a project sponsored by <a href=\"http://fedoraproject.org/"
+"\">the Fedora Project</a> to allow upstream developers to host their code "
+"and collaborate online."
+msgstr ""
+"Fedora Hosted <a href=\"http://fedoraproject.org/\">the Fedora Project</a> "
+"द्वारे निर्मीत प्रकल्प आहे जे अपस्ट्रीम डेव्हलपर यांस कोड प्रदर्शन करीता व ऑनलाइन एकत्र "
+"कार्य करण्याकरीता परवानगी पुरविते."
 
 #: data/content/faq.html:15
 msgid "How can I request a new project?"
@@ -78,48 +91,95 @@ msgid "Where can I go for help?"
 msgstr "मदत करीता कुठे जायचे?"
 
 #: data/content/faq.html:18
-msgid "The best ways to get help are to join the <a href=\"irc://irc.freenode.net/#fedora-admin\"><code>#fedora-admin</code></a> IRC channel on <a href=\"http://www.freenode.net/\">Freenode</a> or to <a href=\"https://fedorahosted.org/fedora-infrastructure/\">open a ticket</a> with the Fedora Infrastructure team."
-msgstr "मदत प्राप्त करण्याकरीता उत्तम मार्ग म्हणजे <a href=\"http://www.freenode.net/\">Freenode</a> वरील <a href=\"irc://irc.freenode.net/#fedora-admin\"><code>#fedora-admin</code></a> हे IRC मार्ग उघडा किंवा Fedora Infrastructure समुह करीता <a href=\"https://fedorahosted.org/fedora-infrastructure/\">टिकीट उघडा</a>."
+msgid ""
+"The best ways to get help are to join the <a href=\"irc://irc.freenode.net/"
+"#fedora-admin\"><code>#fedora-admin</code></a> IRC channel on <a href="
+"\"http://www.freenode.net/\">Freenode</a> or to <a href=\"https://"
+"fedorahosted.org/fedora-infrastructure/\">open a ticket</a> with the Fedora "
+"Infrastructure team."
+msgstr ""
+"मदत प्राप्त करण्याकरीता उत्तम मार्ग म्हणजे <a href=\"http://www.freenode.net/"
+"\">Freenode</a> वरील <a href=\"irc://irc.freenode.net/#fedora-admin"
+"\"><code>#fedora-admin</code></a> हे IRC मार्ग उघडा किंवा Fedora Infrastructure "
+"समुह करीता <a href=\"https://fedorahosted.org/fedora-infrastructure/\">टिकीट "
+"उघडा</a>."
 
 #: data/content/faq.html:19
 msgid "How can I get a Fedora Hosted account?"
 msgstr "Fedora Hosted खाते कसे प्राप्त केले जाऊ शकते?"
 
 #: data/content/faq.html:20
-msgid "Your normal Fedora Project account works with Fedora Hosted. Simply <a href=\"https://admin.fedoraproject.org/accounts/\">apply</a> for a Fedora Project account if you haven't already. Do note that you must sign a Contributor License Agreement with the Fedora Project in order to contribute code."
-msgstr "तुमचे सर्वसाधारण Fedora Project खाते Fedora Hosted सह कार्य करते. खाते आधिपासून नसल्यास Fedora Project खाते अंतर्गत <a href=\"https://admin.fedoraproject.org/accounts/\">अर्ज करा</a>. लक्षात ठेवा Fedora Project करीता कोड सहभागीय करण्याकसाठी तुम्ही Contributor License Agreement करीता स्वाक्षरी केले पाहिजे."
+msgid ""
+"Your normal Fedora Project account works with Fedora Hosted. Simply <a href="
+"\"https://admin.fedoraproject.org/accounts/\">apply</a> for a Fedora Project "
+"account if you haven't already. Do note that you must sign a Contributor "
+"License Agreement with the Fedora Project in order to contribute code."
+msgstr ""
+"तुमचे सर्वसाधारण Fedora Project खाते Fedora Hosted सह कार्य करते. खाते आधिपासून "
+"नसल्यास Fedora Project खाते अंतर्गत <a href=\"https://admin.fedoraproject.org/"
+"accounts/\">अर्ज करा</a>. लक्षात ठेवा Fedora Project करीता कोड सहभागीय "
+"करण्याकसाठी तुम्ही Contributor License Agreement करीता स्वाक्षरी केले पाहिजे."
 
 #: data/content/faq.html:21
 msgid "How can I publish archive releases (tgz, zip, etc) for my project?"
 msgstr "प्रकल्प करीता संग्रहीत प्रकाशन (tgz, zip, etc) कसे प्रकाशीत करायचे?"
 
 #: data/content/faq.html:22
-msgid "Create the archive on your workstation and run <code>scp myProject-0.1.tar.gz fedorahosted.org:&lt;Project Name&gt;</code>. The archive will be located under <a href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>"
-msgstr "तुमच्या वर्कस्टेशन वर संग्रह बनवा व <code>scp myProject-0.1.tar.gz fedorahosted.org:&lt;Project Name&gt;</code> चालवा. संग्रह <a href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a> येथे स्थीत राहेल"
+msgid ""
+"Create the archive on your workstation and run <code>scp myProject-0.1.tar."
+"gz fedorahosted.org:&lt;Project Name&gt;</code>. The archive will be located "
+"under <a href=\"https://fedorahosted.org/releases/\">https://fedorahosted."
+"org/releases/</a>"
+msgstr ""
+"तुमच्या वर्कस्टेशन वर संग्रह बनवा व <code>scp myProject-0.1.tar.gz fedorahosted.org:"
+"&lt;Project Name&gt;</code> चालवा. संग्रह <a href=\"https://fedorahosted.org/"
+"releases/\">https://fedorahosted.org/releases/</a> येथे स्थीत राहेल"
 
 #: data/content/faq.html:23
-msgid "Is there a more convenient way to access releases than the path <code>/releases/m/y/myproject</code>?"
+msgid ""
+"Is there a more convenient way to access releases than the path <code>/"
+"releases/m/y/myproject</code>?"
 msgstr ""
+"मार्ग ऐवजी प्रकाशन करीता प्रवेशसाठी योग्य मार्ग आहे का <code>/"
+"releases/m/y/myproject</code>?"
 
 #: data/content/faq.html:24
-msgid "There is. <code>https://fedorahosted.org/released/myproject</code> will go to the same place. The disadvantage of this is you must know the project name and can't browse for projects."
-msgstr ""
+msgid ""
+"There is. <code>https://fedorahosted.org/released/myproject</code> will go "
+"to the same place. The disadvantage of this is you must know the project "
+"name and can't browse for projects."
+msgstr "आहे. <code>https://fedorahosted.org/released/myproject</code> तेथे मार्गदर्शन करतो. याचा तोटा असा कि तुम्हाला प्रकल्पाचे नाव माहिती असायला हवे व प्रकल्प करीता संचारन करणे शक्य नाही."
 
 #: data/content/faq.html:25
 msgid "I just got a new git repository, how can I push/pull?"
 msgstr "नविन git रेपॉजटिरी, push/pull कशी करायची?"
 
 #: data/content/faq.html:26
-msgid "Before anyone can clone/push the new repository a master push must be done with the command (from your local git repo): git push ssh://git.fedorahosted.org/git/yourproject.git/ master"
-msgstr "इतर वापरकर्ता द्वारे नविन रेपॉजिटरी clone/push करण्यापूर्वी एक मास्टर push खालिल आदेश (तुमच्या स्थानीय git repo पासून) चालवून केले पाहिजे: git push ssh://git.fedorahosted.org/git/yourproject.git/ master"
+msgid ""
+"Before anyone can clone/push the new repository a master push must be done "
+"with the command (from your local git repo): git push ssh://git.fedorahosted."
+"org/git/yourproject.git/ master"
+msgstr ""
+"इतर वापरकर्ता द्वारे नविन रेपॉजिटरी clone/push करण्यापूर्वी एक मास्टर push खालिल आदेश "
+"(तुमच्या स्थानीय git repo पासून) चालवून केले पाहिजे: git push ssh://git.fedorahosted."
+"org/git/yourproject.git/ master"
 
 #: data/content/faq.html:27
-msgid "While I wait for my repository to be created, can I work on my code elsewhere?"
-msgstr ""
+msgid ""
+"While I wait for my repository to be created, can I work on my code "
+"elsewhere?"
+msgstr "रेपॉजिटरी निर्माण होईपर्यंत, मी माझ्या कोडवर कार्य करू शकतो का?"
 
 #: data/content/faq.html:28
-msgid "Of course. Visit <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> for instructions on how to set up a temporary repository in your fedorapeople.org space."
+msgid ""
+"Of course. Visit <a href=\"http://fedoraproject.org/wiki/Infrastructure/"
+"fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople."
+"org</a> for instructions on how to set up a temporary repository in your "
+"fedorapeople.org space."
 msgstr ""
+"नक्की. fedorapeople.org क्षेत्र अंतर्गत तात्पूर्ते रेपॉजिटरीची मांडणी रचण्याकरीता <a href=\"http://fedoraproject.org/wiki/Infrastructure/"
+"fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople."
+"org</a> येथे भेट द्या."
 
 #: data/content/index.html:12
 msgid "Available Projects"
@@ -142,8 +202,14 @@ msgid "Request a New Project"
 msgstr "नविन प्रकल्प करीता विनंती करा"
 
 #: data/content/new.html:13
-msgid "New project requests must be filed via a ticket in the <a href=\"https://fedorahosted.org/fedora-infrastructure\">Fedora Infrastructure Trac instance</a>. Be sure to log in before attempting to create a ticket."
-msgstr "<a href=\"https://fedorahosted.org/fedora-infrastructure\">Fedora Infrastructure Trac इन्स्टन्स्</a> अंतर्गत नविन प्रकल्प विनंती टिकीट द्वारे नोंदणीकृत केले पाहिजे. टिकीट बनविण्याकरीता दाखलन करण्यास विसरू नका."
+msgid ""
+"New project requests must be filed via a ticket in the <a href=\"https://"
+"fedorahosted.org/fedora-infrastructure\">Fedora Infrastructure Trac "
+"instance</a>. Be sure to log in before attempting to create a ticket."
+msgstr ""
+"<a href=\"https://fedorahosted.org/fedora-infrastructure\">Fedora "
+"Infrastructure Trac इन्स्टन्स्</a> अंतर्गत नविन प्रकल्प विनंती टिकीट द्वारे नोंदणीकृत केले "
+"पाहिजे. टिकीट बनविण्याकरीता दाखलन करण्यास विसरू नका."
 
 #: data/content/new.html:14
 msgid "Fill in the fields as follows:"
@@ -154,8 +220,13 @@ msgid "&lt;name of project&gt;"
 msgstr "&lt;प्रकल्पाचे नाव&gt;"
 
 #: data/content/new.html:18
-msgid "<code>minor</code> unless this is an urgent request. If you are uncertain whether or not the request is urgent then set this field to <code>minor</code>."
-msgstr "अतिआवश्यक विनंती असल्याशिवाय <code>minor</code> आहे. विनंती अतिआवश्यक आहे की नाही या विषयी अनिश्चीत असल्यास या गुणविशेषला <code>minor</code> असे निश्चित करा."
+msgid ""
+"<code>minor</code> unless this is an urgent request. If you are uncertain "
+"whether or not the request is urgent then set this field to <code>minor</"
+"code>."
+msgstr ""
+"अतिआवश्यक विनंती असल्याशिवाय <code>minor</code> आहे. विनंती अतिआवश्यक आहे की नाही "
+"या विषयी अनिश्चीत असल्यास या गुणविशेषला <code>minor</code> असे निश्चित करा."
 
 #: data/content/new.html:21
 msgid "Use the following template for the full description of the ticket:"
@@ -170,32 +241,67 @@ msgid "Terms of Use"
 msgstr "वापरणी करीता अटी"
 
 #: data/content/terms.html:13
-msgid "The Fedora Project Infrastructure team provides Fedora Hosted services on a best-effort basis. Many of the people that manage it are volunteers. Response time to new project requests is typically between 1 hour and 3 days. Outages, should they occur, are handled with a much higher priority."
-msgstr "Fedora Project Infrastructure समुह उत्तम-प्रयत्न धोरण द्वारे Fedora Hosted सेवा पुरविते. नियंत्रण करणारे बरेचशे सदस्य स्वयंसेवक आहेत. नविन प्रकल्प विनंती करीता प्रतिसाद वेळ सहसा 1 तास व 3 दिवस असते. आऊटेज, घडल्यास, अधिक जास्त प्राधान्यता द्वारे हाताळले जाते."
+msgid ""
+"The Fedora Project Infrastructure team provides Fedora Hosted services on a "
+"best-effort basis. Many of the people that manage it are volunteers. "
+"Response time to new project requests is typically between 1 hour and 3 "
+"days. Outages, should they occur, are handled with a much higher priority."
+msgstr ""
+"Fedora Project Infrastructure समुह उत्तम-प्रयत्न धोरण द्वारे Fedora Hosted सेवा "
+"पुरविते. नियंत्रण करणारे बरेचशे सदस्य स्वयंसेवक आहेत. नविन प्रकल्प विनंती करीता प्रतिसाद वेळ "
+"सहसा 1 तास व 3 दिवस असते. आऊटेज, घडल्यास, अधिक जास्त प्राधान्यता द्वारे हाताळले जाते."
 
 #: data/content/terms.html:14
-msgid "The Fedora Project reserves the right to remove any project from our system that does not meet the following criteria:"
-msgstr "खालिल आवश्यकता पूर्ण करत नसल्यास Fedora Project ला वापरकर्त्याच्या प्रणालीवरील कुठलिही प्रकल्प काढून टाकण्याचे हक्क आहे:"
+msgid ""
+"The Fedora Project reserves the right to remove any project from our system "
+"that does not meet the following criteria:"
+msgstr ""
+"खालिल आवश्यकता पूर्ण करत नसल्यास Fedora Project ला वापरकर्त्याच्या प्रणालीवरील "
+"कुठलिही प्रकल्प काढून टाकण्याचे हक्क आहे:"
 
 #: data/content/terms.html:16
-msgid "Code contained in the project does not meet our <a href=\"http://fedoraproject.org/wiki/Legal/Licenses\">license requirements</a>"
-msgstr "प्रकल्प अंतर्गत समाविष्टीत कोड <a href=\"http://fedoraproject.org/wiki/Legal/Licenses\">परवाना आवश्यकता</a> पूर्ण करत नाही"
+msgid ""
+"Code contained in the project does not meet our <a href=\"http://"
+"fedoraproject.org/wiki/Legal/Licenses\">license requirements</a>"
+msgstr ""
+"प्रकल्प अंतर्गत समाविष्टीत कोड <a href=\"http://fedoraproject.org/wiki/Legal/"
+"Licenses\">परवाना आवश्यकता</a> पूर्ण करत नाही"
 
 #: data/content/terms.html:17
-msgid "No significant changes have been committed or applied for at least six (6) months"
+msgid ""
+"No significant changes have been committed or applied for at least six (6) "
+"months"
 msgstr "किमान सहा (6) किंवा त्यापेक्षा जास्त महिने पर्यंत कुठलेही बदलाव commit किंवा लागू केले नाही"
 
 #: data/content/terms.html:19
-msgid "We will always do our best to contact missing developers and ensure that the code, Trac databases, and any relevant data is kept on hand so that it may be presented to the project owner in the event that a project is removed."
-msgstr "आम्ही संपर्क न शाधणाऱ्या डेव्हलपरशी संपर्क साधण्याचा पूर्ण प्रयत्न करू व याचा खात्री करू की कोड, Trac माहितीकोष, व संबंधित माहिती हाताशी ठेवले जाईल ज्यांस प्रकल्प काढून टाकले गेल्यास प्रकल्प मालकाला प्रस्तुत केले जाईल."
+msgid ""
+"We will always do our best to contact missing developers and ensure that the "
+"code, Trac databases, and any relevant data is kept on hand so that it may "
+"be presented to the project owner in the event that a project is removed."
+msgstr ""
+"आम्ही संपर्क न शाधणाऱ्या डेव्हलपरशी संपर्क साधण्याचा पूर्ण प्रयत्न करू व याचा खात्री करू की "
+"कोड, Trac माहितीकोष, व संबंधित माहिती हाताशी ठेवले जाईल ज्यांस प्रकल्प काढून टाकले "
+"गेल्यास प्रकल्प मालकाला प्रस्तुत केले जाईल."
 
 #: data/templates/foot.html:9
-msgid "Copyright &copy; 2009 Red Hat, Inc. and others.  All Rights Reserved.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
-msgstr "Copyright &copy; 2009 Red Hat, Inc. and others.  All Rights Reserved.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
+msgid ""
+"Copyright &copy; 2009 Red Hat, Inc. and others.  All Rights Reserved.  "
+"Please send any comments or corrections to the <a href=\"mailto:"
+"webmaster@fedoraproject.org\">websites team</a>."
+msgstr ""
+"Copyright &copy; 2009 Red Hat, Inc. and others.  All Rights Reserved.  "
+"Please send any comments or corrections to the <a href=\"mailto:"
+"webmaster@fedoraproject.org\">websites team</a>."
 
 #: data/templates/foot.html:12
-msgid "The Fedora Project is maintained and driven by the community and sponsored by Red Hat.  This is a community maintained site.  Red Hat is not responsible for content."
-msgstr "The Fedora Project is maintained and driven by the community and sponsored by Red Hat.  This is a community maintained site.  Red Hat is not responsible for content."
+msgid ""
+"The Fedora Project is maintained and driven by the community and sponsored "
+"by Red Hat.  This is a community maintained site.  Red Hat is not "
+"responsible for content."
+msgstr ""
+"The Fedora Project is maintained and driven by the community and sponsored "
+"by Red Hat.  This is a community maintained site.  Red Hat is not "
+"responsible for content."
 
 #: data/templates/foot.html:15
 msgid "Sponsors"
@@ -206,8 +312,12 @@ msgid "<a href=\"http://fedoraproject.org/wiki/Legal:Main\">Legal</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Main\">कायदेशीर</a>"
 
 #: data/templates/foot.html:17
-msgid "<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Trademark Guidelines</a>"
-msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">व्यापारचिन्ह मार्गदर्शन</a>"
+msgid ""
+"<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines"
+"\">Trademark Guidelines</a>"
+msgstr ""
+"<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines"
+"\">व्यापारचिन्ह मार्गदर्शन</a>"
 
 #: data/templates/head.html:7
 msgid "Fedora"
@@ -240,3 +350,4 @@ msgstr "होस्टींग निर्माता"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "ServerBeach द्वारे निर्मीत"
+
