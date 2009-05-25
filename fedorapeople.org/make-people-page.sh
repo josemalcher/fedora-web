@@ -79,7 +79,7 @@ cat << EOM>> $outfile
           Contact: <a href="mailto:admin at fedoraproject.org">admin at fedoraproject.org</a><br />
           <ul id="sponsors">
             <li><a href="http://linux.dell.com"><img src="http://torrent.fedoraproject.org/images/poweredby_horizontal_lr.gif" alt="Powered by Dell" width="106" height="35"/></a></li>
-            <li><a href="http://linux.duke.edu/"><img src="http://fedoraproject.org/static/images/sponsors/duke.png" width="81" height="68" alt="Duke Linux edu" /></a></li>
+            <li><a href="http://www.bu.edu/eng/"><img src="http://fedoraproject.org/static/images/sponsors/BUengineering.png" width="175" height="52" alt="BU Engineering" /></a></li>
           </ul>
         </div>
       </div>
