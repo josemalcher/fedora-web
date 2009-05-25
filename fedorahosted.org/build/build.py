@@ -78,6 +78,7 @@ def read_data(filename):
             if len(line) > 2:
                 project['vcs'] = line[2]
                 project['vcsprefix'] = vcsprefix.get(project['vcs'], '')
+                project['vcsbase'] = ''
                 project['vcsweburl'] = 'https://fedorahosted.org/%s/browser/' % (line[0])
             projects.append(project)
     return projects
