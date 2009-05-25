@@ -4,30 +4,11 @@
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
   <div id="sidebar">
-  <?python
-  from datetime import datetime
-
-  today = datetime.utcnow()
-  release = datetime(2009, 5, 26, 14)
-
-  difference = release - today
-  days = difference.days
-  if difference.seconds > 0 or difference.minutes > 0 or difference.hours > 0: days += 1
-  if days < 0: days = 0
-  days = str(days)
-
-  image_lang = 'en'
-  available_languages = ('de', 'en', 'hu', 'is', 'it', 'pt_BR')
-  if lang in available_languages:
-      image_lang = lang
-  image = image_lang + '/fedora11-countdown-banner-' + days + '.' + image_lang + '.png'
-  ?>
-<div id="banner">
-    <a href="http://fedoraproject.org/wiki/Releases/11/Schedule"><img src="${Markup(_('%s/static/images/counter/%s') % (path, image))}" alt="${Markup(_('Fedora 11 Leonidas released in %s days!') % days)}" /></a>
-    <a style="text-decoration: none; font-size: 1.6ex; color: #99AABB;" href="${path}/${lang}/counter">${Markup(_('Add a counter to your own site!'))}</a>
-</div>
-
-
+    <div id="banner">
+      <a href="${path}/${lang}/get-fedora">
+          <img src="${path}/static/images/banners/f11release.png" alt="Fedora 11 Leonidas" />
+      </a>
+    </div>
     <div id="nav">
       <h2>${Markup(_('Navigation'))}</h2>
       <ul>
