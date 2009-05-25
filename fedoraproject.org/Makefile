@@ -48,7 +48,7 @@ push:
 httpd/conf/httpd.conf: httpd/conf/httpd.conf.in
 	cp httpd/conf/httpd.conf.in httpd/conf/httpd.conf
 	sed -i \
-	   	-e 's#@SERVERROOT@#$(PWD)/httpd#g' \
+		-e 's#@SERVERROOT@#$(PWD)/httpd#g' \
 		-e 's#@DOCUMENTROOT@#$(PWD)/out#g' \
 		httpd/conf/httpd.conf
 
@@ -58,7 +58,7 @@ httpd/conf/languages.conf.in: po/LINGUAS
 httpd/conf/languages.conf: httpd/conf/languages.conf.in
 	cp httpd/conf/languages.conf.in httpd/conf/languages.conf
 	sed -i \
-	   	-e 's#@SERVERROOT@#$(PWD)/httpd#g' \
+		-e 's#@SERVERROOT@#$(PWD)/httpd#g' \
 		-e 's#@DOCUMENTROOT@#$(PWD)/out#g' \
 		httpd/conf/languages.conf
 
