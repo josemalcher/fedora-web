@@ -1,31 +1,35 @@
 ifndef LANGUAGES
 LANGUAGES := $(shell grep -v "^\#" po/LINGUAS)
 endif
-PO_FILES = $(patsubst %, po/%.po, $(LANGUAGES))
-MO_FILES = $(patsubst %, po/%.mo, $(LANGUAGES))
-HTML_FILES = $(shell find . -name "*.html")
+PO_FILES = $(filter-out po/en.po,$(wildcard po/*.po))
+MO_FILES = $(PO_FILES:.po=.mo)
+HTML_FILES = $(shell find data -name "*.html")
 
 PYTHON = python
 PYBABEL = pybabel
 BASEPATH = /
 PWD = $(shell pwd)
 
-all: po/talk.fedoraproject.pot $(MO_FILES) $(LANGUAGES)
-	cp static/robots.txt	out/
+all: $(LANGUAGES)
+	cp static/robots.txt out/
 
-$(LANGUAGES): data/templates/translations.html
+$(LANGUAGES): % : po/%.mo data/templates/translations.html
 	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -s static -b $(BASEPATH)
 
-po/en.po: po/talk.fedoraproject.pot
-	cp po/talk.fedoraproject.pot po/en.po
+po/en.po: po/fedora-web.pot
+	cp po/fedora-web.pot po/en.po
 
-%.po: po/talk.fedoraproject.pot
+po/%.po: po/fedora-web.pot
 	msgmerge --no-wrap --update $@ $^
+	@touch $@
 
-%.mo: %.po
+po/en.mo: po/en.po
 	msgfmt -o $@ $<
 
-po/talk.fedoraproject.pot: $(HTML_FILES)
+po/%.mo: po/%.po
+	msgfmt -o $@ $<
+
+po/fedora-web.pot: $(HTML_FILES)
 	${PYBABEL} extract -F build/pybabel.cfg data -o $@
 
 data/templates/translations.html: po/LINGUAS
@@ -41,10 +45,24 @@ clean:
 push:
 	git push
 
-test:
+httpd/conf/httpd.conf: httpd/conf/httpd.conf.in
 	cp httpd/conf/httpd.conf.in httpd/conf/httpd.conf
-	sed -i -e 's#@SERVERROOT@#$(PWD)/httpd#g' httpd/conf/httpd.conf
-	sed -i -e 's#@DOCUMENTROOT@#$(PWD)/out#g' httpd/conf/httpd.conf
+	sed -i \
+		-e 's#@SERVERROOT@#$(PWD)/httpd#g' \
+		-e 's#@DOCUMENTROOT@#$(PWD)/out#g' \
+		httpd/conf/httpd.conf
+
+httpd/conf/languages.conf.in: po/LINGUAS
+	$(PYTHON) build/buildconf.py $^ > $@
+
+httpd/conf/languages.conf: httpd/conf/languages.conf.in
+	cp httpd/conf/languages.conf.in httpd/conf/languages.conf
+	sed -i \
+		-e 's#@SERVERROOT@#$(PWD)/httpd#g' \
+		-e 's#@DOCUMENTROOT@#$(PWD)/out#g' \
+		httpd/conf/languages.conf
+
+test: httpd/conf/httpd.conf httpd/conf/languages.conf
 	/usr/sbin/httpd -d httpd -f conf/httpd.conf
 	@echo "Test instance started at: http://localhost:5000/"
 
