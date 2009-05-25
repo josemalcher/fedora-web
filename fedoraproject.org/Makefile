@@ -42,6 +42,8 @@ clean:
 	rm -f data/templates/translations.html
 	rm -f build/rss.cache
 
+msgmerge: $(wildcard po/*.po)
+
 push:
 	git push
 

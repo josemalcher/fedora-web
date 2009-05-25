@@ -16,10 +16,10 @@ all: $(LANGUAGES)
 $(LANGUAGES): % : po/%.mo data/templates/translations.html
 	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -s static -b $(BASEPATH)
 
-po/en.po: po/fedora-web.pot
-	cp po/fedora-web.pot po/en.po
+po/en.po: po/talk.fedoraproject.org.pot
+	cp po/talk.fedoraproject.org.pot po/en.po
 
-po/%.po: po/fedora-web.pot
+po/%.po: po/talk.fedoraproject.org.pot
 	msgmerge --no-wrap --update $@ $^
 	@touch $@
 
@@ -29,7 +29,7 @@ po/en.mo: po/en.po
 po/%.mo: po/%.po
 	msgfmt -o $@ $<
 
-po/fedora-web.pot: $(HTML_FILES)
+po/talk.fedoraproject.org.pot: $(HTML_FILES)
 	${PYBABEL} extract -F build/pybabel.cfg data -o $@
 
 data/templates/translations.html: po/LINGUAS
@@ -41,6 +41,8 @@ clean:
 	rm -f po/*.mo
 	rm -f data/templates/translations.html
 	rm -f build/rss.cache
+
+msgmerge: $(wildcard po/*.po)
 
 push:
 	git push
