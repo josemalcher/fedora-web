@@ -45,10 +45,24 @@ clean:
 push:
 	git push
 
-test:
+httpd/conf/httpd.conf: httpd/conf/httpd.conf.in
 	cp httpd/conf/httpd.conf.in httpd/conf/httpd.conf
-	sed -i -e 's#@SERVERROOT@#$(PWD)/httpd#g' httpd/conf/httpd.conf
-	sed -i -e 's#@DOCUMENTROOT@#$(PWD)/out#g' httpd/conf/httpd.conf
+	sed -i \
+	   	-e 's#@SERVERROOT@#$(PWD)/httpd#g' \
+		-e 's#@DOCUMENTROOT@#$(PWD)/out#g' \
+		httpd/conf/httpd.conf
+
+httpd/conf/languages.conf.in: po/LINGUAS
+	$(PYTHON) build/buildconf.py $^ > $@
+
+httpd/conf/languages.conf: httpd/conf/languages.conf.in
+	cp httpd/conf/languages.conf.in httpd/conf/languages.conf
+	sed -i \
+	   	-e 's#@SERVERROOT@#$(PWD)/httpd#g' \
+		-e 's#@DOCUMENTROOT@#$(PWD)/out#g' \
+		httpd/conf/languages.conf
+
+test: httpd/conf/httpd.conf httpd/conf/languages.conf
 	/usr/sbin/httpd -d httpd -f conf/httpd.conf
 	@echo "Test instance started at: http://localhost:5000/"
 
