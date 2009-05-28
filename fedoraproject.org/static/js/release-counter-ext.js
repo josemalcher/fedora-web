@@ -2,7 +2,7 @@ var available_langs = [ "de", "en", "hu", "is", "it", "pt_BR", "ru" ];
 
 
 var today = new Date();
-var release = new Date("June 2, 2009 14:00:00 UTC");
+var release = new Date("June 9, 2009 14:00:00 UTC");
 var millisBetweenDates = release - today;
 var days = Math.ceil(millisBetweenDates/1000/60/60/24);
 
