@@ -14,8 +14,8 @@ linguas.close()
 
 print 'LoadModule negotiation_module modules/mod_negotiation.so'
 
-for l in languages:
-    print 'AddLanguage %s .%s' % l
+for (lang, code) in languages:
+    print 'AddLanguage %s .%s' % (code, lang)
 
 print '''
 LanguagePriority en
@@ -36,7 +36,7 @@ print '''
   Options MultiViews
 '''
 
-for l in languages:
-    print '  SetEnvIf Request_URI ^/%s/ prefer-language=%s' % l
+for (lang, code) in languages:
+    print '  SetEnvIf Request_URI ^/%s/ prefer-language=%s' % (lang, code)
 
 print '</Directory>'
