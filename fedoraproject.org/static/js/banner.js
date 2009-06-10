@@ -7,12 +7,24 @@ var banners = [
     "http://fedoraproject.org/static/images/banners/f11release.png",
     "Fedora 11 Leonidas is here!",
     "http://fedoraproject.org/get-fedora",
-    16
+    24
   ],
   [
     "http://fedoraproject.org/static/images/banners/picturebanner-envelope-1.png",
     "Fedora Picture Book - Now accepting submissions",
     "https://fedoraproject.org/wiki/Category:Picture_book",
+    4
+  ],
+  [
+    "http://fedoraproject.org/static/images/banners/super-packager.png",
+    "Fedora Community",
+    "https://admin.fedoraproject.org/community/",
+    4
+  ],
+  [
+    "http://fedoraproject.org/static/images/banners/podcast-promo.png",
+    "Fedora Community Podcast,
+    "http://fedoraproject.org/wiki/F11_release_podcasts#Fedora_Community_portal",
     4
   ],
 //  ["http://fedoraproject.org/static/images/banners/fedorawn.png", "Fedora Weekly News", "http://fedoraproject.org/wiki/FWN/LatestIssue", 1],
