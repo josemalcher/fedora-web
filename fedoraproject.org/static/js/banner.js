@@ -23,7 +23,7 @@ var banners = [
   ],
   [
     "http://fedoraproject.org/static/images/banners/podcast-promo.png",
-    "Fedora Community Podcast,
+    "Fedora Community Podcast",
     "http://fedoraproject.org/wiki/F11_release_podcasts#Fedora_Community_portal",
     4
   ],
