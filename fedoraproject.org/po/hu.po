@@ -2,15 +2,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-09 09:34-0400\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2009-06-09 13:34-0400\n"
 "PO-Revision-Date: 2009-06-09 19:33+0200\n"
 "Last-Translator: Sulyok Péter <peti@fedoraproject.org>\n"
 "Language-Team: Hungarian <fedora-trans-hu@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n!=1;"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
 
 #: data/content/contact.html:7
 msgid "Contact - Fedora Project"
@@ -467,8 +467,8 @@ msgstr "%sMB,·ISO·fájl, 1 CD-ROM lemezkép intelszerű PC-kre"
 #: data/content/get-fedora-ppc.html:37 data/content/get-fedora.html:33
 #: data/content/get-fedora.html:53
 msgid ""
-"<a href=\"http://docs.fedoraproject.org/install-guide/f11/en_US/sn-making-"
-"media.html\">How do I use this file?</a>"
+"<a href=\"http://docs.fedoraproject.org/install-guide/f11/en-US/html/sn-"
+"making-media.html\">How do I use this file?</a>"
 msgstr ""
 "<a href=\"http://docs.fedoraproject.org/install-guide/f11/en-US/html/sn-"
 "making-media.html\">Hogyan használjam e fájlt?</a>"
@@ -498,10 +498,10 @@ msgid ""
 "html\">Upgrading Fedora</a> instructions, and download the DVD ISO you'll "
 "need to start the upgrade process below."
 msgstr ""
-"Már van Fedorája, és szeretné felfejleszteni Fedora 11-re? Tekintse meg a "
-"<a href=\"http://docs.fedoraproject.org/install-guide/f11/en-US/html/ch-"
-"upgrade-x86.html\">Upgrading·Fedora</a> útmutatót, és töltse le az alábbi "
-"DVD ISO-t, ami az alábbi felfejlesztés folyamat megkezdéséhez szükséges."
+"Már van Fedorája, és szeretné felfejleszteni Fedora 11-re? Tekintse meg a <a "
+"href=\"http://docs.fedoraproject.org/install-guide/f11/en-US/html/ch-upgrade-"
+"x86.html\">Upgrading·Fedora</a> útmutatót, és töltse le az alábbi DVD ISO-t, "
+"ami az alábbi felfejlesztés folyamat megkezdéséhez szükséges."
 
 #: data/content/get-fedora-kde.html:58
 #, python-format
@@ -1298,25 +1298,25 @@ msgid "Install DVD / Rescue CD"
 msgstr "Telepítő DVD / Mentő CD"
 
 #: data/content/verify.html:23
-msgid "Live Media (both GNOME and KDE)"
-msgstr "Élő média (GNOME és KDE)"
+msgid "Live Media"
+msgstr "Élő média"
 
-#: data/content/verify.html:30
+#: data/content/verify.html:31
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Következő, Fedora GPG kulcs(ok) importálása:"
 
-#: data/content/verify.html:34
+#: data/content/verify.html:35
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a href=\"%s/%s/keys\">here</a>."
 msgstr ""
 "Ellenőrizheti a GPG kulcs(ok) részleteit <a href=\"%s/%s/keys\">itt</a>."
 
-#: data/content/verify.html:37
+#: data/content/verify.html:38
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Most ellenőrizzük, hogy a CHECKSUM fájl érvényes:"
 
-#: data/content/verify.html:41
+#: data/content/verify.html:42
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
@@ -1324,27 +1324,27 @@ msgstr ""
 "A CHECKSUM fájlnak a következő kulcsok közül kell rendelkeznie egy jó "
 "aláírással:"
 
-#: data/content/verify.html:44
+#: data/content/verify.html:45
 msgid "Fedora 11"
 msgstr "Fedora 11"
 
-#: data/content/verify.html:45
+#: data/content/verify.html:46
 msgid "Fedora 10"
 msgstr "Fedora 10"
 
-#: data/content/verify.html:46
+#: data/content/verify.html:47
 msgid "Fedora 10 pre-releases"
 msgstr "Fedora 10 előzetesek"
 
-#: data/content/verify.html:47
+#: data/content/verify.html:48
 msgid "Fedora 9 and earlier"
 msgstr "Fedora 9 és korábbiak"
 
-#: data/content/verify.html:48
+#: data/content/verify.html:49
 msgid "Fedora 9 and earlier pre-releases"
 msgstr "Fedora·9·és korábbi előzetes kiadások"
 
-#: data/content/verify.html:51
+#: data/content/verify.html:52
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the ISO's "
 "checksum matches:"
@@ -1352,7 +1352,7 @@ msgstr ""
 "Végül, miután a CHECKSUM fájlt ellenőriztük, megnézzük, hogy az ISO "
 "ellenőrző összeg stimmel."
 
-#: data/content/verify.html:55
+#: data/content/verify.html:56
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "Ha a kimenet állítja, hogy a fájl érvényes, akkor lehet használni."
 
@@ -1513,117 +1513,4 @@ msgstr "Találkozzon a Fedora közösséggel!"
 msgid "Website Language"
 msgstr "Webhely nyelv"
 
-#~ msgid "%s/static/images/counter/%s"
-#~ msgstr "%s/static/images/counter/%s"
 
-#~ msgid "Fedora 11 Leonidas released in %s days!"
-#~ msgstr "Fedora 11 Leonidas kiadása %s nap múlva!"
-
-#~ msgid "Add a counter to your own site!"
-#~ msgstr "Számláló hozzáadása egy helyhez."
-
-#, fuzzy
-#~ msgid "Fedora 11 - Reign."
-#~ msgstr "Fedora 10"
-
-#~ msgid ""
-#~ "Did someone say... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;?"
-#~ msgstr ""
-#~ "Mondta valaki hogy... &bdquo;<a href=\"get-prerelease\">béta</a>&rdquo;?"
-
-#, fuzzy
-#~ msgid ""
-#~ "Did someone say... &ldquo;<a href=\"get-prerelease\">Preview Release</"
-#~ "a>&rdquo;?"
-#~ msgstr ""
-#~ "Mondta valaki hogy... &bdquo;<a href=\"get-prerelease\">béta</a>&rdquo;?"
-
-#~ msgid "Fedora 10 - Fire it up"
-#~ msgstr "Fedora 10 – Izzítsa be"
-
-#, fuzzy
-#~ msgid ""
-#~ "Now, to verify that the SHA1SUM file is valid, make sure that it has a "
-#~ "good signature from the key ID %s."
-#~ msgstr ""
-#~ "Most ellenőrizzük, hogy az SHA1SUM fájl érvényes. Megbizonyosodunk arról, "
-#~ "hogy jó aláírással rendelkezik az ID 4F2A6FD2 kulcstól."
-
-#~ msgid "Fedora 9 Release Notes"
-#~ msgstr "Fedora 9 kiadási tudnivalók"
-
-#~ msgid ""
-#~ "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs."
-#~ "fedoraproject.org/release-notes/</a>"
-#~ msgstr ""
-#~ "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs."
-#~ "fedoraproject.org/release-notes/</a>"
-
-#, fuzzy
-#~ msgid "Fedora 10 Desktop Guide"
-#~ msgstr "Fedora munkaasztal élő média"
-
-#~ msgid "Fedora 9.  Make waves."
-#~ msgstr "Fedora 9.  Hullámokat kelt."
-
-#~ msgid "Fedora 9 Sulphur is here!"
-#~ msgstr "Fedora 9 „Kén” megérkezett!"
-
-#~ msgid "5years-banner-large.png"
-#~ msgstr "5years-banner-large.png"
-
-#~ msgid "Happy Birthday, Fedora!"
-#~ msgstr "Boldog születésnapot, Fedora!"
-
-#~ msgid "Live DVD"
-#~ msgstr "Élő DVD"
-
-#~ msgid ""
-#~ "Here are places you can find the Fedora 9 release notes.  If one location "
-#~ "is unresponsive, try a different one."
-#~ msgstr ""
-#~ "Ezeken a helyeken találhatók a Fedora 9 kiadási tájékoztatói. Ha egyik "
-#~ "hely nem reagál, lehet másikkal probálkozni."
-
-#~ msgid ""
-#~ "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/"
-#~ "\">mirror</a> using a path similar to <em>http://URL/fedora/linux/"
-#~ "releases/9/Fedora/i386/os/</em>.  The mirrors only carry the US English "
-#~ "version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may "
-#~ "have a slightly different path, but should be consistent below the <em>9/"
-#~ "</em> directory.  For example:"
-#~ msgstr ""
-#~ "Nézze meg bármely <a href=\"http://mirrors.fedoraproject.org/publiclist/"
-#~ "Fedora/9/\">tükröt</a> a <em>http://URL/fedora/linux/releases/9/Fedora/"
-#~ "i386/os/</em> útvonalhoz hasonlót használva. A tükrök csak az amerikai "
-#~ "angol változatot tartalmazzák (<em>RELEASE-NOTES-en_US.html</em>).  "
-#~ "Vegyék észre, hogy néhány tükrön eltérő elérési úton lehet, de "
-#~ "konzisztens a <em>9/</em> mappa alatt. Például:"
-
-#~ msgid "ATRPMs mirror"
-#~ msgstr "ATRPMs tükör"
-
-#~ msgid "RPMFind.net mirror"
-#~ msgstr "RPMFind.net tükör"
-
-#~ msgid "F8 Screenshot"
-#~ msgstr "F8 képernyőkép"
-
-#~ msgid "Prerelease Version - Fedora Project"
-#~ msgstr "Előzetes változat – Fedora Terv"
-
-#~ msgid "Get the Fedora 9 Beta."
-#~ msgstr "Fedora 9 Béta beszerzése."
-
-#~ msgid "Beta release notes"
-#~ msgstr "Béta kiadási tudnivalókat"
-
-#~ msgid " for more information."
-#~ msgstr " további tájékoztatásért."
-
-#~ msgid "Fedora 9.  Infinite Possibilities."
-#~ msgstr "Fedora 9. Végtelen lehetőségek."
-
-#~ msgid "Looking forward to Fedora 9?  Read the Beta release notes."
-#~ msgstr ""
-#~ "Alig várja már a Fedora 9-et? Elolvashatja a Béta kiadási tudnivalókat."
