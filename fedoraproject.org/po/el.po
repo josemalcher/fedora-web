@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-06-09 09:34-0400\n"
+"POT-Creation-Date: 2009-06-24 16:06-0400\n"
 "PO-Revision-Date: 2009-05-10 17:47+0200\n"
 "Last-Translator: Pierros Papadeas <ppapadeas@gmail.com>\n"
 "Language-Team: Greek Fedora team <fedora-trans-el@redhat.com>\n"
@@ -744,7 +744,16 @@ msgstr "Χορηγοί του Fedora"
 msgid "The Fedora Project is proud to have the following organizations as sponsors:"
 msgstr "Το Έργο Fedora είναι υπερήφανο που έχει τους παρακάτω οργανισμούς ως χορηγούς:"
 
-#: data/content/sponsors.html:30
+#: data/content/sponsors.html:16
+msgid "<a href=\"http://redhat.com/\">Red Hat, Inc.</a> is the primary sponsor for the Fedora Project, providing a variety of resources, including full-time employee support, infrastructure hardware and bandwidth, event funding, and legal counsel."
+msgstr ""
+
+#: data/content/sponsors.html:19
+#, fuzzy
+msgid "The Fedora Project also thanks the following sponsors for providing substantial support:"
+msgstr "Το Έργο Fedora είναι υπερήφανο που έχει τους παρακάτω οργανισμούς ως χορηγούς:"
+
+#: data/content/sponsors.html:37
 msgid "Interested in sponsoring something for Fedora?  Contact admin at fedoraproject * org or stop by #fedora-admin on irc.freenode.net."
 msgstr "Ενδιαφέρεστε να χρηματοδοτήσετε κάτι στο έργο Fedora; Επικοινωνήστε στο admin at fedoraproject * org ή μέσω του #fedora-admin στο irc.freenode.net."
 
@@ -765,51 +774,52 @@ msgid "Install DVD / Rescue CD"
 msgstr "Εγκατάσταση DVD / CD διάσωσης"
 
 #: data/content/verify.html:23
-msgid "Live Media (both GNOME and KDE)"
-msgstr "Ζωντανές εικόνες (τόσο GNOME όσο και KDE)"
+#, fuzzy
+msgid "Live Media"
+msgstr "Ζωντανή εικόνα Fedora KDE"
 
-#: data/content/verify.html:30
+#: data/content/verify.html:31
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Κατόπιν, εισάγετε το κλειδί GPG του Fedora:"
 
-#: data/content/verify.html:34
+#: data/content/verify.html:35
 #, python-format
 msgid "You can verify the details of the GPG key(s) <a href=\"%s/%s/keys\">here</a>."
 msgstr ""
 
-#: data/content/verify.html:37
+#: data/content/verify.html:38
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Τώρα, ελέγξτε την εγκυρότητα του αρχείου CHECKSUM :"
 
-#: data/content/verify.html:41
+#: data/content/verify.html:42
 msgid "The CHECKSUM file should have a good signature from one of the following keys:"
 msgstr "Το αρχείο CHECKSUM πρέπει να έχει αποτύπωμα ενός από τα ακόλουθα κλειδιά:"
 
-#: data/content/verify.html:44
+#: data/content/verify.html:45
 msgid "Fedora 11"
 msgstr "Fedora 11"
 
-#: data/content/verify.html:45
+#: data/content/verify.html:46
 msgid "Fedora 10"
 msgstr "Fedora 10"
 
-#: data/content/verify.html:46
+#: data/content/verify.html:47
 msgid "Fedora 10 pre-releases"
 msgstr "Fedora 10 δοκιμαστικές εκδόσεις"
 
-#: data/content/verify.html:47
+#: data/content/verify.html:48
 msgid "Fedora 9 and earlier"
 msgstr "Fedora 9 και προηγούμενα"
 
-#: data/content/verify.html:48
+#: data/content/verify.html:49
 msgid "Fedora 9 and earlier pre-releases"
 msgstr "Fedora 9 και προηγούμενες δοκιμαστικές εκδόσεις"
 
-#: data/content/verify.html:51
+#: data/content/verify.html:52
 msgid "Finally, now that the CHECKSUM file has been verified, check that the ISO's checksum matches:"
 msgstr "Τέλος, τώρα που το αρχείο CHECKSUM έχει πιστοποιηθεί, ελέγξτε ότι το checksum του ISO ταιριάζει:"
 
-#: data/content/verify.html:55
+#: data/content/verify.html:56
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "Αν η έξοδος δηλώνει ότι το αρχείο είναι έγκυρο, όλα πήγαν καλά!"
 
@@ -941,6 +951,9 @@ msgstr "Συναντήστε την κοινότητα του Fedora."
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "Γλώσσα ιστοσελίδας"
+
+#~ msgid "Live Media (both GNOME and KDE)"
+#~ msgstr "Ζωντανές εικόνες (τόσο GNOME όσο και KDE)"
 
 #, fuzzy
 #~ msgid "Fedora 11 - Reign."

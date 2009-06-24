@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master-fedoraproject\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-06-09 09:34-0400\n"
+"POT-Creation-Date: 2009-06-24 16:06-0400\n"
 "PO-Revision-Date: 2009-05-15 16:08+1000\n"
 "Last-Translator: Eunju Kim <eukim@redhat.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -744,7 +744,16 @@ msgstr "Fedora 후원 "
 msgid "The Fedora Project is proud to have the following organizations as sponsors:"
 msgstr "Fedora Project는 다음과 같은 조직에서 후원받고 있습니다:    "
 
-#: data/content/sponsors.html:30
+#: data/content/sponsors.html:16
+msgid "<a href=\"http://redhat.com/\">Red Hat, Inc.</a> is the primary sponsor for the Fedora Project, providing a variety of resources, including full-time employee support, infrastructure hardware and bandwidth, event funding, and legal counsel."
+msgstr ""
+
+#: data/content/sponsors.html:19
+#, fuzzy
+msgid "The Fedora Project also thanks the following sponsors for providing substantial support:"
+msgstr "Fedora Project는 다음과 같은 조직에서 후원받고 있습니다:    "
+
+#: data/content/sponsors.html:37
 msgid "Interested in sponsoring something for Fedora?  Contact admin at fedoraproject * org or stop by #fedora-admin on irc.freenode.net."
 msgstr "Fedora 후원을 원하십니까? fedoraproject * org 관리자에게 문의하거나 irc.freenode.net의 #fedora-admin 채널에 들들러보세요  "
 
@@ -765,51 +774,52 @@ msgid "Install DVD / Rescue CD"
 msgstr "설치 DVD / 복구 CD "
 
 #: data/content/verify.html:23
-msgid "Live Media (both GNOME and KDE)"
-msgstr "라이브 미디어 (GNOME 및 KDE)  "
+#, fuzzy
+msgid "Live Media"
+msgstr "Fedora KDE 라이브 미디어  "
 
-#: data/content/verify.html:30
+#: data/content/verify.html:31
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "다음으로 Fedora의 GPG 키를 가져옵니다:  "
 
-#: data/content/verify.html:34
+#: data/content/verify.html:35
 #, python-format
 msgid "You can verify the details of the GPG key(s) <a href=\"%s/%s/keys\">here</a>."
 msgstr "GPG 키에 대한 자세한 내용은 <a href=\"%s/%s/keys\">여기 </a>에서 확인하실 수 있습니다.  "
 
-#: data/content/verify.html:37
+#: data/content/verify.html:38
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "이제 CHECKSUM 파일이 유효한지를 확인합니다:  "
 
-#: data/content/verify.html:41
+#: data/content/verify.html:42
 msgid "The CHECKSUM file should have a good signature from one of the following keys:"
 msgstr "CHECKSUM 파일은 다음 키 중 하나에서 적절한 서명을 갖고 있어야 합니다:  "
 
-#: data/content/verify.html:44
+#: data/content/verify.html:45
 msgid "Fedora 11"
 msgstr "Fedora 11"
 
-#: data/content/verify.html:45
+#: data/content/verify.html:46
 msgid "Fedora 10"
 msgstr "Fedora 10"
 
-#: data/content/verify.html:46
+#: data/content/verify.html:47
 msgid "Fedora 10 pre-releases"
 msgstr "Fedora 10 테스트 버전 "
 
-#: data/content/verify.html:47
+#: data/content/verify.html:48
 msgid "Fedora 9 and earlier"
 msgstr "Fedora 9 및 이전 버전 "
 
-#: data/content/verify.html:48
+#: data/content/verify.html:49
 msgid "Fedora 9 and earlier pre-releases"
 msgstr "Fedora 9 및 이전 테스트 버전 "
 
-#: data/content/verify.html:51
+#: data/content/verify.html:52
 msgid "Finally, now that the CHECKSUM file has been verified, check that the ISO's checksum matches:"
 msgstr "이로써 CHECKSUM 파일 유효성 검사를 완료했습니다. 마지막으로 ISO 체크섬이 일치하는지 확인합니다:  "
 
-#: data/content/verify.html:55
+#: data/content/verify.html:56
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "파일이 유효하다는 출력 결과가 나타나면, 준비가 완료된 것입니다!   "
 
@@ -941,6 +951,9 @@ msgstr "Fedora 커뮤니티와의 만남.  "
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "웹사이트 언어  "
+
+#~ msgid "Live Media (both GNOME and KDE)"
+#~ msgstr "라이브 미디어 (GNOME 및 KDE)  "
 
 #~ msgid "%s/static/images/counter/%s"
 #~ msgstr "%s/static/images/counter/%s"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-06-09 09:34-0400\n"
+"POT-Creation-Date: 2009-06-24 16:06-0400\n"
 "PO-Revision-Date: 2009-05-10 22:38+0330\n"
 "Last-Translator: Mostafa Daneshvar <mostafa.daneshvar@gmail.com>\n"
 "Language-Team: Persian <fedora-trans-fa@redhat.com>\n"
@@ -739,7 +739,16 @@ msgstr "اسپانسر های فدورا"
 msgid "The Fedora Project is proud to have the following organizations as sponsors:"
 msgstr "پروژه فدورا مفتخر است که سازمانهای زیر اسپانسر های آن هستند :"
 
-#: data/content/sponsors.html:30
+#: data/content/sponsors.html:16
+msgid "<a href=\"http://redhat.com/\">Red Hat, Inc.</a> is the primary sponsor for the Fedora Project, providing a variety of resources, including full-time employee support, infrastructure hardware and bandwidth, event funding, and legal counsel."
+msgstr ""
+
+#: data/content/sponsors.html:19
+#, fuzzy
+msgid "The Fedora Project also thanks the following sponsors for providing substantial support:"
+msgstr "پروژه فدورا مفتخر است که سازمانهای زیر اسپانسر های آن هستند :"
+
+#: data/content/sponsors.html:37
 msgid "Interested in sponsoring something for Fedora?  Contact admin at fedoraproject * org or stop by #fedora-admin on irc.freenode.net."
 msgstr "آیا علاقه مند به پشتیبانی از فدورا هستید؟ یا dmin at  fedoraproject * org  تماس بگیرید یا به کانال #fedora-admin در irc.freenode.net مراجعه کنید"
 
@@ -760,51 +769,52 @@ msgid "Install DVD / Rescue CD"
 msgstr "دی وی دی نصب / سی دی بازیابی"
 
 #: data/content/verify.html:23
-msgid "Live Media (both GNOME and KDE)"
-msgstr "رسانه زنده (شامل GNOME و KDE)"
+#, fuzzy
+msgid "Live Media"
+msgstr "رسانه زنده KDE  فدورا"
 
-#: data/content/verify.html:30
+#: data/content/verify.html:31
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "بعدی, اضافه کردن کلید GPG فدورا:"
 
-#: data/content/verify.html:34
+#: data/content/verify.html:35
 #, python-format
 msgid "You can verify the details of the GPG key(s) <a href=\"%s/%s/keys\">here</a>."
 msgstr "شما می توانید کلید (ها) را از <a href=\"%s/%s/keys\">اینجا</a>تصدیق کنید."
 
-#: data/content/verify.html:37
+#: data/content/verify.html:38
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "حال آن فایل CHECKSUM را تایید کنید که صحیح است:"
 
-#: data/content/verify.html:41
+#: data/content/verify.html:42
 msgid "The CHECKSUM file should have a good signature from one of the following keys:"
 msgstr "پرونده CHECKSUM باید یک امضای مناسب از یکی از کلیدهای زیر داشته باشد:"
 
-#: data/content/verify.html:44
+#: data/content/verify.html:45
 msgid "Fedora 11"
 msgstr "فدورا ۱۱"
 
-#: data/content/verify.html:45
+#: data/content/verify.html:46
 msgid "Fedora 10"
 msgstr " ۱۰فدورا"
 
-#: data/content/verify.html:46
+#: data/content/verify.html:47
 msgid "Fedora 10 pre-releases"
 msgstr "یادداشتهای پیش انتشار فدورا ۱۰"
 
-#: data/content/verify.html:47
+#: data/content/verify.html:48
 msgid "Fedora 9 and earlier"
 msgstr "فدورا کور(نسخه ۹ و قدیمی  تر)"
 
-#: data/content/verify.html:48
+#: data/content/verify.html:49
 msgid "Fedora 9 and earlier pre-releases"
 msgstr "یادداشت های پیش از انتشار فدورا ۹ و قدیمی تر"
 
-#: data/content/verify.html:51
+#: data/content/verify.html:52
 msgid "Finally, now that the CHECKSUM file has been verified, check that the ISO's checksum matches:"
 msgstr "در نهایت, حالا فایل CHECKSUM مورد بازبینی قرار گرفته است  ISO ها را جهت تطبیق چک کنید:"
 
-#: data/content/verify.html:55
+#: data/content/verify.html:56
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "اگر آمار خروجی آن فایل درست بود, شما میتونید دانلود کنید"
 
@@ -936,6 +946,9 @@ msgstr "ملاقات انجمن فدورا"
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "زبان پایگاه وب"
+
+#~ msgid "Live Media (both GNOME and KDE)"
+#~ msgstr "رسانه زنده (شامل GNOME و KDE)"
 
 #~ msgid "%s/static/images/counter/%s"
 #~ msgstr "%s/static/images/counter/%s"

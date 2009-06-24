@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master-fedoraproject.ta\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-06-09 09:34-0400\n"
+"POT-Creation-Date: 2009-06-24 16:06-0400\n"
 "PO-Revision-Date: 2009-05-22 07:00+0530\n"
 "Last-Translator: I. Felix <ifelix@redhat.com>\n"
 "Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
@@ -744,7 +744,16 @@ msgstr "Fedora நிதியளிப்பவர்கள்"
 msgid "The Fedora Project is proud to have the following organizations as sponsors:"
 msgstr "Fedora திட்டம் பின்வரும் நிறுவனங்களை நிதியாளர்களாக கொள்வதில் பெருமை கொள்கிறது:"
 
-#: data/content/sponsors.html:30
+#: data/content/sponsors.html:16
+msgid "<a href=\"http://redhat.com/\">Red Hat, Inc.</a> is the primary sponsor for the Fedora Project, providing a variety of resources, including full-time employee support, infrastructure hardware and bandwidth, event funding, and legal counsel."
+msgstr ""
+
+#: data/content/sponsors.html:19
+#, fuzzy
+msgid "The Fedora Project also thanks the following sponsors for providing substantial support:"
+msgstr "Fedora திட்டம் பின்வரும் நிறுவனங்களை நிதியாளர்களாக கொள்வதில் பெருமை கொள்கிறது:"
+
+#: data/content/sponsors.html:37
 msgid "Interested in sponsoring something for Fedora?  Contact admin at fedoraproject * org or stop by #fedora-admin on irc.freenode.net."
 msgstr "Fedoraவுக்கு நிதியளிக்க ஆர்வமிருக்கிறதா?  நிர்வாகியை fedoraproject * org அல்லது #fedora-admin on irc.freenode.net இல் தொடர்பு கொள்ளவும்."
 
@@ -765,51 +774,52 @@ msgid "Install DVD / Rescue CD"
 msgstr "DVD / Rescue CD நிறுவல்"
 
 #: data/content/verify.html:23
-msgid "Live Media (both GNOME and KDE)"
-msgstr "நேரடி ஊடகம் (GNOME மற்றும் KDE இரண்டும்)"
+#, fuzzy
+msgid "Live Media"
+msgstr "Fedora KDE நேரடி ஊடகம்"
 
-#: data/content/verify.html:30
+#: data/content/verify.html:31
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "அடுத்து, Fedoraவின் GPG விசைகளை இறக்குமதி செய்யவும்:"
 
-#: data/content/verify.html:34
+#: data/content/verify.html:35
 #, python-format
 msgid "You can verify the details of the GPG key(s) <a href=\"%s/%s/keys\">here</a>."
 msgstr "GPG விசைகளை பற்றிய விவரங்களை சரிபார்க்கவும் <a href=\"%s/%s/keys\">here</a>."
 
-#: data/content/verify.html:37
+#: data/content/verify.html:38
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "இப்போது, CHECKSUM கோப்பு சரியானதா என்று சரிபார்க்கவும்:"
 
-#: data/content/verify.html:41
+#: data/content/verify.html:42
 msgid "The CHECKSUM file should have a good signature from one of the following keys:"
 msgstr "CHECKSUM கோப்பு பின்வரும் விசைகள் ஒன்றிலிருந்து ஒரு நல்ல கையொப்பத்தை பெற்றிருக்க வேண்டும்:"
 
-#: data/content/verify.html:44
+#: data/content/verify.html:45
 msgid "Fedora 11"
 msgstr "Fedora 11"
 
-#: data/content/verify.html:45
+#: data/content/verify.html:46
 msgid "Fedora 10"
 msgstr "Fedora 10"
 
-#: data/content/verify.html:46
+#: data/content/verify.html:47
 msgid "Fedora 10 pre-releases"
 msgstr "Fedora 10 முந்தைய வெளியீட்டு அறிக்கைகள்"
 
-#: data/content/verify.html:47
+#: data/content/verify.html:48
 msgid "Fedora 9 and earlier"
 msgstr "Fedora 9 மற்றும் முந்தையவை"
 
-#: data/content/verify.html:48
+#: data/content/verify.html:49
 msgid "Fedora 9 and earlier pre-releases"
 msgstr "Fedora 9 மற்றும் முந்தைய வெளியீட்டு அறிக்கைகள்"
 
-#: data/content/verify.html:51
+#: data/content/verify.html:52
 msgid "Finally, now that the CHECKSUM file has been verified, check that the ISO's checksum matches:"
 msgstr "கடைசியாக, இப்போது CHECKSUM கோப்பு சரிபார்க்கப்பட்டது, ISO's checksum பொருத்தங்களை சரிபார்க்கவும்:"
 
-#: data/content/verify.html:55
+#: data/content/verify.html:56
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "வெளிப்பாடு நிலைகளில் கோப்பு சரியானது எனில், நீங்கள் தொடர்வது நல்லது!"
 
@@ -941,6 +951,9 @@ msgstr "Fedora சமூகத்தை சந்தித்தல்."
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "இணைய தள மொழி"
+
+#~ msgid "Live Media (both GNOME and KDE)"
+#~ msgstr "நேரடி ஊடகம் (GNOME மற்றும் KDE இரண்டும்)"
 
 #~ msgid "%s/static/images/counter/%s"
 #~ msgstr "%s/static/images/counter/%s"

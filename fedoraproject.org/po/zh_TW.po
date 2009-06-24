@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master-fedoraproject\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-06-09 09:34-0400\n"
+"POT-Creation-Date: 2009-06-24 16:06-0400\n"
 "PO-Revision-Date: 2009-05-14 16:41+1000\n"
 "Last-Translator: Terry Chuang <tchuang@redhat.com>\n"
 "Language-Team:  <zh@li.org>\n"
@@ -737,7 +737,16 @@ msgstr "Fedora 贊助商"
 msgid "The Fedora Project is proud to have the following organizations as sponsors:"
 msgstr "Fedora 專案以下列組織的贊助為傲："
 
-#: data/content/sponsors.html:30
+#: data/content/sponsors.html:16
+msgid "<a href=\"http://redhat.com/\">Red Hat, Inc.</a> is the primary sponsor for the Fedora Project, providing a variety of resources, including full-time employee support, infrastructure hardware and bandwidth, event funding, and legal counsel."
+msgstr ""
+
+#: data/content/sponsors.html:19
+#, fuzzy
+msgid "The Fedora Project also thanks the following sponsors for providing substantial support:"
+msgstr "Fedora 專案以下列組織的贊助為傲："
+
+#: data/content/sponsors.html:37
 msgid "Interested in sponsoring something for Fedora?  Contact admin at fedoraproject * org or stop by #fedora-admin on irc.freenode.net."
 msgstr "您對於贊助 Fedora 有興趣嗎？請聯繫 fedoraproject * org 的管理員或至 irc.freenode.net 上的 #fedora-admin。"
 
@@ -758,51 +767,52 @@ msgid "Install DVD / Rescue CD"
 msgstr "安裝 DVD / 救援 CD"
 
 #: data/content/verify.html:23
-msgid "Live Media (both GNOME and KDE)"
-msgstr "Live 媒介（GNOME 與 KDE）"
+#, fuzzy
+msgid "Live Media"
+msgstr "Fedora KDE Live 媒介"
 
-#: data/content/verify.html:30
+#: data/content/verify.html:31
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "下一步，匯入 Fedora 的 GPG 金鑰："
 
-#: data/content/verify.html:34
+#: data/content/verify.html:35
 #, python-format
 msgid "You can verify the details of the GPG key(s) <a href=\"%s/%s/keys\">here</a>."
 msgstr "您可在<a href=\"%s/%s/keys\">此</a>驗證 GPG 金鑰的詳細資料。"
 
-#: data/content/verify.html:37
+#: data/content/verify.html:38
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "現在，驗證 CHECKSUM 檔案是否有效："
 
-#: data/content/verify.html:41
+#: data/content/verify.html:42
 msgid "The CHECKSUM file should have a good signature from one of the following keys:"
 msgstr "CHECKSUM 檔案應有來自於以下金鑰之一的簽章："
 
-#: data/content/verify.html:44
+#: data/content/verify.html:45
 msgid "Fedora 11"
 msgstr "Fedora 11"
 
-#: data/content/verify.html:45
+#: data/content/verify.html:46
 msgid "Fedora 10"
 msgstr "Fedora 10"
 
-#: data/content/verify.html:46
+#: data/content/verify.html:47
 msgid "Fedora 10 pre-releases"
 msgstr "Fedora 10 預發行板"
 
-#: data/content/verify.html:47
+#: data/content/verify.html:48
 msgid "Fedora 9 and earlier"
 msgstr "Fedora 9 及更早版本"
 
-#: data/content/verify.html:48
+#: data/content/verify.html:49
 msgid "Fedora 9 and earlier pre-releases"
 msgstr "Fedora 9 及更早預發行版本"
 
-#: data/content/verify.html:51
+#: data/content/verify.html:52
 msgid "Finally, now that the CHECKSUM file has been verified, check that the ISO's checksum matches:"
 msgstr "最後，現在 CHECKSUM 檔案已通過驗證，請檢查 ISO 檔案的 checksum 是否符合："
 
-#: data/content/verify.html:55
+#: data/content/verify.html:56
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "若輸出顯示檔案有效，那您便可繼續進行了！"
 
@@ -934,6 +944,9 @@ msgstr "與 Fedora 社群接觸。"
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "網站語言"
+
+#~ msgid "Live Media (both GNOME and KDE)"
+#~ msgstr "Live 媒介（GNOME 與 KDE）"
 
 #~ msgid "%s/static/images/counter/%s"
 #~ msgstr "%s/static/images/counter/%s"

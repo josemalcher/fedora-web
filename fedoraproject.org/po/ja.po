@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ja\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-06-09 09:34-0400\n"
+"POT-Creation-Date: 2009-06-24 16:06-0400\n"
 "PO-Revision-Date: 2009-05-12 14:18+0900\n"
 "Last-Translator: Kiyoto Hashida <khashida@redhat.com>\n"
 "Language-Team: Japanese <jp@li.org>\n"
@@ -737,7 +737,16 @@ msgstr "Fedora のスポンサー"
 msgid "The Fedora Project is proud to have the following organizations as sponsors:"
 msgstr "Fedora Project は以下の団体の協力によって運営されています。"
 
-#: data/content/sponsors.html:30
+#: data/content/sponsors.html:16
+msgid "<a href=\"http://redhat.com/\">Red Hat, Inc.</a> is the primary sponsor for the Fedora Project, providing a variety of resources, including full-time employee support, infrastructure hardware and bandwidth, event funding, and legal counsel."
+msgstr ""
+
+#: data/content/sponsors.html:19
+#, fuzzy
+msgid "The Fedora Project also thanks the following sponsors for providing substantial support:"
+msgstr "Fedora Project は以下の団体の協力によって運営されています。"
+
+#: data/content/sponsors.html:37
 msgid "Interested in sponsoring something for Fedora?  Contact admin at fedoraproject * org or stop by #fedora-admin on irc.freenode.net."
 msgstr "Fedora に協力してみませんか?  fedoraproject * org の管理者に問い合わせるか、irc.freenode.net. の #fedora-admin チャンネルに立ち寄ってみて下さい。"
 
@@ -758,51 +767,52 @@ msgid "Install DVD / Rescue CD"
 msgstr "インストール DVD / レスキュー CD"
 
 #: data/content/verify.html:23
-msgid "Live Media (both GNOME and KDE)"
-msgstr "ライブメディア(GNOME, KDE 共に)"
+#, fuzzy
+msgid "Live Media"
+msgstr "Fedora KDE ライブメディア"
 
-#: data/content/verify.html:30
+#: data/content/verify.html:31
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "次に、Fedora の GPG キーをインポートします:"
 
-#: data/content/verify.html:34
+#: data/content/verify.html:35
 #, python-format
 msgid "You can verify the details of the GPG key(s) <a href=\"%s/%s/keys\">here</a>."
 msgstr "GPG キーの詳細は <a href=\"%s/%s/keys\">ここ</a> で検証できます。"
 
-#: data/content/verify.html:37
+#: data/content/verify.html:38
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "ここで CHECKSUM ファイルが有効であることを検証します:"
 
-#: data/content/verify.html:41
+#: data/content/verify.html:42
 msgid "The CHECKSUM file should have a good signature from one of the following keys:"
 msgstr "CHECKSUM ファイルは以下のキーの内の１つから適切な署名を持っている必要が あります:"
 
-#: data/content/verify.html:44
+#: data/content/verify.html:45
 msgid "Fedora 11"
 msgstr "Fedora 11"
 
-#: data/content/verify.html:45
+#: data/content/verify.html:46
 msgid "Fedora 10"
 msgstr "Fedora 10"
 
-#: data/content/verify.html:46
+#: data/content/verify.html:47
 msgid "Fedora 10 pre-releases"
 msgstr "Fedora 10 プレリリース"
 
-#: data/content/verify.html:47
+#: data/content/verify.html:48
 msgid "Fedora 9 and earlier"
 msgstr "Fedora 9 及びそれ以前"
 
-#: data/content/verify.html:48
+#: data/content/verify.html:49
 msgid "Fedora 9 and earlier pre-releases"
 msgstr "Fedora 9 及びそれ以前のプレリリース"
 
-#: data/content/verify.html:51
+#: data/content/verify.html:52
 msgid "Finally, now that the CHECKSUM file has been verified, check that the ISO's checksum matches:"
 msgstr "これで、CHECKSUM ファイルの検証が完了しました。最後に ISO のチェックサムが 一致するかを検証します:"
 
-#: data/content/verify.html:55
+#: data/content/verify.html:56
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "検証成功の結果が出力されたら、準備完了です！"
 
@@ -934,6 +944,9 @@ msgstr "Fedora コミュニティとの出会い"
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "他の言語を選択"
+
+#~ msgid "Live Media (both GNOME and KDE)"
+#~ msgstr "ライブメディア(GNOME, KDE 共に)"
 
 #~ msgid "%s/static/images/counter/%s"
 #~ msgstr "%s/static/images/counter/%s"

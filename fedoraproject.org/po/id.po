@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Project Web Site\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-06-09 09:34-0400\n"
+"POT-Creation-Date: 2009-06-24 16:06-0400\n"
 "PO-Revision-Date: 2008-05-08 18:18+0700\n"
 "Last-Translator: Dapid Candra <dapidc@gmail.com>\n"
 "Language-Team: Indonesian <fedora-trans-id@redhat.com>\n"
@@ -767,7 +767,16 @@ msgstr "Para Sponsor Fedora"
 msgid "The Fedora Project is proud to have the following organizations as sponsors:"
 msgstr "Proyek Fedora bangga disponsori oleh oraganisasi berikut ini:"
 
-#: data/content/sponsors.html:30
+#: data/content/sponsors.html:16
+msgid "<a href=\"http://redhat.com/\">Red Hat, Inc.</a> is the primary sponsor for the Fedora Project, providing a variety of resources, including full-time employee support, infrastructure hardware and bandwidth, event funding, and legal counsel."
+msgstr ""
+
+#: data/content/sponsors.html:19
+#, fuzzy
+msgid "The Fedora Project also thanks the following sponsors for providing substantial support:"
+msgstr "Proyek Fedora bangga disponsori oleh oraganisasi berikut ini:"
+
+#: data/content/sponsors.html:37
 msgid "Interested in sponsoring something for Fedora?  Contact admin at fedoraproject * org or stop by #fedora-admin on irc.freenode.net."
 msgstr "Berminat mensponsori sesuatu untuk Fedora? Hubungi admin di  fedoraproject * org atau mampir di #fedora-admin pada irc.freenode.net."
 
@@ -789,57 +798,58 @@ msgid "Install DVD / Rescue CD"
 msgstr "Install DVD / Rescue CD"
 
 #: data/content/verify.html:23
-msgid "Live Media (both GNOME and KDE)"
-msgstr "Media Langsung  (GNOME dan KDE)"
+#, fuzzy
+msgid "Live Media"
+msgstr "Media Langsung Fedora KDE"
 
-#: data/content/verify.html:30
+#: data/content/verify.html:31
 #, fuzzy
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Kemudian, import kunci GPG Fedora:"
 
-#: data/content/verify.html:34
+#: data/content/verify.html:35
 #, python-format
 msgid "You can verify the details of the GPG key(s) <a href=\"%s/%s/keys\">here</a>."
 msgstr ""
 
-#: data/content/verify.html:37
+#: data/content/verify.html:38
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr ""
 
-#: data/content/verify.html:41
+#: data/content/verify.html:42
 msgid "The CHECKSUM file should have a good signature from one of the following keys:"
 msgstr ""
 
-#: data/content/verify.html:44
+#: data/content/verify.html:45
 #, fuzzy
 msgid "Fedora 11"
 msgstr "Fedora"
 
-#: data/content/verify.html:45
+#: data/content/verify.html:46
 #, fuzzy
 msgid "Fedora 10"
 msgstr "Fedora"
 
-#: data/content/verify.html:46
+#: data/content/verify.html:47
 #, fuzzy
 msgid "Fedora 10 pre-releases"
 msgstr "Catatan Rilis Fedora 9"
 
-#: data/content/verify.html:47
+#: data/content/verify.html:48
 #, fuzzy
 msgid "Fedora 9 and earlier"
 msgstr "Fedora Core (versi 6 dan sebelumnya)"
 
-#: data/content/verify.html:48
+#: data/content/verify.html:49
 msgid "Fedora 9 and earlier pre-releases"
 msgstr ""
 
-#: data/content/verify.html:51
+#: data/content/verify.html:52
 #, fuzzy
 msgid "Finally, now that the CHECKSUM file has been verified, check that the ISO's checksum matches:"
 msgstr "Terakhir, setelah memeriksa SHA1SUM berkas tersebut, periksa apakah checksum ISO cocok:"
 
-#: data/content/verify.html:55
+#: data/content/verify.html:56
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "Jika keluaran menyatakan berkas tersebut valid, silakan lanjut!"
 
@@ -971,6 +981,9 @@ msgstr "Bertemu Komunitas Fedora."
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "Bahasa Situs Web"
+
+#~ msgid "Live Media (both GNOME and KDE)"
+#~ msgstr "Media Langsung  (GNOME dan KDE)"
 
 #~ msgid "%s/static/images/counter/%s"
 #~ msgstr "%s/static/images/counter/%s"
