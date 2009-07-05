@@ -12,23 +12,73 @@
     <h2>${_('Fedora Talk Conferencing')}</h2>
 	<p>${_('Fedora community members are privileged with several VOIP conference rooms.  Below is a list of the available conference rooms and their numbers.')}</p>
     <h3>${_('Sub-Project Conference Rooms')}</h3>
-	<p>${_('The following conference bridges are reserved for the following sub-projects.  To request a bridge for your sub-project, send an email to')} <a href="mailto:admin@fedoraproject.org">admin at fedoraproject dot org</a>.</p>
-    <ul>
-		<li>2001 - ${_('Infrastructure')}</li>
-		<li>2002 - ${_('FUDCon')}</li>
-		<li>2004 - ${_('Marketing')}</li>
-        <li>2006 - ${_('Fedora Activity Day')}</li>
-        <li>2008 - ${_('Documentation')}</li>
-	</ul>
+	<p>${_('The following conference bridges are reserved for the following sub-projects.  To request a bridge for your sub-project, please create a \'New Ticket\' on the fedora infrastructure')} <a href="https://fedorahosted.org/fedora-infrastructure">${_('trac instance')}</a>.</p>
+	<table id="#content">
+		<tr>
+			<th>${_('Sub-project')}</th>
+			<th>${_('Extension')}</th>
+			<th>${_('SIP Address (for soft phones)')}</th>
+		</tr>
+		<tr>
+			<td>${_('Infrastructure')}</td>
+			<td>2001</td>
+			<td><a href="sip:infrastructure@fedoraproject.org">infrastructure@fedoraproject.org</a></td>
+		</tr>
+		<tr>
+			<td>${_('FUDCon')}</td>
+			<td>2002</td>
+			<td><a href="sip:fudcon@fedoraproject.org">fudcon@fedoraproject.org</a></td>
+		</tr>
+		<tr>
+			<td>${_('Marketing')}</td>
+			<td>2004</td>
+			<td><a href="sip:marketing@fedoraproject.org">marketing@fedoraproject.org</a></td>
+		</tr>
+		<tr>
+			<td>${_('Fedora Activity Day')}</td>
+			<td>2006</td>
+			<td><a href="sip:fad@fedoraproject.org">fad@fedoraproject.org</a></td>
+		</tr>
+		<tr>
+			<td>${_('Documentation')}</td>
+			<td>2008</td>
+			<td><a href="sip:docs@fedoraproject.org">docs@fedoraproject.org</a></td>
+		</tr>
+	</table>
 
     <h3>${_('General Conference Rooms')}</h3>
 	<p>${_('The following conference bridges can be used by anyone.  If you join a bridge and it is already in use, try another bridge.')}</p>
-	<ul>
-		<li>2010 - ${_('General')}</li>
-        <li>2011 - ${_('General')}</li>
-        <li>2012 - ${_('General')}</li>
-        <li>2013 - ${_('General')}</li>
-        <li>2014 - ${_('General')}</li>
-    </ul>
+	<table id="#content">
+		<tr>
+			<th>${_('Room Name')}</th>
+			<th>${_('Extension')}</th>
+			<th>${_('SIP Address (for soft phones)')}</th>
+		</tr>
+		<tr>
+			<td>${_('Conference Room 0')}</td>
+			<td>2010</td>
+			<td><a href="sip:conf0@fedoraproject.org">conf0@fedoraproject.org</a></td>
+		</tr>
+		<tr>
+			<td>${_('Conference Room 1')}</td>
+			<td>2011</td>
+			<td><a href="sip:conf1@fedoraproject.org">conf1@fedoraproject.org</a></td>
+		</tr>
+		<tr>
+			<td>${_('Conference Room 2')}</td>
+			<td>2012</td>
+			<td><a href="sip:conf2@fedoraproject.org">conf2@fedoraproject.org</a></td>
+		</tr>
+		<tr>
+			<td>${_('Conference Room 3')}</td>
+			<td>2013</td>
+			<td><a href="sip:conf3@fedoraproject.org">conf3@fedoraproject.org</a></td>
+		</tr>
+		<tr>
+			<td>${_('Conference Room 4')}</td>
+			<td>2014</td>
+			<td><a href="sip:conf4@fedoraproject.org">conf4@fedoraproject.org</a></td>
+		</tr>
+	</table>
   </body>
 </html>
