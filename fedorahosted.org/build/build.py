@@ -71,6 +71,7 @@ def read_data(filename):
         if not line[0].startswith('#'):
             project = {
                 'id': line[0],
+                'group': line[0][0].upper(),
                 'url': 'https://fedorahosted.org/%s/' % (line[0]),
                 'desc': line[1].decode('utf-8'),
                 'title': line[1].decode('utf-8')
@@ -91,6 +92,7 @@ def read_trac(path):
             conf = iniparse.INIConfig(file(filename, 'r'))
             project = {
                 'id': conf['trac']['base_url'].rstrip('/').split('/')[-1],
+                'group': conf['trac']['base_url'].rstrip('/').split('/')[-1][0].upper(),
                 'url': conf['trac']['base_url'],
                 'desc': conf['project']['name'].decode('utf-8'),
                 'title': conf['project']['descr'].decode('utf-8')

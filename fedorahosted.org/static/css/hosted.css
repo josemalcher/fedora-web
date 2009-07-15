@@ -34,15 +34,9 @@ td.vcscol
   height: 22px;
 }
 
-#content table tr.rowfirst td
+#content table tr.row
 {
-  border-top: 1px solid #cfcfcf;
-  border-bottom: 1px solid #cfcfcf;
-}
-
-#content table tr.rowsub td
-{
-  border-bottom: 1px solid #cfcfcf;
+  display: none;
 }
 
 pre
@@ -53,4 +47,30 @@ pre
 #content span.question
 {
   font-weight: bold;
+}
+
+#grouplist
+{
+  background-color: #fbfbfb;
+  width: 90%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+span.group
+{
+  padding: 5px;
+  margin-left: 5px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+  cursor: hand;
+}
+
+#nodata
+{
+  background-color: #abd3ff;
+  text-align: center;
+  font-weight: bold;
+  display: none;
 }

@@ -3,4 +3,45 @@
   xmlns:py="http://genshi.edgewall.org/"
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
+  <script type="text/javascript" src="${relpath}/static/js/jquery.js"></script>
+  <script type="text/javascript">
+    function showGroup(group) {
+      $("*.row").each(function () {
+        $(this).fadeOut("fast");
+      });
+      $("#nodata").fadeOut("fast");
+      if ($("*.row." + group).size() == 0){
+        $("#nodata").fadeIn("fast");
+      } else {
+        $("*.row." + group).each(function () {
+          $(this).fadeIn("fast");
+        });
+      }
+    }
+    $(document).ready(function (){
+      $(window).load(function (){
+        showGroup('A');
+      });
+      $("*.group").hover(
+        function (){
+          $(this).css("color", "#337ACC");
+        },
+        function (){
+          $(this).css("color", "#000");
+        }
+      );
+      $("*.group").click(
+        function () {
+          showGroup($(this).text());
+        });
+      $("*.row").hover(
+        function (){
+          $(this).css("background-color", "#abd3ff");
+        },
+        function (){
+          $(this).css("background-color", "");
+        }
+      );
+    });
+  </script>
 </html>

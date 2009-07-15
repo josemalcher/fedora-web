@@ -15,6 +15,9 @@ all: $(LANGUAGES)
 
 $(LANGUAGES): % : po/%.mo data/templates/translations.html
 	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -s static -b $(BASEPATH) -d data/projects.csv -t /srv/web/trac/projects
+# Makes sense to not store jquery in our server since is not from our code
+	mkdir -p out/static/js
+	wget http://code.jquery.com/jquery-latest.js -O out/static/js/jquery.js -q
 
 po/en.po: po/fedorahosted.pot
 	cp po/fedorahosted.pot po/en.po
@@ -65,7 +68,7 @@ httpd/conf/languages.conf: httpd/conf/languages.conf.in
 		httpd/conf/languages.conf
 
 test: httpd/conf/httpd.conf httpd/conf/languages.conf
-	/usr/sbin/httpd -d httpd -f conf/httpd.conf
+	/usr/sbin/httpd -d $(PWD)/httpd -f $(PWD)/httpd/conf/httpd.conf
 	@echo "Test instance started at: http://localhost:5000/"
 
 stoptest:
