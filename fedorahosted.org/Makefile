@@ -12,7 +12,6 @@ PWD = $(shell pwd)
 
 all: $(LANGUAGES)
 	cp static/robots.txt out/
-# Makes sense to not store jquery in our server since is not from our code
 	mkdir -p out/static/js
 	wget http://code.jquery.com/jquery-latest.js -O out/static/js/jquery.js -q
 
