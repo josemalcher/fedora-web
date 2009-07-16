@@ -67,7 +67,7 @@ httpd/conf/languages.conf: httpd/conf/languages.conf.in
 		httpd/conf/languages.conf
 
 test: httpd/conf/httpd.conf httpd/conf/languages.conf
-	/usr/sbin/httpd -d $(PWD)/httpd -f $(PWD)/httpd/conf/httpd.conf
+	/usr/sbin/httpd -d httpd -f conf/httpd.conf
 	@echo "Test instance started at: http://localhost:5000/"
 
 stoptest:
