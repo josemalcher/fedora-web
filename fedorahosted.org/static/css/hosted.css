@@ -34,9 +34,9 @@ td.vcscol
   height: 22px;
 }
 
-#content table tr.row
+#content table tr.row:hover
 {
-  display: none;
+  background-color: #abd3ff;
 }
 
 pre
@@ -65,6 +65,11 @@ span.group
   font-weight: bold;
   cursor: pointer;
   cursor: hand;
+}
+
+span.group:hover
+{
+  color: #337ACC;
 }
 
 #nodata
