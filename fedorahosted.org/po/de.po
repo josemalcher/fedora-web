@@ -3,26 +3,28 @@
 # This file is distributed under the same license as the project.
 # Robert Scheck <robert@fedoraproject.org>, 2007-2009.
 # Fabian Affolter <fab@fedoraproject.org>, 2008-2009.
+# Cornelius Neckenig <tbull@fedoraproject.org>, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: fho static website\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-03-17 01:03-0400\n"
-"PO-Revision-Date: 2009-03-28 16:22+0100\n"
-"Last-Translator: Robert Scheck <robert@fedoraproject.org>\n"
+"POT-Creation-Date: 2009-07-15 02:56-0500\n"
+"PO-Revision-Date: 2009-07-17 12:37+0100\n"
+"Last-Translator: Cornelius Neckenig <tbull@fedoraproject.org>\n"
 "Language-Team: Fedora Translation <fedora-trans-de@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: data/content/410.html:7 data/content/index.html:7
+#: data/content/410.html:7
+#: data/content/index.html:7
 msgid "Hosted Projects - Fedora Hosted"
 msgstr "Gehostete Projekte - Fedora Hosted"
 
 #: data/content/410.html:12
 msgid "No such project."
-msgstr "Projekt nicht gefunden"
+msgstr "Projekt existiert nicht"
 
 #: data/content/410.html:14
 msgid "The requested project does not exist on Fedora Hosted."
@@ -48,7 +50,8 @@ msgstr "Ihr neues Projekt ist nur ein <a href=\"new\">Ticket</a> entfernt."
 msgid "FAQs - Fedora Hosted"
 msgstr "FAQs - Fedora Hosted"
 
-#: data/content/faq.html:12 data/templates/sidebar.html:13
+#: data/content/faq.html:12
+#: data/templates/sidebar.html:13
 msgid "Frequently-Asked Questions"
 msgstr "Häufig gestellte Fragen"
 
@@ -116,17 +119,41 @@ msgstr "Kann ich an meinem Code anderswo arbeiten, solange ich auf mein Reposito
 msgid "Of course. Visit <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> for instructions on how to set up a temporary repository in your fedorapeople.org space."
 msgstr "Natürlich. Besuchen Sie <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> um zu erfahren, wie Sie ein temporäres Repository auf Ihrem Account unter fedorapeople.org erstellen können."
 
-#: data/content/index.html:12
+#: data/content/index.html:10
 msgid "Available Projects"
 msgstr "Vorhandene Projekte"
 
+#: data/content/index.html:16
+msgid "Project Description"
+msgstr "Projekt-Beschreibung"
+
+#: data/content/index.html:17
+msgid "VCS"
+msgstr "VCS (Version Control System"
+
+#: data/content/index.html:18
+msgid "Web"
+msgstr "Web"
+
+#: data/content/index.html:19
+msgid "Anon URL"
+msgstr "Anonyme URL"
+
 #: data/content/index.html:20
+msgid "Auth URL"
+msgstr "Authentifikations URL"
+
+#: data/content/index.html:26
 msgid "Right-click and copy the anonymous VCS URI to your clipboard"
 msgstr "Mit der rechten Maustaste klicken und die Adresse des anonymen Versionskontrollsystems in die Zwischenablage kopieren"
 
-#: data/content/index.html:21
+#: data/content/index.html:27
 msgid "Right-click and copy the authorized VCS URI to your clipboard"
 msgstr "Mit der rechten Maustaste klicken und die Adresse des authorisierten Versionskontrollsystems in die Zwischenablage kopieren"
+
+#: data/content/index.html:30
+msgid "No projects registered in this group"
+msgstr "Keine Projekte in dieser Gruppe registriert"
 
 #: data/content/new.html:7
 msgid "Request a New Project - Fedora Hosted"
@@ -160,7 +187,8 @@ msgstr "Benutzen Sie folgende Vorlage für eine komplette Beschreibung Ihres Tic
 msgid "Terms of Use - Fedora Hosted"
 msgstr "Nutzungsbedingungen - Fedora Hosted"
 
-#: data/content/terms.html:12 data/templates/sidebar.html:14
+#: data/content/terms.html:12
+#: data/templates/sidebar.html:14
 msgid "Terms of Use"
 msgstr "Nutzungsbedingungen"
 
@@ -235,3 +263,4 @@ msgstr "Hosting-Sponsor"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "Gesponsert von ServerBeach"
+
