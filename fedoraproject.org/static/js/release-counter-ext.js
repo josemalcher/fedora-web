@@ -19,7 +19,7 @@ if (lang_match) {
     }
 }
 
-var url = "http://fedoraproject.org/wiki/Releases/11/Schedule";
+var url = "https://fedoraproject.org/wiki/Releases/11/Schedule";
 
 var banner = document.createElement('div');
 
@@ -30,11 +30,11 @@ bannerimg.style.border = "none";
 
 if (days <= 0) {
     // TODO: Get an actual image here!
-    bannerimg.setAttribute("src", "http://fedoraproject.org/static/images/banners/f11release.png");
+    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/banners/f11release.png");
     bannerimg.setAttribute("alt", "Fedora 11 is here!");
-    url = "http://fedoraproject.org/get-fedora";
+    url = "https://fedoraproject.org/get-fedora";
 } else {
-    bannerimg.setAttribute("src", "http://fedoraproject.org/static/images/counter/" + lang + "/fedora11-countdown-banner-" + days + "." + lang + "." + "png");
+    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora11-countdown-banner-" + days + "." + lang + "." + "png");
     bannerimg.setAttribute("alt", "Fedora 11 Leonidas released in " + days + " days.");
 }
 
