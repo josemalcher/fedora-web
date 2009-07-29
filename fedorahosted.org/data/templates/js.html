@@ -7,20 +7,21 @@
   <script type="text/javascript">
     function showGroup(group) {
       $("*.row").each(function () {
-        $(this).fadeOut("fast");
+        $(this).hide();
       });
-      $("#nodata").fadeOut("fast");
+      $("#nodata").hide();
       if ($("*.row." + group).size() == 0){
-        $("#nodata").fadeIn("fast");
+        $("#nodata").fadeIn();
       } else {
         $("*.row." + group).each(function () {
-          $(this).fadeIn("fast");
+          $(this).fadeIn();
         });
       }
     }
     $(document).ready(function (){
       $(window).load(function (){
-        showGroup('A');
+        $("#grouplist").show();
+        showGroup('*');
       });
       $("*.group").click(
         function () {

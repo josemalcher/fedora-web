@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# vim: set ts=4 sw=4 et
 '''
 build.py - A script to generate static, translated HTML pages from Genshi
 templates/PO files.
@@ -29,8 +30,12 @@ from genshi.core import Markup
 
 locale.setlocale(locale.LC_COLLATE, 'en_US')
 
-vcsprefix = {
-  'hg': '/'
+vcsloc = {
+  'hg': '/srv/hg',
+  'bzr': '/srv/bzr',
+  'git': '/srv/git',
+  'mtn': '/srv/mtn',
+  'svn': '/srv/svn'
 }
 
 def process(args):
@@ -46,13 +51,22 @@ def process(args):
                 shutil.rmtree(outpath)
             copytree(dir, outpath)
     if options.trac and os.path.isdir(options.trac):
-        projects = read_trac(options.trac)
+        # If we are building VCS-only projects along with Trac projects, join
+        if options.vcs:
+            projects = read_vcs(options.vcs)
+            prjs = read_trac(options.trac)
+            if prjs:
+                for id,prj in prjs.items():
+                    # Overwrite with trac data if there's any
+                    projects[id] = prj
+        else:
+            projects = read_trac(options.trac)
     else:
         if options.data:
             projects = read_data(options.data)
         else:
-            projects = []
-    projects.sort(key=operator.itemgetter('desc'), cmp=locale.strcoll)
+            projects = {}
+    projects.keys().sort()
     timing.start()
     for dirpath, dirnames, filenames in os.walk(options.input):
         try:
@@ -65,12 +79,31 @@ def process(args):
     timing.finish()
     print 'Website build time: %s' % timing.milli()
 
+def read_vcs(vcslist):
+    projects = {}
+    for vcs in vcslist:
+        if not vcs in vcsloc.keys():
+            continue
+        vcspath = vcsloc[vcs]
+        if os.path.isdir(vcspath):
+            for item in os.listdir(vcspath):
+                if (os.path.isdir(os.path.join(vcspath, item))# Dirs
+                    and not os.path.islink(os.path.join(vcspath, item))# No links
+                    and not item.endswith('.old')):#Ugly, I know, any better idea?
+                    project = {
+                        'group': item[0].upper(),
+                        'url': 'http://%(vcs)s.fedoraproject.org/%(vcs)s/%(project)s' % {'vcs': vcs, 'project': item},
+                        'desc': 'Project %(project)s under %(vcs)s' % {'project': item.split('.')[0], 'vcs': vcs},
+                        'title': item.split('.')[0]
+                    }
+                    projects[item.split('.')[0]] = project
+    return projects
+
 def read_data(filename):
-    projects = []
+    projects = {}
     for line in csv.reader(open(filename, 'r')):
         if not line[0].startswith('#'):
             project = {
-                'id': line[0],
                 'group': line[0][0].upper(),
                 'url': 'https://fedorahosted.org/%s/' % (line[0]),
                 'desc': line[1].decode('utf-8'),
@@ -78,20 +111,18 @@ def read_data(filename):
             }
             if len(line) > 2:
                 project['vcs'] = line[2]
-                project['vcsprefix'] = vcsprefix.get(project['vcs'], '')
                 project['vcsbase'] = ''
                 project['vcsweburl'] = 'https://fedorahosted.org/%s/browser/' % (line[0])
-            projects.append(project)
+            projects[line[0]] = project
     return projects
 
 def read_trac(path):
-    projects = []
+    projects = {}
     for dir in os.listdir(path):
         filename = os.path.join(path, dir, 'conf', 'trac.ini')
         if os.path.isfile(filename):
             conf = iniparse.INIConfig(file(filename, 'r'))
             project = {
-                'id': conf['trac']['base_url'].rstrip('/').split('/')[-1],
                 'group': conf['trac']['base_url'].rstrip('/').split('/')[-1][0].upper(),
                 'url': conf['trac']['base_url'],
                 'desc': conf['project']['name'].decode('utf-8'),
@@ -99,12 +130,11 @@ def read_trac(path):
             }
             if 'repository_type' in conf['trac']:
                 project['vcs'] = conf['trac']['repository_type']
-                project['vcsprefix'] = vcsprefix.get(project['vcs'], '')
                 project['vcsbase'] = os.path.realpath(
                         conf['trac']['repository_dir']).replace('/srv/%s/' % project['vcs'], '', 1)
                 project['vcsweburl'] = urlparse.urljoin(
                     conf['trac']['base_url'].rstrip('/') + '/', 'browser')
-            projects.append(project)
+            projects[conf['trac']['base_url'].rstrip('/').split('/')[-1]] = project
     return projects
 
 def process_dir(dirpath, filenames, projects):
@@ -179,6 +209,8 @@ def main():
         help='Filename to read project data from')
     parser.add_option('-t', '--trac', dest='trac', default=None,
         help='Path to read Trac project data from under')
+    parser.add_option('-c', '--vcs', dest='vcs', action='append',
+        help='Append these version control systems')
     base_path = os.path.dirname(os.path.abspath(__file__))
     (options, args) = parser.parse_args()
     options.basepath = options.basepath.rstrip('/')
