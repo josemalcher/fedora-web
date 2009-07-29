@@ -16,7 +16,7 @@ all: $(LANGUAGES)
 	wget http://code.jquery.com/jquery-latest.js -O out/static/js/jquery.js -q
 
 $(LANGUAGES): % : po/%.mo data/templates/translations.html
-	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -s static -b $(BASEPATH) -d data/projects.csv -t /srv/web/trac/projects
+	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -s static -b $(BASEPATH) -d data/projects.csv -t /srv/web/trac/projects -c svn -c git -c mtn -c hg -c bzr
 
 po/en.po: po/fedorahosted.pot
 	cp po/fedorahosted.pot po/en.po
