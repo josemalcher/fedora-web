@@ -94,7 +94,9 @@ def read_vcs(vcslist):
                         'group': item[0].upper(),
                         'url': 'http://%(vcs)s.fedoraproject.org/%(vcs)s/%(project)s' % {'vcs': vcs, 'project': item},
                         'desc': 'Project %(project)s under %(vcs)s' % {'project': item.split('.')[0], 'vcs': vcs},
-                        'title': item.split('.')[0]
+                        'title': item.split('.')[0],
+                        'vcs': vcs,
+                        'vcsbase': os.path.join(vcspath, item).replace('/srv/%s/' % vcs, '', 1)
                     }
                     projects[item.split('.')[0]] = project
     return projects
@@ -130,8 +132,10 @@ def read_trac(path):
             }
             if 'repository_type' in conf['trac']:
                 project['vcs'] = conf['trac']['repository_type']
-                project['vcsbase'] = os.path.realpath(
-                        conf['trac']['repository_dir']).replace('/srv/%s/' % project['vcs'], '', 1)
+                # What happens if this is a trac-only project?
+                if conf['trac']['repository_dir']:
+                    project['vcsbase'] = os.path.realpath(
+                            conf['trac']['repository_dir']).replace('/srv/%s/' % project['vcs'], '', 1)
                 project['vcsweburl'] = urlparse.urljoin(
                     conf['trac']['base_url'].rstrip('/') + '/', 'browser')
             projects[conf['trac']['base_url'].rstrip('/').split('/')[-1]] = project
