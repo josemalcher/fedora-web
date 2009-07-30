@@ -96,7 +96,7 @@ def read_vcs(vcslist):
                         'desc': 'Project %(project)s under %(vcs)s' % {'project': item.split('.')[0], 'vcs': vcs},
                         'title': item.split('.')[0],
                         'vcs': vcs,
-                        'vcsbase': os.path.join(vcspath, item).replace('/srv/%s/' % vcs, '', 1)
+                        'vcsbase': item
                     }
                     projects[item.split('.')[0]] = project
     return projects
@@ -136,6 +136,8 @@ def read_trac(path):
                 if conf['trac']['repository_dir']:
                     project['vcsbase'] = os.path.realpath(
                             conf['trac']['repository_dir']).replace('/srv/%s/' % project['vcs'], '', 1)
+                else:
+                    project['vcsbase'] = ''
                 project['vcsweburl'] = urlparse.urljoin(
                     conf['trac']['base_url'].rstrip('/') + '/', 'browser')
             projects[conf['trac']['base_url'].rstrip('/').split('/')[-1]] = project
