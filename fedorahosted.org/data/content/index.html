@@ -10,7 +10,7 @@
     <h2>${_('Available Projects')}</h2>
     <div id="grouplist">
       <span class="group" title="${_('Display all projects')}">*</span>
-      <span py:for="x in xrange(ord('A'), ord('Z') + 1)" class="group" title="${_('Display projects that start with letter %s' % chr(x))}">${chr(x)}</span>
+      <span py:for="x in xrange(ord('A'), ord('Z') + 1)" class="group" title="${_('Display projects that start with letter %s' % chr(x))}">${chr(x)} </span>
     </div>
     <table>
       <tr>
