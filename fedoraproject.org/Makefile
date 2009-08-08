@@ -41,6 +41,7 @@ clean:
 	rm -f po/*.mo
 	rm -f data/templates/translations.html
 	rm -f build/rss.cache
+	rm -f httpd/conf/*.conf httpd/conf/languages.conf.in
 
 msgmerge: $(wildcard po/*.po)
 
