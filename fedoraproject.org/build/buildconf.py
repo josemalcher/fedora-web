@@ -12,8 +12,6 @@ for l in linguas:
         languages.append((lang, code))
 linguas.close()
 
-print 'LoadModule negotiation_module modules/mod_negotiation.so'
-
 for (lang, code) in languages:
     print 'AddLanguage %s .%s' % (code, lang)
 
