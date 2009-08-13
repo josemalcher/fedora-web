@@ -26,6 +26,16 @@ import tempfile
 from stat import *
 from subprocess import Popen, PIPE, STDOUT
 
+# Obsolete keys
+obsolete_keys = [
+    '4F2A6FD2', # Fedora Project (original key, retired after 'the incident')
+    '30C9ECF8', # Fedora Project (Test Software)
+    '6DF2196F', # Fedora (8 and 9)
+    'DF9B0AE9', # Fedora (8 and 9 testing)
+    '1AC70CE6', # Fedora Extras
+    '731002FA', # Fedora Legacy
+]
+
 # Match keyids
 keyid_re = re.compile('^[0-9a-z]{8}$', re.IGNORECASE)
 
@@ -165,6 +175,8 @@ for keyfile in glob.glob('%s/*.txt' % opts.keydir):
         keyinfo = get_keyinfo(keyfile)
     except GpgError, e:
         print 'Skipping %s: %s' % (keyfile, e.strerror)
+    if keyinfo['keyid'] in obsolete_keys:
+        continue
     if 'EPEL' in keyinfo['userid']:
         version = 'EPEL'
     else:
