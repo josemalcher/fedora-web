@@ -165,10 +165,13 @@ for keyfile in glob.glob('%s/*.txt' % opts.keydir):
         keyinfo = get_keyinfo(keyfile)
     except GpgError, e:
         print 'Skipping %s: %s' % (keyfile, e.strerror)
-    try:
-        version = version_re.findall(keyinfo['userid'])[0]
-    except:
-        raise SystemExit('Unable to find version string for %s' % keyfile)
+    if 'EPEL' in keyinfo['userid']:
+        version = 'EPEL'
+    else:
+        try:
+            version = version_re.findall(keyinfo['userid'])[0]
+        except:
+            raise SystemExit('Unable to find version string for %s' % keyfile)
     keys[version] = (keyinfo['keyid'], keyfile)
 
 if not keys:
