@@ -29,6 +29,11 @@ from subprocess import Popen, PIPE, STDOUT
 # Match keyids
 keyid_re = re.compile('^[0-9a-z]{8}$', re.IGNORECASE)
 
+# Match keyblocks
+keyblock_begin = '-----BEGIN PGP PUBLIC KEY BLOCK-----'
+keyblock_end = '-----END PGP PUBLIC KEY BLOCK-----'
+keyblock_re = re.compile('.*(^%s\n.*%s)' % (keyblock_begin, keyblock_end), re.S|re.M)
+
 # Match '10 testing' in Fedora (10 testing) <fedora@fedoraproject.org>
 version_re = re.compile('[^(]*\(([^)]*)\).*')
 
@@ -121,9 +126,12 @@ for f in args:
     if not os.path.isfile(f):
         print '%s is not a file, skipping...' % f
         continue
-    if '-----BEGIN PGP PUBLIC KEY BLOCK-----' not in open(f).read():
+    keydata = open(f).read()
+    m = keyblock_re.match(keydata)
+    if not m:
         print '%s does not appear to be a gpg key file, skipping...' % f
         continue
+    keydata = m.group(1) + '\n'
     try:
         keyinfo = get_keyinfo(f)
     except Exception, e:
@@ -134,7 +142,6 @@ for f in args:
     if opts.fingerprint:
         cmd.append('--with-fingerprint')
     try:
-        keydata = open(f).read()
         p = Popen(cmd, stdin=PIPE, stdout=PIPE, stderr=PIPE)
         output, stderr = p.communicate(input=keydata)
         if p.returncode:
@@ -152,7 +159,7 @@ for f in args:
 # Update the fedora.gpg keyblock
 keys = {}
 for keyfile in glob.glob('%s/*.txt' % opts.keydir):
-    if '-----BEGIN PGP PUBLIC KEY BLOCK-----' not in open(keyfile).read():
+    if keyblock_begin not in open(keyfile).read():
         continue
     try:
         keyinfo = get_keyinfo(keyfile)
