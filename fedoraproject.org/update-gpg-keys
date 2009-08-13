@@ -64,7 +64,7 @@ parser.add_option('-k', '--keyblock', dest='keyblock',
                   metavar='file', default='fedora.gpg',
                   help='Name of fedora keyblock [%default]')
 parser.add_option('-f', '--fingerprint', dest='fingerprint',
-                  action='store_true', default=True,
+                  action='store_true', default=False,
                   help='Add fingerprints to key files and output [%default]')
 parser.add_option('--no-fingerprint', dest='fingerprint',
                   action='store_false',
