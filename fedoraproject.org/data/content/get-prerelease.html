@@ -10,7 +10,7 @@
   </head>
   <body class="get">
     <h2>${Markup(_('Fedora, For You.'))}</h2>
-    <p class="warning">${Markup(_('This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the &lt;a href="https://bugzilla.redhat.com/"&gt;Red Hat Bugzilla&lt;/a&gt;.  Read the &lt;a href="http://docs.fedoraproject.org/release-notes/f12/"&gt;Release Notes&lt;/a&gt; for more information.'))}</p>
+    <p class="warning">${Markup(_('This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the &lt;a href="https://bugzilla.redhat.com/"&gt;Red Hat Bugzilla&lt;/a&gt;.  Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information.') % {'relnotes_url': 'http://fedoraproject.org/wiki/Fedora_12_Alpha_release_notes'})}</p>
     <h3>${Markup(_('Install Media'))}</h3>
     <ul class="downloadbox installdvd">
       <li>
