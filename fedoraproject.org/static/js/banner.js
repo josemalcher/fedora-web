@@ -7,7 +7,7 @@ var banners = [
     "https://fedoraproject.org/static/images/banners/f11release.png",
     "Fedora 11 Leonidas is here!",
     "https://fedoraproject.org/get-fedora",
-    24
+    12
   ],
   [
     "https://fedoraproject.org/static/images/banners/picturebanner-envelope-1.png",
@@ -26,12 +26,13 @@ var banners = [
     "Fedora Community Podcast",
     "https://fedoraproject.org/wiki/F11_release_podcasts#Fedora_Community_portal",
     4
+  ],
+  [
+    "https://fedoraproject.org/static/images/banners/f12alpha.png",
+    "Fedora 12 Alpha",
+    "https://fedoraproject.org/get-prerelease",
+    12
   ]
-//,
-//  ["http://fedoraproject.org/static/images/banners/fedorawn.png", "Fedora Weekly News", "http://fedoraproject.org/wiki/FWN/LatestIssue", 1],
-//  ["http://fedoraproject.org/static/images/banners/fedora.org_devfu_widget.jpg", "Dev Fu", "http://developer.redhatmagazine.com/", 1],
-//  ["http://fedoraproject.org/static/images/banners/fedora.org_rhm_widget.jpg", "Red Hat Magazine", "http://redhatmagazine.com/", 1],
-//  ["http://fedoraproject.org/static/images/banners/fedora.org_th_widget.jpg", "Truth Happens", "http://truthhappens.redhatmagazine.com/", 1],
 ];
 
 window.onload = function() {
