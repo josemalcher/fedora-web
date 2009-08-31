@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: fedora-web master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2009-08-25 02:32-0400\n"
-"PO-Revision-Date: 2009-08-01 17:54+0200\n"
-"Last-Translator: Sulyok Péter <peti@fedoraproject.org>\n"
+"PO-Revision-Date: 2009-08-31 14:46+0100\n"
+"Last-Translator: Zoltan Hoppar <hopparz@gmail.com>\n"
 "Language-Team: Hungarian <fedora-trans-hu@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -52,7 +52,7 @@ msgstr "Sajtót érintő kérdésekben kérjük üzenjenek a <a href=\"mailto:pr
 
 #: data/content/contact.html:22
 msgid "Website Issues"
-msgstr "Webhely dolgok"
+msgstr "Weboldal problémák"
 
 #: data/content/contact.html:23
 msgid "If you have any queries or issues related to Fedora Project websites (fedoraproject.org, fedorahosted.org, and fedorapeople.org), please contact <a href=\"mailto:webmaster@fedoraproject.org\">webmaster@fedoraproject.org</a>."
@@ -80,7 +80,7 @@ msgstr "<strong>MEGJEGYZÉS: Ha a tartomány nem a fedoraproject.org, fedorahost
 
 #: data/content/contact.html:31
 msgid "Mirror Problems"
-msgstr "Tükör bajok"
+msgstr "Tükör problémák"
 
 #: data/content/contact.html:32
 msgid "If you encounter any problems or have questions regarding Fedora project mirrors, please contact <a href=\"mailto:mirror-admin@fedoraproject.org\">mirror-admin@fedoraproject.org</a>."
@@ -88,19 +88,26 @@ msgstr "Ha bármilyen probléma merül fel vagy kérdés van a Fedora terv tükr
 
 #: data/content/contact.html:34
 msgid "Other Contacts"
-msgstr "Más kapcsolatok"
+msgstr "Egyéb kapcsolatok"
 
 #: data/content/contact.html:35
 msgid "For a list of other contacts please see the <a href=\"https://fedoraproject.org/wiki/Contact\">Contact page on the Wiki</a>."
-msgstr "Más kapcsolatok listáját megtekintheti a wiki<a href=\"https://fedoraproject.org/wiki/Contact\">Contact</a> oldalán."
+msgstr "Egyéb kapcsolatok listáját megtekintheti a wiki<a href=\"https://fedoraproject.org/wiki/Contact\">Contact</a> oldalán."
 
-#: data/content/counter.html:7 data/content/get-fedora-all.html:7
-#: data/content/get-fedora-kde.html:7 data/content/get-fedora-ppc.html:7
-#: data/content/get-fedora.html:7 data/content/get-help.html:7
-#: data/content/get-prerelease.html:7 data/content/index.html:7
-#: data/content/join-fedora.html:7 data/content/keys.html:7
-#: data/content/rss.html:7 data/content/sponsors.html:7
-#: data/content/verify.html:7 data/content/e/404.html:7
+#: data/content/counter.html:7
+#: data/content/get-fedora-all.html:7
+#: data/content/get-fedora-kde.html:7
+#: data/content/get-fedora-ppc.html:7
+#: data/content/get-fedora.html:7
+#: data/content/get-help.html:7
+#: data/content/get-prerelease.html:7
+#: data/content/index.html:7
+#: data/content/join-fedora.html:7
+#: data/content/keys.html:7
+#: data/content/rss.html:7
+#: data/content/sponsors.html:7
+#: data/content/verify.html:7
+#: data/content/e/404.html:7
 msgid "Fedora Project"
 msgstr "Fedora Terv"
 
@@ -114,15 +121,18 @@ msgstr "A Fedora kiadás visszaszámlálóját a úgy lehet hozzáadni egy helyh
 
 #: data/content/counter.html:18
 msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, hu, is, it, and pt-br are supported.  When no language is specified, English will be used."
-msgstr "A lang paraméter megváltoztatható, hogy a visszaszámláló egy másik nyelven jelenjen meg. Jelenleg a de, en, hu, is, it és pt_BR támogatott.  Amikor nincs nyelv megadva, az angolt használják."
+msgstr "A lang paraméter megváltoztatható, hogy a visszaszámláló egy másik nyelven jelenjen meg. Jelenleg a de, en, hu, is, it és pt_BR támogatott.  Amikor nincs nyelv megadva, az angol kerül használatba."
 
-#: data/content/get-fedora-all.html:13 data/content/get-fedora-kde.html:11
+#: data/content/get-fedora-all.html:13
+#: data/content/get-fedora-kde.html:11
 #: data/content/get-fedora-ppc.html:11
 msgid "&#8592; Back to the main \"Get Fedora\" page"
 msgstr "&#8592; Vissza a fő „Szerezzen Fedorát” oldalra"
 
-#: data/content/get-fedora-all.html:15 data/content/get-fedora-kde.html:13
-#: data/content/get-fedora-ppc.html:13 data/content/get-fedora.html:11
+#: data/content/get-fedora-all.html:15
+#: data/content/get-fedora-kde.html:13
+#: data/content/get-fedora-ppc.html:13
+#: data/content/get-fedora.html:11
 #: data/content/get-prerelease.html:12
 msgid "Fedora, For You."
 msgstr "Fedora, Önökért."
@@ -132,177 +142,263 @@ msgstr "Fedora, Önökért."
 msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
 msgstr "Az ISO-t letöltése után <a href=\"%s/%s/verify\">ellenőrizzük</a>."
 
-#: data/content/get-fedora-all.html:17 data/content/get-prerelease.html:14
+#: data/content/get-fedora-all.html:17
+#: data/content/get-prerelease.html:14
 msgid "Install Media"
 msgstr "Telepítő média"
 
-#: data/content/get-fedora-all.html:20 data/content/get-fedora-all.html:87
-#: data/content/get-fedora-all.html:114 data/content/get-prerelease.html:17
-#: data/content/get-prerelease.html:49 data/content/get-prerelease.html:67
+#: data/content/get-fedora-all.html:20
+#: data/content/get-fedora-all.html:87
+#: data/content/get-fedora-all.html:114
+#: data/content/get-prerelease.html:17
+#: data/content/get-prerelease.html:49
+#: data/content/get-prerelease.html:67
 msgid "BitTorrent"
 msgstr "BitTorrent"
 
-#: data/content/get-fedora-all.html:22 data/content/get-fedora-all.html:26
-#: data/content/get-fedora-all.html:35 data/content/get-fedora-all.html:39
-#: data/content/get-fedora-all.html:43 data/content/get-fedora-all.html:51
-#: data/content/get-fedora-all.html:60 data/content/get-fedora-all.html:78
-#: data/content/get-prerelease.html:19 data/content/get-prerelease.html:21
-#: data/content/get-prerelease.html:29 data/content/get-prerelease.html:32
+#: data/content/get-fedora-all.html:22
+#: data/content/get-fedora-all.html:26
+#: data/content/get-fedora-all.html:35
+#: data/content/get-fedora-all.html:39
+#: data/content/get-fedora-all.html:43
+#: data/content/get-fedora-all.html:51
+#: data/content/get-fedora-all.html:60
+#: data/content/get-fedora-all.html:78
+#: data/content/get-prerelease.html:19
+#: data/content/get-prerelease.html:21
+#: data/content/get-prerelease.html:29
+#: data/content/get-prerelease.html:32
 #: data/content/get-prerelease.html:40
 msgid "i386"
 msgstr "i386"
 
-#: data/content/get-fedora-all.html:22 data/content/get-fedora-all.html:23
-#: data/content/get-fedora-all.html:24 data/content/get-fedora-all.html:35
-#: data/content/get-fedora-all.html:36 data/content/get-fedora-all.html:37
-#: data/content/get-fedora-all.html:51 data/content/get-fedora-all.html:52
-#: data/content/get-fedora-all.html:53 data/content/get-fedora-kde.html:54
-#: data/content/get-fedora-ppc.html:33 data/content/get-fedora.html:50
-#: data/content/get-prerelease.html:19 data/content/get-prerelease.html:20
-#: data/content/get-prerelease.html:29 data/content/get-prerelease.html:30
+#: data/content/get-fedora-all.html:22
+#: data/content/get-fedora-all.html:23
+#: data/content/get-fedora-all.html:24
+#: data/content/get-fedora-all.html:35
+#: data/content/get-fedora-all.html:36
+#: data/content/get-fedora-all.html:37
+#: data/content/get-fedora-all.html:51
+#: data/content/get-fedora-all.html:52
+#: data/content/get-fedora-all.html:53
+#: data/content/get-fedora-kde.html:54
+#: data/content/get-fedora-ppc.html:33
+#: data/content/get-fedora.html:50
+#: data/content/get-prerelease.html:19
+#: data/content/get-prerelease.html:20
+#: data/content/get-prerelease.html:29
+#: data/content/get-prerelease.html:30
 #: data/content/get-prerelease.html:31
 msgid "Install DVD"
 msgstr "Telepítő DVD"
 
-#: data/content/get-fedora-all.html:23 data/content/get-fedora-all.html:27
-#: data/content/get-fedora-all.html:36 data/content/get-fedora-all.html:40
-#: data/content/get-fedora-all.html:44 data/content/get-fedora-all.html:52
-#: data/content/get-fedora-all.html:66 data/content/get-fedora-all.html:79
-#: data/content/get-fedora-all.html:90 data/content/get-fedora-all.html:98
-#: data/content/get-fedora-all.html:106 data/content/get-fedora-all.html:117
-#: data/content/get-fedora-all.html:124 data/content/get-fedora-all.html:131
-#: data/content/get-prerelease.html:20 data/content/get-prerelease.html:22
-#: data/content/get-prerelease.html:30 data/content/get-prerelease.html:33
-#: data/content/get-prerelease.html:41 data/content/get-prerelease.html:52
-#: data/content/get-prerelease.html:59 data/content/get-prerelease.html:70
+#: data/content/get-fedora-all.html:23
+#: data/content/get-fedora-all.html:27
+#: data/content/get-fedora-all.html:36
+#: data/content/get-fedora-all.html:40
+#: data/content/get-fedora-all.html:44
+#: data/content/get-fedora-all.html:52
+#: data/content/get-fedora-all.html:66
+#: data/content/get-fedora-all.html:79
+#: data/content/get-fedora-all.html:90
+#: data/content/get-fedora-all.html:98
+#: data/content/get-fedora-all.html:106
+#: data/content/get-fedora-all.html:117
+#: data/content/get-fedora-all.html:124
+#: data/content/get-fedora-all.html:131
+#: data/content/get-prerelease.html:20
+#: data/content/get-prerelease.html:22
+#: data/content/get-prerelease.html:30
+#: data/content/get-prerelease.html:33
+#: data/content/get-prerelease.html:41
+#: data/content/get-prerelease.html:52
+#: data/content/get-prerelease.html:59
+#: data/content/get-prerelease.html:70
 #: data/content/get-prerelease.html:77
 msgid "x86_64"
 msgstr "x86_64"
 
-#: data/content/get-fedora-all.html:24 data/content/get-fedora-all.html:28
-#: data/content/get-fedora-all.html:37 data/content/get-fedora-all.html:41
-#: data/content/get-fedora-all.html:45 data/content/get-fedora-all.html:53
-#: data/content/get-fedora-all.html:72 data/content/get-fedora-all.html:80
-#: data/content/get-prerelease.html:23 data/content/get-prerelease.html:31
-#: data/content/get-prerelease.html:34 data/content/get-prerelease.html:42
+#: data/content/get-fedora-all.html:24
+#: data/content/get-fedora-all.html:28
+#: data/content/get-fedora-all.html:37
+#: data/content/get-fedora-all.html:41
+#: data/content/get-fedora-all.html:45
+#: data/content/get-fedora-all.html:53
+#: data/content/get-fedora-all.html:72
+#: data/content/get-fedora-all.html:80
+#: data/content/get-prerelease.html:23
+#: data/content/get-prerelease.html:31
+#: data/content/get-prerelease.html:34
+#: data/content/get-prerelease.html:42
 msgid "ppc"
 msgstr "ppc"
 
-#: data/content/get-fedora-all.html:26 data/content/get-fedora-all.html:27
-#: data/content/get-fedora-all.html:28 data/content/get-fedora-all.html:39
-#: data/content/get-fedora-all.html:40 data/content/get-fedora-all.html:41
-#: data/content/get-fedora-all.html:60 data/content/get-fedora-all.html:66
-#: data/content/get-fedora-all.html:72 data/content/get-prerelease.html:21
-#: data/content/get-prerelease.html:22 data/content/get-prerelease.html:23
-#: data/content/get-prerelease.html:32 data/content/get-prerelease.html:33
+#: data/content/get-fedora-all.html:26
+#: data/content/get-fedora-all.html:27
+#: data/content/get-fedora-all.html:28
+#: data/content/get-fedora-all.html:39
+#: data/content/get-fedora-all.html:40
+#: data/content/get-fedora-all.html:41
+#: data/content/get-fedora-all.html:60
+#: data/content/get-fedora-all.html:66
+#: data/content/get-fedora-all.html:72
+#: data/content/get-prerelease.html:21
+#: data/content/get-prerelease.html:22
+#: data/content/get-prerelease.html:23
+#: data/content/get-prerelease.html:32
+#: data/content/get-prerelease.html:33
 #: data/content/get-prerelease.html:34
 msgid "Install CDs"
 msgstr "Telepítő CD-k."
 
-#: data/content/get-fedora-all.html:33 data/content/get-fedora-all.html:95
-#: data/content/get-fedora-all.html:121 data/content/get-prerelease.html:27
-#: data/content/get-prerelease.html:56 data/content/get-prerelease.html:74
+#: data/content/get-fedora-all.html:33
+#: data/content/get-fedora-all.html:95
+#: data/content/get-fedora-all.html:121
+#: data/content/get-prerelease.html:27
+#: data/content/get-prerelease.html:56
+#: data/content/get-prerelease.html:74
 msgid "Direct Download"
 msgstr "Közvetlen letöltés"
 
-#: data/content/get-fedora-all.html:43 data/content/get-fedora-all.html:44
+#: data/content/get-fedora-all.html:43
+#: data/content/get-fedora-all.html:44
 #: data/content/get-fedora-all.html:45
 msgid "Network Install CD"
 msgstr "Hálózatos telepítő CD"
 
-#: data/content/get-fedora-all.html:49 data/content/get-fedora-all.html:103
+#: data/content/get-fedora-all.html:49
+#: data/content/get-fedora-all.html:103
 #: data/content/get-fedora-all.html:128
 msgid "Metalinks"
 msgstr "Metalinkek"
 
-#: data/content/get-fedora-all.html:76 data/content/get-prerelease.html:38
+#: data/content/get-fedora-all.html:76
+#: data/content/get-prerelease.html:38
 msgid "Jigdo"
 msgstr "Jigdo"
 
-#: data/content/get-fedora-all.html:84 data/content/get-prerelease.html:46
+#: data/content/get-fedora-all.html:84
+#: data/content/get-prerelease.html:46
 msgid "Fedora Desktop Live Media"
 msgstr "Fedora munkaasztal élő média"
 
-#: data/content/get-fedora-all.html:89 data/content/get-fedora-all.html:97
-#: data/content/get-fedora-all.html:105 data/content/get-fedora-all.html:116
-#: data/content/get-fedora-all.html:123 data/content/get-fedora-all.html:130
-#: data/content/get-prerelease.html:51 data/content/get-prerelease.html:58
-#: data/content/get-prerelease.html:69 data/content/get-prerelease.html:76
+#: data/content/get-fedora-all.html:89
+#: data/content/get-fedora-all.html:97
+#: data/content/get-fedora-all.html:105
+#: data/content/get-fedora-all.html:116
+#: data/content/get-fedora-all.html:123
+#: data/content/get-fedora-all.html:130
+#: data/content/get-prerelease.html:51
+#: data/content/get-prerelease.html:58
+#: data/content/get-prerelease.html:69
+#: data/content/get-prerelease.html:76
 msgid "i686"
 msgstr "i686"
 
-#: data/content/get-fedora-all.html:89 data/content/get-fedora-all.html:90
-#: data/content/get-fedora-all.html:97 data/content/get-fedora-all.html:98
-#: data/content/get-fedora-all.html:105 data/content/get-fedora-all.html:106
-#: data/content/get-fedora-all.html:116 data/content/get-fedora-all.html:117
-#: data/content/get-fedora-all.html:123 data/content/get-fedora-all.html:124
-#: data/content/get-fedora-all.html:130 data/content/get-fedora-all.html:131
-#: data/content/get-fedora-kde.html:34 data/content/get-fedora.html:30
-#: data/content/get-prerelease.html:51 data/content/get-prerelease.html:52
-#: data/content/get-prerelease.html:58 data/content/get-prerelease.html:59
-#: data/content/get-prerelease.html:69 data/content/get-prerelease.html:70
-#: data/content/get-prerelease.html:76 data/content/get-prerelease.html:77
+#: data/content/get-fedora-all.html:89
+#: data/content/get-fedora-all.html:90
+#: data/content/get-fedora-all.html:97
+#: data/content/get-fedora-all.html:98
+#: data/content/get-fedora-all.html:105
+#: data/content/get-fedora-all.html:106
+#: data/content/get-fedora-all.html:116
+#: data/content/get-fedora-all.html:117
+#: data/content/get-fedora-all.html:123
+#: data/content/get-fedora-all.html:124
+#: data/content/get-fedora-all.html:130
+#: data/content/get-fedora-all.html:131
+#: data/content/get-fedora-kde.html:34
+#: data/content/get-fedora.html:30
+#: data/content/get-prerelease.html:51
+#: data/content/get-prerelease.html:52
+#: data/content/get-prerelease.html:58
+#: data/content/get-prerelease.html:59
+#: data/content/get-prerelease.html:69
+#: data/content/get-prerelease.html:70
+#: data/content/get-prerelease.html:76
+#: data/content/get-prerelease.html:77
 msgid "Live CD"
 msgstr "Élő CD"
 
-#: data/content/get-fedora-all.html:111 data/content/get-prerelease.html:64
+#: data/content/get-fedora-all.html:111
+#: data/content/get-prerelease.html:64
 msgid "Fedora KDE Live Media"
 msgstr "Fedora KDE élő média"
 
-#: data/content/get-fedora-all.html:136 data/content/get-fedora-kde.html:64
-#: data/content/get-fedora-ppc.html:43 data/content/get-fedora.html:60
+#: data/content/get-fedora-all.html:136
+#: data/content/get-fedora-kde.html:64
+#: data/content/get-fedora-ppc.html:43
+#: data/content/get-fedora.html:60
 #: data/content/get-prerelease.html:82
 msgid "Let me look around..."
 msgstr "Hadd nézzek körül..."
 
-#: data/content/get-fedora-all.html:138 data/content/get-fedora-kde.html:66
-#: data/content/get-fedora-ppc.html:45 data/content/get-fedora.html:62
+#: data/content/get-fedora-all.html:138
+#: data/content/get-fedora-kde.html:66
+#: data/content/get-fedora-ppc.html:45
+#: data/content/get-fedora.html:62
 #: data/content/get-prerelease.html:84
 msgid "See all torrents"
 msgstr "Lássunk minden torrentet"
 
-#: data/content/get-fedora-all.html:139 data/content/get-fedora-kde.html:67
-#: data/content/get-fedora-ppc.html:46 data/content/get-fedora.html:63
+#: data/content/get-fedora-all.html:139
+#: data/content/get-fedora-kde.html:67
+#: data/content/get-fedora-ppc.html:46
+#: data/content/get-fedora.html:63
 #: data/content/get-prerelease.html:85
 msgid "See all mirrors"
 msgstr "Lássunk minden tükröt"
 
-#: data/content/get-fedora-all.html:140 data/content/get-fedora-kde.html:68
-#: data/content/get-fedora-ppc.html:47 data/content/get-fedora.html:64
+#: data/content/get-fedora-all.html:140
+#: data/content/get-fedora-kde.html:68
+#: data/content/get-fedora-ppc.html:47
+#: data/content/get-fedora.html:64
 #: data/content/get-prerelease.html:86
 msgid "See all custom spins"
-msgstr "Lássunk minden egyedi eltérést"
+msgstr "Lássunk minden egyedi összeállítást"
 
-#: data/content/get-fedora-all.html:142 data/content/get-fedora-kde.html:70
-#: data/content/get-fedora-ppc.html:49 data/content/get-fedora.html:66
+#: data/content/get-fedora-all.html:142
+#: data/content/get-fedora-kde.html:70
+#: data/content/get-fedora-ppc.html:49
+#: data/content/get-fedora.html:66
 msgid "Slow Internet? No Internet?"
-msgstr "Lassú Internet? Nincs Internet?"
+msgstr "Lassú az Internet? Nincs Internet?"
 
-#: data/content/get-fedora-all.html:143 data/content/get-fedora-kde.html:71
-#: data/content/get-fedora-ppc.html:50 data/content/get-fedora.html:67
+#: data/content/get-fedora-all.html:143
+#: data/content/get-fedora-kde.html:71
+#: data/content/get-fedora-ppc.html:50
+#: data/content/get-fedora.html:67
 msgid "Get a copy of Fedora Media sent via postal mail."
 msgstr "Fedora média másolat beszerzése postai úton."
 
-#: data/content/get-fedora-all.html:145 data/content/get-fedora-kde.html:73
-#: data/content/get-fedora-ppc.html:52 data/content/get-fedora.html:69
+#: data/content/get-fedora-all.html:145
+#: data/content/get-fedora-kde.html:73
+#: data/content/get-fedora-ppc.html:52
+#: data/content/get-fedora.html:69
 msgid "Purchase installation media for Fedora from <a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">online vendors</a> or a <a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">local vendor</a> in your area."
 msgstr "Fedora telepítő média vásárlása <a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">hálózati eladó</a>któl, vagy egy közeli <a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">helyi eladó</a>tól."
 
-#: data/content/get-fedora-all.html:146 data/content/get-fedora-kde.html:74
-#: data/content/get-fedora-ppc.html:53 data/content/get-fedora.html:70
+#: data/content/get-fedora-all.html:146
+#: data/content/get-fedora-kde.html:74
+#: data/content/get-fedora-ppc.html:53
+#: data/content/get-fedora.html:70
 msgid "Can't afford the price of installation media? Request Fedora installation media from the <a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Fedora Free Media Program</a>."
 msgstr "Nem engedheti meg magának a telepítő média árát? Igényeljen Fedora telepítő médiát a <a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Fedora Ingyen Média Program</a>ban."
 
-#: data/content/get-fedora-all.html:149 data/content/get-fedora-kde.html:77
-#: data/content/get-fedora-ppc.html:56 data/content/get-fedora.html:73
+#: data/content/get-fedora-all.html:149
+#: data/content/get-fedora-kde.html:77
+#: data/content/get-fedora-ppc.html:56
+#: data/content/get-fedora.html:73
 msgid "When you place an order with a <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">participating vendor</a>, you may also sponsor the cost of media for users who cannot afford it, such as people in developing nations. Consider participating in the <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora Sponsored Media Program</a>."
 msgstr "Amikor megrendelést ad le egy <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">résztvevő eladó</a>nál, támogathatja a média költségét olyan használóknak, akik nem engedhetik meg maguknak, azaz a fejlődő országok embereinek. Fontolja meg a részvételét a <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora által támogatott média program</a>ban!"
 
-#: data/content/get-fedora-kde.html:15 data/content/get-fedora.html:14
+#: data/content/get-fedora-kde.html:15
+#: data/content/get-fedora.html:14
 msgid "Have a PowerPC?  Go here!"
-msgstr "PowerPC-je van?  Menjen ide!"
+msgstr "PowerPC-je van?  Erre tessék!"
 
-#: data/content/get-fedora-kde.html:16 data/content/get-fedora-ppc.html:16
+#: data/content/get-fedora-kde.html:16
+#: data/content/get-fedora-ppc.html:16
 #: data/content/get-fedora.html:15
 msgid "Show me all download options in one page!"
 msgstr "Mutasson minden letöltési lehetőséget egy oldalon!"
@@ -313,82 +409,100 @@ msgstr "A <a·href=\"http://www.kde.org/\">K·Desktop·Environment</a> (KDE) egy
 
 #: data/content/get-fedora-kde.html:23
 msgid "Get Fedora 11 KDE Desktop Edition Now <em class=\"byline\">Installable Live CD</em>"
-msgstr "Szerezzen Fedora 11 KDE asztali kiadást most <em class=\"byline\">telepíthető élő CD</em>"
+msgstr "Szerezzen Fedora 11 KDE asztali kiadást most <em class=\"byline\">Telepíthető élő CD</em>"
 
-#: data/content/get-fedora-kde.html:25 data/content/get-fedora-kde.html:45
-#: data/content/get-fedora-ppc.html:24 data/content/get-fedora.html:21
+#: data/content/get-fedora-kde.html:25
+#: data/content/get-fedora-kde.html:45
+#: data/content/get-fedora-ppc.html:24
+#: data/content/get-fedora.html:21
 #: data/content/get-fedora.html:41
 msgid "Resources"
 msgstr "Erőforrások"
 
-#: data/content/get-fedora-kde.html:27 data/content/get-fedora.html:23
+#: data/content/get-fedora-kde.html:27
+#: data/content/get-fedora.html:23
 msgid "Fedora 11 Installation Guide"
 msgstr "Fedora 11 telepítés útmutató"
 
-#: data/content/get-fedora-kde.html:28 data/content/get-fedora-kde.html:48
-#: data/content/get-fedora-ppc.html:27 data/content/get-fedora.html:24
+#: data/content/get-fedora-kde.html:28
+#: data/content/get-fedora-kde.html:48
+#: data/content/get-fedora-ppc.html:27
+#: data/content/get-fedora.html:24
 #: data/content/get-fedora.html:44
 msgid "Fedora 11 Release Notes"
 msgstr "Fedora 11 kiadás ismertető"
 
-#: data/content/get-fedora-kde.html:29 data/content/get-fedora-kde.html:49
-#: data/content/get-fedora-ppc.html:28 data/content/get-fedora.html:25
+#: data/content/get-fedora-kde.html:29
+#: data/content/get-fedora-kde.html:49
+#: data/content/get-fedora-ppc.html:28
+#: data/content/get-fedora.html:25
 #: data/content/get-fedora.html:45
 msgid "Help &amp; Support"
 msgstr "Súgó &amp; támogatás"
 
-#: data/content/get-fedora-kde.html:30 data/content/get-fedora-kde.html:50
-#: data/content/get-fedora-ppc.html:29 data/content/get-fedora.html:26
+#: data/content/get-fedora-kde.html:30
+#: data/content/get-fedora-kde.html:50
+#: data/content/get-fedora-ppc.html:29
+#: data/content/get-fedora.html:26
 #: data/content/get-fedora.html:46
 msgid "Verify your download"
 msgstr "Letöltés ellenőrzése"
 
 #: data/content/get-fedora-kde.html:35
 msgid "This is the latest version of the Fedora Linux operating system featuring the KDE desktop.  It's everything you need to try out Fedora&#8212;and if you like it, install it right from the desktop!"
-msgstr "Ez a legújabb Fedora Linux operációs rendszer KDE asztallal.  Ez minden ami kell, hogy kipróbálja Fedorát&#8212; és ha tetszik, telepítse egyenesen az asztalról."
+msgstr "Ez a legújabb Fedora Linux operációs rendszer KDE asztallal.  Ez minden ami kell, hogy kipróbálja Fedorát&#8212; és ha tetszik, telepítse egyenesen az asztalról!"
 
 #: data/content/get-fedora-kde.html:38
 #, python-format
 msgid "%sMB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs"
-msgstr "%sMB,·ISO·fájl, 1 CD-ROM lemezkép intelszerű PC-kre"
+msgstr "%sMB,·ISO·fájl, 1 CD-ROM lemezkép Intel-kompatibilis PC-kre"
 
-#: data/content/get-fedora-kde.html:38 data/content/get-fedora-kde.html:58
-#: data/content/get-fedora-ppc.html:37 data/content/get-fedora.html:34
+#: data/content/get-fedora-kde.html:38
+#: data/content/get-fedora-kde.html:58
+#: data/content/get-fedora-ppc.html:37
+#: data/content/get-fedora.html:34
 #: data/content/get-fedora.html:54
 msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f11/en-US/html/sn-making-media.html\">How do I use this file?</a>"
 msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f11/en-US/html/sn-making-media.html\">Hogyan használjam e fájlt?</a>"
 
-#: data/content/get-fedora-kde.html:40 data/content/get-fedora-kde.html:60
-#: data/content/get-fedora-ppc.html:39 data/content/get-fedora.html:36
+#: data/content/get-fedora-kde.html:40
+#: data/content/get-fedora-kde.html:60
+#: data/content/get-fedora-ppc.html:39
+#: data/content/get-fedora.html:36
 #: data/content/get-fedora.html:56
 msgid "Download Now!"
 msgstr "Töltse le most!"
 
-#: data/content/get-fedora-kde.html:43 data/content/get-fedora.html:39
+#: data/content/get-fedora-kde.html:43
+#: data/content/get-fedora.html:39
 msgid "Upgrade to Fedora 11 from an older version"
-msgstr "Régebbi változat felfejlesztése Fedora 11-re"
+msgstr "Régebbi változat frissítése Fedora 11-re"
 
-#: data/content/get-fedora-kde.html:47 data/content/get-fedora.html:43
+#: data/content/get-fedora-kde.html:47
+#: data/content/get-fedora.html:43
 msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f11/en-US/html/ch-upgrade-x86.html\">Fedora 11 Upgrade Guide</a>"
-msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f11/en-US/html/ch-upgrade-x86.html\">Fedora 11 felfejlesztés útmutató</a>"
+msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f11/en-US/html/ch-upgrade-x86.html\">Fedora 11 frissítési útmutató</a>"
 
-#: data/content/get-fedora-kde.html:55 data/content/get-fedora.html:51
+#: data/content/get-fedora-kde.html:55
+#: data/content/get-fedora.html:51
 msgid "Already have Fedora and want to upgrade to Fedora 11? Check out the <a href=\"http://docs.fedoraproject.org/install-guide/f11/en-US/html/ch-upgrade-x86.html\">Upgrading Fedora</a> instructions, and download the DVD ISO you'll need to start the upgrade process below."
 msgstr "Már van Fedorája, és szeretné felfejleszteni Fedora 11-re? Tekintse meg a <a href=\"http://docs.fedoraproject.org/install-guide/f11/en-US/html/ch-upgrade-x86.html\">Upgrading·Fedora</a> útmutatót, és töltse le az alábbi DVD ISO-t, ami az alábbi felfejlesztés folyamat megkezdéséhez szükséges."
 
 #: data/content/get-fedora-kde.html:58
 #, python-format
 msgid "%sGB, ISO format, 1 DVD disc image for Intel-compatible PCs"
-msgstr "%sGB, ISO fájl, 1 DVD lemezkép intelszerű PC-kre"
+msgstr "%sGB, ISO fájl, 1 DVD lemezkép Intel-kompatibilis PC-kre"
 
-#: data/content/get-fedora-kde.html:63 data/content/get-fedora-ppc.html:42
+#: data/content/get-fedora-kde.html:63
+#: data/content/get-fedora-ppc.html:42
 #: data/content/get-fedora.html:59
 msgid "Other Download Options"
-msgstr "Más letöltés lehetőségek"
+msgstr "Egyéb letöltési lehetőségek"
 
-#: data/content/get-fedora-ppc.html:15 data/content/get-fedora.html:13
+#: data/content/get-fedora-ppc.html:15
+#: data/content/get-fedora.html:13
 msgid "KDE fans, go here!"
-msgstr "KDE rajongók ide!"
+msgstr "KDE rajongók, erre!"
 
 #: data/content/get-fedora-ppc.html:19
 #, python-format
@@ -414,7 +528,7 @@ msgstr "%sGB, ISO fájl, 1 DVD lemezkép PowerPC-szerű számítógépekre"
 
 #: data/content/get-fedora.html:10
 msgid "Did someone say... &ldquo;<a href=\"get-prerelease\">Alpha</a>&rdquo;?"
-msgstr ""
+msgstr "Valaki azt mondta, hogy... &ldquo;<a href=\"get-prerelease\">Alpha</a>&rdquo;?"
 
 #: data/content/get-fedora.html:19
 msgid "Get Fedora 11 Desktop Edition Now <em class=\"byline\">Installable Live CD</em>"
@@ -511,9 +625,9 @@ msgid "These guides are available at <a href=\"http://docs.fedoraproject.org\">d
 msgstr "Ezek az útmutatók elérhetőek a <a href=\"http://docs.fedoraproject.org\">docs.fedoraproject.org</a> helyen."
 
 #: data/content/get-prerelease.html:13
-#, fuzzy, python-format
+#, python-format
 msgid "This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>.  Read the <a href=\"%(relnotes_url)s\">Release Notes</a> for more information."
-msgstr "Ez egy előzetes kiadás. A Fedora Terv nem garantálja sem a célszerűségét sem a hasznosságát. Jelentsen minden bajt a <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a> helyen.  További tudnivalók a <a·href=\"http://docs.fedoraproject.org/release-notes/f11preview/\">Preview Release Notes</a> oldalon."
+msgstr "Ez egy előzetes kiadás. A Fedora Terv nem garantálja sem a célszerűségét sem a hasznosságát. Jelentsen minden problémát a <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a> helyen.  További tudnivalók a <a href=\"%(relnotes_url)s\">Preview Release Notes</a> oldalon."
 
 #: data/content/index.html:10
 msgid "Fedora 11: Reign."
@@ -643,14 +757,12 @@ msgid "Currently used keys"
 msgstr "Jelenleg használt kulcsok"
 
 #: data/content/keys.html:67
-#, fuzzy
 msgid "Download: <a href=\"https://fedoraproject.org/static/57BBCCBA.txt\">Fedora Project</a>"
-msgstr "Letöltés: <a href=\"https://fedoraproject.org/static/4EBFC273.txt\">Fedora Terv</a>"
+msgstr "Letöltés: <a href=\"https://fedoraproject.org/static/57BBCCBA.txt\">Fedora Project</a>"
 
 #: data/content/keys.html:68
-#, fuzzy
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x57BBCCBA&op=get\">keys.gnupg.net</a>"
-msgstr "Letöltés: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4EBFC273&op=get\">keys.gnupg.net</a>"
+msgstr "Letöltés: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x57BBCCBA&op=get\">keys.gnupg.net</a>"
 
 #: data/content/keys.html:80
 msgid "Download: <a href=\"https://fedoraproject.org/static/D22E77F2.txt\">Fedora Project</a>"
@@ -677,14 +789,12 @@ msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x0B862
 msgstr "Letöltés: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x0B86274E&op=get\">keys.gnupg.net</a>"
 
 #: data/content/keys.html:122
-#, fuzzy
 msgid "Download: <a href=\"https://fedoraproject.org/static/217521F6.txt\">Fedora Project</a>"
-msgstr "Letöltés: <a href=\"https://fedoraproject.org/static/D22E77F2.txt\">Fedora Terv</a>"
+msgstr "Letöltés: <a href=\"https://fedoraproject.org/static/217521F6.txt\">Fedora Project</a>"
 
 #: data/content/keys.html:123
-#, fuzzy
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x217521F6&op=get\">keys.gnupg.net</a>"
-msgstr "Letöltés: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0xD22E77F2&op=get\">keys.gnupg.net</a>"
+msgstr "Letöltés: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x217521F6&op=get\">keys.gnupg.net</a>"
 
 #: data/content/keys.html:129
 msgid "Obsolete keys"
@@ -768,7 +878,7 @@ msgstr "E kulcsot használták a Fedora Örökség terv által kiadott csomagokb
 
 #: data/content/rss.html:10
 msgid "RSS Feed Test"
-msgstr "RSS Táp próba"
+msgstr "RSS forrás próba"
 
 #: data/content/sponsors.html:10
 msgid "Fedora Sponsors"
@@ -828,9 +938,8 @@ msgid "The CHECKSUM file should have a good signature from one of the following 
 msgstr "A CHECKSUM fájlnak a következő kulcsok közül kell rendelkeznie egy jó aláírással:"
 
 #: data/content/verify.html:45
-#, fuzzy
 msgid "Fedora 12"
-msgstr "Fedora 11"
+msgstr "Fedora 12"
 
 #: data/content/verify.html:46
 msgid "Fedora 11"
@@ -927,7 +1036,7 @@ msgstr "Fedora beszerzése"
 
 #: data/templates/sidebar.html:17
 msgid "Join Fedora"
-msgstr "Beállás Fedorába"
+msgstr "Csatlakozás a Fedorához"
 
 #: data/templates/sidebar.html:18
 msgid "Get Help"
@@ -983,6 +1092,6 @@ msgstr "Webhely nyelv"
 
 #~ msgid "Fedora 9 and earlier"
 #~ msgstr "Fedora 9 és korábbiak"
-
 #~ msgid "Fedora 9 and earlier pre-releases"
 #~ msgstr "Fedora·9·és korábbi előzetes kiadások"
+
