@@ -911,11 +911,11 @@ msgstr ""
 "Administrator\"><br>Vývojář<br>nebo Administrátor</a>"
 #: data/content/keys.html:10
 msgid "GPG keys used by Fedora Project"
-msgstr ""
+msgstr "GPG klíče používané v projektu Fedora"
 
 #: data/content/keys.html:11
 msgid "How does Fedora Project use GPG keys to sign packages"
-msgstr ""
+msgstr "Jak používá Fedora projekt GPG klíče k podpisu balíčků"
 
 #: data/content/keys.html:13
 msgid ""
@@ -928,17 +928,26 @@ msgid ""
 " and have not been altered (accidentally or maliciously) by any mirror or"
 " website that is providing the packages."
 msgstr ""
-
+"Každý stabilní RPM balíček, který je publikován v rámci Fedora projektu "
+"je podepsán GPG klíčem. Implicitně yum a grafické nástroje pro update "
+"ověří tyto podpisy a odmítnou nainstalovat balíček, který není podepsán, "
+"nebo má špatný podpis. Vždy by jste měli ověřit podpis balíčku dříve,"
+"než jej nainstalujete. Tyto podpisy zaručují, že balíček, který se chystáte "
+"nainstalovat byl vytvořen v rámci Fedora projektu, a že nebyl změněn"
+"(náhodně nebo záměrně) žádným zrcadlem nebo webovou stránkou která"
+"tento balíček poskytuje."
 #: data/content/keys.html:16
 msgid ""
 "Packages that can be downloaded from koji build system do not contain "
 "signatures, so you should use them with caution.  Similarly, bleeding-"
 "edge packages in Rawhide are not necessarily signed."
 msgstr ""
-
+"Balíčky, které mohou být staženy z buildsystému koji neobsahují "
+"podpisy, takže by jste je měli používat obezřetně. Obdobně ani"
+"testovací balíčky v Rawhide nemusí být nutně podepsány."
 #: data/content/keys.html:19
 msgid "Importing keys"
-msgstr ""
+msgstr "Import klíčů"
 
 #: data/content/keys.html:21
 msgid ""
@@ -953,14 +962,24 @@ msgid ""
 "configuration, so you generally don't need to manually import them into "
 "the rpm database."
 msgstr ""
-
+"Klíče jsou součástí balíčků <strong>fedora-release</strong> a "
+"můžete je nalézt v adresáři <strong>/etc/pki/rpm-gpg</strong>. "
+"Pozor ne všechny  klíče, které jsou v tomto adresáři, jsou používané "
+"v projektu Fedora. Některé jsou používané pro podepisování balíčků "
+"Red Hat Enterprise Linuxu, ale některé již také nemusí být používány. "
+"Pokud používáte balíčky Red Hat Enterprise Linuxu podívejte se na "
+"<a href=\"https://www.redhat.com/security/team/key/\">https://www.redhat.com/security/team/key</a>."
+"Klíče používané Fedorou jsou povoleny v konfiguraci yum repository"
+"a není tedy nutné je manuálně importovat do rpm databáze. "
 #: data/content/keys.html:24
 msgid ""
 "In addition to the fedora-release package and this web page, you can "
 "download the Fedora keys from a public key server, such as <a href=\"http"
 "://http-keys.gnupg.net/\">keys.gnupg.net</a>."
 msgstr ""
-
+"V návaznosti na fedora-release balíčky a tyto webové stránky, můžete "
+"stáhnout Fedoří klíče z veřejného klíčového serveru jako například <a href=\"http"
+"://http-keys.gnupg.net/\">keys.gnupg.net</a>."
 #: data/content/keys.html:27
 msgid ""
 "For some repositories, such as repositories with stable and testing "
@@ -969,16 +988,21 @@ msgid ""
 "importing the key if the key is not already imported into the rpm "
 "database."
 msgstr ""
-
+"Pro některá uložiště, jako například uložiště obshující stabilní a "
+"testovací balíky v implicitní konfiguraci, <strong>yum</strong> je"
+"schopen dohledat správný klíč k danému uložišti a požádá uživatele "
+"o potvrzení dříve než klíč importuje, pokud ovšem už není klíč importován "
+"v rpm databázi."
 #: data/content/keys.html:30
 msgid ""
 "You can always import a key into RPM's database by hand using the "
 "following command:"
 msgstr ""
-
+"Vždy můžete importovat klíč do RPM databáze použitím následujícího "
+"příkazu: "
 #: data/content/keys.html:34
 msgid "Refer to <strong>rpm</strong> manual for more information."
-msgstr ""
+msgstr "Pro více informací si přečtěte <strong>rpm</strong> manuál."
 
 #: data/content/keys.html:37
 msgid ""
@@ -986,10 +1010,12 @@ msgid ""
 "keys listed here, you can use GnuPG to check that the fingerprint of the "
 "key matches.  For example:"
 msgstr ""
-
+"Pokud chcete ověřit, že klíče nainstalované na vašem systému jsou shodné"
+"s klíči uvedenými zde, můžete použít GnuPG pro kontrolu otisků klíčů."
+"Například: "
 #: data/content/keys.html:45
 msgid "Verifying a package"
-msgstr ""
+msgstr "Ověřování balíčku: "
 
 #: data/content/keys.html:47
 msgid ""
@@ -1000,93 +1026,109 @@ msgid ""
 "<strong>gpgcheck</strong> directive.  Do not override the default setting"
 " of this directive unless you have a very good reason to do so."
 msgstr ""
-
+"Pokud používáte implicitní konfiguraci <strong>yumu</strong>, což je"
+"instalační nástroj ve stabilních verzích, tak je podpis každého balíčku "
+"ověřen dříve než je naistalován. Ověřování podpisu může být vypnuto "
+"globálně nebo pro konkrétní uložiště pomocí direktivy"
+"<strong>gpgcheck</strong>. Nepřepisujte standartní nastavení"
+"nebo tuto direktivu pokud k tomu nemáte opravdu dobrý důvod." 
 #: data/content/keys.html:50
 msgid ""
 "If you do not use yum, you can check the signature of the package using "
 "the following command"
 msgstr ""
-
+"Nepoužíváte-li yum, pak můžete překontrolovat podpisy balíčků pomocí"
+"následujícího příkazu."
 #: data/content/keys.html:57
 msgid "Currently used keys"
-msgstr ""
+msgstr "Aktuálně používané klíče"
 
 #: data/content/keys.html:67
 msgid ""
 "Download: <a "
 "href=\"https://fedoraproject.org/static/D22E77F2.txt\">Fedora Project</a>"
 msgstr ""
-
+"Stáhnout: <a "
+"href=\"https://fedoraproject.org/static/D22E77F2.txt\">Fedora Projekt</a>"
 #: data/content/keys.html:68
 msgid ""
 "Download: <a "
 "href=\"http://keys.gnupg.net:11371/pks/lookup?search=0xD22E77F2&op=get\">keys.gnupg.net</a>"
 msgstr ""
-
+"Stáhnout: <a "
+"href=\"http://keys.gnupg.net:11371/pks/lookup?search=0xD22E77F2&op=get\">keys.gnupg.net</a>"
 #: data/content/keys.html:81
 msgid ""
 "Download: <a "
 "href=\"https://fedoraproject.org/static/4EBFC273.txt\">Fedora Project</a>"
 msgstr ""
-
+"Stáhnout: <a "
+"href=\"https://fedoraproject.org/static/4EBFC273.txt\">Fedora Projekt</a>"
 #: data/content/keys.html:82
 msgid ""
 "Download: <a "
 "href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4EBFC273&op=get\">keys.gnupg.net</a>"
 msgstr ""
-
+"Stáhnout: <a "
+"href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4EBFC273&op=get\">keys.gnupg.net</a>"
 #: data/content/keys.html:95
 msgid ""
 "Download: <a "
 "href=\"https://fedoraproject.org/static/0B86274E.txt\">Fedora Project</a>"
 msgstr ""
-
+"Stáhnout: <a "
+"href=\"https://fedoraproject.org/static/0B86274E.txt\">Fedora Project</a>"
 #: data/content/keys.html:96
 msgid ""
 "Download: <a "
 "href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x0B86274E&op=get\">keys.gnupg.net</a>"
 msgstr ""
-
+"Stáhnout: <a "
+"href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x0B86274E&op=get\">keys.gnupg.net</a>"
 #: data/content/keys.html:109
 msgid ""
 "Download: <a "
 "href=\"https://fedoraproject.org/static/6DF2196F.txt\">Fedora Project</a>"
 msgstr ""
-
+"Stáhnout: <a "
+"href=\"https://fedoraproject.org/static/6DF2196F.txt\">Fedora Project</a>"
 #: data/content/keys.html:110
 msgid ""
 "Download: <a "
 "href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x6DF2196F&op=get\">keys.gnupg.net</a>"
 msgstr ""
-
+"Stáhnout: <a "
+"href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x6DF2196F&op=get\">keys.gnupg.net</a>"
 #: data/content/keys.html:123
 msgid ""
 "Download: <a "
 "href=\"https://fedoraproject.org/static/DF9B0AE9.txt\">Fedora Project</a>"
 msgstr ""
-
+"Stáhnout: <a "
+"href=\"https://fedoraproject.org/static/DF9B0AE9.txt\">Fedora Project</a>"
 #: data/content/keys.html:124
 msgid ""
 "Download: <a "
 "href=\"http://keys.gnupg.net:11371/pks/lookup?search=0xDF9B0AE9&op=get\">keys.gnupg.net</a>"
 msgstr ""
-
+"Stáhnout: <a "
+"href=\"http://keys.gnupg.net:11371/pks/lookup?search=0xDF9B0AE9&op=get\">keys.gnupg.net</a>"
 #: data/content/keys.html:130
 msgid "Obsolete keys"
-msgstr ""
+msgstr "Zastaralé klíče"
 
 #: data/content/keys.html:141
 msgid "Fedora Core (version 6 and earlier)"
-msgstr ""
+msgstr "Fedora Core(verze 6 a starší)"
 
 #: data/content/keys.html:142
 msgid "Fedora (version 7, 8, and 9)"
-msgstr ""
+msgstr "Fedora(verze 7, 8 a 9)"
 
 #: data/content/keys.html:143
 msgid "Both GA and updates"
-msgstr ""
-
+msgstr "Vydání(GA) a aktualizace"
+ 
 #: data/content/keys.html:147
 msgid ""
 "Packages on installation media are signed with this key.  The relevant "
@@ -1098,23 +1140,33 @@ msgid ""
 "announce-list/2008-August/msg00012.html</a> for information on why this "
 "key is obsolete."
 msgstr ""
+"Balíčky na instalačních médiích jsou podepsány tímto klíčem. Relevantní "
+"yum uložiště jsou <strong>fedora</strong>, <strong>fedora-"
+"updates</strong> pro Fedoru 7-9, a <strong>core</strong> a <strong"
+">core-updates</strong> pro Fedora Core (verze 6 a starší).  Pro "
+"více informací proč je tento klíč zastaralý viz"
+"<a href=\"http://www.redhat.com/archives/fedora-announce-"
+"list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-"
+"announce-list/2008-August/msg00012.html</a>.  "
 
 #: data/content/keys.html:151
 msgid ""
 "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki"
 "/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 msgstr ""
-
+"Cesta: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki"
+"/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 #: data/content/keys.html:152
 msgid ""
 "Download: <a "
 "href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4F2A6FD2&op=index\">keys.gnupg.net</a>"
 msgstr ""
-
+"Stáhnout: <a "
+"href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4F2A6FD2&op=index\">keys.gnupg.net</a>"
 #: data/content/keys.html:165
 msgid "Fedora (version 7 and newer) testing updates"
-msgstr ""
-
+msgstr "Fedora (verze 7 a novější) testovací aktualizace"
+ 
 #: data/content/keys.html:169
 msgid ""
 "If you participate in testing of the packages, this is the key you will "
