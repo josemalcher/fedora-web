@@ -11,30 +11,47 @@ cat <<EOM>>$outfile
     <link rel="stylesheet" type="text/css" media="all" href="http://fedoraproject.org/static/css/fedora.css" />
     <!--[if lt IE 7]>
     <style type="text/css">
-      #wrapper
-      {
-      height: 100%;
-      overflow: visible;
-      }
+        #wrapper
+        {
+            height: 100%;
+            overflow: visible;
+        }
     </style>
     <![endif]-->
     <style type="text/css">
-      table
-        {
-          width: 50%
+        table {
+            width: 50%
         }
 
-      #content
+        #content
         {
-          margin-left: 2ex!important;
+            margin-left: 2ex!important;
         }
 
-      td, th
+        td, th
         {
-           width: 50%;
-           border: none!important;
-           padding: 0.5ex 2ex!important;
+            width: 50%;
+            border: none!important;
+            padding: 0.5ex 2ex!important;
         }
+
+        tr.userinfo:hover
+        {
+            background-color: #E8E8E8;
+        }
+
+        tr.userinfo
+        {
+            border-bottom: 1px solid #c8c8c8;
+        }
+
+        #admincontact
+        {
+            border-top: 1px solid #CCCCCC;
+            margin-top: 2ex;
+            padding-top: 0.5ex;
+        }
+
     </style>
   </head>
   <body>
@@ -44,9 +61,7 @@ cat <<EOM>>$outfile
       </div>
       <div id="content">
         <h2>Fedora People</h2>
-        <p>
-        <a href="http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org">FAQ</a>
-        </p>
+        <p><a href="http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org">FAQ</a> covers the details on how to use your public space.</p>
         <table>
           <tr>
             <th>Home Page</th>
@@ -62,7 +77,7 @@ for useranddir in $users
     name="`getent passwd $user | cut -d: -f5`"
     if [ -d $homedir/public_html/ ]; then
      cat <<EOM>> $outfile
- <tr>
+ <tr class="userinfo">
     <td><a href="http://${user}.fedorapeople.org">$user</a></td>
     <td>$name</td>
  </tr>
@@ -72,11 +87,7 @@ EOM
    
 cat << EOM>> $outfile
         </table>
-        <div style="
-          border-top: 1px solid #CCCCCC;
-          margin-top: 2ex;
-          padding-top: 0.5ex;
-          ">
+        <div id="admincontact">
           Contact: <a href="mailto:admin at fedoraproject.org">admin at fedoraproject.org</a><br />
           <ul id="sponsors">
             <li><a href="http://linux.dell.com"><img src="http://torrent.fedoraproject.org/images/poweredby_horizontal_lr.gif" alt="Powered by Dell" width="106" height="35"/></a></li>
