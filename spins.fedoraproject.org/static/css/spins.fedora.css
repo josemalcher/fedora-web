@@ -1,13 +1,76 @@
+/* clear all background */
+#head, #sidebar, #content, #wrapper
+{
+	background-color: transparent;
+	background-image: none;
+}
+
+#head
+{
+	border: 0;
+}
+
+/* end: clear all background */
+
+/* header */
+
+#wrapper
+{
+	padding: 0;
+}
+
+#head
+{
+	background-color: #3771c8;
+	margin: 20px 20px 0px 20px;
+	clear: both;
+}
+
+#head h1 a
+{
+	background: transparent url(../images/fedora-spins-logo.png) no-repeat scroll 20px 50%;
+}
+
+#head h1
+{
+}
+
+#tabs
+{
+	position: absolute;
+	top: 30px;
+	right: 25px;
+	width: 25%;
+}
+
+#tabs ul
+{
+	list-style-type: none;
+	margin:0;
+}
+
+#tabs li
+{
+	display: inline;
+	padding-left: 10px;
+	float: right;
+}
+/* end: header */
+
+
+
+/* footer */
 body
 {
 	background: #e6e6e6 none no-repeat 0 0;
 }
 
-
 #wrapper
 {
 	min-height: 0px;
 	margin: auto;
+	background: #fff url(../images/background.png) repeat-x scroll 0 0;
+
 }
 
 #bottom 
@@ -29,11 +92,6 @@ body
 #footer a
 {
 	color: #3771c8;
-}
-
-#sidebar 
-{
-	background-color: none;
 }
 
 #sitelinks
@@ -62,3 +120,5 @@ body
 {
 	font-weight: bold;
 }
+
+/* end: footer */
