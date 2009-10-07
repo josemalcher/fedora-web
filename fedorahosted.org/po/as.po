@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedorahosted.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-07-30 17:10-0400\n"
+"POT-Creation-Date: 2009-10-07 14:43-0400\n"
 "PO-Revision-Date: 2009-05-20 11:45+0530\n"
 "Last-Translator: Amitakhya Phukan <aphukan@fedoraproject.org>\n"
 "Language-Team: Assamese <fedora-trans-as@redhat.com>\n"
@@ -113,12 +113,28 @@ msgid "Before anyone can clone/push the new repository a master push must be don
 msgstr "কোনোৱে নতুন ভঁৰাল clone/push কৰাৰ পূৰ্বে এই আদেশেৰে এটা মাছ্টাৰ push কৰিব লাগিব (আপোনাৰ স্থানীয় git repo ৰ পৰা): git push ssh://git.fedorahosted.org/git/yourproject.git/ master"
 
 #: data/content/faq.html:27
+msgid "How do I get permission to commit to a project?"
+msgstr ""
+
+#: data/content/faq.html:28
+msgid "You should <a href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for the commit group of the project, which should be <code>&lt;scm&gt;&lt;project&gt;</code>, e.g. for the desktop-effects project, apply to the <code>gitdesktop-effects</code> group."
+msgstr ""
+
+#: data/content/faq.html:29
 msgid "While I wait for my repository to be created, can I work on my code elsewhere?"
 msgstr "মোৰ কাৰণে ভঁৰাল নিৰ্মাণ হৈ থকাৰ অৱস্থাত, মই অন্য স্থানত মোৰ কোডৰ ওপৰত কাম কৰিব পাৰোঁ নে ?"
 
-#: data/content/faq.html:28
+#: data/content/faq.html:30
 msgid "Of course. Visit <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> for instructions on how to set up a temporary repository in your fedorapeople.org space."
 msgstr "নিশ্চয় । আপোনাৰ fedorapeople.org স্থানত এটা অস্থায়ী ভঁৰাল কেনেদৰে সৃষ্টি কৰিব পাৰি সেইটো জানিবলৈ <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> চাওক ।"
+
+#: data/content/faq.html:31
+msgid "Why does hg tells me the repository doesn't exist even though I know I have the correct URL?"
+msgstr ""
+
+#: data/content/faq.html:32
+msgid "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a delimiter between hostname and path and a second \"/\" as the root of the filesystem path.  For instance, if you're accessing the repository for authconfig you need to use \"hg clone ssh://hg.fedoraproject.org//hg/authconfig\""
+msgstr ""
 
 #: data/content/index.html:10
 msgid "Available Projects"
