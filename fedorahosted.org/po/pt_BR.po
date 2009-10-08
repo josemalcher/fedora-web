@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-07-30 17:10-0400\n"
+"POT-Creation-Date: 2009-10-07 14:43-0400\n"
 "PO-Revision-Date: 2009-08-20 01:03-0300\n"
 "Last-Translator: Rafael Gomes <rafaelgomes@projetofedora.org>\n"
 "Language-Team: Brazilian Portuguese <fedora-docs-br@redhat.com>\n"
@@ -21,8 +21,7 @@ msgstr ""
 "Generated-By: Babel 0.9.1\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: data/content/410.html:7
-#: data/content/index.html:7
+#: data/content/410.html:7 data/content/index.html:7
 msgid "Hosted Projects - Fedora Hosted"
 msgstr "Projetos Hospedados - Fedora Hosted"
 
@@ -54,8 +53,7 @@ msgstr "Seu novo projeto é apenas um <a href=\"new\">ticket de trabalho</a>."
 msgid "FAQs - Fedora Hosted"
 msgstr "FAQs - Fedora Hosted"
 
-#: data/content/faq.html:12
-#: data/templates/sidebar.html:13
+#: data/content/faq.html:12 data/templates/sidebar.html:13
 msgid "Frequently-Asked Questions"
 msgstr "Perguntas Frequentes"
 
@@ -116,12 +114,28 @@ msgid "Before anyone can clone/push the new repository a master push must be don
 msgstr "Antes de qualquer \"clone/push\" de um novo repositório um \"push master\" deve ser feito com o comando (a partir de um repo git local): git push ssh://git.fedorahosted.org/git/seuprojeto.git/ master"
 
 #: data/content/faq.html:27
+msgid "How do I get permission to commit to a project?"
+msgstr ""
+
+#: data/content/faq.html:28
+msgid "You should <a href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for the commit group of the project, which should be <code>&lt;scm&gt;&lt;project&gt;</code>, e.g. for the desktop-effects project, apply to the <code>gitdesktop-effects</code> group."
+msgstr ""
+
+#: data/content/faq.html:29
 msgid "While I wait for my repository to be created, can I work on my code elsewhere?"
 msgstr "Enquanto eu espero pelo meu repositório ser criado, posso trabalhar no meu código noutro local?"
 
-#: data/content/faq.html:28
+#: data/content/faq.html:30
 msgid "Of course. Visit <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> for instructions on how to set up a temporary repository in your fedorapeople.org space."
 msgstr "É claro. Visite <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> para obter instruções sobre como configurar um repositório temporário no seu espaço fedorapeople.org."
+
+#: data/content/faq.html:31
+msgid "Why does hg tells me the repository doesn't exist even though I know I have the correct URL?"
+msgstr ""
+
+#: data/content/faq.html:32
+msgid "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a delimiter between hostname and path and a second \"/\" as the root of the filesystem path.  For instance, if you're accessing the repository for authconfig you need to use \"hg clone ssh://hg.fedoraproject.org//hg/authconfig\""
+msgstr ""
 
 #: data/content/index.html:10
 msgid "Available Projects"
@@ -195,8 +209,7 @@ msgstr "Use o seguinte modelo para a descrição completa do ticket:"
 msgid "Terms of Use - Fedora Hosted"
 msgstr "Termos de Uso - Fedora Hosted"
 
-#: data/content/terms.html:12
-#: data/templates/sidebar.html:14
+#: data/content/terms.html:12 data/templates/sidebar.html:14
 msgid "Terms of Use"
 msgstr "Termos de Uso"
 
@@ -271,4 +284,3 @@ msgstr "Patrocinadores de Hospedagem"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "Patrocinado por ServerBeach"
-
