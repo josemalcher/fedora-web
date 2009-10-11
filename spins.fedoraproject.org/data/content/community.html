@@ -1,0 +1,36 @@
+<?python
+  area = "main"
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Fedora Spins')}</title>
+  </head>
+  <body>
+    <h2>${_('Spins Community')}</h2>
+    <h3>${_('Spins website.')}</h3>
+    <p>Chitlesh Goorah, Fedora Electornic Lab</p>
+    <p>Integer nisi magna, sodales et varius in, scelerisque vitae lacus. Aliquam vehicula lacus sit amet dolor varius at vulputate turpis porttitor. Aliquam venenatis dui pulvinar lacus convallis sollicitudin. Vestibulum gravida nibh nec est ultricies eu laoreet nulla consectetur. Integer scelerisque malesuada auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse non dolor et erat tempor euismod in id lorem. Proin iaculis rhoncus tristique. Integer id erat ac enim feugiat bibendum. Vivamus sodales felis bibendum orci dapibus sit amet mattis metus blandit. Nunc tristique egestas sodales. Sed sapien libero, posuere ut feugiat vitae, congue adipiscing lacus.</p>
+    <p>Read more of this interview with Chitlesh</p>
+
+		<!-- the tabs --> 
+		<ul class="tabs"> 
+			<li><a href="#home">Home</a></li> 
+			<li><a href="#aboutkde">About KDE</a></li> 
+			<li><a href="#downloads">Downloads</a></li> 
+			<li><a href="#support">Support</a></li> 
+		</ul> 
+		 
+		<!-- tab "panes" --> 
+		<div class="panes"> 
+			<div>First tab content. Tab contents are called "panes"</div> 
+			<div>About KDE</div> 
+			<div>Downloads</div> 
+			<div class="kdesupport">Support<p>This is subtext</p></div> 
+		</div>
+
+  </body>
+</html>

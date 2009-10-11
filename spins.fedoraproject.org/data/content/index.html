@@ -1,3 +1,6 @@
+<?python
+  area = "main"
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
   xmlns:py="http://genshi.edgewall.org/"
@@ -7,23 +10,19 @@
     <title>${_('Fedora Spins')}</title>
   </head>
   <body>
-    <h2>${_('Spins')}</h2>
-    <p>${_('Spins website.')}</p>
+    <h2>${_('Meet our spins.')}</h2>
+    <p>${_('What is a spin? Fedora spins are alternate version of Fedora, tailored for various types of users via hand-picked application set or customizations.')}</p>
 
 		<!-- the tabs --> 
 		<ul class="tabs"> 
-			<li><a href="#home">Home</a></li> 
-			<li><a href="#aboutkde">About KDE</a></li> 
-			<li><a href="#downloads">Downloads</a></li> 
-			<li><a href="#support">Support</a></li> 
+			<li><a href="#bypopularity">${_('By Popularity')}</a></li> 
+			<li><a href="#alphaorder">${_('Alphabetical Order')}</a></li> 
 		</ul> 
 		 
 		<!-- tab "panes" --> 
 		<div class="panes"> 
-			<div>First tab content. Tab contents are called "panes"</div> 
-			<div>About KDE</div> 
-			<div>Downloads</div> 
-			<div class="kdesupport">Support<p>This is subtext</p></div> 
+			<div>List of Spins by popularity (table)</div> 
+			<div>List of Spins in alphabetical order (table)</div> 
 		</div>
 
   </body>
