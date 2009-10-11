@@ -10,15 +10,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master-fedorahosted.pa\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-07-30 17:10-0400\n"
-"PO-Revision-Date: 2009-05-31 08:28+0530\n"
-"Last-Translator: A S Alam <aalam@users.sf.net>\n"
-"Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
+"POT-Creation-Date: 2009-10-07 14:43-0400\n"
+"PO-Revision-Date: 2009-10-05 15:16+0530\n"
+"Last-Translator: Jaswinder Singh <jsingh@redhat.com>\n"
+"Language-Team: Punjabi <Punjabi-users@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.1\n"
-"X-Generator: Lokalize 0.3\n"
+"X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: data/content/410.html:7 data/content/index.html:7
@@ -114,41 +114,56 @@ msgid "Before anyone can clone/push the new repository a master push must be don
 msgstr "ਕਿਸੇ ਵਲੋਂ ਨਵੀਂ ਡਾਇਰੈਕਟਰੀ clone/push ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਮਾਸਟਰ push (ਤੁਹਾਡੀ ਲੋਕਲ git repo ਤੋਂ) ਕਰਨ ਲਈ ਇਹ ਕਮਾਂਡ ਚਲਾਉਣੀ ਜਰੂਰੀ ਹੈ: git push ssh://git.fedorahosted.org/git/yourproject.git/ master"
 
 #: data/content/faq.html:27
+msgid "How do I get permission to commit to a project?"
+msgstr ""
+
+#: data/content/faq.html:28
+msgid "You should <a href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for the commit group of the project, which should be <code>&lt;scm&gt;&lt;project&gt;</code>, e.g. for the desktop-effects project, apply to the <code>gitdesktop-effects</code> group."
+msgstr ""
+
+#: data/content/faq.html:29
 msgid "While I wait for my repository to be created, can I work on my code elsewhere?"
 msgstr "ਜਦੋਂ ਮੈਂ ਮੇਰੀ ਰਿਪੋਜ਼ਟਰੀ ਬਣਨ ਲਈ ਉਡੀਕ ਕਰਦਾ ਹਾਂ, ਕੀ ਮੈਂ ਕਿਤੇ ਹੋਰ ਆਪਣੇ ਕੋਡ ਤੇ ਕੰਮ ਕਰ ਸਕਦਾ?"
 
-#: data/content/faq.html:28
+#: data/content/faq.html:30
 msgid "Of course. Visit <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> for instructions on how to set up a temporary repository in your fedorapeople.org space."
 msgstr "ਕਿਉਂ ਨਹੀਂ। ਆਪਣੀ fedorapeople.org ਸਪੇਸ ਵਿੱਚ ਆਰਜੀ ਰਿਪੋਜ਼ਟਰੀ ਸੈੱਟ ਅੱਪ ਕਰਨ ਬਾਰੇ ਹਦਾਇਤਾਂ ਲਈ <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> ਵੇਖੋ।"
+
+#: data/content/faq.html:31
+msgid "Why does hg tells me the repository doesn't exist even though I know I have the correct URL?"
+msgstr ""
+
+#: data/content/faq.html:32
+msgid "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a delimiter between hostname and path and a second \"/\" as the root of the filesystem path.  For instance, if you're accessing the repository for authconfig you need to use \"hg clone ssh://hg.fedoraproject.org//hg/authconfig\""
+msgstr ""
 
 #: data/content/index.html:10
 msgid "Available Projects"
 msgstr "ਉਪਲੱਬਧ ਪਰੋਜੈਕਟ"
 
 #: data/content/index.html:12
-#, fuzzy
 msgid "Display all projects"
-msgstr "ਉਪਲੱਬਧ ਪਰੋਜੈਕਟ"
+msgstr "ਸਭ ਪਰੋਜੈਕਟ ਵੇਖਾਓ"
 
 #: data/content/index.html:17
 msgid "Project Description"
-msgstr ""
+msgstr "ਪਰੋਜੈਕਟ ਜਾਣਕਾਰੀ"
 
 #: data/content/index.html:18
 msgid "VCS"
-msgstr ""
+msgstr "VCS"
 
 #: data/content/index.html:19
 msgid "Web"
-msgstr ""
+msgstr "ਵੈੱਬ"
 
 #: data/content/index.html:20
 msgid "Anon URL"
-msgstr ""
+msgstr "ਅਣਜਾਣ URL"
 
 #: data/content/index.html:21
 msgid "Auth URL"
-msgstr ""
+msgstr "ਪ੍ਰਮਾਣਿਤ URL"
 
 #: data/content/index.html:33
 msgid "Right-click and copy the anonymous VCS URI to your clipboard"
@@ -160,7 +175,7 @@ msgstr "ਸੱਜਾ-ਕਲਿੱਕ ਕਰੋ ਅਤੇ ਪ੍ਰਮਾਣਿ�
 
 #: data/content/index.html:37
 msgid "No projects registered in this group"
-msgstr ""
+msgstr "ਇਸ ਗਰੁੱਪ ਵਿੱਚ ਕੋਈ ਪਰੋਜੈਕਟ ਰਜਿਸਟਰ ਨਹੀਂ ਹੈ"
 
 #: data/content/new.html:7
 msgid "Request a New Project - Fedora Hosted"
@@ -219,9 +234,8 @@ msgid "We will always do our best to contact missing developers and ensure that 
 msgstr "ਅਸੀਂ ਹਮੇਸ਼ਾ ਗੈਰ-ਮੌਜੂਦ ਡਿਵੈਲਪਰਾਂ ਨਾਲ ਸੰਪਰਕ ਕਰਨ ਦੀ ਪੂਰੀ ਕੋਸ਼ਿਸ਼ ਕਰਾਂਗੇ ਤਾਂ ਕਿ ਕੋਡ, Trac ਡਾਟਾਬੇਸ, ਅਤੇ ਹੋਰ ਸੰਬੰਧਿਤ ਡਾਟਾ ਹੱਥ ਵਿੱਚ ਰੱਖਿਆ ਜਾਏ ਜੋ ਪਰੋਜੈਕਟ ਹਟਾਉਣ ਸਮੇਂ ਉਸ ਦੇ ਮਾਲਕ ਨੂੰ ਦਿੱਤਾ ਜਾ ਸਕੇ।"
 
 #: data/templates/foot.html:9
-#, fuzzy
 msgid "&copy; 2009 Red Hat, Inc. and others.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
-msgstr "ਕਾਪੀਰਾਈਟ &copy; 2009 Red Hat, Inc. ਅਤੇ ਹੋਰ। ਸਭ ਹੱਕ ਰਾਖਵੇਂ ਹਨ। ਸਭ ਟਿੱਪਣੀਆਂ ਜਾਂ ਸੋਧਾਂ <a href=\"mailto:webmaster@fedoraproject.org\">ਵੈੱਬਸਾਈਟ ਟੀਮ</a> ਨੂੰ ਭੇਜੋ ਜੀ।"
+msgstr "&copy; 2009 Red Hat, Inc. ਅਤੇ ਹੋਰ।  ਸਭ ਟਿੱਪਣੀਆਂ ਜਾਂ ਸੋਧਾਂ <a href=\"mailto:webmaster@fedoraproject.org\">ਵੈੱਬਸਾਈਟ ਟੀਮ</a> ਨੂੰ ਭੇਜੋ ਜੀ।"
 
 #: data/templates/foot.html:12
 msgid "The Fedora Project is maintained and driven by the community and sponsored by Red Hat.  This is a community maintained site.  Red Hat is not responsible for content."

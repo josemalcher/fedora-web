@@ -28,5 +28,7 @@
     <p><span class="answer">${_('You should &lt;a href="https://admin.fedoraproject.org/accounts/group/list"&gt;apply&lt;/a&gt; for the commit group of the project, which should be &lt;code&gt;&amp;lt;scm&amp;gt;&amp;lt;project&amp;gt;&lt;/code&gt;, e.g. for the desktop-effects project, apply to the &lt;code&gt;gitdesktop-effects&lt;/code&gt; group.')}</span></p>
     <p><span class="question">${_('While I wait for my repository to be created, can I work on my code elsewhere?')}</span></p>
     <p><span class="answer">${_('Of course. Visit &lt;a href="http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org"&gt;http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org&lt;/a&gt; for instructions on how to set up a temporary repository in your fedorapeople.org space.')}</span></p>
+    <p><span class="question">${_('Why does hg tells me the repository doesn\'t exist even though I know I have the correct URL?')}</span></p>
+    <p><span class="answer">${_('Unfortunately hg doesn\'t use true URLs.  You have to use a "/" as a delimiter between hostname and path and a second "/" as the root of the filesystem path.  For instance, if you\'re accessing the repository for authconfig you need to use "hg clone ssh://hg.fedoraproject.org//hg/authconfig"')}</span></p>
   </body>
 </html>
