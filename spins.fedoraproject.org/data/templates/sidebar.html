@@ -3,68 +3,78 @@
   xmlns:py="http://genshi.edgewall.org/"
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
-  <div id="sidebar">
-    <div id="banner">
-    </div>
-    <div id="download-fedora">
-    	<h2>Looking to Download Fedora?</h2>
-    	<p>Spins are alternate versions of Fedora for specific uses. If you'd just like to download Fedora itself, you should visit the main fedoraproject.org website.</p>
-    	<h3><a href="#">Visit get.fedoraproject.org ></a> </h3>
-    </div>
-    <div id="top-spins">
-    	<h2>Top Spins This Week</h2>
-		<table>
-			<tr>
-				<td>#1</td>
-				<td><a href="#">Fedora Desktop</a></td>
-				<td>432 downloads</td>
-			</tr>
-			<tr>
-				<td>#2</td>
-				<td><a href="#">KDE Desktop</a></td>
-				<td>391 downloads</td>
-			</tr>
-			<tr>
-				<td>#3</td>
-				<td><a href="#">BROffice.org</a></td>
-				<td>297 downloads</td>
-			</tr>
-			<tr>
-				<td>#4</td>
-				<td><a href="#">Electronic Lab</a></td>
-				<td>185 downloads</td>
-			</tr>
-			<tr>
-				<td>#5</td>
-				<td><a href="#">XFCE Desktop</a></td>
-				<td>45 downloads</td>
-			</tr>
-		</table>
-    </div>
-    <div id="featured-spin">
-    	<img src="static/images/art-studio.png" />
-    	<p>The Fedora Art Studio spin is the ultimate free &amp; open source artists' operating system. This is the spin to get your creative juices flowing.</p>
-    	<h3><a href="#">Learn more &gt;</a></h3>
-    </div>
-    <div id="make-own-spin">
-    	<h2>Want to Make Your Own Spin?</h2>
-    	<p>Anyone can create their very own Fedora spin.</p>
-    	<h3><a href="#">Go to the spin creation tutorial &gt;</a></h3>
-    </div>
-    <div id="download-now">
-    	<img src="static/images/download-now.png" />
-    	<p>6K Torrent File for 32-bit PC ISO</p>
-    	<h3><a href="#">How do I use this?</a> | <a href="#">More download options ...</a></h3>
-    </div>
-    <div id="whatis-spin">
-    	<h2>What is a Spin?</h2>
-    	<p>Fedora spins are alternate version of Fedora, tailored for various types of users via hand-picked application sets and other customizations.</p>
-    	<h3><a href="#">Learn more &gt;</a></h3>
-    </div>
-    <div id="whatis-this-spin">
-    	<h2>What is this Spin?</h2>
-    	<p>KDE is a desktop environment that drives the look and feel of your desktop.</p>
-    	<h3><a href="#">Learn more &gt;</a></h3>
-    </div>
-  </div>
+  
+<py:def function="download(name)">
+http://spins.fedoraproject.org/torrents/${name}.torrent
+</py:def>
+  
+	<div id="sidebar">
+	<py:choose test="area">
+		<py:when test="'main'">
+		<div id="download-fedora">
+			<h2>Looking to Download Fedora?</h2>
+			<p>Spins are alternate versions of Fedora for specific uses. If you'd just like to download Fedora itself, you should visit the main fedoraproject.org website.</p>
+			<h3><a href="http://get.fedoraproject.org">Visit get.fedoraproject.org ></a> </h3>
+		</div>
+		<div id="top-spins">
+			<h2>Top Spins This Week</h2>
+			<table>
+				<tr>
+					<td>#1</td>
+					<td><a href="#">Fedora Desktop</a></td>
+					<td>432 downloads</td>
+				</tr>
+				<tr>
+					<td>#2</td>
+					<td><a href="#">KDE Desktop</a></td>
+					<td>391 downloads</td>
+				</tr>
+				<tr>
+					<td>#3</td>
+					<td><a href="#">BROffice.org</a></td>
+					<td>297 downloads</td>
+				</tr>
+				<tr>
+					<td>#4</td>
+					<td><a href="#">Electronic Lab</a></td>
+					<td>185 downloads</td>
+				</tr>
+				<tr>
+					<td>#5</td>
+					<td><a href="#">XFCE Desktop</a></td>
+					<td>45 downloads</td>
+				</tr>
+			</table>
+		</div>
+		<div id="featured-spin">
+			<img src="/static/images/art-studio.png" />
+			<p>The Fedora Art Studio spin is the ultimate free &amp; open source artists' operating system. This is the spin to get your creative juices flowing.</p>
+			<h3><a href="#">Learn more &gt;</a></h3>
+		</div>
+		<div id="make-own-spin">
+			<h2>Want to Make Your Own Spin?</h2>
+			<p>Anyone can create their very own Fedora spin.</p>
+			<h3><a href="#">Go to the spin creation tutorial &gt;</a></h3>
+		</div>
+		</py:when>
+		<py:otherwise>
+		<div id="download-now">
+			<a href="${download(area)}"><img src="/static/images/download-now.png" /></a>
+			<p>6K Torrent File for 32-bit PC ISO</p>
+			<h3><a href="#">How do I use this?</a> | <a href="#">More download options ...</a></h3>
+		</div>
+		<div id="whatis-spin">
+			<h2>What is a Spin?</h2>
+			<p>Fedora spins are alternate version of Fedora, tailored for various types of users via hand-picked application sets and other customizations.</p>
+			<h3><a href="#">Learn more &gt;</a></h3>
+		</div>
+		<div id="whatis-this-spin">
+			<h2>What is this Spin?</h2>
+			<p>KDE is a desktop environment that drives the look and feel of your desktop.</p>
+			<h3><a href="#">Learn more &gt;</a></h3>
+		</div>
+		</py:otherwise>
+	</py:choose>
+
+	</div>
 </html>

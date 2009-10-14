@@ -1,0 +1,30 @@
+<?python
+  area = "xfce"
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('About Spin: XFCE')}</title>
+  </head>
+  <body>
+		<!-- the tabs --> 
+		<ul class="tabs"> 
+			<li><a href="#home">Home</a></li> 
+			<li><a href="#aboutxfce">About XFCE</a></li> 
+			<li><a href="#downloads">Downloads</a></li> 
+			<li><a href="#support">Support</a></li> 
+		</ul> 
+		 
+		<!-- tab "panes" --> 
+		<div class="panes"> 
+			<div>First tab content. Tab contents are called "panes"</div> 
+			<div>About XFCE</div> 
+			<div>Downloads</div> 
+			<div class="xfcesupport">Support<p>This is subtext</p></div> 
+		</div>
+
+  </body>
+</html>
