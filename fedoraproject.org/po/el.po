@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: fedora-web.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2009-07-30 20:59-0400\n"
-"PO-Revision-Date: 2009-10-13 15:08+0200\n"
-"Last-Translator: Pierros Papadeas <ppapadeas@gmail.com>\n"
+"PO-Revision-Date: 2009-10-19 20:26+0200\n"
+"Last-Translator: Thalia Papoutsaki <saliyath@gmail.com>\n"
 "Language-Team: Greek Fedora team <fedora-trans-el@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -721,7 +721,7 @@ msgstr "Εισαγωγή κλειδιών"
 
 #: data/content/keys.html:21
 msgid "The keys are included in the <strong>fedora-release</strong> package, you can find them in the <strong>/etc/pki/rpm-gpg</strong> directory.  Please note that not all keys in this directory are used by Fedora project -- some are used for signing Red Hat Enterprise Linux packages or are no longer used at all. If you use Red Hat Enterprise Linux packages, see <a href=\"https://www.redhat.com/security/team/key/\">https://www.redhat.com/security/team/key</a>.  The keys used by Fedora are enabled in the yum repository configuration, so you generally don't need to manually import them into the rpm database."
-msgstr "Τα κλειδιά εμπεριέχονται στο πακέτο <strong>fedora-release</strong>, μπορείτε να τα βρείτε στο <strong>/etc/pki/rpm-gpg</strong> directory.  Παρακαλούμε σημειώστε πως δεν χρησιμοποιούνται όλα τα κλειδιά σ' αυτό το directory από το Fedora project -- κάποια χρησιμοποιούνται για υπογραφές πακέτων Linux της Red Hat Enterprise ή δεν χρησιμοποιούνται καθόλου. Εάν χρησιμοποιείτε πακέτα Linux της Red Hat Enterprise, δείτε στο <a href=\"https://www.redhat.com/security/team/key/\">https://www.redhat.com/security/team/key</a>.  Τα κλειδιά που χρησιμοποιούνται από το Fedora είναι ενεργοποιημένα στο αποθηκευτήριο ρυθμίσεων yum κι έτσι γενικά δεν χρειάζεται να τα εισάγετε χειροκίνητα στη βάση δεδομένων rpm."
+msgstr "Τα κλειδιά εμπεριέχονται στο πακέτο <strong>fedora-release</strong>, μπορείτε να τα βρείτε στο <strong>/etc/pki/rpm-gpg</strong> directory.  Παρακαλούμε σημειώστε πως δεν χρησιμοποιούνται όλα τα κλειδιά σ' αυτό το directory από το Fedora project -- κάποια χρησιμοποιούνται για υπογραφές πακέτων Linux της Red Hat Enterprise ή δεν χρησιμοποιούνται καθόλου. Εάν χρησιμοποιείτε πακέτα Linux της Red Hat Enterprise, δείτε στο <a href=\"https://www.redhat.com/security/team/key/\">https://www.redhat.com/security/team/key</a>.  Τα κλειδιά που χρησιμοποιούνται από το Fedora είναι ενεργοποιημένα στο αποθετήριο ρυθμίσεων yum κι έτσι γενικά δεν χρειάζεται να τα εισάγετε χειροκίνητα στη βάση δεδομένων rpm."
 
 #: data/content/keys.html:24
 msgid "In addition to the fedora-release package and this web page, you can download the Fedora keys from a public key server, such as <a href=\"http://http-keys.gnupg.net/\">keys.gnupg.net</a>."
@@ -729,7 +729,7 @@ msgstr "Επιπλέον από το πακέτο fedora-release και αυτή
 
 #: data/content/keys.html:27
 msgid "For some repositories, such as repositories with stable and testing packages in default configuration, <strong>yum</strong> is able to find a proper key for the repository and asks the user for confirmation before importing the key if the key is not already imported into the rpm database."
-msgstr "Για κάποια αποθηκευτήρια, όπως αυτά των σταθερών ή των δοκιμαστικών πακέτων στην προεπιλεγμένη ρύθμιση, το <strong>yum</strong> είναι ικανό να βρει το κατάλληλο κλειδί για το αποθηκευτήριο και ρωτάει τον χρήστη για επιβεβαίωση πριν το εισάγει, εάν αυτό δεν έχει ήδη εισαχθεί στη βάση δεδομένων rpm. "
+msgstr "Για κάποια αποθετήρια, όπως αυτά των σταθερών ή των δοκιμαστικών πακέτων στην προεπιλεγμένη ρύθμιση, το <strong>yum</strong> είναι ικανό να βρει το κατάλληλο κλειδί για το αποθηκευτήριο και ρωτάει τον χρήστη για επιβεβαίωση πριν το εισάγει, εάν αυτό δεν έχει ήδη εισαχθεί στη βάση δεδομένων rpm. "
 
 #: data/content/keys.html:30
 msgid "You can always import a key into RPM's database by hand using the following command:"
@@ -749,7 +749,7 @@ msgstr "Επαλήθευση ενός πακέτου"
 
 #: data/content/keys.html:47
 msgid "When using default configuration of <strong>yum</strong> package updating and installation tool in stable releases, signature of each package is verified before it is installed.  Signature verification can be turned off and on globally or for specific repository with <strong>gpgcheck</strong> directive.  Do not override the default setting of this directive unless you have a very good reason to do so."
-msgstr "Όταν χρησιμοποιείτε τις προεπιλεγμένες ρυθμίσεις του πακέτου <strong>yum</strong> για ενημέρωση και του εργαλείου εγκατάστασης στις σταθερές εκδόσεις, η υπογραφή κάθε πακέτου θα επιβεβαιώνεται πριν την εγκατάσταση. Η επιβεβαίωση υπογραφής μπορεί να απενεργοποιείται και γενικά και για συγκεκριμένο αποθηκευτήριο με το <strong>gpgcheck</strong> directive. Μην αναιρείτε την προεπιλεγμένη ρύθμιση του directive, εκτός κι αν έχετε κάποιον πολύ σοβαρό λόγο!"
+msgstr "Όταν χρησιμοποιείτε τις προεπιλεγμένες ρυθμίσεις του πακέτου <strong>yum</strong> για ενημέρωση και του εργαλείου εγκατάστασης στις σταθερές εκδόσεις, η υπογραφή κάθε πακέτου θα επιβεβαιώνεται πριν την εγκατάσταση. Η επιβεβαίωση υπογραφής μπορεί να απενεργοποιείται και γενικά και για συγκεκριμένο αποθετήριο με το <strong>gpgcheck</strong> directive. Μην αναιρείτε την προεπιλεγμένη ρύθμιση του directive, εκτός κι αν έχετε κάποιον πολύ σοβαρό λόγο!"
 
 #: data/content/keys.html:50
 msgid "If you do not use yum, you can check the signature of the package using the following command"
@@ -833,7 +833,7 @@ msgstr "Fedora (έκδοση 7 και μεταγενέστερη) δοκιμασ
 
 #: data/content/keys.html:169
 msgid "If you participate in testing of the packages, this is the key you will use to verify the testing packages.  This key signs the packages that are in <strong>fedora-testing</strong> repository.  See <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> for information on why this key is obsolete."
-msgstr "Εαν συμμετέχετε στις δοκιμές των πακέτων, αυτό το κλειδί θα σας επιτρέπει να επιβεβαιώνετε τα δοκιμαστικά πακέτα. Το κλειδί υπογράφει τα πακέτα που βρίσκονται στο αποθηκευτήριο <strong>fedora-testing</strong>. Δείτε στο <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> πληροφορίες για το γιατί αυτό το κλειδί είναι εκτός χρήσης."
+msgstr "Εαν συμμετέχετε στις δοκιμές των πακέτων, αυτό το κλειδί θα σας επιτρέπει να επιβεβαιώνετε τα δοκιμαστικά πακέτα. Το κλειδί υπογράφει τα πακέτα που βρίσκονται στο αποθετήριο <strong>fedora-testing</strong>. Δείτε στο <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> πληροφορίες για το γιατί αυτό το κλειδί είναι εκτός χρήσης."
 
 #: data/content/keys.html:173
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
