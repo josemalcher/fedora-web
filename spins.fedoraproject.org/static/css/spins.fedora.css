@@ -42,7 +42,7 @@
 	position: absolute;
 	top: 30px;
 	right: 25px;
-	width: 25%;
+	width: 90%;
 	margin-right: 40px;
 }
 
@@ -58,6 +58,29 @@
 	padding-left: 10px;
 	float: right;
 }
+
+#spins-about a, #spins-directory a, #spins-support a {
+	display:block;
+	height: 20px;
+	/* width: 95px; */
+	padding-left: 22px;
+	color: #fff;
+	text-decoration: none;
+}
+
+#spins-about a {
+	background:transparent url(/static/images/spins-about-icon.png) no-repeat scroll left center;
+}
+
+#spins-directory a {
+	background:transparent url(/static/images/spins-directory-icon.png) no-repeat scroll left center;
+}
+
+#spins-support a {
+	background:transparent url(/static/images/spins-support-icon.png) no-repeat scroll left center;
+}
+
+
 /* end: header */
 
 /* tagline */
@@ -272,4 +295,26 @@ div.panes div {
 	padding:15px 20px;
 	background-color:#fff;	
 }
+
+#content a.current:link {
+	color: #828282;
+}
 /* end: tabs */
+
+#content table, #content table td {
+	border-style: hidden;
+}
+
+.panes table tr {
+	border: 0px;
+	border-style: none;
+	background-color: #f2f2f2;
+}
+
+.panes table tr:hover {
+	background-color: #f6edca;
+}
+
+#interview {
+	background-color: #ececec;
+}
