@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: fedorahosted.master\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2009-10-07 14:43-0400\n"
-"PO-Revision-Date: 2009-10-20 15:05+0200\n"
+"PO-Revision-Date: 2009-10-20 17:04+0200\n"
 "Last-Translator: Thalia Papoutsaki <saliyath@gmail.com>\n"
 "Language-Team: Greek <fedora-trans-el@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -37,12 +37,14 @@ msgid "The requested project does not exist on Fedora Hosted."
 msgstr "Έργα Fedora - Φιλοξενούμενα έργα"
 
 #: data/content/about.html:7
+#, fuzzy
 msgid "About - Fedora Hosted"
-msgstr ""
+msgstr "Σχετικά - Fedora Hosted"
 
 #: data/content/about.html:12
+#, fuzzy
 msgid "About Fedora Hosted"
-msgstr ""
+msgstr "Σχετικά με το Fedora Hosted"
 
 #: data/content/about.html:13
 msgid "Fedora Hosted is a <a href=\"http://fedoraproject.org\">Fedora Project</a>-sponsored way for developers to host their code and collaborate online. We provide each project with source control via git, Mercurial, bzr, and others, as well as a bug tracker and wiki via Trac."
@@ -54,16 +56,16 @@ msgstr ""
 
 #: data/content/faq.html:7
 msgid "FAQs - Fedora Hosted"
-msgstr ""
+msgstr "FAQs - Fedora Hosted"
 
 #: data/content/faq.html:12
 #: data/templates/sidebar.html:13
 msgid "Frequently-Asked Questions"
-msgstr ""
+msgstr "Συχνές ερωτήσεις"
 
 #: data/content/faq.html:13
 msgid "What is Fedora Hosted?"
-msgstr ""
+msgstr "Τι είναι το Fedora Hosted?"
 
 #: data/content/faq.html:14
 msgid "Fedora Hosted is a project sponsored by <a href=\"http://fedoraproject.org/\">the Fedora Project</a> to allow upstream developers to host their code and collaborate online."
@@ -83,11 +85,11 @@ msgstr "Που μπορώ να απευθυνθώ για βοήθεια;"
 
 #: data/content/faq.html:18
 msgid "The best ways to get help are to join the <a href=\"irc://irc.freenode.net/#fedora-admin\"><code>#fedora-admin</code></a> IRC channel on <a href=\"http://www.freenode.net/\">Freenode</a> or to <a href=\"https://fedorahosted.org/fedora-infrastructure/\">open a ticket</a> with the Fedora Infrastructure team."
-msgstr ""
+msgstr "Ο καλύτερος τρόπος να πάρετε βοήθεια είναι να συμμετέχετε στο <a href=\"irc://irc.freenode.net/#fedora-admin\"><code>#fedora-admin</code></a> κανάλι IRC στο <a href=\"http://www.freenode.net/\">Freenode</a> ή στο <a href=\"https://fedorahosted.org/fedora-infrastructure/\">open a ticket</a> με την ομάδα Υποδομών του Fedora."
 
 #: data/content/faq.html:19
 msgid "How can I get a Fedora Hosted account?"
-msgstr ""
+msgstr "Πώς μπορώ να αποκτήσω έναν λογαριασμό Fedora Hosted?"
 
 #: data/content/faq.html:20
 msgid "Your normal Fedora Project account works with Fedora Hosted. Simply <a href=\"https://admin.fedoraproject.org/accounts/\">apply</a> for a Fedora Project account if you haven't already. Do note that you must sign a Contributor License Agreement with the Fedora Project in order to contribute code."
@@ -95,7 +97,7 @@ msgstr ""
 
 #: data/content/faq.html:21
 msgid "How can I publish archive releases (tgz, zip, etc) for my project?"
-msgstr ""
+msgstr "Πώς μπορώ να δημοσιοποιήσω εκδόσεις αρχείου (tgz, zip, etc) για το έργο μου? "
 
 #: data/content/faq.html:22
 msgid "Create the archive on your workstation and run <code>scp myProject-0.1.tar.gz fedorahosted.org:&lt;Project Name&gt;</code>. The archive will be located under <a href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>"
@@ -146,7 +148,6 @@ msgid "Available Projects"
 msgstr "Διαθέσιμα έργα"
 
 #: data/content/index.html:12
-#, fuzzy
 msgid "Display all projects"
 msgstr "Διαθέσιμα έργα"
 
@@ -174,15 +175,15 @@ msgstr "Auth URL"
 
 #: data/content/index.html:33
 msgid "Right-click and copy the anonymous VCS URI to your clipboard"
-msgstr "Κάντε δεξί κλικ και αντιγράψτε το URI του VCS στο clipboard σας"
+msgstr "Κάντε δεξί κλικ και αντιγράψτε το ανώνυμο URI του VCS στο clipboard σας"
 
 #: data/content/index.html:34
 msgid "Right-click and copy the authorized VCS URI to your clipboard"
-msgstr "Κάντε δεξί κλικ και αντιγράψτε το URI του VCS στο clipboard σας"
+msgstr "Κάντε δεξί κλικ και αντιγράψτε το εξουσιοδοτημένο URI του VCS στο clipboard σας"
 
 #: data/content/index.html:37
 msgid "No projects registered in this group"
-msgstr ""
+msgstr "Δεν υπάρχουν έργα σε αυτήν την ομάδα"
 
 #: data/content/new.html:7
 #, fuzzy
@@ -245,9 +246,8 @@ msgid "We will always do our best to contact missing developers and ensure that 
 msgstr ""
 
 #: data/templates/foot.html:9
-#, fuzzy
 msgid "&copy; 2009 Red Hat, Inc. and others.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
-msgstr "Πνευματικά δικαιώματα &copy; 2009 Red Hat, Inc. και άλλοι.  Με την επιφύλαξη κάθε δικαιώματος.  Παρακαλούμε στείλετε οποιαδήποτε σχόλια ή διορθώσεις στην <a href=\"mailto:webmaster@fedoraproject.org\">ομάδα ιστότοπων</a>."
+msgstr "&copy; 2009 Red Hat, Inc. και άλλοι. Παρακαλούμε στείλετε οποιαδήποτε σχόλια ή διορθώσεις στην <a href=\"mailto:webmaster@fedoraproject.org\">ομάδα ιστότοπων</a>."
 
 #: data/templates/foot.html:12
 msgid "The Fedora Project is maintained and driven by the community and sponsored by Red Hat.  This is a community maintained site.  Red Hat is not responsible for content."
