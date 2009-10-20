@@ -11,14 +11,15 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2009-10-07 14:43-0400\n"
-"PO-Revision-Date: 2009-09-28 11:26+0800\n"
+"PO-Revision-Date: 2009-10-20 10:41+0800\n"
 "Last-Translator: TianShixiong <tiansworld@gmail.com>\n"
 "Language-Team: Chinese/Simplified <i18n-translation@lists.linux.net.cn>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: data/content/410.html:7 data/content/index.html:7
+#: data/content/410.html:7
+#: data/content/index.html:7
 msgid "Hosted Projects - Fedora Hosted"
 msgstr "驻留的项目 - Fedora Hosted"
 
@@ -50,7 +51,8 @@ msgstr "你新建一个项目只要发送一个<a href=\"new\">work ticket</a>�
 msgid "FAQs - Fedora Hosted"
 msgstr "FAQs - Fedora Hosted"
 
-#: data/content/faq.html:12 data/templates/sidebar.html:13
+#: data/content/faq.html:12
+#: data/templates/sidebar.html:13
 msgid "Frequently-Asked Questions"
 msgstr "常见问题解答"
 
@@ -112,11 +114,11 @@ msgstr "在任何人能够clone/push这个新的仓库前，必须用这个命�
 
 #: data/content/faq.html:27
 msgid "How do I get permission to commit to a project?"
-msgstr ""
+msgstr "怎样获得提交项目的权限？"
 
 #: data/content/faq.html:28
 msgid "You should <a href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for the commit group of the project, which should be <code>&lt;scm&gt;&lt;project&gt;</code>, e.g. for the desktop-effects project, apply to the <code>gitdesktop-effects</code> group."
-msgstr ""
+msgstr "您应该<a href=\"https://admin.fedoraproject.org/accounts/group/list\">加入</a>项目的提交小组，应该为<code>&lt;scm&gt;&lt;project&gt;</code>，例如是桌面效果项目，应加入<code>gitdesktop-effects</code>小组。"
 
 #: data/content/faq.html:29
 msgid "While I wait for my repository to be created, can I work on my code elsewhere?"
@@ -128,11 +130,11 @@ msgstr "当然。访问<a href=\"http://fedoraproject.org/wiki/Infrastructure/fe
 
 #: data/content/faq.html:31
 msgid "Why does hg tells me the repository doesn't exist even though I know I have the correct URL?"
-msgstr ""
+msgstr "尽管确定URL地址正确，为什么hg仍提示仓库不存在？"
 
 #: data/content/faq.html:32
 msgid "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a delimiter between hostname and path and a second \"/\" as the root of the filesystem path.  For instance, if you're accessing the repository for authconfig you need to use \"hg clone ssh://hg.fedoraproject.org//hg/authconfig\""
-msgstr ""
+msgstr "可惜hg不使用真实URL。您需要使用一个\"/\"做为主机名和路径的分隔符，另一个\"/\"做为文件系统路径的根目录。例如，您想访问authconfig仓库，您应当输入 \"hg clone ssh://hg.fedoraproject.org//hg/authconfig\""
 
 #: data/content/index.html:10
 msgid "Available Projects"
@@ -206,7 +208,8 @@ msgstr "使用下面的模板来填写申请的所有描述："
 msgid "Terms of Use - Fedora Hosted"
 msgstr "使用条款 - Fedora Hosted"
 
-#: data/content/terms.html:12 data/templates/sidebar.html:14
+#: data/content/terms.html:12
+#: data/templates/sidebar.html:14
 msgid "Terms of Use"
 msgstr "使用条款"
 
@@ -281,3 +284,4 @@ msgstr "资助者"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "由ServerBeach资助"
+
