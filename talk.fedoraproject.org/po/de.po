@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tfpo static website\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-09-25 13:02-0500\n"
+"POT-Creation-Date: 2009-10-23 13:04-0400\n"
 "PO-Revision-Date: 2009-09-29 10:20+0100\n"
 "Last-Translator: Fabian Affolter <fab@fedoraproject.org>\n"
 "Language-Team: Fedora Translation <fedora-trans-de@redhat.com>\n"
@@ -105,13 +105,11 @@ msgstr "trac-Instanz"
 msgid "Sub-project"
 msgstr "Unterprojekt"
 
-#: data/content/conference.html:19
-#: data/content/conference.html:59
+#: data/content/conference.html:19 data/content/conference.html:59
 msgid "Extension"
 msgstr "Erweiterung"
 
-#: data/content/conference.html:20
-#: data/content/conference.html:60
+#: data/content/conference.html:20 data/content/conference.html:60
 msgid "SIP Address (for soft phones)"
 msgstr "SIP-Adresse (für Softphones)"
 
@@ -176,8 +174,7 @@ msgstr "Konferenz-Raum 4"
 msgid "FAQs - Fedora Talk"
 msgstr "FAQs - Fedora Talk"
 
-#: data/content/faq.html:12
-#: data/templates/sidebar.html:14
+#: data/content/faq.html:12 data/templates/sidebar.html:14
 msgid "Frequently-Asked Questions"
 msgstr "Häufig gestellte Fragen"
 
@@ -226,8 +223,7 @@ msgstr "Jetzt anrufen!"
 msgid "Welcome to Fedora Talk.  Remember to enable VoIP via your Fedora Account System account:"
 msgstr "Willkommen beim Fedora Talk. Vergessen Sie nicht, VoIP über Ihren Zugang zum Fedora Account System zu aktivieren: "
 
-#: data/content/index.html:12
-#: data/content/usage.html:12
+#: data/content/index.html:12 data/content/usage.html:12
 msgid "Using Fedora Talk"
 msgstr "Fedora Talk benutzen"
 
@@ -363,113 +359,114 @@ msgstr "Ekiga"
 msgid "Open Ekiga. Cancel the druid (if any). You will get a screen like this."
 msgstr ""
 
-#: data/content/usage.html:25
+#: data/content/usage.html:24
 #, fuzzy
 msgid "Ekiga main screen"
 msgstr "Ekiga (folgt bald)"
 
-#: data/content/usage.html:27
-msgid "Goto Menu -> Edit -> Accounts. You have this."
+#: data/content/usage.html:25
+#, fuzzy
+msgid "Goto Menu → Edit → Accounts. You have this."
 msgstr "Gehen Sie zu Menü -> Bearbeiten -> Konten. Sie werden dies erhalten."
 
-#: data/content/usage.html:29
+#: data/content/usage.html:26
 msgid "Ekiga accounts window"
 msgstr "Ekiga-Kontofenster"
 
-#: data/content/usage.html:31
+#: data/content/usage.html:27
 msgid "Edit and fill the details"
 msgstr "Bearbeiten und ausfüllen der Details"
 
-#: data/content/usage.html:33
+#: data/content/usage.html:28
 msgid "Ekiga edit accounts screen"
 msgstr "Ekiga-Kontobearbeitungsfenster"
 
-#: data/content/usage.html:35
+#: data/content/usage.html:30
 msgid "Name: Fill in whatever name this account should have in the list."
 msgstr "Name: Geben Sie bitte einen Namen für das Konto ein."
 
-#: data/content/usage.html:36
+#: data/content/usage.html:31
 msgid "Registrar: fedoraproject.org"
 msgstr "Registrar: fedoraproject.org"
 
-#: data/content/usage.html:37
-msgid "User: FAS username (My username in FAS is heffer, so for me it is \"heffer\")."
-msgstr "Benutzer: FAS-Benutzername (Mein Benutzername ist im FAS ist heffer, so ist es für mich \"heffer\")."
+#: data/content/usage.html:32
+msgid "User: Your FAS username — this is what you use to log into the wiki or the Fedora Accounts System."
+msgstr ""
 
-#: data/content/usage.html:38
+#: data/content/usage.html:33
 msgid "Authentication User: leave this empty"
 msgstr "Authentication User: Lassen Sie dies leer"
 
-#: data/content/usage.html:39
+#: data/content/usage.html:34
 msgid "Password: The password you set in the VoIP section in FAS. (Note that this not necessarily the same as your FAS password)"
 msgstr "Passwort: Das Passwort, welches Sie im VoIP-Abschnitt im FAS angegeben ist. (Beachten Sie, dass dies nicht zwangläufig das gleiche Passwort ist wie Ihr FAS-Passwort)"
 
-#: data/content/usage.html:40
+#: data/content/usage.html:35
 msgid "Timeout: Set to whatever feels right to you. Otherwise just leave the default."
 msgstr ""
 
-#: data/content/usage.html:41
-msgid "Enable account: You definitely want to do that :-)"
-msgstr "Konto aktivieren: Sie müssen Sie definitiv :-)"
+#: data/content/usage.html:36
+msgid "Enable account: Be sure this is checked!"
+msgstr ""
 
-#: data/content/usage.html:44
+#: data/content/usage.html:38
 msgid "When selecting \"OK\", you will get back the account screen. You can check if everything worked out well by checking the status in the \"Status\" column."
 msgstr ""
 
-#: data/content/usage.html:46
+#: data/content/usage.html:39
 msgid "Ekiga completed accounts window"
 msgstr ""
 
-#: data/content/usage.html:49
+#: data/content/usage.html:40
 msgid "You are done. You can enter sip:extension or sip:fasusername@fedoraproject.org to call. You can find your extension in the VoIP section of FAS."
 msgstr ""
 
-#: data/content/usage.html:51
+#: data/content/usage.html:42
 msgid "Testing the setup"
 msgstr "Die Einrichtung testen"
 
-#: data/content/usage.html:52
+#: data/content/usage.html:43
 #, fuzzy
 msgid "Perhaps the most difficult aspect of VOIP for new users is troubleshooting issues.  Please see <a href=\"./troubleshooting\">troubleshooting</a> for more help.  The best way to test is to call one of the actual dial in numbers listed on the <a href=\"/\">main page</a> and dial your own extension.  Users will be able to hear what they sound like on both ends and determine if there is an echo, static, or other issue."
 msgstr "Möglicherweise ist die Fehlersuche für neue Benutzer von VoIP die schwierigste Aufgabe. Bitte lesen Sie <a href=\"/troubleshooting\">Fehlersuche</a> für weitere Informationen. Der beste Weg für eine Prüfung ist, eine der aktuellen Einwahlnummern von der <a href=\"/\">Homepage</a> zu verwenden und die eigene Durchwahl anzurufen. Die Benutzer sind dann in der Lage, zu hören, wie sie an beiden Enden klingen und festzustellen, ob es ein Echo oder andere Probleme gibt."
 
-#: data/content/usage.html:53
+#: data/content/usage.html:44
 msgid "Tips"
 msgstr "Tipps"
 
-#: data/content/usage.html:55
+#: data/content/usage.html:46
 msgid "People without a mic are encouraged to join meetings and ask questions via irc."
 msgstr ""
 
-#: data/content/usage.html:56
+#: data/content/usage.html:47
 msgid "Those looking to talk or hold meetings on the conference system are encouraged to get at least headphones and a microphone."
 msgstr ""
 
-#: data/content/usage.html:57
+#: data/content/usage.html:48
 msgid "Use the mute that comes with your client (ekiga, linphone, twinkle, etc). It will be better then muting your mic."
 msgstr ""
 
-#: data/content/usage.html:58
+#: data/content/usage.html:49
 msgid "Don't forget to disconnect after you're done! No one wants to hear you watching TV that night :)"
 msgstr ""
 
-#: data/content/usage.html:59
+#: data/content/usage.html:50
 msgid "Do test your connection in sip:infrastructure@fedoraproject.org. Ask someone in #fedora-admin to connect and verify your settings."
 msgstr ""
 
-#: data/content/usage.html:60
+#: data/content/usage.html:51
 msgid "Do use mute when you are not talking (it is preferred you use mute on the sip client and not through other means unless you are confident in your settings.  It is possible for your sound system to loop back into itself.)"
 msgstr ""
 
-#: data/content/usage.html:61
+#: data/content/usage.html:52
 msgid "Do pay attention when you join."
 msgstr "Geben Sie acht, wenn Sie betreten."
 
-#: data/content/usage.html:62
+#: data/content/usage.html:53
 msgid "Do not assume your equipment works"
 msgstr ""
 
-#: data/content/usage.html:63
+#: data/content/usage.html:54
 msgid "If you cannot connect to sip:infrastructure@fedoraproject.org also try sip:infrastructure@talk.fedoraproject.org"
 msgstr "Wenn Sie sich nicht mit sip:infrastructure@fedoraproject.org verbinden können, versuchen Sie auch sip:infrastructure@talk.fedoraproject.org"
 
@@ -541,3 +538,8 @@ msgstr "Hosting-Sponsor"
 msgid "Sponsored by ServerBeach"
 msgstr "Gesponsert von ServerBeach"
 
+#~ msgid "User: FAS username (My username in FAS is heffer, so for me it is \"heffer\")."
+#~ msgstr "Benutzer: FAS-Benutzername (Mein Benutzername ist im FAS ist heffer, so ist es für mich \"heffer\")."
+
+#~ msgid "Enable account: You definitely want to do that :-)"
+#~ msgstr "Konto aktivieren: Sie müssen Sie definitiv :-)"

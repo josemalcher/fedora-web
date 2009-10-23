@@ -19,35 +19,26 @@
     <h3>${_('Twinkle')}</h3>
     <p>${Markup(_('There is a &lt;a href="http://fedorapeople.org/groups/web/fedoratalk-twinkle-screencast.ogg"&gt;useful video tutorial&lt;/a&gt; for configuring Twinkle with Fedora Talk. Useful content may be added to the &lt;a href="http://fedoraproject.org/wiki"&gt;Fedora Project wiki&lt;/a&gt;, possibly even by &lt;em&gt;you&lt;/em&gt;.'))}</p>
     <h3>${_('Ekiga')}</h3>
-	<ul>
-		<li>${_('Open Ekiga. Cancel the druid (if any). You will get a screen like this.')}</li>
-	</ul>
-	<p><img alt="${_('Ekiga main screen')}" src="./static/images/ekiga_1_main.png" width="260" height="317" border="0" /></p>
-	<ul>
-		<li>${_('Goto Menu -&gt; Edit -&gt; Accounts. You have this.')}</li>
-	</ul>
-	<p><img alt="${_('Ekiga accounts window')}" src="./static/images/ekiga_2_account.png" width="385" height="291" border="0" /></p>
-	<ul>
-		<li>${_('Edit and fill the details')}</li>
-	</ul>
-	<p><img alt="${_('Ekiga edit accounts screen')}" src="./static/images/ekiga_3_edit_accounts.png" width="330" height="317" border="0" /></p>
 	<ol>
-		<li>${_('Name: Fill in whatever name this account should have in the list.')}</li>
-		<li>${_('Registrar: fedoraproject.org')}</li>
-		<li>${_('User: FAS username (My username in FAS is heffer, so for me it is "heffer").')}</li>
-		<li>${_('Authentication User: leave this empty')}</li>
-		<li>${_('Password: The password you set in the VoIP section in FAS. (Note that this not necessarily the same as your FAS password)')}</li>
-		<li>${_('Timeout: Set to whatever feels right to you. Otherwise just leave the default.')}</li>
-		<li>${_('Enable account: You definitely want to do that&nbsp;:-)')}</li>
-	</ol>
-	<ul>
-		<li>${_('When selecting "OK", you will get back the account screen. You can check if everything worked out well by checking the status in the "Status" column.')}</li>
-	</ul>
-	<p><img alt="${_('Ekiga completed accounts window')}" src="./static/images/ekiga_4_done_account.png" width="385" height="291" border="0" />
-	</p>
-	<ul>
+		<li>${_('Open Ekiga. Cancel the druid (if any). You will get a screen like this.')}<br />
+		<img alt="${_('Ekiga main screen')}" src="./static/images/ekiga_1_main.png" width="260" height="317" border="0" /></li>
+		<li>${_('Goto Menu &rarr; Edit &rarr; Accounts. You have this.')}<br />
+		<img alt="${_('Ekiga accounts window')}" src="./static/images/ekiga_2_accounts.png" width="385" height="291" border="0" /></li>
+		<li>${_('Edit and fill the details')}<br />
+		<img alt="${_('Ekiga edit accounts screen')}" src="./static/images/ekiga_3_edit_accounts.png" width="330" height="317" border="0" />
+		<ul>
+			<li>${_('Name: Fill in whatever name this account should have in the list.')}</li>
+			<li>${_('Registrar: fedoraproject.org')}</li>
+			<li>${_('User: Your FAS username &mdash; this is what you use to log into the wiki or the Fedora Accounts System.')}</li>
+			<li>${_('Authentication User: leave this empty')}</li>
+			<li>${_('Password: The password you set in the VoIP section in FAS. (Note that this not necessarily the same as your FAS password)')}</li>
+			<li>${_('Timeout: Set to whatever feels right to you. Otherwise just leave the default.')}</li>
+			<li>${_('Enable account: Be sure this is checked!')}</li>
+		</ul></li>
+		<li>${_('When selecting "OK", you will get back the account screen. You can check if everything worked out well by checking the status in the "Status" column.')}<br />
+		<img alt="${_('Ekiga completed accounts window')}" src="./static/images/ekiga_4_done_account.png" width="385" height="291" border="0" /></li>
 		<li>${_('You are done. You can enter sip:extension or sip:fasusername@fedoraproject.org to call. You can find your extension in the VoIP section of FAS.')}</li>
-	</ul>
+	</ol>
     <h2>${_('Testing the setup')}</h2>
     <p>${Markup(_('Perhaps the most difficult aspect of VOIP for new users is troubleshooting issues.  Please see &lt;a href="./troubleshooting"&gt;troubleshooting&lt;/a&gt; for more help.  The best way to test is to call one of the actual dial in numbers listed on the &lt;a href="/"&gt;main page&lt;/a&gt; and dial your own extension.  Users will be able to hear what they sound like on both ends and determine if there is an echo, static, or other issue.'))}</p>
     <h2>${_('Tips')}</h2>
