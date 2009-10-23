@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Fedora Talk')}</title>
+  </head>
+  <body>
+    <h2>${_('Account Setup')}</h2>
+    <p>${_('To setup your Fedora Talk VoIP information in the Fedora Accounts System, follow the procedure found here:')} <a href='http://talk.fedoraproject.org/access'>http://talk.fedoraproject.org/access</a></p>
+    <p>${_('Remember to use a password that is at least six characters in length, and ensure it is different from your regular FAS password.')}</p>
+    <h2>${_('Sound Preferences')}</h2>
+    <p>${_('Prior to setting up a VoIP client program, configure your sound input and output.  Right-click on the sound volume applet in the notification area, and choose Sound Preferences.  In the resulting dialog select the Input and Output tabs, unmute the device in each, and ensure that the input device is registering sound from your voice.')}</p>
+    <!-- [[sound-prefs-input-levels.png]] -->
+  </body>
+</html>
