@@ -11,9 +11,45 @@
   </head>
   <body>
     <h2>${_('About Spins')}</h2>
-    <h3>${_('Different people, different tastes... diferent Fedoras.')}</h3>
-    <p>Nam adipiscing nisl sit amet sapien egestas cursus. Pellentesque quis nunc vel eros eleifend venenatis eget nec risus. Cras porta mauris pellentesque ligula ultricies ullamcorper. Praesent et dolor nec turpis condimentum porttitor eget quis sapien. Curabitur auctor sagittis tempor. Sed dignissim varius justo, ullamcorper auctor ipsum lacinia quis. Proin ut blandit purus. Maecenas in dolor sed orci tristique ornare id in turpis. Proin aliquet scelerisque nibh sit amet venenatis. Proin cursus porttitor odio, in semper odio porttitor nec. Integer et lacus sem, eu vulputate eros. Maecenas sit amet diam orci. Integer mauris arcu, vehicula viverra fringilla et, laoreet quis dui. Suspendisse feugiat rutrum elit, vel ultricies eros egestas nec. Nullam vel risus eget augue dignissim posuere. Sed sit amet eros erat, euismod mattis dui.</p>
-<p>Nulla molestie faucibus leo, nec rhoncus diam tempus eget. Sed ac turpis ut nunc auctor sodales non vel magna. Vestibulum gravida ultrices libero dictum euismod. Nunc euismod, erat eu sodales fringilla, risus ipsum sollicitudin metus, in pellentesque est felis ut erat. Donec sed libero lorem, sed molestie metus. Morbi lobortis leo non urna sodales auctor. Curabitur ornare condimentum posuere. In hac habitasse platea dictumst. Duis facilisis venenatis scelerisque. Pellentesque a condimentum magna. Pellentesque condimentum felis non felis hendrerit ut lobortis sem consequat. Aliquam erat volutpat. Suspendisse potenti. </p>
+    <h4>${_('Different people, different tastes... diferent Fedoras.')}</h4>
+    <p>What is a spin? Fedora spins are alternate versions of  Fedora, tailored for various types of users  via 
+hand-picked application sets and other customizations.</p>
+	<p><img src="/static/images/djs.png" class="within-text" />For example, the Fedora Games spin is aimed at providing gamers with the ultimate set of free &amp; open source games, out of the box. The Fedora Electronic Lab consists of a hand-picked set of free &amp; open source tools and applications for high-end hardware design and simulation.</p>
+	<p>Spins first became available with the release of Fedora 7 in May 2007. The spin creation process as well as maintenance of spins is managed by the Fedora Spins SIG.</p>
+	<p>Which Fedora is for you? Find out by browsing our directory of spins and trying one out!</p>
+	<h4>How do you use a spin?</h4>
+	<p>Using the ISO file provided for the spin you're interested in, you can create a CD or DVD that will boot into the spin when you insert it into a computer and turn it on or reboot. Alternatively, using that same ISO file, you can also create a bootable USB stick which will also boot into the spin when you insert it into a computer and turn it on or reboot.</p>
+	<p>One thing to remember when you run a spin off of a CD or DVD is that as you use the system, any additional applications you install will not be there when you reboot your computer - there isn't any way to work around this because you cannot write out to bootable CD or DVD media. Additionally, any files you save will be lost when you reboot because Fedora runs off of the media, it doesn't access your hard drive.. When using CD or DVD bootable spins, you should always make sure you save your files to an external device such as a USB key or USB hard drive. (Learn more about creating and using bootable CD or DVD media for spins here.)</p>
+	<p>When you use a USB stick to boot your spin, you have an extra option to save some of the disk space on the USB stick as permanent storage. If you choose to create the media for your spin this way, then any applications you've install on your running spin, and any files you save to disk will still be present when you reboot your computer, as long as you don't go over the amount of available free space on your USB stick. (Learn more about creating and using bootable USB sticks for spins here.)</p>
+	<p>Whether you've decided to use CD, DVD, or USB media to run your spin, you can choose to run the spin off of the media without affecting your computer's hard drive, or you can use it to install Fedora directly to your hard drive.</p>
+	<h4>Why use a spin?</h4>
+	<p>There are a few common reasons Fedora users use spins:</p>
+	<ul class="qa-list">
+		<li>Use a pre-installed selection of software to aid in a particular task right away</li>
+		<p>Some Fedora spins are customized to be used for a specialized task. The Fedora Games Spin and the Fedora Electronic Lab are good examples of this kind of spin. There are a lot of packages in Fedora, and it can be time-consuming to look up and install all the software you might need for a particular task. The creators of these kind of spins have done all this legwork for you already, so if you run one of these spins, the software you need will already be installed.</p>
+		<li>Use a pre-installed desktop environment</li>
+		<p>The default desktop environment of Fedora is GNOME, but if you prefer an alternative desktop environment such as KDE or XFCE, you can download a spin for your preferred desktop environment and use that to install Fedora, pre-configured for the desktop environment of your choice.</p>
+		<li>Repair &amp; Recovery</li>
+		<p>Because spins do not require hard drive access to run, you can use them if you experience hard drive failure or a operating system failure and want to try to try recover files off of your disk. You can also use the spin media to use your computer while you wait for your replacement hard drive to arrive in the mail!</p>
+		<li>Try something new or demo something, no-risk</li>
+		<p>Many people download and run spins off of live media so they can try out new software without having to completely reinstall their system. For example, if you'd like to try out a new desktop environment, you can run the appropriate spin's live media and see if you like it without risk to your current computer's setup. You can also use spins on a friend's computer to show them how cool Fedora is without them needing to do a full install or lose their files! (And later, when you've convinced them to do a full install, they can use the spin media to install straight to their hard drive. :) )</p>
+	</ul>
+	<h4>How do I create my own spin?</h4>
+	<p>More information on creating spins is available on the Fedora wiki.</p>
+	<h4>More Resources on Spins</h4>
+	<p>Using Spins and General Information</p>
+	<ul>
+		<li>Fedora reaching out to new niches by Jake Edge on LWN.net</li>
+		<li>Interview: Jeremy Katz on Fedora Live CDs by Jonathan Roberts on Red Hat Magazine</li>
+		<li>Customized spins of Fedora by Max Spevack on Red Hat Magazine</li>
+	</ul>
+	<p>Creating Spins</p>
+	<ul>
+		<li>How to Create a Live CD  - steps to create and use a Live CD</li>
+		<li>Remixing Fedora 7 - by Max Spevack on Red Hat Magazine; walks through the tools available to create spins.</li>
+		<li>Fedora Spins SIG - the Spins SIG is a good resource for learning more about the spin creation process.</li>
+		<li>Infrastructure/Custom Spins - steps to get your spin listed with other spins.</li>
+	</ul>
 
   </body>
 </html>
