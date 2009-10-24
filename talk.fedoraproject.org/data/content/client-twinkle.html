@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Client - Fedora Talk Twinkle')}</title>
+    <style type="text/css">
+    </style>
+  </head>
+  <body>
+    <h2>${_('Configuring Twinkle for Fedora Talk')}</h2>
+
+        <p>${Markup(_('There is a &lt;a href="http://fedorapeople.org/groups/web/fedoratalk-twinkle-screencast.ogg"&gt;useful video tutorial&lt;/a&gt; for configuring Twinkle with Fedora Talk. Useful content may be added to the &lt;a href="http://fedoraproject.org/wiki"&gt;Fedora Project wiki&lt;/a&gt;, possibly even by &lt;em&gt;you&lt;/em&gt;.'))}</p> 
+        <ol>
+            <li>${_('Install the twinkle package by running the following command:')}<br />
+                  <code>su -c 'yum install twinkle'</code></li>
+                 <p> Or use PackageKit</p>
+               <ol>
+                  <li> From the main menu, select System &rarr; Administration &rarr; Add/Remove Software</li>
+                  <li> Type "twinkle" into the "find" box and click find</li>
+                  <li> Check the box for the "twinkle" package</li>
+                  <li> Click "Apply"</li>
+               </ol>
+            <li> Select Applications &rarr; Internet &rarr; Twinkle from the main menu</li>
+            <li> Select "Ok" to create a profile </li>
+	       <p><img alt="${_('Twinkle profile editor')}" src="./static/images/twinkle-before-using.png"  border="0" /></p>
+
+<p>Recommend the profile editor as it's pretty simple, but the flow here shows the wizard :)</p>
+            <li> Select "Wizard"</li> 
+	       <p><img alt="${_('Twinkle profile wizzard')}" src="./static/images/wizard-option.png"  border="0" /></p>
+
+            <li> Select "Profile Editor"</li> 
+	       <p><img alt="${_('Twinkle profile editor')}" src="./static/images/twinkle-profile-option.png"  border="0" /></p>
+            <li>Give the profile a name, such as "FedoraTalk" (spaces are not allowed)</li> 
+	       <p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-name.png" border="0" /></p>
+        </ol>
+        
+<h3>${_('Wizard Workflow')}</h3>
+    <ol>
+        <li>Fill in the following information:<br />
+        <img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-wizard-setup.png"  border="0" />
+        <ul>
+            <li>SIP service provider: Other</li>
+            <li>Your Name (optional): Firstname Lastname</li>
+            <li>User Name: FAS Account name</li>
+            <li>Domain: talk.fedoraproject.org</li>
+            <li>Authentication Name: FAS Account name (If you want password saved locally)</li>
+            <li>Password: VOIP Password (this can be found in your fas account and is NOT your FAS account password) Choose OK</li>
+        </ul></li>
+        <li>Click OK</li>
+        <li>A warning will appear indicating that system settings can be adjusted. Choose OK
+        <img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-settings-alert.png"  border="0" /></li>
+        <li>Select the "SIP Server" icon in left column and fill in the following information:</li>
+        <ul>
+            <li>Registrar: talk.fedoraproject.org (This defaults from the domain so doesn't need to be entered.)</li>
+        </ul>
+    </ol>
+
+<h3>${_('Profile Editor Workflow')}</h3>
+<p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit-alt.png"  border="0" /></p>
+<p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit.png"  border="0" /></p>
+<ol>
+    <li>USER Fill in the following information:
+        <ul>
+            <li>SIP Account</li>
+            <li>Your Name (optional): Firstname Lastname</li>
+            <li>User Name: FAS Account name</li>
+            <li>Domain: talk.fedoraproject.org</li>
+        </ul>
+    </li>
+    <li>SIP Authentication
+        <ul>
+            <li>Realm (optional): LEAVE BLANK</li>
+            <li>Authentication name: FAS Account name</li>
+            <li>Password: VOIP Password (this can be found in your fas account and is NOT your FAS account password)</li>
+        </ul>
+    </li>
+    <li>SIP SERVER Fill in the following information
+        <img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit-sip.png"  border="0" />
+        <ul>
+            <li>Registrar: talk.fedoraproject.org (You can leave this blank.)</li>
+            <li>Choose OK</li>
+        </ul>
+    </li>
+    <li>To receive a call you must be registered, this should happen automatically if the above settings are correct.
+        <ul>
+            <li>To verify your registration click on "Registration/Show Registrations"
+            <img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-main-show-registrations.png"  border="0" /></li>
+            <li>your firewall should allow inbound connections on port 5060</li>
+        </ul>
+    </li>
+    <li>Verify that your audio setup is working by calling the Echo Test line on the Fedora Talk system</li>
+    <li><b>FIXME: link to ftalk-verify-setup document</b></li>
+</ol>
+
+  </body>
+</html>
