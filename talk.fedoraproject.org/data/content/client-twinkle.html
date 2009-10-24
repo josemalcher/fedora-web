@@ -35,29 +35,29 @@
 	    <p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-name.png" border="0" /></p>
 	  </li>
 <!--<p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit-alt.png"  border="0" /></p>-->
-    <li>
-      <p>${_('Edit the profile details as shown below.')}</p>
-      <p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit.png"  border="0" /></p>
-      <p>${_('Select "User" in the left pane and fill in the following information:')}</p>
-      <ul>
-        <li>
-	  <p>${_('In the "SIP Account" section complete these entries:')}</p>
-	  <ul>
-            <li>${Markup(_('Your Name (optional): &lt;em&gt;Firstname Lastname&lt;/em&gt;'))}</li>
-            <li>${Markup(_('User Name: &lt;em&gt;FAS Account name&lt;/em&gt;'))}</li>
-            <li>${Markup(_('Domain: &lt;em&gt;talk.fedoraproject.org&lt;/em&gt;'))}</li>
-	  </ul>
-	</li>
-	<li>
-	  <p>${_('In the "SIP Authentication" section complete these entries:')}</p>
-          <ul>
-            <li>${Markup(_('Realm (optional): &lt;em&gt;LEAVE BLANK&lt;/em&gt;'))}</li>
-            <li>${Markup(_('Authentication name: &lt;em&gt;FAS Account name&lt;/em&gt;'))}</li>
-            <li>${Markup(_('Password: &lt;em&gt;VOIP Password (this can be found in your fas account and is NOT your FAS account password)&lt;/em&gt;'))}</li>
-          </ul>
-	</li>
-      </ul>
-    </li>
+	  <li>
+	    <p>${_('Edit the profile details as shown below.')}</p>
+	    <p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit.png"  border="0" /></p>
+	    <p>${_('Select "User" in the left pane and fill in the following information:')}</p>
+	    <ul>
+              <li>
+		<p>${_('In the "SIP Account" section complete these entries:')}</p>
+		<ul>
+		  <li>${Markup(_('Your Name (optional): &lt;em&gt;Firstname Lastname&lt;/em&gt;'))}</li>
+		  <li>${Markup(_('User Name: &lt;em&gt;FAS Account name&lt;/em&gt;'))}</li>
+		  <li>${Markup(_('Domain: &lt;em&gt;talk.fedoraproject.org&lt;/em&gt;'))}</li>
+		</ul>
+	      </li><!-- SIP account subsection -->
+	      <li>
+		<p>${_('In the "SIP Authentication" section complete these entries:')}</p>
+		<ul>
+		  <li>${Markup(_('Realm (optional): &lt;em&gt;LEAVE BLANK&lt;/em&gt;'))}</li>
+		  <li>${Markup(_('Authentication name: &lt;em&gt;FAS Account name&lt;/em&gt;'))}</li>
+		  <li>${Markup(_('Password: &lt;em&gt;VOIP Password (this can be found in your fas account and is NOT your FAS account password)&lt;/em&gt;'))}</li>
+		</ul>
+	      </li><!-- SIP authentication subsection -->
+	    </ul>
+	  </li><!-- User details section -->
     <li>SIP SERVER Fill in the following information
         <img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit-sip.png"  border="0" />
         <ul>
