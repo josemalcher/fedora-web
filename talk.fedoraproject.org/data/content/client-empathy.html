@@ -13,18 +13,17 @@
       <p class="warning">Empathy currently does not work, however the cause of the issue has been found, and a fix will come soon.</p>
       <ol>
           <li>
-	    <p>${Markup(_('Install the empathy package using PackageKit. From the main menu, select System &rarr; Administration &rarr; Add/Remove Software.'))}</p>
+	    <p>${Markup(_('Install the "empathy" package using PackageKit. From the main menu, select System &rarr; Administration &rarr; Add/Remove Software.'))}</p>
 	    <p><img alt="${_('Selecting PackageKit from the main menu')}" border="0" src="/static/images/menu-pk.png"/></p>
 	    <p>${_('Type "empathy" into the "find" box and click find.  Then check the box for the "empathy" package and click "Apply."')}</p>
-	    <p><img alt="${_('Finding Packages using PackageKit')}" border="0" src="/static/images/empathy-find.png"/></p>
+	    <p><img alt="${_('Finding Packages using PackageKit')}" border="0" src="/static/images/packagekit-find-empathy.png"/></p>
 	  </li>
           <li>
             <p>${Markup(_('Next, open Empathy. From the main menu, select Applications &rarr; Internet &rarr; Empathy Instant Messenger.'))}</p>
-            <p><img alt="${_('Opening Empathy')}" border="0" src="/static/images/empathy-opening.png"/></p>
-          </li>  
-          <li>Verify that your audio setup is working by calling the Echo Test line on the Fedora Talk system</li>
-          <li><b>FIXME: link to ftalk-verify-setup document</b></li>
-     </ol>
-
+            <p><img alt="${_('Opening Empathy')}" border="0" src="/static/images/menu-empathy.png"/></p>
+          </li>
+      </ol>
+      <p>${_('You are now finished configuring your Empathy client.')}</p>
+      <p><strong><a href="./verify">${_('Test and verify your settings')}</a></strong></p>
   </body>
 </html>
