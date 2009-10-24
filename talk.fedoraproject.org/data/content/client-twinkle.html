@@ -13,29 +13,34 @@
 
         <p>${Markup(_('There is a &lt;a href="http://fedorapeople.org/groups/web/fedoratalk-twinkle-screencast.ogg"&gt;useful video tutorial&lt;/a&gt; for configuring Twinkle with Fedora Talk. Useful content may be added to the &lt;a href="http://fedoraproject.org/wiki"&gt;Fedora Project wiki&lt;/a&gt;, possibly even by &lt;em&gt;you&lt;/em&gt;.'))}</p> 
         <ol>
-            <li>${_('Install the twinkle package by running the following command:')}<br />
-                  <code>su -c 'yum install twinkle'</code></li>
-                 <p> Or use PackageKit</p>
-               <ol>
-                  <li> From the main menu, select System &rarr; Administration &rarr; Add/Remove Software</li>
-                  <li> Type "twinkle" into the "find" box and click find</li>
-                  <li> Check the box for the "twinkle" package</li>
-                  <li> Click "Apply"</li>
-               </ol>
-            <li> Select Applications &rarr; Internet &rarr; Twinkle from the main menu</li>
-            <li> Select "Ok" to create a profile </li>
-	       <p><img alt="${_('Twinkle profile editor')}" src="./static/images/twinkle-before-using.png"  border="0" /></p>
-
+          <li>
+	    <p>${Markup(_('Install the twinkle package using PackageKit. From the main menu, select System &rarr; Administration &rarr; Add/Remove Software.'))}</p>
+	    <p><img alt="${_('Selecting PackageKit from the main menu')}" border="0" src="/static/images/menu-pk.png"/></p>
+	    <p>${_('Type "twinkle" into the "find" box and click find.  Then check the box for the "twinkle" package and click "Apply."')}</p>
+	    <p><img alt="${_('Finding Twinkle using PackageKit')}" border="0" src="/static/images/packagekit-find.png"/></p>
+	  </li>
+          <li>
+	    <p>${Markup(_('Select Applications &rarr; Internet &rarr; Twinkle from the main menu.'))}</p>
+	  </li>
+          <li>
+	    <p>${_('Select "Ok" to create a profile.')}</p>
+	    <p><img alt="${_('Twinkle profile editor')}" src="./static/images/twinkle-before-using.png"  border="0" /></p>
+	  </li>
+<!--
 <p>Recommend the profile editor as it's pretty simple, but the flow here shows the wizard :)</p>
             <li> Select "Wizard"</li> 
 	       <p><img alt="${_('Twinkle profile wizzard')}" src="./static/images/wizard-option.png"  border="0" /></p>
-
-            <li> Select "Profile Editor"</li> 
-	       <p><img alt="${_('Twinkle profile editor')}" src="./static/images/twinkle-profile-option.png"  border="0" /></p>
-            <li>Give the profile a name, such as "FedoraTalk" (spaces are not allowed)</li> 
-	       <p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-name.png" border="0" /></p>
+-->
+          <li>
+	    <p>${_('Select "Profile Editor."')}</p>
+	    <p><img alt="${_('Twinkle profile editor')}" src="./static/images/twinkle-profile-option.png"  border="0" /></p>
+	  </li>
+          <li>
+	    <p>${_('Give the profile a name, such as "FedoraTalk." Spaces are not allowed.')}</p>
+	    <p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-name.png" border="0" /></p>
+	  </li>
         </ol>
-        
+<!--        
 <h3>${_('Wizard Workflow')}</h3>
     <ol>
         <li>Fill in the following information:<br />
@@ -56,9 +61,9 @@
             <li>Registrar: talk.fedoraproject.org (This defaults from the domain so doesn't need to be entered.)</li>
         </ul>
     </ol>
-
+-->
 <h3>${_('Profile Editor Workflow')}</h3>
-<p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit-alt.png"  border="0" /></p>
+<!--<p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit-alt.png"  border="0" /></p>-->
 <p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit.png"  border="0" /></p>
 <ol>
     <li>USER Fill in the following information:
