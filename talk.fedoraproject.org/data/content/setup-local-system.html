@@ -4,14 +4,15 @@
   xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="../templates/master.html" />
   <head>
-    <title>${_('Sound Preferences - Fedora Talk')}</title>
+    <title>${_('Setup Local System - Fedora Talk')}</title>
   </head>
   <body>
-    <h2>${_('Sound Preferences')}</h2>
-    <p>${_('Prior to setting up a VoIP client program, configure your sound input and output.')}</p>
+    <h2>${_('Setup Local System')}</h2>
+    <p>${Markup(_('Once you have completed the &lt;a href="./access"&gt;VoIP setup tasks&lt;/a&gt;, there are a couple local setup tasks to complete.'))}</p>
+    <h3>${_('Step 3: Sound preferences')}</h3>
     <p><img src='static/images/sound-prefs-input-levels.png' alt="${_('Sound preferences dialog')}" border="0"/></p>
     <p>${_('Right-click on the sound volume applet in the notification area, and choose Sound Preferences.  In the resulting dialog select the Input and Output tabs, unmute the device in each, and ensure that the input device is registering sound from your voice.')}</p>
-    <h2>${_('Choose a Client')}</h2>
+    <h3>${_('Step 4: Choose a client')}</h3>
     <p>${_('A number of VoIP client applications are freely available in Fedora.  Choose one of the following to continue the setup process:')}</p>
     <p><strong><a href='client-twinkle.html'>${_('Twinkle (recommended)')}</a></strong></p>
     <p><strong><a href='client-empathy.html'>${_('Empathy')}</a></strong></p>
