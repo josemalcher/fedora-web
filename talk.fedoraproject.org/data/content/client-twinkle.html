@@ -37,8 +37,8 @@
 <!--<p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit-alt.png"  border="0" /></p>-->
 	  <li>
 	    <p>${_('Edit the profile details as shown below.')}</p>
+	    <p>${_('First, select "User" in the left pane and fill in the following information:')}</p>
 	    <p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit.png"  border="0" /></p>
-	    <p>${_('Select "User" in the left pane and fill in the following information:')}</p>
 	    <ul>
               <li>
 		<p>${_('In the "SIP Account" section complete these entries:')}</p>
@@ -58,13 +58,14 @@
 	      </li><!-- SIP authentication subsection -->
 	    </ul>
 	  </li><!-- User details section -->
-    <li>SIP SERVER Fill in the following information
-        <img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit-sip.png"  border="0" />
-        <ul>
-            <li>Registrar: talk.fedoraproject.org (You can leave this blank.)</li>
-            <li>Choose OK</li>
-        </ul>
-    </li>
+    <li>
+      <p>${_('In the "SIP Server" section complete these entries:')}</p>
+      <img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit-sip.png"  border="0" />
+      <ul>
+        <li>Registrar: talk.fedoraproject.org (You can leave this blank.)</li>
+        <li>Choose OK</li>
+      </ul>
+    </li><!-- SIP server details section -->
     <li>To receive a call you must be registered, this should happen automatically if the above settings are correct.
         <ul>
             <li>To verify your registration click on "Registration/Show Registrations"
