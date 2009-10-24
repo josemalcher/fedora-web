@@ -10,72 +10,72 @@
   </head>
   <body>
     <h2>${_('Configuring Twinkle for Fedora Talk')}</h2>
-
-        <p>${Markup(_('There is a &lt;a href="http://fedorapeople.org/groups/web/fedoratalk-twinkle-screencast.ogg"&gt;useful video tutorial&lt;/a&gt; for configuring Twinkle with Fedora Talk. Useful content may be added to the &lt;a href="http://fedoraproject.org/wiki"&gt;Fedora Project wiki&lt;/a&gt;, possibly even by &lt;em&gt;you&lt;/em&gt;.'))}</p> 
-        <ol>
-          <li>
-	    <p>${Markup(_('Install the twinkle package using PackageKit. From the main menu, select System &rarr; Administration &rarr; Add/Remove Software.'))}</p>
-	    <p><img alt="${_('Selecting PackageKit from the main menu')}" border="0" src="/static/images/menu-pk.png"/></p>
-	    <p>${_('Type "twinkle" into the "find" box and click find.  Then check the box for the "twinkle" package and click "Apply."')}</p>
-	    <p><img alt="${_('Finding Twinkle using PackageKit')}" border="0" src="/static/images/packagekit-find.png"/></p>
-	  </li>
-          <li>
-	    <p>${Markup(_('Select Applications &rarr; Internet &rarr; Twinkle from the main menu.'))}</p>
-	  </li>
-          <li>
-	    <p>${_('Select "Ok" to create a profile.')}</p>
-	    <p><img alt="${_('Twinkle profile editor')}" src="./static/images/twinkle-before-using.png"  border="0" /></p>
-	  </li>
-          <li>
-	    <p>${_('Select "Profile Editor."')}</p>
-	    <p><img alt="${_('Twinkle profile editor')}" src="./static/images/twinkle-profile-option.png"  border="0" /></p>
-	  </li>
-          <li>
-	    <p>${_('Give the profile a name, such as "FedoraTalk." Spaces are not allowed.')}</p>
-	    <p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-name.png" border="0" /></p>
-	  </li>
-<!--<p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit-alt.png"  border="0" /></p>-->
+    <p>${Markup(_('There is a &lt;a href="http://fedorapeople.org/groups/web/fedoratalk-twinkle-screencast.ogg"&gt;useful video tutorial&lt;/a&gt; for configuring Twinkle with Fedora Talk. Useful content may be added to the &lt;a href="http://fedoraproject.org/wiki"&gt;Fedora Project wiki&lt;/a&gt;, possibly even by &lt;em&gt;you&lt;/em&gt;.'))}</p> 
+    <ol>
+      <li>
+	<p>${Markup(_('Install the twinkle package using PackageKit. From the main menu, select System &rarr; Administration &rarr; Add/Remove Software.'))}</p>
+	<p><img alt="${_('Selecting PackageKit from the main menu')}" border="0" src="/static/images/menu-pk.png"/></p>
+	<p>${_('Type "twinkle" into the "find" box and click find.  Then check the box for the "twinkle" package and click "Apply."')}</p>
+	<p><img alt="${_('Finding Twinkle using PackageKit')}" border="0" src="/static/images/packagekit-find.png"/></p>
+      </li>
+      <li>
+	<p>${Markup(_('Select Applications &rarr; Internet &rarr; Twinkle from the main menu.'))}</p>
+      </li>
+      <li>
+	<p>${_('Select "Ok" to create a profile.')}</p>
+	<p><img alt="${_('Twinkle profile editor')}" src="./static/images/twinkle-before-using.png"  border="0" /></p>
+      </li>
+      <li>
+	<p>${_('Select "Profile Editor."')}</p>
+	<p><img alt="${_('Twinkle profile editor')}" src="./static/images/twinkle-profile-option.png"  border="0" /></p>
+      </li>
+      <li>
+	<p>${_('Give the profile a name, such as "FedoraTalk." Spaces are not allowed.')}</p>
+	<p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-name.png" border="0" /></p>
+      </li>
+      <!--<p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit-alt.png"  border="0" /></p>-->
+      <li>
+	<p>${_('Edit the profile details as shown below.')}</p>
+	<p>${_('First, select "User" in the left pane and fill in the following information:')}</p>
+	<p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit.png"  border="0" /></p>
+	<ul>
 	  <li>
-	    <p>${_('Edit the profile details as shown below.')}</p>
-	    <p>${_('First, select "User" in the left pane and fill in the following information:')}</p>
-	    <p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit.png"  border="0" /></p>
+	    <p>${_('In the "SIP Account" section complete these entries:')}</p>
 	    <ul>
-              <li>
-		<p>${_('In the "SIP Account" section complete these entries:')}</p>
-		<ul>
-		  <li>${Markup(_('Your Name (optional): &lt;em&gt;Firstname Lastname&lt;/em&gt;'))}</li>
-		  <li>${Markup(_('User Name: &lt;em&gt;FAS Account name&lt;/em&gt;'))}</li>
-		  <li>${Markup(_('Domain: &lt;em&gt;talk.fedoraproject.org&lt;/em&gt;'))}</li>
-		</ul>
-	      </li><!-- SIP account subsection -->
-	      <li>
-		<p>${_('In the "SIP Authentication" section complete these entries:')}</p>
-		<ul>
-		  <li>${Markup(_('Realm (optional): &lt;em&gt;LEAVE BLANK&lt;/em&gt;'))}</li>
-		  <li>${Markup(_('Authentication name: &lt;em&gt;FAS Account name&lt;/em&gt;'))}</li>
-		  <li>${Markup(_('Password: &lt;em&gt;VOIP Password (this can be found in your fas account and is NOT your FAS account password)&lt;/em&gt;'))}</li>
-		</ul>
-	      </li><!-- SIP authentication subsection -->
+	      <li>${Markup(_('Your Name (optional): &lt;em&gt;Firstname Lastname&lt;/em&gt;'))}</li>
+	      <li>${Markup(_('User Name: &lt;em&gt;FAS Account name&lt;/em&gt;'))}</li>
+	      <li>${Markup(_('Domain: &lt;em&gt;talk.fedoraproject.org&lt;/em&gt;'))}</li>
 	    </ul>
-	  </li><!-- User details section -->
+	  </li><!-- SIP account subsection -->
 	  <li>
-	    <p>${_('In the "SIP Server" section complete these entries:')}</p>
-	    <img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit-sip.png"  border="0" />
+	    <p>${_('In the "SIP Authentication" section complete these entries:')}</p>
 	    <ul>
-              <li>Registrar: talk.fedoraproject.org (You can leave this blank.)</li>
-              <li>Choose OK</li>
+	      <li>${Markup(_('Realm (optional): &lt;em&gt;LEAVE BLANK&lt;/em&gt;'))}</li>
+	      <li>${Markup(_('Authentication name: &lt;em&gt;FAS Account name&lt;/em&gt;'))}</li>
+	      <li>${Markup(_('Password: &lt;em&gt;VOIP Password (this can be found in your fas account and is NOT your FAS account password)&lt;/em&gt;'))}</li>
 	    </ul>
-	  </li><!-- SIP server details section -->
-	  <li>To receive a call you must be registered, this should happen automatically if the above settings are correct.
-        <ul>
-            <li>To verify your registration click on "Registration/Show Registrations"
-            <img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-main-show-registrations.png"  border="0" /></li>
-            <li>your firewall should allow inbound connections on port 5060</li>
+	  </li><!-- SIP authentication subsection -->
+	</ul>
+      </li><!-- User details section -->
+      <li>
+	<p>${_('In the "SIP Server" section complete these entries:')}</p>
+	<img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-profile-edit-sip.png"  border="0" />
+	<ul>
+	  <li>Registrar: talk.fedoraproject.org (You can leave this blank.)</li>
+	  <li>Choose OK</li>
+	</ul>
+      </li><!-- SIP server details section -->
+      <li>
+	<p>${_('To receive a call you must be registered, this should happen automatically if the above settings are correct.')}</p>
+	<ul>
+	  <li>To verify your registration click on "Registration/Show Registrations"
+	  <img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-main-show-registrations.png"  border="0" /></li>
+	  <li>your firewall should allow inbound connections on port 5060</li>
         </ul>
-    </li>
-    <li>Verify that your audio setup is working by calling the Echo Test line on the Fedora Talk system</li>
-    <li><b>FIXME: link to ftalk-verify-setup document</b></li>
-</ol>
+      </li>
+      <li>Verify that your audio setup is working by calling the Echo Test line on the Fedora Talk system</li>
+      <li><b>FIXME: link to ftalk-verify-setup document</b></li>
+    </ol>
 
   </body>
 </html>
