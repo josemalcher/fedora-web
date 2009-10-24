@@ -64,18 +64,19 @@
 	  <li>${Markup(_('Registrar: &lt;em&gt;talk.fedoraproject.org (You can leave this blank)&lt;/em&gt;'))}</li>
 	</ul>
       </li><!-- SIP server details section -->
-      <li>${_('Select "OK" to save these settings in the profile.')}</li>
+      <li>
+	<p>${_('Select "OK" to save these settings in the profile.')}</p>
+      </li>
       <li>
 	<p>${Markup(_('To receive a call you must be registered. If you have made the changes above correctly, this happens automatically. If you have trouble, select Edit &rarr; User profile... to edit the user profile to correct the settings.'))}</p>
-	<ul>
-	  <li>To verify your registration click on "Registration/Show Registrations"
-	  <img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-main-show-registrations.png"  border="0" /></li>
-	  <li>your firewall should allow inbound connections on port 5060</li>
-        </ul>
+	<p>${_('To verify your registration click on "Registration/Show Registrations."')}</p>
+	<p><img alt="${_('Twinkle profile name')}" src="./static/images/twinkle-main-show-registrations.png"  border="0" /></p>
       </li>
-      <li>Verify that your audio setup is working by calling the Echo Test line on the Fedora Talk system</li>
-      <li><b>FIXME: link to ftalk-verify-setup document</b></li>
-    </ol>
-
+      <li>
+	<p>${_('Configure your firewall to allow inbound connections on port 5060.')}</p>
+      </li>
+    </ol><!-- End of configuration -->
+    <p>${_('You are now finished configuring your Twinkle client.')}</p>
+    <p><strong><a href="./verify">${_('Test and verify your settings')}</a></strong></p>
   </body>
 </html>
