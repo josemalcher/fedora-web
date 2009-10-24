@@ -40,12 +40,5 @@
 	<p>${_("One possible cause of this is a setting called 'SIP Registration Timeout' in your client. It is possible that there is some timeout in your firewall that differs from the SIP registration timeout, thereby causing you to lose registration with the Fedora Talk server. A reasonable value is 900 seconds (15 minutes)")}</p>
 	<h3>${_("Ekiga dialpad doesn't work")}</h3>
 	<p>${_('Try disabling silence detection in your audio configuration.  With silence detection enabled, the dialpad may not send tones properly.  Furthermore, the ekiga dialpad is prone to sending repeat tones which makes it difficult to enter PINs properly.')}</p>
-	<h3>${_("Test numbers")}</h3>
-	<p>${_('There are a variety test numbers that you can use to verify your Fedora Talk setup')}</p>
-	   <ul>
-	   <li>1001 - <a href="sip:louie@fedoraproject.org">louie</a> - ${_('Louie Louie - You should hear a female voice reciting the lyrics to Louie Louie - this is testing the ability for you to receive one way audio')}</li>
-	   <li>1002 - <a href="sip:echo@fedoraproject.orgi">echo</a> - ${_('Echo - this simply echos everything that you say back to you. This tests that two way audio is functional')}</li>
-	   <li>1003 - <a href="sip:callback@fedoraproject.org">callback</a> - ${_('When you call this number, you should hear something. When you do, hang up, and in approximately 10 seconds, the system will call you back.  This tests the registration on the Asterisk server itself.')}</li>
-	   </ul>
   </body>
 </html>
