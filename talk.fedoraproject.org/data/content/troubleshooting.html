@@ -37,6 +37,7 @@
 	<p>${_('Do not use a mic that is not on a headset - the reason for this is when you do, your mic will pick up other sounds that are in the same room, for example the sounds of you typing on the keyboard, the sound of your computer fan, etc. This makes the conference unusable for other participants. If someone reports excessive noise, please either mute your line or drop off the conference.')}</p>
 	<h3>${_("I can make calls, but not receive them")}</h3>
 	<p>${_("This generally indicates that your phone is not registered with the Asterisk server. Note that registration does not affect your ability to make calls, only to receive them. In development is a way to tell whether you are registered, and what that registration consists of, but at current, come to #fedora-admin on irc.freenode.net and we'll be more than happy to help!")}</p>
+	<p>${_("One possible cause of this is a setting called 'SIP Registration Timeout' in your client. It is possible that there is some timeout in your firewall that differs from the SIP registration timeout, thereby causing you to lose registration with the Fedora Talk server. A reasonable value is 900 seconds (15 minutes)")}</p>
 	<h3>${_("Ekiga dialpad doesn't work")}</h3>
 	<p>${_('Try disabling silence detection in your audio configuration.  With silence detection enabled, the dialpad may not send tones properly.  Furthermore, the ekiga dialpad is prone to sending repeat tones which makes it difficult to enter PINs properly.')}</p>
 	<h3>${_("Test numbers")}</h3>
