@@ -14,8 +14,8 @@
     <h3>${_("Can't connect")}</h3>
 	<p>${_('Being unable to connect is a common issue. Try the following solutions')}:</p>
 	<ul>
-		<li>${_('Disable your firewalls (If it starts working, then you need to re-configure your firewall)')}</li>
-		<li>${_('Try to connect to @talk.fedoraproject.org instead of @fedoraproject.org')}</li>
+		<li>${_('Disable your firewalls (If it starts working, then you need to re-configure your firewall) - specifically you need to allow UDP port 5060 (for SIP) and ports 10000-10500 (for RTP, the protocol that carries the actual audio)')}</li>
+		<li>${_('Try to connect to @talk.fedoraproject.org instead of @fedoraproject.org. If this works, make sure that your client is set up to use DNS SRV records')}</li>
 		<li>${_("Sometimes a client (like ekiga) might bind to an interface it shouldn't. Please verify it is using a valid and proper interface.")}
 			<ul>
 				<li>${_('Ekiga - "Edit -&gt; Preferences -&gt; Protocols -&gt; Network Settings -&gt; "Listen on".')}</li>
