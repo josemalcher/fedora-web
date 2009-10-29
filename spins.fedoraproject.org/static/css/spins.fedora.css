@@ -5,12 +5,6 @@
 	background-image: none;
 }
 
-#head
-{
-	border: 0;
-	width:960px;
-}
-
 /* end: clear all background */
 
 /* header */
@@ -23,9 +17,12 @@
 
 #head
 {
-	background-color: #3771c8;
-	margin: 20px 20px 0px 20px;
-	clear: both;
+	background-color: #337ACC;
+	margin: 20px 0px 0px 20px;
+	border: 0;
+	height: 55px;
+	-moz-border-radius-topleft: 15px;
+	-moz-border-radius-topright: 15px;
 }
 
 #head h1 a
@@ -42,8 +39,6 @@
 	position: absolute;
 	top: 30px;
 	right: 25px;
-	width: 90%;
-	margin-right: 40px;
 }
 
 #primary-nav ul
@@ -163,6 +158,11 @@
 {
 	margin-left: 5px;
 	width: 680px;
+}
+
+#content img
+{
+	margin: 0px;
 }
 
 h4 {
@@ -325,15 +325,19 @@ div.panes div {
 	background-color: #ffffaa;
 }
 
+/* Misc stuff */
+
 #interview {
 	background-color: #ececec;
 	padding: 5px;
 }
 
-/* Misc stuff */
-
 #interview a {
 	text-decoration: none;
+}
+
+#interview img {
+	padding-left: 3px;
 }
 
 .creator-interview a {
@@ -361,4 +365,12 @@ div.panes div {
 /* hacky wacky */
 .clear-both {
 	clear: both;
+}
+
+a {
+	text-decoration: none;
+}
+
+.footnote {
+	font-style: italic;
 }

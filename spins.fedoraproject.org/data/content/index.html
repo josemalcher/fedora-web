@@ -11,14 +11,12 @@
   </head>
   <body>
     <h2>${_('Meet our spins.')}</h2>
-    <p>${_('What is a spin? Fedora spins are alternate version of Fedora, tailored for various types of users via hand-picked application set or customizations.')}</p>
-
-		<!-- the tabs --> 
+    <p>${_('What is a spin? Fedora spins are alternate version of Fedora, tailored for various types of users via hand-picked application set or customizations.')} </p>
+    <p><a href="/about">${_('Learn more about spins &gt;')}</a></p>
 		<ul class="tabs"> 
 			<li><a href="#bypopularity">${_('By Popularity')}</a></li> 
 			<li><a href="#alphaorder">${_('Alphabetical Order')}</a></li> 
 		</ul> 
-		<!-- tab "panes" --> 
 		<div class="panes"> 
 			<div>
 				<table>
@@ -54,14 +52,40 @@
 							<td>Integer nisi magna, sodales et varius in, scelerisque vitae lacus.<br /><span><a href="#">Learn more &amp; download! &gt;</a></span></td>
 						</tr>
 					</tbody>
-				</table>				
+				</table>
+				<p class="footnote">${_('Spins popularity is determined by number of downloads since the most recent Fedora release')}</p>				
 			</div> 
-			<div>List of Spins in alphabetical order (table)</div> 
+			<div>
+				<table>
+					<tbody>
+						<tr>
+							<td>#4</td>
+							<td><a href="#">Electronic Lab</a> <br />185 downloads</td>
+							<td><img src="static/images/spin/fedora-electroniclab-mini.png" /></td>
+							<td>Integer nisi magna, sodales et varius in, scelerisque vitae lacus.<br /><span><a href="#">Learn more &amp; download! &gt;</a></span></td>
+						</tr>
+						<tr>
+							<td>#3</td>
+							<td><a href="#">BROffice.org</a> <br />297 downloads</td>
+							<td><img src="static/images/spin/broffice-mini.png" /></td>
+							<td>Integer nisi magna, sodales et varius in, scelerisque vitae lacus.<br /><span><a href="#">Learn more &amp; download! &gt;</a></span></td>
+						</tr>
+						<tr>
+							<td>#5</td>
+							<td><a href="#">XFCE Desktop</a> <br />45 downloads</td>
+							<td><img src="static/images/spin/xfce-mini.png" /></td>
+							<td>Integer nisi magna, sodales et varius in, scelerisque vitae lacus.<br /><span><a href="#">Learn more &amp; download! &gt;</a></span></td>
+						</tr>
+					</tbody>
+				</table>				
+
+			</div> 
 		</div>
 	<h3>${_('Meet the Spin Community')}</h3>
 	<div id="interview">
+		<img class="meet-image" src="/static/images/chitleshgoorah-community.png" />
 		<h4>${_('Chitlesh Goorah, Fedora Electoric Lab')}</h4>
-		<p><img class="meet-image" src="/static/images/blank-community.png" />${_('"At the very beginning, there was neither the intention for a Fedora Electronic Lab nor its spin. During my post-graduate studies in Micro-Nano Electronic Engineering, I needed VLSI simulation tools. I started packaging the VLSI simulation tools for Fedora, which I needed for my studies. Then MirjamWaeckerlin and my lecturers in Strasbourg, France, encouraged the concept of introducing Application-Specific Integrated Circuit (ASIC) Design Flows on Fedora, so that they can recommend to other students or use those tools themselves."')}<br />${_('&lt;a href="/community"&gt;Read more of this interview with Chiltesh &gt;&lt;/a&gt;')}</p>
+		<p>${_('"At the very beginning, there was neither the intention for a Fedora Electronic Lab nor its spin. During my post-graduate studies in Micro-Nano Electronic Engineering, I needed VLSI simulation tools. I started packaging the VLSI simulation tools for Fedora, which I needed for my studies. Then MirjamWaeckerlin and my lecturers in Strasbourg, France, encouraged the concept of introducing Application-Specific Integrated Circuit (ASIC) Design Flows on Fedora, so that they can recommend to other students or use those tools themselves."')}<br /><a href="/community">${_('Read more of this interview with Chiltesh &gt;')}</a></p>
 		<div class="clear-both" />
 	</div>
   </body>
