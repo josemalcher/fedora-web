@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: fedorahosted\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2009-10-07 14:43-0400\n"
-"PO-Revision-Date: 2009-08-06 21:26+0100\n"
+"PO-Revision-Date: 2009-10-29 21:47+0100\n"
 "Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
 "Language-Team: Serbian (sr) <fedora-trans-sr@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr "О Fedora угошћавању"
 
 #: data/content/about.html:13
 msgid "Fedora Hosted is a <a href=\"http://fedoraproject.org\">Fedora Project</a>-sponsored way for developers to host their code and collaborate online. We provide each project with source control via git, Mercurial, bzr, and others, as well as a bug tracker and wiki via Trac."
-msgstr "Fedora угошћавање је начин за програмере да сачувају свој код и сарађују на Интернету под спонзорством <a href=\"http://fedoraproject.org\">Fedora пројекта</a>. Ми снабдевамо сваки пројекат контролом изворног кода користећи git, Mercurial, bzr, и других, као и праћење грешака и вики користећи Trac."
+msgstr "Fedora угошћавање је начин за програмере да угосте свој код и сарађују на мрежи под спонзорством <a href=\"http://fedoraproject.org\">Fedora пројекта</a>. Ми снабдевамо сваки пројекат контролом изворног кода користећи git, Mercurial, bzr, и других, као и праћење грешака и вики користећи Trac."
 
 #: data/content/about.html:14
 msgid "Your new project is just a <a href=\"new\">work ticket</a> away."
@@ -59,7 +59,7 @@ msgstr "Шта је Fedora угошћавање?"
 
 #: data/content/faq.html:14
 msgid "Fedora Hosted is a project sponsored by <a href=\"http://fedoraproject.org/\">the Fedora Project</a> to allow upstream developers to host their code and collaborate online."
-msgstr "Fedora угошћавање је пројекат кога спонзорише <a href=\"http://fedoraproject.org/\">Fedora пројекат</a> за омогућавање програмерима у развоју да сачувају свој код и сарађују на Интернету."
+msgstr "Fedora угошћавање је пројекат кога спонзорише <a href=\"http://fedoraproject.org/\">Fedora пројекат</a> за омогућавање програмерима у развоју да угосте свој код и сарађују на мрежи."
 
 #: data/content/faq.html:15
 msgid "How can I request a new project?"
@@ -111,11 +111,11 @@ msgstr "Пре него што било ко може да клонира/пош
 
 #: data/content/faq.html:27
 msgid "How do I get permission to commit to a project?"
-msgstr ""
+msgstr "Како да добијем дозволу да предам код неком пројекту?"
 
 #: data/content/faq.html:28
 msgid "You should <a href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for the commit group of the project, which should be <code>&lt;scm&gt;&lt;project&gt;</code>, e.g. for the desktop-effects project, apply to the <code>gitdesktop-effects</code> group."
-msgstr ""
+msgstr "Треба да се <a href=\"https://admin.fedoraproject.org/accounts/group/list\">пријавите</a> у групу за предају тог пројекта, која би требало да буде <code>&lt;scm&gt;&lt;projekat&gt;</code>, нпр. за пројекат desktop-effects, пријавите се у групу <code>gitdesktop-effects</code>."
 
 #: data/content/faq.html:29
 msgid "While I wait for my repository to be created, can I work on my code elsewhere?"
@@ -127,11 +127,11 @@ msgstr "Наравно. Посетите <a href=\"http://fedoraproject.org/wiki
 
 #: data/content/faq.html:31
 msgid "Why does hg tells me the repository doesn't exist even though I know I have the correct URL?"
-msgstr ""
+msgstr "Зашто ми hg јавља да спремиште не постоји иако знам да имам исправни УРЛ?"
 
 #: data/content/faq.html:32
 msgid "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a delimiter between hostname and path and a second \"/\" as the root of the filesystem path.  For instance, if you're accessing the repository for authconfig you need to use \"hg clone ssh://hg.fedoraproject.org//hg/authconfig\""
-msgstr ""
+msgstr "Нажалост hg не користи истините УРЛ-ове. Морате употребити „/“ као граничник између имена домаћина и питање, и другу „/“ као корен путање система датотека.  На пример, ако приступате спремишту за authconfig треба да употребите „hg clone ssh://hg.fedoraproject.org//hg/authconfig“."
 
 #: data/content/index.html:10
 msgid "Available Projects"
@@ -167,7 +167,7 @@ msgstr "Кликните десним тастером миша и копира�
 
 #: data/content/index.html:34
 msgid "Right-click and copy the authorized VCS URI to your clipboard"
-msgstr "Кликните десним тастером миша и копирајте ауторизовани VCS УРИ на клипборд"
+msgstr "Кликните десним тастером миша и копирајте овлашћени VCS УРИ на клипборд"
 
 #: data/content/index.html:37
 msgid "No projects registered in this group"
@@ -275,7 +275,7 @@ msgstr "Језик веб странице"
 
 #: data/templates/sidebar.html:24
 msgid "Hosting Sponsor"
-msgstr "Спонзор обезбеђивања"
+msgstr "Спонзор угошћавања"
 
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
