@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-10-19 16:24-0400\n"
+"POT-Creation-Date: 2009-10-29 13:05-0400\n"
 "PO-Revision-Date: 2009-10-04 11:34+0100\n"
 "Last-Translator: Oscar Osta Pueyo <oostap@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
@@ -127,7 +127,8 @@ msgid "To add a Fedora Release counter to your own site, simply place the follow
 msgstr "Per afegir un comptador de l'alliberament de Fedora en el vostre lloc web, simplement copieu el codi següent on vulgueu que aparegui:"
 
 #: data/content/counter.html:18
-msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, hu, is, it, and pt-br are supported.  When no language is specified, English will be used."
+#, fuzzy
+msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, hu, is, it, pt_BR, ru, and tr are supported.  When no language is specified, English will be used."
 msgstr "El paràmetre lang es pot canviar per mostrar el comptador en una llengua diferent. Actualment estan suportats els valors de, en, hu, is, it, i pt-br. Per defecte s'utilitzarà l'anglès quan no se n'especifiqui cap."
 
 #: data/content/get-fedora-all.html:13 data/content/get-fedora-kde.html:11
@@ -141,18 +142,18 @@ msgstr "&#8592; Torna a la pàgina principal «Obteniu Fedora»"
 msgid "Fedora, For You."
 msgstr "Fedora, Per a vosaltres."
 
-#: data/content/get-fedora-all.html:16
+#: data/content/get-fedora-all.html:16 data/content/get-prerelease.html:14
 #, python-format
 msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
 msgstr "Després de baixar-vos una imatge ISO, <a href=\"%s/%s/verify\">comproveu-ne</a> la integritat."
 
-#: data/content/get-fedora-all.html:17 data/content/get-prerelease.html:14
+#: data/content/get-fedora-all.html:17 data/content/get-prerelease.html:15
 msgid "Install Media"
 msgstr "Discs d'instal·lació"
 
 #: data/content/get-fedora-all.html:20 data/content/get-fedora-all.html:87
-#: data/content/get-fedora-all.html:114 data/content/get-prerelease.html:17
-#: data/content/get-prerelease.html:49 data/content/get-prerelease.html:67
+#: data/content/get-fedora-all.html:114 data/content/get-prerelease.html:18
+#: data/content/get-prerelease.html:51 data/content/get-prerelease.html:69
 msgid "BitTorrent"
 msgstr "BitTorrent"
 
@@ -160,9 +161,9 @@ msgstr "BitTorrent"
 #: data/content/get-fedora-all.html:35 data/content/get-fedora-all.html:39
 #: data/content/get-fedora-all.html:43 data/content/get-fedora-all.html:51
 #: data/content/get-fedora-all.html:60 data/content/get-fedora-all.html:78
-#: data/content/get-prerelease.html:19 data/content/get-prerelease.html:21
-#: data/content/get-prerelease.html:29 data/content/get-prerelease.html:32
-#: data/content/get-prerelease.html:40
+#: data/content/get-prerelease.html:20 data/content/get-prerelease.html:23
+#: data/content/get-prerelease.html:31 data/content/get-prerelease.html:34
+#: data/content/get-prerelease.html:42
 msgid "i386"
 msgstr "i386"
 
@@ -172,9 +173,9 @@ msgstr "i386"
 #: data/content/get-fedora-all.html:51 data/content/get-fedora-all.html:52
 #: data/content/get-fedora-all.html:53 data/content/get-fedora-kde.html:54
 #: data/content/get-fedora-ppc.html:33 data/content/get-fedora.html:50
-#: data/content/get-prerelease.html:19 data/content/get-prerelease.html:20
-#: data/content/get-prerelease.html:29 data/content/get-prerelease.html:30
-#: data/content/get-prerelease.html:31
+#: data/content/get-prerelease.html:20 data/content/get-prerelease.html:21
+#: data/content/get-prerelease.html:22 data/content/get-prerelease.html:31
+#: data/content/get-prerelease.html:32 data/content/get-prerelease.html:33
 msgid "Install DVD"
 msgstr "DVD d'instal·lació"
 
@@ -185,11 +186,11 @@ msgstr "DVD d'instal·lació"
 #: data/content/get-fedora-all.html:90 data/content/get-fedora-all.html:98
 #: data/content/get-fedora-all.html:106 data/content/get-fedora-all.html:117
 #: data/content/get-fedora-all.html:124 data/content/get-fedora-all.html:131
-#: data/content/get-prerelease.html:20 data/content/get-prerelease.html:22
-#: data/content/get-prerelease.html:30 data/content/get-prerelease.html:33
-#: data/content/get-prerelease.html:41 data/content/get-prerelease.html:52
-#: data/content/get-prerelease.html:59 data/content/get-prerelease.html:70
-#: data/content/get-prerelease.html:77
+#: data/content/get-prerelease.html:21 data/content/get-prerelease.html:24
+#: data/content/get-prerelease.html:32 data/content/get-prerelease.html:35
+#: data/content/get-prerelease.html:43 data/content/get-prerelease.html:54
+#: data/content/get-prerelease.html:61 data/content/get-prerelease.html:72
+#: data/content/get-prerelease.html:79
 msgid "x86_64"
 msgstr "x86_64"
 
@@ -197,8 +198,9 @@ msgstr "x86_64"
 #: data/content/get-fedora-all.html:37 data/content/get-fedora-all.html:41
 #: data/content/get-fedora-all.html:45 data/content/get-fedora-all.html:53
 #: data/content/get-fedora-all.html:72 data/content/get-fedora-all.html:80
-#: data/content/get-prerelease.html:23 data/content/get-prerelease.html:31
-#: data/content/get-prerelease.html:34 data/content/get-prerelease.html:42
+#: data/content/get-prerelease.html:22 data/content/get-prerelease.html:25
+#: data/content/get-prerelease.html:33 data/content/get-prerelease.html:36
+#: data/content/get-prerelease.html:44
 msgid "ppc"
 msgstr "ppc"
 
@@ -206,16 +208,16 @@ msgstr "ppc"
 #: data/content/get-fedora-all.html:28 data/content/get-fedora-all.html:39
 #: data/content/get-fedora-all.html:40 data/content/get-fedora-all.html:41
 #: data/content/get-fedora-all.html:60 data/content/get-fedora-all.html:66
-#: data/content/get-fedora-all.html:72 data/content/get-prerelease.html:21
-#: data/content/get-prerelease.html:22 data/content/get-prerelease.html:23
-#: data/content/get-prerelease.html:32 data/content/get-prerelease.html:33
-#: data/content/get-prerelease.html:34
+#: data/content/get-fedora-all.html:72 data/content/get-prerelease.html:23
+#: data/content/get-prerelease.html:24 data/content/get-prerelease.html:25
+#: data/content/get-prerelease.html:34 data/content/get-prerelease.html:35
+#: data/content/get-prerelease.html:36
 msgid "Install CDs"
 msgstr "CDs d'instal·lació"
 
 #: data/content/get-fedora-all.html:33 data/content/get-fedora-all.html:95
-#: data/content/get-fedora-all.html:121 data/content/get-prerelease.html:27
-#: data/content/get-prerelease.html:56 data/content/get-prerelease.html:74
+#: data/content/get-fedora-all.html:121 data/content/get-prerelease.html:29
+#: data/content/get-prerelease.html:58 data/content/get-prerelease.html:76
 msgid "Direct Download"
 msgstr "Baixada Directa"
 
@@ -229,19 +231,19 @@ msgstr "CDs d'instal·lació per xarxa"
 msgid "Metalinks"
 msgstr "Meta-enllaços"
 
-#: data/content/get-fedora-all.html:76 data/content/get-prerelease.html:38
+#: data/content/get-fedora-all.html:76 data/content/get-prerelease.html:40
 msgid "Jigdo"
 msgstr "Jigdo"
 
-#: data/content/get-fedora-all.html:84 data/content/get-prerelease.html:46
+#: data/content/get-fedora-all.html:84 data/content/get-prerelease.html:48
 msgid "Fedora Desktop Live Media"
 msgstr "Discs Autònoms de Fedora Desktop"
 
 #: data/content/get-fedora-all.html:89 data/content/get-fedora-all.html:97
 #: data/content/get-fedora-all.html:105 data/content/get-fedora-all.html:116
 #: data/content/get-fedora-all.html:123 data/content/get-fedora-all.html:130
-#: data/content/get-prerelease.html:51 data/content/get-prerelease.html:58
-#: data/content/get-prerelease.html:69 data/content/get-prerelease.html:76
+#: data/content/get-prerelease.html:53 data/content/get-prerelease.html:60
+#: data/content/get-prerelease.html:71 data/content/get-prerelease.html:78
 msgid "i686"
 msgstr "i686"
 
@@ -252,38 +254,38 @@ msgstr "i686"
 #: data/content/get-fedora-all.html:123 data/content/get-fedora-all.html:124
 #: data/content/get-fedora-all.html:130 data/content/get-fedora-all.html:131
 #: data/content/get-fedora-kde.html:34 data/content/get-fedora.html:30
-#: data/content/get-prerelease.html:51 data/content/get-prerelease.html:52
-#: data/content/get-prerelease.html:58 data/content/get-prerelease.html:59
-#: data/content/get-prerelease.html:69 data/content/get-prerelease.html:70
-#: data/content/get-prerelease.html:76 data/content/get-prerelease.html:77
+#: data/content/get-prerelease.html:53 data/content/get-prerelease.html:54
+#: data/content/get-prerelease.html:60 data/content/get-prerelease.html:61
+#: data/content/get-prerelease.html:71 data/content/get-prerelease.html:72
+#: data/content/get-prerelease.html:78 data/content/get-prerelease.html:79
 msgid "Live CD"
 msgstr "CD autònom"
 
-#: data/content/get-fedora-all.html:111 data/content/get-prerelease.html:64
+#: data/content/get-fedora-all.html:111 data/content/get-prerelease.html:66
 msgid "Fedora KDE Live Media"
 msgstr "Discs autònom de Fedora KDE"
 
 #: data/content/get-fedora-all.html:136 data/content/get-fedora-kde.html:64
 #: data/content/get-fedora-ppc.html:43 data/content/get-fedora.html:60
-#: data/content/get-prerelease.html:82
+#: data/content/get-prerelease.html:84
 msgid "Let me look around..."
 msgstr "Deixeu-me mirar..."
 
 #: data/content/get-fedora-all.html:138 data/content/get-fedora-kde.html:66
 #: data/content/get-fedora-ppc.html:45 data/content/get-fedora.html:62
-#: data/content/get-prerelease.html:84
+#: data/content/get-prerelease.html:86
 msgid "See all torrents"
 msgstr "Veieu tots els torrents"
 
 #: data/content/get-fedora-all.html:139 data/content/get-fedora-kde.html:67
 #: data/content/get-fedora-ppc.html:46 data/content/get-fedora.html:63
-#: data/content/get-prerelease.html:85
+#: data/content/get-prerelease.html:87
 msgid "See all mirrors"
 msgstr "Veieu tots els servidors rèplica"
 
 #: data/content/get-fedora-all.html:140 data/content/get-fedora-kde.html:68
 #: data/content/get-fedora-ppc.html:47 data/content/get-fedora.html:64
-#: data/content/get-prerelease.html:86
+#: data/content/get-prerelease.html:88
 msgid "See all custom spins"
 msgstr "Veieu totes les versions personalitzades"
 
@@ -427,7 +429,7 @@ msgid "%sGB, ISO format, 1 DVD disc image for PowerPC-compatible computers"
 msgstr "%sGB, format ISO, 1 imatge de disc DVD per a ordinadors compatibles amb PowerPC"
 
 #: data/content/get-fedora.html:10
-msgid "Did someone say... &ldquo;<a href=\"get-prerelease\">Alpha</a>&rdquo;?"
+msgid "Did someone say... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;?"
 msgstr ""
 
 #: data/content/get-fedora.html:19
@@ -528,6 +530,11 @@ msgstr "Aquestes guies estan disponibles a <a href=\"http://docs.fedoraproject.o
 #, fuzzy, python-format
 msgid "This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>.  Read the <a href=\"%(relnotes_url)s\">Release Notes</a> for more information."
 msgstr "Aquesta versió del programari no és estable. El projecte Fedora no en garantitza l'adecuació ni la utilitat. Per informar dels vostres problemes feu servir <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>. Llegiu les <a href=\"http://docs.fedoraproject.org/release-notes/\">notes preliminars de l'alliberament</a> per a més informació."
+
+#: data/content/get-prerelease.html:13
+#, fuzzy
+msgid "http://docs.fedoraproject.org/release-notes/f12/en-US/html/"
+msgstr "<a href=\"http://docs.fedoraproject.org/\">Documentació</a>"
 
 #: data/content/index.html:10
 msgid "Fedora 11: Reign."
@@ -927,71 +934,85 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Lí
 msgid "Fedora"
 msgstr "Fedora"
 
-#: data/templates/sidebar.html:13
+#: data/templates/sidebar.html:26
+#, python-format
+msgid "%s/static/images/counter/%s"
+msgstr "%s/static/images/counter/%s"
+
+#: data/templates/sidebar.html:26
+#, fuzzy, python-format
+msgid "Fedora 12 Constantine released in %s days!"
+msgstr "Fedora 11 Leonidas arriba en %s dies!"
+
+#: data/templates/sidebar.html:27
+msgid "Add a counter to your own site!"
+msgstr "Afegiu un comptador al vostre lloc web!"
+
+#: data/templates/sidebar.html:31
 msgid "Navigation"
 msgstr "Navegació"
 
-#: data/templates/sidebar.html:15
+#: data/templates/sidebar.html:33
 msgid "Home"
 msgstr "Inici"
 
-#: data/templates/sidebar.html:16
+#: data/templates/sidebar.html:34
 msgid "Get Fedora"
 msgstr "Obteniu Fedora"
 
-#: data/templates/sidebar.html:17
+#: data/templates/sidebar.html:35
 msgid "Join Fedora"
 msgstr "Uniu-vos a Fedora"
 
-#: data/templates/sidebar.html:18
+#: data/templates/sidebar.html:36
 msgid "Get Help"
 msgstr "Obteniu ajuda"
 
-#: data/templates/sidebar.html:20
+#: data/templates/sidebar.html:38
 msgid "Tools"
 msgstr "Eines"
 
-#: data/templates/sidebar.html:22
+#: data/templates/sidebar.html:40
 msgid "Docs"
 msgstr "Docs"
 
-#: data/templates/sidebar.html:22
+#: data/templates/sidebar.html:40
 msgid "Fedora documentation."
 msgstr "Documentació de Fedora."
 
-#: data/templates/sidebar.html:23
+#: data/templates/sidebar.html:41
 msgid "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 
-#: data/templates/sidebar.html:23
+#: data/templates/sidebar.html:41
 msgid "Collaborative knowledge."
 msgstr "Coneixement col·laboratiu."
 
-#: data/templates/sidebar.html:24
+#: data/templates/sidebar.html:42
 msgid "Planet"
 msgstr "Planeta"
 
-#: data/templates/sidebar.html:24
+#: data/templates/sidebar.html:42
 msgid "The voices of the Fedora community."
 msgstr "Les veus de la comunitat de Fedora."
 
-#: data/templates/sidebar.html:25
+#: data/templates/sidebar.html:43
 msgid "<a href=\"http://fedoraproject.org/wiki/Communicate\">Communicate</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Communicate\">Comuniqueu-vos</a>"
 
-#: data/templates/sidebar.html:25
+#: data/templates/sidebar.html:43
 msgid "Speak with Fedora."
 msgstr "Parleu amb Fedora."
 
-#: data/templates/sidebar.html:26
+#: data/templates/sidebar.html:44
 msgid "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Events</a>"
 msgstr "<a href=\"http://docs.fedoraproject.org/wiki/FedoraEvents\">Events</a>"
 
-#: data/templates/sidebar.html:26
+#: data/templates/sidebar.html:44
 msgid "Meet the Fedora community."
 msgstr "Coneixeu la comunitat Fedora"
 
-#: data/templates/sidebar.html:28
+#: data/templates/sidebar.html:46
 msgid "Website Language"
 msgstr "Idioma del lloc web"
 
@@ -1003,15 +1024,6 @@ msgstr "Idioma del lloc web"
 
 #~ msgid "Live Media (both GNOME and KDE)"
 #~ msgstr "Suports autònoms (tant GNOME com KDE)"
-
-#~ msgid "%s/static/images/counter/%s"
-#~ msgstr "%s/static/images/counter/%s"
-
-#~ msgid "Fedora 11 Leonidas released in %s days!"
-#~ msgstr "Fedora 11 Leonidas arriba en %s dies!"
-
-#~ msgid "Add a counter to your own site!"
-#~ msgstr "Afegiu un comptador al vostre lloc web!"
 
 #~ msgid "Fedora 10 - Fire it up"
 #~ msgstr "Fedora 10 - Engegueu els motors"
