@@ -1,4 +1,4 @@
-var available_langs = [ "de", "en", "hu", "is", "it", "pt_BR" ];
+var available_langs = [ "de", "en", "hu", "is", "it", "pt_BR", "ru", "tr" ];
 
 function getLang() {
     var scripts = document.getElementsByTagName("script");
@@ -13,7 +13,7 @@ function getLang() {
 
 window.onload = function() {
     var today = new Date();
-    var release = new Date("May 26, 2009 14:00:00 UTC");
+    var release = new Date("Nov 17, 2009 15:00:00 UTC");
     var millisBetweenDates = release - today;
     var days = Math.ceil(millisBetweenDates/1000/60/60/24);
 
@@ -30,19 +30,19 @@ window.onload = function() {
         lang = "en";
     }
 
-    var url = "https://fedoraproject.org/wiki/Releases/11/Schedule"
+    var url = "https://fedoraproject.org/wiki/Releases/12/Schedule"
     var bannerlink = document.getElementById("banner").getElementsByTagName("a")[0];
 
     var bannerimg = document.getElementById("banner").getElementsByTagName("img")[0];
 
     if (days <= 0) {
         // TODO: Get an actual image here!
-        bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/banners/f11release.png");
-        bannerimg.setAttribute("alt", "Fedora 11 is here!");
+        bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/banners/f12release.png");
+        bannerimg.setAttribute("alt", "Fedora 12 is here!");
         url = "https://fedoraproject.org/get-fedora";
     } else {
-        bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora11-countdown-banner-" + days + "." + lang + "." + "png");
-        bannerimg.setAttribute("alt", "Fedora 11 Leonidas released in " + days + " days.");
+        bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora12-countdown-banner-" + days + "." + lang + "." + "png");
+        bannerimg.setAttribute("alt", "Fedora 12 Constantine released in " + days + " days.");
     }
     bannerlink.setAttribute("href", url);
 }
