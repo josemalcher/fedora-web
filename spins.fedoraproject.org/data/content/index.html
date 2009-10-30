@@ -21,35 +21,16 @@
 			<div>
 				<table>
 					<tbody>
-						<tr>
-							<td>#1</td>
-							<td><a href="#">Fedora Desktop</a> <br />432 downloads</td>
-							<td><img src="static/images/spin/art-studio-mini.png" /></td>
-							<td>Integer nisi magna, sodales et varius in, scelerisque vitae lacus.<br /><span><a href="#">Learn more &amp; download! &gt;</a></span></td>
-						</tr>
-						<tr>
-							<td>#2</td>
-							<td><a href="#">KDE Desktop</a> <br />391 downloads</td>
-							<td><img src="static/images/spin/kde-mini.png" /></td>
-							<td>Integer nisi magna, sodales et varius in, scelerisque vitae lacus.<br /><span><a href="#">Learn more &amp; download! &gt;</a></span></td>
-						</tr>
-						<tr>
-							<td>#3</td>
-							<td><a href="#">BROffice.org</a> <br />297 downloads</td>
-							<td><img src="static/images/spin/broffice-mini.png" /></td>
-							<td>Integer nisi magna, sodales et varius in, scelerisque vitae lacus.<br /><span><a href="#">Learn more &amp; download! &gt;</a></span></td>
-						</tr>
-						<tr>
-							<td>#4</td>
-							<td><a href="#">Electronic Lab</a> <br />185 downloads</td>
-							<td><img src="static/images/spin/fedora-electroniclab-mini.png" /></td>
-							<td>Integer nisi magna, sodales et varius in, scelerisque vitae lacus.<br /><span><a href="#">Learn more &amp; download! &gt;</a></span></td>
-						</tr>
-						<tr>
-							<td>#5</td>
-							<td><a href="#">XFCE Desktop</a> <br />45 downloads</td>
-							<td><img src="static/images/spin/xfce-mini.png" /></td>
-							<td>Integer nisi magna, sodales et varius in, scelerisque vitae lacus.<br /><span><a href="#">Learn more &amp; download! &gt;</a></span></td>
+						<tr py:for="t in range(0,len(most_downloaded))">
+							<?python
+							arrName = most_downloaded[t]['name'].split("-")
+							name = arrName[-1]
+							num = most_downloaded[t]['completed']
+							?>
+							<td>#${t+1}</td>
+							<td><a href="#">${name}</a> <br />${num} downloads</td>
+							<td><img src="${relpath}/static/images/spin/${name.lower()}-mini.png" /></td>
+							<td>Integer nisi magna, sodales et varius in, scelerisque vitae lacus.<br /><span><a href="${relpath}/${name.lower()}/">Learn more &amp; download! &gt;</a></span></td>
 						</tr>
 					</tbody>
 				</table>
@@ -58,23 +39,16 @@
 			<div>
 				<table>
 					<tbody>
-						<tr>
-							<td>#4</td>
-							<td><a href="#">Electronic Lab</a> <br />185 downloads</td>
-							<td><img src="static/images/spin/fedora-electroniclab-mini.png" /></td>
-							<td>Integer nisi magna, sodales et varius in, scelerisque vitae lacus.<br /><span><a href="#">Learn more &amp; download! &gt;</a></span></td>
-						</tr>
-						<tr>
-							<td>#3</td>
-							<td><a href="#">BROffice.org</a> <br />297 downloads</td>
-							<td><img src="static/images/spin/broffice-mini.png" /></td>
-							<td>Integer nisi magna, sodales et varius in, scelerisque vitae lacus.<br /><span><a href="#">Learn more &amp; download! &gt;</a></span></td>
-						</tr>
-						<tr>
-							<td>#5</td>
-							<td><a href="#">XFCE Desktop</a> <br />45 downloads</td>
-							<td><img src="static/images/spin/xfce-mini.png" /></td>
-							<td>Integer nisi magna, sodales et varius in, scelerisque vitae lacus.<br /><span><a href="#">Learn more &amp; download! &gt;</a></span></td>
+						<tr py:for="t in range(0,len(alphabetical))">
+							<?python
+							arrName = alphabetical[t]['name'].split("-")
+							name = arrName[-1]
+							num = alphabetical[t]['completed']
+							?>
+							<td>#${t+1}</td>
+							<td><a href="#">${name}</a> <br />${num} downloads</td>
+							<td><img src="${relpath}/static/images/spin/${name.lower()}-mini.png" /></td>
+							<td>Integer nisi magna, sodales et varius in, scelerisque vitae lacus.<br /><span><a href="${relpath}/${name.lower()}/">Learn more &amp; download! &gt;</a></span></td>
 						</tr>
 					</tbody>
 				</table>				
