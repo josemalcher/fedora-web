@@ -15,14 +15,23 @@ def matches_a_spin(name):
     if non_release_re.search(name):
         return False    
     for part in spins_matches:
-        if name.lower().find(part) != -1:
+        if part in name.lower():
             return True
     return False
 
 def gettorrentinfo(name, value):
-	for part in alphabetical:
-		if part['name'].lower().find(name) != -1:
-			return part[value]
+    for part in alphabetical:
+        if name in part['name'].lower():
+            return part[value]
+
+
+def gettorrentsize(area):
+    for spin in spins:
+        if spin['name'].lower().endswith(area):
+            return formatsize(spin['size'])
+
+def formatsize(n, format='%0.2f'):
+    return format % (n / 1024.0**2)
 
 # let's get our data
 fo = urllib.urlopen('http://torrent.fedoraproject.org/stats/current-stats.json')
@@ -33,7 +42,7 @@ fo.close()
 spins = []
 for t_dict in torrents:
     if matches_a_spin(t_dict['name']):
-        if t_dict['name'].find(release) != -1:
+        if release in t_dict['name']:
             spins.append(t_dict)
 
 

@@ -45,7 +45,7 @@
 							num = most_downloaded[t]['completed']
 							?>
 							<td>#${t+1}</td>
-							<td><a href="#">${name}</a> <br />${num} downloads</td>
+							<td><a href="${relpath}/${name.lower()}/">${name}</a> <br />${num} downloads</td>
 							<td><img src="${relpath}/static/images/spin/${name.lower()}-mini.png" /></td>
 							<td>${sdata[name.lower()]}<br /><span><a href="${relpath}/${name.lower()}/">Learn more &amp; download! &gt;</a></span></td>
 						</tr>
@@ -63,7 +63,7 @@
 							num = alphabetical[t]['completed']
 							?>
 							<td>#${t+1}</td>
-							<td><a href="#">${name}</a> <br />${num} downloads</td>
+							<td><a href="${relpath}/${name.lower()}/">${name}</a> <br />${num} downloads</td>
 							<td><img src="${relpath}/static/images/spin/${name.lower()}-mini.png" /></td>
 							<td>${sdata[name.lower()]}<br /><span><a href="${relpath}/${name.lower()}/">Learn more &amp; download! &gt;</a></span></td>
 						</tr>
