@@ -1,5 +1,22 @@
 <?python
   area = "main"
+
+	sdata = {
+		'broffice': "Brazilian localized spin that provides the legal brand for OpenOffice.org in Brazil.",
+		'edu': "A special selection of applications related to educational and scientific purposes.",
+		'math': "This is math",
+		'kde': "A complete, modern desktop built using the K Desktop Environment (KDE).",
+		'xfce': "A complete, well-integrated Xfce desktop.",
+		'lxde': "This is lxde",
+		'aos': "A scaled-down version of Fedora with a small footprint for running an appliance.",
+		'developer': "This is developer",
+		'fel': "Fedora's high-end hardware design and simulation platform.",
+		'games': "A perfect show-case of the best games available in Fedora.",
+		'art': "The ultimate free & open source art studio - tailored for graphic designers.",
+		'desktop': "The Desktop spin of Fedora is the primary spin as provided on fedoraproject.org.",
+		'security': "Security analysis tools."
+	}
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -30,7 +47,7 @@
 							<td>#${t+1}</td>
 							<td><a href="#">${name}</a> <br />${num} downloads</td>
 							<td><img src="${relpath}/static/images/spin/${name.lower()}-mini.png" /></td>
-							<td>Integer nisi magna, sodales et varius in, scelerisque vitae lacus.<br /><span><a href="${relpath}/${name.lower()}/">Learn more &amp; download! &gt;</a></span></td>
+							<td>${sdata[name.lower()]}<br /><span><a href="${relpath}/${name.lower()}/">Learn more &amp; download! &gt;</a></span></td>
 						</tr>
 					</tbody>
 				</table>
@@ -48,7 +65,7 @@
 							<td>#${t+1}</td>
 							<td><a href="#">${name}</a> <br />${num} downloads</td>
 							<td><img src="${relpath}/static/images/spin/${name.lower()}-mini.png" /></td>
-							<td>Integer nisi magna, sodales et varius in, scelerisque vitae lacus.<br /><span><a href="${relpath}/${name.lower()}/">Learn more &amp; download! &gt;</a></span></td>
+							<td>${sdata[name.lower()]}<br /><span><a href="${relpath}/${name.lower()}/">Learn more &amp; download! &gt;</a></span></td>
 						</tr>
 					</tbody>
 				</table>				
