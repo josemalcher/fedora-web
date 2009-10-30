@@ -3,11 +3,7 @@
   xmlns:py="http://genshi.edgewall.org/"
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
-  
-<py:def function="download(name)">
-http://spins.fedoraproject.org/torrents/${name}.torrent
-</py:def>
-  
+
 	<div id="sidebar">
 	<py:choose test="area">
 		<py:when test="'main'">
@@ -19,32 +15,17 @@ http://spins.fedoraproject.org/torrents/${name}.torrent
 		<div id="top-spins">
 			<h2>${_('Top Spins This Week')}</h2>
 			<table>
-				<tr>
-					<td>#1</td>
-					<td><a href="#">Fedora Desktop</a></td>
-					<td>432 downloads</td>
+				<tr py:for="t in range(0,5)">
+					<?python
+					arrName = most_downloaded[t]['name'].split("-")
+					name = arrName[-1]
+					num = most_downloaded[t]['completed']
+					?>
+					<td>#${t+1}</td>
+					<td><a href="${relpath}/${name.lower()}/">${name}</a></td>
+					<td>${num} downloads</td>
 				</tr>
-				<tr>
-					<td>#2</td>
-					<td><a href="#">KDE Desktop</a></td>
-					<td>391 downloads</td>
-				</tr>
-				<tr>
-					<td>#3</td>
-					<td><a href="#">BROffice.org</a></td>
-					<td>297 downloads</td>
-				</tr>
-				<tr>
-					<td>#4</td>
-					<td><a href="#">Electronic Lab</a></td>
-					<td>185 downloads</td>
-				</tr>
-				<tr>
-					<td>#5</td>
-					<td><a href="#">XFCE Desktop</a></td>
-					<td>45 downloads</td>
-				</tr>
-			</table>
+			</table>			
 		</div>
 		<div id="featured-spin">
 			<img src="/static/images/spin/art-studio.png" />
@@ -59,8 +40,8 @@ http://spins.fedoraproject.org/torrents/${name}.torrent
 		</py:when>
 		<py:otherwise>
 		<div id="download-now">
-			<a href="${download(area)}"><img src="/static/images/download-now.png" /></a>
-			<p>6K Torrent File for 32-bit PC ISO</p>
+			<a href="http://torrent.fedoraproject.org/torrents/${gettorrentinfo(area, 'name')}.torrent"><img src="/static/images/download-now.png" /></a>
+			<p>${gettorrentinfo(area, 'size')} MB Torrent File for 32-bit PC ISO</p>
 			<h3><a href="#">${_('How do I use this?')}</a> | <a href="#download">${_('More download options ...')}</a></h3>
 		</div>
 		<div id="whatis-spin">

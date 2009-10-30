@@ -1,3 +1,52 @@
+<?python
+import simplejson
+import urllib
+from operator import itemgetter
+import re
+release = '11'
+
+# do not get list
+non_release_re = re.compile('(alpha)|(beta)|(snap)|(preview)|(x86_64)', re.I)
+
+# needed functions
+def matches_a_spin(name):
+    spins_matches = ['broffice', 'edu', 'math', 'kde', 'xfce', 'lxde', 'aos',
+                     'developer', 'fel', 'games']
+    if non_release_re.search(name):
+        return False    
+    for part in spins_matches:
+        if name.lower().find(part) != -1:
+            return True
+    return False
+
+def gettorrentinfo(name, value):
+	for part in alphabetical:
+		if part['name'].lower().find(name) != -1:
+			return part[value]
+
+# let's get our data
+fo = urllib.urlopen('http://torrent.fedoraproject.org/stats/current-stats.json')
+torrents = simplejson.load(fo)
+fo.close()
+
+# this gets all the spins torrents
+spins = []
+for t_dict in torrents:
+    if matches_a_spin(t_dict['name']):
+        if t_dict['name'].find(release) != -1:
+            spins.append(t_dict)
+
+
+#sort by most downloaded
+most_downloaded = sorted(spins,key=itemgetter('completed'), reverse=True)
+# sort by alphabetical
+alphabetical = sorted(spins, key=itemgetter('name'))
+
+
+			
+
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
   xmlns:py="http://genshi.edgewall.org/"
