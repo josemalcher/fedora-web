@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master-talk-fedoraproject.mr\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-10-23 13:04-0400\n"
+"POT-Creation-Date: 2009-10-31 14:08-0400\n"
 "PO-Revision-Date: 2009-05-21 14:42+0530\n"
 "Last-Translator: Sandeep Shedmake <sandeep.shedmake@gmail.com>\n"
 "Language-Team: marathi\n"
@@ -20,63 +20,375 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: data/content/about.html:7
-msgid "About - Fedora Talk"
-msgstr "विषयी - Fedora Talk"
-
-#: data/content/about.html:12
-msgid "About Fedora Talk"
-msgstr "Fedora Talk विषयी"
-
-#: data/content/about.html:13
-msgid "Fedora Talk is an effort to bring Fedora contributors in closer contact to each other.  IRC is an OK tool for communication but meetings and conversations bring much more to the table."
-msgstr "Fedora Talk चे उद्देश Fedora सदस्यांना जवळ आणने आहे.  IRC संवाद करीता ठिक साधन आहे परंतु चर्चा व संभाषण करीता देखिल सुविधा पुरवते."
-
-#: data/content/about.html:14
-msgid "What makes Fedora Talk work?"
-msgstr "Fedora Talk कसे कार्य करते?"
-
-#: data/content/about.html:15
-msgid "Fedora Talk is just an Asterisk install.  For a VOIP solution it is hard to do better then Asterisk.  Also being completely Free and Open Source Software, Asterisk fits in very well with the core beliefs of Fedora.  Software is just one aspect of this project.  Many volunteers have come together to help configure and test the install.  Hosting and bandwidth has been provided by Server Beach.  The dial in numbers (DiDs) have been provided by Arrival Telecom.  Every aspect of this project has been community and volunteer oriented."
-msgstr "Fedora Talk फक्त Asterisk प्रतिष्ठापन आहे.  VOIP उपाय करीता Asterisk हे उत्तम पर्याय आहे.  फ्री व ओपन सोअर्स सॉफ्टवेअर असल्यासमुळे, Asterisk Fedora च्या मुळ रचनेत सहज बसतो.  सॉफ्टवेअर या प्रकल्पाचे एक मुख्य गुणविशेष आहे.  संयोजन व प्रतिष्ठापनच्या चाचणी करीता बरेच स्वयंसेवक एकत्रपणे कार्य करतात.  होस्टींग व बॅन्डविड्थ Server Beach द्वारे पुरविले आहे.  dial in numbers (DiDs), Arrival Telecom द्वारे पुरविले आहे.  या प्रकल्पाचे प्रत्येक धोरण समाज व स्वयंसेवक द्वारे हाताळले जाते."
-
 #: data/content/access.html:7
 msgid "Access - Fedora Talk"
 msgstr "प्रवेश - Fedora Talk"
 
 #: data/content/access.html:12
-msgid "Accessing to Fedora Talk"
-msgstr "Fedora Talk शी जुळवणी स्थपीत करत आहे"
+#, fuzzy
+msgid "Set up Fedora Talk account"
+msgstr "विषयी - Fedora Talk"
 
 #: data/content/access.html:13
 #, fuzzy
-msgid "Fedora Talk is provided to all Fedora Contributors.  Each participating contributor is given a 7 digit extension that starts with the number 5.  To get access users need to enable VOIP in the Fedora Accounts System and set their VOIP password"
+msgid "Fedora Talk is provided to all Fedora Contributors.  Each participating contributor receives a 7 digit extension that starts with the number 5.  To get access, you need to enable VoIP in the Fedora Accounts System and set a VoIP password."
 msgstr "Fedora Talk सर्व Fedora सदस्य करीता पुरविले जाते.  प्रत्येक सहभागीय सदस्य यास 7 अंकीय विस्तारन संख्या 5 सह पुरविले जाते.  प्रवेश प्राप्त करण्याकरीता वापरकर्त्यांना Fedora Accounts System अंतर्गत VOIP कार्यान्वीत करावे लागते व VOIP गुप्तशब्द निश्चित करावे लागते"
 
 #: data/content/access.html:14
-msgid "Step 1"
-msgstr "पद्धत 1"
+msgid "Step 1: Set up a Fedora account"
+msgstr ""
 
 #: data/content/access.html:15
-msgid "Sign up for a <a href=\"https://admin.fedoraproject.org/accounts/\">Fedora Account</a>, and ensure that you have signed the CLA at the account site.  Most Fedora contributors will have already done this"
+#, fuzzy
+msgid "Sign up for a <a href=\"https://admin.fedoraproject.org/accounts/\">Fedora account</a>, and ensure that you have signed the CLA at the account site.  Most Fedora contributors will have already done this."
 msgstr "<a href=\"https://admin.fedoraproject.org/accounts/\">Fedora Account</a> करीता दाखलन करा, व तुम्ही खाते स्थळावर CLA ची स्वाक्षरी केली आहे याची खात्री करा.  बरेच Fedora सदस्यांनी आधिपासूनच वरील केले असावे"
 
 #: data/content/access.html:16
-msgid "Step 2"
-msgstr "पद्धत 2"
+msgid "Step 2: Set up a VoIP account and password"
+msgstr ""
 
 #: data/content/access.html:17
-msgid "Enable Asterisk by clicking on the <a href=\"https://admin.fedoraproject.org/accounts/asterisk/\">VOIP</a> link in the account system.  Then edit your profile.  Enable Asterisk as well as set an Asterisk Password.  It can take for up to an hour for your changes to be realized by Asterisk.  Now is also a good time to see what your extension is (on the VOIP main page in the account system).  Make a note of it."
+#, fuzzy
+msgid "Enable Asterisk by clicking on the <a href=\"https://admin.fedoraproject.org/accounts/asterisk/\">VoIP</a> link in the account system.  Then edit your profile.  Enable Asterisk as well as set an Asterisk password.  It can take up to an hour for your changes to be received by Asterisk.  Now is also a good time to see what your extension is (on the VoIP main page in the account system).  Make a note of it."
 msgstr "खाते प्रणाली अंतर्गत <a href=\"https://admin.fedoraproject.org/accounts/asterisk/\">VOIP</a> लिंकवर क्लिक करून Asterisk कार्यान्वीत करा.  त्यानंतर प्रोफाइल संपादीत करा.  Asterisk कार्यान्वीत करा व Asterisk Password निश्चित करा.  Asterisk द्वारे बदलाव ओळखण्याकरीता तासभर तरी लागेलच.  तुमचे विस्तारण पहाण्याकरीता (खाते प्रणाली अंतर्गत VOIP मुख्य पानावर) आता चांगला वेळ आहे.  यास लक्षात ठेवा."
 
 #: data/content/access.html:18
-msgid "Step 3"
-msgstr "पद्धत 3"
+#, fuzzy
+msgid "After the user information has been sent to the Fedora Talk you should be able to log in.  All that is left is to <a href=\"./setup-local-system\">configure sound and a software phone</a> like twinkle and ekiga, or a SIP compliant VoIP phone."
+msgstr "सर्व निश्चित केल्यास.  सोपे भाग पूर्ण केले जाते.  वापरकर्त्यांना talk server येथे पाठविल्यानंतर वापरकर्ता दाखलन करीता पात्र ठरतो.  अखेरची उर्वरीत पद्धत म्हणजे  twinkle and ekiga नुरूप Software Phone याचे संयोजन, किंवा SIP सहत्व VOIP फोनला संयोजीत करणे आहे."
 
 #: data/content/access.html:19
+msgid "Next step: Set up local system"
+msgstr ""
+
+#: data/content/client-ekiga.html:8
 #, fuzzy
-msgid "All set.  The easy part is done.  After the user has been sent to the talk server users should be able to log in.  All that is left is to <a href=\"./access\">configure a Software Phone</a> like twinkle and ekiga, or configuring a SIP compliant VOIP phone."
-msgstr "सर्व निश्चित केल्यास.  सोपे भाग पूर्ण केले जाते.  वापरकर्त्यांना talk server येथे पाठविल्यानंतर वापरकर्ता दाखलन करीता पात्र ठरतो.  अखेरची उर्वरीत पद्धत म्हणजे  twinkle and ekiga नुरूप Software Phone याचे संयोजन, किंवा SIP सहत्व VOIP फोनला संयोजीत करणे आहे."
+msgid "Ekiga - Fedora Talk"
+msgstr "वापरणी - Fedora Talk"
+
+#: data/content/client-ekiga.html:13
+#, fuzzy
+msgid "Configuring Ekiga for Fedora Talk"
+msgstr "वापरणी - Fedora Talk"
+
+#: data/content/client-ekiga.html:16
+msgid "Open Ekiga and cancel the setup wizard or druid if one appears. The following screen appears."
+msgstr ""
+
+#: data/content/client-ekiga.html:17 data/content/usage.html:25
+#, fuzzy
+msgid "Ekiga main screen"
+msgstr "Ekiga (लवकरच येत आहे)"
+
+#: data/content/client-ekiga.html:20
+msgid "On the Ekiga menu, select Edit → Accounts."
+msgstr ""
+
+#: data/content/client-ekiga.html:21 data/content/usage.html:27
+msgid "Ekiga accounts window"
+msgstr ""
+
+#: data/content/client-ekiga.html:24
+msgid "Fill in the details as shown below:"
+msgstr ""
+
+#: data/content/client-ekiga.html:25 data/content/usage.html:29
+msgid "Ekiga edit accounts screen"
+msgstr ""
+
+#: data/content/client-ekiga.html:27
+msgid "Name: Fill in a name for this account, such as \"Fedora Talk.\""
+msgstr ""
+
+#: data/content/client-ekiga.html:28 data/content/usage.html:32
+msgid "Registrar: fedoraproject.org"
+msgstr ""
+
+#: data/content/client-ekiga.html:29
+msgid "User: Your Fedora Account System username"
+msgstr ""
+
+#: data/content/client-ekiga.html:30 data/content/usage.html:34
+msgid "Authentication User: leave this empty"
+msgstr ""
+
+#: data/content/client-ekiga.html:31
+msgid "Password: The password you set in the VoIP section in FAS (note this is not the same as your FAS password)"
+msgstr ""
+
+#: data/content/client-ekiga.html:32
+msgid "Timeout: Use the default, or 900"
+msgstr ""
+
+#: data/content/client-ekiga.html:33
+msgid "Enable account: Check this box to immediately register"
+msgstr ""
+
+#: data/content/client-ekiga.html:37
+msgid "Select \"OK\" to return to the account screen. You can verify your settings by checking the status in the \"Status\" column."
+msgstr ""
+
+#: data/content/client-ekiga.html:38 data/content/usage.html:40
+msgid "Ekiga completed accounts window"
+msgstr ""
+
+#: data/content/client-ekiga.html:41
+msgid "You are done configuring your Ekiga client."
+msgstr ""
+
+#: data/content/client-ekiga.html:42 data/content/client-empathy.html:43
+#: data/content/client-twinkle.html:77
+msgid "Test and verify your settings"
+msgstr ""
+
+#: data/content/client-empathy.html:7
+#, fuzzy
+msgid "Configuring Empathy - Fedora Talk"
+msgstr "वापरणी - Fedora Talk"
+
+#: data/content/client-empathy.html:12
+#, fuzzy
+msgid "Configuring Empathy for Fedora Talk"
+msgstr "Fedora Talk शी जुळवणी स्थपीत करत आहे"
+
+#: data/content/client-empathy.html:16
+msgid "Install the \"empathy\" package using PackageKit. From the main menu, select System → Administration → Add/Remove Software."
+msgstr ""
+
+#: data/content/client-empathy.html:17 data/content/client-twinkle.html:17
+msgid "Selecting PackageKit from the main menu"
+msgstr ""
+
+#: data/content/client-empathy.html:18
+msgid "Type \"empathy\" into the \"find\" box and click find.  Then check the box for the \"empathy\" package and click \"Apply.\""
+msgstr ""
+
+#: data/content/client-empathy.html:19
+msgid "Finding Packages using PackageKit"
+msgstr ""
+
+#: data/content/client-empathy.html:22
+msgid "Next, open Empathy. From the main menu, select Applications → Internet → Empathy Instant Messenger."
+msgstr ""
+
+#: data/content/client-empathy.html:23
+msgid "Opening Empathy"
+msgstr ""
+
+#: data/content/client-empathy.html:26
+msgid "From the Empathy menu, select Edit → Accounts."
+msgstr ""
+
+#: data/content/client-empathy.html:29
+msgid "Select \"Add\" and select SIP account from the list. The following dialog appears:"
+msgstr ""
+
+#: data/content/client-empathy.html:30
+msgid "Empathy accounts dialog"
+msgstr ""
+
+#: data/content/client-empathy.html:31
+msgid "In the dialog, fill in the following fields:"
+msgstr ""
+
+#: data/content/client-empathy.html:33
+msgid "Username: Your FAS username, followed by \"@talk.fedoraproject.org\""
+msgstr ""
+
+#: data/content/client-empathy.html:34
+msgid "Password: Your VoIP password (note this is not the same as your FAS password)"
+msgstr ""
+
+#: data/content/client-empathy.html:35
+msgid "Enabled: Select this checkbox to immediately enable the acocunt)"
+msgstr ""
+
+#: data/content/client-empathy.html:39
+msgid "Select \"Apply\" to apply changes, and then select \"Close\" to close the dialog. Your account is now active and registered."
+msgstr ""
+
+#: data/content/client-empathy.html:42
+msgid "You are now finished configuring your Empathy client."
+msgstr ""
+
+#: data/content/client-generic.html:8
+#, fuzzy
+msgid "Generic Client - Fedora Talk"
+msgstr "वापरणी - Fedora Talk"
+
+#: data/content/client-generic.html:13
+#, fuzzy
+msgid "Configuring a Generic Client for Fedora Talk"
+msgstr "वापरणी - Fedora Talk"
+
+#: data/content/client-generic.html:14
+msgid "This page will help you set up a generic client, such as an IP phone handset or a different softphone client, for Fedora Talk.  If you do not see a setting in your client that matches a setting below, simply skip that setting.  If you have problems, consult the <a href=\"./troubleshooting\">troubleshooting page</a>."
+msgstr ""
+
+#: data/content/client-generic.html:15
+msgid "Generic client configuration values"
+msgstr ""
+
+#: data/content/client-generic.html:17
+msgid "SIP address: <em>sip:fas_username@fedoraproject.org</em>"
+msgstr ""
+
+#: data/content/client-generic.html:18
+msgid "Extension: <em>FAS Account name, or look up using <a href=\"https://admin.fedoraproject.org/accounts/asterisk/\">the VoIP link</a> in your FAS account</em>"
+msgstr ""
+
+#: data/content/client-generic.html:19
+msgid "Voicemail: <em>Enabled</em>"
+msgstr ""
+
+#: data/content/client-generic.html:20
+msgid "SIP Registration: <em>talk.fedoraproject.org (port 5060)</em>"
+msgstr ""
+
+#: data/content/client-generic.html:21 data/content/client-twinkle.html:46
+msgid "User Name: <em>FAS Account name</em>"
+msgstr ""
+
+#: data/content/client-generic.html:22
+msgid "SIP proxy: <em>talk.fedoraproject.org (port 5060)</em>"
+msgstr ""
+
+#: data/content/client-generic.html:23
+msgid "SIP outbound proxy: <em>talk.fedoraproject.org (port 5060)</em>"
+msgstr ""
+
+#: data/content/client-generic.html:24 data/content/client-twinkle.html:47
+msgid "Domain: <em>talk.fedoraproject.org</em>"
+msgstr ""
+
+#: data/content/client-generic.html:25 data/content/client-twinkle.html:54
+msgid "Authentication name: <em>FAS Account name</em>"
+msgstr ""
+
+#: data/content/client-generic.html:26
+msgid "Password: <em>VoIP Password (this can be found in your FAS account and is NOT your FAS account password)</em>"
+msgstr ""
+
+#: data/content/client-generic.html:27
+msgid "Use DNS SRV records: <em>Enabled</em>"
+msgstr ""
+
+#: data/content/client-generic.html:29
+msgid "Other specific client information"
+msgstr ""
+
+#: data/content/client-generic.html:30
+msgid "If you wish to provide instructions for a specific client, please visit the Fedora Project wiki page below and edit as desired."
+msgstr ""
+
+#: data/content/client-generic.html:31
+#, fuzzy
+msgid "Other clients for Fedora Talk"
+msgstr "प्रवेश - Fedora Talk"
+
+#: data/content/client-twinkle.html:7
+#, fuzzy
+msgid "Twinkle - Fedora Talk"
+msgstr "वापरणी - Fedora Talk"
+
+#: data/content/client-twinkle.html:12
+#, fuzzy
+msgid "Configuring Twinkle for Fedora Talk"
+msgstr "वापरणी - Fedora Talk"
+
+#: data/content/client-twinkle.html:13 data/content/usage.html:21
+#, fuzzy
+msgid "There is a <a href=\"http://fedorapeople.org/groups/web/fedoratalk-twinkle-screencast.ogg\">useful video tutorial</a> for configuring Twinkle with Fedora Talk. Useful content may be added to the <a href=\"http://fedoraproject.org/wiki\">Fedora Project wiki</a>, possibly even by <em>you</em>."
+msgstr "Fedora Talk सह Twinkle संयोजीत करण्याकरीता <a href=\"http://herlo.fedorapeople.org/screencasts/fedoratalk-twinkle-screencast.ogg\">उपयोगी विडीओ धडा</a> उपलब्ध आहे. उपयोगी अंतर्भूत माहिती <a href=\"http://fedoraproject.org/wiki\">Fedora Project wiki</a> मध्ये अंतर्भूत केली जाऊ शकते, संभाव्यत्या <em>तुमच्या</em> द्वारे."
+
+#: data/content/client-twinkle.html:16
+msgid "Install the twinkle package using PackageKit. From the main menu, select System → Administration → Add/Remove Software."
+msgstr ""
+
+#: data/content/client-twinkle.html:18
+msgid "Type \"twinkle\" into the \"find\" box and click find.  Then check the box for the \"twinkle\" package and click \"Apply.\""
+msgstr ""
+
+#: data/content/client-twinkle.html:19
+msgid "Finding Twinkle using PackageKit"
+msgstr ""
+
+#: data/content/client-twinkle.html:22
+msgid "Select Applications → Internet → Twinkle from the main menu."
+msgstr ""
+
+#: data/content/client-twinkle.html:25
+msgid "Select \"Ok\" to create a profile."
+msgstr ""
+
+#: data/content/client-twinkle.html:26 data/content/client-twinkle.html:30
+msgid "Twinkle profile editor"
+msgstr ""
+
+#: data/content/client-twinkle.html:29
+msgid "Select \"Profile Editor.\""
+msgstr ""
+
+#: data/content/client-twinkle.html:33
+msgid "Give the profile a name, such as \"FedoraTalk.\" Spaces are not allowed."
+msgstr ""
+
+#: data/content/client-twinkle.html:34 data/content/client-twinkle.html:40
+#: data/content/client-twinkle.html:62 data/content/client-twinkle.html:73
+msgid "Twinkle profile name"
+msgstr ""
+
+#: data/content/client-twinkle.html:38
+msgid "Edit the profile details as shown below."
+msgstr ""
+
+#: data/content/client-twinkle.html:39
+msgid "First, select \"User\" in the left pane and fill in the following information:"
+msgstr ""
+
+#: data/content/client-twinkle.html:43
+msgid "In the \"SIP Account\" section complete these entries:"
+msgstr ""
+
+#: data/content/client-twinkle.html:45
+msgid "Your Name (optional): <em>Firstname Lastname</em>"
+msgstr ""
+
+#: data/content/client-twinkle.html:51
+msgid "In the \"SIP Authentication\" section complete these entries:"
+msgstr ""
+
+#: data/content/client-twinkle.html:53
+msgid "Realm (optional): <em>LEAVE BLANK</em>"
+msgstr ""
+
+#: data/content/client-twinkle.html:55
+msgid "Password: <em>VoIP Password (this can be found in your fas account and is NOT your FAS account password)</em>"
+msgstr ""
+
+#: data/content/client-twinkle.html:61
+msgid "In the \"SIP Server\" section complete these entries:"
+msgstr ""
+
+#: data/content/client-twinkle.html:64
+msgid "Registrar: <em>talk.fedoraproject.org (You can leave this blank)</em>"
+msgstr ""
+
+#: data/content/client-twinkle.html:68
+msgid "Select \"OK\" to save these settings in the profile."
+msgstr ""
+
+#: data/content/client-twinkle.html:71
+msgid "To receive a call you must be registered. If you have made the changes above correctly, this happens automatically. If you have trouble, select Edit → User profile... to edit the user profile to correct the settings."
+msgstr ""
+
+#: data/content/client-twinkle.html:72
+msgid "To verify your registration click on \"Registration/Show Registrations.\""
+msgstr ""
+
+#: data/content/client-twinkle.html:76
+msgid "You are now finished configuring your Twinkle client."
+msgstr ""
 
 #: data/content/conference.html:7
 #, fuzzy
@@ -181,7 +493,7 @@ msgstr "Fedora Talk"
 msgid "FAQs - Fedora Talk"
 msgstr "FAQs - Fedora Talk"
 
-#: data/content/faq.html:12 data/templates/sidebar.html:14
+#: data/content/faq.html:12 data/templates/sidebar.html:13
 msgid "Frequently-Asked Questions"
 msgstr "नेहमी-विचारलेले प्रश्न"
 
@@ -190,7 +502,8 @@ msgid "What is Fedora Talk?"
 msgstr "Fedora Talk काय आहे?"
 
 #: data/content/faq.html:14
-msgid "Fedora Talk is a VoIP telephony solution so Fedora contributors can call each other.  It uses a free and open source solution called Asterisk."
+#, fuzzy
+msgid "Fedora Talk is a VoIP telephony solution so Fedora contributors can call each other.  It uses a free and open source solution called <a href=\"http://asterisk.org\">Asterisk</a>."
 msgstr "Fedora Talk हे VoIP टेलीफोनी पर्याय आहे ज्यामुळे Fedora सदस्य एकमेकांशी संपर्क करूशकतात.  ते Asterisk नावाचे फ्री व ओपन सोअर्स उत्पादनाचे वापर करते."
 
 #: data/content/faq.html:15
@@ -198,15 +511,16 @@ msgid "How can I use Fedora Talk?"
 msgstr "Fedora Talk कसे वापरायचे?"
 
 #: data/content/faq.html:16
-msgid "First sign up for a Fedora account and sign the CLA.  Next select \"VOIP\" from the side menu and edit the settings to enable voip as well as set your password.  This password should not be the same as your normal fedora password.  Please go to our accounts system for more information."
-msgstr "प्रथम Fedora खाते बनवा व CLA करीता स्वाक्षरी करा.  त्यानंतर \"VOIP\" ला बाजूच्या पट्टी पासून निवडा व voip तसेच गुप्तशब्द निश्चित करण्याकरीता संयोजना संपादीत करा.  हे गुप्तशब्द तुमचे सर्वसाधारण fedora चे गुप्तशब्द नसावे.  अधिक माहिती करीता खाते प्रणाली येथे जा."
+msgid "Consult the <a href=\"./access\">access page</a> for more information."
+msgstr ""
 
 #: data/content/faq.html:17
 msgid "What equipment do I need?"
 msgstr "कुठल्या सामग्रींची आवश्यकता आहे?"
 
 #: data/content/faq.html:18
-msgid "Aside from a computer with Internet access at a minimum it is recommended to get a headset with headphones and a microphone attached.  Without it you will be difficult or impossible to understand.  It is important to remember that background noise and misconfigured or poorly configured callers can completely destroy a conference call."
+#, fuzzy
+msgid "You need a computer with Internet access, and a headset with headphones and a microphone attached is highly recommended.  Without it you will be difficult or impossible to understand.  A headset reduces background noise and helps other callers hear you better without any unwanted echo effets. A misconfigured or poorly configured client can make a conference call unpleasant for yourself and others."
 msgstr "किमान संगणक, महाजाळ प्रवेश सह हेडफोन व मायक्रोफोन हे किमानरित्या असणे आवश्यक आहे.  त्या विना तुमचे संभाषण किंवा तुम्हाला समझणे कठीण होईल.  हे लक्षात ठेवणे आवश्यक आहे की पार्श्वभूमी आवाज व सदोषीत किंवा तात्कालिकरित्या संयोजीत श्रोता पूर्णतया सभा विस्कळीत करू शकतो."
 
 #: data/content/faq.html:19
@@ -215,28 +529,112 @@ msgstr "रसत्यावर असल्यास किंवा योग
 
 #: data/content/faq.html:20
 #, fuzzy
-msgid "Using one of Fedora dial in numbers will allow you to use your standard phone or cell phone in order to communicate with others.  This is also a way for non-Fedora users to join conferences. See the <a href=\"./conference\">conferencing page</a> for more information and dial in numbers."
+msgid "Using one of Fedora dial in numbers will allow you to use your standard phone or cell phone in order to communicate with others.  After connecting to one of these numbers, enter the conference number or extension of the person you would like to reach. This is also a convenient way for non-Fedora users to join conferences. See the <a href=\"./index\">main page</a> for the dial in numbers."
 msgstr "इतरांशी संवाद साधण्याकरीता Fedora चे डायल इन क्रमांक तुम्हाला मानक फोन किंवा सेल फोन वापरण्यास परवानगी देते.  हे विना-Fedora वापरकर्त्यांना सभा सत्रात जुळवणी करण्यास मार्ग पुरविते.  अधिक माहिती करीता येथील मुख्य पान पहा: "
 
-#: data/content/index.html:7
+#: data/content/faq.html:21
+msgid "What are the established Fedora Conference rooms?"
+msgstr ""
+
+#: data/content/faq.html:22
+msgid "See the <a href=\"./conference\">conferencing page</a> for the conference rooms and numbers."
+msgstr ""
+
+#: data/content/index.html:7 data/content/index.html:10
 msgid "Fedora Talk"
 msgstr "Fedora Talk"
 
-#: data/content/index.html:10
-msgid "Get Connected!"
-msgstr "जुळवणी करा!"
-
 #: data/content/index.html:11
-msgid "Welcome to Fedora Talk.  Remember to enable VoIP via your Fedora Account System account:"
-msgstr "Fedora Talk वर आपले स्वागत आहे.  Fedora Account System द्वारे VoIP कार्यान्वीत करण्यास विसरू नका:"
+msgid "Welcome to Fedora Talk, the Asterisk-based voice-over-IP system for Fedora contributors. Fedora Talk is an effort to bring Fedora contributors in closer contact when needed for high bandwidth meetings and conversations."
+msgstr ""
 
-#: data/content/index.html:12 data/content/usage.html:12
-msgid "Using Fedora Talk"
-msgstr "Fedora Talk चा वापर"
+#: data/content/index.html:12
+#, fuzzy
+msgid "Fedora Talk can be used with one of the many VOIP soft phones that comes with Fedora.  Ekiga and Twinkle are popular.  It can also be used with most SIP compliant software and hardware phones, or from a land line or mobile phone."
+msgstr "Fedora Talk Fedora शी उपलब्ध इतर VOIP सॉफ्ट फोनशी वापरले जाऊ शकते.  Ekiga व Twinkle प्रचलीत आहेत.  त्याचा वापर बरेच SIP सहत्व VOIP फोनशी केला जातो.  रसत्यावरील वापरकर्त्यांनी, किंवा योग्य यंत्रणा नसलेल्या वापरकर्त्यांनी खालिल क्रमांक वर डायल करावे.  जवळील क्रमांक निवडा."
 
 #: data/content/index.html:13
-msgid "Fedora Talk can be used with one of the many VOIP soft phones that comes with Fedora.  Ekiga and Twinkle are popular.  It can also be used with most SIP compliant VOIP phones.  Those on the road, or without access to the proper equipment can use one of our dial in numbers.  Pick one near you."
-msgstr "Fedora Talk Fedora शी उपलब्ध इतर VOIP सॉफ्ट फोनशी वापरले जाऊ शकते.  Ekiga व Twinkle प्रचलीत आहेत.  त्याचा वापर बरेच SIP सहत्व VOIP फोनशी केला जातो.  रसत्यावरील वापरकर्त्यांनी, किंवा योग्य यंत्रणा नसलेल्या वापरकर्त्यांनी खालिल क्रमांक वर डायल करावे.  जवळील क्रमांक निवडा."
+msgid "Setting up phone software or hardware"
+msgstr ""
+
+#: data/content/index.html:14
+msgid "To setup a softphone or IP-based phone hardware, click the link below."
+msgstr ""
+
+#: data/content/index.html:15
+#, fuzzy
+msgid "Set up a softphone or IP phone"
+msgstr "Soft Phone स्थापीत करत आहे"
+
+#: data/content/index.html:16
+msgid "Dialing in from a land line or mobile"
+msgstr ""
+
+#: data/content/index.html:17
+msgid "Those on the road, or without access to the proper equipment can use one of our dial in numbers.  Pick one near you."
+msgstr ""
+
+#: data/content/index.html:25
+msgid "What makes Fedora Talk work?"
+msgstr "Fedora Talk कसे कार्य करते?"
+
+#: data/content/index.html:26
+msgid "Fedora Talk is based on Asterisk, the premier free and open source PBX implementation that also provides a complete and scalable set of VoIP features.  As free and open source software, Asterisk fits well with the core values of Fedora."
+msgstr ""
+
+#: data/content/index.html:27
+#, fuzzy
+msgid "Software is just one aspect of this project.  Many volunteers have come together to help configure and test the install.  Hosting and bandwidth has been provided by Server Beach.  The dial in numbers (DiDs) have been provided by Arrival Telecom.  Every aspect of this project has been community and volunteer oriented."
+msgstr "Fedora Talk फक्त Asterisk प्रतिष्ठापन आहे.  VOIP उपाय करीता Asterisk हे उत्तम पर्याय आहे.  फ्री व ओपन सोअर्स सॉफ्टवेअर असल्यासमुळे, Asterisk Fedora च्या मुळ रचनेत सहज बसतो.  सॉफ्टवेअर या प्रकल्पाचे एक मुख्य गुणविशेष आहे.  संयोजन व प्रतिष्ठापनच्या चाचणी करीता बरेच स्वयंसेवक एकत्रपणे कार्य करतात.  होस्टींग व बॅन्डविड्थ Server Beach द्वारे पुरविले आहे.  dial in numbers (DiDs), Arrival Telecom द्वारे पुरविले आहे.  या प्रकल्पाचे प्रत्येक धोरण समाज व स्वयंसेवक द्वारे हाताळले जाते."
+
+#: data/content/setup-local-system.html:7
+#, fuzzy
+msgid "Setup Local System - Fedora Talk"
+msgstr "विषयी - Fedora Talk"
+
+#: data/content/setup-local-system.html:10
+msgid "Setup Local System"
+msgstr ""
+
+#: data/content/setup-local-system.html:11
+msgid "Once you have completed the <a href=\"./access\">VoIP setup tasks</a>, there are a couple local setup tasks to complete."
+msgstr ""
+
+#: data/content/setup-local-system.html:12
+msgid "Step 3: Sound preferences"
+msgstr ""
+
+#: data/content/setup-local-system.html:13
+msgid "Sound preferences dialog"
+msgstr ""
+
+#: data/content/setup-local-system.html:14
+msgid "Right-click on the sound volume applet in the notification area, and choose Sound Preferences.  In the resulting dialog select the Input and Output tabs, unmute the device in each, and ensure that the input device is registering sound from your voice."
+msgstr ""
+
+#: data/content/setup-local-system.html:15
+msgid "Step 4: Choose a client"
+msgstr ""
+
+#: data/content/setup-local-system.html:16
+msgid "A number of VoIP client applications are freely available in Fedora.  Choose one of the following to continue the setup process:"
+msgstr ""
+
+#: data/content/setup-local-system.html:17
+msgid "Twinkle (recommended)"
+msgstr ""
+
+#: data/content/setup-local-system.html:18
+msgid "Empathy"
+msgstr ""
+
+#: data/content/setup-local-system.html:19 data/content/usage.html:22
+msgid "Ekiga"
+msgstr ""
+
+#: data/content/setup-local-system.html:20
+msgid "IP phone or other SIP client"
+msgstr ""
 
 #: data/content/troubleshooting.html:7
 msgid "Troubleshooting - Fedora Talk"
@@ -251,74 +649,108 @@ msgid "This section is still being designed.  For now it is best to stop by #fed
 msgstr "या विभागची रचना अजूनही व्हायची आहे.  अधिक चौकशी irc.freenode.net वरील #fedora-admin येथे होते"
 
 #: data/content/troubleshooting.html:14
-msgid "Can't connect"
+msgid "After attempting each of these solutions, verify your setup using the link provided"
 msgstr ""
 
 #: data/content/troubleshooting.html:15
+msgid "Can't connect"
+msgstr ""
+
+#: data/content/troubleshooting.html:16
 msgid "Being unable to connect is a common issue. Try the following solutions"
 msgstr ""
 
-#: data/content/troubleshooting.html:17
-msgid "Disable your firewalls (If it starts working, then you need to re-configure your firewall)"
-msgstr ""
-
 #: data/content/troubleshooting.html:18
-msgid "Try to connect to @talk.fedoraproject.org instead of @fedoraproject.org"
+msgid "Disable your firewalls (If it starts working, then you need to re-configure your firewall) - specifically you need to allow UDP port 5060 (for SIP) and ports 10000-10500 (for RTP, the protocol that carries the actual audio)"
 msgstr ""
 
 #: data/content/troubleshooting.html:19
+msgid "Try to connect to @talk.fedoraproject.org instead of @fedoraproject.org. If this works, make sure that your client is set up to use DNS SRV records"
+msgstr ""
+
+#: data/content/troubleshooting.html:20
 msgid "Sometimes a client (like ekiga) might bind to an interface it shouldn't. Please verify it is using a valid and proper interface."
 msgstr ""
 
-#: data/content/troubleshooting.html:21
+#: data/content/troubleshooting.html:22
 msgid "Ekiga - \"Edit -> Preferences -> Protocols -> Network Settings -> \"Listen on\"."
 msgstr ""
 
-#: data/content/troubleshooting.html:22
+#: data/content/troubleshooting.html:23
 msgid "Twinkle - \"Edit -> System Settings -> General -> Default Network Interface\""
 msgstr ""
 
-#: data/content/troubleshooting.html:26
-msgid "Can't hear anything"
-msgstr ""
-
-#: data/content/troubleshooting.html:27
-msgid "First ensure that you have your audio configured properly and it isn't muted. Just try to play a song or find some other means to make noise. These issues are typically on the client. To test audio please join"
+#: data/content/troubleshooting.html:27 data/content/troubleshooting.html:32
+#: data/content/troubleshooting.html:37 data/content/troubleshooting.html:42
+#: data/content/troubleshooting.html:46 data/content/troubleshooting.html:49
+msgid "Verify your setup!"
 msgstr ""
 
 #: data/content/troubleshooting.html:28
-msgid "sip:conferences@fedoraproject.org"
+msgid "Can't hear anything"
 msgstr ""
 
 #: data/content/troubleshooting.html:29
-msgid "You should hear a female voice asking for your conference ID. If you do, just hang up."
+msgid "First ensure that you have your audio configured properly and it isn't muted. Just try to play a song or find some other means to make noise. These issues are typically on the client. To test audio please join"
 msgstr ""
 
 #: data/content/troubleshooting.html:30
-msgid "No one can hear me"
+msgid "or extension 1001"
 msgstr ""
 
 #: data/content/troubleshooting.html:31
-msgid "Having a mic configured in properly is a bit of an art. Ensure that you can record your own audio using something like audacity. If you'd like to test your mic, just stop by #fedora-admin on irc.freenode.net and we'll be happy to assist."
-msgstr ""
-
-#: data/content/troubleshooting.html:32
-msgid "Echoing"
+msgid "You should hear a female with the lyrics to Louie Louie. If you do, just hang up."
 msgstr ""
 
 #: data/content/troubleshooting.html:33
-msgid "There are a few common issues that lead to echoing. The most common of which is not using a headset and microphone. Using actual speakers on your laptop or desktop will cause your mic (sometimes embedded in your computer) will pick up the audio again. Unfortunately testing for this yourself is difficult. If you hear someone complaining please mute yourself or drop the call until you can re-configure."
+msgid "No one can hear me"
 msgstr ""
 
 #: data/content/troubleshooting.html:34
-msgid "Another common problem that leads to horrible echoing is from your sound system looping back on itself. This issue actually makes the conference unusable. If you join and people start complaining about an echo, please mute yourself or drop the call so those in the meeting can continue."
+msgid "You should verify that the system is properly receiving audio from the microphone. In GNOME, you can do this by right clicking on the speaker icon in the notification area, going to the input tab, and verifying the input level that you are seeing. If you have multiple microphones, for example a USB headset and an internal microphone, make sure that the raido button is selected on the correct one."
 msgstr ""
 
 #: data/content/troubleshooting.html:35
-msgid "Ekiga dialpad doesn't work"
+msgid "You can also use the echo service, described at <a href=\"./verify\">this page</a> in order to assure the proper functioning of your hardware and software. You should also check the level of the audio coming back at you through the echo if people complain that you are too loud or too soft."
 msgstr ""
 
 #: data/content/troubleshooting.html:36
+msgid "Getting a microphone configured properly is a bit of an art. Ensure that you can record your own audio using something like audacity. If you'd like to test your mic, just stop by #fedora-admin on irc.freenode.net and we'll be happy to assist."
+msgstr ""
+
+#: data/content/troubleshooting.html:38
+msgid "There is an echo on a conference bridge"
+msgstr ""
+
+#: data/content/troubleshooting.html:39
+msgid "There are a few common issues that lead to echoing. The most common of which is not using a headset and microphone. Using actual speakers on your laptop or desktop will cause your mic (sometimes embedded in your computer) will pick up the audio again. Unfortunately testing for this yourself is difficult. If you hear someone complaining please mute yourself or drop the call until you can re-configure."
+msgstr ""
+
+#: data/content/troubleshooting.html:40
+msgid "Another common problem that leads to horrible echoing is from your sound system looping back on itself. This issue actually makes the conference unusable. If you join and people start complaining about an echo, please mute yourself or drop the call so those in the meeting can continue."
+msgstr ""
+
+#: data/content/troubleshooting.html:41
+msgid "Do not use a mic that is not on a headset - the reason for this is when you do, your mic will pick up other sounds that are in the same room, for example the sounds of you typing on the keyboard, the sound of your computer fan, etc. This makes the conference unusable for other participants. If someone reports excessive noise, please either mute your line or drop off the conference."
+msgstr ""
+
+#: data/content/troubleshooting.html:43
+msgid "I can make calls, but not receive them"
+msgstr ""
+
+#: data/content/troubleshooting.html:44
+msgid "This generally indicates that your phone is not registered with the Asterisk server. Note that registration does not affect your ability to make calls, only to receive them. In development is a way to tell whether you are registered, and what that registration consists of, but at current, come to #fedora-admin on irc.freenode.net and we'll be more than happy to help!"
+msgstr ""
+
+#: data/content/troubleshooting.html:45
+msgid "One possible cause of this is a setting called 'SIP Registration Timeout' in your client. It is possible that there is some timeout in your firewall that differs from the SIP registration timeout, thereby causing you to lose registration with the Fedora Talk server. A reasonable value is 900 seconds (15 minutes)"
+msgstr ""
+
+#: data/content/troubleshooting.html:47
+msgid "Ekiga dialpad doesn't work"
+msgstr ""
+
+#: data/content/troubleshooting.html:48
 msgid "Try disabling silence detection in your audio configuration.  With silence detection enabled, the dialpad may not send tones properly.  Furthermore, the ekiga dialpad is prone to sending repeat tones which makes it difficult to enter PINs properly."
 msgstr ""
 
@@ -326,155 +758,162 @@ msgstr ""
 msgid "Usage - Fedora Talk"
 msgstr "वापरणी - Fedora Talk"
 
+#: data/content/usage.html:12
+msgid "This page is obsolete. For complete usage instructions for configuring client softphones and IP phones with Fedora Talk, refer to <a href=\"./access\">this page</a>."
+msgstr ""
+
 #: data/content/usage.html:13
+msgid "Using Fedora Talk"
+msgstr "Fedora Talk चा वापर"
+
+#: data/content/usage.html:14
 msgid "After access has been setup, all that is left is to setup your client"
 msgstr "प्रवेश करीता मांडणी नंतर, उर्वरीत कार्य म्हणजे क्लाऐंटला संयोजीत करणे आहे"
 
-#: data/content/usage.html:14
+#: data/content/usage.html:15
 msgid "Supported clients"
 msgstr ""
 
-#: data/content/usage.html:15
+#: data/content/usage.html:16
 msgid "There are many clients that support SIP based communication. The clients supported by the infrastructure team are ekiga (Gnome), twinkle (KDE), and linphone. Other clients will work but troubleshooting will be difficult as the team may be unfamiliar with them."
 msgstr ""
 
-#: data/content/usage.html:16
+#: data/content/usage.html:17
 msgid "Settings In Brief"
 msgstr "संयोजना विषयी विस्तृत माहिती"
 
-#: data/content/usage.html:17
+#: data/content/usage.html:18
 msgid "The proxy server, outbound proxy, and registration server are all set to talk.fedoraproject.org.  The port on all three is 5060.  There is no STUN server so far though stunserver.org should work. Your login is the <a href=\"https://admin.fedoraproject.org/accounts/\">FAS login</a>."
 msgstr "प्रॉक्सी सर्वर, आऊटबाऊन्ड प्रॉक्सी, व पंजीकरण सर्वर सर्व talk.fedoraproject.org करीता निश्चित केले गेले आहे.  सर्व सर्वर येथे पोर्ट 5060 चा वापर केला जातो.  अजूनही STUN सर्वरचा वापर stunserver.org द्वारे केला जात नाही. तुमचे दाखलन <a href=\"https://admin.fedoraproject.org/accounts/\">FAS दाखलन</a> नुरूप असेल."
 
-#: data/content/usage.html:18
+#: data/content/usage.html:19
 msgid "Setting Up A Soft Phone"
 msgstr "Soft Phone स्थापीत करत आहे"
 
-#: data/content/usage.html:19
+#: data/content/usage.html:20
 msgid "Twinkle"
 msgstr "Twinkle"
 
-#: data/content/usage.html:20
-#, fuzzy
-msgid "There is a <a href=\"http://fedorapeople.org/groups/web/fedoratalk-twinkle-screencast.ogg\">useful video tutorial</a> for configuring Twinkle with Fedora Talk. Useful content may be added to the <a href=\"http://fedoraproject.org/wiki\">Fedora Project wiki</a>, possibly even by <em>you</em>."
-msgstr "Fedora Talk सह Twinkle संयोजीत करण्याकरीता <a href=\"http://herlo.fedorapeople.org/screencasts/fedoratalk-twinkle-screencast.ogg\">उपयोगी विडीओ धडा</a> उपलब्ध आहे. उपयोगी अंतर्भूत माहिती <a href=\"http://fedoraproject.org/wiki\">Fedora Project wiki</a> मध्ये अंतर्भूत केली जाऊ शकते, संभाव्यत्या <em>तुमच्या</em> द्वारे."
-
-#: data/content/usage.html:21
-msgid "Ekiga"
-msgstr ""
-
-#: data/content/usage.html:23
+#: data/content/usage.html:24
 msgid "Open Ekiga. Cancel the druid (if any). You will get a screen like this."
 msgstr ""
 
-#: data/content/usage.html:24
-#, fuzzy
-msgid "Ekiga main screen"
-msgstr "Ekiga (लवकरच येत आहे)"
-
-#: data/content/usage.html:25
+#: data/content/usage.html:26
 msgid "Goto Menu → Edit → Accounts. You have this."
 msgstr ""
 
-#: data/content/usage.html:26
-msgid "Ekiga accounts window"
-msgstr ""
-
-#: data/content/usage.html:27
+#: data/content/usage.html:28
 msgid "Edit and fill the details"
 msgstr ""
 
-#: data/content/usage.html:28
-msgid "Ekiga edit accounts screen"
-msgstr ""
-
-#: data/content/usage.html:30
+#: data/content/usage.html:31
 msgid "Name: Fill in whatever name this account should have in the list."
 msgstr ""
 
-#: data/content/usage.html:31
-msgid "Registrar: fedoraproject.org"
-msgstr ""
-
-#: data/content/usage.html:32
+#: data/content/usage.html:33
 msgid "User: Your FAS username — this is what you use to log into the wiki or the Fedora Accounts System."
 msgstr ""
 
-#: data/content/usage.html:33
-msgid "Authentication User: leave this empty"
-msgstr ""
-
-#: data/content/usage.html:34
+#: data/content/usage.html:35
 msgid "Password: The password you set in the VoIP section in FAS. (Note that this not necessarily the same as your FAS password)"
 msgstr ""
 
-#: data/content/usage.html:35
+#: data/content/usage.html:36
 msgid "Timeout: Set to whatever feels right to you. Otherwise just leave the default."
 msgstr ""
 
-#: data/content/usage.html:36
+#: data/content/usage.html:37
 msgid "Enable account: Be sure this is checked!"
 msgstr ""
 
-#: data/content/usage.html:38
+#: data/content/usage.html:39
 msgid "When selecting \"OK\", you will get back the account screen. You can check if everything worked out well by checking the status in the \"Status\" column."
 msgstr ""
 
-#: data/content/usage.html:39
-msgid "Ekiga completed accounts window"
-msgstr ""
-
-#: data/content/usage.html:40
+#: data/content/usage.html:41
 msgid "You are done. You can enter sip:extension or sip:fasusername@fedoraproject.org to call. You can find your extension in the VoIP section of FAS."
 msgstr ""
 
-#: data/content/usage.html:42
+#: data/content/usage.html:43
 msgid "Testing the setup"
 msgstr "मांडणीची चाचणी करत आहे"
 
-#: data/content/usage.html:43
+#: data/content/usage.html:44
 #, fuzzy
 msgid "Perhaps the most difficult aspect of VOIP for new users is troubleshooting issues.  Please see <a href=\"./troubleshooting\">troubleshooting</a> for more help.  The best way to test is to call one of the actual dial in numbers listed on the <a href=\"/\">main page</a> and dial your own extension.  Users will be able to hear what they sound like on both ends and determine if there is an echo, static, or other issue."
 msgstr "नविन वापरकर्ता करीता VOIP चे सर्वात कठिण धोरण म्हणजे ट्रबलशूटींग अडचणी.  अधिक माहिती करीता  <a href=\"/troubleshooting\">ट्रबलशूटींग</a> पहा.  सर्वात उत्तम पर्याय म्हणजे  <a href=\"/\">मुख्य पान</a> वरील एकाधी वास्तविक डायल इन क्रमांक येथे एक्सटेनशेन सह डायल करा.  वापरकर्ता स्वत:चा आवाज दोन्ही टोकास ऐकू शकतील व आवाज ऐकतेवेळी प्रतिध्वनी, तात्कालिक, किंवा इतर अडचणींकरीता तपास केला जातो."
 
-#: data/content/usage.html:44
+#: data/content/usage.html:45
 msgid "Tips"
 msgstr ""
 
-#: data/content/usage.html:46
+#: data/content/usage.html:47
 msgid "People without a mic are encouraged to join meetings and ask questions via irc."
 msgstr ""
 
-#: data/content/usage.html:47
+#: data/content/usage.html:48
 msgid "Those looking to talk or hold meetings on the conference system are encouraged to get at least headphones and a microphone."
 msgstr ""
 
-#: data/content/usage.html:48
+#: data/content/usage.html:49
 msgid "Use the mute that comes with your client (ekiga, linphone, twinkle, etc). It will be better then muting your mic."
 msgstr ""
 
-#: data/content/usage.html:49
+#: data/content/usage.html:50
 msgid "Don't forget to disconnect after you're done! No one wants to hear you watching TV that night :)"
 msgstr ""
 
-#: data/content/usage.html:50
+#: data/content/usage.html:51
 msgid "Do test your connection in sip:infrastructure@fedoraproject.org. Ask someone in #fedora-admin to connect and verify your settings."
 msgstr ""
 
-#: data/content/usage.html:51
+#: data/content/usage.html:52
 msgid "Do use mute when you are not talking (it is preferred you use mute on the sip client and not through other means unless you are confident in your settings.  It is possible for your sound system to loop back into itself.)"
 msgstr ""
 
-#: data/content/usage.html:52
+#: data/content/usage.html:53
 msgid "Do pay attention when you join."
 msgstr ""
 
-#: data/content/usage.html:53
+#: data/content/usage.html:54
 msgid "Do not assume your equipment works"
 msgstr ""
 
-#: data/content/usage.html:54
+#: data/content/usage.html:55
 msgid "If you cannot connect to sip:infrastructure@fedoraproject.org also try sip:infrastructure@talk.fedoraproject.org"
+msgstr ""
+
+#: data/content/verify.html:7
+#, fuzzy
+msgid "Verification - Fedora Talk"
+msgstr "विषयी - Fedora Talk"
+
+#: data/content/verify.html:12
+msgid "Using Twinkle to make a simple call"
+msgstr ""
+
+#: data/content/verify.html:13
+msgid "To make a call using Twinkle, the preferred client for Fedora Talk, enter a number or name in the \"Call\" text box at the top of the main window."
+msgstr ""
+
+#: data/content/verify.html:14
+msgid "Screenshot of dialing"
+msgstr ""
+
+#: data/content/verify.html:15
+msgid "The numbers below are special test lines that may help you verify your setup."
+msgstr ""
+
+#: data/content/verify.html:17
+msgid "Louie Louie - You should hear a female voice reciting the lyrics to Louie Louie - this is testing the ability for you to receive one way audio"
+msgstr ""
+
+#: data/content/verify.html:18
+msgid "Echo - this simply echos everything that you say back to you. This tests that two way audio is functional"
+msgstr ""
+
+#: data/content/verify.html:19
+msgid "When you call this number, you should hear something. When you do, hang up, and in approximately 10 seconds, the system will call you back.  This tests the registration on the Asterisk server itself."
 msgstr ""
 
 #: data/templates/foot.html:9
@@ -510,35 +949,57 @@ msgstr "संचारन"
 msgid "Home"
 msgstr "मुख्य"
 
-#: data/templates/sidebar.html:13
-msgid "About"
-msgstr "विषयी"
-
-#: data/templates/sidebar.html:15
+#: data/templates/sidebar.html:14
 msgid "Access"
 msgstr "प्रवेश"
 
-#: data/templates/sidebar.html:16
-msgid "Usage"
-msgstr "वापर"
-
-#: data/templates/sidebar.html:17
+#: data/templates/sidebar.html:15
 #, fuzzy
 msgid "Conferencing"
 msgstr "Fedora Talk"
 
-#: data/templates/sidebar.html:18
+#: data/templates/sidebar.html:16
 msgid "Troubleshooting"
 msgstr "ट्रबलशुटींग"
 
-#: data/templates/sidebar.html:20
+#: data/templates/sidebar.html:18
 msgid "Website Language"
 msgstr "संकेतस्थळ भाषा"
 
-#: data/templates/sidebar.html:28
+#: data/templates/sidebar.html:26
 msgid "Hosting Sponsor"
 msgstr "होस्टींग निर्माता"
 
-#: data/templates/sidebar.html:29
+#: data/templates/sidebar.html:27
 msgid "Sponsored by ServerBeach"
 msgstr "ServerBeach द्वारे निर्मीत"
+
+#~ msgid "About Fedora Talk"
+#~ msgstr "Fedora Talk विषयी"
+
+#~ msgid "Fedora Talk is an effort to bring Fedora contributors in closer contact to each other.  IRC is an OK tool for communication but meetings and conversations bring much more to the table."
+#~ msgstr "Fedora Talk चे उद्देश Fedora सदस्यांना जवळ आणने आहे.  IRC संवाद करीता ठिक साधन आहे परंतु चर्चा व संभाषण करीता देखिल सुविधा पुरवते."
+
+#~ msgid "Step 1"
+#~ msgstr "पद्धत 1"
+
+#~ msgid "Step 2"
+#~ msgstr "पद्धत 2"
+
+#~ msgid "Step 3"
+#~ msgstr "पद्धत 3"
+
+#~ msgid "First sign up for a Fedora account and sign the CLA.  Next select \"VOIP\" from the side menu and edit the settings to enable voip as well as set your password.  This password should not be the same as your normal fedora password.  Please go to our accounts system for more information."
+#~ msgstr "प्रथम Fedora खाते बनवा व CLA करीता स्वाक्षरी करा.  त्यानंतर \"VOIP\" ला बाजूच्या पट्टी पासून निवडा व voip तसेच गुप्तशब्द निश्चित करण्याकरीता संयोजना संपादीत करा.  हे गुप्तशब्द तुमचे सर्वसाधारण fedora चे गुप्तशब्द नसावे.  अधिक माहिती करीता खाते प्रणाली येथे जा."
+
+#~ msgid "Get Connected!"
+#~ msgstr "जुळवणी करा!"
+
+#~ msgid "Welcome to Fedora Talk.  Remember to enable VoIP via your Fedora Account System account:"
+#~ msgstr "Fedora Talk वर आपले स्वागत आहे.  Fedora Account System द्वारे VoIP कार्यान्वीत करण्यास विसरू नका:"
+
+#~ msgid "About"
+#~ msgstr "विषयी"
+
+#~ msgid "Usage"
+#~ msgstr "वापर"
