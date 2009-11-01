@@ -35,7 +35,7 @@
 			<li><a href="#alphaorder">${_('Alphabetical Order')}</a></li> 
 		</ul> 
 		<div class="panes"> 
-			<div>
+			<div id="popular-spins">
 				<table>
 					<tbody>
 						<tr py:for="t in range(0,len(most_downloaded))">
@@ -44,7 +44,7 @@
 							name = arrName[-1]
 							num = most_downloaded[t]['completed']
 							?>
-							<td>#${t+1}</td>
+							<td class="rank">#${t+1}</td>
 							<td><a href="${relpath}/${name.lower()}/">${name}</a> <br />${num} downloads</td>
 							<td><img src="${relpath}/static/images/spin/${name.lower()}-mini.png" /></td>
 							<td>${sdata[name.lower()]}<br /><span><a href="${relpath}/${name.lower()}/">Learn more &amp; download! &gt;</a></span></td>
@@ -53,7 +53,7 @@
 				</table>
 				<p class="footnote">${_('Spins popularity is determined by number of downloads since the most recent Fedora release')}</p>				
 			</div> 
-			<div>
+				<div id="alpha-spins">
 				<table>
 					<tbody>
 						<tr py:for="t in range(0,len(alphabetical))">
@@ -62,7 +62,7 @@
 							name = arrName[-1]
 							num = alphabetical[t]['completed']
 							?>
-							<td>#${t+1}</td>
+							<td class="rank">#${t+1}</td>
 							<td><a href="${relpath}/${name.lower()}/">${name}</a> <br />${num} downloads</td>
 							<td><img src="${relpath}/static/images/spin/${name.lower()}-mini.png" /></td>
 							<td>${sdata[name.lower()]}<br /><span><a href="${relpath}/${name.lower()}/">Learn more &amp; download! &gt;</a></span></td>
