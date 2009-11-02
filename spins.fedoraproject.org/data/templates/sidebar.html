@@ -40,7 +40,7 @@
 		</py:when>
 		<py:otherwise>
 		<div id="download-now">
-			<a href="http://torrent.fedoraproject.org/torrents/${gettorrentinfo(area, 'name')}.torrent"><img src="/static/images/download-now.png" /></a>
+			<a class="big-button" href="http://torrent.fedoraproject.org/torrents/${gettorrentinfo(area, 'name')}.torrent"><img src="/static/images/down-arrow.png" />${ ('Download Now!')}</a>
 			<p>${gettorrentsize(area)} MB Torrent File for 32-bit PC ISO</p>
 			<h3><a href="#">${_('How do I use this?')}</a> | <a href="#download">${_('More download options ...')}</a></h3>
 		</div>
