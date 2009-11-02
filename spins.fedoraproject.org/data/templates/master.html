@@ -3,6 +3,7 @@ import simplejson
 import urllib
 from operator import itemgetter
 import re
+import random
 release = '11'
 
 # do not get list
@@ -33,6 +34,9 @@ def gettorrentsize(area):
 def formatsize(n, format='%0.2f'):
     return format % (n / 1024.0**2)
 
+def getrandomtorrent(list):
+	return random.randint(0, len(list)-1)
+
 # let's get our data
 fo = urllib.urlopen('http://torrent.fedoraproject.org/stats/current-stats.json')
 torrents = simplejson.load(fo)
@@ -50,6 +54,25 @@ for t_dict in torrents:
 most_downloaded = sorted(spins,key=itemgetter('completed'), reverse=True)
 # sort by alphabetical
 alphabetical = sorted(spins, key=itemgetter('name'))
+
+
+#data used on sidebar, for featured-spin section
+sdata_feature = {
+	'broffice': "Brazilian localized spin that provides the legal brand for OpenOffice.org in Brazil.",
+	'edu': "A special selection of applications related to educational and scientific purposes.",
+	'math': "This is math",
+	'kde': "A complete, modern desktop built using the K Desktop Environment (KDE).",
+	'xfce': "A complete, well-integrated Xfce desktop.",
+	'lxde': "This is lxde",
+	'aos': "A scaled-down version of Fedora with a small footprint for running an appliance.",
+	'developer': "This is developer",
+	'fel': "Fedora's high-end hardware design and simulation platform.",
+	'games': "A perfect show-case of the best games available in Fedora.",
+	'art': "The ultimate free & open source art studio - tailored for graphic designers.",
+	'desktop': "The Desktop spin of Fedora is the primary spin as provided on fedoraproject.org.",
+	'security': "Security analysis tools."
+}
+
 
 ?>
 

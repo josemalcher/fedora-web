@@ -28,9 +28,14 @@
 			</table>
 		</div>
 		<div id="featured-spin">
-			<img src="/static/images/spin/art-studio.png" />
-			<p>${_("The Fedora Art Studio spin is the ultimate free &amp; open source artists' operating system. This is the spin to get your creative juices flowing.")}</p>
-			<h3><a href="#">${_('Learn more &gt;')}</a></h3>
+			<?python
+				fspin = spins[getrandomtorrent(spins)]
+				arrfspin = fspin["name"].split("-")
+				fspinname = arrfspin[-1]
+			?>
+			<a href="${relpath}/${fspinname.lower()}/"><img src="/static/images/spin/${fspinname.lower()}-feature.png" /></a>
+			<p>${_(sdata_feature[fspinname.lower()])}</p>
+			<h3><a href="${relpath}/${fspinname.lower()}/">${_('Learn more &gt;')}</a></h3>
 		</div>
 		<div id="make-own-spin">
 			<h2>${_('Want to Make Your Own Spin?')}</h2>
@@ -51,8 +56,8 @@
 		</div>
 		<div id="whatis-this-spin">
 			<h2>${_('What is this Spin?')}</h2>
-			<p>${_('KDE is a desktop environment that drives the look and feel of your desktop.')}</p>
-			<h3><a href="#">${_('Learn more &gt;')}</a></h3>
+			<p>${_(sdata_feature[area.lower()])}</p>
+			<h3><a href="${relpath}/${area}">${_('Learn more &gt;')}</a></h3>
 		</div>
 		</py:otherwise>
 	</py:choose>

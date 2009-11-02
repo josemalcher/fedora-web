@@ -1,6 +1,7 @@
 <?python
   area = "main"
 
+	#data used for ordering section 
 	sdata = {
 		'broffice': "Brazilian localized spin that provides the legal brand for OpenOffice.org in Brazil.",
 		'edu': "A special selection of applications related to educational and scientific purposes.",
@@ -45,9 +46,9 @@
 							num = most_downloaded[t]['completed']
 							?>
 							<td class="rank">#${t+1}</td>
-							<td class="name"><a href="${relpath}/${name.lower()}/">${name}</a> <br />${num} downloads</td>
+							<td class="name"><a href="${relpath}/${name.lower()}/">${name}</a> <br />${num} ${_('downloads')}</td>
 							<td><a href="${relpath}/${name.lower()}/"><img src="${relpath}/static/images/spin/${name.lower()}-mini.png" /></a></td>
-							<td>${sdata[name.lower()]}<br /><span><a href="${relpath}/${name.lower()}/">Learn more &amp; download! &gt;</a></span></td>
+							<td>${sdata[name.lower()]}<br /><span><a href="${relpath}/${name.lower()}/">${_('Learn more &amp; download! &gt;')}</a></span></td>
 						</tr>
 					</tbody>
 				</table>
