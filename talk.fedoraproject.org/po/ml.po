@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master-talk-fedoraproject.ml\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-10-31 14:08-0400\n"
+"POT-Creation-Date: 2009-11-04 17:04-0600\n"
 "PO-Revision-Date: 2009-05-26 15:58+0530\n"
 "Last-Translator: \n"
 "Language-Team:  <en@li.org>\n"
@@ -135,7 +135,7 @@ msgstr ""
 msgid "You are done configuring your Ekiga client."
 msgstr ""
 
-#: data/content/client-ekiga.html:42 data/content/client-empathy.html:43
+#: data/content/client-ekiga.html:42 data/content/client-empathy.html:42
 #: data/content/client-twinkle.html:77
 msgid "Test and verify your settings"
 msgstr ""
@@ -150,63 +150,63 @@ msgstr "ഉപയോഗിക്കേണ്ട വിധം - ഫെഡോറ �
 msgid "Configuring Empathy for Fedora Talk"
 msgstr "ഫെഡോറ ടോക്കിലേക്കുള്ള പ്രവേശനം"
 
-#: data/content/client-empathy.html:16
+#: data/content/client-empathy.html:15
 msgid "Install the \"empathy\" package using PackageKit. From the main menu, select System → Administration → Add/Remove Software."
 msgstr ""
 
-#: data/content/client-empathy.html:17 data/content/client-twinkle.html:17
+#: data/content/client-empathy.html:16 data/content/client-twinkle.html:17
 msgid "Selecting PackageKit from the main menu"
 msgstr ""
 
-#: data/content/client-empathy.html:18
+#: data/content/client-empathy.html:17
 msgid "Type \"empathy\" into the \"find\" box and click find.  Then check the box for the \"empathy\" package and click \"Apply.\""
 msgstr ""
 
-#: data/content/client-empathy.html:19
+#: data/content/client-empathy.html:18
 msgid "Finding Packages using PackageKit"
 msgstr ""
 
-#: data/content/client-empathy.html:22
+#: data/content/client-empathy.html:21
 msgid "Next, open Empathy. From the main menu, select Applications → Internet → Empathy Instant Messenger."
 msgstr ""
 
-#: data/content/client-empathy.html:23
+#: data/content/client-empathy.html:22
 msgid "Opening Empathy"
 msgstr ""
 
-#: data/content/client-empathy.html:26
+#: data/content/client-empathy.html:25
 msgid "From the Empathy menu, select Edit → Accounts."
 msgstr ""
 
-#: data/content/client-empathy.html:29
+#: data/content/client-empathy.html:28
 msgid "Select \"Add\" and select SIP account from the list. The following dialog appears:"
 msgstr ""
 
-#: data/content/client-empathy.html:30
+#: data/content/client-empathy.html:29
 msgid "Empathy accounts dialog"
 msgstr ""
 
-#: data/content/client-empathy.html:31
+#: data/content/client-empathy.html:30
 msgid "In the dialog, fill in the following fields:"
 msgstr ""
 
-#: data/content/client-empathy.html:33
+#: data/content/client-empathy.html:32
 msgid "Username: Your FAS username, followed by \"@talk.fedoraproject.org\""
 msgstr ""
 
-#: data/content/client-empathy.html:34
+#: data/content/client-empathy.html:33
 msgid "Password: Your VoIP password (note this is not the same as your FAS password)"
 msgstr ""
 
-#: data/content/client-empathy.html:35
+#: data/content/client-empathy.html:34
 msgid "Enabled: Select this checkbox to immediately enable the acocunt)"
 msgstr ""
 
-#: data/content/client-empathy.html:39
+#: data/content/client-empathy.html:38
 msgid "Select \"Apply\" to apply changes, and then select \"Close\" to close the dialog. Your account is now active and registered."
 msgstr ""
 
-#: data/content/client-empathy.html:42
+#: data/content/client-empathy.html:41
 msgid "You are now finished configuring your Empathy client."
 msgstr ""
 
@@ -644,113 +644,117 @@ msgid "Troubleshooting Fedora Talk"
 msgstr "ഫെഡോറ ടോക്ക് പ്രശ്നങ്ങളുടെ പരിഹാരം"
 
 #: data/content/troubleshooting.html:13
-msgid "This section is still being designed.  For now it is best to stop by #fedora-admin on irc.freenode.net"
-msgstr "ഈ ഭാഗം ഇപ്പോഴും പൂര്‍ത്തിയായിട്ടില്ല. അതിനാല്‍, irc.freenode.net-ലുള്ള #fedora-admin ചാനലില്‍ ചേരുക."
-
-#: data/content/troubleshooting.html:14
 msgid "After attempting each of these solutions, verify your setup using the link provided"
 msgstr ""
 
-#: data/content/troubleshooting.html:15
+#: data/content/troubleshooting.html:14
 msgid "Can't connect"
 msgstr ""
 
-#: data/content/troubleshooting.html:16
+#: data/content/troubleshooting.html:15
 msgid "Being unable to connect is a common issue. Try the following solutions"
 msgstr ""
 
-#: data/content/troubleshooting.html:18
+#: data/content/troubleshooting.html:17
 msgid "Disable your firewalls (If it starts working, then you need to re-configure your firewall) - specifically you need to allow UDP port 5060 (for SIP) and ports 10000-10500 (for RTP, the protocol that carries the actual audio)"
 msgstr ""
 
-#: data/content/troubleshooting.html:19
+#: data/content/troubleshooting.html:18
 msgid "Try to connect to @talk.fedoraproject.org instead of @fedoraproject.org. If this works, make sure that your client is set up to use DNS SRV records"
 msgstr ""
 
-#: data/content/troubleshooting.html:20
+#: data/content/troubleshooting.html:19
 msgid "Sometimes a client (like ekiga) might bind to an interface it shouldn't. Please verify it is using a valid and proper interface."
 msgstr ""
 
-#: data/content/troubleshooting.html:22
+#: data/content/troubleshooting.html:21
 msgid "Ekiga - \"Edit -> Preferences -> Protocols -> Network Settings -> \"Listen on\"."
 msgstr ""
 
-#: data/content/troubleshooting.html:23
+#: data/content/troubleshooting.html:22
 msgid "Twinkle - \"Edit -> System Settings -> General -> Default Network Interface\""
 msgstr ""
 
-#: data/content/troubleshooting.html:27 data/content/troubleshooting.html:32
-#: data/content/troubleshooting.html:37 data/content/troubleshooting.html:42
-#: data/content/troubleshooting.html:46 data/content/troubleshooting.html:49
+#: data/content/troubleshooting.html:26 data/content/troubleshooting.html:31
+#: data/content/troubleshooting.html:36 data/content/troubleshooting.html:41
+#: data/content/troubleshooting.html:45 data/content/troubleshooting.html:48
 msgid "Verify your setup!"
 msgstr ""
 
-#: data/content/troubleshooting.html:28
+#: data/content/troubleshooting.html:27
 msgid "Can't hear anything"
 msgstr ""
 
-#: data/content/troubleshooting.html:29
+#: data/content/troubleshooting.html:28
 msgid "First ensure that you have your audio configured properly and it isn't muted. Just try to play a song or find some other means to make noise. These issues are typically on the client. To test audio please join"
 msgstr ""
 
-#: data/content/troubleshooting.html:30
+#: data/content/troubleshooting.html:29
 msgid "or extension 1001"
 msgstr ""
 
-#: data/content/troubleshooting.html:31
+#: data/content/troubleshooting.html:30
 msgid "You should hear a female with the lyrics to Louie Louie. If you do, just hang up."
 msgstr ""
 
-#: data/content/troubleshooting.html:33
+#: data/content/troubleshooting.html:32
 msgid "No one can hear me"
 msgstr ""
 
-#: data/content/troubleshooting.html:34
+#: data/content/troubleshooting.html:33
 msgid "You should verify that the system is properly receiving audio from the microphone. In GNOME, you can do this by right clicking on the speaker icon in the notification area, going to the input tab, and verifying the input level that you are seeing. If you have multiple microphones, for example a USB headset and an internal microphone, make sure that the raido button is selected on the correct one."
 msgstr ""
 
-#: data/content/troubleshooting.html:35
+#: data/content/troubleshooting.html:34
 msgid "You can also use the echo service, described at <a href=\"./verify\">this page</a> in order to assure the proper functioning of your hardware and software. You should also check the level of the audio coming back at you through the echo if people complain that you are too loud or too soft."
 msgstr ""
 
-#: data/content/troubleshooting.html:36
+#: data/content/troubleshooting.html:35
 msgid "Getting a microphone configured properly is a bit of an art. Ensure that you can record your own audio using something like audacity. If you'd like to test your mic, just stop by #fedora-admin on irc.freenode.net and we'll be happy to assist."
 msgstr ""
 
-#: data/content/troubleshooting.html:38
+#: data/content/troubleshooting.html:37
 msgid "There is an echo on a conference bridge"
 msgstr ""
 
-#: data/content/troubleshooting.html:39
+#: data/content/troubleshooting.html:38
 msgid "There are a few common issues that lead to echoing. The most common of which is not using a headset and microphone. Using actual speakers on your laptop or desktop will cause your mic (sometimes embedded in your computer) will pick up the audio again. Unfortunately testing for this yourself is difficult. If you hear someone complaining please mute yourself or drop the call until you can re-configure."
 msgstr ""
 
-#: data/content/troubleshooting.html:40
+#: data/content/troubleshooting.html:39
 msgid "Another common problem that leads to horrible echoing is from your sound system looping back on itself. This issue actually makes the conference unusable. If you join and people start complaining about an echo, please mute yourself or drop the call so those in the meeting can continue."
 msgstr ""
 
-#: data/content/troubleshooting.html:41
+#: data/content/troubleshooting.html:40
 msgid "Do not use a mic that is not on a headset - the reason for this is when you do, your mic will pick up other sounds that are in the same room, for example the sounds of you typing on the keyboard, the sound of your computer fan, etc. This makes the conference unusable for other participants. If someone reports excessive noise, please either mute your line or drop off the conference."
 msgstr ""
 
-#: data/content/troubleshooting.html:43
+#: data/content/troubleshooting.html:42
 msgid "I can make calls, but not receive them"
 msgstr ""
 
-#: data/content/troubleshooting.html:44
+#: data/content/troubleshooting.html:43
 msgid "This generally indicates that your phone is not registered with the Asterisk server. Note that registration does not affect your ability to make calls, only to receive them. In development is a way to tell whether you are registered, and what that registration consists of, but at current, come to #fedora-admin on irc.freenode.net and we'll be more than happy to help!"
 msgstr ""
 
-#: data/content/troubleshooting.html:45
+#: data/content/troubleshooting.html:44
 msgid "One possible cause of this is a setting called 'SIP Registration Timeout' in your client. It is possible that there is some timeout in your firewall that differs from the SIP registration timeout, thereby causing you to lose registration with the Fedora Talk server. A reasonable value is 900 seconds (15 minutes)"
 msgstr ""
 
-#: data/content/troubleshooting.html:47
+#: data/content/troubleshooting.html:46
 msgid "Ekiga dialpad doesn't work"
 msgstr ""
 
-#: data/content/troubleshooting.html:48
+#: data/content/troubleshooting.html:47
 msgid "Try disabling silence detection in your audio configuration.  With silence detection enabled, the dialpad may not send tones properly.  Furthermore, the ekiga dialpad is prone to sending repeat tones which makes it difficult to enter PINs properly."
+msgstr ""
+
+#: data/content/troubleshooting.html:49
+msgid "Still having problems?"
+msgstr ""
+
+#: data/content/troubleshooting.html:50
+msgid "If you're still having problems after following the instructions on this page, feel free to come by <a href=irc://irc.freenode.net/fedora-admin>#fedora-admin</a> on irc.freenode.net and we'll be happy to help you out! For assistance in getting on IRC, see "
 msgstr ""
 
 #: data/content/usage.html:7
@@ -972,6 +976,9 @@ msgstr "ഹോസ്റ്റ് ചെയ്യുന്ന സ്പോണ്�
 #: data/templates/sidebar.html:27
 msgid "Sponsored by ServerBeach"
 msgstr "സര്‍വര്‍ബീച്ച് സ്പോണ്‍സര്‍ ചെയ്യുന്നു"
+
+#~ msgid "This section is still being designed.  For now it is best to stop by #fedora-admin on irc.freenode.net"
+#~ msgstr "ഈ ഭാഗം ഇപ്പോഴും പൂര്‍ത്തിയായിട്ടില്ല. അതിനാല്‍, irc.freenode.net-ലുള്ള #fedora-admin ചാനലില്‍ ചേരുക."
 
 #~ msgid "About Fedora Talk"
 #~ msgstr "ഫെഡോറ ടോക്ക് സംബന്ധിച്ചു്"
