@@ -9,13 +9,13 @@
     </style>
   </head>
   <body>
-    <h2>${_('Accessing to Fedora Talk')}</h2>
-    <p>${_('Fedora Talk is provided to all Fedora Contributors.  Each participating contributor is given a 7 digit extension that starts with the number 5.  To get access users need to enable VOIP in the Fedora Accounts System and set their VOIP password')}</p>
-    <h3>${_('Step 1')}</h3>
-    <p>${Markup(_('Sign up for a &lt;a href="https://admin.fedoraproject.org/accounts/"&gt;Fedora Account&lt;/a&gt;, and ensure that you have signed the CLA at the account site.  Most Fedora contributors will have already done this'))}</p>
-    <h3>${_('Step 2')}</h3>
-    <p>${Markup(_('Enable Asterisk by clicking on the &lt;a href="https://admin.fedoraproject.org/accounts/asterisk/"&gt;VOIP&lt;/a&gt; link in the account system.  Then edit your profile.  Enable Asterisk as well as set an Asterisk Password.  It can take for up to an hour for your changes to be realized by Asterisk.  Now is also a good time to see what your extension is (on the VOIP main page in the account system).  Make a note of it.'))}</p>
-    <h3>${_('Step 3')}</h3>
-    <p>${_('All set.  The easy part is done.  After the user has been sent to the talk server users should be able to log in.  All that is left is to &lt;a href="./access"&gt;configure a Software Phone&lt;/a&gt; like twinkle and ekiga, or configuring a SIP compliant VOIP phone.')}</p>
+    <h2>${_('Set up Fedora Talk account')}</h2>
+    <p>${_('Fedora Talk is provided to all Fedora Contributors.  Each participating contributor receives a 7 digit extension that starts with the number 5.  To get access, you need to enable VoIP in the Fedora Accounts System and set a VoIP password.')}</p>
+    <h3>${_('Step 1: Set up a Fedora account')}</h3>
+    <p>${Markup(_('Sign up for a &lt;a href="https://admin.fedoraproject.org/accounts/"&gt;Fedora account&lt;/a&gt;, and ensure that you have signed the CLA at the account site.  Most Fedora contributors will have already done this.'))}</p>
+    <h3>${_('Step 2: Set up a VoIP account and password')}</h3>
+    <p>${Markup(_('Enable Asterisk by clicking on the &lt;a href="https://admin.fedoraproject.org/accounts/asterisk/"&gt;VoIP&lt;/a&gt; link in the account system.  Then edit your profile.  Enable Asterisk as well as set an Asterisk password.  It can take up to an hour for your changes to be received by Asterisk.  Now is also a good time to see what your extension is (on the VoIP main page in the account system).  Make a note of it.'))}</p>
+    <p>${_('After the user information has been sent to the Fedora Talk you should be able to log in.  All that is left is to &lt;a href="./setup-local-system"&gt;configure sound and a software phone&lt;/a&gt; like twinkle and ekiga, or a SIP compliant VoIP phone.')}</p>
+    <p><strong><a href="./setup-local-system">${_('Next step: Set up local system')}</a></strong></p>
   </body>
 </html>

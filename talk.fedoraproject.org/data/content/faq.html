@@ -11,12 +11,14 @@
   <body>
     <h2>${_('Frequently-Asked Questions')}</h2>
     <h3 class="question">${_('What is Fedora Talk?')}</h3>
-    <p class="answer">${_('Fedora Talk is a VoIP telephony solution so Fedora contributors can call each other.  It uses a free and open source solution called Asterisk.')}</p>
+    <p class="answer">${Markup(_('Fedora Talk is a VoIP telephony solution so Fedora contributors can call each other.  It uses a free and open source solution called &lt;a href="http://asterisk.org"&gt;Asterisk&lt;/a&gt;.'))}</p>
     <h3 class="question">${_('How can I use Fedora Talk?')}</h3>
-    <p class="answer">${_('First sign up for a Fedora account and sign the CLA.  Next select "VOIP" from the side menu and edit the settings to enable voip as well as set your password.  This password should not be the same as your normal fedora password.  Please go to our accounts system for more information.')} <a href='https://admin.fedoraproject.org/accounts/'>https://admin.fedoraproject.org/</a></p>
+    <p class="answer">${Markup(_('Consult the &lt;a href="./access"&gt;access page&lt;/a&gt; for more information.'))}</p>
     <h3 class="question">${_('What equipment do I need?')}</h3>
-    <p class="answer">${_('Aside from a computer with Internet access at a minimum it is recommended to get a headset with headphones and a microphone attached.  Without it you will be difficult or impossible to understand.  It is important to remember that background noise and misconfigured or poorly configured callers can completely destroy a conference call.')}</p>
+    <p class="answer">${_('You need a computer with Internet access, and a headset with headphones and a microphone attached is highly recommended.  Without it you will be difficult or impossible to understand.  A headset reduces background noise and helps other callers hear you better without any unwanted echo effets. A misconfigured or poorly configured client can make a conference call unpleasant for yourself and others.')}</p>
     <h3 class="question">${_('What if I am on the road or do not have the proper equipment?')}</h3>
-    <p class="answer">${_('Using one of Fedora dial in numbers will allow you to use your standard phone or cell phone in order to communicate with others.  This is also a way for non-Fedora users to join conferences. See the &lt;a href="./conference"&gt;conferencing page&lt;/a&gt; for more information and dial in numbers.')}</p>
+    <p class="answer">${_('Using one of Fedora dial in numbers will allow you to use your standard phone or cell phone in order to communicate with others.  After connecting to one of these numbers, enter the conference number or extension of the person you would like to reach. This is also a convenient way for non-Fedora users to join conferences. See the &lt;a href="./index"&gt;main page&lt;/a&gt; for the dial in numbers.')}</p>
+    <h3 class="question">${_('What are the established Fedora Conference rooms?')}</h3>
+    <p class="answer">${_('See the &lt;a href="./conference"&gt;conferencing page&lt;/a&gt; for the conference rooms and numbers.')}</p>
   </body>
 </html>
