@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  py:strip="">
+
+	<div id="sidebar">
+		<div id="download-fedora">
+			<h2>${_('Looking to Download Fedora?')}</h2>
+			<p>${_("Spins are alternate versions of Fedora for specific uses. If you'd just like to download Fedora itself, you should visit the main fedoraproject.org website.")}</p>
+			<h3><a href="http://get.fedoraproject.org">${_('Visit get.fedoraproject.org &gt;')}</a></h3>
+		</div>
+		<div id="top-spins">
+			<h2>${_('Top Spins This Week')}</h2>
+			<p>Known</p>
+		</div>
+		<div id="featured-spin">
+			<a href="${relpath}/"><img src="/static/images/feature.png" /></a>
+			<p>Data</p>
+			<h3><a href="${relpath}/">${_('Learn more &gt;')}</a></h3>
+		</div>
+		<div id="make-own-spin">
+			<h2>${_('Want to Make Your Own Spin?')}</h2>
+			<p>${_('Anyone can create their very own Fedora spin.')}</p>
+			<h3><a href="/support">${_('Go to the spin creation tutorial &gt;')}</a></h3>
+		</div>
+		<div id="download-now">
+			<a class="big-button" href="#"><img src="/static/images/down-arrow.png" />${_('Download Now!')}</a>
+			<p>MB Torrent File for 32-bit PC ISO</p>
+			<h3><a href="#">${_('How do I use this?')}</a> | <a class="more-downloads" href="#downloads">${_('More download options ...')}</a></h3>
+		</div>
+		<div id="whatis-spin">
+			<h2>${_('What is a Spin?')}</h2>
+			<p>${_('Fedora Spins are alternate version of Fedora, tailored for various types of users via hand-picked application sets and other customizations.')}</p>
+			<h3><a href="/about">${_('Learn more &gt;')}</a></h3>
+		</div>
+		<div id="whatis-this-spin">
+			<h2>${_('What is this Spin?')}</h2>
+			<p>data</p>
+			<h3><a href="${relpath}/">${_('Learn more &gt;')}</a></h3>
+		</div>
+	</div>
+</html>
