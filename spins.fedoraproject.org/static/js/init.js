@@ -1,8 +1,9 @@
 
 // load tabs on pageload 
 $(function() { 
-	// setup ul.tabs to work as tabs for each div directly under div.panes 
-	$("ul.tabs").tabs("div.panes > div");
+	// setup ul.tabs to work as tabs for each div directly under div.panes
+	// now remembers history
+	$("ul.tabs").tabs("div.panes > div").history();
 	
 	// hide all "learn more" links
 	$("span.learn-more").hide();
