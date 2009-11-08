@@ -18,4 +18,7 @@ $(function() {
 		}
 	);
 
+	$("img[rel]").overlay();
+
+
 });
