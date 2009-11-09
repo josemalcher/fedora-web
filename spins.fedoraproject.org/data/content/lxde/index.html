@@ -10,21 +10,28 @@
     <title>${_('About Spin: LXDE')}</title>
   </head>
   <body>
-		<!-- the tabs --> 
-		<ul class="tabs"> 
-			<li><a id="t1" href="#home">Home</a></li> 
-			<li><a id="t2" href="#about">About LXDE</a></li> 
-			<li><a id="t3" href="#downloads">Downloads</a></li> 
-			<li><a id="t4" href="#support">Support</a></li> 
+		<!-- the tabs -->
+		<ul class="tabs">
+			<li><a id="t1" href="#home">${_('Home')}</a></li>
+			<li><a id="t2" href="#about">${_('About LXDE')}</a></li>
+			<li><a id="t3" href="#downloads">${_('Downloads')}</a></li>
+			<li><a id="t4" href="#support">${_('Support')}</a></li>
 		</ul>
-		<!-- tab "panes" --> 
+		<!-- tab "panes" -->
 		<div class="panes">
 			<div>
-                          <img src="/static/images/spin/lxde-screenshot.png" />
-                        </div> 
-			<div>About LXDE</div> 
-			<div>Downloads</div> 
-			<div class="lxdesupport">Support<p>This is subtext</p></div> 
+				<h2>${_('Home')}</h2>
+				<img src="/static/images/spin/lxde-screenshot.png" />
+			</div>
+			<div>
+				<h2>${_('About LXDE')}</h2>
+			</div>
+			<div>
+				<h2>${_('Downloads')}</h2>
+			</div>
+			<div>
+				<h2>${_('Support')}</h2>
+			</div>
 		</div>
   </body>
 </html>

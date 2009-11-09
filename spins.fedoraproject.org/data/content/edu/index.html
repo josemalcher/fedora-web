@@ -10,21 +10,48 @@
     <title>${_('About Spin: Education')}</title>
   </head>
   <body>
-		<!-- the tabs --> 
-		<ul class="tabs"> 
-			<li><a id="t1" href="#home">Home</a></li> 
-			<li><a id="t2" href="#about">About Education</a></li> 
-			<li><a id="t3" href="#downloads">Downloads</a></li> 
-			<li><a id="t4" href="#support">Support</a></li> 
-		</ul> 
-		 
-		<!-- tab "panes" --> 
-		<div class="panes"> 
-			<div>First tab content. Tab contents are called "panes"</div> 
-			<div>About Education</div> 
-			<div>Downloads</div> 
-			<div class="educationsupport">Support<p>This is subtext</p></div> 
+		<!-- the tabs -->
+		<ul class="tabs">
+			<li><a id="t1" href="#home">${_('Home')}</a></li>
+			<li><a id="t2" href="#about">${_('About Education')}</a></li>
+			<li><a id="t3" href="#downloads">${_('Downloads')}</a></li>
+			<li><a id="t4" href="#support">${_('Support')}</a></li>
+		</ul>
+
+		<!-- tab "panes" -->
+		<div class="panes">
+			<div>
+				<h2>${_('Home')}</h2>
+				<p>${_('The purpose of this spin is to create a ready-to-go development environment for contributing to educational projects inside, but also outside of the Fedora ecosystem.')}</p>
+				<img class="within-text" src="/static/images/content/edu-screenshot-01-sm.png" rel="#edu1" />
+			</div>
+			<div>
+				<h2>${_('About Education')}</h2>
+				<p>${_('Have you ever wanted to contribute - or get others to contribute - to an open source education project, but never found the time to set up and get started? We\'ve got a ready-to-go contributors\' (not just code!) environment for you!')}</p>
+				<p>${_('Providing students and teachers with a variety of development environments, tools, documentation, and getting-started resources, the Fedora Education SIG achieves its goal of lowering the entry barrier to contributing as much as possible.')}</p>
+				<p>${_('The Education Spin features a number of well-received solutions, such as the award-winning Sugar Desktop Environment - as seen on the OLPC and Sugar on a Stick - and the popular KDE Education applications. It also contains a complete Eclipse development stack and other tools, allowing not only an exploration, but also the creation of code.')}</p>
+			</div>
+			<div>
+				<h2>${_('Downloads')}</h2>
+			</div>
+			<div>
+				<h2>${_('Support')}</h2>
+				<p>${_('Following the goal of making it as easy as possible for students and teachers to dive into open source projects, the Fedora Education Spin comes with a variety of support options.')}</p>
+				<p>${_('You can always reach us on IRC in #fedora-edu on Freenode, where you will be automatically connected to when using the included XChat application. Additionally, we encourage you to check the channels of other projects, especially the Sugar Labs (#sugar) and Teaching Open Source (#teachingopensource) ones.')}</p>
+				<p>${_('In case you prefer sending an e-mail, you can direct thoughts and feedback at the &lt;a href="http://www.redhat.com/mailman/listinfo/fedora-education-list"&gt;Fedora Education Mailing List&lt;/a&gt;.')}</p>
+			</div>
 		</div>
+
+<div class="simple_overlay" id="edu1">
+    <!-- large image -->
+    <img src="/static/images/content/edu-screenshot-01-lg.png" />
+    <!-- image details -->
+    <div class="details">
+        <h3>${_('Education')}</h3>
+        <h4>${_('Screenshot')}</h4>
+        <p>${_('Screenshot of the Education desktop')}</p>
+    </div>
+</div>
 
   </body>
 </html>

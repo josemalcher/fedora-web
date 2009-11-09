@@ -10,21 +10,44 @@
     <title>${_('About Spin: AOS')}</title>
   </head>
   <body>
-		<!-- the tabs --> 
-		<ul class="tabs"> 
-			<li><a id="t1" href="#home">Home</a></li> 
-			<li><a id="t2" href="#about">About AOS</a></li> 
-			<li><a id="t3" href="#downloads">Downloads</a></li> 
-			<li><a id="t4" href="#support">Support</a></li> 
-		</ul> 
-		 
-		<!-- tab "panes" --> 
-		<div class="panes"> 
-			<div>First tab content. Tab contents are called "panes"</div> 
-			<div>About AOS</div> 
-			<div>Downloads</div> 
-			<div class="aossupport">Support<p>This is subtext</p></div> 
-		</div>
+		<!-- the tabs -->
+		<ul class="tabs">
+			<li><a id="t1" href="#home">${_('Home')}</a></li>
+			<li><a id="t2" href="#about">${_('About AOS')}</a></li>
+			<li><a id="t3" href="#downloads">${_('Downloads')}</a></li>
+			<li><a id="t4" href="#support">${_('Support')}</a></li>
+		</ul>
 
+		<!-- tab "panes" -->
+		<div class="panes">
+			<div>
+				<h2>${_('Home')}</h2>
+				<p>${_('Appliances are pre-installed, pre-configured, system images. This Spin is intended to make it easier for anyone (ISVs, developers, OEMS, etc) to create and deploy virtual appliances. The AOS (The Appliance Operating System) is a scaled down version of Fedora with a small footprint containing only the packages necessary to run an appliance.')}</p>
+				<p>${_('The hardware supported by this spin of Fedora would be limited, primarily focusing on virtual containers such as KVM and VMware. The goal is to create a base that developers can build their applications on top of, only pulling in packages that their software requires. A "start from the bottom and build up" mentality.')}</p>
+			</div>
+			<div>
+				<h2>${_('About AOS')}</h2>
+				<p>${_('The Appliance Operating System (AOS) is a minimal operating system definition, containing only the packages necessary to run an appliance. The AOS is meant to be a base, on which new appliance\'s can be built on top of and customized for a specific application. The AOS is described in a kickstart file and is hosted in the Fedora Spins KickstartPool, this definition is meant to evolve over time to become a smaller, more usable base appliance defination. The AOS is designed to work as a virtual machine or as a traditional locked down bare metal appliance.')}</p>
+			</div>
+			<div>
+				<h2>${_('Downloads')}</h2>
+				<p>${_('The AOS is currently available in Fedora 10 as a Fedora Spin, which is a pre-build "binary blob." The blob is packaged as a tarball, and includes a raw disk image and meta data required to run the appliance in a virtual container. The AOS image can be here.')}</p>
+				<p>${_('Once downloaded, you can launch the AOS as a virtual appliance on a Fedora using the following steps, It is recommended to be running F-10 or greater this should also work with F-9 or Rawhide.')}</p>
+				<ol>
+					<li>${_('Install all prerequisite virt tools using yum: *note to use kvm you must be running a full virt box')}<br /><code>yum install qemu kvm libvirt libvirt-python python-virtinst virt-manager virt-viewer</code></li>
+					<li>${_('Unpack the tarball containing the AOS:')}<br /><code>tar -xzvf F10-x86_64-AOS.tar.gz</code></li>
+					<li>${_('Use virt-imge to launch the image:')}<br /><code>virt-image F10-x86_64-AOS.xml</code></li>
+					<li>${_('Use "virsh list" to see if its running and get the IDNUM')}<br /><code>virsh list</code></li>
+					<li>${_('Connect to appliance and log in to verify its running:')}<br /><code>virt-viewer IDNUM</code></li>
+				</ol>
+			</div>
+			<div>
+				<h2>${_('Support')}</h2>
+				<p><a href="http://thincrust.net/">http://thincrust.net/</a></p>
+				<p>${_('IRC: #thincrust on freenode')}</p>
+				<p>${_('Discussion of this project takes places at the &lt;a href="mailto:thincrust-devel@redhat.com"&gt;thincrust-devel@redhat.com mailing list&lt;/a&gt;:')}<br />
+				<a href="http://www.redhat.com/mailman/listinfo/thincrust-devel">http://www.redhat.com/mailman/listinfo/thincrust-devel</a></p>
+			</div>
+		</div>
   </body>
 </html>

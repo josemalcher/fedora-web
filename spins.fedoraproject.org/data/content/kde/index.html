@@ -12,49 +12,51 @@
   <body>
 		<!-- the tabs -->
 		<ul class="tabs">
-			<li><a id="t1" href="#home">Home</a></li>
-			<li><a id="t2" href="#about">About KDE</a></li>
-			<li><a id="t3" href="#downloads">Downloads</a></li>
-			<li><a id="t4" href="#support">Support</a></li>
+			<li><a id="t1" href="#home">${_('Home')}</a></li>
+			<li><a id="t2" href="#about">${_('About KDE')}</a></li>
+			<li><a id="t3" href="#downloads">${_('Downloads')}</a></li>
+			<li><a id="t4" href="#support">${_('Support')}</a></li>
 		</ul>
 
 		<!-- tab "panes" -->
 		<div class="panes">
 			<div>
+				<h2>${_('Home')}</h2>
 				<p>${_('The Fedora KDE Desktop Edition is a powerful Fedora-based operating system utilizing the K Desktop Environment as the main user interface. Fedora KDE comes with many pre-selected top quality applications that suit all modern desktop use cases - from online communication like web browsing, instant messaging and electronic mail correspondence, through multimedia and entertainment, to an advanced productivity suite, including office applications and enterprise grade personal information management. All KDE applications are well integrated, with a similar look and feel and an easy to use interface, accompanied by an outstanding graphical appearance.')}</p>
 				<img class="within-text" src="/static/images/content/kde-screenshot-04-sm.png" />
 				<p>${_('The Fedora KDE Desktop Edition is based on the latest KDE 4 technology as provided by KDE open source community.')}</p>
 				<p>${_('Go to &lt;a href="#about"&gt;About KDE&lt;/a&gt; if you want to know more! It\'s your desktop.')}</p>
 			</div>
 			<div>
-				<h3>Desktop</h3>
-				<h4>Plasma</h4>
-				<p>Plasma provides the desktop interface for KDE 4, including the application launcher (start menu), the desktop and the desktop panel (often referred to simply as the task bar).</p>
+				<h2>${_('About KDE')}</h2>
+				<h3>${_('Desktop')}</h3>
+				<h4>${_('Plasma')}</h4>
+				<p>${_('Plasma provides the desktop interface for KDE 4, including the application launcher (start menu), the desktop and the desktop panel (often referred to simply as the task bar).')}</p>
 				<img class="within-text" src="/static/images/content/kde-screenshot-01-sm.png" rel="#plasma1" />
-				<p>You can use Plasma as you would use the desktop of any other operating system, by accessing the application menu (K Menu), viewing the currently active programs on the taskbar, accessing icons on the system tray, and so on.</p>
-				<p>An important part of Plasma are the so-called widgets, and the customization these widgets allow. Widgets are the individual units of the desktop and they include the application menu, icons, the system tray, the clock, along with countless other widgets. Widgets can exist on the desktop itself, or be inserted in the panel. Panels and desktops are actually special kinds of widgets, meant to contain other widgets (in Plasma terms, they are called "Containments").</p>
-				<p>More info available at <a href="http://userbase.kde.org/Plasma">http://userbase.kde.org/Plasma</a></p>
-				<h4>Desktop Effects</h4>
-				<p>Kwin (the default KDE window manager) supports this cool compositing effects like the Desktop Cube Animation, where each virtual desktop is displayed on a side of a cube. Wobbly windows, which can explode when they are closed or fall apart. And of course lots more interesting effects.</p>
-				<p>Enjoy one of the example videos here: <a href="http://www.youtube.com/watch?v=arZSxLuwv_E">http://www.youtube.com/watch?v=arZSxLuwv_E</a></p>
-				<p><strong>Note</strong>: Desktop effects are not enabled by default! You need a supported graphics card and to enable it in the System settings -&gt; Desktop configuration tool.</p>
+				<p>${_('You can use Plasma as you would use the desktop of any other operating system, by accessing the application menu (K Menu), viewing the currently active programs on the taskbar, accessing icons on the system tray, and so on.')}</p>
+				<p>${_('An important part of Plasma are the so-called widgets, and the customization these widgets allow. Widgets are the individual units of the desktop and they include the application menu, icons, the system tray, the clock, along with countless other widgets. Widgets can exist on the desktop itself, or be inserted in the panel. Panels and desktops are actually special kinds of widgets, meant to contain other widgets (in Plasma terms, they are called "Containments").')}</p>
+				<p>${_('More info available at &lt;a href="http://userbase.kde.org/Plasma"&gt;http://userbase.kde.org/Plasma&lt;/a&gt;')}</p>
+				<h4>${_('Desktop Effects')}</h4>
+				<p>${_('Kwin (the default KDE window manager) supports this cool compositing effects like the Desktop Cube Animation, where each virtual desktop is displayed on a side of a cube. Wobbly windows, which can explode when they are closed or fall apart. And of course lots more interesting effects.')}</p>
+				<p>${_('Enjoy one of the example videos here:')} <a href="http://www.youtube.com/watch?v=arZSxLuwv_E">http://www.youtube.com/watch?v=arZSxLuwv_E</a></p>
+				<p>${_('Note: Desktop effects are not enabled by default! You need a supported graphics card and to enable it in the System settings -&gt; Desktop configuration tool.')}</p>
 
-				<h3>Going online</h3>
-				<p>With the latest technology spearheaded by Red Hat, the NetworkManager set of tools, and its system tray Applet, it's just a click and you're connected to your wireless LAN router, or online via many supported 3G mobile broadband cards. Explore the World Wide Web with Konqueror, the full featured KDE web browser.</p>
-				<p>Stay connected with your friends and colleagues using <strong>Kopete</strong> Instant Messaging client. It supports all common IM protocols and has a really nice user interface with the ability to group more protocols under one contact. Your contact will be nearly always online!</p>
-				<p>Are you a downloader? Use <strong>KTorrent</strong> or <strong>KGet</strong> to get new the versions of Fedora KDE Desktop Edition!</p>
+				<h3>${_('Going online')}</h3>
+				<p>${_('With the latest technology spearheaded by Red Hat, the NetworkManager set of tools, and its system tray Applet, it\'s just a click and you\'re connected to your wireless LAN router, or online via many supported 3G mobile broadband cards. Explore the World Wide Web with Konqueror, the full featured KDE web browser.')}</p>
+				<p>${_('Stay connected with your friends and colleagues using &lt;strong&gt;Kopete&lt;/strong&gt; Instant Messaging client. It supports all common IM protocols and has a really nice user interface with the ability to group more protocols under one contact. Your contact will be nearly always online!')}</p>
+				<p>${_('Are you a downloader? Use &lt;strong&gt;KTorrent&lt;/strong&gt; or &lt;strong&gt;KGet&lt;/strong&gt; to get new the versions of Fedora KDE Desktop Edition!')}</p>
 
-				<h3>Utilities and configuration</h3>
-				<p>KDE ships a terminal, of course, the gateway to the real power of any Unix/Linux machine, called Konsole. <strong>Konsole</strong> is perfectly configurable by design, as is every part of KDE. Speaking of configurable, you're of course able to configure your KDE Desktop to fit your personal needs via the <strong>System Settings</strong> GUI (Graphical User Interface). No need to know cryptic commands and configuration files. Click the options you like to change and choose the settings that make you happy. This is your desktop and we will never make these decisions for you.</p>
+				<h3>${_('Utilities and configuration')}</h3>
+				<p>${_('KDE ships a terminal, of course, the gateway to the real power of any Unix/Linux machine, called Konsole. &lt;strong&gt;Konsole&lt;/strong&gt; is perfectly configurable by design, as is every part of KDE. Speaking of configurable, you\'re of course able to configure your KDE Desktop to fit your personal needs via the &lt;strong&gt;System Settings&lt;/strong&gt; GUI (Graphical User Interface). No need to know cryptic commands and configuration files. Click the options you like to change and choose the settings that make you happy. This is your desktop and we will never make these decisions for you.')}</p>
 
-				<h3>Office and Productivity Suite</h3>
-				<h4>KOffice</h4>
-				<p>KOffice is an integrated office suite built on the KDE platform. It utilizes free and open standards like OpenDocument for its document formats, component communication and embedding. KOffice is free software and serves as a great and lightweight alternative to OpenOffice.org. Visit <a href="http://www.koffice.org" title="http://www.koffice.org">http://www.koffice.org</a> to find out more.</p>
-				<h4>Kontact</h4>
-				<p><strong>Kontact</strong> is the integrated personal information manager of KDE. The Kontact suite unites mature and proven KDE PIM applications under one easy to use application.</p>
+				<h3>${_('Office and Productivity Suite')}</h3>
+				<h4>${_('KOffice')}</h4>
+				<p>${_('KOffice is an integrated office suite built on the KDE platform. It utilizes free and open standards like OpenDocument for its document formats, component communication and embedding. KOffice is free software and serves as a great and lightweight alternative to OpenOffice.org. Visit &lt;a href="http://www.koffice.org" title="http://www.koffice.org"&gt;http://www.koffice.org&lt;/a&gt; to find out more.')}</p>
+				<h4>${_('Kontact')}</h4>
+				<p>${_('&lt;strong&gt;Kontact&lt;/strong&gt; is the integrated personal information manager of KDE. The Kontact suite unites mature and proven KDE PIM applications under one easy to use application.')}</p>
 				<img class="within-text" src="/static/images/content/kde-screenshot-02-sm.png" rel="#kontact1" />
-				<p>The components of KDE Kontact are tailored to work well with each other. This results in features like intuitive drag-and-drop between appointment handling, task lists and contacts. KDE Kontact also supports various groupware servers, allowing you to easily integrate your work life with your time outside of the daily grind. When using these servers your workgroup has access to features like shared email folders, group task lists, calendar sharing, central addressbooks and meeting scheduling, everything you would expect from full featured commercial applications, and much more.</p>
-				<p>Kontact keeps you informed about all the things going on with a nice overview page. The main Applications used under the roof of Kontact are: <br /> 
+				<p>${_('The components of KDE Kontact are tailored to work well with each other. This results in features like intuitive drag-and-drop between appointment handling, task lists and contacts. KDE Kontact also supports various groupware servers, allowing you to easily integrate your work life with your time outside of the daily grind. When using these servers your workgroup has access to features like shared email folders, group task lists, calendar sharing, central addressbooks and meeting scheduling, everything you would expect from full featured commercial applications, and much more.')}</p>
+				<p>Kontact keeps you informed about all the things going on with a nice overview page. The main Applications used under the roof of Kontact are: <br />
 				<strong>KMail</strong>, <a href="http://userbase.kde.org/Kmail" title="http://userbase.kde.org/Kmail">http://userbase.kde.org/Kmail</a> the KDE email component. <br />
 				<strong>KAddressBook</strong>, <a href="http://userbase.kde.org/KAddressBook" title="http://userbase.kde.org/KAddressBook">http://userbase.kde.org/KAddressBook</a> a comfortable frontend to organize the addresses of your friends, business partners, etc. <br />
 				<strong>Korganizer</strong>, <a href="http://userbase.kde.org/KOrganizer" title="http://userbase.kde.org/KOrganizer">http://userbase.kde.org/KOrganizer</a> Calendar, scheduling and journal <br />
@@ -62,66 +64,69 @@
 				<strong>KJots</strong>, <a href="http://userbase.kde.org/KJots" title="http://userbase.kde.org/KJots">http://userbase.kde.org/KJots</a> Organize your ideas in a Notebook. <br />
 				<strong>Ktimetracker</strong>, <a href="http://userbase.kde.org/Ktimetracker" title="http://userbase.kde.org/Ktimetracker">http://userbase.kde.org/Ktimetracker</a> Track how much time you spend on various tasks. <br /></p>
 
-				<h3>Multimedia</h3>
-				<p>Todays world is full of multimedia all around you (whether it's music as MP3s or CDs), or streamed online, all kinds of videos (from movies to TV broadcast) and more. Usually it's not easy to play it, not to mention organizing and backing up all of it. Fedora KDE Desktop Edition has a solution for you. No more multimedia mess, just enjoy your media!</p>
-				<p>It's just a fact that <strong>Amarok</strong> defines new standards in media players industry. You've probably never had your music so organized as with Amarok. With high quality music collection features you never lose your music anymore! Amarok supports Advanced playlists, including dynamically generated ones, which would remind you of your oldest, almost forgotten songs, with cover art, lyrics and even  information on the current track or band, pulled straight from Wikipedia. Amarok also brings great integration with Last.fm and other online music services, allowing you to listen to streaming radio, podcasts, and even purchase music from the Magnatune store, allowing you to support artists directly and enjoy DRM free music. Live your music!</p>
-				<p><strong>Kaffeine</strong> is a video player and digital TV in one easy to use interface. Watch and record your favorite digital TV stations and enjoy content stored on your machine with this intuitive media player.</p>
-				<p><strong>K3B</strong> allows you to easily back up your multimedia files as it's a full featured CD/DVD writing software. K3B supports writing data CDs/DVDs, audio CDs, video CDs, DVDs, copying, CD ripping and more. Take care, you can get burned&nbsp;;-)</p>
-				<p><strong>KsCD</strong> is the small, fast Standard-Audio-CD-Player for KDE, with MusicBrainz support. KsCD means "The KDE Project's small/simple CD player," and it lives up to this name, providing the features you expect in a compact, easy to use interface.</p>
+				<h3>${_('Multimedia')}</h3>
+				<p>${_('Todays world is full of multimedia all around you (whether it\'s music as MP3s or CDs), or streamed online, all kinds of videos (from movies to TV broadcast) and more. Usually it\'s not easy to play it, not to mention organizing and backing up all of it. Fedora KDE Desktop Edition has a solution for you. No more multimedia mess, just enjoy your media!')}</p>
+				<p>${_('It\'s just a fact that &lt;strong&gt;Amarok&lt;/strong&gt; defines new standards in media players industry. You\'ve probably never had your music so organized as with Amarok. With high quality music collection features you never lose your music anymore! Amarok supports Advanced playlists, including dynamically generated ones, which would remind you of your oldest, almost forgotten songs, with cover art, lyrics and even information on the current track or band, pulled straight from Wikipedia. Amarok also brings great integration with Last.fm and other online music services, allowing you to listen to streaming radio, podcasts, and even purchase music from the Magnatune store, allowing you to support artists directly and enjoy DRM free music. Live your music!')}</p>
+				<p>${_('&lt;strong&gt;Kaffeine&lt;/strong&gt; is a video player and digital TV in one easy to use interface. Watch and record your favorite digital TV stations and enjoy content stored on your machine with this intuitive media player.')}</p>
+				<p>${_('&lt;strong&gt;K3B&lt;/strong&gt; allows you to easily back up your multimedia files as it\'s a full featured CD/DVD writing software. K3B supports writing data CDs/DVDs, audio CDs, video CDs, DVDs, copying, CD ripping and more. Take care, you can get burned&nbsp;;-)')}</p>
+				<p>${_('&lt;strong&gt;KsCD&lt;/strong&gt; is the small, fast Standard-Audio-CD-Player for KDE, with MusicBrainz support. KsCD means "The KDE Project\'s small/simple CD player," and it lives up to this name, providing the features you expect in a compact, easy to use interface.')}</p>
 
-				<h3>Education</h3>
-				<p><strong>Marble</strong> is a Virtual Globe and World Atlas in your computer. You can learn a lot about Earth or you can just enjoy virtual trips around our planet. You can choose from different thematic maps: a classroom-style topographic map, a satellite view, open street map, earth at night and temperature and precipitation maps. Integration with the popular Open Street Map project allows users to easily view maps of their current location without opening even opening a browser.</p>
-				<p>The KDE Education package contains many and language learning tools such as <strong>Parley</strong>, <strong>Kiten</strong> and others. That's great, isn't it? Ja! Si! Ano! It is.</p>
-				<p>If you're interested in chemistry, do not miss <strong>Kalzium</strong>! Did you know that the melting point of Ruthenium (Ru) is 2,610 K and that it was discovered in the year 1844 by K. Klaus? I didn't.</p>
+				<h3>${_('Education')}</h3>
+				<p>${_('&lt;strong&gt;Marble&lt;/strong&gt; is a Virtual Globe and World Atlas in your computer. You can learn a lot about Earth or you can just enjoy virtual trips around our planet. You can choose from different thematic maps: a classroom-style topographic map, a satellite view, open street map, earth at night and temperature and precipitation maps. Integration with the popular Open Street Map project allows users to easily view maps of their current location without opening even opening a browser.')}</p>
+				<p>${_('The KDE Education package contains many and language learning tools such as &lt;strong&gt;Parley&lt;/strong&gt;, &lt;strong&gt;Kiten&lt;/strong&gt; and others. That\'s great, isn\'t it? Ja! Si! Ano! It is.')}</p>
+				<p>${_('If you\'re interested in chemistry, do not miss &lt;strong&gt;Kalzium&lt;/strong&gt;! Did you know that the melting point of Ruthenium (Ru) is 2,610 K and that it was discovered in the year 1844 by K. Klaus? I didn\'t.')}</p>
 
-				<h3>Games</h3>
+				<h3>${_('Games')}</h3>
 				<img class="within-text" src="/static/images/content/kde-screenshot-03-sm.png" rel="#games1" />
-				<p>Some people never grow up, some people like games to relax and some just to remember the golden ages of the first computer games. The KDE Games package contains collection of revamped classics such as <strong>Kapman</strong>, <strong>KBreakOut</strong>, <strong>KGoldrunner</strong>, all with a brand new look and beautiful artwork. For those who like to pass the time with Solitaire or Free Cell, there are plenty of card games to keep you busy! And of course new and entertaining games as such <strong>Kolf</strong>, a miniature golf game.</p>
+				<p>${_('Some people never grow up, some people like games to relax and some just to remember the golden ages of the first computer games. The KDE Games package contains collection of revamped classics such as &lt;strong&gt;Kapman&lt;/strong&gt;, &lt;strong&gt;KBreakOut&lt;/strong&gt;, &lt;strong&gt;KGoldrunner&lt;/strong&gt;, all with a brand new look and beautiful artwork. For those who like to pass the time with Solitaire or Free Cell, there are plenty of card games to keep you busy! And of course new and entertaining games as such &lt;strong&gt;Kolf&lt;/strong&gt;, a miniature golf game.')}</p>
 
-				<p><strong>Note</strong>: Not all listed applications are available on the live CD due to space reasons. After installation, you can discover many more cool KDE applications using the integrated package management suite under System Settings -&gt; Add &amp; Remove programs!</p>
+				<p>${_('Note: Not all listed applications are available on the live CD due to space reasons. After installation, you can discover many more cool KDE applications using the integrated package management suite under System Settings -&gt; Add &amp; Remove programs!')}</p>
 
 			</div>
-			<div>Downloads</div>
 			<div>
-				<p>Mailing list: <a href="mailto:fedora-kde@fedoraproject.org">fedora-kde@fedoraproject.org</a></p>
-				<p>IRC channel: #fedora-kde @ FreeNode.org</p>
-				<p>Bugzilla: <a href="https://bugzilla.redhat.com/">Fedora</a>, <a href="https://bugs.kde.org/">KDE</a></p>
-				<p>KDE UserBase: <a href="http://userbase.kde.org/">http://userbase.kde.org/</a></p>
+				<h2>${_('Downloads')}</h2>
+			</div>
+			<div>
+				<h2>${_('Support')}</h2>
+				<p>${_('Mailing list:')} <a href="mailto:fedora-kde@fedoraproject.org">fedora-kde@fedoraproject.org</a></p>
+				<p>${_('IRC channel:')} #fedora-kde @ FreeNode.org</p>
+				<p>${_('Bugzilla:')} <a href="https://bugzilla.redhat.com/">Fedora</a>, <a href="https://bugs.kde.org/">KDE</a></p>
+				<p>${_('KDE UserBase:')} <a href="http://userbase.kde.org/">http://userbase.kde.org/</a></p>
 			</div>
 		</div>
-				
 
-<!-- first overlay. id attribute matches our selector --> 
-<div class="simple_overlay" id="plasma1"> 
-    <!-- large image --> 
-    <img src="/static/images/content/kde-screenshot-01-lg.png" /> 
-    <!-- image details --> 
-    <div class="details"> 
-        <h3>KDE Desktop</h3> 
-        <h4>Plasma</h4> 
-        <p>A screenshot of the KDE 4.0 destkop using Plasma</p> 
-    </div> 
-</div> 
-<div class="simple_overlay" id="kontact1"> 
-    <!-- large image --> 
-    <img src="/static/images/content/kde-screenshot-02-lg.png" /> 
-    <!-- image details --> 
-    <div class="details"> 
-        <h3>KDE Desktop</h3> 
-        <h4>Kontact</h4> 
-        <p>A screenshot of the Kontact with a few features.</p> 
-    </div> 
-</div> 
-<div class="simple_overlay" id="games1"> 
-    <!-- large image --> 
-    <img src="/static/images/content/kde-screenshot-03-lg.png" /> 
-    <!-- image details --> 
-    <div class="details"> 
-        <h3>KDE Desktop</h3> 
-        <h4>Games</h4> 
-        <p>A few of the games available on KDE</p> 
-    </div> 
-</div> 
+
+<!-- first overlay. id attribute matches our selector -->
+<div class="simple_overlay" id="plasma1">
+    <!-- large image -->
+    <img src="/static/images/content/kde-screenshot-01-lg.png" />
+    <!-- image details -->
+    <div class="details">
+        <h3>${_('KDE Desktop')}</h3>
+        <h4>${_('Plasma')}</h4>
+        <p>${_('A screenshot of the KDE 4.0 destkop using Plasma')}</p>
+    </div>
+</div>
+<div class="simple_overlay" id="kontact1">
+    <!-- large image -->
+    <img src="/static/images/content/kde-screenshot-02-lg.png" />
+    <!-- image details -->
+    <div class="details">
+        <h3>${_('KDE Desktop')}</h3>
+        <h4>${_('Kontact')}</h4>
+        <p>${_('A screenshot of the Kontact with a few features.')}</p>
+    </div>
+</div>
+<div class="simple_overlay" id="games1">
+    <!-- large image -->
+    <img src="/static/images/content/kde-screenshot-03-lg.png" />
+    <!-- image details -->
+    <div class="details">
+        <h3>${_('KDE Desktop')}</h3>
+        <h4>${_('Games')}</h4>
+        <p>${_('A few of the games available on KDE')}</p>
+    </div>
+</div>
 
   </body>
 </html>

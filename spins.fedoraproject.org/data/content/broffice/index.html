@@ -10,21 +10,46 @@
     <title>${_('About Spin: BrOffice.org')}</title>
   </head>
   <body>
-		<!-- the tabs --> 
-		<ul class="tabs"> 
-			<li><a id="t1" href="#home">Home</a></li> 
-			<li><a id="t2" href="#about">About BrOffice.org</a></li> 
-			<li><a id="t3" href="#downloads">Downloads</a></li> 
-			<li><a id="t4" href="#support">Support</a></li> 
-		</ul> 
-		 
-		<!-- tab "panes" --> 
-		<div class="panes"> 
-			<div>First tab content. Tab contents are called "panes"</div> 
-			<div>About BrOffice.org</div> 
-			<div>Downloads</div> 
-			<div class="brofficesupport">Support<p>This is subtext</p></div> 
+		<!-- the tabs -->
+		<ul class="tabs">
+			<li><a id="t1" href="#home">${_('Home')}</a></li>
+			<li><a id="t2" href="#about">${_('About BrOffice.org')}</a></li>
+			<li><a id="t3" href="#downloads">${_('Downloads')}</a></li>
+			<li><a id="t4" href="#support">${_('Support')}</a></li>
+		</ul>
+
+		<!-- tab "panes" -->
+		<div class="panes">
+			<div>
+				<h2>${_('Home')}</h2>
+				<img class="within-text" src="/static/images/content/broffice-screenshot-01-sm.png" rel="#broffice1" />
+				<p>${_('The BrOffice.org spin aims to provide a complete set of tools for office use. It was created to provide the legal brand for OpenOffice.org in Brazil. This spin is targeted not only for users from Brazil but also for people from other Latin American countries who attend to brazilian open source events such FISL and Latinoware or for those who just would like to have the whole BrOffice.org office suite in a Live image.')}</p>
+			</div>
+			<div>
+				<h2>${_('About BrOffice')}</h2>
+			</div>
+			<div>
+				<h2>${_('Downloads')}</h2>
+				<p>${_('This is the latest version of Fedora including all BrOffice.org applications. It includes a word processor, a spreadsheet, a presentation program, a database management application, a vector graphics editor and a tool for editing mathematical formulas.')}</p>
+				<p>${_('If you want to try an open source operating system with an open source office application suite you are in the right place!')}</p>
+			</div>
+			<div>
+				<h2>${_('Support')}</h2>
+				<p>${_('If you would like to ask questions about the BrOffice.org Spin we recommend that you use local community forums such &lt;a href="http://www.projetofedora.org/forum/"&gt;http://www.projetofedora.org/forum/&lt;/a&gt; for Brazilian Portuguese speakers, &lt;a href="http://proyectofedora.org/forum/"&gt;http://proyectofedora.org/forum/&lt;/a&gt; for Spanish speakers or &lt;a href="http://fedoraforum.org/"&gt;http://fedoraforum.org/&lt;/a&gt; for English and other language speakers.')}</p>
+				<p>${_('If you would like to ask specific questions about BrOffice.org or OpenOffice.org we recommend that you visit &lt;a href="http://broffice.org/"&gt;http://broffice.org/&lt;/a&gt; or &lt;a href="http://www.openoffice.org/"&gt;http://www.openoffice.org/&lt;/a&gt; for more information.')}</p>
+			</div>
 		</div>
+
+<div class="simple_overlay" id="broffice1">
+    <!-- large image -->
+    <img src="/static/images/content/broffice-screenshot-01-lg.png" />
+    <!-- image details -->
+    <div class="details">
+        <h3>BrOffice</h3>
+        <h4>${_('Screenshot')}</h4>
+        <p>${_('Screenshot of the BrOffice splash on startup.')}</p>
+    </div>
+</div>
 
   </body>
 </html>
