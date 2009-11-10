@@ -13,7 +13,7 @@
 			<h3><a href="http://get.fedoraproject.org">${_('Visit get.fedoraproject.org &gt;')}</a></h3>
 		</div>
 		<div id="top-spins">
-			<h2>${_('Top Spins This Week')}</h2>
+			<h2>${_('Top Spins This Release')}</h2>
 			<table>
 				<tr py:for="t in range(0,5)">
 					<?python
@@ -40,7 +40,7 @@
 		<div id="make-own-spin">
 			<h2>${_('Want to Make Your Own Spin?')}</h2>
 			<p>${_('Anyone can create their very own Fedora spin.')}</p>
-			<h3><a href="/support">${_('Go to the spin creation tutorial &gt;')}</a></h3>
+			<h3><a href="${relpath}/support">${_('Go to the spin creation tutorial &gt;')}</a></h3>
 		</div>
 		</py:when>
 		<py:otherwise>
@@ -52,7 +52,7 @@
 		<div id="whatis-spin">
 			<h2>${_('What is a Spin?')}</h2>
 			<p>${_('Fedora Spins are alternate version of Fedora, tailored for various types of users via hand-picked application sets and other customizations.')}</p>
-			<h3><a href="/about">${_('Learn more &gt;')}</a></h3>
+			<h3><a href="${relpath}/about">${_('Learn more &gt;')}</a></h3>
 		</div>
 		<div id="whatis-this-spin">
 			<h2>${_('What is this Spin?')}</h2>
@@ -61,5 +61,14 @@
 		</div>
 		</py:otherwise>
 	</py:choose>
+		<div id="lang-select">
+			<h2>${_('Website Language')}</h2>
+			<form action="" method="GET">
+				<select name="lang">
+					<xi:include href="translations.html" />
+				</select>
+				<input type="submit" value="OK" />
+			</form>
+		</div>
 	</div>
 </html>
