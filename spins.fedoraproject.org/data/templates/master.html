@@ -1,51 +1,97 @@
 <?python
 import simplejson
 import urllib
-from operator import itemgetter
 import re
+from operator import itemgetter
 import random
+from types import NoneType
+
+
+class Torrents(object):
+
+    non_release_re = re.compile('(alpha)|(beta)|(snap)|(preview)|(x86_64)', re.I)
+    spins_matches = ['broffice', 'edu', 'math', 'kde', 'xfce', 'lxde', 'aos', 'developer', 'fel', 'games']
+
+    def __init__(self):
+        self._torrents = None
+
+    @property
+    def torrents(self):
+        if not self._torrents:
+            fo = urllib.urlopen('http://torrent.fedoraproject.org/stats/current-stats.json')
+            self._torrents = simplejson.load(fo)
+            fo.close()
+        return self._torrents
+
+    def specific_spin(self, name, release, pattern=''):
+        if not isinstance(release, basestring):
+            release = '%s' % release
+        spins_release = []
+        spins_non_release = []
+        spins_all = []
+       
+        #print "name:", name
+        #print "release:", release
+        #print "pattern:", pattern
+        #for row in self.torrents:
+        for row in self.torrents:
+            torrent_name = row['name'].lower()
+            #print "row: ", row['name']
+            if (name in torrent_name) and (pattern in torrent_name) and (release in torrent_name):
+                #print "appended..."
+                spins_release.append(row)
+            elif name in torrent_name and not release in torrent_name:
+                spins_non_release.append(row)
+        
+        #do some list combination
+        #print spins_release
+        #print spins_non_release
+        spins_all = [spins_release, spins_non_release]
+
+        return spins_all
+
+    # needed functions
+    def matches_a_spin(self, name):
+        if self.non_release_re.search(name):
+            return False    
+        for part in self.spins_matches:
+            if part in name.lower():
+                return True
+        return False
+
+
+    def gettorrentinfo(self, name, release, value):
+        for row in self.torrents:
+            if name in row['name'].lower() and release in row['name']:
+                return row[value]
+
+
+    def gettorrentsize(self, name, release):
+        for spin in self.torrents:
+            if spin['name'].lower().endswith(name) and release in spin['name']:
+                return spin['size']
+
+
+    def getrandomtorrent(self, list):
+        return random.randint(0, len(list)-1)
+
+
+
+torrents = Torrents()
 release = '11'
-
-# do not get list
-non_release_re = re.compile('(alpha)|(beta)|(snap)|(preview)|(x86_64)', re.I)
-
-# needed functions
-def matches_a_spin(name):
-    spins_matches = ['broffice', 'edu', 'math', 'kde', 'xfce', 'lxde', 'aos',
-                     'developer', 'fel', 'games']
-    if non_release_re.search(name):
-        return False    
-    for part in spins_matches:
-        if part in name.lower():
-            return True
-    return False
-
-def gettorrentinfo(name, value):
-    for part in alphabetical:
-        if name in part['name'].lower():
-            return part[value]
-
-
-def gettorrentsize(area):
-    for spin in spins:
-        if spin['name'].lower().endswith(area):
-            return formatsize(spin['size'])
+arch = 'i686'
 
 def formatsize(n, format='%0.2f'):
+	# this is awful.
+    if isinstance(n, NoneType):
+         n = 1
+    #print "type: ", type(n)
     return format % (n / 1024.0**2)
-
-def getrandomtorrent(list):
-	return random.randint(0, len(list)-1)
-
-# let's get our data
-fo = urllib.urlopen('http://torrent.fedoraproject.org/stats/current-stats.json')
-torrents = simplejson.load(fo)
-fo.close()
 
 # this gets all the spins torrents
 spins = []
-for t_dict in torrents:
-    if matches_a_spin(t_dict['name']):
+for t_dict in torrents.torrents:
+    if torrents.matches_a_spin(t_dict['name']):
         if release in t_dict['name']:
             spins.append(t_dict)
 
