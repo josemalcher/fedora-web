@@ -85,6 +85,20 @@
 			</div>
 			<div>
 				<h2>${_('Downloads')}</h2>
+
+				<p>Archive Downloads</p>
+				<table>
+					<tr>
+						<td><strong>Release Name</strong></td>
+						<td><strong>Size in MBs</strong></td>
+						<td>&nbsp;</td>
+					</tr>				
+					<tr py:for="i in torrents.specific_spin(area, release)[1]">
+						<td>${i['name']}</td>
+						<td>${formatsize(i['size'])}</td>
+						<td><a href="http://torrent.fedoraproject.org/spins/${i['name']}.torrent">Download it!</a></td>
+					</tr>
+				</table>
 			</div>
 			<div>
 				<h2>${_('Support')}</h2>
