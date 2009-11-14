@@ -1,7 +1,7 @@
 # Translations template for PROJECT.
 # Copyright (C) 2009 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+# Ludek Dolihal <ldolihal@redhat.com>, 2009.
 #
 #
 msgid ""
@@ -165,7 +165,7 @@ msgstr ""
 
 #: data/content/client-ekiga.html:38 data/content/usage.html:40
 msgid "Ekiga completed accounts window"
-msgstr "Ekiga okno s účty"
+msgstr "Ekiga okno s hotovými účty"
 
 #: data/content/client-ekiga.html:41
 msgid "You are done configuring your Ekiga client."
@@ -226,7 +226,6 @@ msgid ""
 "Select \"Add\" and select SIP account from the list. The following dialog "
 "appears:"
 msgstr ""
-""
 "Vyberte \"Add\" a ze seznamu zvolte SIP účet. Objeví se následující "
 "dialogové okno:"
 #: data/content/client-empathy.html:29
@@ -235,7 +234,7 @@ msgstr "Empathy okno s účty"
 
 #: data/content/client-empathy.html:30
 msgid "In the dialog, fill in the following fields:"
-msgstr ""
+msgstr "V dialogu vyplňe následující položky:"
 
 #: data/content/client-empathy.html:32
 msgid "Username: Your FAS username, followed by \"@talk.fedoraproject.org\""
@@ -279,7 +278,11 @@ msgid ""
 "setting.  If you have problems, consult the <a href=\"./troubleshooting"
 "\">troubleshooting page</a>."
 msgstr ""
-"Tato stránka Vám pomůže s konfigurací generického klienta. "
+"Tato stránka Vám pomůže s konfigurací generického klienta jako je například IP telefon "
+"nebo jiný softwarový klient pro Fedora Talk. pokud ve svím klientovi nevidíte "
+"stejné nastavení jako je uvedeno níže, jednodušet tuto pasáž přeskočte."
+"Pokud máte problémy konzultujte je se <a href=\"./troubleshooting"
+"\">stránkou pro odstraňování chyb</a>."
 #: data/content/client-generic.html:15
 msgid "Generic client configuration values"
 msgstr "Konfiguračné hodnoty pro generického klienta"
@@ -356,7 +359,6 @@ msgid "Twinkle - Fedora Talk"
 msgstr "Twinkle - Fedora Talk"
 
 #: data/content/client-twinkle.html:12
-#, fuzzy
 msgid "Configuring Twinkle for Fedora Talk"
 msgstr "Konfigurace Twinkle pro Fedora Talk"
 
@@ -562,7 +564,6 @@ msgid ""
 msgstr ""
 "Následující mosty může užívat kdokoli. Pokud se připojíte k již používanému "
 "mostu, zkuste prosím jiný."
-
 #: data/content/conference.html:58
 msgid "Room Name"
 msgstr "Jméno místnosti"
@@ -615,7 +616,7 @@ msgstr "Jak se používá Fedora Talk?"
 
 #: data/content/faq.html:16
 msgid "Consult the <a href=\"./access\">access page</a> for more information."
-msgstr ""
+msgstr "Pro víceinformací konzultujte  <a href=\"./access\">access page</a>."
 
 #: data/content/faq.html:17
 msgid "What equipment do I need?"
@@ -651,8 +652,8 @@ msgstr ""
 "Použitím jednoho z vytáčecích čísel fedory Vám umožní použít Váš běžný "
 "telefon nebo mobilní telefon v případě, že chcete komunikovat s ostatními. "
 "Toto je také cesta jak se připojit ke konferenci pro ty, kteří nepoužívají "
-"Fedoru. Pro více informací se prosím odbraťte na naši <a href=\"./conference"
-"\">konferenční stránku</a> ."
+"Fedoru. Pro více informací o vytáčecích číslech  se prosím odbraťte na "
+"naši <a href=\"./conference\">konferenční stránku</a> ."
 
 #: data/content/faq.html:21
 msgid "What are the established Fedora Conference rooms?"
@@ -724,7 +725,10 @@ msgid ""
 "features.  As free and open source software, Asterisk fits well with the "
 "core values of Fedora."
 msgstr ""
-"Fedora Talk je založený na Asterisku."
+"Fedora Talk je založený na Asterisku, což je zcela volná a otevřená "
+"prémiová PBX implementace, která také poskytuje kompletní a škálovatelnou "
+"skupino VoIP funkcí. Jelikož je Asterisk svobodný a otevřený, velmi dobře "
+"se hodí do Fedory."
 #: data/content/index.html:27
 msgid ""
 "Software is just one aspect of this project.  Many volunteers have come "
@@ -760,7 +764,7 @@ msgstr "Krok 3: Nastavení zvuku"
 
 #: data/content/setup-local-system.html:13
 msgid "Sound preferences dialog"
-msgstr ""
+msgstr "Dialog pro nastavení zvuku"
 
 #: data/content/setup-local-system.html:14
 msgid ""
@@ -813,7 +817,7 @@ msgstr ""
 "Po vyzkoušení každého  řešení oveřte své nastavení pomocí poskytnutého odkazu."
 #: data/content/troubleshooting.html:14
 msgid "Can't connect"
-msgstr "Nelze se připojit"
+msgstr "Nelze se připojit"	
 
 #: data/content/troubleshooting.html:15
 msgid "Being unable to connect is a common issue. Try the following solutions"
@@ -879,22 +883,20 @@ msgstr ""
 "tuto stránku:"
 
 #: data/content/troubleshooting.html:29
-#, fuzzy
 msgid "or extension 1001"
-msgstr "Klapka"
+msgstr "nebo klapka 1001"
 
 #: data/content/troubleshooting.html:30
-#, fuzzy
 msgid ""
 "You should hear a female with the lyrics to Louie Louie. If you do, just "
 "hang up."
 msgstr ""
 "Měli by jste slyšet ženský hlas žádající Vás o ID Vaší konference. Pokud je "
-"tomu takjednoduše zavěste."
+"tomu tak jednoduše zavěste."
 
 #: data/content/troubleshooting.html:32
 msgid "No one can hear me"
-msgstr "Nikdo mě nesluší"
+msgstr "Nikdo mě neslyší"
 
 #: data/content/troubleshooting.html:33
 msgid ""
@@ -905,7 +907,12 @@ msgid ""
 "USB headset and an internal microphone, make sure that the raido button is "
 "selected on the correct one."
 msgstr ""
-
+"Ověřte, že systém správně přijímá audio signál z mikrofonu. V GNOME klikněte "
+"pravým tlačítkem na ikonu mikrofonku v oznamovací oblasti, jděte do záložky, "
+"která se zabývá vstupním zařízením a překontrolujte urověň vstupu. Pokud máte "
+"několik mikrofonů, například USB sluchátka s mikrofonem a navíc ještě vestavěný "
+"mikrofon (například v notebooku) ujistěte se, že je prostřednictvím radio buttonu "
+"vybráno správné zařízení."
 #: data/content/troubleshooting.html:34
 msgid ""
 "You can also use the echo service, described at <a href=\"./verify\">this "
@@ -913,9 +920,11 @@ msgid ""
 "software. You should also check the level of the audio coming back at you "
 "through the echo if people complain that you are too loud or too soft."
 msgstr ""
-
+"Pokud chcete ověřit funkčnost svého hardware a software, můžete k tomu "
+"použít echo službu popsanou na <a href=\"./verify\">této stránce</a>. "
+"Měli by jste také zkontrolovat úroveň zpětné vazby svého zařízení, pokud "
+"si lidé stěžují, že mluvíte příliš nahlas nebo příliš potichu."
 #: data/content/troubleshooting.html:35
-#, fuzzy
 msgid ""
 "Getting a microphone configured properly is a bit of an art. Ensure that you "
 "can record your own audio using something like audacity. If you'd like to "
@@ -929,7 +938,7 @@ msgstr ""
 
 #: data/content/troubleshooting.html:37
 msgid "There is an echo on a conference bridge"
-msgstr ""
+msgstr "Vyskytuje se echo při konferencích"
 
 #: data/content/troubleshooting.html:38
 msgid ""
@@ -969,10 +978,15 @@ msgid ""
 "someone reports excessive noise, please either mute your line or drop off "
 "the conference."
 msgstr ""
-
+"Nepoužívejte mikrofon, který není součásti kompletu se sluchátky. Dúvodem je, že "
+"takovýto mikrofon může zachycovat i jiné zvuky okolí, jako například zvuk "
+"vytvářený psaním na klávesnici, zvuk větráku Vašeho počítače a podobně. "
+"Takovéto zvuky činí konferenci nepoužitelnou pro ostatní účastníky. Pokud "
+"Vám někdo sdělí, že vytváříte rušivý hluk, pak si buď ztlumte příjimač nebo "
+"opusťte konferenci."
 #: data/content/troubleshooting.html:42
 msgid "I can make calls, but not receive them"
-msgstr ""
+msgstr "Mohu volat, ale nemuho obdržet hovor"
 
 #: data/content/troubleshooting.html:43
 msgid ""
@@ -982,6 +996,11 @@ msgid ""
 "registered, and what that registration consists of, but at current, come to "
 "#fedora-admin on irc.freenode.net and we'll be more than happy to help!"
 msgstr ""
+"Toto většinou znamená, že Váš telefon není registrovaný na Asterisk serveru. "
+"Je dobré vědět, že registrace neovlivňuje Vaši schopnost volat, ale pouze přijímat "
+"hovory. Pracuje se na způsobu jak Vám sdělit zda jste registrováni či ne, "
+"případně z čeho se registrace skládá, ovšem v současné době je lepší "
+"navštívit #fedora-admin na irc.freenode.net kde Vám rádi pomůžeme."  
 
 #: data/content/troubleshooting.html:44
 msgid ""
@@ -991,7 +1010,10 @@ msgid ""
 "registration with the Fedora Talk server. A reasonable value is 900 seconds "
 "(15 minutes)"
 msgstr ""
-
+"Jednou z možných příčin je nastavení, které nese název 'SIP Registration Timeout' "
+"va Vašem klientovi. Je možné, že máte na firewallu nastavení jiný timeout než "
+"je SIP registrční timeout, což způsobí, že časem ztratíte spojení s Fedora "
+"Talk serverem. Rozumný timeout je 900 vteřin (15 minut)."
 #: data/content/troubleshooting.html:46
 msgid "Ekiga dialpad doesn't work"
 msgstr "Vytáčení v Ekiga nefunguje"
@@ -1006,11 +1028,11 @@ msgstr ""
 "Zkuste vypnout detekci zvuku ve Vašem audio nastavení. S povolenou detekcí "
 "zvuku nemusí vytáčecí zařízení posílat správně tóny. Navíc vytáčecí zařízení "
 "v Ekiga je náchylné na zasílání opakovaných tónů, což činí správné zadání "
-"PINusložitější."
+"PINu složitější."
 
 #: data/content/troubleshooting.html:49
 msgid "Still having problems?"
-msgstr ""
+msgstr "Stále máte problémy?"
 
 #: data/content/troubleshooting.html:50
 msgid ""
@@ -1019,7 +1041,10 @@ msgid ""
 "admin>#fedora-admin</a> on irc.freenode.net and we'll be happy to help you "
 "out! For assistance in getting on IRC, see "
 msgstr ""
-
+"Pokud máte stále problémy i když jste vyzkoušely všechny postupy na této "
+"straně, pak navštivte <a href=irc://irc.freenode.net/fedora-"
+"admin>#fedora-admin</a> na irc.freenode.net kde Vám rádi pomůžeme. "
+"pro více informací jak získat IRC podporu se podívejte "
 #: data/content/usage.html:7
 msgid "Usage - Fedora Talk"
 msgstr "Použití - Fedora Talk"
@@ -1030,7 +1055,9 @@ msgid ""
 "client softphones and IP phones with Fedora Talk, refer to <a href=\"./access"
 "\">this page</a>."
 msgstr ""
-
+"Tato stránka je zastaralá. Pro kompletní informace o konfiguraci softwarových "
+"klientů a IP telefonů pro Fedora Talk si přectěte <a href=\"./access"
+"\">tuto stránku</a>."
 #: data/content/usage.html:13
 msgid "Using Fedora Talk"
 msgstr "Používání Fedora Talk"
@@ -1084,13 +1111,12 @@ msgid "Open Ekiga. Cancel the druid (if any). You will get a screen like this."
 msgstr "Otevřete Ekigu. Uvidíte obrazovku podobnou této."
 
 #: data/content/usage.html:26
-#, fuzzy
 msgid "Goto Menu → Edit → Accounts. You have this."
 msgstr "Jděte do Menu -> Edit -> Accounts. Měli by jste být zde."
 
 #: data/content/usage.html:28
 msgid "Edit and fill the details"
-msgstr "Vyplňte údaje"
+msgstr "Upravte a vyplňte údaje"
 
 #: data/content/usage.html:31
 msgid "Name: Fill in whatever name this account should have in the list."
@@ -1101,7 +1127,8 @@ msgid ""
 "User: Your FAS username — this is what you use to log into the wiki or the "
 "Fedora Accounts System."
 msgstr ""
-
+"Uživatel: Vaše FAS uživatelské jméno - jméno které si přejete používat při "
+"přihlašování na wiki nebo do Fedora Accounts systému."
 #: data/content/usage.html:35
 msgid ""
 "Password: The password you set in the VoIP section in FAS. (Note that this "
@@ -1120,7 +1147,7 @@ msgstr ""
 
 #: data/content/usage.html:37
 msgid "Enable account: Be sure this is checked!"
-msgstr ""
+msgstr "povolit účet: ujistěte se že je účet povolen!"
 
 #: data/content/usage.html:39
 msgid ""
@@ -1179,7 +1206,7 @@ msgid ""
 "encouraged to get at least headphones and a microphone."
 msgstr ""
 "Ti, kteří hodlají mluvit nebo pořádat setkání na konferencích by "
-"mělipoužívat při nejmenším sluchátka a mikrofon."
+"měli používat při nejmenším sluchátka a mikrofon."
 
 #: data/content/usage.html:49
 msgid ""
@@ -1231,48 +1258,51 @@ msgstr ""
 "také sip:infrastructure@talk.fedoraproject.org"
 
 #: data/content/verify.html:7
-#, fuzzy
 msgid "Verification - Fedora Talk"
-msgstr "O - Fedora Talk"
+msgstr "Ověření - Fedora Talk"
 
 #: data/content/verify.html:12
 msgid "Using Twinkle to make a simple call"
-msgstr ""
+msgstr "Použití Twinkle pro jednoduchý hovor"
 
 #: data/content/verify.html:13
 msgid ""
 "To make a call using Twinkle, the preferred client for Fedora Talk, enter a "
 "number or name in the \"Call\" text box at the top of the main window."
 msgstr ""
-
+"Pro provední hovoru pomocí Twinkle, což je preferovaná kliento pro Fedora Talk, "
+"vložte adresu nebo jméno do pole \"Call\" v horní části hlavního okna."
 #: data/content/verify.html:14
 msgid "Screenshot of dialing"
-msgstr ""
+msgstr "Screenshot vytáčení"
 
 #: data/content/verify.html:15
 msgid ""
 "The numbers below are special test lines that may help you verify your setup."
 msgstr ""
-
+"Čísla uvedená níže jsou speciální testovací linky, které Vám pomohou s ověřením nastavení."
 #: data/content/verify.html:17
 msgid ""
 "Louie Louie - You should hear a female voice reciting the lyrics to Louie "
 "Louie - this is testing the ability for you to receive one way audio"
 msgstr ""
-
+"Louie Louie - Měli by jste slyšet ženský hlas recitující text k Louie"
+"Louie - toto testuje Vaši schopnost obdržet audio signál"
 #: data/content/verify.html:18
 msgid ""
 "Echo - this simply echos everything that you say back to you. This tests "
 "that two way audio is functional"
 msgstr ""
-
+"Echo - jednoduše opaluje vše co řeknete. Toto testuje dvojcestnou komunikaci."
 #: data/content/verify.html:19
 msgid ""
 "When you call this number, you should hear something. When you do, hang up, "
 "and in approximately 10 seconds, the system will call you back.  This tests "
 "the registration on the Asterisk server itself."
 msgstr ""
-
+"Pokud vytočíte toto číslo, měli by jste něco slyšet. Pokud ano, pak zavěšte "
+"a během zhruba 10 vteřin by Vám měl systém zavolat zpátky. Tohle testuje "
+"registraci na samotném Asterisk serveru."
 #: data/templates/foot.html:9
 msgid ""
 "&copy; 2009 Red Hat, Inc. and others.  Please send any comments or "
