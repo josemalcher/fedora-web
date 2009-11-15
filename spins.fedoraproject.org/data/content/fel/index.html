@@ -28,6 +28,40 @@
 			</div>
 			<div>
 				<h2>${_('Downloads')}</h2>
+				<p>Text intro</p>
+				<span class="download-opt1" py:for="i in torrents.specific_spin(area, release, 'i686')[0]">
+					<h4>32-bit PC Edition</h4>
+					<p><img class="download-media" alt="Install DVD" src="/static/images/media.png" />This edition is for the highest compatibility: it will work on both 32-bit and 64-bit computers.</p>
+					<a class="download-button" href="http://torrent.fedoraproject.org/spins/${i['name']}.torrent">Download Now!</a>
+					<p class="fine-print">6K Torrent File for 32-bit PC ISO<br /> <a href="http://docs.fedoraproject.org/install-guide/f11/en-US/html/sn-making-media.html">How do I use this file?</a></p>
+				</span>
+				<span class="download-opt2" py:for="i in torrents.specific_spin(area, release, 'x86_64')[0]">
+					<h4>64-bit PC Edition</h4>
+					<p><img class="download-media" alt="Install DVD" src="/static/images/media.png" />Enjoy the full power and speed of a 64-bit computer. Not compatible with 32-bit computers.</p>
+					<a class="download-button" href="http://torrent.fedoraproject.org/spins/${i['name']}.torrent">Download Now!</a>
+					<p class="fine-print">6K Torrent File for 32-bit PC ISO<br /> <a href="http://docs.fedoraproject.org/install-guide/f11/en-US/html/sn-making-media.html">How do I use this file?</a></p>
+				</span>
+				<span class="which-arch">
+					<h3>Unsure if your computer is 32-bit or 64-bit?</h3>
+					<ul>
+						<li>The 32-bit edition is compatible with both 32-bit and 64-bit PCs.</li>
+						<li>Read our documentation on how to tell if your computer is 32-bit or 64-bit.</li>
+					</ul>
+				</span>
+				<h3>Older Downloads</h3>
+				<table>
+					<tr>
+						<td><strong>Release Name</strong></td>
+						<td><strong>Size in MBs</strong></td>
+						<td>&nbsp;</td>
+					</tr>				
+					<tr py:for="i in torrents.specific_spin(area, release)[1]">
+						<td>${i['name']}</td>
+						<td>${formatsize(i['size'])}</td>
+						<td><a href="http://torrent.fedoraproject.org/spins/${i['name']}.torrent">Download it!</a></td>
+					</tr>
+				</table>
+				<p>Older releases of this spin can be found at <a href="http://archive.fedoraproject.org/">archive.fedoraproject.org</a>.</p>
 			</div>
 			<div>
 				<h2>${_('Support')}</h2>
