@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  py:strip="">
+	<span class="download-opt1" py:for="i in torrents.specific_spin(area, release, 'i686')[0]">
+		<h4>${_('32-bit PC Edition')}</h4>
+		<p><img class="download-media" alt="${_('32-bit PC Edition')}" src="/static/images/media.png" />${_('This edition is for the highest compatibility; it will work on both 32-bit and 64-bit computers.')}</p>
+		<a class="download-button" href="http://torrent.fedoraproject.org/spins/${i['name']}.torrent">${_('Download Now!')}</a>
+		<p class="fine-print">${_('6K Torrent File for 32-bit PC ISO')}<br /> <a href="http://docs.fedoraproject.org/install-guide/f11/en-US/html/sn-making-media.html">${_('How do I use this file?')}</a></p>
+	</span>
+	<span class="download-opt2" py:for="i in torrents.specific_spin(area, release, 'x86_64')[0]">
+		<h4>${_('64-bit PC Edition')}</h4>
+		<p><img class="download-media" alt="${_('64-bit PC Edition')}" src="/static/images/media.png" />${_('Enjoy the full power and speed of a 64-bit computer. Not compatible with 32-bit computers.')}</p>
+		<a class="download-button" href="http://torrent.fedoraproject.org/spins/${i['name']}.torrent">${_('Download Now!')}</a>
+		<p class="fine-print">${_('6K Torrent File for 32-bit PC ISO')}<br /> <a href="http://docs.fedoraproject.org/install-guide/f11/en-US/html/sn-making-media.html">${_('How do I use this file?')}</a></p>
+	</span>
+	<span class="which-arch">
+		<h3>${_('Unsure if your computer is 32-bit or 64-bit?')}</h3>
+		<ul>
+			<li>${_('The 32-bit edition is compatible with both 32-bit and 64-bit PCs.')}</li>
+			<li>${_('Read our &lt;a href="http://docs.fedoraproject.org/install-guide/f12/en-US/html/ch-new-users.html#sn-which-arch"&gt;documentation on how to tell if your computer is 32-bit or 64-bit&lt;/a&gt;.')}</li>
+		</ul>
+	</span>
+	<h3>${_('Older Downloads')}</h3>
+	<table>
+		<tr>
+			<td><strong>${_('Release Name')}</strong></td>
+			<td><strong>${_('Size in MBs')}</strong></td>
+		</tr>				
+		<tr py:for="i in torrents.specific_spin(area, release)[1]">
+			<td><a href="http://torrent.fedoraproject.org/spins/${i['name']}.torrent">${i['name']}</a></td>
+			<td>${formatsize(i['size'])}</td>
+		</tr>
+	</table>
+	<p>${_('Older releases of this spin can be found at &lt;a href="http://archive.fedoraproject.org/"&gt;archive.fedoraproject.org&lt;/a&gt;.')}</p>
+</html>

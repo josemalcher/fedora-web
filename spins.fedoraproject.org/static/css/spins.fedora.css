@@ -195,7 +195,7 @@ a:link, a:visited, a:active,
 #content
 {
 	margin-left: 5px;
-        padding-left: 0px;
+	padding-left: 0px;
 	width: 680px;
 }
 
@@ -204,7 +204,8 @@ a:link, a:visited, a:active,
 	margin: 0px;
 }
 
-h4 {
+h4
+{
 	font-size:1.2em;
 	color: #808080;
 }
@@ -213,8 +214,9 @@ h4 {
 
 /* spins tables */
 
-#popular-spins table td, 
-#alpha-spins table td {
+#popular-spins table td,
+#alpha-spins table td
+{
   padding: .8em;
   border: 0px solid white !important;
   border-bottom: 18px solid white !important;
@@ -222,7 +224,8 @@ h4 {
 }
 
 #popular-spins td.rank,
-#alpha-spins td.rank {
+#alpha-spins td.rank
+{
   background-color: white;
   text-align: left;
   padding-left: 0px;
@@ -231,13 +234,15 @@ h4 {
 }
 
 #popular-spins td.name,
-#alpha-spins td.name {
+#alpha-spins td.name
+{
   font-size: xx-small;
   font-style: italic;
 }
 
 #popular-spins td.name a,
-#alpha-spins td.name a {
+#alpha-spins td.name a
+{
   font-weight: bold;
   font-size: medium;
   font-style: normal;
@@ -260,7 +265,7 @@ body
 
 }
 
-#bottom 
+#bottom
 {
 	background-color: #e6e6e6;
 	padding: 20px 0px 0px 0px;
@@ -279,7 +284,7 @@ body
 	margin: 0 auto;
 	border-bottom: 15px solid #e6e6e6;
 	padding-bottom: 15px;
-       
+
 }
 
 #footer a
@@ -302,7 +307,7 @@ body
 	padding-top: 2px;
 }
 
-#footer .disclaimer 
+#footer .disclaimer
 {
 	font-style: italic;
 }
@@ -321,7 +326,7 @@ body
 	text-decoration: none;
 }
 
-#sitelinks dl 
+#sitelinks dl
 {
 	float: left;
 	margin: 0px 15px 20px 0px;
@@ -337,29 +342,32 @@ body
 
 /* tabs */
 /* root element for tabs  */
-ul.tabs {  
-	margin:0 !important; 
+ul.tabs
+{
+	margin:0 !important;
 	padding:0;
 	height:30px;
-	border-bottom:1px solid #dcdcdc;	 	
+	border-bottom:1px solid #dcdcdc;
 }
 
 /* single tab */
-ul.tabs li {  
-	float:left;	 
-	padding:0; 
-	margin:0;  
-	list-style-type:none;	
+ul.tabs li
+{
+	float:left;
+	padding:0;
+	margin:0;
+	list-style-type:none;
 }
 
 /* link inside the tab. no background image */
-ul.tabs a { 
+ul.tabs a
+{
 	float:left;
 	font-size:13px;
 	display:block;
-	padding:5px 10px;	
+	padding:5px 10px;
 	text-decoration:none;
-	border:1px solid #dcdcdc;	
+	border:1px solid #dcdcdc;
 	border-bottom:0px;
 	height:18px;
 	background-color:#dcdcdc;
@@ -373,100 +381,118 @@ ul.tabs a {
 	font-weight: bold;
 }
 
-ul.tabs a:hover {
+ul.tabs a:hover
+{
 	background-color:#fff;
 	color:#818181;
 	text-transform: uppercase;
 	font-weight: bold;
 }
-	
+
 /* selected tab */
-ul.tabs a.current {
+ul.tabs a.current
+{
 	background-color:#fff;
-	border-bottom:2px solid #fff;	
-	color:#808080;	
+	border-bottom:2px solid #fff;
+	color:#808080;
 	cursor:default;
 	text-transform: uppercase;
 	font-weight: bold;
 }
-	
+
 /* tab pane */
-div.panes div {
+div.panes div
+{
 	display:none;
 	border: 0px;
 	border:1px solid #dcdcdc;
 	border-width:0 0px 0px 1px;
 	min-height:150px;
 	padding:15px 20px;
-	background-color:#fff;	
+	background-color:#fff;
 }
 
-#content a.current:link {
+#content a.current:link
+{
 	color: #828282;
 }
 /* end: tabs */
 
-#content table, #content table td {
+#content table, #content table td
+{
 	border-style: hidden;
 }
 
-.panes table tr {
+.panes table tr
+{
 	border: 0px;
 	border-style: none;
 	background-color: #f2f2f2;
 }
 
-.panes table tr span a {
+.panes table tr span a
+{
 	text-decoration: none;
 }
 
-.panes table tr:hover {
+.panes table tr:hover
+{
 	background-color: #ffffaa;
 }
 
 /* Misc stuff */
 
-#interview {
+#interview
+{
 	background-color: #ececec;
 	padding: 2em;
 }
 
-#interview a {
+#interview a
+{
 	text-decoration: none;
 }
 
-#interview img {
+#interview img
+{
         margin-left: 1em;
 }
 
-div.creator-interview {
+div.creator-interview
+{
 	margin-bottom: 2em;
 }
 
-.creator-interview a {
+.creator-interview a
+{
 	text-decoration: none;
 }
 
-.creator-interview img {
+.creator-interview img
+{
 	margin-left: 2em !important;
 }
 
-.meet-image {
+.meet-image
+{
 	border: 0px;
 	float: right;
 }
 
-.within-text {
+.within-text
+{
 	float: left;
 	padding: 5px;
 }
 
-#content .download-media {
+#content .download-media
+{
 	float: left;
 	padding: 1.2em;
 }
 
-.download-button {
+.download-button
+{
 	-moz-border-radius-bottomleft:5px;
 	-moz-border-radius-bottomright:5px;
 	-moz-border-radius-topleft:5px;
@@ -481,15 +507,14 @@ div.creator-interview {
 	text-decoration:none;
 }
 
-#content span.download-opt1 {
+#content span.download-opt1
+{
 	float: left;
-	width: 50%;
+	width: 45%;
 }
 
-#content span.download-opt2 {
-}
-
-.which-arch {
+.which-arch
+{
 	-moz-border-radius-bottomleft:5px;
 	-moz-border-radius-bottomright:5px;
 	-moz-border-radius-topleft:5px;
@@ -497,22 +522,27 @@ div.creator-interview {
 	background-color: #f1f1f1;
 	padding: 10px;
 	display: block;
+	clear: left;
 }
 
 /* this is not really necessary, left it anyway */
-span.learn-more {
+span.learn-more
+{
 	display: none;
 }
 
-.qa-list li {
+.qa-list li
+{
 	font-weight: bold;
 }
 
-#content ul.checkmark-list {
+#content ul.checkmark-list
+{
 	list-style: disc url(/static/images/checkmark.png) outside;
 }
 
-code {
+code
+{
 	font-size: 1.2em;
 	background-color: #EDEDED;
 	padding: .2em;
@@ -520,71 +550,78 @@ code {
 }
 
 /* hacky wacky */
-.clear-both {
+.clear-both
+{
 	clear: both;
 }
 
-a {
+a
+{
 	text-decoration: none;
 }
 
-.footnote {
+.footnote
+{
 	font-style: italic;
 }
 
 /* used for picture overlay */
-.resize {
+.resize
+{
 	width: 200px;
 	height: 200px;
 }
 
-/* the overlayed element */ 
-.simple_overlay { 
-     
-    /* must be initially hidden */ 
-    display:none; 
-     
-    /* place overlay on top of other elements */ 
-    z-index:10000; 
-     
-    /* styling */ 
-    background-color:#333; 
-     
-    width:675px;     
-    min-height:200px; 
-    border:1px solid #666; 
-     
-    /* CSS3 styling for latest browsers */ 
-    -moz-box-shadow:0 0 90px 5px #000; 
-    -webkit-box-shadow: 0 0 90px #000;     
-} 
- 
-/* close button positioned on upper right corner */ 
-.simple_overlay .close { 
-    background-image:url(../images/overlay-close.png); 
-    position:absolute; 
-    right:-15px; 
-    top:-15px; 
-    cursor:pointer; 
-    height:35px; 
-    width:35px; 
+/* the overlayed element */
+.simple_overlay
+{
+
+    /* must be initially hidden */
+    display:none;
+
+    /* place overlay on top of other elements */
+    z-index:10000;
+
+    /* styling */
+    background-color:#333;
+
+    width:675px;
+    min-height:200px;
+    border:1px solid #666;
+
+    /* CSS3 styling for latest browsers */
+    -moz-box-shadow:0 0 90px 5px #000;
+    -webkit-box-shadow: 0 0 90px #000;
 }
 
-/* styling for elements inside overlay */ 
-.details { 
-    position:absolute; 
-    top:15px; 
-    right:15px; 
-    font-size:11px; 
-    color:#fff; 
-    width:150px; 
-} 
- 
-.details h3 { 
-    color:#aba; 
-    font-size:15px; 
-    margin:0 0 -10px 0; 
+/* close button positioned on upper right corner */
+.simple_overlay .close
+{
+    background-image:url(../images/overlay-close.png);
+    position:absolute;
+    right:-15px;
+    top:-15px;
+    cursor:pointer;
+    height:35px;
+    width:35px;
+}
+
+/* styling for elements inside overlay */
+.details
+{
+    position:absolute;
+    top:15px;
+    right:15px;
+    font-size:11px;
+    color:#fff;
+    width:150px;
+}
+
+.details h3
+{
+    color:#aba;
+    font-size:15px;
+    margin:0 0 -10px 0;
 }
 
 /* end: used for picture overlay */
-
