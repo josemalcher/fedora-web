@@ -12,16 +12,21 @@
   <body>
 		<!-- the tabs -->
 		<ul class="tabs">
-			<li><a id="t2" href="#about">${_('About')}</a></li>
+			<li><a id="t1" href="#about">${_('About')}</a></li>
 			<li><a id="t2" href="#games">${_('Games')}</a></li>
 			<li><a id="t3" href="#downloads">${_('Downloads')}</a></li>
-			<li><a id="t3" href="#support">${_('Support')}</a></li>
+			<li><a id="t4" href="#support">${_('Support')}</a></li>
 		</ul>
 
 		<!-- tab "panes" -->
 		<div class="panes">
 			<div>
 				<h2>${_('Play with Fedora Today!')}</h2>
+				<div class="three-screen-splash">
+					<a href="http://flightgear.org"><img src="/static/images/games/gamespin-flightgear.png"/></a>
+					<a href="http://tremulous.net"><img src="/static/images/games/gamespin-tremulous.png"/></a>
+					<a href="http://supertuxkart.sourceforge.net/"><img src="/static/images/games/gamespin-supertuxkart.png"/></a>
+				</div>
 				<p>${_('The Fedora Games spin offers a perfect showcase of the best games available in Fedora. The included games span several genres, from first-person shooters to real-time and turn-based strategy games to puzzle games. Not all the games available in Fedora are included on this spin, but trying out this spin will give you a fair impression of Fedora\'s ability to run great games.')}</p>
 				<p>${_('This spin includes a number of popular games including:')}</p>
 				<ul>
@@ -621,7 +626,27 @@
 				<xi:include href="../../templates/download-tab.html" />
 			</div>
 			<div>
-				<h2>${_('Support')}</h2>
+				<h2>${_('Games Spin Support')}</h2>
+					<p>${_('Need help using the Games Spin? We\'ve put together a list of resources you can use to get help below. For help downloading, running, and installing spins,')} <a href="/support">${_('please visit the main spins support page')}</a>.</p>
+				<h4>${_('Help via Chat')}</h4>
+					<p>${_('General help with Fedora is available in the')} <strong>${_('#fedora')}</strong> ${_('irc channel on')} <strong><a href="http://freenode.net">${_('irc.freenode.net')}</a></strong>.</p>
+					<p>${_('For help using IRC, ')}<a href="https://fedoraproject.org/wiki/Communicate/IRCHowTo">${_('please visit the Fedora IRC how-to')}</a>.</p>
+				<h4>${_('Help via Email')}</h4>
+					<p>${_('General help with Fedora is available on the Fedora users\' mailing list at ')} <strong><a href="https://www.redhat.com/mailman/listinfo/fedora-list">${_('fedora-list@redhat.com')}</a></strong>.</p>
+					<ul>
+						<li><a href="https://www.redhat.com/mailman/listinfo/fedora-list">${_('Subscribe to the list')}</a>.</li>
+					<li><a href="mailto:fedora-list@redhat.com">${_('Post a message to the list')}</a>.</li>
+					</ul>
+					<p>${_('Games Spin users and developers ae also available on the Fedora Games mailing list at ')} <strong><a href="https://www.redhat.com/mailman/listinfo/fedora-games-list">${_('fedora-games-list@redhat.com')}</a></strong>.</p>
+					<ul>
+						<li><a href="https://www.redhat.com/mailman/listinfo/fedora-games-list">${_('Subscribe to the list')}</a>.</li>
+					<li><a href="mailto:fedora-games-list@redhat.com">${_('Post a message to the list')}</a>.</li>
+					</ul>
+					<p>${_('For guidance on how to interact on Fedora mailing lists, ')}<a href="https://fedoraproject.org/wiki/Communicate/MailingListGuidelines">${_('please review the Fedora Mailing List Guidelines')}</a>.</p>
+				<h4>${_('Help via Forum')}</h4>
+					<p>${_('The Fedora users\' forum is available at')} <a href="http://fedoraforum.org"><strong>${_('www.fedoraforum.org')}</strong></a>.</p>
+				<h4>${_('General Help Using Fedora')}</h4>
+					<p>${_('Sometimes you  may enconuter an issue with this spin that you can get help with using general Fedora support resources. A list of those resources is available at the')} <a href="https://fedoraproject.org/get-help">${_('Fedora \'Get Help\' page')}</a>.</p>
 			</div>
 		</div>
 
