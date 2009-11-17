@@ -9,8 +9,11 @@ from types import NoneType
 
 class Torrents(object):
 
-    non_release_re = re.compile('(alpha)|(beta)|(snap)|(preview)|(x86_64)', re.I)
+    prerelease_re = re.compile('-(alpha|beta|snap|preview)([0-9]*)$', re.I)
+    non_release_re = re.compile('(alpha|beta|snap|preview)', re.I)
+    prerelease_order = ('alpha', 'beta', 'snap', 'preview')
     spins_matches = ['broffice', 'edu', 'math', 'kde', 'xfce', 'lxde', 'aos', 'developer', 'fel', 'games']
+    archlist = ['i386', 'i586', 'i686', 'ix86', 'ppc', 'x86_64', 'source', 'Source']
 
     def __init__(self):
         self._torrents = None
@@ -23,35 +26,84 @@ class Torrents(object):
             fo.close()
         return self._torrents
 
-    def specific_spin(self, name, release, pattern=''):
+    def parse_torrent_name(self, name):
+        for arch in self.archlist:
+            arch_pos = name.find('-%s-' % arch)
+            if arch_pos != -1:
+                release = name[0:arch_pos]
+                spin = name[arch_pos + len(arch) + 2:]
+                return spin, release, arch
+        raise Exception('No known architecture in the spin name: %s' % name)
+
+    def specific_spin(self, name, release=None, arch=None, latest=True):
+        '''
+        :arg name: the name of a spin
+        :kwarg release: release of Fedora to retrieve for
+        :kwarg arch: Limit to a specific arch
+        :kwarg latest: If True, only return the latest spin (latest prerelease,
+            or the final) in the list.  If False, return the whole list.  Note,
+            when multiple archs are being returned the latest version per arch
+            could be different.
+        :returns: a list of spins meeting the criteria
+        '''
         if not isinstance(release, basestring):
             release = '%s' % release
-        spins_release = []
-        spins_non_release = []
-        spins_all = []
-       
+        spins = []
+
         #print "name:", name
         #print "release:", release
         #print "pattern:", pattern
         #for row in self.torrents:
         for row in self.torrents:
-            torrent_name = row['name'].lower()
-            #print "row: ", row['name']
-            if (name in torrent_name) and (pattern in torrent_name) and (release in torrent_name):
-                #print "appended..."
-                spins_release.append(row)
-            elif name in torrent_name and not release in torrent_name:
-                spins_non_release.append(row)
-        
-        #do some list combination
-        #print spins_release
-        #print spins_non_release
-        spins_all = [spins_release, spins_non_release]
+            t_name, t_release, t_arch = self.parse_torrent_name(row['name'])
+            if (name.lower() in t_name.lower()):
+                if release and (release.lower() not in t_release.lower()):
+                    continue
+                if arch and (arch.lower() != t_arch.lower()):
+                    continue
+                spins.append(row)
 
-        return spins_all
+        if latest:
+            latest = {}
+            for spin in spins:
+                # Get arch and version
+                # if version is later than current ver for arch, add it in
+                t_name, t_release, t_arch = self.parse_torrent_name(spin['name'])
+                # Parse out prerelease string if any
+                match = self.prerelease_re.search(t_release)
+                # No match means we're on final
+                if not match:
+                    # Place final one later than the last prerelease
+                    latest[t_arch] = (spin, len(self.prerelease_order), 1)
+                    continue
+                else:
+                    prerelease = match.group(1).lower()
+                    prerelease_seq = match.group(2) or '0'
+                    if prerelease_seq:
+                        prerelease_seq = int(prerelease_seq)
+                    prerelease_index = self.prerelease_order.index(prerelease)
+
+                # Get our saved version
+                l = latest.get(t_arch, None)
+                if l:
+                    if prerelease_index < l[1]:
+                        # prerelease came before what we have so far
+                        continue
+                    elif prerelease_index == l[1]:
+                        if prerelease_seq <= l[2]:
+                            # prerelease is a lower sequence than what we
+                            # have now (like snap1 vs snap2)
+                            continue
+                latest[t_arch] = (spin, prerelease_index, prerelease_seq)
+            spins = [s[0] for s in latest.values()]
+        return spins
 
     # needed functions
     def matches_a_spin(self, name):
+        '''Decide if a spin is of a release.
+
+        :returns: True if the name is a spin and in a released Fedora.
+        '''
         if self.non_release_re.search(name):
             return False    
         for part in self.spins_matches:
@@ -75,14 +127,16 @@ class Torrents(object):
     def getrandomtorrent(self, list):
         return random.randint(0, len(list)-1)
 
+def formatsize(n, format='%0.2f'):
+    return format % (n / 1024.0**2)
 
 
 torrents = Torrents()
-release = '11'
+release = '12'
 arch = 'i686'
 
 def formatsize(n, format='%0.2f'):
-	# this is awful.
+    # this is awful.
     if isinstance(n, NoneType):
          n = 1
     #print "type: ", type(n)
@@ -104,19 +158,19 @@ alphabetical = sorted(spins, key=itemgetter('name'))
 
 #data used on sidebar, for featured-spin section
 sdata_feature = {
-	'broffice': "Brazilian localized spin that provides the legal brand for OpenOffice.org in Brazil.",
-	'edu': "A special selection of applications related to educational and scientific purposes.",
-	'math': "This is math",
-	'kde': "A complete, modern desktop built using the K Desktop Environment (KDE).",
-	'xfce': "A complete, well-integrated Xfce desktop.",
-	'lxde': "This is lxde",
-	'aos': "A scaled-down version of Fedora with a small footprint for running an appliance.",
-	'developer': "This is developer",
-	'fel': "Fedora's high-end hardware design and simulation platform.",
-	'games': "A perfect show-case of the best games available in Fedora.",
-	'art': "The ultimate free & open source art studio - tailored for graphic designers.",
-	'desktop': "The Desktop spin of Fedora is the primary spin as provided on fedoraproject.org.",
-	'security': "Security analysis tools."
+    'broffice': "Brazilian localized spin that provides the legal brand for OpenOffice.org in Brazil.",
+    'edu': "A special selection of applications related to educational and scientific purposes.",
+    'math': "This is math",
+    'kde': "A complete, modern desktop built using the K Desktop Environment (KDE).",
+    'xfce': "A complete, well-integrated Xfce desktop.",
+    'lxde': "This is lxde",
+    'aos': "A scaled-down version of Fedora with a small footprint for running an appliance.",
+    'developer': "This is developer",
+    'fel': "Fedora's high-end hardware design and simulation platform.",
+    'games': "A perfect show-case of the best games available in Fedora.",
+    'art': "The ultimate free & open source art studio - tailored for graphic designers.",
+    'desktop': "The Desktop spin of Fedora is the primary spin as provided on fedoraproject.org.",
+    'security': "Security analysis tools."
 }
 
 
