@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master-fedoraproject\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-10-29 14:55-0400\n"
-"PO-Revision-Date: 2009-11-12 08:35+0800\n"
+"POT-Creation-Date: 2009-11-16 19:52-0500\n"
+"PO-Revision-Date: 2009-11-17 13:38+0800\n"
 "Last-Translator: TianShixiong <tiansworld@gmail.com>\n"
 "Language-Team: cvsl10n\n"
 "MIME-Version: 1.0\n"
@@ -146,8 +146,8 @@ msgstr "Fedora，为了你。"
 #: data/content/get-fedora-all.html:16
 #: data/content/get-prerelease.html:14
 #, python-format
-msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
-msgstr "下载ISO后，进行<a href=\"%s/%s/verify\">验证</a>。"
+msgid "After downloading an ISO, <a href=\"https://fedoraproject.org%s/%s/verify\">verify</a> it."
+msgstr "下载ISO后，进行<a href=\"https://fedoraproject.org%s/%s/verify\">校验</a>。"
 
 #: data/content/get-fedora-all.html:17
 #: data/content/get-prerelease.html:15
@@ -939,8 +939,8 @@ msgstr "下一步，导入Fedora的GPG密匙："
 
 #: data/content/verify.html:35
 #, python-format
-msgid "You can verify the details of the GPG key(s) <a href=\"%s/%s/keys\">here</a>."
-msgstr "您可在<a href=\"%s/%s/keys\">这里</a>验证GPG密匙的详情。"
+msgid "You can verify the details of the GPG key(s) <a href=\"https://fedoraproject.org%s/%s/keys\">here</a>."
+msgstr "您可在<a href=\"https://fedoraproject.org%s/%s/keys\">这里</a>验证GPG密匙的详情。"
 
 #: data/content/verify.html:38
 msgid "Now, verify that the CHECKSUM file is valid:"
@@ -1035,88 +1035,80 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">商
 msgid "Fedora"
 msgstr "Fedora"
 
-#: data/templates/sidebar.html:26
-#, python-format
-msgid "%s/static/images/counter/%s"
-msgstr "%s/static/images/counter/%s"
-
-#: data/templates/sidebar.html:26
-#, python-format
-msgid "Fedora 12 Constantine released in %s days!"
-msgstr "距Fedora 12 Constantine发布还有%s天！"
-
-#: data/templates/sidebar.html:27
-msgid "Add a counter to your own site!"
-msgstr "在您的网页上添加计时器！"
-
-#: data/templates/sidebar.html:31
+#: data/templates/sidebar.html:13
 msgid "Navigation"
 msgstr "导航"
 
-#: data/templates/sidebar.html:33
+#: data/templates/sidebar.html:15
 msgid "Home"
 msgstr "主页"
 
-#: data/templates/sidebar.html:34
+#: data/templates/sidebar.html:16
 msgid "Get Fedora"
 msgstr "获得Fedora"
 
-#: data/templates/sidebar.html:35
+#: data/templates/sidebar.html:17
 msgid "Join Fedora"
 msgstr "加入Fedora"
 
-#: data/templates/sidebar.html:36
+#: data/templates/sidebar.html:18
 msgid "Get Help"
 msgstr "获得帮助"
 
-#: data/templates/sidebar.html:38
+#: data/templates/sidebar.html:20
 msgid "Tools"
 msgstr "工具"
 
-#: data/templates/sidebar.html:40
+#: data/templates/sidebar.html:22
 msgid "Docs"
 msgstr "文档"
 
-#: data/templates/sidebar.html:40
+#: data/templates/sidebar.html:22
 msgid "Fedora documentation."
 msgstr "Fedora文档。"
 
-#: data/templates/sidebar.html:41
+#: data/templates/sidebar.html:23
 msgid "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 
-#: data/templates/sidebar.html:41
+#: data/templates/sidebar.html:23
 msgid "Collaborative knowledge."
 msgstr "协作知识库。"
 
-#: data/templates/sidebar.html:42
+#: data/templates/sidebar.html:24
 msgid "Planet"
 msgstr "Planet"
 
-#: data/templates/sidebar.html:42
+#: data/templates/sidebar.html:24
 msgid "The voices of the Fedora community."
 msgstr "Fedora社区之声。"
 
-#: data/templates/sidebar.html:43
+#: data/templates/sidebar.html:25
 msgid "<a href=\"http://fedoraproject.org/wiki/Communicate\">Communicate</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Communicate\">联络</a>"
 
-#: data/templates/sidebar.html:43
+#: data/templates/sidebar.html:25
 msgid "Speak with Fedora."
 msgstr "Speak with Fedora."
 
-#: data/templates/sidebar.html:44
+#: data/templates/sidebar.html:26
 msgid "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Events</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">事件</a>"
 
-#: data/templates/sidebar.html:44
+#: data/templates/sidebar.html:26
 msgid "Meet the Fedora community."
 msgstr "接触 Fedora 社区。"
 
-#: data/templates/sidebar.html:46
+#: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "网站语言"
 
+#~ msgid "%s/static/images/counter/%s"
+#~ msgstr "%s/static/images/counter/%s"
+#~ msgid "Fedora 12 Constantine released in %s days!"
+#~ msgstr "距Fedora 12 Constantine发布还有%s天！"
+#~ msgid "Add a counter to your own site!"
+#~ msgstr "在您的网页上添加计时器！"
 #~ msgid "Fedora 9 and earlier"
 #~ msgstr "Fedora 9及更早"
 #~ msgid "Fedora 9 and earlier pre-releases"
