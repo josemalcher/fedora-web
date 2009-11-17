@@ -4,34 +4,22 @@ var banners = [
 //  Target URL
 //  Weight
   [
-    "https://fedoraproject.org/static/images/banners/f11release.png",
-    "Fedora 11 Leonidas is here!",
+    "https://fedoraproject.org/static/images/banners/f12release.png",
+    "Fedora 12 Constantine is here!",
     "https://fedoraproject.org/get-fedora",
-    12
+    1
   ],
   [
     "https://fedoraproject.org/static/images/banners/picturebanner-envelope-1.png",
     "Fedora Picture Book - Now accepting submissions",
     "https://fedoraproject.org/wiki/Category:Picture_book",
-    4
+    0
   ],
   [
     "https://fedoraproject.org/static/images/banners/super-packager.png",
     "Fedora Community",
     "https://admin.fedoraproject.org/community/",
-    4
-  ],
-  [
-    "https://fedoraproject.org/static/images/banners/podcast-promo.png",
-    "Fedora Community Podcast",
-    "https://fedoraproject.org/wiki/F11_release_podcasts#Fedora_Community_portal",
-    4
-  ],
-  [
-    "https://fedoraproject.org/static/images/banners/f12beta.png",
-    "Fedora 12 Beta",
-    "https://fedoraproject.org/get-prerelease",
-    12
+    0
   ]
 ];
 
