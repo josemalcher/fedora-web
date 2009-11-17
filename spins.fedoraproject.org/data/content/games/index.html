@@ -12,12 +12,31 @@
   <body>
 		<!-- the tabs -->
 		<ul class="tabs">
-			<li><a id="t2" href="#about">${_('Games')}</a></li>
+			<li><a id="t2" href="#about">${_('About')}</a></li>
+			<li><a id="t2" href="#games">${_('Games')}</a></li>
 			<li><a id="t3" href="#downloads">${_('Downloads')}</a></li>
+			<li><a id="t3" href="#support">${_('Support')}</a></li>
 		</ul>
 
 		<!-- tab "panes" -->
 		<div class="panes">
+			<div>
+				<h2>${_('Play with Fedora Today!')}</h2>
+				<p>${_('The Fedora Games spin offers a perfect showcase of the best games available in Fedora. The included games span several genres, from first-person shooters to real-time and turn-based strategy games to puzzle games. Not all the games available in Fedora are included on this spin, but trying out this spin will give you a fair impression of Fedora\'s ability to run great games.')}</p>
+				<p>${_('This spin includes a number of popular games including:')}</p>
+				<ul>
+				 <li>${_('Battle for Wesnoth')}</li>
+				 <li>${_('FreeCiv')}</li>
+				 <li>${_('Alien Arena')}</li>
+				 <li>${_('Scorched 3D')}</li>
+				 <li>${_('Flight Gear')}</li>
+				 <li>${_('Tremulous')}</li>
+				 <li>${_('SuperTuxKart')}</li>
+				 <li>${_('Nethack')}</li>
+				 <li><a href="#games">${_('And many, many more...!')}</a></li>
+				</ul>
+			        
+			</div>
 			<div>
 				<h2>${_('Games Listing')}</h2>
 				<p>${_('All of the following games are available in the Fedora Games Spin:')}</p>
@@ -600,6 +619,9 @@
 				<h4><em>Installable Live Media</em></h4>
 				<p>${_('This is the latest version of the Fedora Linux operating system\'s Games spin. It\'s everything you need to try out Fedora\'s games spin--you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take the Fedora Games spin for a test drive, and if you like it, you can install it directly to your hard drive straight from the Live Media desktop if you like. &lt;a href="/support"&gt;Read more about using and installing from live media&lt;/a&gt;.')}</p>
 				<xi:include href="../../templates/download-tab.html" />
+			</div>
+			<div>
+				<h2>${_('Support')}</h2>
 			</div>
 		</div>
 
