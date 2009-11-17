@@ -142,9 +142,12 @@ def formatsize(n, format='%0.2f'):
     #print "type: ", type(n)
     return format % (n / 1024.0**2)
 
-# this gets all the spins torrents
+# this gets all the current spins torrents
 spins = []
 for t_dict in torrents.torrents:
+    # Ugly hack, this should probably be be refactored.
+    if not t_dict['name'].startswith('Fedora-%s-i686' % release):
+        continue
     if torrents.matches_a_spin(t_dict['name']):
         if release in t_dict['name']:
             spins.append(t_dict)
