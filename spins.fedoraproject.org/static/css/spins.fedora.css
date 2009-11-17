@@ -210,6 +210,10 @@ h4
 	color: #808080;
 }
 
+div.panes div h4 {
+	margin-top: 1.5em;
+}
+
 /* end: content */
 
 /* spins tables */
@@ -401,7 +405,7 @@ ul.tabs a.current
 }
 
 /* tab pane */
-div.panes div
+div.panes > div
 {
 	display:none;
 	border: 0px;
@@ -421,6 +425,11 @@ div.panes div
 #content table, #content table td
 {
 	border-style: hidden;
+}
+
+div.panes > div h2 {
+	margin-top:		.5em;
+	margin-bottom:		.6em;
 }
 
 .panes table tr
@@ -531,7 +540,8 @@ span.blurb
 	float: left;
 	border:1px solid #9E9E93;
 	padding: 2px;
-	margin:5px;
+	margin-right:		2em;
+	margin-bottom:		2em;
 }
 
 /* this is not really necessary, left it anyway */
