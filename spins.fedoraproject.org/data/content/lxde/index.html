@@ -14,6 +14,7 @@
 		<ul class="tabs">
 			<li><a id="t1" href="#home">${_('Home')}</a></li>
 			<li><a id="t3" href="#downloads">${_('Downloads')}</a></li>
+			<li><a id="t4" href="#support">${_('Support')}</a></li>
 		</ul>
 		<!-- tab "panes" -->
 		<div class="panes">
@@ -21,7 +22,7 @@
 				<h2>${_('A lighter, faster, less resource-hungry desktop.')}</h2>
 				<img src="/static/images/spin/lxde-screenshot.png" />
 				<p>
-${_('LXDE, the "Lightweight X11 Desktop Environment", is an extremely fast, performant, and energy-saving desktop environment. It is maintained by an international community of developers and comes with a beautiful interface, multi-language support, standard keyboard shortcuts and additional features like tabbed file browsing.')}
+${_('LXDE, the "Lightweight X11 Desktop Environment", is an extremely fast, performant, and energy-saving desktop environment. It  maintained by an international community of developers and comes with a beautiful interface, multi-language support, standard keyboard shortcuts and additional features like tabbed file browsing.')}
 </p>
 
 <p>
@@ -31,6 +32,42 @@ ${_('LXDE is not designed to be powerful and bloated, but to be usable and slim.
 			<div>
 				<h2>${_('Downloads')}</h2>
 				<xi:include href="../../templates/download-tab.html" />
+			</div>
+			<div>
+				<h2>${_('LXDE Desktop Support')}</h2>
+				<p>${_('Need help using the Games Spin? We\'ve put together a list of resources you can use to get help below. For help downloading, running, and installing spins,')} <a href="/support">${_('please visit the main spins support page')}</a>.</p>
+
+                                <h4>${_('Help via Chat')}</h4>
+                                        <p>${_('General help with Fedora is available in the')} <strong>${_('#fedora')}</strong> ${_('irc channel on')} <strong><a href="http://freenode.net">${_('irc.freenode.net')}</a></strong>.</p>
+                                        <p>${_('LXDE users and developers are available in the')} <strong>${_('#lxde')}</strong> ${_('irc channel on')} <strong><a href="http://freenode.net">${_('irc.freenode.net')}</a></strong> ${_('for real-time conversations. Note that this channel is not specific to Fedora LXDE Desktop, but LXDE in general.')}</p>
+                                        <p>${_('For help using IRC, ')}<a href="https://fedoraproject.org/wiki/Communicate/IRCHowTo">${_('please visit the Fedora IRC how-to')}</a>.</p>
+
+                                <h4>${_('Help via Email')}</h4>
+                                        <p>${_('General help with Fedora is available on the Fedora users\' mailing list at ')} <strong><a href="https://www.redhat.com/mailman/listinfo/fedora-list">${_('fedora-list@redhat.com')}</a></strong>.</p>
+                                        <ul>
+                                                <li><a href="https://www.redhat.com/mailman/listinfo/fedora-list">${_('Subscribe to the list')}</a>.</li>
+                                        <li><a href="mailto:fedora-list@redhat.com">${_('Post a message to the list')}</a>.</li>
+                                        </ul>
+                                        <p>${_('LXDE users and developers are available on the LXDE mailing list at ')} <strong><a href="https://lists.sourceforge.net/lists/listinfo/lxde-list">${_('lxde-list@lists.sourceforge.net')}</a></strong>${_('. Again, note that this mailing list is not specific to the Fedora LXDE Desktop - it is meant for LXDE in general.')}</p>
+                                       <ul>
+                                                <li><a href="https://lists.sourceforge.net/lists/listinfo/lxde-list">${_('Subscribe to the list')}</a>.</li>
+                                        <li><a href="mailto:lxde-list@lists.sourceforge.net">${_('Post a message to the list')}</a>.</li>
+                                        </ul>
+                                        <p>${_('For guidance on how to interact on Fedora mailing lists, ')}<a href="https://fedoraproject.org/wiki/Communicate/MailingListGuidelines">${_('please review the Fedora Mailing List Guidelines')}</a>.</p>
+                                <h4>${_('Help via Forum')}</h4>
+                                        <p>${_('The Fedora users\' forum is available at')} <a href="http://fedoraforum.org"><strong>${_('www.fedoraforum.org')}</strong></a>.</p>
+                                        <p>${_('The LXDE forum is available at')} <a href="http://forum.lxde.org"><strong>${_('forum.lxde.org')}</strong></a>.</p>
+
+                                <h4>${_('Documentation')}</h4>
+					<p>${_('The Fedora LXDE community maintains a ')} <a href="https://fedoraproject.org/wiki/LXDE">${_('wiki page on the Fedora Project Wiki')}</a>.</p>
+					<p>${_('LXDE-specific documentation is available at the upstream ')} <a href="http://wiki.lxde.org/en/Fedora">${_('LXDE Wiki')}</a>.</p>
+
+                                <h4>${_('General Help Using Fedora')}</h4>
+                                        <p>${_('Sometimes you  may enconuter an issue with this spin that you can get help with using general Fedora support resources. A list of those resources is available at the')} <a href="https://fedoraproject.org/get-help">${_('Fedora \'Get Help\' page')}</a>.</p>
+
+
+
+
 			</div>
 		</div>
   </body>
