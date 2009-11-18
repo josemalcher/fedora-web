@@ -3,13 +3,13 @@
   xmlns:py="http://genshi.edgewall.org/"
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
-	<span class="download-opt1" py:for="i in torrents.specific_spin(area, release, 'i686')">
+	<span class="download-option" id="opt1"  py:for="i in torrents.specific_spin(area, release, 'i686')">
 		<h4>${_('32-bit PC Edition')}</h4>
 		<p><img class="download-media" alt="${_('32-bit PC Edition')}" src="/static/images/media.png" />${_('This edition is for the highest compatibility; it will work on both 32-bit and 64-bit computers.')}</p>
 		<a class="download-button" href="http://torrent.fedoraproject.org/spins/${i['name']}.torrent">${_('Download Now!')}</a>
 		<p class="fine-print">${_('6K Torrent File for 32-bit PC ISO')}<br /> <a href="http://docs.fedoraproject.org/install-guide/f12/en-US/html/ch-new-users.html#sn-making-media">${_('How do I use this file?')}</a></p>
 	</span>
-	<span class="download-opt2" py:for="i in torrents.specific_spin(area, release, 'x86_64')">
+	<span class="download-option" id="opt2" py:for="i in torrents.specific_spin(area, release, 'x86_64')">
 		<h4>${_('64-bit PC Edition')}</h4>
 		<p><img class="download-media" alt="${_('64-bit PC Edition')}" src="/static/images/media.png" />${_('Enjoy the full power and speed of a 64-bit computer. Not compatible with 32-bit computers.')}</p>
 		<a class="download-button" href="http://torrent.fedoraproject.org/spins/${i['name']}.torrent">${_('Download Now!')}</a>
