@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <head>
+    <title>${_('Fedora Electronic Lab')}</title>
+  </head>
+  <body>
+	
+    <h2>Featured Solutions</h2>
+
+	The Fedora Electronic Lab includes design tools for:
+	<ul>
+		<li>ASIC Analog Circuit Design and Simulation</li>
+		<li>ASIC Layout, DRC and LVS</li>
+		<li>Digital Simulation and Verification</li>
+		<li>RTL and logic synthesis design flows</li>
+		<li>Circuit and PCB Layout</li>
+		<li>Micro Controller (µC) Programming and Embedded Systems Development</li>
+		<li>CAD Tools</li>
+		<li>Project Management, Peer Review and budget tracking</li>
+	</ul>
+	
+    <h3>ASIC Analog Circuit Design and Simulation</h3>
+
+	<img class="splash-right" src="/static/images/fel/ac_plot.png" rel="#spice" width="40%"/><br />
+	This simulation lab enables design engineers to edit and simulate their schematics.
+	<ul>
+		<li>General Purpose Circuit Simulators (Analysis : Nonlinear AC/DC, Transient, Fourier, S-parameter and harmonic balance)</li>
+		<li>Beyond Spice capabilities: Level 49, BSIMv3 and EKV implementations</li>
+		<li>Multi-lingual, ability to mimic different variants of spice, and also supporting the newer languages like Verilog-AMS</li>
+		<li>Draws publishable-quality electrical circuit schematic diagrams.</li>
+		<li>Circuit components can be retrieved from libraries which are fully editable.</li>
+	</ul>
+	<img class="splash-right" src="/static/images/fel/xcircuit.png" rel="#xcircuit" width="40%"/><br />
+
+	<h4>Tools:</h4>
+	<ul>
+		<li><a href="http://www.geda.seul.org/tools/gnucap">gnucap</a> - A general purpose circuit simulator with its engine designed to do true mixed-mode simulation. The developer''s thesis can be <a href="http://www.gnucap.org/papers/al-davis-dissertation.pdf">read</a> here.</li>
+		<li><a href="http://ngspice.sourceforge.net/">ngspice</a> - A mixed level/signal circuit simulator</li>
+		<li><a href="http://sourceforge.net/projects/gspiceui">gspiceui</a> - A frontend to Spice circuit similators</li>
+		<li><a href="http://opencircuitdesign.com/xcircuiz/index.html">xcircuit</a> - A general-purpose drawing program and also a specific-purpose CAD program for circuit schematic drawing and schematic capture.	</li>
+	</ul>
+	
+    <h3>ASIC Layout, DRC and LVS</h3>
+    <img class="splash-right" src="/static/images/fel/netgen.png" rel="#netgen" width="40%"/><br />
+	<ul>
+		<li>A continuous DRC that operates in background and gives an up-to-date picture of violations.</li>
+		<li>A hierarchical circuit extractor that only re-extracts portions of the circuit that have changed.</li>
+		<li>Plowing that permits interactive stretching and compaction.</li>
+		<li>Routing tools that work under and around existing connections.</li>
+		<li>Logs and corner stitching to achieve efficient implementations.</li>
+		<li>Dedicated to training in sub-micron CMOS VLSI design with full editing facilities.</li>
+		<li>Supports technology files by the MOSIS foundry service.</li>
+		<li>Switch-level simulation of the layout, by considering transistors as ideal switches, or using RC time constants to predict the relative timing of events through extracted capacitance and lumped resistance values.</li>
+		<li>Ensures that layout connectivity matches the logical design represented by the schematic or netlist before tapeout by automatically extracting devices and nets formed across layout hierarchy and comparing them to the schematic netlist. (LVS) )</li>
+		<li>Generates GDS II stream format and CIF from a given layout.</li>
+		<li>Achievement : Thick-film circuit layout using the Magic layout editor.</li>
+	</ul>
+		<img class="splash-right" src="/static/images/fel/gdsII.png" rel="#gdsii" width="40%"/><br />
+		<h4>Tools:</h4>
+		<p><a href="http://opencircuitdesign.com/magic/index.html">Magic</a> - Widely cited as being the easiest tool to use for circuit layout, even for people who ultimately rely on commercial tools for their product design flow.</p>
+		<p><a href="http://www.staticfreesoft.com/">Electric</a> - A sophisticated electrical CAD system that can handle many forms of circuit design, including custom IC layout (ASICs), schematic drawing, hardware description language specifications, and electro-mechanical hybrid layout. View the <b>IEEE Santa Clara Valley</b> (June 4, 2009) presentation <a href="http://ee.com/electric/">here</a>.</p>
+		<p><a href="http://www.toped.org.uk/">Toped</a> - A cross-platform VLSI IC layout editor.</p>
+		<p><a href="http://opencircuitdesign.com/netgen">Netgen</a> - A tool for comparing netlists, in analog or mixed-signal circuits that cannot be simulated in reasonable time.</p>
+		
+		
+	<h3>Digital Simulation and Verification</h3>
+	<img class="splash-right" src="/static/images/fel/ghdl.png" rel="#ghdl" width="40%"/><br />
+	A HDL simulation environment that enables you to verify the functional and timing models of your design. Thus, your Design teams can focus on improving existing methodologies with tools that scale across multiple levels of abstraction and design complexity.
+	<ul>
+		<li>VPI functionality.</li>
+		<li>A graphical waveform viewer.</li>
+		<li>Supports both VHDL and Verilog designs.</li>
+		<li>A Verilog simulator and synthesis tool for IEEE 1364-2001 standard.</li>
+		<li>Export signals to a VCD file or a GHW file for visual inspection with a waveform viewer.</li>
+		<li>Pretty printing or cross references generation in HTML.</li>
+		<li>Makefile generation for any component in a design.</li>
+		<li>Achievements: Successfully compiled and run a DLX processor and a LEON1 SPARC processor.</li>
+		<li>Automatic layout generation from VHDL description via desired standard cell libraries.</li>
+		<li>Implementation of the VHDL language in accordance to the IEEE 1076-1987 standard, IEEE 1076-1993 standard, the protected types of VHDL00 (aka IEEE 1076a or IEEE 1076-2000) and and non-standard third party libraries.</li>
+	</ul>
+	<h4>Tools:</h4>
+	<p><a href="http://ghdl.free.fr/">GHDL</a> A VHDL simulator, using the GCC technology. GHDL implements the VHDL language according to the IEEE 1076-1987 or the IEEE 1076-1993 standard. It compiles VHDL files and creates a binary that simulates your design.</p>
+	<p><a href="http://qucs.sourceforge.net/">Qucs</a> - A circuit simulator with graphical user interface. The software aims to support all kinds of circuit simulation types, e.g. DC, AC, S-parameter and harmonic balance analysis.</p>
+	<p><a href="http://www.freehdl.seul.org/">FreeHDL</a> - Yet another VHDL simulator.</p>
+	<p><a href="http://www.icarus.com/eda/verilog/index.html">Icarus Verilog</a> A Verilog compiler that generates a variety of engineering formats, including simulation. It strives to be true to the IEEE-1364 standard. <a href="http://chitlesh.wordpress.com/2009/07/13/fel-icarus-verilog-more-than-simulator/">More than a simulator.</a></p>
+	<p><a href="http://home.nc.rr.com/gtkwave/">GTKWave</a> Waveform viewer that can view VCD files produced by most VHDL/Verilog simulation tools, as well as LXT files produced by certain Verilog simulation tools.</p>
+	<p><a href="http://drawtiming.sourceforge.net/">Drawtiming</a> - A command line tool for generating timing diagrams from ASCII input files. The input files use a structured language to represent signal state transitions and interdependencies.</p>	
+	
+	<h3>RTL and logic synthesis design flows</h3>
+	<img class="splash-right" src="/static/images/fel/place.png" rel="#place" width="40%"/><br />
+	<ul>
+		<li>Automatic schematic generation</li>
+		<li>VHDL compilation and simulation</li>
+		<li>Finite State Machines (FSM)</li>
+		<li>Model checking and formal proof</li>
+		<li>RTL and Logic synthesis</li>
+		<li>Data-Path compilation</li>
+		<li>Macro-cells generation</li>
+		<li>Symbolic Pad cells</li>
+		<li>Design rules checking</li>
+		<li>Place and route</li>
+		<li>Layout edition</li>
+		<li>Netlist extraction and verification</li>
+		<li>Automatic Layout generation</li>
+		<li>Physical optimization and layout design flows</li>
+		<li>Complete RTL to CIF and GDSII flows</li>
+		<li>7 extra standard cells up to a feature size of 0.13µm</li>
+		<li>Read/write standard ins/outs including Verilog and VHDL</li>
+		<li>Creates a POV-Ray (3D view) scene description file of the GDSII data. </li>
+	</ul>
+	<img class="splash-right" src="/static/images/fel/xsch.png" rel="#xsch" width="40%"/><br />
+
+	<h4>Tools:</h4>
+	<p><a href="http://www.vlsitechnology.org/">pharosc</a> VLSI and ASIC Technology Standard Cell Libraries</p>
+	<p><a href="http://www-asim.lip6.fr/recherche/alliance/">Alliance</a> - a complete set of CAD tools and portable libraries for VLSI design. It includes a VHDL compiler and simulator, logic synthesis tools, and automatic place and route tools.</p>
+	<p><a href="http://www.atchoo.org/gds2pov/">gds2pov</a> - Creates attractive 3D pictures of a layout. Converts GDS2 layout file to POV-Ray</p>
+	
+	<h3>Circuit and PCB Layout</h3>
+	A professional-quality printed circuit board design environment along with :
+	<img class="splash-right" src="/static/images/fel/kicad.png" rel="#kicad" width="40%"/><br />
+	<ul>
+		<li>schematic capture, simulation, prototyping attribute management,</li>
+		<li>bill of materials (BOM) generation and netlisting into over 20 netlist formats.</li>
+		<li>Includes a rats nest feature, design rule checking, and can provide industry standard RS-274-X (Gerber), NC drill, and centroid data (X-Y data) output for use in the board fabrication and assembly process.</li>
+		<li>Offers high end features such as an autorouter and trace optimizer, which can tremendously reduce layout time.</li>
+		<li>Creates PCB of up to 8 layers with an unlimited number of components and nets.</li>
+		<li>Includes a viewer for Gerber files (RS274X), which supports NC-drill and Excellon formats.</li>
+	</ul>
+	<img class="splash-right" src="/static/images/fel/pcb.png" rel="#pcb" width="40%"/><br />	
+
+	<h4>Tools:</h4>
+	<p><a href="http://pcb.sourceforge.net/">PCB</a> - An interactive printed circuit board editor.</p>
+	<p><a href="http://gerbv.sourceforge.net/">Gerbv</a> - Gerber Viewer (gerbv) is a viewer for Gerber files. Gerber files are generated from PCB CAD system and sent to PCB manufacturers as basis for the manufacturing process.</p>
+	<p><a href="http://www.geda.seul.org/">gEDA/gaf</a> - A full suite of Electronic Design Automation tools.</p>
+	<p><a href="http://www.lis.inpg.fr/realise_au_lis/kicad/">Kicad</a> - Kicad creates electronic schematic diagrams and printed circuit board artwork up to 16 layers.</p>
+	
+	<h3>CAD Tools</h3>
+	<img class="splash-right" src="/static/images/fel/uml.png" rel="#uml" width="40%"/><br />	
+	The CAD department of many semiconductor design centers maintain various scripts under various version control systems. We strives to give those CAD engineers some perl modules and a proper platform.
+	<ul>
+		<li>Revision Control : CVS, SVN, GIT, RCS</li>
+		<li>Web based tools : Trac, Bugzilla</li>
+		<li>UML to maintain their personalized perl scripts.</li>
+	</ul>
+
+	<b>Perl Modules:</b>
+	<ul>
+		<li>VHDL : perl-Hardware-Vhdl-Parser, perl-Hardware-Vhdl-Tidy, perl-Hardware-Vhdl-Lexer</li>
+		<li>Verilog : perl-Verilog perl-Verilog-CodeGen perl-Hardware-Verilog-Parser perl-Verilog-Readmem </li>
+		<li>Systemc : perl-SystemPerl perl-SystemC-Vregs (Read more about SystemC on Fedora <a href="http://chitlesh.wordpress.com/2009/07/05/installing-systemc-on-fedora/">here</a>)</li>
+		<li>Generation of documentation : doxygen with VHDL support</li>
+		<li>SystemVerilog : perl-Verilog</li>
+		<li>Modelsim List: perl-ModelSim-List</li>
+	</ul>
+
+
+	<h3>Project Management and budget tracking</h3>
+	<img class="splash-right" src="/static/images/fel/planner.png" rel="#planner" width="40%"/><br />
+	<ul>
+		<li>Gantt Diagram : planner</li>
+		<li>Mind mapping tools (excellent for FPGA design) : Vym</li>
+		<li>Budget Tracking : Kmymoney, Openoffice Spreadsheet</li>
+		<li>System design : Dia, Inkscape</li>
+	</ul>
+
+	<!-- first overlay. id attribute matches our selector -->
+	<div class="simple_overlay" id="spice">
+		<!-- large image -->
+		<img src="/static/images/fel/ac_plot.png" />
+		<!-- image details -->
+		<div class="details">
+		    <h3>${_('FEL')}</h3>
+		    <h4>${_('Simulation')}</h4>
+		    <p>${_('A screenshot of a circuit simulation with ngspice.')}</p>
+		</div>
+	</div>
+	
+	<div class="simple_overlay" id="netgen">
+		<!-- large image -->
+		<img src="/static/images/fel/netgen.png" />
+		<!-- image details -->
+		<div class="details">
+		    <h3>${_('FEL')}</h3>
+		    <h4>${_('Mixed Signal Design')}</h4>
+		    <p>${_('ASIC Design Flow.')}</p>
+		</div>
+	</div>
+	
+	<div class="simple_overlay" id="gdsii">
+		<!-- large image -->
+		<img src="/static/images/fel/gdsII.png" />
+		<!-- image details -->
+		<div class="details">
+		    <h3>${_('FEL')}</h3>
+		    <h4>${_('Digital Design')}</h4>
+		    <p>${_('GDSII')}</p>
+		</div>
+	</div>
+	
+	<div class="simple_overlay" id="xcircuit">
+		<!-- large image -->
+		<img src="/static/images/fel/xcircuit.png" />
+		<!-- image details -->
+		<div class="details">
+		    <h3>${_('FEL')}</h3>
+		    <h4>${_('ASIC Analog Design')}</h4>
+		    <p>${_('Analog schematic design with schematic.')}</p>
+		</div>
+	</div>
+			
+	<div class="simple_overlay" id="ghdl">
+		<!-- large image -->
+		<img src="/static/images/fel/ghdl.png" />
+		<!-- image details -->
+		<div class="details">
+		    <h3>${_('FEL')}</h3>
+		    <h4>${_('Digital Design')}</h4>
+		    <p>${_('Digital Simulation with GTKWave and ghdl.')}</p>
+		</div>
+	</div>
+	
+	<div class="simple_overlay" id="place">
+		<!-- large image -->
+		<img src="/static/images/fel/place.png" />
+		<!-- image details -->
+		<div class="details">
+		    <h3>${_('FEL')}</h3>
+		    <h4>${_('ASIC Digital Design')}</h4>
+		    <p>${_('A screenshot of a place and route.')}</p>
+		</div>
+	</div>	
+	
+	<div class="simple_overlay" id="xsch">
+		<!-- large image -->
+		<img src="/static/images/fel/xsch.png" />
+		<!-- image details -->
+		<div class="details">
+		    <h3>${_('FEL')}</h3>
+		    <h4>${_('ASIC Digital Design')}</h4>
+		    <p>${_('A screenshot of a schematic generated from VHDL code.')}</p>
+		</div>
+	</div>
+	
+	<div class="simple_overlay" id="kicad">
+		<!-- large image -->
+		<img src="/static/images/fel/kicad.png" />
+		<!-- image details -->
+		<div class="details">
+		    <h3>${_('FEL')}</h3>
+		    <h4>${_('PCB Design')}</h4>
+		    <p>${_('A screenshot of a PCB layout done with Kicad.')}</p>
+		</div>
+	</div>
+	
+	<div class="simple_overlay" id="pcb">
+		<!-- large image -->
+		<img src="/static/images/fel/pcb.png" />
+		<!-- image details -->
+		<div class="details">
+		    <h3>${_('FEL')}</h3>
+		    <h4>${_('PCB Design')}</h4>
+		    <p>${_('A screenshot of a PCB layout done with PCB.')}</p>
+		</div>
+	</div>
+
+	<div class="simple_overlay" id="uml">
+		<!-- large image -->
+		<img src="/static/images/fel/uml.png" />
+		<!-- image details -->
+		<div class="details">
+		    <h3>${_('FEL')}</h3>
+		    <h4>${_('Project Planning')}</h4>
+		    <p>${_('A screenshot of HDL IP development with Perl and UML.')}</p>
+		</div>
+	</div>
+
+	<div class="simple_overlay" id="planner">
+		<!-- large image -->
+		<img src="/static/images/fel/planner.png" />
+		<!-- image details -->
+		<div class="details">
+		    <h3>${_('FEL')}</h3>
+		    <h4>${_('Project Planning')}</h4>
+		    <p>${_('A screenshot of a Project Planning with planner.')}</p>
+		</div>
+	</div>
+
+	</body>
+</html>
