@@ -34,6 +34,7 @@
                       Users are welcome to propose new features and join us during our testing days.<br/>
                       <li><a href="http://chitlesh.fedorapeople.org/FEL/list.html">List of all software</a> under FEL's umbrella.</li>
                       <li><a href="http://publictest6.fedoraproject.org/gallery2/main.php">Screenshots Gallery</a></li>
+                      <li><a href="http://alt.fedoraproject.org/pub/alt/nightly-composes/electronic-lab/">Nightly Development LiveDVD</a></li>
                     </ul>
 	            </span>
 	            <span class="download-option" id="opt2">
@@ -41,6 +42,7 @@
 		            <ul>
                       <li><a href="http://chitlesh.fedorapeople.org/papers/fel-flyer-f12.pdf">FEL-12 Flyer</a></li>
                       <li><a href="http://chitlesh.fedorapeople.org/papers/FEL12ReleaseNotes.pdf">FEL-12 Release Notes</a></li>
+                      <li><a href="http://chitlesh.fedorapeople.org/papers/FELPositionPaper.pdf">Position Paper for Research and Development</a></li>
                       <li>Installing the core FEL software on <a href="https://fedorahosted.org/fedora-electronic-lab/wiki/FAQ#EPELRepository">CentOS-5/RHEL-5</a></li>
                     </ul>
 	            </span>
@@ -70,21 +72,7 @@
 			
 			<div>
 				<h2>${_('About FEL')}</h2>
-                <p>${_('Fedora\'s Electronic Laboratory, an opensource hardware design and simulation platform, is dedicated to support the innovation and development brought by opensource Electronic Design Automation (EDA) community.')}</p>
-                <p>${_('Fedora Electronic Laboratory provides a complete electronic laboratory setup with reliable open source design tools in order to help you keep in pace with current technological race. It reduces the risk assessment of open source hardware development and enable electronic designers tapeout quickly and efficiently.')}</p>
-                <p>${_('Fedora Electronic Lab targets mainly the Micro-Nano Electronic Engineering field. It introduces:')}
-                </p>
-                <ul>
-                    <li>${_('A collection of Perl modules to extend Verilog and VHDL support.')}</li>
-                    <li>${_('Tools for Application-Specific Integrated Circuit (ASIC) Design Flow process.')}</li>
-                    <li>${_('Extra standard cell libraries supporting a feature size of 0.13µm. (more than 300 MB)')}</li>
-                    <li>${_('Extracted spice decks which can be simulated with gnucap/ngspice or any spice simulators.')}</li>
-                    <li>${_('Interoperability between various packages in order to achieve different design flows.')}</li>
-                    <li>${_('Tools for embedded design and to provide support for ARM as a secondary architecture in Fedora.')}</li>
-                    <li>${_('A tool set for Openmoko development and other open source hardware communities.')}</li>
-                    <li>${_('A peer review eeb-based solution coupled with an Eclipse IDE for Embedded/Digital Hardware IP design.')}</li>
-                    <li>${_('PLA tools, C-based design methodologies, simulators for 8051 and 8085 microcontrollers and many more.')}</li>
-                </ul>
+                <xi:include href="commitment.html" />
 			</div>
 			<div>
                 <h2>${_('Portfolio')}</h2>
@@ -96,7 +84,33 @@
 			</div>			
 			<div>
 				<h2>${_('Downloads')}</h2>
+                Fedora Electronic Lab can be deployed with these simple mechanisms, via either
+		        <ul>
+			      <li>yum,</li>
+			      <li>a Fedora Electronic Lab LiveDVD.</li>
+		        </ul>
+
+                <h3>${_('Yum install')}</h3>
+    
+                As from <b>Fedora-11 Leonidas</b>, Fedora users can groupinstall all FEL EDA software at once with:
+		        <p>${_('# yum groupinstall \'Electronic Lab\'')}</p>
+
+		        <h3>${_('LiveDVD')}</h3>
+
+                The LiveDVD can be downloaded either via http or torrent. A LiveDVD is an operating system that is executed upon boot, without installation on a hard drive. A desktop icon can be used to install the OS if wanted.<br />
+
 				<xi:include href="../../templates/download-tab.html" />
+
+	            <span class="which-arch">
+                  <img class="splash-right" src="/static/images/fel/felmain.png" width="20%"/>
+		          <h4>${_('Installation on Entreprise Linux')}</h4>
+		          The procedures of installing the core FEL software on Entreprise Linux based distributions (such as CentOS-5, Scientific-Linux 5 and RHEL-5) are detailed <a href="https://fedorahosted.org/fedora-electronic-lab/wiki/developers#CreatingaFELLiveUSB">here</a>.
+                </span>  
+
+	            <span class="which-arch">
+		          <h4>${_('LiveUSB')}</h4>
+		          Any one can create a portable version of Fedora Electronic Lab on their USB stick. The installation procedures are detailed <a href="https://fedorahosted.org/fedora-electronic-lab/wiki/developers#CreatingaFELLiveUSB">here</a>.
+                </span>  
 			</div>
 			<div>
                 <h2>${_('Support')}</h2>

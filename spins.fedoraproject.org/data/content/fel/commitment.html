@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:py="http://genshi.edgewall.org/"
+	xmlns:xi="http://www.w3.org/2001/XInclude">
+	<head>
+		<title>${_('About Fedora Electronic Lab')}</title>
+	</head>
+	<body>
+      <h3>Profile</h3>
+
+      <p>${_('Fedora\'s Electronic Laboratory, an opensource hardware design and simulation platform, is dedicated to support the innovation and development brought by opensource Electronic Design Automation (EDA) community.')}</p>
+      <p>${_('Fedora Electronic Laboratory provides a complete electronic laboratory setup with reliable open source design tools in order to help you keep in pace with current technological race. It reduces the risk assessment of open source hardware development and enable electronic designers tapeout quickly and efficiently.')}</p>
+      <p>${_('Fedora Electronic Lab targets mainly the Micro-Nano Electronic Engineering field. It introduces:')}
+      </p>
+      <ul>
+        <li>${_('A collection of Perl modules to extend Verilog and VHDL support.')}</li>
+        <li>${_('Tools for Application-Specific Integrated Circuit (ASIC) Design Flow process.')}</li>
+        <li>${_('Extra standard cell libraries supporting a feature size of 0.13µm. (more than 300 MB)')}</li>
+        <li>${_('Extracted spice decks which can be simulated with gnucap/ngspice or any spice simulators.')}</li>
+        <li>${_('Interoperability between various packages in order to achieve different design flows.')}</li>
+        <li>Tools for embedded design and to provide <a href="http://fedoraproject.org/wiki/Architectures/ARM">support for ARM</a> as a secondary architecture in Fedora.</li>
+        <li><a href="http://chitlesh.wordpress.com/2009/10/07/openmoko-hardware-development-on-fedora/">tool set</a> for Openmoko development and other open source hardware communities.</li>
+        <li>${_('A peer review eeb-based solution coupled with an Eclipse IDE for Embedded/Digital Hardware IP design.')}</li>
+        <li>${_('PLA tools, C-based design methodologies, simulators for 8051 and 8085 microcontrollers and many more.')}</li>
+      </ul>
+
+      <h3>FEL's Commitment</h3>
+
+Fedora Electronic Lab (FEL) comes to fix one big problem in the opensource community. This problem is usually unknown to many people or taken for granted.<br /><br />
+
+The problem is : there is no one who provides opensource EDA solutions for the real life. Although it is one problem, it is very complex in itself. In real life, designers use EDA software to design chips or circuit boards. Thereby the designer requires a set of hardware design tools to design his/her chips. However the same set of hardware design tools does not apply for every hardware design project.<br /><br />
+
+    <img class="splash-right" src="/static/images/fel/FELDesignCentre.png" rel="#designcentre" width="100%"/><br /><br />
+
+Since a hardware design project consists of different types of circuits: Analog, Digital and Mixed Signal, each of these types entails its own design flow and methodologies. Each type requires several different EDA software to successfully design, simulate and verify the designed circuit. Since these types of circuits are incorporated on same die, these circuits should be able to interface each other. Thereby as an EDA provider we should provide our users with EDA solutions that fulfill design flows rather than random EDA software.<br /><br />
+
+After 3 years of hard work, one can define FEL as :<br />
+Fedora Electronic Lab is Fedora's high-end hardware design and simulation platform. This platform provides different hardware design flows based on the semiconductor industry's current trend. FEL maps in three methodologies {design, simulation and verification} with opensource EDA software to give a better hardware design experience.<br /><br />
+
+FEL also bridges 2 different opensource communities :
+<ul>
+	<li>opensource software community</li>
+    <li>opensource hardware community</li>
+</ul>
+
+As an EDA provider, we have to know what are the targeting users. Above is a picture describing a typical Semiconductor design centre. This design centre is composed of several design teams and each design team needs to interact with other design team. What is also important here is sharing of data between design teams should be possible. We have worked with several upstream projects to make it possible and other upstream projects have opted industry standard format to make interoperability possible. It is also crucial that the data format from commercial software could be read by opensource EDA software. However this is beyond our reach.<br /><br />
+
+When the design centre receives a project and project specifications have already been established by the marketing team, the project coordinator will have to divide the project in accordance to his/her respective design teams. The EDA/CAD department assists the design teams with the proper EDA software with respect to the project. Each design teams will work with several design tools (at least 5) together with some in-house scripts. These EDA software ensure design, simulation and verification methodologies. After the project have been taped-out and manufactured. The Testing and Validation Unit verifies the chips or circuit boards one by one.<br /><br />
+
+From the Project Specifications till the final validation, FEL strives to satisfy all the needs of the design centre. FEL also provides the design centre with 7 standard cells libraries. Since the semiconductor industry is a highly competitive environment, it is a never-ending process to provide several methodologies to improve hardware design experience.
+
+	<div class="simple_overlay" id="#designcenter">
+		<!-- large image -->
+		<img src="/static/images/fel/FELDesignCentre.png" />
+		<!-- image details -->
+		<div class="details">
+		    <h3>${_('FEL')}</h3>
+		    <h4>${_('Targetted Users')}</h4>
+		    <p>${_('Design Tools for the Semiconductor Design Center.')}</p>
+		</div>
+	</div>
+
+	</body>
+</html>
