@@ -992,3 +992,5 @@ BrowserMatch "^Dreamweaver-WebDAV-SCM1" redirect-carefully
 ErrorDocument 404 /404
 
 Include "conf/languages.conf"
+
+Alias /static/js/sponsor.js @DOCUMENTROOT@/static/js/sponsors/redhat.js
