@@ -24,8 +24,8 @@
 		<div class="panes">
 			<div>
 				<h2>${_('Design, simulate, and program electronics.')}</h2>
-                <p>${_('Fedora\'s Electronic is dedicated to support the innovation and development brought by opensource Electronic Design Automation (EDA) community.')}</p>
-                <img class="splash-center" src="/static/images/fel/felcover.png" /><br />
+                <p>${_('Fedora\'s Electronic Lab is dedicated to support the innovation and development brought by opensource Electronic Design Automation (EDA) community.')}</p>
+                <span class="blurb"><img class="splash-center" src="/static/images/fel/felcover.png" rel="#felcover"/><br />${_('Click image for more details.')}</span>
                 <br />
 	            <span class="download-option" id="opt1">
 		            <h4>${_('Community Space')}</h4>
@@ -47,27 +47,31 @@
                     </ul>
 	            </span>
 	            <span class="which-arch">
-                  <img class="splash-right" src="/static/images/fel/mips-small.jpg" width="16.5%"/>
+                  <img class="splash-right" src="/static/images/fel/mips.jpg" rel="#mips" width="18%"/>
 		          <h4>${_('Fedora Electronic Lab is')}</h4>
 		          <ul>
-			        <li>${_('Fedora\'s EDA portfolio,')}</li>
-			        <li>${_('an opensource EDA provider and')}</li>
-                    <li>${_('opensource EDA community builder.')}</li>
+			        <li>${_('Fedora\'s EDA portfolio.')}</li>
+			        <li>${_('a free and opensource EDA provider and community builder.')}</li>
+                    <li>${_('building a bridge between both free and opensource hardware and software communities.')}</li>
+                    <li>${_('the fruit of the outstanding work done by its respective upstream developers.')}</li>
 		          </ul>
 	            </span>
-                  <img class="splash-right" src="/static/images/fel/felmain.png" width="20%"/>
+                  <img class="splash-right" src="/static/images/fel/felmain.png" rel="#felmain" width="20%"/>
 		          <h4>${_('Advantages')}</h4>
 		          <ul>
 			        <li>${_('Deployable in both development and production environments.')}</li>
 			        <li>${_('No kernel patches are required, making it easy to deploy and use.')}</li>
-                    <li>${_('No licenses required and it is free.')}</li>
+                    <li>${_('Free and opensource licensed and NO purchase of extra licenses is required to activate its features.')}</li>
 		          </ul>
-                  <h4>${_('Glossary')}</h4>
-                  <ul>
-                    <li>ASIC : Application-Specific Integrated Circuit</li>
-                    <li>EDA : Electronic Design Automation</li>
-                    <li>VLSI : Very Large Scale Integration, about 10⁶ to 10⁷ transistors</li>
+                 <span class="which-arch">
+                   <img class="splash-right" src="/static/images/fel/toped2.jpeg" rel="#toped2" width="19%"/>
+                   <h4>${_('Glossary')}</h4>
+                   <ul>
+                     <li>ASIC : Application-Specific Integrated Circuit</li>
+                     <li>EDA : Electronic Design Automation</li>
+                     <li>VLSI : Very Large Scale Integration, about 10⁶ to 10⁷ transistors</li>
                    </ul>
+                 </span>
 			</div>
 			
 			<div>
@@ -103,7 +107,7 @@
 				<xi:include href="../../templates/download-tab.html" />
 
 	            <span class="which-arch">
-                  <img class="splash-right" src="/static/images/fel/felmain.png" width="20%"/>
+                  <img class="splash-right" src="/static/images/fel/felmain.png" rel="#felmain" width="20%"/>
 		          <h4>${_('Installation on Entreprise Linux')}</h4>
 		          The procedures of installing the core FEL software on Entreprise Linux based distributions (such as CentOS-5, Scientific-Linux 5 and RHEL-5) are detailed <a href="https://fedorahosted.org/fedora-electronic-lab/wiki/developers#CreatingaFELLiveUSB">here</a>.
                 </span>  
@@ -119,5 +123,46 @@
 			</div>
 		</div>
 
+        <!-- first overlay. id attribute matches our selector -->
+        <div class="simple_overlay" id="felcover">
+          <!-- large image -->
+          <img src="/static/images/fel/felcover_overlay.png" />
+          <!-- image details -->
+          <div class="details">
+            <h3>${_('Fedora Electronic Lab')}</h3>
+            <h4>${_('Introduction')}</h4>
+            <p>${_('This platform provides outstanding solutions for micro-nanoelectronic design from project specifications, design, functional simulation, backend design and prototyping evaluations boards.')}</p>
+          </div>
+        </div>
+        <div class="simple_overlay" id="mips">
+          <!-- large image -->
+          <img src="/static/images/fel/mips_overlay.jpg" />
+          <!-- image details -->
+          <div class="details">
+            <h3>${_('ASIC Design flows')}</h3>
+            <h4>${_('Allliance')}</h4>
+            <p>${_('This is a MIPS-R3000 of 52000 transistors, that has been completely designed using Alliance CAD tools.')}</p>
+          </div>
+        </div>
+        <div class="simple_overlay" id="felmain">
+          <!-- large image -->
+          <img src="/static/images/fel/felmain_overlay.jpg" />
+          <!-- image details -->
+          <div class="details">
+            <h3>${_('Fedora Electronic Lab')}</h3>
+            <h4>${_('Determination')}</h4>
+            <p>${_('The FEL team strives to provide a suitable EDA platform and design flows for the real life.')}</p>
+          </div>
+        </div>
+        <div class="simple_overlay" id="toped2">
+          <!-- large image -->
+          <img src="/static/images/fel/toped2.jpeg" />
+          <!-- image details -->
+          <div class="details">
+            <h3>${_('Toped Layout Editor')}</h3>
+            <h4>${_('User\'s design')}</h4>
+            <p>${_('This screenshot demonstrates the layout done on Fedora 8 by Svilen Krustev.')}</p>
+          </div>
+        </div>
   </body>
 </html>
