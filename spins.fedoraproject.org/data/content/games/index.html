@@ -1,5 +1,36 @@
 <?python
-  area = "games"
+area = "games"
+
+# used to enable/disable certain section on support-tab.html
+# options: True (enabled), False (disabled)
+support_tab = {
+	'irc': False,
+	'list': True,
+	'forums': True,
+	'docs': False
+}
+
+# support: irc section
+irc_channel = '#channel'
+irc_server = 'irc.domain.tld'
+irc_server_url = 'http://domain.tld'
+
+# support: list section
+list_url = 'https://www.redhat.com/mailman/listinfo/fedora-games-list'
+list_email = 'fedora-games-list@redhat.com'
+
+# support: forums section
+forums_url = [
+	['http://www.fedoraforum.org', 'FedoraForum.org']
+]
+
+# support: documentation section
+docs_upstream = 'http://domain.tld/'
+docs_upstream_name = 'Description'
+docs_url = [
+	['http://domain.tld', 'Description']
+]
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -669,26 +700,7 @@
 			</div>
 			<div>
 				<h2>${_('Games Spin Support')}</h2>
-					<p>${_('Need help using the Games Spin? We\'ve put together a list of resources you can use to get help below. For help downloading, running, and installing spins,')} <a href="/support">${_('please visit the main spins support page')}</a>.</p>
-				<h4>${_('Help via Chat')}</h4>
-					<p>${_('General help with Fedora is available in the')} <strong>${_('#fedora')}</strong> ${_('irc channel on')} <strong><a href="http://freenode.net">${_('irc.freenode.net')}</a></strong>.</p>
-					<p>${_('For help using IRC, ')}<a href="https://fedoraproject.org/wiki/Communicate/IRCHowTo">${_('please visit the Fedora IRC how-to')}</a>.</p>
-				<h4>${_('Help via Email')}</h4>
-					<p>${_('General help with Fedora is available on the Fedora users\' mailing list at ')} <strong><a href="https://www.redhat.com/mailman/listinfo/fedora-list">${_('fedora-list@redhat.com')}</a></strong>.</p>
-					<ul>
-						<li><a href="https://www.redhat.com/mailman/listinfo/fedora-list">${_('Subscribe to the list')}</a>.</li>
-					<li><a href="mailto:fedora-list@redhat.com">${_('Post a message to the list')}</a>.</li>
-					</ul>
-					<p>${_('Games Spin users and developers ae also available on the Fedora Games mailing list at ')} <strong><a href="https://www.redhat.com/mailman/listinfo/fedora-games-list">${_('fedora-games-list@redhat.com')}</a></strong>.</p>
-					<ul>
-						<li><a href="https://www.redhat.com/mailman/listinfo/fedora-games-list">${_('Subscribe to the list')}</a>.</li>
-					<li><a href="mailto:fedora-games-list@redhat.com">${_('Post a message to the list')}</a>.</li>
-					</ul>
-					<p>${_('For guidance on how to interact on Fedora mailing lists, ')}<a href="https://fedoraproject.org/wiki/Communicate/MailingListGuidelines">${_('please review the Fedora Mailing List Guidelines')}</a>.</p>
-				<h4>${_('Help via Forum')}</h4>
-					<p>${_('The Fedora users\' forum is available at')} <a href="http://fedoraforum.org"><strong>${_('www.fedoraforum.org')}</strong></a>.</p>
-				<h4>${_('General Help Using Fedora')}</h4>
-					<p>${_('Sometimes you  may enconuter an issue with this spin that you can get help with using general Fedora support resources. A list of those resources is available at the')} <a href="https://fedoraproject.org/get-help">${_('Fedora \'Get Help\' page')}</a>.</p>
+				<xi:include href="../../templates/support-tab.html" />
 			</div>
 		</div>
 

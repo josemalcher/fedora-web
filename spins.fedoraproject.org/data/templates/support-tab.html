@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+	
+	<h4>${_('Help via Chat')}</h4>
+			<py:if test="support_tab['irc']">
+			<p>${_('Users and developers are available in the')} <strong>${irc_channel}</strong> ${_('irc channel on')} <strong><a href="${irc_server_url}">${irc_server}</a></strong> ${_('for real-time conversations.')}</p>
+			</py:if>
+			<p>${_('General help is available in irc channel &lt;strong&gt;#fedora&lt;/strong&gt; on &lt;a href="http://freenode.net"&gt;irc.freenode.net&lt;/a&gt;.')}</p>
+			<p>${_('For help using IRC, ')}<a href="https://fedoraproject.org/wiki/Communicate/IRCHowTo">${_('please visit the Fedora IRC how-to')}</a>.</p>
+
+	<h4>${_('Help via Email')}</h4>
+			<py:if test="support_tab['list']">
+			<p>${_('Users and developers are also available on the mailing list at')} <strong><a href="${list_url}">${list_email}</a></strong>.</p>
+			<ul>
+				<li><a href="${list_url}">${_('Subscribe to the list')}</a>.</li>
+				<li><a href="mailto:${list_email}">${_('Post a message to the list')}</a>.</li>
+			</ul>
+			</py:if>
+			<p>${_('General help with Fedora is available on the Fedora users\' mailing list at')} <strong><a href="https://www.redhat.com/mailman/listinfo/fedora-list">${_('fedora-list@redhat.com')}</a></strong>.</p>
+			<ul>
+				<li><a href="https://www.redhat.com/mailman/listinfo/fedora-list">${_('Subscribe to the list')}</a>.</li>
+				<li><a href="mailto:fedora-list@redhat.com">${_('Post a message to the list')}</a>.</li>
+			</ul>
+			<p>${_('For guidance on how to interact on Fedora mailing lists,')} <a href="https://fedoraproject.org/wiki/Communicate/MailingListGuidelines">${_('please review the Fedora Mailing List Guidelines')}</a>.</p>
+	<py:if test="support_tab['forums']">
+	<h4>${_('Help via Forums')}</h4>
+			<p>${_('Helpful forums can be found at:')}</p>
+			<ul>
+				<li py:for="i in forums_url"><a href="${i[0]}">${i[1]}</a></li>
+			</ul>
+	</py:if>
+	<py:if test="support_tab['docs']">
+	<h4>${_('Documentation')}</h4>
+			<p>${_('Specific documentation and tutorials are available at the upstream ')} <a href="${docs_upstream}">${_('website')}</a>. ${_('Direct links to some highlights from ')}<a href="${docs_upstream}">${docs_upstream_name}</a> ${_('are listed below.')}</p>
+			<ul>
+				<li py:for="i in docs_url"><a href="${i[0]}">${i[1]}</a></li>
+			</ul>
+	</py:if>
+	<h4>${_('General Help Using Fedora')}</h4>
+			<p>${_('Sometimes you  may enconuter an issue with this spin that you can get help with using general Fedora support resources. A list of those resources is available at the')} <a href="https://fedoraproject.org/get-help">${_('Fedora \'Get Help\' page')}</a>.</p>
+</html>

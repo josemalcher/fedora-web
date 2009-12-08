@@ -1,5 +1,37 @@
 <?python
-  area = "xfce"
+area = "xfce"
+
+# used to enable/disable certain section on support-tab.html
+# options: True (enabled), False (disabled)
+support_tab = {
+	'irc': True,
+	'list': True,
+	'forums': True,
+	'docs': True
+}
+
+# support: irc section
+irc_channel = '#xfce'
+irc_server = 'irc.freenode.net'
+irc_server_url = 'http://freenode.net'
+
+# support: list section
+list_url = 'http://foo-projects.org/mailman/listinfo/xfce/'
+list_email = 'xfce@xfce.org'
+
+# support: forums section
+forums_url = [
+	['http://forum.xfce.org/', 'Xfce Forum'],
+	['http://www.fedoraforum.org/', 'FedoraForum.org']
+]
+
+# support: documentation section
+docs_upstream = 'http://wiki.xfce.org/'
+docs_upstream_name = 'Xfce Wiki'
+docs_url = [
+	['http://fedoraproject.org/wiki/', 'Fedora Project Wiki']
+]
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -38,34 +70,7 @@
 			</div>
 			<div>
 				<h2>${_('Support')}</h2>
-				<p>${_('Docs:')}</p>
-				<ul>
-					<li>${_('Xfce Documentation:')} <a href="http://www.xfce.org/documentation/" title="http://www.xfce.org/documentation/">http://www.xfce.org/documentation/</a></li>
-					<li>${_('Xfce FAQ:')} <a href="http://wiki.xfce.org/faq" title="http://wiki.xfce.org/faq">http://wiki.xfce.org/faq</a></li>
-					<li>${_('Another Xfce FAQ:')} <a href="http://forum.xfce.org/index.php?board=5.0" title="http://forum.xfce.org/index.php?board=5.0">http://forum.xfce.org/index.php?board=5.0</a></li>
-					<li>${_('Fedora 12 User Guide:')} <a href="http://docs.fedoraproject.org/user-guide/f12/en-US/html/" title="http://docs.fedoraproject.org/user-guide/f12/en-US/html/">http://docs.fedoraproject.org/user-guide/f12/en-US/html/</a></li>
-					<li>${_('Xfce chapter in the Fedora 12 User Guide:')} <a href="http://docs.fedoraproject.org/user-guide/f12/en-US/html/chap-User_Guide-Tour_of_the_Xfce_desktop.html" title="http://docs.fedoraproject.org/user-guide/f12/en-US/html/chap-User_Guide-Tour_of_the_Xfce_desktop.html">http://docs.fedoraproject.org/user-guide/f12/en-US/html/chap-User_Guide-Tour_of_the_Xfce_desktop.html</a></li>
-				</ul>
-				<p>${_('Mailing lists:')}</p>
-				<ul>
-					<li>${_('Xfce Mailing list:')} <a href="http://foo-projects.org/mailman/listinfo/xfce/" title="http://foo-projects.org/mailman/listinfo/xfce/">http://foo-projects.org/mailman/listinfo/xfce/</a></li>
-					<li>${_('Fedora List:')} <a href="https://www.redhat.com/mailman/listinfo/fedora-list" title="https://www.redhat.com/mailman/listinfo/fedora-list">https://www.redhat.com/mailman/listinfo/fedora-list</a></li>
-				</ul>
-				<p>${_('Forums:')}</p>
-				<ul>
-					<li>${_('Xfce Forum:')} <a href="http://forum.xfce.org/" title="http://forum.xfce.org/">http://forum.xfce.org/</a></li>
-					<li>${_('Fedora Forum:')} <a href="http://www.fedoraforum.org/" title="http://www.fedoraforum.org/">http://www.fedoraforum.org/</a></li>
-				</ul>
-				<p>${_('Wikis:')}</p>
-				<ul>
-					<li>${_('Xfce Wiki:')} <a href="http://wiki.xfce.org/" title="http://wiki.xfce.org/">http://wiki.xfce.org/</a></li>
-					<li>${_('Fedora Wiki:')} <a href="http://fedoraproject.org/wiki/" title="http://fedoraproject.org/wiki/">http://fedoraproject.org/wiki/</a></li>
-				</ul>
-				<p>${_('IRC:')}</p>
-				<ul>
-					<li>${_('#xfce on freenode.net')} <a href="irc://irc.freenode.net/xfce" title="irc://irc.freenode.net/xfce">irc://irc.freenode.net/xfce</a></li>
-					<li>${_('#fedora on freenode:')} <a href="irc://irc.freenode.net/fedora" title="irc://irc.freenode.net/fedora">irc://irc.freenode.net/fedora</a></li>
-				</ul>
+				<xi:include href="../../templates/support-tab.html" />
 			</div>
 		</div>
 

@@ -1,5 +1,36 @@
 <?python
-  area = "edu"
+area = "edu"
+
+# used to enable/disable certain section on support-tab.html
+# options: True (enabled), False (disabled)
+support_tab = {
+	'irc': True,
+	'list': True,
+	'forums': False,
+	'docs': False
+}
+
+# support: irc section
+irc_channel = '#fedora-edu'
+irc_server = 'irc.freenode.net'
+irc_server_url = 'http://freenode.net'
+
+# support: list section
+list_url = 'http://www.redhat.com/mailman/listinfo/fedora-education-list'
+list_email = 'fedora-education-list@redhat.com'
+
+# support: forums section
+forums_url = [
+	['http://domain.tld/', 'Description']
+]
+
+# support: documentation section
+docs_upstream = 'http://domain.tld/'
+docs_upstream_name = 'Description'
+docs_url = [
+	['http://domain.tld', 'Description']
+]
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -38,8 +69,7 @@
 			<div>
 				<h2>${_('Support')}</h2>
 				<p>${_('Following the goal of making it as easy as possible for students and teachers to dive into open source projects, the Fedora Education Spin comes with a variety of support options.')}</p>
-				<p>${_('You can always reach us on IRC in #fedora-edu on Freenode, where you will be automatically connected to when using the included XChat application. Additionally, we encourage you to check the channels of other projects, especially the Sugar Labs (#sugar) and Teaching Open Source (#teachingopensource) ones.')}</p>
-				<p>${_('In case you prefer sending an e-mail, you can direct thoughts and feedback at the &lt;a href="http://www.redhat.com/mailman/listinfo/fedora-education-list"&gt;Fedora Education Mailing List&lt;/a&gt;.')}</p>
+				<xi:include href="../../templates/support-tab.html" />
 			</div>
 		</div>
 

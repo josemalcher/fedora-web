@@ -1,5 +1,38 @@
 <?python
-  area = "lxde"
+area = "lxde"
+
+# used to enable/disable certain section on support-tab.html
+# options: True (enabled), False (disabled)
+support_tab = {
+	'irc': True,
+	'list': True,
+	'forums': True,
+	'docs': False
+}
+
+# support: irc section
+irc_channel = '#lxde'
+irc_server = 'irc.freenode.net'
+irc_server_url = 'http://freenode.net'
+
+# support: list section
+list_url = 'https://lists.sourceforge.net/lists/listinfo/lxde-list'
+list_email = 'lxde-list@lists.sourceforge.net'
+
+# support: forums section
+forums_url = [
+	['http://www.fedoraforum.org', 'FedoraForum.org'],
+	['http://forum.lxde.org', 'LXDE.org Forum']
+]
+
+# support: documentation section
+docs_upstream = 'http://wiki.lxde.org/en/Fedora'
+docs_upstream_name = 'LXDE Wiki'
+docs_url = [
+	['https://fedoraproject.org/wiki/LXDE', 'Fedora Project Wiki']
+]
+
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"

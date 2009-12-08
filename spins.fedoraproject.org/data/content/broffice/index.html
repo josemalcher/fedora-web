@@ -1,5 +1,38 @@
 <?python
-  area = "broffice"
+area = "broffice"
+
+# used to enable/disable certain section on support-tab.html
+# options: True (enabled), False (disabled)
+support_tab = {
+	'irc': False,
+	'list': False,
+	'forums': True,
+	'docs': False
+}
+
+# support: irc section
+irc_channel = '#channel'
+irc_server = 'irc.domain.tld'
+irc_server_url = 'http://domain.tld'
+
+# support: list section
+list_url = 'http://domain.tld/path'
+list_email = 'email@domain.tld'
+
+# support: forums section
+forums_url = [
+	['http://www.projetofedora.org/forum/', 'Projecto Fedora Brasil'],
+	['http://proyectofedora.org/forum/', 'ProyectoFedora.Org'],
+	['http://www.fedoraforum.org', 'FedoraForum.org']
+]
+
+# support: documentation section
+docs_upstream = 'http://domain.tld/'
+docs_upstream_name = 'Description'
+docs_url = [
+	['http://domain.tld', 'Description']
+]
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -32,7 +65,8 @@
 			</div>
 			<div>
 				<h2>${_('Support')}</h2>
-				<p>${_('If you would like to ask questions about the BrOffice.org Spin we recommend that you use local community forums such &lt;a href="http://www.projetofedora.org/forum/"&gt;http://www.projetofedora.org/forum/&lt;/a&gt; for Brazilian Portuguese speakers, &lt;a href="http://proyectofedora.org/forum/"&gt;http://proyectofedora.org/forum/&lt;/a&gt; for Spanish speakers or &lt;a href="http://fedoraforum.org/"&gt;http://fedoraforum.org/&lt;/a&gt; for English and other language speakers.')}</p>
+				<xi:include href="../../templates/support-tab.html" />
+				<h4>Miscleanous</h4>
 				<p>${_('If you would like to ask specific questions about BrOffice.org or OpenOffice.org we recommend that you visit &lt;a href="http://broffice.org/"&gt;http://broffice.org/&lt;/a&gt; or &lt;a href="http://www.openoffice.org/"&gt;http://www.openoffice.org/&lt;/a&gt; for more information.')}</p>
 			</div>
 		</div>

@@ -1,5 +1,39 @@
 <?python
-  area = "kde"
+area = "kde"
+
+# used to enable/disable certain section on support-tab.html
+# options: True (enabled), False (disabled)
+support_tab = {
+	'irc': True,
+	'list': True,
+	'forums': False,
+	'docs': True
+}
+
+# support: irc section
+irc_channel = '#fedora-kde'
+irc_server = 'irc.freenode.net'
+irc_server_url = 'http://freenode.net'
+
+# support: list section
+list_url = 'https://admin.fedoraproject.org/mailman/listinfo/fedora-kde'
+list_email = 'fedora-kde@lists.fedoraproject.org'
+
+# support: forums section
+forums_url = [
+	['http://forum.kde.org/', 'KDE Community Forums']
+]
+
+# support: documentation section
+docs_upstream = 'http://userbase.kde.org/'
+docs_upstream_name = 'KDE Userbase'
+docs_url = [
+	['http://userbase.kde.org/An_introduction_to_KDE', 'An Introduction to KDE'],
+	['ttp://userbase.kde.org/Applications', 'Directory of Application-Specific Documentation'],
+	['http://userbase.kde.org/Tutorials', 'KDE Tutorials'],
+	['http://userbase.kde.org/Getting_Help', 'KDE\'s Getting Help Site']
+]
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -95,40 +129,8 @@
 			</div>
 			<div>
 				<h2>${_('KDE Desktop Support')}</h2>
-
 				<p>${_('Need help using Fedora KDE Desktop? We\'ve put together a list of resources you can use to get help below. For help downloading, running, and installing spins,')} <a href="/support">${_('please visit the main spins support page')}</a>.</p>
-
-                                <h4>${_('Help via Chat')}</h4>
-                                        <p>${_('Fedora KDE users and developers are available in the')} <strong>${_('#fedora-kde')}</strong> ${_('irc channel on')} <strong><a href="http://freenode.net">${_('irc.freenode.net')}</a></strong> ${_('for real-time conversations.')}</p>
-                                        <p>${_('For help using IRC, ')}<a href="https://fedoraproject.org/wiki/Communicate/IRCHowTo">${_('please visit the Fedora IRC how-to')}</a>.</p>
-
-                                <h4>${_('Help via Email')}</h4>
-                                        <p>${_('General help with Fedora is available on the Fedora users\' mailing list at ')} <strong><a href="https://www.redhat.com/mailman/listinfo/fedora-list">${_('fedora-list@redhat.com')}</a></strong>.</p>
-                                        <ul>
-                                                <li><a href="https://www.redhat.com/mailman/listinfo/fedora-list">${_('Subscribe to the list')}</a>.</li>
-                                        <li><a href="mailto:fedora-list@redhat.com">${_('Post a message to the list')}</a>.</li>
-                                        </ul>
-                                        <p>${_('Fedora KDE users and developers are also available on the Fedora KDE mailing list at ')} <strong><a href="https://admin.fedoraproject.org/mailman/listinfo/fedora-kde">${_('fedora-kde@lists.fedoraproject.org')}</a></strong>.</p>
-                                       <ul>
-                                                <li><a href="https://admin.fedoraproject.org/mailman/listinfo/fedora-kde">${_('Subscribe to the list')}</a>.</li>
-                                        <li><a href="mailto:fedora-kde@lists.fedoraproject.org">${_('Post a message to the list')}</a>.</li>
-                                        </ul>
-                                        <p>${_('For guidance on how to interact on Fedora mailing lists, ')}<a href="https://fedoraproject.org/wiki/Communicate/MailingListGuidelines">${_('please review the Fedora Mailing List Guidelines')}</a>.</p>
-
-                                <h4>${_('Documentation')}</h4>
-                                        <p>${_('KDE-specific documentation and tutorials are available at the upstream ')} <a href="http://userbase.kde.org/">${_('KDE Userbase website')}</a>. ${_('Direct links to some highlights from ')}<a href="http://userbase.kde.org">${_('KDE Userbase')}</a> ${_('are listed below.')}</p>
-					<ul>
-						<li><a href="http://userbase.kde.org/An_introduction_to_KDE">${_('An Introduction to KDE')}</a></li>
-						<li><a href="http://userbase.kde.org/Applications">${_('Directory of Application-Specific Documentation')}</a></li>
-						<li><a href="http://userbase.kde.org/Tutorials">${_('KDE Tutorials')}</a></li>
-						<li><a href="http://userbase.kde.org/Getting_Help">${_('KDE\'s Getting Help Site')}</a></li>
-					</ul>
-                                <h4>${_('General Help Using Fedora')}</h4>
-                                        <p>${_('Sometimes you  may enconuter an issue with this spin that you can get help with using general Fedora support resources. A list of those resources is available at the')} <a href="https://fedoraproject.org/get-help">${_('Fedora \'Get Help\' page')}</a>.</p>
-
-
-
-
+				<xi:include href="../../templates/support-tab.html" />
 			</div>
 		</div>
 

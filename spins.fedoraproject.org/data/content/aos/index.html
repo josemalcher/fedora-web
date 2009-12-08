@@ -1,5 +1,36 @@
 <?python
-  area = "aos"
+area = "aos"
+
+# used to enable/disable certain section on support-tab.html
+# options: True (enabled), False (disabled)
+support_tab = {
+	'irc': True,
+	'list': True,
+	'forums': False,
+	'docs': True
+}
+
+# support: irc section
+irc_channel = '#thincrust'
+irc_server = 'irc.freenode.net'
+irc_server_url = 'http://freenode.net'
+
+# support: list section
+list_url = 'https://www.redhat.com/mailman/listinfo/thincrust-devel'
+list_email = 'thincrust-devel@redhat.com'
+
+# support: forums section
+forums_url = [
+	['http://domain.tld/', 'Description']
+]
+
+# support: documentation section
+docs_upstream = 'http://thincrust.net/'
+docs_upstream_name = 'Thin Crust'
+docs_url = [
+	['http://thincrust.net/aos.html', 'AOS Intro']
+]
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -44,10 +75,7 @@
 			</div>
 			<div>
 				<h2>${_('Support')}</h2>
-				<p><a href="http://thincrust.net/">http://thincrust.net/</a></p>
-				<p>${_('IRC: #thincrust on freenode')}</p>
-				<p>${_('Discussion of this project takes places at the &lt;a href="mailto:thincrust-devel@redhat.com"&gt;thincrust-devel@redhat.com mailing list&lt;/a&gt;:')}<br />
-				<a href="http://www.redhat.com/mailman/listinfo/thincrust-devel">http://www.redhat.com/mailman/listinfo/thincrust-devel</a></p>
+				<xi:include href="../../templates/support-tab.html" />
 			</div>
 		</div>
   </body>
