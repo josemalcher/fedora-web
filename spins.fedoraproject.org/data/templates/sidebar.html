@@ -19,11 +19,15 @@
 					<?python
 					arrName = most_downloaded[t]['name'].split("-")
 					name = arrName[-1]
-					num = most_downloaded[t]['completed']
+					
+					# total count of i686 and x86_64 versions
+					num_download = 0
+					for i in torrents.specific_spin(name.lower(), release):
+						num_download = i['completed'] + num_download
 					?>
 					<td>#${t+1}</td>
 					<td><a href="${relpath}/${name.lower()}/">${name}</a></td>
-					<td>${num} downloads</td>
+					<td>${num_download} downloads</td>
 				</tr>
 			</table>
 		</div>
