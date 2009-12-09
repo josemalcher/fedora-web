@@ -127,10 +127,6 @@ class Torrents(object):
     def getrandomtorrent(self, list):
         return random.randint(0, len(list)-1)
 
-def formatsize(n, format='%0.2f'):
-    return format % (n / 1024.0**2)
-
-
 torrents = Torrents()
 release = '12'
 arch = 'i686'
