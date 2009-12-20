@@ -139,21 +139,23 @@ def formatsize(n, format='%0.2f'):
     return format % (n / 1024.0**2)
 
 # this gets all the current spins torrents
-spins = []
-for t_dict in torrents.torrents:
-    # Ugly hack, this should probably be be refactored.
-    if not t_dict['name'].startswith('Fedora-%s-i686' % release):
-        continue
-    if torrents.matches_a_spin(t_dict['name']):
-        if release in t_dict['name']:
-            spins.append(t_dict)
+spins = {}
+for t in torrents.torrents:
+    if torrents.matches_a_spin(t['name']) and release in t['name']:
+        name = t['name'].split('-')[-1]
+        if name not in spins:
+            spins[name] = {
+                'torrents': [t['name']],
+                'downloads': t['completed']
+            }
+        else:
+            spins[name]['torrents'].append(t['name'])
+            spins[name]['downloads'] += t['completed']
 
-
-#sort by most downloaded
-most_downloaded = sorted(spins,key=itemgetter('completed'), reverse=True)
+# sort by most downloaded
+most_downloaded = sorted(spins.items(), key=lambda(k,v):spins[k]['downloads'], reverse=True)
 # sort by alphabetical
-alphabetical = sorted(spins, key=itemgetter('name'))
-
+alphabetical = sorted(spins.items())
 
 #data used on sidebar, for featured-spin section
 sdata_feature = {

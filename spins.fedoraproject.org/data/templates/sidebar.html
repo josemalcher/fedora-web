@@ -17,25 +17,19 @@
 			<table>
 				<tr py:for="t in range(0,5)">
 					<?python
-					arrName = most_downloaded[t]['name'].split("-")
-					name = arrName[-1]
-					
-					# total count of i686 and x86_64 versions
-					num_download = 0
-					for i in torrents.specific_spin(name.lower(), release):
-						num_download = i['completed'] + num_download
+					name = most_downloaded[t][0]
+					num = most_downloaded[t][1]['downloads']
 					?>
 					<td>#${t+1}</td>
 					<td><a href="${relpath}/${name.lower()}/">${name}</a></td>
-					<td>${num_download} downloads</td>
+					<td>${num} downloads</td>
 				</tr>
 			</table>
 		</div>
 		<div id="featured-spin">
 			<?python
-				fspin = spins[torrents.getrandomtorrent(spins)]
-				arrfspin = fspin["name"].split("-")
-				fspinname = arrfspin[-1]
+				spinnames = spins.keys()
+				fspinname = spinnames[torrents.getrandomtorrent(spinnames)]
 			?>
 			<a href="${relpath}/${fspinname.lower()}/"><img src="/static/images/spin/${fspinname.lower()}-feature.png" /></a>
 			<p>${_(sdata_feature[fspinname.lower()])}</p>
