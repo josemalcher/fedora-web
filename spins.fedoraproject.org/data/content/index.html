@@ -41,14 +41,11 @@
 					<tbody>
 						<tr py:for="t in range(0,len(most_downloaded))" class="spin-row">
 							<?python
-							arrName = most_downloaded[t]['name'].split("-")
-							name = arrName[-1]
-							num_download = 0
-							for i in torrents.specific_spin(name.lower(), release):
-								num_download = i['completed'] + num_download
+							name = most_downloaded[t][0]
+							num = most_downloaded[t][1]['downloads']
 							?>
 							<td class="rank">#${t+1}</td>
-							<td class="name"><a href="${relpath}/${name.lower()}/">${name}</a> <br />${num_download} ${_('downloads')}</td>
+							<td class="name"><a href="${relpath}/${name.lower()}/">${name}</a> <br />${num} ${_('downloads')}</td>
 							<td><a href="${relpath}/${name.lower()}/"><img src="${relpath}/static/images/spin/${name.lower()}-mini.png" /></a></td>
 							<td>${sdata[name.lower()]}<br /><span class="learn-more"><a href="${relpath}/${name.lower()}/">${_('Learn more &amp; download! &gt;')}</a></span></td>
 						</tr>
@@ -61,9 +58,8 @@
 					<tbody>
 						<tr py:for="t in range(0,len(alphabetical))" class="spin-row">
 							<?python
-							arrName = alphabetical[t]['name'].split("-")
-							name = arrName[-1]
-							num = alphabetical[t]['completed']
+							name = alphabetical[t][0]
+							num = alphabetical[t][1]['downloads']
 							?>
 							<td class="rank">#${t+1}</td>
 							<td class="name"><a href="${relpath}/${name.lower()}/">${name}</a> <br />${num} downloads</td>
