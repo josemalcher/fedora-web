@@ -7,12 +7,26 @@
         <title>${Markup(_('Fedora Project'))}</title>
     </head>
     <body class="get">
-        <p class="note"><img src="${path}/static/images/smirk.png" class="smirk" />${Markup(_('Did someone say... &amp;ldquo;&lt;a href="get-prerelease"&gt;Beta&lt;/a&gt;&amp;rdquo;?'))}</p>
         <h2>${Markup(_('Fedora, For You.'))}</h2>
-        <div class="download-sidebar" >
-            <a id="kde-banner" href="${path}/${lang}/get-fedora-kde"><span>${_('KDE fans, go here!')}</span></a>
-            <a id="ppc-banner" href="${path}/${lang}/get-fedora-ppc" class="even"><span>${_('Have a PowerPC?  Go here!')}</span></a>
-            <a id="advanced-banner" href="${path}/${lang}/get-fedora-all"><span>${_('Show me all download options in one page!')}</span></a>
+        <div id="download-resources" >
+			<h4>${_('What will I need?')}</h4>
+			<ul class="checkmark-list">
+				<li>${_('A blank CD or DVD')}</li>
+				<li>${_('A 400MHz or faster processor')}</li>
+				<li>${_('At least 256 MB of memory (RAM)')}</li>
+				<li>${_('At least 10GB hard drive space (For install only)')}</li>
+				<li>${_('Follow the steps below in order to use the spin ISO file.')}</li>
+			</ul>
+			<h4>${_('Handy Resources')}</h4>
+			<ul>
+				<li class="guide-list">${_('Installation Quickstart Guide')}</li>
+				<li class="guide-list">${_('Installation Guide')}</li>
+				<li class="guide-list">${_('Release Notes')}</li>
+				<li class="webpage-list">${_('Upgrading Fedora')}</li>
+				<li class="support-list">${_('Help &amp; Support')}</li>
+			</ul>
+			<h4>${_("There's More Fedora!")}</h4>
+			<a href="http://spins.fedoraproject.org"><img src="/static/images/banners/spins-website.png"/></a>
         </div>
 
         <div class="download-block" id="new">
