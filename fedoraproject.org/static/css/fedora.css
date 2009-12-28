@@ -796,5 +796,36 @@ i
   float: none;
 }
 
+/* applies to get-* pages */
+
+#download-resources {
+  float:right;
+  margin-left:2em;
+  width:21em;
+}
+
+#download-resources h4 {
+  text-transform: uppercase;
+}
+
+#download-resources ul.checkmark-list {
+  list-style: disc url("/static/images/icon-checkmark.png") outside;
+}
+
+#download-resources li.guide-list {
+  list-style: disc url("/static/images/icon-guide.png") outside;
+}
+
+#download-resources li.webpage-list {
+  list-style: disc url("/static/images/icon-webpage.png") outside;
+}
+
+#download-resources li.support-list {
+  list-style: disc url("/static/images/icon-support.png") outside;
+}
+
+/* end: applies to get-* pages */
+
+
 /* Hack to make it simple to get rid of borders in a table (ianweller) */
 #content table.nobordersplz th, #content table.nobordersplz td { border-width: 0px; }
