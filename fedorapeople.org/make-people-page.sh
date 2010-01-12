@@ -99,7 +99,7 @@ cat << EOM>> $outfile
     <div id="bottom">
       <div id="footer">
         <p class="copy">
-        &copy; 2009 Red Hat, Inc. and others.
+        &copy; 2010 Red Hat, Inc. and others.
         Please send any comments or corrections to the <a href="mailto:webmaster@fedoraproject.org">websites team</a>.
         </p>
         <p class="disclaimer">
