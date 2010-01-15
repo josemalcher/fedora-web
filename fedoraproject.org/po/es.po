@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master-fedoraproject.es\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-11-16 19:58-0500\n"
-"PO-Revision-Date: 2009-11-19 09:39-0300\n"
+"POT-Creation-Date: 2010-01-12 15:25-0600\n"
+"PO-Revision-Date: 2010-01-15 10:54-0300\n"
 "Last-Translator: Claudio Rodrigo Pereyra Diaz <claudio@pereyradiaz.com.ar>\n"
 "Language-Team: Spanish <fedora-trans-es@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -904,7 +904,7 @@ msgstr "<a href=\"http://redhat.com/\">Red Hat, Inc.</a> es el principal patroci
 msgid "The Fedora Project also thanks the following sponsors for providing substantial support:"
 msgstr "El Proyecto Fedora también da las gracias a los siguientes patrocinadores por proveer un apoyo sustancial:"
 
-#: data/content/sponsors.html:38
+#: data/content/sponsors.html:41
 msgid "Interested in sponsoring something for Fedora?  Contact admin at fedoraproject * org or stop by #fedora-admin on irc.freenode.net."
 msgstr "¿Interesado en patrocinar algo de Fedora? Contacte al admin en fedoraproject * org o vaya a #fedora-admin en irc.freenode.net."
 
@@ -913,59 +913,63 @@ msgid "Verify your ISO download."
 msgstr "Verifique su descarga de ISO."
 
 #: data/content/verify.html:12
+msgid "Please note that the <em>Hash: SHA1</em> line in the CHECKSUM file is part of the PGP signature.  It does <strong>not</strong> specify the type of hash used to verify the .iso files."
+msgstr "Tenga en cuenta que la linea <em>Hash: SHA1</em> de la suma de verificación es parte de la firma PGP. Esto <strong>no</strong> especifica el tipo de hash usado para verificar los archivos .iso."
+
+#: data/content/verify.html:15
 msgid "Windows user?  Follow <a href=\"http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html\">these instructions</a> instead."
 msgstr "¿Usuario de Windows? Siga <a href=\"http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html\">estas instrucciones</a> en su lugar."
 
-#: data/content/verify.html:15
+#: data/content/verify.html:18
 msgid "Once you have downloaded an ISO, verify it for security and integrity.  If you downloaded your ISO via BitTorrent, the file has already been verified as part of the download process (just make sure that you got the torrent from <a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a>).  Otherwise, to verify your ISO, start by downloading the proper CHECKSUM file into the same directory as the ISO:"
 msgstr "Una vez descargado el ISO, verifíquelo por seguridad e integridad. Si descargó su ISO via BitTorrent, el archivo ya fue verificado como parte del proceso de descarga (sólo asegúrese que obtuvo el torrent desde <a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a>). De lo contrario, para verificar su ISO, descargue el archivo CHECKSUM apropiado en el mismo directorio del ISO:"
 
-#: data/content/verify.html:17
+#: data/content/verify.html:20
 msgid "Install DVD / Rescue CD"
 msgstr "DVD de Instalación / CD de Rescate"
 
-#: data/content/verify.html:23
+#: data/content/verify.html:26
 msgid "Live Media"
 msgstr "Medio Vivo"
 
-#: data/content/verify.html:31
+#: data/content/verify.html:34
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Luego, importe la clave GPG de Fedora:"
 
-#: data/content/verify.html:35
+#: data/content/verify.html:38
 #, python-format
 msgid "You can verify the details of the GPG key(s) <a href=\"https://fedoraproject.org%s/%s/keys\">here</a>."
 msgstr "Puede verificar los detalles de las claves GPG <a href=\"https://fedoraproject.org%s/%s/keys\">aquí</a>."
 
-#: data/content/verify.html:38
+#: data/content/verify.html:41
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Ahora, verifique que el archivo CHECKSUM sea válido:"
 
-#: data/content/verify.html:42
+#: data/content/verify.html:45
 msgid "The CHECKSUM file should have a good signature from one of the following keys:"
 msgstr "El archivo CHECKSUM debe tener una buena firma de alguna de las siguientes claves:"
 
-#: data/content/verify.html:45
+#: data/content/verify.html:48
 msgid "Fedora 12"
 msgstr "Fedora 12"
 
-#: data/content/verify.html:46
+#: data/content/verify.html:49
 msgid "Fedora 11"
 msgstr "Fedora 11"
 
-#: data/content/verify.html:47
+#: data/content/verify.html:50
 msgid "Fedora 10"
 msgstr "Fedora 10"
 
-#: data/content/verify.html:48
+#: data/content/verify.html:51
 msgid "Fedora 10 pre-releases"
 msgstr "Prelanzamientos de Fedora 10"
 
-#: data/content/verify.html:51
+#: data/content/verify.html:54
 msgid "Finally, now that the CHECKSUM file has been verified, check that the ISO's checksum matches:"
 msgstr "Finalmente, ahora que el archivo CHECKSUM ha sido verificado, revise que los checksum coincidan:"
 
-#: data/content/verify.html:55
+#: data/content/verify.html:58
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "Si la salida indica que el archivo es válido, ¡puede continuar!"
 
@@ -1007,8 +1011,8 @@ msgstr "¡Descargar Fedora!"
 
 #: data/templates/foot.html:9
 #, python-format
-msgid "&copy; 2009 Red Hat, Inc. and others.  For comments or queries, please <a href=\"%s/%s/contact\">contact us</a>."
-msgstr "&copy; 2009 Red Hat, Inc. y otros. Por cualquier comentario o consulta, por favor <a href=\"%s/%s/contact\">contáctenos</a>."
+msgid "&copy; 2010 Red Hat, Inc. and others.  For comments or queries, please <a href=\"%s/%s/contact\">contact us</a>."
+msgstr "&copy; 2010 Red Hat, Inc. y otros. Por cualquier comentario o consulta, por favor <a href=\"%s/%s/contact\">contáctenos</a>."
 
 #: data/templates/foot.html:12
 msgid "The Fedora Project is maintained and driven by the community and sponsored by Red Hat.  This is a community maintained site.  Red Hat is not responsible for content."
@@ -1097,6 +1101,10 @@ msgstr "Conozca a la comunidad Fedora."
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "Idioma del Sitio Web"
+
+#: data/templates/sidebar.html:37
+msgid "Hosting Sponsor"
+msgstr "Patrocinadores"
 
 #~ msgid ""
 #~ "Did someone say... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;?"
