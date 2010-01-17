@@ -811,7 +811,7 @@ i
   text-decoration: none;
 }
 
-.read-more, .re-collapse { 
+.read-more, .re-collapse {
   float:right;
 }
 
@@ -864,6 +864,79 @@ i
 }
 
 /* end: applies to get-* pages */
+
+/* tabs */
+/* root element for tabs  */
+ul.tabs {
+	margin: 0 !important;
+	padding: 0;
+	height: 30px;
+	border-bottom: 1px solid #dcdcdc;
+	width: 70%;
+}
+
+/* single tab */
+ul.tabs li {
+	float: left;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+/* link inside the tab. no background image */
+ul.tabs a {
+	float: left;
+	font-size: 13px;
+	display: block;
+	padding: 5px 10px;
+	text-decoration: none;
+	border: 1px solid #dcdcdc;
+	border-bottom: 0px;
+	height: 18px;
+	background-color: #dcdcdc;
+	color: #3771c8;
+	margin-right: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	position: relative;
+	top: 1px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+ul.tabs a:hover {
+	background-color: #fff;
+	color: #818181;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* selected tab */
+ul.tabs a.current {
+	background-color: #fff;
+	border-bottom: 2px solid #fff;
+	color: #808080;
+	cursor: default;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* tab pane */
+div.panes div {
+	display: none;
+	border: 0px;
+	border: 1px solid #dcdcdc;
+	border-width: 0 0px 0px 1px;
+	min-height: 150px;
+	padding: 15px 20px;
+	background-color: #fff;
+}
+
+#content a.current:link {
+	color: #828282;
+}
+/* end: tabs */
+
 
 
 /* Hack to make it simple to get rid of borders in a table (ianweller) */
