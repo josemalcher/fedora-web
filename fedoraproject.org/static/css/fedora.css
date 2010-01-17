@@ -476,11 +476,13 @@ ul#resources li.resource-download
 #content a:link
 {
   color: #337ACC;
+  text-decoration: none;
 }
 
 #content a:visited
 {
-  color: #804080;
+  color: #729FCF;
+  text-decoration: none;
 }
 
 /* get-fedora styles */
@@ -523,6 +525,11 @@ ul#resources li.resource-download
   font-size: 0.8em;
 }
 
+.download-block em.download-tagline {
+  color: #999999;
+  font-size: 0.8em;
+}
+
 .download-block .button {
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -536,11 +543,27 @@ ul#resources li.resource-download
   border: 1px solid #446382;
   background-color: #5F94C9 !important;
   margin-top: 0.9em;
-
 }
 
+.download-block .big-button {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  color: #FFFFFF!important;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 3;
+  margin: 0;
+  padding: 0.4em 0.5em;
+  border: 1px solid #446382;
+  background-color: #5F94C9 !important;
+  margin-top: 0.9em;
+  font-size: 1.7em;
+}
+
+
 .download-block .fine-print {
-  font-size: xx-small !important;
+  font-size: small !important;
   color: #999999;
   font-style: italic;
 }
@@ -822,6 +845,22 @@ i
 
 #download-resources li.support-list {
   list-style: disc url("/static/images/icon-support.png") outside;
+}
+
+#upgrade {
+  background-color: #f2f2f2;
+}
+
+#upgrade h4 {
+  color: #337ACC;
+}
+
+.other-options {
+  float: right;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  margin-left: 1em;
 }
 
 /* end: applies to get-* pages */
