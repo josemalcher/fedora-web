@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${_('Fedora Project - Start Page')}</title>
+  </head>
+  <body>
+	<form action="http://www.google.com/search" name="f">
+		<table cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr valign="middle">
+					<td colspan="2" align="left"><div><span>${_('Web')}</span></div></td>
+					<td><!--Cell above Search button--></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div style="position: relative; margin-right: 8px; margin-top: 4px; margin-bottom: 4px;">
+							<input name="q" style="width: 100%;" />
+						</div>
+					</td>
+					<td>
+						<div style="margin-top: 4px; margin-bottom: 4px;">
+							<input type="submit" value="Search" />
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div style="margin-right: 4px;">${_('Return results that are')}
+							<select name="as_rights">
+								<option value="">${_('Not filtered by license')}</option>
+								<option value="(cc_publicdomain|cc_attribute|cc_sharealike|cc_noncommercial|cc_nonderived)">${_('Free to use or share')}</option>
+								<option value="(cc_publicdomain|cc_attribute|cc_sharealike|cc_nonderived).-(cc_noncommercial)">${_('Free to use or share commercially')}</option>
+								<option value="(cc_publicdomain|cc_attribute|cc_sharealike|cc_noncommercial).-(cc_nonderived)">${_('Free to use, share or modify')}</option>
+								<option value="(cc_publicdomain|cc_attribute|cc_sharealike).-(cc_noncommercial|cc_nonderived)">${_('Free to use, share or modify commercially')}</option>
+							</select>
+						</div>
+					</td>
+					<td align="right"><a href="http://creativecommons.org/">
+						<img src="static/images/cc_logo_76x18.png" style="width: 76px; height: 18px;" alt="Creative Commons" /></a>
+					</td>
+					<td><!-- Cell below Search button --></td>
+				</tr>
+				<tr>
+					<td colspan="4" style="text-align: center;">
+						Fedora: <a href="http://docs.fedoraproject.org/release-notes/">${_('Release Notes')}</a> | 
+						<a href="http://fedoraproject.org/join-fedora">${_('Join')}</a> | 
+						<a href="http://fedoraproject.org/wiki/Communicate">${_('Speak')}</a> | 
+						<a href="http://docs.fedoraproject.org">${_('Documentation')}</a>
+					</td>
+				</tr> 
+			</tbody>
+		</table>
+	</form>
+  </body>
+</html>
