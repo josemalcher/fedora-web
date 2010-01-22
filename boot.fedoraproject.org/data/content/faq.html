@@ -10,7 +10,9 @@
   </head>
   <body>
     <h2>${_("Frequently-Asked Questions")}</h2>
-    <h3 class="question">${_("How does it work??")}</h3>
+    <h3 class="question">${_("How do I use it?")}</h3>
+    <p class="answer">${_("First download one of the available images like the ISO image.  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode.")}</p>
+    <h3 class="question">${_("How does it work?")}</h3>
     <p class="answer">${_("BFO was started by boot.kernel.org (BKO) and combines a series of recent technologies to produce a new boot stack.  The glue that holds everything together is gpxe.  Users familiar with pxe will find gpxe very familiar.  Latest versions support several protocols beyond just tftp.  We are using http to transfer files around.  The basic steps are as follows:")}</p>
     <ul>
         <li>${_("Download and boot from the boot.fedoraproject.org media.")}</li>
@@ -19,9 +21,13 @@
         <li>${_("After network is configured, it will go out to our boot.fedoraproject.org website and download the menus and other prompts from us")}</li>
         <li>${_("Those boot menus will then be displayed to the user for selection.  After a selection (like install Fedora 12) the regular boot process takes over just as it would had you booted from normal local media.")}</li>
     </ul>
-    <h3 class="question">${_("How do I use it?")}</h3>
-    <p class="answer">${_("First download one of the available images like the ISO image.  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After that you're using BFO!")}</p>
     <h3 class="question">${_("Why should I use BFO?")}</h3>
     <p class="answer">${_("The BFO downloads are very small and once you have them, you'll rarely have to download more.  Even as more versions of Fedora come out, you just boot from your iso and they will appear.  Users with fast internet connections will have the best experience with BFO.  They basically replace having to regularly download large ISO images and burn them to disk.")}</p>
+    <h3 class="question">${_("What is required?")}</h3>
+    <p class="answer">${_("For the most typical setup one should have DHCP, HTTP internet access and a CD/DVD burner.  Floppy and USB images are also available.")}</p>
+    <h3 class="question">${_("Does BFO replace the installer or anaconda?")}</h3>
+    <p class="answer">${_("Nope.  BFO is a way to load the installer via network.  Normally users download a large ISO image that contains all of the installer bits.  BFO is a smaller booting method that downloads the installer bits at runtime.  In theory with BFO one iso download can install all future versions of Fedora.")}</p>
+    <h3 class="question">${_("What about the Live CDs?")}</h3>
+    <p class="answer">${_("At this time booting Live CDs is experimental and not available.  We hope to have them available soon.")}</p>
   </body>
 </html>
