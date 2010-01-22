@@ -5,17 +5,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-19 10:44-0600\n"
-"PO-Revision-Date: 2010-01-22 20:23+0100\n"
+"POT-Creation-Date: 2010-01-22 14:14-0600\n"
+"PO-Revision-Date: 2010-01-22 22:11+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <trans-pl@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: data/content/download.html:7 data/content/faq.html:7
-msgid "FAQs - Fedora Talk"
-msgstr "FAQ - Fedora Talk"
+#: data/content/download.html:7
+msgid "Download - boot.fedoraproject.org"
+msgstr "Pobieranie - boot.fedoraproject.org"
 
 #: data/content/download.html:12
 msgid "Download ISO: "
@@ -41,15 +41,36 @@ msgstr "Pobierz obraz dyskietki: "
 msgid "Floppy"
 msgstr "Dyskietka"
 
+#: data/content/faq.html:7
+msgid "FAQs - boot.fedoraproject.org"
+msgstr "FAQ - boot.fedoraproject.org"
+
 #: data/content/faq.html:12
 msgid "Frequently-Asked Questions"
 msgstr "Najczęściej zadawane pytania"
 
 #: data/content/faq.html:13
-msgid "How does it work??"
-msgstr "Jak to działa?"
+msgid "How do I use it?"
+msgstr "Jak tego używać?"
 
 #: data/content/faq.html:14
+msgid ""
+"First download one of the available images like the ISO image.  Then burn "
+"that image to CD or DVD.  Next boot from that CD or dvd.  After that you're "
+"using BFO!  Use your keyboard to select menus to run diagnostics, or boot a "
+"Fedora installer or rescue mode."
+msgstr ""
+"Najpierw należy pobrać jeden z dostępnych obrazów, taki jak obraz ISO. "
+"Następnie należy nagrać ten obraz na płytę CD lub DVD i uruchomić z tej "
+"płyty. W tym momencie jest już używane BFO. Należy używać klawiatury, aby "
+"wybrać menu uruchomienia diagnostyki, albo uruchomić instalator Fedory lub "
+"tryb ratunkowy."
+
+#: data/content/faq.html:15
+msgid "How does it work?"
+msgstr "Jak to działa?"
+
+#: data/content/faq.html:16
 msgid ""
 "BFO was started by boot.kernel.org (BKO) and combines a series of recent "
 "technologies to produce a new boot stack.  The glue that holds everything "
@@ -64,19 +85,19 @@ msgstr ""
 "protokołów poza TFTP. Tutaj używany jest protokół HTTP do przesyłania "
 "plików. Oto podstawowa instrukcja:"
 
-#: data/content/faq.html:16
+#: data/content/faq.html:18
 msgid "Download and boot from the boot.fedoraproject.org media."
 msgstr "Należy pobrać i uruchomić z nośnika boot.fedoraproject.org."
 
-#: data/content/faq.html:17
+#: data/content/faq.html:19
 msgid "Boot from the downloaded iso/disk image."
 msgstr "Uruchomić z pobranego obrazu ISO/płyty."
 
-#: data/content/faq.html:18
+#: data/content/faq.html:20
 msgid "The disk image will then boot and configure network."
 msgstr "Obraz płyty zostanie uruchomiony i skonfiguruje sieć."
 
-#: data/content/faq.html:19
+#: data/content/faq.html:21
 msgid ""
 "After network is configured, it will go out to our boot.fedoraproject.org "
 "website and download the menus and other prompts from us"
@@ -84,7 +105,7 @@ msgstr ""
 "Po skonfigurowaniu sieci przejdzie na stronę WWW boot.fedoraproject.org, "
 "gdzie pobierze menu i inne żądania"
 
-#: data/content/faq.html:20
+#: data/content/faq.html:22
 msgid ""
 "Those boot menus will then be displayed to the user for selection.  After a "
 "selection (like install Fedora 12) the regular boot process takes over just "
@@ -94,20 +115,6 @@ msgstr ""
 "dokonać wyboru. Po wybraniu (np. zainstalowania Fedory 12) nastąpi "
 "przełączenie na zwykły proces uruchamiania, taki sam jak w przypadku "
 "zwykłych lokalnych nośników."
-
-#: data/content/faq.html:22
-msgid "How do I use it?"
-msgstr "Jak tego używać?"
-
-#: data/content/faq.html:23
-msgid ""
-"First download one of the available images like the ISO image.  Then burn "
-"that image to CD or DVD.  Next boot from that CD or dvd.  After that you're "
-"using BFO!"
-msgstr ""
-"Najpierw należy pobrać jeden z dostępnych obrazów, taki jak obraz ISO. "
-"Następnie należy nagrać ten obraz na płytę CD lub DVD i uruchomić z tej "
-"płyty. W tym momencie jest już używane BFO."
 
 #: data/content/faq.html:24
 msgid "Why should I use BFO?"
@@ -127,6 +134,47 @@ msgstr ""
 "najbardziej skorzystają z BFO. Po prostu nie będą musieli już regularnie "
 "pobierać dużych obrazów ISO i nagrywać je na płyty."
 
+#: data/content/faq.html:26
+msgid "What is required?"
+msgstr "Co jest wymagane?"
+
+#: data/content/faq.html:27
+msgid ""
+"For the most typical setup one should have DHCP, HTTP internet access and a "
+"CD/DVD burner.  Floppy and USB images are also available."
+msgstr ""
+"W najczęstszym przypadku należy posiadać DHCP, dostęp do Internetu przez "
+"HTTP i nagrywarkę płyt CD/DVD. Dostępne są także obrazy dyskietki i USB."
+
+#: data/content/faq.html:28
+msgid "Does BFO replace the installer or anaconda?"
+msgstr "Czy BFO zastępuje instalator lub program anaconda?"
+
+#: data/content/faq.html:29
+msgid ""
+"Nope.  BFO is a way to load the installer via network.  Normally users "
+"download a large ISO image that contains all of the installer bits.  BFO is "
+"a smaller booting method that downloads the installer bits at runtime.  In "
+"theory with BFO one iso download can install all future versions of Fedora."
+msgstr ""
+"Nie. BFO jest sposobem wczytania instalatora przez sieć. Normalnie "
+"użytkownicy pobierają duży obraz ISO, który zawiera wszystkie dane "
+"instalatora. BFO jest mniejszą metodą uruchamiania, pobierającą dane "
+"instalatora w czasie uruchamiania. Teoretycznie za pomocą BFO raz pobrany "
+"obraz ISO może zainstalować wszystkie przyszłe wersje Fedory."
+
+#: data/content/faq.html:30
+msgid "What about the Live CDs?"
+msgstr "A co z płytami Live CD?"
+
+#: data/content/faq.html:31
+msgid ""
+"At this time booting Live CDs is experimental and not available.  We hope to "
+"have them available soon."
+msgstr ""
+"Na razie uruchamianie Live CD jest eksperymentalne i niedostępne. Mamy "
+"nadzieję, że to się niedługo zmieni."
+
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
 msgstr "boot.fedoraproject.org"
@@ -144,6 +192,10 @@ msgstr ""
 #: data/content/index.html:12
 msgid "BFO welcome screen"
 msgstr "Ekran powitalny BFO"
+
+#: data/content/index.html:13
+msgid "BFO is based on the work of the BKO - "
+msgstr "BFO jest oparte na pracy BKO - "
 
 #: data/templates/foot.html:9
 msgid ""
