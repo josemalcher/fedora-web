@@ -5,16 +5,16 @@
 # Fabian Affolter <fab@fedoraproject.org>, 2007-2009.
 # Matthias Wiora <counterroot@openwallet.de>, 2007.
 # Robert Scheck <robert@fedoraproject.org>, 2007-2009.
-# Marcus Nitzschke <kenda@fedoraproject.org>, 2009.
+# Marcus Nitzschke <kenda@fedoraproject.org>, 2009-2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: fpo static website\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-11-16 19:58-0500\n"
-"PO-Revision-Date: 2009-11-18 09:48+0100\n"
+"POT-Creation-Date: 2010-01-12 15:25-0600\n"
+"PO-Revision-Date: 2010-01-27 23:30+0100\n"
 "Last-Translator: Marcus Nitzschke <kenda@fedoraproject.org>\n"
-"Language-Team: Fedora Translation <fedora-trans-de@redhat.com>\n"
+"Language-Team: German <trans-de@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -906,7 +906,7 @@ msgstr "<a href=\"http://redhat.com/\">Red Hat, Inc.</a> ist der primäre Sponso
 msgid "The Fedora Project also thanks the following sponsors for providing substantial support:"
 msgstr "Das Fedora-Projekt dankt den folgenden Sponsoren für ihre umfangreiche Unterstützung:"
 
-#: data/content/sponsors.html:38
+#: data/content/sponsors.html:41
 msgid "Interested in sponsoring something for Fedora?  Contact admin at fedoraproject * org or stop by #fedora-admin on irc.freenode.net."
 msgstr "Sie möchten Sponsor werden und damit Fedora fördern? Kontaktieren Sie admin at fedoraproject * org per E-Mail oder kommen Sie in den IRC-Channel #fedora-admin auf irc.freenode.net."
 
@@ -915,59 +915,63 @@ msgid "Verify your ISO download."
 msgstr "ISO-Dateien überprüfen"
 
 #: data/content/verify.html:12
+msgid "Please note that the <em>Hash: SHA1</em> line in the CHECKSUM file is part of the PGP signature.  It does <strong>not</strong> specify the type of hash used to verify the .iso files."
+msgstr "Bitte beachten Sie, dass die <em>Hash: SHA1</em> Zeile in der CHECKSUM Datei Teil der PGP Signatur ist. Sie gibt <strong>nicht</strong> den Typ des Hashverfahrens zur Verifizierung der .iso Dateien an."
+
+#: data/content/verify.html:15
 msgid "Windows user?  Follow <a href=\"http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html\">these instructions</a> instead."
 msgstr "Wenn Sie ein Windows-Benutzer sind, folgen Sie stattdessen <a href=\"http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html\">dieser Anleitung</a>."
 
-#: data/content/verify.html:15
+#: data/content/verify.html:18
 msgid "Once you have downloaded an ISO, verify it for security and integrity.  If you downloaded your ISO via BitTorrent, the file has already been verified as part of the download process (just make sure that you got the torrent from <a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a>).  Otherwise, to verify your ISO, start by downloading the proper CHECKSUM file into the same directory as the ISO:"
 msgstr "Nachdem Sie eine ISO-Datei heruntergeladen haben, sollten Sie diese im Hinblick auf die Sicherheit und Vollständigkeit überprüfen. Wenn die ISO-Datei über BitTorrent heruntergeladen worden ist, wurde sie bereits als Teil des Downloadprozesses überprüft. Sie müssen lediglich sicherstellen, dass Sie den Torrent von <a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a> verwendet haben. Andernfalls müssen Sie, um die ISO-Datei zu überprüfen, die entsprechende CHECKSUM-Datei herunterladen, welche sich im gleichen Verzeichnis wie die ISO-Datei befindet:"
 
-#: data/content/verify.html:17
+#: data/content/verify.html:20
 msgid "Install DVD / Rescue CD"
 msgstr "Installations-DVD / Rettungs-CD"
 
-#: data/content/verify.html:23
+#: data/content/verify.html:26
 msgid "Live Media"
 msgstr "Live-Medien"
 
-#: data/content/verify.html:31
+#: data/content/verify.html:34
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Importieren Sie danach den GPG-Schlüssel von Fedora:"
 
-#: data/content/verify.html:35
+#: data/content/verify.html:38
 #, python-format
 msgid "You can verify the details of the GPG key(s) <a href=\"https://fedoraproject.org%s/%s/keys\">here</a>."
 msgstr "Sie können die Details der GPG-Schlüssel <a href=\"https://fedoraproject.org%s/%s/keys\">hier</a> überprüfen."
 
-#: data/content/verify.html:38
+#: data/content/verify.html:41
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Nun überprüfen Sie, ob die CHECKSUM-Datei gültig ist:"
 
-#: data/content/verify.html:42
+#: data/content/verify.html:45
 msgid "The CHECKSUM file should have a good signature from one of the following keys:"
 msgstr "Die CHECKSUM-Datei sollte eine gültige Signatur von einem der folgenden Schlüssel besitzen:"
 
-#: data/content/verify.html:45
+#: data/content/verify.html:48
 msgid "Fedora 12"
 msgstr "Fedora 12"
 
-#: data/content/verify.html:46
+#: data/content/verify.html:49
 msgid "Fedora 11"
 msgstr "Fedora 11"
 
-#: data/content/verify.html:47
+#: data/content/verify.html:50
 msgid "Fedora 10"
 msgstr "Fedora 10"
 
-#: data/content/verify.html:48
+#: data/content/verify.html:51
 msgid "Fedora 10 pre-releases"
 msgstr "Fedora 10 Vorabversionen"
 
-#: data/content/verify.html:51
+#: data/content/verify.html:54
 msgid "Finally, now that the CHECKSUM file has been verified, check that the ISO's checksum matches:"
 msgstr "Abschließend, nachdem die CHECKSUM-Datei überprüft worden ist, können Sie nun kontrollieren, ob die Prüfsumme der ISO-Datei stimmt:"
 
-#: data/content/verify.html:55
+#: data/content/verify.html:58
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "Wenn die Ausgabe ergibt, dass die Datei korrekt ist, können Sie loslegen!"
 
@@ -1009,8 +1013,8 @@ msgstr "Fedora herunterladen"
 
 #: data/templates/foot.html:9
 #, python-format
-msgid "&copy; 2009 Red Hat, Inc. and others.  For comments or queries, please <a href=\"%s/%s/contact\">contact us</a>."
-msgstr "&copy; 2009 Red Hat, Inc. und andere. Alle Rechte vorbehalten. Bei Kommentaren oder Anfragen wenden Sie sich bitte <a href=\"%s/%s/contact\">an uns</a>."
+msgid "&copy; 2010 Red Hat, Inc. and others.  For comments or queries, please <a href=\"%s/%s/contact\">contact us</a>."
+msgstr "&copy; 2009 Red Hat, Inc. und weitere. Bei Kommentaren oder Anfragen wenden Sie sich bitte <a href=\"%s/%s/contact\">an uns</a>."
 
 #: data/templates/foot.html:12
 msgid "The Fedora Project is maintained and driven by the community and sponsored by Red Hat.  This is a community maintained site.  Red Hat is not responsible for content."
@@ -1099,6 +1103,10 @@ msgstr "Die Fedora-Community treffen"
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "Sprache"
+
+#: data/templates/sidebar.html:37
+msgid "Hosting Sponsor"
+msgstr "Hosting-Sponsor"
 
 #~ msgid ""
 #~ "Did someone say... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;?"
