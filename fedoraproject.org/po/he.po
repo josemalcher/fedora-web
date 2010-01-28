@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-10-29 14:55-0400\n"
-"PO-Revision-Date: 2009-06-15 09:24+0300\n"
-"Last-Translator: Oron Peled <oron@actcom.co.il>\n"
+"POT-Creation-Date: 2010-01-12 15:25-0600\n"
+"PO-Revision-Date: 2010-01-28 18:09+0200\n"
+"Last-Translator: Elad <el.il@doom.co.il>\n"
 "Language-Team: Hebrew Team <fedora-he-list@redhat.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -100,13 +100,20 @@ msgstr "קשרים נוספים"
 msgid "For a list of other contacts please see the <a href=\"https://fedoraproject.org/wiki/Contact\">Contact page on the Wiki</a>."
 msgstr "לקשרים נוספים אפשר לבדוק את <a href=\"https://fedoraproject.org/wiki/Contact\">דף הקשר בוויקי</a>."
 
-#: data/content/counter.html:7 data/content/get-fedora-all.html:7
-#: data/content/get-fedora-kde.html:7 data/content/get-fedora-ppc.html:7
-#: data/content/get-fedora.html:7 data/content/get-help.html:7
-#: data/content/get-prerelease.html:7 data/content/index.html:7
-#: data/content/join-fedora.html:7 data/content/keys.html:7
-#: data/content/rss.html:7 data/content/sponsors.html:7
-#: data/content/verify.html:7 data/content/e/404.html:7
+#: data/content/counter.html:7
+#: data/content/get-fedora-all.html:7
+#: data/content/get-fedora-kde.html:7
+#: data/content/get-fedora-ppc.html:7
+#: data/content/get-fedora.html:7
+#: data/content/get-help.html:7
+#: data/content/get-prerelease.html:7
+#: data/content/index.html:7
+#: data/content/join-fedora.html:7
+#: data/content/keys.html:7
+#: data/content/rss.html:7
+#: data/content/sponsors.html:7
+#: data/content/verify.html:7
+#: data/content/e/404.html:7
 msgid "Fedora Project"
 msgstr "פרויקט פדורה"
 
@@ -119,200 +126,289 @@ msgid "To add a Fedora Release counter to your own site, simply place the follow
 msgstr "להוספת מונה שחרור גרסת פדורה לאתרך, נא להעתיק את הקוד המופיע להלן, למקום בו ברצונך להציגו:"
 
 #: data/content/counter.html:18
-#, fuzzy
 msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, hu, is, it, pt_BR, ru, and tr are supported.  When no language is specified, English will be used."
-msgstr "הפרמטר lang ניתן לשינוי לצורך הצגת המונה בשפות שונות. כרגע הערכים הנתמכים הם de, en, hu, is, it ו-pt-br. השפה האנגלית היא ברירת המחדל במידה ולא נבחרה אף שפה."
+msgstr "הפרמטר lang ניתן לשינוי לצורך הצגת המונה בשפות שונות. כרגע הערכים הנתמכים הם de, en, hu, is, it, pt_BR, ru, tr. השפה האנגלית היא ברירת המחדל במידה ולא נבחרה אף שפה."
 
-#: data/content/get-fedora-all.html:13 data/content/get-fedora-kde.html:11
+#: data/content/get-fedora-all.html:13
+#: data/content/get-fedora-kde.html:11
 #: data/content/get-fedora-ppc.html:11
 msgid "&#8592; Back to the main \"Get Fedora\" page"
 msgstr "&#8592; בחזרה לדף \"הורדת פדורה\" הראשי"
 
-#: data/content/get-fedora-all.html:15 data/content/get-fedora-kde.html:13
-#: data/content/get-fedora-ppc.html:13 data/content/get-fedora.html:11
+#: data/content/get-fedora-all.html:15
+#: data/content/get-fedora-kde.html:13
+#: data/content/get-fedora-ppc.html:13
+#: data/content/get-fedora.html:10
 #: data/content/get-prerelease.html:12
 msgid "Fedora, For You."
 msgstr "פדורה, עבורך."
 
-#: data/content/get-fedora-all.html:16 data/content/get-prerelease.html:14
+#: data/content/get-fedora-all.html:16
+#: data/content/get-prerelease.html:14
 #, python-format
-msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
-msgstr "לאחר הורדת קובץ ה-ISO, נא <a href=\"%s/%s/verify\">לאמת</a> אותו."
+msgid "After downloading an ISO, <a href=\"https://fedoraproject.org%s/%s/verify\">verify</a> it."
+msgstr "לאחר הורדת קובץ ה-ISO, נא  <a href=\"https://fedoraproject.org%s/%s/verify\">לאמת</a> אותו."
 
-#: data/content/get-fedora-all.html:17 data/content/get-prerelease.html:15
+#: data/content/get-fedora-all.html:17
+#: data/content/get-prerelease.html:15
 msgid "Install Media"
 msgstr "מדיות להתקנה"
 
-#: data/content/get-fedora-all.html:20 data/content/get-fedora-all.html:87
-#: data/content/get-fedora-all.html:114 data/content/get-prerelease.html:18
-#: data/content/get-prerelease.html:51 data/content/get-prerelease.html:69
+#: data/content/get-fedora-all.html:20
+#: data/content/get-fedora-all.html:87
+#: data/content/get-fedora-all.html:114
+#: data/content/get-prerelease.html:18
+#: data/content/get-prerelease.html:51
+#: data/content/get-prerelease.html:69
 msgid "BitTorrent"
 msgstr "ביטורנט"
 
-#: data/content/get-fedora-all.html:22 data/content/get-fedora-all.html:26
-#: data/content/get-fedora-all.html:35 data/content/get-fedora-all.html:39
-#: data/content/get-fedora-all.html:43 data/content/get-fedora-all.html:51
-#: data/content/get-fedora-all.html:60 data/content/get-fedora-all.html:78
-#: data/content/get-prerelease.html:20 data/content/get-prerelease.html:23
-#: data/content/get-prerelease.html:31 data/content/get-prerelease.html:34
+#: data/content/get-fedora-all.html:22
+#: data/content/get-fedora-all.html:26
+#: data/content/get-fedora-all.html:35
+#: data/content/get-fedora-all.html:39
+#: data/content/get-fedora-all.html:43
+#: data/content/get-fedora-all.html:51
+#: data/content/get-fedora-all.html:60
+#: data/content/get-fedora-all.html:78
+#: data/content/get-prerelease.html:20
+#: data/content/get-prerelease.html:23
+#: data/content/get-prerelease.html:31
+#: data/content/get-prerelease.html:34
 #: data/content/get-prerelease.html:42
 msgid "i386"
 msgstr "i386"
 
-#: data/content/get-fedora-all.html:22 data/content/get-fedora-all.html:23
-#: data/content/get-fedora-all.html:24 data/content/get-fedora-all.html:35
-#: data/content/get-fedora-all.html:36 data/content/get-fedora-all.html:37
-#: data/content/get-fedora-all.html:51 data/content/get-fedora-all.html:52
-#: data/content/get-fedora-all.html:53 data/content/get-fedora-kde.html:54
-#: data/content/get-fedora-ppc.html:33 data/content/get-fedora.html:50
-#: data/content/get-prerelease.html:20 data/content/get-prerelease.html:21
-#: data/content/get-prerelease.html:22 data/content/get-prerelease.html:31
-#: data/content/get-prerelease.html:32 data/content/get-prerelease.html:33
+#: data/content/get-fedora-all.html:22
+#: data/content/get-fedora-all.html:23
+#: data/content/get-fedora-all.html:24
+#: data/content/get-fedora-all.html:35
+#: data/content/get-fedora-all.html:36
+#: data/content/get-fedora-all.html:37
+#: data/content/get-fedora-all.html:51
+#: data/content/get-fedora-all.html:52
+#: data/content/get-fedora-all.html:53
+#: data/content/get-fedora-kde.html:54
+#: data/content/get-fedora-ppc.html:33
+#: data/content/get-fedora.html:49
+#: data/content/get-prerelease.html:20
+#: data/content/get-prerelease.html:21
+#: data/content/get-prerelease.html:22
+#: data/content/get-prerelease.html:31
+#: data/content/get-prerelease.html:32
+#: data/content/get-prerelease.html:33
 msgid "Install DVD"
 msgstr "קובץ DVD להתקנה"
 
-#: data/content/get-fedora-all.html:23 data/content/get-fedora-all.html:27
-#: data/content/get-fedora-all.html:36 data/content/get-fedora-all.html:40
-#: data/content/get-fedora-all.html:44 data/content/get-fedora-all.html:52
-#: data/content/get-fedora-all.html:66 data/content/get-fedora-all.html:79
-#: data/content/get-fedora-all.html:90 data/content/get-fedora-all.html:98
-#: data/content/get-fedora-all.html:106 data/content/get-fedora-all.html:117
-#: data/content/get-fedora-all.html:124 data/content/get-fedora-all.html:131
-#: data/content/get-prerelease.html:21 data/content/get-prerelease.html:24
-#: data/content/get-prerelease.html:32 data/content/get-prerelease.html:35
-#: data/content/get-prerelease.html:43 data/content/get-prerelease.html:54
-#: data/content/get-prerelease.html:61 data/content/get-prerelease.html:72
+#: data/content/get-fedora-all.html:23
+#: data/content/get-fedora-all.html:27
+#: data/content/get-fedora-all.html:36
+#: data/content/get-fedora-all.html:40
+#: data/content/get-fedora-all.html:44
+#: data/content/get-fedora-all.html:52
+#: data/content/get-fedora-all.html:66
+#: data/content/get-fedora-all.html:79
+#: data/content/get-fedora-all.html:90
+#: data/content/get-fedora-all.html:98
+#: data/content/get-fedora-all.html:106
+#: data/content/get-fedora-all.html:117
+#: data/content/get-fedora-all.html:124
+#: data/content/get-fedora-all.html:131
+#: data/content/get-prerelease.html:21
+#: data/content/get-prerelease.html:24
+#: data/content/get-prerelease.html:32
+#: data/content/get-prerelease.html:35
+#: data/content/get-prerelease.html:43
+#: data/content/get-prerelease.html:54
+#: data/content/get-prerelease.html:61
+#: data/content/get-prerelease.html:72
 #: data/content/get-prerelease.html:79
 msgid "x86_64"
 msgstr "x86_64"
 
-#: data/content/get-fedora-all.html:24 data/content/get-fedora-all.html:28
-#: data/content/get-fedora-all.html:37 data/content/get-fedora-all.html:41
-#: data/content/get-fedora-all.html:45 data/content/get-fedora-all.html:53
-#: data/content/get-fedora-all.html:72 data/content/get-fedora-all.html:80
-#: data/content/get-prerelease.html:22 data/content/get-prerelease.html:25
-#: data/content/get-prerelease.html:33 data/content/get-prerelease.html:36
+#: data/content/get-fedora-all.html:24
+#: data/content/get-fedora-all.html:28
+#: data/content/get-fedora-all.html:37
+#: data/content/get-fedora-all.html:41
+#: data/content/get-fedora-all.html:45
+#: data/content/get-fedora-all.html:53
+#: data/content/get-fedora-all.html:72
+#: data/content/get-fedora-all.html:80
+#: data/content/get-prerelease.html:22
+#: data/content/get-prerelease.html:25
+#: data/content/get-prerelease.html:33
+#: data/content/get-prerelease.html:36
 #: data/content/get-prerelease.html:44
 msgid "ppc"
 msgstr "ppc"
 
-#: data/content/get-fedora-all.html:26 data/content/get-fedora-all.html:27
-#: data/content/get-fedora-all.html:28 data/content/get-fedora-all.html:39
-#: data/content/get-fedora-all.html:40 data/content/get-fedora-all.html:41
-#: data/content/get-fedora-all.html:60 data/content/get-fedora-all.html:66
-#: data/content/get-fedora-all.html:72 data/content/get-prerelease.html:23
-#: data/content/get-prerelease.html:24 data/content/get-prerelease.html:25
-#: data/content/get-prerelease.html:34 data/content/get-prerelease.html:35
+#: data/content/get-fedora-all.html:26
+#: data/content/get-fedora-all.html:27
+#: data/content/get-fedora-all.html:28
+#: data/content/get-fedora-all.html:39
+#: data/content/get-fedora-all.html:40
+#: data/content/get-fedora-all.html:41
+#: data/content/get-fedora-all.html:60
+#: data/content/get-fedora-all.html:66
+#: data/content/get-fedora-all.html:72
+#: data/content/get-prerelease.html:23
+#: data/content/get-prerelease.html:24
+#: data/content/get-prerelease.html:25
+#: data/content/get-prerelease.html:34
+#: data/content/get-prerelease.html:35
 #: data/content/get-prerelease.html:36
 msgid "Install CDs"
 msgstr "תקליטורי התקנה"
 
-#: data/content/get-fedora-all.html:33 data/content/get-fedora-all.html:95
-#: data/content/get-fedora-all.html:121 data/content/get-prerelease.html:29
-#: data/content/get-prerelease.html:58 data/content/get-prerelease.html:76
+#: data/content/get-fedora-all.html:33
+#: data/content/get-fedora-all.html:95
+#: data/content/get-fedora-all.html:121
+#: data/content/get-prerelease.html:29
+#: data/content/get-prerelease.html:58
+#: data/content/get-prerelease.html:76
 msgid "Direct Download"
 msgstr "הורדה ישירה"
 
-#: data/content/get-fedora-all.html:43 data/content/get-fedora-all.html:44
+#: data/content/get-fedora-all.html:43
+#: data/content/get-fedora-all.html:44
 #: data/content/get-fedora-all.html:45
-#, fuzzy
 msgid "Network Install CD"
-msgstr "תקליטורי התקנה"
+msgstr "תקליטור להתקנה מהרשת"
 
-#: data/content/get-fedora-all.html:49 data/content/get-fedora-all.html:103
+#: data/content/get-fedora-all.html:49
+#: data/content/get-fedora-all.html:103
 #: data/content/get-fedora-all.html:128
 msgid "Metalinks"
-msgstr ""
+msgstr "Metalinks"
 
-#: data/content/get-fedora-all.html:76 data/content/get-prerelease.html:40
+#: data/content/get-fedora-all.html:76
+#: data/content/get-prerelease.html:40
 msgid "Jigdo"
 msgstr "Jigdo"
 
-#: data/content/get-fedora-all.html:84 data/content/get-prerelease.html:48
+#: data/content/get-fedora-all.html:84
+#: data/content/get-prerelease.html:48
 msgid "Fedora Desktop Live Media"
 msgstr "Fedora Desktop Live Media"
 
-#: data/content/get-fedora-all.html:89 data/content/get-fedora-all.html:97
-#: data/content/get-fedora-all.html:105 data/content/get-fedora-all.html:116
-#: data/content/get-fedora-all.html:123 data/content/get-fedora-all.html:130
-#: data/content/get-prerelease.html:53 data/content/get-prerelease.html:60
-#: data/content/get-prerelease.html:71 data/content/get-prerelease.html:78
+#: data/content/get-fedora-all.html:89
+#: data/content/get-fedora-all.html:97
+#: data/content/get-fedora-all.html:105
+#: data/content/get-fedora-all.html:116
+#: data/content/get-fedora-all.html:123
+#: data/content/get-fedora-all.html:130
+#: data/content/get-prerelease.html:53
+#: data/content/get-prerelease.html:60
+#: data/content/get-prerelease.html:71
+#: data/content/get-prerelease.html:78
 msgid "i686"
 msgstr "i686"
 
-#: data/content/get-fedora-all.html:89 data/content/get-fedora-all.html:90
-#: data/content/get-fedora-all.html:97 data/content/get-fedora-all.html:98
-#: data/content/get-fedora-all.html:105 data/content/get-fedora-all.html:106
-#: data/content/get-fedora-all.html:116 data/content/get-fedora-all.html:117
-#: data/content/get-fedora-all.html:123 data/content/get-fedora-all.html:124
-#: data/content/get-fedora-all.html:130 data/content/get-fedora-all.html:131
-#: data/content/get-fedora-kde.html:34 data/content/get-fedora.html:30
-#: data/content/get-prerelease.html:53 data/content/get-prerelease.html:54
-#: data/content/get-prerelease.html:60 data/content/get-prerelease.html:61
-#: data/content/get-prerelease.html:71 data/content/get-prerelease.html:72
-#: data/content/get-prerelease.html:78 data/content/get-prerelease.html:79
+#: data/content/get-fedora-all.html:89
+#: data/content/get-fedora-all.html:90
+#: data/content/get-fedora-all.html:97
+#: data/content/get-fedora-all.html:98
+#: data/content/get-fedora-all.html:105
+#: data/content/get-fedora-all.html:106
+#: data/content/get-fedora-all.html:116
+#: data/content/get-fedora-all.html:117
+#: data/content/get-fedora-all.html:123
+#: data/content/get-fedora-all.html:124
+#: data/content/get-fedora-all.html:130
+#: data/content/get-fedora-all.html:131
+#: data/content/get-fedora-kde.html:34
+#: data/content/get-fedora.html:29
+#: data/content/get-prerelease.html:53
+#: data/content/get-prerelease.html:54
+#: data/content/get-prerelease.html:60
+#: data/content/get-prerelease.html:61
+#: data/content/get-prerelease.html:71
+#: data/content/get-prerelease.html:72
+#: data/content/get-prerelease.html:78
+#: data/content/get-prerelease.html:79
 msgid "Live CD"
 msgstr "קובץ Live CD"
 
-#: data/content/get-fedora-all.html:111 data/content/get-prerelease.html:66
+#: data/content/get-fedora-all.html:111
+#: data/content/get-prerelease.html:66
 msgid "Fedora KDE Live Media"
 msgstr "Fedora KDE Live Media"
 
-#: data/content/get-fedora-all.html:136 data/content/get-fedora-kde.html:64
-#: data/content/get-fedora-ppc.html:43 data/content/get-fedora.html:60
+#: data/content/get-fedora-all.html:136
+#: data/content/get-fedora-kde.html:64
+#: data/content/get-fedora-ppc.html:43
+#: data/content/get-fedora.html:59
 #: data/content/get-prerelease.html:84
 msgid "Let me look around..."
 msgstr "ברצוני להביט סביב..."
 
-#: data/content/get-fedora-all.html:138 data/content/get-fedora-kde.html:66
-#: data/content/get-fedora-ppc.html:45 data/content/get-fedora.html:62
+#: data/content/get-fedora-all.html:138
+#: data/content/get-fedora-kde.html:66
+#: data/content/get-fedora-ppc.html:45
+#: data/content/get-fedora.html:61
 #: data/content/get-prerelease.html:86
 msgid "See all torrents"
 msgstr "הצגת כל הטורנטים"
 
-#: data/content/get-fedora-all.html:139 data/content/get-fedora-kde.html:67
-#: data/content/get-fedora-ppc.html:46 data/content/get-fedora.html:63
+#: data/content/get-fedora-all.html:139
+#: data/content/get-fedora-kde.html:67
+#: data/content/get-fedora-ppc.html:46
+#: data/content/get-fedora.html:62
 #: data/content/get-prerelease.html:87
 msgid "See all mirrors"
 msgstr "הצגת כל אתרי המראה"
 
-#: data/content/get-fedora-all.html:140 data/content/get-fedora-kde.html:68
-#: data/content/get-fedora-ppc.html:47 data/content/get-fedora.html:64
+#: data/content/get-fedora-all.html:140
+#: data/content/get-fedora-kde.html:68
+#: data/content/get-fedora-ppc.html:47
+#: data/content/get-fedora.html:63
 #: data/content/get-prerelease.html:88
 msgid "See all custom spins"
 msgstr "הצגת כל הספינים המיוחדים"
 
-#: data/content/get-fedora-all.html:142 data/content/get-fedora-kde.html:70
-#: data/content/get-fedora-ppc.html:49 data/content/get-fedora.html:66
+#: data/content/get-fedora-all.html:142
+#: data/content/get-fedora-kde.html:70
+#: data/content/get-fedora-ppc.html:49
+#: data/content/get-fedora.html:65
 msgid "Slow Internet? No Internet?"
 msgstr "חיבור אינטרנט איטי? אין חיבור אינטרנט?"
 
-#: data/content/get-fedora-all.html:143 data/content/get-fedora-kde.html:71
-#: data/content/get-fedora-ppc.html:50 data/content/get-fedora.html:67
+#: data/content/get-fedora-all.html:143
+#: data/content/get-fedora-kde.html:71
+#: data/content/get-fedora-ppc.html:50
+#: data/content/get-fedora.html:66
 msgid "Get a copy of Fedora Media sent via postal mail."
 msgstr "קבלת עותק של פדורה דרך הדואר (הרגיל, לא האלקטרוני)."
 
-#: data/content/get-fedora-all.html:145 data/content/get-fedora-kde.html:73
-#: data/content/get-fedora-ppc.html:52 data/content/get-fedora.html:69
+#: data/content/get-fedora-all.html:145
+#: data/content/get-fedora-kde.html:73
+#: data/content/get-fedora-ppc.html:52
+#: data/content/get-fedora.html:68
 msgid "Purchase installation media for Fedora from <a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">online vendors</a> or a <a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">local vendor</a> in your area."
 msgstr "ניתן לרכוש מדיות התקנה של פדורה מ-<a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">ספקים מקוונים</a> או מ- <a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">ספקים מקומיים</a> באיזורך."
 
-#: data/content/get-fedora-all.html:146 data/content/get-fedora-kde.html:74
-#: data/content/get-fedora-ppc.html:53 data/content/get-fedora.html:70
+#: data/content/get-fedora-all.html:146
+#: data/content/get-fedora-kde.html:74
+#: data/content/get-fedora-ppc.html:53
+#: data/content/get-fedora.html:69
 msgid "Can't afford the price of installation media? Request Fedora installation media from the <a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Fedora Free Media Program</a>."
 msgstr "אין ביכולתך לרכוש מדיות התקנה של פדורה? ניתן לבקש מדיות התקנה מ-<a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">התוכנית לאספקת מדיות פדורה חינם</a>."
 
-#: data/content/get-fedora-all.html:149 data/content/get-fedora-kde.html:77
-#: data/content/get-fedora-ppc.html:56 data/content/get-fedora.html:73
+#: data/content/get-fedora-all.html:149
+#: data/content/get-fedora-kde.html:77
+#: data/content/get-fedora-ppc.html:56
+#: data/content/get-fedora.html:72
 msgid "When you place an order with a <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">participating vendor</a>, you may also sponsor the cost of media for users who cannot afford it, such as people in developing nations. Consider participating in the <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora Sponsored Media Program</a>."
 msgstr "במהלך הזמנה מרשימת <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">הספקים המשתתפים</a>, ניתן לכסות את עלות המדיה למשתמשים שאינם יכולים להרשות זאת לעצמם, כגון אנשים ממדינות מתפתחות. אנא שקלו השתתפות ב-<a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">תוכנית החסות של מדיות פדורה</a>."
 
-#: data/content/get-fedora-kde.html:15 data/content/get-fedora.html:14
+#: data/content/get-fedora-kde.html:15
+#: data/content/get-fedora.html:13
 msgid "Have a PowerPC?  Go here!"
 msgstr "עבור מעבדי PowerPC? פנו לכאן!"
 
-#: data/content/get-fedora-kde.html:16 data/content/get-fedora-ppc.html:16
-#: data/content/get-fedora.html:15
+#: data/content/get-fedora-kde.html:16
+#: data/content/get-fedora-ppc.html:16
+#: data/content/get-fedora.html:14
 msgid "Show me all download options in one page!"
 msgstr "ברצוני לראות את כל אפשרויות ההורדה בדף אחד!"
 
@@ -321,37 +417,43 @@ msgid "The <a href=\"http://www.kde.org/\">K Desktop Environment</a> (KDE) is an
 msgstr "סביבת <a href=\"http://www.kde.org/\">K Desktop Environment</a>‏ (KDE) היא סביבת שולחן עבודה אלטרנטיבית עבור פדורה. סביבה זו מספקת מראה ומרגש שונים לחלונות, תפריטים והתנהגות שולחן העבודה של פדורה. מי שמעדיף את סביבת KDE, יכול להוריד את גרסת פדורה המתאימה להלן."
 
 #: data/content/get-fedora-kde.html:23
-#, fuzzy
 msgid "Get Fedora 12 KDE Desktop Edition Now <em class=\"byline\">Installable Live CD</em>"
-msgstr "הורד כעת את גרסת שולחן העבודה של פדורה 11 <em class=\"byline\">כתקליטור חי המאפשר גם התקנה מתוכו!</em>"
+msgstr "הורד כעת את גרסת KDE של פדורה 12 <em class=\"byline\">כתקליטור חי המאפשר גם התקנה מתוכו</em>"
 
-#: data/content/get-fedora-kde.html:25 data/content/get-fedora-kde.html:45
-#: data/content/get-fedora-ppc.html:24 data/content/get-fedora.html:21
-#: data/content/get-fedora.html:41
+#: data/content/get-fedora-kde.html:25
+#: data/content/get-fedora-kde.html:45
+#: data/content/get-fedora-ppc.html:24
+#: data/content/get-fedora.html:20
+#: data/content/get-fedora.html:40
 msgid "Resources"
 msgstr "משאבים"
 
-#: data/content/get-fedora-kde.html:27 data/content/get-fedora.html:23
-#, fuzzy
+#: data/content/get-fedora-kde.html:27
+#: data/content/get-fedora.html:22
 msgid "Fedora 12 Installation Guide"
-msgstr "מדריך התקנת פדורה 11"
+msgstr "מדריך התקנת פדורה 12"
 
-#: data/content/get-fedora-kde.html:28 data/content/get-fedora-kde.html:48
-#: data/content/get-fedora-ppc.html:27 data/content/get-fedora.html:24
-#: data/content/get-fedora.html:44
-#, fuzzy
+#: data/content/get-fedora-kde.html:28
+#: data/content/get-fedora-kde.html:48
+#: data/content/get-fedora-ppc.html:27
+#: data/content/get-fedora.html:23
+#: data/content/get-fedora.html:43
 msgid "Fedora 12 Release Notes"
-msgstr "הודעת שחרור עבור פדורה 11"
+msgstr "הודעת שחרור עבור פדורה 12"
 
-#: data/content/get-fedora-kde.html:29 data/content/get-fedora-kde.html:49
-#: data/content/get-fedora-ppc.html:28 data/content/get-fedora.html:25
-#: data/content/get-fedora.html:45
+#: data/content/get-fedora-kde.html:29
+#: data/content/get-fedora-kde.html:49
+#: data/content/get-fedora-ppc.html:28
+#: data/content/get-fedora.html:24
+#: data/content/get-fedora.html:44
 msgid "Help &amp; Support"
 msgstr "עזרה ותמיכה"
 
-#: data/content/get-fedora-kde.html:30 data/content/get-fedora-kde.html:50
-#: data/content/get-fedora-ppc.html:29 data/content/get-fedora.html:26
-#: data/content/get-fedora.html:46
+#: data/content/get-fedora-kde.html:30
+#: data/content/get-fedora-kde.html:50
+#: data/content/get-fedora-ppc.html:29
+#: data/content/get-fedora.html:25
+#: data/content/get-fedora.html:45
 msgid "Verify your download"
 msgstr "אמתו את הקבצים שהורדו."
 
@@ -364,45 +466,50 @@ msgstr "זוהי הגרסה האחרונה של מערכת ההפעלה פדור
 msgid "%sMB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs"
 msgstr "קובץ צריבה בפורמט ISO, בגודל %s מ\"ב עבור מחשבים עם מעבדים תואמי אינטל"
 
-#: data/content/get-fedora-kde.html:38 data/content/get-fedora-kde.html:58
-#: data/content/get-fedora-ppc.html:37 data/content/get-fedora.html:34
-#: data/content/get-fedora.html:54
-#, fuzzy
+#: data/content/get-fedora-kde.html:38
+#: data/content/get-fedora-kde.html:58
+#: data/content/get-fedora-ppc.html:37
+#: data/content/get-fedora.html:33
+#: data/content/get-fedora.html:53
 msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f12/en-US/html/ch-new-users.html#sn-making-media\">How do I use this file?</a>"
-msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f11/en-US/html/sn-making-media.html\">כיצד להשתמש בקובץ זה?</a>"
+msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f12/en-US/html/ch-new-users.html#sn-making-media\">איך להשתמש בקובץ הזה?</a>"
 
-#: data/content/get-fedora-kde.html:40 data/content/get-fedora-kde.html:60
-#: data/content/get-fedora-ppc.html:39 data/content/get-fedora.html:36
-#: data/content/get-fedora.html:56
+#: data/content/get-fedora-kde.html:40
+#: data/content/get-fedora-kde.html:60
+#: data/content/get-fedora-ppc.html:39
+#: data/content/get-fedora.html:35
+#: data/content/get-fedora.html:55
 msgid "Download Now!"
 msgstr "הורד עכשיו!"
 
-#: data/content/get-fedora-kde.html:43 data/content/get-fedora.html:39
-#, fuzzy
+#: data/content/get-fedora-kde.html:43
+#: data/content/get-fedora.html:38
 msgid "Upgrade to Fedora 12 from an older version"
-msgstr "שדרוג לפדורה 11 מגרסה ישנה יותר"
+msgstr "שדרוג לפדורה 12 מגרסה ישנה יותר"
 
-#: data/content/get-fedora-kde.html:47 data/content/get-fedora.html:43
-#, fuzzy
+#: data/content/get-fedora-kde.html:47
+#: data/content/get-fedora.html:42
 msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f12/en-US/html/ch-upgrade-x86.html\">Fedora 12 Upgrade Guide</a>"
-msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f11/en_US/html/ch-upgrade-x86.html\">מדריך השדרוג לפדורה 11</a>"
+msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f12/en_US/html/ch-upgrade-x86.html\">מדריך השדרוג לפדורה 12</a>"
 
-#: data/content/get-fedora-kde.html:55 data/content/get-fedora.html:51
-#, fuzzy
+#: data/content/get-fedora-kde.html:55
+#: data/content/get-fedora.html:50
 msgid "Already have Fedora and want to upgrade to Fedora 12? Check out the <a href=\"http://docs.fedoraproject.org/install-guide/f12/en-US/html/ch-upgrade-x86.html\">Upgrading Fedora</a> instructions, and download the DVD ISO you'll need to start the upgrade process below."
-msgstr "כבר יש לכם פדורה וברצונכם לשדרג לפדורה 11? בדקו את הוראות <a href=\"http://docs.fedoraproject.org/install-guide/f11/en_US/html/ch-upgrade-x86.html\">שדרוג פדורה</a> והורידו את קובץ צריבת ה-DVD הדרוש לשדרוג להלן."
+msgstr "כבר יש לכם פדורה וברצונכם לשדרג לפדורה 12? בדקו את הוראות <a href=\"http://docs.fedoraproject.org/install-guide/f12/en_US/html/ch-upgrade-x86.html\">שדרוג פדורה</a> והורידו את קובץ צריבת ה-DVD הדרוש לשדרוג להלן."
 
 #: data/content/get-fedora-kde.html:58
 #, python-format
 msgid "%sGB, ISO format, 1 DVD disc image for Intel-compatible PCs"
 msgstr "קובץ צריבת DVD בפורמט ISO, בנפח %s ג\"ב עבור מחשבי עם מעבדים תואמי אינטל"
 
-#: data/content/get-fedora-kde.html:63 data/content/get-fedora-ppc.html:42
-#: data/content/get-fedora.html:59
+#: data/content/get-fedora-kde.html:63
+#: data/content/get-fedora-ppc.html:42
+#: data/content/get-fedora.html:58
 msgid "Other Download Options"
 msgstr "אפשרויות הורדה אחרות"
 
-#: data/content/get-fedora-ppc.html:15 data/content/get-fedora.html:13
+#: data/content/get-fedora-ppc.html:15
+#: data/content/get-fedora.html:12
 msgid "KDE fans, go here!"
 msgstr "אוהדי KDE, בואו לכאן!"
 
@@ -412,45 +519,36 @@ msgid "Below you may download a special version of Fedora for older Macintosh co
 msgstr "למטה, ניתן להוריד גרסה מיוחדת של פדורה עבור מחשבי מקינטוש ישנים ומחשבים אחרים המשתמשים במעבדי PowerPC (PPC)‎. בעלי מחשבים אחרים צריכים לפנות לדף <a href=\"%s/%s/get-fedora\">הורדת פדורה</a> הראשי לצורך הורדת הגרסה המתאימה ביותר למחשב."
 
 #: data/content/get-fedora-ppc.html:22
-#, fuzzy
 msgid "Install or Upgrade Fedora 12 for PowerPC"
-msgstr "התקנה או שדרוג לפדורה 11 עבור מחשבי PowerPC"
+msgstr "התקנה או שדרוג לפדורה 12 עבור מחשבי PowerPC"
 
 #: data/content/get-fedora-ppc.html:26
-#, fuzzy
 msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f12/\">Fedora 12 Install Guide</a>"
-msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f11/\">מדריך התקנה לפדורה 11</a>"
+msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f12/\">מדריך התקנה לפדורה 12</a>"
 
 #: data/content/get-fedora-ppc.html:34
-#, fuzzy
 msgid "This is everything you need to install or upgrade to Fedora 12 on PowerPC machines!"
-msgstr "זה כל מה שנדרש להתקנה או שדרוג לפדורה 11 עבור מחשבי PowerPC!"
+msgstr "זה כל מה שנדרש להתקנה או שדרוג לפדורה 12 עבור מחשבי PowerPC!"
 
 #: data/content/get-fedora-ppc.html:37
 #, python-format
 msgid "%sGB, ISO format, 1 DVD disc image for PowerPC-compatible computers"
 msgstr "קובץ צריבת DVD בפורמט ISO, בנפח %s ג\"ב עבור מחשבים תואמי PowerPC"
 
-#: data/content/get-fedora.html:10
-#, fuzzy
-msgid "Did someone say... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;?"
-msgstr "האם מישהו הזכיר גרסת... &ldquo; <a href=\"get-prerelease\">בטא</a>&rdquo;?"
-
-#: data/content/get-fedora.html:19
-#, fuzzy
+#: data/content/get-fedora.html:18
 msgid "Get Fedora 12 Desktop Edition Now <em class=\"byline\">Installable Live CD</em>"
-msgstr "הורד כעת את גרסת שולחן העבודה של פדורה 11 <em class=\"byline\">כתקליטור חי המאפשר גם התקנה מתוכו!</em>"
+msgstr "הורד כעת את גרסת שולחן העבודה של פדורה 12 <em class=\"byline\">כתקליטור חי המאפשר גם התקנה מתוכו</em>"
 
-#: data/content/get-fedora.html:31
+#: data/content/get-fedora.html:30
 msgid "This is the latest version of the Fedora Linux operating system featuring the GNOME desktop.  It's everything you need to try out Fedora&#8212;and if you like it, install it right from the desktop!"
 msgstr "זוהי הגרסה האחרונה של מערכת ההפעלה פדורה לינוקס עם שולחן העבודה GNOME. זה כל מה שנדרש בכדי לנסות את פדורה &#8212; ואם רוצים, ניתן לבצע התקנה ישירות משולחן העבודה!"
 
-#: data/content/get-fedora.html:34
+#: data/content/get-fedora.html:33
 #, python-format
 msgid "%sMB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs (32-bit)"
 msgstr "קובץ צריבה בפורמט ISO, בגודל %s מ\"ב עבור מחשבים עם מעבדים תואמי אינטל (32 ביט)"
 
-#: data/content/get-fedora.html:54
+#: data/content/get-fedora.html:53
 #, python-format
 msgid "%sGB, ISO format, 1 DVD disc image for Intel-compatible PCs (32-bit)"
 msgstr "קובץ צריבת DVD בפורמט ISO, בנפח %s ג\"ב עבור מחשבי עם מעבדים תואמי אינטל (32 ביט)"
@@ -524,33 +622,29 @@ msgid "Written Documentation"
 msgstr "תיעוד"
 
 #: data/content/get-help.html:42
-#, fuzzy
 msgid "Fedora also has a team of talented writers who work hard to produce excellent written documentation. There are a number of different documents available, including the Fedora User Guide, aimed at basic day to day operation of Fedora, an Installation Guide, and Security and SELinux guides."
-msgstr "לפדורה צוות של כותבים מוכשרים העובדים ללא לאות כדי ליצור תיעוד מצויין. קיימים כמה מסמכים, ביניהם המדריך למשתמש המיועד לתפעול יום יומי בסיסי של פדורה והמדריך למנהל מערכת פדורה המסביר כיצד לתחזק ולהשגיח על מערכת פדורה."
+msgstr "לפדורה יש גם צוות של כותבים מוכשרים העובדים קשה כדי ליצור תיעוד מצויין. קיימים כמה מסמכים, ביניהם המדריך למשתמש המיועד לתפעול יום יומי בסיסי של פדורה, מדריך התקנה ומדריכי אבטחה וSELinux."
 
 #: data/content/get-help.html:44
 msgid "These guides are available at <a href=\"http://docs.fedoraproject.org\">docs.fedoraproject.org</a>."
 msgstr "מדריכים אלו זמינים בכתובת <a href=\"http://docs.fedoraproject.org\">docs.fedoraproject.org</a>."
 
 #: data/content/get-prerelease.html:13
-#, fuzzy, python-format
+#, python-format
 msgid "This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>.  Read the <a href=\"%(relnotes_url)s\">Release Notes</a> for more information."
-msgstr "זוהי תכנה לפני השחרור הרשמי. פרויקט פדורה אינו מתיימר להבטיח את התאמתה או שימושיותה. נא לדווח כל בעיה בעזרת <a href=\"https://bugzilla.redhat.com/\">מערכת דיווח שגיאות של Red Hat</a>. נא לקרוא את <a href=\"http://http://docs.fedoraproject.org/release-notes/f11preview//\">הודעת שחרור תצוגה מקדימה</a>  למידע נוסף."
+msgstr "זוהי תכנה לפני השחרור הרשמי. פרויקט פדורה אינו מתיימר להבטיח את התאמתה או שימושיותה. נא לדווח כל בעיה בעזרת <a href=\"https://bugzilla.redhat.com/\">מערכת דיווח שגיאות של Red Hat</a>. נא לקרוא את <a href=\"%(relnotes_url)s\">הערות השחרור</a>  למידע נוסף."
 
 #: data/content/get-prerelease.html:13
-#, fuzzy
 msgid "http://docs.fedoraproject.org/release-notes/f12/en-US/html/"
-msgstr "<a href=\"http://docs.fedoraproject.org/\">תיעוד</a>"
+msgstr "http://docs.fedoraproject.org/release-notes/f12/en-US/html/"
 
 #: data/content/index.html:10
-#, fuzzy
 msgid "Fedora 12: Unite."
-msgstr "פדורה 11: מלוכה."
+msgstr "פדורה 12: איחוד."
 
 #: data/content/index.html:15
-#, fuzzy
 msgid "What's new in Fedora 12?  Read the release notes. &gt;&gt;"
-msgstr "מה חדש בפדורה 11? ניתן לקרוא בהודעת השחרור. &gt;&gt;"
+msgstr "מה חדש בפדורה 12? ניתן לקרוא בהודעת השחרור. &gt;&gt;"
 
 #: data/content/index.html:18
 msgid "Fedora is a Linux-based operating system that showcases the latest in free and open source software. Fedora is <strong>always free for anyone to use, modify, and distribute.</strong>  It is built by people across the globe who work together as a community: the Fedora Project. The Fedora Project is open and anyone is welcome to join."
@@ -672,14 +766,12 @@ msgid "Currently used keys"
 msgstr "מפתחות בשימוש"
 
 #: data/content/keys.html:67
-#, fuzzy
 msgid "Download: <a href=\"https://fedoraproject.org/static/57BBCCBA.txt\">Fedora Project</a>"
-msgstr "הורדה: <a href=\"https://fedoraproject.org/static/4EBFC273.txt\">פרויקט פדורה</a>"
+msgstr "הורדה: <a href=\"https://fedoraproject.org/static/57BBCCBA.txt\">פרוייקט פדורה</a>"
 
 #: data/content/keys.html:68
-#, fuzzy
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x57BBCCBA&op=get\">keys.gnupg.net</a>"
-msgstr "הורדה: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4EBFC273&op=get\">keys.gnupg.net</a>"
+msgstr "הורדה: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x57BBCCBA&op=get\">keys.gnupg.net</a>"
 
 #: data/content/keys.html:80
 msgid "Download: <a href=\"https://fedoraproject.org/static/D22E77F2.txt\">Fedora Project</a>"
@@ -706,14 +798,12 @@ msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x0B862
 msgstr "הורדה: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x0B86274E&op=get\">keys.gnupg.net</a>"
 
 #: data/content/keys.html:122
-#, fuzzy
 msgid "Download: <a href=\"https://fedoraproject.org/static/217521F6.txt\">Fedora Project</a>"
-msgstr "הורדה: <a href=\"https://fedoraproject.org/static/D22E77F2.txt\">פרויקט פדורה</a>"
+msgstr "הורדה: <a href=\"https://fedoraproject.org/static/217521F6.txt\">פרוייקט פדורה</a>"
 
 #: data/content/keys.html:123
-#, fuzzy
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x217521F6&op=get\">keys.gnupg.net</a>"
-msgstr "הורדה: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0xD22E77F2&op=get\">keys.gnupg.net</a>"
+msgstr "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x217521F6&op=get\">keys.gnupg.net</a>"
 
 #: data/content/keys.html:129
 msgid "Obsolete keys"
@@ -809,14 +899,13 @@ msgstr "פרויקט פדורה גאה לקבל חסות מארגונים אלו
 
 #: data/content/sponsors.html:16
 msgid "<a href=\"http://redhat.com/\">Red Hat, Inc.</a> is the primary sponsor for the Fedora Project, providing a variety of resources, including full-time employee support, infrastructure hardware and bandwidth, event funding, and legal counsel."
-msgstr ""
+msgstr "חברת <a href=\"http://redhat.com/\">Red Hat, Inc.</a> היא נותנת החסות העיקרית של פרוייקט פדורה, המספקת מגוון של משאבים, כולל תמיכת עובדים במשרה מלאה, חומרה ורוחב פס לתשתית, מימון אירועים ויעוץ משפטי."
 
 #: data/content/sponsors.html:19
-#, fuzzy
 msgid "The Fedora Project also thanks the following sponsors for providing substantial support:"
-msgstr "פרויקט פדורה גאה לקבל חסות מארגונים אלו:"
+msgstr "פרוייקט פדורה מודה לארגונים נותני החסות הבאים על תמיכתם הרבה:"
 
-#: data/content/sponsors.html:38
+#: data/content/sponsors.html:41
 msgid "Interested in sponsoring something for Fedora?  Contact admin at fedoraproject * org or stop by #fedora-admin on irc.freenode.net."
 msgstr "מעוניינים לתת חסות למשהו הקשור לפדורה? צרו קשר עם admin at fedoraproject * org או תנו קפיצה ל-#fedora-admin ב-irc.freenode.net."
 
@@ -825,60 +914,63 @@ msgid "Verify your ISO download."
 msgstr "אמתו את קובץ ה-ISO שהורדתם."
 
 #: data/content/verify.html:12
+msgid "Please note that the <em>Hash: SHA1</em> line in the CHECKSUM file is part of the PGP signature.  It does <strong>not</strong> specify the type of hash used to verify the .iso files."
+msgstr "שים לב שהשורה <em>Hash: SHA1</em> בקובץ CHECKSUM היא חלק מחתימת ה PGP.  היא <strong>לא</strong> מציינת את סוג ההאש שמשמש לווידוא קבצי ה.iso."
+
+#: data/content/verify.html:15
 msgid "Windows user?  Follow <a href=\"http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html\">these instructions</a> instead."
 msgstr "משתמשים במערכת \"חלונות\"?  עקבו אחר <a href=\"http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html\">הוראות אלו</a> במקום."
 
-#: data/content/verify.html:15
+#: data/content/verify.html:18
 msgid "Once you have downloaded an ISO, verify it for security and integrity.  If you downloaded your ISO via BitTorrent, the file has already been verified as part of the download process (just make sure that you got the torrent from <a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a>).  Otherwise, to verify your ISO, start by downloading the proper CHECKSUM file into the same directory as the ISO:"
 msgstr "לאחר הורדת קובץ ה-ISO, אמתו אותו לצורכי אבטחה ושלמות. אם הורדתם את קובץ ה-ISO בעזרת ביטורנט, הקובץ כבר אומת כחלק מתהליך ההורדה (ודאו שקיבלתם את הטורנט דרך  <a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a>).  בהורדות שאינן דרך ביטורנט, יש צורך להוריד קודם את קובץ ה-CHECKSUM המתאים, לאותה תיקיה בה נשמר קובץ ה-ISO:"
 
-#: data/content/verify.html:17
+#: data/content/verify.html:20
 msgid "Install DVD / Rescue CD"
 msgstr "דיסק DVD להתקנה / תקליטור הצלה"
 
-#: data/content/verify.html:23
+#: data/content/verify.html:26
 msgid "Live Media"
 msgstr "מדייה חיה"
 
-#: data/content/verify.html:31
+#: data/content/verify.html:34
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "בהמשך, יש לייבא את מפתח/ות GPG של פדורה:"
 
-#: data/content/verify.html:35
-#, python-format
-msgid "You can verify the details of the GPG key(s) <a href=\"%s/%s/keys\">here</a>."
-msgstr "ניתן לאמת את פרטי מפתח/ות GPG בכתובת <a href=\"%s/%s/keys\">הזו</a>."
-
 #: data/content/verify.html:38
+#, python-format
+msgid "You can verify the details of the GPG key(s) <a href=\"https://fedoraproject.org%s/%s/keys\">here</a>."
+msgstr "ניתן לאמת את פרטי מפתח/ות GPG <a href=\"https://fedoraproject.org%s/%s/keys\">כאן</a>."
+
+#: data/content/verify.html:41
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "עתה יש לבדוק את נכונות קובץ ה-CHECKSUM:"
 
-#: data/content/verify.html:42
+#: data/content/verify.html:45
 msgid "The CHECKSUM file should have a good signature from one of the following keys:"
 msgstr "קובץ ה-CHECKSUM צריך לכלול חתימה תקינה על ידי אחד מהמפתחות להלן:"
 
-#: data/content/verify.html:45
-#, fuzzy
+#: data/content/verify.html:48
 msgid "Fedora 12"
-msgstr "פדורה 11"
+msgstr "פדורה 12"
 
-#: data/content/verify.html:46
+#: data/content/verify.html:49
 msgid "Fedora 11"
 msgstr "פדורה 11"
 
-#: data/content/verify.html:47
+#: data/content/verify.html:50
 msgid "Fedora 10"
 msgstr "פדורה 10"
 
-#: data/content/verify.html:48
+#: data/content/verify.html:51
 msgid "Fedora 10 pre-releases"
 msgstr "קדם שחרור של פדורה 10"
 
-#: data/content/verify.html:51
+#: data/content/verify.html:54
 msgid "Finally, now that the CHECKSUM file has been verified, check that the ISO's checksum matches:"
 msgstr "לסיכום, לאחר שקובץ ה-CHECKSUM אומת, בדקו שיש התאמה לקובץ ה-ISO:"
 
-#: data/content/verify.html:55
+#: data/content/verify.html:58
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "אם הפלט מודיע שהקובץ חוקי, אזי סימן שהכל בסדר!"
 
@@ -919,9 +1011,9 @@ msgid "Download Fedora!"
 msgstr "הורדת פדורה!"
 
 #: data/templates/foot.html:9
-#, fuzzy, python-format
-msgid "&copy; 2009 Red Hat, Inc. and others.  For comments or queries, please <a href=\"%s/%s/contact\">contact us</a>."
-msgstr "זכויות יוצרים &copy; 2009 Red Hat, Inc. and others.  כל הזכויות שמורות.  אנא שלחו הערות או שאלות אנא פנו <a href=\"%s/%s/contact\">אלינו</a>."
+#, python-format
+msgid "&copy; 2010 Red Hat, Inc. and others.  For comments or queries, please <a href=\"%s/%s/contact\">contact us</a>."
+msgstr "זכויות יוצרים &copy; 2009 Red Hat, Inc. and others.  כל הזכויות שמורות.  למשלוח הערות או שאלות אנא פנו <a href=\"%s/%s/contact\">אלינו</a>."
 
 #: data/templates/foot.html:12
 msgid "The Fedora Project is maintained and driven by the community and sponsored by Red Hat.  This is a community maintained site.  Red Hat is not responsible for content."
@@ -943,94 +1035,94 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">ה�
 msgid "Fedora"
 msgstr "פדורה"
 
-#: data/templates/sidebar.html:26
-#, python-format
-msgid "%s/static/images/counter/%s"
-msgstr ""
-
-#: data/templates/sidebar.html:26
-#, fuzzy, python-format
-msgid "Fedora 12 Constantine released in %s days!"
-msgstr "פדורה 10 - Cambridge משוחררת תוך %s ימים!"
-
-#: data/templates/sidebar.html:27
-msgid "Add a counter to your own site!"
-msgstr "הוסיפו מונה לאתר האינטרנט שלכם!"
-
-#: data/templates/sidebar.html:31
+#: data/templates/sidebar.html:13
 msgid "Navigation"
 msgstr "ניווט"
 
-#: data/templates/sidebar.html:33
+#: data/templates/sidebar.html:15
 msgid "Home"
 msgstr "בית"
 
-#: data/templates/sidebar.html:34
+#: data/templates/sidebar.html:16
 msgid "Get Fedora"
 msgstr "הורדת פדורה"
 
-#: data/templates/sidebar.html:35
+#: data/templates/sidebar.html:17
 msgid "Join Fedora"
 msgstr "הצטרפות לפדורה"
 
-#: data/templates/sidebar.html:36
+#: data/templates/sidebar.html:18
 msgid "Get Help"
 msgstr "קבלת עזרה"
 
-#: data/templates/sidebar.html:38
+#: data/templates/sidebar.html:20
 msgid "Tools"
 msgstr "כלים"
 
-#: data/templates/sidebar.html:40
+#: data/templates/sidebar.html:22
 msgid "Docs"
 msgstr "תיעוד"
 
-#: data/templates/sidebar.html:40
+#: data/templates/sidebar.html:22
 msgid "Fedora documentation."
 msgstr "תיעוד פדורה."
 
-#: data/templates/sidebar.html:41
+#: data/templates/sidebar.html:23
 msgid "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/\">וויקי</a>"
 
-#: data/templates/sidebar.html:41
+#: data/templates/sidebar.html:23
 msgid "Collaborative knowledge."
 msgstr "ידע משותף."
 
-#: data/templates/sidebar.html:42
+#: data/templates/sidebar.html:24
 msgid "Planet"
 msgstr "פלנטה"
 
-#: data/templates/sidebar.html:42
+#: data/templates/sidebar.html:24
 msgid "The voices of the Fedora community."
 msgstr "קולות קהיליית פדורה."
 
-#: data/templates/sidebar.html:43
+#: data/templates/sidebar.html:25
 msgid "<a href=\"http://fedoraproject.org/wiki/Communicate\">Communicate</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Communicate\">צרו קשר</a>"
 
-#: data/templates/sidebar.html:43
+#: data/templates/sidebar.html:25
 msgid "Speak with Fedora."
 msgstr "דברו עם פדורה."
 
-#: data/templates/sidebar.html:44
+#: data/templates/sidebar.html:26
 msgid "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Events</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">אירועים</a>"
 
-#: data/templates/sidebar.html:44
+#: data/templates/sidebar.html:26
 msgid "Meet the Fedora community."
 msgstr "פגשו את קהיליית פדורה."
 
-#: data/templates/sidebar.html:46
+#: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "שפת האתר"
 
+#: data/templates/sidebar.html:37
+#, fuzzy
+msgid "Hosting Sponsor"
+msgstr "נותני חסות"
+
+#, fuzzy
+#~ msgid ""
+#~ "Did someone say... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;?"
+#~ msgstr ""
+#~ "האם מישהו הזכיר גרסת... &ldquo; <a href=\"get-prerelease\">בטא</a>&rdquo;?"
+
+#, fuzzy
+#~ msgid "Fedora 12 Constantine released in %s days!"
+#~ msgstr "פדורה 10 - Cambridge משוחררת תוך %s ימים!"
+#~ msgid "Add a counter to your own site!"
+#~ msgstr "הוסיפו מונה לאתר האינטרנט שלכם!"
 #~ msgid "Fedora 9 and earlier"
 #~ msgstr "פדורה 9 ומטה"
-
 #~ msgid "Fedora 9 and earlier pre-releases"
 #~ msgstr "קדם שחרור של גרסאות פדורה 9 ומטה"
-
 #~ msgid "Live Media (both GNOME and KDE)"
 #~ msgstr "מדיה חיה (גם GNOME וגם KDE)"
 
@@ -1039,74 +1131,87 @@ msgstr "שפת האתר"
 #~ msgstr "פדורה"
 
 #, fuzzy
-#~ msgid "Did someone say... &ldquo;<a href=\"get-prerelease\">Preview Release</a>&rdquo;?"
-#~ msgstr "האם מישהו הזכיר גרסת... &ldquo; <a href=\"get-prerelease\">בטא</a>&rdquo;?"
-
+#~ msgid ""
+#~ "Did someone say... &ldquo;<a href=\"get-prerelease\">Preview Release</"
+#~ "a>&rdquo;?"
+#~ msgstr ""
+#~ "האם מישהו הזכיר גרסת... &ldquo; <a href=\"get-prerelease\">בטא</a>&rdquo;?"
 #~ msgid "Fedora 10 - Fire it up"
 #~ msgstr "פדורה 10 - השיגור עכשיו"
-
-#~ msgid "Now, to verify that the SHA1SUM file is valid, make sure that it has a good signature from the key ID %s."
-#~ msgstr "עתה, בכדי לאמת שקובץ ה-SHA1SUM חוקי, בדקו שיש לו חתימה נכונה עם המפתח שזיהויו %s."
-
+#~ msgid ""
+#~ "Now, to verify that the SHA1SUM file is valid, make sure that it has a "
+#~ "good signature from the key ID %s."
+#~ msgstr ""
+#~ "עתה, בכדי לאמת שקובץ ה-SHA1SUM חוקי, בדקו שיש לו חתימה נכונה עם המפתח "
+#~ "שזיהויו %s."
 #~ msgid "Fedora 9 Release Notes"
 #~ msgstr "הודעת שחרור עבור פדורה 9"
-
-#~ msgid "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
-#~ msgstr "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs.fedoraproject.org/release-notes/</a>"
-
+#~ msgid ""
+#~ "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs."
+#~ "fedoraproject.org/release-notes/</a>"
+#~ msgstr ""
+#~ "<a href=\"http://docs.fedoraproject.org/release-notes/\">http://docs."
+#~ "fedoraproject.org/release-notes/</a>"
 #~ msgid "Fedora 10 Desktop Guide"
 #~ msgstr "מדריך שולחן העבודה לפדורה 10"
-
 #~ msgid "Desktop Live CD or Install DVD"
 #~ msgstr "תקליטור שולחן עבודה חי או DVD להתקנה"
-
-#~ msgid "This is the latest version of the Fedora Linux operating system featuring the GNOME desktop. It's everything you need to start using Fedora!"
-#~ msgstr "זוהי הגרסה האחרונה של מערכת ההפעלה פדורה לינוקס הכוללת את שולחן העבודה GNOME. זה כל מה שצריך בשביל להתחיל להשתמש בפדורה!"
-
+#~ msgid ""
+#~ "This is the latest version of the Fedora Linux operating system featuring "
+#~ "the GNOME desktop. It's everything you need to start using Fedora!"
+#~ msgstr ""
+#~ "זוהי הגרסה האחרונה של מערכת ההפעלה פדורה לינוקס הכוללת את שולחן העבודה "
+#~ "GNOME. זה כל מה שצריך בשביל להתחיל להשתמש בפדורה!"
 #~ msgid "Fedora 9.  Make waves."
 #~ msgstr "פדורה 9. עושה גלים."
-
 #~ msgid "Fedora 9 Sulphur is here!"
 #~ msgstr "פדורה 9 (גופרית) הגיעה!"
-
 #~ msgid "Live DVD"
 #~ msgstr "קובץ Live DVD"
 
 #, fuzzy
-#~ msgid "Here are places you can find the Fedora 9 release notes.  If one location is unresponsive, try a different one."
-#~ msgstr "להלן המקומות בהן ניתן למצוא את הודעת השחרור של פדורה 8. אם אחד האתרים אינו מגיב, ניתן לנסות את אחד האחרים."
+#~ msgid ""
+#~ "Here are places you can find the Fedora 9 release notes.  If one location "
+#~ "is unresponsive, try a different one."
+#~ msgstr ""
+#~ "להלן המקומות בהן ניתן למצוא את הודעת השחרור של פדורה 8. אם אחד האתרים "
+#~ "אינו מגיב, ניתן לנסות את אחד האחרים."
 
 #, fuzzy
-#~ msgid "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/\">mirror</a> using a path similar to <em>http://URL/fedora/linux/releases/9/Fedora/i386/os/</em>.  The mirrors only carry the US English version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may have a slightly different path, but should be consistent below the <em>9/</em> directory.  For example:"
-#~ msgstr "כל אחד מאתרי <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/8/\">המראה</a> משתמש בנתיב דומה ל- <em>http://URL/fedora/linux/releases/8/Fedora/i386/os/</em>.  אתרי המראה מחזיקים רק את הגרסה האנגלית, <em>RELEASE-NOTES-en_US.html</em>.  יש לשים לב שהנתיב בכל אתר מראה עלול להיות מעט שונה, אבל צריך להיות עקבי החל מהנקודה שאחרי תיקיית ה-<em>8/</em>.  למשל:"
-
+#~ msgid ""
+#~ "Check any <a href=\"http://mirrors.fedoraproject.org/publiclist/Fedora/9/"
+#~ "\">mirror</a> using a path similar to <em>http://URL/fedora/linux/"
+#~ "releases/9/Fedora/i386/os/</em>.  The mirrors only carry the US English "
+#~ "version, <em>RELEASE-NOTES-en_US.html</em>.  Note that each mirror may "
+#~ "have a slightly different path, but should be consistent below the <em>9/"
+#~ "</em> directory.  For example:"
+#~ msgstr ""
+#~ "כל אחד מאתרי <a href=\"http://mirrors.fedoraproject.org/publiclist/"
+#~ "Fedora/8/\">המראה</a> משתמש בנתיב דומה ל- <em>http://URL/fedora/linux/"
+#~ "releases/8/Fedora/i386/os/</em>.  אתרי המראה מחזיקים רק את הגרסה האנגלית, "
+#~ "<em>RELEASE-NOTES-en_US.html</em>.  יש לשים לב שהנתיב בכל אתר מראה עלול "
+#~ "להיות מעט שונה, אבל צריך להיות עקבי החל מהנקודה שאחרי תיקיית ה-<em>8/</"
+#~ "em>.  למשל:"
 #~ msgid "ATRPMs mirror"
 #~ msgstr "אתר מראה ATRPM"
-
 #~ msgid "RPMFind.net mirror"
 #~ msgstr "אתר מראה RPMFind.net"
-
 #~ msgid "F8 Screenshot"
 #~ msgstr "תמונת מסך F8"
-
 #~ msgid "Prerelease Version - Fedora Project"
 #~ msgstr "גרסה מקדימה - פרויקט פדורה"
-
 #~ msgid "Get the Fedora 9 Beta."
 #~ msgstr "קבלו את גרסת הבטא של פדורה 9."
-
 #~ msgid "Beta release notes"
 #~ msgstr "הודעת השחרור של גרסת הבטא"
-
 #~ msgid " for more information."
 #~ msgstr " למידע נוסף."
 
 #, fuzzy
 #~ msgid "Fedora 9.  Infinite Possibilities."
 #~ msgstr "פדורה 8. אינסוף אפשרויות."
-
 #~ msgid "Looking forward to Fedora 9?  Read the Beta release notes."
 #~ msgstr "מצפים קדימה לפדורה 9? ניתן לקרוא את גרסת הבטא של הודעת השחרור."
-
 #~ msgid "%s/%s/static/images/banners/f8-banner-animation.gif"
 #~ msgstr "%s/%s/static/images/banners/f8-banner-animation.gif"
+
