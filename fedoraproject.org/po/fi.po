@@ -1,20 +1,18 @@
 # Translation of fedora-web to Finnish
 # This file is distributed under the same license as the fedora-web project.
-# Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>, 2007-2009.
+# Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>, 2007-2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-11-16 19:58-0500\n"
-"PO-Revision-Date: 2009-11-17 21:02+0300\n"
+"POT-Creation-Date: 2010-01-12 15:25-0600\n"
+"PO-Revision-Date: 2010-01-29 15:40+0200\n"
 "Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
 "Language-Team: Finnish <laatu@lokalisointi.org>\n"
-"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.4.1\n"
 
 #: data/content/contact.html:7
 msgid "Contact - Fedora Project"
@@ -224,8 +222,8 @@ msgstr "Fedora, sinulle."
 #: data/content/get-fedora-all.html:16 data/content/get-prerelease.html:14
 #, python-format
 msgid ""
-"After downloading an ISO, <a href=\"https://fedoraproject.org%s/%"
-"s/verify\">verify</a> it."
+"After downloading an ISO, <a href=\"https://fedoraproject.org%s/%s/verify"
+"\">verify</a> it."
 msgstr ""
 "ISOn lataamisen jälkeen se kannattaa <a href=\"https://fedoraproject.org%s/%"
 "s/verify\">tarkistaa</a>."
@@ -1347,7 +1345,7 @@ msgid ""
 "substantial support:"
 msgstr "Fedora-projekti kiittää seuraavia sponsoreita merkittävästä tuesta:"
 
-#: data/content/sponsors.html:38
+#: data/content/sponsors.html:41
 msgid ""
 "Interested in sponsoring something for Fedora?  Contact admin at "
 "fedoraproject * org or stop by #fedora-admin on irc.freenode.net."
@@ -1361,13 +1359,23 @@ msgstr "Tarkista ISO-lataus"
 
 #: data/content/verify.html:12
 msgid ""
+"Please note that the <em>Hash: SHA1</em> line in the CHECKSUM file is part "
+"of the PGP signature.  It does <strong>not</strong> specify the type of hash "
+"used to verify the .iso files."
+msgstr ""
+"Huomaa että CHECKSUM-tiedoston <em>Hash: SHA1</em> -rivi on osa "
+"PGP-allekirjoitusta. Se <strong>not</strong> määritä .iso-tiedostojen "
+"tarkistamiseen käytettävän tarkistussumman tyyppiä."
+
+#: data/content/verify.html:15
+msgid ""
 "Windows user?  Follow <a href=\"http://docs.fedoraproject.org/readme-burning-"
 "isos/en_US/sn-validating-files.html\">these instructions</a> instead."
 msgstr ""
 "Oletko Windows-käyttäjä? Seuraa silloin <a href=\"http://docs.fedoraproject."
 "org/readme-burning-isos/en_US/sn-validating-files.html\">näitä ohjeita</a>."
 
-#: data/content/verify.html:15
+#: data/content/verify.html:18
 msgid ""
 "Once you have downloaded an ISO, verify it for security and integrity.  If "
 "you downloaded your ISO via BitTorrent, the file has already been verified "
@@ -1383,32 +1391,32 @@ msgstr ""
 "tarkistaminen lataamalla oikea CHECKSUM-tiedosto samaan hakemistoon, missä "
 "ISO on:"
 
-#: data/content/verify.html:17
+#: data/content/verify.html:20
 msgid "Install DVD / Rescue CD"
 msgstr "Asennus-DVD / Pelastus-CD"
 
-#: data/content/verify.html:23
+#: data/content/verify.html:26
 msgid "Live Media"
 msgstr "Livemedia"
 
-#: data/content/verify.html:31
+#: data/content/verify.html:34
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Seuraavaksi, tuo Fedoran GPG-avain tai -avaimet:"
 
-#: data/content/verify.html:35
+#: data/content/verify.html:38
 #, python-format
 msgid ""
-"You can verify the details of the GPG key(s) <a "
-"href=\"https://fedoraproject.org%s/%s/keys\">here</a>."
+"You can verify the details of the GPG key(s) <a href=\"https://fedoraproject."
+"org%s/%s/keys\">here</a>."
 msgstr ""
-"Voit tarkistaa GPG-avainten tiedot <a href=\"https://fedoraproject.org%s/%"
-"s/keys\">täältä</a>."
+"Voit tarkistaa GPG-avainten tiedot <a href=\"https://fedoraproject.org%s/%s/"
+"keys\">täältä</a>."
 
-#: data/content/verify.html:38
+#: data/content/verify.html:41
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Tarkista nyt, että CHECKSUM-tiedosto on virheetön:"
 
-#: data/content/verify.html:42
+#: data/content/verify.html:45
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
@@ -1416,23 +1424,23 @@ msgstr ""
 "CHECKSUM-tiedosto pitäisi olla allekirjoitettu jollakin seuraavista "
 "avaimista:"
 
-#: data/content/verify.html:45
+#: data/content/verify.html:48
 msgid "Fedora 12"
 msgstr "Fedora 12"
 
-#: data/content/verify.html:46
+#: data/content/verify.html:49
 msgid "Fedora 11"
 msgstr "Fedora 11"
 
-#: data/content/verify.html:47
+#: data/content/verify.html:50
 msgid "Fedora 10"
 msgstr "Fedora 10"
 
-#: data/content/verify.html:48
+#: data/content/verify.html:51
 msgid "Fedora 10 pre-releases"
 msgstr "Fedora 10 -ennakkojulkaisut"
 
-#: data/content/verify.html:51
+#: data/content/verify.html:54
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the ISO's "
 "checksum matches:"
@@ -1440,7 +1448,7 @@ msgstr ""
 "Lopuksi, nyt kun CHECKSUM-tiedosto on varmennettu, tarkista, että ISOn "
 "tarkistussumma on oikein."
 
-#: data/content/verify.html:55
+#: data/content/verify.html:58
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "Jos tuloste kertoo, että tiedosto on oikea, voit jatkaa!"
 
@@ -1496,10 +1504,10 @@ msgstr "Lataa Fedora!"
 #: data/templates/foot.html:9
 #, python-format
 msgid ""
-"&copy; 2009 Red Hat, Inc. and others.  For comments or queries, please <a "
+"&copy; 2010 Red Hat, Inc. and others.  For comments or queries, please <a "
 "href=\"%s/%s/contact\">contact us</a>."
 msgstr ""
-"&copy; 2009 Red Hat, Inc. ja muita. Jos sinulla on kommentteja tai "
+"&copy; 2010 Red Hat, Inc. ja muita. Jos sinulla on kommentteja tai "
 "kysymyksiä, <a href=\"%s/%s/contact\">ota meihin yhteyttä</a>."
 
 #: data/templates/foot.html:12
@@ -1599,6 +1607,10 @@ msgstr "Tapaa Fedora-yhteisö."
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "Sivuston kieli"
+
+#: data/templates/sidebar.html:37
+msgid "Hosting Sponsor"
+msgstr "Ylläpitosponsori"
 
 #~ msgid ""
 #~ "Did someone say... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;?"
