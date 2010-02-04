@@ -937,7 +937,79 @@ div.panes div {
 }
 /* end: tabs */
 
-
+#export-regulations { clear: both; display: inline; }
 
 /* Hack to make it simple to get rid of borders in a table (ianweller) */
 #content table.nobordersplz th, #content table.nobordersplz td { border-width: 0px; }
+
+/* get-option - activites pane */
+#content table, #content table td {
+	border-style:hidden;
+}
+
+.panes table tr {
+	background-color:#F2F2F2;
+	border:0 none;
+}
+
+#get-acitivites td.rank {
+	background-color:white;
+	font-weight:bold;
+	padding-left:0;
+	padding-right:7px;
+	text-align:left;
+}
+
+#get-acitivites td.name {
+	font-size:xx-small;
+	font-style:italic;
+}
+
+#get-acitivites table td {
+	border-color:white !important;
+	border-style:solid !important;
+	border-width:0 0 18px !important;
+	padding:0.8em;
+	vertical-align:top;
+}
+
+#content table th, #content table td {
+	border:1px solid #000000;
+	padding:0.6ex;
+}
+
+#content img {
+	margin:0;
+}
+
+.learn-more {
+	display: none;
+}
+/* end: get-option - activites pane */
+
+
+/* test */
+.test-a1 {
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+	background-color:#F1F1F1;
+	clear:left;
+	display:block;
+	margin-bottom:1em;
+	padding:0.5em 1em;
+}
+
+.test-a2 {
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+	background-color:#F1F1F1;
+	clear:left;
+	float: left;
+	display:block;
+	margin-bottom:1em;
+	padding:0.5em 1em;
+}
