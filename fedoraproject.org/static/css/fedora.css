@@ -930,6 +930,8 @@ div.panes div {
 	min-height: 150px;
 	padding: 15px 20px;
 	background-color: #fff;
+	width: 70%;
+	float: left;
 }
 
 #content a.current:link {
@@ -937,10 +939,44 @@ div.panes div {
 }
 /* end: tabs */
 
+/* --- */
+#content span.download-opt1
+{
+	float: left;
+	width: 45%;
+}
+
+div.panes span.download-option {
+	display: block;
+	width: 300px !important;
+	margin-bottom: 2em;
+}
+
+div.panes span.opt1 { float: left; }
+div.panes span.opt2 { float: right; }
+
 #export-regulations { clear: both; display: inline; }
 
 /* Hack to make it simple to get rid of borders in a table (ianweller) */
 #content table.nobordersplz th, #content table.nobordersplz td { border-width: 0px; }
+
+
+
+/* get-option - architecture pane */
+.arch-section {
+	clear:left;
+	display:block;
+	margin-bottom:1em;
+	padding:0.5em 1em;
+}
+
+img.download-media
+{
+	float: left;
+	padding-right: 7px;
+}
+/* end: get-option - architecture pane */
+
 
 /* get-option - activites pane */
 #content table, #content table td {
@@ -987,29 +1023,3 @@ div.panes div {
 }
 /* end: get-option - activites pane */
 
-
-/* test */
-.test-a1 {
-	-moz-border-radius-bottomleft:5px;
-	-moz-border-radius-bottomright:5px;
-	-moz-border-radius-topleft:5px;
-	-moz-border-radius-topright:5px;
-	background-color:#F1F1F1;
-	clear:left;
-	display:block;
-	margin-bottom:1em;
-	padding:0.5em 1em;
-}
-
-.test-a2 {
-	-moz-border-radius-bottomleft:5px;
-	-moz-border-radius-bottomright:5px;
-	-moz-border-radius-topleft:5px;
-	-moz-border-radius-topright:5px;
-	background-color:#F1F1F1;
-	clear:left;
-	float: left;
-	display:block;
-	margin-bottom:1em;
-	padding:0.5em 1em;
-}
