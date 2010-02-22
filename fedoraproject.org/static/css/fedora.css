@@ -824,7 +824,7 @@ i
 #download-resources {
   float:right;
   margin-left:2em;
-  width:21em;
+  width:21em; /* tofix */
 }
 
 #download-resources h4 {
@@ -928,9 +928,9 @@ div.panes div {
 	border: 1px solid #dcdcdc;
 	border-width: 0 0px 0px 1px;
 	min-height: 150px;
-	padding: 15px 20px;
+	padding: 15px 10px;
 	background-color: #fff;
-	width: 70%;
+	/* tofix width: 70%; */
 	float: left;
 }
 
@@ -948,22 +948,58 @@ div.panes div {
 
 div.panes span.download-option {
 	display: block;
-	width: 300px !important;
-	margin-bottom: 2em;
+	/* tofix: width: 300px !important; */
+	width: 50%;
 }
 
 div.panes span.opt1 { float: left; }
 div.panes span.opt2 { float: right; }
 
-#export-regulations { clear: both; display: inline; }
+#export-regulations { clear: both; }
 
 /* Hack to make it simple to get rid of borders in a table (ianweller) */
 #content table.nobordersplz th, #content table.nobordersplz td { border-width: 0px; }
 
+/* get-option common */
+/* keeps common stuff in get pages */
+.star-fedora-default {
+	background:transparent url(/static/images/icon-fedora-default.png) no-repeat scroll right center;
+}
+
+.star-most-compatible {
+	background:transparent url(/static/images/icon-most-compatible.png) no-repeat scroll right center;
+}
+
+.download-button-mini {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  color: #FFFFFF!important;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 2;
+  font-size:0.85em;
+  padding: 0.3em 0.4em;
+  border: 1px solid #446382;
+  background-color: #5F94C9 !important;
+}
+
+.opt1 { float: left; }
+.opt2 { float: right; }
+
+.panes { width: 68% }
+/* end: get-option common */
+
+/* get-option - desktop pane */
+.desktop-section ul {
+	float: left;
+}
+
+/* end: get-option - desktop pane */
 
 
 /* get-option - architecture pane */
-.arch-section {
+.arch-section, .desktop-section {
 	clear:left;
 	display:block;
 	margin-bottom:1em;
