@@ -1,0 +1,270 @@
+# Danish translation of boot.fedoraproject.org
+# Copyright (C) 2010 fedoraproject.org
+# This file is distributed under the same license as the boot.fedoraproject.org project.
+# Kris Thomsen <lakristho@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: boot.fedoraproject.org\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2010-01-22 14:14-0600\n"
+"PO-Revision-Date: 2010-02-19 14:27+0100\n"
+"Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/content/download.html:7
+msgid "Download - boot.fedoraproject.org"
+msgstr "Hent - boot.fedoraproject.org"
+
+#: data/content/download.html:12
+msgid "Download ISO: "
+msgstr "Hent ISO: "
+
+#: data/content/download.html:12
+msgid "DVD/CD"
+msgstr "Dvd/cd"
+
+#: data/content/download.html:13
+msgid "Download USB: "
+msgstr "Hent USB: "
+
+#: data/content/download.html:13
+msgid "USB"
+msgstr "USB"
+
+#: data/content/download.html:14
+msgid "Download Floppy: "
+msgstr "Download floppy: "
+
+#: data/content/download.html:14
+msgid "Floppy"
+msgstr "Floppy"
+
+#: data/content/faq.html:7
+msgid "FAQs - boot.fedoraproject.org"
+msgstr "OSS - boot.fedoraproject.org"
+
+#: data/content/faq.html:12
+msgid "Frequently-Asked Questions"
+msgstr "Ofte Stillede Spørgsmål"
+
+#: data/content/faq.html:13
+msgid "How do I use it?"
+msgstr "Hvordan bruger jeg det?"
+
+#: data/content/faq.html:14
+msgid ""
+"First download one of the available images like the ISO image.  Then burn"
+" that image to CD or DVD.  Next boot from that CD or dvd.  After that "
+"you're using BFO!  Use your keyboard to select menus to run diagnostics, "
+"or boot a Fedora installer or rescue mode."
+msgstr ""
+"Hent først en af de tilgængelige aftryk, f.eks. ISO-aftrykket.  Brænd derefter"
+" aftrykket til en cd eller dvd.  Start derefter op fra den cd eller dvd. "
+"Nu bruger du BFO!  Brug dit tastatur til at vælge menuer til at køre diagnostikker, "
+"eller starte Fedora installationsprogrammet eller redningstilstand."  
+
+#: data/content/faq.html:15
+msgid "How does it work?"
+msgstr "Hvordan fungerer det?"
+
+#: data/content/faq.html:16
+msgid ""
+"BFO was started by boot.kernel.org (BKO) and combines a series of recent "
+"technologies to produce a new boot stack.  The glue that holds everything"
+" together is gpxe.  Users familiar with pxe will find gpxe very familiar."
+"  Latest versions support several protocols beyond just tftp.  We are "
+"using http to transfer files around.  The basic steps are as follows:"
+msgstr ""
+"BFO blev startet af boot.kernel.org (BKO) og kombinerer en serie af nyere "
+"teknologier til at producere en ny opstartsstak.  Limen som holder det hele "
+"sammen er gpxe.  Brugere som kender pxe vil finde gpxe meget bekendt.  "
+"Den nyeste version understøtter en del protokoller udover bare tftp.  Vi "
+"bruger http til at overføre filer.  De grundlæggende trin er som følger:"
+
+#: data/content/faq.html:18
+msgid "Download and boot from the boot.fedoraproject.org media."
+msgstr "Hent og start op fra boot.fedoraproject.org-mediet."
+
+#: data/content/faq.html:19
+msgid "Boot from the downloaded iso/disk image."
+msgstr "Start op fra det hentede iso-/disk-aftryk."
+
+#: data/content/faq.html:20
+msgid "The disk image will then boot and configure network."
+msgstr "Disk-aftrykket vil derefter starte og konfigurere netværket."
+
+#: data/content/faq.html:21
+msgid ""
+"After network is configured, it will go out to our boot.fedoraproject.org"
+" website and download the menus and other prompts from us"
+msgstr ""
+"Når netværket er konfigureret vil den gå ud på vores boot.fedoraproject.org-websted "
+"og hente menuerne og andre prompter fra os"
+
+#: data/content/faq.html:22
+msgid ""
+"Those boot menus will then be displayed to the user for selection.  After"
+" a selection (like install Fedora 12) the regular boot process takes over"
+" just as it would had you booted from normal local media."
+msgstr ""
+"Disse opstartsmenuer vil derefter blive vist så brugeren kan vælge.  Efter"
+" et valg (som f.eks Installér Fedora 12) vil den normale opstartsproces tage over"
+" lige som den ville have gjort hvis du startede op fra et normalt, lokalt medie."
+
+#: data/content/faq.html:24
+msgid "Why should I use BFO?"
+msgstr "Hvorfor skulle jeg bruge BFO?"
+
+#: data/content/faq.html:25
+msgid ""
+"The BFO downloads are very small and once you have them, you'll rarely "
+"have to download more.  Even as more versions of Fedora come out, you "
+"just boot from your iso and they will appear.  Users with fast internet "
+"connections will have the best experience with BFO.  They basically "
+"replace having to regularly download large ISO images and burn them to "
+"disk."
+msgstr ""
+"BFO-nedhentningerne er meget små, og så snart du har dem vil det sjældent "
+"være nødvendigt at hente flere.  Selv efter flere versioner af Fedora er kommet ud "
+"skal du bare starte op fra din ISO og de vil dukke op.  Brugere med hurtige "
+"internetforbindelser vil have den bedste oplevelse med BFO.  Grundlæggende undgår "
+"de at skulle hente store ISO-aftryk med jævne mellemrum og brænde dem til diske."
+
+#: data/content/faq.html:26
+msgid "What is required?"
+msgstr "Hvad er nødvendigt?"
+
+#: data/content/faq.html:27
+msgid ""
+"For the most typical setup one should have DHCP, HTTP internet access and"
+" a CD/DVD burner.  Floppy and USB images are also available."
+msgstr ""
+"For den mest traditionelle opsætning bør du have DHCP, HTTP-internetadgang og "
+"en cd-/dvd-brænder.  Floppy- og USB-aftryk er også tilgængelige."
+
+#: data/content/faq.html:28
+msgid "Does BFO replace the installer or anaconda?"
+msgstr "Erstatter BFO installationsprogrammet eller anaconda?"
+
+#: data/content/faq.html:29
+msgid ""
+"Nope.  BFO is a way to load the installer via network.  Normally users "
+"download a large ISO image that contains all of the installer bits.  BFO "
+"is a smaller booting method that downloads the installer bits at runtime."
+"  In theory with BFO one iso download can install all future versions of "
+"Fedora."
+msgstr ""
+"Niks.  BFO er et måde at indlæse installationsprogrammet via netværk.  Normalt "
+"henter brugere et stort ISO-aftryk som indeholder alle installationsdele.  BFO "
+"er en mindre opstartsmetode som henter installationsdelene under kørslen.  "
+"I teorien kan én ISO-nedhentning med BFO installere alle fremtidige versioner af "
+"Fedora."
+
+#: data/content/faq.html:30
+msgid "What about the Live CDs?"
+msgstr "Hvad med live-cd'erne?"
+
+#: data/content/faq.html:31
+msgid ""
+"At this time booting Live CDs is experimental and not available.  We hope"
+" to have them available soon."
+msgstr ""
+"På dette tidspunkt er opstart af Live-cd'er eksperimentielt og ikke tilgængeligt.  Vi "
+"håber på at have dem tilgængelige snart."
+
+#: data/content/index.html:7 data/content/index.html:10
+msgid "boot.fedoraproject.org"
+msgstr "boot.fedoraproject.org"
+
+#: data/content/index.html:11
+msgid ""
+"boot.fedoraproject.org (BFO) is a way to boot hosts in order to run "
+"install or other types of media via the network.  It works similarly to a"
+" pxeboot environment."
+msgstr ""
+"boot.fedoraproject.org (BFO) er en måde at starte værter for at kunne køre "
+"en installation eller andre typer af medier via netværket.  Det virker ligesom "
+"et pxeboot-miljø."
+
+#: data/content/index.html:12
+msgid "BFO welcome screen"
+msgstr "BFO's velkomstskærm"
+
+#: data/content/index.html:13
+msgid "BFO is based on the work of the BKO - "
+msgstr "BFO er baseret på arbejdet fra BKO - "
+
+#: data/templates/foot.html:9
+msgid ""
+"&copy; 2010 Red Hat, Inc. and others.  Please send any comments or "
+"corrections to the <a "
+"href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
+msgstr ""
+"&copy; 2010 Red Hat, Inc. og andre.  Send venligst alle kommentarer eller "
+"rettelser til <a href=\"mailto:webmaster@fedoraproject.org\">webstedsholdet</"
+"a>."
+
+#: data/templates/foot.html:12
+msgid ""
+"The Fedora Project is maintained and driven by the community and "
+"sponsored by Red Hat.  This is a community maintained site.  Red Hat is "
+"not responsible for content."
+msgstr ""
+"Fedoraprojektet vedligeholdes og drives af fællesskabet og sponseres af Red "
+"Hat. Denne side vedligeholdes af fællesskabet. Red Hat er ikke ansvarlig for "
+"indholdet."
+
+#: data/templates/foot.html:15
+msgid "Sponsors"
+msgstr "Sponsorer"
+
+#: data/templates/foot.html:16
+msgid "<a href=\"http://fedoraproject.org/wiki/Legal:Main\">Legal</a>"
+msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Main\">Retslig</a>"
+
+#: data/templates/foot.html:17
+msgid ""
+"<a "
+"href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Trademark"
+" Guidelines</a>"
+msgstr ""
+"<a "
+"href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Retningslinjer"
+" for varemærke</a>"
+
+#: data/templates/head.html:7
+msgid "Fedora"
+msgstr "Fedora"
+
+#: data/templates/sidebar.html:10
+msgid "Navigation"
+msgstr "Navigering"
+
+#: data/templates/sidebar.html:12
+msgid "Home"
+msgstr "Hjem"
+
+#: data/templates/sidebar.html:13
+msgid "Download"
+msgstr "Hent"
+
+#: data/templates/sidebar.html:14
+msgid "FAQ"
+msgstr "OSS"
+
+#: data/templates/sidebar.html:16
+msgid "Website Language"
+msgstr "Sprog på websted"
+
+#: data/templates/sidebar.html:24
+msgid "Hosting Sponsor"
+msgstr "Hosting sponsor"
+
+#: data/templates/sidebar.html:25
+msgid "Sponsored by ServerBeach"
+msgstr "Sponsoreret af ServerBeach"
+

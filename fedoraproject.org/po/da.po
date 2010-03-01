@@ -1,14 +1,14 @@
 # Danish translation of fedora-web
 # Copyright (C) 2009 Kris Thomsen
 # This file is distributed under the same license as the fedora-web project.
-# Kris Thomsen <lakristho@gmail.com>, 2009.
+# Kris Thomsen <lakristho@gmail.com>, 2009, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-11-16 19:58-0500\n"
-"PO-Revision-Date: 2009-11-18 02:26+0100\n"
+"POT-Creation-Date: 2010-01-12 15:25-0600\n"
+"PO-Revision-Date: 2010-02-15 19:10+0100\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
@@ -225,8 +225,8 @@ msgid ""
 "After downloading an ISO, <a href=\"https://fedoraproject.org%s/%s/verify"
 "\">verify</a> it."
 msgstr ""
-"Efter du har hentet en ISO, skal du <a href=\"https://fedoraproject.org%s/%s/verify"
-"\">verificere</a> den."
+"Efter du har hentet en ISO, skal du <a href=\"https://fedoraproject.org%s/%s/"
+"verify\">verificere</a> den."
 
 #: data/content/get-fedora-all.html:17 data/content/get-prerelease.html:15
 msgid "Install Media"
@@ -1343,7 +1343,7 @@ msgstr ""
 "Fedoraprojektet takker også følgende sponsorer for at bidrage med betydelig "
 "støtte:"
 
-#: data/content/sponsors.html:38
+#: data/content/sponsors.html:41
 msgid ""
 "Interested in sponsoring something for Fedora?  Contact admin at "
 "fedoraproject * org or stop by #fedora-admin on irc.freenode.net."
@@ -1357,13 +1357,23 @@ msgstr "Verificér din nedhentningsiso."
 
 #: data/content/verify.html:12
 msgid ""
+"Please note that the <em>Hash: SHA1</em> line in the CHECKSUM file is part "
+"of the PGP signature.  It does <strong>not</strong> specify the type of hash "
+"used to verify the .iso files."
+msgstr ""
+"Bemærk venligst at <em>Hash: SHA1</em>-linjen i CHECKSUM-filen er en del af "
+"PGP-signaturen.  Det angiver <strong>ikke</strong> hvilken type hash som er "
+"brugt til at verificere .iso-filerne."
+
+#: data/content/verify.html:15
+msgid ""
 "Windows user?  Follow <a href=\"http://docs.fedoraproject.org/readme-burning-"
 "isos/en_US/sn-validating-files.html\">these instructions</a> instead."
 msgstr ""
 "Windows bruger?  Følg <a href=\"http://docs.fedoraproject.org/readme-burning-"
 "isos/en_US/sn-validating-files.html\">disse instruktioner</a> istedet."
 
-#: data/content/verify.html:15
+#: data/content/verify.html:18
 msgid ""
 "Once you have downloaded an ISO, verify it for security and integrity.  If "
 "you downloaded your ISO via BitTorrent, the file has already been verified "
@@ -1379,55 +1389,55 @@ msgstr ""
 "fedoraproject.org</a>).  Ellers, for at verificere din ISO-fil, skal du "
 "starte med at hente den rigtige CHECKSUM-fil til samme mappe som ISO'en:"
 
-#: data/content/verify.html:17
+#: data/content/verify.html:20
 msgid "Install DVD / Rescue CD"
 msgstr "Installationsdvd / Redningscd"
 
-#: data/content/verify.html:23
+#: data/content/verify.html:26
 msgid "Live Media"
 msgstr "Livemedie"
 
-#: data/content/verify.html:31
+#: data/content/verify.html:34
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Næste, importér Fedoras GPG-nøgle(r):"
 
-#: data/content/verify.html:35
+#: data/content/verify.html:38
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a href=\"https://fedoraproject."
 "org%s/%s/keys\">here</a>."
 msgstr ""
-"Du kan verificere GPG-nøglens/nøglernes detaljer <a href=\"https://fedoraproject."
-"org%s/%s/keys\">her</a>."
+"Du kan verificere GPG-nøglens/nøglernes detaljer <a href=\"https://"
+"fedoraproject.org%s/%s/keys\">her</a>."
 
-#: data/content/verify.html:38
+#: data/content/verify.html:41
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Nu skal du verificere om CHECKSUM-filen er gyldig:"
 
-#: data/content/verify.html:42
+#: data/content/verify.html:45
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr ""
 "CHECKSUM-filen burde have en god signatur fra én af de følgende nøgler:"
 
-#: data/content/verify.html:45
+#: data/content/verify.html:48
 msgid "Fedora 12"
 msgstr "Fedora 12"
 
-#: data/content/verify.html:46
+#: data/content/verify.html:49
 msgid "Fedora 11"
 msgstr "Fedora 11"
 
-#: data/content/verify.html:47
+#: data/content/verify.html:50
 msgid "Fedora 10"
 msgstr "Fedora 10"
 
-#: data/content/verify.html:48
+#: data/content/verify.html:51
 msgid "Fedora 10 pre-releases"
 msgstr "Fedora 10 før-udgivelser"
 
-#: data/content/verify.html:51
+#: data/content/verify.html:54
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the ISO's "
 "checksum matches:"
@@ -1435,7 +1445,7 @@ msgstr ""
 "Til sidst, nu hvor CHECKSUM-filen er blevet verificeret, skal du kontrollere "
 "at ISO'ernes kontrolværdi matcher:"
 
-#: data/content/verify.html:55
+#: data/content/verify.html:58
 msgid "If the output states that the file is valid, you're good to go!"
 msgstr "Hvis uddatastatusserne på filen er gyldig, kan du fortsætte!"
 
@@ -1493,10 +1503,10 @@ msgstr "Hent Fedora!"
 #: data/templates/foot.html:9
 #, python-format
 msgid ""
-"&copy; 2009 Red Hat, Inc. and others.  For comments or queries, please <a "
+"&copy; 2010 Red Hat, Inc. and others.  For comments or queries, please <a "
 "href=\"%s/%s/contact\">contact us</a>."
 msgstr ""
-"&copy; 2009 Red Hat, Inc. og andre. Har du kommentarer og forslag, kan du <a "
+"&copy; 2010 Red Hat, Inc. og andre.  Har du kommentarer og forslag, kan du <a "
 "href=\"%s/%s/contact\">kontakte os</a>."
 
 #: data/templates/foot.html:12
@@ -1597,6 +1607,10 @@ msgstr "Mød Fedorafælleskabet."
 #: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "Sprog på netsted"
+
+#: data/templates/sidebar.html:37
+msgid "Hosting Sponsor"
+msgstr "Beværtningssponsor"
 
 #~ msgid ""
 #~ "Did someone say... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;?"
