@@ -7,6 +7,30 @@
 		<div id="banner">
 			<a href="http://fedoraproject.org/get-fedora"><img style="border: none;" src="http://fedoraproject.org/static/images/banners/f12release.png" alt="Fedora 12 Constantine is here!" /></a>
 		</div>
+    <?python
+        # Fedora Project News
+        fpn = feedparse('http://mmcgrath.fedorapeople.org/fpn.rss')
+        # Fedora Distro News
+        fdn = feedparse('http://mmcgrath.fedorapeople.org/fdn.rss')
+    ?>
+    <div id="news">
+        <h3>${fdn.feed.title}</h3>
+        <div py:for="entry in fdn.entries[:3]">
+            <h4><a href="${entry.link}">${entry.title}</a></h4>
+            <p>
+                ${Markup(entry.description)}
+            </p>
+        </div>
+    </div>
+    <div id="news">
+        <h3>${fpn.feed.title}</h3>
+        <div py:for="entry in fpn.entries[:3]">
+            <h4><a href="${entry.link}">${entry.title}</a></h4>
+            <p>
+                ${Markup(entry.description)}
+            </p>
+        </div>
+    </div>
 		<div id="lang-select">
 			<h3>${_('Website Language')}</h3>
 			<form action="" method="GET">
@@ -17,5 +41,4 @@
 			</form>
 		</div>
 	</div>
-
 </html>
