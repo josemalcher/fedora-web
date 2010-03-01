@@ -5,5 +5,11 @@
   py:strip="">
 	<script type="text/javascript" src="http://fedoraproject.org/static/js/banner.js"></script>
 	<!-- <script type="text/javascript" src="http://fedoraproject.org/static/js/release-counter.js?lang=en"></script> -->
-    <script type="text/javascript">document.f.q.focus();</script>
+    <script type="text/javascript">
+		function init() {
+		   document.f.q.focus()
+		}
+
+    	window.onload = init;
+    </script>
 </html>
