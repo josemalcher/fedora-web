@@ -9,9 +9,11 @@
 		</div>
     <?python
         # Fedora Project News
-        fpn = feedparse('http://mmcgrath.fedorapeople.org/fpn.rss')
+        fpn = feedparse('http://fedorparojectnews.wordpress.com/feed/')
+        #fpn = feedparse('http://identi.ca/api/statuses/friends_timeline/fedoraprojectnews.atom')
         # Fedora Distro News
         fdn = feedparse('http://mmcgrath.fedorapeople.org/fdn.rss')
+        #fdn = feedparse('http://identi.ca/api/statuses/friends_timeline/fedoradistronews.atom')
     ?>
     <div id="news">
         <h3>${fdn.feed.title}</h3>

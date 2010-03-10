@@ -7,12 +7,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-01-22 14:14-0600\n"
+"POT-Creation-Date: 2010-03-10 11:55-0600\n"
 "PO-Revision-Date: 2010-01-27 16:24+0100\n"
 "Last-Translator: Zoltan Hoppar <zoltanh721@fedoraproject.org>\n"
 "Language-Team: HUNGARIAN <fedora-trans-hu@redhat.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.4\n"
 
@@ -44,6 +44,15 @@ msgstr "Floppy letöltése:"
 msgid "Floppy"
 msgstr "Floppy"
 
+#: data/content/download.html:15
+#, fuzzy
+msgid "Download lkrn: "
+msgstr "ISO letöltése:"
+
+#: data/content/download.html:15
+msgid "lkrn"
+msgstr ""
+
 #: data/content/faq.html:7
 msgid "FAQs - boot.fedoraproject.org"
 msgstr "GYIK - boot.fedoraproject.org"
@@ -61,67 +70,74 @@ msgid "First download one of the available images like the ISO image.  Then burn
 msgstr "Először töltse le az elérhető képek egyikét, pl. az ISO fájt. Ezután írja ki a megszokott módon, CD-re vagy DVD-re, majd indítsa el a rendszert róla. Miután a boot.fedoraproject.org-ot használja, a billentyűzete segytségével futtathat diagnosztikát, elindíthatja a Fedora egyik telepítőjét, vagy mentő módját."
 
 #: data/content/faq.html:15
+msgid "Can I use it with grub?"
+msgstr ""
+
+#: data/content/faq.html:16
+msgid "Yes!  Just run the following commands as root"
+msgstr ""
+
+#: data/content/faq.html:22
 msgid "How does it work?"
 msgstr "Hogyan működik?"
 
-#: data/content/faq.html:16
+#: data/content/faq.html:23
 msgid "BFO was started by boot.kernel.org (BKO) and combines a series of recent technologies to produce a new boot stack.  The glue that holds everything together is gpxe.  Users familiar with pxe will find gpxe very familiar.  Latest versions support several protocols beyond just tftp.  We are using http to transfer files around.  The basic steps are as follows:"
 msgstr "BFO a boot.kernel.org (BKO) kezdeményezése volt és egy sor ismert technológiát vonultat fel, hogy egy új, indítható tárolót képezzen. Az egészet ami összetartja, az nem más mint a gpxe. A felhasználók akik ismerik a pxe-t, a gpxe-t hasonlóképp elég közelinek érezhetik. A legutolsó verziói már támogatnak jópár protokollt, jóval többet mint csak a tftp-t. Mi http-t alkalmazunk fájlok átviteléhez. Az alaplépések a következők:"
 
-#: data/content/faq.html:18
+#: data/content/faq.html:25
 msgid "Download and boot from the boot.fedoraproject.org media."
 msgstr "Töltse le és indítson a boot.fedoraproject.org médiáról!"
 
-#: data/content/faq.html:19
+#: data/content/faq.html:26
 msgid "Boot from the downloaded iso/disk image."
 msgstr "Bootoljon a letöltött iso/lemezképről."
 
-#: data/content/faq.html:20
+#: data/content/faq.html:27
 msgid "The disk image will then boot and configure network."
 msgstr "Ez a lemezkép be fog bootolni, és beállítja a hálozatát."
 
-#: data/content/faq.html:21
+#: data/content/faq.html:28
 msgid "After network is configured, it will go out to our boot.fedoraproject.org website and download the menus and other prompts from us"
 msgstr "Miután a hálózat beállításra került, kilép a mi boot.fedoraproject.org weboldalunkra és letölti a menüt és más promtokat a számunkra"
 
-#: data/content/faq.html:22
+#: data/content/faq.html:29
 msgid "Those boot menus will then be displayed to the user for selection.  After a selection (like install Fedora 12) the regular boot process takes over just as it would had you booted from normal local media."
 msgstr "Ezek a boot menük fognak megjelenni a felhasználó választásai szerint. A választás után (mint akár az eredeti Fedora 12 telepítésénél) a megszokott rendszerindítási folyamat veszi kezdetét, mintha egy médiáról indítottad volna."
 
-#: data/content/faq.html:24
+#: data/content/faq.html:31
 msgid "Why should I use BFO?"
 msgstr "Miért érdemes a BFO-t használni?"
 
-#: data/content/faq.html:25
+#: data/content/faq.html:32
 msgid "The BFO downloads are very small and once you have them, you'll rarely have to download more.  Even as more versions of Fedora come out, you just boot from your iso and they will appear.  Users with fast internet connections will have the best experience with BFO.  They basically replace having to regularly download large ISO images and burn them to disk."
 msgstr "A BFO letöltése igen kicsi, és ha egyszer betöltődött - ritkán kell még többet leszedni. Akárhány változata jelenik meg a Fedorának, csak ezt a képet kiírva elindítja, és megjelennek a képernyőjén. Azok a felhasználók tapasztalhatják meg a leginkább az előnyeit, akik elég gyors hálózati kapcsolattal rendelkeznek. Ők általában ezzel a lehetőséggel el is felejtik a hatalmas ISO-k letöltését, valamint a korongra való kiírását."
 
-#: data/content/faq.html:26
+#: data/content/faq.html:33
 msgid "What is required?"
 msgstr "Mi szügséges hozzá?"
 
-#: data/content/faq.html:27
+#: data/content/faq.html:34
 msgid "For the most typical setup one should have DHCP, HTTP internet access and a CD/DVD burner.  Floppy and USB images are also available."
 msgstr "A leggyakrabban alkalmazott összeállítás: kell egy DHCP, egy HTTP képes internet hozzáférés, valamint egy CD/DVD író. De ez lehet floppy vagy USB is, ezek képei is elérhetőek."
 
-#: data/content/faq.html:28
+#: data/content/faq.html:35
 msgid "Does BFO replace the installer or anaconda?"
 msgstr "BFO akkor leváltja a telepítőt vagy az anaconda-t?"
 
-#: data/content/faq.html:29
+#: data/content/faq.html:36
 msgid "Nope.  BFO is a way to load the installer via network.  Normally users download a large ISO image that contains all of the installer bits.  BFO is a smaller booting method that downloads the installer bits at runtime.  In theory with BFO one iso download can install all future versions of Fedora."
 msgstr "Nem. BFO egy mód, hogy a telepítő keretrendszert indíthassuk hálózaton keresztül. Az átlagfelhasználó hatalmas ISO képeket töltenek le, amik tartalmazzák ezt a telepítő részét is. BFO ezzel szemben, egy kisebb indítási metódus, ami a telepítőt tölti le futása alatt. Egy elképzelés szerint, BFO segítségével később telepíthetjük bármely Fedora összeállítást és a jövőbeni változatait."
 
-#: data/content/faq.html:30
+#: data/content/faq.html:37
 msgid "What about the Live CDs?"
 msgstr "Mi a helyzet a Live CD-kkel?"
 
-#: data/content/faq.html:31
+#: data/content/faq.html:38
 msgid "At this time booting Live CDs is experimental and not available.  We hope to have them available soon."
 msgstr "A jelen állapotában a live CD-k indítása csak kísérleti jelleggel működik és nem elérhető még a közösség számára. Reméljük, nemsoká elérhető lesz."
 
-#: data/content/index.html:7
-#: data/content/index.html:10
+#: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
 msgstr "boot.fedoraproject.org"
 
@@ -188,4 +204,3 @@ msgstr "Tárhely támogató"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "Támogatja a ServerBeach"
-
