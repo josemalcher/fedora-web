@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: tfpo static website\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2010-01-12 15:35-0600\n"
-"PO-Revision-Date: 2010-02-25 01:20+0100\n"
+"PO-Revision-Date: 2010-03-11 11:44+0100\n"
 "Last-Translator: Marcus Nitzschke <kenda@fedoraproject.org>\n"
 "Language-Team: Fedora Translation <fedora-trans-de@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -118,7 +118,7 @@ msgstr "Timeout: Nutzen sie den Standard oder 900"
 
 #: data/content/client-ekiga.html:33
 msgid "Enable account: Check this box to immediately register"
-msgstr "Konto aktivieren: Wählen Sie dieses Kästchen um sich sofort zu registrieren"
+msgstr "Konto aktivieren: Wählen Sie dieses Kästchen um sich sofort anzumelden"
 
 #: data/content/client-ekiga.html:37
 msgid "Select \"OK\" to return to the account screen. You can verify your settings by checking the status in the \"Status\" column."
@@ -221,11 +221,11 @@ msgstr "Einen generischen Client für Fedora Talk einrichten"
 
 #: data/content/client-generic.html:14
 msgid "This page will help you set up a generic client, such as an IP phone handset or a different softphone client, for Fedora Talk.  If you do not see a setting in your client that matches a setting below, simply skip that setting.  If you have problems, consult the <a href=\"./troubleshooting\">troubleshooting page</a>."
-msgstr ""
+msgstr "Diese Seite soll Ihnen beim Einrichten eines generischen Clients, wie einem IP-Telefon oder einem beliebigen Softphone, für Fedora Talk helfen. Wenn eine der unteren Einstellungen bei Ihnen nicht vorhanden ist, überspringen Sie sie einfach. Bei Problemen schauen Sie bei der <a href=\"./troubleshooting\">Fehlersuche</a> nach."
 
 #: data/content/client-generic.html:15
 msgid "Generic client configuration values"
-msgstr ""
+msgstr "Konfigurationsparameter für generische Clients"
 
 #: data/content/client-generic.html:17
 msgid "SIP address: <em>sip:fas_username@fedoraproject.org</em>"
@@ -407,11 +407,11 @@ msgstr "Den Fedora Community-Mitgliedern stehen mehrere VoIP-Konferenzräume zur
 
 #: data/content/conference.html:14
 msgid "Sub-Project Conference Rooms"
-msgstr "Unterprojekte-Konferenz-Räume"
+msgstr "Konferenzräume für Unterprojekte"
 
 #: data/content/conference.html:15
 msgid "The following conference bridges are reserved for the following sub-projects.  To request a bridge for your sub-project, please create a 'New Ticket' on the fedora infrastructure"
-msgstr "Die nachfolgenden Konferenz-Brücken sind für die nachfolgenden Unterprojekte reserviert. Um eine Brücke für Ihr Unterprojekt zu beantragen, eröffnen Sie ein 'Neues Ticket' bei der Fedora-Infrastrutur"
+msgstr "Die nachfolgenden Konferenz-Brücken sind für die nachfolgenden Unterprojekte reserviert. Um eine Brücke für Ihr Unterprojekt zu beantragen, eröffnen Sie ein 'Neues Ticket' bei der Fedora-Infrastruktur"
 
 #: data/content/conference.html:15
 msgid "trac instance"
@@ -457,7 +457,7 @@ msgstr "Ambassadors"
 
 #: data/content/conference.html:54
 msgid "General Conference Rooms"
-msgstr "Allgemeine Konferenz-Räume"
+msgstr "Allgemeine Konferenzräume"
 
 #: data/content/conference.html:55
 msgid "The following conference bridges can be used by anyone.  If you join a bridge and it is already in use, try another bridge."
@@ -563,11 +563,11 @@ msgstr "Ein Softphone oder IP-Telefon einrichten"
 
 #: data/content/index.html:16
 msgid "Dialing in from a land line or mobile"
-msgstr ""
+msgstr "Von einer Festnetznummer oder einem Mobiltelefon einwählen"
 
 #: data/content/index.html:17
 msgid "Those on the road, or without access to the proper equipment can use one of our dial in numbers.  Pick one near you."
-msgstr ""
+msgstr "Diejenigen die unterwegs sind, oder keinen Zugang zu geeigneter Ausrüstung haben, können eine unserer Einwahlnummern nutzen. Wählen Sie eine in ihrer Nähe."
 
 #: data/content/index.html:25
 msgid "What makes Fedora Talk work?"
@@ -575,7 +575,7 @@ msgstr "Wie funktioniert Fedora Talk?"
 
 #: data/content/index.html:26
 msgid "Fedora Talk is based on Asterisk, the premier free and open source PBX implementation that also provides a complete and scalable set of VoIP features.  As free and open source software, Asterisk fits well with the core values of Fedora."
-msgstr ""
+msgstr "Fedora Talk basiert auf Asterisk, der freien und quelloffenen PBX Implementierung, die außerdem eine große Anzahl von skalierbaren VoIP Funktionen besitzt. Als freies und quelloffenes Programm passt Asterisk perfekt zu den Grundwerten von Fedora."
 
 #: data/content/index.html:27
 msgid "Software is just one aspect of this project.  Many volunteers have come together to help configure and test the install.  Hosting and bandwidth has been provided by Server Beach.  The dial in numbers (DiDs) have been provided by Arrival Telecom.  Every aspect of this project has been community and volunteer oriented."
@@ -652,7 +652,7 @@ msgstr "Dass man sich nicht anmelden kann, ist ein häufiges Problem. Probieren 
 
 #: data/content/troubleshooting.html:17
 msgid "Disable your firewalls (If it starts working, then you need to re-configure your firewall) - specifically you need to allow UDP port 5060 (for SIP) and ports 10000-10500 (for RTP, the protocol that carries the actual audio)"
-msgstr ""
+msgstr "Deaktivieren Sie ihre Firewall (sollte die Verbindung nun funktionieren müssen Sie ihre Firewall neu konfigurieren) - versichern Sie sich, dass sie den UDP-Port 5060 (für SIP) und die Ports 10000-10500 (für RTP, das Protokoll, welches sich um den Klang kümmert) freigegeben haben."
 
 #: data/content/troubleshooting.html:18
 msgid "Try to connect to @talk.fedoraproject.org instead of @fedoraproject.org. If this works, make sure that your client is set up to use DNS SRV records"
@@ -660,7 +660,7 @@ msgstr "Versuchen Sie sich statt @fedoraproject.org zu @talk.fedoraproject.org z
 
 #: data/content/troubleshooting.html:19
 msgid "Sometimes a client (like ekiga) might bind to an interface it shouldn't. Please verify it is using a valid and proper interface."
-msgstr ""
+msgstr "Manchmal kann es vorkommen, dass ein Programm (wie Ekiga) sich an eine falsche Netzwerk-Schnittstelle bindet. Gehen Sie sicher, dass eine vorhandene, korrekte Schnittstelle genutzt wird."
 
 #: data/content/troubleshooting.html:21
 #, fuzzy
@@ -687,7 +687,7 @@ msgstr "Ich kann nichts hören"
 
 #: data/content/troubleshooting.html:28
 msgid "First ensure that you have your audio configured properly and it isn't muted. Just try to play a song or find some other means to make noise. These issues are typically on the client. To test audio please join"
-msgstr ""
+msgstr "Gehen Sie zunächst sicher, dass ihre Audio-Einstellungen korrekt sind und die Ausgabe nicht stumm ist. Versuchen Sie ein Lied oder irgendetwas was Geräusche macht abzuspielen. Normalerweise liegen diese Probleme bei dem Client. Rufen Sie zum Testen folgenden Kontakt an:"
 
 #: data/content/troubleshooting.html:29
 msgid "or extension 1001"
@@ -703,15 +703,15 @@ msgstr "Niemand kann mich hören"
 
 #: data/content/troubleshooting.html:33
 msgid "You should verify that the system is properly receiving audio from the microphone. In GNOME, you can do this by right clicking on the speaker icon in the notification area, going to the input tab, and verifying the input level that you are seeing. If you have multiple microphones, for example a USB headset and an internal microphone, make sure that the raido button is selected on the correct one."
-msgstr ""
+msgstr "Sie sollten sichergehen, dass ihr System Audiosignale von dem Mikrofon empfängt. Bei GNOME können Sie dies über einen Rechtsklick auf das Lautsprecher-Symbol im Benachrichtigungsfeld feststellen. Gehen Sie zum Reiter Eingabe und kontrollieren Sie das Aufnahmeniveau. Wenn Sie mehrere Mikrofone, wie z.Bsp. ein USB Headset und ein internes Mikrofon haben, sollten sie kontrollieren ob das richtige ausgewählt ist."
 
 #: data/content/troubleshooting.html:34
 msgid "You can also use the echo service, described at <a href=\"./verify\">this page</a> in order to assure the proper functioning of your hardware and software. You should also check the level of the audio coming back at you through the echo if people complain that you are too loud or too soft."
-msgstr ""
+msgstr "Sie können auch den Echo-Dienst nutzen, der auf <a href=\"./verify\">dieser Seite</a> beschrieben ist, um die Funktion ihrer Hardware und Software zu testen. Desweiteren sollten sie die eingehende Lautstärke prüfen, falls man Ihnen sagt sie wären zu laut oder zu leise."
 
 #: data/content/troubleshooting.html:35
 msgid "Getting a microphone configured properly is a bit of an art. Ensure that you can record your own audio using something like audacity. If you'd like to test your mic, just stop by #fedora-admin on irc.freenode.net and we'll be happy to assist."
-msgstr ""
+msgstr "Ein Mikrofon richtig einzustellen ist eine kleine Kunst. Vergewissern Sie sich anhand von Programmen wie audacity, dass Sie ihre eigenen Audiosignale empfangen. Wenn Sie ihr Mikrofon testen wollen, kommen Sie bei #fedora-admin auf irc.freenode.net vorbei und wir werden Ihnen gerne helfen."
 
 #: data/content/troubleshooting.html:37
 msgid "There is an echo on a conference bridge"
@@ -755,7 +755,7 @@ msgstr "Sie haben immer noch Probleme?"
 
 #: data/content/troubleshooting.html:50
 msgid "If you're still having problems after following the instructions on this page, feel free to come by <a href=irc://irc.freenode.net/fedora-admin>#fedora-admin</a> on irc.freenode.net and we'll be happy to help you out! For assistance in getting on IRC, see "
-msgstr ""
+msgstr "Wenn Sie auch nach der Fehlersuche auf dieser Seite immer noch Probleme haben, schauen Sie doch bei <a href=irc://irc.freenode.net/fedora-admin>#fedora-admin</a> auf irc.freenode.net vorbei und wir freuen uns ihnen weiterhelfen zu können. Für Hilfe bezüglich IRC, besuchen Sie "
 
 #: data/content/usage.html:7
 msgid "Usage - Fedora Talk"
