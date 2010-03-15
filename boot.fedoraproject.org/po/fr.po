@@ -3,15 +3,14 @@
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2010-01-22 14:14-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Charles-Antoine Couret cacouret@wanadoo.fr\n"
+"Language-Team: French trans-fr@lists.fedoraproject.org\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,43 +18,43 @@ msgstr ""
 
 #: data/content/download.html:7
 msgid "Download - boot.fedoraproject.org"
-msgstr ""
+msgstr "Télécharger - boot.fedoraproject.org"
 
 #: data/content/download.html:12
 msgid "Download ISO: "
-msgstr ""
+msgstr "Télécharger une image ISO : "
 
 #: data/content/download.html:12
 msgid "DVD/CD"
-msgstr ""
+msgstr "DVD/CD"
 
 #: data/content/download.html:13
 msgid "Download USB: "
-msgstr ""
+msgstr "Téléchargement pour USB : "
 
 #: data/content/download.html:13
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 #: data/content/download.html:14
 msgid "Download Floppy: "
-msgstr ""
+msgstr "Téléchargement pour disquette : "
 
 #: data/content/download.html:14
 msgid "Floppy"
-msgstr ""
+msgstr "Disquette"
 
 #: data/content/faq.html:7
 msgid "FAQs - boot.fedoraproject.org"
-msgstr ""
+msgstr "FAQ - boot.fedoraproject.org"
 
 #: data/content/faq.html:12
 msgid "Frequently-Asked Questions"
-msgstr ""
+msgstr "Foire aux questions"
 
 #: data/content/faq.html:13
 msgid "How do I use it?"
-msgstr ""
+msgstr "Comment puis-je l'utiliser ?"
 
 #: data/content/faq.html:14
 msgid ""
@@ -64,10 +63,18 @@ msgid ""
 "you're using BFO!  Use your keyboard to select menus to run diagnostics, "
 "or boot a Fedora installer or rescue mode."
 msgstr ""
+"Commencez par télécharger l'une des images disponibles, telle que "
+"l'image ISO par exemple. Gravez cette image sur un CD ou DVD puis "
+"démarrez dessus. Vous venez de débuter votre utilisation de BFO ! À "
+"l'aide de votre clavier, sélectionnez une entrée du menu pour effectuer "
+"des tests, démarrer le programme d'installation de Fedora ou pour "
+"lancer le mode de secours."
+
+
 
 #: data/content/faq.html:15
 msgid "How does it work?"
-msgstr ""
+msgstr "Comment cela fonctionne-il ?"
 
 #: data/content/faq.html:16
 msgid ""
@@ -77,24 +84,34 @@ msgid ""
 "  Latest versions support several protocols beyond just tftp.  We are "
 "using http to transfer files around.  The basic steps are as follows:"
 msgstr ""
+"BFO fut initié par boot.kernel.org et combine un ensemble de "
+"technologies récentes produisant ainsi une nouvelle pile de démarrage."
+" Toutes ces technologies sont rassemblées autour de GPXE. Si vous"
+"  connaissez déjà PXE, vous ne serez pas dépaysé. Les dernières versions"
+"prennent en charge plusieurs protocoles en plus de tftp. Nous utilisons "
+"HTTP pour transférer les fichiers. Les étapes ci-dessous résument le "
+"fonctionnement général."
+
 
 #: data/content/faq.html:18
 msgid "Download and boot from the boot.fedoraproject.org media."
-msgstr ""
+msgstr "Télécharger et booter depuis le média boot.fedoraproject.org."
 
 #: data/content/faq.html:19
 msgid "Boot from the downloaded iso/disk image."
-msgstr ""
+msgstr "Démarrer depuis le média ou l'image ISO téléchargé."
 
 #: data/content/faq.html:20
 msgid "The disk image will then boot and configure network."
-msgstr ""
+msgstr "L'image disque va alors démarrer et configurer le réseau."
 
 #: data/content/faq.html:21
 msgid ""
 "After network is configured, it will go out to our boot.fedoraproject.org"
 " website and download the menus and other prompts from us"
 msgstr ""
+"Une fois le réseau configuré, il va rediriger vers notre site boot.fedoraproject.org"
+" et télécharger les menus et nos autres invites de commandes"
 
 #: data/content/faq.html:22
 msgid ""
@@ -102,10 +119,13 @@ msgid ""
 " a selection (like install Fedora 12) the regular boot process takes over"
 " just as it would had you booted from normal local media."
 msgstr ""
+"Ces menus de démarrage vont s'afficher à l'utilisateur pour une sélection. Après"
+" une sélection (comme installer Fedora 12) le processus de démarrage prend"
+" le relais comme si vous avez démarré à partir d'un support local normal."
 
 #: data/content/faq.html:24
 msgid "Why should I use BFO?"
-msgstr ""
+msgstr "Pourquoi devrais-je utiliser BFO ?"
 
 #: data/content/faq.html:25
 msgid ""
@@ -116,20 +136,32 @@ msgid ""
 "replace having to regularly download large ISO images and burn them to "
 "disk."
 msgstr ""
+"Les téléchargements de BFO sont de taille très réduite et une fois "
+"récupérés, vous n'aurez plus besoin de les télécharger à nouveau. Même "
+"si de nouvelles versions de Fedora sont disponibles, vous n'avez qu'à "
+"démarrer sur votre média BFO et les nouvelles versions. Les "
+"utilisateurs disposant d'une connexion internet rapide profiteront "
+"davantage de BFO. Ces images évitent de télécharger régulièrement des "
+"images ISO et de les graver sur des disques."
+
 
 #: data/content/faq.html:26
 msgid "What is required?"
-msgstr ""
+msgstr "De quoi ai-je besoin ?"
 
 #: data/content/faq.html:27
 msgid ""
 "For the most typical setup one should have DHCP, HTTP internet access and"
 " a CD/DVD burner.  Floppy and USB images are also available."
 msgstr ""
+"La plupart des installations nécessitent DHCP, un accès internet en"
+" HTTP et un graveur de CD/DVD. Les images pour disquettes ou "
+"périphérique de stockage USB sont également disponibles."
+
 
 #: data/content/faq.html:28
 msgid "Does BFO replace the installer or anaconda?"
-msgstr ""
+msgstr "BFO remplace-t-il le programme d'installation ou anaconda ?"
 
 #: data/content/faq.html:29
 msgid ""
@@ -139,20 +171,29 @@ msgid ""
 "  In theory with BFO one iso download can install all future versions of "
 "Fedora."
 msgstr ""
+"Pas du tout. BFO est une méthode d'installation par le réseau. "
+"D'habitude, les utilisateurs télécharge une image ISO d'une taille "
+"importante qui contient le programme d'installation. BFO propose des "
+"images de taille très réduite qui télécharge le programme "
+"d'installation. En théorie, une seule image BFO vous permet d'installer "
+"n'importe quelle version de Fedora."
+
 
 #: data/content/faq.html:30
 msgid "What about the Live CDs?"
-msgstr ""
+msgstr "Qu'en est-il des Live CD ?"
 
 #: data/content/faq.html:31
 msgid ""
 "At this time booting Live CDs is experimental and not available.  We hope"
 " to have them available soon."
 msgstr ""
+"Actuellement le démarrage par Live CD est expérimental et non disponible. Nous espérons"
+" le rendre disponible bientôt."
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
-msgstr ""
+msgstr "boot.fedoraproject.org"
 
 #: data/content/index.html:11
 msgid ""
@@ -160,36 +201,44 @@ msgid ""
 "install or other types of media via the network.  It works similarly to a"
 " pxeboot environment."
 msgstr ""
+"boot.fedoraproject.org (BFO) est un moyen de démarrer des machines "
+"hôtes pour démarrer une installation ou tout autre type de média par le"
+" réseau. Le fonctionne est semblable à un environnement de démarrage PXE."
+
 
 #: data/content/index.html:12
 msgid "BFO welcome screen"
-msgstr ""
+msgstr "écran d'accueil de BFO"
 
 #: data/content/index.html:13
 msgid "BFO is based on the work of the BKO - "
-msgstr ""
+msgstr "BFO est basé sur le travail de BKO - "
 
 #: data/templates/foot.html:9
 msgid ""
 "&copy; 2010 Red Hat, Inc. and others.  Please send any comments or "
 "corrections to the <a "
 "href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
-msgstr ""
+msgstr 
+"&copy; 2010 Red Hat, Inc. et autres. Merci d'envoyer tout commentaire ou "
+"correction à l'<a href=\"mailto:%s\">équipe des sites web</a>"
 
 #: data/templates/foot.html:12
 msgid ""
 "The Fedora Project is maintained and driven by the community and "
 "sponsored by Red Hat.  This is a community maintained site.  Red Hat is "
 "not responsible for content."
-msgstr ""
+msgstr "Le Projet Fedora est maintenu et dirigé par la communauté et "
+"sponsorisé par Red Hat. Ce site est également maintenu par la communauté. Red Hat n'est pas" 
+" responsable de son contenu."
 
 #: data/templates/foot.html:15
 msgid "Sponsors"
-msgstr ""
+msgstr "Sponsors"
 
 #: data/templates/foot.html:16
 msgid "<a href=\"http://fedoraproject.org/wiki/Legal:Main\">Legal</a>"
-msgstr ""
+msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Main\">Légal</a>"
 
 #: data/templates/foot.html:17
 msgid ""
@@ -197,36 +246,39 @@ msgid ""
 "href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Trademark"
 " Guidelines</a>"
 msgstr ""
+"<a "
+"href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Informations sur"
+" la marque</a>"
 
 #: data/templates/head.html:7
 msgid "Fedora"
-msgstr ""
+msgstr "Fedora"
 
 #: data/templates/sidebar.html:10
 msgid "Navigation"
-msgstr ""
+msgstr "Navigation"
 
 #: data/templates/sidebar.html:12
 msgid "Home"
-msgstr ""
+msgstr "Accueil"
 
 #: data/templates/sidebar.html:13
 msgid "Download"
-msgstr ""
+msgstr "Télécharger"
 
 #: data/templates/sidebar.html:14
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: data/templates/sidebar.html:16
 msgid "Website Language"
-msgstr ""
+msgstr "Langue du site"
 
 #: data/templates/sidebar.html:24
 msgid "Hosting Sponsor"
-msgstr ""
+msgstr "Sponsor de l'hébergement"
 
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
-msgstr ""
+msgstr "Sponsorisé par ServerBeach"
 
