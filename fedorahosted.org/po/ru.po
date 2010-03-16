@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: ru\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2010-01-12 15:30-0600\n"
-"PO-Revision-Date: 2010-03-17 02:11+0800\n"
+"PO-Revision-Date: 2010-03-17 02:56+0800\n"
 "Last-Translator: Misha Shnurapet <zayzayats@yandex.ru>\n"
 "Language-Team: RU <Fedora-trans-ru@redhat.com>\n"
 "MIME-Version: 1.0\n"
@@ -39,11 +39,11 @@ msgstr "Запрошенный проект отсутствует в Fedora Hos
 
 #: data/content/about.html:7
 msgid "About - Fedora Hosted"
-msgstr "О проекте — Fedora Hosted"
+msgstr "О ресурсе — Fedora Hosted"
 
 #: data/content/about.html:12
 msgid "About Fedora Hosted"
-msgstr "О проекте Fedora Hosted"
+msgstr "О ресурсе Fedora Hosted"
 
 #: data/content/about.html:13
 msgid "Fedora Hosted is a <a href=\"http://fedoraproject.org\">Fedora Project</a>-sponsored way for developers to host their code and collaborate online. We provide each project with source control via git, Mercurial, bzr, and others, as well as a bug tracker and wiki via Trac."
@@ -57,10 +57,11 @@ msgstr "Ваш новый проект всего в одной <a href=\"new\">
 msgid "FAQs - Fedora Hosted"
 msgstr "Вопросы и ответы — Fedora Hosted"
 
+# Пункт в одну строчку
 #: data/content/faq.html:12
 #: data/templates/sidebar.html:13
 msgid "Frequently-Asked Questions"
-msgstr "Часто Задаваемые Вопросы"
+msgstr "Частые вопросы"
 
 #: data/content/faq.html:13
 msgid "What is Fedora Hosted?"
@@ -72,7 +73,7 @@ msgstr "Fedora Hosted — это возможность размещения и�
 
 #: data/content/faq.html:15
 msgid "How can I request a new project?"
-msgstr "Как я могу подать заявку на создание нового проекта?"
+msgstr "Как подать заявку на создание нового проекта?"
 
 #: data/content/faq.html:16
 msgid "File a <a href=\"new\">work ticket</a> with the Fedora Infrastructure team."
@@ -92,7 +93,7 @@ msgstr "Как получить учетную запись Fedora Hosted?"
 
 #: data/content/faq.html:20
 msgid "Your normal Fedora Project account works with Fedora Hosted. Simply <a href=\"https://admin.fedoraproject.org/accounts/\">apply</a> for a Fedora Project account if you haven't already. Do note that you must sign a Contributor License Agreement with the Fedora Project in order to contribute code."
-msgstr "Обычная учетная запись Fedora будет работать и для Fedora Hosted. Просто <a href=\"https://admin.fedoraproject.org/accounts/\">создайте</a> учетную запись Fedora, если у вас ее еще нет. Обратите внимание, что предварительно потребуется принять условия лицензионного соглашения."
+msgstr "В Fedora Hosted действуют учетные записи, созданные на fedoraproject.org. Просто <a href=\"https://admin.fedoraproject.org/accounts/\">создайте</a> учетную запись Fedora, если у вас ее еще нет. Обратите внимание, что предварительно потребуется принять условия лицензионного соглашения."
 
 #: data/content/faq.html:21
 msgid "How can I publish archive releases (tgz, zip, etc) for my project?"
@@ -124,7 +125,7 @@ msgstr "Как вносить изменения?"
 
 #: data/content/faq.html:28
 msgid "You should <a href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for the commit group of the project, which should be <code>&lt;scm&gt;&lt;project&gt;</code>, e.g. for the desktop-effects project, apply to the <code>gitdesktop-effects</code> group."
-msgstr "Вам следует <a href=\"https://admin.fedoraproject.org/accounts/group/list\">подать заявку</a>  на участие в группе, вносящей изменения в этот проект. Ее название будет соответствовать образцу: <code>&lt;scm&gt;&lt;project&gt;</code>. То есть, например, для того, чтобы вносить изменения в проект «desktop-effects», нужно вступить в группу <code>gitdesktop-effects</code>."
+msgstr "Вам следует <a href=\"https://admin.fedoraproject.org/accounts/group/list\">подать заявку</a>  на участие в группе, вносящей изменения в этот проект. Ее название формируется по образцу: <code>&lt;scm&gt;&lt;project&gt;</code>. То есть, например, для того, чтобы вносить изменения в проект «desktop-effects», нужно вступить в группу <code>gitdesktop-effects</code>."
 
 #: data/content/faq.html:29
 msgid "While I wait for my repository to be created, can I work on my code elsewhere?"
@@ -136,11 +137,11 @@ msgstr "Конечно. На странице <a href=\"http://fedoraproject.org
 
 #: data/content/faq.html:31
 msgid "Why does hg tells me the repository doesn't exist even though I know I have the correct URL?"
-msgstr "Почему hg говорит о том, что репозитория не существует, когда я точно знаю, что URL правильный?"
+msgstr "Почему hg сообщает, что репозитория не существует, когда я точно знаю, что URL действителен?"
 
 #: data/content/faq.html:32
 msgid "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a delimiter between hostname and path and a second \"/\" as the root of the filesystem path.  For instance, if you're accessing the repository for authconfig you need to use \"hg clone ssh://hg.fedoraproject.org//hg/authconfig\""
-msgstr "К сожалению, hg не использует реальные URL. Вам нужно использовать один «/» для разделения домена и пути и второй «/» для указания в корневого каталога. В частности, для того, чтобы получить доступ к «authconfig», нужно указать: «hg clone ssh://hg.fedoraproject.org//hg/authconfig»."
+msgstr "К сожалению, hg не принимает простые URL. Вам нужно использовать «/» для разделения домена и пути и «/» для указания корневого каталога. В частности, для того, чтобы получить доступ к «authconfig», нужно указать: «hg clone ssh://hg.fedoraproject.org//hg/authconfig»."
 
 #: data/content/index.html:10
 msgid "Available Projects"
