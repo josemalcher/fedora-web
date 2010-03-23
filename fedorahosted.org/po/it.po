@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2010-01-12 15:30-0600\n"
-"PO-Revision-Date: 2010-03-21 19:18+0000\n"
+"PO-Revision-Date: 2010-03-23 19:22+0000\n"
 "Last-Translator: Francesco Tombolini <tombo@adamantio.net>\n"
 "Language-Team: Italian <trans-it@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgstr "Hosted Projects - Fedora Hosted"
 
 #: data/content/410.html:12
 msgid "No such project."
-msgstr "Nessun progetto."
+msgstr "Progetto non presente."
 
 #: data/content/410.html:14
 msgid "The requested project does not exist on Fedora Hosted."
@@ -57,8 +57,7 @@ msgstr ""
 
 #: data/content/about.html:14
 msgid "Your new project is just a <a href=\"new\">work ticket</a> away."
-msgstr ""
-"Il tuo nuovo progetto è distante solo una <a href=\"new\">segnalazione</a>."
+msgstr "Il tuo nuovo progetto dista solo una <a href=\"new\">segnalazione</a>."
 
 #: data/content/faq.html:7
 msgid "FAQs - Fedora Hosted"
@@ -79,8 +78,8 @@ msgid ""
 "and collaborate online."
 msgstr ""
 "Fedora Hosted è un progetto sponsorizzato dal <a href=\"http://fedoraproject."
-"org/\">Fedora Project</a> per consentire ai principali sviluppatori di "
-"ospitare il loro codice e collaborare online."
+"org/\">Fedora Project</a> per consentire agli sviluppatori di ospitare il "
+"loro codice e collaborare online."
 
 #: data/content/faq.html:15
 msgid "How can I request a new project?"
@@ -90,7 +89,7 @@ msgstr "Come posso richiedere un nuovo progetto?"
 msgid ""
 "File a <a href=\"new\">work ticket</a> with the Fedora Infrastructure team."
 msgstr ""
-"Invia un <a href=\"new\">work ticket</a> al Fedora Infrastructure team."
+"Invia una <a href=\"new\">segnalazione</a> al team Fedora Infrastructure."
 
 #: data/content/faq.html:17
 msgid "Where can I go for help?"
@@ -108,7 +107,7 @@ msgstr ""
 "IRC <a href=\"irc://irc.freenode.net/#fedora-admin\"><code>#fedora-admin</"
 "code></a> su <a href=\"http://www.freenode.net/\">Freenode</a> o <a href="
 "\"https://fedorahosted.org/fedora-infrastructure/\">aprire un ticket</a> al "
-"Fedora Infrastructure team."
+"team Fedora Infrastructure."
 
 #: data/content/faq.html:19
 msgid "How can I get a Fedora Hosted account?"
@@ -121,10 +120,11 @@ msgid ""
 "account if you haven't already. Do note that you must sign a Contributor "
 "License Agreement with the Fedora Project in order to contribute code."
 msgstr ""
-"Il vostro normale account Fedora Project funziona anche con Fedora Hosted. "
-"Semplicemente <a href=\"https://admin.fedoraproject.org/accounts/\">aderite</"
-"a> ad un account Fedora Project se non lo avete già. E' da notare che "
-"dovrete firmare una Contributor License Agreement al Fedora Project per "
+"Il normale account Fedora Project funziona anche con Fedora Hosted. "
+"<a href=\"https://admin.fedoraproject.org/accounts/\">Aderite</"
+"a> semplicemente ad un account Fedora Project, se non l'avete già. Notate "
+"che "
+"dovrete firmare la Contributor License Agreement al Fedora Project per "
 "poter contribuire con il codice."
 
 #: data/content/faq.html:21
@@ -181,7 +181,7 @@ msgstr ""
 
 #: data/content/faq.html:27
 msgid "How do I get permission to commit to a project?"
-msgstr "Come posso ottenere i permessi per sottomettere un progetto?"
+msgstr "Come posso ottenere i permessi per inviare un progetto?"
 
 #: data/content/faq.html:28
 msgid ""
@@ -190,18 +190,18 @@ msgid ""
 "scm&gt;&lt;project&gt;</code>, e.g. for the desktop-effects project, apply "
 "to the <code>gitdesktop-effects</code> group."
 msgstr ""
-"Ti devi <a href=\"https://admin.fedoraproject.org/accounts/group/list"
-"\">iscrivere</a> al gruppo commit del progetto, che dovrebbe essere "
+"Dovete <a href=\"https://admin.fedoraproject.org/accounts/group/list"
+"\">iscrivervi</a> al gruppo commit del progetto, che dovrebbe essere "
 "<code>&lt;scm&gt;&lt;project&gt;</code>, es. per il progetto desktop-"
-"effects, iscriversi al gruppo <code>gitdesktop-effects</code>."
+"effects, iscrivetevi al gruppo <code>gitdesktop-effects</code>."
 
 #: data/content/faq.html:29
 msgid ""
 "While I wait for my repository to be created, can I work on my code "
 "elsewhere?"
 msgstr ""
-"Mentre si aspetta la creazione del proprio repository, si può lavorare "
-"comunque sul codice?"
+"Mentre aspetto la creazione del mio repository, posso lavorare "
+"sul mio codice altrove?"
 
 #: data/content/faq.html:30
 msgid ""
@@ -210,7 +210,7 @@ msgid ""
 "org</a> for instructions on how to set up a temporary repository in your "
 "fedorapeople.org space."
 msgstr ""
-"Certamente. Visitare la pagina <a href=\"http://fedoraproject.org/wiki/"
+"Certamente. Visitate la pagina <a href=\"http://fedoraproject.org/wiki/"
 "Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/"
 "Infrastructure/fedorapeople.org</a> per ottenere le istruzioni su come "
 "allestire un repository temporaneo nel proprio spazio fedorapeople.org"
@@ -231,10 +231,11 @@ msgid ""
 "authconfig you need to use \"hg clone ssh://hg.fedoraproject.org//hg/"
 "authconfig\""
 msgstr ""
-"Sfortunatamente hg non usa l'URL corretto.  Si dovrebbe usare \"/\" come "
-"delimitatore fra nome host e percorso e un secondo \"/\" per il percorso del "
-"filesystem principale.  Per intenderci, se si vuole accedere al repositorio "
-"di authconfig devi usare \"hg clone ssh://hg.fedoraproject.org//hg/authconfig"
+"Sfortunatamente hg non usa veri URL.  Si dovrebbe usare \"/\" come "
+"delimitatore fra nome host e percorso e un secondo \"/\" come radice del "
+"filesystem principale.  Ad esempio, se volete accedere al repositorio "
+"di authconfig dovete usare \"hg clone ssh://hg.fedoraproject."
+"org//hg/authconfig"
 "\""
 
 #: data/content/index.html:10
@@ -268,13 +269,13 @@ msgstr "URL auth"
 #: data/content/index.html:33
 msgid "Right-click and copy the anonymous VCS URI to your clipboard"
 msgstr ""
-"Cliccare con il bottone destro del mouse e copiare l'URI anonimo del VCS "
+"Clicca con il bottone destro del mouse e copia l'URI anonimo del VCS "
 "nella clipboard"
 
 #: data/content/index.html:34
 msgid "Right-click and copy the authorized VCS URI to your clipboard"
 msgstr ""
-"Cliccare con il bottone destro del mouse e copiare l'URI autorizzato del VCS "
+"Clicca con il bottone destro del mouse e copia l'URI autorizzato del VCS "
 "nella clipboard"
 
 #: data/content/index.html:37
@@ -283,11 +284,11 @@ msgstr "Nessun progetto registrato in questo gruppo"
 
 #: data/content/new.html:7
 msgid "Request a New Project - Fedora Hosted"
-msgstr "Richiedere un nuovo progetto - Fedora Hosted"
+msgstr "Richiedi un nuovo progetto - Fedora Hosted"
 
 #: data/content/new.html:12
 msgid "Request a New Project"
-msgstr "Richiedere un nuovo progetto"
+msgstr "Richiedi un nuovo progetto"
 
 #: data/content/new.html:13
 msgid ""
@@ -315,12 +316,12 @@ msgid ""
 "code>."
 msgstr ""
 "<code>minor</code> a meno che questa non sia una richiesta urgente. Se non "
-"si è certi sull'urgenza della richiesta, impostare questo campo su "
+"siete certi dell'urgenza della richiesta, impostate questo campo su "
 "<code>minor</code>."
 
 #: data/content/new.html:21
 msgid "Use the following template for the full description of the ticket:"
-msgstr "Usare il seguente template per la descrizione completa del ticket:"
+msgstr "Usate il seguente modello per la descrizione completa del ticket:"
 
 #: data/content/terms.html:7
 msgid "Terms of Use - Fedora Hosted"
@@ -337,11 +338,11 @@ msgid ""
 "Response time to new project requests is typically between 1 hour and 3 "
 "days. Outages, should they occur, are handled with a much higher priority."
 msgstr ""
-"Il team Fedora Project Infrastructure fornisce servizi Fedora Hosted secondo "
-"la regola del \"best-effort\"(miglior sforzo). Molte delle persone che la "
-"amministrano sono volontari. I tempi di risposta per le richieste di nuovi "
-"progetti sono tipicamente fra 1 ora e 3 giorni. Le interruzioni, se "
-"sopraggiungono, sono gestite con una priorità notevolmente più alta."
+"Il team Fedora Project Infrastructure fornisce servizi Fedora Hosted su base "
+"\"best-effort\". Molte delle persone che l'amministrano sono volontari. I "
+"tempi di risposta per le richieste di nuovi progetti sono tipicamente fra 1 "
+"ora e 3 giorni. Le interruzioni, se "
+"sopraggiungessero, sono gestite con una priorità notevolmente più alta."
 
 #: data/content/terms.html:14
 msgid ""
@@ -373,10 +374,11 @@ msgid ""
 "code, Trac databases, and any relevant data is kept on hand so that it may "
 "be presented to the project owner in the event that a project is removed."
 msgstr ""
-"Si fa sempre il massimo per contattare sviluppatori non più presenti ed "
+"Facciamo sempre il massimo per contattare gli sviluppatori non più presenti "
+"ed "
 "assicurare che il codice, i database Trac, e qualsiasi altro dato rilevante "
-"sia lasciato sotto mano affinché possa essere presentato al proprietario del "
-"progetto nell'eventualità che un progetto sia rimosso."
+"sia disponibile affinché possa essere riconsegnato al proprietario del "
+"progetto nell'eventualità che questo venga rimosso."
 
 #: data/templates/foot.html:9
 msgid ""
@@ -445,4 +447,5 @@ msgstr "Hosting Sponsor"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "Sponsorizzato da ServerBeach"
+
 
