@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master-fedoraproject\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-03-15 23:13+0530\n"
-"PO-Revision-Date: 2009-11-17 13:38+0800\n"
-"Last-Translator: TianShixiong <tiansworld@gmail.com>\n"
+"POT-Creation-Date: 2010-03-23 18:06-0400\n"
+"PO-Revision-Date: 2010-03-23 14:50+0800\n"
+"Last-Translator: Tian Shixiong <tiansworld@gmail.com>\n"
 "Language-Team: cvsl10n\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -45,16 +45,16 @@ msgid "Legal Issues"
 msgstr "法律问题"
 
 #: data/content/contact.html:17
-#, fuzzy
 msgid "If you have any legal questions that can be discussed in public, post to the <a href=\"http://lists.fedoraproject.org/mailman/listinfo/legal\">legal</a> list, or if you have any private legal questions send a mail to legal AT fedoraproject.org."
-msgstr "如果您有任何可公开的法律问题，请发到<a href=\"http://www.redhat.com/mailman/listinfo/fedora-legal-list\">fedora-legal-list</a>，如果是私人的法律问题请发邮件至legal AT fedoraproject.org。"
+msgstr "如果您有任何可公开的法律问题，请发到<a href=\"http://lists.fedoraproject.org/mailman/listinfo/legal\">法律</a>，如果是私人的法律问题请发邮件至legal AT fedoraproject.org。"
 
 #: data/content/contact.html:19
 msgid "Press"
 msgstr "出版"
 
 #: data/content/contact.html:20
-msgid "For Press related questions, please contact <a href=\"mailto:press@fedoraproject.org\">press@fedoraproject.org</a>."
+#, fuzzy
+msgid "For Press related questions, please contact <a href=\"mailto:press@fedoraproject.org\">press@fedoraproject.org</a>.  This email address is not for general user support questions."
 msgstr "有关出版相关问题，请联系<a href=\"mailto:press@fedoraproject.org\">press@fedoraproject.org</a>。"
 
 #: data/content/contact.html:22
@@ -455,9 +455,8 @@ msgid "IRC: #fedora on irc.freenode.org"
 msgstr "IRC：#fedora on irc.freenode.org"
 
 #: data/content/get-help.html:17
-#, fuzzy
 msgid "Mailing List: <a href=\"http://lists.fedoraproject.org/mailman/listinfo/users\">users</a>"
-msgstr "邮件列表：<a href=\"http://www.redhat.com/mailman/listinfo/fedora-list\">Fedora-list</a>"
+msgstr "邮件列表：<a href=\"http://lists.fedoraproject.org/mailman/listinfo/users\">用户</a>"
 
 #: data/content/get-help.html:18
 msgid "Forum: <a href=\"http://fedoraforum.org/\">Fedora Forum</a>"
@@ -492,9 +491,8 @@ msgid "Some users prefer to take advantage of mailing lists to get help. The adv
 msgstr "有些用户喜欢利用邮件列表获取帮助。这种方式的优点在于可以发现多数用户共有的问题及解决方法，甚至是在遇到这些问题之前！同时也可以很容易地看到需要帮助的人，如果您知道答案，就可以马上帮助他。"
 
 #: data/content/get-help.html:34
-#, fuzzy
 msgid "The mailing list for end-user support with Fedora is <a href=\"http://lists.fedoraproject.org/mailman/listinfo/users\">users</a> and can be subscribed to by following that link."
-msgstr "Fedora最终用户支持的邮件列表为<a href=\"http://www.redhat.com/mailman/listinfo/fedora-list\">fedora-list</a>，可通过该链接订阅。"
+msgstr "Fedora最终用户支持的邮件列表为<a href=\"http://lists.fedoraproject.org/mailman/listinfo/users\">用户</a>，可通过链接订阅。"
 
 #: data/content/get-help.html:36
 msgid "Forum Support"
@@ -653,14 +651,12 @@ msgid "Currently used keys"
 msgstr "当前使用的密匙"
 
 #: data/content/keys.html:67
-#, fuzzy
 msgid "Download: <a href=\"https://fedoraproject.org/static/E8E40FDE.txt\">Fedora Project</a>"
-msgstr "下载：<a href=\"https://fedoraproject.org/static/0B86274E.txt\">Fedora项目</a>"
+msgstr "下载：<a href=\"https://fedoraproject.org/static/E8E40FDE.txt\">Fedora Project</a>"
 
 #: data/content/keys.html:68
-#, fuzzy
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0xE8E40FDE&op=get\">keys.gnupg.net</a>"
-msgstr "下载：<a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x0B86274E&op=get\">keys.gnupg.net</a>"
+msgstr "下载：<a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0xE8E40FDE&op=get\">keys.gnupg.net</a>"
 
 #: data/content/keys.html:80
 msgid "Download: <a href=\"https://fedoraproject.org/static/57BBCCBA.txt\">Fedora Project</a>"
@@ -812,15 +808,15 @@ msgstr "验证您下载ISO文件。"
 
 #: data/content/verify.html:12
 msgid "Please note that the <em>Hash: SHA1</em> line in the CHECKSUM file is part of the PGP signature.  It does <strong>not</strong> specify the type of hash used to verify the .iso files."
-msgstr ""
+msgstr "请注意CHECKSUM文件中的<em>Hash: SHA1</em>行是PGP签名的一部分。它<strong>不</strong>指定用于验证.iso文件的hash类型。"
 
 #: data/content/verify.html:15
 msgid "Windows user?  Follow <a href=\"http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html\">these instructions</a> instead."
 msgstr "Windows用户吗？请参考<a href=\"http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html\">这些说明</a>。"
 
 #: data/content/verify.html:18
-msgid "Once you have downloaded an ISO, verify it for security and integrity.  If you downloaded your ISO via BitTorrent, the file has already been verified as part of the download process (just make sure that you got the torrent from <a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a>).  Otherwise, to verify your ISO, start by downloading the proper CHECKSUM file into the same directory as the ISO:"
-msgstr "下载ISO文件后，要验证它的安全性和完整性。如果您通过BitTorrent下载了ISO文件，那么验证已作为下载过程的一部分而完成(只要确保您从<a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a>获得种子)。否则，您应下载对应的CHECKSUM文件到ISO文件所在目录然后进行验证："
+msgid "Once you have downloaded an ISO, verify it for security and integrity.  To verify your ISO, start by downloading the proper CHECKSUM file into the same directory as the ISO:"
+msgstr ""
 
 #: data/content/verify.html:20
 msgid "Install DVD / Rescue CD"
@@ -860,7 +856,6 @@ msgid "Finally, now that the CHECKSUM file has been verified, check that the ISO
 msgstr "现在CHECKSUM文件已通过验证，检查ISO文件是否符合："
 
 #: data/content/verify.html:56
-#, fuzzy
 msgid "If the output states that the file is valid, then you're good to go!"
 msgstr "如果结果显示文件有效，那您就可以继续了！"
 
@@ -901,9 +896,9 @@ msgid "Download Fedora!"
 msgstr "下载Fedora！"
 
 #: data/templates/foot.html:9
-#, fuzzy, python-format
+#, python-format
 msgid "&copy; 2010 Red Hat, Inc. and others.  For comments or queries, please <a href=\"%s/%s/contact\">contact us</a>."
-msgstr "&copy; 2009 红帽公司及其它。任何建议或更正请<a href=\"%s/%s/contact\">联系我们</a>。"
+msgstr "&copy; 2010 红帽公司及其它。任何建议或更正请 <a href=\"%s/%s/contact\">联系我们</a>。"
 
 #: data/templates/foot.html:12
 msgid "The Fedora Project is maintained and driven by the community and sponsored by Red Hat.  This is a community maintained site.  Red Hat is not responsible for content."
@@ -994,9 +989,11 @@ msgid "Website Language"
 msgstr "网站语言"
 
 #: data/templates/sidebar.html:37
-#, fuzzy
 msgid "Hosting Sponsor"
-msgstr "赞助者"
+msgstr "主机赞助商"
+
+#~ msgid "Once you have downloaded an ISO, verify it for security and integrity.  If you downloaded your ISO via BitTorrent, the file has already been verified as part of the download process (just make sure that you got the torrent from <a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a>).  Otherwise, to verify your ISO, start by downloading the proper CHECKSUM file into the same directory as the ISO:"
+#~ msgstr "下载ISO文件后，要验证它的安全性和完整性。如果您通过BitTorrent下载了ISO文件，那么验证已作为下载过程的一部分而完成(只要确保您从<a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a>获得种子)。否则，您应下载对应的CHECKSUM文件到ISO文件所在目录然后进行验证："
 
 #~ msgid "Did someone say... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;?"
 #~ msgstr "有人说……？&ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;?"
