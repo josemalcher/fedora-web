@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master-fedoraproject.ta\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2009-10-29 14:55-0400\n"
+"POT-Creation-Date: 2010-04-09 19:13-0500\n"
 "PO-Revision-Date: 2009-11-10 15:33+0530\n"
 "Last-Translator: I. Felix <ifelix@redhat.com>\n"
 "Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
@@ -46,7 +46,8 @@ msgid "Legal Issues"
 msgstr "சட்ட சிக்கல்கள்"
 
 #: data/content/contact.html:17
-msgid "If you have any legal questions that can be discussed in public, post to <a href=\"http://www.redhat.com/mailman/listinfo/fedora-legal-list\">fedora-legal-list</a> or if you have any private legal questions send a mail to legal AT fedoraproject.org."
+#, fuzzy
+msgid "If you have any legal questions that can be discussed in public, post to the <a href=\"http://lists.fedoraproject.org/mailman/listinfo/legal\">legal</a> list, or if you have any private legal questions send a mail to legal AT fedoraproject.org."
 msgstr "பொதுவில் உங்களுக்கு ஒரு சட்டம் சார்ந்த வினாவை விவாதக்க வேண்டுமென்றால், <a href=\"http://www.redhat.com/mailman/listinfo/fedora-legal-list\">fedora-legal-list</a>இல் அஞ்சலிடவும் அல்லது ஏதாவது சட்டம் சார்ந்த தனிப்பட்ட வினாக்கள் இருந்தல் legal AT fedoraproject.orgக்கு அஞ்சல் செய்யவும்."
 
 #: data/content/contact.html:19
@@ -101,19 +102,12 @@ msgstr "வேறு தொடர்புகள்"
 msgid "For a list of other contacts please see the <a href=\"https://fedoraproject.org/wiki/Contact\">Contact page on the Wiki</a>."
 msgstr "வேறு தொடர்புகளுக்கான பட்டியல் இருந்தால், <a href=\"https://fedoraproject.org/wiki/Contact\">விக்கியில் தொடர்பு பக்கத்தைப் </a> பார்க்கவும்."
 
-#: data/content/counter.html:7
-#: data/content/get-fedora-all.html:7
-#: data/content/get-fedora-kde.html:7
-#: data/content/get-fedora-ppc.html:7
-#: data/content/get-fedora.html:7
-#: data/content/get-help.html:7
-#: data/content/get-prerelease.html:7
-#: data/content/index.html:7
-#: data/content/join-fedora.html:7
-#: data/content/keys.html:7
-#: data/content/rss.html:7
-#: data/content/sponsors.html:7
-#: data/content/verify.html:7
+#: data/content/counter.html:7 data/content/get-fedora-all.html:7
+#: data/content/get-fedora-kde.html:7 data/content/get-fedora-ppc.html:7
+#: data/content/get-fedora.html:7 data/content/get-help.html:7
+#: data/content/index.html:7 data/content/join-fedora.html:7
+#: data/content/keys.html:7 data/content/rss.html:7
+#: data/content/sponsors.html:7 data/content/verify.html:7
 #: data/content/e/404.html:7
 msgid "Fedora Project"
 msgstr "Fedora திட்டம்"
@@ -130,430 +124,319 @@ msgstr "ஒரு Fedora வெளியீடு கவுண்டரை உ�
 msgid "The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, hu, is, it, pt_BR, ru, and tr are supported.  When no language is specified, English will be used."
 msgstr "மொழி அளவுரு பல மொழிகளில் கவுண்டர்களை காட்டுவதை மாற்றலாம். தற்போது, மதிப்புகள் de, en, hu, is, it, மற்றும் pt_BR சேவை உள்ளது. எந்த மொழியும் குறிப்பிடப்படவில்லையெனில், ஆங்கிலம் பயன்படுத்தப்படும்."
 
-#: data/content/get-fedora-all.html:13
-#: data/content/get-fedora-kde.html:11
+#: data/content/get-fedora-all.html:13 data/content/get-fedora-kde.html:11
 #: data/content/get-fedora-ppc.html:11
 msgid "&#8592; Back to the main \"Get Fedora\" page"
 msgstr "&#8592; முதன்மை \"Fedora பெறுதல்\" பக்கத்திற்கு செல்லுதல்"
 
-#: data/content/get-fedora-all.html:15
-#: data/content/get-fedora-kde.html:13
-#: data/content/get-fedora-ppc.html:13
-#: data/content/get-fedora.html:11
-#: data/content/get-prerelease.html:12
+#: data/content/get-fedora-all.html:15 data/content/get-fedora-kde.html:13
+#: data/content/get-fedora-ppc.html:13 data/content/get-fedora.html:11
 msgid "Fedora, For You."
 msgstr "Fedora, உங்களுக்கு."
 
-#: data/content/get-fedora-all.html:16
-#: data/content/get-prerelease.html:14
-#, python-format
-msgid "After downloading an ISO, <a href=\"%s/%s/verify\">verify</a> it."
+#: data/content/get-fedora-all.html:16 data/content/get-prerelease.html:14
+#, fuzzy, python-format
+msgid "After downloading an ISO, <a href=\"https://fedoraproject.org%s/%s/verify\">verify</a> it."
 msgstr "ஒரு ISOஐ பதிவிறக்கிய பின், அதனை <a href=\"%s/%s/verify\">சரிபார்க்கவும்</a>."
 
-#: data/content/get-fedora-all.html:17
-#: data/content/get-prerelease.html:15
+#: data/content/get-fedora-all.html:17 data/content/get-prerelease.html:15
 msgid "Install Media"
 msgstr "நிறுவல் ஊடகம்"
 
-#: data/content/get-fedora-all.html:20
-#: data/content/get-fedora-all.html:87
-#: data/content/get-fedora-all.html:114
-#: data/content/get-prerelease.html:18
-#: data/content/get-prerelease.html:51
-#: data/content/get-prerelease.html:69
+#: data/content/get-fedora-all.html:20 data/content/get-fedora-all.html:87
+#: data/content/get-fedora-all.html:114 data/content/get-prerelease.html:18
+#: data/content/get-prerelease.html:46 data/content/get-prerelease.html:64
 msgid "BitTorrent"
 msgstr "BitTorrent"
 
-#: data/content/get-fedora-all.html:22
-#: data/content/get-fedora-all.html:26
-#: data/content/get-fedora-all.html:35
-#: data/content/get-fedora-all.html:39
-#: data/content/get-fedora-all.html:43
-#: data/content/get-fedora-all.html:51
-#: data/content/get-fedora-all.html:60
-#: data/content/get-fedora-all.html:78
-#: data/content/get-prerelease.html:20
-#: data/content/get-prerelease.html:23
-#: data/content/get-prerelease.html:31
-#: data/content/get-prerelease.html:34
-#: data/content/get-prerelease.html:42
+#: data/content/get-fedora-all.html:22 data/content/get-fedora-all.html:26
+#: data/content/get-fedora-all.html:35 data/content/get-fedora-all.html:39
+#: data/content/get-fedora-all.html:43 data/content/get-fedora-all.html:51
+#: data/content/get-fedora-all.html:60 data/content/get-fedora-all.html:78
+#: data/content/get-prerelease.html:20 data/content/get-prerelease.html:22
+#: data/content/get-prerelease.html:29 data/content/get-prerelease.html:31
+#: data/content/get-prerelease.html:38
 msgid "i386"
 msgstr "i386"
 
-#: data/content/get-fedora-all.html:22
-#: data/content/get-fedora-all.html:23
-#: data/content/get-fedora-all.html:24
-#: data/content/get-fedora-all.html:35
-#: data/content/get-fedora-all.html:36
-#: data/content/get-fedora-all.html:37
-#: data/content/get-fedora-all.html:51
-#: data/content/get-fedora-all.html:52
-#: data/content/get-fedora-all.html:53
-#: data/content/get-fedora-kde.html:54
-#: data/content/get-fedora-ppc.html:33
-#: data/content/get-fedora.html:50
-#: data/content/get-prerelease.html:20
-#: data/content/get-prerelease.html:21
-#: data/content/get-prerelease.html:22
-#: data/content/get-prerelease.html:31
-#: data/content/get-prerelease.html:32
-#: data/content/get-prerelease.html:33
+#: data/content/get-fedora-all.html:22 data/content/get-fedora-all.html:23
+#: data/content/get-fedora-all.html:24 data/content/get-fedora-all.html:35
+#: data/content/get-fedora-all.html:36 data/content/get-fedora-all.html:37
+#: data/content/get-fedora-all.html:51 data/content/get-fedora-all.html:52
+#: data/content/get-fedora-all.html:53 data/content/get-fedora-kde.html:58
+#: data/content/get-fedora-ppc.html:37 data/content/get-fedora.html:54
+#: data/content/get-prerelease.html:20 data/content/get-prerelease.html:21
+#: data/content/get-prerelease.html:29 data/content/get-prerelease.html:30
 msgid "Install DVD"
 msgstr "நிறுவல் DVD"
 
-#: data/content/get-fedora-all.html:23
-#: data/content/get-fedora-all.html:27
-#: data/content/get-fedora-all.html:36
-#: data/content/get-fedora-all.html:40
-#: data/content/get-fedora-all.html:44
-#: data/content/get-fedora-all.html:52
-#: data/content/get-fedora-all.html:66
-#: data/content/get-fedora-all.html:79
-#: data/content/get-fedora-all.html:90
-#: data/content/get-fedora-all.html:98
-#: data/content/get-fedora-all.html:106
-#: data/content/get-fedora-all.html:117
-#: data/content/get-fedora-all.html:124
-#: data/content/get-fedora-all.html:131
-#: data/content/get-prerelease.html:21
-#: data/content/get-prerelease.html:24
-#: data/content/get-prerelease.html:32
-#: data/content/get-prerelease.html:35
-#: data/content/get-prerelease.html:43
-#: data/content/get-prerelease.html:54
-#: data/content/get-prerelease.html:61
-#: data/content/get-prerelease.html:72
-#: data/content/get-prerelease.html:79
+#: data/content/get-fedora-all.html:23 data/content/get-fedora-all.html:27
+#: data/content/get-fedora-all.html:36 data/content/get-fedora-all.html:40
+#: data/content/get-fedora-all.html:44 data/content/get-fedora-all.html:52
+#: data/content/get-fedora-all.html:66 data/content/get-fedora-all.html:79
+#: data/content/get-fedora-all.html:90 data/content/get-fedora-all.html:98
+#: data/content/get-fedora-all.html:106 data/content/get-fedora-all.html:117
+#: data/content/get-fedora-all.html:124 data/content/get-fedora-all.html:131
+#: data/content/get-prerelease.html:21 data/content/get-prerelease.html:23
+#: data/content/get-prerelease.html:30 data/content/get-prerelease.html:32
+#: data/content/get-prerelease.html:39 data/content/get-prerelease.html:49
+#: data/content/get-prerelease.html:56 data/content/get-prerelease.html:67
+#: data/content/get-prerelease.html:74
 msgid "x86_64"
 msgstr "x86_64"
 
-#: data/content/get-fedora-all.html:24
-#: data/content/get-fedora-all.html:28
-#: data/content/get-fedora-all.html:37
-#: data/content/get-fedora-all.html:41
-#: data/content/get-fedora-all.html:45
-#: data/content/get-fedora-all.html:53
-#: data/content/get-fedora-all.html:72
-#: data/content/get-fedora-all.html:80
-#: data/content/get-prerelease.html:22
-#: data/content/get-prerelease.html:25
-#: data/content/get-prerelease.html:33
-#: data/content/get-prerelease.html:36
-#: data/content/get-prerelease.html:44
+#: data/content/get-fedora-all.html:24 data/content/get-fedora-all.html:28
+#: data/content/get-fedora-all.html:37 data/content/get-fedora-all.html:41
+#: data/content/get-fedora-all.html:45 data/content/get-fedora-all.html:53
+#: data/content/get-fedora-all.html:72 data/content/get-fedora-all.html:80
 msgid "ppc"
 msgstr "ppc"
 
-#: data/content/get-fedora-all.html:26
-#: data/content/get-fedora-all.html:27
-#: data/content/get-fedora-all.html:28
-#: data/content/get-fedora-all.html:39
-#: data/content/get-fedora-all.html:40
-#: data/content/get-fedora-all.html:41
-#: data/content/get-fedora-all.html:60
-#: data/content/get-fedora-all.html:66
-#: data/content/get-fedora-all.html:72
-#: data/content/get-prerelease.html:23
-#: data/content/get-prerelease.html:24
-#: data/content/get-prerelease.html:25
-#: data/content/get-prerelease.html:34
-#: data/content/get-prerelease.html:35
-#: data/content/get-prerelease.html:36
+#: data/content/get-fedora-all.html:26 data/content/get-fedora-all.html:27
+#: data/content/get-fedora-all.html:28 data/content/get-fedora-all.html:39
+#: data/content/get-fedora-all.html:40 data/content/get-fedora-all.html:41
+#: data/content/get-fedora-all.html:60 data/content/get-fedora-all.html:66
+#: data/content/get-fedora-all.html:72 data/content/get-prerelease.html:22
+#: data/content/get-prerelease.html:23 data/content/get-prerelease.html:31
+#: data/content/get-prerelease.html:32
 msgid "Install CDs"
 msgstr "நிறுவல் CDகள்"
 
-#: data/content/get-fedora-all.html:33
-#: data/content/get-fedora-all.html:95
-#: data/content/get-fedora-all.html:121
-#: data/content/get-prerelease.html:29
-#: data/content/get-prerelease.html:58
-#: data/content/get-prerelease.html:76
+#: data/content/get-fedora-all.html:33 data/content/get-fedora-all.html:95
+#: data/content/get-fedora-all.html:121 data/content/get-prerelease.html:27
+#: data/content/get-prerelease.html:53 data/content/get-prerelease.html:71
 msgid "Direct Download"
 msgstr "நேரடி பதிவிறக்கம்"
 
-#: data/content/get-fedora-all.html:43
-#: data/content/get-fedora-all.html:44
+#: data/content/get-fedora-all.html:43 data/content/get-fedora-all.html:44
 #: data/content/get-fedora-all.html:45
 msgid "Network Install CD"
 msgstr "பிணைய நிறுவல் CD"
 
-#: data/content/get-fedora-all.html:49
-#: data/content/get-fedora-all.html:103
+#: data/content/get-fedora-all.html:49 data/content/get-fedora-all.html:103
 #: data/content/get-fedora-all.html:128
 msgid "Metalinks"
 msgstr "மெட்டாஇணைப்புகள்"
 
-#: data/content/get-fedora-all.html:76
-#: data/content/get-prerelease.html:40
+#: data/content/get-fedora-all.html:76 data/content/get-prerelease.html:36
 msgid "Jigdo"
 msgstr "Jigdo"
 
-#: data/content/get-fedora-all.html:84
-#: data/content/get-prerelease.html:48
+#: data/content/get-fedora-all.html:84 data/content/get-prerelease.html:43
 msgid "Fedora Desktop Live Media"
 msgstr "Fedora பணிமேடை நேரடி ஊடகம்"
 
-#: data/content/get-fedora-all.html:89
-#: data/content/get-fedora-all.html:97
-#: data/content/get-fedora-all.html:105
-#: data/content/get-fedora-all.html:116
-#: data/content/get-fedora-all.html:123
-#: data/content/get-fedora-all.html:130
-#: data/content/get-prerelease.html:53
-#: data/content/get-prerelease.html:60
-#: data/content/get-prerelease.html:71
-#: data/content/get-prerelease.html:78
+#: data/content/get-fedora-all.html:89 data/content/get-fedora-all.html:97
+#: data/content/get-fedora-all.html:105 data/content/get-fedora-all.html:116
+#: data/content/get-fedora-all.html:123 data/content/get-fedora-all.html:130
+#: data/content/get-prerelease.html:48 data/content/get-prerelease.html:55
+#: data/content/get-prerelease.html:66 data/content/get-prerelease.html:73
 msgid "i686"
 msgstr "i686"
 
-#: data/content/get-fedora-all.html:89
-#: data/content/get-fedora-all.html:90
-#: data/content/get-fedora-all.html:97
-#: data/content/get-fedora-all.html:98
-#: data/content/get-fedora-all.html:105
-#: data/content/get-fedora-all.html:106
-#: data/content/get-fedora-all.html:116
-#: data/content/get-fedora-all.html:117
-#: data/content/get-fedora-all.html:123
-#: data/content/get-fedora-all.html:124
-#: data/content/get-fedora-all.html:130
-#: data/content/get-fedora-all.html:131
-#: data/content/get-fedora-kde.html:34
-#: data/content/get-fedora.html:30
-#: data/content/get-prerelease.html:53
-#: data/content/get-prerelease.html:54
-#: data/content/get-prerelease.html:60
-#: data/content/get-prerelease.html:61
-#: data/content/get-prerelease.html:71
-#: data/content/get-prerelease.html:72
-#: data/content/get-prerelease.html:78
-#: data/content/get-prerelease.html:79
+#: data/content/get-fedora-all.html:89 data/content/get-fedora-all.html:90
+#: data/content/get-fedora-all.html:97 data/content/get-fedora-all.html:98
+#: data/content/get-fedora-all.html:105 data/content/get-fedora-all.html:106
+#: data/content/get-fedora-all.html:116 data/content/get-fedora-all.html:117
+#: data/content/get-fedora-all.html:123 data/content/get-fedora-all.html:124
+#: data/content/get-fedora-all.html:130 data/content/get-fedora-all.html:131
+#: data/content/get-fedora-kde.html:38 data/content/get-fedora.html:34
+#: data/content/get-prerelease.html:66 data/content/get-prerelease.html:67
+#: data/content/get-prerelease.html:73 data/content/get-prerelease.html:74
 msgid "Live CD"
 msgstr "நேரடி CD"
 
-#: data/content/get-fedora-all.html:111
-#: data/content/get-prerelease.html:66
+#: data/content/get-fedora-all.html:111 data/content/get-prerelease.html:61
 msgid "Fedora KDE Live Media"
 msgstr "Fedora KDE நேரடி ஊடகம்"
 
-#: data/content/get-fedora-all.html:136
-#: data/content/get-fedora-kde.html:64
-#: data/content/get-fedora-ppc.html:43
-#: data/content/get-fedora.html:60
-#: data/content/get-prerelease.html:84
+#: data/content/get-fedora-all.html:136 data/content/get-fedora-kde.html:68
+#: data/content/get-fedora-ppc.html:47 data/content/get-fedora.html:64
+#: data/content/get-prerelease.html:79
 msgid "Let me look around..."
 msgstr "நான் சுற்றி பார்க்கலாமா..."
 
-#: data/content/get-fedora-all.html:138
-#: data/content/get-fedora-kde.html:66
-#: data/content/get-fedora-ppc.html:45
-#: data/content/get-fedora.html:62
-#: data/content/get-prerelease.html:86
+#: data/content/get-fedora-all.html:138 data/content/get-fedora-kde.html:70
+#: data/content/get-fedora-ppc.html:49 data/content/get-fedora.html:66
+#: data/content/get-prerelease.html:81
 msgid "See all torrents"
 msgstr "அனைத்து டோரண்ட்களையும் பார்க்கவும்"
 
-#: data/content/get-fedora-all.html:139
-#: data/content/get-fedora-kde.html:67
-#: data/content/get-fedora-ppc.html:46
-#: data/content/get-fedora.html:63
-#: data/content/get-prerelease.html:87
+#: data/content/get-fedora-all.html:139 data/content/get-fedora-kde.html:71
+#: data/content/get-fedora-ppc.html:50 data/content/get-fedora.html:67
+#: data/content/get-prerelease.html:82
 msgid "See all mirrors"
 msgstr "அனைத்து பிரதிபலிப்புகளையுப் பார்க்கவும்"
 
-#: data/content/get-fedora-all.html:140
-#: data/content/get-fedora-kde.html:68
-#: data/content/get-fedora-ppc.html:47
-#: data/content/get-fedora.html:64
-#: data/content/get-prerelease.html:88
+#: data/content/get-fedora-all.html:140 data/content/get-fedora-kde.html:72
+#: data/content/get-fedora-ppc.html:51 data/content/get-fedora.html:68
+#: data/content/get-prerelease.html:83
 msgid "See all custom spins"
 msgstr "அனைத்து தனிபயன் ஸ்பின்களை பார்க்கவும்"
 
-#: data/content/get-fedora-all.html:142
-#: data/content/get-fedora-kde.html:70
-#: data/content/get-fedora-ppc.html:49
-#: data/content/get-fedora.html:66
+#: data/content/get-fedora-all.html:142 data/content/get-fedora-kde.html:74
+#: data/content/get-fedora-ppc.html:53 data/content/get-fedora.html:70
 msgid "Slow Internet? No Internet?"
 msgstr "குறைவாக வேக இணையமா? இணையம் இல்லையா?"
 
-#: data/content/get-fedora-all.html:143
-#: data/content/get-fedora-kde.html:71
-#: data/content/get-fedora-ppc.html:50
-#: data/content/get-fedora.html:67
+#: data/content/get-fedora-all.html:143 data/content/get-fedora-kde.html:75
+#: data/content/get-fedora-ppc.html:54 data/content/get-fedora.html:71
 msgid "Get a copy of Fedora Media sent via postal mail."
 msgstr "ஒரு Fedora குறுவட்டின் நகலை அஞ்சல் வழியாக பெறுதல்."
 
-#: data/content/get-fedora-all.html:145
-#: data/content/get-fedora-kde.html:73
-#: data/content/get-fedora-ppc.html:52
-#: data/content/get-fedora.html:69
+#: data/content/get-fedora-all.html:145 data/content/get-fedora-kde.html:77
+#: data/content/get-fedora-ppc.html:56 data/content/get-fedora.html:73
 msgid "Purchase installation media for Fedora from <a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">online vendors</a> or a <a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">local vendor</a> in your area."
 msgstr "Fedoraவுக்கான நிறுவல் ஊடகத்தை <a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">இணைய விற்பனையாளர்கள்</a> அல்லது உங்கள் பகுதி ஒரு <a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">உள்ளூர் விற்பனையாளிடம்</a> வாங்கவும்."
 
-#: data/content/get-fedora-all.html:146
-#: data/content/get-fedora-kde.html:74
-#: data/content/get-fedora-ppc.html:53
-#: data/content/get-fedora.html:70
+#: data/content/get-fedora-all.html:146 data/content/get-fedora-kde.html:78
+#: data/content/get-fedora-ppc.html:57 data/content/get-fedora.html:74
 msgid "Can't afford the price of installation media? Request Fedora installation media from the <a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Fedora Free Media Program</a>."
 msgstr "நிறுவல் ஊடகத்திற்கு விலை கொடுக்க முடியவில்லை? Fedora நிறுவல் ஊடகத்திற்கு <a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Fedora இலவச ஊடக நிரலிலிருந்து</a> விண்ணப்பிக்கவும்."
 
-#: data/content/get-fedora-all.html:149
-#: data/content/get-fedora-kde.html:77
-#: data/content/get-fedora-ppc.html:56
-#: data/content/get-fedora.html:73
+#: data/content/get-fedora-all.html:149 data/content/get-fedora-kde.html:81
+#: data/content/get-fedora-ppc.html:60 data/content/get-fedora.html:77
 msgid "When you place an order with a <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">participating vendor</a>, you may also sponsor the cost of media for users who cannot afford it, such as people in developing nations. Consider participating in the <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora Sponsored Media Program</a>."
 msgstr "நீங்கள் ஒரு ஆர்டரை <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">பங்கு பெறும் விற்பனையாளரிம்</a> கொடுத்தால், பயனர்களுக்கு ஊடகத்திற்காக விலையை கொடுக்க முடியவில்லையெனில் அதாவது வளரும் நாடுகளில் அதற்கு நீங்கள் நிதியளிக்க வேண்டும், <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora நிதியளிக்கபட்ட ஊடக நிரலில்</a> பங்கு கொள்ள நினைத்தால்."
 
-#: data/content/get-fedora-kde.html:15
-#: data/content/get-fedora.html:14
+#: data/content/get-fedora-kde.html:15 data/content/get-fedora.html:14
 msgid "Have a PowerPC?  Go here!"
 msgstr "ஒரு PowerPC உள்ளதா?  இங்கே செல்லவும்!"
 
-#: data/content/get-fedora-kde.html:16
-#: data/content/get-fedora-ppc.html:16
+#: data/content/get-fedora-kde.html:16 data/content/get-fedora-ppc.html:16
 #: data/content/get-fedora.html:15
 msgid "Show me all download options in one page!"
 msgstr "ஒரே பக்கத்தில் அனைத்து பதிவிறக்க விருப்பங்களையும் காட்டவும்!"
 
-#: data/content/get-fedora-kde.html:20
+#: data/content/get-fedora-kde.html:18 data/content/get-fedora-ppc.html:18
+#: data/content/get-fedora.html:17
+msgid "There's More Fedora!"
+msgstr ""
+
+#: data/content/get-fedora-kde.html:24
 msgid "The <a href=\"http://www.kde.org/\">K Desktop Environment</a> (KDE) is an alternative desktop environment for Fedora. It provides a different look and feel to the windows, menus, and general desktop behavior of Fedora. If you prefer the K Desktop Environment, you may download the KDE version of Fedora below."
 msgstr "<a href=\"http://www.kde.org/\">K Desktop Environment</a> (KDE) என்பது  Fedoraவின் மாற்று பணிமேடையாகும். இது Fedoraவின் வித்தியாசமான பார்வை, சாளரங்கள், பட்டிகள் மற்றும் பொதுவான பண்புகளை கொண்டிருக்கும். நீங்கள் K Desktop Environmentஐ விரும்பினால், KDE பதிப்பின் Fedoraஐ கீழே பதிவிறக்கலாம்."
 
-#: data/content/get-fedora-kde.html:23
+#: data/content/get-fedora-kde.html:27
 msgid "Get Fedora 12 KDE Desktop Edition Now <em class=\"byline\">Installable Live CD</em>"
 msgstr "Fedora 12 KDE பணிமேடை பதிப்பை இப்போது <em class=\"byline\">நிறுவக்கூடிய நேரடி CD</em>இல் பெறலாம்."
 
-#: data/content/get-fedora-kde.html:25
-#: data/content/get-fedora-kde.html:45
-#: data/content/get-fedora-ppc.html:24
-#: data/content/get-fedora.html:21
-#: data/content/get-fedora.html:41
+#: data/content/get-fedora-kde.html:29 data/content/get-fedora-kde.html:49
+#: data/content/get-fedora-ppc.html:28 data/content/get-fedora.html:25
+#: data/content/get-fedora.html:45
 msgid "Resources"
 msgstr "மூலங்கள்"
 
-#: data/content/get-fedora-kde.html:27
-#: data/content/get-fedora.html:23
+#: data/content/get-fedora-kde.html:31 data/content/get-fedora.html:27
 msgid "Fedora 12 Installation Guide"
 msgstr "Fedora 12 நிறுவல் கையேடு"
 
-#: data/content/get-fedora-kde.html:28
-#: data/content/get-fedora-kde.html:48
-#: data/content/get-fedora-ppc.html:27
-#: data/content/get-fedora.html:24
-#: data/content/get-fedora.html:44
+#: data/content/get-fedora-kde.html:32 data/content/get-fedora-kde.html:52
+#: data/content/get-fedora-ppc.html:31 data/content/get-fedora.html:28
+#: data/content/get-fedora.html:48
 msgid "Fedora 12 Release Notes"
 msgstr "Fedora 12 வெளியீட்டு அறிக்கைகள்"
 
-#: data/content/get-fedora-kde.html:29
-#: data/content/get-fedora-kde.html:49
-#: data/content/get-fedora-ppc.html:28
-#: data/content/get-fedora.html:25
-#: data/content/get-fedora.html:45
+#: data/content/get-fedora-kde.html:33 data/content/get-fedora-kde.html:53
+#: data/content/get-fedora-ppc.html:32 data/content/get-fedora.html:29
+#: data/content/get-fedora.html:49
 msgid "Help &amp; Support"
 msgstr "உதவி &amp; சேவை"
 
-#: data/content/get-fedora-kde.html:30
-#: data/content/get-fedora-kde.html:50
-#: data/content/get-fedora-ppc.html:29
-#: data/content/get-fedora.html:26
-#: data/content/get-fedora.html:46
+#: data/content/get-fedora-kde.html:34 data/content/get-fedora-kde.html:54
+#: data/content/get-fedora-ppc.html:33 data/content/get-fedora.html:30
+#: data/content/get-fedora.html:50
 msgid "Verify your download"
 msgstr "உங்கள் பதிவிறக்கத்தை சரிபார்த்தல்."
 
-#: data/content/get-fedora-kde.html:35
+#: data/content/get-fedora-kde.html:39
 msgid "This is the latest version of the Fedora Linux operating system featuring the KDE desktop.  It's everything you need to try out Fedora&#8212;and if you like it, install it right from the desktop!"
 msgstr "Fedora லினக்ஸ் இயக்கத்தளத்தின் சமீபத்திய வசதி KDE பணிமேடையாகும்.  இதற்கு நீங்கள் Fedora&#8212;ஐ முயற்சிக்க வேண்டும், உங்களுக்கு பிடித்திருந்தால் உங்கள் பணிமேடையில் அதை நிறுவ வேண்டும்!"
 
-#: data/content/get-fedora-kde.html:38
+#: data/content/get-fedora-kde.html:42
 #, python-format
 msgid "%sMB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs"
 msgstr "%sMB, ISO வடிவம், 1 CD-ROM வட்டு உரு Intel-ஏற்ற கணினிகளில்"
 
-#: data/content/get-fedora-kde.html:38
-#: data/content/get-fedora-kde.html:58
-#: data/content/get-fedora-ppc.html:37
-#: data/content/get-fedora.html:34
-#: data/content/get-fedora.html:54
+#: data/content/get-fedora-kde.html:42 data/content/get-fedora-kde.html:62
+#: data/content/get-fedora-ppc.html:41 data/content/get-fedora.html:38
+#: data/content/get-fedora.html:58
 msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f12/en-US/html/ch-new-users.html#sn-making-media\">How do I use this file?</a>"
 msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f12/en-US/html/ch-new-users.html#sn-making-media\">இந்த கோப்பினை எவ்வாறு பயன்படுத்துவது?</a>"
 
-#: data/content/get-fedora-kde.html:40
-#: data/content/get-fedora-kde.html:60
-#: data/content/get-fedora-ppc.html:39
-#: data/content/get-fedora.html:36
-#: data/content/get-fedora.html:56
+#: data/content/get-fedora-kde.html:44 data/content/get-fedora-kde.html:64
+#: data/content/get-fedora-ppc.html:43 data/content/get-fedora.html:40
+#: data/content/get-fedora.html:60
 msgid "Download Now!"
 msgstr "இப்போது பதிவிறக்கவும்!"
 
-#: data/content/get-fedora-kde.html:43
-#: data/content/get-fedora.html:39
+#: data/content/get-fedora-kde.html:47 data/content/get-fedora.html:43
 msgid "Upgrade to Fedora 12 from an older version"
 msgstr "ஒரு பழைய பதிப்பிலிருந்து Fedora 12ஐ மேம்படுத்தவும்"
 
-#: data/content/get-fedora-kde.html:47
-#: data/content/get-fedora.html:43
+#: data/content/get-fedora-kde.html:51 data/content/get-fedora.html:47
 msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f12/en-US/html/ch-upgrade-x86.html\">Fedora 12 Upgrade Guide</a>"
 msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f110/en_US/ch-upgrade-x86.html\">Fedora 12 மேம்படுத்தும் கையேடு</a>"
 
-#: data/content/get-fedora-kde.html:55
-#: data/content/get-fedora.html:51
+#: data/content/get-fedora-kde.html:59 data/content/get-fedora.html:55
 msgid "Already have Fedora and want to upgrade to Fedora 12? Check out the <a href=\"http://docs.fedoraproject.org/install-guide/f12/en-US/html/ch-upgrade-x86.html\">Upgrading Fedora</a> instructions, and download the DVD ISO you'll need to start the upgrade process below."
 msgstr "ஏற்கனவே Fedoraவை கொண்டு Fedora 12க்கு மேம்படுத்த வேண்டுமா? <a href=\"http://docs.fedoraproject.org/install-guide/f12/en_US/ch-upgrade-x86.html\"> Upgrading Fedora</a>, என்ற தகவல்களை சோதித்து DVD ISOஐ பதிவிறக்கி கீழேயுள்ளவாறு மேம்படுத்தலை துவக்கலாம்."
 
-#: data/content/get-fedora-kde.html:58
+#: data/content/get-fedora-kde.html:62
 #, python-format
 msgid "%sGB, ISO format, 1 DVD disc image for Intel-compatible PCs"
 msgstr "%sGB, ISO வடிவம், 1 DVD வட்டு உரு Intel-ஏற்ற கணிணிகளுக்கு"
 
-#: data/content/get-fedora-kde.html:63
-#: data/content/get-fedora-ppc.html:42
-#: data/content/get-fedora.html:59
+#: data/content/get-fedora-kde.html:67 data/content/get-fedora-ppc.html:46
+#: data/content/get-fedora.html:63
 msgid "Other Download Options"
 msgstr "வேறு பதிவிறக்கும் விருப்பங்கள்"
 
-#: data/content/get-fedora-ppc.html:15
-#: data/content/get-fedora.html:13
-msgid "KDE fans, go here!"
-msgstr "KDE விசிறிகள், இங்கே செல்லவும்!"
+#: data/content/get-fedora-ppc.html:15 data/content/get-fedora.html:13
+msgid "Go to KDE and other Spins!"
+msgstr ""
 
-#: data/content/get-fedora-ppc.html:19
+#: data/content/get-fedora-ppc.html:23
 #, python-format
 msgid "Below you may download a special version of Fedora for older Macintosh computers and other computers that have PowerPC (PPC) processors. If you do not have a machine with a PowerPC processor, you should go back to the main <a href=\"%s/%s/get-fedora\">Get Fedora</a> page to download a version of Fedora that will work best for  your computer."
 msgstr "உங்கள் பழைய மாக்கென்டாஷ் கணினிகளுக்கும் PowerPC (PPC) செயலி கொண்ட கணினிக்கும் ஒரு சிறப்பு பதிப்பு Fedoraஐ கீழே பதிவிறக்கலாம். நீங்கள் ஒரு PowerPC  செயலி உள்ள கணினி கொண்டிருக்காவிட்டால், நீங்கள் முதன்மை <a href=\"%s/%s/get-fedora\">Fedora பெறுதல்</a> பக்கத்திற்கு சென்று உங்கள் கணினியில் நன்றாக வேலை செய்யும் Fedora பதிப்பை நிறுவவும்."
 
-#: data/content/get-fedora-ppc.html:22
+#: data/content/get-fedora-ppc.html:26
 msgid "Install or Upgrade Fedora 12 for PowerPC"
 msgstr "Fedora 12ஐ PowerPCக்கு நிறுவல் அல்லது மேம்படுத்தல்"
 
-#: data/content/get-fedora-ppc.html:26
+#: data/content/get-fedora-ppc.html:30
 msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f12/\">Fedora 12 Install Guide</a>"
 msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f11/\">Fedora 12 நிறுவல் கையேடு</a>"
 
-#: data/content/get-fedora-ppc.html:34
+#: data/content/get-fedora-ppc.html:38
 msgid "This is everything you need to install or upgrade to Fedora 12 on PowerPC machines!"
 msgstr "PowerPC கணினிகளில் Fedora 12 உள்ள அனைத்தையும் நிறுவ வேண்டுமா அல்லது மேம்படுத்த வேண்டுமா!"
 
-#: data/content/get-fedora-ppc.html:37
+#: data/content/get-fedora-ppc.html:41
 #, python-format
 msgid "%sGB, ISO format, 1 DVD disc image for PowerPC-compatible computers"
 msgstr "%sGB, ISO வடிவம், 1 DVD உரு PowerPC-ஏற்ற கணினிகளில்"
 
 #: data/content/get-fedora.html:10
-msgid "Did someone say... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;?"
+#, fuzzy
+msgid "Did someone say... &ldquo;<a href=\"get-prerelease\">Alpha</a>&rdquo;?"
 msgstr "யாராவது எதையாவது சொன்னால்... &ldquo;<a href=\"get-prerelease\">Beta</a>&rdquo;?"
 
-#: data/content/get-fedora.html:19
+#: data/content/get-fedora.html:23
 msgid "Get Fedora 12 Desktop Edition Now <em class=\"byline\">Installable Live CD</em>"
 msgstr "Fedora 12 பணிமேடை பதிப்பு இப்போது <em class=\"byline\">நிறுவக்கூடிய நேரடி CD</em>இல் பெறலாம்"
 
-#: data/content/get-fedora.html:31
+#: data/content/get-fedora.html:35
 msgid "This is the latest version of the Fedora Linux operating system featuring the GNOME desktop.  It's everything you need to try out Fedora&#8212;and if you like it, install it right from the desktop!"
 msgstr "Fedora லினக்ஸ் இயக்கத்தளத்தின் சமீபத்திய வசதி GNOME பணிமேடையாகும்.  இதற்கு நீங்கள் Fedora&#8212;ஐ முயற்சிக்க வேண்டும், உங்களுக்கு பிடித்திருந்தால் உங்கள் பணிமேடையில் அதை நிறுவ வேண்டும்!"
 
-#: data/content/get-fedora.html:34
+#: data/content/get-fedora.html:38
 #, python-format
 msgid "%sMB, ISO format, 1 CD-ROM disc image for Intel-compatible PCs (32-bit)"
 msgstr "%sMB, ISO வடிவம், 1 CD-ROM வட்டு உரு Intel-ஏற்ற கணினிகளில் (32-bit)"
 
-#: data/content/get-fedora.html:54
+#: data/content/get-fedora.html:58
 #, python-format
 msgid "%sGB, ISO format, 1 DVD disc image for Intel-compatible PCs (32-bit)"
 msgstr "%sGB, ISO வடிவம், 1 DVD வட்டு உரு Intel-ஏற்ற கணிணிகளுக்கு (32-bit)"
@@ -575,7 +458,8 @@ msgid "IRC: #fedora on irc.freenode.org"
 msgstr "IRC: irc.freenode.orgஇல் #fedora "
 
 #: data/content/get-help.html:17
-msgid "Mailing List: <a href=\"http://www.redhat.com/mailman/listinfo/fedora-list\">Fedora-list</a>"
+#, fuzzy
+msgid "Mailing List: <a href=\"http://lists.fedoraproject.org/mailman/listinfo/users\">users</a>"
 msgstr "அஞ்சல் குழு: <a href=\"http://www.redhat.com/mailman/listinfo/fedora-list\">Fedora-list</a>"
 
 #: data/content/get-help.html:18
@@ -594,45 +478,59 @@ msgstr "தொடர்பு கொள்ள பல்வேறு வழிக
 msgid "Real Time Support (IRC)"
 msgstr "நிகழ் நேர சேவை (IRC)"
 
-#: data/content/get-help.html:26
+#: data/content/get-help.html:25
 msgid "If a problem requires real time support, with somebody to explain each step and deal with any problems as they arise, Internet Relay Chat (IRC) is the ideal solution. Fedora has a number of IRC channels, and one specifically aimed at end-user support."
 msgstr "ஏதாவது ஒரு சிக்கலுக்கு நிகழ் நேர சேவை தேவைப்பட்டால், மேலும் வேறு யாராவது அந்த சிக்கலை தீர்க்க உதவ வேண்டுமென்றால், Internet Relay Chat (IRC) என்பதே தீர்வாகும். Fedoraவில் பல IRC சேனல்கள் உள்ளன, மற்றும் அதன் குறிப்பிட்ட நோக்கம் பயனருக்கு சேவையளிப்பதாகும்."
 
-#: data/content/get-help.html:28
+#: data/content/get-help.html:26
 msgid "To access this support launch Fedoras default instant messaging client, Pidgin, and choose Manage from the Accounts menu. Add a new account, and select IRC as the protocol. Next, enter a Screen Name and save the changes. The final step is to add the #fedora channel by selecting Add Chat from the Buddies menu. Make sure to select an IRC account from the drop down menu, and enter #fedora as the channel, clicking Add to save the changes. Now that this is done, #fedora should appear in the default Pidgin screen, and double clicking this will allow you to access the #fedora channel, where end-users can ask questions and get support in real time."
 msgstr "இந்த சேவையை அணுக Fedoraவின் முன்னிருப்பு உடனடி செய்தி கிளையன், Pidgin, மற்றும் கணக்குகள் பட்டியிலிருந்து நிர்வகி என்பதை தேர்ந்தெடுக்கவும். ஒரு புதிய கணக்கை சேர்த்து, IRCஐ ஒரு நெறிமுறையாக தேர்ந்தெடுக்கவும். அடுத்து, ஒரு திரைப்பெயரை உள்ளிட்டு மாற்றங்களை சேமிக்கவும். கடைசி படிநிலை என்பது #fedora சேனலை தோழர்கள் பட்டியிலிருந்து அரட்டை சேர் என்பதை தேர்ந்தெடுக்கவும். ஒரு IRC கணக்கை கீழ்விரி பட்டியிலிருந்து தேர்ந்தெடுத்து, #fedoraஐ சேனலாக உள்ளிடவும், சேர் என்பதை சொடுக்கி மாற்றங்களை சேமிக்கவும், இப்போது இது முடிந்தது, #fedora முன்னிருப்பு Pidgin திரையில் தோன்றும் மற்றும் அதனை இரட்டை சொடுக்குவது மூலம் #fedora சேனலை அணுக அனுமதிக்கிறது, இங்கு பயனர்கள் கேள்விகள் கேட்டு தங்கள் சேவையை பெறலாம்."
 
-#: data/content/get-help.html:30
+#: data/content/get-help.html:28
 msgid "E-mail Support"
 msgstr "மின்னஞ்சல் சேவை"
 
-#: data/content/get-help.html:32
+#: data/content/get-help.html:29
 msgid "Some users prefer to take advantage of mailing lists to get help. The advantage of this method is that by subscribing to a mailing list it is possible to discover common problems many users have, and their solutions, before even encountering them! It also makes it easy to see when someone else needs help, and if you know the answer, to help them."
 msgstr "சில பயனர்கள் அஞ்சல் குழுக்கள் மூலம் உதவி பெற விரும்பலாம். இதன் நன்மை என்னவென்றால் பல பயனர்களுக்கு பொதுவாக இருக்கும் சிக்கல்கள் மற்றும் தீர்வுகளை விவாதிக்கும் அஞ்சல் குழுவில் சந்தா எடுப்பதாகும்! மேலும் வேறு யாருக்கும் உதவி தேவைப்பட்டாலும் எளிதாக பார்க்கலாம், உங்களுக்கு பதில் தெரிந்தால் அவர்களுக்கு உதவலாம்."
 
-#: data/content/get-help.html:34
-msgid "The mailing list for end-user support with Fedora is <a href=\"http://www.redhat.com/mailman/listinfo/fedora-list\">fedora-list</a> and can be subscribed to by following that link."
+#: data/content/get-help.html:30
+#, fuzzy
+msgid "The mailing list for end-user support with Fedora is <a href=\"http://lists.fedoraproject.org/mailman/listinfo/users\">users</a> and can be subscribed to by following that link."
 msgstr "Fedoraஉடன் பயனர் சேவையளிப்பதற்கான அஞ்சல் குழு <a href=\"http://www.redhat.com/mailman/listinfo/fedora-list\">fedora-list</a> மற்றும் இதற்கு பின்வரும் இணைப்பு மூலம் சந்தாப்படுத்தலாம்."
 
-#: data/content/get-help.html:36
+#: data/content/get-help.html:32
 msgid "Forum Support"
 msgstr "விவாத சேவை"
 
-#: data/content/get-help.html:38
+#: data/content/get-help.html:33
 msgid "A forum works in a similar manner to a mailing list, but instead of having messages sent to an e-mail address, they are posted to a website that anybody can read. Fedora has officially endorsed the community run <a href=\"http://fedoraforum.org/\">Fedora Forum</a>, and it is an excellent resource for any questions about Fedora."
 msgstr "ஒரு ஃபோரம் என்பது அஞ்சல் குழுவை போலவே வேலை செய்யும் ஆனால் மின்னஞ்சல் முகவரிக்கு செய்தியை அனுப்புவதற்கு பதிலாக எல்லோரும் நேரடியாக இணையதளத்திலேயே எழுதி வாசிக்கலாம். Fedoraவால் வழங்கப்படும் ஃபோரம் <a href=\"http://fedoraforum.org/\">Fedora Forum</a>, மற்றும் இது Fedora பற்றிய எந்த வினாவுக்கும் சிறந்த மூலமாகும்."
 
-#: data/content/get-help.html:40
+#: data/content/get-help.html:35
 msgid "Written Documentation"
 msgstr "எழுதப்பட்ட ஆவணமாக்கம்"
 
-#: data/content/get-help.html:42
+#: data/content/get-help.html:36
 msgid "Fedora also has a team of talented writers who work hard to produce excellent written documentation. There are a number of different documents available, including the Fedora User Guide, aimed at basic day to day operation of Fedora, an Installation Guide, and Security and SELinux guides."
 msgstr "Fedora வில் ஆவணங்கள் எழுத நல்ல திறமையான எழுத்தாளர்களை கொண்டுள்ளது. மேலும் இங்கு பல ஆவணங்களும் உள்ளன, Fedora பயனர் கையேடு, இது இன்றைய எளிய Fedora செயல்பாடுகளை கொண்டிருக்கும் ,மற்றும் Fedora நிர்வாக கையேடு, மற்றும் பாதுகாப்பு மற்றும் SELinux கையேடுகள்."
 
-#: data/content/get-help.html:44
+#: data/content/get-help.html:37
 msgid "These guides are available at <a href=\"http://docs.fedoraproject.org\">docs.fedoraproject.org</a>."
 msgstr "இந்த கையேடுகள் <a href=\"http://docs.fedoraproject.org\">docs.fedoraproject.org</a>இல் உள்ளன."
+
+#: data/content/get-help.html:39
+msgid "Online Classroom"
+msgstr ""
+
+#: data/content/get-prerelease.html:7
+#, fuzzy
+msgid "Get the next Fedora - Fedora Project"
+msgstr "Fedora திட்டம் - தொடர்பு"
+
+#: data/content/get-prerelease.html:12
+msgid "Get the next Fedora, right now."
+msgstr ""
 
 #: data/content/get-prerelease.html:13
 #, python-format
@@ -640,8 +538,15 @@ msgid "This is pre-release software. The Fedora Project makes no guarantees as t
 msgstr "இது ஒரு முன் வெளியீடு மென்பொருளாகும். Fedora திட்டதிற்கு இது எந்த உத்தரவாதமும் அதற்கு ஏற்றதா அல்லது பயனுள்ளதா என்பது தெரியாது. அனைத்து சிக்கல்களும் <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a> மூலம் அறிக்கையிடப்பட வேண்டும்.  மேலும் தகவல்களுக்கு <a href=\"%(relnotes_url)s\">வெளியீட்டு அறிக்கையை</a> வாசிக்கவும்."
 
 #: data/content/get-prerelease.html:13
-msgid "http://docs.fedoraproject.org/release-notes/f12/en-US/html/"
-msgstr "http://docs.fedoraproject.org/release-notes/f12/en-US/html/"
+#, fuzzy
+msgid "http://fedoraproject.org/wiki/Fedora_13_Alpha_release_notes"
+msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">நிகழ்வுகள்</a>"
+
+#: data/content/get-prerelease.html:48 data/content/get-prerelease.html:49
+#: data/content/get-prerelease.html:55 data/content/get-prerelease.html:56
+#, fuzzy
+msgid "Live DVD"
+msgstr "நேரடி CD"
 
 #: data/content/index.html:10
 msgid "Fedora 12: Unite."
@@ -771,122 +676,132 @@ msgid "Currently used keys"
 msgstr "தற்போது பயன்படுத்திய விசைகள்"
 
 #: data/content/keys.html:67
+#, fuzzy
+msgid "Download: <a href=\"https://fedoraproject.org/static/E8E40FDE.txt\">Fedora Project</a>"
+msgstr "பதிவிறக்கம்: <a href=\"https://fedoraproject.org/static/0B86274E.txt\">Fedora திட்டம்</a>"
+
+#: data/content/keys.html:68
+#, fuzzy
+msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0xE8E40FDE&op=get\">keys.gnupg.net</a>"
+msgstr "பதிவிறக்கம்: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x0B86274E&op=get\">keys.gnupg.net</a>"
+
+#: data/content/keys.html:80
 msgid "Download: <a href=\"https://fedoraproject.org/static/57BBCCBA.txt\">Fedora Project</a>"
 msgstr "பதிவிறக்கம்: <a href=\"https://fedoraproject.org/static/4EBFC273.txt\">Fedora Project</a>"
 
-#: data/content/keys.html:68
+#: data/content/keys.html:81
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x57BBCCBA&op=get\">keys.gnupg.net</a>"
 msgstr "பதிவிறக்கம்: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4EBFC273&op=get\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:80
+#: data/content/keys.html:93
 msgid "Download: <a href=\"https://fedoraproject.org/static/D22E77F2.txt\">Fedora Project</a>"
 msgstr "பதிவிறக்கம்: <a href=\"https://fedoraproject.org/static/D22E77F2.txt\">Fedora திட்டம்</a>"
 
-#: data/content/keys.html:81
+#: data/content/keys.html:94
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0xD22E77F2&op=get\">keys.gnupg.net</a>"
 msgstr "பதிவிறக்கம்: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0xD22E77F2&op=get\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:94
-msgid "Download: <a href=\"https://fedoraproject.org/static/4EBFC273.txt\">Fedora Project</a>"
-msgstr "பதிவிறக்கம்: <a href=\"https://fedoraproject.org/static/4EBFC273.txt\">Fedora திட்டம்</a>"
-
-#: data/content/keys.html:95
-msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4EBFC273&op=get\">keys.gnupg.net</a>"
-msgstr "பதிவிறக்கம்: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4EBFC273&op=get\">keys.gnupg.net</a>"
-
-#: data/content/keys.html:108
-msgid "Download: <a href=\"https://fedoraproject.org/static/0B86274E.txt\">Fedora Project</a>"
-msgstr "பதிவிறக்கம்: <a href=\"https://fedoraproject.org/static/0B86274E.txt\">Fedora திட்டம்</a>"
-
-#: data/content/keys.html:109
-msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x0B86274E&op=get\">keys.gnupg.net</a>"
-msgstr "பதிவிறக்கம்: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x0B86274E&op=get\">keys.gnupg.net</a>"
-
-#: data/content/keys.html:122
+#: data/content/keys.html:107
 msgid "Download: <a href=\"https://fedoraproject.org/static/217521F6.txt\">Fedora Project</a>"
 msgstr "பதிவிறக்கம்: <a href=\"https://fedoraproject.org/static/D22E77F2.txt\">Fedora Project</a>"
 
-#: data/content/keys.html:123
+#: data/content/keys.html:108
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x217521F6&op=get\">keys.gnupg.net</a>"
 msgstr "பதிவிறக்கம்: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0xD22E77F2&op=get\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:129
+#: data/content/keys.html:114
 msgid "Obsolete keys"
 msgstr "நீக்கப்பட்ட விசைகள்"
 
-#: data/content/keys.html:140
+#: data/content/keys.html:125
 msgid "Fedora Core (version 6 and earlier)"
 msgstr "Fedora Core (பதிப்பு 6 மற்றும் முந்தியவை)"
 
-#: data/content/keys.html:141
+#: data/content/keys.html:126
 msgid "Fedora (version 7, 8, and 9)"
 msgstr "Fedora (பதிப்பு 7, 8, மற்றும் 9)"
 
-#: data/content/keys.html:142
+#: data/content/keys.html:127
 msgid "Both GA and updates"
 msgstr "GA மற்றும் மேம்படுத்தல்கள்"
 
-#: data/content/keys.html:146
+#: data/content/keys.html:131
 msgid "Packages on installation media are signed with this key.  The relevant yum repositories are <strong>fedora</strong>, <strong>fedora-updates</strong> for Fedora 7-9, and <strong>core</strong> and <strong>core-updates</strong> for Fedora Core (Version 6 and earlier).  See <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> for information on why this key is obsolete."
 msgstr "நிறுவல் ஊடகத்திலுள்ள தொகுப்புகள் இந்த விசையால் கையொப்பமிடப்படுகிறது.  தொடர்புடைய yum தொகுபதிவகங்கள் <strong>fedora</strong>, <strong>fedora-updates</strong> ஆகியவை Fedora 7-9க்கு மற்றும் <strong>core</strong> மற்றும் <strong>core-updates</strong> Fedora Coreக்கு (பதிப்பு 6 மற்றும் முந்தியவைக்கு). இந்த விசைகள் ஏன் நீக்கப்பட்டது என மேலும் அறிய, <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a>."
 
-#: data/content/keys.html:150
+#: data/content/keys.html:135
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 msgstr "பாதை: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 
-#: data/content/keys.html:151
+#: data/content/keys.html:136
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4F2A6FD2&op=index\">keys.gnupg.net</a>"
 msgstr "பதிவிறக்கம்: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4F2A6FD2&op=index\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:164
+#: data/content/keys.html:149
 msgid "Fedora (version 7 and newer) testing updates"
 msgstr "Fedora (பதிப்பு 7 மற்றும் அதற்கடுத்தது) சோதனை மேம்படுத்தல்கள்"
 
-#: data/content/keys.html:168
+#: data/content/keys.html:153
 msgid "If you participate in testing of the packages, this is the key you will use to verify the testing packages.  This key signs the packages that are in <strong>fedora-testing</strong> repository.  See <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> for information on why this key is obsolete."
 msgstr "தொகுப்புகளை சோதிப்பதில் பங்கேற்க வேண்டுமென்றால், சோதிக்கும் தொகுப்புகளை சரிபார்க்க இது தான் விசையாகும். இந்த விசை தொகுப்புகளை கையொப்பமிடுகிறது அவை <strong>fedora-testing</strong> தொகுபதிவகத்தில் இருக்கும். இந்த விசை ஏன் நீக்கப்பட்டு என்பதை <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> இல் பார்க்கவும்."
 
-#: data/content/keys.html:172
+#: data/content/keys.html:157
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
 msgstr "பாதை: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
 
-#: data/content/keys.html:173
+#: data/content/keys.html:158
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x30C9ECF8&op=index\">keys.gnupg.net</a>"
 msgstr "பதிவிறக்கம்: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x30C9ECF8&op=index\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:186
+#: data/content/keys.html:171
 msgid "Download: <a href=\"https://fedoraproject.org/static/6DF2196F.txt\">Fedora Project</a>"
 msgstr "பதிவிறக்கம்: <a href=\"https://fedoraproject.org/static/6DF2196F.txt\">Fedora திட்டம்</a>"
 
-#: data/content/keys.html:187
+#: data/content/keys.html:172
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x6DF2196F&op=get\">keys.gnupg.net</a>"
 msgstr "பதிவிறக்கம்: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x6DF2196F&op=get\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:200
+#: data/content/keys.html:185
 msgid "Download: <a href=\"https://fedoraproject.org/static/DF9B0AE9.txt\">Fedora Project</a>"
 msgstr "பதிவிறக்கம்: <a href=\"https://fedoraproject.org/static/DF9B0AE9.txt\">Fedora திட்டம்</a>"
 
-#: data/content/keys.html:201
+#: data/content/keys.html:186
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0xDF9B0AE9&op=get\">keys.gnupg.net</a>"
 msgstr "பதிவிறக்கம்: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4F2A6FD2&op=index\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:216
+#: data/content/keys.html:199
+msgid "Download: <a href=\"https://fedoraproject.org/static/4EBFC273.txt\">Fedora Project</a>"
+msgstr "பதிவிறக்கம்: <a href=\"https://fedoraproject.org/static/4EBFC273.txt\">Fedora திட்டம்</a>"
+
+#: data/content/keys.html:200
+msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4EBFC273&op=get\">keys.gnupg.net</a>"
+msgstr "பதிவிறக்கம்: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x4EBFC273&op=get\">keys.gnupg.net</a>"
+
+#: data/content/keys.html:213
+msgid "Download: <a href=\"https://fedoraproject.org/static/0B86274E.txt\">Fedora Project</a>"
+msgstr "பதிவிறக்கம்: <a href=\"https://fedoraproject.org/static/0B86274E.txt\">Fedora திட்டம்</a>"
+
+#: data/content/keys.html:214
+msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x0B86274E&op=get\">keys.gnupg.net</a>"
+msgstr "பதிவிறக்கம்: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x0B86274E&op=get\">keys.gnupg.net</a>"
+
+#: data/content/keys.html:229
 msgid "Fedora Extras (version 6 and earlier)"
 msgstr "Fedora கூடுதல்கள் (பதிப்பு 6 மற்றும் முந்தியவை)"
 
-#: data/content/keys.html:220
+#: data/content/keys.html:233
 msgid "If you are using Fedora Extras with Fedora Core 6, use this package from <strong>extras</strong> repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007).  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
 msgstr "நீங்கள் Fedora Extrasஐ Fedora Core 6இலிருந்து பயன்படுத்தினால், இந்த தொகுப்பை <strong>extras</strong> தொகுபதிவகத்திலிருந்து பயன்படுத்தவும். இந்த விசை Fedora Core 6 மற்றும் Extrasக்கு பின் EOLஐ (டிசம்பர் 7, 2007)அடைய இருக்காது.  இந்த விசை <strong>fedora-release</strong> தொகுப்பில் Fedora 7 மற்றும் அடுத்த வெளியீடுகளில் சேர்க்கப்படாது."
 
-#: data/content/keys.html:224
+#: data/content/keys.html:237
 msgid "Path: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 msgstr "பாதை: <a href=\"file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras</a>"
 
-#: data/content/keys.html:225
+#: data/content/keys.html:238
 msgid "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x1AC70CE6&op=index\">keys.gnupg.net</a>"
 msgstr "பதிவிறக்கம்: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x1AC70CE6&op=index\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:242
+#: data/content/keys.html:255
 msgid "This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the <strong>fedora-release</strong> package in Fedora 7 and later releases."
 msgstr "இந்த விசை Fedora மரபுரிமை திட்டத்தால் வெளியிடப்பட்ட தொகுப்புகளுக்கு அதன் அதிகாரபூர்வ EOLக்கு வெளியிடப்பட்டவைக்கு பயன்படுத்தப்பட்டவையாகும். Fedora மரபுரிமை திட்டம் தொடரப்போவதில்லை , எனவே இந்த விசைகள் தொகுப்புகளை கையொப்பமிட போவதில்லை. இந்த விசை <strong>fedora-release</strong> தொகுப்பில் Fedora 7 மற்றும் அதற்கடுத்த வெளியீடுகளில் சேர்க்கப்படவில்லை."
 
@@ -910,7 +825,7 @@ msgstr "<a href=\"http://redhat.com/\">Red Hat, Inc.</a>  Fedora திட்ட
 msgid "The Fedora Project also thanks the following sponsors for providing substantial support:"
 msgstr "Fedora திட்டம் பின்வரும் நிறுவனங்களை நிதியாளர்களாக உள்ளதில் பெருமை கொள்கிறது:"
 
-#: data/content/sponsors.html:38
+#: data/content/sponsors.html:41
 msgid "Interested in sponsoring something for Fedora?  Contact admin at fedoraproject * org or stop by #fedora-admin on irc.freenode.net."
 msgstr "Fedoraவுக்கு நிதியளிக்க ஆர்வமிருக்கிறதா?  நிர்வாகியை fedoraproject * org அல்லது #fedora-admin on irc.freenode.net இல் தொடர்பு கொள்ளவும்."
 
@@ -919,60 +834,57 @@ msgid "Verify your ISO download."
 msgstr "உங்கள் ISO பதிவிறக்கத்தை சரிபார்த்தல்."
 
 #: data/content/verify.html:12
+msgid "Please note that the <em>Hash: SHA1</em> line in the CHECKSUM file is part of the PGP signature.  It does <strong>not</strong> specify the type of hash used to verify the .iso files."
+msgstr ""
+
+#: data/content/verify.html:15
 msgid "Windows user?  Follow <a href=\"http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html\">these instructions</a> instead."
 msgstr "விண்டோஸ் பயனரா? <a href=\"http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html\">இந்த தகவலை </a> பின்பற்றவும்."
 
-#: data/content/verify.html:15
+#: data/content/verify.html:18
 msgid "Once you have downloaded an ISO, verify it for security and integrity.  If you downloaded your ISO via BitTorrent, the file has already been verified as part of the download process (just make sure that you got the torrent from <a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a>).  Otherwise, to verify your ISO, start by downloading the proper CHECKSUM file into the same directory as the ISO:"
 msgstr "நீங்கள் ஒரு ISOஐ பதிவிறக்கிய பின், அது பாதுகாப்பானதா மற்றும் ஒருங்கிணைக்கப்பட்டதா என சரி பார்க்கவும். உங்கள் ISOஐ BitTorrent வழியாக பதிவிறக்கினால், பதிவிறக்கத்தின் ஒரு பகுதியாக ஏற்கனவே சரிபார்க்கப்பட்டிருக்கும் (நீங்கள் டொரண்டை <a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a>இல் இருந்து பெற்றீர்கள் என உறுதிபடுத்தி கொள்ளவும்).  இல்லையெனில், உங்கள் ISOஐ சரிபார்க்க, சரியான CHECKSUM கோப்பினை அதே அடைவில் ISOஐ பதிவிறக்கவும்:"
 
-#: data/content/verify.html:17
+#: data/content/verify.html:20
 msgid "Install DVD / Rescue CD"
 msgstr "DVD / Rescue CD நிறுவல்"
 
-#: data/content/verify.html:23
+#: data/content/verify.html:26
 msgid "Live Media"
 msgstr "நேரடி ஊடகம்"
 
-#: data/content/verify.html:31
+#: data/content/verify.html:34
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "அடுத்து, Fedoraவின் GPG விசைகளை இறக்குமதி செய்யவும்:"
 
-#: data/content/verify.html:35
-#, python-format
-msgid "You can verify the details of the GPG key(s) <a href=\"%s/%s/keys\">here</a>."
+#: data/content/verify.html:38
+#, fuzzy, python-format
+msgid "You can verify the details of the GPG key(s) <a href=\"https://fedoraproject.org%s/%s/keys\">here</a>."
 msgstr "GPG விசைகளை பற்றிய விவரங்களை சரிபார்க்கவும் <a href=\"%s/%s/keys\">here</a>."
 
-#: data/content/verify.html:38
+#: data/content/verify.html:41
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "இப்போது, CHECKSUM கோப்பு சரியானதா என்று சரிபார்க்கவும்:"
 
-#: data/content/verify.html:42
+#: data/content/verify.html:45
 msgid "The CHECKSUM file should have a good signature from one of the following keys:"
 msgstr "CHECKSUM கோப்பு பின்வரும் விசைகள் ஒன்றிலிருந்து ஒரு நல்ல கையொப்பத்தை பெற்றிருக்க வேண்டும்:"
 
-#: data/content/verify.html:45
+#: data/content/verify.html:48
 msgid "Fedora 12"
 msgstr "Fedora 12"
 
-#: data/content/verify.html:46
+#: data/content/verify.html:49
 msgid "Fedora 11"
 msgstr "Fedora 11"
 
-#: data/content/verify.html:47
-msgid "Fedora 10"
-msgstr "Fedora 10"
-
-#: data/content/verify.html:48
-msgid "Fedora 10 pre-releases"
-msgstr "Fedora 10 முந்தைய வெளியீட்டு அறிக்கைகள்"
-
-#: data/content/verify.html:51
+#: data/content/verify.html:52
 msgid "Finally, now that the CHECKSUM file has been verified, check that the ISO's checksum matches:"
 msgstr "கடைசியாக, இப்போது CHECKSUM கோப்பு சரிபார்க்கப்பட்டது, ISO's checksum பொருத்தங்களை சரிபார்க்கவும்:"
 
-#: data/content/verify.html:55
-msgid "If the output states that the file is valid, you're good to go!"
+#: data/content/verify.html:56
+#, fuzzy
+msgid "If the output states that the file is valid, then you're good to go!"
 msgstr "வெளிப்பாடு நிலைகளில் கோப்பு சரியானது எனில், நீங்கள் தொடர்வது நல்லது!"
 
 #: data/content/e/404.html:10
@@ -1012,8 +924,8 @@ msgid "Download Fedora!"
 msgstr "Fedoraவை பதிவிறக்குதல்!"
 
 #: data/templates/foot.html:9
-#, python-format
-msgid "&copy; 2009 Red Hat, Inc. and others.  For comments or queries, please <a href=\"%s/%s/contact\">contact us</a>."
+#, fuzzy, python-format
+msgid "&copy; 2010 Red Hat, Inc. and others.  For comments or queries, please <a href=\"%s/%s/contact\">contact us</a>."
 msgstr "&copy; 2009 Red Hat, Inc. and others.  For comments or queries, please <a href=\"%s/%s/contact\">contact us</a>."
 
 #: data/templates/foot.html:12
@@ -1036,85 +948,96 @@ msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">வ
 msgid "Fedora"
 msgstr "Fedora"
 
-#: data/templates/sidebar.html:26
-#, python-format
-msgid "%s/static/images/counter/%s"
-msgstr "%s/static/images/counter/%s"
-
-#: data/templates/sidebar.html:26
-#, python-format
-msgid "Fedora 12 Constantine released in %s days!"
-msgstr "Fedora 12 Constantine %s நாட்களில் வெளியிடப்படும்!"
-
-#: data/templates/sidebar.html:27
-msgid "Add a counter to your own site!"
-msgstr "உங்கள் சொந்த தளத்தில் ஒரு கவுண்டரை சேர்க்கவும்!"
-
-#: data/templates/sidebar.html:31
+#: data/templates/sidebar.html:13
 msgid "Navigation"
 msgstr "திசையமைப்பு"
 
-#: data/templates/sidebar.html:33
+#: data/templates/sidebar.html:15
 msgid "Home"
 msgstr "முகப்பு"
 
-#: data/templates/sidebar.html:34
+#: data/templates/sidebar.html:16
 msgid "Get Fedora"
 msgstr "Fedoraவை பெறுதல்"
 
-#: data/templates/sidebar.html:35
+#: data/templates/sidebar.html:17
 msgid "Join Fedora"
 msgstr "Fedoraவில் சேருதல்"
 
-#: data/templates/sidebar.html:36
+#: data/templates/sidebar.html:18
 msgid "Get Help"
 msgstr "உதவி பெறுதல்"
 
-#: data/templates/sidebar.html:38
+#: data/templates/sidebar.html:20
 msgid "Tools"
 msgstr "கருவிகள்"
 
-#: data/templates/sidebar.html:40
+#: data/templates/sidebar.html:22
 msgid "Docs"
 msgstr "ஆவணம்"
 
-#: data/templates/sidebar.html:40
+#: data/templates/sidebar.html:22
 msgid "Fedora documentation."
 msgstr "Fedora ஆவணமாக்கம்."
 
-#: data/templates/sidebar.html:41
+#: data/templates/sidebar.html:23
 msgid "<a href=\"http://fedoraproject.org/wiki/\">Wiki</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/\">விக்கி</a>"
 
-#: data/templates/sidebar.html:41
+#: data/templates/sidebar.html:23
 msgid "Collaborative knowledge."
 msgstr "ஒருங்கிணைப்பட்ட அறிவு."
 
-#: data/templates/sidebar.html:42
+#: data/templates/sidebar.html:24
 msgid "Planet"
 msgstr "ப்ளனெட்"
 
-#: data/templates/sidebar.html:42
+#: data/templates/sidebar.html:24
 msgid "The voices of the Fedora community."
 msgstr "Fedora சமூகத்தின் குரல்கள்."
 
-#: data/templates/sidebar.html:43
+#: data/templates/sidebar.html:25
 msgid "<a href=\"http://fedoraproject.org/wiki/Communicate\">Communicate</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Communicate\">தொடர்பு கொள்தல்</a>"
 
-#: data/templates/sidebar.html:43
+#: data/templates/sidebar.html:25
 msgid "Speak with Fedora."
 msgstr "Fedoraவுடன் பேசுதல்."
 
-#: data/templates/sidebar.html:44
+#: data/templates/sidebar.html:26
 msgid "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">Events</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/FedoraEvents\">நிகழ்வுகள்</a>"
 
-#: data/templates/sidebar.html:44
+#: data/templates/sidebar.html:26
 msgid "Meet the Fedora community."
 msgstr "Fedora சமூகத்தை சந்தித்தல்."
 
-#: data/templates/sidebar.html:46
+#: data/templates/sidebar.html:28
 msgid "Website Language"
 msgstr "இணைய தள மொழி"
 
+#: data/templates/sidebar.html:37
+#, fuzzy
+msgid "Hosting Sponsor"
+msgstr "நிதியளிப்பவர்கள்"
+
+#~ msgid "KDE fans, go here!"
+#~ msgstr "KDE விசிறிகள், இங்கே செல்லவும்!"
+
+#~ msgid "http://docs.fedoraproject.org/release-notes/f12/en-US/html/"
+#~ msgstr "http://docs.fedoraproject.org/release-notes/f12/en-US/html/"
+
+#~ msgid "Fedora 10"
+#~ msgstr "Fedora 10"
+
+#~ msgid "Fedora 10 pre-releases"
+#~ msgstr "Fedora 10 முந்தைய வெளியீட்டு அறிக்கைகள்"
+
+#~ msgid "%s/static/images/counter/%s"
+#~ msgstr "%s/static/images/counter/%s"
+
+#~ msgid "Fedora 12 Constantine released in %s days!"
+#~ msgstr "Fedora 12 Constantine %s நாட்களில் வெளியிடப்படும்!"
+
+#~ msgid "Add a counter to your own site!"
+#~ msgstr "உங்கள் சொந்த தளத்தில் ஒரு கவுண்டரை சேர்க்கவும்!"
