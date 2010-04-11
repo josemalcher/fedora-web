@@ -1,6 +1,10 @@
 import os
 import cPickle
 import feedparser
+import socket
+
+# Socket timeout for feedparser.
+socket.setdefaulttimeout(20)
 
 def feedparse(url):
     feeds = dict()
