@@ -124,9 +124,13 @@ def read_trac(path):
         filename = os.path.join(path, dir, 'conf', 'trac.ini')
         if os.path.isfile(filename):
             conf = iniparse.INIConfig(file(filename, 'r'))
+            base_url = 'https://fedorahosted.org/%s' % dir
+            if conf['trac']['base_url']:
+                base_url = conf['trac']['base_url']
+                
             project = {
-                'group': conf['trac']['base_url'].rstrip('/').split('/')[-1][0].upper(),
-                'url': conf['trac']['base_url'],
+                'group': base_url.rstrip('/').split('/')[-1][0].upper(),
+                'url': base_url,
                 'desc': conf['project']['name'].decode('utf-8'),
                 'title': conf['project']['descr'].decode('utf-8')
             }
@@ -139,8 +143,8 @@ def read_trac(path):
                 else:
                     project['vcsbase'] = ''
                 project['vcsweburl'] = urlparse.urljoin(
-                    conf['trac']['base_url'].rstrip('/') + '/', 'browser')
-            projects[conf['trac']['base_url'].rstrip('/').split('/')[-1]] = project
+                    base_url.rstrip('/') + '/', 'browser')
+            projects[base_url.rstrip('/').split('/')[-1]] = project
     return projects
 
 def process_dir(dirpath, filenames, projects):
