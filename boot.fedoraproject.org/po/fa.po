@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Persian boot\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-01-22 14:14-0600\n"
+"POT-Creation-Date: 2010-04-13 22:40-0500\n"
 "PO-Revision-Date: 2010-03-18 10:28+0330\n"
 "Last-Translator: Ali Yousefi Sabzevar <aysabzevar@gmail.com>\n"
 "Language-Team: Persian <trans-fa@lists.fedoraproject.org>\n"
@@ -46,6 +46,15 @@ msgstr "دانلود فلاپی:"
 msgid "Floppy"
 msgstr "فلاپی"
 
+#: data/content/download.html:15
+#, fuzzy
+msgid "Download lkrn: "
+msgstr "دانلود ایزو:"
+
+#: data/content/download.html:15
+msgid "lkrn"
+msgstr ""
+
 #: data/content/faq.html:7
 msgid "FAQs - boot.fedoraproject.org"
 msgstr "سوالات متداول - boot.fedoraproject.org"
@@ -63,67 +72,75 @@ msgid "First download one of the available images like the ISO image.  Then burn
 msgstr "ابتدا یکی از ایمیج‌های در دسترس مانند ایمیج‌های ایزو را دریافت کنید.سپس آن‌را بر روی سی‌دی یا دی‌وی‌دی انتقال دهید.سپس سیستم‌تان را با آن سی‌دی یا دی‌وی‌دی بوت کنید.پس از آن شما در حال استفاده از BFOهستید.از صفحه‌کلیدتان استفاده کنید تا منوهایی را برای اجرای تشخیصی،یا بوت برنامه نصب کننده فدورا یا مد نجات را انتخاب کنید."
 
 #: data/content/faq.html:15
+msgid "Can I use it with grub?"
+msgstr ""
+
+#: data/content/faq.html:16
+msgid "Yes!  Just run the following commands as root"
+msgstr ""
+
+#: data/content/faq.html:22
 msgid "How does it work?"
 msgstr "چگونه کار می کند؟"
 
-#: data/content/faq.html:16
+#: data/content/faq.html:23
 msgid "BFO was started by boot.kernel.org (BKO) and combines a series of recent technologies to produce a new boot stack.  The glue that holds everything together is gpxe.  Users familiar with pxe will find gpxe very familiar.  Latest versions support several protocols beyond just tftp.  We are using http to transfer files around.  The basic steps are as follows:"
 msgstr "BFOتوسط boot.kernel.orgیا BKO آغاز شد و ترکیبی از مجموعه‌ای ازفناوی‌های اخیر برای تولید یک بوت جدید است.چسبی که هر چیزیرا به هم می‌چسباند gpxeاست. کاربرانی که با pxe هستند gpxeرا نیز خیلی آشنا خواهند دید. آخرین نسخه‌ها چندین پروتکل را در پشت فقط tftp پشتیبانی می‌کنند.ما هم اکنون از httpبرای انتقال فایل‌ها استفاده می‌کنیم. گام‌های اساسی به‌ اینترتیب هستند:"
 
-#: data/content/faq.html:18
-msgid "Download and boot from the boot.fedoraproject.org media."
+#: data/content/faq.html:25
+#, fuzzy
+msgid "Download the boot.fedoraproject.org media."
 msgstr "دانلود و بووت از رسانای boot.fedoraproject.org"
 
-#: data/content/faq.html:19
+#: data/content/faq.html:26
 msgid "Boot from the downloaded iso/disk image."
 msgstr "بوت از تصویر ایزو/دیسک دانلود شده."
 
-#: data/content/faq.html:20
+#: data/content/faq.html:27
 msgid "The disk image will then boot and configure network."
 msgstr "تصویر دیسک سپس بوت خواهد شد و شبکه را تنظیم خواهد کرد."
 
-#: data/content/faq.html:21
+#: data/content/faq.html:28
 msgid "After network is configured, it will go out to our boot.fedoraproject.org website and download the menus and other prompts from us"
 msgstr "بعد از آنکه شبکه تنظیم شد،‌آن به وبسایت boot.fedoraproject.org ما خواهد رفت و منوها و سایر بالاآور ها را برای ما دانلود می کند"
 
-#: data/content/faq.html:22
+#: data/content/faq.html:29
 msgid "Those boot menus will then be displayed to the user for selection.  After a selection (like install Fedora 12) the regular boot process takes over just as it would had you booted from normal local media."
 msgstr "آن منوهای بوت برای انتخاب کاربر نمایش داده خواهند شد.پس از یک انتخاب(مانند نصب فدورا ۱۲) فرآیند بوت منظم همانگونه که شما بوت کرده‌اید ازرسانه محلی معمولی اجرا می‌شود"
 
-#: data/content/faq.html:24
+#: data/content/faq.html:31
 msgid "Why should I use BFO?"
 msgstr "چگونه باید از BFO استفاده کنم؟"
 
-#: data/content/faq.html:25
+#: data/content/faq.html:32
 msgid "The BFO downloads are very small and once you have them, you'll rarely have to download more.  Even as more versions of Fedora come out, you just boot from your iso and they will appear.  Users with fast internet connections will have the best experience with BFO.  They basically replace having to regularly download large ISO images and burn them to disk."
 msgstr "دریافت‌های BFO خیلی کوچک هستن و یک بار آن را می‌گیرید.سپس به ندرت نیاز داریدتا چیز بیشتری دریافت کنید. حتی زمانی که نسخه‌های بیشتری ازفدورا بیایند شما فقط سیستم را با فایل ایزو تان بوت کنید و آنهانمایان خواهند شد. کاربران با اتصالات اینترنتی پرسرعت بهترین تجربهرا با BFO خواهند داشت. آنها اساسا این را با اجبار دریافت ایمیج‌های سنگین و انتقال آنها بر روی دیسک تعویض خواهند کرد."
 
-#: data/content/faq.html:26
+#: data/content/faq.html:33
 msgid "What is required?"
 msgstr "چه چیزی نیاز است؟"
 
-#: data/content/faq.html:27
+#: data/content/faq.html:34
 msgid "For the most typical setup one should have DHCP, HTTP internet access and a CD/DVD burner.  Floppy and USB images are also available."
 msgstr "برای واقعی‌ترین اجرا باید DHCP و دسترسی به اینترنت از طریقHTTP و یک دستگاه سوزاننده سی‌دی و دی‌وی‌دی داشته باشیدایمیج‌های USB و دیسک نرم همچنان در دسترس هستند"
 
-#: data/content/faq.html:28
+#: data/content/faq.html:35
 msgid "Does BFO replace the installer or anaconda?"
 msgstr "آیا BFO جایگزین نصاب یا آناکندا است؟"
 
-#: data/content/faq.html:29
+#: data/content/faq.html:36
 msgid "Nope.  BFO is a way to load the installer via network.  Normally users download a large ISO image that contains all of the installer bits.  BFO is a smaller booting method that downloads the installer bits at runtime.  In theory with BFO one iso download can install all future versions of Fedora."
 msgstr "هیچی.BFOراهی برای بارگذای برنامه نصب کننده از طریق شبکه است.کاربران عادی یک ایمیج ایزو بزرگ که شامل تمامی بیت‌های تصب کننده استرا دریافت می‌کنند. BFO شیوه بوت کوچک‌تر است که اطلاعات نصب کننده را درهنگام اجرا دریافت می‌کند. در تئوری به کمک BFO یک دریافت ایزو می‌تواندتمامی نسخه‌های آینده فدورا را نصب کند."
 
-#: data/content/faq.html:30
+#: data/content/faq.html:37
 msgid "What about the Live CDs?"
 msgstr "سی‌دی لایو چطور؟"
 
-#: data/content/faq.html:31
+#: data/content/faq.html:38
 msgid "At this time booting Live CDs is experimental and not available.  We hope to have them available soon."
 msgstr "در این زمان سی‌دی لایو در مرحله آزمایش است و موجود نمی باشد. ما امیدواریم به زودی آنها را داشته باشیم."
 
-#: data/content/index.html:7
-#: data/content/index.html:10
+#: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
 msgstr "boot.fedoraproject.org"
 
@@ -190,4 +207,3 @@ msgstr "حامی هاستینگ"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "حمایت توسط ServerBeach"
-
