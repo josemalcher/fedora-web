@@ -26,6 +26,11 @@ pre
   overflow: auto;
 }
 
+abbr, acronym {
+  border-bottom: 1px dotted #000000;
+  cursor: help;
+}
+
 #wrapper
 {
   font: normal 1em/1.5 sans-serif;
@@ -400,6 +405,17 @@ input, textarea, option
   padding: 0.5ex 2ex;
 }
 
+#content p.mini-note
+{
+  padding: 1ex 2ex;
+  border: 1px solid #DDDDDD;
+  background: #FFABAB;
+  font-size: .8em;
+  color: #4c4c4c;
+  -webkit-border-radius: 1.5ex;
+  -moz-border-radius: 1.5ex;
+  width: 50%
+}
 
 #content p.note
 {
@@ -588,6 +604,18 @@ ul#resources li.resource-download
   text-decoration: none;
   font-weight: bold;
   line-height: 1.5;
+}
+
+.download-sidebar span#thereismorefedora a {
+  display: block;
+  background: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.download-sidebar span#thereismorefedora img {
+  margin: 0px;
+  padding: 0px;
 }
 
 #breadcrumbs {
