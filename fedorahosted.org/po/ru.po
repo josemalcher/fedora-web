@@ -2,7 +2,7 @@
 # Translations template for PROJECT.
 # Copyright (C) 2008 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-#
+# 
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
 # Yulia Poyarkova <yulia.poyarkova@redhat.com>, 2009.
 # Sergey Raspopov <sergey.linux@gmail.ru>, 2009.
@@ -18,10 +18,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 0.9.1\n"
 "X-Poedit-Language: Russian\n"
-"X-Poedit-Country: RUSSIAN FEDERATION\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"Generated-By: Babel 0.9.1\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #: data/content/410.html:7 data/content/index.html:7
@@ -140,14 +140,6 @@ msgstr "Почему hg сообщает, что репозитория не с�
 #: data/content/faq.html:32
 msgid "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a delimiter between hostname and path and a second \"/\" as the root of the filesystem path.  For instance, if you're accessing the repository for authconfig you need to use \"hg clone ssh://hg.fedoraproject.org//hg/authconfig\""
 msgstr "К сожалению, hg не принимает простые URL. Вам нужно использовать «/» для разделения домена и пути и «/» для указания корневого каталога. В частности, для того, чтобы получить доступ к «authconfig», нужно указать: «hg clone ssh://hg.fedoraproject.org//hg/authconfig»."
-
-#: data/content/faq.html:33
-msgid "Can I offer pre-compiled binaries on Fedora Hosted?"
-msgstr ""
-
-#: data/content/faq.html:34
-msgid "You may, as long as the following conditions are met: <ol><li>The code project must be available under a Free Software license appropriate for Fedora.</li><li>You must make the source code you used to build the binaries available, and not distributed in the same tarball, or at a minimum make available a \"source only\" tarball.</li><li>You must provide clear instructions for building the software.</li></ol>"
-msgstr ""
 
 #: data/content/index.html:10
 msgid "Available Projects"
@@ -296,3 +288,12 @@ msgstr "Хостинг"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "Спонсор: компания ServerBeach"
+
+#: data/content/faq.html:34
+#, fuzzy
+msgid "You may, as long as the following conditions are met: <ol><li>The code project must be available under a Free Software license appropriate for Fedora.</li><li>You must make the source code you used to build the binaries available, and not distributed in the same tarball, or at a minimum make available a \"source only\" tarball.</li><li>You must provide clear instructions for building the software.</li></ol>"
+msgstr "Вы можете, если соблюдены следующие условия: <ol><li> Код проект должен быть доступен под одной из лицензий Свободного Программного Обеспечения для добавления в Fedora. .</li><li>Вы должны сделать доступным использующийся в сборке пакета исходный код, and not distributed in the same tarball, или как минимум сделать доступным как ахив \"только с исходниками\" .</li><li>Вы должны четко следовать интсрукциям для сборки программы..</li></ol>"
+
+#: data/content/faq.html:33
+msgid "Can I offer pre-compiled binaries on Fedora Hosted?"
+msgstr "Могу ли я разместить пре-компилированные бинарные пакеты на Fedora Hosted?"
