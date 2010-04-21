@@ -4,15 +4,9 @@ var banners = [
 //  Target URL
 //  Weight
   [
-    "https://fedoraproject.org/static/images/banners/f12release.png",
-    "Fedora 12 Constantine is here!",
+    "https://fedoraproject.org/static/images/banners/f13release.png",
+    "Fedora 13 Goddard is here!",
     "https://fedoraproject.org/get-fedora",
-    1
-  ],
-  [
-    "https://fedoraproject.org/static/images/banners/f13beta.png",
-    "Fedora 13 Beta",
-    "https://fedoraproject.org/get-prerelease",
     5
   ],
   [
