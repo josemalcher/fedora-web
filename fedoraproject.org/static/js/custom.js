@@ -14,6 +14,10 @@ $(document).ready(function(){
 
 	// main site banners
 	// see: banner.js
+	/* 
+	 * temporarily disabled, since banner.js isn't being called
+	 * this should be enabled once countdown is done
+	 * 
 	var choices = [];
 	var k = 0;
 	for (var i = 0; i < banners.length; ++i) {
@@ -31,7 +35,7 @@ $(document).ready(function(){
 	var b_bannerimg = document.getElementById("banner").getElementsByTagName("img")[0];
 	b_bannerimg.setAttribute("src", b_image);
 	b_bannerimg.setAttribute("alt", b_alt);
-
+	*/
 
 	// hosting sponsor banners
 	// see: /sponsors/*.js
