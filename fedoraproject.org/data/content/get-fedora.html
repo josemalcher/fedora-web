@@ -14,9 +14,9 @@
 			<h4>${_('What will I need?')}</h4>
 			<ul class="checkmark-list">
 				<li>${_('A blank CD or DVD')}</li>
-				<li>${_('A 400MHz or faster processor')}</li>
-				<li>${_('At least 512 MB memory (RAM), 1 GB recommended for best performance')}</li>
-				<li>${_('At least 10GB hard drive space (only required for installation)')}</li>
+				<li>${Markup(_('A %s MHz or faster processor') % '400')}</li>
+				<li>${Markup(_('At least %s MB memory (RAM), %s MB recommended for best performance') % ('512', '1024'))}</li>
+				<li>${Markup(_('At least %s GB hard drive space (only required for installation)') % '10')}</li>
 				<li>${_('Follow the steps below in order to use the ISO file.')}</li>
 			</ul>
 			<h4>${_('Handy Resources')}</h4>
