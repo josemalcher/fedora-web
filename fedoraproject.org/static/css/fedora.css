@@ -562,8 +562,8 @@ ul#resources li.resource-download
 }
 
 
-.download-block .fine-print {
-  font-size: small !important;
+.fine-print {
+  font-size: .9em !important;
   color: #999999;
   font-style: italic;
 }
@@ -884,7 +884,7 @@ a.cvs {
 .format-arch {
 	border-bottom: 1px #E5E5E5 solid;
 	float:left;
-	width:90%;
+	width: 70%;
 	padding: 5px;
 }
 
@@ -1036,6 +1036,11 @@ div.panes span.opt2 { float: right; }
 
 .opt1 { float: left; }
 .opt2 { float: right; }
+
+#content .format-arch .opt1 p, #content .format-arch .opt1 h3, #content .format-arch .opt2 p, #content .format-arch .opt2 h3 {
+  padding: 0px;
+  margin: 0px
+}
 
 .panes { width: 68% }
 /* end: get-option common */
