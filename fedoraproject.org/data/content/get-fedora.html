@@ -41,7 +41,7 @@
             <a href="#!" class="big-button">${_('Download Now!')}</a>
             <p class="fine-print">${Markup(_('%s, ISO format, CD-ROM disc image for Intel-compatible PCs (32-bit)') % '690 MB')} <br /><strong><a href="./get-fedora-options">${_('More download options...')}</a></strong></p>
         </div>
-        <div class="download-block" id="upgrade">
+        <div class="download-block" id="download-options-area">
             <div class="other-options">
                 <h4>${Markup(_('Other Options'))}</h4>
                 <ul>
@@ -52,9 +52,11 @@
                 </ul>
                 <p><a href="${path}/${lang}/get-fedora-options">${Markup(_('View full list of options for getting Fedora ...'))}</a></p>
             </div>
-            <h4>${Markup(_('Need to upgrade Fedora?'))}</h4>
-            <p>${Markup(_('Live Media can\'t be used to upgrade Fedora installations. Instead, you can upgrade Fedora right from your desktop. Do this by using Preupgrade - it  will  install the packages you need and upgrade your version of Fedora.'))}</p>
-            <p>${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Upgrading"&gt;Learn more about upgrading Fedora...&lt;/a&gt;'))}</p>
+            <div class="upgrade-section">
+                <h4>${Markup(_('Need to upgrade Fedora?'))}</h4>
+                <p>${Markup(_('Live Media can\'t be used to upgrade Fedora installations. Instead, you can upgrade Fedora right from your desktop. Do this by using Preupgrade - it  will  install the packages you need and upgrade your version of Fedora.'))}</p>
+                <p>${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Upgrading"&gt;Learn more about upgrading Fedora...&lt;/a&gt;'))}</p>
+			</div>
         </div>
         <div class="download-block" id="export-regulations">
             <h4>Export Regulations</h4>
