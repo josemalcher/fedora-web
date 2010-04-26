@@ -1,0 +1,86 @@
+<?python
+area = "moblin"
+
+# used to enable/disable certain section on support-tab.html
+# options: True (enabled), False (disabled)
+support_tab = {
+	'irc': True,
+	'list': True,
+	'forums': False,
+	'docs': False
+}
+
+# support: irc section
+irc_channel = '#fedora-mini'
+irc_server = 'irc.freenode.net'
+irc_server_url = 'http://freenode.net'
+
+# support: list section
+list_url = 'https://admin.fedoraproject.org/mailman/listinfo/mini'
+list_email = 'mini@lists.fedoraproject.org'
+
+# support: forums section
+forums_url = [
+	['http://domain.tld/', 'Description']
+]
+
+# support: documentation section
+docs_upstream = 'http://domain.tld/'
+docs_upstream_name = 'Description'
+docs_url = [
+	['http://domain.tld', 'Description']
+]
+
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('About Spin: Moblin')}</title>
+  </head>
+  <body>
+                <!-- the tabs -->
+                <ul class="tabs">
+                        <li><a id="t1" href="#home">${_('Home')}</a></li>
+                        <li><a id="t2" href="#about">${_('About Moblin')}</a></li>
+                        <li><a id="t3" href="#downloads">${_('Downloads')}</a></li>
+                        <li><a id="t4" href="#support">${_('Support')}</a></li>
+                </ul>
+
+                <!-- tab "panes" -->
+                <div class="panes">
+                        <div>
+                                <h2>${_('The future of the mobile internet.')}</h2>
+                                <p>${_('The purpose of this spin is to create a ready-to-go development environment for contributing to educational projects inside, but also outside of the Fedora ecosystem.')}</p>
+                                <span class="blurb"><img src="/static/images/content/moblin-screenshot-01-sm.png" rel="#moblin1" /><br />${_('Click image to enlarge')}</span>
+                        </div>
+                        <div>
+                                <h2>${_('About Moblin')}</h2>
+                                <p>${_('The Moblin Architecture is designed to support multiple platforms and usage models ranging from Netbooks and NetTops to Mobile Internet Devices (MID) and various embedded usage models, such as In Vehicle Infotainment systems.')}</p>
+                                <p>${_('The central piece of the architecture is the common layer called "Moblin Core". Moblin Core is built on the GNOME Mobile platform, extending and enriching it with new technologies like Clutter, GUPnP and mojito. The Moblin Core is the core desktop environment that sits of top of Fedora, and above the Moblin Core are the specific user interface and user interaction model for the target device(s).')}</p>
+                        </div>
+                        <div>
+                                <h2>${_('Downloads')}</h2>
+                                <xi:include href="../../templates/download-tab.html" />
+                        </div>
+                        <div>
+                                <h2>${_('Support')}</h2>
+                                <xi:include href="../../templates/support-tab.html" />
+                        </div>
+                </div>
+
+<div class="simple_overlay" id="moblin1">
+    <!-- large image -->
+    <img src="/static/images/content/moblin-screenshot-01-lg.png" />
+    <!-- image details -->
+    <div class="details">
+        <h3>${_('Moblin')}</h3>
+        <h4>${_('Screenshot')}</h4>
+        <p>${_('Screenshot of the Moblin desktop')}</p>
+    </div>
+</div>
+
+  </body>
+</html>
