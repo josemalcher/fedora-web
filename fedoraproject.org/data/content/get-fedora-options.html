@@ -40,26 +40,17 @@
 
 		<!-- content -->
 		<!-- tabs -->
-		<ul class="tabs hidenojs">
+		<ul class="tabs">
 			<li><a id="t1" href="#desktops">Desktops</a></li>
 			<li><a id="t2" href="#architecture">Architecture</a></li>
 			<li><a id="t3" href="#formats">Formats</a></li>
 			<li><a id="t4" href="#activities">Activities</a></li>
 		</ul>
-		
-		<noscript>
-			<ul class="tabs">
-				<li><a id="t1" href="#desktops1">Desktops</a></li>
-				<li><a id="t2" href="#architecture1">Architecture</a></li>
-				<li><a id="t3" href="#formats1">Formats</a></li>
-				<li><a id="t4" href="#activities1">Activities</a></li>
-			</ul>
-		</noscript>
 
 		<!-- tab "panes" -->
 		<div class="panes">
 			<div id="desktop-versions">
-				<a name="desktops1"><hr class="shownojs" /></a>
+				<noscript><a name="desktops"><hr /></a></noscript>
 				<h2>${_('Fedora Desktops')}</h2>
 				<p>${_('There are multiple desktops available for use with Fedora. Each has a slightly different look and feel and offers varying levels of customization. Desktops affect how windows, icons, menus, and various basic desktop interfaces look and feel. You may want to try a few different ones and figure out which ones is best for you!')}</p>
 				<span class="desktop-section">
@@ -148,7 +139,7 @@
 				</span>
 			</div>
 			<div id="get-architecture">
-				<a name="architecture1"><hr class="shownojs" /></a>
+				<noscript><a name="architecture"><hr /></a></noscript>
 				<h2>${_('Fedora Downloads by Architechture')}</h2>
 				<p>${Markup(_('Not sure which of these architectures are right for you? Need help figuring out what a particular computer\'s architecture is? We\'ve &lt;a href="%s"&gt;got a helpful guide&lt;/a&gt;.' % 'http://docs.fedoraproject.org/install-guide/f13/en-US/html/ch-new-users.html#sn-which-arch'))}</p>
 				<span class="arch-section">
@@ -209,7 +200,7 @@
 				</span>
 			</div>
 			<div id="get-formats">
-				<a name="formats1"><hr class="shownojs" /></a>
+				<noscript><a name="formats"><hr /></a></noscript>
 				<h2>${_('Fedora Downloads by Formats')}</h2>
 				<span class="arch-section">
 					<h3>${_('Fedora 13 Live Media / Spins')}</h3>
@@ -279,7 +270,7 @@
 				</span>			
 			</div>
 			<div id="get-acitivites">
-				<a name="activities1"><hr class="shownojs" /></a>
+				<noscript><a name="activities"><hr /></a></noscript>
 				<h2>${_('Fedoras that do what you need.')}</h2>
 				<table>
 					<tbody>
