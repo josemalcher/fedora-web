@@ -492,11 +492,13 @@ ul#resources li.resource-download
 #content a:link
 {
   color: #337ACC;
+  text-decoration: none;
 }
 
 #content a:visited
 {
-  color: #804080;
+  color: #729FCF;
+  text-decoration: none;
 }
 
 /* get-fedora styles */
@@ -539,6 +541,11 @@ ul#resources li.resource-download
   font-size: 0.8em;
 }
 
+.download-block em.download-tagline {
+  color: #999999;
+  font-size: 0.8em;
+}
+
 .download-block .button {
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -552,11 +559,27 @@ ul#resources li.resource-download
   border: 1px solid #446382;
   background-color: #5F94C9 !important;
   margin-top: 0.9em;
-
 }
 
-.download-block .fine-print {
-  font-size: xx-small !important;
+.download-block .big-button {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  color: #FFFFFF!important;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 3;
+  margin: 0;
+  padding: 0.4em 0.5em;
+  border: 1px solid #446382;
+  background-color: #5F94C9 !important;
+  margin-top: 0.9em;
+  font-size: 1.7em;
+}
+
+
+.fine-print {
+  font-size: .9em !important;
   color: #999999;
   font-style: italic;
 }
@@ -742,7 +765,7 @@ a.cvs {
   text-transform: uppercase;
   margin: 0;
 }
-i
+
 /* Login panel */
 #login-box form .field {
   margin: 0 0 1ex;
@@ -816,7 +839,7 @@ i
   text-decoration: none;
 }
 
-.read-more, .re-collapse { 
+.read-more, .re-collapse {
   float:right;
 }
 
@@ -824,5 +847,318 @@ i
   float: none;
 }
 
+/* applies to get-* pages */
+
+#download-resources {
+  float:right;
+  margin-left:2em;
+  width:21em; /* tofix */
+}
+
+#download-resources h4 {
+  text-transform: uppercase;
+}
+
+#download-resources li {
+  padding: 3px 0;
+}
+
+#download-resources ul.checkmark-list {
+  list-style: disc url("/static/images/icon-checkmark.png") outside;
+}
+
+#download-resources li.guide-list {
+  list-style: disc url("/static/images/icon-guide.png") outside;
+}
+
+#download-resources li.webpage-list {
+  list-style: disc url("/static/images/icon-webpage.png") outside;
+}
+
+#download-resources li.support-list {
+  list-style: disc url("/static/images/icon-support.png") outside;
+}
+
+#download-resources div, #download-resources div h4 {
+  padding: 5px 0 5px 0;
+}
+
+#download-resources div p {
+  padding-left: 5px;
+}
+
+#download-options-area {
+  background-color: #f2f2f2;
+}
+
+#download-options-area h4 {
+  color: #337ACC;
+}
+
+.other-options {
+  float: right;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  margin-left: 1em;
+  width: 45%;
+}
+
+.upgrade-section {
+  width: 50%;
+}
+
+/* get-* format tab */
+.format-arch {
+	border-bottom: 1px #E5E5E5 solid;
+	float:left;
+	width: 90%;
+	padding: 5px;
+}
+
+.support-icon {
+	border: 0px;
+	padding: 3px;
+}
+
+.vendor-header {
+	clear: left;
+	font-size: 1.3em;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.freemedia-header {
+	clear: left;
+	font-size: 1.3em;
+	padding-top: 15px;
+}
+
+
+.vendor1, .vendor2 {
+	width: 50%;
+}
+
+/* end: applies to get-* pages */
+
+/* tabs */
+/* root element for tabs  */
+ul.tabs {
+	margin: 0 !important;
+	padding: 0;
+	height: 30px;
+	border-bottom: 1px solid #dcdcdc;
+	width: 70%;
+}
+
+/* single tab */
+ul.tabs li {
+	float: left;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+/* link inside the tab. no background image */
+ul.tabs a {
+	float: left;
+	font-size: 13px;
+	display: block;
+	padding: 5px 10px;
+	text-decoration: none;
+	border: 1px solid #dcdcdc;
+	border-bottom: 0px;
+	height: 18px;
+	background-color: #dcdcdc;
+	color: #3771c8;
+	margin-right: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	position: relative;
+	top: 1px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+ul.tabs a:hover {
+	background-color: #fff;
+	color: #818181;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* selected tab */
+ul.tabs a.current {
+	background-color: #fff;
+	border-bottom: 2px solid #fff;
+	color: #808080;
+	cursor: default;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* tab pane */
+div.panes div {
+	display: none;
+	border: 0px;
+	border: 1px solid #dcdcdc;
+	border-width: 0 0px 0px 1px;
+	min-height: 150px;
+	padding: 15px 10px;
+	background-color: #fff;
+	/* tofix width: 70%; */
+	float: left;
+}
+
+#content a.current:link {
+	color: #828282;
+}
+/* end: tabs */
+
+/* --- */
+#content span.download-opt1
+{
+	float: left;
+	width: 45%;
+}
+
+div.panes span.download-option {
+	display: block;
+	/* tofix: width: 300px !important; */
+	width: 50%;
+}
+
+div.panes span.opt1 { float: left; }
+div.panes span.opt2 {
+  float: right;
+  width: 50%;
+}
+
+#export-regulations { clear: both; }
+
 /* Hack to make it simple to get rid of borders in a table (ianweller) */
 #content table.nobordersplz th, #content table.nobordersplz td { border-width: 0px; }
+
+/* get-option common */
+/* keeps common stuff in get pages */
+.star-fedora-default {
+	background:transparent url(/static/images/icon-fedora-default.png) no-repeat scroll right center;
+	width: 400px;
+}
+
+.star-most-compatible {
+	background:transparent url(/static/images/icon-most-compatible.png) no-repeat scroll right center;
+	width: 350px;
+}
+
+.download-button-mini {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  color: #FFFFFF!important;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 2;
+  font-size:0.85em;
+  padding: 0.3em 0.4em;
+  border: 1px solid #446382;
+  background-color: #5F94C9 !important;
+}
+
+.opt1 { float: left; }
+.opt2 { float: right; }
+
+#content .format-arch .opt1 p, #content .format-arch .opt1 h3, #content .format-arch .opt2 p, #content .format-arch .opt2 h3 {
+  padding: 0px;
+  margin: 0px
+}
+
+.panes { width: 68% }
+
+.shownojs { display: none; }
+
+/* end: get-option common */
+
+/* get-option - desktop pane */
+.desktop-section ul {
+	float: left;
+}
+
+.desktop-section img.desktop-screenshot {
+	float: right;
+}
+
+/* end: get-option - desktop pane */
+
+
+/* get-option - architecture pane */
+.arch-section, .desktop-section {
+	clear:left;
+	display:block;
+	margin-bottom:1em;
+	padding:0.5em 1em;
+}
+
+img.download-media
+{
+	float: left;
+	padding-right: 7px;
+}
+
+.arch-sparc-area {
+  background-color: #f5f5f5;
+  padding: 1em;
+  clear: both;
+  display: block;
+}
+/* end: get-option - architecture pane */
+
+
+/* get-option - activites pane */
+#content table, #content table td {
+	border-style:hidden;
+}
+
+.panes table tr {
+	background-color:#F2F2F2;
+	border:0 none;
+}
+
+#get-acitivites td.rank {
+	background-color:white;
+	font-weight:bold;
+	padding-left:0;
+	padding-right:7px;
+	text-align:left;
+}
+
+#get-acitivites td.name {
+	font-size:xx-small;
+	font-style:italic;
+}
+
+#get-acitivites table td {
+	border-color: white !important;
+	border-style: solid !important;
+	border-width: 0 0 18px !important;
+	padding: 0.8em;
+	vertical-align: top;
+}
+
+.learn-more {
+	display: none;
+}
+
+/*
+ * note: probably not needed
+#content table th, #content table td {
+	border:1px solid #000000;
+	padding:0.6ex;
+}
+*/
+
+/* end: get-option - activites pane */
+
+#content img {
+	margin:0;
+}
