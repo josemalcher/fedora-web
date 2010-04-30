@@ -1,0 +1,114 @@
+<?python
+area = "soas"
+
+# used to enable/disable certain section on support-tab.html
+# options: True (enabled), False (disabled)
+support_tab = {
+	'irc': True,
+	'list': True,
+	'forums': False,
+	'docs': True
+}
+
+# support: irc section
+irc_channel = '#sugar'
+irc_server = 'irc.freenode.net'
+irc_server_url = 'http://freenode.net'
+
+# support: list section
+list_url = 'http://lists.sugarlabs.org/listinfo/soas'
+list_email = 'soas@lists.sugarlabs.org'
+
+# support: forums section
+forums_url = [
+	['http://domain.tld/', 'Description']
+]
+
+# support: documentation section
+docs_upstream = 'http://www.sugarlabs.org/'
+docs_upstream_name = 'Sugar Labs'
+docs_url = [
+	['http://sugarlabs.org/', 'Sugar Labs']
+]
+
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('About Spin: Sugar on a Stick')}</title>
+  </head>
+  <body>
+                <!-- the tabs -->
+                <ul class="tabs">
+                        <li><a id="t1" href="#home">${_('Home')}</a></li>
+                        <li><a id="t2" href="#about">${_('About')}</a></li>
+                        <li><a id="t3" href="#downloads">${_('Downloads')}</a></li>
+                        <li><a id="t4" href="#support">${_('Support')}</a></li>
+                </ul>
+
+                <!-- tab "panes" -->
+                <div class="panes">
+                        <div>
+                                <h2>${_('Discover. Reflect. Share. Learn.')}</h2>
+                                <span class="blurb"><img src="/static/images/content/soas-screenshot-01-sm.png" rel="#soas1" /><br />${_('Click image to enlarge')}</span>
+				<p>${_('Sugar on a Stick is a Fedora-based operating system featuring the award-winning Sugar Learning Environment and designed to fit on a USB thumbdrive (&quot;stick&quot;). Originally developed for the One Laptop Per Child Project and designed specifically as a 1-to-1 computing environment for K-8 students to collaborate with others in exploring the world around them, Sugar is used every day by over half a million students in classrooms throughout the world. It is now deployable for the cost of a stick rather than a laptop; students can take their Sugar on a Stick thumbdrive to any machine - at school, at home, at a library or community center - and boot their customized computing environment without touching the host machine&rsquo;s hard disk at all.')}</p>
+				<p>${_('The Sugar Learning Environment gives students access to a thriving community-created ecosystem of software Activities designed to achieve specific pedagogical goals. Activities range from physics simulators and interactive speech synthesis for beginning readers to tools for remixing open content into customized digital libraries for your local classroom. Sugar automatically saves your progress to a &quot;Journal&quot; on your stick, so teachers and parents can easily pull up &quot;all collaborative web browsing sessions done in the past week&quot; or &quot;papers written with Daniel and Sarah in the last 24 hours&quot; with a simple query rather than memorizing complex file/folder structures. The source code for each Activity is available right from the application itself with the &quot;View Source&quot; feature, meaning that students can see exactly how their favorite applications work - and perhaps how to make them even better. And an international community of learners, teachers, deployers, and developers is always there to help classrooms turn their feedback and ideas for improvement into reality.')}</p>
+				<p>${_('Join us in enabling children to reclaim computers for themselves - we need contributors of all ages, backgrounds, and types to help us bring open source personal computing to classrooms as a tool for enabling exploration. &lt;a href="#about"&gt;Learn More&lt;/a&gt;.')}</p>
+                        </div>
+                        <div>
+                                <h2>${_('About')}</h2>
+				<h3>${_('What is Sugar on a Stick?')}</h3>
+                                <p>${_('Information is about nouns. Learning is about verbs. The Sugar user interface differs from traditional user interfaces in that it is based on both cognitive and social constructivism. A video tour of the Sugar Learning Platform is available &lt;a href="http://www.sugarlabs.org/assets/sugar_demo.ogg"&gt;here&lt;/a&gt;.')}</p>
+				<p>${_('The third Sugar on a Stick release, &quot;Mirabelle&quot;, is a slim, stable version of the Sugar Learning Platform featuring a few classroom-tested Activities and designed for remixability and customization by adventurous students, families, and small classroom deployments who want to try something different and help shape the future of personalized learning for children around the world.')}</p>
+				<h3>${_('Our principles')}</h3>
+				<h4>${_('The Sugar Learning Platform')}</h4>
+				<p>${_('Two Principles define the Sugar Learning Platform:')}</p>
+				<ul>
+					<li>${_('We learn through doing, so if we want more learning, we want more doing.')}</li>
+					<li>${_('Love is a better master than duty - you want people to engage in things that are authentic to them, things that they love. Internal motivation almost always trumps external motivations.')}</li>
+				</ul>
+				<h4>${_('The Design of Sugar')}</h4>
+				<p>${_('Three experiences characterize the design of Sugar:')}</p>
+				<ul>
+					<li>${_('Discovering: Sugar can accommodate a wide variety of users, with different levels of skill in terms of reading, language, and different levels of experience with computing. It is easy to approach, yet it doesn&rsquo;t put an upper bound on personal expression. One can peel away layers and go deeper and deeper, with no restrictions.')}</li>
+					<li>${_('Reflecting: Sugar uses &quot;Journal&quot; to record each learner&rsquo;s activity. The Journal serves as a place for reflection and assessment of progress.')}</li>
+					<li>${_('Sharing: The Sugar interface always shows the presence of other learners. Collaboration is a first-order experience. Students and teachers dialog with each other, support each other, critique each other, and share ideas.')}</li>
+				</ul>
+				<h4>${_('The Sugar Labs Community')}</h4>
+				<p>${_('Three principles define the Sugar Labs community:')}</p>
+				<ul>
+					<li>${_('Everyone is a teacher and a learner.')}</li>
+					<li>${_('Humans by their nature are social beings.')}</li>
+					<li>${_('Humans by their nature are expressive.')}</li>
+				</ul>
+                        </div>
+                        <div>
+                                <h2>${_('Downloads')}</h2>
+				<h3>Sugar on a Stick</h3>
+				<h4>Installable Live Media</h4>
+				<p>This is the latest version of Sugar on a Stick, and is everything you need to try it out with your USB thumbdrive (&quot;stick&quot;).</p>
+                                <xi:include href="../../templates/download-tab.html" />
+                        </div>
+                        <div>
+                                <h2>${_('Sugar on a Stick Support')}</h2>
+                                <p>${_('Need help using the Sugar on a Stick? We have put together a list of resources you can use to get help below. For help downloading, running, and installing spins, please visit the main spins support page.')}</p>
+                                <xi:include href="../../templates/support-tab.html" />
+                        </div>
+                </div>
+
+<div class="simple_overlay" id="soas1">
+    <!-- large image -->
+    <img src="/static/images/content/soas-screenshot-01-lg.png" />
+    <!-- image details -->
+    <div class="details">
+        <h3>${_('Sugar on a Stick')}</h3>
+        <h4>${_('Screenshot')}</h4>
+        <p>${_('Screenshot of Sugar on a Stick')}</p>
+    </div>
+</div>
+
+  </body>
+</html>

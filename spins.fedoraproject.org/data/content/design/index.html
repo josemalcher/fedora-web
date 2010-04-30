@@ -1,0 +1,90 @@
+<?python
+area = "design"
+
+# used to enable/disable certain section on support-tab.html
+# options: True (enabled), False (disabled)
+support_tab = {
+	'irc': True,
+	'list': True,
+	'forums': False,
+	'docs': False
+}
+
+# support: irc section
+irc_channel = '#fedora-design'
+irc_server = 'irc.freenode.net'
+irc_server_url = 'http://freenode.net'
+
+# support: list section
+list_url = 'https://admin.fedoraproject.org/mailman/listinfo/design-team'
+list_email = 'design-team@lists.fedoraproject.org'
+
+# support: forums section
+forums_url = [
+	['http://domain.tld/', 'Description']
+]
+
+# support: documentation section
+docs_upstream = 'http://domain.tld/'
+docs_upstream_name = 'Description'
+docs_url = [
+	['http://domain.tld', 'Description']
+]
+
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('About Spin: Design Suite')}</title>
+  </head>
+  <body>
+                <!-- the tabs -->
+                <ul class="tabs">
+                        <li><a id="t1" href="#home">${_('Home')}</a></li>
+                        <li><a id="t2" href="#about">${_('About')}</a></li>
+                        <li><a id="t3" href="#downloads">${_('Downloads')}</a></li>
+                        <li><a id="t4" href="#support">${_('Support')}</a></li>
+                </ul>
+
+                <!-- tab "panes" -->
+                <div class="panes">
+                        <div>
+                                <h2>${_('Open Creativity.')}</h2>
+                                <span class="blurb"><img src="/static/images/content/design-screenshot-01-sm.png" rel="#design1" /><br />${_('Click image to enlarge')}</span>
+				<p>${_('Have you ever wanted to use the tools the Fedora Design Team is using? Or are you probably even looking forward to getting involved in Fedora as a designer? This is your chance.')}</p>
+				<p>${_('The Fedora Design Suite includes well-selected applications, fitting a variety of use cases. Whether you decide to work on publishing documents, creating images and pictures or even 3D content, the Design Suite has a fitting tool.')}</p>
+				<p>${_('&lt;a href="#about"&gt;Learn More&lt;/a&gt;.')}</p>
+                        </div>
+                        <div>
+                                <h2>${_('About')}</h2>
+                        </div>
+                        <div>
+                                <h2>${_('Downloads')}</h2>
+				<h3>${_('Fedora Design Suite')}</h3>
+				<h4>${_('Installable Live Media')}</h4>
+                                <p>${_('This is the latest version of the Fedora Linux operating system&rsquo;s Design Suite. It&rsquo;s everything you need to try out Fedora&rsquo;s Design Suite &#8364;&#8221;you don&rsquo;t have to erase anything on your current system to try it out, and it won&rsquo;t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop if you like.')}</p>
+                                <xi:include href="../../templates/download-tab.html" />
+                        </div>
+                        <div>
+                                <h2>${_('Fedora Design Suite Support')}</h2>
+                                <p>${_('Need help using the Design Suite? We have put together a list of resources you can use to get help below. For help downloading, running, and installing spins, please visit the main spins support page.')}</p>
+                                <xi:include href="../../templates/support-tab.html" />
+                        </div>
+                </div>
+
+<div class="simple_overlay" id="design1">
+    <!-- large image -->
+    <img src="/static/images/content/design-screenshot-01-lg.png" />
+    <!-- image details -->
+    <div class="details">
+        <h3>${_('Design Suite')}</h3>
+        <h4>${_('Screenshot')}</h4>
+        <p>${_('Screenshot of the Design Suite')}</p>
+    </div>
+</div>
+
+  </body>
+</html>
