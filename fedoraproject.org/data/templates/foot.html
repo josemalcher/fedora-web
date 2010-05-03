@@ -5,17 +5,14 @@
   py:strip="">
   <div id="bottom">
     <div id="footer">
-      <p class="copy">
-      ${Markup(_('&amp;copy; 2010 Red Hat, Inc. and others.  For comments or queries, please &lt;a href="%s/%s/contact"&gt;contact us&lt;/a&gt;.') % (path, lang))}
-      </p>
-      <p class="disclaimer">
-      ${Markup(_('The Fedora Project is maintained and driven by the community and sponsored by Red Hat.  This is a community maintained site.  Red Hat is not responsible for content.'))}
-      </p>
+      <a href="http://www.redhat.com/"><img class="rh-logo" src="/static/images/redhat-logo.png"/></a>
       <ul>
         <li class="first"><a href="${path}/${lang}/sponsors">${Markup(_('Sponsors'))}</a></li>
         <li>${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Legal:Main"&gt;Legal&lt;/a&gt;'))}</li>
         <li>${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Legal:Trademark_guidelines"&gt;Trademark Guidelines&lt;/a&gt;'))}</li>
       </ul>
+      <p class="copy">${Markup(_('&amp;copy; 2010 Red Hat, Inc. and others.  For comments or queries, please &lt;a href="%s/%s/contact"&gt;contact us&lt;/a&gt;.') % (path, lang))}</p>
+      <p class="disclaimer">${Markup(_('The Fedora Project is maintained and driven by the community and sponsored by Red Hat.  This is a community maintained site.  Red Hat is not responsible for content.'))}</p>
     </div>
   </div>
 ${Markup(_(buildstring))}
