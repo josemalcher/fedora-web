@@ -2,7 +2,7 @@
 # Copyright (C) 2010 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
@@ -44,15 +44,6 @@ msgstr "Téléchargement pour disquette : "
 msgid "Floppy"
 msgstr "Disquette"
 
-#: data/content/download.html:15
-#, fuzzy
-msgid "Download lkrn: "
-msgstr "Télécharger une image ISO : "
-
-#: data/content/download.html:15
-msgid "lkrn"
-msgstr ""
-
 #: data/content/faq.html:7
 msgid "FAQs - boot.fedoraproject.org"
 msgstr "FAQ - boot.fedoraproject.org"
@@ -69,26 +60,9 @@ msgstr "Comment puis-je l'utiliser ?"
 msgid "First download one of the available images like the ISO image.  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode."
 msgstr "Commencez par télécharger l'une des images disponibles, telle que l'image ISO par exemple. Gravez cette image sur un CD ou DVD puis démarrez dessus. Vous venez de débuter votre utilisation de BFO ! À l'aide de votre clavier, sélectionnez une entrée du menu pour effectuer des tests, démarrer le programme d'installation de Fedora ou pour lancer le mode de secours."
 
-#: data/content/faq.html:15
-msgid "Can I use it with grub?"
-msgstr ""
-
-#: data/content/faq.html:16
-msgid "Yes!  Just run the following commands as root"
-msgstr ""
-
-#: data/content/faq.html:22
-msgid "How does it work?"
-msgstr "Comment cela fonctionne-il ?"
-
 #: data/content/faq.html:23
 msgid "BFO was started by boot.kernel.org (BKO) and combines a series of recent technologies to produce a new boot stack.  The glue that holds everything together is gpxe.  Users familiar with pxe will find gpxe very familiar.  Latest versions support several protocols beyond just tftp.  We are using http to transfer files around.  The basic steps are as follows:"
 msgstr "BFO fut initié par boot.kernel.org et combine un ensemble de technologies récentes produisant ainsi une nouvelle pile de démarrage. Toutes ces technologies sont rassemblées autour de GPXE. Si vous  connaissez déjà PXE, vous ne serez pas dépaysé. Les dernières versionsprennent en charge plusieurs protocoles en plus de tftp. Nous utilisons HTTP pour transférer les fichiers. Les étapes ci-dessous résument le fonctionnement général."
-
-#: data/content/faq.html:25
-#, fuzzy
-msgid "Download the boot.fedoraproject.org media."
-msgstr "Télécharger et booter depuis le média boot.fedoraproject.org."
 
 #: data/content/faq.html:26
 msgid "Boot from the downloaded iso/disk image."
@@ -141,10 +115,6 @@ msgstr "Actuellement le démarrage par Live CD est expérimental et non disponib
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
 msgstr "boot.fedoraproject.org"
-
-#: data/content/index.html:11
-msgid "boot.fedoraproject.org (BFO) is a way to boot hosts in order to run install or other types of media via the network.  It works similarly to a pxeboot environment."
-msgstr "boot.fedoraproject.org (BFO) est un moyen de démarrer des machines hôtes pour démarrer une installation ou tout autre type de média par le réseau. Le fonctionne est semblable à un environnement de démarrage PXE."
 
 #: data/content/index.html:12
 msgid "BFO welcome screen"
@@ -205,3 +175,31 @@ msgstr "Sponsor de l'hébergement"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "Sponsorisé par ServerBeach"
+
+#: data/content/download.html:15
+msgid "lkrn"
+msgstr "lkrn"
+
+#: data/content/download.html:15
+msgid "Download lkrn: "
+msgstr "Télécharger lkrn : "
+
+#: data/content/faq.html:25
+msgid "Download the boot.fedoraproject.org media."
+msgstr "Télécharger le média boot.fedoraproject.org."
+
+#: data/content/faq.html:16
+msgid "Yes!  Just run the following commands as root"
+msgstr "Bien sûr ! Lancez simplement les commandes suivantes en root"
+
+#: data/content/faq.html:15
+msgid "Can I use it with grub?"
+msgstr "Puis-je l'utiliser avec grub ?"
+
+#: data/content/faq.html:22
+msgid "How does it work?"
+msgstr "Comment cela fonctionne-t-il ?"
+
+#: data/content/index.html:11
+msgid "boot.fedoraproject.org (BFO) is a way to boot hosts in order to run install or other types of media via the network.  It works similarly to a pxeboot environment."
+msgstr "boot.fedoraproject.org (BFO) est un moyen de démarrer des machines hôtes pour démarrer une installation ou tout autre type de média par le réseau. Le fonctionnement est semblable à un environnement de démarrage PXE."
