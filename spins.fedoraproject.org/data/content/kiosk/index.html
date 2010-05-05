@@ -1,0 +1,89 @@
+<?python
+area = "kiosk"
+
+# used to enable/disable certain section on support-tab.html
+# options: True (enabled), False (disabled)
+support_tab = {
+	'irc': True,
+	'list': True,
+	'forums': False,
+	'docs': False
+}
+
+# support: irc section
+irc_channel = '#fedora'
+irc_server = 'irc.freenode.net'
+irc_server_url = 'http://freenode.net'
+
+# support: list section
+list_url = 'https://admin.fedoraproject.org/mailman/listinfo/users'
+list_email = 'users@lists.fedoraproject.org'
+
+# support: forums section
+forums_url = [
+	['http://domain.tld/', 'Description']
+]
+
+# support: documentation section
+docs_upstream = 'http://domain.tld/'
+docs_upstream_name = 'Description'
+docs_url = [
+	['http://domain.tld', 'Description']
+]
+
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('About Spin: Kiosk')}</title>
+  </head>
+  <body>
+                <!-- the tabs -->
+                <ul class="tabs">
+                        <li><a id="t1" href="#home">${_('Home')}</a></li>
+                        <li><a id="t2" href="#about">${_('About')}</a></li>
+                        <li><a id="t3" href="#downloads">${_('Downloads')}</a></li>
+                        <li><a id="t4" href="#support">${_('Support')}</a></li>
+                </ul>
+
+                <!-- tab "panes" -->
+                <div class="panes">
+                        <div>
+                                <h2>${_('Secure kiosks: no longer an oxymoron. ')}</h2>
+				<p>${_('The goal of the Fedora Kiosk Spin is to create an operating system that can only be used as a kiosk. It is intended for use in public locations such as libraries, schools, and event venues. ')}</p>
+				<p>${_('Imagine a machine sitting at a library (for example) running a liveDVD a single guest user account - root (administrative) account has been disabled. This kiosk can only talk to web ports, and when you log out all files and processes get destroyed so there is nothing left in the user account for the next user to search for. Since all processes are destroyed on logout, you can rest assured no one left a process to watch your keystrokes. Starting from scratch with a clean system is as easy as a reboot. ')}</p>
+				<p>${_('With the Fedora Kiosk Spin, your terminal can be as secure as you want it to be. &lt;b&gt;&lt;a href="#about"&gt;Learn more.&lt;/a&gt;&lt;/b&gt;')}</p>
+                                <span class="blurb"><img src="/static/images/content/kiosk-screenshot-01-sm.png" rel="#kiosk1" /><br />${_('Click image to enlarge')}</span>
+                        </div>
+                        <div>
+                                <h2>${_('About')}</h2>
+                                <p>${_('The Fedora Kiosk Spin relies on SELinux (Security-Enhanced Linux) for its combination of functionality and security. It features the xguest package, which creates a user of type xguest_t, a special user type designed specifically with kiosk usage in mind. ')}</p>
+                                <p>${_('Also created for the Fedora Kiosk Spin is a PAM (Pluggable Authentication Module) called pam_sepermit which allows certain users (xguest) to login without a password if SELinux is on in enforcing mode. The spin uses pam_namespace to setup temporary home and /tmp directories. The system is easily extended by building a liveimage where iptables force all network traffic to go to a singe host or network so that you can lock down your kiosk to only work on said network. ')}</p>
+                        </div>
+                        <div>
+                                <h2>${_('Downloads')}</h2>
+                                <xi:include href="../../templates/download-tab.html" />
+                                <p>${_('Moblin&trade; is a trademark or registered trademark of Intel Corporation or its subsidiaries in the United States and other countries.')}</p>
+                        </div>
+                        <div>
+                                <h2>${_('Support')}</h2>
+                                <xi:include href="../../templates/support-tab.html" />
+                        </div>
+                </div>
+
+<div class="simple_overlay" id="kiosk1">
+    <!-- large image -->
+    <img src="/static/images/content/kiosk-screenshot-01-lg.png" />
+    <!-- image details -->
+    <div class="details">
+        <h3>${_('Kiosk')}</h3>
+        <h4>${_('Login screen')}</h4>
+        <p>${_('Users of your kiosk will only be able to access a single guest account, with information and processes that are wiped and rest after each logout.')}</p>
+    </div>
+</div>
+
+  </body>
+</html>
