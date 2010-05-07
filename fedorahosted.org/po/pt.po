@@ -22,17 +22,9 @@ msgstr ""
 msgid "Hosted Projects - Fedora Hosted"
 msgstr "Projectos Alojados - Fedora Hosted"
 
-#: data/content/410.html:12
-msgid "No such project."
-msgstr "Não existe esse projecto"
-
 #: data/content/410.html:14
 msgid "The requested project does not exist on Fedora Hosted."
 msgstr "O projecto pedido não existe no Fedora Hosted"
-
-#: data/content/about.html:13
-msgid "Fedora Hosted is a <a href=\"http://fedoraproject.org\">Fedora Project</a>-sponsored way for developers to host their code and collaborate online. We provide each project with source control via git, Mercurial, bzr, and others, as well as a bug tracker and wiki via Trac."
-msgstr "O Fedora Hosted é um modo patrocinado pelo <a href=\"http://fedoraproject.org\">Projecto Fedora</a> para os desenvolvedores alojarem o seu código e colaborarem em linha."
 
 #: data/content/faq.html:12 data/templates/sidebar.html:13
 msgid "Frequently-Asked Questions"
@@ -41,10 +33,6 @@ msgstr "Questões Frequentes"
 #: data/content/faq.html:13
 msgid "What is Fedora Hosted?"
 msgstr "O que é o Fedora Hosted?"
-
-#: data/content/faq.html:14
-msgid "Fedora Hosted is a project sponsored by <a href=\"http://fedoraproject.org/\">the Fedora Project</a> to allow upstream developers to host their code and collaborate online."
-msgstr "Fedora Hosted é um projecto patrocinado pelo <a href=\"http://fedoraproject.org/\">Projecto Fedora</a> e permite os desenvolvedores de upstream alojar o seu código e colaborar em linha."
 
 #: data/content/faq.html:15
 msgid "How can I request a new project?"
@@ -65,10 +53,6 @@ msgstr "Como posso obter uma conta no Fedora Hosted?"
 #: data/content/faq.html:20
 msgid "Your normal Fedora Project account works with Fedora Hosted. Simply <a href=\"https://admin.fedoraproject.org/accounts/\">apply</a> for a Fedora Project account if you haven't already. Do note that you must sign a Contributor License Agreement with the Fedora Project in order to contribute code."
 msgstr ""
-
-#: data/content/faq.html:21
-msgid "How can I publish archive releases (tgz, zip, etc) for my project?"
-msgstr "Como posso publicar lançamentos de ficheiros (tgz, zip, etc) para o meu projecto?"
 
 #: data/content/faq.html:22
 msgid "Create the archive on your workstation and run <code>scp myProject-0.1.tar.gz fedorahosted.org:&lt;Project Name&gt;</code>. The archive will be located under <a href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>"
@@ -125,10 +109,6 @@ msgstr ""
 #: data/content/index.html:10
 msgid "Available Projects"
 msgstr "Projectos Disponíveis"
-
-#: data/content/index.html:12
-msgid "Display all projects"
-msgstr "Mostrar todos os projectos"
 
 #: data/content/index.html:17
 msgid "Project Description"
@@ -224,18 +204,6 @@ msgstr "Acerca"
 msgid "New Project"
 msgstr "Novo Projecto"
 
-#: data/templates/sidebar.html:16
-msgid "Website Language"
-msgstr "Língua do Wevsite"
-
-#: data/templates/sidebar.html:24
-msgid "Hosting Sponsor"
-msgstr "Patrocinador do Alojamento"
-
-#: data/templates/sidebar.html:25
-msgid "Sponsored by ServerBeach"
-msgstr "Patrocinado pelo ServerBeach"
-
 #: data/content/new.html:16
 msgid "&lt;name of project&gt;"
 msgstr "&lt;nome do projecto&gt;"
@@ -248,25 +216,13 @@ msgstr "Sobre Fedora Hosted"
 msgid "About - Fedora Hosted"
 msgstr "Sobre - Fedora Hosted"
 
-#: data/content/about.html:14
-msgid "Your new project is just a <a href=\"new\">work ticket</a> away."
-msgstr "O seu projecto está apenas à distância de uma <a href=\"new\">senha de trabalho</a>."
-
 #: data/content/faq.html:7
 msgid "FAQs - Fedora Hosted"
 msgstr "Questões Frequentes - Fedora Hosted"
 
-#: data/content/faq.html:16
-msgid "File a <a href=\"new\">work ticket</a> with the Fedora Infrastructure team."
-msgstr "Crie uma <a href=\"new\">senha de trabalho</a> com a equipa de infraestrutura do Fedora."
-
 #: data/templates/foot.html:17
 msgid "<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Trademark Guidelines</a>"
 msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Trademark Guidelines</a>"
-
-#: data/templates/foot.html:15
-msgid "Sponsors"
-msgstr "Padrinhos"
 
 #: data/templates/sidebar.html:8
 msgid "Navigation"
@@ -291,3 +247,47 @@ msgstr "VCS"
 #: data/content/index.html:37
 msgid "No projects registered in this group"
 msgstr "Sem projectos registados neste grupo"
+
+#: data/content/about.html:14
+msgid "Your new project is just a <a href=\"new\">work ticket</a> away."
+msgstr "O seu projecto está apenas à distância de um <a href=\"new\">ticket</a>."
+
+#: data/templates/sidebar.html:25
+msgid "Sponsored by ServerBeach"
+msgstr "Patrocinado por ServerBeach"
+
+#: data/templates/sidebar.html:24
+msgid "Hosting Sponsor"
+msgstr "Patrocinador do alojamento"
+
+#: data/templates/sidebar.html:16
+msgid "Website Language"
+msgstr "Língua do sítio web"
+
+#: data/content/faq.html:16
+msgid "File a <a href=\"new\">work ticket</a> with the Fedora Infrastructure team."
+msgstr "Crie um <a href=\"new\">ticket</a> com a equipa de infraestrutura do Fedora."
+
+#: data/templates/foot.html:15
+msgid "Sponsors"
+msgstr "Patrocinadores"
+
+#: data/content/410.html:12
+msgid "No such project."
+msgstr "Esse projecto não existe"
+
+#: data/content/about.html:13
+msgid "Fedora Hosted is a <a href=\"http://fedoraproject.org\">Fedora Project</a>-sponsored way for developers to host their code and collaborate online. We provide each project with source control via git, Mercurial, bzr, and others, as well as a bug tracker and wiki via Trac."
+msgstr ""
+
+#: data/content/faq.html:14
+msgid "Fedora Hosted is a project sponsored by <a href=\"http://fedoraproject.org/\">the Fedora Project</a> to allow upstream developers to host their code and collaborate online."
+msgstr ""
+
+#: data/content/faq.html:21
+msgid "How can I publish archive releases (tgz, zip, etc) for my project?"
+msgstr "Como posso publicar lançamentos de ficheiros (tgz, zip, etc) para o meu projecto?"
+
+#: data/content/index.html:12
+msgid "Display all projects"
+msgstr "Apresentar todos os projectos"
