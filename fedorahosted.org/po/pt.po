@@ -74,16 +74,8 @@ msgstr ""
 msgid "Before anyone can clone/push the new repository a master push must be done with the command (from your local git repo): git push ssh://git.fedorahosted.org/git/yourproject.git/ master"
 msgstr ""
 
-#: data/content/faq.html:27
-msgid "How do I get permission to commit to a project?"
-msgstr ""
-
 #: data/content/faq.html:28
 msgid "You should <a href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for the commit group of the project, which should be <code>&lt;scm&gt;&lt;project&gt;</code>, e.g. for the desktop-effects project, apply to the <code>gitdesktop-effects</code> group."
-msgstr ""
-
-#: data/content/faq.html:29
-msgid "While I wait for my repository to be created, can I work on my code elsewhere?"
 msgstr ""
 
 #: data/content/faq.html:30
@@ -96,10 +88,6 @@ msgstr ""
 
 #: data/content/faq.html:32
 msgid "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a delimiter between hostname and path and a second \"/\" as the root of the filesystem path.  For instance, if you're accessing the repository for authconfig you need to use \"hg clone ssh://hg.fedoraproject.org//hg/authconfig\""
-msgstr ""
-
-#: data/content/faq.html:33
-msgid "Can I offer pre-compiled binaries on Fedora Hosted?"
 msgstr ""
 
 #: data/content/faq.html:34
@@ -122,11 +110,6 @@ msgstr ""
 msgid "Right-click and copy the authorized VCS URI to your clipboard"
 msgstr ""
 
-#: data/content/new.html:7
-#, fuzzy
-msgid "Request a New Project - Fedora Hosted"
-msgstr "Pedir um Novo Projecto - Fedora Hosted"
-
 #: data/content/new.html:12
 msgid "Request a New Project"
 msgstr "Pedir um Novo Projecto"
@@ -143,25 +126,12 @@ msgstr "Preencha os campos como a seguir:"
 msgid "<code>minor</code> unless this is an urgent request. If you are uncertain whether or not the request is urgent then set this field to <code>minor</code>."
 msgstr ""
 
-#: data/content/new.html:21
-msgid "Use the following template for the full description of the ticket:"
-msgstr ""
-
-#: data/content/terms.html:7
-#, fuzzy
-msgid "Terms of Use - Fedora Hosted"
-msgstr "Termos de Uso - Fedora Hosted"
-
 #: data/content/terms.html:12 data/templates/sidebar.html:14
 msgid "Terms of Use"
 msgstr "Termos de Uso"
 
 #: data/content/terms.html:13
 msgid "The Fedora Project Infrastructure team provides Fedora Hosted services on a best-effort basis. Many of the people that manage it are volunteers. Response time to new project requests is typically between 1 hour and 3 days. Outages, should they occur, are handled with a much higher priority."
-msgstr ""
-
-#: data/content/terms.html:14
-msgid "The Fedora Project reserves the right to remove any project from our system that does not meet the following criteria:"
 msgstr ""
 
 #: data/content/terms.html:16
@@ -291,3 +261,31 @@ msgstr "Como posso publicar lançamentos de ficheiros (tgz, zip, etc) para o meu
 #: data/content/index.html:12
 msgid "Display all projects"
 msgstr "Apresentar todos os projectos"
+
+#: data/content/faq.html:27
+msgid "How do I get permission to commit to a project?"
+msgstr "Como é que obtenho permissões para submeter para um projecto?"
+
+#: data/content/faq.html:29
+msgid "While I wait for my repository to be created, can I work on my code elsewhere?"
+msgstr "Enquanto espero que o meu repositório seja criado, posso trabalhar no meu código noutro sítio?"
+
+#: data/content/new.html:7
+msgid "Request a New Project - Fedora Hosted"
+msgstr "Pedir um Novo Projecto - Fedora Hosted"
+
+#: data/content/faq.html:33
+msgid "Can I offer pre-compiled binaries on Fedora Hosted?"
+msgstr "Posso oferecer binários pré-compilados no Fedora Hosted?"
+
+#: data/content/terms.html:7
+msgid "Terms of Use - Fedora Hosted"
+msgstr "Termos de Uso - Fedora Hosted"
+
+#: data/content/new.html:21
+msgid "Use the following template for the full description of the ticket:"
+msgstr "Utilize o seguinte modelo para a descrição completa do ticket:"
+
+#: data/content/terms.html:14
+msgid "The Fedora Project reserves the right to remove any project from our system that does not meet the following criteria:"
+msgstr "O Projecto Fedora reserva o direito de remover qualquer projecto do sistema que não reúna os seguintes critérios:"
