@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-05-06 17:33-0500\n"
+"POT-Creation-Date: 2010-05-08 00:27-0500\n"
 "PO-Revision-Date: 2010-05-05 15:50+0700\n"
 "Last-Translator: Manatsawin Hanmongkolchai <manatsawin@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -417,6 +417,10 @@ msgstr "ช่วยที ฉันอยากได้ Fedora!"
 msgid "There are a lot of options on this page. Would you rather download the standard Fedora image?"
 msgstr "ในหน้านี้มีทางเลือกมากมาย คุณต้องการดาวน์โหลดอิมเมจ Fedora มาตรฐานหรือไม่?"
 
+#: data/content/get-fedora-options.html:17
+msgid "Get it here"
+msgstr ""
+
 #: data/content/get-fedora-options.html:24 data/content/get-fedora.html:22
 msgid "Handy Resources"
 msgstr "แหล่งข้อมูล"
@@ -485,7 +489,7 @@ msgstr "Fedora เดสก์ท็อป"
 #: data/content/get-fedora-options.html:151
 #: data/content/get-fedora-options.html:185
 #: data/content/get-fedora-options.html:186
-#: data/content/get-fedora-options.html:201
+#: data/content/get-fedora-options.html:191
 #: data/content/get-fedora-options.html:202
 #: data/content/get-fedora-options.html:227
 #: data/content/get-fedora-options.html:236
@@ -588,6 +592,10 @@ msgstr "เว็บไซต์ XFCE.org"
 msgid "Fedora Downloads by Architechture"
 msgstr "ไฟล์ดาวน์โหลด Fedora แบ่งตามสถาปัตยกรรม"
 
+#: data/content/get-fedora-options.html:180
+msgid "Not sure which of these architectures are right for you? Need help figuring out what a particular computer's architecture is? We've <a href=\"http://docs.fedoraproject.org/install-guide/f13/en-US/html/ch-new-users.html#sn-which-arch\">got a helpful guide</a>."
+msgstr ""
+
 #: data/content/get-fedora-options.html:183
 msgid "Because they run on both 32-bit and 64-bit Intel and AMD compatible PCs, the 32-bit PC-compatible versions of Fedora are the most versatile."
 msgstr "เนื่องจากแผ่น Fedora 32 บิตสำหรับคอมพิวเตอร์ส่วนบุคคลสามารถทำงานได้ทั้งบนเครื่อง 32 บิตและ 64 บิตของอินเทลและ AMD แผ่นนี้จึงถือเป็นแผ่นที่อเนกประสงค์ที่สุด"
@@ -603,8 +611,8 @@ msgstr ""
 msgid "%s, CD ISO disc image for %s-bit PC"
 msgstr "อิมเมจแผ่น ISO %s สำหรับคอมพิวเตอร์ส่วนบุคคล 32 บิต"
 
-#: data/content/get-fedora-options.html:191
 #: data/content/get-fedora-options.html:192
+#: data/content/get-fedora-options.html:201
 #: data/content/get-fedora-options.html:207
 #: data/content/get-fedora-options.html:208
 msgid "64-bit PC Edition"
@@ -694,12 +702,18 @@ msgid "%s ISO disk image for 64-bit PC"
 msgstr "อิมเมจแผ่น ISO %s สำหรับคอมพิวเตอร์ส่วนบุคคล 64 บิต"
 
 #: data/content/get-fedora-options.html:258
-msgid "For help determining what architecture your system is, <a href=\"#!\">please view our architecture help guide</a>."
+#, fuzzy
+msgid "For help determining what architecture your system is, <a href=\"http://docs.fedoraproject.org/install-guide/f13/en-US/html/ch-new-users.html#sn-which-arch\">please view our architecture help guide</a>."
 msgstr "หากต้องการทราบว่าเครื่องของท่านใช้สถาปัตยกรรมใด <a href=\"#!\">โปรดอ่านคำแนะนำด้านสถาปัตยกรรมของเรา</a>"
 
 #: data/content/get-fedora-options.html:259
 msgid "Fedora 13 Media by Mail"
 msgstr "แผ่น Fedora 13 ทางจดหมาย"
+
+#: data/content/get-fedora-options.html:261
+#, fuzzy, python-format
+msgid "Slow internet? No internet? You can get a copy of Fedora media sent via postal mail through local and online vendors, as well as via the <a href=\"%s\">Fedora Free Media</a> program."
+msgstr "อินเทอร์เน็ตช้า? ไม่มีอินเทอร์เน็ต? ท่านสามารถขอรับแผ่น Fedora ทางจดหมายได้โดยผ่านทางร้านค้าในพื้นที่ ร้านค้าออนไลน์ และโครงการแผ่นฟรี Fedora"
 
 #: data/content/get-fedora-options.html:262
 msgid "Purchase Fedora Media from a Vendor"
@@ -1480,9 +1494,6 @@ msgstr "ผู้สนับสนุน"
 
 #~ msgid "%s ISO disk image for 64-bit PPC"
 #~ msgstr "อิมเมจแผ่น ISO %s สำหรับ PPC 64 บิต"
-
-#~ msgid "Slow internet? No internet? You can get a copy of Fedora media sent via postal mail through local and online vendors, as well as via the Fedora Free Media program."
-#~ msgstr "อินเทอร์เน็ตช้า? ไม่มีอินเทอร์เน็ต? ท่านสามารถขอรับแผ่น Fedora ทางจดหมายได้โดยผ่านทางร้านค้าในพื้นที่ ร้านค้าออนไลน์ และโครงการแผ่นฟรี Fedora"
 
 #~ msgid "This is the latest version of the Fedora Linux operating system featuring the GNOME desktop.  It's everything you need to try out Fedora&#8212;and if you like it, install it right from the desktop!"
 #~ msgstr "นี่คือรุ่นล่าสุดของระบบปฎิบัติการ Fedora Linux ที่ใช้งานเดสก์ท็อป GNOME โดยมีทุกสิ่งอย่างพร้อมสำหรับการลองใช้ Fedora&#8212; หากคุณชอบก็ติดตั้งจากเดสก์ท็อปได้เลย!"
