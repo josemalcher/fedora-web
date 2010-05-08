@@ -14,7 +14,7 @@
         	<div id="iwantfedora">
 				<h4>${_('Help, I just want Fedora!')}</h4>
 				<p>${_('There are a lot of options on this page. Would you rather download the standard Fedora image?')}</p>
-				<p><a href="./get-fedora">Get it here</a>.</p>
+				<p><a href="./get-fedora">${_('Get it here')}</a>.</p>
 			</div>
 			<div id="thereismorefedora">
 				<h4>${_("There's More Fedora!")}</h4>
@@ -177,7 +177,7 @@
 			<div id="get-architecture">
 				<noscript><a name="architecture"><hr /></a></noscript>
 				<h2>${_('Fedora Downloads by Architechture')}</h2>
-				<p>${Markup(_('Not sure which of these architectures are right for you? Need help figuring out what a particular computer\'s architecture is? We\'ve &lt;a href="%s"&gt;got a helpful guide&lt;/a&gt;.' % 'http://docs.fedoraproject.org/install-guide/f13/en-US/html/ch-new-users.html#sn-which-arch'))}</p>
+				<p>${Markup(_('Not sure which of these architectures are right for you? Need help figuring out what a particular computer\'s architecture is? We\'ve &lt;a href="http://docs.fedoraproject.org/install-guide/f13/en-US/html/ch-new-users.html#sn-which-arch"&gt;got a helpful guide&lt;/a&gt;.'))}</p>
 				<span class="arch-section">
 					<h3 class="star-most-compatible">PC Compatible 32-bit</h3>
 					<p>${_('Because they run on both 32-bit and 64-bit Intel and AMD compatible PCs, the 32-bit PC-compatible versions of Fedora are the most versatile.')}</p>
@@ -255,10 +255,10 @@
 							<p class="fine-print">${_('%s ISO disk image for 64-bit PC') % '3.5 GB'}</p>
 						</span>
 					</span>
-					<p class="help" style="clear: both;"><img class="support-icon" src="./static/images/icon-support.png" />${Markup(_('For help determining what architecture your system is, &lt;a href="#!"&gt;please view our architecture help guide&lt;/a&gt;.'))}</p>
+					<p class="help" style="clear: both;"><img class="support-icon" src="./static/images/icon-support.png" />${Markup(_('For help determining what architecture your system is, &lt;a href="http://docs.fedoraproject.org/install-guide/f13/en-US/html/ch-new-users.html#sn-which-arch"&gt;please view our architecture help guide&lt;/a&gt;.'))}</p>
 					<h3>${_('Fedora 13 Media by Mail')}</h3>
 					<img class="download-media" alt="${_('32-bit PC Edition')}" src="./static/images/media.png" />
-					<p>${Markup(_('Slow internet? No internet? You can get a copy of Fedora media sent via postal mail through local and online vendors, as well as via the &lt;a href="%s"&gt;Fedora Free Media&lt;/a&gt; program.' % '#!'))}</p>
+					<p>${Markup(_('Slow internet? No internet? You can get a copy of Fedora media sent via postal mail through local and online vendors, as well as via the &lt;a href="%s"&gt;Fedora Free Media&lt;/a&gt; program.')) % 'http://fedoraproject.org/wiki/Distribution/FreeMedia'}</p>
 					<h4 class="vendor-header">${_('Purchase Fedora Media from a Vendor')}</h4>
 					<span class="select-desktop-version">
 						<span class="opt1 vendor1">
