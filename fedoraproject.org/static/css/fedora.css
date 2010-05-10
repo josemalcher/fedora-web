@@ -152,6 +152,7 @@ abbr, acronym {
   color: #337acc;
   margin: 1.5ex 0 0.5ex;
   font-size: 1.4em;
+  display: inline-block; /* to put icons next to header */
 }
 
 #content table
@@ -1047,14 +1048,14 @@ div.panes span.opt2 {
 
 /* get-option common */
 /* keeps common stuff in get pages */
-.star-fedora-default {
-	background:transparent url(/static/images/icon-fedora-default.png) no-repeat scroll right center;
-	width: 400px;
-}
-
-.star-most-compatible {
-	background:transparent url(/static/images/icon-most-compatible.png) no-repeat scroll right center;
-	width: 350px;
+.star-fedora-default, .star-most-compatible {
+	background-color: #F7FF9D;
+	border: 1px solid #A19800;
+	padding: 0.2em;
+	font-weight: bold;
+	color: #A19800;
+	font-size: 0.8em;
+	margin: 7px;
 }
 
 .download-button-mini {
