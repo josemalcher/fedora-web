@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-05-09 23:58-0500\n"
+"POT-Creation-Date: 2010-05-10 23:24-0500\n"
 "PO-Revision-Date: 2010-05-03 22:33+0100\n"
 "Last-Translator: Miloš Komarčević <kmilos@gmail.com>\n"
 "Language-Team: Serbian <trans-sr@lists.fedoraproject.org>\n"
@@ -475,6 +475,8 @@ msgid "There are multiple desktops available for use with Fedora. Each has a sli
 msgstr "Постоји више радних окружења на располагању за коришћење уз Fedora систем. Свако има нешто другачији изглед и нуди различите нивое прилагођавања. Окружења утичу на изглед и угођај прозора, икона, менија, и разних основних сучеља радне површине. Можда ћете желети да испробате неколико различитих да бисте пронашли оно које је најбоље за вас!"
 
 #: data/content/get-fedora-options.html:57
+#: data/content/get-fedora-options.html:185
+#: data/content/get-fedora-options.html:201
 #, fuzzy
 msgid "Fedora 13 Desktop Edition"
 msgstr "Fedora окружења"
@@ -487,9 +489,7 @@ msgstr "Подразумевана Fedora"
 #: data/content/get-fedora-options.html:91
 #: data/content/get-fedora-options.html:121
 #: data/content/get-fedora-options.html:151
-#: data/content/get-fedora-options.html:185
 #: data/content/get-fedora-options.html:186
-#: data/content/get-fedora-options.html:191
 #: data/content/get-fedora-options.html:202
 #: data/content/get-fedora-options.html:227
 #: data/content/get-fedora-options.html:236
@@ -594,7 +594,8 @@ msgid "XFCE.org website"
 msgstr "XFC.org веб место"
 
 #: data/content/get-fedora-options.html:179
-msgid "Fedora Downloads by Architechture"
+#, fuzzy
+msgid "Fedora Downloads by Architecture"
 msgstr "Преузимање Fedora издања према архитектури"
 
 #: data/content/get-fedora-options.html:180
@@ -602,9 +603,15 @@ msgid "Not sure which of these architectures are right for you? Need help figuri
 msgstr ""
 
 #: data/content/get-fedora-options.html:182
+#: data/content/get-fedora-options.html:198
 #, fuzzy
-msgid "PC Compatible 32-bit"
+msgid "PC-Compatible"
 msgstr "Усаглашено за 64-битни PC"
+
+#: data/content/get-fedora-options.html:182
+#, fuzzy
+msgid " 32-bit"
+msgstr "32-битно"
 
 #: data/content/get-fedora-options.html:182
 #: data/content/get-fedora-options.html:244
@@ -612,7 +619,8 @@ msgid "Most Compatible"
 msgstr "Најбоља усаглашеност"
 
 #: data/content/get-fedora-options.html:183
-msgid "Because they run on both 32-bit and 64-bit Intel and AMD compatible PCs, the 32-bit PC-compatible versions of Fedora are the most versatile."
+#, fuzzy
+msgid "Because they run on both 32-bit and 64-bit Intel and AMD-compatible PCs, the 32-bit PC-compatible versions of Fedora are the most versatile."
 msgstr "Због тога што раде и на 32-битним и на 64-битним Intel и AMD усаглашеним рачунарима, Fedora верзије усаглашене за 32-битне рачунаре су најсвестраније."
 
 #: data/content/get-fedora-options.html:186
@@ -626,9 +634,13 @@ msgstr ""
 msgid "%s, CD ISO disc image for %s-bit PC"
 msgstr "%s ISO одраз диска за 32-битне рачунаре"
 
-#: data/content/get-fedora-options.html:192
-#: data/content/get-fedora-options.html:201
+#: data/content/get-fedora-options.html:191
 #: data/content/get-fedora-options.html:207
+#: data/content/get-fedora-options.html:235
+msgid "Fedora 13 DVD"
+msgstr "Fedora 13 ДВД"
+
+#: data/content/get-fedora-options.html:192
 #: data/content/get-fedora-options.html:208
 #, fuzzy
 msgid "64-bit PC Edition"
@@ -647,12 +659,12 @@ msgstr "%s ISO одраз диска за 32-битне рачунаре"
 
 #: data/content/get-fedora-options.html:198
 #, fuzzy
-msgid "PC Compatible 64-bit"
-msgstr "Усаглашено за 64-битни PC"
+msgid " 64-bit"
+msgstr "64-битно"
 
 #: data/content/get-fedora-options.html:199
 #, fuzzy
-msgid "Harness the full power of your 64-bit Intel or AMD compatible PC. Go 64-bit."
+msgid "Harness the full power of your 64-bit Intel or AMD-compatible PC. Go 64-bit."
 msgstr "Уживајте у пуној снази и брзини 64-битног рачунара. Није усаглашено са 32-битним рачунарима."
 
 #: data/content/get-fedora-options.html:214
@@ -696,10 +708,6 @@ msgstr "Списак алтернативних Fedora одраза под на�
 #, fuzzy
 msgid "Go to Spins Directory"
 msgstr "Иди на списак издања"
-
-#: data/content/get-fedora-options.html:235
-msgid "Fedora 13 DVD"
-msgstr "Fedora 13 ДВД"
 
 #: data/content/get-fedora-options.html:237
 msgid "The DVD edition of Fedora is not Live Media, but it is bootable.  When you boot from this media, you will be running the installation program.  The DVD requires less memory (RAM) on your computer and contains more software.  This media may be useful if the machine on which you install Fedora is not connected to the Internet."
@@ -860,7 +868,7 @@ msgstr "Најмање %s меморије (RAM), препоручује се %s
 msgid "At least %s hard drive space (only required for installation)"
 msgstr "Најмање %s простора на чврстом диску (потребно само за инсталацију)"
 
-#: data/content/get-fedora.html:20
+#: data/content/get-fedora.html:21
 msgid "Follow the steps below in order to use the ISO file."
 msgstr "Следите доле наведене кораке да бисте употребили ISO датотеку."
 
@@ -889,14 +897,31 @@ msgstr "Још опција за преузимање..."
 msgid "Other Options"
 msgstr "Остале опције"
 
+#: data/content/get-fedora.html:48
+msgid "DVD ISOs, Physical Media"
+msgstr ""
+
 #: data/content/get-fedora.html:49
 msgid "Architectures"
 msgstr "Архитектуре"
+
+#: data/content/get-fedora.html:49
+#, fuzzy
+msgid "64-bit, PPC, and others"
+msgstr "64-битно издање за PC"
+
+#: data/content/get-fedora.html:50
+msgid "KDE, XFCE, GNOME, and others"
+msgstr ""
 
 #: data/content/get-fedora.html:51
 #, fuzzy
 msgid "Spins"
 msgstr "Издања"
+
+#: data/content/get-fedora.html:51
+msgid "Electronics Lab, Education, and others"
+msgstr ""
 
 #: data/content/get-fedora.html:53
 msgid "View full list of options for getting Fedora ..."
@@ -1485,6 +1510,10 @@ msgstr "Језик веб странице"
 #: data/templates/sidebar.html:37
 msgid "Hosting Sponsor"
 msgstr "Спонзор угошћавања"
+
+#, fuzzy
+#~ msgid "PC Compatible 64-bit"
+#~ msgstr "Усаглашено за 64-битни PC"
 
 #~ msgid "%s Torrent File for 32-bit PC ISO"
 #~ msgstr "%s торент датотека за 32-битни PC ISO"
