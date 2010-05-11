@@ -28,6 +28,9 @@ $(document).ready(function(){
 		}
 	);
 
+	// force overlay
+	$("img[rel]").overlay();
+
 	// main site banners
 	// see: banner.js
 	var choices = [];
