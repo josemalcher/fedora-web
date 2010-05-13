@@ -2,7 +2,7 @@
 # Copyright (C) 2010 Fedora Project
 # This file is distributed under the same license as the boot.fedoraproject.org project.
 # Zoltan Hoppar <zoltanh721@fedoraproject.org>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
@@ -44,15 +44,6 @@ msgstr "Floppy letöltése:"
 msgid "Floppy"
 msgstr "Floppy"
 
-#: data/content/download.html:15
-#, fuzzy
-msgid "Download lkrn: "
-msgstr "ISO letöltése:"
-
-#: data/content/download.html:15
-msgid "lkrn"
-msgstr ""
-
 #: data/content/faq.html:7
 msgid "FAQs - boot.fedoraproject.org"
 msgstr "GYIK - boot.fedoraproject.org"
@@ -69,14 +60,6 @@ msgstr "Hogyan használhatom?"
 msgid "First download one of the available images like the ISO image.  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode."
 msgstr "Először töltse le az elérhető képek egyikét, pl. az ISO fájt. Ezután írja ki a megszokott módon, CD-re vagy DVD-re, majd indítsa el a rendszert róla. Miután a boot.fedoraproject.org-ot használja, a billentyűzete segytségével futtathat diagnosztikát, elindíthatja a Fedora egyik telepítőjét, vagy mentő módját."
 
-#: data/content/faq.html:15
-msgid "Can I use it with grub?"
-msgstr ""
-
-#: data/content/faq.html:16
-msgid "Yes!  Just run the following commands as root"
-msgstr ""
-
 #: data/content/faq.html:22
 msgid "How does it work?"
 msgstr "Hogyan működik?"
@@ -84,11 +67,6 @@ msgstr "Hogyan működik?"
 #: data/content/faq.html:23
 msgid "BFO was started by boot.kernel.org (BKO) and combines a series of recent technologies to produce a new boot stack.  The glue that holds everything together is gpxe.  Users familiar with pxe will find gpxe very familiar.  Latest versions support several protocols beyond just tftp.  We are using http to transfer files around.  The basic steps are as follows:"
 msgstr "BFO a boot.kernel.org (BKO) kezdeményezése volt és egy sor ismert technológiát vonultat fel, hogy egy új, indítható tárolót képezzen. Az egészet ami összetartja, az nem más mint a gpxe. A felhasználók akik ismerik a pxe-t, a gpxe-t hasonlóképp elég közelinek érezhetik. A legutolsó verziói már támogatnak jópár protokollt, jóval többet mint csak a tftp-t. Mi http-t alkalmazunk fájlok átviteléhez. Az alaplépések a következők:"
-
-#: data/content/faq.html:25
-#, fuzzy
-msgid "Download the boot.fedoraproject.org media."
-msgstr "Töltse le és indítson a boot.fedoraproject.org médiáról!"
 
 #: data/content/faq.html:26
 msgid "Boot from the downloaded iso/disk image."
@@ -205,3 +183,23 @@ msgstr "Tárhely támogató"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "Támogatja a ServerBeach"
+
+#: data/content/download.html:15
+msgid "lkrn"
+msgstr "LKRN"
+
+#: data/content/download.html:15
+msgid "Download lkrn: "
+msgstr "LKRN letöltése:"
+
+#: data/content/faq.html:25
+msgid "Download the boot.fedoraproject.org media."
+msgstr "Töltse le a boot.fedoraproject.org médiáról!"
+
+#: data/content/faq.html:16
+msgid "Yes!  Just run the following commands as root"
+msgstr "Igen! Csak kövesd ezeket a parancsokat rendszergazdaként"
+
+#: data/content/faq.html:15
+msgid "Can I use it with grub?"
+msgstr "Használhatom ezt GRUB-bal együtt?"
