@@ -46,22 +46,6 @@ msgstr "Onde posso procurar ajuda?"
 msgid "How can I get a Fedora Hosted account?"
 msgstr "Como posso obter uma conta no Fedora Hosted?"
 
-#: data/content/faq.html:20
-msgid "Your normal Fedora Project account works with Fedora Hosted. Simply <a href=\"https://admin.fedoraproject.org/accounts/\">apply</a> for a Fedora Project account if you haven't already. Do note that you must sign a Contributor License Agreement with the Fedora Project in order to contribute code."
-msgstr ""
-
-#: data/content/faq.html:22
-msgid "Create the archive on your workstation and run <code>scp myProject-0.1.tar.gz fedorahosted.org:&lt;Project Name&gt;</code>. The archive will be located under <a href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>"
-msgstr ""
-
-#: data/content/faq.html:24
-msgid "There is. <code>https://fedorahosted.org/released/myproject</code> will go to the same place. The disadvantage of this is you must know the project name and can't browse for projects."
-msgstr ""
-
-#: data/content/faq.html:26
-msgid "Before anyone can clone/push the new repository a master push must be done with the command (from your local git repo): git push ssh://git.fedorahosted.org/git/yourproject.git/ master"
-msgstr ""
-
 #: data/content/faq.html:28
 msgid "You should <a href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for the commit group of the project, which should be <code>&lt;scm&gt;&lt;project&gt;</code>, e.g. for the desktop-effects project, apply to the <code>gitdesktop-effects</code> group."
 msgstr ""
@@ -289,3 +273,19 @@ msgstr "As melhores maneiras de obter ajuda são acedendo ao canal IRC <a href=\
 #: data/content/terms.html:16
 msgid "Code contained in the project does not meet our <a href=\"http://fedoraproject.org/wiki/Legal/Licenses\">license requirements</a>"
 msgstr "O código contido no projecto não respeita os <a href=\"http://fedoraproject.org/wiki/Legal/Licenses\">requisitos da nossa licença</a>"
+
+#: data/content/faq.html:22
+msgid "Create the archive on your workstation and run <code>scp myProject-0.1.tar.gz fedorahosted.org:&lt;Project Name&gt;</code>. The archive will be located under <a href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>"
+msgstr "Crie o ficheiro na sua máquina de trabalho e execute <code>scp myProject-0.1.tar.gz fedorahosted.org:&lt;Nome do Projecto&gt;</code>. O ficheiro ficará localizado sobre <a href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>"
+
+#: data/content/faq.html:20
+msgid "Your normal Fedora Project account works with Fedora Hosted. Simply <a href=\"https://admin.fedoraproject.org/accounts/\">apply</a> for a Fedora Project account if you haven't already. Do note that you must sign a Contributor License Agreement with the Fedora Project in order to contribute code."
+msgstr "A conta do Projecto Fedora funciona com o Fedora Hosted. Simplesmente <a href=\"https://admin.fedoraproject.org/accounts/\">registe</a> uma conta no Projecto Fedora, se ainda não o fez. Note que para contribuir código para o Projecto Fedora tem de assinar um acordo de contribuidor (CLA)."
+
+#: data/content/faq.html:26
+msgid "Before anyone can clone/push the new repository a master push must be done with the command (from your local git repo): git push ssh://git.fedorahosted.org/git/yourproject.git/ master"
+msgstr "Antes que alguém possa realizar um clone/push do novo repositório, tem de ser efectuado um push do master com o comando (a partir do repo git local): git push ssh://git.fedorahosted.org/git/yourproject.git/ master"
+
+#: data/content/faq.html:24
+msgid "There is. <code>https://fedorahosted.org/released/myproject</code> will go to the same place. The disadvantage of this is you must know the project name and can't browse for projects."
+msgstr "Há. <code>https://fedorahosted.org/released/myproject</code> irá para o mesmo local. A desvantagem disto é que precisa de saber o nome do projecto e não pode navegar pelos projectos."
