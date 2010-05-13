@@ -46,18 +46,6 @@ msgstr "Onde posso procurar ajuda?"
 msgid "How can I get a Fedora Hosted account?"
 msgstr "Como posso obter uma conta no Fedora Hosted?"
 
-#: data/content/faq.html:28
-msgid "You should <a href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for the commit group of the project, which should be <code>&lt;scm&gt;&lt;project&gt;</code>, e.g. for the desktop-effects project, apply to the <code>gitdesktop-effects</code> group."
-msgstr ""
-
-#: data/content/faq.html:30
-msgid "Of course. Visit <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> for instructions on how to set up a temporary repository in your fedorapeople.org space."
-msgstr ""
-
-#: data/content/faq.html:32
-msgid "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a delimiter between hostname and path and a second \"/\" as the root of the filesystem path.  For instance, if you're accessing the repository for authconfig you need to use \"hg clone ssh://hg.fedoraproject.org//hg/authconfig\""
-msgstr ""
-
 #: data/content/faq.html:34
 msgid "You may, as long as the following conditions are met: <ol><li>The code project must be available under a Free Software license appropriate for Fedora.</li><li>You must make the source code you used to build the binaries available, and not distributed in the same tarball, or at a minimum make available a \"source only\" tarball.</li><li>You must provide clear instructions for building the software.</li></ol>"
 msgstr ""
@@ -289,3 +277,15 @@ msgstr "<code>minor</code> a não ser que isto seja um pedido urgente. Se não t
 #: data/content/terms.html:19
 msgid "We will always do our best to contact missing developers and ensure that the code, Trac databases, and any relevant data is kept on hand so that it may be presented to the project owner in the event that a project is removed."
 msgstr "Nós fazemos sempre o nosso melhor para contactar programadores desaparecidos e garantir que o código, base de dados Trac, e quaisquer dados relevantes são mantidos disponíveis de modo a serem apresentados ao dono do projecto na eventualidade do projecto ser removido."
+
+#: data/content/faq.html:30
+msgid "Of course. Visit <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> for instructions on how to set up a temporary repository in your fedorapeople.org space."
+msgstr "Claro! Visite <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> para instruções de como configurar um repositório temporário na sua área em fedorapeople.org."
+
+#: data/content/faq.html:28
+msgid "You should <a href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for the commit group of the project, which should be <code>&lt;scm&gt;&lt;project&gt;</code>, e.g. for the desktop-effects project, apply to the <code>gitdesktop-effects</code> group."
+msgstr "Deve <a href=\"https://admin.fedoraproject.org/accounts/group/list\">inscrever-se</a> no grupo de submissão do projecto, que deve ser <code>&lt;scm&gt;&lt;projecto&gt;</code>, por exemplo, para o projecto desktop-effects, inscreva-se no grupo <code>gitdesktop-effects</code>."
+
+#: data/content/faq.html:32
+msgid "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a delimiter between hostname and path and a second \"/\" as the root of the filesystem path.  For instance, if you're accessing the repository for authconfig you need to use \"hg clone ssh://hg.fedoraproject.org//hg/authconfig\""
+msgstr "Infelizmente o hg não utiliza URLs verdadeiros. Tem de utilizar o delimitador \"/\" entre o nome do host e o caminho e um segundo \"/\" como a raiz do caminho no sistema de ficheiros. Por exemplo, se está a aceder ao repositório para o authconfig precisa de utilizar \"hg clone ssh://hg.fedoraproject.org//hg/authconfig\""
