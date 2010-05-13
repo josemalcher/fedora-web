@@ -74,17 +74,9 @@ msgstr "Descrição do Projecto"
 msgid "Request a New Project"
 msgstr "Pedir um Novo Projecto"
 
-#: data/content/new.html:13
-msgid "New project requests must be filed via a ticket in the <a href=\"https://fedorahosted.org/fedora-infrastructure\">Fedora Infrastructure Trac instance</a>. Be sure to log in before attempting to create a ticket."
-msgstr ""
-
 #: data/content/new.html:14
 msgid "Fill in the fields as follows:"
 msgstr "Preencha os campos como a seguir:"
-
-#: data/content/new.html:18
-msgid "<code>minor</code> unless this is an urgent request. If you are uncertain whether or not the request is urgent then set this field to <code>minor</code>."
-msgstr ""
 
 #: data/content/terms.html:12 data/templates/sidebar.html:14
 msgid "Terms of Use"
@@ -92,10 +84,6 @@ msgstr "Termos de Uso"
 
 #: data/content/terms.html:13
 msgid "The Fedora Project Infrastructure team provides Fedora Hosted services on a best-effort basis. Many of the people that manage it are volunteers. Response time to new project requests is typically between 1 hour and 3 days. Outages, should they occur, are handled with a much higher priority."
-msgstr ""
-
-#: data/content/terms.html:19
-msgid "We will always do our best to contact missing developers and ensure that the code, Trac databases, and any relevant data is kept on hand so that it may be presented to the project owner in the event that a project is removed."
 msgstr ""
 
 #: data/templates/foot.html:12
@@ -194,10 +182,6 @@ msgstr "Patrocinadores"
 msgid "No such project."
 msgstr "Esse projecto não existe"
 
-#: data/content/about.html:13
-msgid "Fedora Hosted is a <a href=\"http://fedoraproject.org\">Fedora Project</a>-sponsored way for developers to host their code and collaborate online. We provide each project with source control via git, Mercurial, bzr, and others, as well as a bug tracker and wiki via Trac."
-msgstr ""
-
 #: data/content/faq.html:21
 msgid "How can I publish archive releases (tgz, zip, etc) for my project?"
 msgstr "Como posso publicar lançamentos de ficheiros (tgz, zip, etc) para o meu projecto?"
@@ -289,3 +273,19 @@ msgstr "Antes que alguém possa realizar um clone/push do novo repositório, tem
 #: data/content/faq.html:24
 msgid "There is. <code>https://fedorahosted.org/released/myproject</code> will go to the same place. The disadvantage of this is you must know the project name and can't browse for projects."
 msgstr "Há. <code>https://fedorahosted.org/released/myproject</code> irá para o mesmo local. A desvantagem disto é que precisa de saber o nome do projecto e não pode navegar pelos projectos."
+
+#: data/content/about.html:13
+msgid "Fedora Hosted is a <a href=\"http://fedoraproject.org\">Fedora Project</a>-sponsored way for developers to host their code and collaborate online. We provide each project with source control via git, Mercurial, bzr, and others, as well as a bug tracker and wiki via Trac."
+msgstr "O Fedora Hosted é patrocinado pelo <a href=\"http://fedoraproject.org\">Fedora Project</a> para permitir que os programadores possam alojar o seu código e colaborar online. Nós fornecemos a cada projecto software de controle de versões via git, Mercurial, bzr, e outros, assim como gestão de erros, e wiki via Trac."
+
+#: data/content/new.html:13
+msgid "New project requests must be filed via a ticket in the <a href=\"https://fedorahosted.org/fedora-infrastructure\">Fedora Infrastructure Trac instance</a>. Be sure to log in before attempting to create a ticket."
+msgstr "Pedidos de novos projectos têm de ser inseridos via ticket na <a href=\"https://fedorahosted.org/fedora-infrastructure\">Instância Trac da Infraestrutura Fedora</a>. Tenha a certeza que iniciou a sessão antes de tentar criar o ticket."
+
+#: data/content/new.html:18
+msgid "<code>minor</code> unless this is an urgent request. If you are uncertain whether or not the request is urgent then set this field to <code>minor</code>."
+msgstr "<code>minor</code> a não ser que isto seja um pedido urgente. Se não tem a certeza se o pedido é urgente ou não defina este campo como <code>minor</code>."
+
+#: data/content/terms.html:19
+msgid "We will always do our best to contact missing developers and ensure that the code, Trac databases, and any relevant data is kept on hand so that it may be presented to the project owner in the event that a project is removed."
+msgstr "Nós fazemos sempre o nosso melhor para contactar programadores desaparecidos e garantir que o código, base de dados Trac, e quaisquer dados relevantes são mantidos disponíveis de modo a serem apresentados ao dono do projecto na eventualidade do projecto ser removido."
