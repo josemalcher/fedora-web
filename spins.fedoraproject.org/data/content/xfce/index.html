@@ -66,7 +66,36 @@ docs_url = [
 			</div>
 			<div>
 				<h2>${_('Downloads')}</h2>
-				<xi:include href="../../templates/download-tab.html" />
+				<h3>${_('Torrent Download')}</h3>
+				<span class="download-option" id="opt1">
+					<h4>${_('32-bit PC Edition')}</h4>
+					<p><img class="download-media" alt="${_('32-bit PC Edition')}" src="/static/images/media.png" />${_('This edition is for the highest compatibility; it will work on both 32-bit and 64-bit computers.')}</p>
+					<a class="download-button" href="http://torrent.fedoraproject.org/spins/Fedora-12-i686-Live-XFCE.torrent">${_('Download Now!')}</a>
+					<p class="fine-print">${_('54K Torrent File for 32-bit PC ISO')}<br /> <a href="http://docs.fedoraproject.org/install-guide/f12/en-US/html/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+				</span>
+				<span class="download-option" id="opt2">
+					<h4>${_('64-bit PC Edition')}</h4>
+					<p><img class="download-media" alt="${_('64-bit PC Edition')}" src="/static/images/media.png" />${_('Enjoy the full power and speed of a 64-bit computer. Not compatible with 32-bit computers.')}</p>
+					<a class="download-button" href="http://torrent.fedoraproject.org/spins/Fedora-12-x86_64-Live-XFCE.torrent">${_('Download Now!')}</a>
+					<p class="fine-print">${_('54K Torrent File for 64-bit PC ISO')}<br /> <a href="http://docs.fedoraproject.org/install-guide/f12/en-US/html/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+				</span>
+
+				<!-- 
+				<h3>${_('Direct Download')}</h3>
+				<span class="download-option" id="opt1">
+					<h4>${_('32-bit PC Edition')}</h4>
+					<p><img class="download-media" alt="${_('%s-bit PC Edition') % '32'}" src="/static/images/media.png" />${_('This edition is for the highest compatibility; it will work on both 32-bit and 64-bit computers.')}</p>
+					<a class="download-button" href="http://alt.fedoraproject.org/pub/alt/spins/linux/releases/13/Spins/i686/">${_('Download Now!')}</a>
+					<p class="fine-print">${_('%s for %s-bit PC ISO') % ('500 MB', '32')}<br /> <a href="http://docs.fedoraproject.org/install-guide/f12/en-US/html/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+				</span>
+				<span class="download-option" id="opt2">
+					<h4>${_('64-bit PC Edition')}</h4>
+					<p><img class="download-media" alt="${_('%s-bit PC Edition') % '64'}" src="/static/images/media.png" />${_('Enjoy the full power and speed of a 64-bit computer. Not compatible with 32-bit computers.')}</p>
+					<a class="download-button" href="http://alt.fedoraproject.org/pub/alt/spins/linux/releases/13/Spins/x86_64/">${_('Download Now!')}</a>
+					<p class="fine-print">${_('%s for %s-bit PC ISO') % ('500 MB', '64')}<br /> <a href="http://docs.fedoraproject.org/install-guide/f12/en-US/html/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+				</span>
+				-->
+                <xi:include href="../../templates/download-tab.html" />
 			</div>
 			<div>
 				<h2>${_('Support')}</h2>
