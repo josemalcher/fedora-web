@@ -57,7 +57,7 @@ language_map = {
 'ru': 'ru-RU',
 'sr': 'sr-RS',
 'sv': 'sv-SE',
-'uk': 'uk-UA',   
+'uk': 'uk-UA',
 'zh_CN': 'zh-CN',
 }
 
@@ -70,12 +70,12 @@ def main():
     if len(sys.argv) < 2:
         print 'Usage: %s [language]' % sys.argv[0]
         sys.exit(1)
-    
+
     language = sys.argv[1]
     language_code = language_map.get(language, default_language)
-    
+
     command_line = [ '/bin/sed', '-i' ]
-    
+
     for old, new in url_map.iteritems():
         doc = get_doc(new)
         new_url = ''
@@ -85,18 +85,18 @@ def main():
             new_url = new % language_code
         regex = 's@%s@%s@g' % (old, new_url)
         command_line += [ '-e', regex ]
-    
+
     html_files = glob.glob('out/*.html.%s' % language)
     if not html_files:
         print 'No files, doing nothing.'
         sys.exit(0)
-    
+
     command_line += html_files
-    
+
     rc = subprocess.call(command_line)
     if rc != 0:
         print 'WARNING: command failed!'
-    
+
     sys.exit(rc)
 
 if __name__== '__main__':
