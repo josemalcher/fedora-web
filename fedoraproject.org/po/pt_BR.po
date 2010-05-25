@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master-fedoraproject.pt_BR\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-05-24 21:54-0400\n"
+"POT-Creation-Date: 2010-05-25 00:19-0400\n"
 "PO-Revision-Date: 2010-03-14 20:52-0300\n"
 "Last-Translator: Rafael Gomes <rafaelgomes@projetofedora.org>\n"
 "Language-Team: Brazilian Portuguese <fedora-trans-pt_br@redhat.com>\n"
@@ -21,6 +21,35 @@ msgstr ""
 "Generated-By: Babel 0.9.2\n"
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: data/totranslate.py:1 data/totranslate.py:4
+#, fuzzy
+msgid "&lt;a href=\"http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Guide/sn-making-media.html\"&gt;How do I use this file?&lt;/a&gt;"
+msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f12/en-US/html/ch-new-users.html#sn-making-media\">Como usar este arquivo?</a>"
+
+#: data/totranslate.py:2
+#, fuzzy
+msgid "&lt;a href=\"http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Guide/ch-upgrade-x86.html\"&gt;Fedora 13 Upgrade Guide&lt;/a&gt;"
+msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f12/en-US/html/ch-upgrade-x86.html\">Guia de Atualização do Fedora 12</a>"
+
+#: data/totranslate.py:3
+#, fuzzy
+msgid "Already have Fedora and want to upgrade to Fedora 13? Check out the &lt;a href=\"http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Guide/ch-upgrade-x86.html\"&gt;Upgrading Fedora&lt;/a&gt; instructions, and download the DVD ISO you'll need to start the upgrade process below."
+msgstr "Você Já possui o Fedora e quer atualizar para Fedora 12? Verifique as  instruções de <a href=\"http://docs.fedoraproject.org/install-guide/f12/en-US/html/ch-upgrade-x86.html\">Atualizando o Fedora</a>, e baixe a ISO de DVD que você precisará para iniciar o processo de atualização abaixo."
+
+#: data/totranslate.py:5
+msgid "Not sure which of these architectures are right for you? Need help figuring out what a particular computer's architecture is? We've &lt;a href=\"http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Guide/ch-new-users.html#sn-which-arch\"&gt;got a helpful guide&lt;/a&gt;."
+msgstr ""
+
+#: data/totranslate.py:6
+#, fuzzy
+msgid "For help determining what architecture your system is, &lt;a href=\"http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Guide/ch-new-users.html#sn-which-arch\"&gt;please view our architecture help guide&lt;/a&gt;."
+msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f12/en-US/html/ch-new-users.html#sn-making-media\">Como usar este arquivo?</a>"
+
+#: data/totranslate.py:7
+#, fuzzy
+msgid "Windows user?  Follow &lt;a href=\"http://docs.fedoraproject.org/en-US/Fedora/13/html/Burning_ISO_images_to_disc/sect-Burning_ISO_images_to_disc-Validating_the_Files.html\"&gt;these instructions&lt;/a&gt; instead."
+msgstr "Usuário do Windows? Siga <a href=\"http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html\">estas instruções</a>."
 
 #: data/content/contact.html:7
 msgid "Contact - Fedora Project"
@@ -308,10 +337,23 @@ msgstr "Obtenha agora o Fedora 12 Edição Desktop KDE <em class=\"byline\">Live
 msgid "Resources"
 msgstr "Recursos"
 
+#: data/content/get-fedora-kde.html:30 data/content/get-fedora-options.html:27
+#: data/content/get-fedora.html:25
+#, fuzzy
+msgid "http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Guide/index.html"
+msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f12/\">Guia de instalação do Fedora 12</a>"
+
 #: data/content/get-fedora-kde.html:30
 #, fuzzy
 msgid "Fedora 13 Installation Guide"
 msgstr "Guia de instalação do Fedora 12"
+
+#: data/content/get-fedora-kde.html:31 data/content/get-fedora-kde.html:51
+#: data/content/get-fedora-options.html:28 data/content/get-fedora.html:26
+#: data/content/index.html:15
+#, fuzzy
+msgid "http://docs.fedoraproject.org/en-US/Fedora/13/html/Release_Notes/index.html"
+msgstr "http://docs.fedoraproject.org/release-notes/f12/en-US/html/"
 
 #: data/content/get-fedora-kde.html:31 data/content/get-fedora-kde.html:51
 #, fuzzy
@@ -408,6 +450,11 @@ msgstr ""
 #, fuzzy
 msgid "Handy Resources"
 msgstr "Recursos"
+
+#: data/content/get-fedora-options.html:26 data/content/get-fedora.html:24
+#, fuzzy
+msgid "http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Quick_Start_Guide/index.html"
+msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f12/\">Guia de instalação do Fedora 12</a>"
 
 #: data/content/get-fedora-options.html:26 data/content/get-fedora.html:24
 #, fuzzy
@@ -1321,41 +1368,41 @@ msgstr "DVD de instalação / CD de recuperação"
 msgid "Live Media"
 msgstr "Mídia live"
 
-#: data/content/verify.html:33
+#: data/content/verify.html:37
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Em seguida, importe a chave GPG do Fedora:"
 
-#: data/content/verify.html:37
+#: data/content/verify.html:41
 #, python-format
 msgid "You can verify the details of the GPG key(s) <a href=\"https://fedoraproject.org%s/%s/keys\">here</a>."
 msgstr "Você pode verificar os detalhes da(s) chave(s) GPG <a href=\"https://fedoraproject.org%s/%s/keys\">aqui</a>."
 
-#: data/content/verify.html:40
+#: data/content/verify.html:44
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Agora verifique se seu arquivo CHECKSUM é válido:"
 
-#: data/content/verify.html:44
+#: data/content/verify.html:48
 msgid "The CHECKSUM file should have a good signature from one of the following keys:"
 msgstr "O arquivo CHECKSUM deve ter uma boa assinatura de uma das chaves abaixo:"
 
-#: data/content/verify.html:47
+#: data/content/verify.html:51
 #, fuzzy
 msgid "Fedora 13"
 msgstr "Fedora 12"
 
-#: data/content/verify.html:48
+#: data/content/verify.html:52
 msgid "Fedora 12"
 msgstr "Fedora 12"
 
-#: data/content/verify.html:49
+#: data/content/verify.html:53
 msgid "Fedora 11"
 msgstr "Fedora 11"
 
-#: data/content/verify.html:52
+#: data/content/verify.html:56
 msgid "Finally, now that the CHECKSUM file has been verified, check that the ISO's checksum matches:"
 msgstr "Finalmente, agora que o arquivo CHECKSUM foi verificado, verifique se o checksum da ISO corresponde:"
 
-#: data/content/verify.html:56
+#: data/content/verify.html:60
 #, fuzzy
 msgid "If the output states that the file is valid, then you're good to go!"
 msgstr "Se a saída declarar que o arquivo é válido, você está pronto para continuar!"
@@ -1511,10 +1558,6 @@ msgstr "Patrocinadores"
 #~ msgstr "Instalar ou atualizar o Fedora 12 para PowerPC"
 
 #, fuzzy
-#~ msgid "<a href=\"http://docs.fedoraproject.org/install-guide/f13/\">Fedora 13 Install Guide</a>"
-#~ msgstr "<a href=\"http://docs.fedoraproject.org/install-guide/f12/\">Guia de instalação do Fedora 12</a>"
-
-#, fuzzy
 #~ msgid "This is everything you need to install or upgrade to Fedora 13 on PowerPC machines!"
 #~ msgstr "Isto é tudo o que você precisa para instalar ou atualizar para o Fedora 12 em máquinas PowerPC!"
 
@@ -1532,9 +1575,6 @@ msgstr "Patrocinadores"
 
 #~ msgid "KDE fans, go here!"
 #~ msgstr "Fãs do KDE, venham por aqui!"
-
-#~ msgid "http://docs.fedoraproject.org/release-notes/f12/en-US/html/"
-#~ msgstr "http://docs.fedoraproject.org/release-notes/f12/en-US/html/"
 
 #~ msgid "Once you have downloaded an ISO, verify it for security and integrity.  If you downloaded your ISO via BitTorrent, the file has already been verified as part of the download process (just make sure that you got the torrent from <a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a>).  Otherwise, to verify your ISO, start by downloading the proper CHECKSUM file into the same directory as the ISO:"
 #~ msgstr "Depois de baixar uma ISO, verifique-a por segurança e integridade. Se você baixou sua ISO através do BitTorrent, o arquivo já foi verificado como parte do processo de download (apenas certifique-se de que você obteve o torrent a partir de <a href=\"http://torrent.fedoraproject.org/\">torrent.fedoraproject.org</a>). Caso contrário, para verificar sua ISO, comece baixando o arquivo CHECKSUM  apropriado dentro do mesmo diretório da ISO:"
