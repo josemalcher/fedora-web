@@ -5,4 +5,6 @@ _('&lt;a href="http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_G
 _('Not sure which of these architectures are right for you? Need help figuring out what a particular computer\'s architecture is? We\'ve &lt;a href="http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Guide/ch-new-users.html#sn-which-arch"&gt;got a helpful guide&lt;/a&gt;.')
 _('For help determining what architecture your system is, &lt;a href="http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Guide/ch-new-users.html#sn-which-arch"&gt;please view our architecture help guide&lt;/a&gt;.')
 _('Windows user?  Follow &lt;a href="http://docs.fedoraproject.org/en-US/Fedora/13/html/Burning_ISO_images_to_disc/sect-Burning_ISO_images_to_disc-Validating_the_Files.html"&gt;these instructions&lt;/a&gt; instead.')
-
+_('http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Guide/index.html')
+_('http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Quick_Start_Guide/index.html')
+_('http://docs.fedoraproject.org/en-US/Fedora/13/html/Release_Notes/index.html')
