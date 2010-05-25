@@ -83,7 +83,7 @@ def main():
             new_url = new % default_language
         else:
             new_url = new % language_code
-        regex = 's@%s@%s@g' % (old, new_url)
+        regex = 's@"%s"@"%s"@g' % (old, new_url)
         command_line += [ '-e', regex ]
 
     html_files = glob.glob('out/*.html.%s' % language)
