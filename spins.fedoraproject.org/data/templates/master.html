@@ -12,7 +12,8 @@ class Torrents(object):
     prerelease_re = re.compile('-(alpha|beta|snap|preview)([0-9]*)$', re.I)
     non_release_re = re.compile('(alpha|beta|snap|preview)', re.I)
     prerelease_order = ['alpha', 'beta', 'snap', 'preview']
-    spins_matches = ['broffice', 'edu', 'math', 'kde', 'xfce', 'lxde', 'aos', 'developer', 'fel', 'games']
+    #spins_matches = ['broffice', 'edu', 'math', 'kde', 'xfce', 'lxde', 'aos', 'developer', 'fel', 'games']
+    spins_matches = ['design', 'kde', 'fel', 'broffice', 'lxde', 'aos', 'soas', 'edu', 'games', 'xfce', 'security', 'math', 'developer']
     archlist = ['i386', 'i586', 'i686', 'ix86', 'ppc', 'x86_64', 'source', 'Source']
 
     def __init__(self):
@@ -128,7 +129,7 @@ class Torrents(object):
         return random.randint(0, len(list)-1)
 
 torrents = Torrents()
-release = '12'
+release = '13'
 arch = 'i686'
 
 def formatsize(n, format='%0.2f'):
