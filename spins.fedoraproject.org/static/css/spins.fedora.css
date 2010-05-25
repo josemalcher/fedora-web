@@ -378,6 +378,7 @@ ul.tabs
 	padding: 0;
 	height: 30px;
 	border-bottom: 1px solid #dcdcdc;
+	width: 95%;
 }
 
 /* single tab */
@@ -442,6 +443,11 @@ div.panes > div
 	background-color: #fff;
 }
 
+div.panes
+{
+       width: auto;
+}
+
 #content a.current:link
 {
 	color: #828282;
@@ -456,6 +462,11 @@ div.panes > div
 div.panes > div h2 {
 	margin-top: .5em;
 	margin-bottom: .6em;
+}
+
+.panes table
+{
+       width: auto;
 }
 
 .panes table tr
