@@ -15,6 +15,8 @@ all: $(LANGUAGES)
 
 $(LANGUAGES): % : po/%.mo data/templates/translations.html
 	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -s static -b $(BASEPATH)
+	# Hack to fix docs links.
+	$(PYTHON) build/docs-hack.py $@
 
 po/en.po: po/fedora-web.pot
 	cp po/fedora-web.pot po/en.po
