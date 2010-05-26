@@ -32,9 +32,11 @@
 				</ul>
 			</div>
 			<div id="olderreleases">
-				<h4>${_('Looking for older release?')}</h4>
-				<p>${_('Older Fedora releases are available in our release archive at:')}</p>
-				<p><a href="http://archive.fedoraproject.org/pub/archive/">http://archive.fedoraproject.org/pub/archive/</a></p>
+				<h4>${_("Other ways to get Fedora")}</h4>
+                        	<p>${_("We offer several alternative Fedora download methods for advanced users:")}</p>
+                                <ul>
+                                  <li class="webpage-list"><a href="http://localhost:5000/get-fedora-all">${_("All download methods")}</a></li>
+                                </ul>
 			</div>
         </div>
         <!-- /sidebar -->
@@ -54,7 +56,7 @@
 			<div id="desktop-versions">
 				<noscript><a name="desktops"><hr /></a></noscript>
 				<h2>${_('Fedora Desktops')}</h2>
-				<p>${_('There are multiple desktops available for use with Fedora. Each has a slightly different look and feel and offers varying levels of customization. Desktops affect how windows, icons, menus, and various basic desktop interfaces look and feel. You may want to try a few different ones and figure out which ones is best for you!')}</p>
+				<p>${_('There are multiple desktops available for use with Fedora. Each has a slightly different look and feel and offers varying levels of customization. Desktops affect how windows, icons, menus, and various basic desktop interfaces look and feel. You may want to try a few different ones and figure out which one is best for you!')}</p>
 				<span class="desktop-section">
 					<h3>${_('Fedora 13 Desktop Edition')}</h3><span class="star-fedora-default">${_('Fedora Default')}</span>
 					<table>
@@ -279,27 +281,29 @@
 			<div id="get-acitivites">
 				<noscript><a name="activities"><hr /></a></noscript>
 				<h2>${_('Fedoras that do what you need.')}</h2>
+				<p>${_('Fedora spins are alternate versions of Fedora, tailored for various types of users via hand-picked application sets and other customizations.')} <a href="http://spins.fedoraproject.org/about">${_('Learn more about spins >')}</a></p>
+				<p>${_('Below is just a sampling of the Fedora spins that are available. Visit ')} <a href="http://spins.fedoraproject.org">http://spins.fedoraproject.org</a> ${_(' for a full listing of all available Fedora spins.')}</p>
 				<table>
 					<tbody>
 						<tr class="spin-row">
 							<td><a href="http://spins.fedoraproject.org/security/"><img src="http://spins.fedoraproject.org/static/images/spin/security-mini.png"/></a></td>
-							<td>${_('Security analysis tools.')}<br/><span class="learn-more"><a href="http://spins.fedoraproject.org/security/">${Markup(_('More details at spins.fedoraproject.org &gt;'))}</a></span></td>
+							<td><h4>${_('Fedora Security Lab')}</h4>${_('Security analysis tools.')}<br/><span class="learn-more"><a href="http://spins.fedoraproject.org/security/">${Markup(_('More details at spins.fedoraproject.org &gt;'))}</a></span></td>
 						</tr>
 						<tr class="spin-row">
 							<td><a href="http://spins.fedoraproject.org/soas/"><img src="http://spins.fedoraproject.org/static/images/spin/soas-mini.png"/></a></td>
-							<td>${_('Discover. Reflect. Share. Learn.')}<br/><span class="learn-more"><a href="http://spins.fedoraproject.org/soas/">${Markup(_('More details at spins.fedoraproject.org &gt;'))}</a></span></td>
+							<td><h4>${_('Sugar on a Stick')}</h4>${_('Discover. Reflect. Share. Learn.')}<br/><span class="learn-more"><a href="http://spins.fedoraproject.org/soas/">${Markup(_('More details at spins.fedoraproject.org &gt;'))}</a></span></td>
 						</tr>
 						<tr class="spin-row">
 							<td><a href="http://spins.fedoraproject.org/design/"><img src="http://spins.fedoraproject.org/static/images/spin/design-mini.png"/></a></td>
-							<td>${_('Open Creativity.')}<br/><span class="learn-more"><a href="http://spins.fedoraproject.org/design/">${Markup(_('More details at spins.fedoraproject.org &gt;'))}</a></span></td>
+							<td><h4>${_('Fedora Design Suite')}</h4>${_('Open Creativity.')}<br/><span class="learn-more"><a href="http://spins.fedoraproject.org/design/">${Markup(_('More details at spins.fedoraproject.org &gt;'))}</a></span></td>
 						</tr>
 						<tr class="spin-row">
 							<td><a href="http://spins.fedoraproject.org/games/"><img src="http://spins.fedoraproject.org/static/images/spin/games-mini.png"/></a></td>
-							<td>${_('A perfect show-case of the best games available in Fedora.')}<br/><span class="learn-more"><a href="http://spins.fedoraproject.org/games/">${Markup(_('More details at spins.fedoraproject.org &gt;'))}</a></span></td>
+							<td><h4>${_('Fedora Games Spin')}</h4>${_('A perfect show-case of the best games available in Fedora.')}<br/><span class="learn-more"><a href="http://spins.fedoraproject.org/games/">${Markup(_('More details at spins.fedoraproject.org &gt;'))}</a></span></td>
 						</tr>
 						<tr class="spin-row">
 							<td><a href="http://spins.fedoraproject.org/fel/"><img src="http://spins.fedoraproject.org/static/images/spin/fel-mini.png"/></a></td>
-							<td>${_('Fedora\'s high-end hardware design and simulation platform.')}<br/><span class="learn-more"><a href="http://spins.fedoraproject.org/fel/">${Markup(_('More details at spins.fedoraproject.org &gt;'))}</a></span></td>
+							<td><h4>${_('Fedora Electronic Lab')}</h4>${_('Fedora\'s high-end hardware design and simulation platform.')}<br/><span class="learn-more"><a href="http://spins.fedoraproject.org/fel/">${Markup(_('More details at spins.fedoraproject.org &gt;'))}</a></span></td>
 						</tr>
 					</tbody>
 				</table>

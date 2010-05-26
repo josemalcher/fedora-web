@@ -13,12 +13,18 @@
         <div id="download-resources" >
 			<h4>${_('What will I need?')}</h4>
 			<ul class="checkmark-list">
-				<li>${_('A blank CD or DVD')}</li>
+				<li>${_('A blank CD or DVD')} <em><strong>${_(' or ')}</strong></em> ${Markup(_('a blank %s USB stick.') % ('1GB+'))} </li>
 				<li>${Markup(_('A %s or faster processor') % '400 MHz')}</li>
 				<li>${Markup(_('At least %s memory (RAM), %s recommended for best performance') % ('512 MB', '1 GB'))}</li>
 				<li>${Markup(_('At least %s hard drive space (only required for installation)') % '10 GB')}</li>
 			</ul>
-			<p><em>${_('Follow the steps below in order to use the ISO file.')}</em></p>
+			<h4>${_('What do I do?')}</h4>
+			<ul class="checkmark-list">
+				<li>${_("First, ")}<a href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Live/i686/Fedora-13-i686-Live.iso">${_('download a Fedora ISO image')}</a>.</li>
+				<li>${_('To install Fedora using a USB stick, ')} <a href="http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Guide/Making_USB_Media.html">${_('follow these instructions.')}</a></li>
+				<li>${_('To install Fedora using a blank CD or DVD, ')} <a href="http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Guide/sn-making-media.html#sn-making-disc-media">${_('follow these instructions.')}</a></li>
+			</ul>
+
 			<h4>${_('Handy Resources')}</h4>
 			<ul>
 				<li class="guide-list"><a href="http://docs.fedoraproject.org/installation-quick-start-guide/">${_('Installation Quickstart Guide')}</a></li>
@@ -28,8 +34,11 @@
 				<li class="support-list"><a href="${path}/${lang}/get-help">${_('Help &amp; Support')}</a></li>
 				<li class="verify-list"><a href="${path}/${lang}/verify">${_('Verify Download')}</a></li>	  
 			</ul>
-			<h4>${_("There's More Fedora!")}</h4>
-			<a href="http://spins.fedoraproject.org"><img src="/static/images/banners/spins-website.png"/></a>
+			<h4>${_("Other ways to get Fedora")}</h4>
+			<p>${_("We offer several alternative Fedora download methods for advanced users:")}</p>
+			<ul>
+			  <li class="webpage-list"><a href="http://localhost:5000/get-fedora-all">${_("All download methods")}</a></li>
+			</ul>
         </div>
         <!-- /start sidebar -->
 
@@ -40,7 +49,7 @@
             ${Markup(_('This is the latest version of the Fedora Linux operating system\'s Desktop Edition. It\'s everything you need to try out Fedora—you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop if you like.'))}
             </p>
             <a href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Live/i686/Fedora-13-i686-Live.iso" class="big-button">${_('Download Now!')}</a>
-            <p class="fine-print">${Markup(_('%s, ISO format, CD-ROM disc image for Intel-compatible PCs (32-bit)') % '675 MB')} <br /><strong><a href="${path}/${lang}/get-fedora-options">${_('More download options...')}</a></strong></p>
+            <p class="fine-print">${Markup(_('%s, ISO format image for Intel-compatible PCs (32-bit)') % '675 MB')} <br /><strong><a href="${path}/${lang}/get-fedora-options">${_('More download options...')}</a></strong></p>
         </div>
         <div class="download-block" id="download-options-area">
             <div class="other-options">
@@ -51,7 +60,7 @@
                     <li><a href="${path}/${lang}/get-fedora-options#desktops">${Markup(_('Desktops'))}</a>: ${_('KDE, XFCE, GNOME, and others')}</li>
                     <li><a href="${path}/${lang}/get-fedora-options#activities">${Markup(_('Spins'))}</a>: ${_('Electronics Lab, Education, and others')}</li>
                 </ul>
-                <p><a href="${path}/${lang}/get-fedora-options">${Markup(_('View full list of options for getting Fedora ...'))}</a></p>
+                <p><a href="${path}/${lang}/get-fedora-options">${Markup(_('View more Fedora options...'))}</a></p>
             </div>
             <div class="upgrade-section">
                 <h4>${Markup(_('Need to upgrade Fedora?'))}</h4>
