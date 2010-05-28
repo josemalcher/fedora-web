@@ -63,7 +63,7 @@ abbr, acronym {
 #sidebar
 {
   float: left;
-  width: 180px;
+  width: 230px;
   margin: 2ex 0;
   background: #FFFFFF;
   padding-bottom: 120px;
@@ -127,12 +127,11 @@ abbr, acronym {
 
 #content
 {
-  display: inline-block;
-  margin-left: 230px;
-  padding: 1.5ex 2ex 140px 0;
-  margin-bottom: 3ex;
+  margin-left: 250px;
+  padding: 1.5ex 2ex 120px;
   color: #666666;
   background: #FFFFFF;
+  display: inline-block;
 }
 
 #content p, #content ul, #content ol
@@ -263,6 +262,8 @@ abbr, acronym {
 {
   margin-left: 18px;
   padding-right: 18px;
+  margin-top: 15px;
+  padding-top: 20px;
 }
 
 #footer ul
@@ -843,6 +844,7 @@ a.cvs {
 
 #export-regulations {
   padding-top: 1em;
+  padding-bottom: 3em;
   margin-left: 2em;
 }
 
@@ -1234,12 +1236,21 @@ img.download-media
   width: 100%;
 }
 
+#content {
+  margin-left: 230px;
+  padding: 1.5ex 2ex 120px 0px;
+}
+
 .panes {
   min-width: 50%;
 }
 
 .panes table {
   width: 80%;
+}
+
+#sidebar {
+  width: 180px;
 }
 
 #download-resources {
