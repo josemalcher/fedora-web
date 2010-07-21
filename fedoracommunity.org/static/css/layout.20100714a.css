@@ -1,0 +1,177 @@
+/*
+-----------------------------------------------
+Grey Box Method - Layout CSS
+----------------------------------------------- */
+
+body {
+	background: #E6E6E6;
+	color: #333;
+	font-size: .8em;
+	padding: 0 0 40px;
+}
+
+
+/* anchors
+----------------------------------------------- */
+a {
+}
+
+a:hover {
+	color:#333;
+}
+
+
+/* 960 grid system container background
+----------------------------------------------- */
+.container_12,
+.container_16 {
+	background:#fff;
+}
+
+#head, #site-content {
+	background-color: #fff;
+}
+
+#bottom .container_16 {
+	background-color: #e6e6e6;
+}
+
+
+/* headings
+----------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {line-height:1.2em; margin-bottom:.3em;}
+h2 {margin-top:1em;}
+h5 {font-size:1.2em;}
+h6 {font-size:1em; text-transform:uppercase;}
+
+
+h1 a {
+	font-weight:normal;
+}
+
+
+/* page heading
+----------------------------------------------- */
+h2#page-heading {
+	padding:.5em;
+	border-bottom:1px solid #ccc;
+}
+
+
+/* paragraphs, quotes and lists
+----------------------------------------------- */
+p {
+	margin-bottom:1em;
+}
+blockquote {
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size:1.2em;
+	padding-left:1em;
+	border-left:4px solid #ccc;
+}
+blockquote cite {
+	font-size:.9em;
+}
+ul, ol {
+	padding-top:0;
+}
+
+/* bottom section */
+#bottom
+{
+	background:transparent url('../images/footer-trim.png') repeat-x 0 0; /* make this image smaller */
+	/*border-top: 5px #4B9EDE solid; // this is an alternative */
+	padding: 30px 0px 0px 0px;
+	/* may not be needed */
+	margin:0;
+	width:100%;
+}
+
+#footer
+{
+	background-color: #e6e6e6;
+	background-image: none;
+	color: #4d4d4d;
+	padding-bottom: 15px;
+	font-size: .85em;
+}
+
+#footer a
+{
+	color: #3771c8;
+}
+
+#footer .rh-logo
+{
+	float: left;
+	margin-right: 15px;
+	padding-top:3ex;
+}
+
+#footer p
+{
+	margin: 0px;
+}
+
+#footer .disclaimer
+{
+	font-style: italic;
+}
+
+#footer ul {
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin-bottom:0.8em;
+}
+
+#footer li.first {
+	border-left:medium none;
+}
+
+#footer li {
+	border-left:1px solid #AAAAAA;
+	display:inline;
+	margin-left:-1px;
+	padding:0 0.75ex;
+}
+
+.sitelinks
+{
+	width: 960px; /* this centers the list */
+	line-height: 1.6;
+	color: #808080;
+}
+
+.sitelinks a
+{
+	color: #808080;
+	text-decoration: none;
+}
+
+.sitelinks dl
+{
+}
+
+.sitelinks dt
+{
+	font-weight: bold;
+}
+
+/* Effects */
+.website-screenshot {
+	padding: 10px 10px 0px 10px;
+	background-color: #f4f4f2;
+	max-width: 240px;
+	margin-bottom: 30px;
+}
+
+.website-screenshot:hover {
+	background-color: yellow;
+}
+
+.website-screenshot p, .website-screenshot.country-name { margin-bottom: 2px; }
+.country-name {
+	font-weight: bold;
+	font-size: large;
+}
