@@ -201,7 +201,7 @@ ul, ol {
 }
 
 /* each individual continent icon */
-.continent-icon { padding: 9px; }
+.continent-icon { padding: 9px; float: left; }
 
 .asia-head { border-top: 6px #79db32 solid; background-color: inherit; margin-right: 0; padding-right: 13px; height: inherit; border-left: 1px #badbb6 solid;}
 .asia-head:hover { border-top: 6px #79db32 solid; background-color: #dfdfdf; height: inherit; }
@@ -225,6 +225,17 @@ ul, ol {
 	border-right: 1px #badbb6 solid;
 	border-bottom: 1px #badbb6 solid;
 }
+
+.asia-head p, .africa-head p, .america-head p, .europe-head p {
+	padding-top: 20px;
+	color: #294172;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.asia-head a, .africa-head a, .america-head a, .europe-head a { text-decoration: none; color: #294172; }
+.asia-head:hover a, .africa-head:hover a, .america-head:hover a, .europe-head:hover a { color: #ecedeb; }
+
 
 /* site navigation */
 #site-nav {
