@@ -239,7 +239,7 @@ ul, ol {
 
 /* site navigation */
 #site-nav {
-	background: #e1e1df url('../images/nav-background.png') repeat-x scroll top left;
+	background: #e1e1df;
 	border: 1px #babdb6 solid;
 	margin-top: 25px;
 	height: 28px;
@@ -248,13 +248,24 @@ ul, ol {
 }
 
 #site-nav li {
-	display: inline;
-	float: left;
-	padding-left: 10px;
+	#display: inline;
+	margin: 0px;
+	list-style-type: none;
+	
 }
 
-/* to fix */
-#site-nav li:hover {
-	background: transparent url('../images/nav_active-background.png') repeat-x scroll top left;
+#site-nav a {
+	color:#7F817D;
+	text-align:center;
+	text-transform:uppercase;
+	text-decoration: none;
+	float:left;
+	text-align:center;
+	width:33%;
+}
+
+#site-nav a:hover {
+	text-decoration: underline;
+	color: #6a8ec1;
 }
 
