@@ -3,12 +3,12 @@ Notes:
 Grid 960 relies on sized elements and margins to create a correctly sized row. If you apply padding or borders, the design breaks. If you do, you have to adjust the size of the div to reflect the changes. Be weary of this. Adjust the sizes of elements in two places will always lead to confusion and make the design harder to maintain. That being said. Lets finish the top section.
 */
 
-
 body {
 	background: #E6E6E6;
 	color: #333;
 	font-size: .8em;
 	padding: 0 0 40px;
+	font-family: "DroidSansRegular", "sans-serif";
 }
 
 
@@ -59,15 +59,32 @@ h1 a {
 }
 
 #site-heading h1 span {
-	background:transparent url(../images/fedora-community-logo.png) no-repeat scroll 0px 0px;
-	height: 74px;
-	width: 220px;
+	font-family: "ComfortaaRegular", "sans-serif";
+	font-weight: normal;
+        color: #888a85;
+	font-size: 27px !important;
+	float: left;
+	clear: left;
+}
+
+#site-heading h1 span#logo {
+	background:transparent url(../images/fedora-logo_for-sublogos.png) no-repeat scroll 0px 0px;
+	height: 43px;
+	width: 154px;
 	display: block;
 	text-indent: -9999px;
 	float: left;
+	margin-right: 2em;
 }
 
-#site-heading h2 { text-transform: uppercase; font-size: small; }
+#site-heading h2 { 
+	text-transform: uppercase; 
+	font-family: "ComfortaaRegular", "sans-serif";
+	font-weight: normal;
+	color: #3c6eb4;
+	font-size: 16px; 
+}
+
 /* paragraphs, quotes and lists
 ----------------------------------------------- */
 p {
@@ -209,6 +226,9 @@ ul, ol {
 	height: 69px;
 }
 
+#continent-nav h3 { padding-top: 18px; }
+#continent-nav a { font-size: 12px; }
+
 /* each individual continent icon */
 .continent-icon { padding: 9px; float: left; }
 
@@ -235,13 +255,6 @@ ul, ol {
 	border-bottom: 1px #badbb6 solid;
 }
 
-.asia-head p, .africa-head p, .america-head p, .europe-head p {
-	padding-top: 20px;
-	color: #294172;
-	font-weight: bold;
-	font-size: 1.3em;
-}
-
 .asia-head a, .africa-head a, .america-head a, .europe-head a { text-decoration: none; color: #294172; }
 .asia-head:hover a, .africa-head:hover a, .america-head:hover a, .europe-head:hover a { color: #ecedeb; }
 
@@ -249,10 +262,13 @@ ul, ol {
 /* site navigation */
 #site-nav {
 	background: #e1e1df;
+	background: url(../images/nav-background.png) repeat-x !important;
 	border: 1px #babdb6 solid;
 	margin-top: 25px;
 	height: 28px;
 	font-size: 1.2em;
+	font-family: "ComfortaaRegular", sans-serif;
+	text-shadow: 1px 1px 1px white;  
 	-moz-border-radius: 10px;
 }
 
@@ -260,8 +276,10 @@ ul, ol {
 	#display: inline;
 	margin: 0px;
 	list-style-type: none;
-	
+	margin-top: 2px;
 }
+#site-nav li:first-child { margin-left: 1em; }
+#site-nav li:last-child { margin-right: 1em; }
 
 #site-nav a {
 	color:#7F817D;
@@ -270,12 +288,20 @@ ul, ol {
 	text-decoration: none;
 	float:left;
 	text-align:center;
-	width:33%;
+	border-right: 1px solid #ccc;
+
+	padding-left: 1.5em;
+	padding-right: 1.5em;
 }
 
+#site-nav li:last-child a { border-right: none !important; }
+
 #site-nav a:hover {
-	text-decoration: underline;
 	color: #6a8ec1;
+	background: url(,,/images/nav_active-background.png) repeat-x;
+	margin-top: -2px;
+	padding-top: 2px;
+	padding-bottom: 4px;
 }
 
 /* content */
