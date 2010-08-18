@@ -92,7 +92,7 @@ def read_vcs(vcslist):
                     and not item.endswith('.old')):#Ugly, I know, any better idea?
                     project = {
                         'group': item[0].upper(),
-                        'url': 'http://%(vcs)s.fedoraproject.org/%(vcs)s/%(project)s' % {'vcs': vcs, 'project': item},
+                        'url': 'http://%(vcs)s.fedorahosted.org/%(vcs)s/%(project)s' % {'vcs': vcs, 'project': item},
                         'desc': 'Project %(project)s under %(vcs)s' % {'project': item.split('.')[0], 'vcs': vcs},
                         'title': item.split('.')[0],
                         'vcs': vcs,
