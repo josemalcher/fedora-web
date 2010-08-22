@@ -5,18 +5,17 @@
   <xi:include href="../templates/master.html" />
   <head>
     <title>${Markup(_('Fedora Project'))}</title>
-    <style type="text/css">
-    </style>
   </head>
-  <body>
-    <h2>${Markup(_('Fedora Release Counter'))}</h2>
-    <p>
-    ${Markup(_('To add a Fedora Release counter to your own site, simply place the following code wherever you want it to appear:'))}
-    </p>
-    <textarea rows="2" cols="62" style="width: 95%; font-size: 2.35ex;">&lt;script id="fedora-banner" type="text/javascript" src="http://fedoraproject.org/static/js/release-counter-ext.js?lang=${lang}"&gt;&lt;/script&gt;</textarea>
-    <p>
-    ${Markup(_('The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, hu, is, it, pt_BR, ru, and tr are supported.  When no language is specified, English will be used.'))}
-    </p>
-  </body>
+	<body id="fedoraproject-org">
+        <div class="container_16">
+            <div class="grid_16">
+                <h2>${Markup(_('Fedora Release Counter'))}</h2>
+                <p>${Markup(_('To add a Fedora Release counter to your own site, simply place the following code wherever you want it to appear:'))}</p>
+                <textarea rows="2" cols="62" style="width: 95%; font-size: 2.35ex;">&lt;script id="fedora-banner" type="text/javascript" src="http://fedoraproject.org/static/js/release-counter-ext.js?lang=${lang}"&gt;&lt;/script&gt;</textarea>
+                <p>${Markup(_('The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, hu, is, it, pt_BR, ru, and tr are supported.  When no language is specified, English will be used.'))}</p>
+            </div>
+        </div>
+        <div class="clear"></div>
+	</body>
 </html>
 

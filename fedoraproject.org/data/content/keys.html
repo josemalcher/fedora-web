@@ -6,36 +6,23 @@
   <head>
     <title>${Markup(_('Fedora Project'))}</title>
   </head>
-  <body>
+	<body id="fedoraproject-org">
+        <div class="container_16">
+            <div class="grid_16">
     <h2>${Markup(_('GPG keys used by Fedora Project'))}</h2>
     <h3>${Markup(_('How does Fedora Project use GPG keys to sign packages'))}</h3>
-    <p>
-      ${Markup(_('Each stable RPM package that is published by Fedora Project is signed with a GPG signature.  By default, yum and the graphical update tools will verify these signatures and refuse to install any packages that are not signed or have bad signatures.  You should always verify the signature of a package before you install it.  These signatures ensure that the packages you install are what was produced by the Fedora Project and have not been altered (accidentally or maliciously) by any mirror or website that is providing the packages.'))}
-    </p>
-    <p>
-      ${Markup(_('Packages that can be downloaded from koji build system do not contain signatures, so you should use them with caution.  Similarly, bleeding-edge packages in Rawhide are not necessarily signed.'))}
-    </p>
+    <p>${Markup(_('Each stable RPM package that is published by Fedora Project is signed with a GPG signature.  By default, yum and the graphical update tools will verify these signatures and refuse to install any packages that are not signed or have bad signatures.  You should always verify the signature of a package before you install it.  These signatures ensure that the packages you install are what was produced by the Fedora Project and have not been altered (accidentally or maliciously) by any mirror or website that is providing the packages.'))}</p>
+    <p>${Markup(_('Packages that can be downloaded from koji build system do not contain signatures, so you should use them with caution.  Similarly, bleeding-edge packages in Rawhide are not necessarily signed.'))}</p>
 
     <h3>${Markup(_('Importing keys'))}</h3>
-    <p>
-      ${Markup(_('The keys are included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package, you can find them in the &lt;strong&gt;/etc/pki/rpm-gpg&lt;/strong&gt; directory.  Please note that not all keys in this directory are used by Fedora project -- some are used for signing Red Hat Enterprise Linux packages or are no longer used at all. If you use Red Hat Enterprise Linux packages, see &lt;a href="https://www.redhat.com/security/team/key/"&gt;https://www.redhat.com/security/team/key&lt;/a&gt;.  The keys used by Fedora are enabled in the yum repository configuration, so you generally don\'t need to manually import them into the rpm database.'))}
-    </p>
-    <p>
-      ${Markup(_('In addition to the fedora-release package and this web page, you can download the Fedora keys from a public key server, such as &lt;a href="http://http-keys.gnupg.net/"&gt;keys.gnupg.net&lt;/a&gt;.'))}
-    </p>
-    <p>
-      ${Markup(_('For some repositories, such as repositories with stable and testing packages in default configuration, &lt;strong&gt;yum&lt;/strong&gt; is able to find a proper key for the repository and asks the user for confirmation before importing the key if the key is not already imported into the rpm database.'))}
-    </p>
-    <p>
-      ${Markup(_('You can always import a key into RPM\'s database by hand using the following command:'))}
+    <p>${Markup(_('The keys are included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package, you can find them in the &lt;strong&gt;/etc/pki/rpm-gpg&lt;/strong&gt; directory.  Please note that not all keys in this directory are used by Fedora project -- some are used for signing Red Hat Enterprise Linux packages or are no longer used at all. If you use Red Hat Enterprise Linux packages, see &lt;a href="https://www.redhat.com/security/team/key/"&gt;https://www.redhat.com/security/team/key&lt;/a&gt;.  The keys used by Fedora are enabled in the yum repository configuration, so you generally don\'t need to manually import them into the rpm database.'))}</p>
+    <p>${Markup(_('In addition to the fedora-release package and this web page, you can download the Fedora keys from a public key server, such as &lt;a href="http://http-keys.gnupg.net/"&gt;keys.gnupg.net&lt;/a&gt;.'))}</p>
+    <p>${Markup(_('For some repositories, such as repositories with stable and testing packages in default configuration, &lt;strong&gt;yum&lt;/strong&gt; is able to find a proper key for the repository and asks the user for confirmation before importing the key if the key is not already imported into the rpm database.'))}</p>
+    <p>${Markup(_('You can always import a key into RPM\'s database by hand using the following command:'))}
       <pre class="command">rpm --import PUBKEY ...</pre>
     </p>
-    <p>
-      ${Markup(_('Refer to &lt;strong&gt;rpm&lt;/strong&gt; manual for more information.'))}
-    </p>
-    <p>
-      ${Markup(_('If you want to verify that the keys installed on your system match the keys listed here, you can use GnuPG to check that the fingerprint of the key matches.  For example:'))}
-
+    <p>${Markup(_('Refer to &lt;strong&gt;rpm&lt;/strong&gt; manual for more information.'))}</p>
+    <p>${Markup(_('If you want to verify that the keys installed on your system match the keys listed here, you can use GnuPG to check that the fingerprint of the key matches.  For example:'))}
       <pre class="command">$ gpg --quiet --with-fingerprint /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-11-primary
 ...
 pub  4096R/D22E77F2 2009-01-19 Fedora (11) &lt;fedora@fedoraproject.org&gt;
@@ -43,12 +30,8 @@ pub  4096R/D22E77F2 2009-01-19 Fedora (11) &lt;fedora@fedoraproject.org&gt;
     </p>
 
     <h3>${Markup(_('Verifying a package'))}</h3>
-    <p>
-      ${Markup(_('When using default configuration of &lt;strong&gt;yum&lt;/strong&gt; package updating and installation tool in stable releases, signature of each package is verified before it is installed.  Signature verification can be turned off and on globally or for specific repository with &lt;strong&gt;gpgcheck&lt;/strong&gt; directive.  Do not override the default setting of this directive unless you have a very good reason to do so.'))}
-    </p>
-    <p>
-      ${Markup(_('If you do not use yum, you can check the signature of the package using the following command'))}
-
+    <p>${Markup(_('When using default configuration of &lt;strong&gt;yum&lt;/strong&gt; package updating and installation tool in stable releases, signature of each package is verified before it is installed.  Signature verification can be turned off and on globally or for specific repository with &lt;strong&gt;gpgcheck&lt;/strong&gt; directive.  Do not override the default setting of this directive unless you have a very good reason to do so.'))}</p>
+    <p>${Markup(_('If you do not use yum, you can check the signature of the package using the following command'))}
       <pre class="command">rpm {-K|--checksig} PACKAGE_FILE ...</pre>
     </p>
 
@@ -127,9 +110,7 @@ sub   1024g/FB939E34 2003-10-27</pre>
         <li>${Markup(_('Both GA and updates'))}</li>
       </ul>
     </p>
-    <p>
-      ${Markup(_('Packages on installation media are signed with this key.  The relevant yum repositories are &lt;strong&gt;fedora&lt;/strong&gt;, &lt;strong&gt;fedora-updates&lt;/strong&gt; for Fedora 7-9, and &lt;strong&gt;core&lt;/strong&gt; and &lt;strong&gt;core-updates&lt;/strong&gt; for Fedora Core (Version 6 and earlier).  See &lt;a href="http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html"&gt;http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html&lt;/a&gt; for information on why this key is obsolete.'))}
-    </p>
+    <p>${Markup(_('Packages on installation media are signed with this key.  The relevant yum repositories are &lt;strong&gt;fedora&lt;/strong&gt;, &lt;strong&gt;fedora-updates&lt;/strong&gt; for Fedora 7-9, and &lt;strong&gt;core&lt;/strong&gt; and &lt;strong&gt;core-updates&lt;/strong&gt; for Fedora Core (Version 6 and earlier).  See &lt;a href="http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html"&gt;http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html&lt;/a&gt; for information on why this key is obsolete.'))}</p>
     <p>
       <ul>
         <li>${Markup(_('Path: &lt;a href="file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora"&gt;/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora&lt;/a&gt;'))}</li>
@@ -149,9 +130,7 @@ uid                  Fedora Project (Test Software) &lt;rawhide@redhat.com&gt;</
         <li>${Markup(_('Fedora (version 7 and newer) testing updates'))}</li>
       </ul>
     </p>
-    <p>
-      ${Markup(_('If you participate in testing of the packages, this is the key you will use to verify the testing packages.  This key signs the packages that are in &lt;strong&gt;fedora-testing&lt;/strong&gt; repository.  See &lt;a href="http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html"&gt;http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html&lt;/a&gt; for information on why this key is obsolete.'))}
-    </p>
+    <p>${Markup(_('If you participate in testing of the packages, this is the key you will use to verify the testing packages.  This key signs the packages that are in &lt;strong&gt;fedora-testing&lt;/strong&gt; repository.  See &lt;a href="http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html"&gt;http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html&lt;/a&gt; for information on why this key is obsolete.'))}</p>
     <p>
       <ul>
         <li>${Markup(_('Path: &lt;a href="file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test"&gt;/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test&lt;/a&gt;'))}</li>
@@ -242,9 +221,7 @@ sub   1024g/4E1A9D43 2004-12-14</pre>
         <li>${Markup(_('Fedora Extras (version 6 and earlier)'))}</li>
       </ul>
     </p>
-    <p>
-      ${Markup(_('If you are using Fedora Extras with Fedora Core 6, use this package from &lt;strong&gt;extras&lt;/strong&gt; repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007).  This key is not included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package in Fedora 7 and later releases.'))}
-    </p>
+    <p>${Markup(_('If you are using Fedora Extras with Fedora Core 6, use this package from &lt;strong&gt;extras&lt;/strong&gt; repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007).  This key is not included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package in Fedora 7 and later releases.'))}</p>
     <p>
       <ul>
         <li>${Markup(_('Path: &lt;a href="file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora"&gt;/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras&lt;/a&gt;'))}</li>
@@ -264,8 +241,9 @@ sub   2048g/D12E351D 2004-01-19</pre>
         <li>Fedora Legacy</li>
       </ul>
     </p>
-    <p>
-      ${Markup(_('This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package in Fedora 7 and later releases.'))}
-    </p>
-  </body>
+    <p>${Markup(_('This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package in Fedora 7 and later releases.'))}</p>
+            </div>
+        </div>
+        <div class="clear"></div>
+	</body>
 </html>
