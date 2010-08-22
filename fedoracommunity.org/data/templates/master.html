@@ -8,23 +8,23 @@ buildstring = '<!-- build time: %s -->' % buildtime
   xmlns:py="http://genshi.edgewall.org/"
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
-  <head py:match="head" py:attrs="select('@*')">
-    <xi:include href="css.html" />
-    <meta py:replace="select('*|text()')" />
-  </head>
-  <py:match path="body" once="true">
-  <body py:attrs="select('@*')">
-    <div id="container">
-      <xi:include href="head.html" />
-      <div id="site-content">
-        ${select('*')}
-		<!--
-			  <xi:include href="sidebar.html" />
-		-->
-      </div>
-    </div>
-    <xi:include href="footer.html" />
-    <xi:include href="js.html" />
-  </body>
-  </py:match>
+    <head py:match="head" py:attrs="select('@*')">
+        <xi:include href="css.html" />
+        <meta py:replace="select('*|text()')" />
+    </head>
+    <py:match path="body" once="true">
+    <body py:attrs="select('@*')">
+        <div id="container">
+            <xi:include href="head.html" />
+            <div id="site-content">
+                ${select('*')}
+                <!--
+                <xi:include href="sidebar.html" />
+                -->
+            </div>
+        </div>
+        <xi:include href="footer.html" />
+        <xi:include href="js.html" />
+    </body>
+    </py:match>
 </html>

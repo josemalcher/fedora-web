@@ -3,34 +3,34 @@
   xmlns:py="http://genshi.edgewall.org/"
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
-			<div id="header">
-				<div class="container_16">
-						<div class="grid_10" id="site-heading">
-							<h1><span id="logo">Fedora</span> <span>community.org</span></h1>
-							<h2>Region-Specific Fedora Websites</h2>
-						</div>
-						<div class="grid_6">
-							<div id="site-nav">
-								<ul>
-									<li><a href="http://fedoraproject.org/">Home</a></li>
-									<li><a href="http://fedoraproject.org/get-fedora">Get Fedora</a></li>
-									<li><a href="http://fedoraproject.org/get-help">Help</a></li>
-								</ul>
-							</div>
-						</div>
-					<div class="clear"></div>		
-						<div id="header-globe" class="grid_16">
-							<img alt="Map of the world" src="static/images/worldmap.png"/>
-							<p>Fedora Project contributors in various countries maintain their own region-specific content. Each site is solely responsible for the content they post.</p>
-							<p>A list of region-specific websites is available below.</p>
-						</div>
-					<div class="clear"></div>
-						<div id="continent-nav" class="grid_16">
-							<div class="grid_3 alpha asia-head"><img class="continent-icon" src="static/images/tab_label-apac.png" /><h3><a href="apac.html">Asia-Pacific</a></h3></div>
-							<div class="grid_5 africa-head"><img class="continent-icon" src="static/images/tab_label-emea.png" /><h3><a href="emea.html">Europe, Middle East, and Africa</a></h3></div>
-							<div class="grid_4 america-head"><img class="continent-icon" src="static/images/tab_label-latam.png" /><h3><a href="latam.html">Latin America</a></h3></div>
-							<div class="grid_4 omega europe-head"><img class="continent-icon" src="static/images/tab_label-na.png" /><h3><a href="northam.html">North America</a></h3></div>
-						</div>
-				</div>
-			</div>
+<div id="header">
+    <div class="container_16">
+        <div class="grid_10" id="site-heading">
+            <h1><span id="logo">Fedora</span> <span>community.org</span></h1>
+            <h2>${_('Region-Specific Fedora Websites')}</h2>
+        </div>
+        <div class="grid_6">
+            <div id="site-nav">
+                <ul>
+                    <li><a href="http://fedoraproject.org/">${_('Home')}</a></li>
+                    <li><a href="http://fedoraproject.org/get-fedora">${_('Get Fedora')}</a></li>
+                    <li><a href="http://fedoraproject.org/get-help">${_('Help')}</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>		
+        <div id="header-globe" class="grid_16">
+            <img alt="Map of the world" src="static/images/worldmap.png"/>
+            <p>${_('Fedora Project contributors in various countries maintain their own region-specific content. Each site is solely responsible for the content they post.')}</p>
+            <p>${_('A list of region-specific websites is available below.')}</p>
+        </div>
+        <div class="clear"></div>
+        <div id="continent-nav" class="grid_16">
+            <div class="grid_3 alpha asia-head"><img class="continent-icon" src="static/images/tab_label-apac.png" /><h3><a href="apac.html">${_('Asia-Pacific')}</a></h3></div>
+            <div class="grid_5 africa-head"><img class="continent-icon" src="static/images/tab_label-emea.png" /><h3><a href="emea.html">${_('Europe, Middle East, and Africa')}</a></h3></div>
+            <div class="grid_4 america-head"><img class="continent-icon" src="static/images/tab_label-latam.png" /><h3><a href="latam.html">${_('Latin America')}</a></h3></div>
+            <div class="grid_4 omega europe-head"><img class="continent-icon" src="static/images/tab_label-na.png" /><h3><a href="northam.html">${_('North America')}</a></h3></div>
+        </div>
+    </div>
+</div>
 </html>
