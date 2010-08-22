@@ -14,16 +14,21 @@ buildstring = '<!-- build time: %s -->' % buildtime
     </head>
     <py:match path="body" once="true">
     <body py:attrs="select('@*')">
-        <div id="container">
+        <!-- header -->
+        <div id="header">
             <xi:include href="head.html" />
-            <div id="site-content">
-                ${select('*')}
-                <!--
-                <xi:include href="sidebar.html" />
-                -->
-            </div>
         </div>
-        <xi:include href="footer.html" />
+        <!-- /header -->
+        <!-- site-content -->
+        <div id="site-content">
+            ${select('*')}
+        </div>
+        <!-- /site-content -->
+        <!-- bottom -->
+        <div id="bottom">
+            <xi:include href="footer.html" />
+        </div>
+        <!-- /bottom -->
         <xi:include href="js.html" />
     </body>
     </py:match>
