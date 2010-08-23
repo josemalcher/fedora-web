@@ -6,35 +6,28 @@
   <head>
     <title>${Markup(_('Fedora Project'))}</title>
   </head>
-  <body class="join">
-    <h2>${Markup(_('Join Fedora.'))}</h2>
-    <p class="joinlink">
-    ${Markup(_('To get started, &lt;a href="%(fasurl)s"&gt;set up an account&lt;/a&gt; using the &lt;a href="%(fasurl)s"&gt;Fedora Account System&lt;/a&gt;.') % {'fasurl': 'https://admin.fedoraproject.org/accounts/user/new'})}
-    </p>
-    <div id="subprojects">
-      <p>${Markup(_('If you want to take an active hand in making Fedora even better, there are many ways to help. What role do you want to fill?'))}</p>
-      <p><strong>${Markup(_('Click on a role below to learn more about how you can help the Fedora Project.'))}</strong></p>
-      <ul class="roles">
-        <li>
-        ${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Join#ContentWriter"&gt;&lt;img src="%s/%s/static/images/ContentDeveloper.png" alt="Content Writer"&gt;&lt;br&gt;Content Writer&lt;/a&gt;') % (path, lang))}
-        </li>
-        <li>
-        ${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Join#Designer"&gt;&lt;img src="%s/%s/static/images/Designer.png" alt="Designer"&gt;&lt;br&gt;Designer&lt;/a&gt;') % (path, lang))}
-        </li>
-        <li>
-        ${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Join#PeoplePerson"&gt;&lt;img src="%s/%s/static/images/PeoplePerson.png" alt="People Person"&gt;&lt;br&gt;People Person&lt;/a&gt;') % (path, lang))}
-        </li>
-        <li>
-        ${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Join#OSDeveloper"&gt;&lt;img src="%s/%s/static/images/OSDeveloper.png" alt="OS Developer"&gt;&lt;br&gt;OS Developer&lt;/a&gt;') % (path, lang))}
-        </li>
-        <li>
-        ${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Join#Translator"&gt;&lt;img src="%s/%s/static/images/Translator.png" alt="Translator"&gt;&lt;br&gt;Translator&lt;/a&gt;') % (path, lang))}
-        </li>
-        <li>
-        ${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Join#WebDeveloperAdministrator"&gt;&lt;img src="%s/%s/static/images/WebDeveloper.png" alt="Web Developer or Administrator"&gt;&lt;br&gt;Web Developer&lt;br&gt;or Administrator&lt;/a&gt;') % (path, lang))}
-        </li>
-      </ul>
-    </div>
-  </body>
+	<body id="fedoraproject-org">
+        <div class="container_16">
+            <div class="grid_16">
+                <h2>${Markup(_('Join Fedora.'))}</h2>
+                <p class="joinlink">
+                ${Markup(_('To get started, &lt;a href="%(fasurl)s"&gt;set up an account&lt;/a&gt; using the &lt;a href="%(fasurl)s"&gt;Fedora Account System&lt;/a&gt;.') % {'fasurl': 'https://admin.fedoraproject.org/accounts/user/new'})}
+                </p>
+                <div id="subprojects">
+                    <p>${Markup(_('If you want to take an active hand in making Fedora even better, there are many ways to help. What role do you want to fill?'))}</p>
+                    <p><strong>${Markup(_('Click on a role below to learn more about how you can help the Fedora Project.'))}</strong></p>
+                    <ul class="roles">
+                        <li>${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Join#ContentWriter"&gt;&lt;img src="%s/%s/static/images/ContentDeveloper.png" alt="Content Writer"&gt;&lt;br&gt;Content Writer&lt;/a&gt;') % (path, lang))}</li>
+                        <li>${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Join#Designer"&gt;&lt;img src="%s/%s/static/images/Designer.png" alt="Designer"&gt;&lt;br&gt;Designer&lt;/a&gt;') % (path, lang))}</li>
+                        <li>${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Join#PeoplePerson"&gt;&lt;img src="%s/%s/static/images/PeoplePerson.png" alt="People Person"&gt;&lt;br&gt;People Person&lt;/a&gt;') % (path, lang))}</li>
+                        <li>${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Join#OSDeveloper"&gt;&lt;img src="%s/%s/static/images/OSDeveloper.png" alt="OS Developer"&gt;&lt;br&gt;OS Developer&lt;/a&gt;') % (path, lang))}</li>
+                        <li>${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Join#Translator"&gt;&lt;img src="%s/%s/static/images/Translator.png" alt="Translator"&gt;&lt;br&gt;Translator&lt;/a&gt;') % (path, lang))}</li>
+                        <li>${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Join#WebDeveloperAdministrator"&gt;&lt;img src="%s/%s/static/images/WebDeveloper.png" alt="Web Developer or Administrator"&gt;&lt;br&gt;Web Developer&lt;br&gt;or Administrator&lt;/a&gt;') % (path, lang))}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+	</body>
 </html>
 
