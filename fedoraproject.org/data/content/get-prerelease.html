@@ -12,6 +12,7 @@
     <h2>${Markup(_('Get the next Fedora, right now.'))}</h2>
     <p class="warning">${Markup(_('This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the &lt;a href="https://bugzilla.redhat.com/"&gt;Red Hat Bugzilla&lt;/a&gt;.  Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information.') % {'relnotes_url': 'http://docs.fedoraproject.org/'})}</p>
     <p class="note">${Markup(_('After downloading an ISO, &lt;a href="https://fedoraproject.org%s/%s/verify"&gt;verify&lt;/a&gt; it.') % (path, lang))}</p>
+    <p class="mini-note">${Markup(_('You may encounter a known problem where the installation appears to hang at a blank screen when switching to graphical mode. See &lt;a href="%(url)s"&gt;%(url)s&lt;/a&gt; for more information and a workaround.') % {'url':'https://fedoraproject.org/wiki/Common_F14_bugs#radeon-anaconda'})}</p>
     <h3>${Markup(_('Install Media'))}</h3>
     <ul class="downloadbox installdvd">
       <li>
