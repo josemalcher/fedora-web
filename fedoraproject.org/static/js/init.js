@@ -31,6 +31,16 @@ $(document).ready(function(){
 	// force overlay
 	$("img[rel]").overlay();
 
+    // redirect download links to splash page
+    $("a.download-splash").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+
+        window.location = 'download-splash.html';
+        // would like to add some delay
+        window.open(linkLocation);
+	});
+
 	// main site banners
 	// see: banner.js
 	var choices = [];
