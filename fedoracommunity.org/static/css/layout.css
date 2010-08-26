@@ -8,7 +8,7 @@ body {
 	color: #333;
 	font-size: .8em;
 	padding: 0 0 40px;
-	font-family: "DroidSansRegular", "sans-serif";
+	font-family: "CantarellRegular", "sans-serif";
 }
 
 
@@ -224,8 +224,7 @@ ul, ol {
 	background: url('../images/tab_background.png') repeat-x;
 }
 
-#continent-nav h3 { padding-top: 18px; }
-#continent-nav a { font-size: 12px; }
+#continent-nav h3 { padding-top: 18px; font-size: 12px; }
 
 /* each individual continent icon */
 .continent-icon { padding: 9px; float: left; }
@@ -251,9 +250,9 @@ ul, ol {
 	border-right: 1px #badbb6 solid;
 }
 
-.asia-head a, .africa-head a, .america-head a, .europe-head a { text-decoration: none; color: #294172; }
-.asia-head:hover a, .africa-head:hover a, .america-head:hover a, .europe-head:hover a { color: #ecedeb; }
 
+#continent-nav a { color: #294172 !important; }
+#continent-nav a:hover { color: #ecedeb !important; }
 
 /* site navigation */
 #site-nav {
