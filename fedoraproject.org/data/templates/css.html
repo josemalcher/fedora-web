@@ -6,13 +6,13 @@
     <link rel="stylesheet" type="text/css" href="${path}/static/css/reset.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="${path}/static/css/text.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="${path}/static/css/960.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="${path}/static/css/layout.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="${path}/static/css/fedora960.css" media="screen" />
     <!-- legacy -->
     <link rel="shortcut icon" href="${path}/static/images/favicon.ico" type="image/vnd.microsoft.icon"/>
     <link rel="stylesheet" type="text/css" media="print" href="${path}/static/css/print.css" />
     <link py:if="lang in ('ar', 'bal', 'fa', 'he')" rel="stylesheet" type="text/css" media="all" href="${path}/static/css/rtl_960.css" />
 
-    <!--[if lt IE 7]>
+    ${Markup('&lt;!--[if lt IE 7]&gt;')}
         <link rel="stylesheet" type="text/css" href="${path}/static/css/ie7.css" media="screen" />
         <style type="text/css">
             #wrapper
@@ -25,7 +25,7 @@
             }
         </style>
 
-    <![endif]-->
+    ${Markup('&lt;![endif]--&gt;')}
 
     <noscript> 
         <link rel="stylesheet" type="text/css" media="all" href="${path}/static/css/nojs.css" />
