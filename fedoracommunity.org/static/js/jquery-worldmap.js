@@ -85,7 +85,7 @@ $(highlight_emea).css({
 });
 $(highlight_apac).css({
     "position": "absolute",
-    "left": 215,
+    "left": 216,
     "top": 12,
     "z-index": 2,
     "opacity": 0
