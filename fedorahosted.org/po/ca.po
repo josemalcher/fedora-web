@@ -2,26 +2,26 @@
 # Copyright (C) 2008 Red Hat, Inc.
 # This file is distributed under the same license as the
 #  fedorahosted package.
-#
+# 
 # Xavier Conde Rueda <xavi.conde@gmail.com>
-#
+# 
 # This file is translated according to the glossary and style guide of
 #   Softcatalà. If you plan to modify this file, please read first the page
 #   of the Catalan translation team for the Fedora project at:
 #   http://www.softcatala.org/projectes/fedora/
 #   and contact the previous translator
-#
+# 
 # Aquest fitxer s'ha de traduir d'acord amb el recull de termes i la guia
 #   d'estil de Softcatalà. Si voleu modificar aquest fitxer, llegiu si
 #   us plau la pàgina de catalanització del projecte Fedora a:
 #   http://www.softcatala.org/projectes/fedora/
 #   i contacteu l'anterior traductor/a.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: fedorahosted\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-04-09 19:09-0500\n"
+"POT-Creation-Date: 2010-04-18 01:30-0500\n"
 "PO-Revision-Date: 2009-09-21 23:04+0100\n"
 "Last-Translator: Oscar Osta <oostap@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
@@ -122,14 +122,6 @@ msgstr "Tinc un nou repositori git, com puc fer push/pull?"
 msgid "Before anyone can clone/push the new repository a master push must be done with the command (from your local git repo): git push ssh://git.fedorahosted.org/git/yourproject.git/ master"
 msgstr "Abans que qualsevol pugui fer un clone/push del nou repositori, cal fer un push del master, fent servir l'ordre (des del vostre repositori local): git push ssh://git.fedorahosted.org/git/yourproject.git/ master"
 
-#: data/content/faq.html:27
-msgid "How do I get permission to commit to a project?"
-msgstr ""
-
-#: data/content/faq.html:28
-msgid "You should <a href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for the commit group of the project, which should be <code>&lt;scm&gt;&lt;project&gt;</code>, e.g. for the desktop-effects project, apply to the <code>gitdesktop-effects</code> group."
-msgstr ""
-
 #: data/content/faq.html:29
 msgid "While I wait for my repository to be created, can I work on my code elsewhere?"
 msgstr "Mentres espero que es creï el meu repositori, puc treballar en el meu codi en un altre lloc?"
@@ -137,22 +129,6 @@ msgstr "Mentres espero que es creï el meu repositori, puc treballar en el meu c
 #: data/content/faq.html:30
 msgid "Of course. Visit <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> for instructions on how to set up a temporary repository in your fedorapeople.org space."
 msgstr "És clar. Visiteu <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> per a obtenir instruccions quant a com establir un repositori temporal en el vostre espai fedorapeople.org."
-
-#: data/content/faq.html:31
-msgid "Why does hg tells me the repository doesn't exist even though I know I have the correct URL?"
-msgstr ""
-
-#: data/content/faq.html:32
-msgid "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a delimiter between hostname and path and a second \"/\" as the root of the filesystem path.  For instance, if you're accessing the repository for authconfig you need to use \"hg clone ssh://hg.fedoraproject.org//hg/authconfig\""
-msgstr ""
-
-#: data/content/faq.html:33
-msgid "Can I offer pre-compiled binaries on Fedora Hosted?"
-msgstr ""
-
-#: data/content/faq.html:34
-msgid "You may, as long as the following conditions are met: <ol><li>The code project must be available under a Free Software license appropriate for Fedora.</li><li>You must make the source code you used to build the binaries available, and not distributed in the same tarball, or at a minimum make available a \"source only\" tarball.</li><li>You must provide clear instructions for building the software.</li></ol>"
-msgstr ""
 
 #: data/content/index.html:10
 msgid "Available Projects"
@@ -250,11 +226,6 @@ msgstr "No s'han fet canvis significatius des de fa sis (6) mesos"
 msgid "We will always do our best to contact missing developers and ensure that the code, Trac databases, and any relevant data is kept on hand so that it may be presented to the project owner in the event that a project is removed."
 msgstr "Sempre intentarem contactar amb els desenvolupadors i us assegurem que el codi, les bases de dades del Trac i qualsevol dada rellevant es mantindrà a mà, per poder presentar-ho al propietari del projecte en el cas que se suprimeixi un projecte."
 
-#: data/templates/foot.html:9
-#, fuzzy
-msgid "&copy; 2010 Red Hat, Inc. and others.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
-msgstr "&copy; 2009 Red Hat, Inc. i altres. Si us plau envieu comentaris o correccions a l'<a href=\"mailto:webmaster@fedoraproject.org\">equip de llocs web</a>."
-
 #: data/templates/foot.html:12
 msgid "The Fedora Project is maintained and driven by the community and sponsored by Red Hat.  This is a community maintained site.  Red Hat is not responsible for content."
 msgstr "El projecte Fedora és mantingut i conduït per la comunitat i patrocinat per Red Hat. Això és un lloc mantingut per la comunitat. Red Hat no se'n fa responsable del contingut."
@@ -302,3 +273,31 @@ msgstr "Patrocinador"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "Patrocinat per ServerBeach"
+
+#: data/templates/foot.html:9
+msgid "&copy; 2010 Red Hat, Inc. and others.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
+msgstr "&copy; 2010 Red Hat, Inc. i altres. Si us plau envieu comentaris o correccions a l'<a href=\"mailto:webmaster@fedoraproject.org\">equip dels llocs web</a>."
+
+#: data/content/faq.html:27
+msgid "How do I get permission to commit to a project?"
+msgstr "Com puc obtenir permís per a fer enviaments en un projecte?"
+
+#: data/content/faq.html:28
+msgid "You should <a href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for the commit group of the project, which should be <code>&lt;scm&gt;&lt;project&gt;</code>, e.g. for the desktop-effects project, apply to the <code>gitdesktop-effects</code> group."
+msgstr "Haureu d'<a href=\"https://admin.fedoraproject.org/accounts/group/list\">aplicar</a>  per al grup d'enviaments del projecte, el qual ha de ser <code>&lt;scm&gt;&lt;project&gt;</code>, per exemple per al projecte desktop-effects, apliqueu el grup <code>gitdesktop-effects</code>."
+
+#: data/content/faq.html:31
+msgid "Why does hg tells me the repository doesn't exist even though I know I have the correct URL?"
+msgstr "Per què hg em diu que no existeix el repositori tot i que sé que tinc la URL correcta?"
+
+#: data/content/faq.html:32
+msgid "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a delimiter between hostname and path and a second \"/\" as the root of the filesystem path.  For instance, if you're accessing the repository for authconfig you need to use \"hg clone ssh://hg.fedoraproject.org//hg/authconfig\""
+msgstr "Des-afortunadament hg no utilitza URLs reals. Heu d'utilitzar \"/\" com a delimitador entre el nom d'equip i la ruta, i una segon \"/\" com la ruta del sistema de fitxers des de l'arrel. Per exemple, si esteu accedint a un repositori per a authconfig haureu d'utilitzar \"hg clone ssh://hg.fedoraproject.org//hg/authconfig\""
+
+#: data/content/faq.html:34
+msgid "You may, as long as the following conditions are met: <ol><li>The code project must be available under a Free Software license appropriate for Fedora.</li><li>You must make the source code you used to build the binaries available, and not distributed in the same tarball, or at a minimum make available a \"source only\" tarball.</li><li>You must provide clear instructions for building the software.</li></ol>"
+msgstr "Podreu, sempre que es compleixin les següents condicions: <ol><li>El codi del projecte ha d'estar sota una llicència lliure apropiada per a Fedora.</li><li>Heu de fer que el vostre codi font pugui construir els binaris, i aquest es distribueixi en el mateix tarball, o com a mínim feu que estigui disponible un tarball amb \"únicament el codi\".</li><li>Heu de proporcionar instruccions clares per a la construcció del programari.</li></ol>"
+
+#: data/content/faq.html:33
+msgid "Can I offer pre-compiled binaries on Fedora Hosted?"
+msgstr "Puc oferir binaris pre-compilats a l'equipament de Fedora?"
