@@ -231,28 +231,34 @@ ul, ol {
 
 .asia-head { border-top: 6px #79db32 solid; background-color: inherit; margin-right: 0; padding-right: 13px; height: 69px; border-left: 1px #badbb6 solid; border-bottom: 1px #babdb6 solid;}
 .asia-head:hover { border-top: 6px #79db32 solid; background-color: #dfdfdf; height: 69px;}
+.asia-head.hover { border-top: 6px #79db32 solid; background-color: #dfdfdf; height: 69px;}
 
 .africa-head { border-top: 6px #a07cbc solid; background-color: inherit; margin: auto 0; padding: 0 7px; height: 69px; 	border-bottom: 1px #babdb6 solid;}
 .africa-head:hover { border-top: 6px #a07cbc solid; background-color: #dfdfdf; height:  69px; }
+.africa-head.hover { border-top: 6px #a07cbc solid; background-color: #dfdfdf; height:  69px; }
 
 .america-head { border-top: 6px #e5972b solid; background-color: inherit; margin: auto 0; padding: 0 7px; height: 69px; 	border-bottom: 1px #babdb6 solid;}
 .america-head:hover { border-top: 6px #e5972b solid; background-color: #dfdfdf; height: 69px; }
+.america-head.hover { border-top: 6px #e5972b solid; background-color: #dfdfdf; height: 69px; }
 
 .europe-head { border-top: 6px #db3279 solid; background-color: inherit; margin-left: 0; padding-left: 14px; height: 69px; border-bottom: 1px #babdb6 solid;}
 .europe-head:hover { border-top: 6px #db3279 solid; background-color: #dfdfdf; height: 69px; }
+.europe-head.hover { border-top: 6px #db3279 solid; background-color: #dfdfdf; height: 69px; }
 
 .asia-head, .africa-head, .america-head, .europe-head {
 	border-right: 1px #babdb6 solid;
 }
 
-.asia-head:hover, .africa-head:hover, .america-head:hover, .europe-head:hover {
+.asia-head:hover, .africa-head:hover, .america-head:hover, .europe-head:hover,
+.asia-head.hover, .africa-head.hover, .america-head.hover, .europe-head.hover {
 	background: #babdb6 url('../images/tab_hover-background.png') repeat-x scroll top left;
 	border-right: 1px #badbb6 solid;
 }
 
 
 #continent-nav a { color: #294172 !important; }
-#continent-nav a:hover { color: #ecedeb !important; }
+#continent-nav a:hover,
+#continent-nav a.hover { color: #ecedeb !important; }
 
 /* site navigation */
 #site-nav {
