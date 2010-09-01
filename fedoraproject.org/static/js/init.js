@@ -36,10 +36,19 @@ $(document).ready(function(){
         event.preventDefault();
         linkLocation = this.href;
 
-        window.location = 'download-splash.html';
-        // would like to add some delay
-        window.open(linkLocation);
+        // this passes the URL path to the splash page
+        window.location = 'download-splash?file='+linkLocation;
 	});
+
+
+    // splash download page stuff
+    $("p.download-path").ready(function(){
+        // get file path from URL, then display it
+        var file_url = $.query.get('file');
+        $("p.download-path").prepend( '<a href="'+ file_url +'">'+ file_url +'</a>' );
+        setTimeout(function() { window.open(file_url) }, "5000");
+	});
+
 
 	// main site banners
 	// see: banner.js
