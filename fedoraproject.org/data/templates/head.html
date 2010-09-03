@@ -4,18 +4,18 @@
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
 <div class="container_16">
-    <div class="grid_10" id="site-heading">
+    <div class="grid_8" id="site-heading">
         <h1><span id="logo">Fedora Project</span></h1>
         <h2>${_('Freedom. Friends. Features. First.')}</h2>
     </div>
-    <div class="grid_6">
-        <div id="site-nav">
-            <ul>
-                <li><a href="http://fedoraproject.org/">${_('Home')}</a></li>
-                <li><a href="http://fedoraproject.org/get-fedora">${_('Get Fedora')}</a></li>
-                <li><a href="http://fedoraproject.org/get-help">${_('Help')}</a></li>
-            </ul>
-        </div>
+    <div class="grid_4 prefix_1">Search</div>
+    <div class="grid_3">
+        <form action="" method="GET" class="lang-dropdown">
+            <select name="lang">
+            <xi:include href="translations.html" />
+            </select>
+            <input type="submit" value="${_('OK')}" />
+        </form>
     </div>
     <div class="clear"></div>		
 </div>

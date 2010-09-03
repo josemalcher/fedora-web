@@ -42,13 +42,14 @@ $(document).ready(function(){
 
 
     // splash download page stuff
-    $("p.download-path").ready(function(){
-        // get file path from URL, then display it
-        var file_url = $.query.get('file');
-        $("p.download-path").prepend( '<a href="'+ file_url +'">'+ file_url +'</a>' );
-        setTimeout(function() { window.open(file_url) }, "5000");
-	});
-
+    if (/.*download-splash.*/i.test(window.location.href)) {
+        $("p.download-path").ready(function(){
+            // get file path from URL, then display it
+            var file_url = $.query.get('file');
+            $("p.download-path").prepend( '<a href="'+ file_url +'">'+ file_url +'</a>' );
+            setTimeout(function() { window.open(file_url) }, "5000");
+        });
+    }
 
 	// main site banners
 	// see: banner.js
