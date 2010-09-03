@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${Markup(_('Fedora Project'))}</title>
+  </head>
+	<body id="fedoraproject-org">
+        To start the Agave program click Applications menu, Choose Graphics > Agave
+You will see a window like the following. Next you must choose a color, there are two methods to pick a color, either click on the button that will bring up a dialog. Using the eyedropper tool you can choose a color. The 2nd method is to select a base color by using the color palette located at the bottom part of the window. Now to add your own custom palette. You must first create a palette file. In my example is the format to create your custom palette:
+	All palette files must start with the GIMP Palette header and a palette name. You can optionally include a comment starting with a #. The remaining lines define individual colors' red, green, and blue components ranging from 0 to 255.
+	Your palette file should be saved with a .gpl extension and saved in home directory at /home/example/.local/share/agave/palettes/.  If your file is well-formed, Agave will load your custom palette next time you restart the application.
+	</body>
+</html>
+
