@@ -3,20 +3,36 @@
   xmlns:py="http://genshi.edgewall.org/"
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
-<div class="container_16">
-    <div class="grid_8" id="site-heading">
-        <h1><span id="logo">Fedora Project</span></h1>
-        <h2>${_('Freedom. Friends. Features. First.')}</h2>
+<div id="header">
+    <div class="container_16">
+        <div class="grid_8" id="site-heading">
+            <h1><span id="logo">Fedora Project</span></h1>
+            <h2>${_('Freedom. Friends. Features. First.')}</h2>
+        </div>
+        <div class="grid_4 prefix_1">Search</div>
+        <div class="grid_3">
+            <form action="" method="GET" class="lang-dropdown">
+                <select name="lang">
+                <xi:include href="translations.html" />
+                </select>
+                <input type="submit" value="${_('OK')}" />
+            </form>
+        </div>
+        <div class="clear"></div>
     </div>
-    <div class="grid_4 prefix_1">Search</div>
-    <div class="grid_3">
-        <form action="" method="GET" class="lang-dropdown">
-            <select name="lang">
-            <xi:include href="translations.html" />
-            </select>
-            <input type="submit" value="${_('OK')}" />
-        </form>
-    </div>
-    <div class="clear"></div>		
 </div>
+
+<div id="main-nav" style="background-color:#2a5694">
+    <div class="container_16">
+        <ul id="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features &amp; Screenshots</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </div>
+</div>
+
 </html>
