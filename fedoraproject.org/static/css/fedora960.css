@@ -269,6 +269,152 @@ ul, ol {
 ----------------------------------------------- */
 
 
-/* download splash */
+/* download splash page */
 .download-hl-box { background-color: #ececec; padding: 8px; }
 .download-hl-box a { text-decoration: none; }
+
+
+/* Extras/Common pieces
+ * - buttons, tooltips, toolbars, notes, 
+ * - warnings, boxes, input, etc
+----------------------------------------------- */
+
+abbr, acronym {
+    border-bottom: 1px dotted #000000;
+    cursor: help;
+}
+
+.download-button-mini {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #FFFFFF!important;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 2;
+    font-size:0.85em;
+    padding: 5px;
+    background-color: #337ACC !important;
+    white-space: nowrap;
+}
+
+.download-button-mini:hover { background-color: #295596 !important; }
+
+.big-button {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #FFFFFF!important;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 3;
+    margin: 0;
+    padding: 0.4em 0.5em;
+    background-color: #337acc !important;
+    margin-top: 0.9em;
+    font-size: 1.7em;
+}
+
+.big-button:hover { background-color: #295596 !important; }
+
+.global-notice {
+	background-color: #f6f6f6;
+	border: 1px solid #ddd;
+	padding: 0.5em 1em;
+}
+
+p.mini-note {
+    padding: 1ex 2ex;
+    border: 1px solid #DDDDDD;
+    background: #FFABAB;
+    font-size: .8em;
+    color: #4c4c4c;
+    -webkit-border-radius: 1.5ex;
+    -moz-border-radius: 1.5ex;
+    width: 50%
+}
+
+p.note {
+    padding: 1ex 2ex;
+    border: 1px solid #DDDDDD;
+    background: #F2F5F6;
+}
+
+p.warning {
+    padding: 1ex 2ex;
+    border: 1px solid #DDDDDD;
+    background: #FF6666;
+    color: #000000;
+}
+
+p.warning a { color: #00154F; }
+
+pre.command {
+    font-size: 1.3em;
+    border: solid #DDDDDD;
+    border-width: 1px 1px 1px 5px;
+    background: #F2F5F6;
+    padding: 0.5ex 2ex;
+}
+
+/* get-prerelease */
+ul.downloadbox {
+    overflow: hidden;
+    list-style: none;
+    margin: 0 2ex;
+    padding: 6ex 2ex 4ex 180px;
+    border-radius: 1.5ex;
+    -webkit-border-radius: 1.5ex;
+    -moz-border-radius: 1.5ex;
+    background: #C0DBDD 30px 50% no-repeat;
+    font-size: 0.9em;
+    display: inline-block;
+}
+
+ul.installdvd { background-image: url(../images/installdvd.png); }
+ul.gnomelive { background-image: url(../images/gnomelive.png); }
+ul.kdelive { background-image: url(../images/kdelive.png); }
+
+.downloadbox li {
+    width: 32ex;
+    float: left;
+    padding: 0 0 2ex;
+}
+
+.downloadbox li li {
+    width: auto;
+    float: none;
+    padding: 0;
+}
+
+/* special lists */
+#download-resources ul.checkmark-list {
+  list-style: disc url("/static/images/icon-checkmark.png") outside;
+}
+
+#download-resources li.guide-list {
+  list-style: disc url("/static/images/icon-guide.png") outside;
+}
+
+#download-resources li.webpage-list {
+  list-style: disc url("/static/images/icon-webpage.png") outside;
+}
+
+#download-resources li.support-list {
+  list-style: disc url("/static/images/icon-support.png") outside;
+}
+
+#download-resources li.verify-list {
+  list-style: disc url("/static/images/icon-signed-verified.png") outside;
+}
+
+
+/* export regulations */
+#export-regulations { padding-bottom: 3em; }
+#export-regulations .read-more img, #export-regulations .details img { margin: 0; }
+#export-regulations .details { display: inline; }
+#export-regulations a { text-decoration: none; }
+.read-more, .re-collapse { float:right; }
+.read-more img { float: none; }
+/* end: export regulations */
+
