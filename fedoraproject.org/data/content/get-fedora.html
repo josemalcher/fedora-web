@@ -10,40 +10,10 @@
         <div class="container_16">
             <div class="grid_16">
                 <p class="note"><img src="${path}/static/images/smirk.png" class="smirk" />${Markup(_('Did someone say... &amp;ldquo;&lt;a href="get-prerelease"&gt;Alpha&lt;/a&gt;&amp;rdquo;?'))}</p>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_12">
                 <h2>${Markup(_('Download Fedora'))}</h2>
-
-                <!-- start sidebar -->
-                <div id="download-resources" >
-                    <h4>${_('What will I need?')}</h4>
-                    <ul class="checkmark-list">
-                        <li>${_('A blank CD or DVD')} <em><strong>${_(' or ')}</strong></em> ${Markup(_('a blank %s USB stick.') % ('1GB+'))} </li>
-                        <li>${Markup(_('A %s or faster processor') % '400 MHz')}</li>
-                        <li>${Markup(_('At least %s memory (RAM), %s recommended for best performance') % ('512 MB', '1 GB'))}</li>
-                        <li>${Markup(_('At least %s hard drive space (only required for installation)') % '10 GB')}</li>
-                    </ul>
-                    <h4>${_('What do I do?')}</h4>
-                    <ul class="checkmark-list">
-                        <li>${_("First, ")}<a href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Live/i686/Fedora-13-i686-Live.iso">${_('download a Fedora ISO image')}</a>.</li>
-                        <li>${_('To install Fedora using a USB stick, ')} <a href="http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Guide/Making_USB_Media.html">${_('follow these instructions.')}</a></li>
-                        <li>${_('To install Fedora using a blank CD or DVD, ')} <a href="http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Guide/sn-making-media.html#sn-making-disc-media">${_('follow these instructions.')}</a></li>
-                    </ul>
-
-                    <h4>${_('Handy Resources')}</h4>
-                    <ul>
-                        <li class="guide-list"><a href="http://docs.fedoraproject.org/installation-quick-start-guide/">${_('Installation Quickstart Guide')}</a></li>
-                        <li class="guide-list"><a href="http://docs.fedoraproject.org/install-guide/">${_('Installation Guide')}</a></li>
-                        <li class="guide-list"><a href="http://docs.fedoraproject.org/release-notes/">${_('Release Notes')}</a></li>
-                        <li class="webpage-list"><a href="http://fedoraproject.org/wiki/Upgrading">${_('Upgrading Fedora')}</a></li>
-                        <li class="support-list"><a href="${path}/${lang}/get-help">${_('Help &amp; Support')}</a></li>
-                        <li class="verify-list"><a href="${path}/${lang}/verify">${_('Verify Download')}</a></li>	  
-                    </ul>
-                    <h4>${_("Other ways to get Fedora")}</h4>
-                    <p>${_("We offer several alternative Fedora download methods for advanced users, including torrents:")}</p>
-                    <ul>
-                      <li class="webpage-list"><a href="${path}/${lang}/get-fedora-all">${_("All download methods")}</a></li>
-                    </ul>
-                </div>
-                <!-- /start sidebar -->
 
                 <div class="download-block" id="new">
                     <h3>${Markup(_('Fedora 13 Desktop Edition &lt;em class="download-tagline"&gt;Installable Live CD&lt;/em&gt;'))}</h3>
@@ -71,13 +41,35 @@
                         <p>${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Upgrading"&gt;Learn more about upgrading Fedora...&lt;/a&gt;'))}</p>
                     </div>
                 </div>
-                <div class="download-block" id="export-regulations">
-                    <h4>Export Regulations</h4>
-                    <p>By clicking on and downloading Fedora, you agree to comply with the following terms and conditions:</p>
-                    <span class="read-more"><a href="#">Read full export regulations <img src="${path}/static/images/arrow_down.png" alt="${Markup(_('Arrow down'))}" /></a></span>
-                    <span class="details"><p>Fedora software and technical information is subject to the U.S. Export Administration Regulations and other U.S. and foreign law, and may not be exported or re-exported to certain countries (currently Cuba, Iran, Iraq, North Korea, Sudan, and Syria) or to persons or entities prohibited from receiving U.S. exports (including those (a) on the Bureau of Industry and Security Denied Parties List or Entity List, (b) on the Office of Foreign Assets Control list of Specially Designated Nationals and Blocked Persons, and (c) involved with missile technology or nuclear, chemical or biological weapons). You may not download Fedora software or technical information if you are located in one of these countries, or otherwise affected by these restrictions. You may not provide Fedora software or technical information to individuals or entities located in one of these countries or otherwise affected by these restrictions. You are also responsible for compliance with foreign law requirements applicable to the import and use of Fedora software and technical information.</p></span>
-                </div>
+                <xi:include href="../templates/content-export-regulations.html" />
             </div>
+
+            <!-- start sidebar -->
+            <div class="grid_4" id="download-resources" >
+                <h4>${_('What will I need?')}</h4>
+                <ul class="checkmark-list">
+                    <li>${_('A blank CD or DVD')} <em><strong>${_(' or ')}</strong></em> ${Markup(_('a blank %s USB stick.') % ('1GB+'))} </li>
+                    <li>${Markup(_('A %s or faster processor') % '400 MHz')}</li>
+                    <li>${Markup(_('At least %s memory (RAM), %s recommended for best performance') % ('512 MB', '1 GB'))}</li>
+                    <li>${Markup(_('At least %s hard drive space (only required for installation)') % '10 GB')}</li>
+                </ul>
+
+                <h4>${_('Handy Resources')}</h4>
+                <ul>
+                    <li class="guide-list"><a href="http://docs.fedoraproject.org/installation-quick-start-guide/">${_('Installation Quickstart Guide')}</a></li>
+                    <li class="guide-list"><a href="http://docs.fedoraproject.org/install-guide/">${_('Installation Guide')}</a></li>
+                    <li class="guide-list"><a href="http://docs.fedoraproject.org/release-notes/">${_('Release Notes')}</a></li>
+                    <li class="webpage-list"><a href="http://fedoraproject.org/wiki/Upgrading">${_('Upgrading Fedora')}</a></li>
+                    <li class="support-list"><a href="${path}/${lang}/get-help">${_('Help &amp; Support')}</a></li>
+                    <li class="verify-list"><a href="${path}/${lang}/verify">${_('Verify Download')}</a></li>	  
+                </ul>
+
+                <h4>There's More Fedora!</h4>
+                <a href="http://spins.fedoraproject.org"><img src="/static/images/banners/spins-website.png" /></a>
+
+            </div>
+            <!-- /start sidebar -->
+
         </div>
         <div class="clear"></div>
 	</body>
