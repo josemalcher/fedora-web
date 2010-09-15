@@ -10,6 +10,9 @@
         <div class="container_16">
             <div class="grid_16">
                 <div class="global-notice"><a href="http://lists.fedoraproject.org/pipermail/announce/2010-July/002843.html">${Markup(_('Not getting notified about software updates? &lt;em&gt;Read this notice &amp;rarr;&lt;/em&gt;'))}</a></div>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_12">
                 <h2>${Markup(_('Fedora 13: Rock It!'))}</h2>
                 <div id="screenshot-banner">
                     <a href="https://fedoraproject.org/wiki/F13_one_page_release_notes"><img src="${path}/static/images/f13launch.png" alt="Fedora 13" /></a>
@@ -20,6 +23,33 @@
                 <p>${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Overview"&gt;Learn more. &amp;gt;&amp;gt;&lt;/a&gt;'))}</p>
                 <p><a href="get-fedora" class="big-button">${_('Download Now!')}</a></p>
             </div>
+
+            <!-- start sidebar -->
+            <div class="grid_4" id="download-resources" >
+                <h4>${_('What will I need?')}</h4>
+                <ul class="checkmark-list">
+                    <li>${_('A blank CD or DVD')} <em><strong>${_(' or ')}</strong></em> ${Markup(_('a blank %s USB stick.') % ('1GB+'))} </li>
+                    <li>${Markup(_('A %s or faster processor') % '400 MHz')}</li>
+                    <li>${Markup(_('At least %s memory (RAM), %s recommended for best performance') % ('512 MB', '1 GB'))}</li>
+                    <li>${Markup(_('At least %s hard drive space (only required for installation)') % '10 GB')}</li>
+                </ul>
+                <p>More about requirements &gt;</p>
+                <p>Full set of download options &gt;</p>
+
+                <h4>There's More Fedora!</h4>
+                <a href="http://spins.fedoraproject.org"><img src="/static/images/banners/spins-website.png" /></a>
+                
+                <h4>Upcomming Events</h4>
+                <p>...</p>
+                
+                <h2>${_('Hosting Sponsor')}</h2>
+                <div id="hosting-sponsor">
+                    <a href=""><img style="border: 0px none transparent;" alt="" src=""/></a>
+                </div>
+
+            </div>
+            <!-- /start sidebar -->
+            <div class="clear"></div>
         </div>
         <div class="clear"></div>
 	</body>
