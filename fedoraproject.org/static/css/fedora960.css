@@ -188,7 +188,7 @@ ul, ol {
     display: inline;
 }
 
-#main-nav a { 
+#main-nav a {
     text-decoration: none;
     font-weight: bold;
     color: #ececec;
@@ -275,7 +275,7 @@ ul, ol {
 
 
 /* Extras/Common pieces
- * - buttons, tooltips, toolbars, notes, 
+ * - buttons, tooltips, toolbars, notes,
  * - warnings, boxes, input, etc
 ----------------------------------------------- */
 
@@ -317,11 +317,20 @@ abbr, acronym {
 
 .big-button:hover { background-color: #295596 !important; }
 
-.global-notice {
-	background-color: #f6f6f6;
-	border: 1px solid #ddd;
-	padding: 0.5em 1em;
+.support-icon {
+	border: 0px;
+	padding: 3px;
 }
+
+
+.global-notice {
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    padding: 0.5em 1em;
+}
+
+/* hack to hide js stuff from non-js supported browsers */
+.shownojs { display: none; }
 
 p.mini-note {
     padding: 1ex 2ex;
@@ -420,3 +429,126 @@ ul.kdelive { background-image: url(../images/kdelive.png); }
 .read-more img { float: none; }
 /* end: export regulations */
 
+/* tabs */
+/* root element for tabs  */
+ul.tabs {
+    margin: 0 !important;
+    padding: 0;
+    height: 30px;
+    border-bottom: 1px solid #dcdcdc;
+    width: 70%;
+}
+
+/* single tab */
+ul.tabs li {
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/* link inside the tab. no background image */
+ul.tabs a {
+    float: left;
+    font-size: 13px;
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #dcdcdc;
+    border-bottom: 0px;
+    height: 18px;
+    background-color: #dcdcdc;
+    color: #3771c8;
+    margin-right: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    position: relative;
+    top: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ul.tabs a:hover {
+    background-color: #fff;
+    color: #818181;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* selected tab */
+ul.tabs a.current {
+    background-color: #fff;
+    border-bottom: 2px solid #fff;
+    color: #808080;
+    cursor: default;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* tab pane */
+div.panes div {
+    display: none;
+    border: 0px;
+    border-left: 1px solid #dcdcdc;
+    min-height: 150px;
+    padding: 15px 10px;
+    /* tofix width: 70%; */
+    float: left;
+}
+
+#content a.current:link {
+    color: #828282;
+}
+/* end: tabs */
+
+/* the overlayed element */
+.simple_overlay {
+
+    /* must be initially hidden */
+    display:none;
+
+    /* place overlay on top of other elements */
+    z-index:10000;
+
+    /* styling */
+    background-color:#333;
+
+    /* disabled for now - so it fits around images
+     * width:675px;
+     */
+    min-height:200px;
+    border:1px solid #666;
+
+    /* CSS3 styling for latest browsers */
+    -moz-box-shadow:0 0 90px 5px #000;
+    -webkit-box-shadow: 0 0 90px #000;
+}
+
+/* close button positioned on upper right corner */
+.simple_overlay .close {
+    background-image:url(../images/overlay-close.png);
+    position:absolute;
+    right:-15px;
+    top:-15px;
+    cursor:pointer;
+    height:35px;
+    width:35px;
+}
+
+/* styling for elements inside overlay */
+.overlay_details {
+    position:absolute;
+    top:15px;
+    right:15px;
+    font-size:11px;
+    color:#fff;
+    width:150px;
+}
+
+.overlay_details h3 {
+    color:#aba;
+    font-size:15px;
+    margin:0 0 -10px 0;
+}
+
+/* end: the overlayed element */
