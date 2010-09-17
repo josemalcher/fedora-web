@@ -7,19 +7,24 @@
         <title>${Markup(_('Fedora Project'))}</title>
     </head>
 	<body id="fedoraproject-org">
+    
+    <div id="page-header"></div>
+    <div id="get-nav">
         <div class="container_16">
+            <!-- tabs -->
+            <ul class="tabs">
+                <li><a id="t1" href="#desktops">${_('Desktops')}</a></li>
+                <li><a id="t2" href="#architecture">${_('Architecture')}</a></li>
+                <li><a id="t3" href="#formats">${_('Formats')}</a></li>
+                <li><a id="t4" href="#activities">${_('Activities')}</a></li>
+            </ul>
+        </div>
+    </div>
+        <div class="container_16">
+
             <div class="grid_16">
-                <h2>${Markup(_('Download Fedora'))} > ${_('More Options')}</h2>
 
                 <!-- content -->
-                <!-- tabs -->
-                <div id="optionstabs">
-                <ul class="tabs">
-                    <li><a id="t1" href="#desktops">${_('Desktops')}</a></li>
-                    <li><a id="t2" href="#architecture">${_('Architecture')}</a></li>
-                    <li><a id="t3" href="#formats">${_('Formats')}</a></li>
-                    <li><a id="t4" href="#activities">${_('Activities')}</a></li>
-                </ul>
 
                 <!-- tab "panes" -->
                 <div class="panes">
@@ -152,7 +157,6 @@
                         </table>
                         <h3>${Markup(_('Get these and more at &lt;a href="https://spins.fedoraproject.org"&gt;spins.fedoraproject.org&lt;/a&gt;.'))}</h3>
                     </div>
-                </div>
                 </div>
                 <!-- /content -->
 
