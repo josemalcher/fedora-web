@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web.master-fedoraproject.es\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-07-31 11:28-0500\n"
-"PO-Revision-Date: 2010-08-09 11:22-0300\n"
-"Last-Translator: Héctor Daniel Cabrera <logan@fedoraproject.org>\n"
+"POT-Creation-Date: 2010-09-16 23:04+0530\n"
+"PO-Revision-Date: 2010-09-21 10:09-0300\n"
+"Last-Translator: Claudio Rodrigo Pereyra Diaz <claudiorodrigo@pereyradiaz.com.ar>\n"
 "Language-Team: Spanish <trans-es@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -395,6 +395,13 @@ msgstr "¿No puede pagar el precio del medio de instalación? Solicite el medio 
 msgid "When you place an order with a <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">participating vendor</a>, you may also sponsor the cost of media for users who cannot afford it, such as people in developing nations. Consider participating in the <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora Sponsored Media Program</a>."
 msgstr "Cuando realice una orden de compra a un <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">vendedor participante</a>, también puede patrocinar el costo del medio para los usuarios que no pueden pagarlo, como por ejemplo, en países en vía de desarrollo. Considere participar en el <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Programa de Patrocinio de Medios de Instalación de Fedora</a>."
 
+#: data/content/get-fedora-all.html:150
+#: data/content/get-fedora-kde.html:86
+#: data/content/get-fedora.html:74
+#: data/content/get-prerelease.html:97
+msgid "Arrow down"
+msgstr "Flecha hacia abajo"
+
 #: data/content/get-fedora-kde.html:15
 msgid "Show me all download options in one page!"
 msgstr "¡Muéstreme todas las opciones de descarga en una página!"
@@ -403,6 +410,10 @@ msgstr "¡Muéstreme todas las opciones de descarga en una página!"
 #: data/content/get-fedora-options.html:20
 msgid "There's More Fedora!"
 msgstr "¡Hay más Fedora!"
+
+#: data/content/get-fedora-kde.html:18
+msgid "Fedora Spins"
+msgstr "Ediciones de Fedora"
 
 #: data/content/get-fedora-kde.html:23
 msgid "The <a href=\"http://www.kde.org/\">K Desktop Environment</a> (KDE) is an alternative desktop environment for Fedora. It provides a different look and feel to the windows, menus, and general desktop behavior of Fedora. If you prefer the K Desktop Environment, you may download the KDE version of Fedora below."
@@ -1106,8 +1117,12 @@ msgid "If a problem requires real time support, with somebody to explain each st
 msgstr "Si un problema requiere soporte en tiempo real, con alguien que le explique paso a paso como lidiar con cualquier problema conforme aparezca, el Chat (IRC) es la solución ideal. Fedora tiene un número de canales IRC y uno específicamente para soporte al usuario final."
 
 #: data/content/get-help.html:26
-msgid "To access this support launch Fedoras default instant messaging client, Empathy, and choose Accounts from the Edit menu. Add a new account, and select IRC as the protocol. Next, select freenode from the list of networks, enter a Nickname and select Log In and then Close. The final step is to add the #fedora channel by selecting Join... from the Room menu. Now that this is done, the #fedora channel should appear where end-users can ask questions and get support in real time."
-msgstr "Para acceder a este soporte, inicie Empathy, el cliente predeterminado de mensajería instantánea de Fedora, y elija Administrar desde el menú Cuentas. Agregue una nueva cuenta, y seleccione IRC como protocolo. Luego, seleccione freenode en la lista de redes, ingrese su apodo y su contraseña, haga clic sobre Iniciar Sesión y cierre esta ventana. Como último paso agregue al canal #fedora seleccionando Unirse en la lista de salas disponibles. Ahora debería aparecer el canal #fedora, donde los usuarios finales pueden preguntar y obtener soporte en tiempo real."
+msgid "For a comprehensive list of available Fedora channels, please visit <a href=\"http://fedoraproject.org/wiki/Communicate#User_Help\">http://fedoraproject.org/wiki/Communicate#User_Help</a>"
+msgstr "Para una lista comprensiva de los canales Fedora disponibles, por favor visite <a href=\"http://fedoraproject.org/wiki/Communicate#User_Help\">http://fedoraproject.org/wiki/Communicate#User_Help</a>"
+
+#: data/content/get-help.html:27
+msgid "If you are new to Internet Relay Chat (IRC) refer to the <a href=\"https://fedoraproject.org/wiki/Communicate/IRCHowTo\" target=\"_blank\">How To</a> page"
+msgstr "Si es nuevo en Internet Relay Chat (IRC) diríjase a la página <a href=\"https://fedoraproject.org/wiki/Communicate/IRCHowTo\" target=\"_blank\">Cómo</a>"
 
 #: data/content/get-help.html:28
 msgid "E-mail Support"
@@ -1557,6 +1572,10 @@ msgstr "Pongase en contacto con la Comunidad de Fedora."
 msgid "Download Fedora!"
 msgstr "¡Descargue Fedora!"
 
+#: data/templates/foot.html:8
+msgid "Red Hat Logo"
+msgstr "Logo de Red Hat"
+
 #: data/templates/foot.html:10
 msgid "Sponsors"
 msgstr "Patrocinadores"
@@ -1653,6 +1672,24 @@ msgstr "Idioma del Sitio Web"
 #: data/templates/sidebar.html:37
 msgid "Hosting Sponsor"
 msgstr "Patrocinadores"
+
+#~ msgid ""
+#~ "To access this support launch Fedoras default instant messaging client, "
+#~ "Empathy, and choose Accounts from the Edit menu. Add a new account, and "
+#~ "select IRC as the protocol. Next, select freenode from the list of "
+#~ "networks, enter a Nickname and select Log In and then Close. The final "
+#~ "step is to add the #fedora channel by selecting Join... from the Room "
+#~ "menu. Now that this is done, the #fedora channel should appear where end-"
+#~ "users can ask questions and get support in real time."
+#~ msgstr ""
+#~ "Para acceder a este soporte, inicie Empathy, el cliente predeterminado de "
+#~ "mensajería instantánea de Fedora, y elija Administrar desde el menú "
+#~ "Cuentas. Agregue una nueva cuenta, y seleccione IRC como protocolo. "
+#~ "Luego, seleccione freenode en la lista de redes, ingrese su apodo y su "
+#~ "contraseña, haga clic sobre Iniciar Sesión y cierre esta ventana. Como "
+#~ "último paso agregue al canal #fedora seleccionando Unirse en la lista de "
+#~ "salas disponibles. Ahora debería aparecer el canal #fedora, donde los "
+#~ "usuarios finales pueden preguntar y obtener soporte en tiempo real."
 
 #~ msgid "Looking for older release?"
 #~ msgstr "¿Buscando versiones antiguas?"
