@@ -31,6 +31,12 @@ $(document).ready(function(){
 	// force overlay
 	$("img[rel]").overlay();
 
+    // slideshow
+    $('.simpleSlideShow').slideShow({
+        interval: 3
+    });
+
+
     // redirect download links to splash page
     $("a.download-splash").click(function(event){
         event.preventDefault();
