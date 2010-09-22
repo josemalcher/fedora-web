@@ -10,10 +10,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tfpo static website\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-01-12 15:35-0600\n"
+"POT-Creation-Date: 2010-09-22 21:12+0200\n"
 "PO-Revision-Date: 2010-03-11 11:44+0100\n"
 "Last-Translator: Marcus Nitzschke <kenda@fedoraproject.org>\n"
 "Language-Team: Fedora Translation <fedora-trans-de@redhat.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -67,8 +68,7 @@ msgstr "Ekiga für Fedora Talk einrichten"
 msgid "Open Ekiga and cancel the setup wizard or druid if one appears. The following screen appears."
 msgstr "Öffnen Sie Ekiga und brechen Sie den Startassistenten ab, falls er erscheint. Das folgende Fenster erscheint:"
 
-#: data/content/client-ekiga.html:17
-#: data/content/usage.html:25
+#: data/content/client-ekiga.html:17 data/content/usage.html:25
 msgid "Ekiga main screen"
 msgstr "Ekiga Hauptfenster"
 
@@ -76,8 +76,7 @@ msgstr "Ekiga Hauptfenster"
 msgid "On the Ekiga menu, select Edit → Accounts."
 msgstr "Wählen Sie im Ekiga Menü Bearbeiten → Konten."
 
-#: data/content/client-ekiga.html:21
-#: data/content/usage.html:27
+#: data/content/client-ekiga.html:21 data/content/usage.html:27
 msgid "Ekiga accounts window"
 msgstr "Ekiga-Kontofenster"
 
@@ -85,8 +84,7 @@ msgstr "Ekiga-Kontofenster"
 msgid "Fill in the details as shown below:"
 msgstr "Füllen Sie die Details, wie unten gezeigt, aus:"
 
-#: data/content/client-ekiga.html:25
-#: data/content/usage.html:29
+#: data/content/client-ekiga.html:25 data/content/usage.html:29
 msgid "Ekiga edit accounts screen"
 msgstr "Ekiga-Kontobearbeitungsfenster"
 
@@ -94,8 +92,7 @@ msgstr "Ekiga-Kontobearbeitungsfenster"
 msgid "Name: Fill in a name for this account, such as \"Fedora Talk.\""
 msgstr "Name: Geben Sie bitte einen Namen, wie  \"Fedora Talk\", für das Konto an."
 
-#: data/content/client-ekiga.html:28
-#: data/content/usage.html:32
+#: data/content/client-ekiga.html:28 data/content/usage.html:32
 msgid "Registrar: fedoraproject.org"
 msgstr "Registrar: fedoraproject.org"
 
@@ -103,8 +100,7 @@ msgstr "Registrar: fedoraproject.org"
 msgid "User: Your Fedora Account System username"
 msgstr "Benutzer: Ihr Benutzername im Fedora-Konto-System"
 
-#: data/content/client-ekiga.html:30
-#: data/content/usage.html:34
+#: data/content/client-ekiga.html:30 data/content/usage.html:34
 msgid "Authentication User: leave this empty"
 msgstr "Authentication User: Lassen Sie dies leer"
 
@@ -124,8 +120,7 @@ msgstr "Konto aktivieren: Wählen Sie dieses Kästchen um sich sofort anzumelden
 msgid "Select \"OK\" to return to the account screen. You can verify your settings by checking the status in the \"Status\" column."
 msgstr "Wählen Sie \"OK\" um zu dem Konten-Fenster zurückzukehren. Sie können ihre Einstellungen überprüfen, indem Sie den Status in der \"Status\" Spalte kontrollieren."
 
-#: data/content/client-ekiga.html:38
-#: data/content/usage.html:40
+#: data/content/client-ekiga.html:38 data/content/usage.html:40
 msgid "Ekiga completed accounts window"
 msgstr "Ekigas fertiggestelltes Konten-Fenster."
 
@@ -133,8 +128,7 @@ msgstr "Ekigas fertiggestelltes Konten-Fenster."
 msgid "You are done configuring your Ekiga client."
 msgstr "Sie haben das Einrichten von Ekiga nun abgeschlossen."
 
-#: data/content/client-ekiga.html:42
-#: data/content/client-empathy.html:42
+#: data/content/client-ekiga.html:42 data/content/client-empathy.html:47
 #: data/content/client-twinkle.html:77
 msgid "Test and verify your settings"
 msgstr "Testen und Überprüfen sie ihre Einstellungen"
@@ -152,8 +146,7 @@ msgstr "Empathy für Fedora Talk einrichten"
 msgid "Install the \"empathy\" package using PackageKit. From the main menu, select System → Administration → Add/Remove Software."
 msgstr "Installieren Sie das Paket \"empathy\" via PackageKit. Wählen Sie im Hauptmenü System → Administration → Software hinzufügen/entfernen."
 
-#: data/content/client-empathy.html:16
-#: data/content/client-twinkle.html:17
+#: data/content/client-empathy.html:16 data/content/client-twinkle.html:17
 msgid "Selecting PackageKit from the main menu"
 msgstr "Wählen Sie PackageKit aus dem Haupmenü"
 
@@ -201,11 +194,23 @@ msgstr "Passwort: Ihr VoIP-Passwort (Beachten Sie, dass dies nicht zwangsläufig
 msgid "Enabled: Select this checkbox to immediately enable the acocunt)"
 msgstr "Aktiviert: Wählen Sie dieses Kästchen um das Konto zu aktivieren"
 
+#: data/content/client-empathy.html:36
+msgid "Then, select \"Advenced\" for setting last configurations:"
+msgstr ""
+
 #: data/content/client-empathy.html:38
+msgid "Port: set it to 5060"
+msgstr ""
+
+#: data/content/client-empathy.html:39
+msgid "Udp: Select this checkbox"
+msgstr ""
+
+#: data/content/client-empathy.html:43
 msgid "Select \"Apply\" to apply changes, and then select \"Close\" to close the dialog. Your account is now active and registered."
 msgstr "Wählen Sie \"Anwenden\" um die Änderungen zu übernehmen und danach \"Schließen\" um das Fenster zu verlassen. Ihr Konto ist nun aktiviert und registriert."
 
-#: data/content/client-empathy.html:41
+#: data/content/client-empathy.html:46
 msgid "You are now finished configuring your Empathy client."
 msgstr "Sie haben das Einrichten von Empathy nun abgeschlossen."
 
@@ -243,8 +248,7 @@ msgstr "Voicemail: <em>Aktiviert</em>"
 msgid "SIP Registration: <em>talk.fedoraproject.org (port 5060)</em>"
 msgstr "SIP Registrar: <em>talk.fedoraproject.org (port 5060)</em>"
 
-#: data/content/client-generic.html:21
-#: data/content/client-twinkle.html:46
+#: data/content/client-generic.html:21 data/content/client-twinkle.html:46
 msgid "User Name: <em>FAS Account name</em>"
 msgstr "Benuzername: <em>Name im FAS-Konto</em>"
 
@@ -256,13 +260,11 @@ msgstr "SIP Proxy: <em>talk.fedoraproject.org (Port 5060)</em>"
 msgid "SIP outbound proxy: <em>talk.fedoraproject.org (port 5060)</em>"
 msgstr "ausgehender SIP Proxy: <em>talk.fedoraproject.org (Port 5060)</em>"
 
-#: data/content/client-generic.html:24
-#: data/content/client-twinkle.html:47
+#: data/content/client-generic.html:24 data/content/client-twinkle.html:47
 msgid "Domain: <em>talk.fedoraproject.org</em>"
 msgstr "Domäne: <em>talk.fedoraproject.org</em>"
 
-#: data/content/client-generic.html:25
-#: data/content/client-twinkle.html:54
+#: data/content/client-generic.html:25 data/content/client-twinkle.html:54
 msgid "Authentication name: <em>FAS Account name</em>"
 msgstr "Anmeldename: <em>Name im FAS-Konto</em>"
 
@@ -295,8 +297,7 @@ msgstr "Twinkle - Fedora Talk"
 msgid "Configuring Twinkle for Fedora Talk"
 msgstr "Twinkle für Fedora Talk einrichten"
 
-#: data/content/client-twinkle.html:13
-#: data/content/usage.html:21
+#: data/content/client-twinkle.html:13 data/content/usage.html:21
 msgid "There is a <a href=\"http://fedorapeople.org/groups/web/fedoratalk-twinkle-screencast.ogg\">useful video tutorial</a> for configuring Twinkle with Fedora Talk. Useful content may be added to the <a href=\"http://fedoraproject.org/wiki\">Fedora Project wiki</a>, possibly even by <em>you</em>."
 msgstr "Es gibt eine <a href=\"http://fedorapeople.org/groups/web/fedoratalk-twinkle-screencast.ogg\">nützliche Video-Anleitung</a> für die Konfiguration von Twinkle für Fedora Talk. Weitere Informationen können zum <a href=\"http://fedoraproject.org/wiki\">Wiki des Fedora-Projekts</a> hinzugefügt werden - vielleicht sogar durch <em>Sie</em>?"
 
@@ -320,8 +321,7 @@ msgstr "Wählen Sie Anwendungen → Internet → Twinkle aus dem Hauptmenü."
 msgid "Select \"Ok\" to create a profile."
 msgstr "Wählen Sie \"Ok\" um ein Profil zu erstellen."
 
-#: data/content/client-twinkle.html:26
-#: data/content/client-twinkle.html:30
+#: data/content/client-twinkle.html:26 data/content/client-twinkle.html:30
 msgid "Twinkle profile editor"
 msgstr "Twinkle Profil-Editor"
 
@@ -333,10 +333,8 @@ msgstr "Wählen Sie \"Profil-Editor\"."
 msgid "Give the profile a name, such as \"FedoraTalk.\" Spaces are not allowed."
 msgstr "Geben Sie dem Profil einen Namen, wie \"FedoraTalk\". Leerzeichen sind nicht erlaubt."
 
-#: data/content/client-twinkle.html:34
-#: data/content/client-twinkle.html:40
-#: data/content/client-twinkle.html:62
-#: data/content/client-twinkle.html:73
+#: data/content/client-twinkle.html:34 data/content/client-twinkle.html:40
+#: data/content/client-twinkle.html:62 data/content/client-twinkle.html:73
 msgid "Twinkle profile name"
 msgstr "Twinkle Profilname"
 
@@ -421,13 +419,11 @@ msgstr "trac-Instanz"
 msgid "Sub-project"
 msgstr "Unterprojekt"
 
-#: data/content/conference.html:19
-#: data/content/conference.html:59
+#: data/content/conference.html:19 data/content/conference.html:59
 msgid "Extension"
 msgstr "Erweiterung"
 
-#: data/content/conference.html:20
-#: data/content/conference.html:60
+#: data/content/conference.html:20 data/content/conference.html:60
 msgid "SIP Address (for soft phones)"
 msgstr "SIP-Adresse (für Softphones)"
 
@@ -491,8 +487,7 @@ msgstr "Konferenz-Raum 4"
 msgid "FAQs - Fedora Talk"
 msgstr "FAQs - Fedora Talk"
 
-#: data/content/faq.html:12
-#: data/templates/sidebar.html:13
+#: data/content/faq.html:12 data/templates/sidebar.html:13
 msgid "Frequently-Asked Questions"
 msgstr "Häufig gestellte Fragen"
 
@@ -536,8 +531,7 @@ msgstr "Welche Fedora Konferenzräume wurden bereits erstellt?"
 msgid "See the <a href=\"./conference\">conferencing page</a> for the conference rooms and numbers."
 msgstr "Schauen Sie unter <a href=\"./conference\">Konferenzen</a> nach den Konferenzräumen und ihren Nummern."
 
-#: data/content/index.html:7
-#: data/content/index.html:10
+#: data/content/index.html:7 data/content/index.html:10
 msgid "Fedora Talk"
 msgstr "Fedora Talk"
 
@@ -621,8 +615,7 @@ msgstr "Twinkle (empfohlen)"
 msgid "Empathy"
 msgstr "Empathy"
 
-#: data/content/setup-local-system.html:19
-#: data/content/usage.html:22
+#: data/content/setup-local-system.html:19 data/content/usage.html:22
 msgid "Ekiga"
 msgstr "Ekiga"
 
@@ -672,12 +665,9 @@ msgstr "Ekiga - \"Bearbeiten → Einstellungen → Protokolle → Netzwerk-Einst
 msgid "Twinkle - \"Edit -> System Settings -> General -> Default Network Interface\""
 msgstr "Twinkle - \"Bearbeiten → Systemeinstellungen → Allgemein → Default Network Interface\""
 
-#: data/content/troubleshooting.html:26
-#: data/content/troubleshooting.html:31
-#: data/content/troubleshooting.html:36
-#: data/content/troubleshooting.html:41
-#: data/content/troubleshooting.html:45
-#: data/content/troubleshooting.html:48
+#: data/content/troubleshooting.html:26 data/content/troubleshooting.html:31
+#: data/content/troubleshooting.html:36 data/content/troubleshooting.html:41
+#: data/content/troubleshooting.html:45 data/content/troubleshooting.html:48
 msgid "Verify your setup!"
 msgstr "Kontrollieren Sie Ihre Einstellungen!"
 
@@ -976,24 +966,14 @@ msgstr "Hosting-Sponsor"
 msgid "Sponsored by ServerBeach"
 msgstr "Gesponsert von ServerBeach"
 
-#~ msgid ""
-#~ "This section is still being designed.  For now it is best to stop by "
-#~ "#fedora-admin on irc.freenode.net"
-#~ msgstr ""
-#~ "An diesem Abschnitt wird noch gearbeitet. Im Augenblick ist es das beste "
-#~ "in #fedora-admin auf irc.freenode.net vorbeizuschauen."
+#~ msgid "This section is still being designed.  For now it is best to stop by #fedora-admin on irc.freenode.net"
+#~ msgstr "An diesem Abschnitt wird noch gearbeitet. Im Augenblick ist es das beste in #fedora-admin auf irc.freenode.net vorbeizuschauen."
 
 #~ msgid "About Fedora Talk"
 #~ msgstr "Über Fedora Talk"
 
-#~ msgid ""
-#~ "Fedora Talk is an effort to bring Fedora contributors in closer contact "
-#~ "to each other.  IRC is an OK tool for communication but meetings and "
-#~ "conversations bring much more to the table."
-#~ msgstr ""
-#~ "Fedora Talk ist ein Versuch, Mitwirkende von Fedora näher miteinander in "
-#~ "Kontakt zu bringen. IRC ist ein passendes Werkzeug für die Kommunikation, "
-#~ "aber Meetings und Diskussionen sind wesentlich ergebnisreicher."
+#~ msgid "Fedora Talk is an effort to bring Fedora contributors in closer contact to each other.  IRC is an OK tool for communication but meetings and conversations bring much more to the table."
+#~ msgstr "Fedora Talk ist ein Versuch, Mitwirkende von Fedora näher miteinander in Kontakt zu bringen. IRC ist ein passendes Werkzeug für die Kommunikation, aber Meetings und Diskussionen sind wesentlich ergebnisreicher."
 
 #~ msgid "Step 1"
 #~ msgstr "Schritt 1"
@@ -1004,28 +984,14 @@ msgstr "Gesponsert von ServerBeach"
 #~ msgid "Step 3"
 #~ msgstr "Schritt 3"
 
-#~ msgid ""
-#~ "First sign up for a Fedora account and sign the CLA.  Next select \"VOIP"
-#~ "\" from the side menu and edit the settings to enable voip as well as set "
-#~ "your password.  This password should not be the same as your normal "
-#~ "fedora password.  Please go to our accounts system for more information."
-#~ msgstr ""
-#~ "Als erstes melden Sie sich für einen Fedora-Account an und stimmen dem "
-#~ "CLA zu. Als nächstes wählen Sie \"VoIP\" aus dem seitlichen Menü und "
-#~ "editieren die Einstellungen so, dass VoIP aktiviert ist und setzen ein "
-#~ "Passwort. Dieses Passwort sollte nicht das gleiche wie Ihr normales "
-#~ "Fedora-Passwort sein. Weitere Informationen lassen sich dann auch im "
-#~ "Account-System entnehmen."
+#~ msgid "First sign up for a Fedora account and sign the CLA.  Next select \"VOIP\" from the side menu and edit the settings to enable voip as well as set your password.  This password should not be the same as your normal fedora password.  Please go to our accounts system for more information."
+#~ msgstr "Als erstes melden Sie sich für einen Fedora-Account an und stimmen dem CLA zu. Als nächstes wählen Sie \"VoIP\" aus dem seitlichen Menü und editieren die Einstellungen so, dass VoIP aktiviert ist und setzen ein Passwort. Dieses Passwort sollte nicht das gleiche wie Ihr normales Fedora-Passwort sein. Weitere Informationen lassen sich dann auch im Account-System entnehmen."
 
 #~ msgid "Get Connected!"
 #~ msgstr "Jetzt anrufen!"
 
-#~ msgid ""
-#~ "Welcome to Fedora Talk.  Remember to enable VoIP via your Fedora Account "
-#~ "System account:"
-#~ msgstr ""
-#~ "Willkommen beim Fedora Talk. Vergessen Sie nicht, VoIP über Ihren Zugang "
-#~ "zum Fedora Account System zu aktivieren: "
+#~ msgid "Welcome to Fedora Talk.  Remember to enable VoIP via your Fedora Account System account:"
+#~ msgstr "Willkommen beim Fedora Talk. Vergessen Sie nicht, VoIP über Ihren Zugang zum Fedora Account System zu aktivieren: "
 
 #~ msgid "Echoing"
 #~ msgstr "Echo"
@@ -1036,12 +1002,8 @@ msgstr "Gesponsert von ServerBeach"
 #~ msgid "Usage"
 #~ msgstr "Benutzung"
 
-#~ msgid ""
-#~ "User: FAS username (My username in FAS is heffer, so for me it is \"heffer"
-#~ "\")."
-#~ msgstr ""
-#~ "Benutzer: FAS-Benutzername (Mein Benutzername ist im FAS ist heffer, so "
-#~ "ist es für mich \"heffer\")."
+#~ msgid "User: FAS username (My username in FAS is heffer, so for me it is \"heffer\")."
+#~ msgstr "Benutzer: FAS-Benutzername (Mein Benutzername ist im FAS ist heffer, so ist es für mich \"heffer\")."
 
 #~ msgid "Enable account: You definitely want to do that :-)"
 #~ msgstr "Konto aktivieren: Sie müssen Sie definitiv :-)"
