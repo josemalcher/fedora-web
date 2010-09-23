@@ -46,8 +46,10 @@ a:hover {
 /* headings
 ----------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {line-height:1.2em; margin-bottom:.3em;}
-h2 {margin-top:1em;}
-h5 {font-size:1.2em;}
+h2 { margin-top:1em; color: #294172; text-transform: uppercase; }
+h3 { color: #8c8c8c; text-transform: uppercase; }
+h4 { color: #3c6eb4; }
+h5 {font-size:1.2em; }
 h6 {font-size:1em; text-transform:uppercase;}
 
 
@@ -268,6 +270,24 @@ ul, ol {
 /* content
 ----------------------------------------------- */
 
+#web-quotes {
+    background: #FCF9D6 url('../images/quotes-2users.png') no-repeat right top;
+    height: 140px;
+    padding: 15px;
+}
+
+#web-quotes p {
+    max-width: 520px;
+}
+
+.main-page-section {
+    background-color: #C4D0E3;
+    padding: 10px;
+    text-align: center;
+}
+
+h3.main-section-hl { font-size: small; }
+h4.main-section-hl { font-size: small; }
 
 /* download splash page */
 .download-hl-box { background-color: #ececec; padding: 8px; }
