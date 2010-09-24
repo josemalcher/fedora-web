@@ -225,6 +225,10 @@ a:hover {
     width:100%;
 }
 
+#bottom a {
+    font-weight: normal;
+}
+
 #footer {
     background-color: #e6e6e6;
     background-image: none;
@@ -305,9 +309,10 @@ a:hover {
     padding: 10px;
     text-align: center;
     margin-top: 1px;
+    margin-bottom: 1em;
 }
 
-h3.main-section-hl { font-size: small; }
+h3.main-section-hl { font-size: small; margin-top: 1em;}
 h4.main-section-hl { font-size: small; }
 
 
@@ -315,7 +320,9 @@ h4.main-section-hl { font-size: small; }
 
 #four-fs img {
   display: block;
-  margin: 1em auto;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #four-fs h4 {
@@ -331,6 +338,13 @@ h4.main-section-hl { font-size: small; }
 
 #four-fs p {
   height: 4.5em;
+}
+
+/* what can you do with fedora front page section */
+
+#what-can-you-do img {
+  float: left;
+  margin-right: 1em;
 }
 
 /* download splash page */
