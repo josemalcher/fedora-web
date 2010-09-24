@@ -58,7 +58,7 @@ h1 a {
 }
 
 
-/* paragraphs, quotes and lists
+/* paragraphs, quotes and lists, links
 ----------------------------------------------- */
 p {
     margin-bottom:1em;
@@ -77,6 +77,16 @@ blockquote cite {
 
 ul, ol {
     padding-top:0;
+}
+
+a {
+    text-decoration: none;
+    color: #3b6eb4;
+    font-weight: bold;
+}
+
+a:hover {
+  color: #87a9d8;
 }
 
 /* Header, top section
@@ -128,7 +138,7 @@ ul, ol {
     /* background:url("/static/images/spins-directory-icon.png") no-repeat scroll left center transparent; */
 }
 
-/* site naviation
+/* site navigation
 ----------------------------------------------- */
 #site-nav {
     background: #e1e1df;
@@ -422,24 +432,40 @@ ul.kdelive { background-image: url(../images/kdelive.png); }
     padding: 0;
 }
 
+/* right sidebar */
+
+#right-sidebar {
+  margin-top: 1em;
+}
+
+#right-sidebar ul {
+  margin-top: 1em;
+}
+
+#right-sidebar h4 {
+ color: #555;
+ font-size: 1em;
+ text-transform: uppercase;
+}
+
 /* special lists */
-#download-resources ul.checkmark-list {
+#right-sidebar ul.checkmark-list {
   list-style: disc url("/static/images/icon-checkmark.png") outside;
 }
 
-#download-resources li.guide-list {
+#right-sidebar li.guide-list {
   list-style: disc url("/static/images/icon-guide.png") outside;
 }
 
-#download-resources li.webpage-list {
+#right-sidebar li.webpage-list {
   list-style: disc url("/static/images/icon-webpage.png") outside;
 }
 
-#download-resources li.support-list {
+#right-sidebar li.support-list {
   list-style: disc url("/static/images/icon-support.png") outside;
 }
 
-#download-resources li.verify-list {
+#right-sidebar li.verify-list {
   list-style: disc url("/static/images/icon-signed-verified.png") outside;
 }
 
