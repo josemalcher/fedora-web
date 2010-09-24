@@ -446,6 +446,11 @@ ul.kdelive { background-image: url(../images/kdelive.png); }
  color: #555;
  font-size: 1em;
  text-transform: uppercase;
+ margin-top: 1em;
+}
+
+#hosting-sponsor img {
+  margin-top: 1em;
 }
 
 /* special lists */
@@ -457,7 +462,8 @@ ul.kdelive { background-image: url(../images/kdelive.png); }
   list-style: disc url("/static/images/icon-guide.png") outside;
 }
 
-#right-sidebar li.webpage-list {
+#right-sidebar li.webpage-list,
+#right-sidebar ul.webpage-list li {
   list-style: disc url("/static/images/icon-webpage.png") outside;
 }
 
