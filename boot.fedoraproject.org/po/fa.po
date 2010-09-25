@@ -2,15 +2,16 @@
 # Copyright (C) 2010 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Persian boot\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-04-13 22:40-0500\n"
+"POT-Creation-Date: 2010-09-25 13:33+0200\n"
 "PO-Revision-Date: 2010-03-18 10:28+0330\n"
 "Last-Translator: Ali Yousefi Sabzevar <aysabzevar@gmail.com>\n"
 "Language-Team: Persian <trans-fa@lists.fedoraproject.org>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -46,6 +47,14 @@ msgstr "دانلود فلاپی:"
 msgid "Floppy"
 msgstr "فلاپی"
 
+#: data/content/download.html:15
+msgid "Download lkrn: "
+msgstr "دانلود ال کا ار ان:"
+
+#: data/content/download.html:15
+msgid "lkrn"
+msgstr "ال‌ک‌ار‌ان"
+
 #: data/content/faq.html:7
 msgid "FAQs - boot.fedoraproject.org"
 msgstr "سوالات متداول - boot.fedoraproject.org"
@@ -59,8 +68,17 @@ msgid "How do I use it?"
 msgstr "چگونه از آن استفاده کنم؟"
 
 #: data/content/faq.html:14
-msgid "First download one of the available images like the ISO image.  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode."
+#, fuzzy
+msgid "First download one of the available BFO specific images like the ISO image.  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode."
 msgstr "ابتدا یکی از ایمیج‌های در دسترس مانند ایمیج‌های ایزو را دریافت کنید.سپس آن‌را بر روی سی‌دی یا دی‌وی‌دی انتقال دهید.سپس سیستم‌تان را با آن سی‌دی یا دی‌وی‌دی بوت کنید.پس از آن شما در حال استفاده از BFOهستید.از صفحه‌کلیدتان استفاده کنید تا منوهایی را برای اجرای تشخیصی،یا بوت برنامه نصب کننده فدورا یا مد نجات را انتخاب کنید."
+
+#: data/content/faq.html:15
+msgid "Can I use it with grub?"
+msgstr "آیا می توانم با گراب آن را استفاده کنم؟"
+
+#: data/content/faq.html:16
+msgid "Yes!  Just run the following commands as root"
+msgstr "بله! فقط به عنوان رووت دستورهای زیر را وارد کنید"
 
 #: data/content/faq.html:22
 msgid "How does it work?"
@@ -69,6 +87,10 @@ msgstr "چگونه کار می کند؟"
 #: data/content/faq.html:23
 msgid "BFO was started by boot.kernel.org (BKO) and combines a series of recent technologies to produce a new boot stack.  The glue that holds everything together is gpxe.  Users familiar with pxe will find gpxe very familiar.  Latest versions support several protocols beyond just tftp.  We are using http to transfer files around.  The basic steps are as follows:"
 msgstr "BFOتوسط boot.kernel.orgیا BKO آغاز شد و ترکیبی از مجموعه‌ای ازفناوی‌های اخیر برای تولید یک بوت جدید است.چسبی که هر چیزیرا به هم می‌چسباند gpxeاست. کاربرانی که با pxe هستند gpxeرا نیز خیلی آشنا خواهند دید. آخرین نسخه‌ها چندین پروتکل را در پشت فقط tftp پشتیبانی می‌کنند.ما هم اکنون از httpبرای انتقال فایل‌ها استفاده می‌کنیم. گام‌های اساسی به‌ اینترتیب هستند:"
+
+#: data/content/faq.html:25
+msgid "Download the boot.fedoraproject.org media."
+msgstr "دانلود رسانای boot.fedoraproject.org"
 
 #: data/content/faq.html:26
 msgid "Boot from the downloaded iso/disk image."
@@ -107,7 +129,8 @@ msgid "Does BFO replace the installer or anaconda?"
 msgstr "آیا BFO جایگزین نصاب یا آناکندا است؟"
 
 #: data/content/faq.html:36
-msgid "Nope.  BFO is a way to load the installer via network.  Normally users download a large ISO image that contains all of the installer bits.  BFO is a smaller booting method that downloads the installer bits at runtime.  In theory with BFO one iso download can install all future versions of Fedora."
+#, fuzzy
+msgid "No.  BFO is also not part of Anaconda.  BFO is a way to load the installer via network.  Normally users download a large ISO image that contains all of the installer bits.  BFO is a smaller booting method that downloads the installer bits at runtime.  In theory with BFO one iso download can install all future versions of Fedora."
 msgstr "هیچی.BFOراهی برای بارگذای برنامه نصب کننده از طریق شبکه است.کاربران عادی یک ایمیج ایزو بزرگ که شامل تمامی بیت‌های تصب کننده استرا دریافت می‌کنند. BFO شیوه بوت کوچک‌تر است که اطلاعات نصب کننده را درهنگام اجرا دریافت می‌کند. در تئوری به کمک BFO یک دریافت ایزو می‌تواندتمامی نسخه‌های آینده فدورا را نصب کند."
 
 #: data/content/faq.html:37
@@ -117,6 +140,14 @@ msgstr "سی‌دی لایو چطور؟"
 #: data/content/faq.html:38
 msgid "At this time booting Live CDs is experimental and not available.  We hope to have them available soon."
 msgstr "در این زمان سی‌دی لایو در مرحله آزمایش است و موجود نمی باشد. ما امیدواریم به زودی آنها را داشته باشیم."
+
+#: data/content/faq.html:39
+msgid "Why won't BFO boot?"
+msgstr ""
+
+#: data/content/faq.html:40
+msgid "BFO uses gpxe so it's not actually booting a Linux kernel at first.  As such, some drivers and devices may not be supported.  If this is the case for you please check upstream at http://etherboot.org/ for bug updates, etc.  If you feel a bug or device is supported but not working in BFO, contact: "
+msgstr ""
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
@@ -185,23 +216,3 @@ msgstr "حامی هاستینگ"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "حمایت توسط ServerBeach"
-
-#: data/content/download.html:15
-msgid "Download lkrn: "
-msgstr "دانلود ال کا ار ان:"
-
-#: data/content/faq.html:25
-msgid "Download the boot.fedoraproject.org media."
-msgstr "دانلود رسانای boot.fedoraproject.org"
-
-#: data/content/faq.html:16
-msgid "Yes!  Just run the following commands as root"
-msgstr "بله! فقط به عنوان رووت دستورهای زیر را وارد کنید"
-
-#: data/content/faq.html:15
-msgid "Can I use it with grub?"
-msgstr "آیا می توانم با گراب آن را استفاده کنم؟"
-
-#: data/content/download.html:15
-msgid "lkrn"
-msgstr "ال‌ک‌ار‌ان"

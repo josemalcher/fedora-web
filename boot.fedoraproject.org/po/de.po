@@ -2,15 +2,16 @@
 # Copyright (C) 2010 Fedora Project
 # This file is distributed under the same license as the boot-fedoraproject project.
 # Marcus Nitzschke <kenda@fedoraproject.org>, 2010.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-04-18 01:24-0500\n"
+"POT-Creation-Date: 2010-09-25 13:33+0200\n"
 "PO-Revision-Date: 2010-01-28 00:32+0100\n"
 "Last-Translator: Marcus Nitzschke <kenda@fedoraproject.org>\n"
 "Language-Team: German <trans-de@lists.fedoraproject.org>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -48,6 +49,10 @@ msgstr "Diskette"
 msgid "Download lkrn: "
 msgstr "lkrn herunterladen: "
 
+#: data/content/download.html:15
+msgid "lkrn"
+msgstr "lkrn"
+
 #: data/content/faq.html:7
 msgid "FAQs - boot.fedoraproject.org"
 msgstr "FAQs - boot.fedoraproject.org"
@@ -61,7 +66,8 @@ msgid "How do I use it?"
 msgstr "Wie benutze ich es?"
 
 #: data/content/faq.html:14
-msgid "First download one of the available images like the ISO image.  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode."
+#, fuzzy
+msgid "First download one of the available BFO specific images like the ISO image.  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode."
 msgstr "Als erstes laden sie eines der verfügbaren Abbilder wie z.Bsp. das ISO-Abbild herunter. Brennen sie dann das Abbild auf CD oder DVD. Starten sie als nächstes von der CD oder DVD. Nun benutzen sie BFO! Nutzen sie die Tastatur um Menüs zu wählen, Diagnosen erstellen zu lassen, einen Fedora Installer oder den Rettungsmodus zu starten."
 
 #: data/content/faq.html:15
@@ -121,7 +127,8 @@ msgid "Does BFO replace the installer or anaconda?"
 msgstr "Ersetzt BFO den Installer oder Anaconda?"
 
 #: data/content/faq.html:36
-msgid "Nope.  BFO is a way to load the installer via network.  Normally users download a large ISO image that contains all of the installer bits.  BFO is a smaller booting method that downloads the installer bits at runtime.  In theory with BFO one iso download can install all future versions of Fedora."
+#, fuzzy
+msgid "No.  BFO is also not part of Anaconda.  BFO is a way to load the installer via network.  Normally users download a large ISO image that contains all of the installer bits.  BFO is a smaller booting method that downloads the installer bits at runtime.  In theory with BFO one iso download can install all future versions of Fedora."
 msgstr "Nein. BFO ist eine Möglichkeit den Installer über das Netzwerk zu laden. Normalerweise laden Nutzer ein großes ISO Abbild herunter, das alle Bestandteile des Installers beinhaltet. BFO ist eine kleinere Startmethode, die die Bestandteile des Installers zur Laufzeit herunterlädt. Theoretisch kann mit BFO nach einmaligem Herunterladen einer ISO jede zukünftige Fedora Version installiert werden."
 
 #: data/content/faq.html:37
@@ -131,6 +138,14 @@ msgstr "Was ist mit den Live-CDs?"
 #: data/content/faq.html:38
 msgid "At this time booting Live CDs is experimental and not available.  We hope to have them available soon."
 msgstr "Zu diesem Zeitpunkt ist das Starten von Live-CDs experimentell und nicht verfügbar. Wir hoffen dies aber bald zur Verfügung zu haben."
+
+#: data/content/faq.html:39
+msgid "Why won't BFO boot?"
+msgstr ""
+
+#: data/content/faq.html:40
+msgid "BFO uses gpxe so it's not actually booting a Linux kernel at first.  As such, some drivers and devices may not be supported.  If this is the case for you please check upstream at http://etherboot.org/ for bug updates, etc.  If you feel a bug or device is supported but not working in BFO, contact: "
+msgstr ""
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
@@ -199,7 +214,3 @@ msgstr "Hosting-Sponsor"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "Gesponsort von ServerBeach"
-
-#: data/content/download.html:15
-msgid "lkrn"
-msgstr "lkrn"

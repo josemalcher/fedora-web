@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-04-18 01:24-0500\n"
+"POT-Creation-Date: 2010-09-25 13:33+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 0.9.4\n"
+"Generated-By: Babel 0.9.5\n"
 
 #: data/content/download.html:7
 msgid "Download - boot.fedoraproject.org"
@@ -67,10 +67,10 @@ msgstr ""
 
 #: data/content/faq.html:14
 msgid ""
-"First download one of the available images like the ISO image.  Then burn"
-" that image to CD or DVD.  Next boot from that CD or dvd.  After that "
-"you're using BFO!  Use your keyboard to select menus to run diagnostics, "
-"or boot a Fedora installer or rescue mode."
+"First download one of the available BFO specific images like the ISO "
+"image.  Then burn that image to CD or DVD.  Next boot from that CD or "
+"dvd.  After that you're using BFO!  Use your keyboard to select menus to "
+"run diagnostics, or boot a Fedora installer or rescue mode."
 msgstr ""
 
 #: data/content/faq.html:15
@@ -149,11 +149,11 @@ msgstr ""
 
 #: data/content/faq.html:36
 msgid ""
-"Nope.  BFO is a way to load the installer via network.  Normally users "
-"download a large ISO image that contains all of the installer bits.  BFO "
-"is a smaller booting method that downloads the installer bits at runtime."
-"  In theory with BFO one iso download can install all future versions of "
-"Fedora."
+"No.  BFO is also not part of Anaconda.  BFO is a way to load the "
+"installer via network.  Normally users download a large ISO image that "
+"contains all of the installer bits.  BFO is a smaller booting method that"
+" downloads the installer bits at runtime.  In theory with BFO one iso "
+"download can install all future versions of Fedora."
 msgstr ""
 
 #: data/content/faq.html:37
@@ -164,6 +164,19 @@ msgstr ""
 msgid ""
 "At this time booting Live CDs is experimental and not available.  We hope"
 " to have them available soon."
+msgstr ""
+
+#: data/content/faq.html:39
+msgid "Why won't BFO boot?"
+msgstr ""
+
+#: data/content/faq.html:40
+msgid ""
+"BFO uses gpxe so it's not actually booting a Linux kernel at first.  As "
+"such, some drivers and devices may not be supported.  If this is the case"
+" for you please check upstream at http://etherboot.org/ for bug updates, "
+"etc.  If you feel a bug or device is supported but not working in BFO, "
+"contact: "
 msgstr ""
 
 #: data/content/index.html:7 data/content/index.html:10

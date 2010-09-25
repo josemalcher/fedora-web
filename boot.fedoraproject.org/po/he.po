@@ -7,12 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Website boot\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-04-18 01:24-0500\n"
+"POT-Creation-Date: 2010-09-25 13:33+0200\n"
 "PO-Revision-Date: 2010-09-25 13:26+0200\n"
 "Last-Translator: elad <el.il@doom.co.il>\n"
 "Language-Team: Fedora Hebrew <he-users@lists.fedoraproject.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.4\n"
 "Plural-Forms: nplurals=2; plural= (n!=1);\n"
@@ -69,7 +70,8 @@ msgid "How do I use it?"
 msgstr "כיצד משתמשים בזה?"
 
 #: data/content/faq.html:14
-msgid "First download one of the available images like the ISO image.  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode."
+#, fuzzy
+msgid "First download one of the available BFO specific images like the ISO image.  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode."
 msgstr "ראשית יש להוריד את אחת התמונות הזמינות כגון תמונת ה־ISO.  ואז יש לצרוב את התמונה הזאת ל־CD או ל־DVD. לאחר מכן יש להפעיל את המחשב  באמצעות אותו ה־CD או ה־DVD. לאחר מכן עליך להשתמש ב־BFO!  כעת עליך להשתמש במקלדת שלך כדי לבחור בין פריטי התפריטים, להריץ בדיקות או להפעיל את תכנית ההתקנה של Fedora או את מצב השחזור."
 
 #: data/content/faq.html:15
@@ -129,7 +131,8 @@ msgid "Does BFO replace the installer or anaconda?"
 msgstr "האם ה־BFO מחליף את תכנית ההתקנה או את אנקונדה?"
 
 #: data/content/faq.html:36
-msgid "Nope.  BFO is a way to load the installer via network.  Normally users download a large ISO image that contains all of the installer bits.  BFO is a smaller booting method that downloads the installer bits at runtime.  In theory with BFO one iso download can install all future versions of Fedora."
+#, fuzzy
+msgid "No.  BFO is also not part of Anaconda.  BFO is a way to load the installer via network.  Normally users download a large ISO image that contains all of the installer bits.  BFO is a smaller booting method that downloads the installer bits at runtime.  In theory with BFO one iso download can install all future versions of Fedora."
 msgstr "לא.  BFO הנה דרך להפעיל את ההתקנה דרך הרשת.  במצב רגיל על המשתמשים להוריד תמונות ISO גדולות המכילות את כל ההתקנה לפרטיה.  BFO היא שיטה מצומצמת יותר המורידה את רכיבי תכנית ההתקנה בזמן ההפעלה.  באופן תאורטי באמצעות BFO יחיד של Fedora ניתן להוריד את כל הגרסאות העתידיות של Fedora."
 
 #: data/content/faq.html:37
@@ -140,8 +143,15 @@ msgstr "מה לגבי ה־Live CDs?"
 msgid "At this time booting Live CDs is experimental and not available.  We hope to have them available soon."
 msgstr "נכון לעכשיו הפעלת Live CDs הנה נסיונית ואינה זמינה.  אנו מקווים שהיא תהיה זמינה בקרוב."
 
-#: data/content/index.html:7
-#: data/content/index.html:10
+#: data/content/faq.html:39
+msgid "Why won't BFO boot?"
+msgstr ""
+
+#: data/content/faq.html:40
+msgid "BFO uses gpxe so it's not actually booting a Linux kernel at first.  As such, some drivers and devices may not be supported.  If this is the case for you please check upstream at http://etherboot.org/ for bug updates, etc.  If you feel a bug or device is supported but not working in BFO, contact: "
+msgstr ""
+
+#: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
 msgstr "boot.fedoraproject.org"
 
@@ -208,4 +218,3 @@ msgstr "החסות לאחסון"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "נותני החסות: ServerBeach"
-

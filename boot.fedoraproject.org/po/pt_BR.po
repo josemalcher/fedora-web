@@ -2,10 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: boot.fedoraproject.org\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-04-13 22:40-0500\n"
+"POT-Creation-Date: 2010-09-25 13:33+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Ulissis Gomes Corrêa <ulissisgc@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <fedora-trans-pt_br@redhat.com>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -61,7 +62,8 @@ msgid "How do I use it?"
 msgstr "Como eu uso?"
 
 #: data/content/faq.html:14
-msgid "First download one of the available images like the ISO image.  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode."
+#, fuzzy
+msgid "First download one of the available BFO specific images like the ISO image.  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode."
 msgstr "Primeiro baixe uma das imagens disponíveis como a imagem ISO. Então queime essa imagem para um CD ou DVD. Depois inicialize a partir daquele CD ou DVD. Após isso você esta usando o BFO! Use seu teclado para selecionar os menus para executar diagnósticos, ou inicializar um instalador do Fedora ou modo de recuperação."
 
 #: data/content/faq.html:15
@@ -121,7 +123,8 @@ msgid "Does BFO replace the installer or anaconda?"
 msgstr "O BFO substitui o instalador ou o anaconda?"
 
 #: data/content/faq.html:36
-msgid "Nope.  BFO is a way to load the installer via network.  Normally users download a large ISO image that contains all of the installer bits.  BFO is a smaller booting method that downloads the installer bits at runtime.  In theory with BFO one iso download can install all future versions of Fedora."
+#, fuzzy
+msgid "No.  BFO is also not part of Anaconda.  BFO is a way to load the installer via network.  Normally users download a large ISO image that contains all of the installer bits.  BFO is a smaller booting method that downloads the installer bits at runtime.  In theory with BFO one iso download can install all future versions of Fedora."
 msgstr "Não. BFO é uma maneira de carregar o instalador via rede. Normalmente os usuários baixam uma imagem ISO grande que contém todos os bits do instalador. BFO é um método de boot menor que baixa o instalador em tempo de execução. Em teoria com o BFO um download da iso pode instalar todas as versões futuras do Fedora."
 
 #: data/content/faq.html:37
@@ -132,8 +135,15 @@ msgstr "E os Live CDs?"
 msgid "At this time booting Live CDs is experimental and not available.  We hope to have them available soon."
 msgstr "No momento a inicialização a partir de Live CDs é experimental e não está disponível. Nós esperamos ter-los disponíveis em breve."
 
-#: data/content/index.html:7
-#: data/content/index.html:10
+#: data/content/faq.html:39
+msgid "Why won't BFO boot?"
+msgstr ""
+
+#: data/content/faq.html:40
+msgid "BFO uses gpxe so it's not actually booting a Linux kernel at first.  As such, some drivers and devices may not be supported.  If this is the case for you please check upstream at http://etherboot.org/ for bug updates, etc.  If you feel a bug or device is supported but not working in BFO, contact: "
+msgstr ""
+
+#: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
 msgstr "boot.fedoraproject.org"
 
@@ -200,4 +210,3 @@ msgstr "Patrocinador de Hospedagem"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "Patrocinado por ServerBeach"
-
