@@ -46,6 +46,7 @@ a:hover {
 /* headings
 ----------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {line-height:1.2em; margin-bottom:.3em;}
+h1 { font-size:2em; color: #ffffff;}
 h2 { margin-top:1em; color: #294172; text-transform: uppercase; }
 h3 { color: #8c8c8c; text-transform: uppercase; }
 h4 { color: #3c6eb4; }
@@ -287,6 +288,25 @@ a:hover {
     font-weight: bold;
 }
 
+/* Page header
+----------------------------------------------- */
+#page-header {
+	width: 100%;
+	height: 80px;
+	display: block;
+	background-color: purple;
+	margin-bottom: 15px;
+}
+
+#page-header h2 {
+	color: #ffffff;
+    font-family: "ComfortaaRegular", "sans-serif";
+    font-weight: normal;
+}
+
+#page-header p {
+	color: #ffffff;
+}
 
 /* content
 ----------------------------------------------- */
@@ -349,7 +369,7 @@ h4.main-section-hl { font-size: small; }
 
 /* support/help pages */
 .bugs-section {
-    padding: 10px;
+    padding: 20px;
     background:url("../images/support-bugs.png") no-repeat top right;
     background-color:#E2E2E2;
 }
