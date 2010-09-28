@@ -303,8 +303,17 @@ a:hover {
 .page-header-sidebar { height: 111px; }
 
 /* individual header settings */
-#header-help { background: url('../images/header-help.png') #ff0000; }
-#header-features { background: url('http://localhost:5000/static/images/headers/features-laptops.png') no-repeat bottom right #7bcd40; }
+#header-help {
+background: #a07cbc;
+background-image: -moz-radial-gradient(30% 30% 45deg, circle farthest-side, #a07cbc, #755B8A);
+background-image: -webkit-gradient(radial, 30% 30%, 0, 30% 30%, 900, from(#a07cbc), to(#755B8A));
+}
+#header-features {
+background: url('http://localhost:5000/static/images/headers/features-laptops.png') no-repeat bottom right #7bcd40; 
+background: #e59728;
+background-image: -moz-radial-gradient(30% 30% 45deg, circle farthest-side, #e59728, #B3761F);
+background-image: -webkit-gradient(radial, 30% 30%, 0, 30% 30%, 900, from(#e59728), to(#B3761F));
+}
 /* end individual header settings */
 
 .page-header h2 {
