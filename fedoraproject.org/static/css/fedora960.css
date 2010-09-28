@@ -304,15 +304,28 @@ a:hover {
 
 /* individual header settings */
 #header-help {
-background: #a07cbc;
+background: #a07cbc; /* purple */
 background-image: -moz-radial-gradient(30% 30% 45deg, circle farthest-side, #a07cbc, #755B8A);
 background-image: -webkit-gradient(radial, 30% 30%, 0, 30% 30%, 900, from(#a07cbc), to(#755B8A));
 }
+
 #header-features {
 background: url('http://localhost:5000/static/images/headers/features-laptops.png') no-repeat bottom right #7bcd40; 
-background: #e59728;
+background: #e59728; /* orange */
 background-image: -moz-radial-gradient(30% 30% 45deg, circle farthest-side, #e59728, #B3761F);
 background-image: -webkit-gradient(radial, 30% 30%, 0, 30% 30%, 900, from(#e59728), to(#B3761F));
+}
+
+#header-download {
+background: #79db32; /* green */
+background-image: -moz-radial-gradient(30% 30% 45deg, circle farthest-side, #79db32, #5DA826);
+background-image: -webkit-gradient(radial, 30% 30%, 0, 30% 30%, 900, from(#79db32), to(#5DA826));
+}
+
+#header-join {
+background: #DB3279; /* magenta */
+background-image: -moz-radial-gradient(30% 30% 45deg, circle farthest-side, #DB3279, #A8265D);
+background-image: -webkit-gradient(radial, 30% 30%, 0, 30% 30%, 900, from(#DB3279), to(#A8265D));
 }
 /* end individual header settings */
 
@@ -338,7 +351,7 @@ background-image: -webkit-gradient(radial, 30% 30%, 0, 30% 30%, 900, from(#e5972
     font-size: 10pt;
 }
 
-#header-help p { color: white; }
+#header-help p,#header-join p { color: white; }
 
 /* content
 ----------------------------------------------- */
