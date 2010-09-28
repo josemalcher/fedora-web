@@ -745,16 +745,57 @@ div.panes div { display: none; }
 }
 
 /** slides with text over images **/
-.slide p {
+.slide div {
     margin: 1em;
     position: absolute;
-    background-color: #000;
     color: #fff;
     z-index: 1000;
     padding: 0.2em 0.8em;
 }
 
-.slide p a { color: #fff; }
+.slide div a { color: #fff; }
 		
+.slideShow  div {
+  float: right;
+  width: 500px;
+  height: 250px;
+  left: 410px;
+  top: 15px;
+  background: none;
+}
 
+.slide /* #fedora-download */ div h2 {
+  color: white;
+  text-shadow: #3c6eb4 1px 1px 5px;
+  font-family: "ComfortaaRegular", sans-serif;
+  letter-spacing: -3px;
+  font-size: 26pt;
+ /* font-weight: normal;*/
+  text-transform: none;
+  margin-top: 0px;
+}
+
+.slide /* #fedora-download */ div {
+  font-family: "CantarellRegular", sans-serif;
+  color: #444;
+  font-size: 14pt;
+}
+
+.slide /* #fedora-download */ li a {
+  font-family: "ComfortaaRegular", sans-serif;
+  text-shadow: white 1px 1px 0px;
+  color: #255591;
+  padding: .25em .65em;
+  -moz-border-radius: 8px;
+  border-bottom: 2px solid #255591;
+  background: -moz-linear-gradient(bottom,  #a9c8da,  white); 
+  float: left;
+  margin-right: 1em;
+}
+
+.slide /* #fedora-download */ li a:hover {
+  color: #255591;
+  background: -moz-linear-gradient(top,  #a9c8da,  white); 
+  text-shadow: white -1px -1px 0px;
+}
 /* end: slideshow styles */
