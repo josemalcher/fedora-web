@@ -47,11 +47,11 @@ a:hover {
 ----------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {line-height:1.2em; margin-bottom:.3em;}
 h1 { font-size:2em; color: #ffffff;}
-h2 { margin-top:1em; color: #294172; text-transform: uppercase; }
-h3 { color: #8c8c8c; text-transform: uppercase; }
+h2 { margin-top:1em; color: #294172; }
+h3 { color: #8c8c8c; }
 h4 { color: #3c6eb4; }
 h5 {font-size:1.2em; }
-h6 {font-size:1em; text-transform:uppercase;}
+h6 {font-size:1em; }
 
 
 h1 a {
@@ -297,21 +297,36 @@ a:hover {
 	margin-bottom: 15px;
 }
 
-#header-help {
-	background: url('../images/header-help.png');
-	background-color: #ff0000;
-}
+.page-header-sidebar { height: 111px; }
+
+/* individual header settings */
+#header-help { background: url('../images/header-help.png') #ff0000; }
+#header-features { background: url('http://localhost:5000/static/images/headers/features-laptops.png') no-repeat bottom right #7bcd40; }
+/* end individual header settings */
 
 .page-header h2 {
-	color: #ffffff;
+    color: #ffffff;
     font-family: "ComfortaaRegular", "sans-serif";
     font-weight: normal;
-    font-size: 2.5em;
+    font-size: 28pt;
+    text-shadow: 0px 2px 1px #294172;
+    margin-top: .3em;
+    margin-left: 10px;
 }
 
 .page-header p {
-	color: #ffffff;
+    color: #294172;
+    font-size: 12pt;
+    margin-left: 10px;
 }
+
+
+.page-header .page-header-sidebar p {
+    margin-top: 10px;
+    font-size: 10pt;
+}
+
+#header-help p { color: white; }
 
 /* content
 ----------------------------------------------- */
