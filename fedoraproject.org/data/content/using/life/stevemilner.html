@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../../templates/master.html" />
+  <head>
+    <title>${Markup(_('Fedora Project'))}</title>
+  </head>
+	<body id="fedoraproject-org">
+        <div class="container_16">
+ 	     <div class="container_16 page-header" id="header-using">
+                  <div class="grid_11">
+                     <h2>Using Fedora</h2>
+                     <p>Tutorials, tips &amp; tricks to make your Fedora experience awesome!</p>
+                  </div>
+                  <div class="grid_5 page-header-sidebar">
+                     <p>Some interesting fact or promo could be placed here. What do you think?</p>
+                  </div>
+            </div>
+            <div class="grid_16" id="interview-full">
+                <h3>Steve, Information Security Analyst</h3>
+		<p><em>Steve Milner is an information security analyst from North Carolina. He uses Fedora to audit web applications for security issues. Steve walks us through some great apps in Fedora for security analysis and has some tips for you in keeping your systems safe, too!</em></p>
+
+		<img src="/static/images/using/interviews/steve.jpg" alt="Steve Milner" />
+		<h4>Where are you from?</h4>
+		<p>All over the USA. Currently live in Raleigh.</p>
+
+		<h4>What is your profession?</h4>
+		<p>Security Analyst/Developer.</p>
+
+		<h4>What's your IRC nick? Where does it come from?</h4>
+		<p>Ashcrow. When I was in middle school I really liked The Crow. I would use many different Crow references in my IRC nicks but ashcrow was the one that I ended up sticking with.</p>
+
+		<h4>When did you first learn about Fedora?</h4>
+		<p>My first use of Fedora was Fedora Core 2. At that time I was a pretty hard Debian user. Since I had used Red Hat Linux in the past I decided to give Fedora Core 2 a chance. I honestly thought Fedora Core 2 was just OK at the time but Fedora Core 3 impressed me so much that I decided to put it on my parents machine. My Mom really liked it!</p>
+
+		<h4>How did you first become a developer?</h4>
+		<p>Reading code. In high school I was very interested in code but most of the programming books were way to expensive for me. I remember getting a copy of an old C book in the mid 90's which had a accompanying 5 1/4 floppy which taught me a little. The biggest thing that taught me to code was watching Free and Open Source coders at work. From there I started writing code and submitting patches to projects and ended up being hired at a small yet before it's time web app development firm in Orlando, Florida.</p>
+
+		<h4>Can you explain what security auditing means? How did you get into security auditing?</h4>
+		<p>In a nutshell security auditing is looking for security problems in an
+ application or system. Once found, the issues are recorded and brought
+ to developers with information on how to fix the problems. I primarily do
+ web application security audits and <a href="http://en.wikipedia.org/wiki/Penetration_test#Web_application_penetration_testing">pentests</a> (Penetration tests.)</p>
+
+		<h4>What kinds of issues are you typically looking for when performing a security audit?</h4>
+		<p>The first line of issues I look for are the same listed on <a href="http://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project">OWASP's Top Ten</a>. Of the 10 listed I start off looking for what I find to be the most common: injections, cross-site scripting, cross-site request forgeries and unvalidated redirects. After looking for the most common I start looking deeper into the application to find logic issues, error messages, etc.. which will help uncover other security issues.</p>
+
+		<h4>Tell us which 3 applications in Fedora you find most helpful for security auditing work?</h4>
+		<p>Nmap, ratproxy and python.</p>
+
+		<h4>Python? How do you use python to test out the security of web applications?</h4>
+		<p>When doing an audit it's important to be able to write up quick proof-of-concept attacks. Python has a plethora of modules which make doing POC attacks a joy. To list a few:</p>
+		<ul>
+			<li>urllib/urllib2</li>
+			<li>BeautifulSoup</li>
+			<li>python-nmap</li>
+			<li>sulley</li>
+		</ul>
+
+		<p>ipython and bpython also are great code-as-you-go environments for trying quick variations on POC attacks. Using Python's modules as well as general security tools being controlled by Python easily make the programming language an indispensable tool.</p>
+
+		<h4>Tell us a bit about nmap. How does it work? Can you use it to analyze machines that are not running Fedora? Is it something that you automatically, constantly run to check for issues, or do you run it manually to answer specific questions?</h4>
+		<p>Nmap (<a href="http://nmap.org/">http://nmap.org/</a>) is a network exploration tool. Nmap scans a host or set of hosts and responds back with information. It is commonly used as a general portscanner.</p>
+		<p>Nmap can find or scan pretty much any machine on the network. I've used it in the past when auditing Windows or OS X based machines as well.</p>
+		<p>I use Nmap as a part of my audits along with NSE (Nmap scripting engine) scripts most of which come directly from the Nmap project itself. I usually use it to check firewall status, open services of a system along with said service versions. It helps get a recon baseline.</p>
+
+		<h4>What does ratproxy do? Can it analyze systems that aren't running Fedora? Can it analyze systems that don't run Linux? Is it a program you run manually or does it constantly run in the background?</h4>
+		<p>Ratproxy (<a href="http://code.google.com/p/ratproxy/">http://code.google.com/p/ratproxy/</a>) is a passive web application auditing proxy. It sits between your browser and the web application you are auditing and records information as you move through the site. It can analyze most any web application no matter what OS it's running on. Since Ratproxy is passive it can be used with ajax applications.</p>
+
+		<h4>Tell us about some interesting desktop customizations you've done to your Fedora desktop to help your security auditing workflow.</h4>
+		<p>I use a two machine/three monitor setup with GNOME and synergy. I'm really looking forward to GNOME Shell to be considered stable. I use it on my own personal machines and love it! If I can, I try to run most everything through the terminal. I find using terminal applications much easier especially since I can run it all through byobu/screen.</p>
+
+		<h4>Can you tell us about an exploit you recently uncovered using Fedora?</h4>
+		<p>Chaining together an unvalidated redirect and a cross-site request forgery I crafted a link which would do the following:</p>
+		<ul>
+			<li>Allow the user to login normally</li>
+			<li>After login, user would be forwarded to my 'malicious' site</li>
+			<li>The site would do a javascript post into the original application and perform actions as the user which could include things such as adding or modifying accounts.</li>
+			<li>The user would then be forwarded back to the original application as if nothing happened.</li>
+		</ul>
+
+		<h4>From your experience discovering security holes in applications, do you have any single trick or tip for developers looking to avoid having security exploits in their code?</h4>
+		<p>Don't trust your users! You should write code with expectation that there will be at least one malicious user who will stop at nothing to find issues in your application.</p>
+		
+		<h4>Do you have any tips for Fedora users in keeping their systems safe?</h4>
+		<p>Don't forget the basics! Keep updated, use sane firewall rules (and use the firewall), turn off services you don't need and use sane passwords.</p>
+
+
+
+        </div>
+        </div>
+        <div class="clear"></div>
+	</body>
+</html>
+
