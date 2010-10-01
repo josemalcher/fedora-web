@@ -7,21 +7,26 @@
         <title>${Markup(_('Fedora Project'))}</title>
     </head>
 	<body id="fedoraproject-org">
-    
-    <div id="page-header"></div>
-    <div id="get-nav">
         <div class="container_16">
-            <!-- tabs -->
-            <ul class="tabs">
-                <li><a id="t1" href="#desktops">${_('Desktops')}</a></li>
-                <li><a id="t2" href="#architecture">${_('Architecture')}</a></li>
-                <li><a id="t3" href="#formats">${_('Formats')}</a></li>
-                <li><a id="t4" href="#activities">${_('Activities')}</a></li>
-            </ul>
-        </div>
-    </div>
-        <div class="container_16">
+            <div class="grid_16 page-header" id="header-download">
+                  <div class="grid_11 alpha">
+                     <h2>Get Fedora</h2>
+                     <p>Fedora is built by people across the globe. Everyone is welcome to join!</p>
+                  </div>
+                  <div class="grid_5 omega page-header-sidebar">
+                     <p>Fedora is built by people across the globe. Everyone is welcome to join!</p>
+                  </div>
+            </div>
+            <div class="grid_16" id="get-nav">
+                <!-- tabs -->
+                <ul class="tabs">
+                    <li><a id="t1" href="#desktops">${_('Desktops')}</a></li>
+                    <li><a id="t3" href="#formats">${_('Formats')}</a></li>
+                    <li><a id="t4" href="#activities">${_('Activities')}</a></li>
+                </ul>
+            </div>
 
+            <div class="clear"></div>
             <div class="grid_16">
 
                 <!-- content -->
@@ -30,9 +35,9 @@
                 <div class="panes">
                     <div id="desktop-versions">
                         <noscript><a name="desktops"><hr /></a></noscript>
-                        <h2>${_('Fedora Desktops')}</h2>
+                        <h3>${_('Fedora Desktops')}</h3>
                         <p>${_('There are multiple desktops available for use with Fedora. Each has a slightly different look and feel and offers varying levels of customization. Desktops affect how windows, icons, menus, and various basic desktop interfaces look and feel. You may want to try a few different ones and figure out which one is best for you!')}</p>
-                        <h3 class="area-callout">${_('Fedora 13 Desktop Edition')}</h3><span class="star-fedora-default">${_('Fedora Default')}</span>
+                        <h4 class="area-callout">${_('Fedora 13 Desktop Edition')}</h4><span class="star-fedora-default">${_('Fedora Default')}</span>
                         <table>
                             <tbody>
                                 <tr>
@@ -61,34 +66,11 @@
                             </tbody>
                         </table>					
                     </div>
-                    <div id="get-architecture">
-                        <noscript><a name="architecture"><hr /></a></noscript>
-                        <h2>${_('Fedora Downloads by Architecture')}</h2>
-                        <p>${Markup(_('Not sure which of these architectures are right for you? Need help figuring out what a particular computer\'s architecture is? We\'ve &lt;a href="http://docs.fedoraproject.org/install-guide/f13/en-US/html/ch-new-users.html#sn-which-arch"&gt;got a helpful guide&lt;/a&gt;.'))}</p>
-
-                        <h3 class="area-callout">${_('PC-Compatible')} <span>${_(' 32-bit')}</span></h3><span class="star-most-compatible">${_('Most Compatible')}</span>
-                        <p>${_('Because they run on both 32-bit and 64-bit Intel and AMD-compatible PCs, the 32-bit PC-compatible versions of Fedora are the most versatile.')}</p>
-                        <h4>${_('Fedora 13 Desktop Edition')}</h4>
-                        <p><img class="download-media" alt="${_('32-bit PC Edition')}" src="./static/images/media.png" />${_('Bootable Live Media version of Fedora\'s default desktop.')}</p>
-                        <a class="download-button-mini" href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Live/i686/Fedora-13-i686-Live.iso">${_('Download Now!')}</a>
-                        <p class="fine-print">${_('%(size)s, CD ISO disc image for %(arch)s-bit PC') % {'size':'675 MB', 'arch':'32'}}</p>
-
-                        <h3>${_('PC-Compatible')}<span>${_(' 64-bit')}</span></h3>
-                        <p>${_('Harness the full power of your 64-bit Intel or AMD-compatible PC. Go 64-bit.')}</p>
-                        <h4>${_('Fedora 13 Desktop Edition')}</h4>
-                        <p><img class="download-media" alt="${_('64-bit PC Edition')}" src="./static/images/media.png" />${_('Bootable Live Media version of Fedora\'s default desktop.')}</p>
-                        <a class="download-button-mini" href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Live/x86_64/Fedora-13-x86_64-Live.iso">${_('Download Now!')}</a>
-                        <p class="fine-print">${_('%(size)s, CD ISO disc image for %(arch)s-bit PC') % {'size':'677 MB', 'arch':'64'}}</p>
-
-                        <h3>${_('SPARC')}</h3>
-                        <p>${Markup(_('Limited support for SPARC systems is available through &lt;a href="%s"&gt;the Fedora SPARC team&lt;/a&gt;') % 'http://fedoraproject.org/wiki/Architectures')}.</p>
-
-                    </div>
                     <div id="get-formats">
                         <noscript><a name="formats"><hr /></a></noscript>
-                        <h2>${_('Fedora Downloads by Formats')}</h2>
+                        <h3>${_('Fedora Downloads by Formats')}</h3>
 
-                            <h3>${_('Fedora 13 Live Media / Spins')}</h3>
+                            <h4>${_('Fedora 13 Live Media / Spins')}</h4>
                             <img class="download-media" alt="${_('32-bit PC Edition')}" src="./static/images/media.png" />
                             <p>${_('Fedora Live Media images may be used via bootable CD, DVD, or USB drives, and also may be used to install Fedora to hard disk. They are a great way to give Fedora a try, low-risk.')}</p>
                             <p><a class="download-button-mini" href="./get-fedora">${_('Get Fedora now')}</a></p>
@@ -96,39 +78,39 @@
                             <p><a href="http://spins.fedoraproject.org/">http://spins.fedoraproject.org/</a></p>
                             <p><a class="download-button-mini" href="http://spins.fedoraproject.org">${_('Go to Spins Directory')}</a></p>
 
-                            <h3>${_('Fedora 13 DVD')}</h3>
+                            <h4>${_('Fedora 13 DVD')}</h4>
                             <img class="download-media" alt="${_('32-bit PC Edition')}" src="./static/images/media.png" />
                             <p>${_('The DVD edition of Fedora is not Live Media, but it is bootable.  When you boot from this media, you will be running the installation program.  The DVD requires less memory (RAM) on your computer and contains more software.  This media may be useful if the machine on which you install Fedora is not connected to the Internet.')}</p>
                             <p>${_('Intel &amp; AMD / PC compatible')}</p>
-                            <h3>${_('32-bit')}</h3>
+                            <h4>${_('32-bit')}</h4>
                             <a href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Fedora/i386/iso/Fedora-13-i386-DVD.iso" class="download-button-mini">${_('Download Now!')}</a><span class="star-most-compatible">${_('Most Compatible')}</span>
                             <p class="fine-print">${_('%s ISO disk image for 32-bit PC') % '3.1 GB'}</p>
                             <p>${Markup(_('Intel &amp; AMD / PC compatible'))}</p>
-                            <h3>${_('64-bit')}</h3>
+                            <h4>${_('64-bit')}</h4>
                             <a href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Fedora/x86_64/iso/Fedora-13-x86_64-DVD.iso" class="download-button-mini">${_('Download Now!')}</a>
                             <p class="fine-print">${_('%s ISO disk image for 64-bit PC') % '3.4 GB'}</p>
 
                             <p class="help" style="clear: both;"><img class="support-icon" src="./static/images/icon-support.png" />${Markup(_('For help determining what architecture your system is, &lt;a href="http://docs.fedoraproject.org/install-guide/f13/en-US/html/ch-new-users.html#sn-which-arch"&gt;please view our architecture help guide&lt;/a&gt;.'))}</p>
                             <br />
 
-                            <h3>${_('Fedora 13 Media by Mail')}</h3>
+                            <h4>${_('Fedora 13 Media by Mail')}</h4>
                             <img class="download-media" alt="${_('32-bit PC Edition')}" src="./static/images/media.png" />
                             <p>${Markup(_('Slow internet? No internet? You can get a copy of Fedora media sent via postal mail through local and online vendors, as well as via the &lt;a href="%s"&gt;Fedora Free Media&lt;/a&gt; program.')) % 'http://fedoraproject.org/wiki/Distribution/FreeMedia'}</p>
-                            <h4 class="vendor-header">${_('Purchase Fedora Media from a Vendor')}</h4>
-                                    <h4>${_('Locate a Vendor in Your Area')}</h4>
+                            <h5 class="vendor-header">${_('Purchase Fedora Media from a Vendor')}</h5>
+                                    <h5>${_('Locate a Vendor in Your Area')}</h5>
                                     <p>${_('Select vendors worldwide carry copies of Fedora media at a reasonable price. If a vendor exists in your area and you\'d rather not wait for shipping, this may be a good option for you.')}</p>
                                     <a href="http://fedoraproject.org/wiki/Distribution/OnlineVendors" class="download-button-mini">${_('View Local Vendor Directory')}</a>
 
-                                    <h4>${_('Online Vendors')}</h4>
+                                    <h5>${_('Online Vendors')}</h5>
                                     <p>${_('Numerous vendors worldwide offer Fedora media for online purchase. Select the vendor closest to you to keep your shipping costs lower.')}</p>
                                     <a href="http://fedoraproject.org/wiki/Distribution/OnlineVendors" class="download-button-mini">${_('View Online Vendor Directory')}</a>
-                            <h4 class="freemedia-header">${_('Fedora Free Media Program')}</h4>
+                            <h5 class="freemedia-header">${_('Fedora Free Media Program')}</h5>
                             <p>${_('Can\'t afford the price of installation media? Request Fedora installation media from the Fedora Free Media Program.')}</p>
                             <a href="http://fedoraproject.org/wiki/Distribution/FreeMedia" class="download-button-mini">${_('Learn More')}</a>
                     </div>
                     <div id="get-acitivites">
                         <noscript><a name="activities"><hr /></a></noscript>
-                        <h2>${_('Fedoras that do what you need.')}</h2>
+                        <h3>${_('Fedoras that do what you need.')}</h3>
                         <p>${_('Fedora spins are alternate versions of Fedora, tailored for various types of users via hand-picked application sets and other customizations.')} <a href="http://spins.fedoraproject.org/about">${_('Learn more about spins >')}</a></p>
                         <p>${_('Below is just a sampling of the Fedora spins that are available. Visit ')} <a href="http://spins.fedoraproject.org">http://spins.fedoraproject.org</a> ${_(' for a full listing of all available Fedora spins.')}</p>
                         <table>
