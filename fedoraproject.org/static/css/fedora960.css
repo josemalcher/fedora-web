@@ -700,7 +700,9 @@ ul.kdelive { background-image: url(../images/kdelive.png); }
 #export-regulations h4 { font-size: small; }
 #export-regulations p { font-style: italic; }
 .read-more, .re-collapse { float:right; }
-.read-more img { float: none; }
+.read-more a, .re-collapse a { padding-right: 15px; }
+.read-more a { background:#ffffff url('/static/images/arrow_down.png') no-repeat right center; }
+.re-collapse a { background:#ffffff url('/static/images/arrow_up.png') no-repeat right center; }
 /* end: export regulations */
 
 /* tabs */

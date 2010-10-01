@@ -7,8 +7,8 @@ $(document).ready(function(){
 		slicePoint: 350,
 		widow: 1,
 		userCollapse: true,
-		expandText: 'Read full export regulations <img src="/static/images/arrow_down.png">',
-		userCollapseText: 'Hide full export regulations <img src="/static/images//arrow_up.png">'
+		expandText: 'Read full export regulations',
+		userCollapseText: 'Hide full export regulations'
 	});
 
 	// setup ul.tabs to work as tabs for each div directly under div.panes
