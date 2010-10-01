@@ -19,13 +19,19 @@
             </div>
             <div class="clear"></div>
             <div class="grid_12">
-                <h2>${Markup(_('Fedora %s Desktop Edition') % '14')}</h2>
-                <h3>Installable Live Media</h3>
-                <p>Etiam a eros mauris, non semper urna. Nunc porttitor tincidunt ante, vitae suscipit felis pellentesque a. Donec et ligula dui, eu scelerisque nisi. Vestibulum fringilla, tortor a pretium aliquet, tortor lectus cursus lectus, non egestas mauris nulla rhoncus lectus. Vivamus egestas ante nec leo aliquet auctor. Integer sapien leo, ornare vel vestibulum imperdiet, tempor ac tortor. Cras egestas eros libero.</p>
-                <p><a href="get-fedora" class="big-button">${_('Download Now!')}</a></p>
-                <p class="fine-print">675 MB, ISO format image for Intel-compatible PCs (32-bit)</p>
-                <p><a href="get-fedora-options">More download options...</a></p>
-
+                <div id="main-download-section">
+                    <h3>${Markup(_('Fedora %s Desktop Edition') % '14')}</h3>
+                    <h4>Installable Live Media</h4>
+                    <div class="grid_2 alpha">
+                        <img src="/static/images/media.png" alt="Live CD" />
+                    </div>
+                    <div class="grid_10 omega">
+                        <p>Etiam a eros mauris, non semper urna. Nunc porttitor tincidunt ante, vitae suscipit felis pellentesque a. Donec et ligula dui, eu scelerisque nisi. Vestibulum fringilla, tortor a pretium aliquet, tortor lectus cursus lectus, non egestas mauris nulla rhoncus lectus. Vivamus egestas ante nec leo aliquet auctor. Integer sapien leo, ornare vel vestibulum imperdiet, tempor ac tortor. Cras egestas eros libero.</p>
+                        <p><a href="get-fedora" class="big-button">${_('Download Now!')}</a></p>
+                        <p class="fine-print">675 MB, ISO format image for Intel-compatible PCs (32-bit)</p>
+                        <p><a href="get-fedora-options">More download options...</a></p>
+                    </div>
+                </div>
                 <div class="clear"></div>
                 <div class="grid_6 alpha">
                     <h4>${Markup(_('Need to upgrade Fedora?'))}</h4>
@@ -46,7 +52,7 @@
             </div>
 
             <!-- start sidebar -->
-            <div class="grid_4" id="download-resources" >
+            <div class="grid_4" id="right-sidebar" >
                 <h4>${_('What will I need?')}</h4>
                 <ul class="checkmark-list">
                     <li>${_('A blank CD or DVD')} <em><strong>${_(' or ')}</strong></em> ${Markup(_('a blank %s USB stick.') % ('1GB+'))} </li>
