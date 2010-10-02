@@ -330,6 +330,13 @@ background: #3C6EB4; /* blue */
 background-image: -moz-radial-gradient(30% 30% 45deg, circle farthest-side, #3C6EB4, #2B4F82);
 background-image: -webkit-gradient(radial, 30% 30%, 0, 30% 30%, 900, from(#3C6EB4), to(#2B4F82));
 }
+
+#header-splash {
+    background: #E49728; /* orange */
+    background-image: -moz-radial-gradient(30% 30% 45deg, circle farthest-side, #E49728, #F9AE65);
+    background-image: -webkit-gradient(radial, 30% 30%, 0, 30% 30%, 900, from(#E49728), to(#F9AE65));
+}
+
 /* end individual header settings */
 
 .page-header h2 {
@@ -613,6 +620,30 @@ pre.command {
 }
 
 a.back-to-top { color: #fff; }
+
+.triangle-obtuse {
+    -moz-border-radius:10px 10px 10px 10px;
+    background:-moz-linear-gradient(center top , #E6E6E6, #E6E6E6 ) repeat scroll 0 0 transparent;
+    margin:1em 0 3em;
+    padding:15px;
+    position:relative;
+}
+
+.triangle-obtuse:before {
+	content:"\00a0";
+	display:block; /* reduce the damage in FF3.0 */
+	position:absolute;
+	bottom:-20px; /* value = - border-top-width - border-bottom-width */
+	left:60px; /* controls horizontal position */
+	width:0;
+	height:0;
+	border-width:0;
+	border-right-width:30px; /* vary this value to change the angle of the vertex */
+	border-bottom-width:20px; /* vary this value to change the height of the triangle. must be equal to the corresponding value in :after */
+	border-style:solid;
+	border-color:transparent #E6E6E6;
+}
+
 
 /* get-prerelease */
 ul.downloadbox {
