@@ -1,12 +1,6 @@
 ifndef LANGUAGES
 LANGUAGES := $(shell grep -v "^\#" po/LINGUAS)
 endif
-GENERIC_HEADER= msgid ""\
-                msgstr ""\
-                "Project-Id-Version: PROJECT VERSION\n"\
-                "MIME-Version: 1.0\n"\
-                "Content-Type: text/plain; charset=utf-8\n"\
-                "Content-Transfer-Encoding: 8bit"
 PO_FILES = $(filter-out po/en.po,$(wildcard po/*.po))
 MO_FILES = $(PO_FILES:.po=.mo)
 HTML_FILES = $(shell find data -name "*.html")
@@ -28,8 +22,9 @@ po/en.po: po/fedora-web.pot
 	cp po/fedora-web.pot po/en.po
 
 po/%.po: po/fedora-web.pot
-	if test -f $@ ; then msgmerge --no-wrap --update $@ $^ ; else echo '$(GENERIC_HEADER)' > $@ ; fi
-	
+	msgmerge --no-wrap --update $@ $^
+	@touch $@
+
 po/en.mo: po/en.po
 	msgfmt -o $@ $<
 
