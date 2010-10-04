@@ -356,13 +356,20 @@ background-image: -webkit-gradient(radial, 30% 30%, 0, 30% 30%, 900, from(#3C6EB
     color: #ffffff;
 }
 
-
 .page-header .page-header-sidebar p {
     margin-top: 10px;
     font-size: 10pt;
 }
 
+#header-join .page-header-sidebar {
+	width: 430px;
+}
+
 #header-help p,#header-join p,#header-using p { color: white; }
+
+#header-join p {
+    margin-top: 0px;
+}
 
 /* content
 ----------------------------------------------- */
@@ -524,6 +531,14 @@ a.interactive-section, .bugs-section a { font-weight: normal; }
 #features-summary {
   background: -moz-linear-gradient(bottom, #eaeff7, white);
   margin-bottom: 2em;
+}
+
+p.twitter {
+text-align: right;
+}
+
+.twitter a {
+color: white;
 }
 
 
@@ -883,12 +898,13 @@ div.panes div { display: none; }
 /* jquery tweet */
 .tweet, .query {
     color: #BD1C60;
-    padding: 7px;
+    padding-top: 7px;
     font-size: 0.97em;
 }
 
 .tweet .tweet_list, .query .tweet_list {
     -webkit-border-radius: .5em;
+    -moz-border-radius:5px 5px 5px 5px;
     list-style-type: none;
     margin: 0;
     padding: 0;
