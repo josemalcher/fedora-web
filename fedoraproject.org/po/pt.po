@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedora-web\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-07-31 11:28-0500\n"
-"PO-Revision-Date: 2010-09-04 03:00+0100\n"
+"POT-Creation-Date: 2010-09-16 23:04+0530\n"
+"PO-Revision-Date: 2010-10-04 21:47+0100\n"
 "Last-Translator: Rui Gouveia <rui.gouveia@gmail.com>\n"
 "Language-Team: trans-pt@lists.fedoraproject.org\n"
 "Language: pt\n"
@@ -501,6 +501,11 @@ msgstr ""
 "no <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia"
 "\">Programa de Patrocínio de DVD/CDs do Fedora</a>."
 
+#: data/content/get-fedora-all.html:150 data/content/get-fedora-kde.html:86
+#: data/content/get-fedora.html:74 data/content/get-prerelease.html:97
+msgid "Arrow down"
+msgstr "Seta para baixo"
+
 #: data/content/get-fedora-kde.html:15
 msgid "Show me all download options in one page!"
 msgstr "Mostrem-me todas as opções de transferência numa única página!"
@@ -508,6 +513,10 @@ msgstr "Mostrem-me todas as opções de transferência numa única página!"
 #: data/content/get-fedora-kde.html:17 data/content/get-fedora-options.html:20
 msgid "There's More Fedora!"
 msgstr "Há mais Fedora!"
+
+#: data/content/get-fedora-kde.html:18
+msgid "Fedora Spins"
+msgstr "Spins do Fedora"
 
 #: data/content/get-fedora-kde.html:23
 msgid ""
@@ -1384,22 +1393,23 @@ msgstr ""
 
 #: data/content/get-help.html:26
 msgid ""
-"To access this support launch Fedoras default instant messaging client, "
-"Empathy, and choose Accounts from the Edit menu. Add a new account, and "
-"select IRC as the protocol. Next, select freenode from the list of networks, "
-"enter a Nickname and select Log In and then Close. The final step is to add "
-"the #fedora channel by selecting Join... from the Room menu. Now that this "
-"is done, the #fedora channel should appear where end-users can ask questions "
-"and get support in real time."
+"For a comprehensive list of available Fedora channels, please visit <a href="
+"\"http://fedoraproject.org/wiki/Communicate#User_Help\">http://fedoraproject."
+"org/wiki/Communicate#User_Help</a>"
 msgstr ""
-"Para aceder a este tipo de suporte execute o cliente de mensagens "
-"instantâneas pré-definido do Fedora, o Empathy, e escolha Contas no menu "
-"Editar. Adicione uma nova conta e seleccione o protocolo IRC. A seguir, "
-"seleccione freenode na lista de redes, insira um nome de utilizador "
-"(nickname) e Iniciar Sessão e depois Fechar. O último passo é adicionar o "
-"canal #fedora, seleccionando Juntar… a partir do menu Salas. Depois deste "
-"processo estar concluído, o canal #fedora deve aparecer permitindo aos "
-"utilizadores finais fazerem perguntas e obter suporte em tempo real."
+"Para uma lista completa de canais Fedora disponíveis, por favor visite <a hr"
+"ef=\"http://fedoraproject.org/wiki/Communicate#User_Help\">http://fedoraprojec"
+"t.org/wiki/Communicate#User_Help</a>"
+
+#: data/content/get-help.html:27
+msgid ""
+"If you are new to Internet Relay Chat (IRC) refer to the <a href=\"https://"
+"fedoraproject.org/wiki/Communicate/IRCHowTo\" target=\"_blank\">How To</a> "
+"page"
+msgstr ""
+"Se conhece mal o Internet Relay Chat (IRC) consulte a página <a "
+"href=\"https://fedoraproject.org/wiki/Communicate/IRCHowTo\" "
+"target=\"_blank\">Como Fazer</a>"
 
 #: data/content/get-help.html:28
 msgid "E-mail Support"
@@ -1798,16 +1808,16 @@ msgid ""
 "Download: <a href=\"https://fedoraproject.org/static/97A1071F.txt\">Fedora "
 "Project</a>"
 msgstr ""
-"Descarregar: <a "
-"href=\"https://fedoraproject.org/static/97A1071F.txt\">Projecto Fedora</a>"
+"Descarregar: <a href=\"https://fedoraproject.org/static/97A1071F.txt"
+"\">Projecto Fedora</a>"
 
 #: data/content/keys.html:68
 msgid ""
 "Download: <a href=\"http://keys.gnupg.net:11371/pks/lookup?"
 "search=0x97A1071F&op=get\">keys.gnupg.net</a>"
 msgstr ""
-"Descarregar: <a href=\"http://keys.gnupg.net:11371/pks/lookup?search=0x97A107"
-"1F&op=get\">keys.gnupg.net</a>"
+"Descarregar: <a href=\"http://keys.gnupg.net:11371/pks/lookup?"
+"search=0x97A1071F&op=get\">keys.gnupg.net</a>"
 
 #: data/content/keys.html:80
 msgid ""
@@ -2258,6 +2268,10 @@ msgstr "Ligue-se à comunidade Fedora"
 msgid "Download Fedora!"
 msgstr "Descarregue o Fedora!"
 
+#: data/templates/foot.html:8
+msgid "Red Hat Logo"
+msgstr "Logótipo Red Hat"
+
 #: data/templates/foot.html:10
 msgid "Sponsors"
 msgstr "Patrocinadores"
@@ -2368,6 +2382,24 @@ msgstr "Idioma do sítio web"
 #: data/templates/sidebar.html:37
 msgid "Hosting Sponsor"
 msgstr "Patrocinadores de alojamento"
+
+#~ msgid ""
+#~ "To access this support launch Fedoras default instant messaging client, "
+#~ "Empathy, and choose Accounts from the Edit menu. Add a new account, and "
+#~ "select IRC as the protocol. Next, select freenode from the list of "
+#~ "networks, enter a Nickname and select Log In and then Close. The final "
+#~ "step is to add the #fedora channel by selecting Join... from the Room "
+#~ "menu. Now that this is done, the #fedora channel should appear where end-"
+#~ "users can ask questions and get support in real time."
+#~ msgstr ""
+#~ "Para aceder a este tipo de suporte execute o cliente de mensagens "
+#~ "instantâneas pré-definido do Fedora, o Empathy, e escolha Contas no menu "
+#~ "Editar. Adicione uma nova conta e seleccione o protocolo IRC. A seguir, "
+#~ "seleccione freenode na lista de redes, insira um nome de utilizador "
+#~ "(nickname) e Iniciar Sessão e depois Fechar. O último passo é adicionar o "
+#~ "canal #fedora, seleccionando Juntar… a partir do menu Salas. Depois deste "
+#~ "processo estar concluído, o canal #fedora deve aparecer permitindo aos "
+#~ "utilizadores finais fazerem perguntas e obter suporte em tempo real."
 
 #~ msgid "Looking for older release?"
 #~ msgstr "Procura uma versão mais antiga?"
