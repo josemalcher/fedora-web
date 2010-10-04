@@ -462,13 +462,11 @@ h4.main-section-hl { font-size: small; }
 
 /* support/help pages */
 .bugs-section {
-    padding: 20px;
     background:url("../images/support-bugs.png") no-repeat top right;
     background-color:#E2E2E2;
 }
 
 .bugs-section h2 { margin-top: auto; }
-.bugs-section a { font-weight: normal; }
 
 .step-section {
     margin-top: 10px;
@@ -483,9 +481,21 @@ h4.main-section-hl { font-size: small; }
 }
 
 .interactive-section, .bugs-section {
+    padding: 20px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
+}
+
+.interactive-section img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a.interactive-section, .bugs-section a { font-weight: normal; }
+
+.interactive-section p, .bugs-section p {
+    margin-bottom:0px;
 }
 
 /* community page */
