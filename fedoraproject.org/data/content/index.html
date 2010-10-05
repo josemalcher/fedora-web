@@ -20,10 +20,10 @@
 								<h2>Free your desktop with Fedora.</h2>
 								<p>Fedora is a fast, stable, and powerful operating system for everyday use built by a worldwide community of friends. It's completely free to use, study, and share.</p>
 								<ul>
-									<li><a href="#" id="download-button">Download Now!</a></li>
-									<li><a href="#">Learn More</a></li>
+									<li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Live/i686/Fedora-13-i686-Live.iso" id="download-button" class="download-splash">Download Now!</a></li>
+									<li><a href="${path}/${lang}/get-fedora">Learn More</a></li>
 								</ul>
-								<p class="small">690 MB, 1 CD-ROM Disc image for 32-bit PCs <br /><a href="get-fedora">More options &gt;</a></p>
+								<p class="small">690 MB, 1 CD-ROM Disc image for 32-bit PCs <br /><a href="${path}/${lang}/get-fedora-options">More options &gt;</a></p>
 							</div>
 							<img src="/static/images/banners/fedora-sky.png" border="0" alt="" />
 						</li>
@@ -47,7 +47,7 @@
 							<div>
 								<h2>A worldwide community of friends.</h2>
 								<p>Fedora is a Linux-based operating system that showcases the latest in free software. Fedora is always free for anyone to use, modify, and distribute. It is built by people across the globe who work together as a community: the Fedora Project.</p>
-								<p><a href="#">Learn more &gt;</a></p>
+								<p><a href="${path}/${lang}/join-fedora">Learn more &gt;</a></p>
 							</div>
 							<img src="/static/images/banners/fudcon-zurich-2010.png" border="0" alt="" />
 						</li>
@@ -70,15 +70,15 @@
                 </div>
                 <div class="clear"></div>
 		<div id="big-links-bar">
-                    <a class="grid_4 alpha omega" href="get-help">
+                    <a class="grid_4 alpha omega" href="${path}/${lang}/get-help">
                         <h4>Need help?</h4>
                         <p>Get it here.</p>
                     </a>
-                    <a class="grid_4 alpha omega middle" href="about-fedora">
+                    <a class="grid_4 alpha omega middle" href="${path}/${lang}/about-fedora">
                         <h4>About Fedora</h4>
                         <p>What is Fedora, anyway?</p>
                     </a>
-                    <a class="grid_4 alpha omega" href="join-fedora">
+                    <a class="grid_4 alpha omega" href="${path}/${lang}/join-fedora">
                         <h4>Join us!</h4>
                         <p>Help make Fedora!</p>
                     </a>
@@ -89,25 +89,25 @@
                   <div class="clear"></div>
   
                   <div class="grid_3 alpha">
-		      <img src="http://localhost:5000/static/images/4f-freedom.png" alt="freedom" />
+		      <img src="/static/images/4f-freedom.png" alt="freedom" />
                       <h4>Freedom is key</h4>
                       <p>Advancing software and content freedom is a key goal of the Fedora Project.</p>
                       <p><a href="#">Learn how software freedom benefits you &gt;</a></p>
                   </div>
                   <div class="grid_3">
-                    <img src="http://localhost:5000/static/images/4f-friends.png" alt="friends" />
+                    <img src="/static/images/4f-friends.png" alt="friends" />
                     <h4>Our Community</h4>
                     <p>People world-wide work together in Fedora to advance free software.</p>
                     <p><a href="#">Discover your role in Fedora's community &gt;</a></p> 
                   </div>
                   <div class="grid_3">
-                      <img src="http://localhost:5000/static/images/4f-features.png" alt="features" />
+                      <img src="/static/images/4f-features.png" alt="features" />
                       <h4>We share</h4>
                       <p>Many features that benefit all Linux distributions start in Fedora.</p>
                       <p><a href="#">See how we share our features for all to use &gt;</a></p>  
                   </div>
                   <div class="grid_3 omega">
-                    <img src="http://localhost:5000/static/images/4f-first.png" alt="first" />
+                    <img src="/static/images/4f-first.png" alt="first" />
                     <h4>The best tech</h4>
                       <p>The future of Linux is built into Fedora. </p>
 		      <p><a href="#">Learn how Fedora innovates &gt;</a></p> 
@@ -126,7 +126,7 @@
                     <p>Shelia's favorite feature of Fedora is the 'party mode' in its rhythmbox music player - "I set rhythmbox to party mode so all my friends can switch it up to whatever they want when they come over.</p>
                     <ul>
                         <li><a href="#">Read more of Sheila's story &gt;</a></li>
-                        <li><a href="#">View more Fedora user stories &gt;</a></li>
+                        <li><a href="${path}/${lang}/using/">View more Fedora user stories &gt;</a></li>
                     </ul>
                   </div>
                   <div class="grid_6 alpha story">
@@ -135,8 +135,8 @@
                     <p>Why bother with the aggravation of viruses and spyware? It's possible to avoid them; just use Fedora!</p>
                     <p>Imagine, the freedom to try out new applications and not have to worry about what kinds of information they might be secretly tracking about you! Fedora is open source, so there's no secrets in our applications.</p>
                     <ul>
-                        <li><a href="#">Learn how Fedora keeps you safer &gt;</a></li>
-                        <li><a href="#">More about what makes Fedora different &gt;</a></li>
+                        <li><a href="https://fedoraproject.org/wiki/SecurityBasics">Learn how Fedora keeps you safer &gt;</a></li>
+                        <li><a href="${path}/${lang}/features/">More about what makes Fedora different &gt;</a></li>
                     </ul>
                   </div>
                   <div class="clear"></div>
@@ -144,11 +144,10 @@
                     <h3 class="main-section-hl">Do it with Fedora</h3>
                     <h4>Turn your Friends into the Hulk!</h4>
                     <img src="/static/images/hulk-pfrields.png" />
-                    <p>All you need is a webcam and Fedora, and you can do all sorts
-of cool tricks, including turning your friends into the Hulk. :)</p>
+                    <p>All you need is a webcam and Fedora, and you can do all sorts of cool tricks, including turning your friends into the Hulk. :)</p>
                     <ul>
                         <li><a href="#">Learn how to do it yourself! &gt;</a></li>
-                        <li><a href="#">View all tutorials &gt;</a></li>
+                        <li><a href="${path}/${lang}/using/">View all tutorials &gt;</a></li>
                     </ul>
                   </div>
                </div>
