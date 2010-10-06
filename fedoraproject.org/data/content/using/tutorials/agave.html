@@ -19,19 +19,44 @@
              </div>
             <div class="grid_16" id="tutorial_content">
                 <h3>Building beautiful color palettes for your home and wardrobe</h3>
+
+
 		<h4>Installing Agave</h4>
-		<a href="${path}/static/images/tutorials/agave-install-full.png"><img src="${path}/static/images/tutorials/agave-install_thumb.png" /></a>
+		<a href="${path}/static/images/tutorials/agave-install-full.png"><img src="${path}/static/images/tutorials/agave-install_thumb.png" alt="" /></a>
 		<p>If you have never used Agave before, you'll need to install it:</p>
-		<ul>
+		<ol>
 			<li>Open up the Add/Remove Software wizard by selecting the <strong>System → Administration → Add/Remove Software</strong> desktop menu item.</li>
 			<li>The Add/Remove Software wizard will appear. (See screenshot on the right.)</li>
 			<li>In the search box in the upper left, search for <strong>Agave</strong> and click the "Find" button.</li>
 			<li>Check the Agave checkbox on the right, and click on the "Apply" button in the lower right of the Add/Remove Software wizard.</li>
+			<li>Once the Add/Remove Software wizard finishes, you should have Agave installed on your system!</li>
+		</ol>
+		<p>Now that you have Agave installed, go ahead and open it up by selecting the <strong>Applications  →  Graphics  →  Agave</strong> desktop menu item.</p>
+
+		<h4>Picking a base color for your first palette</h4>
+		<img src="${path}/static/images/tutorials/agavescreen1.png" alt=""/>
+		<p>At the right, you'll see a screenshot of Agave. Your Agave window should look something like this, although you likely won't have any favorite palettes saved in the right panel.</p>
+		<p>The first thing you'll want to do is to choose a base color for your palette. From this base color, Agave can automatically generate a number of different harmonious color palettes using multiple techniques. So let's pick that base color!</p>
+		<p>There are two main ways to pick a base color:</p>
+		<ul>
+			<li><strong>Color chooser methods:</strong>
+				<ul>
+					<li>Click on the small button on the left side of the Agave window, immediately above the 'Palette' label. That will bring up the <strong>Pick a Color</strong> dialog.</li>
+					<li><strong>Want to visually explore the color possibilities?</strong> You may drag the small black circle within the triangle on the left of the <strong>Pick a color</strong> dialog to change the color's shade, and drag it circularly around the rainbow to change the hue of the color.</li>
+					<li><strong>Want to pick a color you like from a photo or other graphic?</strong> Keep the <strong>Pick a color</strong> dialog open. Open up the graphic you'd like to pick a color from. It can be in a browser window, image viewer, or email client - it really doesn't matter, it just needs to be on screen. Now, click on the small eyedropper icon button in the lower left of the <strong>Pick a color</strong> dialog. Your mouse pointer will turn into a little color dropper icon. Hover your new dropper mouse pointer over the graphic you want to pick a color from, and click on the area that has the color. The <strong>Pick a color</strong> dialog will update and show the color you picked.</li>
+					<li><strong>Have a specific color code in mind?</strong> Using the <strong>Color name:</strong> field in the <strong>Pick a color</strong> dialog, you can enter in HTML Hex color codes (They look like this: #FFCC00). You may also enter in manual Hue/Saturation/Value or Red/Green/Blue color values. This is helpful if you've picked a color in another graphics program or in HTML and want to generate a palette of more colors that will work with it.</li>
+					<li>Once you've picked the color you like, click on the <strong>OK</strong> button in the lower right of the <strong>Pick a color</strong> dialog to set the color.</li>
+				</ul>
+			</li>
+			<li><strong>Pick from a pre-defined palette:</strong>
+				<ul>
+					<li>Agave comes pre-loaded with a set of large color palettes. They include "Visibone," "Tango Icon Theme Palette," "GNOME Icon Palette," and "Web Safe Colors." There is a <strong>Palette</strong> dropdown in the lower left of the main Agave application window. You can pick between these palettes from that dropdown. Once the palette is visible, you can hover over the colors in the palette to view their HTML hex codes, and you can click on any color with the hand icon to set that color.</li>
+				</ul>
+			</li>
 		</ul>
-		<dl>
-                <dd>-To start the Agave program click <b>Applications > Graphics > Agave</b></dd>
-		<p> <img src="${path}/static/images/tutorials/agavescreen1.png" alt="agave3"/> </p>
-                <dd>-You will see a window like the following. Next you must choose a color, there are two methods to pick a color, either click on the button that will bring up a dialog. Using the eyedropper tool you can choose a color. The 2nd method is to select a base color by using the color palette located at the bottom part of the window. Now to add your own custom palette. You must first create a palette file. In my example is the format to create your custom palette:</dd>
+<dl>
+<dd>
+Now to add your own custom palette. You must first create a palette file. In my example is the format to create your custom palette:</dd>
 		<p> <img src="${path}/static/images/tutorials/agavescreen2.png" alt="agave2" /> </p>
                 <dd>-All palette files must start with the GIMP Palette header and a palette name. You can optionally include a comment starting with a #. The remaining lines define individual colors' red, green, and blue components ranging from 0 to 255.</dd>
 		<p> <img src="${path}/static/images/tutorials/agavescreen.png" alt="agave" /> </p>
