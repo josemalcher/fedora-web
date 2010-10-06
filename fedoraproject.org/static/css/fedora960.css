@@ -371,7 +371,6 @@ background-image: -webkit-gradient(radial, 30% 30%, 0, 30% 30%, 900, from(#3C6EB
     margin-top: 0px;
 }
 
-#header-join p.twitter { margin-right: 10px; }
 
 /* content
 ----------------------------------------------- */
@@ -536,12 +535,13 @@ a.interactive-section, .bugs-section a { font-weight: normal; }
   margin-bottom: 2em;
 }
 
-p.twitter {
-text-align: right;
+#header-join p.twitter { 
+    margin-right: 10px;
+    text-align: right;
 }
 
 .twitter a {
-color: white;
+    color: white;
 }
 
 
@@ -676,6 +676,24 @@ a.back-to-top { color: #fff; }
 	border-bottom-width:20px; /* vary this value to change the height of the triangle. must be equal to the corresponding value in :after */
 	border-style:solid;
 	border-color:transparent #E6E6E6;
+}
+
+.callout-style2 {
+    -moz-border-radius: 10px 10px 10px 10px;
+    position: relative;
+}
+
+.callout-style2:before {
+	content: "\00a0";
+	display: block; /* reduce the damage in FF3.0 */
+	position: absolute;
+	bottom: -20px; /* value = - border-top-width - border-bottom-width */
+	left: 200px; /* controls horizontal position */
+	width:0; height:0; border-width:0;
+	border-right-width: 24px; /* vary this value to change the angle of the vertex */
+	border-bottom-width: 20px; /* vary this value to change the height of the triangle. must be equal to the corresponding value in :after */
+	border-style: solid;
+	border-color: transparent #DCA3BB;
 }
 
 
