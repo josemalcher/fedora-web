@@ -693,11 +693,11 @@ a.back-to-top { color: #fff; }
 	content: "\00a0";
 	display: block; /* reduce the damage in FF3.0 */
 	position: absolute;
-	bottom: -20px; /* value = - border-top-width - border-bottom-width */
-	left: 200px; /* controls horizontal position */
+	bottom: -10px; /* value = - border-top-width - border-bottom-width */
+	left: 190px; /* controls horizontal position */
 	width:0; height:0; border-width:0;
 	border-right-width: 24px; /* vary this value to change the angle of the vertex */
-	border-bottom-width: 20px; /* vary this value to change the height of the triangle. must be equal to the corresponding value in :after */
+	border-bottom-width: 10px; /* vary this value to change the height of the triangle. must be equal to the corresponding value in :after */
 	border-style: solid;
 	border-color: transparent #DCA3BB;
 }
