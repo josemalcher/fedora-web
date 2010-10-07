@@ -535,9 +535,10 @@ a.interactive-section, .bugs-section a { font-weight: normal; }
 
 /* features page */
 
-#features-summary * { background: none !important; }
+#features-summary *, #join-roles-summary * { background: none !important; }
 
-#features-summary {
+#features-summary,
+#join-roles-summary {
   background: -moz-linear-gradient(bottom, #eaeff7, white);
   margin-bottom: 2em;
   padding-bottom: 10px;
@@ -548,6 +549,10 @@ a.interactive-section, .bugs-section a { font-weight: normal; }
     margin-right: 10px;
     text-align: right;
 }
+
+/* join roles summary - little icons of roles in the project on community page*/
+#join-roles-icons p { min-height: 100px; }
+#join-roles-icons h5 { min-height: 50px; }
 
 .twitter a {
     color: white;
