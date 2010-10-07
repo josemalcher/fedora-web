@@ -5,19 +5,23 @@
   py:strip="">
 <div id="header">
     <div class="container_16">
+		<div class="grid_12 prefix_1">&nbsp;<!-- search filler --></div>
+		<div class="grid_3">
+			<form action="" method="GET" class="lang-dropdown">
+				<select name="lang">
+				<xi:include href="translations.html" />
+				</select>
+				<input type="submit" value="${_('OK')}" />
+			</form>
+		</div>
+        <div class="clear"></div>
         <div class="grid_8" id="site-heading">
             <h1><span id="logo">Fedora Project</span></h1>
             <h2>${_('Freedom. Friends. Features. First.')}</h2>
         </div>
-        <div class="grid_4 prefix_1">&nbsp;<!-- search filler --></div>
-        <div class="grid_3">
-            <form action="" method="GET" class="lang-dropdown">
-                <select name="lang">
-                <xi:include href="translations.html" />
-                </select>
-                <input type="submit" value="${_('OK')}" />
-            </form>
-            <a href="http://redhat.com"><img id="rh-community" src="/static/images/sponsors/redhat-community.png" /></a>
+        <div class="grid_1 prefix_1">&nbsp;<!-- search filler --></div>
+        <div class="grid_6" id="site-heading-rh">
+            <a href="http://redhat.com">A Red Hat Community Project&nbsp;&nbsp;<img id="rh-community" src="/static/images/sponsors/redhat-community.png" /></a>
         </div>
         <div class="clear"></div>
     </div>
