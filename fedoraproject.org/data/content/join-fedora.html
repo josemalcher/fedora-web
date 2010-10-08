@@ -20,12 +20,12 @@ fdd = feedparse('https://lists.fedoraproject.org/rss/devel.xml')
         <div class="page-header" id="header-join">
               <div class="container_16">
               <div class="grid_9 omega">
-                 <h2>Community</h2>
-                 <p>Fedora is built by people across the globe. Everyone can join!</p>
+                 <h2>${_('Community')}</h2>
+                 <p>${_('Fedora is built by people across the globe. Everyone can join!')}</p>
               </div>
               <div class="grid_7 alpha omega page-header-sidebar">
                 <div class="tweet callout-style2"></div>
-                <p class="twitter">Fedora on <a href="http://identi.ca/fedora">identi.ca</a> / <a href="http://twitter.com/fedora">Twitter</a></p>
+                <p class="twitter">${Markup('Fedora on &lt;a href="%s"&gt;identi.ca&lt;/a&gt; / &lt;a href="%s"&gt;Twitter&lt;/a&gt;' % ('http://identi.ca/fedora', 'http://twitter.com/fedora') )}</p>
               </div>
               </div>
         </div>
@@ -33,26 +33,26 @@ fdd = feedparse('https://lists.fedoraproject.org/rss/devel.xml')
             <div class="grid_8">
                 <div class="grid_1 alpha"><a href="http://fedoraproject.org/wiki/Communicate#IRC"><img src="${path}/static/images/icon-community-chat.png" /></a></div>
                 <div class="grid_7 alpha">
-                    <h3><a href="http://fedoraproject.org/wiki/Communicate#IRC">Chat with us</a></h3>
-                    <p>Fedora has <a href="http://fedoraproject.org/wiki/Communicate#IRC">many IRC channels</a>, including several for casual chatting.</p>
+                    <h3><a href="http://fedoraproject.org/wiki/Communicate#IRC">${_('Chat with us')}</a></h3>
+                    <p>${Markup('Fedora has &lt;a href="%s"&gt;many IRC channels&lt;/a&gt;, including several for casual chatting.' % 'http://fedoraproject.org/wiki/Communicate#IRC')}</p>
                 </div>
                 <div class="clear"></div>
                 <div class="grid_1 alpha"><a href="http://fedoraproject.org/wiki/FWN/LatestIssue"><img src="${path}/static/images/icon-community-news.png" /></a></div>
                 <div class="grid_7 alpha">
-                    <h3><a href="http://fedoraproject.org/wiki/FWN/LatestIssue">Fedora Weekly News</a></h3>
-                    <p>FWN provides <a href="http://fedoraproject.org/wiki/FWN/LatestIssue">a weekly recap</a> of what's happening in the Fedora Project.</p>
+                    <h3><a href="http://fedoraproject.org/wiki/FWN/LatestIssue">${_('Fedora Weekly News')}</a></h3>
+                    <p>${Markup('FWN provides &lt;a href="%s"&gt;a weekly recap&lt;/a&gt; of what\'s happening in the Fedora Project.' % 'http://fedoraproject.org/wiki/FWN/LatestIssue')}</p>
                 </div>
                 <div class="clear"></div>
                 <div class="grid_1 alpha"><a href="http://planet.fedoraproject.org"><img src="${path}/static/images/icon-community-planet.png" /></a></div>
                 <div class="grid_7 alpha">
-                    <h3><a href="http://planet.fedoraproject.org">Visit Fedora Planet</a></h3>
-                    <p>Read <a href="http://planet.fedoraproject.org">blog posts by the community</a>. You can add your own, too!</p>
+                    <h3><a href="http://planet.fedoraproject.org">${_('Visit Fedora Planet')}</a></h3>
+                    <p>${Markup('Read &lt;a href="%s"&gt;blog posts by the community&lt;/a&gt;. You can add your own, too!' % 'http://planet.fedoraproject.org')}</p>
                 </div>
                 <div class="clear"></div>
                 <div class="grid_1 alpha"><a href="http://fedoraproject.org/wiki/Marketing_collateral"><img src="${path}/static/images/icon-community-goodies.png" /></a></div>
                 <div class="grid_7 alpha">
-                    <h3><a href="http://fedoraproject.org/wiki/Marketing_collateral">Get goodies</a></h3>
-                    <p>Spread the Fedora love with <a href="http://fedoraproject.org/wiki/Marketing_collateral">stickers, badges, banners, and more</a>.</p>
+                    <h3><a href="http://fedoraproject.org/wiki/Marketing_collateral">${_('Get goodies')}</a></h3>
+                    <p>${Markup('Spread the Fedora love with &lt;a href="%s"&gt;stickers, badges, banners, and more&lt;/a&gt;.' % 'http://fedoraproject.org/wiki/Marketing_collateral')}</p>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -61,7 +61,7 @@ fdd = feedparse('https://lists.fedoraproject.org/rss/devel.xml')
             </div>
             <div class="clear"></div>
             <div class="grid_5">
-                <h4>Upcoming Events</h4>
+                <h4>${_('Upcoming Events')}</h4>
                 <div class="grid_2 alpha community-event">
                     <h5>June</h5>
                     <p>8-10</p>
@@ -100,7 +100,7 @@ fdd = feedparse('https://lists.fedoraproject.org/rss/devel.xml')
                 <div class="clear"></div>
             </div>
             <div class="grid_5">
-                <h4>Latest Announcements</h4>
+                <h4>${_('Latest Announcements')}</h4>
                 <ul>
                     <li py:for="entry in fda.entries[:2]">
                         <h5><a href="${entry.link}">${entry.title}</a></h5>
@@ -113,7 +113,7 @@ fdd = feedparse('https://lists.fedoraproject.org/rss/devel.xml')
                 </ul>
             </div>
             <div class="grid_6">
-                <h4>Latest Fedora Planet posts</h4>
+                <h4>${_('Latest Fedora Planet posts')}</h4>
                 <ul>
                     <li py:for="entry in fpp.entries[:5]">
                         <h5><a href="${entry.link}">${entry.title}</a></h5>
@@ -132,41 +132,41 @@ fdd = feedparse('https://lists.fedoraproject.org/rss/devel.xml')
             <div class="container_12" id="join-roles-icons">
                 <div class="grid_2">
                     <img src="${path}/static/images/join-writer.png" />
-                    <h5>Content Writer</h5>
-                    <p>These thoughtful communicators write manuals, guides, blog posts, and articles.</p>
-                    <a href="https://fedoraproject.org/wiki/Join#Content_Writer">Learn more &gt;</a>
+                    <h5>${_('Content Writer')}</h5>
+                    <p>${_('These thoughtful communicators write manuals, guides, blog posts, and articles.')}</p>
+                    <a href="https://fedoraproject.org/wiki/Join#Content_Writer">${_('Learn more &gt;')}</a>
                 </div>
                 <div class="grid_2">
                     <img src="${path}/static/images/join-designer.png" />
-                    <h5>Designer</h5>
-                    <p>Artistically-inclined, these folks create artwork, logos, website, and user interface designs.</p>
-                    <a href="https://fedoraproject.org/wiki/Join#Designer">Learn more &gt;</a>
+                    <h5>${_('Designer')}</h5>
+                    <p>${_('Artistically-inclined, these folks create artwork, logos, website, and user interface designs.')}</p>
+                    <a href="https://fedoraproject.org/wiki/Join#Designer">${_('Learn more &gt;')}</a>
                 </div>
                 <div class="grid_2">
                     <img src="${path}/static/images/join-people.png" />
-                    <h5>People Person</h5>
-                    <p>Outgoing and persuasive, these folks thrive interacting with folks at events and online!</p>
-                    <a href="https://fedoraproject.org/wiki/Join#People_Person">Learn more &gt;</a>
+                    <h5>${_('People Person')}</h5>
+                    <p>${_('Outgoing and persuasive, these folks thrive interacting with folks at events and online!')}</p>
+                    <a href="https://fedoraproject.org/wiki/Join#People_Person">${_('Learn more &gt;')}</a>
                 </div>
                 <div class="grid_2">
                     <img src="${path}/static/images/join-osdevel.png" />
-                    <h5>OS Developer</h5>
-                    <p>These technically-talented developers write new features, track down bugs, and help package software.</p>
-                    <a href="https://fedoraproject.org/wiki/Join#OS_Developer">Learn more &gt;</a>
+                    <h5>${_('OS Developer')}</h5>
+                    <p>${_('These technically-talented developers write new features, track down bugs, and help package software.')}</p>
+                    <a href="https://fedoraproject.org/wiki/Join#OS_Developer">${_('Learn more &gt;')}</a>
                 </div>
                 <div class="grid_2">
                     <img src="${path}/static/images/join-translator.png" />
-                    <h5>Translator</h5>
-                    <p>Multi-lingual and gifted writers, these folks help maintain &amp; expand Fedora's supported languages.</p>
-                    <a href="https://fedoraproject.org/wiki/Join#Translator">Learn more &gt;</a>
+                    <h5>${_('Translator')}</h5>
+                    <p>${_('Multi-lingual and gifted writers, these folks help maintain &amp; expand Fedora\'s supported languages.')}</p>
+                    <a href="https://fedoraproject.org/wiki/Join#Translator">${_('Learn more &gt;')}</a>
                 </div>
                 <div class="grid_2">
                     <img src="${path}/static/images/join-webdevel.png" />
-                    <h5>Web Developer or Administrator</h5>
-                    <p>These system administrators and web-savvy developers build the infrastructure that runs Fedora.</p>
-                    <a href="https://fedoraproject.org/wiki/Join#Web_Developer_or_Administrator">Learn more &gt;</a>
+                    <h5>${_('Web Developer or Administrator')}</h5>
+                    <p>${_('These system administrators and web-savvy developers build the infrastructure that runs Fedora.')}</p>
+                    <a href="https://fedoraproject.org/wiki/Join#Web_Developer_or_Administrator">${_('Learn more &gt;')}</a>
                 </div>
-		</div>
+            </div>
             <div class="clear"></div>
             </div>
         <div class="clear"></div>
