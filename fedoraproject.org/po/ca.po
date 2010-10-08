@@ -22,8 +22,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-07-31 11:28-0500\n"
-"PO-Revision-Date: 2010-09-20 04:50+0100\n"
+"POT-Creation-Date: 2010-09-16 23:04+0530\n"
+"PO-Revision-Date: 2010-10-08 04:16+0100\n"
 "Last-Translator: Robert Antoni Buj Gelonch <robert.buj@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
 "MIME-Version: 1.0\n"
@@ -406,6 +406,13 @@ msgstr "Si no us podeu permetre pagar el preu d'un disc d'instal·lació, demane
 msgid "When you place an order with a <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">participating vendor</a>, you may also sponsor the cost of media for users who cannot afford it, such as people in developing nations. Consider participating in the <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora Sponsored Media Program</a>."
 msgstr "Quan feu la comanda a un <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">venedor associat</a>, també estareu patrocinant el cost dels discs per als usuaris que no s'ho puguin permetre, com ara les persones de països en desenvolupament. Penseu en participar en el <a href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Programa de patrocini de discs de Fedora</a>."
 
+#: data/content/get-fedora-all.html:150
+#: data/content/get-fedora-kde.html:86
+#: data/content/get-fedora.html:74
+#: data/content/get-prerelease.html:97
+msgid "Arrow down"
+msgstr "Fletxa cap abaix"
+
 #: data/content/get-fedora-kde.html:15
 msgid "Show me all download options in one page!"
 msgstr "Mostra totes les opcions de baixada en una pàgina!"
@@ -414,6 +421,10 @@ msgstr "Mostra totes les opcions de baixada en una pàgina!"
 #: data/content/get-fedora-options.html:20
 msgid "There's More Fedora!"
 msgstr "Hi han d'altres Fedores!"
+
+#: data/content/get-fedora-kde.html:18
+msgid "Fedora Spins"
+msgstr "Tiratges de Fedora"
 
 #: data/content/get-fedora-kde.html:23
 msgid "The <a href=\"http://www.kde.org/\">K Desktop Environment</a> (KDE) is an alternative desktop environment for Fedora. It provides a different look and feel to the windows, menus, and general desktop behavior of Fedora. If you prefer the K Desktop Environment, you may download the KDE version of Fedora below."
@@ -1117,8 +1128,12 @@ msgid "If a problem requires real time support, with somebody to explain each st
 msgstr "Si teniu algun problema que requereixi ajuda immediata, amb algú que us expliqui cada pas i que tracti amb qualsevol problema que pugui sorgir, l'IRC és la solució ideal. Fedora disposa de diversos canals IRC, un d'ells destinat explícitament a donar ajuda a l'usuari final."
 
 #: data/content/get-help.html:26
-msgid "To access this support launch Fedoras default instant messaging client, Empathy, and choose Accounts from the Edit menu. Add a new account, and select IRC as the protocol. Next, select freenode from the list of networks, enter a Nickname and select Log In and then Close. The final step is to add the #fedora channel by selecting Join... from the Room menu. Now that this is done, the #fedora channel should appear where end-users can ask questions and get support in real time."
-msgstr "Per accedir a aquest suport, podeu executar el client de missatgeria instantània que duu per defecte Fedora, el Pidgin, i escolliu Gestió del menú Comptes. Afegiu un nou compte per al protocol IRC, introduïu un Nom d'usuari i deseu els canvis. Per acabar afegiu el canal #fedora tot seleccionant Afegeix un xat... en el menú d'Amics. Assegureu-vos que teniu seleccionat un compte IRC en la llista desplegable i escriviu #fedora com a Canal. Per salvar els canvis feu clic en Afegeix. Un cop acabat, el xat #fedora hauria d'aparèixer en la finestra principal del Pidgin. Fent doble clic sobre d'ell accedireu al canal #fedora on els usuaris finals poden preguntar i rebre suport en temps real."
+msgid "For a comprehensive list of available Fedora channels, please visit <a href=\"http://fedoraproject.org/wiki/Communicate#User_Help\">http://fedoraproject.org/wiki/Communicate#User_Help</a>"
+msgstr "Per a un llistat complet dels canals disponibles de Fedora, visiteu <a href=\"http://fedoraproject.org/wiki/Communicate#User_Help\">http://fedoraproject.org/wiki/Communicate#User_Help</a>"
+
+#: data/content/get-help.html:27
+msgid "If you are new to Internet Relay Chat (IRC) refer to the <a href=\"https://fedoraproject.org/wiki/Communicate/IRCHowTo\" target=\"_blank\">How To</a> page"
+msgstr "Si sou nous a IRC (Internet Relay Chat) adreceu-vos a la pàgina <a href=\"https://fedoraproject.org/wiki/Communicate/IRCHowTo\" target=\"_blank\">How To</a>"
 
 #: data/content/get-help.html:28
 msgid "E-mail Support"
@@ -1568,6 +1583,10 @@ msgstr "Connecteu-vos amb la Comunitat Fedora"
 msgid "Download Fedora!"
 msgstr "Baixeu-vos Fedora!"
 
+#: data/templates/foot.html:8
+msgid "Red Hat Logo"
+msgstr "Logotip de Red Hat"
+
 #: data/templates/foot.html:10
 msgid "Sponsors"
 msgstr "Patrocinadors"
@@ -1664,6 +1683,26 @@ msgstr "Idioma del lloc web"
 #: data/templates/sidebar.html:37
 msgid "Hosting Sponsor"
 msgstr "Patrocinador d'allotjament"
+
+#~ msgid ""
+#~ "To access this support launch Fedoras default instant messaging client, "
+#~ "Empathy, and choose Accounts from the Edit menu. Add a new account, and "
+#~ "select IRC as the protocol. Next, select freenode from the list of "
+#~ "networks, enter a Nickname and select Log In and then Close. The final "
+#~ "step is to add the #fedora channel by selecting Join... from the Room "
+#~ "menu. Now that this is done, the #fedora channel should appear where end-"
+#~ "users can ask questions and get support in real time."
+#~ msgstr ""
+#~ "Per accedir a aquest suport, podeu executar el client de missatgeria "
+#~ "instantània que duu per defecte Fedora, el Pidgin, i escolliu Gestió del "
+#~ "menú Comptes. Afegiu un nou compte per al protocol IRC, introduïu un Nom "
+#~ "d'usuari i deseu els canvis. Per acabar afegiu el canal #fedora tot "
+#~ "seleccionant Afegeix un xat... en el menú d'Amics. Assegureu-vos que "
+#~ "teniu seleccionat un compte IRC en la llista desplegable i escriviu "
+#~ "#fedora com a Canal. Per salvar els canvis feu clic en Afegeix. Un cop "
+#~ "acabat, el xat #fedora hauria d'aparèixer en la finestra principal del "
+#~ "Pidgin. Fent doble clic sobre d'ell accedireu al canal #fedora on els "
+#~ "usuaris finals poden preguntar i rebre suport en temps real."
 
 #~ msgid "Fedora 11"
 #~ msgstr "Fedora 11"
