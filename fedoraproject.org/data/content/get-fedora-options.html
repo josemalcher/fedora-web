@@ -32,13 +32,17 @@
 
             <div class="clear"></div>
             
-            <div class="grid_16 panes">
+            <div class="grid_12 panes">
             <!-- tab "panes" -->
                 <div id="desktop-versions">
                     <noscript><a name="desktops"><hr /></a></noscript>
                     <h3>${_('Fedora Desktops')}</h3>
                     <p>${_('There are multiple desktops available for use with Fedora. Each has a slightly different look and feel and offers varying levels of customization. Desktops affect how windows, icons, menus, and various basic desktop interfaces look and feel. You may want to try a few different ones and figure out which one is best for you!')}</p>
-                    <h4 class="area-callout">${_('Fedora 13 Desktop Edition')}</h4><span class="star-fedora-default">${_('Fedora Default')}</span>
+
+
+<span class="desktop-section">
+
+                    <h4 class="area-callout">${_('Fedora 14 Desktop Edition')}</h4><span class="star-fedora-default">${_('Fedora Default')}</span>
                     <table>
                         <tbody>
                             <tr>
@@ -54,24 +58,123 @@
                             </tr>
                             <tr class="dl-buttons">
                                 <td>
-                                    <h4>${_('32-bit')}</h4>
+                                    <h5>${_('32-bit')}</h5>
                                     <a class="download-button-mini" href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Live/i686/Fedora-13-i686-Live.iso">${_('Download Now!')}</a>
                                     <p class="fine-print">${_('%s CD ISO') % '675 MB'}</p>
                                 </td>
                                 <td>
-                                    <h4>${_('64-bit')}</h4>
+                                    <h5>${_('64-bit')}</h5>
                                     <a class="download-button-mini" href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Live/x86_64/Fedora-13-x86_64-Live.iso">${_('Download Now!')}</a>
                                     <p class="fine-print">${_('%s CD ISO') % '677 MB'}</p>
                                 </td>
                             </tr>
                         </tbody>
-                    </table>					
+                    </table>		
+</span>
+<span class="desktop-section">
+
+<h4>Fedora 14 KDE Spin</h4>
+
+   <table>
+      <tbody>
+        <tr>
+          <td rowspan="2"><img class="download-media" alt="32-bit PC Edition" src="/static/images/icon-kde-download.png" /></td>
+          <td colspan="2" class="description">
+	    <p>KDE-based Fedora desktop.</p>
+	    <ul>
+	      <li><a href="http://spins.fedoraproject.org/kde/">Fedora KDE Spin homepage &gt;</a></li>
+	      <li><a href="http://kde.org/">KDE.org website &gt;</a></li>
+	    </ul>
+          </td>
+          <td rowspan="2"><img class="desktop-screenshot" src="./static/images/screenshots/desktop-ss-kde.png" rel="#kde1" /></td>
+        </tr>
+	<tr class="dl-buttons">
+	  <td><h5>32-bit</h5>
+	    <a class="download-button-mini" href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Live/i686/Fedora-13-i686-Live-KDE.iso">Download Now!</a>
+	    <p class="fine-print">698 MB CD ISO</p>
+          </td>
+	  <td><h5>64-bit</h5>
+	    <a class="download-button-mini" href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Live/x86_64/Fedora-13-x86_64-Live-KDE.iso">Download Now!</a>
+	    <p class="fine-print">700 MB CD ISO</p>
+	  </td>
+	</tr>
+      </tbody>
+    </table>
+</span>
+
+<span class="desktop-section">
+
+  <h4>Fedora 14 LXDE Spin</h4>
+
+  <table>
+    <tbody>
+      <tr>
+        <td rowspan="2"><img class="download-media" alt="32-bit PC Edition" src="/static/images/icon-lxde-download.png" /></td>
+	<td colspan="2" class="description">
+	  <p>LXDE-based Fedora desktop.</p>
+	  <ul>
+	    <li><a href="http://spins.fedoraproject.org/lxde/">Fedora LXDE Spin homepage &gt;</a></li>
+            <li><a href="http://lxde.org/">LXDE.org website &gt;</a></li>
+	  </ul>
+        </td>
+	<td rowspan="2"><img class="desktop-screenshot" src="/static/images/screenshots/desktop-ss-lxde.png" rel="#lxde1" /></td>
+      </tr>
+      <tr class="dl-buttons">
+        <td>
+          <h5>32-bit</h5>
+	  <a class="download-button-mini" href="http://download.fedoraproject.org/pub/alt/spins/linux/releases/13/Spins/i686/Fedora-13-i686-Live-LXDE.iso">Download Now!</a>
+	  <p class="fine-print">548 MB CD ISO</p>
+        </td>
+	<td>
+	   <h5>64-bit</h5>
+	   <a class="download-button-mini" href="http://download.fedoraproject.org/pub/alt/spins/linux/releases/13/Spins/x86_64/Fedora-13-x86_64-Live-LXDE.iso">Download Now!</a>
+	   <p class="fine-print">549 MB CD ISO</p>
+	 </td>
+       </tr>
+     </tbody>
+   </table>
+</span>
+
+
+<span class="desktop-section">
+
+  <h4>Fedora 14 XFCE Spin</h4>
+  <table>
+    <tbody>
+      <tr>
+      <td rowspan="2"><img class="download-media" alt="32-bit PC Edition" src="./static/images/icon-xfce-download.png" /></td>
+      <td colspan="2" class="description">
+      <p>XFCE-based Fedora desktop.</p>
+      <ul>
+        <li><a href="http://spins.fedoraproject.org/xfce/">Fedora XFCE Spin homepage &gt;</a></li>
+        <li><a href="http://www.xfce.org/">XFCE.org website &gt;</a></li>
+      </ul>
+      </td>
+      <td rowspan="2"><img class="desktop-screenshot" src="./static/images/screenshots/desktop-ss-xfce.png" rel="#xfce1" /></td>
+    </tr>
+    <tr class="dl-buttons">
+      <td>
+        <h5>32-bit</h5>
+	<a class="download-button-mini" href="http://download.fedoraproject.org/pub/alt/spins/linux/releases/13/Spins/i686/Fedora-13-i686-Live-XFCE.iso">Download Now!</a>
+	<p class="fine-print">698 MB CD ISO</p>
+      </td>
+      <td>
+        <h5>64-bit</h5>
+	<a class="download-button-mini" href="http://download.fedoraproject.org/pub/alt/spins/linux/releases/13/Spins/x86_64/Fedora-13-x86_64-Live-XFCE.iso">Download Now!</a>
+	<p class="fine-print">700 MB CD ISO</p>
+      </td>
+    </tr>
+    </tbody>
+    </table>
+</span>
+
+			
                 </div>
                 <div id="get-formats">
                     <noscript><a name="formats"><hr /></a></noscript>
                     <h3>${_('Fedora Downloads by Formats')}</h3>
 
-                        <h4>${_('Fedora 13 Live Media / Spins')}</h4>
+                        <h4>${_('Fedora 14 Live Media / Spins')}</h4>
                         <img class="download-media" alt="${_('32-bit PC Edition')}" src="./static/images/media.png" />
                         <p>${_('Fedora Live Media images may be used via bootable CD, DVD, or USB drives, and also may be used to install Fedora to hard disk. They are a great way to give Fedora a try, low-risk.')}</p>
                         <p><a class="download-button-mini" href="./get-fedora">${_('Get Fedora now')}</a></p>
@@ -79,22 +182,22 @@
                         <p><a href="http://spins.fedoraproject.org/">http://spins.fedoraproject.org/</a></p>
                         <p><a class="download-button-mini" href="http://spins.fedoraproject.org">${_('Go to Spins Directory')}</a></p>
 
-                        <h4>${_('Fedora 13 DVD')}</h4>
+                        <h4>${_('Fedora 14 DVD')}</h4>
                         <img class="download-media" alt="${_('32-bit PC Edition')}" src="./static/images/media.png" />
                         <p>${_('The DVD edition of Fedora is not Live Media, but it is bootable.  When you boot from this media, you will be running the installation program.  The DVD requires less memory (RAM) on your computer and contains more software.  This media may be useful if the machine on which you install Fedora is not connected to the Internet.')}</p>
                         <p>${_('Intel &amp; AMD / PC compatible')}</p>
-                        <h4>${_('32-bit')}</h4>
+                        <h5>${_('32-bit')}</h5>
                         <a href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Fedora/i386/iso/Fedora-13-i386-DVD.iso" class="download-button-mini">${_('Download Now!')}</a><span class="star-most-compatible">${_('Most Compatible')}</span>
                         <p class="fine-print">${_('%s ISO disk image for 32-bit PC') % '3.1 GB'}</p>
                         <p>${Markup(_('Intel &amp; AMD / PC compatible'))}</p>
-                        <h4>${_('64-bit')}</h4>
+                        <h5>${_('64-bit')}</h5>
                         <a href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Fedora/x86_64/iso/Fedora-13-x86_64-DVD.iso" class="download-button-mini">${_('Download Now!')}</a>
                         <p class="fine-print">${_('%s ISO disk image for 64-bit PC') % '3.4 GB'}</p>
 
                         <p class="help" style="clear: both;"><img class="support-icon" src="./static/images/icon-support.png" />${Markup(_('For help determining what architecture your system is, &lt;a href="http://docs.fedoraproject.org/install-guide/f13/en-US/html/ch-new-users.html#sn-which-arch"&gt;please view our architecture help guide&lt;/a&gt;.'))}</p>
                         <br />
 
-                        <h4>${_('Fedora 13 Media by Mail')}</h4>
+                        <h4>${_('Fedora 14 Media by Mail')}</h4>
                         <img class="download-media" alt="${_('32-bit PC Edition')}" src="./static/images/media.png" />
                         <p>${Markup(_('Slow internet? No internet? You can get a copy of Fedora media sent via postal mail through local and online vendors, as well as via the &lt;a href="%s"&gt;Fedora Free Media&lt;/a&gt; program.')) % 'http://fedoraproject.org/wiki/Distribution/FreeMedia'}</p>
                         <h5 class="vendor-header">${_('Purchase Fedora Media from a Vendor')}</h5>
@@ -156,6 +259,42 @@
                 </div>
 
             </div>
+
+<!-- right sidebar -->
+  <div class="grid_4" id="right-sidebar" >
+                
+
+		<h4>${_('Help, I just want Fedora!')}</h4>
+		<p>${_('There are a lot of options on this page. Would you rather download the standard Fedora image?')}</p>
+		<a href="#">${_('Get it here')}</a>.
+
+
+                <h4>${_('Handy Resources')}</h4>
+                <ul>
+                    <li class="guide-list"><a href="http://docs.fedoraproject.org/installation-quick-start-guide/">${_('Installation Quickstart Guide')}</a></li>
+                    <li class="guide-list"><a href="http://docs.fedoraproject.org/install-guide/">${_('Installation Guide')}</a></li>
+                    <li class="guide-list"><a href="http://docs.fedoraproject.org/release-notes/">${_('Release Notes')}</a></li>
+                    <li class="webpage-list"><a href="http://fedoraproject.org/wiki/Upgrading">${_('Upgrading Fedora')}</a></li>
+                    <li class="support-list"><a href="${path}/${lang}/get-help">${_('Help &amp; Support')}</a></li>
+                    <li class="verify-list"><a href="${path}/${lang}/verify">${_('Verify Download')}</a></li>	  
+                </ul>
+
+
+                <h4>There's More Fedora!</h4>
+                <a href="http://spins.fedoraproject.org"><img src="/static/images/banners/spins-website.png" /></a>
+
+
+		<h4>${_('Other ways to get Fedora')}</h4>
+
+		<p>${_('We offer several alternative Fedora download methods, including torrents:')}</p>
+		<ul>
+			<li class="webpage-list"><a href="http://fedoraproject.org/en/get-fedora-all">${_('All download methods')}</a></li>
+		</ul>
+
+		<div class="clear"></div>
+
+            </div>
+
         </div>
         <div class="clear"></div>
 	</body>
