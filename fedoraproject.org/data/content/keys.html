@@ -7,241 +7,262 @@
     <title>${Markup(_('Fedora Project'))}</title>
   </head>
 	<body id="fedoraproject-org">
+        <div class="page-header" id="header-keys">
+            <div class="container_16">
+                <div class="grid_16">
+                    <div class="grid_11 alpha">
+                        <h2>${Markup(_('GPG keys'))}</h2>
+                        <p>GPG keys used to sign packages</p>
+                    </div>
+                    <div class="grid_5 omega page-header-sidebar">
+                        <p><!-- blank space --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container_16">
             <div class="grid_16">
-    <h2>${Markup(_('GPG keys used by Fedora Project'))}</h2>
-    <h3>${Markup(_('How does Fedora Project use GPG keys to sign packages'))}</h3>
-    <p>${Markup(_('Each stable RPM package that is published by Fedora Project is signed with a GPG signature.  By default, yum and the graphical update tools will verify these signatures and refuse to install any packages that are not signed or have bad signatures.  You should always verify the signature of a package before you install it.  These signatures ensure that the packages you install are what was produced by the Fedora Project and have not been altered (accidentally or maliciously) by any mirror or website that is providing the packages.'))}</p>
-    <p>${Markup(_('Packages that can be downloaded from koji build system do not contain signatures, so you should use them with caution.  Similarly, bleeding-edge packages in Rawhide are not necessarily signed.'))}</p>
+                <h3>${Markup(_('GPG keys used by Fedora Project'))}</h3>
+                <h4>${Markup(_('How does Fedora Project use GPG keys to sign packages?'))}</h4>
+                <p>${Markup(_('Each stable RPM package that is published by Fedora Project is signed with a GPG signature.  By default, yum and the graphical update tools will verify these signatures and refuse to install any packages that are not signed or have bad signatures.  You should always verify the signature of a package before you install it.  These signatures ensure that the packages you install are what was produced by the Fedora Project and have not been altered (accidentally or maliciously) by any mirror or website that is providing the packages.'))}</p>
+                <p>${Markup(_('Packages that can be downloaded from koji build system do not contain signatures, so you should use them with caution.  Similarly, bleeding-edge packages in Rawhide are not necessarily signed.'))}</p>
 
-    <h3>${Markup(_('Importing keys'))}</h3>
-    <p>${Markup(_('The keys are included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package, you can find them in the &lt;strong&gt;/etc/pki/rpm-gpg&lt;/strong&gt; directory.  Please note that not all keys in this directory are used by Fedora project -- some are used for signing Red Hat Enterprise Linux packages or are no longer used at all. If you use Red Hat Enterprise Linux packages, see &lt;a href="https://www.redhat.com/security/team/key/"&gt;https://www.redhat.com/security/team/key&lt;/a&gt;.  The keys used by Fedora are enabled in the yum repository configuration, so you generally don\'t need to manually import them into the rpm database.'))}</p>
-    <p>${Markup(_('In addition to the fedora-release package and this web page, you can download the Fedora keys from a public key server, such as &lt;a href="http://http-keys.gnupg.net/"&gt;keys.gnupg.net&lt;/a&gt;.'))}</p>
-    <p>${Markup(_('For some repositories, such as repositories with stable and testing packages in default configuration, &lt;strong&gt;yum&lt;/strong&gt; is able to find a proper key for the repository and asks the user for confirmation before importing the key if the key is not already imported into the rpm database.'))}</p>
-    <p>${Markup(_('You can always import a key into RPM\'s database by hand using the following command:'))}
-      <pre class="command">rpm --import PUBKEY ...</pre>
-    </p>
-    <p>${Markup(_('Refer to &lt;strong&gt;rpm&lt;/strong&gt; manual for more information.'))}</p>
-    <p>${Markup(_('If you want to verify that the keys installed on your system match the keys listed here, you can use GnuPG to check that the fingerprint of the key matches.  For example:'))}
-      <pre class="command">$ gpg --quiet --with-fingerprint /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-11-primary
+                <h4>${Markup(_('Importing keys'))}</h4>
+                <p>${Markup(_('The keys are included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package, you can find them in the &lt;strong&gt;/etc/pki/rpm-gpg&lt;/strong&gt; directory.  Please note that not all keys in this directory are used by Fedora project -- some are used for signing Red Hat Enterprise Linux packages or are no longer used at all. If you use Red Hat Enterprise Linux packages, see &lt;a href="https://www.redhat.com/security/team/key/"&gt;https://www.redhat.com/security/team/key&lt;/a&gt;.  The keys used by Fedora are enabled in the yum repository configuration, so you generally don\'t need to manually import them into the rpm database.'))}</p>
+                <p>${Markup(_('In addition to the fedora-release package and this web page, you can download the Fedora keys from a public key server, such as &lt;a href="http://http-keys.gnupg.net/"&gt;keys.gnupg.net&lt;/a&gt;.'))}</p>
+                <p>${Markup(_('For some repositories, such as repositories with stable and testing packages in default configuration, &lt;strong&gt;yum&lt;/strong&gt; is able to find a proper key for the repository and asks the user for confirmation before importing the key if the key is not already imported into the rpm database.'))}</p>
+                <p>${Markup(_('You can always import a key into RPM\'s database by hand using the following command:'))}
+                    <pre class="command">rpm --import PUBKEY ...</pre>
+                </p>
+                <p>${Markup(_('Refer to &lt;strong&gt;rpm&lt;/strong&gt; manual for more information.'))}</p>
+                <p>${Markup(_('If you want to verify that the keys installed on your system match the keys listed here, you can use GnuPG to check that the fingerprint of the key matches.  For example:'))}
+                    <pre class="command">
+$ gpg --quiet --with-fingerprint /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-11-primary
 ...
 pub  4096R/D22E77F2 2009-01-19 Fedora (11) &lt;fedora@fedoraproject.org&gt;
       Key fingerprint = AEE4 0C04 E345 60A7 1F04  3D7C 1DC5 C758 D22E 77F2</pre>
-    </p>
+                </p>
 
-    <h3>${Markup(_('Verifying a package'))}</h3>
-    <p>${Markup(_('When using default configuration of &lt;strong&gt;yum&lt;/strong&gt; package updating and installation tool in stable releases, signature of each package is verified before it is installed.  Signature verification can be turned off and on globally or for specific repository with &lt;strong&gt;gpgcheck&lt;/strong&gt; directive.  Do not override the default setting of this directive unless you have a very good reason to do so.'))}</p>
-    <p>${Markup(_('If you do not use yum, you can check the signature of the package using the following command'))}
-      <pre class="command">rpm {-K|--checksig} PACKAGE_FILE ...</pre>
-    </p>
+                <h4>${Markup(_('Verifying a package'))}</h4>
+                <p>${Markup(_('When using default configuration of &lt;strong&gt;yum&lt;/strong&gt; package updating and installation tool in stable releases, signature of each package is verified before it is installed.  Signature verification can be turned off and on globally or for specific repository with &lt;strong&gt;gpgcheck&lt;/strong&gt; directive.  Do not override the default setting of this directive unless you have a very good reason to do so.'))}</p>
+                <p>${Markup(_('If you do not use yum, you can check the signature of the package using the following command'))}
+                    <pre class="command">rpm {-K|--checksig} PACKAGE_FILE ...</pre>
+                </p>
 
-    <br/>
-
-    <h2>${Markup(_('Currently used keys'))}</h2>
-
-    <h3>RPM-GPG-KEY-fedora-14-primary</h3>
-    <p>
-      <pre class="command">pub   4096R/97A1071F 2010-07-23
+                <h3>${Markup(_('Currently used keys'))}</h3>
+                <h4>RPM-GPG-KEY-fedora-14-primary</h4>
+                <p>
+                    <pre class="command">
+      pub   4096R/97A1071F 2010-07-23
       Key fingerprint = 235C 2936 B4B7 0E61 B373  A020 421C ADDB 97A1 071F
 uid                  Fedora (14) &lt;fedora@fedoraproject.org&gt;</pre>
-    </p>
-    <p>
-      <ul>
-        <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/97A1071F.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
-        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0x97A1071F&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
-      </ul>
-    </p>
+                </p>
+                <p>
+                    <ul>
+                        <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/97A1071F.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
+                        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0x97A1071F&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
+                    </ul>
+                </p>
 
-    <h3>RPM-GPG-KEY-fedora-13-primary</h3>
-    <p>
-      <pre class="command">pub   4096R/E8E40FDE 2010-01-19
+                <h4>RPM-GPG-KEY-fedora-13-primary</h4>
+                <p>
+                    <pre class="command">
+      pub   4096R/E8E40FDE 2010-01-19
       Key fingerprint = 8E5F 73FF 2A18 1765 4D35  8FCA 7EDC 6AD6 E8E4 0FDE
 uid                  Fedora (13) &lt;fedora@fedoraproject.org&gt;</pre>
-    </p>
-    <p>
-      <ul>
-        <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/E8E40FDE.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
-        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0xE8E40FDE&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
-      </ul>
-    </p>
+                </p>
+                <p>
+                    <ul>
+                        <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/E8E40FDE.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
+                        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0xE8E40FDE&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
+                    </ul>
+                </p>
 
-    <h3>RPM-GPG-KEY-fedora-12-primary</h3>
-    <p>
-      <pre class="command">pub   4096R/57BBCCBA 2009-07-29
+                <h4>RPM-GPG-KEY-fedora-12-primary</h4>
+                <p>
+                    <pre class="command">
+      pub   4096R/57BBCCBA 2009-07-29
       Key fingerprint = 6BF1 78D2 8A78 9C74 AC0D  C63B 9D1C C348 57BB CCBA
 uid                  Fedora (12) &lt;fedora@fedoraproject.org&gt;</pre>
-    </p>
-    <p>
-      <ul>
-        <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/57BBCCBA.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
-        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0x57BBCCBA&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
-      </ul>
-    </p>
+                </p>
+                <p>
+                  <ul>
+                    <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/57BBCCBA.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
+                    <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0x57BBCCBA&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
+                  </ul>
+                </p>
 
-    <h3>RPM-GPG-KEY-EPEL</h3>
-    <p>
-      <pre class="command">pub   1024D/217521F6 2007-03-02 [expires: 2017-02-27]
+                <h4>RPM-GPG-KEY-EPEL</h4>
+                <p>
+                    <pre class="command">
+      pub   1024D/217521F6 2007-03-02 [expires: 2017-02-27]
       Key fingerprint = B940 BE07 7D71 0A28 7D7F  2DD1 119C C036 2175 21F6
 uid                  Fedora EPEL &lt;epel@fedoraproject.org&gt;
 sub   2048g/B6610DAF 2007-03-02 [expires: 2017-02-27]</pre>
-    </p>
-    <p>
-      <ul>
-        <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/217521F6.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
-        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0x217521F6&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
-      </ul>
-    </p>
+                </p>
+                <p>
+                    <ul>
+                        <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/217521F6.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
+                        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0x217521F6&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
+                    </ul>
+                </p>
 
-    <br/>
-
-    <h2>${Markup(_('Obsolete keys'))}</h2>
-
-    <h3>RPM-GPG-KEY-fedora</h3>
-    <p>
-      <pre class="command">pub   1024D/4F2A6FD2 2003-10-27
+                <h3>${Markup(_('Obsolete keys'))}</h3>
+                <h4>RPM-GPG-KEY-fedora</h4>
+                <p>
+                    <pre class="command">
+      pub   1024D/4F2A6FD2 2003-10-27
       Key fingerprint = CAB4 4B99 6F27 744E 8612  7CDF B442 69D0 4F2A 6FD2
 uid                  Fedora Project &lt;fedora@redhat.com&gt;
 sub   1024g/FB939E34 2003-10-27</pre>
-    </p>
-    <p>
-      <ul>
-        <li>${Markup(_('Fedora Core (version 6 and earlier)'))}</li>
-        <li>${Markup(_('Fedora (version 7, 8, and 9)'))}</li>
-        <li>${Markup(_('Both GA and updates'))}</li>
-      </ul>
-    </p>
-    <p>${Markup(_('Packages on installation media are signed with this key.  The relevant yum repositories are &lt;strong&gt;fedora&lt;/strong&gt;, &lt;strong&gt;fedora-updates&lt;/strong&gt; for Fedora 7-9, and &lt;strong&gt;core&lt;/strong&gt; and &lt;strong&gt;core-updates&lt;/strong&gt; for Fedora Core (Version 6 and earlier).  See &lt;a href="http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html"&gt;http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html&lt;/a&gt; for information on why this key is obsolete.'))}</p>
-    <p>
-      <ul>
-        <li>${Markup(_('Path: &lt;a href="file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora"&gt;/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora&lt;/a&gt;'))}</li>
-        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0x4F2A6FD2&amp;op=index"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
-      </ul>
-    </p>
+                </p>
+                <p>
+                    <ul>
+                        <li>${Markup(_('Fedora Core (version 6 and earlier)'))}</li>
+                        <li>${Markup(_('Fedora (version 7, 8, and 9)'))}</li>
+                        <li>${Markup(_('Both GA and updates'))}</li>
+                    </ul>
+                </p>
+                <p>${Markup(_('Packages on installation media are signed with this key.  The relevant yum repositories are &lt;strong&gt;fedora&lt;/strong&gt;, &lt;strong&gt;fedora-updates&lt;/strong&gt; for Fedora 7-9, and &lt;strong&gt;core&lt;/strong&gt; and &lt;strong&gt;core-updates&lt;/strong&gt; for Fedora Core (Version 6 and earlier).  See &lt;a href="http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html"&gt;http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html&lt;/a&gt; for information on why this key is obsolete.'))}</p>
+                <p>
+                  <ul>
+                    <li>${Markup(_('Path: &lt;a href="file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora"&gt;/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora&lt;/a&gt;'))}</li>
+                    <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0x4F2A6FD2&amp;op=index"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
+                  </ul>
+                </p>
 
-    <h3>RPM-GPG-KEY-fedora-test</h3>
-    <p>
-      <pre class="command">pub   1024D/30C9ECF8 2003-10-27
+                <h4>RPM-GPG-KEY-fedora-test</h4>
+                <p>
+                  <pre class="command">
+      pub   1024D/30C9ECF8 2003-10-27
       Key fingerprint = 3166 C14A AE72 30D9 3B7A  B2F6 DA84 CBD4 30C9 ECF8
 uid                  Fedora Project (Test Software) &lt;rawhide@redhat.com&gt;</pre>
+                </p>
+                <p>
+                    <ul>
+                        <li>${Markup(_('Fedora (version 7 and newer) testing updates'))}</li>
+                    </ul>
+                </p>
+                <p>${Markup(_('If you participate in testing of the packages, this is the key you will use to verify the testing packages.  This key signs the packages that are in &lt;strong&gt;fedora-testing&lt;/strong&gt; repository.  See &lt;a href="http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html"&gt;http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html&lt;/a&gt; for information on why this key is obsolete.'))}</p>
+                <p>
+                  <ul>
+                    <li>${Markup(_('Path: &lt;a href="file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test"&gt;/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test&lt;/a&gt;'))}</li>
+                    <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0x30C9ECF8&amp;op=index"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
+                  </ul>
+                </p>
 
-    </p>
-    <p>
-      <ul>
-        <li>${Markup(_('Fedora (version 7 and newer) testing updates'))}</li>
-      </ul>
-    </p>
-    <p>${Markup(_('If you participate in testing of the packages, this is the key you will use to verify the testing packages.  This key signs the packages that are in &lt;strong&gt;fedora-testing&lt;/strong&gt; repository.  See &lt;a href="http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html"&gt;http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html&lt;/a&gt; for information on why this key is obsolete.'))}</p>
-    <p>
-      <ul>
-        <li>${Markup(_('Path: &lt;a href="file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test"&gt;/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test&lt;/a&gt;'))}</li>
-        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0x30C9ECF8&amp;op=index"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
-      </ul>
-    </p>
-
-    <h3>RPM-GPG-KEY-fedora-8-and-9-primary</h3>
-    <p>
-      <pre class="command">pub   1024D/6DF2196F 2008-08-27
+                <h4>RPM-GPG-KEY-fedora-8-and-9-primary</h4>
+                <p>
+                    <pre class="command">
+      pub   1024D/6DF2196F 2008-08-27
       Key fingerprint = 4FFF 1F04 010D EDCA E203  591D 62AE C3DC 6DF2 196F
 uid                  Fedora (8 and 9) &lt;fedora@fedoraproject.org&gt;
 sub   4096g/9E198F60 2008-08-27</pre>
-    </p>
-    <p>
-      <ul>
-        <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/6DF2196F.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
-        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0x6DF2196F&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
-      </ul>
-    </p>
+                </p>
+                <p>
+                    <ul>
+                        <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/6DF2196F.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
+                        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0x6DF2196F&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
+                    </ul>
+                </p>
 
-    <h3>RPM-GPG-KEY-fedora-test-8-and-9-primary</h3>
-    <p>
-      <pre class="command">pub   1024D/DF9B0AE9 2008-08-27
+                <h4>RPM-GPG-KEY-fedora-test-8-and-9-primary</h4>
+                <p>
+                  <pre class="command">
+      pub   1024D/DF9B0AE9 2008-08-27
       Key fingerprint = C0E7 128E 9072 96CA AE31  78A2 8E69 3B4D DF9B 0AE9
 uid                  Fedora (8 and 9 testing) &lt;fedora@fedoraproject.org&gt;
 sub   4096g/80E34F98 2008-08-27</pre>
-    </p>
-    <p>
-      <ul>
-        <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/DF9B0AE9.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
-        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0xDF9B0AE9&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
-      </ul>
-    </p>
+                </p>
+                <p>
+                    <ul>
+                        <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/DF9B0AE9.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
+                        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0xDF9B0AE9&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
+                    </ul>
+                </p>
 
-    <h3>RPM-GPG-KEY-fedora-10-primary</h3>
-    <p>
-      <pre class="command">pub   1024D/4EBFC273 2008-08-27
+                <h4>RPM-GPG-KEY-fedora-10-primary</h4>
+                <p>
+                    <pre class="command">
+      pub   1024D/4EBFC273 2008-08-27
       Key fingerprint = 61A8 ABE0 91FF 9FBB F4B0  7709 BF22 6FCC 4EBF C273
 uid                  Fedora (10) &lt;fedora@fedoraproject.org&gt;
 sub   4096g/C1527A5F 2008-08-27</pre>
-    </p>
-    <p>
-      <ul>
-        <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/4EBFC273.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
-        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0x4EBFC273&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
-      </ul>
-    </p>
+                </p>
+                <p>
+                    <ul>
+                        <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/4EBFC273.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
+                        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0x4EBFC273&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
+                    </ul>
+                </p>
 
-    <h3>RPM-GPG-KEY-fedora-test-10-primary</h3>
-    <p>
-      <pre class="command">pub   1024D/0B86274E 2008-08-27
+                <h4>RPM-GPG-KEY-fedora-test-10-primary</h4>
+                <p>
+                    <pre class="command">
+      pub   1024D/0B86274E 2008-08-27
       Key fingerprint = C561 3076 7487 7FDF A36D  CA38 92A1 023D 0B86 274E
 uid                  Fedora (10 testing) &lt;fedora@fedoraproject.org&gt;
 sub   4096g/7645A8D9 2008-08-27</pre>
-    </p>
-    <p>
-      <ul>
-        <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/0B86274E.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
-        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0x0B86274E&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
-      </ul>
-    </p>
+                </p>
+                <p>
+                    <ul>
+                        <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/0B86274E.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
+                        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0x0B86274E&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
+                    </ul>
+                </p>
 
-    <h3>RPM-GPG-KEY-fedora-11-primary</h3>
-    <p>
-      <pre class="command">pub   4096R/D22E77F2 2009-01-19
+                <h4>RPM-GPG-KEY-fedora-11-primary</h4>
+                <p>
+                    <pre class="command">
+      pub   4096R/D22E77F2 2009-01-19
       Key fingerprint = AEE4 0C04 E345 60A7 1F04  3D7C 1DC5 C758 D22E 77F2
 uid                  Fedora (11) &lt;fedora@fedoraproject.org&gt;</pre>
-    </p>
-    <p>
-      <ul>
-        <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/D22E77F2.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
-        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0xD22E77F2&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
-      </ul>
-    </p>
+                </p>
+                <p>
+                    <ul>
+                        <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/D22E77F2.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
+                        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0xD22E77F2&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
+                    </ul>
+                </p>
 
-    <h3>RPM-GPG-KEY-fedora-extras</h3>
-    <p>
-      <pre class="command">pub   1024D/1AC70CE6 2004-12-14
+                <h4>RPM-GPG-KEY-fedora-extras</h4>
+                <p>
+                    <pre class="command">
+      pub   1024D/1AC70CE6 2004-12-14
       Key fingerprint = 5389 DD00 C5BC 5168 12B4  3272 82ED 9504 1AC7 0CE6
 uid                  Fedora Project &lt;fedora-extras@fedoraproject.org&gt;
 uid                  Fedora Pre Extras Release &lt;pre-extras@fedoraproject.org&gt;
 uid                  Fedora Project &lt;fedora-extras@redhat.com&gt;
 sub   1024g/4E1A9D43 2004-12-14</pre>
-    </p>
-    <p>
-      <ul>
-        <li>${Markup(_('Fedora Extras (version 6 and earlier)'))}</li>
-      </ul>
-    </p>
-    <p>${Markup(_('If you are using Fedora Extras with Fedora Core 6, use this package from &lt;strong&gt;extras&lt;/strong&gt; repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007).  This key is not included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package in Fedora 7 and later releases.'))}</p>
-    <p>
-      <ul>
-        <li>${Markup(_('Path: &lt;a href="file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora"&gt;/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras&lt;/a&gt;'))}</li>
-        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0x1AC70CE6&amp;op=index"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
-      </ul>
-    </p>
+                </p>
+                <p>
+                    <ul>
+                        <li>${Markup(_('Fedora Extras (version 6 and earlier)'))}</li>
+                    </ul>
+                </p>
+                <p>${Markup(_('If you are using Fedora Extras with Fedora Core 6, use this package from &lt;strong&gt;extras&lt;/strong&gt; repository.  This key will no longer be used after Fedora Core 6 and Extras reach EOL (December 7th 2007).  This key is not included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package in Fedora 7 and later releases.'))}</p>
+                <p>
+                    <ul>
+                        <li>${Markup(_('Path: &lt;a href="file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora"&gt;/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-extras&lt;/a&gt;'))}</li>
+                        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0x1AC70CE6&amp;op=index"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
+                    </ul>
+                </p>
 
-    <h3>RPM-GPG-KEY-legacy</h3>
-    <p>
-      <pre class="command">pub   1024D/731002FA 2004-01-19
+                <h4>RPM-GPG-KEY-legacy</h4>
+                <p>
+                  <pre class="command">
+      pub   1024D/731002FA 2004-01-19
       Key fingerprint = D66D 121F 9784 5E7B 2757  8C46 108C 4512 7310 02FA
 uid                  Fedora Legacy (http://www.fedoralegacy.org) &lt;secnotice@fedoralegacy.org&gt;
 sub   2048g/D12E351D 2004-01-19</pre>
-    </p>
-    <p>
-      <ul>
-        <li>Fedora Legacy</li>
-      </ul>
-    </p>
-    <p>${Markup(_('This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package in Fedora 7 and later releases.'))}</p>
+                </p>
+                <p>
+                    <ul>
+                        <li>Fedora Legacy</li>
+                    </ul>
+                </p>
+                <p>${Markup(_('This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package in Fedora 7 and later releases.'))}</p>
             </div>
         </div>
         <div class="clear"></div>

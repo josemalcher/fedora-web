@@ -7,18 +7,34 @@
     <title>${Markup(_('Fedora Project'))}</title>
   </head>
 	<body id="fedoraproject-org">
+
+        <div class="page-header" id="header-verify">
+            <div class="container_16">
+                <div class="grid_16">
+                    <div class="grid_11 alpha">
+                        <h2>Verify your ISO Download</h2>
+                        <p>Make sure the iso downloaded is correct.</p>
+                    </div>
+                    <div class="grid_5 omega page-header-sidebar">
+                        <p><!-- blank space --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container_16">
             <div class="grid_16">
-                <h2>${Markup(_('Verify your ISO download.'))}</h2>
                 <p class="warning">${Markup(_('Please note that the &lt;em&gt;Hash: SHA1&lt;/em&gt; line in the CHECKSUM file is part of the PGP signature.  It does &lt;strong&gt;not&lt;/strong&gt; specify the type of hash used to verify the .iso files.'))}</p>
                 <p class="note">${Markup(_('Windows user?  Follow &lt;a href="http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html"&gt;these instructions&lt;/a&gt; instead.'))}</p>
                 <p>${Markup(_('Once you have downloaded an ISO, verify it for security and integrity.  To verify your ISO, start by downloading the proper CHECKSUM file into the same directory as the ISO:'))}</p>
-                <h3>${Markup(_('Install DVD / Rescue CD'))}</h3>
+
+                <h4>${Markup(_('Install DVD / Rescue CD'))}</h4>
                 <ul>
                     <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-i386-CHECKSUM">i386</a></li>
                     <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-x86_64-CHECKSUM">x86_64</a></li>
                 </ul>
-                <h3>${Markup(_('Live Media'))}</h3>
+
+                <h4>${Markup(_('Live Media'))}</h4>
                 <ul>
                     <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-i686-Live-CHECKSUM">i686</a></li>
                     <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-x86_64-Live-CHECKSUM">x86_64</a></li>

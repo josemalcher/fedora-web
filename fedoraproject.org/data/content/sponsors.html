@@ -7,21 +7,30 @@
     <title>${Markup(_('Fedora Project'))}</title>
   </head>
 	<body id="fedoraproject-org">
-        <div class="container_16">
-            <div class="grid_16">
-                <h2>${Markup(_('Fedora Sponsors'))}</h2>
-                <p>${Markup(_('The Fedora Project is proud to have the following organizations as sponsors:'))}</p>
-                <div id="primary-sponsors">
-                    <div class="psponsor">
-                        <table>
-                            <tr>
-                                <td><a href="http://www.redhat.com/"><img src="${path}/static/images/sponsors/redhat.png" alt="Red Hat, Inc." /></a></td>
-                                <td><p>${Markup(_('&lt;a href="http://redhat.com/"&gt;Red Hat, Inc.&lt;/a&gt; is the primary sponsor for the Fedora Project, providing a variety of resources, including full-time employee support, infrastructure hardware and bandwidth, event funding, and legal counsel.'))}</p></td>
-                            </tr>
-                        </table>
+
+        <div class="page-header" id="header-sponsors">
+            <div class="container_16">
+                <div class="grid_16">
+                    <div class="grid_11 alpha">
+                        <h2>${Markup(_('Fedora Sponsors'))}</h2>
+                        <p>The Fedora Project is proud to have the following organizations as sponsors...</p>
+                    </div>
+                    <div class="grid_5 omega page-header-sidebar">
+                        <p><!-- blank space --></p>
                     </div>
                 </div>
-                <p>${Markup(_('The Fedora Project also thanks the following sponsors for providing substantial support:'))}</p>
+            </div>
+        </div>
+
+        <div class="container_16">
+            <div class="grid_16">
+                <h4>Primary Sponsor</h4>
+                <p>
+                    <a href="http://www.redhat.com/"><img src="${path}/static/images/sponsors/redhat.png" alt="Red Hat, Inc." /></a>
+                    <p>${Markup(_('&lt;a href="http://redhat.com/"&gt;Red Hat, Inc.&lt;/a&gt; is the primary sponsor for the Fedora Project, providing a variety of resources, including full-time employee support, infrastructure hardware and bandwidth, event funding, and legal counsel.'))}</p>
+                </p>
+                
+                <h4>${Markup(_('The Fedora Project also thanks the following sponsors for providing substantial support:'))}</h4>
                 <ul id="sponsors">
                     <!-- Please note!  All images here should be roughly the following dimensions:
                     Horizontal: 120x50
@@ -43,7 +52,7 @@
                     <li style="width: 120px;"><a href="http://www.bodhost.com/"><img src="${path}/static/images/sponsors/bodhost.png" alt="BODHost" /></a></li>
                     <li style="width: 122px;"><a href="http://www.internetx.com/"><img src="${path}/static/images/sponsors/internetx.png" alt="InterNetX" /></a></li>
                 </ul>
-                <p>${Markup(_('Interested in sponsoring something for Fedora?  Contact admin at fedoraproject * org or stop by #fedora-admin on irc.freenode.net.'))}</p>
+                <h5>${Markup(_('Interested in sponsoring something for Fedora?  Contact admin at fedoraproject * org or stop by #fedora-admin on irc.freenode.net.'))}</h5>
             </div>
         </div>
         <div class="clear"></div>

@@ -7,9 +7,25 @@
     <title>${Markup(_('Fedora Project'))}</title>
   </head>
 	<body id="fedoraproject-org">
+
+        <div class="page-header" id="header-counter">
+            <div class="container_16">
+                <div class="grid_16">
+                    <div class="grid_11 alpha">
+                        <h2>${Markup(_('Release Counter'))}</h2>
+                        <p>Counter used for Fedora Releases</p>
+                    </div>
+                    <div class="grid_5 omega page-header-sidebar">
+                        <p><!-- blank space --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="container_16">
             <div class="grid_16">
-                <h2>${Markup(_('Fedora Release Counter'))}</h2>
+                <h3>${Markup(_('Fedora Release Counter'))}</h3>
                 <p>${Markup(_('To add a Fedora Release counter to your own site, simply place the following code wherever you want it to appear:'))}</p>
                 <textarea rows="2" cols="62" style="width: 95%; font-size: 2.35ex;">&lt;script id="fedora-banner" type="text/javascript" src="http://fedoraproject.org/static/js/release-counter-ext.js?lang=${lang}"&gt;&lt;/script&gt;</textarea>
                 <p>${Markup(_('The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, hu, is, it, pt_BR, ru, and tr are supported.  When no language is specified, English will be used.'))}</p>
