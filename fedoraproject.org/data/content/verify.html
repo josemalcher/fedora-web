@@ -24,6 +24,9 @@
 
         <div class="container_16">
             <div class="grid_16">
+
+		<p id="section-nav-top"><a href="/get-fedora">${Markup(_('&amp;#8592; Back to the main "Get Fedora" page'))}.</a></p>
+
                 <p class="warning">${Markup(_('Please note that the &lt;em&gt;Hash: SHA1&lt;/em&gt; line in the CHECKSUM file is part of the PGP signature.  It does &lt;strong&gt;not&lt;/strong&gt; specify the type of hash used to verify the .iso files.'))}</p>
                 <p class="note">${Markup(_('Windows user?  Follow &lt;a href="http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html"&gt;these instructions&lt;/a&gt; instead.'))}</p>
                 <p>${Markup(_('Once you have downloaded an ISO, verify it for security and integrity.  To verify your ISO, start by downloading the proper CHECKSUM file into the same directory as the ISO:'))}</p>
@@ -47,7 +50,7 @@
                 </ul>
                 <p>${Markup(_('Next, import Fedora\'s GPG key(s):'))}</p>
                 <pre class="command">$ curl https://fedoraproject.org/static/fedora.gpg | gpg --import</pre>
-                <p>${Markup(_('You can verify the details of the GPG key(s) &lt;a href="https://fedoraproject.org%s/%s/keys"&gt;here&lt;/a&gt;.') % (path, lang))}</p>
+                <p>${Markup(_('You can verify the details of the GPG key(s) &lt;a href="%s/%s/keys"&gt;here&lt;/a&gt;.') % (path, lang))}</p>
                 <p>${Markup(_('Now, verify that the CHECKSUM file is valid:'))}</p>
                 <pre class="command">$ gpg --verify *-CHECKSUM</pre>
                 <p>${Markup(_('The CHECKSUM file should have a good signature from one of the following keys:'))}</p>
@@ -59,7 +62,10 @@
                 <p>${Markup(_('Finally, now that the CHECKSUM file has been verified, check that the ISO\'s checksum matches:'))}</p>
                 <pre class="command">$ sha256sum -c *-CHECKSUM</pre>
                 <p>${Markup(_('If the output states that the file is valid, then you\'re good to go!'))}</p>
-            </div>
+ 
+
+<p id="section-nav-bottom"><a href="/get-fedora">${Markup(_('&amp;#8592; Back to the main "Get Fedora" page'))}.</a></p>
+           </div>
         </div>
         <div class="clear"></div>
 	</body>

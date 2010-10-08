@@ -7,12 +7,25 @@
     <title>${Markup(_('Fedora Project'))}</title>
   </head>
 	<body id="fedoraproject-org">
+
+  <div class="page-header" id="header-download">
+				<div class="container_16">
+					<div class="grid_16">
+						<div class="grid_11 alpha">
+							<h2><a href="/get-fedora">Get Fedora</a></h2>
+							<p>Fedora is 100% free for you to enjoy and share.</p>
+						</div>
+						<div class="grid_5 omega page-header-sidebar">
+							<p><a href="/about-fedora#freedom">Fedora isn't just free-of-charge. It's free as in freedom. Learn more.</a></p>
+						</div>
+					</div>
+				</div>
+            </div>
+
+
         <div class="container_16">
             <div class="grid_16">
-                <div id="breadcrumbs">
-                    <a href="${path}/${lang}/get-fedora">${Markup(_('&amp;#8592; Back to the main "Get Fedora" page'))}</a>
-                </div>
-                <h2>${Markup(_('Fedora, For You.'))}</h2>
+		<p id="section-nav-top"><a href="/get-fedora">${Markup(_('&amp;#8592; Back to the main "Get Fedora" page'))}.</a></p>
                 <p class="note">${Markup(_('After downloading an ISO, &lt;a href="https://fedoraproject.org%s/%s/verify"&gt;verify&lt;/a&gt; it.') % (path, lang))}</p>
 
                 <h3 class="header">${Markup(_('Install Media'))}</h3>
@@ -129,7 +142,7 @@
                     </li>
                 </ul>
 
-                <h3 class="header">${Markup(_('Let me look around...'))}</h3>
+                <h3 class="header">${Markup(_('Alternative Downloads'))}</h3>
                 <ul class="download">
                     <li><a href="http://torrent.fedoraproject.org/">${Markup(_('See all torrents'))}</a></li>
                     <li><a href="http://mirrors.fedoraproject.org/publiclist/Fedora/13/">${Markup(_('See all mirrors'))}</a></li>
@@ -144,6 +157,9 @@
                     <li>${Markup(_('Can\'t afford the price of installation media? Request Fedora installation media from the &lt;a href="http://fedoraproject.org/wiki/Distribution/FreeMedia"&gt;Fedora Free Media Program&lt;/a&gt;.'))}</li>
                 </ul>
                 <p>${Markup(_('When you place an order with a &lt;a href="http://fedoraproject.org/wiki/Distribution/SponsoredMedia"&gt;participating vendor&lt;/a&gt;, you may also sponsor the cost of media for users who cannot afford it, such as people in developing nations. Consider participating in the &lt;a href="http://fedoraproject.org/wiki/Distribution/SponsoredMedia"&gt;Fedora Sponsored Media Program&lt;/a&gt;.'))}</p>
+
+<p id="section-nav-bottom"><a href="/get-fedora">${Markup(_('&amp;#8592; Back to the main "Get Fedora" page'))}.</a></p>
+
                 <xi:include href="../templates/content-export-regulations.html" />
             </div>
         </div>

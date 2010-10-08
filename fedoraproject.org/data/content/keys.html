@@ -23,6 +23,9 @@
 
         <div class="container_16">
             <div class="grid_16">
+
+
+		<p id="section-nav-top"><a href="/get-fedora">${Markup(_('&amp;#8592; Back to the main "Get Fedora" page'))}.</a></p>
                 <h3>${Markup(_('GPG keys used by Fedora Project'))}</h3>
                 <h4>${Markup(_('How does Fedora Project use GPG keys to sign packages?'))}</h4>
                 <p>${Markup(_('Each stable RPM package that is published by Fedora Project is signed with a GPG signature.  By default, yum and the graphical update tools will verify these signatures and refuse to install any packages that are not signed or have bad signatures.  You should always verify the signature of a package before you install it.  These signatures ensure that the packages you install are what was produced by the Fedora Project and have not been altered (accidentally or maliciously) by any mirror or website that is providing the packages.'))}</p>
@@ -263,6 +266,8 @@ sub   2048g/D12E351D 2004-01-19</pre>
                     </ul>
                 </p>
                 <p>${Markup(_('This key was used for packages that were released by Fedora Legacy project to update releases that reached their official EOL.  The Fedora Legacy project no longer exists, so no this key will no longer be used to sign packages.  This key is not included in the &lt;strong&gt;fedora-release&lt;/strong&gt; package in Fedora 7 and later releases.'))}</p>
+
+<p id="section-nav-bottom"><a href="/get-fedora">${Markup(_('&amp;#8592; Back to the main "Get Fedora" page'))}.</a></p>
             </div>
         </div>
         <div class="clear"></div>
