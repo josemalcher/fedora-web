@@ -1,3 +1,13 @@
+<?python
+# Planet
+fpp = feedparse('http://planet.fedoraproject.org/rss20.xml')
+
+# Announce List
+fda = feedparse('https://lists.fedoraproject.org/rss/announce.xml')
+
+# Devel List
+fdd = feedparse('https://lists.fedoraproject.org/rss/devel.xml')
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
   xmlns:py="http://genshi.edgewall.org/"
@@ -51,7 +61,7 @@
             </div>
             <div class="clear"></div>
             <div class="grid_5">
-                <h3>Upcoming Events</h3>
+                <h4>Upcoming Events</h4>
                 <div class="grid_2 alpha community-event">
                     <h5>June</h5>
                     <p>8-10</p>
@@ -90,36 +100,24 @@
                 <div class="clear"></div>
             </div>
             <div class="grid_5">
-                <h3>Latest Announcements</h3>
+                <h4>Latest Announcements</h4>
                 <ul>
-                    <li>
-                        <h5>Nunc sapien augue, eleifend in facilisis eu</h5>
-                        <p class="community-dates">07 July, 2010, Fedora Weekly News</p>
+                    <li py:for="entry in fda.entries[:2]">
+                        <h5><a href="${entry.link}">${entry.title}</a></h5>
+                        <p class="community-dates">${Markup(entry.description)}</p>
                     </li>
-                    <li>
-                        <h5>Nunc sapien augue, eleifend in facilisis eu</h5>
-                        <p class="community-dates">07 July, 2010, Fedora Weekly News</p>
-                    </li>
-                    <li>
-                        <h5>Nunc sapien augue, eleifend in facilisis eu</h5>
-                        <p class="community-dates">07 July, 2010, Fedora Weekly News</p>
+                    <li py:for="entry in fdd.entries[:2]">
+                        <h5><a href="${entry.link}">${entry.title}</a></h5>
+                        <!-- <p class="community-dates">${Markup(entry.description)}</p> -->
                     </li>
                 </ul>
             </div>
             <div class="grid_6">
-                <h3>Latest Fedora Planet posts</h3>
+                <h4>Latest Fedora Planet posts</h4>
                 <ul>
-                    <li>
-                        <h5>Nunc sapien augue, eleifend in facilisis eu</h5>
-                        <p class="community-dates">07 July, 2010, Fedora Weekly News</p>
-                    </li>
-                    <li>
-                        <h5>Nunc sapien augue, eleifend in facilisis eu</h5>
-                        <p class="community-dates">07 July, 2010, Fedora Weekly News</p>
-                    </li>
-                    <li>
-                        <h5>Nunc sapien augue, eleifend in facilisis eu</h5>
-                        <p class="community-dates">07 July, 2010, Fedora Weekly News</p>
+                    <li py:for="entry in fpp.entries[:5]">
+                        <h5><a href="${entry.link}">${entry.title}</a></h5>
+                        <p class="community-dates">${_(entry.date)}</p>
                     </li>
                 </ul>
             </div>
