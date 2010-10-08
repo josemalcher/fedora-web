@@ -26,9 +26,17 @@
         <div class="container_16">
             <div class="grid_16">
                 <h3>${Markup(_('Fedora Release Counter'))}</h3>
+		<h4>${('Help us spread the excitement!')}</h4>
+		<p>${_('Are you as excited about the upcoming Fedora release as we are? Share in the fun of the countdown - add a Fedora release countdown widget to your website!')}</p>
+		<p>${_('When placed on your website, the counter will appear just like this:')}</p>
+<script id="fedora-banner" type="text/javascript" src="http://fedoraproject.org/static/js/release-counter-ext.js?lang=${lang}"></script>
+
+		<h4>${_('How to add the counter to your website')}</h4>
                 <p>${Markup(_('To add a Fedora Release counter to your own site, simply place the following code wherever you want it to appear:'))}</p>
                 <textarea rows="2" cols="62" style="width: 95%; font-size: 2.35ex;">&lt;script id="fedora-banner" type="text/javascript" src="http://fedoraproject.org/static/js/release-counter-ext.js?lang=${lang}"&gt;&lt;/script&gt;</textarea>
                 <p>${Markup(_('The lang parameter can be changed to display the counter in a different language.  Currently, the values de, en, hu, is, it, pt_BR, ru, and tr are supported.  When no language is specified, English will be used.'))}</p>
+
+<p id="section-nav-bottom"><a href="/">&lt; Return to the main Fedora website.</a></p>
             </div>
         </div>
         <div class="clear"></div>
