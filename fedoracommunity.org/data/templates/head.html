@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  py:strip="">
+<div class="container_16">
+    <div class="grid_10" id="site-heading">
+        <h1><a href="${path}/index"><span id="logo">Fedora</span> <span>community.org</span></a></h1>
+        <h2>${_('Region-Specific Fedora Websites')}</h2>
+    </div>
+    <div class="grid_6">
+        <div id="site-nav">
+            <ul>
+                <li><a href="http://fedoraproject.org/">${_('Home')}</a></li>
+                <li><a href="http://fedoraproject.org/get-fedora">${_('Get Fedora')}</a></li>
+                <li><a href="http://fedoraproject.org/get-help">${_('Help')}</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clear"></div>		
+    <div id="header-globe" class="grid_16">
+	<img id="worldmap" alt="Map of the world" src="static/images/worldmap.png"/>
+														
+<!--   
+       <div id="worldmap-wrapper" style="position: relative;">
+               <img src="images/worldmap-emea.png" style="position: absolute; top: 0px; left: 0px; z-index: 1;"/>
+               <img src="images/highlight-apac-227-11.png" style="position: absolute; left: 227px; top: 11px; z-index: 2; opacity: 0;"/>   
+               <img src="images/highlight-emea-135-3.png" style="position: absolute; left: 135px; top: 3px; z-index: 2; opacity: 0;"/>
+               <img src="images/highlight-latam-41-74.png" style="position: absolute; left: 41px; top: 74px; z-index: 2; opacity: 0;"/>
+               <img src="images/highlight-northam-6-4.png" style="position: absolute; left: 6px; top: 4px; z-index: 2; opacity: 0;"/>
+               <img src="images/worldmap.png" style="position: absolute; top: 0px; left: 0px; z-index: 1; opacity: 0;"/>
+               <img src="images/worldmap-emea.png" alt="Map of the world" id="worldmap" style="position: absolute; top: 0px; left: 0px; z-index: 3; opacity: 0;"/>
+       <map name="worldmap-areas">  
+
+	 <area alt="North America" href="#" coords="42,74, 49,75, 56,82, 63,84, 85,84, 128,52, 129,25, 136,6, 117,5, 37,18, 14,32, 8,41, 36,35, 41,51, 36,60, 37,71, 42,74" shape="poly" id="worldmap-northam"/> 
+	 <area alt="Latin America" href="#" coords="42,74, 49,75, 56,82, 63,84, 84,87, 105,94, 115,111, 122,113, 126,121, 146,129, 146,138, 139,158, 120,183, 114,188, 114,202, 122,206, 107,206, 98,194, 97,152, 89,147, 80,131, 79,124, 85,113, 48,93, 42,82, 42,74" shape="poly" id="worldmap-latam"/>  
+ 	<area alt="Europe, Middle East, and Africa" href="#" coords="244,69, 252,84, 259,83, 264, 88, 250,116, 240,128, 241,144, 251,138, 253,145, 248,159, 242,160, 240,147, 222,173, 209,174, 200,148, 202,137, 196,117, 175,116, 163,102, 163,87, 173,70, 172,55, 183,55, 176,44, 171,42, 178,29, 171,25, 142,24, 136,6, 164,1, 171,6, 172,22, 179,29, 184,30, 190,39, 195,37, 192,31, 191,24, 206,13, 220,12, 221,21, 230,24, 229,52, 233,58, 241,60, 249,64, 244,69" shape="poly" id="worldmap-emea"/>  
+ 	<area alt="Asia-Pacific" href="#" coords="244,69, 252,84, 259,83, 279,92, 286,112, 295,116, 294,100, 303,92, 312,104, 310,115, 323,134, 347,142, 329,153, 328,176, 352,173, 358,189, 382,194, 404,182, 404, 140, 382,122, 359,119, 348,98, 343,82, 363,72, 362,53, 368,44, 373,31, 361,20, 276,10, 230,24, 229,52, 233,58, 241,60, 249,64, 244,69" shape="poly" id="worldmap-apac"/>
+       </map>
+       </div>
+
+-->
+
+        <img alt="Map of the world" src="static/images/worldmap.png"/>
+        <p>${_('Fedora Project contributors in various countries maintain their own region-specific content. Each site is solely responsible for the content they post.')}</p>
+        <p>${_('A list of region-specific websites is available below.')}</p>
+    </div>
+    <div class="clear"></div>
+    <div id="continent-nav" class="grid_16">
+        <a href="apac"><div class="grid_3 alpha asia-head"><img class="continent-icon" src="static/images/tab_label-apac.png" /><h3>${_('Asia-Pacific')}</h3></div></a>
+        <a href="emea"><div class="grid_5 africa-head"><img class="continent-icon" src="static/images/tab_label-emea.png" /><h3>${_('Europe, Middle East, and Africa')}</h3></div></a>
+        <a href="latam"><div class="grid_4 america-head"><img class="continent-icon" src="static/images/tab_label-latam.png" /><h3>${_('Latin America')}</h3></div></a>
+        <a href="northam"><div class="grid_4 omega europe-head"><img class="continent-icon" src="static/images/tab_label-na.png" /><h3>${_('North America')}</h3></div></a>
+    </div>
+</div>
+</html>

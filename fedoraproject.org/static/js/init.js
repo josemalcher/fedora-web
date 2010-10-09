@@ -7,8 +7,8 @@ $(document).ready(function(){
 		slicePoint: 350,
 		widow: 1,
 		userCollapse: true,
-		expandText: 'Read full export regulations <img src="/static/images/arrow_down.png">',
-		userCollapseText: 'Hide full export regulations <img src="/static/images//arrow_up.png">'
+		expandText: 'Read full export regulations',
+		userCollapseText: 'Hide full export regulations'
 	});
 
 	// setup ul.tabs to work as tabs for each div directly under div.panes
@@ -31,6 +31,40 @@ $(document).ready(function(){
 	// force overlay
 	$("img[rel]").overlay();
 
+    // slideshow
+    $('.simpleSlideShow').slideShow({
+        interval: 6
+    });
+
+
+    // redirect download links to splash page
+    $("a.download-splash").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+
+        // this passes the URL path to the splash page
+        window.location = 'download-splash?file='+linkLocation;
+	});
+
+
+    // splash download page stuff
+    if (/.*download-splash.*/i.test(window.location.href)) {
+        $("p.download-path").ready(function(){
+            // get file path from URL, then display it
+            var file_url = $.query.get('file');
+            $("p.download-path").prepend( '<a href="'+ file_url +'">'+ file_url +'</a>' );
+            setTimeout(function() { window.open(file_url) }, "5000");
+        });
+    }
+
+    $(".tweet").tweet({
+        username: "fedora",
+        count: 1,
+        intro_text: null,
+        outro_text: null,
+        loading_text: "Loading Fedora tweets..."
+    });
+
 	// main site banners
 	// see: banner.js
 	var choices = [];
@@ -40,29 +74,17 @@ $(document).ready(function(){
 	}
 
 	var choice = Math.floor(Math.random()*(choices.length));
-	var b_image = banners[choices[choice]][0];
-	var b_alt = banners[choices[choice]][1];
-	var b_url = banners[choices[choice]][2];
 
-	var b_bannerlink = document.getElementById("banner").getElementsByTagName("a")[0];
-	b_bannerlink.setAttribute("href", b_url);
-
-	var b_bannerimg = document.getElementById("banner").getElementsByTagName("img")[0];
-	b_bannerimg.setAttribute("src", b_image);
-	b_bannerimg.setAttribute("alt", b_alt);
-
+    $("#fedora-banners img").attr("src", banners[choices[choice]][0]);
+    $("#fedora-banners img").attr("alt", banners[choices[choice]][1]);
+    $("#fedora-banners img").attr("href", banners[choices[choice]][2]);
 
 	// hosting sponsor banners
 	// see: /sponsors/*.js
-	var s_image = sponsor_banner[0];
-	var s_alt = sponsor_banner[1];
-	var s_url = sponsor_banner[2];
-
-	var s_bannerlink = document.getElementById("hosting-sponsor").getElementsByTagName("a")[0];
-	s_bannerlink.setAttribute("href", s_url);
-
-	var s_bannerimg = document.getElementById("hosting-sponsor").getElementsByTagName("img")[0];
-	s_bannerimg.setAttribute("src", s_image);
-	s_bannerimg.setAttribute("alt", s_alt);
+    $("#hosting-sponsor img").attr("src", sponsor_banner[0]);
+    $("#hosting-sponsor img").attr("alt", sponsor_banner[1]);
+    $("#hosting-sponsor img").attr("href", sponsor_banner[2]);
 
 });
+
+

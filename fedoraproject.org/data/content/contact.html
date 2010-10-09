@@ -6,32 +6,53 @@
   <head>
     <title>${Markup(_('Contact - Fedora Project'))}</title>
   </head>
-  <body class="home">
-    <h2>${Markup(_('Contact'))}</h2>
-    <p>${Markup(_('The following are a list of contacts for various projects, queries and issues related to the Fedora Project.'))}</p>
+	<body id="fedoraproject-org">
 
-    <h3>${Markup(_('End User Support'))}</h3>
-    <p>${Markup(_('For end-user help or to work with the development team, &lt;a href="https://fedoraproject.org/wiki/Communicate"&gt;communicate with the Fedora community&lt;/a&gt;. For other requests, email the appropriate team lead or contact listed here.'))}</p>
+        <div class="page-header" id="header-contact">
+            <div class="container_16">
+                <div class="grid_16">
+                    <div class="grid_11 alpha">
+                        <h2>${Markup(_('Fedora Contacts'))}</h2>
+                        <p>${_('Contact list of various projects and groups.')}</p>
+                    </div>
+                    <div class="grid_5 omega page-header-sidebar">
+                        <p><!-- blank space --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <h3>${Markup(_('Legal Issues'))}</h3>
-    <p>${Markup(_('If you have any legal questions that can be discussed in public, post to the &lt;a href="http://lists.fedoraproject.org/mailman/listinfo/legal"&gt;legal&lt;/a&gt; list, or if you have any private legal questions send a mail to legal AT fedoraproject.org.'))}</p>
 
-    <h3>${Markup(_('Press'))}</h3>
-    <p>${Markup(_('For Press related questions, please contact &lt;a href="mailto:press@fedoraproject.org"&gt;press@fedoraproject.org&lt;/a&gt;.  This email address is not for general user support questions.'))}</p>
-    
-    <h3>${Markup(_('Website Issues'))}</h3>
-    <p>${Markup(_('If you have any queries or issues related to Fedora Project websites (fedoraproject.org, fedorahosted.org, and fedorapeople.org), please contact &lt;a href="mailto:webmaster@fedoraproject.org"&gt;webmaster@fedoraproject.org&lt;/a&gt;.'))}</p>
-    <p>${Markup(_('&lt;strong&gt;NOTE: &lt;a href="mailto:webmaster@fedoraproject.org"&gt;webmaster@fedoraproject.org&lt;/a&gt; is NOT to be used for support requests. If you need End User support please visit the &lt;a href="https://fedoraproject.org/wiki/Communicate"&gt;Communicate page on the Wiki&lt;/a&gt;. All emails to &lt;a href="mailto:webmaster@fedoraproject.org"&gt;webmaster@fedoraproject.org&lt;/a&gt; are publicly archived.&lt;/strong&gt;'))}</p>
+        <div class="container_16">
+            <div class="grid_16">
+                <h3>${Markup(_('Contact'))}</h3>
+                <p>${Markup(_('The following are a list of contacts for various projects, queries and issues related to the Fedora Project.'))}</p>
 
-    <h3>${Markup(_('Apache Test Page'))}</h3>
-    <p><img src="${path}/static/images/fedora-test-page.jpg" alt="${Markup(_('Fedora Test page'))}" /></p>
-    <p>${Markup(_('If you visit a website and see a Fedora Test page similar to the one pictured above, don&rsquo;t be alarmed. It simply means that the website you are visiting is running an Apache web server that has either has not been configured, is currently experiencing problems or is undergoing routine maintenance. Read more about the &lt;a href="http://fedoraproject.org/wiki/Server_Test_Page"&gt;Fedora Test page via our Wiki&lt;/a&gt;.'))}</p>
-    <p>${Markup(_('&lt;strong&gt;NOTE: If the domain is not one of fedoraproject.org, fedorahosted.org, or fedorapeople.org, then it is NOT owned by the Fedora Project and as such we are NOT to be contacted with questions about that domain. Please contact the owner of the website and ask them to fix the problem. In general, mail sent to the name &ldquo;webmaster&rdquo; and directed to the website&rsquo;s domain should reach the appropriate person. So for example, if you experienced problems while visiting www.example.com, you should send e-mail to &ldquo;webmaster@example.com&rdquo;.&lt;/strong&gt;'))}</p>
+                <h4>${Markup(_('End User Support'))}</h4>
+                <p>${Markup(_('For end-user help or to work with the development team, &lt;a href="https://fedoraproject.org/wiki/Communicate"&gt;communicate with the Fedora community&lt;/a&gt;. For other requests, email the appropriate team lead or contact listed here.'))}</p>
 
-    <h3>${Markup(_('Mirror Problems'))}</h3>
-    <p>${Markup(_('If you encounter any problems or have questions regarding Fedora project mirrors, please contact &lt;a href="mailto:mirror-admin@fedoraproject.org"&gt;mirror-admin@fedoraproject.org&lt;/a&gt;.'))}</p>
+                <h4>${Markup(_('Legal Issues'))}</h4>
+                <p>${Markup(_('If you have any legal questions that can be discussed in public, post to the &lt;a href="http://lists.fedoraproject.org/mailman/listinfo/legal"&gt;legal&lt;/a&gt; list, or if you have any private legal questions send a mail to legal AT fedoraproject.org.'))}</p>
 
-    <h3>${Markup(_('Other Contacts'))}</h3>
-    <p>${Markup(_('For a list of other contacts please see the &lt;a href="https://fedoraproject.org/wiki/Contact"&gt;Contact page on the Wiki&lt;/a&gt;.'))}</p>
-  </body>
+                <h4>${Markup(_('Press'))}</h4>
+                <p>${Markup(_('For Press related questions, please contact &lt;a href="mailto:press@fedoraproject.org"&gt;press@fedoraproject.org&lt;/a&gt;.  This email address is not for general user support questions.'))}</p>
+
+                <h4>${Markup(_('Website Issues'))}</h4>
+                <p>${Markup(_('If you have any queries or issues related to Fedora Project websites (fedoraproject.org, fedorahosted.org, and fedorapeople.org), please contact &lt;a href="mailto:webmaster@fedoraproject.org"&gt;webmaster@fedoraproject.org&lt;/a&gt;.'))}</p>
+                <p>${Markup(_('&lt;strong&gt;NOTE: &lt;a href="mailto:webmaster@fedoraproject.org"&gt;webmaster@fedoraproject.org&lt;/a&gt; is NOT to be used for support requests. If you need End User support please visit the &lt;a href="https://fedoraproject.org/wiki/Communicate"&gt;Communicate page on the Wiki&lt;/a&gt;. All emails to &lt;a href="mailto:webmaster@fedoraproject.org"&gt;webmaster@fedoraproject.org&lt;/a&gt; are publicly archived.&lt;/strong&gt;'))}</p>
+
+                <h4>${Markup(_('Apache Test Page'))}</h4>
+                <p><img src="${path}/static/images/fedora-test-page.jpg" alt="${Markup(_('Fedora Test page'))}" /></p>
+                <p>${Markup(_('If you visit a website and see a Fedora Test page similar to the one pictured above, don&rsquo;t be alarmed. It simply means that the website you are visiting is running an Apache web server that has either has not been configured, is currently experiencing problems or is undergoing routine maintenance. Read more about the &lt;a href="http://fedoraproject.org/wiki/Server_Test_Page"&gt;Fedora Test page via our Wiki&lt;/a&gt;.'))}</p>
+                <p>${Markup(_('&lt;strong&gt;NOTE: If the domain is not one of fedoraproject.org, fedorahosted.org, or fedorapeople.org, then it is NOT owned by the Fedora Project and as such we are NOT to be contacted with questions about that domain. Please contact the owner of the website and ask them to fix the problem. In general, mail sent to the name &ldquo;webmaster&rdquo; and directed to the website&rsquo;s domain should reach the appropriate person. So for example, if you experienced problems while visiting www.example.com, you should send e-mail to &ldquo;webmaster@example.com&rdquo;.&lt;/strong&gt;'))}</p>
+
+                <h4>${Markup(_('Mirror Problems'))}</h4>
+                <p>${Markup(_('If you encounter any problems or have questions regarding Fedora project mirrors, please contact &lt;a href="mailto:mirror-admin@fedoraproject.org"&gt;mirror-admin@fedoraproject.org&lt;/a&gt;.'))}</p>
+
+                <h4>${Markup(_('Other Contacts'))}</h4>
+                <p>${Markup(_('For a list of other contacts please see the &lt;a href="https://fedoraproject.org/wiki/Contact"&gt;Contact page on the Wiki&lt;/a&gt;.'))}</p>
+            </div>
+        </div>
+        <div class="clear"></div>
+	</body>
 </html>

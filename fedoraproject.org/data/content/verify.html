@@ -6,58 +6,67 @@
   <head>
     <title>${Markup(_('Fedora Project'))}</title>
   </head>
-  <body>
-    <h2>${Markup(_('Verify your ISO download.'))}</h2>
-    <p class="warning">
-    ${Markup(_('Please note that the &lt;em&gt;Hash: SHA1&lt;/em&gt; line in the CHECKSUM file is part of the PGP signature.  It does &lt;strong&gt;not&lt;/strong&gt; specify the type of hash used to verify the .iso files.'))}
-    </p>
-    <p class="note">
-    ${Markup(_('Windows user?  Follow &lt;a href="http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html"&gt;these instructions&lt;/a&gt; instead.'))}
-    </p>
-    <p>
-    ${Markup(_('Once you have downloaded an ISO, verify it for security and integrity.  To verify your ISO, start by downloading the proper CHECKSUM file into the same directory as the ISO:'))}
-    </p>
-    <h3>${Markup(_('Install DVD / Rescue CD'))}</h3>
-    <ul>
-      <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-i386-CHECKSUM">i386</a></li>
-      <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-x86_64-CHECKSUM">x86_64</a></li>
-    </ul>
-    <h3>${Markup(_('Live Media'))}</h3>
-    <ul>
-      <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-i686-Live-CHECKSUM">i686</a></li>
-      <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-x86_64-Live-CHECKSUM">x86_64</a></li>
-      <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-i686-Live-KDE-CHECKSUM">i686 (KDE)</a></li>
-      <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-x86_64-Live-KDE-CHECKSUM">x86_64 (KDE)</a></li>
-      <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-i686-Live-LXDE-CHECKSUM">i686 (LXDE)</a></li>
-      <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-x86_64-Live-LXDE-CHECKSUM">x86_64 (LXDE)</a></li>
-      <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-i686-Live-XFCE-CHECKSUM">i686 (XFCE)</a></li>
-      <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-x86_64-Live-XFCE-CHECKSUM">x86_64 (XFCE)</a></li>
-    </ul>
-    <p>
-    ${Markup(_('Next, import Fedora\'s GPG key(s):'))}
-    </p>
-    <pre class="command">$ curl https://fedoraproject.org/static/fedora.gpg | gpg --import</pre>
-    <p>
-    ${Markup(_('You can verify the details of the GPG key(s) &lt;a href="https://fedoraproject.org%s/%s/keys"&gt;here&lt;/a&gt;.') % (path, lang))}
-    </p>
-    <p>
-    ${Markup(_('Now, verify that the CHECKSUM file is valid:'))}
-    </p>
-    <pre class="command">$ gpg --verify *-CHECKSUM</pre>
-    <p>
-    ${Markup(_('The CHECKSUM file should have a good signature from one of the following keys:'))}
-    </p>
-    <ul>
-        <li><code>97A1071F</code> - ${Markup(_('Fedora 14'))}</li>
-        <li><code>E8E40FDE</code> - ${Markup(_('Fedora 13'))}</li>
-        <li><code>57BBCCBA</code> - ${Markup(_('Fedora 12'))}</li>
-    </ul>
-    <p>
-    ${Markup(_('Finally, now that the CHECKSUM file has been verified, check that the ISO\'s checksum matches:'))}
-    </p>
-    <pre class="command">$ sha256sum -c *-CHECKSUM</pre>
-    <p>
-    ${Markup(_('If the output states that the file is valid, then you\'re good to go!'))}
-    </p>
-</body>
+	<body id="fedoraproject-org">
+
+        <div class="page-header" id="header-verify">
+            <div class="container_16">
+                <div class="grid_16">
+                    <div class="grid_11 alpha">
+                        <h2>Verify your ISO Download</h2>
+                        <p>Make sure the iso downloaded is correct.</p>
+                    </div>
+                    <div class="grid_5 omega page-header-sidebar">
+                        <p><!-- blank space --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_16">
+            <div class="grid_16">
+
+		<p id="section-nav-top"><a href="/get-fedora">${Markup(_('&amp;#8592; Back to the main "Get Fedora" page'))}.</a></p>
+
+                <p class="warning">${Markup(_('Please note that the &lt;em&gt;Hash: SHA1&lt;/em&gt; line in the CHECKSUM file is part of the PGP signature.  It does &lt;strong&gt;not&lt;/strong&gt; specify the type of hash used to verify the .iso files.'))}</p>
+                <p class="note">${Markup(_('Windows user?  Follow &lt;a href="http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html"&gt;these instructions&lt;/a&gt; instead.'))}</p>
+                <p>${Markup(_('Once you have downloaded an ISO, verify it for security and integrity.  To verify your ISO, start by downloading the proper CHECKSUM file into the same directory as the ISO:'))}</p>
+
+                <h4>${Markup(_('Install DVD / Rescue CD'))}</h4>
+                <ul>
+                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-i386-CHECKSUM">i386</a></li>
+                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-x86_64-CHECKSUM">x86_64</a></li>
+                </ul>
+
+                <h4>${Markup(_('Live Media'))}</h4>
+                <ul>
+                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-i686-Live-CHECKSUM">i686</a></li>
+                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-x86_64-Live-CHECKSUM">x86_64</a></li>
+                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-i686-Live-KDE-CHECKSUM">i686 (KDE)</a></li>
+                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-x86_64-Live-KDE-CHECKSUM">x86_64 (KDE)</a></li>
+                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-i686-Live-LXDE-CHECKSUM">i686 (LXDE)</a></li>
+                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-x86_64-Live-LXDE-CHECKSUM">x86_64 (LXDE)</a></li>
+                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-i686-Live-XFCE-CHECKSUM">i686 (XFCE)</a></li>
+                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-13-x86_64-Live-XFCE-CHECKSUM">x86_64 (XFCE)</a></li>
+                </ul>
+                <p>${Markup(_('Next, import Fedora\'s GPG key(s):'))}</p>
+                <pre class="command">$ curl https://fedoraproject.org/static/fedora.gpg | gpg --import</pre>
+                <p>${Markup(_('You can verify the details of the GPG key(s) &lt;a href="%s/%s/keys"&gt;here&lt;/a&gt;.') % (path, lang))}</p>
+                <p>${Markup(_('Now, verify that the CHECKSUM file is valid:'))}</p>
+                <pre class="command">$ gpg --verify *-CHECKSUM</pre>
+                <p>${Markup(_('The CHECKSUM file should have a good signature from one of the following keys:'))}</p>
+                <ul>
+                    <li><code>97A1071F</code> - ${Markup(_('Fedora 14'))}</li>
+                    <li><code>E8E40FDE</code> - ${Markup(_('Fedora 13'))}</li>
+                    <li><code>57BBCCBA</code> - ${Markup(_('Fedora 12'))}</li>
+                </ul>
+                <p>${Markup(_('Finally, now that the CHECKSUM file has been verified, check that the ISO\'s checksum matches:'))}</p>
+                <pre class="command">$ sha256sum -c *-CHECKSUM</pre>
+                <p>${Markup(_('If the output states that the file is valid, then you\'re good to go!'))}</p>
+ 
+
+<p id="section-nav-bottom"><a href="/get-fedora">${Markup(_('&amp;#8592; Back to the main "Get Fedora" page'))}.</a></p>
+           </div>
+        </div>
+        <div class="clear"></div>
+	</body>
 </html>
