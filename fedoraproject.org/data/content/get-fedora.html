@@ -10,11 +10,11 @@
             <div class="page-header" id="header-download">
         <div class="container_16">
                   <div class="grid_11">
-                     <h2>Get Fedora</h2>
-                     <p>Fedora is 100% free for you to enjoy and share.</p>
+                     <h2>${_('Get Fedora')}</h2>
+                     <p>${_('Fedora is 100% free for you to enjoy and share.')}</p>
                   </div>
                   <div class="grid_5 page-header-sidebar">
-                     <p><a href="/about-fedora#freedom">Fedora isn't just free-of-charge. It's free as in freedom. Learn more.</a></p>
+                     <p><a href="/about-fedora#freedom">${_('Fedora isn\'t just free-of-charge. It\'s free as in freedom. Learn more.')}</a></p>
                   </div>
             </div>
             </div>
@@ -31,8 +31,8 @@
                     <div class="grid_10 omega">
                         <p>${_('This is the latest version of the Fedora Linux operating system\'s Desktop Edition. It\'s everything you need to try out Fedora — you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop if you like.')}</p>
                         <p><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Live/i686/Fedora-13-i686-Live.iso" class="big-button download-splash">${_('Download Now!')}</a></p>
-                        <p class="fine-print">675 MB, ISO format image for Intel-compatible PCs (32-bit)</p>
-                        <p><a href="${path}/${lang}/get-fedora-options">More download options...</a></p>
+                        <p class="fine-print">${_('%(size)s MB, ISO format image for Intel-compatible PCs (%(arch)s-bit)') % {'size':'675', 'arch':'32'}}</p>
+                        <p><a href="${path}/${lang}/get-fedora-options">${_('More download options...')}</a></p>
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -57,18 +57,18 @@
             <div class="grid_4" id="right-sidebar" >
                 <h4>${_('What will I need?')}</h4>
                 <ul class="checkmark-list">
-                    <li>${_('A blank CD or DVD')} <em><strong>${_(' or ')}</strong></em> ${Markup(_('a blank %s USB stick.') % ('1GB+'))} </li>
+                    <li>${_('A blank CD or DVD')} <em><strong>${_(' or ')}</strong></em> ${Markup(_('a blank %sGB+ USB stick.') % ('1'))} </li>
                     <li>${Markup(_('A %s or faster processor') % '400 MHz')}</li>
-                    <li>${Markup(_('At least %s memory (RAM), %s recommended for best performance') % ('512 MB', '1 GB'))}</li>
-                    <li>${Markup(_('At least %s hard drive space (only required for installation)') % '10 GB')}</li>
+                    <li>${Markup(_('At least %s MB memory (RAM), %s GB recommended for best performance') % ('512', '1'))}</li>
+                    <li>${Markup(_('At least %s GB hard drive space (only required for installation)') % '10')}</li>
                 </ul>
 
 		<h4>${_('What do I do?')}</h4>
 			<ul class="checkmark-list">
-				<li>First, <a href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Live/i686/Fedora-13-i686-Live.iso">download a Fedora ISO image</a>.</li>
+				<li>${_('First,')} <a href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Live/i686/Fedora-13-i686-Live.iso">${_('download a Fedora ISO image')}</a>.</li>
 
-				<li>To install Fedora using a USB stick,  <a href="http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Guide/Making_USB_Media.html">follow these instructions.</a></li>
-				<li>To install Fedora using a blank CD or DVD,  <a href="http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Guide/sn-making-media.html#sn-making-disc-media">follow these instructions.</a></li>
+				<li>${_('To install Fedora using a USB stick')},  <a href="http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Guide/Making_USB_Media.html">${_('follow these instructions.')}</a></li>
+				<li>${_('To install Fedora using a blank CD or DVD')},  <a href="http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Guide/sn-making-media.html#sn-making-disc-media">${_('follow these instructions.')}</a></li>
 			</ul>
 
 
@@ -83,7 +83,7 @@
                 </ul>
 
 
-                <h4>There's More Fedora!</h4>
+                <h4>${_('There\'s More Fedora!')}</h4>
                 <a href="http://spins.fedoraproject.org"><img src="/static/images/banners/spins-website.png" /></a>
 
 
