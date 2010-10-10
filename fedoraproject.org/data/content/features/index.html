@@ -18,7 +18,8 @@
                     </div>
                 </div>
             </div>
-          <div class="grid_16" id="features-nav-top">
+            <div class="container_16">
+                <div class="grid_16" id="features-nav-top">
                     <!-- tabs -->
                     <ul class="grid_16 tabs">
                         <li><a href="#overview">${_('Overview')}</a></li>
@@ -30,95 +31,80 @@
                     </ul>
                 </div>
                 <div class="clear"></div>
+            </div>
 
             <div class="container_16">
 
-                <div class="container_16" id="features-summary">
-                    <div class="grid_16 panes">
-                        <h3>${_('Overview')}</h3>
-
-		<h4>${_('What is Fedora, exactly?')}</h4>
-		<p>${Markup(_('Fedora is a &lt;strong&gt;Linux-based &lt;a href="http://en.wikipedia.org/wiki/Operating_system"&gt;operating system&lt;/a&gt;&lt;/strong&gt;, a suite of software that makes your computer run. You can use the Fedora operating system to replace or to run alongside of other operating systems such as &lt;a href="http://en.wikipedia.org/wiki/Windows"&gt;Microsoft Windows (TM)&lt;/a&gt; or &lt;a href="http://en.wikipedia.org/wiki/Os_x"&gt;Mac OS X (TM)&lt;/a&gt;. The Fedora operating system is 100% free of cost for you to enjoy and share.'))}</p>
-<p>${Markup(_('Learn more about what Fedora is, the community that creates it, and why we make it at our &lt;a href="${path}/${lang}/about-fedora"&gt;About Fedora&lt;/a&gt; page.'))}</p>
-
-
-                        <h4>${_('Feature overview')}</h4>
-                    </div>
-                    <div class="clear"></div>
-
-                    <div class="container_16" id="features-icons">
-                        <div class="grid_2">
-                            <img src="${path}/static/images/features/icons/01-freedom.png" />
-                            <h5>${_('100% Free &amp; Open Source')}</h5>
-                            <p>${_('Fedora is 100% gratis and consists of free &amp; open source software.')}</p>
-                            <a href="https://fedoraproject.org/wiki/Licensing">${_('Learn more')} &gt;</a>
-                        </div>
-                        <div class="grid_2">
-                            <img src="${path}/static/images/features/icons/02-apps.png" />
-                            <h5>${_('Thousands of Free Apps!')}</h5>
-                            <p>${_('With thousands of apps across 10,000+ packages, Fedora\'s got an app for you.')}</p>
-                            <a href="https://admin.fedoraproject.org/pkgdb/apps/name/list/">${_('Our apps')} &gt;</a>
-                        </div>
-                        <div class="grid_2">
-                            <img src="${path}/static/images/features/icons/03-novirus.png" />
-                            <h5>${_('Virus- and Spyware-Free')}</h5>
-                            <p>${_('No more antivirus and spyware hassles. Fedora is Linux-based and secure.')}</p>
-                            <a href="https://fedoraproject.org/wiki/SecurityBasics">${_('Learn how')} &gt;</a>
-                        </div>
-                        <div class="grid_2">
-                            <img src="${path}/static/images/features/icons/04-worldwide.png" />
-                            <h5>${_('Worldwide Community')}</h5>
-                            <p>${_('Built by a global community of contributors, there\'s a local website for you.')}</p>
-                            <a href="http://fedoracommunity.org">${_('Take a look')} &gt;</a>
-                        </div>
-                        <div class="grid_2">
-                            <img src="${path}/static/images/features/icons/05-power.png" />
-                            <h5>${_('An Amazingly Powerful OS')}</h5>
-                            <p>${_('Fedora is the foundation for Red Hat Enterprise Linux, a powerful enterprise OS.')}</p>
-                            <a href="http://www.redhat.com/rhel/fedora/">${_('Learn more')} &gt;</a>
-                        </div>
-                        <div class="grid_2">
-                            <img src="${path}/static/images/features/icons/06-friends.png" />
-                            <h5>${_('Share it with Friends!')}</h5>
-                            <p>${_('Fedora is free to share! Pass it along to your friends and family, no worry!')}</p>
-                            <a href="http://get.fedoraproject.org">${_('Pass it on')} &gt;</a>
-                        </div>
-                        <div class="grid_2">
-                            <img src="${path}/static/images/features/icons/07-beautiful.png" />
-                            <h5>${_('Beautiful Artwork')}</h5>
-                            <p>${_('Compute in style with many open &amp; beautiful wallpapers and themes!')}</p>
-                            <a href="https://fedoraproject.org/wiki/Wallpapers">${_('Art history')} &gt;</a>
-                        </div>
-                        <div class="grid_2">
-                            <img src="${path}/static/images/features/icons/08-millions.png" />
-                            <h5>${_('Millions of Installations')}</h5>
-                            <p>${_('Fedora has been installed millions of times. It\'s a large community to join!')}</p>
-                            <a href="https://fedoraproject.org/wiki/Statistics">${_('Our stats')} &gt;</a>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                    <!-- close features icons -->
-                    <div class="clear"></div>
-                </div>
-                <!-- close features summary -->
-                <div class="clear"></div>
-
-	
-                <div class="grid_16" id="features-nav-bottom">
-                    <!-- tabs -->
-                    <h4>${_('Explore more Fedora features!')}</h4>
-                    <ul class="grid_16 tabs">
-                        <li><a href="#collaboration">${_('Collaboration')}</a></li>
-                        <li><a href="#entertainment">${_('Entertainment &amp; Media')}</a></li>
-                        <li><a href="#creativity">${_('Creativity')}</a></li>
-                        <li><a href="#office">${_('Office / Productivity')}</a></li>
-                        <li><a href="#desktop">${_('Desktop Basics')}</a></li>
-                    </ul>
-                </div>
-                <div class="clear"></div>
-
                 <!-- Collaboration Features -->
                 <div class="grid_16 panes">
+
+                    <div class="container_16" id="features-summary">
+                        <div class="grid_16">
+                            <h3>${_('Overview')}</h3>
+                            <h4>${_('What is Fedora, exactly?')}</h4>
+                            <p>${Markup(_('Fedora is a &lt;strong&gt;Linux-based &lt;a href="http://en.wikipedia.org/wiki/Operating_system"&gt;operating system&lt;/a&gt;&lt;/strong&gt;, a suite of software that makes your computer run. You can use the Fedora operating system to replace or to run alongside of other operating systems such as &lt;a href="http://en.wikipedia.org/wiki/Windows"&gt;Microsoft Windows (TM)&lt;/a&gt; or &lt;a href="http://en.wikipedia.org/wiki/Os_x"&gt;Mac OS X (TM)&lt;/a&gt;. The Fedora operating system is 100% free of cost for you to enjoy and share.'))}</p>
+                            <p>${Markup(_('Learn more about what Fedora is, the community that creates it, and why we make it at our &lt;a href="${path}/${lang}/about-fedora"&gt;About Fedora&lt;/a&gt; page.'))}</p>
+
+                            <h4>${_('Feature overview')}</h4>
+                        </div>
+                        <div class="clear"></div>
+
+                        <div class="container_16" id="features-icons">
+                            <div class="grid_2">
+                                <img src="${path}/static/images/features/icons/01-freedom.png" />
+                                <h5>${_('100% Free &amp; Open Source')}</h5>
+                                <p>${_('Fedora is 100% gratis and consists of free &amp; open source software.')}</p>
+                                <a href="https://fedoraproject.org/wiki/Licensing">${_('Learn more')} &gt;</a>
+                            </div>
+                            <div class="grid_2">
+                                <img src="${path}/static/images/features/icons/02-apps.png" />
+                                <h5>${_('Thousands of Free Apps!')}</h5>
+                                <p>${_('With thousands of apps across 10,000+ packages, Fedora\'s got an app for you.')}</p>
+                                <a href="https://admin.fedoraproject.org/pkgdb/apps/name/list/">${_('Our apps')} &gt;</a>
+                            </div>
+                            <div class="grid_2">
+                                <img src="${path}/static/images/features/icons/03-novirus.png" />
+                                <h5>${_('Virus- and Spyware-Free')}</h5>
+                                <p>${_('No more antivirus and spyware hassles. Fedora is Linux-based and secure.')}</p>
+                                <a href="https://fedoraproject.org/wiki/SecurityBasics">${_('Learn how')} &gt;</a>
+                            </div>
+                            <div class="grid_2">
+                                <img src="${path}/static/images/features/icons/04-worldwide.png" />
+                                <h5>${_('Worldwide Community')}</h5>
+                                <p>${_('Built by a global community of contributors, there\'s a local website for you.')}</p>
+                                <a href="http://fedoracommunity.org">${_('Take a look')} &gt;</a>
+                            </div>
+                            <div class="grid_2">
+                                <img src="${path}/static/images/features/icons/05-power.png" />
+                                <h5>${_('An Amazingly Powerful OS')}</h5>
+                                <p>${_('Fedora is the foundation for Red Hat Enterprise Linux, a powerful enterprise OS.')}</p>
+                                <a href="http://www.redhat.com/rhel/fedora/">${_('Learn more')} &gt;</a>
+                            </div>
+                            <div class="grid_2">
+                                <img src="${path}/static/images/features/icons/06-friends.png" />
+                                <h5>${_('Share it with Friends!')}</h5>
+                                <p>${_('Fedora is free to share! Pass it along to your friends and family, no worry!')}</p>
+                                <a href="http://get.fedoraproject.org">${_('Pass it on')} &gt;</a>
+                            </div>
+                            <div class="grid_2">
+                                <img src="${path}/static/images/features/icons/07-beautiful.png" />
+                                <h5>${_('Beautiful Artwork')}</h5>
+                                <p>${_('Compute in style with many open &amp; beautiful wallpapers and themes!')}</p>
+                                <a href="https://fedoraproject.org/wiki/Wallpapers">${_('Art history')} &gt;</a>
+                            </div>
+                            <div class="grid_2">
+                                <img src="${path}/static/images/features/icons/08-millions.png" />
+                                <h5>${_('Millions of Installations')}</h5>
+                                <p>${_('Fedora has been installed millions of times. It\'s a large community to join!')}</p>
+                                <a href="https://fedoraproject.org/wiki/Statistics">${_('Our stats')} &gt;</a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <!-- close features icons -->
+                        <div class="clear"></div>
+                    </div>
+                    <!-- close features summary -->
+
                     <div class="grid_16 alpha omega">
                         <div class="grid_13 alpha">
                             <h3>${_('Collaboration Features')}</h3>
@@ -459,6 +445,19 @@
                 </div>
                 <div class="clear"></div>
                 <!-- /Collaboration Features -->
+                <div class="grid_16" id="features-nav-top">
+                    <!-- tabs -->
+                    <ul class="grid_16">
+                        <li><a href="#overview">${_('Overview')}</a></li>
+                        <li><a href="#collaboration">${_('Collaboration')}</a></li>
+                        <li><a href="#entertainment">${_('Entertainment &amp; Media')}</a></li>
+                        <li><a href="#creativity">${_('Creativity')}</a></li>
+                        <li><a href="#office">${_('Office / Productivity')}</a></li>
+                        <li><a href="#desktop">${_('Desktop Basics')}</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+
             </div>
 
 	</body>
