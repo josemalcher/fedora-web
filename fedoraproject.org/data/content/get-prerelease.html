@@ -7,15 +7,29 @@
     <title>${Markup(_('Get the next Fedora - Fedora Project'))}</title>
   </head>
 	<body id="fedoraproject-org">
+
+        <div class="page-header" id="header-prerelease">
+            <div class="container_16">
+                <div class="grid_11">
+                    <h2>${Markup(_('Get the next Fedora, right now.'))}</h2>
+                    <p>${_('Fedora is 100%% free for you to enjoy and share.') % ()}</p>
+                    </div>
+                    <div class="grid_5 page-header-sidebar">
+                    <p><a href="/about-fedora#freedom">${_('Fedora isn\'t just free-of-charge. It\'s free as in freedom. Learn more.')}</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+
         <div class="container_16">
             <div class="grid_16">
-                <h2>${Markup(_('Get the next Fedora, right now.'))}</h2>
                 <p class="warning">${Markup(_('This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the &lt;a href="https://bugzilla.redhat.com/"&gt;Red Hat Bugzilla&lt;/a&gt;.  Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information.') % {'relnotes_url': 'http://docs.fedoraproject.org/'})}</p>
                 <p class="note">${Markup(_('After downloading an ISO, &lt;a href="https://fedoraproject.org%s/%s/verify"&gt;verify&lt;/a&gt; it.') % (path, lang))}</p>
-                <h3>${Markup(_('Install Media'))}</h3>
+                <h4>${Markup(_('Install Media'))}</h4>
                 <ul class="downloadbox installdvd">
                     <li>
-                        <h4><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h4>
+                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
                         <ul>
                             <li><a class="download-splash" href="http://torrent.fedoraproject.org/torrents/Fedora-14-Alpha-i386-DVD.torrent">${Markup(_('i386'))}</a> - ${Markup(_('Install DVD'))}</li>
                             <li><a class="download-splash" href="http://torrent.fedoraproject.org/torrents/Fedora-14-Alpha-x86_64-DVD.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Install DVD'))}</li>
@@ -24,7 +38,7 @@
                         </ul>
                     </li>
                     <li>
-                        <h4>${Markup(_('Direct Download'))}</h4>
+                        <h5>${Markup(_('Direct Download'))}</h5>
                         <ul>
                             <li><a class="download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/14-Alpha/Fedora/i386/iso/Fedora-14-Alpha-i386-DVD.iso">${Markup(_('i386'))}</a> - ${Markup(_('Install DVD'))}</li>
                             <li><a class="download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/14-Alpha/Fedora/x86_64/iso/Fedora-14-Alpha-x86_64-DVD.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Install DVD'))}</li>
@@ -33,7 +47,7 @@
                         </ul>
                     </li>
                     <li>
-                        <h4><acronym title="${_('Jigsaw Download, or short jigdo, is a tool designed to ease the distribution of very large files over the internet.')}">Jigdo</acronym></h4>
+                        <h5><acronym title="${_('Jigsaw Download, or short jigdo, is a tool designed to ease the distribution of very large files over the internet.')}">Jigdo</acronym></h5>
                         <ul>
                             <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/14-Alpha/Fedora/i386/jigdo/">${_('i386')}</a></li>
                             <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/14-Alpha/Fedora/x86_64/jigdo/">${_('x86_64')}</a></li>
@@ -41,7 +55,7 @@
                     </li>
                     <!-- experimental -->
                     <li>
-                        <h4><acronym title="${_('gPXE is an open source (GPL) network bootloader.')}">gPXE</acronym></h4>
+                        <h5><acronym title="${_('gPXE is an open source (GPL) network bootloader.')}">gPXE</acronym></h5>
                         <ul>
                             <li><a href="http://boot.fedoraproject.org/">BFO</a></li>
                         </ul>
@@ -49,17 +63,17 @@
                     <!-- /experimental -->
                 </ul>
 
-                <h3>${Markup(_('Fedora Desktop Live Media'))}</h3>
+                <h4>${Markup(_('Fedora Desktop Live Media'))}</h4>
                 <ul class="downloadbox gnomelive">
                     <li>
-                        <h4>${Markup(_('BitTorrent'))}</h4>
+                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
                         <ul>
                             <li><a class="download-splash" href="http://torrent.fedoraproject.org/torrents/F14-Alpha-i686-Live.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live DVD'))}</li>
                             <li><a class="download-splash" href="http://torrent.fedoraproject.org/torrents/F14-Alpha-x86_64-Live.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live DVD'))}</li>
                         </ul>
                     </li>
                     <li>
-                        <h4>${Markup(_('Direct Download'))}</h4>
+                        <h5>${Markup(_('Direct Download'))}</h5>
                         <ul>
                             <li><a class="download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/14-Alpha/Live/i686/F14-Alpha-i686-Live.iso">${Markup(_('i686'))}</a> - ${Markup(_('Live DVD'))}</li>
                             <li><a class="download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/14-Alpha/Live/x86_64/F14-Alpha-x86_64-Live.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live DVD'))}</li>
@@ -67,17 +81,17 @@
                     </li>
                 </ul>
 
-                <h3>${Markup(_('Fedora KDE Live Media'))}</h3>
+                <h4>${Markup(_('Fedora KDE Live Media'))}</h4>
                 <ul class="downloadbox kdelive">
                     <li>
-                        <h4>${Markup(_('BitTorrent'))}</h4>
+                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
                         <ul>
                             <li><a class="download-splash" href="http://torrent.fedoraproject.org/torrents/F14-Alpha-i686-Live-KDE.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live CD'))}</li>
                             <li><a class="download-splash" href="http://torrent.fedoraproject.org/torrents/F14-Alpha-x86_64-Live-KDE.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live CD'))}</li>
                         </ul>
                     </li>
                     <li>
-                        <h4>${Markup(_('Direct Download'))}</h4>
+                        <h5>${Markup(_('Direct Download'))}</h5>
                         <ul>
                             <li><a class="download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/14-Alpha/Live/i686/F14-Alpha-i686-Live-KDE.iso">${Markup(_('i686'))}</a> - ${Markup(_('Live CD'))}</li>
                             <li><a class="download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/14-Alpha/Live/x86_64/F14-Alpha-x86_64-Live-KDE.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live CD'))}</li>
@@ -85,7 +99,7 @@
                     </li>
                 </ul>
 
-                <h3>${Markup(_('Let me look around...'))}</h3>
+                <h4>${Markup(_('Let me look around...'))}</h4>
                 <ul class="download">
                     <li><a href="http://torrent.fedoraproject.org/">${Markup(_('See all torrents'))}</a></li>
                     <li><a href="http://mirrors.fedoraproject.org/publiclist/Fedora/14-Alpha/">${Markup(_('See all mirrors'))}</a></li>
