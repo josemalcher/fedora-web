@@ -31,18 +31,17 @@ window.onload = function() {
     }
 
     var url = "https://fedoraproject.org/wiki/Releases/14/Schedule"
-    var bannerlink = document.getElementById("banner").getElementsByTagName("a")[0];
-    var bannerimg = document.getElementById("banner").getElementsByTagName("img")[0];
 
     if (days <= 0) {
         // TODO: Get an actual image here!
-        bannerimg.setAttribute("src", "http://fedoraproject.org/static/images/banners/f14release.png");
-        bannerimg.setAttribute("alt", "Fedora 14 is here!");
+         $("#fedora-banners img").attr("src", "http://fedoraproject.org/static/images/banners/f14release.png");
+         $("#fedora-banners img").attr("alt", "Fedora 14 is here!");
         url = "https://fedoraproject.org/get-fedora";
+
     } else {
-        bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora14-countdown-banner-" + days + "." + lang + "." + "png");
-        bannerimg.setAttribute("alt", "Fedora 14 Laughlin released in " + days + " days.");
+        $("#fedora-banners img").attr("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora14-countdown-banner-" + days + "." + lang + "." + "png");
+        $("#fedora-banners img").attr("alt", "Fedora 14 Laughlin released in " + days + " days.");
     }
-    bannerlink.setAttribute("href", url);
+    $("#fedora-banners img").attr("href", url);
 }
 
