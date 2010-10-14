@@ -390,6 +390,12 @@ background-image: -webkit-gradient(radial, 30% 30%, 0, 30% 30%, 900, from(#3C6EB
     background-image: -webkit-gradient(radial, 30% 30%, 0, 30% 30%, 900, from(#79db32), to(#5DA826));
 }
 
+#header-404 {
+    background: #3C6EB4; /* blue */
+    background-image: -moz-radial-gradient(30% 30% 45deg, circle farthest-side, #3C6EB4, #2B4F82);
+    background-image: -webkit-gradient(radial, 30% 30%, 0, 30% 30%, 900, from(#3C6EB4), to(#2B4F82));
+}
+
 /* end individual header settings */
 
 .page-header h2 {
@@ -821,6 +827,39 @@ ul.kdelive { background-image: url(../images/kdelive.png); }
     width: auto;
     float: none;
     padding: 0;
+}
+
+ul#fourofour-resources
+{
+  list-style: none;
+}
+
+ul#fourofour-resources a
+{
+  padding-left: 20px;
+  background: url(../images/arrow.png) 0 50% no-repeat;
+}
+
+ul#fourofour-resources li
+{
+  padding-left: 70px;
+  margin-bottom: 3.5ex;
+  height: 55px;
+}
+
+li.resource-docs
+{
+  background: url(../images/icon-docs.png) 0 50% no-repeat;
+}
+
+li.resource-communicate
+{
+  background: url(../images/icon-communicate.png) 0 50% no-repeat;
+}
+
+li.resource-download
+{
+  background: url(../images/icon-download.png) 0 50% no-repeat;
 }
 
 /* right sidebar */
