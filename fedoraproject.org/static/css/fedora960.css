@@ -1120,8 +1120,6 @@ div.panes div { display: none; }
 }
 
 .slideShow {
-   /* padding: 10px; */
- /*   border: 1px solid #B3B3B3; */
     display: table;
     clear: both;
 }
@@ -1143,7 +1141,7 @@ div.panes div { display: none; }
     padding: 3px 8px;
     display: inline-block;
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: .8em;
     font-weight: bold;
     background-color: white;
     color: #3c6eb4;
@@ -1158,6 +1156,11 @@ div.panes div { display: none; }
 }
 
 /** slides with text over images **/
+
+.slides li p {
+  font-size: 1.1em;
+}
+
 .slide div {
     margin: 1em;
     position: absolute;
@@ -1166,7 +1169,7 @@ div.panes div { display: none; }
     padding: 0.2em 0.8em;
 }
 
-.slide div a { color: #fff; }
+.slide div a { color: white; }
 		
 .slideShow  div {
   width: 500px;
@@ -1179,7 +1182,7 @@ div.panes div { display: none; }
 .slides div h2 {
   font-family: "ComfortaaRegular", sans-serif;
   color: white;
-  font-size: 20pt;
+  font-size: 1.8em;
   text-transform: none;
   margin-top: 0px;
   font-weight: normal;
@@ -1190,28 +1193,28 @@ div.panes div { display: none; }
 }
 
 .slides #fedora-download div h2 {
-  letter-spacing: -3px;
+  letter-spacing: -2px;
   text-shadow: #3c6eb4 1px 1px 5px;
   font-weight: bold;
 }
 
+.slides #fedora-download a { color: #255591; }
+
 .slides #fedora-download div {
   color: #444;
-  font-size: 14pt;
+  font-size: 1.1em;
 }
 
 .slideShow #printing-easy div {
   margin-left: 10px;
-  width: 350px;
+  width: 375px;
   left: 1em;
 }
 
 .slides #design div {
   left: 10px;
-  width: 400px;
+  width: 455px;
 }
-
-.slides #design h2 { font-size: 22pt; }
 
 .slides #fudcon div {
   /* For browsers that don't support RGBa */
@@ -1223,8 +1226,6 @@ div.panes div { display: none; }
   height: 200px;
 }
 
-.slides #fudcon h2 { font-size: 23pt; }
-
 .slides #fedora-download li a {
   font-family: "ComfortaaRegular", sans-serif;
   text-shadow: white 1px 1px 0px;
@@ -1234,7 +1235,8 @@ div.panes div { display: none; }
   border-bottom: 2px solid #255591;
   background: -moz-linear-gradient(bottom,  #a9c8da,  white); 
   float: right;
-  margin-right: 1em;
+  margin-right: .5em;
+  font-size: 1.4em;
 }
 
 .slides #fedora-download li a:hover {
