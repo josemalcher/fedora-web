@@ -3,13 +3,13 @@ body{
 	direction:rtl;
 }
 
+#site-content ul{
+	padding-right:40px;
+}
+
 /* Changed from left to right in order to fix the Fedora Highlights problem */
 .container_16 .suffix_1{
 	padding-right:0px;
-}
-
-#site-content ul{
-	padding-right:40px;
 }
 
 /* Fix for most of the header mess */
@@ -28,8 +28,10 @@ body{
 }
 
 /* Fix slideshow number */
-.slideShow .navigation ul{
+.slideShow .navigation {
 	float:right
+	margin-left:0px;
+	margin-right:1em;
 }
 
 /* Fix the tabs on the features page */
