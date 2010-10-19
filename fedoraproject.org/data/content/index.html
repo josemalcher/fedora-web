@@ -1,3 +1,21 @@
+<?python
+import random
+story_paths = [
+#	['filename', 'link', 'thumnail', 'intro_info']
+	['../content/using/life/chrisbredesen_short.html', '/using/life/thomascameron.html'],
+	['../content/using/life/fabianscherschel_short.html', '/using/life/fabianscherschel.html'],
+	['../content/using/life/mairinduffy_short.html', '/using/life/mairinduffy.html'],
+	['../content/using/life/michelsalim_short.html', '/using/life/michelsalim.html'],
+	['../content/using/life/robynbergeron_short.html', '/using/life/robynbergeron.html'],
+	['../content/using/life/stevemilner_short.html', '/using/life/stevemilner.html'],
+	['../content/using/life/thomascameron_short.html', '/using/life/thomascameron.html'],
+	['../content/using/life/ericchristensen_short.html', '/using/life/ericchristensen.html']
+]
+
+story_info = story_paths[random.randint(0, len(story_paths)-1)]
+#print '--- Story ---';
+#print story_info[0];
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
   xmlns:py="http://genshi.edgewall.org/"
@@ -127,12 +145,10 @@
                   <div class="clear"></div>
 
                   <div class="grid_5 suffix_1 alpha story">
-                    <h3 class="main-section-hl">${_('Your life on Fedora')}</h3>
-                    <h4><a href="${path}/${lang}/using/life/fabianscherschel.html">${_('Fab, Linux Outlaws Podcaster')}</a></h4>
-    <a href="${path}/${lang}/using/life/fabianscherschel.html"><img src="/static/images/using/interviews/fab_thumb.png" /></a>
-                    <p>${Markup(_('Fabian A. Scherschel, a university student from Bonn, Germany, is well-known in the Linux community in his role running the &lt;a href="http://linuxoutlaws.com"&gt;Linux Outlaws podcast&lt;/a&gt; with Dan Lynch. Fab reveals in this interview that he uses Fedora and the audio tools available in it for the podcast\'s recording and post-production.'))} </p>
+                    <h3 class="main-section-hl">Your life on Fedora</h3>
+                    <xi:include href="${story_info[0]}" />
                     <ul>
-                        <li><a href="${path}/${lang}/using/life/fabianscherschel.html">${Markup(_('Read more of Fab\'s story &gt;'))}</a></li>
+                        <li><a href="${path}/${lang}${story_info[1]}">${Markup(_('Read more of the story &gt;'))}</a></li>
                         <li><a href="${path}/${lang}/using#interviews">${Markup(_('Read more Fedora user stories &gt;'))}</a></li>
                     </ul>
                   </div>
