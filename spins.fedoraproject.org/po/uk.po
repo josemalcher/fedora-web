@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: spins.fedoraproject.org\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-10-09 00:08-0500\n"
+"POT-Creation-Date: 2010-10-20 19:42+0200\n"
 "PO-Revision-Date: 2010-04-27 12:42+0300\n"
 "Last-Translator: Maxim V. Dziumanenko <dziumanenko@gmail.com>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -214,7 +214,7 @@ msgstr "За алфавітом"
 msgid "downloads"
 msgstr "завантажень"
 
-#: data/content/index.html:53
+#: data/content/index.html:53 data/content/index.html:70
 msgid "Learn more & download! >"
 msgstr "Перейти до опису та завантаження >"
 
@@ -524,6 +524,7 @@ msgstr "Це видання найбільш сумісне, воно працю
 #: data/content/soas/index.html:118 data/content/soas/index.html:124
 #: data/content/xfce/index.html:73 data/content/xfce/index.html:79
 #: data/content/xfce/index.html:87 data/content/xfce/index.html:93
+#: data/templates/sidebar.html:46
 msgid "Download Now!"
 msgstr "Завантажити!"
 
@@ -672,6 +673,10 @@ msgstr "Це новіша версія Fedora, що містить всі про
 #: data/content/broffice/index.html:63
 msgid "If you want to try an open source operating system with an open source office application suite you are in the right place!"
 msgstr "Якщо ви бажаєте випробувати операційну систему з відкритим кодом, з вільно поширюваним пакетом офісних програм, ви звернулись за адресою!"
+
+#: data/content/broffice/index.html:97 data/content/fel/index.html:170
+msgid "Miscleanous"
+msgstr ""
 
 #: data/content/broffice/index.html:98
 msgid "If you would like to ask specific questions about BrOffice.org or OpenOffice.org we recommend that you visit <a href=\"http://broffice.org/\">http://broffice.org/</a> or <a href=\"http://www.openoffice.org/\">http://www.openoffice.org/</a> for more information."
@@ -824,7 +829,8 @@ msgstr ""
 msgid "...and more!"
 msgstr ""
 
-#: data/content/design/index.html:79 data/content/soas/index.html:98
+#: data/content/design/index.html:79 data/content/games/index.html:697
+#: data/content/soas/index.html:98
 msgid "Installable Live Media"
 msgstr ""
 
@@ -898,9 +904,94 @@ msgstr "Знімок екрану зі збіркою «Освіта»"
 msgid "About Fedora Electronic Lab"
 msgstr "Про «Fedora Electronic Lab»"
 
+#: data/content/fel/aboutus.html:9
+#, fuzzy
+msgid "About the developers"
+msgstr "Про проект"
+
 #: data/content/fel/aboutus.html:13
 msgid "How we shaped FEL"
 msgstr "«Як закалялась FEL»"
+
+#: data/content/fel/aboutus.html:14
+#, python-format
+msgid "<a href=\"%s\">Learn</a> how FEL was designed from scratch and what it means for our upstream developers."
+msgstr ""
+
+#: data/content/fel/aboutus.html:17
+msgid "Fedora Electronic Lab is a subproject of the Fedora Project dedicated to EDA tools and open hardware content. Every 6 months a new version is released for free download. The goal is not only package those tools for you, but shape those tools to satisfy design methodologies. For more information, visit our developers' blogs"
+msgstr ""
+
+#: data/content/fel/aboutus.html:19
+msgid "Chitlesh Goorah - Founder and Architect"
+msgstr ""
+
+#: data/content/fel/aboutus.html:20
+msgid "Shakthi Kannan - Developer"
+msgstr ""
+
+#: data/content/fel/aboutus.html:23
+#, python-format
+msgid "<a href=\"%s\">Fedora Project</a> is an open community for software development, sponsored by Red Hat Inc. The Fedora Project supports our web hosting facilities and granted Chitlesh the legal right to use the trademark \"fedora\" on Fedora Electronic Lab. The Fedora Project is a non-profit organisation which strives to give the cutting-edge software technologies for free."
+msgstr ""
+
+#: data/content/fel/aboutus.html:26
+msgid "History"
+msgstr ""
+
+#: data/content/fel/aboutus.html:28
+msgid "Three years ago, <a href=\"\">Chitlesh Goorah</a> proposed \"Fedora Electronic Lab\" to the Fedora community by providing existing opensource EDA tools for ASIC design. The main objective was to ensure that all the opensource EDA tools can exchange data between them (ensuring at least a basic design flow). Since each of the design tool were being developed individually each has its own storage mechanism (make it difficult for interoperability). Thereby Fedora worked with various upstream developers to shape their EDA tools so that universities or small companies can opt for these tools."
+msgstr ""
+
+#: data/content/fel/aboutus.html:30
+msgid "Compiling each of these tools individually and building his/her own design flow at home is very difficult. Thereby with Fedora Electronic Lab, users will only use the tools instead of compiling it from scratch. Fedora Electronic Lab follows the industry trends with what is available on the opensource ecosystem. Hence FEL users will benefit from such deployment infrastructure for free and quickly."
+msgstr ""
+
+#: data/content/fel/aboutus.html:32
+msgid "Thibault North was introduced to Fedora Electronic Lab by Joerg Simon a german Fedora ambassador. Thibault is the Fedora Electronic Lab Release engineer focussing on the quality of the LiveDVD being spinned."
+msgstr ""
+
+#: data/content/fel/aboutus.html:34
+msgid "During F-10 development cycle, Aanjhan Ranganathan joined the team and revived Fedora Electronic Lab's marketing in India. He performed bug triage within the community, till F-11's release."
+msgstr ""
+
+#: data/content/fel/aboutus.html:36
+msgid "Shakthi Kannan stepped in to enhance the existing FEL platform during F-12 development cycle. He added PLA tool support and simulators for 8051 microcontrollers. He is responsible for FEL's community development, implementation of new digital solutions and he plays a vital role FEL's marketing in India."
+msgstr ""
+
+#: data/content/fel/aboutus.html:38
+msgid "Timestamps"
+msgstr ""
+
+#: data/content/fel/aboutus.html:40
+msgid "FEL 12 Constantine released"
+msgstr ""
+
+#: data/content/fel/aboutus.html:41
+msgid "FEL 11 Leonidas released"
+msgstr ""
+
+#: data/content/fel/aboutus.html:42
+msgid "FEL 10 Cambridge released"
+msgstr ""
+
+#: data/content/fel/aboutus.html:43
+#, fuzzy
+msgid "FAB approved \"Fedora Electronic Lab\" LiveDVD spin"
+msgstr "Fedora Electronic Lab — це"
+
+#: data/content/fel/aboutus.html:44
+msgid "FEL 9 Sulphur released at Linuxtag2008"
+msgstr ""
+
+#: data/content/fel/aboutus.html:45
+msgid "FEL 8 Werewolf released"
+msgstr ""
+
+#: data/content/fel/aboutus.html:46
+#, fuzzy
+msgid "FESCo approved \"Fedora Electronic Lab\" as a feature"
+msgstr "Fedora Electronic Lab — це"
 
 #: data/content/fel/aboutus.html:55 data/content/fel/index.html:185
 #: data/content/fel/index.html:205 data/content/fel/portfolio.html:9
@@ -914,6 +1005,10 @@ msgstr "Вступ"
 
 #: data/content/fel/aboutus.html:57 data/content/fel/index.html:187
 msgid "This platform provides outstanding solutions for micro-nanoelectronic design from project specifications, design, functional simulation, backend design and prototyping evaluations boards."
+msgstr ""
+
+#: data/content/fel/commitment.html:9
+msgid "Profile"
 msgstr ""
 
 #: data/content/fel/commitment.html:11
@@ -948,6 +1043,16 @@ msgstr ""
 msgid "Interoperability between various packages in order to achieve different design flows."
 msgstr "Взаємодія між різними пакетами для досягнення різних напрямків дизайну."
 
+#: data/content/fel/commitment.html:21
+#, python-format
+msgid "Tools for embedded design and to provide <a href=\"%s\">support for ARM</a> as a secondary architecture in Fedora."
+msgstr ""
+
+#: data/content/fel/commitment.html:22
+#, python-format
+msgid "<a href=\"%s\">Tool set</a> for Openmoko development and other open source hardware communities."
+msgstr ""
+
 #: data/content/fel/commitment.html:23
 msgid "A peer review eeb-based solution coupled with an Eclipse IDE for Embedded/Digital Hardware IP design."
 msgstr ""
@@ -955,6 +1060,54 @@ msgstr ""
 #: data/content/fel/commitment.html:24
 msgid "PLA tools, C-based design methodologies, simulators for 8051 and 8085 microcontrollers and many more."
 msgstr "Засоби для ПЛІС, методики дизайну на основі C, симулятори мікроконтролерів 8051 та 8085 та багато іншого."
+
+#: data/content/fel/commitment.html:27
+msgid "FEL's Commitmen"
+msgstr ""
+
+#: data/content/fel/commitment.html:28
+msgid "Fedora Electronic Lab (FEL) comes to fix one big problem in the opensource community. This problem is usually unknown to many people or taken for granted."
+msgstr ""
+
+#: data/content/fel/commitment.html:30
+msgid "The problem is: there is no one who provides opensource EDA solutions for the real life. Although it is one problem, it is very complex in itself. In real life, designers use EDA software to design chips or circuit boards. Thereby the designer requires a set of hardware design tools to design his/her chips. However the same set of hardware design tools does not apply for every hardware design project."
+msgstr ""
+
+#: data/content/fel/commitment.html:34
+msgid "Since a hardware design project consists of different types of circuits: Analog, Digital and Mixed Signal, each of these types entails its own design flow and methodologies. Each type requires several different EDA software to successfully design, simulate and verify the designed circuit. Since these types of circuits are incorporated on same die, these circuits should be able to interface each other. Thereby as an EDA provider we should provide our users with EDA solutions that fulfill design flows rather than random EDA software."
+msgstr ""
+
+#: data/content/fel/commitment.html:36
+msgid "After 3 years of hard work, one can define FEL as:"
+msgstr ""
+
+#: data/content/fel/commitment.html:37
+msgid "Fedora Electronic Lab is Fedora's high-end hardware design and simulation platform. This platform provides different hardware design flows based on the semiconductor industry's current trend. FEL maps in three methodologies {design, simulation and verification} with opensource EDA software to give a better hardware design experience."
+msgstr ""
+
+#: data/content/fel/commitment.html:39
+msgid "FEL also bridges 2 different opensource communities:"
+msgstr ""
+
+#: data/content/fel/commitment.html:42
+msgid "opensource software community"
+msgstr ""
+
+#: data/content/fel/commitment.html:43
+msgid "opensource hardware community"
+msgstr ""
+
+#: data/content/fel/commitment.html:45
+msgid "As an EDA provider, we have to know what are the targeting users. Above is a picture which describes a typical semiconductor design centre. This design centre is composed of several design teams and each design team needs to interact with other design teams. What is also important here is sharing of data between design teams should be possible. We have worked with several upstream projects to make it possible and other upstream projects have opted industry standard format to make interoperability possible. It is also crucial that the data format from commercial software could be read by opensource EDA software. However this is beyond our reach."
+msgstr ""
+
+#: data/content/fel/commitment.html:47
+msgid "When the design centre receives a project and project specifications have already been established by the marketing team, the project coordinator will have to divide the project in accordance to his/her respective design teams. The EDA/CAD department assists the design teams with the proper EDA software with respect to the project. Each design team will work with several design tools (at least 5) together with some in-house scripts. These EDA software ensure design, simulation and verification methodologies. After the project have been taped-out and manufactured. The Testing and Validation Unit verifies the chips or circuit boards one by one."
+msgstr ""
+
+#: data/content/fel/commitment.html:49
+msgid "From the Project Specifications till the final validation, FEL strives to satisfy all the needs of the design centre. FEL also provides the design centre with 7 standard cells libraries. Since the semiconductor industry is a highly competitive environment, it is a never-ending process to provide several methodologies to improve hardware design experience."
+msgstr ""
 
 #: data/content/fel/commitment.html:57 data/content/fel/portfolio.html:211
 #: data/content/fel/portfolio.html:222 data/content/fel/portfolio.html:233
@@ -986,6 +1139,7 @@ msgid "Portfolio"
 msgstr "Досьє"
 
 #: data/content/fel/index.html:49 data/content/fel/index.html:118
+#: data/content/fel/publications.html:21
 msgid "Publications"
 msgstr "Публікації"
 
@@ -1005,9 +1159,47 @@ msgstr "Клацніть на зображенні, щоб переглянут�
 msgid "Community Space"
 msgstr "Простір спільноти"
 
+#: data/content/fel/index.html:64
+msgid "User Documentation and Developer Area"
+msgstr ""
+
+#: data/content/fel/index.html:65
+msgid "Users are welcome to propose new features and join us during our testing days."
+msgstr ""
+
+#: data/content/fel/index.html:66
+#, python-format
+msgid "<a href=\"%s\">List of all software</a> under FEL's umbrella."
+msgstr ""
+
+#: data/content/fel/index.html:67
+#, fuzzy
+msgid "Screenshots Gallery"
+msgstr "Знімок екрану"
+
+#: data/content/fel/index.html:68
+msgid "Nightly Development LiveDVD"
+msgstr ""
+
 #: data/content/fel/index.html:72
 msgid "Latest Articles"
 msgstr "Останні статті"
+
+#: data/content/fel/index.html:74
+msgid "FEL-12 Flyer"
+msgstr ""
+
+#: data/content/fel/index.html:75
+msgid "FEL-12 Release Notes"
+msgstr ""
+
+#: data/content/fel/index.html:76
+msgid "Position Paper for Research and Development"
+msgstr ""
+
+#: data/content/fel/index.html:77
+msgid "Installing the core FEL software on"
+msgstr ""
 
 #: data/content/fel/index.html:82
 msgid "Fedora Electronic Lab is"
@@ -1049,9 +1241,35 @@ msgstr ""
 msgid "Glossary"
 msgstr "Глосарій"
 
+#: data/content/fel/index.html:101
+#, fuzzy
+msgid "ASIC : Application-Specific Integrated Circuit"
+msgstr "Засоби для розробки Application-Specific Integrated Circuit (ASIC)."
+
+#: data/content/fel/index.html:102
+msgid "EDA : Electronic Design Automation"
+msgstr ""
+
+#: data/content/fel/index.html:103
+msgid "VLSI : Very Large Scale Integration, about 10⁶ to 10⁷ transistors"
+msgstr ""
+
+#: data/content/fel/index.html:123
+msgid "Fedora Electronic Lab can be deployed with these simple mechanisms, via either"
+msgstr ""
+
+#: data/content/fel/index.html:126
+#, fuzzy
+msgid "a Fedora Electronic Lab LiveDVD."
+msgstr "Fedora Electronic Lab — це"
+
 #: data/content/fel/index.html:129
 msgid "Yum install"
 msgstr "Встановлення пакету"
+
+#: data/content/fel/index.html:131
+msgid "As from <b>Fedora-11 Leonidas</b>, Fedora users can groupinstall all FEL EDA software at once with:"
+msgstr ""
 
 #: data/content/fel/index.html:132
 msgid "# yum groupinstall 'Electronic Lab'"
@@ -1060,6 +1278,23 @@ msgstr "# yum groupinstall \"Electronic Lab\""
 #: data/content/fel/index.html:134
 msgid "LiveDVD"
 msgstr "LiveDVD"
+
+#: data/content/fel/index.html:136
+msgid "The LiveDVD can be downloaded either via http or torrent. A LiveDVD is an operating system that is executed upon boot, without installation on a hard drive. A desktop icon can be used to install the OS if wanted."
+msgstr ""
+
+#: data/content/fel/index.html:171
+msgid "Fedora Electronic Lab team does not provide commercial technical support. The only types of technical support, FEL provides are through the"
+msgstr ""
+
+#: data/content/fel/index.html:173
+#, python-format
+msgid "<a href=\"%s\">Ticketing service</a> to request any enhancement or developer sponsoring."
+msgstr ""
+
+#: data/content/fel/index.html:174 data/content/fel/support.html:14
+msgid "to file any bug encountered in the EDA tools."
+msgstr ""
 
 #: data/content/fel/index.html:195
 msgid "ASIC Design flows"
@@ -1091,6 +1326,491 @@ msgstr ""
 
 #: data/content/fel/index.html:217
 msgid "This screenshot demonstrates the layout done on Fedora 8 by Svilen Krustev."
+msgstr ""
+
+#: data/content/fel/portfolio.html:13
+msgid "Featured Solutions"
+msgstr ""
+
+#: data/content/fel/portfolio.html:15
+#, fuzzy
+msgid "The Fedora Electronic Lab includes design tools for:"
+msgstr "Fedora Electronic Lab — це"
+
+#: data/content/fel/portfolio.html:17 data/content/fel/portfolio.html:27
+msgid "ASIC Analog Circuit Design and Simulation"
+msgstr ""
+
+#: data/content/fel/portfolio.html:18 data/content/fel/portfolio.html:48
+msgid "ASIC Layout, DRC and LVS"
+msgstr ""
+
+#: data/content/fel/portfolio.html:19 data/content/fel/portfolio.html:71
+#, fuzzy
+msgid "Digital Simulation and Verification"
+msgstr "Електронне моделювання з використанням GTKWave та ghdl."
+
+#: data/content/fel/portfolio.html:20 data/content/fel/portfolio.html:94
+msgid "RTL and logic synthesis design flows"
+msgstr ""
+
+#: data/content/fel/portfolio.html:21 data/content/fel/portfolio.html:123
+msgid "Circuit and PCB Layout"
+msgstr ""
+
+#: data/content/fel/portfolio.html:22
+msgid "Micro Controller (µC) Programming and Embedded Systems Development"
+msgstr ""
+
+#: data/content/fel/portfolio.html:23 data/content/fel/portfolio.html:176
+msgid "CAD Tools"
+msgstr ""
+
+#: data/content/fel/portfolio.html:24
+msgid "Project Management, Peer Review and budget tracking"
+msgstr ""
+
+#: data/content/fel/portfolio.html:30
+msgid "This simulation lab enables design engineers to edit and simulate their schematics."
+msgstr ""
+
+#: data/content/fel/portfolio.html:32
+msgid "General Purpose Circuit Simulators (Analysis : Nonlinear AC/DC, Transient, Fourier, S-parameter and harmonic balance)."
+msgstr ""
+
+#: data/content/fel/portfolio.html:33
+msgid "Beyond Spice capabilities: Level 49, BSIMv3 and EKV implementations."
+msgstr ""
+
+#: data/content/fel/portfolio.html:34
+msgid "Multi-lingual, ability to mimic different variants of spice, and also supporting the newer languages like Verilog-AMS."
+msgstr ""
+
+#: data/content/fel/portfolio.html:35
+msgid "Draws publishable-quality electrical circuit schematic diagrams."
+msgstr ""
+
+#: data/content/fel/portfolio.html:36
+msgid "Circuit components can be retrieved from libraries which are fully editable."
+msgstr ""
+
+#: data/content/fel/portfolio.html:40 data/content/fel/portfolio.html:86
+#: data/content/fel/portfolio.html:118 data/content/fel/portfolio.html:136
+msgid "Tools:"
+msgstr ""
+
+#: data/content/fel/portfolio.html:42
+#, python-format
+msgid "A general purpose circuit simulator with its engine designed to do true mixed-mode simulation. The developer's thesis can be <a href=\"%s\">read</a> here."
+msgstr ""
+
+#: data/content/fel/portfolio.html:43
+#, fuzzy
+msgid "A mixed level/signal circuit simulator"
+msgstr "Космічний симулятор"
+
+#: data/content/fel/portfolio.html:44
+msgid "A frontend to Spice circuit similators"
+msgstr ""
+
+#: data/content/fel/portfolio.html:45
+msgid "A general-purpose drawing program and also a specific-purpose CAD program for circuit schematic drawing and schematic capture."
+msgstr ""
+
+#: data/content/fel/portfolio.html:51
+msgid "A continuous DRC that operates in background and gives an up-to-date picture of violations."
+msgstr ""
+
+#: data/content/fel/portfolio.html:52
+msgid "A hierarchical circuit extractor that only re-extracts portions of the circuit that have changed."
+msgstr ""
+
+#: data/content/fel/portfolio.html:53
+msgid "Plowing that permits interactive stretching and compaction."
+msgstr ""
+
+#: data/content/fel/portfolio.html:54
+msgid "Routing tools that work under and around existing connections."
+msgstr ""
+
+#: data/content/fel/portfolio.html:55
+msgid "Logs and corner stitching to achieve efficient implementations."
+msgstr ""
+
+#: data/content/fel/portfolio.html:56
+msgid "Dedicated to training in sub-micron CMOS VLSI design with full editing facilities."
+msgstr ""
+
+#: data/content/fel/portfolio.html:57
+msgid "Supports technology files by the MOSIS foundry service."
+msgstr ""
+
+#: data/content/fel/portfolio.html:58
+msgid "Switch-level simulation of the layout, by considering transistors as ideal switches, or using RC time constants to predict the relative timing of events through extracted capacitance and lumped resistance values."
+msgstr ""
+
+#: data/content/fel/portfolio.html:59
+msgid "Ensures that layout connectivity matches the logical design represented by the schematic or netlist before tapeout by automatically extracting devices and nets formed across layout hierarchy and comparing them to the schematic netlist. (LVS) )"
+msgstr ""
+
+#: data/content/fel/portfolio.html:60
+msgid "Generates GDS II stream format and CIF from a given layout."
+msgstr ""
+
+#: data/content/fel/portfolio.html:61
+msgid "Achievement : Thick-film circuit layout using the Magic layout editor."
+msgstr ""
+
+#: data/content/fel/portfolio.html:65
+msgid "Widely cited as being the easiest tool to use for circuit layout, even for people who ultimately rely on commercial tools for their product design flow."
+msgstr ""
+
+#: data/content/fel/portfolio.html:66
+#, python-format
+msgid "A sophisticated electrical CAD system that can handle many forms of circuit design, including custom IC layout (ASICs), schematic drawing, hardware description language specifications, and electro-mechanical hybrid layout. View the <b>IEEE Santa Clara Valley</b> (June 4, 2009) presentation <a href=\"%s\">here</a>."
+msgstr ""
+
+#: data/content/fel/portfolio.html:67
+msgid "A cross-platform VLSI IC layout editor."
+msgstr ""
+
+#: data/content/fel/portfolio.html:68
+msgid "A tool for comparing netlists, in analog or mixed-signal circuits that cannot be simulated in reasonable time."
+msgstr ""
+
+#: data/content/fel/portfolio.html:73
+msgid "A HDL simulation environment that enables you to verify the functional and timing models of your design. Thus, your Design teams can focus on improving existing methodologies with tools that scale across multiple levels of abstraction and design complexity."
+msgstr ""
+
+#: data/content/fel/portfolio.html:75
+msgid "VPI functionality."
+msgstr ""
+
+#: data/content/fel/portfolio.html:76
+msgid "A graphical waveform viewer."
+msgstr ""
+
+#: data/content/fel/portfolio.html:77
+msgid "Supports both VHDL and Verilog designs."
+msgstr ""
+
+#: data/content/fel/portfolio.html:78
+msgid "A Verilog simulator and synthesis tool for IEEE 1364-2001 standard."
+msgstr ""
+
+#: data/content/fel/portfolio.html:79
+msgid "Export signals to a VCD file or a GHW file for visual inspection with a waveform viewer."
+msgstr ""
+
+#: data/content/fel/portfolio.html:80
+msgid "Pretty printing or cross references generation in HTML."
+msgstr ""
+
+#: data/content/fel/portfolio.html:81
+msgid "Makefile generation for any component in a design."
+msgstr ""
+
+#: data/content/fel/portfolio.html:82
+msgid "Achievements: Successfully compiled and run a DLX processor and a LEON1 SPARC processor."
+msgstr ""
+
+#: data/content/fel/portfolio.html:83
+msgid "Automatic layout generation from VHDL description via desired standard cell libraries."
+msgstr ""
+
+#: data/content/fel/portfolio.html:84
+msgid "Implementation of the VHDL language in accordance to the IEEE 1076-1987 standard, IEEE 1076-1993 standard, the protected types of VHDL00 (aka IEEE 1076a or IEEE 1076-2000) and and non-standard third party libraries."
+msgstr ""
+
+#: data/content/fel/portfolio.html:87
+msgid "A VHDL simulator, using the GCC technology. GHDL implements the VHDL language according to the IEEE 1076-1987 or the IEEE 1076-1993 standard. It compiles VHDL files and creates a binary that simulates your design."
+msgstr ""
+
+#: data/content/fel/portfolio.html:88
+msgid "A circuit simulator with graphical user interface. The software aims to support all kinds of circuit simulation types, e.g. DC, AC, S-parameter and harmonic balance analysis."
+msgstr ""
+
+#: data/content/fel/portfolio.html:89
+msgid "Yet another VHDL simulator."
+msgstr ""
+
+#: data/content/fel/portfolio.html:90
+msgid "A Verilog compiler that generates a variety of engineering formats, including simulation. It strives to be true to the IEEE-1364 standard."
+msgstr ""
+
+#: data/content/fel/portfolio.html:91
+msgid "Waveform viewer that can view VCD files produced by most VHDL/Verilog simulation tools, as well as LXT files produced by certain Verilog simulation tools."
+msgstr ""
+
+#: data/content/fel/portfolio.html:92
+msgid "A command line tool for generating timing diagrams from ASCII input files. The input files use a structured language to represent signal state transitions and interdependencies."
+msgstr ""
+
+#: data/content/fel/portfolio.html:97
+msgid "Automatic schematic generation"
+msgstr ""
+
+#: data/content/fel/portfolio.html:98
+msgid "VHDL compilation and simulation"
+msgstr ""
+
+#: data/content/fel/portfolio.html:99
+msgid "Finite State Machines (FSM)"
+msgstr ""
+
+#: data/content/fel/portfolio.html:100
+msgid "Model checking and formal proof"
+msgstr ""
+
+#: data/content/fel/portfolio.html:101
+msgid "RTL and Logic synthesis"
+msgstr ""
+
+#: data/content/fel/portfolio.html:102
+msgid "Data-Path compilation"
+msgstr ""
+
+#: data/content/fel/portfolio.html:103
+msgid "Macro-cells generation"
+msgstr ""
+
+#: data/content/fel/portfolio.html:104
+msgid "Symbolic Pad cells"
+msgstr ""
+
+#: data/content/fel/portfolio.html:105
+msgid "Design rules checking"
+msgstr ""
+
+#: data/content/fel/portfolio.html:106
+msgid "Place and route"
+msgstr ""
+
+#: data/content/fel/portfolio.html:107
+#, fuzzy
+msgid "Layout edition"
+msgstr "Опис"
+
+#: data/content/fel/portfolio.html:108
+msgid "Netlist extraction and verification"
+msgstr ""
+
+#: data/content/fel/portfolio.html:109
+msgid "Automatic Layout generation"
+msgstr ""
+
+#: data/content/fel/portfolio.html:110
+msgid "Physical optimization and layout design flows"
+msgstr ""
+
+#: data/content/fel/portfolio.html:111
+msgid "Complete RTL to CIF and GDSII flows"
+msgstr ""
+
+#: data/content/fel/portfolio.html:112
+#, fuzzy
+msgid "7 extra standard cells up to a feature size of 0.13µm"
+msgstr "Додаткові стандартні бібліотеки для підтримки елементів з розмірами 0.13µm. (більше ніж 300 МБ)"
+
+#: data/content/fel/portfolio.html:113
+msgid "Read/write standard ins/outs including Verilog and VHDL"
+msgstr ""
+
+#: data/content/fel/portfolio.html:114
+msgid "Creates a POV-Ray (3D view) scene description file of the GDSII data. "
+msgstr ""
+
+#: data/content/fel/portfolio.html:119
+msgid "VLSI and ASIC Technology Standard Cell Libraries"
+msgstr ""
+
+#: data/content/fel/portfolio.html:120
+msgid "a complete set of CAD tools and portable libraries for VLSI design. It includes a VHDL compiler and simulator, logic synthesis tools, and automatic place and route tools."
+msgstr ""
+
+#: data/content/fel/portfolio.html:121
+msgid "Creates attractive 3D pictures of a layout. Converts GDS2 layout file to POV-Ray"
+msgstr ""
+
+#: data/content/fel/portfolio.html:124
+msgid "A professional-quality printed circuit board design environment along with:"
+msgstr ""
+
+#: data/content/fel/portfolio.html:127
+msgid "schematic capture, simulation, prototyping attribute management,"
+msgstr ""
+
+#: data/content/fel/portfolio.html:128
+msgid "bill of materials (BOM) generation and netlisting into over 20 netlist formats."
+msgstr ""
+
+#: data/content/fel/portfolio.html:129
+msgid "Includes a rats nest feature, design rule checking, and can provide industry standard RS-274-X (Gerber), NC drill, and centroid data (X-Y data) output for use in the board fabrication and assembly process."
+msgstr ""
+
+#: data/content/fel/portfolio.html:130
+msgid "Offers high end features such as an autorouter and trace optimizer, which can tremendously reduce layout time."
+msgstr ""
+
+#: data/content/fel/portfolio.html:131
+msgid "Creates PCB of up to 8 layers with an unlimited number of components and nets."
+msgstr ""
+
+#: data/content/fel/portfolio.html:132
+msgid "Includes a viewer for Gerber files (RS274X), which supports NC-drill and Excellon formats."
+msgstr ""
+
+#: data/content/fel/portfolio.html:137
+msgid "An interactive printed circuit board editor."
+msgstr ""
+
+#: data/content/fel/portfolio.html:138
+msgid "Gerber Viewer (gerbv) is a viewer for Gerber files. Gerber files are generated from PCB CAD system and sent to PCB manufacturers as basis for the manufacturing process."
+msgstr ""
+
+#: data/content/fel/portfolio.html:139
+msgid "A full suite of Electronic Design Automation tools."
+msgstr ""
+
+#: data/content/fel/portfolio.html:140
+msgid "Kicad creates electronic schematic diagrams and printed circuit board artwork up to 16 layers."
+msgstr ""
+
+#: data/content/fel/portfolio.html:142
+msgid "Embedded Systems Development"
+msgstr ""
+
+#: data/content/fel/portfolio.html:143
+msgid "µController Programming"
+msgstr ""
+
+#: data/content/fel/portfolio.html:145
+msgid "Supported compilers:"
+msgstr ""
+
+#: data/content/fel/portfolio.html:147
+msgid "the Small Device C Compiler, the GNU PIC Utilities, the PICC compilers,"
+msgstr ""
+
+#: data/content/fel/portfolio.html:148
+msgid "the PIC30 toolchain, the C18 compiler, the JAL and JALV2 compilers,"
+msgstr ""
+
+#: data/content/fel/portfolio.html:149
+msgid "the CSC compiler, and the Boost compilers."
+msgstr ""
+
+#: data/content/fel/portfolio.html:152
+msgid "Ease to use IDEs for microcontrollers circuit design, simulation and programmation to serial, parallel and USB ports."
+msgstr ""
+
+#: data/content/fel/portfolio.html:154
+msgid "IDE includes an oscilloscope and a flowchart integration."
+msgstr ""
+
+#: data/content/fel/portfolio.html:157
+msgid "Supported debuggers : ICD2 and GPSim."
+msgstr ""
+
+#: data/content/fel/portfolio.html:158
+msgid "Supported programmers : ICD2, PICkit1 and PICkit2 and PicStart+ programmers."
+msgstr ""
+
+#: data/content/fel/portfolio.html:159
+msgid "Supports 8051 and AVR."
+msgstr ""
+
+#: data/content/fel/portfolio.html:161
+msgid "AVR Development System"
+msgstr ""
+
+#: data/content/fel/portfolio.html:163
+msgid "Supports the Atmel's STK500 and the PPI (parallel port interface) programmer types."
+msgstr ""
+
+#: data/content/fel/portfolio.html:165
+msgid "Includes"
+msgstr ""
+
+#: data/content/fel/portfolio.html:167
+msgid "Cross compilers and Programmers"
+msgstr ""
+
+#: data/content/fel/portfolio.html:168
+msgid "A Universal In-System Programmer for Atmel AVR and 8051"
+msgstr ""
+
+#: data/content/fel/portfolio.html:169
+msgid "A Program for interfacing the Atmel JTAG ICE to GDB"
+msgstr ""
+
+#: data/content/fel/portfolio.html:173
+msgid "Special contributions from"
+msgstr ""
+
+#: data/content/fel/portfolio.html:178
+msgid "The CAD department of many semiconductor design centers maintain various scripts under various version control systems. We strives to give those CAD engineers some perl modules and a proper platform."
+msgstr ""
+
+#: data/content/fel/portfolio.html:180
+msgid "Revision Control : CVS, SVN, GIT, RCS"
+msgstr ""
+
+#: data/content/fel/portfolio.html:181
+msgid "Web based tools : Trac, Bugzilla"
+msgstr ""
+
+#: data/content/fel/portfolio.html:182
+msgid "UML to maintain their personalized perl scripts."
+msgstr ""
+
+#: data/content/fel/portfolio.html:185
+msgid "Perl Modules:"
+msgstr ""
+
+#: data/content/fel/portfolio.html:187
+msgid "VHDL : perl-Hardware-Vhdl-Parser, perl-Hardware-Vhdl-Tidy, perl-Hardware-Vhdl-Lexer"
+msgstr ""
+
+#: data/content/fel/portfolio.html:188
+msgid "Verilog : perl-Verilog perl-Verilog-CodeGen perl-Hardware-Verilog-Parser perl-Verilog-Readmem "
+msgstr ""
+
+#: data/content/fel/portfolio.html:189
+#, python-format
+msgid "Systemc : perl-SystemPerl perl-SystemC-Vregs (Read more about SystemC on Fedora <a href=\"%s\">here</a>"
+msgstr ""
+
+#: data/content/fel/portfolio.html:190
+msgid "Generation of documentation : doxygen with VHDL support"
+msgstr ""
+
+#: data/content/fel/portfolio.html:191
+msgid "SystemVerilog : perl-Verilog"
+msgstr ""
+
+#: data/content/fel/portfolio.html:192
+msgid "Modelsim List: perl-ModelSim-List"
+msgstr ""
+
+#: data/content/fel/portfolio.html:196
+msgid "Project Management and budget tracking"
+msgstr ""
+
+#: data/content/fel/portfolio.html:199
+msgid "Gantt Diagram : planner"
+msgstr ""
+
+#: data/content/fel/portfolio.html:200
+msgid "Mind mapping tools (excellent for FPGA design) : Vym"
+msgstr ""
+
+#: data/content/fel/portfolio.html:201
+msgid "Budget Tracking : Kmymoney, Openoffice Spreadsheet"
+msgstr ""
+
+#: data/content/fel/portfolio.html:202
+msgid "System design : Dia, Inkscape"
 msgstr ""
 
 #: data/content/fel/portfolio.html:212
@@ -1165,6 +1885,197 @@ msgstr ""
 msgid "A screenshot of a Project Planning with planner."
 msgstr ""
 
+#: data/content/fel/publications.html:9
+msgid "Publications and Presentations"
+msgstr ""
+
+#: data/content/fel/publications.html:11
+#, python-format
+msgid "Fedora Project has quality class <a href=\"%s\">ambassadors</a> around the world. These ambassadors will gladly answer your questions and will conduct various presentations in your locality. You can request a Fedora Electronic Lab presentation to be conducted in your locality via our <a href=\"%s\">ticketing service</a>."
+msgstr ""
+
+#: data/content/fel/publications.html:13
+msgid "Want to do a presentation?"
+msgstr ""
+
+#: data/content/fel/publications.html:16
+#, python-format
+msgid "Use our <a href=\"%s\">OpenOffice template</a> and <a href=\"%s\">sources</a> for your publications or presentations."
+msgstr ""
+
+#: data/content/fel/publications.html:18
+#, fuzzy
+msgid "Share your publications"
+msgstr "Публікації"
+
+#: data/content/fel/publications.html:19
+#, python-format
+msgid "Use our <a href=\"%s\">ticketing service</a> service to publish your publications or presentations here"
+msgstr ""
+
+#: data/content/fel/publications.html:23
+#, fuzzy
+msgid "Fedora Electronic Lab 12 Flyer"
+msgstr "Fedora Electronic Lab"
+
+#: data/content/fel/publications.html:25 data/content/fel/publications.html:44
+#: data/content/fel/publications.html:61
+msgid "By Chitlesh Goorah."
+msgstr ""
+
+#: data/content/fel/publications.html:27
+msgid "This highlights the key features of this advanced electronics design and simulation platform, assembled by Fedora for FEL 12."
+msgstr ""
+
+#: data/content/fel/publications.html:28 data/content/fel/publications.html:34
+#: data/content/fel/publications.html:41 data/content/fel/publications.html:47
+#: data/content/fel/publications.html:64 data/content/fel/publications.html:71
+#: data/content/fel/publications.html:77 data/templates/foot.html:18
+msgid "Download"
+msgstr "Завантаження"
+
+#: data/content/fel/publications.html:30
+msgid "Fedora Electronic Lab in Research and Development environment"
+msgstr ""
+
+#: data/content/fel/publications.html:31
+msgid "ABSTRACT"
+msgstr ""
+
+#: data/content/fel/publications.html:33
+msgid "This paper entails how the Fedora Project encourages Research and Development in advanced electronics design through its Fedora Electronic Laboratory (FEL) platform. Fedora has opted a different approach in the development of such high-end hardware design and simulation platform. This approach focuses mainly on providing opensource EDA solutions to meet several high-end design flows and methodologies, rather than the traditional opensource method: random packaging process."
+msgstr ""
+
+#: data/content/fel/publications.html:34
+msgid "25 March 2009"
+msgstr ""
+
+#: data/content/fel/publications.html:36
+#, fuzzy
+msgid "Presentations"
+msgstr "Документація"
+
+#: data/content/fel/publications.html:38
+msgid "By Laurent Charpentier."
+msgstr ""
+
+#: data/content/fel/publications.html:40
+msgid "In one of the largest technological parks in the world, Laurent, with more than 15 years of experience in digital IC design, gave a presentation about HDL design, simulation and PCB design with free and opensource EDA software. His audience, mostly Electronic Engineers from local semiconductor companies (Infineon, Texas-Instruments, ST-Ericsson, ...), were very pleased to know about the FEL initiative and happy to learn that it is now easier to find opensource tools that are ready to use. At the booth, Laurent gave some outstanding demos of Kicad (PCB), KtechLab (simulation) and other tools."
+msgstr ""
+
+#: data/content/fel/publications.html:41
+msgid "27-28 November 2009"
+msgstr ""
+
+#: data/content/fel/publications.html:41
+msgid "Event Report"
+msgstr ""
+
+#: data/content/fel/publications.html:46 data/content/fel/publications.html:63
+msgid "Fedora's grounding principles explained and maturity has helped in creating Fedora Electronic Lab and why there has not been such initiative before. Fedora Electronic Lab focuses on giving hardware design methodologies with opensource EDA tools and helps to foster a community around the opensource EDA community."
+msgstr ""
+
+#: data/content/fel/publications.html:47
+msgid "26 June 2009"
+msgstr ""
+
+#: data/content/fel/publications.html:47 data/content/fel/publications.html:58
+#: data/content/fel/publications.html:64 data/content/fel/publications.html:71
+msgid "Blog Report"
+msgstr ""
+
+#: data/content/fel/publications.html:50
+msgid "By Rangeen Basu, Subhodip Biswas, Arindam Ghosh, Ratnadeep Debnath and Kishan Goyal. FEL was deployed under 30 computers to demonstrate gsim85, Ktechlab, octave, piklab, gresistor, drawtiming, ghdl, ... FEL LiveDVDs were distributed freely."
+msgstr ""
+
+#: data/content/fel/publications.html:51
+msgid "14 May 2009"
+msgstr ""
+
+#: data/content/fel/publications.html:51
+msgid "Blog Report 1"
+msgstr ""
+
+#: data/content/fel/publications.html:51
+msgid "Blog Report 2"
+msgstr ""
+
+#: data/content/fel/publications.html:51
+msgid "Blog Report 3"
+msgstr ""
+
+#: data/content/fel/publications.html:51
+msgid "Blog Report 4"
+msgstr ""
+
+#: data/content/fel/publications.html:51
+msgid "Blog Report 5"
+msgstr ""
+
+#: data/content/fel/publications.html:55
+msgid "By Kostas Antonakoglou."
+msgstr ""
+
+#: data/content/fel/publications.html:57
+msgid "Fedora Electronic Lab was introduced and a work flow demonstration was conducted to show how electronic design can be achieved efficiently."
+msgstr ""
+
+#: data/content/fel/publications.html:58
+msgid "8 May 2009"
+msgstr ""
+
+#: data/content/fel/publications.html:64
+msgid "7 February 2009"
+msgstr ""
+
+#: data/content/fel/publications.html:68
+msgid "By Aanjhan Ranganathan."
+msgstr ""
+
+#: data/content/fel/publications.html:70
+msgid "Introduction to Fedora Electronic lab and opensource EDA tools.The success of FEL in India explained and how Free software is gaining ground everywhere in the world."
+msgstr ""
+
+#: data/content/fel/publications.html:71
+msgid "28 November 2008"
+msgstr ""
+
+#: data/content/fel/publications.html:74
+msgid "By Thibault North."
+msgstr ""
+
+#: data/content/fel/publications.html:76
+msgid "Introduction to Fedora Electronic lab and opensource EDA tools. Board level design explained with respect to the work done behind gEDA/gaf community."
+msgstr ""
+
+#: data/content/fel/publications.html:77
+msgid "30 May 2008."
+msgstr ""
+
+#: data/content/fel/publications.html:79
+msgid "Archives"
+msgstr ""
+
+#: data/content/fel/publications.html:81
+msgid "FEL Fabless solutions"
+msgstr ""
+
+#: data/content/fel/publications.html:82
+msgid "FEL at Binghamton University"
+msgstr ""
+
+#: data/content/fel/publications.html:83
+msgid "FEL Fabless abstract"
+msgstr ""
+
+#: data/content/fel/publications.html:84
+msgid "FEL 11 Flyer"
+msgstr ""
+
+#: data/content/fel/publications.html:85
+msgid "FEL 10 Flyer"
+msgstr ""
+
 #: data/content/fel/publications.html:94
 #: data/content/fel/publications.html:105
 #: data/content/fel/publications.html:116
@@ -1220,6 +2131,28 @@ msgstr "FOSS.in 2008"
 
 #: data/content/fel/publications.html:151
 msgid "Aanjhan Ranganathan and other Fedora contributors exposed how users can benefit with an opensource EDA platform."
+msgstr ""
+
+#: data/content/fel/support.html:9
+msgid "Fedora Electronic Lab team does not provide commercial technical support."
+msgstr ""
+
+#: data/content/fel/support.html:10
+msgid "The only types of technical support, FEL provides are through the"
+msgstr ""
+
+#: data/content/fel/support.html:12
+#, python-format
+msgid "<a href=\"%s\">Fedora Electronic Lab mailing list</a> for technical support related to EDA tools."
+msgstr ""
+
+#: data/content/fel/support.html:13
+#, python-format
+msgid "<a href=\"%s\">Ticketing service</a>to request any enhancement or developer sponsoring."
+msgstr ""
+
+#: data/content/fel/support.html:16
+msgid "It is recommended to subscribe to the mailing list for additional news about the ongoing development."
 msgstr ""
 
 #: data/content/games/index.html:41
@@ -1446,6 +2379,11 @@ msgstr "Дозволяє грати у Titan проти інших гравці�
 #: data/content/games/index.html:196
 msgid "A puzzle action game."
 msgstr "Головоломка на кмітливість"
+
+#: data/content/games/index.html:197
+#, fuzzy
+msgid "Visit honmepage >"
+msgstr "Сайт гри >"
 
 #: data/content/games/index.html:201
 msgid "SDL/OpenGL space shoot 'em up game also known as critter."
@@ -1834,6 +2772,11 @@ msgstr ""
 #: data/content/games/index.html:691
 msgid "Asteroid-like game with powerups."
 msgstr ""
+
+#: data/content/games/index.html:696
+#, fuzzy
+msgid "Fedora 13 Games Spin"
+msgstr "Збірки Fedora"
 
 #: data/content/games/index.html:698
 msgid "This is the latest version of the Fedora Linux operating system's Games spin. It's everything you need to try out Fedora's games spin--you don't have to erase anything on your current system to try it out, and it won't put your files at risk. Take the Fedora Games spin for a test drive, and if you like it, you can install it directly to your hard drive straight from the Live Media desktop if you like. <a href=\"/support\">Read more about using and installing from live media</a>."
@@ -2519,10 +3462,6 @@ msgstr "Вікі"
 #: data/templates/foot.html:15
 msgid "Events"
 msgstr "Події"
-
-#: data/templates/foot.html:18
-msgid "Download"
-msgstr "Завантаження"
 
 #: data/templates/foot.html:19
 msgid "Get Fedora"

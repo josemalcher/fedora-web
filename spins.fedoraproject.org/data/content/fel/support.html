@@ -6,13 +6,13 @@
 		<title>${_('Fedora Electronic Lab')}</title>
 	</head>
 	<body>
-		Fedora Electronic Lab team does not provide commercial technical support.
-		The only types of technical support, FEL provides are through the
+		${_('Fedora Electronic Lab team does not provide commercial technical support.')}
+		${_('The only types of technical support, FEL provides are through the')}
 		<ul>
-			<li><a href="https://admin.fedoraproject.org/mailman/listinfo/electronic-lab">Fedora Electronic Lab mailing list</a> for technical support related to EDA tools.</li>
-			<li><a href="https://fedorahosted.org/fedora-electronic-lab/">Ticketing service</a> to request any enhancement or developer sponsoring.</li>
-			<li><a href="http://bugzilla.redhat.com">Bugzilla</a> to file any bug encountered in the EDA tools.</li>
+			<li>${Markup(_('&lt;a href="%s"&gt;Fedora Electronic Lab mailing list&lt;/a&gt; for technical support related to EDA tools.') % 'https://admin.fedoraproject.org/mailman/listinfo/electronic-lab')}</li>
+			<li>${Markup(_('&lt;a href="%s"&gt;Ticketing service&lt;/a&gt;to request any enhancement or developer sponsoring.') % 'https://fedorahosted.org/fedora-electronic-lab/')}</li>
+			<li><a href="http://bugzilla.redhat.com">Bugzilla</a> ${_('to file any bug encountered in the EDA tools.')}</li>
 		</ul>
-		It is recommended to subscribe to the mailing list for additional news about the ongoing development.
+		${_('It is recommended to subscribe to the mailing list for additional news about the ongoing development.')}
 	</body>
 </html>

@@ -61,20 +61,20 @@ docs_url = [
 	            <span class="download-option" id="opt1">
 		            <h4>${_('Community Space')}</h4>
                     <ul>
-		              <li><a href="https://fedorahosted.org/fedora-electronic-lab">User Documentation and Developer Area</a></li>
-                      Users are welcome to propose new features and join us during our testing days.<br/>
-                      <li><a href="http://chitlesh.fedorapeople.org/FEL/list.html">List of all software</a> under FEL's umbrella.</li>
-                      <li><a href="http://publictest6.fedoraproject.org/gallery2/main.php">Screenshots Gallery</a></li>
-                      <li><a href="http://alt.fedoraproject.org/pub/alt/nightly-composes/electronic-lab/">Nightly Development LiveDVD</a></li>
+		              <li><a href="https://fedorahosted.org/fedora-electronic-lab">${_('User Documentation and Developer Area')}</a></li>
+                      ${_('Users are welcome to propose new features and join us during our testing days.')}<br/>
+                      <li>${Markup(_('&lt;a href="%s"&gt;List of all software&lt;/a&gt; under FEL\'s umbrella.') % 'http://chitlesh.fedorapeople.org/FEL/list.html')}</li>
+                      <li><a href="http://publictest6.fedoraproject.org/gallery2/main.php">${_('Screenshots Gallery')}</a></li>
+                      <li><a href="http://alt.fedoraproject.org/pub/alt/nightly-composes/electronic-lab/">${_('Nightly Development LiveDVD')}</a></li>
                     </ul>
 	            </span>
 	            <span class="download-option" id="opt2">
 		            <h4>${_('Latest Articles')}</h4>
 		            <ul>
-                      <li><a href="http://chitlesh.fedorapeople.org/papers/fel-flyer-f12.pdf">FEL-12 Flyer</a></li>
-                      <li><a href="http://chitlesh.fedorapeople.org/papers/FEL12ReleaseNotes.pdf">FEL-12 Release Notes</a></li>
-                      <li><a href="http://chitlesh.fedorapeople.org/papers/FELPositionPaper.pdf">Position Paper for Research and Development</a></li>
-                      <li>Installing the core FEL software on <a href="https://fedorahosted.org/fedora-electronic-lab/wiki/FAQ#EPELRepository">CentOS-5/RHEL-5</a></li>
+                      <li><a href="http://chitlesh.fedorapeople.org/papers/fel-flyer-f12.pdf">${_('FEL-12 Flyer')}</a></li>
+                      <li><a href="http://chitlesh.fedorapeople.org/papers/FEL12ReleaseNotes.pdf">${_('FEL-12 Release Notes')}</a></li>
+                      <li><a href="http://chitlesh.fedorapeople.org/papers/FELPositionPaper.pdf">${_('Position Paper for Research and Development')}</a></li>
+                      <li>${_('Installing the core FEL software on')} <a href="https://fedorahosted.org/fedora-electronic-lab/wiki/FAQ#EPELRepository">CentOS-5/RHEL-5</a></li>
                     </ul>
 	            </span>
 	            <span class="which-arch">
@@ -98,9 +98,9 @@ docs_url = [
                    <img class="splash-right" src="/static/images/fel/toped2.jpeg" rel="#toped2" width="19%"/>
                    <h4>${_('Glossary')}</h4>
                    <ul>
-                     <li>ASIC : Application-Specific Integrated Circuit</li>
-                     <li>EDA : Electronic Design Automation</li>
-                     <li>VLSI : Very Large Scale Integration, about 10⁶ to 10⁷ transistors</li>
+                     <li>${_('ASIC : Application-Specific Integrated Circuit')}</li>
+                     <li>${_('EDA : Electronic Design Automation')}</li>
+                     <li>${_('VLSI : Very Large Scale Integration, about 10⁶ to 10⁷ transistors')}</li>
                    </ul>
                  </span>
 			</div>
@@ -120,20 +120,20 @@ docs_url = [
 			</div>			
 			<div>
 				<h2>${_('Downloads')}</h2>
-                Fedora Electronic Lab can be deployed with these simple mechanisms, via either
+                ${_('Fedora Electronic Lab can be deployed with these simple mechanisms, via either')}
 		        <ul>
 			      <li>yum,</li>
-			      <li>a Fedora Electronic Lab LiveDVD.</li>
+			      <li>${_('a Fedora Electronic Lab LiveDVD.')}</li>
 		        </ul>
 
                 <h3>${_('Yum install')}</h3>
     
-                As from <b>Fedora-11 Leonidas</b>, Fedora users can groupinstall all FEL EDA software at once with:
+                ${Markup(_('As from &lt;b&gt;Fedora-11 Leonidas&lt;/b&gt;, Fedora users can groupinstall all FEL EDA software at once with:'))}
 		        <p>${_('# yum groupinstall \'Electronic Lab\'')}</p>
 
 		        <h3>${_('LiveDVD')}</h3>
 
-                The LiveDVD can be downloaded either via http or torrent. A LiveDVD is an operating system that is executed upon boot, without installation on a hard drive. A desktop icon can be used to install the OS if wanted.<br />
+                ${_('The LiveDVD can be downloaded either via http or torrent. A LiveDVD is an operating system that is executed upon boot, without installation on a hard drive. A desktop icon can be used to install the OS if wanted.')}<br />
 
 				<h3>${_('Torrent Download')}</h3>
 				<span class="download-option" id="opt1">
@@ -167,11 +167,11 @@ docs_url = [
 			<div>
                 <h2>${_('Support')}</h2>
 				<xi:include href="../../templates/support-tab.html" />
-				<h4>Miscleanous</h4>
-				<p>Fedora Electronic Lab team does not provide commercial technical support. The only types of technical support, FEL provides are through the</p>
+				<h4>${_('Miscleanous')}</h4>
+				<p>${_('Fedora Electronic Lab team does not provide commercial technical support. The only types of technical support, FEL provides are through the')}</p>
 				<ul>
-					<li><a href="https://fedorahosted.org/fedora-electronic-lab/">Ticketing service</a> to request any enhancement or developer sponsoring.</li>
-					<li><a href="http://bugzilla.redhat.com">Bugzilla</a> to file any bug encountered in the EDA tools.</li>
+					<li>${Markup(_('&lt;a href="%s"&gt;Ticketing service&lt;/a&gt; to request any enhancement or developer sponsoring.') % 'https://fedorahosted.org/fedora-electronic-lab/')}</li>
+					<li><a href="http://bugzilla.redhat.com">Bugzilla</a> ${_('to file any bug encountered in the EDA tools.')}</li>
 				</ul>
 			</div>
 		</div>
