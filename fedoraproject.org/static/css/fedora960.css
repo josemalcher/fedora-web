@@ -570,6 +570,7 @@ h4.main-section-hl { font-size: small; }
 
 #features-icons {
   margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 #features-icons h5 {
@@ -585,6 +586,26 @@ h4.main-section-hl { font-size: small; }
 #features-icons a {
   font-size: .9em;
 }
+
+
+#nav-bottom ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 4em;
+}
+
+#nav-bottom li {
+  float: left;
+  list-style: none;
+  margin: 0;
+  margin-right: 2em;
+}
+
+#nav-bottom h3 {
+  color: #666;
+}
+
+
 
 /* get-* pages */
 #main-download-section {
@@ -657,13 +678,15 @@ a.interactive-section, .bugs-section a { font-weight: normal; }
 
 /* features page */
 
-#features-summary *, #join-roles-summary * { background: none !important; }
+#features-summary { margin-bottom: 4em; }
 
-#features-summary,
+#features-icons div, #join-roles-summary div { background: none !important; }
+
+#features-icons,
 #join-roles-summary {
   background: -moz-linear-gradient(bottom, #eaeff7, white);
   margin-bottom: 2em;
-  padding-bottom: 10px;
+  padding-bottom: 1em;
 }
 
 #header-join p.twitter { 
@@ -815,7 +838,7 @@ pre.command {
 }
 
 .fine-print { font-style: italic } 
-.back-to-top {
+.back-to-top a {
     border-radius: 1.5ex;
     -webkit-border-radius: 1.5ex;
     -moz-border-radius: 1.5ex;
@@ -823,9 +846,8 @@ pre.command {
     margin-bottom: 20px;
     background-color: #F8A04A;
     display: inline-block;
+    color: #fff;
 }
-
-a.back-to-top { color: #fff; }
 
 .callout-style1 {
     -moz-border-radius: 10px 10px 10px 10px;
