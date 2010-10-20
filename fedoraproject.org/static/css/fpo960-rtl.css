@@ -17,6 +17,11 @@ body{
    float:left; 
 }
 
+/* Fix language selector */
+.container_16 .prefix_10 {
+	padding-right:55px; 
+}
+
 /* Fix for the four F's position */
 #site-heading h2 {
    float:left; 
@@ -27,18 +32,25 @@ body{
    padding-left:0px;
 }
 
-/* Fix slideshow number */
-.slideShow .navigation {
-	float:right
-	margin-left:0px;
-	margin-right:1em;
+.webpage-list, .checkmark-list {
+	padding-right:20px !important;
 }
+
 
 /* Fix the tabs on the features page */
 #features-nav-top>.tabs>li {
    float:right;
 }
 
-.webpage-list, .checkmark-list {
-   padding-right: 15px;
+/* Fix slideshow number */
+.slideShow .navigation {
+	position:relative;
+	padding-right: 0px;
+	margin-top: -35px;
+	-moz-margin-start: -30px;
+}
+
+/* Fix the right margin added under Firefox */
+.slideShow ul {
+	-moz-margin-start: -40px;
 }
