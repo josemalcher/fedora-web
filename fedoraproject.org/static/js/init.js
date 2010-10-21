@@ -33,7 +33,7 @@ $(document).ready(function(){
 
     // slideshow
     $('.simpleSlideShow').slideShow({
-        interval: 6
+        interval: 9
     });
 
 
