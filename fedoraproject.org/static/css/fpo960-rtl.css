@@ -26,8 +26,10 @@ body{
 #site-heading h2 {
    float:left; 
 }
+
+/* Fix for the globe position */
 .lang-dropdown {
-   background:url("../images/icon-search-globe.png") no-repeat scroll right center transparent;
+   background-position: right center;
    padding-right:23px;
    padding-left:0px;
 }
@@ -41,7 +43,7 @@ body{
 	position:relative;
 	padding-right: 0px;
 	margin-top: -35px;
-	-moz-margin-start: -30px;
+	-moz-margin-start: -30px;12:
 }
 
 /* Fix the right margin added under Firefox */
