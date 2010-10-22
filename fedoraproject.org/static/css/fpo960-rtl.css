@@ -36,12 +36,6 @@ body{
 	padding-right:20px !important;
 }
 
-
-/* Fix the tabs on the features page */
-#features-nav-top>.tabs>li {
-   float:right;
-}
-
 /* Fix slideshow number */
 .slideShow .navigation {
 	position:relative;
@@ -58,4 +52,9 @@ body{
 /* Fix the direction of the language selctor */
 .lang-dropdown select {
 	direction: ltr;
+}
+
+/* Fix tabs everywhere (features page and get-fedora-options) */
+#header-nav ul li {
+	float: right;
 }
