@@ -87,3 +87,14 @@ pre.command {
     float: right;
     margin-left: 1em;
 }
+
+/* Fix the download buttons in get-fedora-options */
+.container_16 .prefix_3, .container_16 .suffix_3 {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+/* Fix the direction of the export regulations (which aren't translatable for a legal reason) */
+#export-regulations .details, #export-regulations>p {
+	direction: ltr;
+}
