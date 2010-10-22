@@ -1,5 +1,5 @@
 /* This specific sheet is correcting the 960' rtl generated sheet */
-body{
+body {
 	direction:rtl;
 }
 
@@ -97,4 +97,14 @@ pre.command {
 /* Fix the direction of the export regulations (which aren't translatable for a legal reason) */
 #export-regulations .details, #export-regulations>p {
 	direction: ltr;
+}
+
+/* Fix the footer list sperators */
+#footer li.first {
+    border-right: medium none;
+	border-left: 1px solid #AAAAAA;
+}
+#footer li.last {
+    border-left: medium none;
+	border-right: 1px solid #AAAAAA;
 }
