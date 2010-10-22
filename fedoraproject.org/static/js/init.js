@@ -36,6 +36,9 @@ $(document).ready(function(){
         interval: 9
     });
 
+    $('p.warning').fadeIn(3000);
+
+
 
     // redirect download links to splash page
     $("a.download-splash").click(function(event){
