@@ -68,6 +68,12 @@ $(document).ready(function(){
         loading_text: "Loading Fedora tweets..."
     });
 
+	// hosting sponsor banners
+	// see: /sponsors/*.js
+    $("#hosting-sponsor img").attr("src", sponsor_banner[0]);
+    $("#hosting-sponsor img").attr("alt", sponsor_banner[1]);
+    $("#hosting-sponsor img").attr("href", sponsor_banner[2]);
+
 	// main site banners
 	// see: banner.js
 	var choices = [];
@@ -81,12 +87,6 @@ $(document).ready(function(){
     $("#fedora-banners img").attr("src", banners[choices[choice]][0]);
     $("#fedora-banners img").attr("alt", banners[choices[choice]][1]);
     $("#fedora-banners img").attr("href", banners[choices[choice]][2]);
-
-	// hosting sponsor banners
-	// see: /sponsors/*.js
-    $("#hosting-sponsor img").attr("src", sponsor_banner[0]);
-    $("#hosting-sponsor img").attr("alt", sponsor_banner[1]);
-    $("#hosting-sponsor img").attr("href", sponsor_banner[2]);
 
 });
 
