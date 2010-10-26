@@ -35,7 +35,7 @@ story_info = story_paths[random.randint(0, len(story_paths)-1)]
 					<ul class="slides">
 						<li class="slide" id="fedora-download">
 						  <div class="slide-canvas">
-							<div>
+							<div class="content">
 								<h2>${_('Free your desktop with Fedora.')}</h2>
 								<p>${_('Fedora is a fast, stable, and powerful operating system for everyday use built by a worldwide community of friends. It\'s completely free to use, study, and share.')}</p>
 								<ul>
@@ -44,37 +44,33 @@ story_info = story_paths[random.randint(0, len(story_paths)-1)]
 								</ul>
 								<p class="small">${_('%(size)s MB, 1 CD-ROM Disc image for %(arch)s-bit PCs') % {'size':'690', 'arch':'32'}} <br /><a href="${path}/${lang}/get-fedora-options">${Markup(_('More options &gt;'))}</a></p>
 							</div>
-							<img src="${path}/static/images/banners/fedora-sky.png" border="0" alt="" />
 						  </div>
 						</li>
 						<li class="slide" id="printing-easy">
 						  <div class="slide-canvas">
-							<div>
+							<div class="content">
 								<h2>${_('Printing made easy.')}</h2>
 								<p>${_('Have you ever tried to use a new printer and been frustrated by error messages and having to hunt for the correct driver to intall? With the easy printing feature in Fedora 14, plug your printer in and Fedora automatically finds and installs the correct driver.')}</p>
 								<p><a href="#">${Markup(_('Learn More &gt;'))}</a></p>
 							</div>
-							<img src="${path}/static/images/banners/printing-made-easy.png" border="0" alt="" />          
 						  </div>
 						</li>
 						<li class="slide" id="design">
-					        <div class="slide-canvas">
-							<div>
+					          <div class="slide-canvas">
+							<div class="content">
 								<h2>${_('A full suite of design tools')}</h2>
 								<p>${_('The Fedora Design Suite was constructed for designers, by designers. It features the tools the Fedora Design Team uses on a daily basis to create the wallpapers, icons, and interfaces you see in Fedora. The spin includes everything from document layouts, to vector and bitmap graphics, to 3D modeling.')}</p>
 								<p><a href="http://spins.fedoraproject.org/design">${Markup(_('Learn More &gt;'))}</a></p>
 							</div>
-							<img src="${path}/static/images/banners/tablet-banner.png" border="0" alt="" />
-						</div>
+						  </div>
 						</li>
 						<li class="slide" id="fudcon">
 						  <div class="slide-canvas">
-							<div>
+							<div class="content">
 								<h2>${_('A worldwide community of friends.')}</h2>
 								<p>${_('Fedora is a Linux-based operating system that showcases the latest in free software. Fedora is always free for anyone to use, modify, and distribute. It is built by people across the globe who work together as a community: the Fedora Project.')}</p>
 								<p><a href="${path}/${lang}/join-fedora">${Markup(_('Learn more &gt;'))}</a></p>
 							</div>
-							<img src="${path}/static/images/banners/fudcon-zurich-2010.jpg" border="0" alt="" />
 						  </div>
 						</li>
 					</ul>
