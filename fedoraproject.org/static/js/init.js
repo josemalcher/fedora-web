@@ -3,7 +3,7 @@
 $(document).ready(function(){
 
 	// for export regulations
-	$("#export-regulations").expander({
+	$(".export-regulations").expander({
 		slicePoint: 350,
 		widow: 1,
 		userCollapse: true,
