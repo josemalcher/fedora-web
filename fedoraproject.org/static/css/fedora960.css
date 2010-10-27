@@ -632,7 +632,7 @@ h4.main-section-hl { font-size: small; }
 /* get-* pages */
 #main-download-section {
     background: #ffffff url('../images/bg_main-download-section.png') repeat-x bottom left;
-    margin-bottom: 15px; 
+    margin-bottom: 3em; 
 }
 
 #main-download-section img {
@@ -1095,11 +1095,17 @@ li.resource-download
 
 
 /* export regulations */
-#export-regulations { padding-bottom: 30px; padding-top: 8px; border-top: 1px solid #eee; margin-top: 15px; }
+#export-regulations { 
+   padding-bottom: 30px; 
+   padding-top: 8px; 
+   border-top: 1px solid #ccc; 
+   margin-top: 4em; 
+   color: #aaa;
+}
 #export-regulations .read-more img, #export-regulations .details img { margin: 0; }
 #export-regulations .details { display: inline; }
 #export-regulations a { text-decoration: none; }
-#export-regulations h4 { font-size: small; }
+#export-regulations h4 { font-size: small; color: #aaa; }
 #export-regulations p { font-style: italic; }
 .read-more, .re-collapse { float:right; }
 .read-more a, .re-collapse a { padding-right: 15px; }
@@ -1375,7 +1381,8 @@ li.slide { width: 100% !important; }
 }
 
 
-.slides #fedora-download p.small {
+.slides #fedora-download p.small,
+#main-download-section p.small {
   clear: right;
   color: #444;
   font-size: 10pt;
@@ -1383,6 +1390,9 @@ li.slide { width: 100% !important; }
   margin-right: 1em;
   padding-top: .6em;
 }
+
+#main-download-section p.small { text-align: left; }
+
 
 .slides #fedora-download li a:hover {
   color: #255591;
