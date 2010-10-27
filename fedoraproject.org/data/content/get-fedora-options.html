@@ -159,38 +159,54 @@
                     <div id="get-formats">
                         <noscript><a name="formats"><hr /></a></noscript>
                         <h3>${_('Fedora Downloads by Formats')}</h3>
-
-                        <h4>${_('Fedora 13 Live Media / Spins')}</h4>
+			<div class="grid_1 suffix_1 alpha">
                         <img class="download-media" alt="${_('32-bit PC Edition')}" src="${path}/static/images/media.png" />
-                        <p>${_('Fedora Live Media images may be used via bootable CD, DVD, or USB drives, and also may be used to install Fedora to hard disk. They are a great way to give Fedora a try, low-risk.')}</p>
-                        <p><a class="download-button-mini" href="${path}/${lang}/get-fedora">${_('Get Fedora now')}</a></p>
-                        <p>${_('A directory of alternate Fedora images called Spins may be found at:')}</p>
-                        <p><a href="http://spins.fedoraproject.org/">http://spins.fedoraproject.org/</a></p>
-                        <p><a class="download-button-mini" href="http://spins.fedoraproject.org">${_('Go to Spins Directory')}</a></p>
-
-                        <div class="grid_12 alpha omega">
+			</div>
+			<div class="grid_10 omega format-block">
+                          <h4>${_('Fedora 13 Live Media / Spins')}</h4>
+                          <p>${_('Fedora Live Media images may be used via bootable CD, DVD, or USB drives, and also may be used to install Fedora to hard disk. They are a great way to give Fedora a try, low-risk.')}</p>
+                          <p>${_('A directory of alternate Fedora images called Spins may be found at:')}</p>
+                          <p><a href="http://spins.fedoraproject.org/">http://spins.fedoraproject.org/</a></p>
+                          <p><a class="download-button-mini" href="http://spins.fedoraproject.org">${_('Go to Spins Directory')}</a></p>
+			  </div>
+                          
+			<div class="format-block">
+                        <div class="grid_1 suffix_1 alpha">
+<img class="download-media" alt="${_('32-bit PC Edition')}" src="${path}/static/images/media.png" />
+			</div>
+			<div class="grid_10 omega">
                             <h4>${_('Fedora 13 DVD')}</h4>
-                            <img class="download-media" alt="${_('32-bit PC Edition')}" src="${path}/static/images/media.png" />
                             <p>${_('The DVD edition of Fedora is not Live Media, but it is bootable.  When you boot from this media, you will be running the installation program.  The DVD requires less memory (RAM) on your computer and contains more software.  This media may be useful if the machine on which you install Fedora is not connected to the Internet.')}</p>
                         </div>
                         <div class="clear"></div>
-                        <div class="grid_5 prefix_1 alpha">
-                            <p>${_('Intel &amp; AMD / PC compatible')}</p>
-                            <h5>${_('32-bit')}</h5>
-                            <a href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Fedora/i386/iso/Fedora-13-i386-DVD.iso" class="download-button-mini">${_('Download Now!')}</a><span class="star-most-compatible">${_('Most Compatible')}</span>
+			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
+                        <div class="grid_4 prefix_2 alpha arch">
+                            <h5>${_('Intel &amp; AMD / PC compatible')}</h5>
+                            <h6>${_('32-bit')}</h6>
+			</div>
+			<div class="grid_6 omega arch">
+                            <a href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Fedora/i386/iso/Fedora-13-i386-DVD.iso" class="download-button-mini">${_('Download Now!')}</a><span class="star-most-compatible"><img src="${path}/static/images/icons/arrow-left_sm.png" alt="" />${_('Most Compatible')}</span>
                             <p class="fine-print">${_('%s GB ISO disk image for 32-bit PC') % '3.1'}</p>
                         </div>
-                        <div class="grid_5 suffix_1 omega">
-                            <p>${Markup(_('Intel &amp; AMD / PC compatible'))}</p>
-                            <h5>${_('64-bit')}</h5>
+			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
+                        <div class="grid_4 prefix_2 alpha arch">
+                            <h5>${Markup(_('Intel &amp; AMD / PC compatible'))}</h5>
+                            <h6>${_('64-bit')}</h6>
+			</div>
+			<div class="grid_6 omega arch">
                             <a href="http://download.fedoraproject.org/pub/fedora/linux/releases/13/Fedora/x86_64/iso/Fedora-13-x86_64-DVD.iso" class="download-button-mini">${_('Download Now!')}</a>
                             <p class="fine-print">${_('%s GB ISO disk image for 64-bit PC') % '3.4'}</p>
                         </div>
+			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
                         <div class="clear"></div>
-                        <div class="grid_12 alpha omega">
+		
+                        <div class="grid_10 prefix_2 alpha omega">
                             <p class="help" style="clear: both;"><img class="support-icon" src="${path}/static/images/icon-support.png" />${Markup(_('For help determining what architecture your system is, &lt;a href="http://docs.fedoraproject.org/install-guide/f13/en-US/html/ch-new-users.html#sn-which-arch"&gt;please view our architecture help guide&lt;/a&gt;.'))}</p>
                         </div>
                         <div class="clear"></div>
+			</div>
+			
+			<div class="format-block">
                         <div class="grid_12 alpha omega">
                             <h4>${_('Fedora 13 Media by Mail')}</h4>
                             <img class="download-media" alt="${_('32-bit PC Edition')}" src="${path}/static/images/media.png" />
@@ -219,6 +235,7 @@
                             <a href="http://fedoraproject.org/wiki/Distribution/FreeMedia" class="download-button-mini">${_('Learn More')}</a> 
                         </div>
                         <div class="clear"></div>
+			</div>
                     </div>
                     <div id="get-activities">
                         <noscript><a name="activities"><hr /></a></noscript>
