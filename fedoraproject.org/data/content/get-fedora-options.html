@@ -207,30 +207,36 @@
 			</div>
 			
 			<div class="format-block">
-                        <div class="grid_12 alpha omega">
+			  <div class="grid_1 suffix_1 alpha">
+<img class="download-media" alt="${_('32-bit PC Edition')}" src="${path}/static/images/media.png" />
+			</div>
+                        <div class="grid_10 omega">
                             <h4>${_('Fedora 13 Media by Mail')}</h4>
-                            <img class="download-media" alt="${_('32-bit PC Edition')}" src="${path}/static/images/media.png" />
+                           
                             <p>${Markup(_('Slow internet? No internet? You can get a copy of Fedora media sent via postal mail through local and online vendors, as well as via the &lt;a href="%s"&gt;Fedora Free Media&lt;/a&gt; program.')) % 'http://fedoraproject.org/wiki/Distribution/FreeMedia'}</p>
                         </div>
                         <div class="clear"></div>
-                        <div class="grid_12 alpha omega">
+                        <div class="grid_10 prefix_2 alpha omega">
                             <h4>${_('Purchase Fedora Media from a Vendor')}</h4>
                         </div>
+			
                         <div class="clear"></div>
-                        <div class="grid_5 prefix_1 alpha">
+			<div class="purchase-options">
+                        	<div class="grid_5 prefix_2 alpha">
                             <h5>${_('Locate a Vendor in Your Area')}</h5>
                             <p>${_('Select vendors worldwide carry copies of Fedora media at a reasonable price. If a vendor exists in your area and you\'d rather not wait for shipping, this may be a good option for you.')}</p>
                             <a href="http://fedoraproject.org/wiki/Distribution/OnlineVendors" class="download-button-mini">${_('View Local Vendor Directory')}</a>
-                        </div>
-                        <div class="grid_5 suffix_1 omega">
+                      	 	 </div>
+                     	   <div class="grid_4 prefix_1 omega online-vendors">
                             <h5>${_('Online Vendors')}</h5>
                             <p>${_('Numerous vendors worldwide offer Fedora media for online purchase. Select the vendor closest to you to keep your shipping costs lower.')}</p>
                             <a href="http://fedoraproject.org/wiki/Distribution/OnlineVendors" class="download-button-mini">${_('View Online Vendor Directory')}</a>
-                        </div>
+                     	   </div>
                         <div class="clear"></div>
+			</div>
                         <div class="clear"></div>
-                        <div class="grid_12 alpha omega" id="freemedia-header">
-                            <h5>${_('Fedora Free Media Program')}</h5>
+                        <div class="grid_10 prefix_2 alpha omega" id="freemedia-header">
+                            <h4>${_('Fedora Free Media Program')}</h4>
                             <p>${_('Can\'t afford the price of installation media? Request Fedora installation media from the Fedora Free Media Program.')}</p>
                             <a href="http://fedoraproject.org/wiki/Distribution/FreeMedia" class="download-button-mini">${_('Learn More')}</a> 
                         </div>
