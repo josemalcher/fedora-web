@@ -166,7 +166,9 @@ a:hover {
     font-size: 1.2em;
     font-family: "ComfortaaRegular", sans-serif;
     text-shadow: 1px 1px 1px white;
+    border-radius: 10px;
     -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 
 #site-nav li {
@@ -632,7 +634,7 @@ h4.main-section-hl { font-size: small; }
 /* get-* pages */
 #main-download-section {
     background: #ffffff url('../images/bg_main-download-section.png') repeat-x bottom left;
-    margin-bottom: 15px; 
+    margin-bottom: 3em; 
 }
 
 #main-download-section img {
@@ -858,6 +860,7 @@ p.mini-note {
     background: #FFABAB;
     font-size: .8em;
     color: #4c4c4c;
+    border-radius: 1.5ex;
     -webkit-border-radius: 1.5ex;
     -moz-border-radius: 1.5ex;
     width: 50%
@@ -899,7 +902,9 @@ pre.command {
 }
 
 .callout-style1 {
-    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
     margin: 1em 0 3em;
     padding: 15px;
     position: relative;
@@ -921,7 +926,9 @@ pre.command {
 }
 
 .callout-style2 {
-    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
     position: relative;
 }
 
@@ -1095,11 +1102,17 @@ li.resource-download
 
 
 /* export regulations */
-#export-regulations { padding-bottom: 30px; padding-top: 8px; border-top: 1px solid #eee; margin-top: 15px; }
+#export-regulations { 
+   padding-bottom: 30px; 
+   padding-top: 8px; 
+   border-top: 1px solid #ccc; 
+   margin-top: 4em; 
+   color: #aaa;
+}
 #export-regulations .read-more img, #export-regulations .details img { margin: 0; }
 #export-regulations .details { display: inline; }
 #export-regulations a { text-decoration: none; }
-#export-regulations h4 { font-size: small; }
+#export-regulations h4 { font-size: small; color: #aaa; }
 #export-regulations p { font-style: italic; }
 .read-more, .re-collapse { float:right; }
 .read-more a, .re-collapse a { padding-right: 15px; }
@@ -1217,6 +1230,7 @@ div.panes div { display: none; }
 }
 
 .tweet .tweet_list, .query .tweet_list {
+    border-radius: .5em;
     -webkit-border-radius: .5em;
     -moz-border-radius:5px 5px 5px 5px;
     list-style-type: none;
@@ -1366,7 +1380,9 @@ li.slide { width: 100% !important; }
   text-shadow: white 1px 1px 0px;
   color: #255591;
   padding: .25em .65em;
+  border-radius: 8px;
   -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
   border-bottom: 2px solid #255591;
   background: -moz-linear-gradient(bottom,  #a9c8da,  white); 
   float: right;
@@ -1375,7 +1391,8 @@ li.slide { width: 100% !important; }
 }
 
 
-.slides #fedora-download p.small {
+.slides #fedora-download p.small,
+#main-download-section p.small {
   clear: right;
   color: #444;
   font-size: 10pt;
@@ -1383,6 +1400,9 @@ li.slide { width: 100% !important; }
   margin-right: 1em;
   padding-top: .6em;
 }
+
+#main-download-section p.small { text-align: left; }
+
 
 .slides #fedora-download li a:hover {
   color: #255591;
@@ -1439,7 +1459,9 @@ li.slide { width: 100% !important; }
   background: rgb(0, 0, 0);
   /* RGBa with 0.6 opacity */
   background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
   -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
   left: 200px;
   height: 200px;
   margin: 1em;
