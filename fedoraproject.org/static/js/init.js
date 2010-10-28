@@ -55,7 +55,10 @@ $(document).ready(function(){
         $("p.download-path").ready(function(){
             // get file path from URL, then display it
             var file_url = $.query.get('file');
-            $("p.download-path").prepend( '<a href="'+ file_url +'">'+ file_url +'</a>' );
+            $("p.download-path").prepend($("<a>", {
+                href: encodeURI(file_url),
+                text: file_url
+            }))
             setTimeout(function() { window.open(file_url) }, "5000");
         });
     }
