@@ -121,7 +121,7 @@ p.warning {
 } 
 
 /* Fix tweet box direction */
-.tweet_text {
+.tweet_list {
 	direction: ltr;
 }
 
@@ -159,4 +159,20 @@ p.warning {
 }
 .container_16 .prefix_2 {
 	padding-left: 0px;
+}
+/* Fix direction of Latest Announcements and Planet posts */
+.join-content .grid_5 ul, .join-content .grid_6 ul {
+	direction: ltr;
+}
+
+/* Fix a problem with the slideshow */
+.slideShow ul {
+	padding-right: 0px !important;
+}
+
+/* Fix the images positions in about-fedora */
+.about-content img {
+    float: right;
+    margin-left: 1em;
+	margin-right: 0;
 }
