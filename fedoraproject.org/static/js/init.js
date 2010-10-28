@@ -72,7 +72,7 @@ $(document).ready(function(){
 	// see: /sponsors/*.js
     $("#hosting-sponsor img").attr("src", sponsor_banner[0]);
     $("#hosting-sponsor img").attr("alt", sponsor_banner[1]);
-    $("#hosting-sponsor img").attr("href", sponsor_banner[2]);
+    $("#hosting-sponsor a").attr("href", sponsor_banner[2]);
 
 	// main site banners
 	// see: banner.js
