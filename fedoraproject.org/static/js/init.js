@@ -86,7 +86,7 @@ $(document).ready(function(){
 
     $("#fedora-banners img").attr("src", banners[choices[choice]][0]);
     $("#fedora-banners img").attr("alt", banners[choices[choice]][1]);
-    $("#fedora-banners img").attr("href", banners[choices[choice]][2]);
+    $("#fedora-banners a").attr("href", banners[choices[choice]][2]);
 
 });
 
