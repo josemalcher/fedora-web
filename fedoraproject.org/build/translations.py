@@ -13,7 +13,7 @@ language_name_map = {
 'bg': 'Bulgarian (bg)',
 'bn_IN': 'বাংলা (ভারত)',
 'ca': 'Catalan (ca)',
-'cs': 'Czech (cs)',
+'cs': 'Česky',
 'da': 'dansk',
 'de': 'Deutsch',
 'de_CH': 'Swiss German (de_CH)',
