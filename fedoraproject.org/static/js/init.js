@@ -54,9 +54,29 @@ $(document).ready(function(){
     if (/.*download-splash.*/i.test(window.location.href)) {
         $("p.download-path").ready(function(){
             // get file path from URL, then display it
+            var valid = false;
+            var allowed_prefixes = [
+                'http://download.fedoraproject.org/',
+                'http://torrent.fedoraproject.org/'
+            ]
+
             var file_url = $.query.get('file');
-            $("p.download-path").prepend( '<a href="'+ file_url +'">'+ file_url +'</a>' );
-            setTimeout(function() { window.open(file_url) }, "5000");
+
+            // Only accept URLs beginning with our known prefix.
+            for (i in allowed_prefixes) {
+                prefix = allowed_prefixes[i];
+                if (file_url.substring(0, prefix.length) == prefix) {
+                    valid = true;
+                }
+            }
+
+            if (valid) {
+                $("p.download-path").prepend($("<a>", {
+                    href: encodeURI(file_url),
+                    text: file_url
+                }))
+                setTimeout(function() { window.open(file_url) }, "5000");
+            }
         });
     }
 
@@ -72,7 +92,7 @@ $(document).ready(function(){
 	// see: /sponsors/*.js
     $("#hosting-sponsor img").attr("src", sponsor_banner[0]);
     $("#hosting-sponsor img").attr("alt", sponsor_banner[1]);
-    $("#hosting-sponsor img").attr("href", sponsor_banner[2]);
+    $("#hosting-sponsor a").attr("href", sponsor_banner[2]);
 
 	// main site banners
 	// see: banner.js
@@ -86,7 +106,7 @@ $(document).ready(function(){
 
     $("#fedora-banners img").attr("src", banners[choices[choice]][0]);
     $("#fedora-banners img").attr("alt", banners[choices[choice]][1]);
-    $("#fedora-banners img").attr("href", banners[choices[choice]][2]);
+    $("#fedora-banners a").attr("href", banners[choices[choice]][2]);
 
 });
 

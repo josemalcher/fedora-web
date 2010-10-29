@@ -42,6 +42,6 @@ window.onload = function() {
         $("#fedora-banners img").attr("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora14-countdown-banner-" + days + "." + lang + "." + "png");
         $("#fedora-banners img").attr("alt", "Fedora 14 Laughlin released in " + days + " days.");
     }
-    $("#fedora-banners img").attr("href", url);
+    $("#fedora-banners a").attr("href", url);
 }
 
