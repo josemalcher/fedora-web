@@ -15,6 +15,24 @@ story_paths = [
 story_info = story_paths[random.randint(0, len(story_paths)-1)]
 #print '--- Story ---';
 #print story_info[0];
+
+from datetime import datetime
+
+today = datetime.utcnow()
+release = datetime(2010, 11, 2, 15)
+
+difference = release - today
+days = difference.days
+if difference.seconds > 0 or difference.minutes > 0 or difference.hours > 0: days += 1
+if days < 0: days = 0
+days = str(days)
+
+image_lang = 'en'
+available_languages = ('ar', 'bg', 'bn_IN', 'cs', 'da', 'de', 'el', 'en', 'es', 'fi', 'fr', 'gu', 'he', 'hi', 'hr', 'hu', 'id', 'is', 'it', 'ja', 'kn', 'ko', 'ks', 'ml', 'nl', 'pa', 'pl', 'pt_BR', 'pt', 'ro', 'ru', 'si', 'sr', 'sv', 'th', 'tr', 'uk', 'zh_CN', 'zh_TW')
+if lang in available_languages:
+  image_lang = lang
+image = image_lang + '/fedora14-countdown-banner-' + days + '.' + image_lang + '.png'
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -196,9 +214,9 @@ story_info = story_paths[random.randint(0, len(story_paths)-1)]
                 <p><a href="get-fedora">${Markup(_('Full set of download options &gt;'))}</a></p>
 
                 <div id="fedora-banners">
-                    <a href="${path}/${lang}/get-prerelease"><img alt="Fedora 14 Beta" src="${path}/static/images/banners/f14beta.png" /></a>
-                </div>
+                    <a href="http://fedoraproject.org/wiki/Releases/14/Schedule"><img src="${Markup(_('%s/static/images/counter/%s') % (path, image))}" alt="${Markup(_('Fedora 14 Laughlin released in %s days!') % days)}" /></a>
                     <a href="${path}/${lang}/counter">${Markup(_('Add a counter to your own site!'))}</a>
+                </div>
 
                 <h4>${_('Upcoming Events')}</h4>
                 <ul class="webpage-list">
