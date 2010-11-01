@@ -75,7 +75,7 @@ $(document).ready(function(){
                     href: encodeURI(file_url),
                     text: file_url
                 }))
-                setTimeout(function() { window.open(file_url) }, "5000");
+                setTimeout(function() { window.location = file_url }, "2000");
             }
         });
     }
