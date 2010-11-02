@@ -32,25 +32,25 @@ fdd = feedparse('https://lists.fedoraproject.org/rss/devel.xml')
 	<div class="clear"></div>
         <div class="container_16 join-content">
             <div class="grid_8">
-                <div class="grid_1 alpha"><a href="http://fedoraproject.org/wiki/Communicate#IRC"><img src="${path}/static/images/icon-community-chat.png" /></a></div>
+                <div class="grid_1 alpha"><a href="http://fedoraproject.org/wiki/Communicate#IRC"><img src="${path}/static/images/icon-community-chat.png" alt="irc" /></a></div>
                 <div class="grid_7 omega">
                     <h3><a href="http://fedoraproject.org/wiki/Communicate#IRC">${_('Chat with us')}</a></h3>
                     <p>${Markup(_('Fedora has &lt;a href="%s"&gt;many IRC channels&lt;/a&gt;, including several for casual chatting.') % 'http://fedoraproject.org/wiki/Communicate#IRC')}</p>
                 </div>
                 <div class="clear"></div>
-                <div class="grid_1 alpha"><a href="http://fedoraproject.org/wiki/FWN/LatestIssue"><img src="${path}/static/images/icon-community-news.png" /></a></div>
+                <div class="grid_1 alpha"><a href="http://fedoraproject.org/wiki/FWN/LatestIssue"><img src="${path}/static/images/icon-community-news.png" alt="news" /></a></div>
                 <div class="grid_7 omega">
                     <h3><a href="http://fedoraproject.org/wiki/FWN/LatestIssue">${_('Fedora Weekly News')}</a></h3>
                     <p>${Markup(_('FWN provides &lt;a href="%s"&gt;a weekly recap&lt;/a&gt; of what\'s happening in the Fedora Project.') % 'http://fedoraproject.org/wiki/FWN/LatestIssue')}</p>
                 </div>
                 <div class="clear"></div>
-                <div class="grid_1 alpha"><a href="http://planet.fedoraproject.org"><img src="${path}/static/images/icon-community-planet.png" /></a></div>
+                <div class="grid_1 alpha"><a href="http://planet.fedoraproject.org"><img src="${path}/static/images/icon-community-planet.png" alt="blog" /></a></div>
                 <div class="grid_7 omega">
                     <h3><a href="http://planet.fedoraproject.org">${_('Visit Fedora Planet')}</a></h3>
                     <p>${Markup(_('Read &lt;a href="%s"&gt;blog posts by the community&lt;/a&gt;. You can add your own, too!') % 'http://planet.fedoraproject.org')}</p>
                 </div>
                 <div class="clear"></div>
-                <div class="grid_1 alpha"><a href="http://fedoraproject.org/wiki/Marketing_collateral"><img src="${path}/static/images/icon-community-goodies.png" /></a></div>
+                <div class="grid_1 alpha"><a href="http://fedoraproject.org/wiki/Marketing_collateral"><img src="${path}/static/images/icon-community-goodies.png" alt="goods" /></a></div>
                 <div class="grid_7 omega">
                     <h3><a href="http://fedoraproject.org/wiki/Marketing_collateral">${_('Get goodies')}</a></h3>
                     <p>${Markup(_('Spread the Fedora love with &lt;a href="%s"&gt;stickers, badges, banners, and more&lt;/a&gt;.') % 'http://fedoraproject.org/wiki/Marketing_collateral')}</p>
@@ -58,7 +58,7 @@ fdd = feedparse('https://lists.fedoraproject.org/rss/devel.xml')
                 <div class="clear"></div>
             </div>
             <div class="grid_8">
-                <img src="${path}/static/images/community-group-picture.png" />
+                <img src="${path}/static/images/community-group-picture.png" alt="grp_pic" />
             </div>
             <div class="clear"></div>
             <div class="grid_5">
@@ -109,21 +109,21 @@ fdd = feedparse('https://lists.fedoraproject.org/rss/devel.xml')
             </div>
             <div class="container_12" id="join-roles-icons">
                 <div class="grid_2">
-                    <a href="https://fedoraproject.org/wiki/Join#Content_Writer"><img src="${path}/static/images/join-writer.png" />
+                    <a href="https://fedoraproject.org/wiki/Join#Content_Writer"><img src="${path}/static/images/join-writer.png" alt="content_w" />
                     <h5>${_('Content Writer')}</h5>
                     <p>${_('These thoughtful communicators write manuals, guides, blog posts, and articles.')}</p></a>
                     <a href="https://fedoraproject.org/wiki/Join#Content_Writer">${_('Learn more &gt;')}</a>
                 </div>
                 <div class="grid_2">
 		    <a href="https://fedoraproject.org/wiki/Join#Designer">
-                    <img src="${path}/static/images/join-designer.png" />
+                    <img src="${path}/static/images/join-designer.png" alt="designer" />
                     <h5>${_('Designer')}</h5>
                     <p>${_('Artistically-inclined, these folks create artwork, logos, website, and user interface designs.')}</p></a>
                     <a href="https://fedoraproject.org/wiki/Join#Designer">${_('Learn more &gt;')}</a>
                 </div>
                 <div class="grid_2">
                     <a href="https://fedoraproject.org/wiki/Join#People_Person">
-                    <img src="${path}/static/images/join-people.png" />
+                    <img src="${path}/static/images/join-people.png" alt="people_person" />
                     <h5>${_('People Person')}</h5>
                     <p>${_('Outgoing and persuasive, these folks thrive interacting with folks at events and online!')}</p>
 		    </a>
@@ -131,7 +131,7 @@ fdd = feedparse('https://lists.fedoraproject.org/rss/devel.xml')
                 </div>
                 <div class="grid_2">
                     <a href="https://fedoraproject.org/wiki/Join#OS_Developer">
-                    <img src="${path}/static/images/join-osdevel.png" />
+                    <img src="${path}/static/images/join-osdevel.png" alt="os_dev"/>
                     <h5>${_('OS Developer')}</h5>
                     <p>${_('These technically-talented developers write new features, track down bugs, and help package software.')}</p>
                     </a>
@@ -139,7 +139,7 @@ fdd = feedparse('https://lists.fedoraproject.org/rss/devel.xml')
                 </div>
                 <div class="grid_2">
                     <a href="https://fedoraproject.org/wiki/Join#Translator">
-                    <img src="${path}/static/images/join-translator.png" />
+                    <img src="${path}/static/images/join-translator.png" alt="translator" />
                     <h5>${_('Translator')}</h5>
                     <p>${_('Multi-lingual and gifted writers, these folks help maintain &amp; expand Fedora\'s supported languages.')}</p>
                     </a>
@@ -147,7 +147,7 @@ fdd = feedparse('https://lists.fedoraproject.org/rss/devel.xml')
                 </div>
                 <div class="grid_2">
 		    <a href="https://fedoraproject.org/wiki/Join#Web_Developer_or_Administrator">
-                    <img src="${path}/static/images/join-webdevel.png" />
+                    <img src="${path}/static/images/join-webdevel.png" alt="web-dev" />
                     <h5>${_('Web Developer or Administrator')}</h5>
                     <p>${_('These system administrators and web-savvy developers build the infrastructure that runs Fedora.')}</p>
 		    </a>
