@@ -57,7 +57,8 @@ $(document).ready(function(){
             var valid = false;
             var allowed_prefixes = [
                 'http://download.fedoraproject.org/',
-                'http://torrent.fedoraproject.org/'
+                'http://torrent.fedoraproject.org/',
+                'http://mirrors.fedoraproject.org/'
             ]
 
             var file_url = $.query.get('file');
