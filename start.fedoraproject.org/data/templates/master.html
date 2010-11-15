@@ -12,12 +12,13 @@
   <body py:attrs="select('@*')">
     <div id="wrapper">
       <xi:include href="head.html" />
-      <xi:include href="sidebar.html" />
-      <div id="content">
+      <div id="site-content">
         ${select('*')}
       </div>
     </div>
-    <xi:include href="foot.html" />
+        <div id="bottom">
+            <xi:include href="foot.html" />
+        </div>
   </body>
   </py:match>
 </html>
