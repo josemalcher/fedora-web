@@ -1,3 +1,13 @@
+<?python
+# Planet
+fpp = feedparse('http://planet.fedoraproject.org/rss20.xml')
+
+# Announce List
+fda = feedparse('https://lists.fedoraproject.org/rss/announce.xml')
+
+# Devel List
+fdd = feedparse('https://lists.fedoraproject.org/rss/devel.xml')
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
   xmlns:py="http://genshi.edgewall.org/"
@@ -14,7 +24,7 @@
 					<form action="http://www.google.com/search" name="f" class="form">
 						<input name="q" class="search-form-field" />
 							<select name="as_rights">
-								<option value="">${_('Not filtered by license')}</option>
+								<option value="">${_('Any license')}</option>
 								<option value="(cc_publicdomain|cc_attribute|cc_sharealike|cc_noncommercial|cc_nonderived)">${_('Free to use or share')}</option>
 								<option value="(cc_publicdomain|cc_attribute|cc_sharealike|cc_nonderived).-(cc_noncommercial)">${_('Free to use or share commercially')}</option>
 								<option value="(cc_publicdomain|cc_attribute|cc_sharealike|cc_noncommercial).-(cc_nonderived)">${_('Free to use, share or modify')}</option>
@@ -29,5 +39,30 @@
             </div>
         </div>
         <div class="clear"></div>
+        <div class="container_12">
+            <div class="grid_6">
+                <h4>${_('Latest Announcements')}</h4>
+                <ul>
+                    <li py:for="entry in fda.entries[:2]">
+                        <h5><a href="${entry.link}">${entry.title}</a></h5>
+                        <p class="community-dates">${Markup(entry.summary)}</p>
+                    </li>
+                    <li py:for="entry in fdd.entries[:2]">
+                        <h5><a href="${entry.link}">${entry.title}</a></h5>
+                        <!-- <p class="community-dates">${Markup(entry.description)}</p> -->
+                    </li>
+                </ul>
+            </div>
+            <div class="grid_6">
+                <h4>${_('Latest Fedora Planet posts')}</h4>
+                <ul>
+                    <li py:for="entry in fpp.entries[:5]">
+                        <h5><a href="${entry.link}">${entry.title}</a></h5>
+                        <p class="community-dates">${_(entry.date)}</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
 	</body>
 </html>
