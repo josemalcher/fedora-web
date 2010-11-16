@@ -4,95 +4,104 @@
   xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="../templates/master.html" />
   <head>
-    <title>${Markup(_('Fedora Project'))}</title>
-    <style type="text/css">
-    </style>
+    <title>${Markup(_('Get the next Fedora - Fedora Project'))}</title>
   </head>
-  <body class="get">
-    <h2>${Markup(_('Fedora, For You.'))}</h2>
-    <p class="warning">${Markup(_('This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the &lt;a href="https://bugzilla.redhat.com/"&gt;Red Hat Bugzilla&lt;/a&gt;.  Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information.') % {'relnotes_url': _('http://docs.fedoraproject.org/release-notes/f12/en-US/html/')})}</p>
-    <p class="note">${Markup(_('After downloading an ISO, &lt;a href="https://fedoraproject.org%s/%s/verify"&gt;verify&lt;/a&gt; it.') % (path, lang))}</p>
-    <h3>${Markup(_('Install Media'))}</h3>
-    <ul class="downloadbox installdvd">
-      <li>
-      <h4>${Markup(_('BitTorrent'))}</h4>
-      <ul>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-12-Beta-i386-DVD.torrent">${Markup(_('i386'))}</a> - ${Markup(_('Install DVD'))}</li>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-12-Beta-x86_64-DVD.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Install DVD'))}</li>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-12-Beta-ppc-DVD.torrent">${Markup(_('ppc'))}</a> - ${Markup(_('Install DVD'))}</li>
-        <li style="margin-top: 1.25ex;"><a href="http://torrent.fedoraproject.org/torrents/Fedora-12-Beta-i386-CDs.torrent">${_('i386')}</a> - ${_('Install CDs')}</li>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-12-Beta-x86_64-CDs.torrent">${_('x86_64')}</a> - ${_('Install CDs')}</li>
-        <li><a href="http://torrent.fedoraproject.org/torrents/Fedora-12-Beta-ppc-CDs.torrent">${_('ppc')}</a> - ${_('Install CDs')}</li>
-      </ul>
-      </li>
-      <li>
-      <h4>${Markup(_('Direct Download'))}</h4>
-      <ul>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/12-Beta/Fedora/i386/iso/Fedora-12-Beta-i386-DVD.iso">${Markup(_('i386'))}</a> - ${Markup(_('Install DVD'))}</li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/12-Beta/Fedora/x86_64/iso/Fedora-12-Beta-x86_64-DVD.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Install DVD'))}</li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/12-Beta/Fedora/ppc/iso/Fedora-12-Beta-ppc-DVD.iso">${Markup(_('ppc'))}</a> - ${Markup(_('Install DVD'))}</li>
-        <li style="margin-top: 1.25ex;"><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/12-Beta/Fedora/i386/iso/">${_('i386')}</a> - ${_('Install CDs')}</li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/12-Beta/Fedora/x86_64/iso/">${_('x86_64')}</a> - ${_('Install CDs')}</li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/12-Beta/Fedora/ppc/iso/">${_('ppc')}</a> - ${_('Install CDs')}</li>
-      </ul>
-      </li>
-      <li>
-      <h4>${_('Jigdo')}</h4>
-      <ul>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/12-Beta/Fedora/i386/jigdo/">${_('i386')}</a></li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/12-Beta/Fedora/x86_64/jigdo/">${_('x86_64')}</a></li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/12-Beta/Fedora/ppc/jigdo/">${_('ppc')}</a></li>
-      </ul>
-      </li>
-    </ul>
-    <h3>${Markup(_('Fedora Desktop Live Media'))}</h3>
-    <ul class="downloadbox gnomelive">
-      <li>
-      <h4>${Markup(_('BitTorrent'))}</h4>
-      <ul>
-        <li><a href="http://torrent.fedoraproject.org/torrents/F12-Beta-i686-Live.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live CD'))}</li>
-        <li><a href="http://torrent.fedoraproject.org/torrents/F12-Beta-x86_64-Live.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live CD'))}</li>
-      </ul>
-      </li>
-      <li>
-      <h4>${Markup(_('Direct Download'))}</h4>
-      <ul>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/12-Beta/Live/i686/F12-Beta-i686-Live.iso">${Markup(_('i686'))}</a> - ${Markup(_('Live CD'))}</li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/12-Beta/Live/x86_64/F12-Beta-x86_64-Live.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live CD'))}</li>
-      </ul>
-      </li>
-    </ul>
+	<body id="fedoraproject-org" class="lang-${lang}">
 
-    <h3>${Markup(_('Fedora KDE Live Media'))}</h3>
-    <ul class="downloadbox kdelive">
-      <li>
-      <h4>${Markup(_('BitTorrent'))}</h4>
-      <ul>
-        <li><a href="http://torrent.fedoraproject.org/torrents/F12-Beta-i686-Live-KDE.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live CD'))}</li>
-        <li><a href="http://torrent.fedoraproject.org/torrents/F12-Beta-x86_64-Live-KDE.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live CD'))}</li>
-      </ul>
-      </li>
-      <li>
-      <h4>${Markup(_('Direct Download'))}</h4>
-      <ul>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/12-Beta/Live/i686/F12-Beta-i686-Live-KDE.iso">${Markup(_('i686'))}</a> - ${Markup(_('Live CD'))}</li>
-        <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/12-Beta/Live/x86_64/F12-Beta-x86_64-Live-KDE.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live CD'))}</li>
-      </ul>
-      </li>
-    </ul>
+        <div class="page-header" id="header-prerelease">
+            <div class="container_16">
+                <div class="grid_11">
+                    <h2>${Markup(_('Get the next Fedora, right now.'))}</h2>
+                    <p>${_('Fedora is 100%% free for you to enjoy and share.') % ()}</p>
+                    </div>
+                    <div class="grid_5 page-header-sidebar">
+                    <p><a href="${path}/${lang}/about-fedora#freedom">${_('Fedora isn\'t just free-of-charge. It\'s free as in freedom. Learn more.')}</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
 
-    <h3>${Markup(_('Let me look around...'))}</h3>
-    <ul class="download">
-      <li><a href="http://torrent.fedoraproject.org/">${Markup(_('See all torrents'))}</a></li>
-      <li><a href="http://mirrors.fedoraproject.org/publiclist/Fedora/12-Beta/">${Markup(_('See all mirrors'))}</a></li>
-      <li><a href="http://spins.fedoraproject.org/">${Markup(_('See all custom spins'))}</a></li>
-    </ul>
-    <div class="download-block" id="export-regulations">
-        <h3>Export Regulations</h3>
-        <p><b>By clicking on and downloading Fedora, you agree to comply with the following terms and conditions</b>:</p>
-        <span class="read-more"><a href="#"><strong>Read full export regulations</strong> <img src="${path}/static/images/arrow_down.png" /></a></span>
-        <span class="details"><p>Fedora software and technical information is subject to the U.S. Export Administration Regulations and other U.S. and foreign law, and may not be exported or re-exported to certain countries (currently Cuba, Iran, Iraq, North Korea, Sudan, and Syria) or to persons or entities prohibited from receiving U.S. exports (including those (a) on the Bureau of Industry and Security Denied Parties List or Entity List, (b) on the Office of Foreign Assets Control list of Specially Designated Nationals and Blocked Persons, and (c) involved with missile technology or nuclear, chemical or biological weapons). You may not download Fedora software or technical information if you are located in one of these countries, or otherwise affected by these restrictions. You may not provide Fedora software or technical information to individuals or entities located in one of these countries or otherwise affected by these restrictions. You are also responsible for compliance with foreign law requirements applicable to the import and use of Fedora software and technical information.</p></span>
-    </div>
-  </body>
+
+        <div class="container_16">
+            <div class="grid_16">
+                <p class="warning">${Markup(_('This is pre-release software. The Fedora Project makes no guarantees as to its suitability or usefulness. All issues should be reported via the &lt;a href="https://bugzilla.redhat.com/"&gt;Red Hat Bugzilla&lt;/a&gt;.  Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information.') % {'relnotes_url': 'http://docs.fedoraproject.org/'})}</p>
+                <p class="note">${Markup(_('After downloading an ISO, &lt;a href="https://fedoraproject.org%s/%s/verify"&gt;verify&lt;/a&gt; it.') % (path, lang))}</p>
+                <h4>${Markup(_('Install Media'))}</h4>
+                <ul class="downloadbox installdvd">
+                    <li>
+                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
+                        <ul>
+                            <li><a class="download-splash" href="http://torrent.fedoraproject.org/torrents/Fedora-14-Beta-i386-DVD.torrent">${Markup(_('i386'))}</a> - ${Markup(_('Install DVD'))}</li>
+                            <li><a class="download-splash" href="http://torrent.fedoraproject.org/torrents/Fedora-14-Beta-x86_64-DVD.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Install DVD'))}</li>
+                            <li style="margin-top: 1.25ex;"><a class="download-splash" href="http://torrent.fedoraproject.org/torrents/Fedora-14-Beta-i386-CDs.torrent">${_('i386')}</a> - ${_('Install CDs')}</li>
+                            <li><a class="download-splash" href="http://torrent.fedoraproject.org/torrents/Fedora-14-Beta-x86_64-CDs.torrent">${_('x86_64')}</a> - ${_('Install CDs')}</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>${Markup(_('Direct Download'))}</h5>
+                        <ul>
+                            <li><a class="download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/14-Beta/Fedora/i386/iso/Fedora-14-Beta-i386-DVD.iso">${Markup(_('i386'))}</a> - ${Markup(_('Install DVD'))}</li>
+                            <li><a class="download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/14-Beta/Fedora/x86_64/iso/Fedora-14-Beta-x86_64-DVD.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Install DVD'))}</li>
+                            <li style="margin-top: 1.25ex;"><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/14-Beta/Fedora/i386/iso/">${_('i386')}</a> - ${_('Install CDs')}</li>
+                            <li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/14-Beta/Fedora/x86_64/iso/">${_('x86_64')}</a> - ${_('Install CDs')}</li>
+                        </ul>
+                    </li>
+                    <!-- experimental -->
+                    <li>
+                        <h5><acronym title="${_('gPXE is an open source (GPL) network bootloader.')}">gPXE</acronym></h5>
+                        <ul>
+                            <li><a href="http://boot.fedoraproject.org/">BFO</a></li>
+                        </ul>
+                    </li>
+                    <!-- /experimental -->
+                </ul>
+
+                <h4>${Markup(_('Fedora Desktop Live Media'))}</h4>
+                <ul class="downloadbox gnomelive">
+                    <li>
+                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
+                        <ul>
+                            <li><a class="download-splash" href="http://torrent.fedoraproject.org/torrents/Fedora-14-Beta-i686-Live.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live DVD'))}</li>
+                            <li><a class="download-splash" href="http://torrent.fedoraproject.org/torrents/Fedora-14-Beta-x86_64-Live.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live DVD'))}</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>${Markup(_('Direct Download'))}</h5>
+                        <ul>
+                            <li><a class="download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/14-Beta/Live/i686/Fedora-14-Beta-i686-Live.iso">${Markup(_('i686'))}</a> - ${Markup(_('Live DVD'))}</li>
+                            <li><a class="download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/14-Beta/Live/x86_64/Fedora-14-Beta-x86_64-Live.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live DVD'))}</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>${Markup(_('Fedora KDE Live Media'))}</h4>
+                <ul class="downloadbox kdelive">
+                    <li>
+                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
+                        <ul>
+                            <li><a class="download-splash" href="http://torrent.fedoraproject.org/torrents/Fedora-14-Beta-i686-Live-KDE.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live CD'))}</li>
+                            <li><a class="download-splash" href="http://torrent.fedoraproject.org/torrents/Fedora-14-Beta-x86_64-Live-KDE.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live CD'))}</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>${Markup(_('Direct Download'))}</h5>
+                        <ul>
+                            <li><a class="download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/14-Beta/Live/i686/Fedora-14-Beta-i686-Live-KDE.iso">${Markup(_('i686'))}</a> - ${Markup(_('Live CD'))}</li>
+                            <li><a class="download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/14-Beta/Live/x86_64/Fedora-14-Beta-x86_64-Live-KDE.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live CD'))}</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>${Markup(_('Let me look around...'))}</h4>
+                <ul class="download">
+                    <li><a href="http://torrent.fedoraproject.org/">${Markup(_('See all torrents'))}</a></li>
+                    <li><a href="http://mirrors.fedoraproject.org/publiclist/Fedora/14-Beta/">${Markup(_('See all mirrors'))}</a></li>
+                    <li><a href="http://spins.fedoraproject.org/">${Markup(_('See all custom spins'))}</a></li>
+                </ul>
+                <xi:include href="../templates/content-export-regulations.html" />
+            </div>
+        </div>
+        <div class="clear"></div>
+	</body>
 </html>
 

@@ -6,43 +6,70 @@
   <head>
     <title>${Markup(_('Fedora Project'))}</title>
   </head>
-  <body class="help">
-    <h2>${Markup(_('Get Help.'))}</h2>
-	<p>${Markup(_('Being new to Fedora can seem daunting, fortunately there are lots of resources available to help make the transition easy. This page ties together all of the resources a new user might like to make use of, some of which would not be immediately obvious coming from another operating system.'))}</p>
-
-	<p>${Markup(_('For those who already know about the different methods of getting support, but would like to know about Fedora specific locations, here they are:'))}</p>
-
-	<ul>
-		<li>${Markup(_('IRC: #fedora on irc.freenode.org'))}</li>
-		<li>${Markup(_('Mailing List: &lt;a href="http://lists.fedoraproject.org/mailman/listinfo/users"&gt;users&lt;/a&gt;'))}</li>
-		<li>${Markup(_('Forum: &lt;a href="http://fedoraforum.org/"&gt;Fedora Forum&lt;/a&gt;'))}</li>
-		<li>${Markup(_('&lt;a href="http://docs.fedoraproject.org/"&gt;Documentation&lt;/a&gt;'))}</li>
-	</ul>
-
-	<p>${Markup(_('For a full list of all the different ways to communicate with the Fedora Project, see this &lt;a href="http://fedoraproject.org/wiki/Communicate"&gt;page&lt;/a&gt;.'))}</p>
-
-	<h3>${Markup(_('Real Time Support (IRC)'))}</h3>
-
-	<p>${Markup(_('If a problem requires real time support, with somebody to explain each step and deal with any problems as they arise, Internet Relay Chat (IRC) is the ideal solution. Fedora has a number of IRC channels, and one specifically aimed at end-user support.'))}</p>
-
-	<p>${Markup(_('To access this support launch Fedoras default instant messaging client, Pidgin, and choose Manage from the Accounts menu. Add a new account, and select IRC as the protocol. Next, enter a Screen Name and save the changes. The final step is to add the #fedora channel by selecting Add Chat from the Buddies menu. Make sure to select an IRC account from the drop down menu, and enter #fedora as the channel, clicking Add to save the changes. Now that this is done, #fedora should appear in the default Pidgin screen, and double clicking this will allow you to access the #fedora channel, where end-users can ask questions and get support in real time.'))}</p>
-
-	<h3>${Markup(_('E-mail Support'))}</h3>
-
-	<p>${Markup(_('Some users prefer to take advantage of mailing lists to get help. The advantage of this method is that by subscribing to a mailing list it is possible to discover common problems many users have, and their solutions, before even encountering them! It also makes it easy to see when someone else needs help, and if you know the answer, to help them.'))}</p>
-
-	<p>${Markup(_('The mailing list for end-user support with Fedora is &lt;a href="http://lists.fedoraproject.org/mailman/listinfo/users"&gt;users&lt;/a&gt; and can be subscribed to by following that link.'))}</p>
-
-	<h3>${Markup(_('Forum Support'))}</h3>
-
-    <p>${Markup(_('A forum works in a similar manner to a mailing list, but instead of having messages sent to an e-mail address, they are posted to a website that anybody can read. Fedora has officially endorsed the community run &lt;a href="http://fedoraforum.org/"&gt;Fedora Forum&lt;/a&gt;, and it is an excellent resource for any questions about Fedora.'))}</p>
-
-	<h3>${Markup(_('Written Documentation'))}</h3>
-
-	<p>${Markup(_('Fedora also has a team of talented writers who work hard to produce excellent written documentation. There are a number of different documents available, including the Fedora User Guide, aimed at basic day to day operation of Fedora, an Installation Guide, and Security and SELinux guides.'))}</p>
-
-	<p>${Markup(_('These guides are available at &lt;a href="http://docs.fedoraproject.org"&gt;docs.fedoraproject.org&lt;/a&gt;.'))}</p>
-
-  </body>
+	<body id="fedoraproject-org" class="lang-${lang}">
+            <div class="page-header" id="header-help">
+			<div class="container_16">
+                <div class="grid_12">
+                    <h2>${_('Help')}</h2>
+                    <p>${_('Feeling lost? Follow these steps to find answers to all of your questions.')}</p>
+                </div>
+                <div class="grid_4 page-header-sidebar">
+                    <p><a href="http://fedoracommunity.org">${_('For support in other languages than English, have a look at fedoracommunity.org!')}</a></p>
+                </div>
+            </div>
+            </div>
+            <div class="clear"></div>
+            
+        <div class="container_16">
+            <div class="grid_1 num"><p>1</p></div>
+            <div class="grid_10 step-section">
+                <h3>${_('Check the Frequently Asked Questions')}</h3>
+                <h4>${_('Top 5 questions from the FAQ:')}</h4>
+                <ul>
+                    <li><a href="http://docs.fedoraproject.org/en-US/Fedora/14/html/Installation_Quick_Start_Guide/index.html">${_('How can I install Fedora?')}</a></li>
+                    <li><a href="http://fedoraproject.org/wiki/FAQ#How_do_I_configure_network_connections.3F_How_does_Fedora_support_wireless_connections.3F">${_('How do I configure network connections?')}</a></li>
+                    <li><a href="http://fedoraproject.org/wiki/FAQ#How_do_I_install_new_software_on_Fedora.3F_Is_there_anything_like_APT.3F">${_('How do I install new software on Fedora?')}</a></li>
+                    <li><a href="http://fedoraproject.org/wiki/FAQ#How_do_I_keep_Fedora_systems_updated.3F">${_('How do I keep Fedora systems updated?')}</a></li>
+                    <li><a href="http://fedoraproject.org/wiki/Releases/14/Schedule">${_('When is the next release of Fedora? What is the release schedule?')}</a></li>
+                </ul>
+                <p><a href="http://fedoraproject.org/wiki/FAQ">${_('Show the entire FAQ')} &gt;</a></p>
+            </div>
+            <div class="grid_1"></div>
+            <div class="grid_4 bugs-section">
+                <h3>${_('Bugs?')}</h3>
+                <p>${Markup(_('With a new release it\'s always good to check the &lt;a href="%s"&gt;Common Bugs&lt;/a&gt;.') % 'http://fedoraproject.org/wiki/Bugs/Common')}</p>
+                <p>${Markup(_('If you think you\'ve found a bug, you may want to &lt;a href="%s"&gt;check if it\'s already reported&lt;/a&gt; and otherwise &lt;a href="%s"&gt;report it yourself&lt;/a&gt;.') % ('http://fedoraproject.org/wiki/Common_F14_bugs', 'http://fedoraproject.org/wiki/How_to_file_a_bug_report'))}</p>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_1 num"><p>2</p></div>
+            <div class="grid_15 step-section">
+                <h3>${_('Search Fedora Documentation')}</h3>
+                <p>${Markup(_('The Fedora documentation website at &lt;a href="http://docs.fedoraproject.org"&gt;docs.fedoraproject.org&lt;/a&gt; is provided by the Fedora Community. It is full of comprehensive guides and how-tos for all types of users.'))}</p>
+                <p><a href="http://docs.fedoraproject.org/">${_('Visit Fedora Documentation')} &gt;</a></p>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_1 num"><p>3</p></div>
+            <div class="grid_15 step-section">
+                <h3>${_('Can\'t find an answer? Get interactive support here:')}</h3>
+                <a href="http://fedoraproject.org/wiki/Communicate#Forums" class="grid_4 alpha interactive-section">
+                    <h4>${_('Forums Support')}</h4>
+                    <img src="${path}/static/images/support-forums.png" alt="forums" />
+                    <p>${_('Search the Fedora Forums for help, or register and ask a question yourself.')}</p>
+                </a>
+                <a href="http://fedoraproject.org/wiki/Communicate#IRC_for_interactive_community_support" class="grid_4 interactive-section">
+                    <h4>${_('Chat support')}</h4>
+                    <img src="${path}/static/images/support-messaging.png" alt="chat" />
+                    <p>${_('Get instant support on the Fedora IRC channel. Channels exist for multiple languages.')}</p>
+                </a>
+                <a href="http://fedoraproject.org/wiki/Communicate#Mailing_Lists" class="grid_4 omega interactive-section">
+                    <h4>${_('Email support')}</h4>
+                    <img src="${path}/static/images/support-email.png" alt="email" />
+                    <p>${_('Ask your own question on one of the many multi-lingual Fedora email-based mailing lists available.')}</p>
+                </a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+	</body>
 </html>
 

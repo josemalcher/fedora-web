@@ -6,22 +6,25 @@
   <head>
     <title>${Markup(_('Fedora Project'))}</title>
   </head>
-  <body class="home">
-    <h2>${Markup(_('RSS Feed Test'))}</h2>
-    <!--
-    <?python
-    rhm = feedparse('http://www.redhatmagazine.com/feed/')
-    ?>
-    <h3>${rhm.feed.title}</h3>
-    <ul>
-      <li py:for="entry in rhm.entries[:5]">
-      <h4><a href="${entry.link}">${entry.title}</a></h4>
-      <p>
-      ${Markup(entry.description)}
-      </p>
-      </li>
-    </ul>
-    -->
-  </body>
+	<body id="fedoraproject-org" class="lang-${lang}">
+        <div class="container_16">
+            <div class="grid_16">
+                <h2>${Markup(_('RSS Feed Test'))}</h2>
+                <?python
+                rhm = feedparse('http://www.redhatmagazine.com/feed/')
+                ?>
+                <!--
+                <h3>${rhm.feed.title}</h3>
+                <ul>
+                    <li py:for="entry in rhm.entries[:5]">
+                        <h4><a href="${entry.link}">${entry.title}</a></h4>
+                        <p>${Markup(entry.description)}</p>
+                    </li>
+                </ul>
+                -->
+            </div>
+        </div>
+        <div class="clear"></div>
+	</body>
 </html>
 

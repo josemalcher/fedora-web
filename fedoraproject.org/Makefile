@@ -1,6 +1,12 @@
 ifndef LANGUAGES
 LANGUAGES := $(shell grep -v "^\#" po/LINGUAS)
 endif
+GENERIC_HEADER = msgid ""\
+                 msgstr ""\
+                 "Project-Id-Version: PROJECT VERSION\n"\
+                 "MIME-Version: 1.0\n"\
+                 "Content-Type: text/plain; charset=utf-8\n"\
+                 "Content-Transfer-Encoding: 8bit"
 PO_FILES = $(filter-out po/en.po,$(wildcard po/*.po))
 MO_FILES = $(PO_FILES:.po=.mo)
 HTML_FILES = $(shell find data -name "*.html")
@@ -15,13 +21,14 @@ all: $(LANGUAGES)
 
 $(LANGUAGES): % : po/%.mo data/templates/translations.html
 	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -s static -b $(BASEPATH)
+	# Hack to fix docs links.
+	$(PYTHON) build/docs-hack.py $@
 
 po/en.po: po/fedora-web.pot
 	cp po/fedora-web.pot po/en.po
 
 po/%.po: po/fedora-web.pot
-	msgmerge --no-wrap --update $@ $^
-	@touch $@
+	if test -f $@ ; then msgmerge --no-wrap --update $@ $^ ; else echo '$(GENERIC_HEADER)' > $@ ; fi
 
 po/en.mo: po/en.po
 	msgfmt -o $@ $<

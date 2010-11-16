@@ -1,4 +1,4 @@
-var available_langs = [ "de", "en", "hu", "is", "it", "pt_BR", "ru", "tr" ];
+var available_langs = [ "ar", "bg", "bn_IN", "cs", "da", "de", "el", "en", "es", "fi", "fr", "gu", "he", "hi", "hr", "hu", "id", "is", "it", "ja", "kn", "ko", "ks", "ml", "nl", "pa", "pl", "pt_BR", "pt", "ro", "ru", "si", "sr", "sv", "th", "tr", "uk", "zh_CN", "zh_TW" ];
 
 function getLang() {
     var scripts = document.getElementsByTagName("script");
@@ -13,7 +13,7 @@ function getLang() {
 
 window.onload = function() {
     var today = new Date();
-    var release = new Date("Nov 17, 2009 15:00:00 UTC");
+    var release = new Date("Nov 2, 2010 15:00:00 UTC");
     var millisBetweenDates = release - today;
     var days = Math.ceil(millisBetweenDates/1000/60/60/24);
 
@@ -30,20 +30,18 @@ window.onload = function() {
         lang = "en";
     }
 
-    var url = "https://fedoraproject.org/wiki/Releases/12/Schedule"
-    var bannerlink = document.getElementById("banner").getElementsByTagName("a")[0];
-
-    var bannerimg = document.getElementById("banner").getElementsByTagName("img")[0];
+    var url = "https://fedoraproject.org/wiki/Releases/14/Schedule"
 
     if (days <= 0) {
         // TODO: Get an actual image here!
-        bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/banners/f12release.png");
-        bannerimg.setAttribute("alt", "Fedora 12 is here!");
+         $("#fedora-banners img").attr("src", "http://fedoraproject.org/static/images/banners/f14release.png");
+         $("#fedora-banners img").attr("alt", "Fedora 14 is here!");
         url = "https://fedoraproject.org/get-fedora";
+
     } else {
-        bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora12-countdown-banner-" + days + "." + lang + "." + "png");
-        bannerimg.setAttribute("alt", "Fedora 12 Constantine released in " + days + " days.");
+        $("#fedora-banners img").attr("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora14-countdown-banner-" + days + "." + lang + "." + "png");
+        $("#fedora-banners img").attr("alt", "Fedora 14 Laughlin released in " + days + " days.");
     }
-    bannerlink.setAttribute("href", url);
+    $("#fedora-banners a").attr("href", url);
 }
 
