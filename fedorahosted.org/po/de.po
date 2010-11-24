@@ -111,14 +111,6 @@ msgstr "Ich habe soeben ein neues git-Repository erhalten - wie kann ich hinauf-
 msgid "Before anyone can clone/push the new repository a master push must be done with the command (from your local git repo): git push ssh://git.fedorahosted.org/git/yourproject.git/ master"
 msgstr "Bevor irgendjemand das neue Repository benutzen kann, muss ein &quot;Master-Push&quot; mit folgendem Befehl (von Ihrem lokalen git-Repository aus) ausgeführt werden: git push ssh://git.fedorahosted.org/git/IhrProjekt.git/ master"
 
-#: data/content/faq.html:27
-msgid "How do I get permission to commit to a project?"
-msgstr ""
-
-#: data/content/faq.html:28
-msgid "You should <a href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for the commit group of the project, which should be <code>&lt;scm&gt;&lt;project&gt;</code>, e.g. for the desktop-effects project, apply to the <code>gitdesktop-effects</code> group."
-msgstr ""
-
 #: data/content/faq.html:29
 msgid "While I wait for my repository to be created, can I work on my code elsewhere?"
 msgstr "Kann ich an meinem Code anderswo arbeiten, solange ich auf mein Repository warte?"
@@ -126,18 +118,6 @@ msgstr "Kann ich an meinem Code anderswo arbeiten, solange ich auf mein Reposito
 #: data/content/faq.html:30
 msgid "Of course. Visit <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> for instructions on how to set up a temporary repository in your fedorapeople.org space."
 msgstr "Natürlich. Besuchen Sie <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> um zu erfahren, wie Sie ein temporäres Repository auf Ihrem Account unter fedorapeople.org erstellen können."
-
-#: data/content/faq.html:31
-msgid "Why does hg tells me the repository doesn't exist even though I know I have the correct URL?"
-msgstr ""
-
-#: data/content/faq.html:32
-msgid "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a delimiter between hostname and path and a second \"/\" as the root of the filesystem path.  For instance, if you're accessing the repository for authconfig you need to use \"hg clone ssh://hg.fedoraproject.org//hg/authconfig\""
-msgstr ""
-
-#: data/content/faq.html:34
-msgid "You may, as long as the following conditions are met: <ol><li>The code project must be available under a Free Software license appropriate for Fedora.</li><li>You must make the source code you used to build the binaries available, and not distributed in the same tarball, or at a minimum make available a \"source only\" tarball.</li><li>You must provide clear instructions for building the software.</li></ol>"
-msgstr ""
 
 #: data/content/index.html:10
 msgid "Available Projects"
@@ -235,11 +215,6 @@ msgstr "Keine grundlegenden Änderungen wurden in den letzten sechs (6) Monaten 
 msgid "We will always do our best to contact missing developers and ensure that the code, Trac databases, and any relevant data is kept on hand so that it may be presented to the project owner in the event that a project is removed."
 msgstr "Wir werden immer unser Bestes geben, um verschwundene Entwickler zu kontaktieren und um sicherzustellen, dass der Code, die Trac-Datenbank und alle relevanten Daten bereitgehalten werden, um sie im Falle, dass das Projekt entfernt werden muss, dem Projekt-Eigentümer zurückgeben zu können."
 
-#: data/templates/foot.html:9
-#, fuzzy
-msgid "&copy; 2010 Red Hat, Inc. and others.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
-msgstr "&copy; 2009 Red Hat, Inc. und andere. Alle Rechte vorbehalten. Bitte senden Sie alle Kommentare oder Korrekturen an das <a href=\"mailto:webmaster@fedoraproject.org\">Webseiten-Team</a>."
-
 #: data/templates/foot.html:12
 msgid "The Fedora Project is maintained and driven by the community and sponsored by Red Hat.  This is a community maintained site.  Red Hat is not responsible for content."
 msgstr "Das Fedora-Projekt wird durch die Community verwaltet und von Red Hat unterstützt. Diese Seite wird von der Community gepflegt, Red Hat ist für den Inhalt nicht verantwortlich."
@@ -291,3 +266,27 @@ msgstr "Gesponsert von ServerBeach"
 #: data/content/faq.html:33
 msgid "Can I offer pre-compiled binaries on Fedora Hosted?"
 msgstr "Kann ich vorkompilierte Binärpakete auf Fedora Hosted anbieten?"
+
+#: data/templates/foot.html:9
+msgid "&copy; 2010 Red Hat, Inc. and others.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
+msgstr "&copy; 2009 Red Hat, Inc. und andere. Bitte senden Sie alle Kommentare oder Korrekturen an das <a href=\"mailto:webmaster@fedoraproject.org\">Webseiten-Team</a>."
+
+#: data/content/faq.html:27
+msgid "How do I get permission to commit to a project?"
+msgstr "Wie bekomme ich die Erlaubnis bei einem Projekt Änderungen einzuspielen?"
+
+#: data/content/faq.html:28
+msgid "You should <a href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for the commit group of the project, which should be <code>&lt;scm&gt;&lt;project&gt;</code>, e.g. for the desktop-effects project, apply to the <code>gitdesktop-effects</code> group."
+msgstr "Sie sollten sich hierzu für die dazugehörige Gruppe <a href=\"https://admin.fedoraproject.org/accounts/group/list\">bewerben</a>, vermutlich ist es <code>&lt;scm&gt;&lt;project&gt;</code>, z.B. für das Projekt \"desktop-effects\", bewerben Sie sich bei der Gruppe <code>gitdesktop-effects</code>."
+
+#: data/content/faq.html:31
+msgid "Why does hg tells me the repository doesn't exist even though I know I have the correct URL?"
+msgstr "Warum sagt hg, dass das Repository nicht existiert, obwohl ich die korrekte URL habe?"
+
+#: data/content/faq.html:32
+msgid "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a delimiter between hostname and path and a second \"/\" as the root of the filesystem path.  For instance, if you're accessing the repository for authconfig you need to use \"hg clone ssh://hg.fedoraproject.org//hg/authconfig\""
+msgstr "Leider benutzt hg nicht wahre URLs. Sie müssen die Zeichenkette \"/\" als Begrenzer zwischen Rechnername und Pfad und ein weiteres \"/\" als vor dem Rechnername hinzufügen. Zum Beispiel: Wenn Sie das Repository von authconfig haben wollen, benutzen Sie \"hg clone ssh://hg.fedoraproject.org//hg/authconfig\"."
+
+#: data/content/faq.html:34
+msgid "You may, as long as the following conditions are met: <ol><li>The code project must be available under a Free Software license appropriate for Fedora.</li><li>You must make the source code you used to build the binaries available, and not distributed in the same tarball, or at a minimum make available a \"source only\" tarball.</li><li>You must provide clear instructions for building the software.</li></ol>"
+msgstr ""
