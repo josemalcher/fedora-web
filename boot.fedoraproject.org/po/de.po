@@ -2,19 +2,19 @@
 # Copyright (C) 2010 Fedora Project
 # This file is distributed under the same license as the boot-fedoraproject project.
 # Marcus Nitzschke <kenda@fedoraproject.org>, 2010.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-09-25 13:33+0200\n"
+"POT-Creation-Date: 2010-12-28 18:33-0500\n"
 "PO-Revision-Date: 2010-01-28 00:32+0100\n"
 "Last-Translator: Marcus Nitzschke <kenda@fedoraproject.org>\n"
 "Language-Team: German <trans-de@lists.fedoraproject.org>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
 "Generated-By: Babel 0.9.4\n"
 
 #: data/content/download.html:7
@@ -64,6 +64,10 @@ msgstr "Häufig gestellte Fragen"
 #: data/content/faq.html:13
 msgid "How do I use it?"
 msgstr "Wie benutze ich es?"
+
+#: data/content/faq.html:14
+msgid "First download one of the available BFO specific images like the ISO image.  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode."
+msgstr "Als erstes laden sie eines der verfügbaren Abbilder wie z.Bsp. das ISO-Abbild herunter. Brennen sie dann das Abbild auf CD oder DVD. Starten sie als nächstes von der CD oder DVD. Nutzen sie die Tastatur um Menüs zu wählen, Diagnosen erstellen zu lassen, einen Fedora Installer oder den Rettungsmodus zu starten."
 
 #: data/content/faq.html:15
 msgid "Can I use it with grub?"
@@ -121,6 +125,11 @@ msgstr "Für die typischste Zusammenstellung sollten sie DHCP,HTTP Internetzugan
 msgid "Does BFO replace the installer or anaconda?"
 msgstr "Ersetzt BFO den Installer oder Anaconda?"
 
+#: data/content/faq.html:36
+#, fuzzy
+msgid "No.  BFO is also not part of Anaconda.  BFO is a way to load the installer via network.  Normally users download a large ISO image that contains all of the installer bits.  BFO is a smaller booting method that downloads the installer bits at runtime.  In theory with BFO one iso download can install all future versions of Fedora."
+msgstr "Nein. BFO ist eine Möglichkeit den Installer über das Netzwerk zu laden. Normalerweise laden Nutzer ein großes ISO Abbild herunter, das alle Bestandteile des Installers beinhaltet. BFO ist eine kleinere Startmethode, die die Bestandteile des Installers zur Laufzeit herunterlädt. Theoretisch kann mit BFO nach einmaligem Herunterladen einer ISO jede zukünftige Fedora Version installiert werden."
+
 #: data/content/faq.html:37
 msgid "What about the Live CDs?"
 msgstr "Was ist mit den Live-CDs?"
@@ -128,6 +137,14 @@ msgstr "Was ist mit den Live-CDs?"
 #: data/content/faq.html:38
 msgid "At this time booting Live CDs is experimental and not available.  We hope to have them available soon."
 msgstr "Zu diesem Zeitpunkt ist das Starten von Live-CDs experimentell und nicht verfügbar. Wir hoffen dies aber bald zur Verfügung zu haben."
+
+#: data/content/faq.html:39
+msgid "Why won't BFO boot?"
+msgstr "Warum startet BFO nicht?"
+
+#: data/content/faq.html:40
+msgid "BFO uses gpxe so it's not actually booting a Linux kernel at first.  As such, some drivers and devices may not be supported.  If this is the case for you please check upstream at http://etherboot.org/ for bug updates, etc.  If you feel a bug or device is supported but not working in BFO, contact: "
+msgstr "BFO benutzt gpxe, also started es zunächst keinen Linux Kernel. Daher können einige Treiber und Geräte nicht unterstützt sein. In diesem Fall können Sie auf http://etherboot.org/ nach Aktualisierungen etc. suchen. Wenn Sie glauben einen Fehler gefunden zu haben oder dass ein Gerät unterstützt wirt, jedoch bei BFO nicht funktioniert, kontaktieren Sie bitte:"
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
@@ -144,6 +161,10 @@ msgstr "BFO Willkommens-Bildschirm"
 #: data/content/index.html:13
 msgid "BFO is based on the work of the BKO - "
 msgstr "BFO basiert auf der Arbeit von BKO - "
+
+#: data/content/index.html:13
+msgid "To download BFO please select BFO Download along the left side menu."
+msgstr ""
 
 #: data/templates/foot.html:9
 msgid "&copy; 2010 Red Hat, Inc. and others.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
@@ -196,20 +217,3 @@ msgstr "Hosting-Sponsor"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "Gesponsort von ServerBeach"
-
-#: data/content/faq.html:14
-msgid "First download one of the available BFO specific images like the ISO image.  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode."
-msgstr "Als erstes laden sie eines der verfügbaren Abbilder wie z.Bsp. das ISO-Abbild herunter. Brennen sie dann das Abbild auf CD oder DVD. Starten sie als nächstes von der CD oder DVD. Nutzen sie die Tastatur um Menüs zu wählen, Diagnosen erstellen zu lassen, einen Fedora Installer oder den Rettungsmodus zu starten."
-
-#: data/content/faq.html:36
-#, fuzzy
-msgid "No.  BFO is also not part of Anaconda.  BFO is a way to load the installer via network.  Normally users download a large ISO image that contains all of the installer bits.  BFO is a smaller booting method that downloads the installer bits at runtime.  In theory with BFO one iso download can install all future versions of Fedora."
-msgstr "Nein. BFO ist eine Möglichkeit den Installer über das Netzwerk zu laden. Normalerweise laden Nutzer ein großes ISO Abbild herunter, das alle Bestandteile des Installers beinhaltet. BFO ist eine kleinere Startmethode, die die Bestandteile des Installers zur Laufzeit herunterlädt. Theoretisch kann mit BFO nach einmaligem Herunterladen einer ISO jede zukünftige Fedora Version installiert werden."
-
-#: data/content/faq.html:40
-msgid "BFO uses gpxe so it's not actually booting a Linux kernel at first.  As such, some drivers and devices may not be supported.  If this is the case for you please check upstream at http://etherboot.org/ for bug updates, etc.  If you feel a bug or device is supported but not working in BFO, contact: "
-msgstr "BFO benutzt gpxe, also started es zunächst keinen Linux Kernel. Daher können einige Treiber und Geräte nicht unterstützt sein. In diesem Fall können Sie auf http://etherboot.org/ nach Aktualisierungen etc. suchen. Wenn Sie glauben einen Fehler gefunden zu haben oder dass ein Gerät unterstützt wirt, jedoch bei BFO nicht funktioniert, kontaktieren Sie bitte:"
-
-#: data/content/faq.html:39
-msgid "Why won't BFO boot?"
-msgstr "Warum startet BFO nicht?"

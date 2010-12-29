@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-04-18 01:24-0500\n"
+"POT-Creation-Date: 2010-12-28 18:33-0500\n"
 "PO-Revision-Date: 2010-09-20 04:49+0100\n"
 "Last-Translator: Robert Antoni Buj Gelonch <robert.buj@gmail.com>\n"
 "Language-Team: Catalan <fedora@softcatala.net>\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -68,7 +69,8 @@ msgid "How do I use it?"
 msgstr "Què faig per a utilitzar-ho?"
 
 #: data/content/faq.html:14
-msgid "First download one of the available images like the ISO image.  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode."
+#, fuzzy
+msgid "First download one of the available BFO specific images like the ISO image.  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode."
 msgstr "Primer baixeu-vos una de les imatges disponibles com per exemple la imatge ISO.  Després graveu-la en un CD o bé en un DVD.  A continuació arranqueu des d'aquest CD o DVD.  Aleshores ja esteu utilitzant BFO!  Utilitzeu el teclat per a executar proves de diagnòstic, o per a arrancar en mode d'instal·lador o de rescat de Fedora."
 
 #: data/content/faq.html:15
@@ -128,7 +130,8 @@ msgid "Does BFO replace the installer or anaconda?"
 msgstr "BFO substitueix a installer o a anaconda?"
 
 #: data/content/faq.html:36
-msgid "Nope.  BFO is a way to load the installer via network.  Normally users download a large ISO image that contains all of the installer bits.  BFO is a smaller booting method that downloads the installer bits at runtime.  In theory with BFO one iso download can install all future versions of Fedora."
+#, fuzzy
+msgid "No.  BFO is also not part of Anaconda.  BFO is a way to load the installer via network.  Normally users download a large ISO image that contains all of the installer bits.  BFO is a smaller booting method that downloads the installer bits at runtime.  In theory with BFO one iso download can install all future versions of Fedora."
 msgstr "No pas.  BFO és una maera de carregar l'instal·lador a tavés de la xarxa.  Normalment els usuaris es baixen imatges ISO grans que contenen tots els bits d'instal·lació.  BFO és un mètode d'arranc més reduït que baixa els bits d'instal·lació en temps d'execució.  En teoria amb BFO una imatge iso baixada pot descarregar les futures versions de Fedora."
 
 #: data/content/faq.html:37
@@ -139,8 +142,15 @@ msgstr "Que hi ha quant als CDs autònoms?"
 msgid "At this time booting Live CDs is experimental and not available.  We hope to have them available soon."
 msgstr "En aquests moments arrencar amb CDs autònoms està en procés experimental i encara no esta disponible. Esperem que d'aquí poc estigui disponible."
 
-#: data/content/index.html:7
-#: data/content/index.html:10
+#: data/content/faq.html:39
+msgid "Why won't BFO boot?"
+msgstr ""
+
+#: data/content/faq.html:40
+msgid "BFO uses gpxe so it's not actually booting a Linux kernel at first.  As such, some drivers and devices may not be supported.  If this is the case for you please check upstream at http://etherboot.org/ for bug updates, etc.  If you feel a bug or device is supported but not working in BFO, contact: "
+msgstr ""
+
+#: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
 msgstr "boot.fedoraproject.org"
 
@@ -155,6 +165,10 @@ msgstr "Finestra de benvinguda de BFO"
 #: data/content/index.html:13
 msgid "BFO is based on the work of the BKO - "
 msgstr "BFO està basat amb el treball de BKO - "
+
+#: data/content/index.html:13
+msgid "To download BFO please select BFO Download along the left side menu."
+msgstr ""
 
 #: data/templates/foot.html:9
 msgid "&copy; 2010 Red Hat, Inc. and others.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
@@ -207,4 +221,3 @@ msgstr "Patrocinador d'allotjament"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "Patrocinat per ServerBeach"
-

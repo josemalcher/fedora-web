@@ -2,19 +2,19 @@
 # Copyright (C) 2010 Fedora Project
 # This file is distributed under the same license as the boot.fedoraproject.org project.
 # Zoltan Hoppar <zoltanh721@fedoraproject.org>, 2010.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-09-25 13:33+0200\n"
+"POT-Creation-Date: 2010-12-28 18:33-0500\n"
 "PO-Revision-Date: 2010-01-27 16:24+0100\n"
 "Last-Translator: Zoltan Hoppar <zoltanh721@fedoraproject.org>\n"
 "Language-Team: HUNGARIAN <fedora-trans-hu@redhat.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
 "Generated-By: Babel 0.9.4\n"
 
 #: data/content/download.html:7
@@ -64,6 +64,10 @@ msgstr "Gyakran Ismételt Kérdések"
 #: data/content/faq.html:13
 msgid "How do I use it?"
 msgstr "Hogyan használhatom?"
+
+#: data/content/faq.html:14
+msgid "First download one of the available BFO specific images like the ISO image.  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode."
+msgstr "Először töltse le az elérhető képek egyikét, pl. az ISO fájt. Ezután írja ki a megszokott módon, CD-re vagy DVD-re, majd indítsa el a rendszert róla. Miután a boot.fedoraproject.org-ot használja, a billentyűzete segytségével futtathat diagnosztikát, elindíthatja a Fedora egyik telepítőjét, vagy mentő módját."
 
 #: data/content/faq.html:15
 msgid "Can I use it with grub?"
@@ -121,6 +125,10 @@ msgstr "A leggyakrabban alkalmazott összeállítás: kell egy DHCP, egy HTTP k�
 msgid "Does BFO replace the installer or anaconda?"
 msgstr "BFO akkor leváltja a telepítőt vagy az anaconda-t?"
 
+#: data/content/faq.html:36
+msgid "No.  BFO is also not part of Anaconda.  BFO is a way to load the installer via network.  Normally users download a large ISO image that contains all of the installer bits.  BFO is a smaller booting method that downloads the installer bits at runtime.  In theory with BFO one iso download can install all future versions of Fedora."
+msgstr "Nem. BFO nem része az Anaconda-nak. BFo egy módszer, hogy a telepítő keretrendszert betöltsük a hálózaton keresztül. Normál esetben a felhasználók egy nagy ISO képet töltenek le ami az összes telepítő holmit tartalmazza. A BFO egy kisebb rendszerindítási mód, ami futása alatt tölti le ugyanezt. Egy elképzelés szerint, egyetlen BFO ISO képes telepíteni az összes jövőben kiadásra kerülő Fedora rendszereket is."
+
 #: data/content/faq.html:37
 msgid "What about the Live CDs?"
 msgstr "Mi a helyzet a Live CD-kkel?"
@@ -128,6 +136,14 @@ msgstr "Mi a helyzet a Live CD-kkel?"
 #: data/content/faq.html:38
 msgid "At this time booting Live CDs is experimental and not available.  We hope to have them available soon."
 msgstr "A jelen állapotában a live CD-k indítása csak kísérleti jelleggel működik és nem elérhető még a közösség számára. Reméljük, nemsoká elérhető lesz."
+
+#: data/content/faq.html:39
+msgid "Why won't BFO boot?"
+msgstr "Miért nem indul a BFO bootolás?"
+
+#: data/content/faq.html:40
+msgid "BFO uses gpxe so it's not actually booting a Linux kernel at first.  As such, some drivers and devices may not be supported.  If this is the case for you please check upstream at http://etherboot.org/ for bug updates, etc.  If you feel a bug or device is supported but not working in BFO, contact: "
+msgstr "BFO gpxe-t használ, így nem a linux kernelt indítja elsőként. Emiatt, néhány meghajtó, eszközkezelő nincs támogatva. Ha ez a szituáció felmerülne, kérjük ellenőrizze a frissítéseket, stb. az http://etherboot.org/ címen. Ha úgy érzi, hogy az eszköze támogatott, de nem működik, vagy hibát talált a BFO-ban, vegye fel velünk a kapcsolatot:"
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
@@ -144,6 +160,10 @@ msgstr "BFO üdvözlő képernyő"
 #: data/content/index.html:13
 msgid "BFO is based on the work of the BKO - "
 msgstr "A BFO a BKO mukájára alapozott fejlesztés -"
+
+#: data/content/index.html:13
+msgid "To download BFO please select BFO Download along the left side menu."
+msgstr ""
 
 #: data/templates/foot.html:9
 msgid "&copy; 2010 Red Hat, Inc. and others.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
@@ -196,19 +216,3 @@ msgstr "Tárhely támogató"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "Támogatja a ServerBeach"
-
-#: data/content/faq.html:14
-msgid "First download one of the available BFO specific images like the ISO image.  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode."
-msgstr "Először töltse le az elérhető képek egyikét, pl. az ISO fájt. Ezután írja ki a megszokott módon, CD-re vagy DVD-re, majd indítsa el a rendszert róla. Miután a boot.fedoraproject.org-ot használja, a billentyűzete segytségével futtathat diagnosztikát, elindíthatja a Fedora egyik telepítőjét, vagy mentő módját."
-
-#: data/content/faq.html:36
-msgid "No.  BFO is also not part of Anaconda.  BFO is a way to load the installer via network.  Normally users download a large ISO image that contains all of the installer bits.  BFO is a smaller booting method that downloads the installer bits at runtime.  In theory with BFO one iso download can install all future versions of Fedora."
-msgstr "Nem. BFO nem része az Anaconda-nak. BFo egy módszer, hogy a telepítő keretrendszert betöltsük a hálózaton keresztül. Normál esetben a felhasználók egy nagy ISO képet töltenek le ami az összes telepítő holmit tartalmazza. A BFO egy kisebb rendszerindítási mód, ami futása alatt tölti le ugyanezt. Egy elképzelés szerint, egyetlen BFO ISO képes telepíteni az összes jövőben kiadásra kerülő Fedora rendszereket is."
-
-#: data/content/faq.html:40
-msgid "BFO uses gpxe so it's not actually booting a Linux kernel at first.  As such, some drivers and devices may not be supported.  If this is the case for you please check upstream at http://etherboot.org/ for bug updates, etc.  If you feel a bug or device is supported but not working in BFO, contact: "
-msgstr "BFO gpxe-t használ, így nem a linux kernelt indítja elsőként. Emiatt, néhány meghajtó, eszközkezelő nincs támogatva. Ha ez a szituáció felmerülne, kérjük ellenőrizze a frissítéseket, stb. az http://etherboot.org/ címen. Ha úgy érzi, hogy az eszköze támogatott, de nem működik, vagy hibát talált a BFO-ban, vegye fel velünk a kapcsolatot:"
-
-#: data/content/faq.html:39
-msgid "Why won't BFO boot?"
-msgstr "Miért nem indul a BFO bootolás?"
