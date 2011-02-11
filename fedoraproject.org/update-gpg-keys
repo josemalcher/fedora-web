@@ -173,13 +173,24 @@ for f in args:
 # Update the fedora.gpg keyblock
 keys = {}
 for keyfile in glob.glob('%s/*.txt' % opts.keydir):
+    basename = os.path.splitext(os.path.basename(keyfile))[0]
+    if not keyid_re.match(basename):
+        if opts.verbose > 2:
+            print 'Skipping %s: Does not match keyid regex\n' % keyfile
+        continue
+    if opts.verbose:
+        print 'Processing %s' % keyfile
     if keyblock_begin not in open(keyfile).read():
+        if opts.verbose:
+            print "  %s doesn't start with %s\n" % (keyfile, keyblock_begin)
         continue
     try:
         keyinfo = get_keyinfo(keyfile)
     except GpgError, e:
         print 'Skipping %s: %s' % (keyfile, e.strerror)
     if keyinfo['keyid'] in obsolete_keys:
+        if opts.verbose:
+            print '  Skipping: obsolete key\n'
         continue
     if 'EPEL' in keyinfo['userid']:
         version = 'EPEL'
@@ -188,7 +199,12 @@ for keyfile in glob.glob('%s/*.txt' % opts.keydir):
             version = version_re.findall(keyinfo['userid'])[0]
         except:
             raise SystemExit('Unable to find version string for %s' % keyfile)
+    if opts.verbose > 1:
+        print '  userid = %s' % keyinfo['userid']
+        print '  version = %s' % version
     keys[version] = (keyinfo['keyid'], keyfile)
+    if opts.verbose:
+        print
 
 if not keys:
     raise SystemExit('No keys were found')
