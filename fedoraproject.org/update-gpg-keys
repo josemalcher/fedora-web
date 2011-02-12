@@ -195,7 +195,10 @@ for keyfile in glob.glob('%s/*.txt' % opts.keydir):
             print '  Skipping: obsolete key\n'
         continue
     if 'EPEL' in keyinfo['userid']:
-        version = 'EPEL'
+        try:
+            version = 'epel-%s' % version_re.findall(keyinfo['userid'])[0]
+        except:
+            version = 'epel'
     else:
         try:
             version = version_re.findall(keyinfo['userid'])[0]
