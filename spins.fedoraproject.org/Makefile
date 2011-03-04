@@ -37,6 +37,15 @@ po/%.mo: po/%.po
 po/spins.fedoraproject.org.pot: $(HTML_FILES)
 	${PYBABEL} extract -F build/pybabel.cfg data -o $@
 
+pot: $(HTML_FILES)
+	${PYBABEL} extract -F build/pybabel.cfg data -o po/spins.fedoraproject.org.pot
+
+pushpot:
+	tx push -s
+
+pullpos:
+	tx pull -a
+
 data/templates/translations.html: po/LINGUAS
 	$(PYTHON) build/translations.py $^ > $@
 
