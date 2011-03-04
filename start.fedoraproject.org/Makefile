@@ -38,7 +38,7 @@ po/start.fedoraproject.org.pot: $(HTML_FILES)
 	${PYBABEL} extract -F build/pybabel.cfg data -o $@
 
 pot: $(HTML_FILES)
-        ${PYBABEL} extract -F build/pybabel.cfg data -o po/start.fedoraproject.org.pot
+	${PYBABEL} extract -F build/pybabel.cfg data -o po/start.fedoraproject.org.pot
 
 pushpot:
 	tx push -s
