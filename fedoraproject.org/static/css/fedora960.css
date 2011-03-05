@@ -1460,7 +1460,8 @@ li.slide { width: 100% !important; }
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-bottom: 2px solid #255591;
-  background: -moz-linear-gradient(bottom,  #a9c8da,  white); 
+  background: -moz-linear-gradient(bottom, #a9c8da, #fff); 
+  background: -webkit-gradient(linear, left bottom, left top, from(#a9c8da), to(#fff)); 
   float: right;
   margin-right: .5em;
   font-size: 1.1em;
@@ -1482,7 +1483,8 @@ li.slide { width: 100% !important; }
 
 .slides #fedora-download li a:hover {
   color: #255591;
-  background: -moz-linear-gradient(top,  #a9c8da,  white); 
+  background: -moz-linear-gradient(top, #a9c8da, #fff); 
+  background: -webkit-gradient(linear, left top, left bottom, from(#a9c8da), to(#fff)); 
   text-shadow: white -1px -1px 0px;
 }
 
