@@ -28,6 +28,13 @@
 # boot images (like Fedora 8's Everything tree) then an installurl or
 # installmirrorlist is required.
 
+[Fedora 15 (Lovelock)]
+stable=False
+preupgrade-ok=True
+version=15
+mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-15&arch=$basearch
+installmirrorlist=http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/development/15/$basearch/os/
+
 [Fedora 14 (Laughlin)]
 stable=True
 preupgrade-ok=True
