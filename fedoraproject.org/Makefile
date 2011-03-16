@@ -58,6 +58,9 @@ pot: $(HTML_FILES)
 pushpot:
 	tx push -s
 
+pullpos:
+	tx pull -a
+
 push:
 	git push
 
