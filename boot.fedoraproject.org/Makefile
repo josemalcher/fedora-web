@@ -30,7 +30,7 @@ po/%.po: po/boot.fedoraproject.org.pot
 po/en.mo: po/en.po
 	msgfmt -o $@ $<
 
-po/%.mo:
+po/%.mo: po/%.po
 	msgfmt -o $@ $<
 
 po/boot.fedoraproject.org.pot: $(HTML_FILES)
