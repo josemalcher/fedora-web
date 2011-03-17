@@ -19,7 +19,7 @@ PWD = $(shell pwd)
 all: $(LANGUAGES)
 	cp static/robots.txt out/
 
-$(LANGUAGES): % : data/templates/translations.html
+$(LANGUAGES): % : po/%.mo data/templates/translations.html
 	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -s static -b $(BASEPATH)
 
 po/en.po: po/boot.fedoraproject.org.pot
