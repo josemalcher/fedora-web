@@ -26,7 +26,6 @@ po/en.po: po/boot.fedoraproject.org.pot
 	cp po/boot.fedoraproject.org.pot po/en.po
 
 po/%.po: po/boot.fedoraproject.org.pot
-	if test -f $@ ; then msgmerge --no-wrap --update $@ $^ ; else echo '$(GENERIC_HEADER)' > $@ ; fi
 
 po/en.mo: po/en.po
 	msgfmt -o $@ $<
