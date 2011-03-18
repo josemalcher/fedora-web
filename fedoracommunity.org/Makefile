@@ -30,6 +30,7 @@ pushpot:
 
 pullpos:
 	tx pull -a
+	tx pull --lang=en
 
 data/templates/translations.html: po/LINGUAS
 	$(PYTHON) build/translations.py $^ > $@
