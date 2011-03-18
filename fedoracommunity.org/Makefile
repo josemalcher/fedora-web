@@ -1,7 +1,7 @@
 ifndef LANGUAGES
 LANGUAGES := $(shell grep -v "^\#" po/LINGUAS)
 endif
-PO_FILES = $(filter-out po/en.po,$(wildcard po/*.po))
+PO_FILES = $(wildcard po/*.po)
 MO_FILES = $(PO_FILES:.po=.mo)
 HTML_FILES = $(shell find data -name "*.html")
 
@@ -15,16 +15,6 @@ all: $(LANGUAGES)
 
 $(LANGUAGES): % : po/%.mo data/templates/translations.html
 	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -s static -b $(BASEPATH)
-
-po/en.po: po/fedoracommunity.org.pot
-	cp po/fedoracommunity.org.pot po/en.po
-
-po/%.po: po/fedoracommunity.org.pot
-	msgmerge --no-wrap --update $@ $^
-	@touch $@
-
-po/en.mo: po/en.po
-	msgfmt -o $@ $<
 
 po/%.mo: po/%.po
 	msgfmt -o $@ $<
@@ -46,12 +36,9 @@ data/templates/translations.html: po/LINGUAS
 
 clean:
 	rm -rf out
-	rm -f po/en.po
 	rm -f po/*.mo
 	rm -f data/templates/translations.html
 	rm -f build/rss.cache
-
-msgmerge: $(wildcard po/*.po)
 
 push:
 	git push
