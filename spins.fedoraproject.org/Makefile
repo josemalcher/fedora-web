@@ -46,6 +46,7 @@ clean:
 	rm -f po/*.mo
 	rm -f data/templates/translations.html
 	rm -f build/rss.cache
+	rm -f build/json.cache
 
 msgmerge: $(wildcard po/*.po)
 
