@@ -7,7 +7,7 @@ GENERIC_HEADER = msgid ""\
                  "MIME-Version: 1.0\n"\
                  "Content-Type: text/plain; charset=utf-8\n"\
                  "Content-Transfer-Encoding: 8bit"
-PO_FILES = $(filter-out po/en.po,$(wildcard po/*.po))
+PO_FILES = $(wildcard po/*.po)
 MO_FILES = $(PO_FILES:.po=.mo)
 HTML_FILES = $(shell find data -name "*.html")
 
@@ -22,13 +22,7 @@ all: $(LANGUAGES)
 $(LANGUAGES): % : po/%.mo data/templates/translations.html
 	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -s static -b $(BASEPATH)
 
-po/en.po: po/boot.fedoraproject.org.pot
-	cp po/boot.fedoraproject.org.pot po/en.po
-
 po/%.po: po/boot.fedoraproject.org.pot
-
-po/en.mo: po/en.po
-	msgfmt -o $@ $<
 
 po/%.mo: po/%.po
 	msgfmt -o $@ $<
@@ -44,13 +38,13 @@ pushpot:
 
 pullpos:
 	tx pull -a
+	tx pull --lang=en
 
 data/templates/translations.html: po/LINGUAS
 	$(PYTHON) build/translations.py $^ > $@
 
 clean:
 	rm -rf out
-	rm -f po/en.po
 	rm -f po/*.mo
 	rm -f data/templates/translations.html
 	rm -f build/rss.cache
