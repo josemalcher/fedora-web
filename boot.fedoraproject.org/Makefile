@@ -22,8 +22,6 @@ all: $(LANGUAGES)
 $(LANGUAGES): % : po/%.mo data/templates/translations.html
 	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -s static -b $(BASEPATH)
 
-po/%.po: po/boot.fedoraproject.org.pot
-
 po/%.mo: po/%.po
 	msgfmt -o $@ $<
 
