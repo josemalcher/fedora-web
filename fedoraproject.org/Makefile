@@ -7,7 +7,7 @@ GENERIC_HEADER = msgid ""\
                  "MIME-Version: 1.0\n"\
                  "Content-Type: text/plain; charset=utf-8\n"\
                  "Content-Transfer-Encoding: 8bit"
-PO_FILES = $(filter-out po/en.po,$(wildcard po/*.po))
+PO_FILES = $(wildcard po/*.po)
 MO_FILES = $(PO_FILES:.po=.mo)
 HTML_FILES = $(shell find data -name "*.html")
 
@@ -24,15 +24,6 @@ $(LANGUAGES): % : po/%.mo data/templates/translations.html
 	# Hack to fix docs links.
 	$(PYTHON) build/docs-hack.py $@
 
-po/en.po: po/fedora-web.pot
-	cp po/fedora-web.pot po/en.po
-
-po/%.po: po/fedora-web.pot
-	if test -f $@ ; then msgmerge --no-wrap --update $@ $^ ; else echo '$(GENERIC_HEADER)' > $@ ; fi
-
-po/en.mo: po/en.po
-	msgfmt -o $@ $<
-
 po/%.mo: po/%.po
 	msgfmt -o $@ $<
 
@@ -44,7 +35,6 @@ data/templates/translations.html: po/LINGUAS
 
 clean:
 	rm -rf out
-	rm -f po/en.po
 	rm -f po/*.mo
 	rm -f data/templates/translations.html
 	rm -f build/rss.cache build/rss.pyc
@@ -60,6 +50,7 @@ pushpot:
 
 pullpos:
 	tx pull -a
+	tx pull --lang=en
 
 push:
 	git push
