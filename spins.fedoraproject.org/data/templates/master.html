@@ -5,6 +5,8 @@ import re
 from operator import itemgetter
 import random
 from types import NoneType
+import os
+import socket
 
 
 class Torrents(object):
@@ -21,10 +23,23 @@ class Torrents(object):
 
     @property
     def torrents(self):
+        # 20 sec timeout
+        socket.setdefaulttimeout(20)
+        cachefile = os.path.join(os.getcwd(), 'build/json.cache')
+
         if not self._torrents:
-            fo = urllib.urlopen('http://torrent.fedoraproject.org/stats/current-stats.json')
-            self._torrents = simplejson.load(fo)
-            fo.close()
+            if os.path.isfile(cachefile):
+                f = open(cachefile)
+                self._torrents = simplejson.load(f)
+                f.close()
+            else:
+                # create cache
+                fo = urllib.urlopen('http://torrent.fedoraproject.org/stats/current-stats.json')
+                self._torrents = simplejson.load(fo)
+                f = open(cachefile, 'w')
+                simplejson.dump(self._torrents, f)
+                f.close()
+
         return self._torrents
 
     def parse_torrent_name(self, name):
