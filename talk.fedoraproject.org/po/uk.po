@@ -8,23 +8,23 @@ msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2011-03-18 00:59+0000\n"
-"PO-Revision-Date: 2011-03-18 00:59+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Korean <>\n"
+"PO-Revision-Date: 2011-03-06 18:19+0000\n"
+"Last-Translator: yurchor <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.5\n"
-"Language: ko\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
 #: data/content/access.html:7
 msgid "Access - Fedora Talk"
-msgstr ""
+msgstr "Доступ — Fedora Talk"
 
 #: data/content/access.html:12
 msgid "Set up Fedora Talk account"
-msgstr ""
+msgstr "Налаштування облікового запису Fedora Talk"
 
 #: data/content/access.html:13
 msgid ""
@@ -33,10 +33,14 @@ msgid ""
 "  To get access, you need to enable VoIP in the Fedora Accounts System and "
 "set a VoIP password."
 msgstr ""
+"Послуги Fedora Talk надаються всі учасникам розробки Fedora. Кожному "
+"учаснику надається семицифрове розширення, що починається з цифри 5. Щоб "
+"отримати доступ, вам слід увімкнути VoIP у системі облікових записів Fedora "
+"і встановити пароль VoIP."
 
 #: data/content/access.html:14
 msgid "Step 1: Set up a Fedora account"
-msgstr ""
+msgstr "Крок 1: налаштування облікового запису Fedora"
 
 #: data/content/access.html:15
 msgid ""
@@ -44,10 +48,13 @@ msgid ""
 "account</a>, and ensure that you have signed the CLA at the account site.  "
 "Most Fedora contributors will have already done this."
 msgstr ""
+"Увійдіть до <a href=\"https://admin.fedoraproject.org/accounts/\">облікового"
+" запису Fedora</a> і переконайтеся, що вами підписано CLA на сайті облікових"
+" записів. Більшість учасників розробки Fedora вже підписала цю угоду."
 
 #: data/content/access.html:16
 msgid "Step 2: Set up a VoIP account and password"
-msgstr ""
+msgstr "Крок 2: налаштування облікового запису VoIP"
 
 #: data/content/access.html:17
 msgid ""
@@ -58,6 +65,13 @@ msgid ""
 "received by Asterisk.  Now is also a good time to see what your extension is"
 " (on the VoIP main page in the account system).  Make a note of it."
 msgstr ""
+"Увімкніть Asterisk натисканням посилання <a "
+"href=\"https://admin.fedoraproject.org/accounts/asterisk/\">VoIP</a> на "
+"сторінці системи облікових записів. Внесіть потрібні зміни до вашого "
+"профілю. Увімкніть Asterisk та встановіть ваш пароль доступу до Asterisk. На"
+" реєстрацію внесених вами змін у Asterisk може бути витрачено до години. "
+"Після реєстрації запишіть ваше розширення (його буде показано на головній "
+"сторінці VoIP системи облікових записів)."
 
 #: data/content/access.html:18
 msgid ""
@@ -66,101 +80,114 @@ msgid ""
 "system\">configure sound and a software phone</a> like twinkle and ekiga, or"
 " a SIP compliant VoIP phone."
 msgstr ""
+"Після надсилання даних щодо користувача до Fedora Talk ви зможете увійти до "
+"системи. Вам залишиться лише <a href=\"./setup-local-system\">налаштувати "
+"звук та програмний телефон</a>, наприклад, twinkle, ekiga або сумісний з SIP"
+" VoIP-телефон."
 
 #: data/content/access.html:19
 msgid "Next step: Set up local system"
-msgstr ""
+msgstr "Наступний крок: налаштування локальної системи"
 
 #: data/content/client-ekiga.html:8
 msgid "Ekiga - Fedora Talk"
-msgstr ""
+msgstr "Ekiga — Fedora Talk"
 
 #: data/content/client-ekiga.html:13
 msgid "Configuring Ekiga for Fedora Talk"
-msgstr ""
+msgstr "Налаштування Ekiga для розмов у Fedora Talk"
 
 #: data/content/client-ekiga.html:16
 msgid ""
 "Open Ekiga and cancel the setup wizard or druid if one appears. The "
 "following screen appears."
 msgstr ""
+"Відкрийте вікно Ekiga і скасуйте роботу майстра налаштування. У відповідь "
+"буде показано наведене нижче вікно."
 
 #: data/content/client-ekiga.html:17 data/content/usage.html:25
 msgid "Ekiga main screen"
-msgstr ""
+msgstr "Головне вікно Ekiga"
 
 #: data/content/client-ekiga.html:20
 msgid "On the Ekiga menu, select Edit → Accounts."
-msgstr ""
+msgstr "У меню Ekiga виберіть пункт «Зміни → Облікові записи»."
 
 #: data/content/client-ekiga.html:21 data/content/usage.html:27
 msgid "Ekiga accounts window"
-msgstr ""
+msgstr "Вікно облікових записів Ekiga"
 
 #: data/content/client-ekiga.html:24
 msgid "Fill in the details as shown below:"
-msgstr ""
+msgstr "Вкажіть такі самі значення, що і на наведеному нижче знімку:"
 
 #: data/content/client-ekiga.html:25 data/content/usage.html:29
 msgid "Ekiga edit accounts screen"
-msgstr ""
+msgstr "Вікно редагування облікових записів Ekiga"
 
 #: data/content/client-ekiga.html:27
 msgid "Name: Fill in a name for this account, such as \"Fedora Talk.\""
 msgstr ""
+"Ім’я: вкажіть назву цього облікового запису, наприклад, «Fedora Talk»."
 
 #: data/content/client-ekiga.html:28 data/content/usage.html:32
 msgid "Registrar: fedoraproject.org"
-msgstr ""
+msgstr "Реєстратор: fedoraproject.org"
 
 #: data/content/client-ekiga.html:29
 msgid "User: Your Fedora Account System username"
 msgstr ""
+"Користувач: ім’я вашого користувача у системі облікових записів Fedora (FAS)"
 
 #: data/content/client-ekiga.html:30 data/content/usage.html:34
 msgid "Authentication User: leave this empty"
-msgstr ""
+msgstr "Користувач (???): не заповнюйте"
 
 #: data/content/client-ekiga.html:31
 msgid ""
 "Password: The password you set in the VoIP section in FAS (note this is not "
 "the same as your FAS password)"
 msgstr ""
+"Пароль: встановлений вами у розділі VoIP FAS пароль (зауважте, що він не "
+"збігається з вашим паролем FAS)"
 
 #: data/content/client-ekiga.html:32
 msgid "Timeout: Use the default, or 900"
-msgstr ""
+msgstr "Затримка: використовуйте типовий час очікування або 900"
 
 #: data/content/client-ekiga.html:33
 msgid "Enable account: Check this box to immediately register"
-msgstr ""
+msgstr "Увімкнути обліковий запис: позначте цей пункт для негайної реєстрації"
 
 #: data/content/client-ekiga.html:37
 msgid ""
 "Click \"OK\" to return to the account screen. You can verify your "
 "registration condition by checking the \"Status\" column."
 msgstr ""
+"Натисніть кнопку «Гаразд», щоб повернутися до вікна облікових записів. "
+"Ознайомитися з вашим станом реєстрації можна буде за допомогою стовпчика "
+"«Стан»."
 
 #: data/content/client-ekiga.html:38 data/content/usage.html:40
 msgid "Ekiga completed accounts window"
-msgstr ""
+msgstr "Вікно Ekiga з пунктом налаштованого облікового запису"
 
 #: data/content/client-ekiga.html:41
 msgid "You are done configuring your Ekiga client."
-msgstr ""
+msgstr "Ви завершили налаштування вашої клієнтської програми Ekiga."
 
 #: data/content/client-ekiga.html:42 data/content/client-empathy.html:47
 #: data/content/client-twinkle.html:77
 msgid "Test and verify your settings"
-msgstr ""
+msgstr "Тестування і перевірка вказаних значень параметрів"
 
 #: data/content/client-empathy.html:7
 msgid "Configuring Empathy - Fedora Talk"
-msgstr ""
+msgstr "Налаштування Empathy — Fedora Talk"
 
 #: data/content/client-empathy.html:12
 msgid "Configuring Empathy for Fedora Talk"
-msgstr ""
+msgstr "Налаштування Empathy для розмов у Fedora Talk"
 
 #: data/content/client-empathy.html:15
 msgid ""
@@ -170,7 +197,7 @@ msgstr ""
 
 #: data/content/client-empathy.html:16 data/content/client-twinkle.html:17
 msgid "Selecting PackageKit from the main menu"
-msgstr ""
+msgstr "Вибір PackageKit у головному меню"
 
 #: data/content/client-empathy.html:17
 msgid ""
@@ -180,7 +207,7 @@ msgstr ""
 
 #: data/content/client-empathy.html:18
 msgid "Finding Packages using PackageKit"
-msgstr ""
+msgstr "Пошук пакунків за допомогою PackageKit"
 
 #: data/content/client-empathy.html:21
 msgid ""
@@ -190,35 +217,39 @@ msgstr ""
 
 #: data/content/client-empathy.html:22
 msgid "Opening Empathy"
-msgstr ""
+msgstr "Відкриття Empathy"
 
 #: data/content/client-empathy.html:25
 msgid "From the Empathy menu, select Edit → Accounts."
-msgstr ""
+msgstr "У меню Empathy виберіть пункт «Зміни → Облікові записи»."
 
 #: data/content/client-empathy.html:28
 msgid ""
 "Click \"Add\" and select SIP account from the list. The following dialog "
 "appears:"
 msgstr ""
+"Натисніть «Додати» і виберіть зі списку обліковий запис SIP. У відповідь "
+"буде відкрито таке діалогове вікно:"
 
 #: data/content/client-empathy.html:29
 msgid "Empathy accounts dialog"
-msgstr ""
+msgstr "Діалогове вікно облікових записів Empathy"
 
 #: data/content/client-empathy.html:30
 msgid "In the dialog, fill in the following fields:"
-msgstr ""
+msgstr "У цьому діалоговому вікні заповніть такі поля:"
 
 #: data/content/client-empathy.html:32
 msgid "Username: Your FAS username, followed by \"@talk.fedoraproject.org\""
 msgstr ""
+"Користувач: ваше ім’я користувача FAS з наступним «@talk.fedoraproject.org»"
 
 #: data/content/client-empathy.html:33
 msgid ""
 "Password: Your VoIP password (note this is not the same as your FAS "
 "password)"
 msgstr ""
+"Пароль: ваш пароль VoIP (зауважте, що він не збігається з вашим паролем FAS)"
 
 #: data/content/client-empathy.html:34
 msgid "Enabled: Select this checkbox to immediately enable the acocunt)"
@@ -230,11 +261,11 @@ msgstr ""
 
 #: data/content/client-empathy.html:38
 msgid "Port: set it to 5060"
-msgstr ""
+msgstr "Порт: вкажіть значення 5060"
 
 #: data/content/client-empathy.html:39
 msgid "Udp: Select this checkbox"
-msgstr ""
+msgstr "Udp: позначте цей пункт"
 
 #: data/content/client-empathy.html:43
 msgid ""
@@ -248,11 +279,11 @@ msgstr ""
 
 #: data/content/client-generic.html:8
 msgid "Generic Client - Fedora Talk"
-msgstr ""
+msgstr "Інші клієнтські програми — Fedora Talk"
 
 #: data/content/client-generic.html:13
 msgid "Configuring a Generic Client for Fedora Talk"
-msgstr ""
+msgstr "Налаштування інших клієнтських програм для розмов у Fedora Talk"
 
 #: data/content/client-generic.html:14
 msgid ""
@@ -265,11 +296,11 @@ msgstr ""
 
 #: data/content/client-generic.html:15
 msgid "Generic client configuration values"
-msgstr ""
+msgstr "Значення параметрів налаштування інших клієнтських програм"
 
 #: data/content/client-generic.html:17
 msgid "SIP address: <em>sip:fas_username@fedoraproject.org</em>"
-msgstr ""
+msgstr "Адреса SIP: <em>sip:користувач_fas@fedoraproject.org</em>"
 
 #: data/content/client-generic.html:18
 msgid ""
@@ -280,31 +311,32 @@ msgstr ""
 
 #: data/content/client-generic.html:19
 msgid "Voicemail: <em>Enabled</em>"
-msgstr ""
+msgstr "Голосова пошти: <em>Увімкнено</em>"
 
 #: data/content/client-generic.html:20
 msgid "SIP Registration: <em>talk.fedoraproject.org (port 5060)</em>"
-msgstr ""
+msgstr "Реєстрація SIP: <em>talk.fedoraproject.org (порт 5060)</em>"
 
 #: data/content/client-generic.html:21 data/content/client-twinkle.html:46
 msgid "User Name: <em>FAS Account name</em>"
-msgstr ""
+msgstr "Користувач: <em>назва облікового запису FAS</em>"
 
 #: data/content/client-generic.html:22
 msgid "SIP proxy: <em>talk.fedoraproject.org (port 5060)</em>"
-msgstr ""
+msgstr "Проксі SIP: <em>talk.fedoraproject.org (порт 5060)</em>"
 
 #: data/content/client-generic.html:23
 msgid "SIP outbound proxy: <em>talk.fedoraproject.org (port 5060)</em>"
 msgstr ""
+"Проксі надсилання даних SIP: <em>talk.fedoraproject.org (порт 5060)</em>"
 
 #: data/content/client-generic.html:24 data/content/client-twinkle.html:47
 msgid "Domain: <em>talk.fedoraproject.org</em>"
-msgstr ""
+msgstr "Домен: <em>talk.fedoraproject.org</em>"
 
 #: data/content/client-generic.html:25 data/content/client-twinkle.html:54
 msgid "Authentication name: <em>FAS Account name</em>"
-msgstr ""
+msgstr "Користувач для розпізнавання: <em>назва облікового запису FAS</em>"
 
 #: data/content/client-generic.html:26
 msgid ""
@@ -318,7 +350,7 @@ msgstr ""
 
 #: data/content/client-generic.html:29
 msgid "Other specific client information"
-msgstr ""
+msgstr "Інші дані, специфічні для клієнтських програм"
 
 #: data/content/client-generic.html:30
 msgid ""
@@ -328,15 +360,15 @@ msgstr ""
 
 #: data/content/client-generic.html:31
 msgid "Other clients for Fedora Talk"
-msgstr ""
+msgstr "Інші клієнтські програми для розмов у Fedora Talk"
 
 #: data/content/client-twinkle.html:7
 msgid "Twinkle - Fedora Talk"
-msgstr ""
+msgstr "Twinkle — Fedora Talk"
 
 #: data/content/client-twinkle.html:12
 msgid "Configuring Twinkle for Fedora Talk"
-msgstr ""
+msgstr "Налаштування Twinkle для розмов у Fedora Talk"
 
 #: data/content/client-twinkle.html:13 data/content/usage.html:21
 msgid ""
@@ -361,7 +393,7 @@ msgstr ""
 
 #: data/content/client-twinkle.html:19
 msgid "Finding Twinkle using PackageKit"
-msgstr ""
+msgstr "Пошук Twinkle за допомогою PackageKit"
 
 #: data/content/client-twinkle.html:22
 msgid "Select Applications → Internet → Twinkle from the main menu."
@@ -369,28 +401,31 @@ msgstr ""
 
 #: data/content/client-twinkle.html:25
 msgid "Click \"Ok\" to create a profile."
-msgstr ""
+msgstr "Натисніть «Гаразд», щоб створити профіль."
 
 #: data/content/client-twinkle.html:26 data/content/client-twinkle.html:30
 msgid "Twinkle profile editor"
-msgstr ""
+msgstr "Редактор профілів Twinkle"
 
 #: data/content/client-twinkle.html:29
 msgid "Click on \"Profile Editor\" button."
-msgstr ""
+msgstr "Натисніть кнопку «Редактор профілів»"
 
 #: data/content/client-twinkle.html:33
 msgid "Give the profile a name, such as \"FedoraTalk\". Spaces are not allowed."
 msgstr ""
+"Вкажіть назву профілю, наприклад «FedoraTalk». У назві не повинно бути "
+"пробілів."
 
 #: data/content/client-twinkle.html:34 data/content/client-twinkle.html:40
 #: data/content/client-twinkle.html:62 data/content/client-twinkle.html:73
 msgid "Twinkle profile name"
-msgstr ""
+msgstr "Назва профілю Twinkle"
 
 #: data/content/client-twinkle.html:38
 msgid "Edit the profile details as shown below."
 msgstr ""
+"Змініть параметри профілю так, як це показано на наведеному нижче знімку."
 
 #: data/content/client-twinkle.html:39
 msgid ""
@@ -426,11 +461,11 @@ msgstr ""
 
 #: data/content/client-twinkle.html:64
 msgid "Registrar: <em>talk.fedoraproject.org (You can leave this blank)</em>"
-msgstr ""
+msgstr "Реєстратор: <em>talk.fedoraproject.org (можете не заповнювати)</em>"
 
 #: data/content/client-twinkle.html:68
 msgid "Click \"OK\" to save these settings in the profile."
-msgstr ""
+msgstr "Натисніть кнопку «Гаразд», щоб зберегти параметри до профілю."
 
 #: data/content/client-twinkle.html:71
 msgid ""
@@ -453,7 +488,7 @@ msgstr ""
 
 #: data/content/conference.html:12
 msgid "Fedora Talk Conferencing"
-msgstr ""
+msgstr "Проведення нарад у Fedora Talk"
 
 #: data/content/conference.html:13
 msgid ""
@@ -463,7 +498,7 @@ msgstr ""
 
 #: data/content/conference.html:14
 msgid "Sub-Project Conference Rooms"
-msgstr ""
+msgstr "Кімнати нарад з підпроектів"
 
 #: data/content/conference.html:15
 msgid ""
@@ -474,47 +509,47 @@ msgstr ""
 
 #: data/content/conference.html:15
 msgid "trac instance"
-msgstr ""
+msgstr "Система trac"
 
 #: data/content/conference.html:18
 msgid "Sub-project"
-msgstr ""
+msgstr "Підпроект"
 
 #: data/content/conference.html:19 data/content/conference.html:59
 msgid "Extension"
-msgstr ""
+msgstr "Розширення"
 
 #: data/content/conference.html:20 data/content/conference.html:60
 msgid "SIP Address (for soft phones)"
-msgstr ""
+msgstr "Адреса SIP (для програмних телефонів)"
 
 #: data/content/conference.html:23
 msgid "Infrastructure"
-msgstr ""
+msgstr "Інфраструктура"
 
 #: data/content/conference.html:28
 msgid "FUDCon"
-msgstr ""
+msgstr "FUDCon"
 
 #: data/content/conference.html:33
 msgid "Marketing"
-msgstr ""
+msgstr "Маркетинг"
 
 #: data/content/conference.html:38
 msgid "Fedora Activity Day"
-msgstr ""
+msgstr "День дій Fedora"
 
 #: data/content/conference.html:43
 msgid "Documentation"
-msgstr ""
+msgstr "Документація"
 
 #: data/content/conference.html:48
 msgid "Ambassadors"
-msgstr ""
+msgstr "Посланці"
 
 #: data/content/conference.html:54
 msgid "General Conference Rooms"
-msgstr ""
+msgstr "Загальні зали конференції"
 
 #: data/content/conference.html:55
 msgid ""
@@ -524,39 +559,39 @@ msgstr ""
 
 #: data/content/conference.html:58
 msgid "Room Name"
-msgstr ""
+msgstr "Назва зали"
 
 #: data/content/conference.html:63
 msgid "Conference Room 0"
-msgstr ""
+msgstr "Кімната нарад 0"
 
 #: data/content/conference.html:68
 msgid "Conference Room 1"
-msgstr ""
+msgstr "Кімната нарад 1"
 
 #: data/content/conference.html:73
 msgid "Conference Room 2"
-msgstr ""
+msgstr "Кімната нарад 2"
 
 #: data/content/conference.html:78
 msgid "Conference Room 3"
-msgstr ""
+msgstr "Кімната нарад 3"
 
 #: data/content/conference.html:83
 msgid "Conference Room 4"
-msgstr ""
+msgstr "Кімната нарад 4"
 
 #: data/content/faq.html:7
 msgid "FAQs - Fedora Talk"
-msgstr ""
+msgstr "Поширені питання — Fedora Talk"
 
 #: data/content/faq.html:12 data/templates/sidebar.html:13
 msgid "Frequently-Asked Questions"
-msgstr ""
+msgstr "Поширені запитання"
 
 #: data/content/faq.html:13
 msgid "What is Fedora Talk?"
-msgstr ""
+msgstr "Для чого призначено Fedora Talk?"
 
 #: data/content/faq.html:14
 msgid ""
@@ -567,7 +602,7 @@ msgstr ""
 
 #: data/content/faq.html:15
 msgid "How can I use Fedora Talk?"
-msgstr ""
+msgstr "Як отримати доступ до Fedora Talk?"
 
 #: data/content/faq.html:16
 msgid "Consult the <a href=\"./access\">access page</a> for more information."
@@ -575,7 +610,7 @@ msgstr ""
 
 #: data/content/faq.html:17
 msgid "What equipment do I need?"
-msgstr ""
+msgstr "Яке обладнання потрібне для зв’язку?"
 
 #: data/content/faq.html:18
 msgid ""
@@ -589,7 +624,7 @@ msgstr ""
 
 #: data/content/faq.html:19
 msgid "What if I am on the road or do not have the proper equipment?"
-msgstr ""
+msgstr "Що робити, якщо я у дорозі, і у мене немає відповідного обладнання?"
 
 #: data/content/faq.html:20
 msgid ""
@@ -613,7 +648,7 @@ msgstr ""
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "Fedora Talk"
-msgstr ""
+msgstr "Fedora Talk"
 
 #: data/content/index.html:11
 msgid ""
@@ -632,7 +667,7 @@ msgstr ""
 
 #: data/content/index.html:13
 msgid "Setting up phone software or hardware"
-msgstr ""
+msgstr "Налаштування програмного телефону або обладнання"
 
 #: data/content/index.html:14
 msgid "To setup a softphone or IP-based phone hardware, click the link below."
@@ -640,11 +675,11 @@ msgstr ""
 
 #: data/content/index.html:15
 msgid "Set up a softphone or IP phone"
-msgstr ""
+msgstr "Налаштування програмного або IP-телефону"
 
 #: data/content/index.html:16
 msgid "Dialing in from a land line or mobile"
-msgstr ""
+msgstr "Додзвон з дротової мережі або мобільного телефону"
 
 #: data/content/index.html:17
 msgid ""
@@ -654,7 +689,7 @@ msgstr ""
 
 #: data/content/index.html:25
 msgid "What makes Fedora Talk work?"
-msgstr ""
+msgstr "Як працює Fedora Talk?"
 
 #: data/content/index.html:26
 msgid ""
@@ -675,11 +710,11 @@ msgstr ""
 
 #: data/content/setup-local-system.html:7
 msgid "Setup Local System - Fedora Talk"
-msgstr ""
+msgstr "Налаштування локальної системи — Fedora Talk"
 
 #: data/content/setup-local-system.html:10
 msgid "Setup Local System"
-msgstr ""
+msgstr "Налаштування локальної системи"
 
 #: data/content/setup-local-system.html:11
 msgid ""
@@ -689,11 +724,11 @@ msgstr ""
 
 #: data/content/setup-local-system.html:12
 msgid "Step 3: Sound preferences"
-msgstr ""
+msgstr "Крок 3: налаштування звуку"
 
 #: data/content/setup-local-system.html:13
 msgid "Sound preferences dialog"
-msgstr ""
+msgstr "Діалогове вікно налаштування звуку"
 
 #: data/content/setup-local-system.html:14
 msgid ""
@@ -705,7 +740,7 @@ msgstr ""
 
 #: data/content/setup-local-system.html:15
 msgid "Step 4: Choose a client"
-msgstr ""
+msgstr "Крок 4: вибір клієнтської програми"
 
 #: data/content/setup-local-system.html:16
 msgid ""
@@ -715,27 +750,27 @@ msgstr ""
 
 #: data/content/setup-local-system.html:17
 msgid "Twinkle (recommended)"
-msgstr ""
+msgstr "Twinkle (рекомендовано)"
 
 #: data/content/setup-local-system.html:18
 msgid "Empathy"
-msgstr ""
+msgstr "Empathy"
 
 #: data/content/setup-local-system.html:19 data/content/usage.html:22
 msgid "Ekiga"
-msgstr ""
+msgstr "Ekiga"
 
 #: data/content/setup-local-system.html:20
 msgid "IP phone or other SIP client"
-msgstr ""
+msgstr "IP-телефон або інша клієнтська програма SIP"
 
 #: data/content/troubleshooting.html:7
 msgid "Troubleshooting - Fedora Talk"
-msgstr ""
+msgstr "Вирішення проблем — Fedora Talk"
 
 #: data/content/troubleshooting.html:12
 msgid "Troubleshooting Fedora Talk"
-msgstr ""
+msgstr "Вирішення проблем, пов’язаних з Fedora Talk"
 
 #: data/content/troubleshooting.html:13
 msgid ""
@@ -745,7 +780,7 @@ msgstr ""
 
 #: data/content/troubleshooting.html:14
 msgid "Can't connect"
-msgstr ""
+msgstr "Не можу встановити з’єднання"
 
 #: data/content/troubleshooting.html:15
 msgid "Being unable to connect is a common issue. Try the following solutions"
@@ -780,11 +815,11 @@ msgstr ""
 #: data/content/troubleshooting.html:31 data/content/troubleshooting.html:36
 #: data/content/troubleshooting.html:40 data/content/troubleshooting.html:43
 msgid "Verify your setup!"
-msgstr ""
+msgstr "Перевірте ваші налаштування!"
 
 #: data/content/troubleshooting.html:22
 msgid "Can't hear anything"
-msgstr ""
+msgstr "Я нічого не чую"
 
 #: data/content/troubleshooting.html:23
 msgid ""
@@ -805,7 +840,7 @@ msgstr ""
 
 #: data/content/troubleshooting.html:27
 msgid "No one can hear me"
-msgstr ""
+msgstr "Мене ніхто не чує"
 
 #: data/content/troubleshooting.html:28
 msgid ""
@@ -835,7 +870,7 @@ msgstr ""
 
 #: data/content/troubleshooting.html:32
 msgid "There is an echo on a conference bridge"
-msgstr ""
+msgstr "На каналі конференції чути відлуння"
 
 #: data/content/troubleshooting.html:33
 msgid ""
@@ -867,7 +902,7 @@ msgstr ""
 
 #: data/content/troubleshooting.html:37
 msgid "I can make calls, but not receive them"
-msgstr ""
+msgstr "Вихідні дзвінки працюють, але вхідні — ні"
 
 #: data/content/troubleshooting.html:38
 msgid ""
@@ -889,7 +924,7 @@ msgstr ""
 
 #: data/content/troubleshooting.html:41
 msgid "Ekiga dialpad doesn't work"
-msgstr ""
+msgstr "Панель набору номеру Ekiga не працює"
 
 #: data/content/troubleshooting.html:42
 msgid ""
@@ -901,7 +936,7 @@ msgstr ""
 
 #: data/content/troubleshooting.html:44
 msgid "Still having problems?"
-msgstr ""
+msgstr "Проблеми нікуди не поділися?"
 
 #: data/content/troubleshooting.html:45
 msgid ""
@@ -913,7 +948,7 @@ msgstr ""
 
 #: data/content/usage.html:7
 msgid "Usage - Fedora Talk"
-msgstr ""
+msgstr "Користування — Fedora Talk"
 
 #: data/content/usage.html:12
 msgid ""
@@ -924,7 +959,7 @@ msgstr ""
 
 #: data/content/usage.html:13
 msgid "Using Fedora Talk"
-msgstr ""
+msgstr "Користування Fedora Talk"
 
 #: data/content/usage.html:14
 msgid "After access has been setup, all that is left is to setup your client"
@@ -932,7 +967,7 @@ msgstr ""
 
 #: data/content/usage.html:15
 msgid "Supported clients"
-msgstr ""
+msgstr "Підтримувані клієнтські програми"
 
 #: data/content/usage.html:16
 msgid ""
@@ -944,7 +979,7 @@ msgstr ""
 
 #: data/content/usage.html:17
 msgid "Settings In Brief"
-msgstr ""
+msgstr "Коротко про параметри"
 
 #: data/content/usage.html:18
 msgid ""
@@ -956,24 +991,28 @@ msgstr ""
 
 #: data/content/usage.html:19
 msgid "Setting Up A Soft Phone"
-msgstr ""
+msgstr "Налаштування програмного телефону"
 
 #: data/content/usage.html:20
 msgid "Twinkle"
-msgstr ""
+msgstr "Twinkle"
 
 #: data/content/usage.html:24
 msgid ""
 "Open Ekiga. Cancel the druid (if any). You will get a screen like this."
 msgstr ""
+"Запустіть Ekiga. Скасуйте запуск майстра (якщо такий буде запропоновано). У "
+"відповідь буде показано вікно, подібне до наведеного нижче."
 
 #: data/content/usage.html:26
 msgid "Goto Menu → Edit → Accounts. You have this."
 msgstr ""
+"Скористайтеся пунктом меню «Зміни → Облікові записи». У відповідь буде "
+"показано таке вікно:"
 
 #: data/content/usage.html:28
 msgid "Edit and fill the details"
-msgstr ""
+msgstr "Вкажіть параметри з’єднання"
 
 #: data/content/usage.html:31
 msgid "Name: Fill in whatever name this account should have in the list."
@@ -1017,7 +1056,7 @@ msgstr ""
 
 #: data/content/usage.html:43
 msgid "Testing the setup"
-msgstr ""
+msgstr "Перевірка налаштувань"
 
 #: data/content/usage.html:44
 msgid ""
@@ -1031,7 +1070,7 @@ msgstr ""
 
 #: data/content/usage.html:45
 msgid "Tips"
-msgstr ""
+msgstr "Підказки"
 
 #: data/content/usage.html:47
 msgid ""
@@ -1072,11 +1111,11 @@ msgstr ""
 
 #: data/content/usage.html:53
 msgid "Do pay attention when you join."
-msgstr ""
+msgstr "Зверніть увагу на час вашого приєднання до каналу."
 
 #: data/content/usage.html:54
 msgid "Do not assume your equipment works"
-msgstr ""
+msgstr "Не робіть хибного припущення щодо працездатності вашого обладнання"
 
 #: data/content/usage.html:55
 msgid ""
@@ -1086,7 +1125,7 @@ msgstr ""
 
 #: data/content/verify.html:7
 msgid "Verification - Fedora Talk"
-msgstr ""
+msgstr "Перевірка — Fedora Talk"
 
 #: data/content/verify.html:12
 msgid "Using Twinkle to make a simple call"
@@ -1100,7 +1139,7 @@ msgstr ""
 
 #: data/content/verify.html:14
 msgid "Screenshot of dialing"
-msgstr ""
+msgstr "Знімок вікна під час дзвінка"
 
 #: data/content/verify.html:15
 msgid ""
@@ -1133,6 +1172,9 @@ msgid ""
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
 msgstr ""
+"&copy; Red Hat, Inc. та інші, 2011. Будь ласка, надсилайте ваші коментарі та"
+" виправлення <a href=\"mailto:webmaster@fedoraproject.org\">команді "
+"супровідників сайта</a>."
 
 #: data/templates/foot.html:12
 msgid ""
@@ -1140,14 +1182,18 @@ msgid ""
 "by Red Hat.  This is a community maintained site.  Red Hat is not "
 "responsible for content."
 msgstr ""
+"Проект Fedora повністю підтримується спільнотою. Цей сайт керується "
+"спільнотою за фінансової підтримки Red Hat. Red Hat не несе відповідальності"
+" за розміщені на ньому матеріали."
 
 #: data/templates/foot.html:15
 msgid "Sponsors"
-msgstr ""
+msgstr "Спонсори"
 
 #: data/templates/foot.html:16
 msgid "<a href=\"http://fedoraproject.org/wiki/Legal:Main\">Legal</a>"
 msgstr ""
+"<a href=\"http://fedoraproject.org/wiki/Legal:Main\">Юридичні документи</a>"
 
 #: data/templates/foot.html:17
 msgid ""
@@ -1155,39 +1201,42 @@ msgid ""
 "href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Trademark "
 "Guidelines</a>"
 msgstr ""
+"<a "
+"href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Використання"
+" торгової марки</a>"
 
 #: data/templates/head.html:7
 msgid "Fedora"
-msgstr ""
+msgstr "Fedora"
 
 #: data/templates/sidebar.html:10
 msgid "Navigation"
-msgstr ""
+msgstr "Навігація"
 
 #: data/templates/sidebar.html:12
 msgid "Home"
-msgstr ""
+msgstr "Домівка"
 
 #: data/templates/sidebar.html:14
 msgid "Access"
-msgstr ""
+msgstr "Доступ"
 
 #: data/templates/sidebar.html:15
 msgid "Conferencing"
-msgstr ""
+msgstr "Конференції"
 
 #: data/templates/sidebar.html:16
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Вирішення проблем"
 
 #: data/templates/sidebar.html:18
 msgid "Website Language"
-msgstr ""
+msgstr "Мова сайта"
 
 #: data/templates/sidebar.html:26
 msgid "Hosting Sponsor"
-msgstr ""
+msgstr "Утримувач сайта"
 
 #: data/templates/sidebar.html:27
 msgid "Sponsored by ServerBeach"
-msgstr ""
+msgstr "За фінансової підтримки ServerBeach"
