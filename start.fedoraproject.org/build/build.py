@@ -27,6 +27,8 @@ from genshi.template import TemplateLoader
 
 from genshi.core import Markup
 
+from rss import *
+
 locale.setlocale(locale.LC_COLLATE, 'en_US')
 
 vcsprefix = {
@@ -125,6 +127,7 @@ def process_dir(dirpath, filenames, projects):
         # Variables made availble to all templates
         page = template.generate(
             _=lambda text: Markup(translations.ugettext(text)),
+            feedparse=feedparse,
             lang=options.lang,
             path=options.basepath,
             relpath=relpath,
