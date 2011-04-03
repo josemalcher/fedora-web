@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2011-03-03 18:28-0600\n"
-"PO-Revision-Date: 2011-03-04 00:29+0000\n"
-"Last-Translator: neb <nick@bebout.net>\n"
+"POT-Creation-Date: 2011-04-03 00:20+0000\n"
+"PO-Revision-Date: 2011-03-22 15:53+0000\n"
+"Last-Translator: geleimate <gelei.mate1@gmail.com>\n"
 "Language-Team: Hungarian <trans-hu@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -174,7 +174,7 @@ msgstr ""
 
 #: data/content/faq.html:27
 msgid "How do I get permission to commit to a project?"
-msgstr ""
+msgstr "Hogy kaphatok engedélyt egy projekt beküldéséhez?"
 
 #: data/content/faq.html:28
 msgid ""
@@ -184,6 +184,11 @@ msgid ""
 "<code>&lt;scm&gt;&lt;project&gt;</code>, e.g. for the desktop-effects "
 "project, apply to the <code>gitdesktop-effects</code> group."
 msgstr ""
+"<a "
+"href=\"https://admin.fedoraproject.org/accounts/group/list\">Jelentkezzen</a>"
+" a projekt karbantartóinak csoportjába, melyek neve az "
+"<code><scm><projekt></code> formát követi. Például a desktop-effects "
+"projekthez tartozó csoport a(z) <code>gitdesktop-effects</code>."
 
 #: data/content/faq.html:29
 msgid ""
@@ -208,6 +213,8 @@ msgid ""
 "Why does hg tells me the repository doesn't exist even though I know I have "
 "the correct URL?"
 msgstr ""
+"Miért mondja a hg, hogy nem létezik a raktár, még akkor is, ha biztosan jó "
+"URL-t adtam meg?"
 
 #: data/content/faq.html:32
 msgid ""
@@ -217,6 +224,10 @@ msgid ""
 "authconfig you need to use \"hg clone "
 "ssh://hg.fedorahosted.org//hg/authconfig\""
 msgstr ""
+"Sajnos a hg nem igazi URL-eket használ.  A \"/\" jelet kell használni "
+"elválasztóként a hosztnév és útvonal között, és még egy \"/\"-t a "
+"gyökérkönyvtár megfelelőjeként.  Például az authconfig eléréséhez használja "
+"a \"hg clone ssh://hg.fedorahosted.org//hg/authconfig\" parancsot"
 
 #: data/content/faq.html:33
 msgid "Can I offer pre-compiled binaries on Fedora Hosted?"
