@@ -109,7 +109,7 @@ def process_dir(dirpath, filenames, projects):
     Process a directory
     '''
     translations = GNUTranslations(open(os.path.join(options.podir, options.lang + '.mo')))
-    if get_distribution('genshi').version < 0.6:
+    if int(get_distribution('genshi').version[2]) < 6:
         loader = TemplateLoader(['.'], callback=lambda template: template.filters.insert(0, Translator(translations.ugettext)))
     else:
         loader = TemplateLoader(['.'], callback=lambda template: template.filters.insert(0, Translator(translations)))
