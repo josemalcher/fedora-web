@@ -17,7 +17,7 @@ import iniparse
 import urlparse
 import operator
 import locale
-
+from pkg_resources import get_distribution
 from optparse import OptionParser
 
 from gettext import GNUTranslations
@@ -109,7 +109,10 @@ def process_dir(dirpath, filenames, projects):
     Process a directory
     '''
     translations = GNUTranslations(open(os.path.join(options.podir, options.lang + '.mo')))
-    loader = TemplateLoader(['.'], callback=lambda template: template.filters.insert(0, Translator(translations.ugettext)))
+    if get_distribution('genshi').version < 0.6:
+        loader = TemplateLoader(['.'], callback=lambda template: template.filters.insert(0, Translator(translations.ugettext)))
+    else:
+        loader = TemplateLoader(['.'], callback=lambda template: template.filters.insert(0, Translator(translations)))
     for fn in filenames:
         if fn.endswith('~') or fn.endswith('.swp'):
             continue
