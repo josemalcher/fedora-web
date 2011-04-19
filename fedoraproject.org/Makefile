@@ -40,6 +40,8 @@ clean:
 	rm -f build/rss.cache build/rss.pyc
 	rm -f httpd/conf/*.conf httpd/conf/languages.conf.in
 
+msgmerge: $(wildcard po/*.po)
+
 pot: $(HTML_FILES)
 	${PYBABEL} extract -F build/pybabel.cfg data -o po/fedora-web.pot
 
