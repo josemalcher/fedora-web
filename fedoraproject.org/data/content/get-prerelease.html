@@ -1,26 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:py="http://genshi.edgewall.org/"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
-  <xi:include href="../templates/master.html" />
-  <head>
-    <title>${Markup(_('Get the next Fedora - Fedora Project'))}</title>
-  </head>
-	<body id="fedoraproject-org" class="lang-${lang}">
-
-        <div class="page-header" id="header-prerelease">
-            <div class="container_16">
-                <div class="grid_11">
-                    <h2>${Markup(_('Get the next Fedora, right now.'))}</h2>
-                    <p>${_('Fedora is 100%% free for you to enjoy and share.') % ()}</p>
-                    </div>
-                    <div class="grid_5 page-header-sidebar">
-                    <p><a href="${path}/${lang}/about-fedora#freedom">${_('Fedora isn\'t just free-of-charge. It\'s free as in freedom. Learn more.')}</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="clear"></div>
-
 <!-- Ugly hack, not all language are there... (en-US...) Should be removed when RN are pushed to docs.fpo -->
 <?python
 dflt_language = 'en-US'
@@ -69,10 +46,32 @@ l_map = {
 }
 l_code = l_map.get(lang, dflt_language)
 ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${Markup(_('Get the next Fedora - Fedora Project'))}</title>
+  </head>
+	<body id="fedoraproject-org" class="lang-${lang}">
+
+        <div class="page-header" id="header-prerelease">
+            <div class="container_16">
+                <div class="grid_11">
+                    <h2>${Markup(_('Get the next Fedora, right now.'))}</h2>
+                    <p>${_('Fedora is 100%% free for you to enjoy and share.') % ()}</p>
+                    </div>
+                    <div class="grid_5 page-header-sidebar">
+                    <p><a href="${path}/${lang}/about-fedora#freedom">${_('Fedora isn\'t just free-of-charge. It\'s free as in freedom. Learn more.')}</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
 
         <div class="container_16">
             <div class="grid_16">
-                <p class="warning">${Markup(_('This is pre-release software and is supported by the &lt;a href="http://fedoraproject.org/wiki/QA"&gt;QA team&lt;/a&gt;. Please direct questions to test@lists.fedoraproject.org or #fedora-qa on freenode. All issues or bugs should be reported via the &lt;a href="https://bugzilla.redhat.com/"&gt;Red Hat Bugzilla&lt;/a&gt;. The Fedora Project makes no guarantees as to its suitability or usefulness. Read the Release Notes &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url': 'http://fedorapeople.org/groups/docs/release-notes/%s/' % (l_code), 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F15_bugs'})}</p>
+                <p class="warning">${Markup(_('This is pre-release software and is supported by the &lt;a href="http://fedoraproject.org/wiki/QA"&gt;QA team&lt;/a&gt;. Please direct questions to test@lists.fedoraproject.org or #fedora-qa on freenode. All issues or bugs should be reported via the &lt;a href="https://bugzilla.redhat.com/"&gt;Red Hat Bugzilla&lt;/a&gt;. The Fedora Project makes no guarantees as to its suitability or usefulness. Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url': 'http://fedorapeople.org/groups/docs/release-notes/%s/' % (l_code), 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F15_bugs'})}</p>
                 <p class="note">${Markup(_('After downloading an ISO, &lt;a href="https://fedoraproject.org%s/%s/verify"&gt;verify&lt;/a&gt; it.') % (path, lang))}</p>
                 <h4>${Markup(_('Install Media'))}</h4>
                 <ul class="downloadbox installdvd">
