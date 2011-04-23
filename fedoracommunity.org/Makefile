@@ -29,7 +29,7 @@ pushpot:
 	tx push -s
 
 pullpos:
-	tx pull -a
+	tx pull -af
 	tx pull --lang=en
 
 data/templates/translations.html: po/LINGUAS
