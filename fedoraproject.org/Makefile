@@ -18,9 +18,11 @@ PWD = $(shell pwd)
 
 all: $(LANGUAGES)
 	cp static/robots.txt out/
+static:
+	$(PYTHON) build/build.py -o out -s static -b $(BASEPATH)
 
-$(LANGUAGES): % : po/%.mo data/templates/translations.html
-	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -s static -b $(BASEPATH)
+$(LANGUAGES): % : | static po/%.mo data/templates/translations.html
+	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -b $(BASEPATH)
 	# Hack to fix docs links.
 	$(PYTHON) build/docs-hack.py $@
 
@@ -80,4 +82,4 @@ stoptest:
 	pid=`cat httpd/run/httpd.pid` && \
 	kill -TERM $$pid
 
-.PHONY: all clean push test stoptest
+.PHONY: all static clean push test stoptest

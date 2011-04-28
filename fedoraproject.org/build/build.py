@@ -31,17 +31,18 @@ def process(args):
             if os.path.exists(outpath):
                 shutil.rmtree(outpath)
             copytree(dir, outpath)
-    timing.start()
-    for dirpath, dirnames, filenames in os.walk(options.input):
-        try:
-            process_dir(dirpath, filenames)
-        except:
-            if options.keepgoing:
-                print 'Error!'
-            else:
-                raise
-    timing.finish()
-    print 'Website build time: %s' % timing.milli()
+    if options.input is not None:
+        timing.start()
+        for dirpath, dirnames, filenames in os.walk(options.input):
+            try:
+                process_dir(dirpath, filenames)
+            except:
+                if options.keepgoing:
+                    print 'Error!'
+                else:
+                    raise
+        timing.finish()
+        print 'Website build time: %s' % timing.milli()
 
 def process_dir(dirpath, filenames):
     '''
@@ -113,7 +114,8 @@ def main():
     base_path = os.path.dirname(os.path.abspath(__file__))
     (options, args) = parser.parse_args()
     options.basepath = options.basepath.rstrip('/')
-    options.input = options.input.rstrip('/') + '/'
+    if options.input is not None:
+        options.input = options.input.rstrip('/') + '/'
     options.output = options.output.rstrip('/') + '/'
     process(args)
 
