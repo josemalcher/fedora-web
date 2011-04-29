@@ -21,7 +21,7 @@ all: $(LANGUAGES)
 rss-cache:
 	@echo Caching RSS...
 	$(PYTHON) build/build.py -o out -i data/content -r -b $(BASEPATH)
-	
+
 static:
 	@echo Copying static...
 	$(PYTHON) build/build.py -o out -s static -b $(BASEPATH)
