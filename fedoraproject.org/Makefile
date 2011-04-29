@@ -18,10 +18,15 @@ PWD = $(shell pwd)
 
 all: $(LANGUAGES)
 	cp static/robots.txt out/
+rss-cache:
+	@echo Caching RSS...
+	$(PYTHON) build/build.py -o out -i data/content -r -b $(BASEPATH)
+	
 static:
+	@echo Copying static...
 	$(PYTHON) build/build.py -o out -s static -b $(BASEPATH)
 
-$(LANGUAGES): % : | static po/%.mo data/templates/translations.html
+$(LANGUAGES): % : | static rss-cache po/%.mo data/templates/translations.html
 	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -b $(BASEPATH)
 	# Hack to fix docs links.
 	$(PYTHON) build/docs-hack.py $@
@@ -74,7 +79,7 @@ httpd/conf/languages.conf: httpd/conf/languages.conf.in
 		-e 's#@DOCUMENTROOT@#$(PWD)/out#g' \
 		httpd/conf/languages.conf
 
-test: httpd/conf/httpd.conf httpd/conf/languages.conf
+test: 	httpd/conf/httpd.conf httpd/conf/languages.conf
 	/usr/sbin/httpd -d httpd -f conf/httpd.conf
 	@echo "Test instance started at: http://localhost:5000/"
 
@@ -82,4 +87,4 @@ stoptest:
 	pid=`cat httpd/run/httpd.pid` && \
 	kill -TERM $$pid
 
-.PHONY: all static clean push test stoptest
+.PHONY: all static rss-cache clean push test stoptest

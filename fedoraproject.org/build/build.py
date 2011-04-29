@@ -19,6 +19,8 @@ from genshi.filters import Translator
 from genshi.template import TemplateLoader
 
 from rss import *
+import fileinput
+
 def process(args):
     if os.path.exists(options.output) and options.erase:
         shutil.rmtree(options.output)
@@ -42,21 +44,30 @@ def process(args):
                 else:
                     raise
         timing.finish()
-        print 'Website build time: %s' % timing.milli()
+        if not options.rss:
+            print 'Website build time: %s' % timing.milli()
 
 def process_dir(dirpath, filenames):
     '''
     Process a directory
     '''
-    translations = GNUTranslations(open(os.path.join(options.podir, options.lang + '.mo')))
-    if int(get_distribution('genshi').version[2]) < 6:
-        loader = TemplateLoader(['.'], callback=lambda template: template.filters.insert(0, Translator(translations.ugettext)))
-    else:
-        loader = TemplateLoader(['.'], callback=lambda template: template.filters.insert(0, Translator(translations)))
+    if options.podir and options.lang:
+        translations = GNUTranslations(open(os.path.join(options.podir, options.lang + '.mo')))
+        if int(get_distribution('genshi').version[2]) < 6:
+            loader = TemplateLoader(['.'], callback=lambda template: template.filters.insert(0, Translator(translations.ugettext)))
+        else:
+            loader = TemplateLoader(['.'], callback=lambda template: template.filters.insert(0, Translator(translations)))
     for fn in filenames:
         if fn.endswith('~') or fn.endswith('.swp'):
             continue
         src_file = os.path.join(dirpath, fn)
+        if options.rss:
+            for line in fileinput.input(src_file):
+                if line.find('feedparse')>0:
+                    match = re.split('^.*feedparse\(\'', line)
+                    feedurl = re.split('\'\)', match[1])
+                    feedparse(feedurl[0])
+            continue;
         dest_file = os.path.join(options.output, src_file[len(options.input):]) + '.' + options.lang # Hideous
         curpage = src_file[len(options.input):].rstrip('.html')
         if not os.path.exists(os.path.dirname(dest_file)):
@@ -111,12 +122,16 @@ def main():
     parser.add_option('-e', '--erase',
         action='store_true', dest='erase', default=False,
         help='Erase any existing output directory first')
+    parser.add_option('-r', '--rss-cache',
+        action='store_true', dest='rss', default=False,
+        help='Cache RSS feeds')
     base_path = os.path.dirname(os.path.abspath(__file__))
     (options, args) = parser.parse_args()
     options.basepath = options.basepath.rstrip('/')
     if options.input is not None:
         options.input = options.input.rstrip('/') + '/'
-    options.output = options.output.rstrip('/') + '/'
+    if options.output is not None:
+        options.output = options.output.rstrip('/') + '/'
     process(args)
 
 if __name__ == "__main__":
