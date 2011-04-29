@@ -12,7 +12,8 @@
     </ul>
   </div>
   <div id="spins-tagline">
-    <img src="${relpath}/static/images/spin/${area}-tagline.png" title="${area}"/>
+    <img py:if="area is not 'main'" src="${relpath}/static/images/spin/${area}-tagline.png" title="${area}"/>
+    <span py:if="area is 'main'">${_('Explore Fedora\'s possibilities')}</span>
   </div>
 
 </html>
