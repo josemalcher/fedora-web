@@ -28,6 +28,8 @@ from genshi.template import TemplateLoader
 
 from genshi.core import Markup
 
+from pkg_resources import get_distribution 
+
 locale.setlocale(locale.LC_COLLATE, 'en_US')
 
 vcsloc = {
@@ -152,7 +154,10 @@ def process_dir(dirpath, filenames, projects):
     Process a directory
     '''
     translations = GNUTranslations(open(os.path.join(options.podir, options.lang + '.mo')))
-    loader = TemplateLoader(['.'], callback=lambda template: template.filters.insert(0, Translator(translations.ugettext)))
+    if int(get_distribution('genshi').version[2]) < 6:
+       loader = TemplateLoader(['.'], callback=lambda template: template.filters.insert(0, Translator(translations.ugettext)))
+    else:
+       loader = TemplateLoader(['.'], callback=lambda template: template.filters.insert(0, Translator(translations)))
     for fn in filenames:
         if fn.endswith('~') or fn.endswith('.swp'):
             continue
