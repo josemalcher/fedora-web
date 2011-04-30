@@ -1,3 +1,4 @@
+@import http://fedoraproject.org/static/css/fpo960-rtl.css;
 #head h1 a
 {
     position:absolute;
@@ -29,4 +30,16 @@
 	right: inherit !important;
 	left: -10px !important;
 }
-
+#sitelinks dl {
+	float: right;
+}
+#footer {
+	text-align: right;
+}
+#footer li {
+	border-left: none;
+	border-right: 1px solid #AAAAAA;
+}
+#footer li.first {
+	border-right: none;
+}
