@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2011-04-03 00:12+0000\n"
-"PO-Revision-Date: 2011-03-22 15:45+0000\n"
-"Last-Translator: neb <nick@bebout.net>\n"
+"POT-Creation-Date: 2011-04-03 00:16+0000\n"
+"PO-Revision-Date: 2011-05-01 06:04+0000\n"
+"Last-Translator: shnurapet <shnurapet@fedoraproject.org>\n"
 "Language-Team: Russian <trans-ru@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -73,6 +73,11 @@ msgid ""
 "that you're using BFO!  Use your keyboard to select menus to run "
 "diagnostics, or boot a Fedora installer or rescue mode."
 msgstr ""
+"Для начала загрузите на компьютер один из предлагаемых образов BFO, как это "
+"делается с загрузочными образами в формате ISO. Затем запишите его на CD или"
+" DVD и запустите компьютер с этого диска. Готово! При помощи клавиатуры "
+"можно перемещаться по меню и запустить средство диагностики или загрузить "
+"Fedora в режиме установщика или для того, чтобы произвести восстановление."
 
 #: data/content/faq.html:15
 msgid "Can I use it with grub?"
@@ -96,7 +101,7 @@ msgid ""
 msgstr ""
 "BFO создан на основе BKO (boot.kernel.org) и объединяет в себе набор "
 "последних технологий создания нового стека загрузки. Основным компонентом "
-"BFO является gPXE. Если вы знакомы с PXE, то вы найдете gPXE очень похожим. "
+"BFO является gPXE. Если вы знакомы с PXE, то gPXE покажется вам знакомым. "
 "Последние версии не ограничиваются TFTP и поддерживают другие протоколы. "
 "Так, для передачи файлов мы используем HTTP. Последовательность действий:"
 
@@ -124,10 +129,10 @@ msgid ""
 "selection (like install Fedora 12) the regular boot process takes over just "
 "as it would had you booted from normal local media."
 msgstr ""
-"загрузочные меню будут показаны на экране, где пользователь может выбрать "
-"действие (например, установить Fedora 13), после чего будет запущен "
-"стандартный процесс загрузки аналогично тому, как выполняется загрузка с "
-"локального носителя."
+"на экране появится загрузочное меню, в котором можно будет выбрать действие "
+"(например, установить Fedora 13), после чего будет запущен стандартный "
+"процесс загрузки аналогично тому, как выполняется загрузка с локального "
+"носителя."
 
 #: data/content/faq.html:31
 msgid "Why should I use BFO?"
@@ -141,11 +146,12 @@ msgid ""
 "will have the best experience with BFO.  They basically replace having to "
 "regularly download large ISO images and burn them to disk."
 msgstr ""
-"Данные BFO можно загрузить всего один раз и их объем довольно мал. Даже "
+"Данные BFO можно загрузить всего один раз, и их объем довольно мал. Даже "
 "после выхода новых версий Fedora они станут доступны в меню BFO при загрузке"
-" с уже существующего образа. Пользователи с быстрым Интернет-подключением "
-"максимально оценят преимущества BFO, так как больше нет необходимости в "
-"регулярной загрузке больших образов с их последующей записью на диск."
+" с уже существующего образа. Пользователи с высокой скоростью соединения с "
+"Интернет получат максимум удобства от BFO, так как больше не будет "
+"необходимости в регулярной загрузке больших образов с их последующей записью"
+" на диск."
 
 #: data/content/faq.html:33
 msgid "What is required?"
@@ -156,8 +162,8 @@ msgid ""
 "For the most typical setup one should have DHCP, HTTP internet access and a "
 "CD/DVD burner.  Floppy and USB images are also available."
 msgstr ""
-"Типичные требования включают наличие Интернет-доступа (DHCP, HTTP) и "
-"записывающего привода CD/DVD. Дополнительно доступны образы дискет и USB."
+"Типичные требования включают наличие Интернет-соединения (DHCP, HTTP) и "
+"пишущего привода CD/DVD. Дополнительно доступны образы дискет и USB."
 
 #: data/content/faq.html:35
 msgid "Does BFO replace the installer or anaconda?"
@@ -171,6 +177,12 @@ msgid ""
 "installer bits at runtime.  In theory with BFO one iso download can install "
 "all future versions of Fedora."
 msgstr ""
+"Нет. Также BFO не входит в ее состав. BFO — это лишь способ получить "
+"программу-установщик по сети. Обычно пользователь загружает на компьютер "
+"большой образ ISO, в котором уже содержится все необходимое для установки. "
+"BFO гораздо меньше и загружает данные установщика при каждом запуске. "
+"Теоретически один образ BFO сможет установить любую из будущих версий "
+"Fedora."
 
 #: data/content/faq.html:37
 msgid "What about the Live CDs?"
@@ -187,7 +199,7 @@ msgstr ""
 
 #: data/content/faq.html:39
 msgid "Why won't BFO boot?"
-msgstr ""
+msgstr "Почему не получается запустить машину с BFO?"
 
 #: data/content/faq.html:40
 msgid ""
@@ -196,6 +208,11 @@ msgid ""
 "for you please check upstream at http://etherboot.org/ for bug updates, etc."
 "  If you feel a bug or device is supported but not working in BFO, contact: "
 msgstr ""
+"В BFO используется gpxe, поэтому загрузка начинается не с запуска ядра "
+"Linux. Таким образом, поддержка устройств и количество драйверов ограничены."
+" В этой ситуации, пожалуйста, ознакомьтесь с основной веткой разработки на "
+"http://etherboot.org на предмет обновлений. Если вы уверены в поддержке всех"
+" устройств, но все же испытываете проблемы при загрузке BFO, пишите:"
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
@@ -222,6 +239,7 @@ msgstr "В основе BFO лежит BKO:"
 #: data/content/index.html:13
 msgid "To download BFO please select BFO Download along the left side menu."
 msgstr ""
+"Чтобы загрузить BFO, пожалуйста, перейдите в раздел «Загрузки» в меню слева."
 
 #: data/templates/foot.html:9
 msgid ""
@@ -229,6 +247,8 @@ msgid ""
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
 msgstr ""
+"© 2011 Red Hat и др. Замечания и правки отправляйте команде <a "
+"href=\"mailto:webmaster@fedoraproject.org\">websites</a>."
 
 #: data/templates/foot.html:12
 msgid ""
@@ -269,15 +289,15 @@ msgstr "Навигация"
 
 #: data/templates/sidebar.html:12
 msgid "Home"
-msgstr "Начало"
+msgstr "— Начало"
 
 #: data/templates/sidebar.html:13
 msgid "Download"
-msgstr "Загрузить"
+msgstr "— Загрузки"
 
 #: data/templates/sidebar.html:14
 msgid "FAQ"
-msgstr "Вопросы и ответы"
+msgstr "— Вопросы"
 
 #: data/templates/sidebar.html:16
 msgid "Website Language"
