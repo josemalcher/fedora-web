@@ -4,7 +4,7 @@
   xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="../../../templates/master.html" />
   <head>
-    <title>${Markup(_('Fedora Project'))}</title>
+    <title>${Markup(_('Fedora Project - Interview with Steve Milner.'))}</title>
   </head>
 	<body id="fedoraproject-org" class="lang-${lang}">
 
@@ -65,12 +65,12 @@
 		<p>${_('ipython and bpython also are great code-as-you-go environments for trying quick variations on POC attacks. Using Python\'s modules as well as general security tools being controlled by Python easily make the programming language an indispensable tool.')}</p>
 
 		<h4>${_('Tell us a bit about nmap. How does it work? Can you use it to analyze machines that are not running Fedora? Is it something that you automatically, constantly run to check for issues, or do you run it manually to answer specific questions?')}</h4>
-		<p>${Markup(_('Nmap (href="%s"&gt;http://nmap.org/&lt;/a&gt;) is a network exploration tool. Nmap scans a host or set of hosts and responds back with information. It is commonly used as a general portscanner.') % 'http://nmap.org/')}</p>
+		<p>${Markup(_('Nmap (&lt;a href="%s"&gt;http://nmap.org/&lt;/a&gt;) is a network exploration tool. Nmap scans a host or set of hosts and responds back with information. It is commonly used as a general portscanner.') % 'http://nmap.org/')}</p>
 		<p>${_('Nmap can find or scan pretty much any machine on the network. I\'ve used it in the past when auditing Windows or OS X based machines as well.')}</p>
 		<p>${_('I use Nmap as a part of my audits along with NSE (Nmap scripting engine) scripts most of which come directly from the Nmap project itself. I usually use it to check firewall status, open services of a system along with said service versions. It helps get a recon baseline.')}</p>
 
 		<h4>${_('What does ratproxy do? Can it analyze systems that aren\'t running Fedora? Can it analyze systems that don\'t run Linux? Is it a program you run manually or does it constantly run in the background?')}</h4>
-		<p>${Markup(_('Ratproxy (href="%s"&gt;http://code.google.com/p/ratproxy/&lt;/a&gt;) is a passive web application auditing proxy. It sits between your browser and the web application you are auditing and records information as you move through the site. It can analyze most any web application no matter what OS it\'s running on. Since Ratproxy is passive it can be used with ajax applications.') % 'http://code.google.com/p/ratproxy/')}</p>
+		<p>${Markup(_('Ratproxy (&lt;a href="%s"&gt;http://code.google.com/p/ratproxy/&lt;/a&gt;) is a passive web application auditing proxy. It sits between your browser and the web application you are auditing and records information as you move through the site. It can analyze most any web application no matter what OS it\'s running on. Since Ratproxy is passive it can be used with ajax applications.') % 'http://code.google.com/p/ratproxy/')}</p>
 
 		<h4>${_('Tell us about some interesting desktop customizations you\'ve done to your Fedora desktop to help your security auditing workflow.')}</h4>
 		<p>${_('I use a two machine/three monitor setup with GNOME and synergy. I\'m really looking forward to GNOME Shell to be considered stable. I use it on my own personal machines and love it! If I can, I try to run most everything through the terminal. I find using terminal applications much easier especially since I can run it all through byobu/screen.')}</p>

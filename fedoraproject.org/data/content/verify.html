@@ -4,7 +4,7 @@
   xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="../templates/master.html" />
   <head>
-    <title>${Markup(_('Fedora Project'))}</title>
+    <title>${Markup(_('Fedora Project - Verify your download'))}</title>
   </head>
 	<body id="fedoraproject-org" class="lang-${lang}">
 
@@ -25,36 +25,102 @@
         <div class="container_16">
             <div class="grid_16">
 
-		<p id="section-nav-top"><a href="${path}/${lang}/get-fedora">${Markup(_('&amp;#8592; Back to the main "Get Fedora" page'))}.</a></p>
+                <p id="section-nav-top"><a href="${path}/${lang}/get-fedora">${Markup(_('&amp;#8592; Back to the main "Get Fedora" page'))}.</a></p>
 
-                <p class="warning">${Markup(_('Please note that the &lt;em&gt;Hash: SHA1&lt;/em&gt; line in the CHECKSUM file is part of the PGP signature.  It does &lt;strong&gt;not&lt;/strong&gt; specify the type of hash used to verify the .iso files.'))}</p>
+                <p class="warning">${Markup(_('Please note that the &lt;em&gt;Hash: SHA256&lt;/em&gt; line in the CHECKSUM file is part of the PGP signature.  It does &lt;strong&gt;not&lt;/strong&gt; specify the type of hash used to verify the .iso files.'))}</p>
                 <p class="note">${Markup(_('Windows user?  Follow &lt;a href="http://docs.fedoraproject.org/readme-burning-isos/en_US/sn-validating-files.html"&gt;these instructions&lt;/a&gt; instead.'))}</p>
                 <p>${Markup(_('Once you have downloaded an ISO, verify it for security and integrity.  To verify your ISO, start by downloading the proper CHECKSUM file into the same directory as the ISO:'))}</p>
 
-                <h4>${Markup(_('Install DVD / Rescue CD'))}</h4>
-                <ul>
-                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-14-i386-CHECKSUM">i386</a></li>
-                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-14-x86_64-CHECKSUM">x86_64</a></li>
-                </ul>
+                <table class="verify-install-media">
+                    <thead>
+                        <tr>
+                            <th colspan="4">${Markup(_('Install DVD / Rescue CD'))}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="install-media-arch">i386</th>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-13-i386-CHECKSUM">F13</a></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-14-i386-CHECKSUM">F14</a></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-Beta-i386-CHECKSUM">F15-Beta</a></td>
+                        </tr>
+                        <tr>
+                            <th class="install-media-arch">x86_64</th>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-13-x86_64-CHECKSUM">F13</a></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-14-x86_64-CHECKSUM">F14</a></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-Beta-x86_64-CHECKSUM">F15-Beta</a></td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <h4>${Markup(_('Live Media'))}</h4>
-                <ul>
-                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-14-i686-Live-Desktop-CHECKSUM">i686</a></li>
-                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-14-x86_64-Live-Desktop-CHECKSUM">x86_64</a></li>
-                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-14-i686-Live-KDE-CHECKSUM">i686 (KDE)</a></li>
-                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-14-x86_64-Live-KDE-CHECKSUM">x86_64 (KDE)</a></li>
-                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-14-i686-Live-LXDE-CHECKSUM">i686 (LXDE)</a></li>
-                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-14-x86_64-Live-LXDE-CHECKSUM">x86_64 (LXDE)</a></li>
-                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-14-i686-Live-XFCE-CHECKSUM">i686 (XFCE)</a></li>
-                    <li><a href="https://fedoraproject.org/static/checksums/Fedora-14-x86_64-Live-XFCE-CHECKSUM">x86_64 (XFCE)</a></li>
-                </ul>
+
+                <table class="verify-live-media">
+                    <thead>
+                        <tr>
+                            <th colspan="4">${Markup(_('Live Media'))}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="install-media-arch">i686</th>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-13-i686-Live-CHECKSUM">F13</a></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-14-i686-Live-Desktop-CHECKSUM">F14</a></td>
+                            <td>F15</td>
+                        </tr>
+                        <tr>
+                            <th class="install-media-arch">i686 (KDE)</th>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-13-i686-Live-KDE-CHECKSUM">F13</a></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-14-i686-Live-KDE-CHECKSUM">F14</a></td>
+                            <td>F15</td>
+                        </tr>
+                        <tr>
+                            <th class="install-media-arch">i686 (LXDE)</th>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-13-i686-Live-LXDE-CHECKSUM">F13</a></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-14-i686-Live-LXDE-CHECKSUM">F14</a></td>
+                            <td>F15</td>
+                        </tr>
+                        <tr>
+                            <th class="install-media-arch">i686 (XFCE)</th>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-13-i686-Live-XFCE-CHECKSUM">F13</a></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-14-i686-Live-XFCE-CHECKSUM">F14</a></td>
+                            <td>F15</td>
+                        </tr>
+                        <tr>
+                            <th class="install-media-arch">x86_64</th>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-13-x86_64-Live-CHECKSUM">F13</a></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-14-x86_64-Live-Desktop-CHECKSUM">F14</a></td>
+                            <td>F15</td>
+                        </tr>
+                        <tr>
+                            <th class="install-media-arch">x86_64 (KDE)</th>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-13-x86_64-Live-KDE-CHECKSUM">F13</a></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-14-x86_64-Live-KDE-CHECKSUM">F14</a></td>
+                            <td>F15</td>
+                        </tr>
+                        <tr>
+                            <th class="install-media-arch">x86_64 (LXDE)</th>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-13-x86_64-Live-LXDE-CHECKSUM">F13</a></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-14-x86_64-Live-LXDE-CHECKSUM">F14</a></td>
+                            <td>F15</td>
+                        </tr>
+                        <tr>
+                            <th class="install-media-arch">x86_64 (XFCE)</th>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-13-x86_64-Live-XFCE-CHECKSUM">F13</a></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-14-x86_64-Live-XFCE-CHECKSUM">F14</a></td>
+                            <td>F15</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
                 <p>${Markup(_('Next, import Fedora\'s GPG key(s):'))}</p>
                 <pre class="command">$ curl https://fedoraproject.org/static/fedora.gpg | gpg --import</pre>
                 <p>${Markup(_('You can verify the details of the GPG key(s) &lt;a href="%s/%s/keys"&gt;here&lt;/a&gt;.') % (path, lang))}</p>
                 <p>${Markup(_('Now, verify that the CHECKSUM file is valid:'))}</p>
-                <pre class="command">$ gpg --verify *-CHECKSUM</pre>
+                <pre class="command">$ gpg --verify-files *-CHECKSUM</pre>
                 <p>${Markup(_('The CHECKSUM file should have a good signature from one of the following keys:'))}</p>
                 <ul>
+                    <li><code>069C8460</code> - ${Markup(_('Fedora 15'))}</li>
                     <li><code>97A1071F</code> - ${Markup(_('Fedora 14'))}</li>
                     <li><code>E8E40FDE</code> - ${Markup(_('Fedora 13'))}</li>
                 </ul>
@@ -62,8 +128,7 @@
                 <pre class="command">$ sha256sum -c *-CHECKSUM</pre>
                 <p>${Markup(_('If the output states that the file is valid, then you\'re good to go!'))}</p>
  
-
-<p id="section-nav-bottom"><a href="${path}/${lang}/get-fedora">${Markup(_('&amp;#8592; Back to the main "Get Fedora" page'))}.</a></p>
+                <p id="section-nav-bottom"><a href="${path}/${lang}/get-fedora">${Markup(_('&amp;#8592; Back to the main "Get Fedora" page'))}.</a></p>
            </div>
         </div>
         <div class="clear"></div>

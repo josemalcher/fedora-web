@@ -365,7 +365,7 @@ a#nav-special {
 
 #footer li.first {
     border-left:medium none;
-    padding-left: 0;
+    padding-left: 1px;
 }
 
 #footer li {
@@ -1038,6 +1038,8 @@ ul.downloadbox {
 ul.installdvd { background-image: url(../images/installdvd.png); }
 ul.gnomelive { background-image: url(../images/gnomelive.png); }
 ul.kdelive { background-image: url(../images/kdelive.png); }
+ul.xfcelive { background-image: url(../images/xfcelive.png); }
+ul.lxdelive { background-image: url(../images/lxdelive.png); }
 
 .downloadbox li {
     width: 32ex;
@@ -1461,7 +1463,8 @@ li.slide { width: 100% !important; }
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-bottom: 2px solid #255591;
-  background: -moz-linear-gradient(bottom,  #a9c8da,  white); 
+  background: -moz-linear-gradient(bottom, #a9c8da, #fff); 
+  background: -webkit-gradient(linear, left bottom, left top, from(#a9c8da), to(#fff)); 
   float: right;
   margin-right: .5em;
   font-size: 1.1em;
@@ -1483,7 +1486,8 @@ li.slide { width: 100% !important; }
 
 .slides #fedora-download li a:hover {
   color: #255591;
-  background: -moz-linear-gradient(top,  #a9c8da,  white); 
+  background: -moz-linear-gradient(top, #a9c8da, #fff); 
+  background: -webkit-gradient(linear, left top, left bottom, from(#a9c8da), to(#fff)); 
   text-shadow: white -1px -1px 0px;
 }
 
@@ -1563,3 +1567,33 @@ ul#sponsors li {
   margin: 1em;
   float: left;
 }
+
+
+/* verify */
+
+.verify-install-media, .verify-live-media {
+  width: 70%;
+  padding: 2px;
+}
+
+.verify-install-media th, .verify-live-media th {
+  background: #ddd;
+}
+
+.verify-install-media thead, .verify-live-media thead {
+  font-size: larger;
+}
+
+.verify-install-media tr, .verify-install-media td, .verify-live-media tr, .verify-live-media td  {
+  border: 1px solid #c8c8c8;
+  text-align: center;
+  padding: 2px;
+}
+
+th.install-media-arch { background-color: #e8e8e8; width: 120px; }
+
+.verify-install-media tr:hover, .verify-live-media tr:hover {
+  background-color: #e8e8e8;
+}
+
+/* end: verify */

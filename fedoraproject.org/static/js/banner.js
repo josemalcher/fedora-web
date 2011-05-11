@@ -10,6 +10,12 @@ var banners = [
     5
   ],
   [
+    "/static/images/banners/f15beta.png",
+    "Fedora 15 Beta",
+    "https://fedoraproject.org/get-prerelease",
+    5
+  ],
+  [
     "/static/images/banners/picturebanner-envelope-1.png",
     "Fedora Picture Book - Now accepting submissions",
     "https://fedoraproject.org/wiki/Category:Picture_book",

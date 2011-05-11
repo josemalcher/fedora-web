@@ -4,7 +4,7 @@
   xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="../templates/master.html" />
   <head>
-    <title>${Markup(_('Fedora Project'))}</title>
+    <title>${Markup(_('Fedora Project - List of GPG keys.'))}</title>
   </head>
 	<body id="fedoraproject-org" class="lang-${lang}">
         <div class="page-header" id="header-keys">
@@ -54,6 +54,21 @@ pub  4096R/D22E77F2 2009-01-19 Fedora (11) &lt;fedora@fedoraproject.org&gt;
                 </p>
 
                 <h3>${Markup(_('Currently used keys'))}</h3>
+
+                <h4>RPM-GPG-KEY-fedora-15-primary</h4>
+                <p>
+                    <pre class="command">
+pub   4096R/069C8460 2011-02-07
+      Key fingerprint = 25DB B54B DED7 0987 F4C1  0042 B4EB F579 069C 8460
+uid                  Fedora (15) &lt;fedora@fedoraproject.org&gt;</pre>
+                </p>
+                <p>
+                    <ul>
+                        <li>${Markup(_('Download: &lt;a href="https://fedoraproject.org/static/069C8460.txt"&gt;Fedora Project&lt;/a&gt;'))}</li>
+                        <li>${Markup(_('Download: &lt;a href="http://keys.gnupg.net:11371/pks/lookup?search=0x069C8460&amp;op=get"&gt;keys.gnupg.net&lt;/a&gt;'))}</li>
+                    </ul>
+                </p>
+
                 <h4>RPM-GPG-KEY-fedora-14-primary</h4>
                 <p>
                     <pre class="command">
