@@ -14,122 +14,121 @@
     <h3>${_('Spins Creator Interview: Chitlesh Goorah, Fedora Electronic Lab')}</h3>
     <div class="creator-interview">
 		<img class="meet-image" src="/static/images/community-chitleshgoorah.png" />
-<p><em>Chitlesh Goorah is the creator and maintainer of the <a href="/fel">Fedora Electronic Lab spin</a>. 
-Here he discusses the help he had from the community, the spin's target audience, and his inspiration for creating it.</em></p>
-<h4>Where are you from?</h4>
+<p><em>${Markup(_('Chitlesh Goorah is the creator and maintainer of the &lt;a href="/fel"&gt;Fedora Electronic Lab spin&lt;/a&gt;. Here he discusses the help he had from the community, the spins target audience, and his inspiration for creating it.'))}</em></p>
+<h4>${_('Where are you from?')}</h4>
 <p>
-Strasbourg, France.
+${_('Strasbourg, France.')}
 </p>
-<h4>What is your profession?</h4>
-<p>Post-graduate student (micro-nano electronics.)
+<h4>${_('What is your profession?')}</h4>
+<p>${_('Post-graduate student (micro-nano electronics.)')}
 </p>
 
-<h4>What's your IRC nick?</h4>
-<p>ChitleshGoorah on Freenode.</p>
+<h4>${_('What\'s your IRC nick?')}</h4>
+<p>${_('ChitleshGoorah on Freenode.')}</p>
 
-<h4>Could you tell us a bit about where the inspiration for this feature came from? Is it an area that hasn't been tackled by other distributions/OSs?</h4>
-<p>The inspiration for this feature came from HOW it got its name "Fedora Electronic Lab".</p>
+<h4>${_('Could you tell us a bit about where the inspiration for this feature came from? Is it an area that hasn\'t been tackled by other distributions/OSs?')}</h4>
+<p>${_('The inspiration for this feature came from HOW it got its name "Fedora Electronic Lab".')}</p>
 <p>
-At the very beginning, there was neither the intention for a Fedora Electronic Lab nor its spin. During my post-graduate studies in Micro-Nano Electronic Engineering, I needed VLSI simulation tools. I started packaging the VLSI simulation tools for Fedora, which I needed for my studies. Then MirjamWaeckerlin and my lecturers in Strasbourg, France, encouraged the concept of introducing Application-Specific Integrated Circuit (ASIC) Design Flows on Fedora, so that they can recommend to other students or use those tools themselves.
+${_('At the very beginning, there was neither the intention for a Fedora Electronic Lab nor its spin. During my post-graduate studies in Micro-Nano Electronic Engineering, I needed VLSI simulation tools. I started packaging the VLSI simulation tools for Fedora, which I needed for my studies. Then MirjamWaeckerlin and my lecturers in Strasbourg, France, encouraged the concept of introducing Application-Specific Integrated Circuit (ASIC) Design Flows on Fedora, so that they can recommend to other students or use those tools themselves.')}
 </p><p>
-After receiving some feedback from the Fedora community, the objectives got wider till a point that it was tagged with a name "Fedora Electronic Lab". Now the latter covers every single package for electronic simulation available under the Fedora umbrella.
+${_('After receiving some feedback from the Fedora community, the objectives got wider till a point that it was tagged with a name "Fedora Electronic Lab". Now the latter covers every single package for electronic simulation available under the Fedora umbrella.')}
 </p><p>
-Packaging or even introducing these tools in any distribution requires certain basic knowledge in microelectronics in terms of thorough testing. I guess this is among the reasons why these tools aren't available in the official repositories of many distributions.
+${_('Packaging or even introducing these tools in any distribution requires certain basic knowledge in microelectronics in terms of thorough testing. I guess this is among the reasons why these tools aren\'t available in the official repositories of many distributions.')}
 </p><p>
-Nowadays, nearly every semiconductor company uses some type of fabless approach. Being innovative and cutting-edge, Fedora has enough qualities to lead the opensource electronic simulation environment by example. 
+${_('Nowadays, nearly every semiconductor company uses some type of fabless approach. Being innovative and cutting-edge, Fedora has enough qualities to lead the opensource electronic simulation environment by example.')}
 </p>
-<h4>Tell us about your goals for the Fedora Electronic Lab. Do you have plans for expanding this post Fedora 8, perhaps targeting other areas of engineering?</h4>
-<p>Facilitating the design and verification of ASIC design flow for our users remains the key objective of the Fedora Electronic Lab.
+<h4>${_('Tell us about your goals for the Fedora Electronic Lab. Do you have plans for expanding this post Fedora 8, perhaps targeting other areas of engineering?')}</h4>
+<p>${_('Facilitating the design and verification of ASIC design flow for our users remains the key objective of the Fedora Electronic Lab.')}
 </p><p>
-This approach shaped our goals and raised many questions as well. Thus our solutions brought forward many potential advantages for Fedora users, such as:
+${_('This approach shaped our goals and raised many questions as well. Thus our solutions brought forward many potential advantages for Fedora users, such as:')}
 </p>
 <ul>
-<li>a complete process of creation, management, simulation and implementation for designs following either top-down and bottom-up strategies.
+<li>${_('a complete process of creation, management, simulation and implementation for designs following either top-down and bottom-up strategies.')}
 </li><li>
-interoperability between the packages.
+${_('interoperability between the packages.')}
 </li><li>
-a simple fabless semiconductor facility designed to fulfill various design teams' tasks.
+${_('a simple fabless semiconductor facility designed to fulfill various design teams\' tasks.')}
 </li><li>
-a simple and quick deployment methodology of the FEL through the RPM package management.
+${_('a simple and quick deployment methodology of the FEL through the RPM package management.')}
 </li><li>
-7 extra technology libraries to automate synthesis, placement, and routing of a digital ASIC, up to a feature size of 0.13µm (more than 300 MB)
+${_('7 extra technology libraries to automate synthesis, placement, and routing of a digital ASIC, up to a feature size of 0.13µm (more than 300 MB)')}
 </li><li>
-many extracted spice decks which can be simulated with gnucap/ngspice or any circuit simulators.
+${_('many extracted spice decks which can be simulated with gnucap/ngspice or any circuit simulators.')}
 </li><li>
-a mature environment at the Fedora Project in terms new contributions to the FEL. 
+${_('a mature environment at the Fedora Project in terms new contributions to the FEL.')}
 </li>
 </ul>
 
-<p>During the last decade, the number of companies embracing the fabless model has increased tremendously. There are more than 700 fabless companies globally. The electronic simulation tools are very expensive and affect many educational institutions. One of our goal is to attract those institutions so that they opt Fedora based distributions as their software platform.
+<p>${_('During the last decade, the number of companies embracing the fabless model has increased tremendously. There are more than 700 fabless companies globally. The electronic simulation tools are very expensive and affect many educational institutions. One of our goal is to attract those institutions so that they opt Fedora based distributions as their software platform.')}
 </p><p>
-The prime objectives for the "Fedora Electronic Lab" aren't to include as many packages as possible. But rather, ensuring interoperability between the packages. It is good to have many packages at one's disposal. However, for any electronic engineer, it is useless (in terms of time wasting) to use an application which outputs data that can't be processed by another application. Surely, we will try to work with those upstream so that we can ensure interoperability in the future.
+${_('The prime objectives for the "Fedora Electronic Lab" aren\'t to include as many packages as possible. But rather, ensuring interoperability between the packages. It is good to have many packages at one\'s disposal. However, for any electronic engineer, it is useless (in terms of time wasting) to use an application which outputs data that can\'t be processed by another application. Surely, we will try to work with those upstream so that we can ensure interoperability in the future.')}
 </p><p>
 
-Once Fedora 8 will be released, the FEL packages will be pushed to the EPEL repositories so that other distributions such as CentOS, Scientific Linux etc... can take advantage of the Fedora Electronic Lab. 
+${_('Once Fedora 8 will be released, the FEL packages will be pushed to the EPEL repositories so that other distributions such as CentOS, Scientific Linux etc... can take advantage of the Fedora Electronic Lab.')}
 </p>
 
-<h4>What are, in your opinion, some of the killer packages for this spin going to be? On the feature's wiki page you say that it is primarily targeted at micro-nano electronic engineering, but are there applications that will cater to other areas as well?</h4>
-<p>The Fedora Electronic Lab (FEL) isn't just the packages on the spin. Some packages were excluded as they take a lot of space on the live image along with their dependencies. These packages can be installed via yum later on.
+<h4>${_('What are, in your opinion, some of the killer packages for this spin going to be? On the feature\'s wiki page you say that it is primarily targeted at micro-nano electronic engineering, but are there applications that will cater to other areas as well?')}</h4>
+<p>${_('The Fedora Electronic Lab (FEL) isn\'t just the packages on the spin. Some packages were excluded as they take a lot of space on the live image along with their dependencies. These packages can be installed via yum later on.')}
 </p><p>
 
-Fedora Electronic Lab for Fedora 8 will mainly target the micro-nano electronic engineering field. However there are tools present on the Fedora collection for circuit simulation, programming micro-controllers and Atmel devices, designing PCB Layouts and schematics,...
+${_('Fedora Electronic Lab for Fedora 8 will mainly target the micro-nano electronic engineering field. However there are tools present on the Fedora collection for circuit simulation, programming micro-controllers and Atmel devices, designing PCB Layouts and schematics,...')}
 </p><p>
 
-With FEL, we satisfy a real-life scenario of a fabless semiconductor industry. The scenario consists of providing adequate simulation tools to various design teams:
+${_('With FEL, we satisfy a real-life scenario of a fabless semiconductor industry. The scenario consists of providing adequate simulation tools to various design teams:')}
 </p>
 <ul>
 <li>
-Physical Design
+${_('Physical Design')}
 </li><li>
-Backend Product fabrication
+${_('Backend Product fabrication')}
 </li><li>
-Design Testing
+${_('Design Testing')}
 </li><li>
-Circuit Design
+${_('Circuit Design')}
 </li><li>
-Analog/Digital Design
+${_('Analog/Digital Design')}
 </li><li>
-and many more ... 
+${_('and many more ...')} 
 </li>
 </ul>
 <p>
-For example, for "backend product fabrication" project management, some basic tools such as a mindmapping tool, gantt diagram editor, numerical computing tools will be included in the spin.
+${_('For example, for "backend product fabrication" project management, some basic tools such as a mindmapping tool, gantt diagram editor, numerical computing tools will be included in the spin.')}
 </p><p>
 
-The main actors are magic, netgen, xcircuit, irsim, alliance, gnucap and pharosc. Pharosc includes essential scripts to allow anyone to wrap up his/her own standard cell libraries.
+${_('The main actors are magic, netgen, xcircuit, irsim, alliance, gnucap and pharosc. Pharosc includes essential scripts to allow anyone to wrap up his/her own standard cell libraries.')}
 </p><p>
-FEL will not include tools for mechanical or biological simulations. But most certainly, there will be some work to introduce some FPGA tools and more verilog support on the Fedora Collection. However, there will certainly be more improvements on the actual packages.</p>
+${_('FEL will not include tools for mechanical or biological simulations. But most certainly, there will be some work to introduce some FPGA tools and more verilog support on the Fedora Collection. However, there will certainly be more improvements on the actual packages.')}</p>
 
-<h4>So, if you had to describe the Fedora Electronic Lab in just one sentence, what would you say?</h4>
-<p>The FEL Live image(i.e the spin) is a marketing medium for upstream and focuses on being a free electronic laboratory for end users.</p>
+<h4>${_('So, if you had to describe the Fedora Electronic Lab in just one sentence, what would you say?')}</h4>
+<p>${_('The FEL Live image(i.e the spin) is a marketing medium for upstream and focuses on being a free electronic laboratory for end users.')}</p>
 
-<h4>What kind of work has been required to put this feature together? Have there been many Fedora specific changes or has there been a lot of upstream work? How did other Fedora contributors help? </h4>
-<p>60% of the work were to remove hard coded links from various packages. Upstream were notified and most changes have already been made. Most of these tools were in fact personal projects which ultimately needed an automated process for installation. Fedora's interest on the FEL forced many upstream to fix their old bugs and provide documentations for their tools. The rest of the work was to ensure interoperability so that minimum with Makefiles, simulations can be automated.
-</p><p>
-
-One of the key role of translating FEL packages in French was done by Fedora's french translator, Alain Portal. He is also the maintainer of Pikloops.
+<h4>${_('What kind of work has been required to put this feature together? Have there been many Fedora specific changes or has there been a lot of upstream work? How did other Fedora contributors help? ')}</h4>
+<p>${_('60% of the work were to remove hard coded links from various packages. Upstream were notified and most changes have already been made. Most of these tools were in fact personal projects which ultimately needed an automated process for installation. Fedora\'s interest on the FEL forced many upstream to fix their old bugs and provide documentations for their tools. The rest of the work was to ensure interoperability so that minimum with Makefiles, simulations can be automated.')}
 </p><p>
 
-In terms of packaging, there aren't many Fedora specific changes other than doing system-wide compilations, ensuring multi-libs and satifying Fedora packaging guidelines. MamoruTasaka and XavierLamien helped to integrate the packages in Fedora. But in terms of research, proposal and requests for enhancements the Fedora community have helped a lot in shaping the spin. RahulSundaram pointed to some interesting articles from time to time. Some Fedora users called for changes in order to shape the FEL Live spin to their own usage. Some users did even send some requests to contact certain closed source projects they use in order to open their code. One of 3 projects I've contacted responsed positively and perhaps will license his product under the BSD license next year.
+${_('One of the key role of translating FEL packages in French was done by Fedora\'s french translator, Alain Portal. He is also the maintainer of Pikloops.')}
 </p><p>
 
-HansdeGoede and TrondDanielsen from the embedded SIG have included a cross toolchain for Fedora for the gp2x handheld console which is applicable to other arm platforms as well.
+${_('In terms of packaging, there aren\'t many Fedora specific changes other than doing system-wide compilations, ensuring multi-libs and satifying Fedora packaging guidelines. MamoruTasaka and XavierLamien helped to integrate the packages in Fedora. But in terms of research, proposal and requests for enhancements the Fedora community have helped a lot in shaping the spin. RahulSundaram pointed to some interesting articles from time to time. Some Fedora users called for changes in order to shape the FEL Live spin to their own usage. Some users did even send some requests to contact certain closed source projects they use in order to open their code. One of 3 projects I\'ve contacted responsed positively and perhaps will license his product under the BSD license next year.')}
 </p><p>
-Uptil now, it has been a success and upstream have already integrated the changes in their trunk. Thus other distributions can take advantage of the opensource eco-system. I hope Fedora has made it simple for other distributions to integrate those simulation tools in their respective collection.
+
+${_('HansdeGoede and TrondDanielsen from the embedded SIG have included a cross toolchain for Fedora for the gp2x handheld console which is applicable to other arm platforms as well.')}
+</p><p>
+${_('Uptil now, it has been a success and upstream have already integrated the changes in their trunk. Thus other distributions can take advantage of the opensource eco-system. I hope Fedora has made it simple for other distributions to integrate those simulation tools in their respective collection.')}
 
 </p>
-<h4>And finally, maybe you'd like to tell us a little bit about yourself? What got you interested in free software originally; things you love to do when you're not on the computer?! </h4>
-<p>It is rare that I'm not in front of my computer but I do differentiate Fedora related work and my personal research work for electronics. I do share great moments with my girlfriend. I enjoy "real" melodic trance music, but not the commercial ones. I spend a lot of time on EDAs (both opensource and proprietary) trying to understand their engines and their limitations for a particular type of simulation. </p>
-<h4>Glossary</h4>
+<h4>${_('And finally, maybe you\'d like to tell us a little bit about yourself? What got you interested in free software originally; things you love to do when you\'re not on the computer?!')} </h4>
+<p>${_('It is rare that I\'m not in front of my computer but I do differentiate Fedora related work and my personal research work for electronics. I do share great moments with my girlfriend. I enjoy "real" melodic trance music, but not the commercial ones. I spend a lot of time on EDAs (both opensource and proprietary) trying to understand their engines and their limitations for a particular type of simulation.')} </p>
+<h4>${_('Glossary')}</h4>
 <dl>
-<dt>ASIC</dt>
-<dd>Application-Specific Integrated Circuit</dd>
-<dt> VLSI</dt>
-<dd>Very Large Scale Integration, about 10⁶ to 10⁷ transistors</dd> 
+<dt>${_('ASIC')}</dt>
+<dd>${_('Application-Specific Integrated Circuit')}</dd>
+<dt>${_('VLSI')}</dt>
+<dd>${_('Very Large Scale Integration, about 10⁶ to 10⁷ transistors')}</dd> 
 </dl>
 
-<p><em>This interview was given by Jonathan Roberts .</em></p>
-<p><a href="${relpath}/community/">Go back to the spins community interviews page ></a></p>
+<p><em>${_('This interview was given by Jonathan Roberts.')}</em></p>
+<p><a href="${relpath}/community/">${_('Go back to the spins community interviews page &gt;')}</a></p>
     </div>
   </body>
 </html>
