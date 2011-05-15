@@ -8,7 +8,7 @@
 		<h4>${_('Unsure if your computer is 32-bit or 64-bit?')}</h4>
 		<ul>
 			<li>${_('The 32-bit edition is compatible with both 32-bit and 64-bit PCs.')}</li>
-			<li>${_('Read our &lt;a href="http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Guide/ch-new-users.html#sn-which-arch"&gt;documentation on how to tell if your computer is 32-bit or 64-bit&lt;/a&gt;.')}</li>
+			<li>${Markup(_('Read our &lt;a href="%s"&gt;documentation on how to tell if your computer is 32-bit or 64-bit&lt;/a&gt;.') % 'http://docs.fedoraproject.org/en-US/Fedora/13/html/Installation_Guide/ch-new-users.html#sn-which-arch')}</li>
 		</ul>
 	</span>
 
@@ -25,5 +25,5 @@
 		</tr>
 	</table>
 -->
-	<p>${_('Older releases of this spin can be found at &lt;a href="http://archive.fedoraproject.org/"&gt;archive.fedoraproject.org&lt;/a&gt;.')}</p>
+	<p>${Markup(_('Older releases of this spin can be found at &lt;a href="%s"&gt;archive.fedoraproject.org&lt;/a&gt;.') % 'http://archive.fedoraproject.org/')}</p>
 </html>

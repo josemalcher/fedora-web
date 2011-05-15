@@ -7,7 +7,7 @@
 			<py:if test="support_tab['irc']">
 			<p>${_('Users and developers are available in the')} <strong>${irc_channel}</strong> ${_('irc channel on')} <strong><a href="${irc_server_url}">${irc_server}</a></strong> ${_('for real-time conversations.')}</p>
 			</py:if>
-			<p>${_('General help is available in irc channel &lt;strong&gt;#fedora&lt;/strong&gt; on &lt;a href="http://freenode.net"&gt;irc.freenode.net&lt;/a&gt;.')}</p>
+			<p>${Markup(_('General help is available in irc channel &lt;strong&gt;#fedora&lt;/strong&gt; on &lt;a href="http://freenode.net"&gt;irc.freenode.net&lt;/a&gt;.'))}</p>
 			<p>${_('For help using IRC, ')}<a href="https://fedoraproject.org/wiki/Communicate/IRCHowTo">${_('please visit the Fedora IRC how-to')}</a>.</p>
 
 	<h4>${_('Help via Email')}</h4>
