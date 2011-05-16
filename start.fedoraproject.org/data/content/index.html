@@ -46,14 +46,13 @@ fdd = feedparse('https://lists.fedoraproject.org/rss/devel-announce.xml')
                 <h4>${_('Latest Announcements')}</h4>
 
                 <ul>
-                    <li py:for="entry in fda.entries[:2]">
+                    <li py:for="entry in fda.entries[:3]">
                         <h5><a href="${entry.link}">${entry.title}</a></h5>
-                        <p class="community-dates">${Markup(entry.summary)}</p>
+                        <p class="community-dates">&nbsp;</p>
                     </li>
                     <li py:for="entry in fdd.entries[:2]">
                         <h5><a href="${entry.link}">${entry.title}</a></h5>
-
-                        <p class="community-dates">${Markup(entry.summary)}</p>
+                        <p class="community-dates">&nbsp;</p>
                     </li>
                 </ul>
             </div>
