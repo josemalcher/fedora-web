@@ -11,7 +11,7 @@
   <body>
     <h2>${_("Frequently-Asked Questions")}</h2>
     <h3 class="question">${_("How do I use it?")}</h3>
-    <p class="answer">${_("First download one of the available BFO specific images like the ISO image.  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode.")}</p>
+    <p class="answer">${_("First download one of the available BFO specific images. You have a choice of ISO (DVD/CD), USB, Floppy and lkrn images. Then write that image to an appropriate medium.  Next boot from that medium.  After that you're using BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora installer or rescue mode.")}</p>
     <h3 class="question">${_("Can I use it with grub?")}</h3>
         <p class="answer">${_("Yes!  Just run the following commands as root")}
         <pre>
@@ -22,16 +22,22 @@
     <h3 class="question">${_("How does it work?")}</h3>
     <p class="answer">${_("BFO was started by boot.kernel.org (BKO) and combines a series of recent technologies to produce a new boot stack.  The glue that holds everything together is gpxe.  Users familiar with pxe will find gpxe very familiar.  Latest versions support several protocols beyond just tftp.  We are using http to transfer files around.  The basic steps are as follows:")}</p>
     <ul>
-        <li>${_("Download the boot.fedoraproject.org media.")}</li>
-        <li>${_("Boot from the downloaded iso/disk image.")}</li>
-        <li>${_("The disk image will then boot and configure network.")}</li>
+        <li>${_("Download the boot.fedoraproject.org media fitting your preferred boot method.")}</li>
+        <ul>
+            <li>burn ISO images to a CD-R or DVD-R</li>
+            <li>write USB image for a USB stick</li>
+            <li>write Floppy image to a 3.5 inch HD floppy</li>
+            <li>lkrn image for PXE booting, grub booting and in conjunction with kexec (c.f.: <a href="http://myllynen.fedorapeople.org/">pxkxc</a>)</li>
+        </ul>
+        <li>${_("Boot from the medium you created.")}</li>
+        <li>${_("It will first configure network via DHCP.")}</li>
         <li>${_("After network is configured, it will go out to our boot.fedoraproject.org website and download the menus and other prompts from us")}</li>
         <li>${_("Those boot menus will then be displayed to the user for selection.  After a selection (like install Fedora 12) the regular boot process takes over just as it would had you booted from normal local media.")}</li>
     </ul>
     <h3 class="question">${_("Why should I use BFO?")}</h3>
-    <p class="answer">${_("The BFO downloads are very small and once you have them, you'll rarely have to download more.  Even as more versions of Fedora come out, you just boot from your iso and they will appear.  Users with fast internet connections will have the best experience with BFO.  They basically replace having to regularly download large ISO images and burn them to disk.")}</p>
+    <p class="answer">${_("The BFO downloads are very small and once you have them, you'll rarely have to download more.  Even as more versions of Fedora come out, you just boot from your image and they will appear.  Users with fast internet connections will have the best experience with BFO.  They basically replace having to regularly download large ISO images and burn them to disk.")}</p>
     <h3 class="question">${_("What is required?")}</h3>
-    <p class="answer">${_("For the most typical setup one should have DHCP, HTTP internet access and a CD/DVD burner.  Floppy and USB images are also available.")}</p>
+    <p class="answer">${_("For all image types, you need a working DHCP in the network you use it from as well as HTTP internet access. To use the ISO, a CD/DVD burner. To use the USB image, a USB stick.  Floppy and lkrn images are also available.")}</p>
     <h3 class="question">${_("Does BFO replace the installer or anaconda?")}</h3>
     <p class="answer">${_("No.  BFO is also not part of Anaconda.  BFO is a way to load the installer via network.  Normally users download a large ISO image that contains all of the installer bits.  BFO is a smaller booting method that downloads the installer bits at runtime.  In theory with BFO one iso download can install all future versions of Fedora.")}</p>
     <h3 class="question">${_("What about the Live CDs?")}</h3>
