@@ -57,16 +57,6 @@ clean:
 
 msgmerge: $(wildcard po/*.po)
 
-pot: $(HTML_FILES)
-	${PYBABEL} extract -F build/pybabel.cfg data -o po/fedora-web.pot
-
-pushpot:
-	tx push -s
-
-pullpos:
-	tx pull -a
-	tx pull --lang=en
-
 push:
 	git push
 
