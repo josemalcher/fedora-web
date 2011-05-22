@@ -1376,6 +1376,10 @@ div.panes div { display: none; }
     background-color: white;
     color: #3c6eb4;
     border: 1px solid #3c6eb4;
+    border-radius: 3px;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
 }
 
 .slideShow .navigation a:hover, .slideShow .navigation a.selected {
@@ -1383,6 +1387,9 @@ div.panes div { display: none; }
     font-weight: bold;
     color: white;
     border: 1px solid white;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
 }
 
 .simpleSlideShow { width: 100%; }
@@ -1499,8 +1506,18 @@ li.slide { width: 100% !important; }
 
 
 .slideShow #feature .content {
-  width: 405px;
   left: 0px;
+  /* For browsers that don't support RGBa */
+  background: rgb(0, 0, 0);
+  /* RGBa with 0.6 opacity */
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  left: 200px;
+  height: 200px;
+  margin: 1em;
+  padding: 1em;
 }
 
 .slides #feature {
