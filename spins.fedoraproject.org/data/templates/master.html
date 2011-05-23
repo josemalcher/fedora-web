@@ -14,7 +14,7 @@ class Torrents(object):
     prerelease_re = re.compile('-(alpha|beta|snap|preview)([0-9]*)$', re.I)
     non_release_re = re.compile('(alpha|beta|snap|preview)', re.I)
     prerelease_order = ['alpha', 'beta', 'snap', 'preview']
-    spins_matches = ['design', 'kde', 'lxde', 'games', 'xfce', 'security', 'soas']
+    spins_matches = ['design', 'kde', 'lxde', 'games', 'xfce', 'security', 'fel']
     archlist = ['i386', 'i586', 'i686', 'ix86', 'ppc', 'x86_64', 'source', 'Source']
 
     def __init__(self):
