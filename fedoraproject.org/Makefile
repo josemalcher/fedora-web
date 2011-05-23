@@ -12,7 +12,7 @@ MO_FILES = $(PO_FILES:.po=.mo)
 HTML_FILES = $(shell find data -name "*.html")
 
 PYTHON = python
-PYBABEL = pybabel
+PYBABEL = $(PYTHON) /usr/bin/pybabel
 BASEPATH = /
 PWD = $(shell pwd)
 

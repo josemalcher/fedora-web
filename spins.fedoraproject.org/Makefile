@@ -49,7 +49,7 @@ clean:
 	rm -rf out
 	rm -f po/*.mo
 	rm -f data/templates/translations.html
-	rm -f build/rss.cache build/rss.pyc
+	rm -f build/*.cache build/rss.pyc
 	rm -f httpd/conf/*.conf httpd/conf/languages.conf.in
 
 msgmerge: $(wildcard po/*.po)
