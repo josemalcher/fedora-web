@@ -22,15 +22,15 @@ old_urls = [
 ]
 
 new_urls = [
-'http://docs.fedoraproject.org/%s/Fedora/14/html/Installation_Quick_Start_Guide/index.html',
-'http://docs.fedoraproject.org/%s/Fedora/14/html/Installation_Guide/index.html',
-'http://docs.fedoraproject.org/%s/Fedora/14/html/Installation_Guide/index.html',
-'http://docs.fedoraproject.org/%s/Fedora/14/html/Installation_Guide/sn-making-media.html',
-'http://docs.fedoraproject.org/%s/Fedora/14/html/Installation_Guide/ch-new-users.html#sn-which-arch',
-'http://docs.fedoraproject.org/%s/Fedora/14/html/Installation_Guide/ch-upgrade-x86.html',
+'http://docs.fedoraproject.org/%s/Fedora/15/html/Installation_Guide/index.html',
+'http://docs.fedoraproject.org/%s/Fedora/15/html/Installation_Guide/index.html',
+'http://docs.fedoraproject.org/%s/Fedora/15/html/Installation_Guide/index.html',
+'http://docs.fedoraproject.org/%s/Fedora/15/html/Installation_Guide/sn-making-media.html',
+'http://docs.fedoraproject.org/%s/Fedora/15/html/Installation_Guide/ch-new-users.html#sn-which-arch',
+'http://docs.fedoraproject.org/%s/Fedora/15/html/Installation_Guide/ch-upgrade-x86.html',
 'http://docs.fedoraproject.org/%s/Fedora/14/html/Burning_ISO_images_to_disc/sect-Burning_ISO_images_to_disc-Validating_the_Files.html',
-'http://docs.fedoraproject.org/%s/Fedora/14/html/Release_Notes/index.html',
-'http://docs.fedoraproject.org/%s/Fedora/14/html/Release_Notes/index.html',
+'http://docs.fedoraproject.org/%s/Fedora/15/html/Release_Notes/index.html',
+'http://docs.fedoraproject.org/%s/Fedora/15/html/Release_Notes/index.html',
 ]
 
 avail_langs = {
