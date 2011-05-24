@@ -1,16 +1,16 @@
 # Translations template for PROJECT.
 # Copyright (C) 2011 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
 # 
+#   <dongfengweixiao@gmail.com>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2011-05-01 22:20-0500\n"
-"PO-Revision-Date: 2011-05-02 03:22+0000\n"
-"Last-Translator: sijis <sijis@fedoraproject.org>\n"
-"Language-Team: Chinese (China) <None>\n"
+"PO-Revision-Date: 2011-05-22 02:52+0000\n"
+"Last-Translator: dongfengweixiao <dongfengweixiao@gmail.com>\n"
+"Language-Team: Chinese (China) (http://www.transifex.net/projects/p/fedora/team/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,18 +28,26 @@ msgstr "关于定制"
 
 #: data/content/about.html:14
 msgid "Different people, different tastes... different Fedoras."
-msgstr "不同的人，不同的喜好……不同的 Fedora。"
+msgstr ""
+"设备是预安装、预配置的系统映像。本定制版是为了便于任何人（独立软件开发商，开发商，原始设备制造商等）快捷的创建和部署虚拟设备。AOS（设备操作系统）是一个基于"
+" Fedora 的、仅仅能提供驱动本设备的最小化系统。"
 
 #: data/content/about.html:15
 msgid ""
 "What is a spin? Fedora spins are alternate versions of  Fedora, tailored for"
 " various types of users via hand-picked application sets and other "
 "customizations."
-msgstr "什么是定制版？Fedora定制版是Fedora的另一种版本，是通过精选各类软件集及其他个性自定义来给不同的用户量身定制的版本。"
+msgstr ""
+"操作系统设备 (AOS) 是一个最小的操作系统定义，它只包含了运行一个应用所必需的软件包。AOS "
+"意在成为一个基础，使得新的应用得以建立于其上，同时还可以将其按某个特定应用软件进行定制。AOS 在一个启动文件里描述，它存于 Fedora 定制版的 "
+"KickstartPool 里。这样定义意在使其不断演进，进而成为一个较小的、更方便使用的基础应用定义。AOS "
+"被设计可以以虚拟机形式工作，也可以是一个传统锁闭的不可变的应用块。"
 
 #: data/content/about.html:16
 msgid "DJs spinning records"
 msgstr ""
+"The AOS is currently available in Fedora 10 as a Fedora Spin, which is a pre-build \"binary blob.\" The blob is packaged as a tarball, and includes a raw disk image and meta data required to run the appliance in a virtual container. The AOS image can be here.\n"
+"AOS作为一个Fedora Spin在Fedora 10里获得支持，目前已有预制的“二进制大文件 (BLOB)”。该 BLOB 是打包成一个压缩包，包括一个原始磁盘映像和元数据需要的虚拟容器设备。星光AOS 映像可以在这里下载到。"
 
 #: data/content/about.html:16
 msgid ""
@@ -49,17 +57,15 @@ msgid ""
 "picked set of free & open source tools and applications for high-end "
 "hardware design and simulation."
 msgstr ""
-"例如，<a href=\"/games/\">Fedora 游戏定制版</a>旨在为游戏玩家提供丰富的自由开源游戏。<a "
-"href=\"/fel/\">Fedora 电子实验室</a>可以随便挑选自由开源的工具和应用程序用于高端的硬件设计和仿真。"
+"一旦下载完成，你就可以启动把 AOS 作为一个虚拟设备在 Fedora 下运行，建议在运行在 F -10 或更高的版本，当然,它理论上可以运行在F "
+"-9或者是Rawhide上。"
 
 #: data/content/about.html:17
 msgid ""
 "Spins first became available with the release of Fedora 7 in May 2007. The "
 "spin creation process as well as maintenance of spins is managed by the <a "
 "href=\"http://fedoraproject.org/wiki/SIGs/Spins\">Fedora Spins SIG</a>."
-msgstr ""
-"在 2007 年 5 月，Fedora 定制版伴随 Fedora 7 一起发布。定制版的制作和维护受 <a "
-"href=\"http://fedoraproject.org/wiki/SIGs/Spins\">Fedora Spins SIG</a> 管理。"
+msgstr "解压包含有 AOS 的压缩包："
 
 #: data/content/about.html:18
 msgid ""
@@ -232,27 +238,27 @@ msgstr "使用定制版及其一般说明"
 
 #: data/content/about.html:41
 msgid "Fedora reaching out to new niches"
-msgstr "Fedora reaching out to new niches"
+msgstr "Fedora 延伸到新领域。"
 
 #: data/content/about.html:41
 msgid " by Jake Edge on LWN.net"
-msgstr " by Jake Edge on LWN.net"
+msgstr "于 Jake Edge 在 LWN.net"
 
 #: data/content/about.html:42
 msgid "Interview: Jeremy Katz on Fedora Live CDs"
-msgstr "Interview: Jeremy Katz on Fedora Live CDs"
+msgstr "访问: Jeremy Katz on Fedora Live CDs"
 
 #: data/content/about.html:42
 msgid " by Jonathan Roberts on Red Hat Magazine"
-msgstr " by Jonathan Roberts on Red Hat Magazine"
+msgstr "于 Jonathan Roberts 在 Red Hat Magazine"
 
 #: data/content/about.html:43
 msgid "Customized spins of Fedora"
-msgstr "Fedora 自定义定制版"
+msgstr "Customized spins of Fedora"
 
 #: data/content/about.html:43
 msgid " by Max Spevack on Red Hat Magazine"
-msgstr " by Max Spevack on Red Hat Magazine"
+msgstr " 于 Max Spevack 在 Red Hat Magazine"
 
 #: data/content/about.html:45 data/content/support.html:51
 msgid "Creating Spins"
@@ -288,7 +294,7 @@ msgstr " - 定制版 SIG 是了解更多关于定制版设计过程的好去处�
 
 #: data/content/about.html:50 data/content/support.html:56
 msgid "Infrastructure/Custom Spins"
-msgstr "Infrastructure/Custom Spins"
+msgstr "基础/一般定制"
 
 #: data/content/about.html:50 data/content/support.html:56
 msgid "  - steps to get your spin listed with other spins."
@@ -305,6 +311,8 @@ msgid ""
 "A special selection of applications related to educational and scientific "
 "purposes."
 msgstr ""
+"A special selection of applications related to educational and scientific "
+"purposes."
 
 #: data/content/index.html:1
 msgid "Secure kiosks: no longer an oxymoron."
@@ -312,15 +320,15 @@ msgstr ""
 
 #: data/content/index.html:1
 msgid "A complete, modern desktop built using the KDE Plasma Desktop."
-msgstr ""
+msgstr "完整的、现代的 KDE 桌面环境。"
 
 #: data/content/index.html:1
 msgid "A complete, well-integrated Xfce desktop."
-msgstr ""
+msgstr "完整的、统一的 XFCE桌面环境。"
 
 #: data/content/index.html:1
 msgid "A light, fast, less-resource hungry desktop environment."
-msgstr ""
+msgstr "轻便、快速、占用资源极低的桌面环境。"
 
 #: data/content/index.html:1
 msgid ""
@@ -330,11 +338,11 @@ msgstr ""
 
 #: data/content/index.html:1
 msgid "Fedora's high-end hardware design and simulation platform."
-msgstr ""
+msgstr "Fedora的高端硬件设计和仿真平台。"
 
 #: data/content/index.html:1
 msgid "A perfect show-case of the best games available in Fedora."
-msgstr ""
+msgstr "在 Fedora 下可完美运行的游戏。"
 
 #: data/content/index.html:1 data/content/design/index.html:55
 msgid "Open Creativity."
@@ -344,11 +352,11 @@ msgstr "开放式创新。"
 msgid ""
 "The Desktop spin of Fedora is the primary spin as provided on "
 "fedoraproject.org."
-msgstr ""
+msgstr "fedoraproject.org 提供的 Fedora 的桌面定制版是最基础的。"
 
 #: data/content/index.html:1
 msgid "Security analysis tools."
-msgstr ""
+msgstr "安全分析工具。"
 
 #: data/content/index.html:1 data/content/moblin/index.html:55
 msgid "The future of the mobile internet."
@@ -370,7 +378,7 @@ msgstr "查看我们的定制版。"
 msgid ""
 "What is a spin? Fedora spins are alternate version of Fedora, tailored for "
 "various types of users via hand-picked application set or customizations."
-msgstr "什么是 spin？Fedora spins (定制版) 是由各种不同的用户选择软件包集合或自定义而成的另一个版本的 Fedora。"
+msgstr "什么是 spin？Fedora 定制版是由各种不同的用户选择软件包集合或自定义而成的另一个版本的 Fedora。"
 
 #: data/content/index.html:36
 msgid "Learn more about spins >"
@@ -400,7 +408,7 @@ msgstr "注意：定制版的受欢迎度是由自从最近版本的 Fedora 发�
 
 #: data/content/index.html:77
 msgid "Meet the Spin Community"
-msgstr "遇见定制版社区"
+msgstr "访问定制版社区"
 
 #: data/content/index.html:86 data/content/community/index.html:18
 msgid "Read more of this interview with"
@@ -420,7 +428,7 @@ msgstr "下载定制版 / 使用BitTorrent。"
 
 #: data/content/support.html:15
 msgid "What is BitTorrent?"
-msgstr "BitTorrent 是什么？"
+msgstr "什么是 BitTorrent ?"
 
 #: data/content/support.html:16
 msgid ""
@@ -688,6 +696,8 @@ msgid ""
 "System) is a scaled down version of Fedora with a small footprint containing"
 " only the packages necessary to run an appliance."
 msgstr ""
+"设备是预安装、预配置的系统映像。本定制版是为了便于任何人（独立软件开发商，开发商，原始设备制造商等）快捷的创建和部署虚拟设备。AOS（设备操作系统）是一个基于"
+" Fedora 的、仅仅能提供驱动本设备的最小化系统。"
 
 #: data/content/aos/index.html:57
 msgid ""
@@ -697,6 +707,8 @@ msgid ""
 " in packages that their software requires. A \"start from the bottom and "
 "build up\" mentality."
 msgstr ""
+" The goal is to create a base that developers can build their applications on top of, only pulling in packages that their software requires. A \"start from the bottom and build up\" mentality.\n"
+"本 Fedora 的定制版支持的硬件十分有限，主要支持如 KVM 和 VMware 这样的虚拟容器。我们的目标是建立一个可以让开发人员在其中建立仅仅包含有自己软件需求的包的的基地。一“开始从底部和建设“!"
 
 #: data/content/aos/index.html:61
 msgid ""
@@ -709,6 +721,9 @@ msgid ""
 "base appliance defination. The AOS is designed to work as a virtual machine "
 "or as a traditional locked down bare metal appliance."
 msgstr ""
+"应用操作系统(AOS)是一个最小的操作系统定义，它只包含了运行一个应用所必需的软件包。AOS意在成为一个基础，使得新的应用得以建立于其上，同时还可以将其按某个特定应用软件进行定制。AOS"
+" "
+"在一个启动文件里描述，它存于Fedora定制版的KickstartPool里。这样定义意在使其不断演进，进而成为一个较小的、更方便使用的基础应用定义。AOS被设计可以以虚拟机形式工作，也可以是一个传统锁闭的不可变的应用块。"
 
 #: data/content/aos/index.html:65
 msgid ""
@@ -717,6 +732,9 @@ msgid ""
 " raw disk image and meta data required to run the appliance in a virtual "
 "container. The AOS image can be here."
 msgstr ""
+"AOS 作为一个 Fedora 定制版在 Fedora 10 "
+"里获得支持，它是一个预编译完成的“二进制大文件(blod)”。blod是一个经过打包的压缩包，它包含了一个原始磁盘映像和元数据需要的虚拟运行环境。AOS"
+" 映像可以在这里下载到。"
 
 #: data/content/aos/index.html:66
 msgid ""
@@ -724,28 +742,30 @@ msgid ""
 "using the following steps, It is recommended to be running F-10 or greater "
 "this should also work with F-9 or Rawhide."
 msgstr ""
+"一旦你下载完成，那么你就可以通过以下步骤把 AOS 作为一个虚拟设备在 Fedora 中运行。它需要运行在 F-10 "
+"或是更高的版本下，当然了，也也许可以在 F-9 或者是 Rawhilde 下工作良好。"
 
 #: data/content/aos/index.html:68
 msgid ""
 "Install all prerequisite virt tools using yum: *note to use kvm you must be "
 "running a full virt box"
-msgstr ""
+msgstr "通过 yum 命令安装所有需要的虚拟环境：*假如你使用 kvm 那么你需要运行完整的 Virt Box 。"
 
 #: data/content/aos/index.html:69
 msgid "Unpack the tarball containing the AOS:"
-msgstr ""
+msgstr "解压包含有 AOS 的压缩包："
 
 #: data/content/aos/index.html:70
 msgid "Use virt-imge to launch the image:"
-msgstr ""
+msgstr "使用虚拟映像来运行此映像："
 
 #: data/content/aos/index.html:71
 msgid "Use \"virsh list\" to see if its running and get the IDNUM"
-msgstr ""
+msgstr "如果能够运行,那么使用 “Virsh list”得到它的 IDNUM。"
 
 #: data/content/aos/index.html:72
 msgid "Connect to appliance and log in to verify its running:"
-msgstr ""
+msgstr "连接到设备后登陆，验证它是否运行："
 
 #: data/content/aos/index.html:75 data/content/broffice/index.html:65
 #: data/content/design/index.html:81 data/content/edu/index.html:67
@@ -795,7 +815,7 @@ msgstr "32位PC版"
 msgid ""
 "This edition is for the highest compatibility; it will work on both 32-bit "
 "and 64-bit computers."
-msgstr ""
+msgstr "此版本兼容性最高，可以在32位和64位工作."
 
 #: data/content/aos/index.html:79 data/content/aos/index.html:85
 #: data/content/aos/index.html:93 data/content/aos/index.html:99
@@ -824,7 +844,7 @@ msgstr ""
 #: data/content/xfce/index.html:87 data/content/xfce/index.html:93
 #: data/templates/sidebar.html:46
 msgid "Download Now!"
-msgstr "现在下载！"
+msgstr "现在就下载吧！"
 
 #: data/content/aos/index.html:80 data/content/broffice/index.html:70
 #: data/content/design/index.html:86 data/content/edu/index.html:72
@@ -951,7 +971,7 @@ msgstr "%s位 PC 版"
 #: data/content/xfce/index.html:88 data/content/xfce/index.html:94
 #, python-format
 msgid "%(size)s for %(arch)s-bit PC ISO"
-msgstr ""
+msgstr "%(size)s for %(arch)s-bit PC ISO"
 
 #: data/content/broffice/index.html:43
 msgid "About Spin: BrOffice.org"
@@ -959,7 +979,7 @@ msgstr "关于定制：BrOffice.org"
 
 #: data/content/broffice/index.html:56
 msgid "Brazil's Office Productivity Suite."
-msgstr "巴西的办公室生产力套件。"
+msgstr "来自巴西的办公工具套件。"
 
 #: data/content/broffice/index.html:58
 msgid ""
@@ -970,6 +990,8 @@ msgid ""
 "events such FISL and Latinoware or for those who just would like to have the"
 " whole BrOffice.org office suite in a Live image."
 msgstr ""
+"BrOffice.org "
+"这个定制版的目的是提供一个完整办公工具套件。它原先是想要提供一个在巴西合法的OpenOffice商标。而现在这个套件的目标用户絶不仅止是巴西人，还包括其它拉丁美洲国家的用户，他们有的是参加了巴西的开源活动如FISL和Latinware，有的则是想将整个BrOffice.org套件包含在一个Live镜像里。"
 
 #: data/content/broffice/index.html:62
 msgid ""
@@ -978,6 +1000,8 @@ msgid ""
 "program, a database management application, a vector graphics editor and a "
 "tool for editing mathematical formulas."
 msgstr ""
+"Fedora 的最终版本包括所有的 BrOffice.org "
+"程序。它包括文字处理、电子表格、演示文稿、数据库管理、矢量图形处理¸并且还有一个数学公式编辑工具。"
 
 #: data/content/broffice/index.html:63
 msgid ""
@@ -987,7 +1011,7 @@ msgstr "如果您想试用带有开源办公软件的开源系统，那您就来
 
 #: data/content/broffice/index.html:97 data/content/fel/index.html:170
 msgid "Miscleanous"
-msgstr ""
+msgstr "杂项"
 
 #: data/content/broffice/index.html:98
 msgid ""
@@ -997,6 +1021,9 @@ msgid ""
 "href=\"http://www.openoffice.org/\">http://www.openoffice.org/</a> for more "
 "information."
 msgstr ""
+"如果您想询问更多关于 BrOffice.org 或 OpenOffice.org 的具体问题，我们建议您访问 <a "
+"href=\"http://broffice.org/\">http://broffice.org/</a> or <a "
+"href=\"http://www.openoffice.org/\">http://www.openoffice.org/</a>  来获得更多信息。"
 
 #: data/content/broffice/index.html:108 data/content/edu/index.html:110
 #: data/content/moblin/index.html:118
@@ -1005,13 +1032,13 @@ msgstr "截屏"
 
 #: data/content/broffice/index.html:109
 msgid "Screenshot of the BrOffice splash on startup."
-msgstr ""
+msgstr "BrOffice 启动画面的截图。"
 
 #: data/content/community/adammiller.html:10
 #: data/content/community/chitleshgoorah.html:10
 #: data/content/community/index.html:10
 msgid "Spins Community Focus Feature"
-msgstr ""
+msgstr "定制版社区关注的功能"
 
 #: data/content/community/adammiller.html:13
 #: data/content/community/chitleshgoorah.html:13
@@ -1021,7 +1048,7 @@ msgstr "定制版社区"
 
 #: data/content/community/adammiller.html:14
 msgid "Spins Creator Interview: Adam Miller, XFCE Desktop"
-msgstr ""
+msgstr "定制版设计者采访∶ Adam Miller, XFCE 桌面环境"
 
 #: data/content/community/chitleshgoorah.html:14
 msgid "Spins Creator Interview: Chitlesh Goorah, Fedora Electronic Lab"
@@ -1069,6 +1096,8 @@ msgid ""
 " the Design Suite has an application for you — and you can install thousands"
 " more from the Fedora universe of packages."
 msgstr ""
+"######还有问题,没有整理完整.\n"
+"该设计套件包括了 <a href=\"https://fedoraproject.org/wiki/Design\">Fedora 设计团队</a>最喜欢的工具。这些都是我们用它来创建所有的艺术品，你看到在Fedora项目，从桌面背景到CD套，网页设计，应用程序接口，传单，海报，更同样的程序。从文件发布到矢量和位图编辑或3D建模，照片管理，设计套件已为你的程序- 你可以安装Fedora的包从宇宙数千人。"
 
 #: data/content/design/index.html:59
 msgid "<a href=\"#about\">Learn More</a>."
@@ -1082,11 +1111,11 @@ msgstr "Fedora 设计套件"
 msgid ""
 "The Design Suite features a host of free and open source tools chosen by the"
 " Fedora Design Team as their favorites for day-to-day work. It includes:"
-msgstr ""
+msgstr "设计套件提供了免费且开源的工具，Fedora 设计团队在日复一日的工作中把它作为最喜欢的工具。它包括："
 
 #: data/content/design/index.html:66
 msgid "Agave"
-msgstr "Agave"
+msgstr "利用 Agave "
 
 #: data/content/design/index.html:66
 msgid " for automatically generating color schemes"
@@ -1094,7 +1123,7 @@ msgstr " 自动生成配色方案"
 
 #: data/content/design/index.html:67
 msgid "Blender"
-msgstr "Blender"
+msgstr "利用 Blender "
 
 #: data/content/design/index.html:67
 msgid " for 3D modeling, animation, rendering and post-production"
@@ -1102,23 +1131,23 @@ msgstr " 三维建模，动画，渲染和后期制作"
 
 #: data/content/design/index.html:68
 msgid "The GIMP"
-msgstr "GIMP"
+msgstr "GIMP "
 
 #: data/content/design/index.html:68
 msgid ", a raster graphics editor"
-msgstr "，一个位图编辑软件"
+msgstr "是位图编辑软件"
 
 #: data/content/design/index.html:69
 msgid "Inkscape"
-msgstr "Inkscape 矢量图绘制软件"
+msgstr "Inkscape "
 
 #: data/content/design/index.html:69
 msgid ", a vector graphics editor"
-msgstr "，一个矢量图编辑软件"
+msgstr "是矢量图编辑软件"
 
 #: data/content/design/index.html:70
 msgid "Shotwell"
-msgstr "Shotwell照片管理器"
+msgstr "Shotwell "
 
 #: data/content/design/index.html:70
 msgid " for managing photographs"
@@ -1126,7 +1155,7 @@ msgstr "用来管理照片"
 
 #: data/content/design/index.html:71
 msgid "Scribus"
-msgstr "Scribus"
+msgstr "Scribus "
 
 #: data/content/design/index.html:71
 msgid " for professional-quality document layout"
@@ -1134,15 +1163,15 @@ msgstr "用于专业级的文档排版"
 
 #: data/content/design/index.html:72
 msgid "Xournal"
-msgstr "Xournal"
+msgstr "Xournal "
 
 #: data/content/design/index.html:72
 msgid ", a sketching and document annotation program for tablet PCs"
-msgstr "，一个用于平板电脑的草图绘制和文档注释软件"
+msgstr "用于平板电脑的草图绘制和文档注释软件"
 
 #: data/content/design/index.html:73
 msgid "Dia"
-msgstr "Dia 图表编辑器"
+msgstr "Dia "
 
 #: data/content/design/index.html:73
 msgid " for creating flowcharts and diagrams"
@@ -1166,6 +1195,9 @@ msgid ""
 "you can install Fedora directly to your hard drive straight from the Live "
 "Media desktop if you like."
 msgstr ""
+"这是 Fedora Linux 系统最新的设计套件。 它包含了所有的你想要尝试的 Fedora "
+"设计套件。你不需要删除你现有的操作系统的任何东西就可以尝试着使用它。它不会让你硬盘上面的文件处于危险至终。Fedora "
+"仅仅存在于测试驱动上，如果你喜欢它，那么你可以把 Fedora 通过 Live 桌面安装到你的硬盘。"
 
 #: data/content/design/index.html:111
 msgid "Fedora Design Suite Support"
@@ -1176,7 +1208,7 @@ msgid ""
 "Need help using the Design Suite? We have put together a list of resources "
 "you can use to get help below. For help downloading, running, and installing"
 " spins, please visit the main spins support page."
-msgstr ""
+msgstr "在使用设计套件的过程中需要帮助?我们已经整理了一份你在下载、使用、安装本定制版能够利用的帮助资源列表，请访问发行版支持主页。"
 
 #: data/content/design/index.html:122
 msgid "Design Suite"
@@ -1184,7 +1216,7 @@ msgstr "设计套件"
 
 #: data/content/design/index.html:123
 msgid "A Designer in action"
-msgstr ""
+msgstr "艺术设计"
 
 #: data/content/design/index.html:124
 msgid ""
@@ -1203,7 +1235,7 @@ msgstr "关于教育"
 
 #: data/content/edu/index.html:55
 msgid "Teach with Fedora."
-msgstr "用 Fedora 来教学."
+msgstr "用 Fedora 来教学。"
 
 #: data/content/edu/index.html:56
 msgid ""
@@ -1320,7 +1352,7 @@ msgid ""
 " shape their EDA tools so that universities or small companies can opt for "
 "these tools."
 msgstr ""
-"三年前，<a href=\"\">Chitlesh Goorah</a> 向 Fedora 社区提出了 \"Fedora 电子实验室\" "
+"三年前，<a href=\"\"> Chitlesh Goorah </a> 向 Fedora 社区提出了 \"Fedora 电子实验室\" "
 "的想法，通过提供用于 ASIC 设计已有的开源 EDA 工具。当时的主要目标是确保所有的开源 EDA 工具可以彼此之间交换数据 "
 "(至少在一个基本的设计流程中)。由于每个设计工具都是独立开发的，每个都有其自己的存储机制 (给互操作性带来了困难)。因此 Fedora "
 "和不同的上游开发者一起努力，打造他们的 EDA 工具，使得大学或者小公司可以选择这些工具。"
@@ -1481,7 +1513,7 @@ msgstr "嵌入式设计工具，提供对 Fedora 中第二级架构 <a href=\"%s
 msgid ""
 "<a href=\"%s\">Tool set</a> for Openmoko development and other open source "
 "hardware communities."
-msgstr "支持 Openmoko 开发以及其他开源硬件社区的<a href=\"%s\">工具集</a>。"
+msgstr ""
 
 #: data/content/fel/commitment.html:23
 msgid ""
@@ -2982,31 +3014,31 @@ msgstr "访问主页 >"
 
 #: data/content/games/index.html:86
 msgid "The classic Crack-Dot-Com game."
-msgstr ""
+msgstr "经典的  Crack-Dot-Com 游戏。"
 
 #: data/content/games/index.html:91
 msgid "Platform game involving an alligator."
-msgstr ""
+msgstr "多人复古科幻类决斗游戏。"
 
 #: data/content/games/index.html:96
 msgid "Multiplayer retro sci-fi deathmatch game."
-msgstr ""
+msgstr "Multiplayer retro sci-fi deathmatch game."
 
 #: data/content/games/index.html:101
 msgid "Action-loaded 2D arcade shooter game."
-msgstr ""
+msgstr "动作类2D街机射击游戏。"
 
 #: data/content/games/index.html:106
 msgid "Action-puzzle game."
-msgstr ""
+msgstr "动作益智游戏。"
 
 #: data/content/games/index.html:111
 msgid "A lightcycle game in 3D."
-msgstr ""
+msgstr "3D lightcycle 游戏.。"
 
 #: data/content/games/index.html:116
 msgid "A turn-based strategy game."
-msgstr ""
+msgstr "回合制战略游戏。"
 
 #: data/content/games/index.html:121
 msgid "Hardcore 3D space shooter with spaceship upgrade possibilities."
@@ -3014,19 +3046,19 @@ msgstr ""
 
 #: data/content/games/index.html:126
 msgid "Game inspired by the classic Loderunner."
-msgstr ""
+msgstr "游戏灵感来自于经典的“淘金者”游戏。"
 
 #: data/content/games/index.html:131
 msgid "Move the paddle to bounce the ball and break all the bricks."
-msgstr ""
+msgstr "移动挡板反弹弹球，击碎所有的砖块。"
 
 #: data/content/games/index.html:136
 msgid "Platform game with some puzzle elements."
-msgstr ""
+msgstr "益智游戏平台。"
 
 #: data/content/games/index.html:141
 msgid "Graphical sci-fi adventure game."
-msgstr ""
+msgstr "科幻冒险游戏。"
 
 #: data/content/games/index.html:146
 msgid "Mission- and objective-based 2D platform game."
@@ -4609,7 +4641,7 @@ msgstr "定制版手册"
 
 #: data/templates/head.html:16
 msgid "Explore Fedora's possibilities"
-msgstr ""
+msgstr "探索 Fedora 的无限可能。"
 
 #: data/templates/sidebar.html:11
 msgid "Looking to Download Fedora?"
@@ -4772,3 +4804,5 @@ msgstr ""
 #: data/templates/support-tab.html:42
 msgid "Fedora 'Get Help' page"
 msgstr "Fedora 'Get Help' 页面"
+
+

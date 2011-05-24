@@ -1,15 +1,14 @@
 # Translations template for PROJECT.
 # Copyright (C) 2011 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2011-05-01 22:20-0500\n"
-"PO-Revision-Date: 2011-05-02 03:22+0000\n"
-"Last-Translator: sijis <sijis@fedoraproject.org>\n"
+"PO-Revision-Date: 2011-05-08 15:36+0000\n"
+"Last-Translator: b00blik <madb00blik@gmail.com>\n"
 "Language-Team: Russian <trans-ru@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -196,6 +195,12 @@ msgid ""
 " preferred desktop environment and use that to install Fedora, pre-"
 "configured for the desktop environment of your choice."
 msgstr ""
+"По умолчанию окружением рабочего стола Fedora является GNOME, но если вы "
+"предпочитаете альтернативное окружение рабочего стола, такое как <a "
+"href=\"/kde/\">KDE Plasma Desktop</a> или <a href=\"/xfce/\">XFCE</a>, вы "
+"можете загрузить сборку вашего любимого рабочего окружения и использовать её"
+" для установки Fedora, перенастроеной специально для выбранного вами "
+"окружения рабочего стола."
 
 #: data/content/about.html:31
 msgid "Repair & Recovery"
@@ -346,28 +351,31 @@ msgstr ""
 #: data/content/index.html:1
 msgid "A complete, modern desktop built using the KDE Plasma Desktop."
 msgstr ""
+"Полноценный, современный рабочий стол, построенный на KDE Plasma Desktop."
 
 #: data/content/index.html:1
 msgid "A complete, well-integrated Xfce desktop."
-msgstr ""
+msgstr "Полноценный, прекрасно интегрированный рабочий стол Xfce"
 
 #: data/content/index.html:1
 msgid "A light, fast, less-resource hungry desktop environment."
 msgstr ""
+"Легкое, быстрое, нетребовательное к ресурсам окружение рабочего стола."
 
 #: data/content/index.html:1
 msgid ""
 "A scaled-down version of Fedora with a small footprint for running an "
 "appliance."
-msgstr ""
+msgstr "Уменьшенная версия Fedora с маленьким размером для запуска приборов."
 
 #: data/content/index.html:1
 msgid "Fedora's high-end hardware design and simulation platform."
 msgstr ""
+"Высококлассная платформа аппаратной разработки и моделирования Fedora."
 
 #: data/content/index.html:1
 msgid "A perfect show-case of the best games available in Fedora."
-msgstr ""
+msgstr "Красочный обзор лучших игр, доступных в Fedora."
 
 #: data/content/index.html:1 data/content/design/index.html:55
 msgid "Open Creativity."
@@ -378,10 +386,12 @@ msgid ""
 "The Desktop spin of Fedora is the primary spin as provided on "
 "fedoraproject.org."
 msgstr ""
+"Настольное издание Fedora это основная сборка, предоставляемая на "
+"fedoraproject.org"
 
 #: data/content/index.html:1
 msgid "Security analysis tools."
-msgstr ""
+msgstr "Средства анализа безопасности."
 
 #: data/content/index.html:1 data/content/moblin/index.html:55
 msgid "The future of the mobile internet."
@@ -770,6 +780,12 @@ msgid ""
 "System) is a scaled down version of Fedora with a small footprint containing"
 " only the packages necessary to run an appliance."
 msgstr ""
+"Appliances это предустановленные, сконфигурированные образы системы. Эта "
+"сборка создана для того, чтобы сделать простым для каждого (независимых "
+"поставщиков ПО, разработчиков, производителей комплектного оборудования и "
+"т.д.) процесс создания и развертывания виртуальных приборов. AOS (The "
+"Appliance Operating System) это уменьшенная версия Fedora с маленьким "
+"размером, содержащая только пакеты, неободимые для запуска прибора."
 
 #: data/content/aos/index.html:57
 msgid ""
@@ -779,6 +795,12 @@ msgid ""
 " in packages that their software requires. A \"start from the bottom and "
 "build up\" mentality."
 msgstr ""
+"Количество оборудования, поддерживаемого этой сборкой Fedora, будет "
+"ограничено, в первую очередь сосредотачиваясь на виртуальных контейнерах, "
+"таких как KVM и VMware. Целью является создание базы, с помощью которой "
+"разработчики могут создавать свои приложения верхней части, только выбрав "
+"пакеты, которые требует их ПО. Менталитет \"Начни с низу и поднимись "
+"вверх\"."
 
 #: data/content/aos/index.html:61
 msgid ""
@@ -791,6 +813,14 @@ msgid ""
 "base appliance defination. The AOS is designed to work as a virtual machine "
 "or as a traditional locked down bare metal appliance."
 msgstr ""
+"Appliance Operating System (AOS) это минимальное определение операционной "
+"системы, содержащее только пакеты, необходимые для запуска прибора. AOS "
+"предназначен для базы, на которой новый прибор может быть настроен для "
+"конкретного приложения. AOS описан в файле быстрого старта и размещённого в "
+"пуле быстрого запуска, что позволяет меняться с течением времени, чтобы "
+"стать более меньшим и удобным базовым средством взаимодействия с прибором. "
+"AOS создана для работы в виртуальной машине или традиционных приборах из "
+"голого металла."
 
 #: data/content/aos/index.html:65
 msgid ""
@@ -837,7 +867,7 @@ msgstr ""
 #: data/content/security/index.html:63 data/content/soas/index.html:100
 #: data/content/xfce/index.html:69
 msgid "Torrent Download"
-msgstr ""
+msgstr "Загрузка через Torrent"
 
 #: data/content/aos/index.html:77 data/content/aos/index.html:78
 #: data/content/aos/index.html:91 data/content/broffice/index.html:67
@@ -1005,7 +1035,7 @@ msgstr "54 КБайт, торрент для 64-битного издания"
 #: data/content/moblin/index.html:88 data/content/security/index.html:77
 #: data/content/soas/index.html:114 data/content/xfce/index.html:83
 msgid "Direct Download"
-msgstr ""
+msgstr "Прямая загрузка"
 
 #: data/content/aos/index.html:92 data/content/aos/index.html:98
 #: data/content/broffice/index.html:82 data/content/broffice/index.html:88
@@ -1021,7 +1051,7 @@ msgstr ""
 #: data/content/xfce/index.html:86 data/content/xfce/index.html:92
 #, python-format
 msgid "%s-bit PC Edition"
-msgstr ""
+msgstr "%s-битное издание для PC"
 
 #: data/content/aos/index.html:94 data/content/aos/index.html:100
 #: data/content/broffice/index.html:84 data/content/broffice/index.html:90
@@ -1037,7 +1067,7 @@ msgstr ""
 #: data/content/xfce/index.html:88 data/content/xfce/index.html:94
 #, python-format
 msgid "%(size)s for %(arch)s-bit PC ISO"
-msgstr ""
+msgstr "%(size)s для %(arch)s-битного образа"
 
 #: data/content/broffice/index.html:43
 msgid "About Spin: BrOffice.org"
@@ -1088,7 +1118,7 @@ msgstr ""
 
 #: data/content/broffice/index.html:97 data/content/fel/index.html:170
 msgid "Miscleanous"
-msgstr ""
+msgstr "Miscleanous"
 
 #: data/content/broffice/index.html:98
 msgid ""
@@ -1163,6 +1193,9 @@ msgid ""
 "source multimedia production and publishing tools? Try the Design Suite, a "
 "Fedora Spin created by designers, for designers."
 msgstr ""
+"Ищете готовое для работы окружение, полное свободными и открытыми "
+"инструментами для мультимедийной и издательской продукции? Попробуйте сборку"
+" Fedora Design Suite, созданную дизайнерами для дизайнеров."
 
 #: data/content/design/index.html:58
 msgid ""
@@ -1175,10 +1208,19 @@ msgid ""
 " the Design Suite has an application for you — and you can install thousands"
 " more from the Fedora universe of packages."
 msgstr ""
+"Design Suite содержит любимые иструменты <a "
+"href=\"https://fedoraproject.org/wiki/Design\">команды дизайнеров "
+"Fedora</a>. Здесь находятся те же программы, которые мы используем для той "
+"работы, которую вы видите в Fedora Project, от фонов рабочего стола до "
+"конвертов компакт-дисков, дизайнов веб-страниц, интерфейсов приложений, "
+"флаеров, постеров, и многого другого. От публикации документа до векторного "
+"и точечного рисования  или 3D моделирования фото, Design Suite имеет "
+"приложения для вас — и вы можете устанавливать ещё тысячи из набора пакетов "
+"Fedora."
 
 #: data/content/design/index.html:59
 msgid "<a href=\"#about\">Learn More</a>."
-msgstr ""
+msgstr "<a href=\"#about\">Узнайте больше</a>."
 
 #: data/content/design/index.html:63
 msgid "Fedora Design Suite"
@@ -1189,6 +1231,9 @@ msgid ""
 "The Design Suite features a host of free and open source tools chosen by the"
 " Fedora Design Team as their favorites for day-to-day work. It includes:"
 msgstr ""
+"Design Suite предоставляет множество свободных и открытых инструментов, "
+"выбранных командой дизайнеров Fedora как наиболее привлекательных для "
+"ежедневной работы. Она включает:"
 
 #: data/content/design/index.html:66
 msgid "Agave"
@@ -1196,7 +1241,7 @@ msgstr "Agave"
 
 #: data/content/design/index.html:66
 msgid " for automatically generating color schemes"
-msgstr ""
+msgstr " приложения для автоматического генерирования цветовых схем"
 
 #: data/content/design/index.html:67
 msgid "Blender"
@@ -1205,6 +1250,7 @@ msgstr "Blender"
 #: data/content/design/index.html:67
 msgid " for 3D modeling, animation, rendering and post-production"
 msgstr ""
+" приложения для 3D моделирования, анимации, рендеринга и пост-продакшна."
 
 #: data/content/design/index.html:68
 msgid "The GIMP"
@@ -1254,7 +1300,7 @@ msgstr "Dia"
 
 #: data/content/design/index.html:73
 msgid " for creating flowcharts and diagrams"
-msgstr ""
+msgstr " приложения для создания блок-схем и диаграмм"
 
 #: data/content/design/index.html:74
 msgid "...and more!"
@@ -1274,6 +1320,12 @@ msgid ""
 "you can install Fedora directly to your hard drive straight from the Live "
 "Media desktop if you like."
 msgstr ""
+"Это последняя версия набора дизайнера операционной система Fedora Linux. Это"
+" всё что вам необходимо для того, чтобы попробовать Fedora Design Suite. Вам"
+" не потребуется удалять что либо с вашей текущей системы, и вам не придётся "
+"подвергать ваши файлы риску. Возьмите Fedora для пробы, и если она вам "
+"понравится, вы сможете поставить Fedora сразу на ваш жётский диск прямо с "
+"загрузочного носителя."
 
 #: data/content/design/index.html:111
 msgid "Fedora Design Suite Support"
@@ -1296,7 +1348,7 @@ msgstr "Design Suite"
 
 #: data/content/design/index.html:123
 msgid "A Designer in action"
-msgstr ""
+msgstr "Дизайнер в действии"
 
 #: data/content/design/index.html:124
 msgid ""
@@ -1304,6 +1356,9 @@ msgid ""
 "workflow. Here, tablet support and the Inkscape vector graphics editor power"
 " the creation of a comic strip."
 msgstr ""
+"Через несколько минут после установки, ваш рабочий стол предоставит все "
+"возможности для процесса дизайна. Здесь есть поддержка планшета и редактор "
+"векторной графики Inkscape для создания комиксов."
 
 #: data/content/edu/index.html:41
 msgid "About Spin: Education"
@@ -1411,14 +1466,20 @@ msgid ""
 "shape those tools to satisfy design methodologies. For more information, "
 "visit our developers' blogs"
 msgstr ""
+"Fedora Electronic Lab это подпроект Fedora Project, посвящённый инструментам"
+" EDA и открытому содержимому аппаратного обеспечения. Каждые 6 месяцев "
+"выходит новая версия, свободная к загрузке. Целью является не только "
+"упаковка этих инструментов для вас, но и размещение этих инструментов для "
+"удовлетворения ваших методологий разработки. Для большей информации посетите"
+" блоги наших разработчиков"
 
 #: data/content/fel/aboutus.html:19
 msgid "Chitlesh Goorah - Founder and Architect"
-msgstr ""
+msgstr "Читлеш Гурах - основатель и архитектор"
 
 #: data/content/fel/aboutus.html:20
 msgid "Shakthi Kannan - Developer"
-msgstr ""
+msgstr "Shakthi Kannan - Разработчик"
 
 #: data/content/fel/aboutus.html:23
 #, python-format
@@ -1430,10 +1491,16 @@ msgid ""
 "organisation which strives to give the cutting-edge software technologies "
 "for free."
 msgstr ""
+"<a href=\"%s\">Fedora Project</a> это открытое сообщество для разработки "
+"программного обеспечения, спонсируемое корпорацией Red Hat. FEdora Project "
+"поддерживает наше оборудование веб-хостинга и наделило Читлеша правом "
+"использования торговой марки \"fedora\" для Fedora Electronic Lab. Fedora "
+"Project это не коммерческая организация, которая стремится дать передовые "
+"программные технологии бесплатно."
 
 #: data/content/fel/aboutus.html:26
 msgid "History"
-msgstr ""
+msgstr "История"
 
 #: data/content/fel/aboutus.html:28
 msgid ""
@@ -1540,6 +1607,10 @@ msgid ""
 " platform, is dedicated to support the innovation and development brought by"
 " opensource Electronic Design Automation (EDA) community."
 msgstr ""
+"Fedora Electronic Laboratory, платформа разработки и моделирования "
+"аппаратного opensource, посвящена поддержке инноваций и развитию, приносимым"
+" сообществом автоматизации проектирования электронных opensource приборов "
+"(EDA)."
 
 #: data/content/fel/commitment.html:12
 msgid ""
@@ -1549,6 +1620,11 @@ msgid ""
 "source hardware development and enable electronic designers tapeout quickly "
 "and efficiently."
 msgstr ""
+"Fedora Electronic Laboratory предоставляет полную установку электронной "
+"лаборатории с надежными открытыми инструментами разработки, с тем, чтобы "
+"помочь вам шагать в ногу с текущей гонкой технологий. Это снижает риск "
+"неправильного понимания открытой разработки аппаратного обеспечения и "
+"позволяет разработчикам электроники двигаться быстро и эффективно."
 
 #: data/content/fel/commitment.html:13
 msgid ""
@@ -1773,7 +1849,7 @@ msgstr ""
 
 #: data/content/fel/index.html:67
 msgid "Screenshots Gallery"
-msgstr ""
+msgstr "Галерея скриншотов"
 
 #: data/content/fel/index.html:68
 msgid "Nightly Development LiveDVD"
@@ -1847,15 +1923,17 @@ msgstr "Словарь"
 
 #: data/content/fel/index.html:101
 msgid "ASIC : Application-Specific Integrated Circuit"
-msgstr ""
+msgstr "ASIC : Приложения на интегральных схемах"
 
 #: data/content/fel/index.html:102
 msgid "EDA : Electronic Design Automation"
 msgstr ""
+"EDA : Electronic Design Automation (Автоматизация проектирования электронных"
+" приборов)"
 
 #: data/content/fel/index.html:103
 msgid "VLSI : Very Large Scale Integration, about 10⁶ to 10⁷ transistors"
-msgstr ""
+msgstr "VLSI : очень большие масштабы интеграции, от 10⁶ до 10⁷ транзисторов"
 
 #: data/content/fel/index.html:123
 msgid ""
@@ -1915,7 +1993,7 @@ msgstr ""
 
 #: data/content/fel/index.html:196
 msgid "Allliance"
-msgstr ""
+msgstr "Объединение"
 
 #: data/content/fel/index.html:197
 msgid ""
@@ -1952,51 +2030,56 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:15
 msgid "The Fedora Electronic Lab includes design tools for:"
-msgstr ""
+msgstr "Fedora Electronic Lab включает инструменты разработки для:"
 
 #: data/content/fel/portfolio.html:17 data/content/fel/portfolio.html:27
 msgid "ASIC Analog Circuit Design and Simulation"
-msgstr ""
+msgstr "Разработки и моделирования аналоговых цепей ASIC"
 
 #: data/content/fel/portfolio.html:18 data/content/fel/portfolio.html:48
 msgid "ASIC Layout, DRC and LVS"
-msgstr ""
+msgstr "Макетов ASIC, DRC и LVS"
 
 #: data/content/fel/portfolio.html:19 data/content/fel/portfolio.html:71
 msgid "Digital Simulation and Verification"
-msgstr ""
+msgstr "Цифрового моделирования и проверки"
 
 #: data/content/fel/portfolio.html:20 data/content/fel/portfolio.html:94
 msgid "RTL and logic synthesis design flows"
-msgstr ""
+msgstr "RTL и разработки логики соединения потоков"
 
 #: data/content/fel/portfolio.html:21 data/content/fel/portfolio.html:123
 msgid "Circuit and PCB Layout"
-msgstr ""
+msgstr "Макетов цепей и PCB"
 
 #: data/content/fel/portfolio.html:22
 msgid "Micro Controller (µC) Programming and Embedded Systems Development"
 msgstr ""
+"Программирование микроконтроллеров (µC) и разработка встраиваемых систем"
 
 #: data/content/fel/portfolio.html:23 data/content/fel/portfolio.html:176
 msgid "CAD Tools"
-msgstr ""
+msgstr "Инструменты автоматизированного проектирования"
 
 #: data/content/fel/portfolio.html:24
 msgid "Project Management, Peer Review and budget tracking"
-msgstr ""
+msgstr "Управления проектами, экспертной оценки и отслеживания бюджета"
 
 #: data/content/fel/portfolio.html:30
 msgid ""
 "This simulation lab enables design engineers to edit and simulate their "
 "schematics."
 msgstr ""
+"Эта лаборатория моделирования позволяет конструкторам редактировать и "
+"моделировать их схемы."
 
 #: data/content/fel/portfolio.html:32
 msgid ""
 "General Purpose Circuit Simulators (Analysis : Nonlinear AC/DC, Transient, "
 "Fourier, S-parameter and harmonic balance)."
 msgstr ""
+"Моделирование цепей общего назначения (Анализ: Нелинейные AC/DC, переходные,"
+" цепи Фурье, S-параметров и гармонического баланса.)"
 
 #: data/content/fel/portfolio.html:33
 msgid "Beyond Spice capabilities: Level 49, BSIMv3 and EKV implementations."
@@ -2016,11 +2099,13 @@ msgstr ""
 msgid ""
 "Circuit components can be retrieved from libraries which are fully editable."
 msgstr ""
+"Компоненты схем могут быть получены из библиотек, которые являются полностью"
+" редактируемыми."
 
 #: data/content/fel/portfolio.html:40 data/content/fel/portfolio.html:86
 #: data/content/fel/portfolio.html:118 data/content/fel/portfolio.html:136
 msgid "Tools:"
-msgstr ""
+msgstr "Средства:"
 
 #: data/content/fel/portfolio.html:42
 #, python-format
@@ -2029,10 +2114,13 @@ msgid ""
 "mixed-mode simulation. The developer's thesis can be <a href=\"%s\">read</a>"
 " here."
 msgstr ""
+"Главное назначения симулятора цепи с его движком - истинное моделирование в "
+"смешанном режиме.  Записи разработчика можно <a href=\"%s\">прочитать</a> "
+"здесь."
 
 #: data/content/fel/portfolio.html:43
 msgid "A mixed level/signal circuit simulator"
-msgstr ""
+msgstr "Моделирование смешанного уровня/сигнала цепи"
 
 #: data/content/fel/portfolio.html:44
 msgid "A frontend to Spice circuit similators"
@@ -2063,6 +2151,8 @@ msgstr ""
 #: data/content/fel/portfolio.html:54
 msgid "Routing tools that work under and around existing connections."
 msgstr ""
+"Инструменты маршрутизации, которые работают под и вокруг существующих "
+"соединений."
 
 #: data/content/fel/portfolio.html:55
 msgid "Logs and corner stitching to achieve efficient implementations."
@@ -2120,7 +2210,7 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:67
 msgid "A cross-platform VLSI IC layout editor."
-msgstr ""
+msgstr "Кросс-платформенный редактор VLSI IC макетов."
 
 #: data/content/fel/portfolio.html:68
 msgid ""
@@ -2135,28 +2225,36 @@ msgid ""
 " existing methodologies with tools that scale across multiple levels of "
 "abstraction and design complexity."
 msgstr ""
+"Среда HDL моделирования, позволяющие проверить функциональность и сроки "
+"модели Вашего проекта. Таким образом, ваша команда разработки может "
+"сосредоточиться на улучшении существующих методологий с инструментами, "
+"которые масштабируются на нескольких уровнях абстракции и сложности "
+"конструкции."
 
 #: data/content/fel/portfolio.html:75
 msgid "VPI functionality."
-msgstr ""
+msgstr "VPI функциональность."
 
 #: data/content/fel/portfolio.html:76
 msgid "A graphical waveform viewer."
-msgstr ""
+msgstr "Графический просмотр сигнала."
 
 #: data/content/fel/portfolio.html:77
 msgid "Supports both VHDL and Verilog designs."
-msgstr ""
+msgstr "Поддерживает как VHDL, так Verilog разработку."
 
 #: data/content/fel/portfolio.html:78
 msgid "A Verilog simulator and synthesis tool for IEEE 1364-2001 standard."
 msgstr ""
+"Verilog симулятор и инструменты соединения для стандарта IEEE 1364-2001."
 
 #: data/content/fel/portfolio.html:79
 msgid ""
 "Export signals to a VCD file or a GHW file for visual inspection with a "
 "waveform viewer."
 msgstr ""
+"Экспорт сигналов в VCD или GHW файл для визуального контроля с просмотра "
+"сигнала."
 
 #: data/content/fel/portfolio.html:80
 msgid "Pretty printing or cross references generation in HTML."
@@ -2164,13 +2262,13 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:81
 msgid "Makefile generation for any component in a design."
-msgstr ""
+msgstr "Генерация makefile для любого компонента в разработке."
 
 #: data/content/fel/portfolio.html:82
 msgid ""
 "Achievements: Successfully compiled and run a DLX processor and a LEON1 "
 "SPARC processor."
-msgstr ""
+msgstr "Достижения: Успешно собраны и запущены процессоры DLX и SPARC LEON1."
 
 #: data/content/fel/portfolio.html:83
 msgid ""
@@ -2229,7 +2327,7 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:98
 msgid "VHDL compilation and simulation"
-msgstr ""
+msgstr "Сборка и моделирование VHDL"
 
 #: data/content/fel/portfolio.html:99
 msgid "Finite State Machines (FSM)"
@@ -2365,7 +2463,7 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:139
 msgid "A full suite of Electronic Design Automation tools."
-msgstr ""
+msgstr "Полный набор инструментов разработки электронной автоматизации."
 
 #: data/content/fel/portfolio.html:140
 msgid ""
@@ -2375,28 +2473,28 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:142
 msgid "Embedded Systems Development"
-msgstr ""
+msgstr "Разработка встраиваемых систем"
 
 #: data/content/fel/portfolio.html:143
 msgid "µController Programming"
-msgstr ""
+msgstr "Программирование µ-контроллеров"
 
 #: data/content/fel/portfolio.html:145
 msgid "Supported compilers:"
-msgstr ""
+msgstr "Поддерживаемые компиляторы:"
 
 #: data/content/fel/portfolio.html:147
 msgid ""
 "the Small Device C Compiler, the GNU PIC Utilities, the PICC compilers,"
-msgstr ""
+msgstr "компилятор Small Device C, утилиты GNI PIC, компиляторы PICC,"
 
 #: data/content/fel/portfolio.html:148
 msgid "the PIC30 toolchain, the C18 compiler, the JAL and JALV2 compilers,"
-msgstr ""
+msgstr "набор PIC30, компилятор C18, JAL и JALV2,"
 
 #: data/content/fel/portfolio.html:149
 msgid "the CSC compiler, and the Boost compilers."
-msgstr ""
+msgstr "компилятор CSC и Boost компиляторы."
 
 #: data/content/fel/portfolio.html:152
 msgid ""
@@ -2406,11 +2504,11 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:154
 msgid "IDE includes an oscilloscope and a flowchart integration."
-msgstr ""
+msgstr "IDE включает интеграцию осциллографа и блок-схем."
 
 #: data/content/fel/portfolio.html:157
 msgid "Supported debuggers : ICD2 and GPSim."
-msgstr ""
+msgstr "Поддерживаемые дебаггеры: ICD2 и GPSim"
 
 #: data/content/fel/portfolio.html:158
 msgid ""
@@ -2419,21 +2517,21 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:159
 msgid "Supports 8051 and AVR."
-msgstr ""
+msgstr "Поддерживает 8051 и AVR"
 
 #: data/content/fel/portfolio.html:161
 msgid "AVR Development System"
-msgstr ""
+msgstr "Система разработки AVT"
 
 #: data/content/fel/portfolio.html:163
 msgid ""
 "Supports the Atmel's STK500 and the PPI (parallel port interface) programmer"
 " types."
-msgstr ""
+msgstr "Поддерживает типы Atmel STK500 и PPI (интерфейс параллельного порта)"
 
 #: data/content/fel/portfolio.html:165
 msgid "Includes"
-msgstr ""
+msgstr "Включает"
 
 #: data/content/fel/portfolio.html:167
 msgid "Cross compilers and Programmers"
@@ -2472,7 +2570,7 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:185
 msgid "Perl Modules:"
-msgstr ""
+msgstr "Модули Perl:"
 
 #: data/content/fel/portfolio.html:187
 msgid ""
@@ -2499,7 +2597,7 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:191
 msgid "SystemVerilog : perl-Verilog"
-msgstr ""
+msgstr "SystemVerilog : perl-Verilog"
 
 #: data/content/fel/portfolio.html:192
 msgid "Modelsim List: perl-ModelSim-List"
@@ -2535,7 +2633,7 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:223
 msgid "Mixed Signal Design"
-msgstr ""
+msgstr "Разработка смешанных сигналов"
 
 #: data/content/fel/portfolio.html:224
 msgid "ASIC Design Flow."
@@ -2543,11 +2641,11 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:234
 msgid "GDSII Export"
-msgstr ""
+msgstr "Экспорт GDSII"
 
 #: data/content/fel/portfolio.html:244
 msgid "ASIC Analog Design"
-msgstr ""
+msgstr "Разработка аналогого ASIC"
 
 #: data/content/fel/portfolio.html:245
 msgid "Analog schematic design with schematic."
@@ -2563,7 +2661,7 @@ msgstr "Электронное моделирование с использов�
 
 #: data/content/fel/portfolio.html:266 data/content/fel/portfolio.html:277
 msgid "ASIC Digital Design"
-msgstr ""
+msgstr "Разработка цифрового ASIC"
 
 #: data/content/fel/portfolio.html:267
 msgid "A screenshot of a place and route."
@@ -2587,7 +2685,7 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:310 data/content/fel/portfolio.html:321
 msgid "Project Planning"
-msgstr ""
+msgstr "Планирование проектов"
 
 #: data/content/fel/portfolio.html:311
 msgid "A screenshot of HDL IP development with Perl and UML."
@@ -2599,7 +2697,7 @@ msgstr ""
 
 #: data/content/fel/publications.html:9
 msgid "Publications and Presentations"
-msgstr ""
+msgstr "Публикации и презентации"
 
 #: data/content/fel/publications.html:11
 #, python-format
@@ -2613,7 +2711,7 @@ msgstr ""
 
 #: data/content/fel/publications.html:13
 msgid "Want to do a presentation?"
-msgstr ""
+msgstr "Хотите сделать презентацию?"
 
 #: data/content/fel/publications.html:16
 #, python-format
@@ -2624,7 +2722,7 @@ msgstr ""
 
 #: data/content/fel/publications.html:18
 msgid "Share your publications"
-msgstr ""
+msgstr "Делитесь своими публикациями"
 
 #: data/content/fel/publications.html:19
 #, python-format
@@ -2680,7 +2778,7 @@ msgstr ""
 
 #: data/content/fel/publications.html:36
 msgid "Presentations"
-msgstr ""
+msgstr "Презентации"
 
 #: data/content/fel/publications.html:38
 msgid "By Laurent Charpentier."
@@ -2806,7 +2904,7 @@ msgstr ""
 
 #: data/content/fel/publications.html:79
 msgid "Archives"
-msgstr ""
+msgstr "Архивы"
 
 #: data/content/fel/publications.html:81
 msgid "FEL Fabless solutions"
@@ -2822,11 +2920,11 @@ msgstr ""
 
 #: data/content/fel/publications.html:84
 msgid "FEL 11 Flyer"
-msgstr ""
+msgstr "Флаер FEL 11"
 
 #: data/content/fel/publications.html:85
 msgid "FEL 10 Flyer"
-msgstr ""
+msgstr "Флаер FEL 10"
 
 #: data/content/fel/publications.html:94
 #: data/content/fel/publications.html:105
@@ -3556,7 +3654,7 @@ msgstr "Игра по мотивам Asteroid с улучшениями"
 
 #: data/content/games/index.html:696
 msgid "Fedora 14 Games Spin"
-msgstr ""
+msgstr "Игровая сборка Fedora 14"
 
 #: data/content/games/index.html:698
 msgid ""
@@ -3582,15 +3680,15 @@ msgstr "Поддержка «Games»"
 
 #: data/content/kde/index.html:44
 msgid "About Spin: KDE Plasma Desktop"
-msgstr ""
+msgstr "О сборке: KDE Plasma Desktop"
 
 #: data/content/kde/index.html:50 data/content/kde/index.html:65
 msgid "About KDE Plasma Desktop"
-msgstr ""
+msgstr "О KDE Plasma Desktop"
 
 #: data/content/kde/index.html:58
 msgid "It's your desktop. Be Free."
-msgstr ""
+msgstr "Это ваш рабочий стол. Будьте свободны."
 
 #: data/content/kde/index.html:60
 msgid ""
@@ -3605,16 +3703,28 @@ msgid ""
 "an easy to use interface, accompanied by an outstanding graphical "
 "appearance."
 msgstr ""
+"Издание Fedora KDE Plasma Desktop это мощная операционная система, "
+"основанная на Fedora, использующая KDE Plasma Desktop как основной интерфейс"
+" пользователя. Fedora KDE Plasma Desktop сопровождается многими уже "
+"выбранными приложениями высокого качества которые используются для "
+"современного рабочего стола - от связи по сети с помощью браузера, "
+"мгновенных сообщений и электронной почтой, и до мультимедиа и развлечений, а"
+" также рабочим набором, включая офисные приложения и приложения управления "
+"информацией корпоративного уровня. Все приложения KDE хорошо интегрированы, "
+"имеют одинаково смотрящийся и простой для пользования интерфейс "
+"пользователя, сопровождающийся отменным графическим окружением."
 
 #: data/content/kde/index.html:61
 msgid ""
 "The Fedora KDE Plasma Desktop Edition is based on the latest KDE Platform 4 "
 "technology as provided by KDE open source community."
 msgstr ""
+"Издание Fedora с рабочим столом KDE Plasma основано на последней технологии "
+"KDE Platform 4 и предоставляется открытым сообществом KDE."
 
 #: data/content/kde/index.html:62
 msgid "It's your desktop. <a href=\"#about\">Learn More</a>. >"
-msgstr ""
+msgstr "Это ваш рабочий стол. <a href=\"#about\">Узнать больше</a>. >"
 
 #: data/content/kde/index.html:66 data/content/xfce/index.html:110
 #: data/content/xfce/index.html:120
@@ -3623,7 +3733,7 @@ msgstr "Рабочий стол"
 
 #: data/content/kde/index.html:67 data/content/kde/index.html:173
 msgid "Plasma"
-msgstr ""
+msgstr "Plasma"
 
 #: data/content/kde/index.html:68
 msgid ""
@@ -3631,6 +3741,9 @@ msgid ""
 "launcher (start menu), the desktop and the desktop panel (often referred to "
 "simply as the task bar)."
 msgstr ""
+"Рабочий стол Plasma предоставляет интерфейс рабочего стола, включающий меню "
+"запуска приложений, сам рабочий стол и панель рабочего стола (часто "
+"называемую просто панелью задач)."
 
 #: data/content/kde/index.html:70
 msgid ""
@@ -3638,6 +3751,10 @@ msgid ""
 "system, by accessing the application menu, viewing the currently active "
 "programs on the taskbar, accessing icons on the system tray, and so on."
 msgstr ""
+"Вы можете использовать Plasma как рабочий стол любой другой операционной "
+"системы, путем доступа к меню приложений, просмотру активные программ в "
+"настоящее время на панели задач, доступу к иконкам в системном трее и так "
+"далее."
 
 #: data/content/kde/index.html:71
 msgid ""
@@ -3658,7 +3775,7 @@ msgstr ""
 
 #: data/content/kde/index.html:73
 msgid "Desktop Effects"
-msgstr ""
+msgstr "Эффекты рабочего стола"
 
 #: data/content/kde/index.html:74
 msgid ""
@@ -3667,6 +3784,10 @@ msgid ""
 " a side of a cube. Wobbly windows, which can explode when they are closed or"
 " fall apart. And of course lots more interesting effects."
 msgstr ""
+"Kwin (оконный менеджер KDE по умолчанию) поддерживает такие классные эффекты"
+" как куб, где каждый виртуальный рабочий стол находится на грани куба, или "
+"\"болтающиеся окна\", которые могут взрываться когда они закрываются или "
+"сворачиваются. И конечно другие более интересные эффекты."
 
 #: data/content/kde/index.html:75
 msgid "Enjoy one of the example videos here:"
@@ -3678,10 +3799,13 @@ msgid ""
 "graphics card and to enable it in the System settings -> Desktop "
 "configuration tool."
 msgstr ""
+"Заметьте: эффекты рабочего стола не включены по умолчанию! Вам необходимо "
+"иметь поддерживаемую видеокарту и включить их в Системных настройках -> "
+"Средства конфигурирования рабочего стола."
 
 #: data/content/kde/index.html:78
 msgid "Going online"
-msgstr ""
+msgstr "Выход в сеть"
 
 #: data/content/kde/index.html:79
 msgid ""
@@ -3699,16 +3823,25 @@ msgid ""
 "protocols and has a really nice user interface with the ability to group "
 "more protocols under one contact. Your contact will be nearly always online!"
 msgstr ""
+"Оставайтесь на связи с вашими друзьями и коллегами, используя клиент обмена "
+"мгновенными сообщениями <strong>Kopete</strong>. Он поддерживает все "
+"распространенные протоколы обмена мгновенными сообщениями и имеет очень "
+"приятный пользовательский интерфейс с возможностью группировки нескольких "
+"протоколов в рамках одного контакта. Теперь ваш контакт практически всегда "
+"будет онлайн!"
 
 #: data/content/kde/index.html:81
 msgid ""
 "Are you a downloader? Use <strong>KTorrent</strong> or <strong>KGet</strong>"
 " to get new versions of Fedora KDE Plasma Desktop Edition!"
 msgstr ""
+"Вы загрузчик? Используйте <strong>KTorrent</strong> или "
+"<strong>KGet</strong> для того, чтобы получить новые версии Fedora KDE "
+"Plasma Desktop!"
 
 #: data/content/kde/index.html:83
 msgid "Utilities and configuration"
-msgstr ""
+msgstr "Утилиты и конфигурирование"
 
 #: data/content/kde/index.html:84
 msgid ""
@@ -3722,14 +3855,23 @@ msgid ""
 " change and choose the settings that make you happy. This is your desktop "
 "and we will never make these decisions for you."
 msgstr ""
+"Fedora KDE Plasma Desktop предоставляет терминал как средство настоящей мощи"
+" любой Unix/Linux машины, названный Konsole. <strong>Konsole</strong> имеет "
+"отлично настраиваемый дизайн, как и каждая часть платформы KDE. Говоря о "
+"настраиваемости, вы конечно в состоянии настроить KDE Plasma Desktop в "
+"соответствии с вашими личными потребностями с помощью GUI (графического "
+"пользовательского интерфейса) <strong>Системных настроек</strong>. Не нужно "
+"знать скриптовых команд и конфигурационных файлов. Отметьте те опции, "
+"которые вам нравятся, и выберите настройки, которые вас обрадуют. Это ваш "
+"рабочий стол и мы никогда не будем принимать эти решения за вас."
 
 #: data/content/kde/index.html:86
 msgid "Office and Productivity Suite"
-msgstr ""
+msgstr "Офисный набор"
 
 #: data/content/kde/index.html:87
 msgid "KOffice"
-msgstr ""
+msgstr "KOffice"
 
 #: data/content/kde/index.html:88
 msgid ""
@@ -3741,10 +3883,17 @@ msgid ""
 "title=\"http://www.koffice.org\">http://www.koffice.org</a> to find out "
 "more."
 msgstr ""
+"KOffice это интегрированный офисный набор, построенный на платформе KDE. Он "
+"использует свободные и открытые стандарты, такие как OpenDocument для своих "
+"форматов документов, компонентов связи и вложений. KOffice является "
+"бесплатным ПО и выглядит прекрасной и легковесной альтернативой "
+"OpenOffice.org. Посетите <a href=\"http://www.koffice.org\" "
+"title=\"http://www.koffice.org\">http://www.koffice.org</a>, чтобы узнать "
+"больше."
 
 #: data/content/kde/index.html:89 data/content/kde/index.html:183
 msgid "Kontact"
-msgstr ""
+msgstr "Kontact"
 
 #: data/content/kde/index.html:90
 msgid ""
@@ -3752,6 +3901,9 @@ msgid ""
 "KDE Plasma Desktop. The Kontact suite unites mature and proven KDE PIM "
 "applications under one easy to use application."
 msgstr ""
+"<strong>Kontact</strong> это интегрированный в KDE Plasma Desktop менеджер "
+"информации. Kontact объединяет проверенные KDE PIM приложения в одном, "
+"легком для использования."
 
 #: data/content/kde/index.html:92
 msgid ""
@@ -3764,66 +3916,80 @@ msgid ""
 " sharing, central addressbooks and meeting scheduling, everything you would "
 "expect from full featured commercial applications, and much more."
 msgstr ""
+"Компоненты KDE Kontact специально приспособлены для хорошей работы друг с "
+"другом. Это приводит к таким функциям, как интуитивный drag-and-drop "
+"интерфейс между назначениями обработки, списками задач и контактов. KDE "
+"Kontact также поддерживает различные серверы совместной работы, что "
+"позволяет легко смешать вашу рабочую жизнь с временем за пределами "
+"ежедневной рутиинной работы. Когда вы используете эти сервера ваша рабочая "
+"группа имеет доступ к таким функциям, как общие почтовые папки, списки задач"
+" группы, общий календарь, централизованные адресные книги и планирование "
+"встреч, всё что вы ожидаете от полнофункциональных коммерческих приложений и"
+" многое другое."
 
 #: data/content/kde/index.html:93
 msgid ""
 "Kontact keeps you informed about all the things going on with a nice "
 "overview page. The main Applications used under the roof of Kontact are:"
 msgstr ""
+"Kontact информирует вас обо всем происходящем с помощью приятной странички. "
+"Основные приложения, используемые в Kontact:"
 
 #: data/content/kde/index.html:95
 msgid "KMail"
-msgstr ""
+msgstr "KMail"
 
 #: data/content/kde/index.html:95
 msgid "- the KDE email component."
-msgstr ""
+msgstr "- компонент электронной почты KDE."
 
 #: data/content/kde/index.html:96
 msgid "KAddressBook"
-msgstr ""
+msgstr "KAddressBook"
 
 #: data/content/kde/index.html:96
 msgid ""
 " - a comfortable frontend to organize the addresses of your friends, "
 "business partners, etc."
 msgstr ""
+" - удобная оболочка для организации адресов ваших друзей, деловых партнеров "
+"и т.д."
 
 #: data/content/kde/index.html:97
 msgid "Korganizer"
-msgstr ""
+msgstr "Korganizer"
 
 #: data/content/kde/index.html:97
 msgid " - Calendar, scheduling and journal"
-msgstr ""
+msgstr " - Календарь, планирование и журнал"
 
 #: data/content/kde/index.html:98
 msgid "Akregator"
-msgstr ""
+msgstr "Akregator"
 
 #: data/content/kde/index.html:98
 msgid "- a RSS/Atom news feed reader for the KDE Plasma Desktop."
-msgstr ""
+msgstr "- программа чтения RSS/Atom лент для KDE Plasma Desktop"
 
 #: data/content/kde/index.html:99
 msgid "KJots"
-msgstr ""
+msgstr "KJots"
 
 #: data/content/kde/index.html:99
 msgid "- Organize your ideas in a Notebook."
-msgstr ""
+msgstr "- Организуйте ваши идеи в записной книжке."
 
 #: data/content/kde/index.html:100
 msgid "Ktimetracker"
-msgstr ""
+msgstr "Ktimetracker"
 
 #: data/content/kde/index.html:100
 msgid "- Track how much time you spend on various tasks."
-msgstr ""
+msgstr "- Отметьте, сколько времени вы тратите на различные задачи."
 
 #: data/content/kde/index.html:103
 msgid "Multimedia"
-msgstr ""
+msgstr "Мультимедиа"
 
 #: data/content/kde/index.html:104
 msgid ""
@@ -3833,6 +3999,11 @@ msgid ""
 "organizing and backing up all of it. Fedora KDE Plasma Desktop Edition has a"
 " solution for you. No more multimedia mess, just enjoy your media!"
 msgstr ""
+"Сегодняшний мир полон мультимедиа вокруг вас (будь то музыка, как MP3 или "
+"CD), или вещается в сети, все типы видео (от фильмов до ТВ программ) и "
+"многое другое. Обчно это не просто проиграть, не говоря об организации и "
+"архивировании всего этого. Издание Fedora KDE Plasma Desktop имеет решение "
+"для вас. Нет больше беспорядку, просто наслаждайтесь своим мультимедиа!"
 
 #: data/content/kde/index.html:105
 msgid ""
@@ -3848,6 +4019,18 @@ msgid ""
 " allowing you to support artists directly and enjoy DRM free music. Live "
 "your music!"
 msgstr ""
+"Это просто факт, что <strong>Amarok</strong> определяет новые стандарты в "
+"отрасли медиаплееров. Вы наверное никогда не видели свою музыку настолько "
+"организованной, как с Amarok. Вы больше никогда не потеряете свою музыку с "
+"высоким качеством удобств музыкальной коллекции! Amarok поддерживает "
+"расширенные списки произведения, в том числе те динамически генерируемые, "
+"которые будут напоминать вам о ваших старых, почти забытых песнях, с "
+"обложной, текстами песен и даже информацией о текущем треке или группе, "
+"вытащенных прямо из Википедии. Amarok также включает отличную интеграцию с "
+"Last.fm и другими онлайн-службами музыки, что позволяет вам слушать "
+"потоковое радио, подкасты и даже покупать музыку в магазине Magnature, что "
+"позволяет вам поддерживать артистов напрямую и наслаждаться свободной "
+"музыкой. Живите своей музыкой!"
 
 #: data/content/kde/index.html:106
 msgid ""
@@ -3855,6 +4038,9 @@ msgid ""
 "use interface. Watch and record your favorite digital TV stations and enjoy "
 "content stored on your machine with this intuitive media player."
 msgstr ""
+"<strong>Kaffeine</strong> это видеоплеер и цифровое ТВ в одном, простом для "
+"использования интерфейсе. Смотрите и записывайте ваши любимые цифровые ТВ "
+"каналы и наслаждайтесь с помощью этого интуитивного медиаплеера."
 
 #: data/content/kde/index.html:107
 msgid ""
@@ -3863,6 +4049,10 @@ msgid ""
 "CDs/DVDs, audio CDs, video CDs, DVDs, copying, CD ripping and more. Take "
 "care, you can get burned ;-)"
 msgstr ""
+"<strong>K3B</strong> позволяет вам легко создавать резервные копии ваших "
+"мультимедиа-файлов, так как это полнофункциональное ПО для записи CD/DVD "
+"дисков. K3B поддерживает запись CD/DVD, аудио компакт-дисков, DVD, "
+"копирование CD и многое другое. Будьте осторожны, вы можете обжечься ;-)"
 
 #: data/content/kde/index.html:108
 msgid ""
@@ -3871,6 +4061,11 @@ msgid ""
 "player,\" and it lives up to this name, providing the features you expect in"
 " a compact, easy to use interface."
 msgstr ""
+"<strong>KsCD</strong> это маленький, быстрый стандартный плеер компакт-"
+"дисков с поддержкой MusicBrainz. KsCD означает \"The KDE Project's "
+"small/simple CD player,\" ( \"Маленький/простой CD плеер проекта KDE\") и "
+"подтверждает это имя, предоставляя функции которые вы ожидаете в маленьком, "
+"простом для использования интерфейсе."
 
 #: data/content/kde/index.html:111
 msgid ""
@@ -3882,6 +4077,13 @@ msgid ""
 " Map project allows users to easily view maps of their current location "
 "without opening even opening a browser."
 msgstr ""
+"<strong>Marble</strong> это виртуальный глобус и мировой атлас в вашем "
+"компьютере. Вы можете узнать много нового о Земле или радоваться виртуальным"
+" поездкам вокруг вашей планеты. Вы можете выбирать разные тематические "
+"карты: топографическая карта, карта улицы, вид со спутника, ночная планета и"
+" карты осадков и температуры. Интеграция с популярным проектом Open Street "
+"Map позволяет пользователям легко просматривать карты их текущего "
+"местонаходжения без необходимости запуска веб-обозревателя."
 
 #: data/content/kde/index.html:112
 msgid ""
@@ -3889,6 +4091,9 @@ msgid ""
 "<strong>Parley</strong>, <strong>Kiten</strong> and others. That's great, "
 "isn't it? Ja! Si! Ano! It is."
 msgstr ""
+"Пакет KDE Education содержит много инструментов обучающих языку, такие как "
+"<strong>Parley</strong>, <strong>Kiten</strong> и другие. Это прекрасно, не "
+"так ли? Ja! Si! Ano! Yes! Именно."
 
 #: data/content/kde/index.html:113
 msgid ""
@@ -3919,7 +4124,7 @@ msgstr ""
 
 #: data/content/kde/index.html:159
 msgid "KDE Plasma Desktop Support"
-msgstr ""
+msgstr "Поддержка KDE Plasma Desktop"
 
 #: data/content/kde/index.html:160
 msgid ""
@@ -3930,28 +4135,28 @@ msgstr ""
 
 #: data/content/kde/index.html:160
 msgid "please visit the main spins support page"
-msgstr ""
+msgstr "пожалуйста, посетите главную страницу поддержки сборок"
 
 #: data/content/kde/index.html:172 data/content/kde/index.html:182
 #: data/content/kde/index.html:192
 msgid "KDE Plasma Desktop"
-msgstr ""
+msgstr "KDE Plasma Desktop"
 
 #: data/content/kde/index.html:174
 msgid "A screenshot of the KDE Plasma Desktop 4"
-msgstr ""
+msgstr "Скриншот KDE Plasma Desktop 4"
 
 #: data/content/kde/index.html:184
 msgid "A screenshot of the Kontact with a few features."
-msgstr ""
+msgstr "Скриншота Kontact с новыми функциями."
 
 #: data/content/kde/index.html:194
 msgid "A few of the games available on KDE Plasma Desktop"
-msgstr ""
+msgstr "Несколько игр, доступных в KDE Plasma Desktop"
 
 #: data/content/kiosk/index.html:41
 msgid "About Spin: Kiosk"
-msgstr ""
+msgstr "О сборке: Kiosk"
 
 #: data/content/kiosk/index.html:55
 msgid "Secure kiosks: no longer an oxymoron. "
@@ -4007,14 +4212,17 @@ msgid ""
 "Moblin™ is a trademark or registered trademark of Intel Corporation or its "
 "subsidiaries in the United States and other countries."
 msgstr ""
+"Moblin™ является торговой маркой или зарегистрированной торговой маркой "
+"корпорации Интел или её дочерних предприятий на территории США и других "
+"стран."
 
 #: data/content/kiosk/index.html:110
 msgid "Kiosk"
-msgstr ""
+msgstr "Kiosk"
 
 #: data/content/kiosk/index.html:111
 msgid "Login screen"
-msgstr ""
+msgstr "Окно входа"
 
 #: data/content/kiosk/index.html:112
 msgid ""
@@ -4098,7 +4306,7 @@ msgstr "Planet.LXDE.org"
 
 #: data/content/lxde/index.html:66
 msgid "LXDE contributor blog community"
-msgstr ""
+msgstr "блог сообщества участников LXDE"
 
 #: data/content/moblin/index.html:41
 msgid "About Spin: Moblin"
@@ -4119,6 +4327,14 @@ msgid ""
 "enriched it with new open source technologies also intended for mobile "
 "development and usage."
 msgstr ""
+"Fedora Moblin Spin это операционная система, основанная на Fedora для "
+"мобильных пользователей. Мы начали с интерфейса <a "
+"href=\"http://moblin.org/\">Moblin™</a>, аппаратную и пользовательскую "
+"модель независимого уровня, построенную на платформе <a "
+"href=\"http://www.gnome.org/mobile/\">GNOME Mobile</a> которая предоставляет"
+" один универсальный путь разработки для мобильных устройств, а затем "
+"поставляет новые технологии с открытым кодом для развития разработки и "
+"использования мобильных устройств."
 
 #: data/content/moblin/index.html:57
 msgid ""
@@ -4193,11 +4409,11 @@ msgstr ""
 
 #: data/content/moblin/index.html:79
 msgid "39K Torrent File for 32-bit PC ISO"
-msgstr ""
+msgstr "Торрент файл для 32-битного образа (39 Кбайт)"
 
 #: data/content/moblin/index.html:85
 msgid "39K Torrent File for 64-bit PC ISO"
-msgstr ""
+msgstr "Торрент файл для 64-битного образа (39 Кбайт)"
 
 #: data/content/moblin/index.html:117
 msgid "Moblin"
@@ -4213,7 +4429,7 @@ msgstr "О сборке — Безопасность"
 
 #: data/content/security/index.html:53
 msgid "Thorough, Safe and Secure"
-msgstr ""
+msgstr "Аккуратная и безопасная."
 
 #: data/content/security/index.html:54
 msgid ""
@@ -4221,6 +4437,9 @@ msgid ""
 " auditing, forensics, system rescue and teaching security testing "
 "methodologies in universities and other organizations."
 msgstr ""
+"Fedora Security Lab предоставляет безопасное окружение для работы над "
+"аудитом безопасности, восстановлением системы и обучению методологиям "
+"тестирования безопасности в ВУЗах и других организациях."
 
 #: data/content/security/index.html:55
 msgid ""
@@ -4245,11 +4464,11 @@ msgstr ""
 
 #: data/content/security/index.html:58
 msgid "Fedora Security Lab Screenshot"
-msgstr ""
+msgstr "Скриншот Fedora Security Lab"
 
 #: data/content/security/index.html:94
 msgid "Security Lab Desktop Support"
-msgstr ""
+msgstr "Поддержка Security Lab Desktop"
 
 #: data/content/soas/index.html:41
 msgid "About Spin: Sugar on a Stick"
@@ -4342,7 +4561,7 @@ msgstr ""
 
 #: data/content/soas/index.html:70
 msgid "Our principles"
-msgstr ""
+msgstr "Наши принципы"
 
 #: data/content/soas/index.html:71
 msgid "The Sugar Learning Platform"
@@ -4350,12 +4569,14 @@ msgstr "Обучающая платформа Sugar"
 
 #: data/content/soas/index.html:72
 msgid "Two Principles define the Sugar Learning Platform:"
-msgstr ""
+msgstr "Два принципа описывают обучающую платформу Sugar:"
 
 #: data/content/soas/index.html:74
 msgid ""
 "We learn through doing, so if we want more learning, we want more doing."
 msgstr ""
+"Мы учимся через действия, поэтому если мы хотим больше узнать, мы хотим "
+"больше действовать."
 
 #: data/content/soas/index.html:75
 msgid ""
@@ -4366,7 +4587,7 @@ msgstr ""
 
 #: data/content/soas/index.html:77
 msgid "The Design of Sugar"
-msgstr ""
+msgstr "Дизайн Sugar"
 
 #: data/content/soas/index.html:78
 msgid "Three experiences characterize the design of Sugar:"
@@ -4416,7 +4637,7 @@ msgstr "Человек желает самовыражаться."
 
 #: data/content/soas/index.html:92
 msgid "Join us!"
-msgstr ""
+msgstr "Присоединяйтесь к нам!"
 
 #: data/content/soas/index.html:93
 #, python-format
@@ -4710,7 +4931,7 @@ msgstr "Подробнее о том, как проект связан с ком
 
 #: data/templates/foot.html:60
 msgid "&copy; 2011 Red Hat, Inc. and others."
-msgstr ""
+msgstr "&copy; 2011 Red Hat, Inc. и другие."
 
 #: data/templates/foot.html:62
 msgid "Contact"
@@ -4742,7 +4963,7 @@ msgstr "Каталог"
 
 #: data/templates/head.html:16
 msgid "Explore Fedora's possibilities"
-msgstr ""
+msgstr "Исследуйте возможности Fedora."
 
 #: data/templates/sidebar.html:11
 msgid "Looking to Download Fedora?"
@@ -4918,3 +5139,5 @@ msgstr ""
 #: data/templates/support-tab.html:42
 msgid "Fedora 'Get Help' page"
 msgstr "Получить помощь"
+
+
