@@ -14,7 +14,7 @@ class Torrents(object):
     prerelease_re = re.compile('-(alpha|beta|snap|preview)([0-9]*)$', re.I)
     non_release_re = re.compile('(alpha|beta|snap|preview)', re.I)
     prerelease_order = ['alpha', 'beta', 'snap', 'preview']
-    spins_matches = ['design', 'kde', 'lxde', 'games', 'xfce', 'security', 'fel']
+    spins_matches = ['design', 'kde', 'lxde', 'games', 'xfce', 'security', 'electronic-lab']
     archlist = ['i386', 'i586', 'i686', 'ix86', 'ppc', 'x86_64', 'source', 'Source']
 
     def __init__(self):
@@ -184,6 +184,7 @@ sdata_feature = {
     'aos': "A scaled-down version of Fedora with a small footprint for running an appliance.",
     'developer': "This is developer",
     'fel': "Fedora's high-end hardware design and simulation platform.",
+    'electronic-lab': "Fedora's high-end hardware design and simulation platform.",
     'games': "A perfect show-case of the best games available in Fedora.",
     'design-suite': "Open Creativity.",
     'design': "Open Creativity.",
