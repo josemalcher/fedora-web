@@ -63,7 +63,7 @@ docs_url = [
                     <ul>
 		              <li><a href="https://fedorahosted.org/fedora-electronic-lab">${_('User Documentation and Developer Area')}</a></li>
                       ${_('Users are welcome to propose new features and join us during our testing days.')}<br/>
-                      <li>${Markup(_('&lt;a href="%s"&gt;List of all software&lt;/a&gt; under FEL\'s umbrella.') % 'http://chitlesh.fedorapeople.org/FEL/list.html')}</li>
+                      <li>${Markup(_('&lt;a href="%s"&gt;List of all software&lt;/a&gt; under FEL\'s umbrella.' % 'http://chitlesh.fedorapeople.org/FEL/list.html'))}</li>
                       <li><a href="http://publictest6.fedoraproject.org/gallery2/main.php">${_('Screenshots Gallery')}</a></li>
                       <li><a href="http://alt.fedoraproject.org/pub/alt/nightly-composes/electronic-lab/">${_('Nightly Development LiveDVD')}</a></li>
                     </ul>
@@ -152,13 +152,13 @@ docs_url = [
 				<h3>${_('Direct Download')}</h3>
 				<span class="download-option" id="opt1">
 					<h4>${_('32-bit PC Edition')}</h4>
-					<p><img class="download-media" alt="${_('%s-bit PC Edition') % '32'}" src="/static/images/media-cd.png" />${_('This edition is for the highest compatibility; it will work on both 32-bit and 64-bit computers.')}</p>
+					<p><img class="download-media" alt="${_('%s-bit PC Edition' % '32')}" src="/static/images/media-cd.png" />${_('This edition is for the highest compatibility; it will work on both 32-bit and 64-bit computers.')}</p>
 					<a class="download-button" href="http://alt.fedoraproject.org/pub/alt/spins/linux/releases/15/Spins/i686/Fedora-15-i686-Live-Electronic-Lab.iso">${_('Download Now!')}</a>
 					<p class="fine-print">${_('%(size)s for %(arch)s-bit PC ISO') % {'size': '500 MB', 'arch': '32'}}<br /> <a href="http://docs.fedoraproject.org/en-US/Fedora/15/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
 				</span>
 				<span class="download-option" id="opt2">
 					<h4>${_('64-bit PC Edition')}</h4>
-					<p><img class="download-media" alt="${_('%s-bit PC Edition') % '64'}" src="/static/images/media-cd.png" />${_('Enjoy the full power and speed of a 64-bit computer. Not compatible with 32-bit computers.')}</p>
+					<p><img class="download-media" alt="${_('%s-bit PC Edition' % '64')}" src="/static/images/media-cd.png" />${_('Enjoy the full power and speed of a 64-bit computer. Not compatible with 32-bit computers.')}</p>
 					<a class="download-button" href="http://alt.fedoraproject.org/pub/alt/spins/linux/releases/15/Spins/x86_64/Fedora-15-x86_64-Live-Electronic-Lab.iso">${_('Download Now!')}</a>
 					<p class="fine-print">${_('%(size)s for %(arch)s-bit PC ISO') % {'size': '500 MB', 'arch': '64'}}<br /> <a href="http://docs.fedoraproject.org/en-US/Fedora/15/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
 				</span>
@@ -170,7 +170,7 @@ docs_url = [
 				<h4>${_('Miscleanous')}</h4>
 				<p>${_('Fedora Electronic Lab team does not provide commercial technical support. The only types of technical support, FEL provides are through the')}</p>
 				<ul>
-					<li>${Markup(_('&lt;a href="%s"&gt;Ticketing service&lt;/a&gt; to request any enhancement or developer sponsoring.') % 'https://fedorahosted.org/fedora-electronic-lab/')}</li>
+					<li>${Markup(_('&lt;a href="%s"&gt;Ticketing service&lt;/a&gt; to request any enhancement or developer sponsoring.' % 'https://fedorahosted.org/fedora-electronic-lab/'))}</li>
 					<li><a href="http://bugzilla.redhat.com">Bugzilla</a> ${_('to file any bug encountered in the EDA tools.')}</li>
 				</ul>
 			</div>
