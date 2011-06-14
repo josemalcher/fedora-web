@@ -1508,8 +1508,13 @@ div.townBox dl dd {
 }
 
 /* get rid of random clear: boths */
-#content br {
-	clear: none !important;
+
+#content br, #editform, #toolbar, #wpTextbox1, .visualClear {
+      clear: both!important;
+}
+
+.errorbox, .successbox {
+    float: none!important;
 }
 
 #content table#toc td {
