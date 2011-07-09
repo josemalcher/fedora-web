@@ -101,21 +101,21 @@ a:link, a:visited, a:active, #content a:link, #content a:visited, #content a:act
 	src:  url('http://fedoraproject.org/static/css/fonts/Comfortaa_Regular-webfont.eot');
 	src: local('Comfortaa'), url('http://fedoraproject.org/static/css/fonts/Comfortaa_Regular-webfont.woff') format('woff'), url('http://fedoraproject.org/static/css/fonts/Comfortaa_Regular-webfont.ttf') format('truetype');
 }
-#spins-tagline
-{
+#spins-tagline {
 	margin-left: 0px;
 	background: url("../images/background.png") repeat-x scroll 0 0 #FFFFFF; 
 	background-image: -moz-linear-gradient(top, #a2bce4 80%, white); /* FIXME: Propper webkit support */
-	font-size: 52px;
 	font-family: Comfortaa, Comfortaa_Regular-webfont, sans-serif;
 	text-shadow: 2px 2px 1px #557DBA, 2px 2px 2px #557DBA;
 	color: white;
 	min-width: 960px;
-	min-height: 119px;
+	min-height: 120px;
 }
 #spins-tagline span {
-    padding-left: 10px;
-    padding-top: 3%;
+    display: block;
+    padding-left: 30px;
+    font-size: 52px;
+    padding-top: 2.5%;
     vertical-align: middle;
 }
 /* end: tagline */
@@ -711,6 +711,11 @@ a
     color: #aba;
     font-size: 15px;
     margin: 0 0 -10px 0;
+}
+
+/* override inherited line-height for each individual spin page's banner so there isn't a weird gap */
+#spins-tagline {
+  line-height: 1;
 }
 
 /* end: used for picture overlay */
