@@ -10,9 +10,9 @@
   </head>
   <py:match path="body" once="true">
   <body py:attrs="select('@*')">
-    <div id="body-news">
+    <div id="body-main">
       <div id="content">
-	<xi:include href="head.html" />
+	<xi:include href="main-head.html" />
         ${select('*')}
       </div>
     </div>

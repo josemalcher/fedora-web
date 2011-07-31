@@ -3,28 +3,22 @@
   xmlns:py="http://genshi.edgewall.org/"
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
-<div id="header">
-    <div class="container_16">
-		<div class="grid_6 prefix_10">
-			<form action="" method="GET" class="lang-dropdown">
-				<select name="lang">
-				<xi:include href="translations.html" />
-				</select>
-				<input type="submit" value="${_('OK')}" />
-			</form>
-		</div>
-        <div class="clear"></div>
-        <div class="grid_9" id="site-heading">
-            <a href="http://fedoraproject.org/"><h1><span id="logo">Fedora Project</span></h1></a>
-            <h2>${_('Freedom. Friends. Features. First.')}</h2>
-        </div>
-        <div class="grid_1">&nbsp;<!-- search filler --></div>
-        <div class="grid_6" id="site-heading-rh">
-            <a href="http://redhat.com">${_('A Red Hat-Sponsored Community Project')}&nbsp;&nbsp;<img id="rh-community" src="/static/images/sponsors/redhat-community.png" /></a>
-        </div>
-        <div class="clear"></div>
-    </div>
-</div>
 
-
+  <div id="sub-menu">
+    <li><a href="schedule.html">Schedule</a></li>
+    <li><a href="ww.html">Date/Location</a></li>
+    <li><a href="information.html">Information</a></li>
+    <li><a href="speakers.html">Speakers</a></li>
+  </div>
+  
+  <div id="header-menu">
+    <img src="${path}/${lang}/static/images/fudcon_india_2011_logo.png" width="40%" />
+    <li><a href="index.html">Home</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="../EMEA/index.html">EMEA</a></li>
+    <li><a style="background: #0956a4; padding-top: 30px; padding-bottom: 30px; margin-top: 7px; margin-left: -20px; margin-right: -20px; padding-right: 20px; padding-left: 20px; color: #fff; font-weight: bold;" href="../APAC/index.html">APAC</a></li>
+    <li><a href="../LATAM/index.html">LATAM</a></li>
+    <li><a href="../NA/index.html">NA</a></li>
+  </div>
 </html>
+
