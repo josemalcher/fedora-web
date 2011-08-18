@@ -24,7 +24,9 @@ rss-cache:
 
 static:
 	@echo Copying static...
-	$(PYTHON) build/build.py -o out -s static -b $(BASEPATH)
+	$(PYTHON) build/build.py -o out -s css -b $(BASEPATH)
+	$(PYTHON) build/build.py -o out -s js -b $(BASEPATH)
+	$(PYTHON) build/build.py -o out -s images -b $(BASEPATH)
 
 $(LANGUAGES): % : | static rss-cache po/%.mo data/templates/translations.html
 	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -b $(BASEPATH)
