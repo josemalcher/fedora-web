@@ -6,7 +6,7 @@ html, body, div, span, applet, object, iframe,
 h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
@@ -23,10 +23,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 
 body {
-	font:16px/1.4 Arial, Helvetica, sans-serif;
-	color:#666;
+	font:14px/1.5 Arial, Helvetica, sans-serif;
+	color:#888;
 	background-color:#FFF;
-	text-shadow:0 1px 0 #666;
 }
 
 a, a:visited {
@@ -53,8 +52,8 @@ h1 {
 }
 
 h2 {
-	font:16px/1.6 Arial, Helvetica, sans-serif;
-	color:#FFF;
+	font:14px/1.6 Arial, Helvetica, sans-serif;
+	color:#729FCF;
 	padding:0px;
 	margin-left:15px;
 	margin-top:5px;
@@ -69,8 +68,9 @@ h3 {
 }
 
 h4 {
-	font:16px Arial, Helvetica, sans-serif;
-	color:#F90;
+	font:21px Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#0956A4;
 	margin-bottom:6px;
 	padding:0px;
 }
@@ -80,6 +80,26 @@ h5 {
 	color:#FFF;
 	margin-bottom:6px;
 	padding:0px;
+}
+
+h6 {
+	font:21px Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#3FA9F5;
+	margin-bottom:6px;
+	padding:0px;
+}
+
+p {
+	margin-bottom:10px;
+}
+
+li {
+	list-style:square;
+	font-size:12px;
+}
+
+ul {
 }
 
 .container {
@@ -124,21 +144,31 @@ h5 {
 	text-shadow:0 1px 0 #CCC;
 }
 
-.header_bar_menu_border {
-	width:1px;
-	height:20px;
-	padding-top:30px;
-	padding-bottom:20px;
-	background-color:#FFF;
-	border-right:#333 thin solid;
+.top_menu {
+	list-style:none;
 	float:right;
+	margin-top:32px;
+}
+
+.top_menu_element {
+	display:inline;
+	padding:8px 10px 8px 10px;
+	border-right:dotted thin #036;
+	color:#729FCF;
+	font-size:14px;
+	font-weight:bold;
+	text-shadow:none;
+}
+
+.top_menu_element:hover {
+	color:#729FCF;
 }
 
 /* ============================== FLAG ROW =========================== */
 
 .flag_row_container {
 	width:100%;
-	height:10px;
+	height:0px;
 	border-bottom:#CCC thin solid;
 	float:left;
 }
@@ -164,10 +194,13 @@ h5 {
 	margin-top:0px;
 	float:left;
 	width:100%;
-	height:282px;
 	/* background-color:#E8DCC4; */
 	background:url(../images/splash_bg.png);
 	border-bottom:#999 thin solid;
+}
+
+#index_splash {
+	height:282px;
 }
 
 .splash_content {
@@ -182,11 +215,24 @@ h5 {
 	float:left;
 }
 
+.splash_text_section {
+	padding:12px;
+	height:100%;
+	float:left;
+}
+
 .splash_img {
 	width:64%;
 	height:342px;
 	float:right;
 	margin-top: 10px;
+}
+
+.splash_img_mil {
+	width:64%;
+	height:342px;
+	float:right;
+	margin-top: -20px;
 }
 
 /*============================ CENTRAL CONTENT =========================*/
@@ -196,27 +242,53 @@ h5 {
 	/*height:422px;*/
 	border-bottom:#999 thin solid;
 	float:left;
-	margin-top: -50px;
 	padding-bottom: 20px;
+}
+
+.central_container_mil {
+	width:100%;
+	/*height:422px;*/
+	border-bottom:#999 thin solid;
+	float:left;
+	padding-bottom: 20px;
+	margin-top: 30px;
 }
 
 .central_content {
 	width:960px;
 	margin-left:auto;
 	margin-right:auto;
-	padding-top:80px;
+	margin-top:1px;
+}
+
+#home {
+	padding-top:10px;
 }
 
 /*============================== 1 COLUMN DIVISION ========================*/
 
 .one_column_division {
 	width:960px;
-	margin-top:20px;
+	/*margin-top:20px;*/
 	margin-right:22px;
 	margin-bottom:20px;
+	padding-bottom:25px;
 	float:left;
 	padding-left:10px;
 	text-align:justify;
+	border-bottom:#CCC dotted thin;
+}
+
+#venue {
+	width:90%;
+	background-image:url(../images/venue_bg.png);
+	background-repeat:repeat-x;
+	color:#FFF;
+	padding:20px 20px 5px;
+	margin:20px;
+	border:#072B61 dashed medium;
+	border-radius:14px;
+	box-shadow:#888 2px 0px 4px;
 }
 
 /*============================== 3 COLUMN DIVISION ========================*/
@@ -230,28 +302,71 @@ h5 {
 }
 
 .column_row_img {
-	height:136px;
 	float:left;
-	font:21px Arial, Helvetica, sans-serif;
-	color:#F90;
 	margin-bottom:14px;
 	padding:0px;
 }
 
 #column_one {
-	width:220px;
-	background-image:url(../images/location_photo.png);
+	width:300px;
+	height:200px;
+	background-image:url(../images/logo_promo.png);
 	background-repeat:no-repeat;
 	padding-left:20;
 }
 
 #column_two {
-	width:382px;
-	background-image:url(../images/3steps.png);
+	width:320px;
+	background-image:url(../images/logo_pune.png);
+	background-repeat:no-repeat;
+	height:140px;
+}
+
+#column_one_pune {
+	width:300px;
+	height:200px;
+	background-image:url(../images/logo_pune.png);
 	background-repeat:no-repeat;
 	padding-left:20;
 }
 
+#column_two_pune {
+	width:320px;
+	background-image:url(../images/f_free_promo.png);
+	background-repeat:no-repeat;
+	height:140px;
+}
+
+#column_one_mil {
+	width:300px;
+	height:200px;
+	background-image:url(../images/logo_promo.png);
+	background-repeat:no-repeat;
+	padding-left:20;
+}
+
+#column_two_mil {
+	width:320px;
+	background-image:url(../images/f_free_promo.png);
+	background-repeat:no-repeat;
+	height:140px;
+}
+
+#venue_img {
+	width:225px;
+	height:149px;
+	background-image:url(../images/location_photo.png);
+	background-repeat:no-repeat;
+	background-position:center left;
+}
+
+#venue_img_pune {
+	width:225px;
+	height:149px;
+	background-image:url(../images/university-of-pune.png);
+	background-repeat:no-repeat;
+	background-position:center left;
+}
 
 /*========================= SOCIAL LINE =============================*/
 
@@ -302,8 +417,9 @@ h5 {
 
 .footer_container {
 	width:100%;
-	background:#072B61;
-	height:130px;
+	background-image:url(../images/footer_bg.png);
+	background-repeat:repeat-x;
+	height:132px;
 	float:left;
 }
 
@@ -311,7 +427,7 @@ h5 {
 	width:960px;
 	margin-left:auto;
 	margin-right:auto;
-	padding-top:10px;
+	padding-top:38px;
 }
 
 .footer_contact_item {
@@ -360,11 +476,9 @@ h5 {
 	padding-left:30px;
 }
 
-.newsletter_container {
+.button_container {
 	float:right;
 	position:relative;
-	width:340px;
-	float:left;
 	height:100%;
 }
 
@@ -374,3 +488,130 @@ h5 {
 	border-radius:10px;
 	border:#06C medium solid;
 }
+
+
+/*========================= BUTTON ============================*/
+
+a.button_big {
+	height:18px;
+	border-radius:8px;
+	border:#0956A4 dashed medium;
+	background-color:#0F7BBA;
+	background-image:url(../images/button_bg.png);
+	background-repeat:repeat-x;
+	background-position:top;
+	padding:10px 20px 14px 20px;
+	-moz-box-shadow: 0 0 8px 4px #333;
+	-webkit-box-shadow: 0 0 8px 4px#333;
+	box-shadow: 0 0px 8px #333;
+	font:15px/1.6 Arial, Helvetica, sans-serif;
+	text-shadow:0 1px 0 #000;
+	font-weight:bold;
+	color:#FFF;
+	float:right;
+}
+
+a:hover.button_big {
+	background-color:#0956A4;
+	border:#0F7BBA dashed medium;
+}
+
+.button_icon {
+	vertical-align:middle;
+}
+
+#register_footer {
+	padding:18px 30px 22px 30px;
+	font-size:18px;
+	background-image:url(../images/footer_button_bg.png);
+}
+
+/*====================== SCHEDULING ========================*/
+
+.agenda {
+	width:920px;
+	border:#CCC dotted thin;
+	padding:4px;
+	padding-bottom:10px;
+	margin-left:20px;
+	text-align:center;
+	color:#555;
+	overflow:hidden;
+}
+
+.table_row {
+	margin:4px 6px;
+}
+
+.table_cell {
+	width:22.5%;
+	padding:10px;
+	border:#CCC solid thin;
+	float:left;
+	background-color:inherit;
+	color:inherit;
+}
+
+.first_row {
+	background-color:#375d78;
+	color:#FFF;
+	font:14px/1.6 Georgia, "Times New Roman", Times, serif;
+}
+
+.row_b_type {
+	background-color:#d0e4f2;
+}
+
+.time {
+	color:#333;
+}
+
+.google_maps {
+	float:left;
+	width:300px;
+	margin-right:20px;
+}
+
+
+/*========================= SLIDER ==========================*/
+
+#slider {
+    width: 620px; /* important to be same as image width */
+    height: 250px; /* important to be same as image height */
+    position: relative; /* important */
+	overflow: hidden; /* important */
+}
+#sliderContent {
+    width: 620px; /* important to be same as image width or wider */
+    position: absolute;
+	top: 0;
+	margin-left: 0;
+}
+.sliderImage {
+    float: left;
+    position: relative;
+	display: none;
+}
+.sliderImage span {
+    position: absolute;
+	font: 10px/15px Arial, Helvetica, sans-serif;
+    padding: 10px 13px;
+    width: 384px;
+    color: #fff;
+    display: none;
+}
+.clear {
+	clear: both;
+}
+.sliderImage span strong {
+    font-size: 14px;
+}
+.top {
+	top: 0;
+	left: 0;
+}
+.bottom {
+	bottom: 0;
+    left: 0;
+}
+ul { list-style-type: none;}
