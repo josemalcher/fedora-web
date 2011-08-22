@@ -40,7 +40,7 @@ obsolete_keys = [
     '731002FA', # Fedora Legacy
 ]
 
-secondary_arches = ('arm', 'ia64', 'mips', 'parisc', 'ppc', 's390', 'sparc')
+secondary_arches = ('secondary', 'arm', 'ia64', 'mips', 'parisc', 'ppc', 's390', 'sparc')
 
 # Match keyids
 keyid_re = re.compile('^[0-9a-z]{8}$', re.IGNORECASE)
@@ -210,6 +210,7 @@ for keyfile in glob.glob('%s/*.txt' % opts.keydir):
             if opts.verbose > 1:
                 print '  Adding %s to version' % arch
             version += '-%s' % arch
+            break
     if opts.verbose > 1:
         print '  userid = %s' % keyinfo['userid']
         print '  version = %s' % version
