@@ -2,13 +2,14 @@
 # Copyright (C) 2011 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # 
+# Translators:
 # Valentin Laskov <laskov@festa.bg>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2011-08-31 23:17+0200\n"
-"PO-Revision-Date: 2011-08-31 21:24+0000\n"
+"POT-Creation-Date: 2011-09-08 20:04+0200\n"
+"PO-Revision-Date: 2011-09-08 18:30+0000\n"
 "Last-Translator: shaiton <shaiton@fedoraproject.org>\n"
 "Language-Team: Bulgarian <trans-bg@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
@@ -74,6 +75,12 @@ msgid ""
 "BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora"
 " installer or rescue mode."
 msgstr ""
+"Първо свалете един от наличните специфични BFO образи. Можете да изберете "
+"образ измежду ISO (DVD/CD), USB, Дискета или lkrn. След това го запишете на "
+"съответната медия.  Стартирайте компютъра и заредете от тази медия.  Вече "
+"използвате BFO!  Като използвате клавиатурата изберете необходимото Ви меню "
+"за диагностика, стартиране на инсталатора на Fedora или за влизане в "
+"спасителен режим."
 
 #: data/content/faq.html:15
 msgid "Can I use it with grub?"
@@ -106,14 +113,35 @@ msgid ""
 "Download the boot.fedoraproject.org media fitting your preferred boot "
 "method."
 msgstr ""
+"Свалете boot.fedoraproject.org медия, съответстваща на предпочитания от Вас "
+"начин на първоначално зареждане."
+
+#: data/content/faq.html:27
+msgid "burn ISO images to a CD-R or DVD-R"
+msgstr ""
+
+#: data/content/faq.html:28
+msgid "write USB image for a USB stick"
+msgstr ""
+
+#: data/content/faq.html:29
+msgid "write Floppy image to a 3.5 inch HD floppy"
+msgstr ""
+
+#: data/content/faq.html:30
+#, python-format
+msgid ""
+"lkrn image for PXE booting, grub booting and in conjunction with kexec "
+"(c.f.: <a href=\"%s\">pxkxc</a>)"
+msgstr ""
 
 #: data/content/faq.html:32
 msgid "Boot from the medium you created."
-msgstr ""
+msgstr "Заредете от създадената от Вас медия."
 
 #: data/content/faq.html:33
 msgid "It will first configure network via DHCP."
-msgstr ""
+msgstr "Мрежата ще се конфигурира автоматично от DHCP."
 
 #: data/content/faq.html:34
 msgid ""
@@ -145,6 +173,12 @@ msgid ""
 "will have the best experience with BFO.  They basically replace having to "
 "regularly download large ISO images and burn them to disk."
 msgstr ""
+"BFO образите са много малки, а и след като веднъж сте свалили такъв, надали "
+"ще Ви се наложи да го сваляте отново.  Даже и да са излезли няколко нови "
+"версии на Fedora, веднага след като заредите от Вашия образ, те ще се "
+"появят.  Потребителите, разполагащи с бърза връзка към Интернет, ще останат "
+"най-доволни от използването на BFO.  Те повече няма да имат нужда да свалят "
+"големи ISO образи и да ги записват на дискове."
 
 #: data/content/faq.html:39
 msgid "What is required?"
@@ -156,6 +190,10 @@ msgid ""
 "as well as HTTP internet access. To use the ISO, a CD/DVD burner. To use the"
 " USB image, a USB stick.  Floppy and lkrn images are also available."
 msgstr ""
+"Независимо от образа, Вие ще трябва да имате работещ DHCP в мрежата, която "
+"ползвате, както и HTTP достъп до Интернет. Ако ще използвате ISO, ще Ви "
+"трябва CD/DVD записвачка, а за USB образа - USB памет.  Налични са също и "
+"образи Дискета и lkrn."
 
 #: data/content/faq.html:41
 msgid "Does BFO replace the installer or anaconda?"

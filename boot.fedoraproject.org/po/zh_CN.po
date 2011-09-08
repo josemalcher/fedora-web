@@ -2,14 +2,16 @@
 # Copyright (C) 2011 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # 
+# Translators:
+#   <lovenemesis@gmail.com>, 2011.
 # neb <nick@bebout.net>, 2011.
 # tiansworld <tiansworld@fedoraproject.org>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2011-08-31 23:17+0200\n"
-"PO-Revision-Date: 2011-08-31 21:24+0000\n"
+"POT-Creation-Date: 2011-09-08 20:04+0200\n"
+"PO-Revision-Date: 2011-09-08 18:30+0000\n"
 "Last-Translator: shaiton <shaiton@fedoraproject.org>\n"
 "Language-Team: Chinese (China) (http://www.transifex.net/projects/p/fedora/team/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -75,6 +77,8 @@ msgid ""
 "BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora"
 " installer or rescue mode."
 msgstr ""
+"首先下载一个可用的 BFO 特制镜像。您可以在 ISO(CD/DVD)、U 盘、软盘和 lkrn 镜像中选择。然后将镜像写入到匹配的介质中。  "
+"下一步从该介质引导。  之后您就可以使用 BFO 了！  使用您的键盘进行菜单选择，运行诊断模式，或者引导 Fedora 安装器，或恢复模式。"
 
 #: data/content/faq.html:15
 msgid "Can I use it with grub?"
@@ -103,15 +107,34 @@ msgstr ""
 msgid ""
 "Download the boot.fedoraproject.org media fitting your preferred boot "
 "method."
+msgstr "下载最适合您引导方式的 boot.fedoraproject.org 介质。"
+
+#: data/content/faq.html:27
+msgid "burn ISO images to a CD-R or DVD-R"
+msgstr ""
+
+#: data/content/faq.html:28
+msgid "write USB image for a USB stick"
+msgstr ""
+
+#: data/content/faq.html:29
+msgid "write Floppy image to a 3.5 inch HD floppy"
+msgstr ""
+
+#: data/content/faq.html:30
+#, python-format
+msgid ""
+"lkrn image for PXE booting, grub booting and in conjunction with kexec "
+"(c.f.: <a href=\"%s\">pxkxc</a>)"
 msgstr ""
 
 #: data/content/faq.html:32
 msgid "Boot from the medium you created."
-msgstr ""
+msgstr "从您刚创建的介质引导。"
 
 #: data/content/faq.html:33
 msgid "It will first configure network via DHCP."
-msgstr ""
+msgstr "它将首先尝试通过 DHCP 配置网络。"
 
 #: data/content/faq.html:34
 msgid ""
@@ -138,6 +161,8 @@ msgid ""
 "will have the best experience with BFO.  They basically replace having to "
 "regularly download large ISO images and burn them to disk."
 msgstr ""
+"BFO 下载非常小，而且一旦您完成，你几乎不需要再次下载。  就算以后有更多版本的 Fedora 发布，您依然可以从您的镜像引导并发现它们。  "
+"拥有高速互联网连接的用户会有最佳的 BFO 使用体验。  这将替代以往下载大型 ISO 镜像并刻录的过程。"
 
 #: data/content/faq.html:39
 msgid "What is required?"
@@ -149,6 +174,8 @@ msgid ""
 "as well as HTTP internet access. To use the ISO, a CD/DVD burner. To use the"
 " USB image, a USB stick.  Floppy and lkrn images are also available."
 msgstr ""
+"对于所有镜像类型，您需要在网络中有一个可用的 DHCP 来做为 HTTP 互联网访问的起点。要使用 ISO，需要一个 CD/DVD 刻录机。要使用 "
+"USB 镜像，需要一个 U 盘。  也提供软盘和 lkrn 镜像。"
 
 #: data/content/faq.html:41
 msgid "Does BFO replace the installer or anaconda?"

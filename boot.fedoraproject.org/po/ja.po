@@ -2,13 +2,14 @@
 # Copyright (C) 2011 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # 
+# Translators:
 # Hajime Taira <htaira@redhat.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2011-08-31 23:17+0200\n"
-"PO-Revision-Date: 2011-08-31 21:24+0000\n"
+"POT-Creation-Date: 2011-09-08 20:04+0200\n"
+"PO-Revision-Date: 2011-09-08 18:30+0000\n"
 "Last-Translator: shaiton <shaiton@fedoraproject.org>\n"
 "Language-Team: Japanese <trans-ja@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +25,7 @@ msgstr "ダウンロード - boot.fedoraproject.org"
 
 #: data/content/download.html:12
 msgid "Download ISO: "
-msgstr "ISOイメージのダウンロード:"
+msgstr "ISO イメージのダウンロード:"
 
 #: data/content/download.html:12
 msgid "DVD/CD"
@@ -32,7 +33,7 @@ msgstr "DVD/CD"
 
 #: data/content/download.html:13
 msgid "Download USB: "
-msgstr "USBイメージのダウンロード: "
+msgstr "USB イメージのダウンロード: "
 
 #: data/content/download.html:13
 msgid "USB"
@@ -48,7 +49,7 @@ msgstr "Floppy"
 
 #: data/content/download.html:15
 msgid "Download lkrn: "
-msgstr "lkrnダウンロード: "
+msgstr "lkrn ダウンロード: "
 
 #: data/content/download.html:15
 msgid "lkrn"
@@ -74,14 +75,18 @@ msgid ""
 "BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora"
 " installer or rescue mode."
 msgstr ""
+"まず、ISO イメージのような BFO 固有の入手可能なイメージをどれかダウンロードしてください。そして、ISO イメージを CD または DVD "
+"に書き込んでください。次にその CD または DVD から起動してください。そうするともうあなたは BFO "
+"を使っています。診断を実行するためにメニューを選択するためにキーボードを使ってください、または、Fedora "
+"インストーラーかレスキューモードを起動してください。"
 
 #: data/content/faq.html:15
 msgid "Can I use it with grub?"
-msgstr "GRUBで使えますか？"
+msgstr "GRUB で使えますか？"
 
 #: data/content/faq.html:16
 msgid "Yes!  Just run the following commands as root"
-msgstr "もちろん！rootユーザーにて以下のコマンドを実行してください。"
+msgstr "もちろん！root ユーザーにて以下のコマンドを実行してください。"
 
 #: data/content/faq.html:22
 msgid "How does it work?"
@@ -96,28 +101,50 @@ msgid ""
 "http to transfer files around.  The basic steps are as follows:"
 msgstr ""
 "BFO は boot.kernel.org (BKO) "
-"によって始められました。そして、新しいブートスタックを作るために一連の最新技術を組み合わせています。すべてのものを一緒にまとめているものはgpxeです。pxeに精通しているユーザーはgpxeが非常に見慣れていることがわかるでしょう。最新バージョンは単なるtftpを超えたいくつかのプロトコルをサポートします。ファイルを転送するためにあちこちでhttpを使っています。基本的なステップは以下のとおりです:"
+"によって始められました。そして、新しいブートスタックを作るために一連の最新技術を組み合わせています。すべてのものを一緒にまとめているものは "
+"gPXEです。PXEに精通しているユーザーはgPXE が非常に見慣れていることがわかるでしょう。最新バージョンは単なる TFTP "
+"だけではなく、いくつかのプロトコルをサポートします。ファイルを転送するためにあちこちで HTTP を使っています。基本的なステップは以下のとおりです:"
 
 #: data/content/faq.html:25
 msgid ""
 "Download the boot.fedoraproject.org media fitting your preferred boot "
 "method."
+msgstr "boot.fedoraproject.org からあなたが必要とする起動方法のメディアをダウンロードします。"
+
+#: data/content/faq.html:27
+msgid "burn ISO images to a CD-R or DVD-R"
+msgstr ""
+
+#: data/content/faq.html:28
+msgid "write USB image for a USB stick"
+msgstr ""
+
+#: data/content/faq.html:29
+msgid "write Floppy image to a 3.5 inch HD floppy"
+msgstr ""
+
+#: data/content/faq.html:30
+#, python-format
+msgid ""
+"lkrn image for PXE booting, grub booting and in conjunction with kexec "
+"(c.f.: <a href=\"%s\">pxkxc</a>)"
 msgstr ""
 
 #: data/content/faq.html:32
 msgid "Boot from the medium you created."
-msgstr ""
+msgstr "作成したメディアから起動します。"
 
 #: data/content/faq.html:33
 msgid "It will first configure network via DHCP."
-msgstr ""
+msgstr "DHCP によりネットワークの設定が先に行われます。"
 
 #: data/content/faq.html:34
 msgid ""
 "After network is configured, it will go out to our boot.fedoraproject.org "
 "website and download the menus and other prompts from us"
 msgstr ""
-"ネットワークが設定された後、boot.fedoraproject.orgウェブサイトにアクセスして、メニューと他のプロンプトをダウンロードします。"
+"ネットワークが設定された後、boot.fedoraproject.org "
+"ウェブサイトにアクセスして、起動メニューと他のプロンプトがダウンロードされます。"
 
 #: data/content/faq.html:35
 msgid ""
@@ -125,12 +152,12 @@ msgid ""
 "selection (like install Fedora 12) the regular boot process takes over just "
 "as it would had you booted from normal local media."
 msgstr ""
-"それらのブートメニューは、選択するためにユーザーへと表示されます。選択(例えばFedora "
-"12のインストール)した後、通常のブートプロセスが、単に普通のローカルメディアからブートしたように引き継ぎます。"
+"それらのブートメニューは、選択するためにユーザーへと表示されます。選択(例えば Fedora 12 "
+"のインストール)した後、通常のブートプロセスが、単に普通のローカルメディアからブートしたように引き継ぎます。"
 
 #: data/content/faq.html:37
 msgid "Why should I use BFO?"
-msgstr "なぜBFOを使うのでしょうか？"
+msgstr "なぜ BFO を使うのでしょうか？"
 
 #: data/content/faq.html:38
 msgid ""
@@ -140,6 +167,10 @@ msgid ""
 "will have the best experience with BFO.  They basically replace having to "
 "regularly download large ISO images and burn them to disk."
 msgstr ""
+"BFO のダウンロードファイルは非常に小さいです。また、一度入手すると、ほぼそれ以上ダウンロードしないでしょう。より多くの Fedora "
+"バージョンがリリースされても、単にイメージからブートすると、新しい Fedora が現れるでしょう。高速なインターネット接続を持つユーザーは、BFO "
+"で最も恩恵を受けるユーザーとなるはずです。通常大きな ISO "
+"イメージをダウンロードし、ディスクに書き込まなければいけないことを基本的に置き換えるでしょう。"
 
 #: data/content/faq.html:39
 msgid "What is required?"
@@ -151,10 +182,12 @@ msgid ""
 "as well as HTTP internet access. To use the ISO, a CD/DVD burner. To use the"
 " USB image, a USB stick.  Floppy and lkrn images are also available."
 msgstr ""
+"すべてのイメージの種類で、DHCP、HTTP インターネットアクセスおよび CD/DVD 記録デバイスが必要です。USB イメージを使うには USB "
+"フラッシュメモリーが必要です。フロッピーおよび lkrn イメージの形式でも入手できます。"
 
 #: data/content/faq.html:41
 msgid "Does BFO replace the installer or anaconda?"
-msgstr "BFOはインストーラーやAnacondaを置き換えるものでしょうか？"
+msgstr "BFO はインストーラーや Anaconda を置き換えるものでしょうか？"
 
 #: data/content/faq.html:42
 msgid ""
@@ -164,21 +197,24 @@ msgid ""
 "installer bits at runtime.  In theory with BFO one iso download can install "
 "all future versions of Fedora."
 msgstr ""
-"いいえ。BFOもAnacondaの一部です。BFOはネットワーク経由でインストーラーをロードする方法です。通常、ユーザーは、インストーラーのビットをすべて含む、大きなISOイメージをダウンロードします。BFOは、実行時にインストーラーのビットをダウンロードする、より小さなブート方法です。BFOの原理により、一つのISOダウンロードで、Fedoraのすべての将来バージョンをインストールできます。"
+"いいえ。BFO も Anaconda の一部です。BFO "
+"はネットワーク経由でインストーラーをロードする方法です。通常、ユーザーは、インストーラーのビットをすべて含む、大きな ISO "
+"イメージをダウンロードします。BFO は、実行時にインストーラーのビットをダウンロードする、より小さなブート方法です。BFO の原理により、一つの "
+"ISO イメージをダウンロードすることで、Fedora のすべての将来バージョンをインストールできます。"
 
 #: data/content/faq.html:43
 msgid "What about the Live CDs?"
-msgstr "なぜLive CDなのでしょうか？"
+msgstr "なぜ Live CD なのでしょうか？"
 
 #: data/content/faq.html:44
 msgid ""
 "At this time booting Live CDs is experimental and not available.  We hope to"
 " have them available soon."
-msgstr "この時点で、Live CDを起動することは実験的であり、手に入りません。私たちはすぐに手に入るよう願っています。"
+msgstr "この時点で、Live CD を起動することは実験的であり、手に入りません。私たちはすぐに手に入るよう願っています。"
 
 #: data/content/faq.html:45
 msgid "Why won't BFO boot?"
-msgstr "なぜBFOは起動しないのでしょうか？"
+msgstr "なぜ BFO は起動しないのでしょうか？"
 
 #: data/content/faq.html:46
 msgid ""
@@ -187,7 +223,9 @@ msgid ""
 "for you please check upstream at http://etherboot.org/ for bug updates, etc."
 "  If you feel a bug or device is supported but not working in BFO, contact: "
 msgstr ""
-"BFOは、最初にLinuxカーネルを実際にブートしないので、gPXEを使います。よって、いくつかのドライバやデバイスがサポートされないかもしれません。もしあなたがこれに該当するならば、http://etherboot.org/でバグアップデートなどに対する更新をチェックしてください。"
+"BFO は、最初に Linux カーネルを実際にブートしないので、gPXE "
+"を使います。よって、いくつかのドライバやデバイスがサポートされないかもしれません。もしあなたがこれに該当するならば、http://etherboot.org/"
+" でバグアップデートなどに対する更新をチェックしてください。"
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
@@ -199,20 +237,20 @@ msgid ""
 "or other types of media via the network.  It works similarly to a pxeboot "
 "environment."
 msgstr ""
-"boot.fedoraproject.org "
-"(BFO)は、インストールや他のタイプのメディアをネットワーク経由で実行するためにホストをブートする方法です。PXEブート環境に似た動作をします。"
+"boot.fedoraproject.org (BFO) "
+"は、インストールや他のタイプのメディアをネットワーク経由で実行するためにホストをブートする方法です。PXE ブート環境に似た動作をします。"
 
 #: data/content/index.html:12
 msgid "BFO welcome screen"
-msgstr "BFOのようこそ画面"
+msgstr "BFO の最初の画面"
 
 #: data/content/index.html:13
 msgid "BFO is based on the work of the BKO - "
-msgstr "BFOはBKOの仕事に基づいています - "
+msgstr "BFO は BKO の成果に基づいています - "
 
 #: data/content/index.html:13
 msgid "To download BFO please select BFO Download along the left side menu."
-msgstr "BFOをダウンロードするために、左サイドメニューにあるBFOダウンロードを選択してください。"
+msgstr "BFO をダウンロードするために、左サイドメニューにある BFO ダウンロードを選択してください。"
 
 #: data/templates/foot.html:9
 msgid ""
@@ -229,8 +267,8 @@ msgid ""
 "by Red Hat.  This is a community maintained site.  Red Hat is not "
 "responsible for content."
 msgstr ""
-"The Fedora Projectは、コミュニティによって維持および推進されており、Red "
-"Hatにより後援されています。これはコミュニティにより維持されているサイトです。Red Hatは内容に関する一切の責任を負いかねます。"
+"The Fedora Project は Red Hat "
+"の後援によりコミュニティが運営管理しています。このサイトはコミュニティが運営管理しています。Red Hat は内容に関する一切の責任を負いかねます。"
 
 #: data/templates/foot.html:15
 msgid "Sponsors"
@@ -279,6 +317,6 @@ msgstr "ホスティングスポンサー"
 
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
-msgstr "ServerBeachによるスポンサー"
+msgstr "ServerBeach によるスポンサー"
 
 
