@@ -1,20 +1,22 @@
 # Translations template for PROJECT.
 # Copyright (C) 2011 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
 # 
+# Translators:
+# neb <nick@bebout.net>, 2011.
+# Peter Borsa <peter.borsa@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2011-04-03 00:16+0000\n"
-"PO-Revision-Date: 2011-03-22 15:45+0000\n"
-"Last-Translator: neb <nick@bebout.net>\n"
+"POT-Creation-Date: 2011-09-08 20:04+0200\n"
+"PO-Revision-Date: 2011-09-08 18:30+0000\n"
+"Last-Translator: shaiton <shaiton@fedoraproject.org>\n"
 "Language-Team: Hungarian <trans-hu@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 0.9.5\n"
+"Generated-By: Babel 0.9.6\n"
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -68,16 +70,12 @@ msgstr "Hogyan használhatom?"
 
 #: data/content/faq.html:14
 msgid ""
-"First download one of the available BFO specific images like the ISO image."
-"  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After "
-"that you're using BFO!  Use your keyboard to select menus to run "
-"diagnostics, or boot a Fedora installer or rescue mode."
+"First download one of the available BFO specific images. You have a choice "
+"of ISO (DVD/CD), USB, Floppy and lkrn images. Then write that image to an "
+"appropriate medium.  Next boot from that medium.  After that you're using "
+"BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora"
+" installer or rescue mode."
 msgstr ""
-"Először töltse le az elérhető képek egyikét, pl. az ISO fájt. Ezután írja ki"
-" a megszokott módon, CD-re vagy DVD-re, majd indítsa el a rendszert róla. "
-"Miután a boot.fedoraproject.org-ot használja, a billentyűzete segytségével "
-"futtathat diagnosztikát, elindíthatja a Fedora egyik telepítőjét, vagy mentő"
-" módját."
 
 #: data/content/faq.html:15
 msgid "Can I use it with grub?"
@@ -107,18 +105,39 @@ msgstr ""
 " alkalmazunk fájlok átviteléhez. Az alaplépések a következők:"
 
 #: data/content/faq.html:25
-msgid "Download the boot.fedoraproject.org media."
-msgstr "Töltse le a boot.fedoraproject.org médiáról!"
-
-#: data/content/faq.html:26
-msgid "Boot from the downloaded iso/disk image."
-msgstr "Bootoljon a letöltött iso/lemezképről."
+msgid ""
+"Download the boot.fedoraproject.org media fitting your preferred boot "
+"method."
+msgstr ""
 
 #: data/content/faq.html:27
-msgid "The disk image will then boot and configure network."
-msgstr "Ez a lemezkép be fog bootolni, és beállítja a hálozatát."
+msgid "burn ISO images to a CD-R or DVD-R"
+msgstr ""
 
 #: data/content/faq.html:28
+msgid "write USB image for a USB stick"
+msgstr ""
+
+#: data/content/faq.html:29
+msgid "write Floppy image to a 3.5 inch HD floppy"
+msgstr ""
+
+#: data/content/faq.html:30
+#, python-format
+msgid ""
+"lkrn image for PXE booting, grub booting and in conjunction with kexec "
+"(c.f.: <a href=\"%s\">pxkxc</a>)"
+msgstr ""
+
+#: data/content/faq.html:32
+msgid "Boot from the medium you created."
+msgstr ""
+
+#: data/content/faq.html:33
+msgid "It will first configure network via DHCP."
+msgstr ""
+
+#: data/content/faq.html:34
 msgid ""
 "After network is configured, it will go out to our boot.fedoraproject.org "
 "website and download the menus and other prompts from us"
@@ -126,7 +145,7 @@ msgstr ""
 "Miután a hálózat beállításra került, kilép a mi boot.fedoraproject.org "
 "weboldalunkra és letölti a menüt és más promtokat a számunkra"
 
-#: data/content/faq.html:29
+#: data/content/faq.html:35
 msgid ""
 "Those boot menus will then be displayed to the user for selection.  After a "
 "selection (like install Fedora 12) the regular boot process takes over just "
@@ -137,43 +156,35 @@ msgstr ""
 "rendszerindítási folyamat veszi kezdetét, mintha egy médiáról indítottad "
 "volna."
 
-#: data/content/faq.html:31
+#: data/content/faq.html:37
 msgid "Why should I use BFO?"
 msgstr "Miért érdemes a BFO-t használni?"
 
-#: data/content/faq.html:32
+#: data/content/faq.html:38
 msgid ""
 "The BFO downloads are very small and once you have them, you'll rarely have "
 "to download more.  Even as more versions of Fedora come out, you just boot "
-"from your iso and they will appear.  Users with fast internet connections "
+"from your image and they will appear.  Users with fast internet connections "
 "will have the best experience with BFO.  They basically replace having to "
 "regularly download large ISO images and burn them to disk."
 msgstr ""
-"A BFO letöltése igen kicsi, és ha egyszer betöltődött - ritkán kell még "
-"többet leszedni. Akárhány változata jelenik meg a Fedorának, csak ezt a "
-"képet kiírva elindítja, és megjelennek a képernyőjén. Azok a felhasználók "
-"tapasztalhatják meg a leginkább az előnyeit, akik elég gyors hálózati "
-"kapcsolattal rendelkeznek. Ők általában ezzel a lehetőséggel el is felejtik "
-"a hatalmas ISO-k letöltését, valamint a korongra való kiírását."
 
-#: data/content/faq.html:33
+#: data/content/faq.html:39
 msgid "What is required?"
-msgstr "Mi szügséges hozzá?"
+msgstr "Mi szükséges hozzá?"
 
-#: data/content/faq.html:34
+#: data/content/faq.html:40
 msgid ""
-"For the most typical setup one should have DHCP, HTTP internet access and a "
-"CD/DVD burner.  Floppy and USB images are also available."
+"For all image types, you need a working DHCP in the network you use it from "
+"as well as HTTP internet access. To use the ISO, a CD/DVD burner. To use the"
+" USB image, a USB stick.  Floppy and lkrn images are also available."
 msgstr ""
-"A leggyakrabban alkalmazott összeállítás: kell egy DHCP, egy HTTP képes "
-"internet hozzáférés, valamint egy CD/DVD író. De ez lehet floppy vagy USB "
-"is, ezek képei is elérhetőek."
 
-#: data/content/faq.html:35
+#: data/content/faq.html:41
 msgid "Does BFO replace the installer or anaconda?"
 msgstr "BFO akkor leváltja a telepítőt vagy az anaconda-t?"
 
-#: data/content/faq.html:36
+#: data/content/faq.html:42
 msgid ""
 "No.  BFO is also not part of Anaconda.  BFO is a way to load the installer "
 "via network.  Normally users download a large ISO image that contains all of"
@@ -181,18 +192,18 @@ msgid ""
 "installer bits at runtime.  In theory with BFO one iso download can install "
 "all future versions of Fedora."
 msgstr ""
-"Nem. BFO nem része az Anaconda-nak. BFo egy módszer, hogy a telepítő "
+"Nem. BFO nem része az Anaconda-nak. BFO egy módszer, hogy a telepítő "
 "keretrendszert betöltsük a hálózaton keresztül. Normál esetben a "
 "felhasználók egy nagy ISO képet töltenek le ami az összes telepítő holmit "
 "tartalmazza. A BFO egy kisebb rendszerindítási mód, ami futása alatt tölti "
 "le ugyanezt. Egy elképzelés szerint, egyetlen BFO ISO képes telepíteni az "
 "összes jövőben kiadásra kerülő Fedora rendszereket is."
 
-#: data/content/faq.html:37
+#: data/content/faq.html:43
 msgid "What about the Live CDs?"
 msgstr "Mi a helyzet a Live CD-kkel?"
 
-#: data/content/faq.html:38
+#: data/content/faq.html:44
 msgid ""
 "At this time booting Live CDs is experimental and not available.  We hope to"
 " have them available soon."
@@ -200,11 +211,11 @@ msgstr ""
 "A jelen állapotában a live CD-k indítása csak kísérleti jelleggel működik és"
 " nem elérhető még a közösség számára. Reméljük, nemsoká elérhető lesz."
 
-#: data/content/faq.html:39
+#: data/content/faq.html:45
 msgid "Why won't BFO boot?"
 msgstr "Miért nem indul a BFO bootolás?"
 
-#: data/content/faq.html:40
+#: data/content/faq.html:46
 msgid ""
 "BFO uses gpxe so it's not actually booting a Linux kernel at first.  As "
 "such, some drivers and devices may not be supported.  If this is the case "
@@ -242,7 +253,7 @@ msgstr "A BFO a BKO mukájára alapozott fejlesztés -"
 #: data/content/index.html:13
 msgid "To download BFO please select BFO Download along the left side menu."
 msgstr ""
-"A BFo letöltéséhez kérem válassza a BFO letöltése menüpontot a bal oldali "
+"A BFO letöltéséhez kérem válassza a BFO letöltése menüpontot a bal oldali "
 "menüben"
 
 #: data/templates/foot.html:9
@@ -251,6 +262,9 @@ msgid ""
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
 msgstr ""
+"&copy; 2011 Red Hat, Inc. és mások. Kérjük küldjenek bármilyen megjegyzést "
+"vagy javítási javaslatot a <a "
+"href=\"mailto:webmaster@fedoraproject.org\">webmester csapat</a>nak."
 
 #: data/templates/foot.html:12
 msgid ""
@@ -290,7 +304,7 @@ msgstr "Navigáció"
 
 #: data/templates/sidebar.html:12
 msgid "Home"
-msgstr "Honlap"
+msgstr "Főoldal"
 
 #: data/templates/sidebar.html:13
 msgid "Download"
@@ -298,7 +312,7 @@ msgstr "Letöltés"
 
 #: data/templates/sidebar.html:14
 msgid "FAQ"
-msgstr "Gyik"
+msgstr "GYIK"
 
 #: data/templates/sidebar.html:16
 msgid "Website Language"
@@ -311,3 +325,5 @@ msgstr "Tárhely támogató"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "Támogatja a ServerBeach"
+
+

@@ -1,20 +1,22 @@
 # Translations template for PROJECT.
 # Copyright (C) 2011 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
 # 
+# Translators:
+# Kris Thomsen <lakristho@gmail.com>, 2011.
+# neb <nick@bebout.net>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2011-04-03 00:16+0000\n"
-"PO-Revision-Date: 2011-03-22 15:45+0000\n"
-"Last-Translator: kristho <lakristho@gmail.com>\n"
+"POT-Creation-Date: 2011-09-08 20:04+0200\n"
+"PO-Revision-Date: 2011-09-08 18:30+0000\n"
+"Last-Translator: shaiton <shaiton@fedoraproject.org>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 0.9.5\n"
+"Generated-By: Babel 0.9.6\n"
 "Language: da\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -68,16 +70,12 @@ msgstr "Hvordan bruger jeg det?"
 
 #: data/content/faq.html:14
 msgid ""
-"First download one of the available BFO specific images like the ISO image."
-"  Then burn that image to CD or DVD.  Next boot from that CD or dvd.  After "
-"that you're using BFO!  Use your keyboard to select menus to run "
-"diagnostics, or boot a Fedora installer or rescue mode."
+"First download one of the available BFO specific images. You have a choice "
+"of ISO (DVD/CD), USB, Floppy and lkrn images. Then write that image to an "
+"appropriate medium.  Next boot from that medium.  After that you're using "
+"BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora"
+" installer or rescue mode."
 msgstr ""
-"Hent først en af de tilgængelige BFO-specifikke aftryk, som for eksempel "
-"ISO-aftrykket.  Brænd derefter aftrykket til en cd eller dvd.  Start "
-"derefter op fra den cd eller dvd. Nu bruger du BFO!  Brug dit tastatur til "
-"at vælge menuer til at køre diagnostikker, eller starte Fedora "
-"installationsprogrammet eller redningstilstand."
 
 #: data/content/faq.html:15
 msgid "Can I use it with grub?"
@@ -106,18 +104,39 @@ msgstr ""
 "http til at overføre filer.  De grundlæggende trin er som følger:"
 
 #: data/content/faq.html:25
-msgid "Download the boot.fedoraproject.org media."
-msgstr "Hent boot.fedoraproject.org-mediet."
-
-#: data/content/faq.html:26
-msgid "Boot from the downloaded iso/disk image."
-msgstr "Start op fra det hentede iso-/disk-aftryk."
+msgid ""
+"Download the boot.fedoraproject.org media fitting your preferred boot "
+"method."
+msgstr ""
 
 #: data/content/faq.html:27
-msgid "The disk image will then boot and configure network."
-msgstr "Disk-aftrykket vil derefter starte og konfigurere netværket."
+msgid "burn ISO images to a CD-R or DVD-R"
+msgstr ""
 
 #: data/content/faq.html:28
+msgid "write USB image for a USB stick"
+msgstr ""
+
+#: data/content/faq.html:29
+msgid "write Floppy image to a 3.5 inch HD floppy"
+msgstr ""
+
+#: data/content/faq.html:30
+#, python-format
+msgid ""
+"lkrn image for PXE booting, grub booting and in conjunction with kexec "
+"(c.f.: <a href=\"%s\">pxkxc</a>)"
+msgstr ""
+
+#: data/content/faq.html:32
+msgid "Boot from the medium you created."
+msgstr ""
+
+#: data/content/faq.html:33
+msgid "It will first configure network via DHCP."
+msgstr ""
+
+#: data/content/faq.html:34
 msgid ""
 "After network is configured, it will go out to our boot.fedoraproject.org "
 "website and download the menus and other prompts from us"
@@ -125,7 +144,7 @@ msgstr ""
 "Når netværket er konfigureret vil den gå ud på vores boot.fedoraproject.org-"
 "websted og hente menuerne og andre prompter fra os"
 
-#: data/content/faq.html:29
+#: data/content/faq.html:35
 msgid ""
 "Those boot menus will then be displayed to the user for selection.  After a "
 "selection (like install Fedora 12) the regular boot process takes over just "
@@ -136,42 +155,35 @@ msgstr ""
 "over lige som den ville have gjort hvis du startede op fra et normalt, "
 "lokalt medie."
 
-#: data/content/faq.html:31
+#: data/content/faq.html:37
 msgid "Why should I use BFO?"
 msgstr "Hvorfor skulle jeg bruge BFO?"
 
-#: data/content/faq.html:32
+#: data/content/faq.html:38
 msgid ""
 "The BFO downloads are very small and once you have them, you'll rarely have "
 "to download more.  Even as more versions of Fedora come out, you just boot "
-"from your iso and they will appear.  Users with fast internet connections "
+"from your image and they will appear.  Users with fast internet connections "
 "will have the best experience with BFO.  They basically replace having to "
 "regularly download large ISO images and burn them to disk."
 msgstr ""
-"BFO-nedhentningerne er meget små, og så snart du har dem vil det sjældent "
-"være nødvendigt at hente flere.  Selv efter flere versioner af Fedora er "
-"kommet ud skal du bare starte op fra din ISO og de vil dukke op.  Brugere "
-"med hurtige internetforbindelser vil have den bedste oplevelse med BFO.  "
-"Grundlæggende undgår de at skulle hente store ISO-aftryk med jævne mellemrum"
-" og brænde dem til diske."
 
-#: data/content/faq.html:33
+#: data/content/faq.html:39
 msgid "What is required?"
 msgstr "Hvad er nødvendigt?"
 
-#: data/content/faq.html:34
+#: data/content/faq.html:40
 msgid ""
-"For the most typical setup one should have DHCP, HTTP internet access and a "
-"CD/DVD burner.  Floppy and USB images are also available."
+"For all image types, you need a working DHCP in the network you use it from "
+"as well as HTTP internet access. To use the ISO, a CD/DVD burner. To use the"
+" USB image, a USB stick.  Floppy and lkrn images are also available."
 msgstr ""
-"For den mest traditionelle opsætning bør du have DHCP, HTTP-internetadgang "
-"og en cd-/dvd-brænder.  Floppy- og USB-aftryk er også tilgængelige."
 
-#: data/content/faq.html:35
+#: data/content/faq.html:41
 msgid "Does BFO replace the installer or anaconda?"
 msgstr "Erstatter BFO installationsprogrammet eller anaconda?"
 
-#: data/content/faq.html:36
+#: data/content/faq.html:42
 msgid ""
 "No.  BFO is also not part of Anaconda.  BFO is a way to load the installer "
 "via network.  Normally users download a large ISO image that contains all of"
@@ -185,11 +197,11 @@ msgstr ""
 "opstartsmetode, som henter installationsdelene under kørslen.  I teorien kan"
 " én ISO-nedhentning med BFO installere alle fremtidige versioner af Fedora."
 
-#: data/content/faq.html:37
+#: data/content/faq.html:43
 msgid "What about the Live CDs?"
 msgstr "Hvad med live-cd'erne?"
 
-#: data/content/faq.html:38
+#: data/content/faq.html:44
 msgid ""
 "At this time booting Live CDs is experimental and not available.  We hope to"
 " have them available soon."
@@ -197,11 +209,11 @@ msgstr ""
 "På dette tidspunkt er opstart af Live-cd'er eksperimentielt og ikke "
 "tilgængeligt.  Vi håber på at have dem tilgængelige snart."
 
-#: data/content/faq.html:39
+#: data/content/faq.html:45
 msgid "Why won't BFO boot?"
 msgstr "Hvorfor vil BFO ikke starte?"
 
-#: data/content/faq.html:40
+#: data/content/faq.html:46
 msgid ""
 "BFO uses gpxe so it's not actually booting a Linux kernel at first.  As "
 "such, some drivers and devices may not be supported.  If this is the case "
@@ -309,3 +321,5 @@ msgstr "Hosting sponsor"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "Sponsoreret af ServerBeach"
+
+

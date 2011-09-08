@@ -3,68 +3,69 @@
 # This file is distributed under the same license as the PROJECT project.
 # 
 # Translators:
+#   <rudolfs.mazurs@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2011-09-08 20:04+0200\n"
-"PO-Revision-Date: 2011-09-08 20:25+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Urdu <trans-urdu@lists.fedoraproject.org>\n"
+"PO-Revision-Date: 2011-09-08 18:30+0000\n"
+"Last-Translator: shaiton <shaiton@fedoraproject.org>\n"
+"Language-Team: Latvian (http://www.transifex.net/projects/p/fedora/team/lv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
-"Language: ur\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Language: lv\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2)\n"
 
 #: data/content/download.html:7
 msgid "Download - boot.fedoraproject.org"
-msgstr ""
+msgstr "Lejupielādēt - boot.fedoraproject.org"
 
 #: data/content/download.html:12
 msgid "Download ISO: "
-msgstr ""
+msgstr "Lejupielādēt ISO: "
 
 #: data/content/download.html:12
 msgid "DVD/CD"
-msgstr ""
+msgstr "DVD/CD"
 
 #: data/content/download.html:13
 msgid "Download USB: "
-msgstr ""
+msgstr "Lejupielādēt USB: "
 
 #: data/content/download.html:13
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 #: data/content/download.html:14
 msgid "Download Floppy: "
-msgstr ""
+msgstr "Lejupielādēt disketi: "
 
 #: data/content/download.html:14
 msgid "Floppy"
-msgstr ""
+msgstr "Diskete:"
 
 #: data/content/download.html:15
 msgid "Download lkrn: "
-msgstr ""
+msgstr "Lejupielādēt lkrn: "
 
 #: data/content/download.html:15
 msgid "lkrn"
-msgstr ""
+msgstr "lkrn"
 
 #: data/content/faq.html:7
 msgid "FAQs - boot.fedoraproject.org"
-msgstr ""
+msgstr "BUJ - boot.fedoraproject.org"
 
 #: data/content/faq.html:12
 msgid "Frequently-Asked Questions"
-msgstr ""
+msgstr "Biežāk uzdotie jautājumi"
 
 #: data/content/faq.html:13
 msgid "How do I use it?"
-msgstr ""
+msgstr "Kā to lietot?"
 
 #: data/content/faq.html:14
 msgid ""
@@ -77,15 +78,15 @@ msgstr ""
 
 #: data/content/faq.html:15
 msgid "Can I use it with grub?"
-msgstr ""
+msgstr "Vai to var izmantot ar grub?"
 
 #: data/content/faq.html:16
 msgid "Yes!  Just run the following commands as root"
-msgstr ""
+msgstr "Jā! Vienkārši palaidiet sekojošo komandu ar root lietotāju"
 
 #: data/content/faq.html:22
 msgid "How does it work?"
-msgstr ""
+msgstr "Kā tas strādā?"
 
 #: data/content/faq.html:23
 msgid ""
@@ -95,6 +96,11 @@ msgid ""
 "Latest versions support several protocols beyond just tftp.  We are using "
 "http to transfer files around.  The basic steps are as follows:"
 msgstr ""
+"BFO uzsāka boot.kernel.org (BKO) un tas satur virkni jaunu tehnoloģiju, lai "
+"izveidotu jaunu sistēmas ielādes steku. Līme, kas to visu satur kopā, ir "
+"gpxe. Tiem, kas lieto pxe, gpxe liksies ļoti pazīstams. Jaunākās versijas "
+"atbalsta vairākus protokolus, ne tikai tftp. Lai pārsūtītu failus, mēs "
+"lietojam http. Pamatsoļi ir sekojošie:"
 
 #: data/content/faq.html:25
 msgid ""
@@ -134,6 +140,8 @@ msgid ""
 "After network is configured, it will go out to our boot.fedoraproject.org "
 "website and download the menus and other prompts from us"
 msgstr ""
+"Pēc tīkla konfigurēšanas, tas dosies uz mūsu boot.fedoraproject.org vietni "
+"un lejupielādēs izvēlnes un citas lietas no mums"
 
 #: data/content/faq.html:35
 msgid ""
@@ -141,10 +149,13 @@ msgid ""
 "selection (like install Fedora 12) the regular boot process takes over just "
 "as it would had you booted from normal local media."
 msgstr ""
+"Šīs ielādes izvēlnes tiks rādītas lietotājam. Pēc izvēles (piemēram, "
+"instalēt Fedora 12), notiks parastai ielādes process, kāds notiktu, ja "
+"lietotu parastu lokālo datu nesēju."
 
 #: data/content/faq.html:37
 msgid "Why should I use BFO?"
-msgstr ""
+msgstr "Kāpēc lietot BFO?"
 
 #: data/content/faq.html:38
 msgid ""
@@ -157,7 +168,7 @@ msgstr ""
 
 #: data/content/faq.html:39
 msgid "What is required?"
-msgstr ""
+msgstr "Kas ir nepieciešams?"
 
 #: data/content/faq.html:40
 msgid ""
@@ -168,7 +179,7 @@ msgstr ""
 
 #: data/content/faq.html:41
 msgid "Does BFO replace the installer or anaconda?"
-msgstr ""
+msgstr "Vai BFO aizvieto instalatoru vai anaconda?"
 
 #: data/content/faq.html:42
 msgid ""
@@ -178,20 +189,27 @@ msgid ""
 "installer bits at runtime.  In theory with BFO one iso download can install "
 "all future versions of Fedora."
 msgstr ""
+"Nē. BFO arī nav daļa no Anaconda. BFO ir veids, kā ielādēt instalatoru no "
+"tīkla. Parasti lietotāji lejupielādē lielu ISO attēlu, kas satur visas "
+"instalatora daļas. BFO ir mazāka sistēmas ielādēšanas metode, kas ielādē "
+"instalatora daļas darbības laikā. Vismaz teorētiski ar BFO viena iso "
+"lejupielāde var uzinstalēt visas nākotnes Fedora versijas."
 
 #: data/content/faq.html:43
 msgid "What about the Live CDs?"
-msgstr ""
+msgstr "Kā ar dzīvo CD?"
 
 #: data/content/faq.html:44
 msgid ""
 "At this time booting Live CDs is experimental and not available.  We hope to"
 " have them available soon."
 msgstr ""
+"Šobrīd ielāde no dzīvā CD ir eksperimentāla un nav pieejama. Mēs ceram, ka "
+"tā būs pieejama drīz."
 
 #: data/content/faq.html:45
 msgid "Why won't BFO boot?"
-msgstr ""
+msgstr "Kāpēc BFO neielādējas?"
 
 #: data/content/faq.html:46
 msgid ""
@@ -200,10 +218,15 @@ msgid ""
 "for you please check upstream at http://etherboot.org/ for bug updates, etc."
 "  If you feel a bug or device is supported but not working in BFO, contact: "
 msgstr ""
+"BFO izmanto gpxe, tāpēc tā vispirms nemaz neielādē Linux kodolu. Tāpēc daži "
+"draiveri un ierīces varētu nebūt atbalstītas. Ja tas tā ir, pārbaudiet, vai "
+"augštecē  http://etherboot.org/ ir kļūdu ziņojumi, atjauninājumi utt. Ja "
+"jums liekas, ka tā ir kļūda, vai ierīce ir atbalstīta, bet nestrādā iekš "
+"BFO, sazinieties ar:"
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
-msgstr ""
+msgstr "boot.fedoraproject.org"
 
 #: data/content/index.html:11
 msgid ""
@@ -211,18 +234,20 @@ msgid ""
 "or other types of media via the network.  It works similarly to a pxeboot "
 "environment."
 msgstr ""
+"boot.fedoraproject.org (BFO) ir veids, kā ielādēt datorus, lai instalētu vai"
+" veiktu citas darbības caur tīklu. Tas darbojas līdzīgi pxeboot videi."
 
 #: data/content/index.html:12
 msgid "BFO welcome screen"
-msgstr ""
+msgstr "BFO sveiciena ekrāns"
 
 #: data/content/index.html:13
 msgid "BFO is based on the work of the BKO - "
-msgstr ""
+msgstr "BFO ir balstīts uz BKO darba - "
 
 #: data/content/index.html:13
 msgid "To download BFO please select BFO Download along the left side menu."
-msgstr ""
+msgstr "Lai lejupielādētu BFO, izvēlieties BFO Lejupielādēt kreisajā izvēlnē."
 
 #: data/templates/foot.html:9
 msgid ""
@@ -230,6 +255,8 @@ msgid ""
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
 msgstr ""
+"&copy; 2011 Red Hat, Inc. un citi.  Lūdzu, sūtiet komentārus vai labojumus "
+"<a href=\"mailto:webmaster@fedoraproject.org\">tīmekļa vietnes komandai</a>."
 
 #: data/templates/foot.html:12
 msgid ""
@@ -237,14 +264,17 @@ msgid ""
 "by Red Hat.  This is a community maintained site.  Red Hat is not "
 "responsible for content."
 msgstr ""
+"The Fedora Project uztur un attīsta kopiena, un to sponsorē Red Hat.  Šo "
+"vietni uztur kopiena.  Red Hat par šo saturu neatbild."
 
 #: data/templates/foot.html:15
 msgid "Sponsors"
-msgstr ""
+msgstr "Sponsori"
 
 #: data/templates/foot.html:16
 msgid "<a href=\"http://fedoraproject.org/wiki/Legal:Main\">Legal</a>"
 msgstr ""
+"<a href=\"http://fedoraproject.org/wiki/Legal:Main\">Jurudiskās lietas</a>"
 
 #: data/templates/foot.html:17
 msgid ""
@@ -252,37 +282,39 @@ msgid ""
 "href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Trademark "
 "Guidelines</a>"
 msgstr ""
+"<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Preču "
+"zīmju vadlīnijas</a>"
 
 #: data/templates/head.html:7
 msgid "Fedora"
-msgstr ""
+msgstr "Fedora"
 
 #: data/templates/sidebar.html:10
 msgid "Navigation"
-msgstr ""
+msgstr "Navigācija"
 
 #: data/templates/sidebar.html:12
 msgid "Home"
-msgstr ""
+msgstr "Mājas"
 
 #: data/templates/sidebar.html:13
 msgid "Download"
-msgstr ""
+msgstr "Lejupielādēt"
 
 #: data/templates/sidebar.html:14
 msgid "FAQ"
-msgstr ""
+msgstr "BUJ"
 
 #: data/templates/sidebar.html:16
 msgid "Website Language"
-msgstr ""
+msgstr "Tīmekļa vietnes valoda"
 
 #: data/templates/sidebar.html:24
 msgid "Hosting Sponsor"
-msgstr ""
+msgstr "Hostēšanas sponsors"
 
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
-msgstr ""
+msgstr "Sponsorē ServerBeach"
 
 
