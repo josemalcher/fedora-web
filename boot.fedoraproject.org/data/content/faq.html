@@ -24,10 +24,10 @@
     <ul>
         <li>${_("Download the boot.fedoraproject.org media fitting your preferred boot method.")}</li>
         <ul>
-            <li>burn ISO images to a CD-R or DVD-R</li>
-            <li>write USB image for a USB stick</li>
-            <li>write Floppy image to a 3.5 inch HD floppy</li>
-            <li>lkrn image for PXE booting, grub booting and in conjunction with kexec (c.f.: <a href="http://myllynen.fedorapeople.org/">pxkxc</a>)</li>
+            <li>${_("burn ISO images to a CD-R or DVD-R")}</li>
+            <li>${_("write USB image for a USB stick")}</li>
+            <li>${_("write Floppy image to a 3.5 inch HD floppy")}</li>
+            <li>${Markup(_('lkrn image for PXE booting, grub booting and in conjunction with kexec (c.f.: &lt;a href="%s"&gt;pxkxc&lt;/a&gt;)') % 'http://myllynen.fedorapeople.org/')}</li>
         </ul>
         <li>${_("Boot from the medium you created.")}</li>
         <li>${_("It will first configure network via DHCP.")}</li>
