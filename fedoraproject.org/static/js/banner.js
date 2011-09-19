@@ -4,8 +4,8 @@ var banners = [
 //  Target URL
 //  Weight
   [
-    "/static/images/banners/f16alpha.png",
-    "Fedora 16 Verne Alpha is here!",
+    "/static/images/banners/f16beta.png",
+    "Fedora 16 Verne Beta is here!",
     "https://fedoraproject.org/get-prerelease",
     5
   ],

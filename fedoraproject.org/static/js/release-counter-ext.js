@@ -2,7 +2,7 @@ var available_langs = [ "ar", "bg", "bn_IN", "cs", "da", "de", "el", "en", "es",
 
 
 var today = new Date();
-var release = new Date("May 24, 2011 15:00:00 UTC");
+var release = new Date("October 25, 2011 15:00:00 UTC");
 var millisBetweenDates = release - today;
 var days = Math.ceil(millisBetweenDates/1000/60/60/24);
 
@@ -19,7 +19,7 @@ if (lang_match) {
     }
 }
 
-var url = "https://fedoraproject.org/wiki/Releases/15/Schedule";
+var url = "https://fedoraproject.org/wiki/Releases/16/Schedule";
 
 var banner = document.createElement('div');
 
@@ -29,13 +29,12 @@ var bannerimg = document.createElement("img");
 bannerimg.style.border = "none";
 
 if (days <= 0) {
-    // TODO: Get an actual image here!
-    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/banners/f15release.png");
-    bannerimg.setAttribute("alt", "Fedora 15 is here!");
+    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/banners/f16release.png");
+    bannerimg.setAttribute("alt", "Fedora 16 is here!");
     url = "http://get.fedoraproject.org/";
 } else {
-    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora15-countdown-banner-" + days + "." + lang + "." + "png");
-    bannerimg.setAttribute("alt", "Fedora 15 Lovelock released in " + days + " days.");
+    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora16-countdown-banner-" + days + "." + lang + "." + "png");
+    bannerimg.setAttribute("alt", "Fedora 16 Verne released in " + days + " days.");
 }
 
 bannerlink.setAttribute("href", url);
