@@ -1,50 +1,9 @@
 <!-- Ugly hack, not all language are there... (en-US...) Should be removed when RN are pushed to docs.fpo -->
 <?python
-dflt_language = 'en-US'
-l_map = {
-'as': 'as-IN',
-'bg': 'bg-BG',
-'bs': 'bs-BA',
-'ca': 'ca-ES',
-'cs': 'cs-CZ',
-'da': 'da-DK',
-'de': 'de-DE',
-'el': 'el-GR',
-'en': 'en-US',
-'es': 'es-ES',
-'fi': 'fi-FI',
-'fr': 'fr-FR',
-'gu': 'gu-IN',
-'he': 'he-IL',
-'hi': 'hi-IN',
-'hr': 'hr-HR',
-'hu': 'hu-HU',
-'id': 'id-ID',
-'it': 'it-IT',
-'ja': 'ja-JP',
-'kn': 'kn-IN',
-'ko': 'ko-KR',
-'ml': 'ml-IN',
-'mr': 'mr-IN',
-'ms': 'ms-MY',
-'nb': 'nb-NO',
-'nl': 'nl-NL',
-'or': 'or-IN',
-'pa': 'pa-IN',
-'pl': 'pl-PL',
-'pt_BR': 'pt-BR',
-'pt': 'pt-PT',
-'ru': 'ru-RU',
-'sk': 'sk-SK',
-'sr': 'sr-RS',
-'sv': 'sv-SE',
-'ta': 'ta-IN',
-'te': 'te-IN',
-'uk': 'uk-UA',
-'zh_CN': 'zh-CN',
-'zh_TW': 'zh-TW',
-}
-l_code = l_map.get(lang, dflt_language)
+if lang == 'en':
+	l_code = 'en-US'
+else:
+	l_code = lang
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
