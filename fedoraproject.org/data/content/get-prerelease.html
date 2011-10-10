@@ -1,9 +1,60 @@
-<!-- Ugly hack, not all language are there... (en-US...) Should be removed when RN are pushed to docs.fpo -->
+<!-- Fuction bellow is used to match with docs corresponding language code. Need to check on their .tx file if new language appears -->
 <?python
-if lang == 'en':
-	l_code = 'en-US'
-else:
-	l_code = lang
+dflt_language = 'en-US'
+l_map = {
+'aln': 'aln-AL',
+'as': 'as-IN',
+'bg': 'bg-BG',
+'bn': 'bn-BD',
+'ca': 'ca-ES',
+'cs': 'cs-CZ',
+'da': 'da-DK',
+'de': 'de-DE',
+'el': 'el-GR',
+'en-gb': 'en-GB',
+'en': 'en-US',
+'es': 'es-ES',
+'fa': 'fa-IR',
+'fi': 'fi-FI',
+'fr': 'fr-FR',
+'gu': 'gu-IN',
+'he': 'he-IL',
+'hi': 'hi-IN',
+'hr': 'hr-HR',
+'hu': 'hu-HU',
+'id': 'id-ID',
+'it': 'it-IT',
+'ja': 'ja-JP',
+'kn': 'kn-IN',
+'ko': 'ko-KR',
+'lt': 'lt-LT',
+'ml': 'ml-IN',
+'mr': 'mr-IN',
+'nb': 'nb-NO',
+'nl': 'nl-NL',
+'nn': 'nn-NO',
+'or': 'or-IN',
+'pa': 'pa-IN',
+'pl': 'pl-PL',
+'pt_BR': 'pt-BR',
+'pt': 'pt-PT',
+'ro': 'ro-RO',
+'ru': 'ru-RU',
+'si': 'si-LK',
+'sk': 'sk-SK',
+'sq': 'sq-AL',
+'sr-Latn': 'sr-Latn-RS',
+'sr': 'sr-RS',
+'sv': 'sv-SE',
+'ta': 'ta-IN',
+'te': 'te-IN',
+'tr': 'tr-TR',
+'uk': 'uk-UA',
+'vi': 'vi-VN',
+'zh_CN': 'zh-CN',
+'zh_TW': 'zh-TW'
+}
+l_code = l_map.get(lang, dflt_language)
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
