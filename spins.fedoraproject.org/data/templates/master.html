@@ -14,7 +14,7 @@ class Torrents(object):
     prerelease_re = re.compile('-(alpha|beta|snap|preview)([0-9]*)$', re.I)
     non_release_re = re.compile('(alpha|beta|snap|preview)', re.I)
     prerelease_order = ['alpha', 'beta', 'snap', 'preview']
-    spins_matches = ['design', 'kde', 'lxde', 'games', 'xfce', 'security', 'electronic-lab']
+    spins_matches = ['design', 'kde', 'lxde', 'games', 'xfce', 'security', 'electronic-lab', 'scientific']
     archlist = ['i386', 'i586', 'i686', 'ix86', 'ppc', 'x86_64', 'source', 'Source']
 
     def __init__(self):
@@ -191,7 +191,8 @@ sdata_feature = {
     'desktop': "The Desktop spin of Fedora is the primary spin as provided on fedoraproject.org.",
     'security': "Security analysis tools.",
     'moblin': "The future of the mobile internet.",
-    'soas': "Discover. Reflect. Share. Learn."
+    'soas': "Discover. Reflect. Share. Learn.",
+    'scientific': "Open Source Scientific Computing."
 }
 
 

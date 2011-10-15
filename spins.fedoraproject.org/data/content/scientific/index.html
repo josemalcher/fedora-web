@@ -1,0 +1,118 @@
+<?python
+area = "scientific"
+
+# used to enable/disable certain section on support-tab.html
+# options: True (enabled), False (disabled)
+support_tab = {
+	'irc': True,
+	'list': True,
+	'forums': True,
+	'docs': False
+}
+
+# support: irc section
+irc_channel = '#fedora-science'
+irc_server = 'irc.freenode.net'
+irc_server_url = 'http://freenode.net'
+
+# support: list section
+list_url = 'https://admin.fedoraproject.org/mailman/listinfo/scitech'
+list_email = 'scitech@lists.fedoraproject.org'
+
+# support: forums section
+forums_url = [
+	['http://fedoraforum.org/', 'Fedora Forums']
+]
+
+# support: documentation section
+docs_upstream = 'http://domain.tld/'
+docs_upstream_name = 'Description'
+docs_url = [
+    ['http://domain.tld', 'Description']
+]
+
+
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../templates/master.html" />
+  <head>
+    <title>${_('About Spin: Fedora Scientific')}</title>
+  </head>
+  <body>
+		<!-- the tabs -->
+		<ul class="tabs">
+			<li><a id="t1" href="#home">${_('Home')}</a></li>
+			<li><a id="t2" href="#about">${_('About')}</a></li>
+			<li><a id="t3" href="#downloads">${_('Downloads')}</a></li>
+			<li><a id="t4" href="#support">${_('Support')}</a></li>
+		</ul>
+
+		<!-- tab "panes" -->
+		<div class="panes">
+			<div>
+				<h2>${_('Open Source Scientific Computing.')}</h2>
+				<span class="blurb"><img src="/static/images/content/scientific-screenshot-01-sm.png"  rel="#scientific1" /><br />${_('Click image to enlarge')}</span>
+                <p>Wary of reinstalling all your favourite numerical tools everytime your reinstall Linux? The answer is here. Fedora Scientific Spin brings together the open source scientific and numerical tools used in research along with the goodness of the Fedora KDE desktop.</p>
+			</div>
+			<div>
+				<h3>${_('What is Fedora Scientific?')}</h3>
+                   <p>Fedora Scientific currently ships with numerous applications and libraries. These range from libraries such as the GNU Scientific library, the <a href="https://fedorahosted.org/fedora-websites/wiki/SciPy">SciPy?</a> libraries, tools like Octave and xfig to typesetting tools like Kile and graphics programs such as Inkscape. The current set of packages include an IDE, tools and libraries for programming in C, C++, Python, Java and R. Also included along with are libraries for parallel computing such as the OpenMPI and OpenMP. Tools for typesetting, writing and publishing are included. The full list of software made available by the spin is available <a href="https://fedoraproject.org/wiki/Scientific_Packages_List">here</a>.</p>
+			</div>
+			<div>
+				<h2>${_('Downloads')}</h2>
+				<h3>${_('Fedora Scientific')}</h3>
+                   <p>Fedora Scientific is available as a Live DVD download - via torrent or direct download. A LiveDVD is an operating system that is executed upon boot, without installation on a hard drive. A desktop icon can be used to install the OS if wanted. Once you have the ISO, you can either create a <a href="http://fedoraproject.org/wiki/How_to_create_and_use_Live_USB">Bootable USB stick</a> or burn it to a <a href="http://docs.fedoraproject.org/en-US/Fedora/14/html/Burning_ISO_images_to_disc/">DVD</a>. </p>
+				<h3>${_('Torrent Download')}</h3>
+<!--
+				<span class="download-option" id="opt1">
+					<h4>${_('32-bit PC Edition')}</h4>
+					<p><img class="download-media" alt="${_('32-bit PC Edition')}" src="/static/images/media-usb.png" />${_('This edition is for the highest compatibility; it will work on both 32-bit and 64-bit computers.')}</p>
+					<a class="download-button" href="http://torrent.fedoraproject.org/spins/">${_('Download Now!')}</a>
+					<p class="fine-print">${_('54K Torrent File for 32-bit PC ISO')}<br /> <a href="http://docs.fedoraproject.org/en-US/Fedora/15/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+				</span>
+				<span class="download-option" id="opt2">
+					<h4>${_('64-bit PC Edition')}</h4>
+					<p><img class="download-media" alt="${_('64-bit PC Edition')}" src="/static/images/media-usb.png" />${_('Enjoy the full power and speed of a 64-bit computer. Not compatible with 32-bit computers.')}</p>
+					<a class="download-button" href="http://torrent.fedoraproject.org/spins/">${_('Download Now!')}</a>
+					<p class="fine-print">${_('54K Torrent File for 64-bit PC ISO')}<br /> <a href="http://docs.fedoraproject.org/en-US/Fedora/15/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+				</span>
+-->
+				<h3>${_('Direct Download')}</h3>
+<!--				<span class="download-option" id="opt1">
+					<h4>${_('32-bit PC Edition')}</h4>
+					<p><img class="download-media" alt="${_('%s-bit PC Edition' % '32')}" src="/static/images/media-usb.png" />${_('This edition is for the highest compatibility; it will work on both 32-bit and 64-bit computers.')}</p>
+					<a class="download-button" href="http://download.fedoraproject.org/pub/alt/spins/linux/releases/">${_('Download Now!')}</a>
+					<p class="fine-print">${_('%(size)s for %(arch)s-bit PC ISO') % {'size': '500 MB', 'arch': '32'}}<br /> <a href="http://docs.fedoraproject.org/en-US/Fedora/15/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+				</span>
+				<span class="download-option" id="opt2">
+					<h4>${_('64-bit PC Edition')}</h4>
+					<p><img class="download-media" alt="${_('%s-bit PC Edition' % '64')}" src="/static/images/media-usb.png" />${_('Enjoy the full power and speed of a 64-bit computer. Not compatible with 32-bit computers.')}</p>
+					<a class="download-button" href="http://download.fedoraproject.org/pub/alt/spins/linux/releases/">${_('Download Now!')}</a>
+					<p class="fine-print">${_('%(size)s for %(arch)s-bit PC ISO') % {'size': '500 MB', 'arch': '64'}}<br /> <a href="http://docs.fedoraproject.org/en-US/Fedora/15/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+				</span>
+-->
+				<xi:include href="../../templates/download-tab.html" />
+			</div>
+			<div>
+				<h2>${_('Fedora Scientific Support')}</h2>
+				<p>${_('Need help using Fedora Scientific? We have put together a list of resources you can use to get help below. For help downloading, running, and installing spins, please visit the main spins support page.')}</p>
+				<xi:include href="../../templates/support-tab.html" />
+			</div>
+		</div>
+
+<div class="simple_overlay" id="scientific1">
+    <!-- large image -->
+    <img src="/static/images/content/scientific-screenshot-01-lg.png" />
+    <!-- image details -->
+    <div class="details">
+        <h3>${_('Fedora Scientific')}</h3>
+        <h4>${_('Home View')}</h4>
+        <p>#FIXME</p>
+    </div>
+</div>
+
+  </body>
+</html>
