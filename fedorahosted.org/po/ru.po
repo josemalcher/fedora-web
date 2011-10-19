@@ -1,20 +1,22 @@
 # Translations template for PROJECT.
 # Copyright (C) 2011 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
 # 
+# Translators:
+# Misha Shnurapet <shnurapet@fedoraproject.org>, 2011.
+# neb <nick@bebout.net>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2011-04-03 00:20+0000\n"
-"PO-Revision-Date: 2011-03-22 15:53+0000\n"
-"Last-Translator: neb <nick@bebout.net>\n"
+"POT-Creation-Date: 2011-10-18 20:23-0500\n"
+"PO-Revision-Date: 2011-04-30 16:47+0000\n"
+"Last-Translator: shnurapet <shnurapet@fedoraproject.org>\n"
 "Language-Team: Russian <trans-ru@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 0.9.5\n"
+"Generated-By: Babel 0.9.6\n"
 "Language: ru\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
@@ -222,6 +224,11 @@ msgid ""
 "authconfig you need to use \"hg clone "
 "ssh://hg.fedorahosted.org//hg/authconfig\""
 msgstr ""
+"К сожалению, hg не поддерживает прямые ссылки. Следует ставить один знак "
+"«/», чтобы отделить имя узла от пути и тут же второй «/» для обозначения "
+"корневого каталога файловой системы. К примеру, для доступа к репозиторию "
+"authconfig следует указать: «hg clone "
+"ssh://hg.fedorahosted.org//hg/authconfig»."
 
 #: data/content/faq.html:33
 msgid "Can I offer pre-compiled binaries on Fedora Hosted?"
@@ -385,6 +392,8 @@ msgid ""
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
 msgstr ""
+"© 2011 Red Hat и др. Замечания и правки отправляйте команде <a "
+"href=\"mailto:webmaster@fedoraproject.org\">websites</a>."
 
 #: data/templates/foot.html:12
 msgid ""
@@ -445,3 +454,5 @@ msgstr "Хостинг"
 #: data/templates/sidebar.html:25
 msgid "Sponsored by ServerBeach"
 msgstr "Спонсор: компания ServerBeach"
+
+
