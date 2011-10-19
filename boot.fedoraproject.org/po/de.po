@@ -5,13 +5,14 @@
 # Translators:
 # Laurin  <lineak@fedoraproject.org>, 2011.
 # neb <nick@bebout.net>, 2011.
+# Roman Spirgi <rspirgi@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2011-09-08 20:04+0200\n"
-"PO-Revision-Date: 2011-09-08 18:30+0000\n"
-"Last-Translator: shaiton <shaiton@fedoraproject.org>\n"
+"POT-Creation-Date: 2011-10-18 20:00-0500\n"
+"PO-Revision-Date: 2011-10-02 19:59+0000\n"
+"Last-Translator: bigant <rspirgi@gmail.com>\n"
 "Language-Team: German <trans-de@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -76,14 +77,20 @@ msgid ""
 "BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora"
 " installer or rescue mode."
 msgstr ""
+"Laden Sie zunächst eines der verfügbaren BFO-spezfischen Images. Sie haben "
+"die Wahl zwischen ISO- (DVD/ CD), USB-, Floppy- und lkrn-Abbild. Dann "
+"brennen Sie das Abbild auf ein geeignetes Medium und starten von diesem. "
+"Jetzt benutzen Sie BFO! Verwenden Sie Ihre Tastatur, um Menüs zur Diagnose "
+"zu wählen, einen Fedora-Installer oder den Wiederherstellungsmodus zu "
+"starten."
 
 #: data/content/faq.html:15
 msgid "Can I use it with grub?"
-msgstr "Kann ch es mit grub benutzen?"
+msgstr "Kann ich es mit grub verwenden?"
 
 #: data/content/faq.html:16
 msgid "Yes!  Just run the following commands as root"
-msgstr "Ja! Nur die folgenden Befehle als root ausführen"
+msgstr "Ja! Einfach die folgenden Befehle als root ausführen:"
 
 #: data/content/faq.html:22
 msgid "How does it work?"
@@ -97,30 +104,32 @@ msgid ""
 "Latest versions support several protocols beyond just tftp.  We are using "
 "http to transfer files around.  The basic steps are as follows:"
 msgstr ""
-"BFO wurde durch boot.kernel.org (BKO) gestartet und verbindet eine Reihe von"
-" aktuellen Technologien um einen neuen Boot-Stack zu schaffen. Dabei hält "
-"gpxe alles zusammen. pxe-versierte Benutzer werden gpxe als sehr vertraut "
+"BFO wurde durch boot.kernel.org (BKO) initiiert und verbindet eine Reihe von"
+" aktuellen Technologien um einen neuen Boot-Stack zu schaffen. Dabei bildet "
+"gpxe die Grundlage. Pxe-versierte Benutzer werden gpxe als sehr vertraut "
 "empfinden. Neuste Versionen unterstützen verschiedenste Protokolle, weit "
-"über tftp hinaus. Wir nutzen http zum Transportieren von Dateien. Die "
-"wesentlichen Schritte sind die folgenden:"
+"über tftp hinaus. Wir nutzen http für den Datentransport. Die grundlegenden "
+"Schritte sind die folgenden:"
 
 #: data/content/faq.html:25
 msgid ""
 "Download the boot.fedoraproject.org media fitting your preferred boot "
 "method."
 msgstr ""
+"Laden Sie das zu Ihrer bevorzugten Boot-Methode passende boot.fedoraproject"
+".org-Medium."
 
 #: data/content/faq.html:27
 msgid "burn ISO images to a CD-R or DVD-R"
-msgstr ""
+msgstr "ISO-Abbilder auf eine CD-R oder DVD-R brennen"
 
 #: data/content/faq.html:28
 msgid "write USB image for a USB stick"
-msgstr ""
+msgstr "USB-Abbild für einen USB-Stick schreiben"
 
 #: data/content/faq.html:29
 msgid "write Floppy image to a 3.5 inch HD floppy"
-msgstr ""
+msgstr "Floppy-Abbild auf eine 3.5-Zoll-Diskette schreiben"
 
 #: data/content/faq.html:30
 #, python-format
@@ -128,14 +137,16 @@ msgid ""
 "lkrn image for PXE booting, grub booting and in conjunction with kexec "
 "(c.f.: <a href=\"%s\">pxkxc</a>)"
 msgstr ""
+"Lkrn-Abbild für PXE, grub und in Verbindung mit kexec (c.f.: <a "
+"href=\"%s\">pxkxc</a>)."
 
 #: data/content/faq.html:32
 msgid "Boot from the medium you created."
-msgstr ""
+msgstr "Starten Sie vom Medium, das Sie erstellt haben."
 
 #: data/content/faq.html:33
 msgid "It will first configure network via DHCP."
-msgstr ""
+msgstr "Zuerst wird das Netzwerk über DHCP konfiguriert."
 
 #: data/content/faq.html:34
 msgid ""
@@ -151,7 +162,7 @@ msgid ""
 "selection (like install Fedora 12) the regular boot process takes over just "
 "as it would had you booted from normal local media."
 msgstr ""
-"Diese Startmenüs werden dann zur Auswahl angezeigt. Nach einer Wahl (z.Bsp. "
+"Diese Startmenüs werden dann zur Auswahl angezeigt. Nach einer Wahl (z.B. "
 "Fedora 12 installieren) setzt der normale Startprozess ein, so als wenn sie "
 "von einem normalen, lokalen Medium gestartet hätten."
 
@@ -167,6 +178,12 @@ msgid ""
 "will have the best experience with BFO.  They basically replace having to "
 "regularly download large ISO images and burn them to disk."
 msgstr ""
+"Die BFO-Downloads sind sehr klein und wenn sie diese einmal gespeichert "
+"haben, müssen Sie äußerst selten weitere herunterladen. Auch wenn mehr "
+"Fedora-Versionen erscheinen, starten Sie einfach von ihrem Abbild und diese "
+"werden angezeigt. Benutzer mit einer schnellen Internetverbindung haben mit "
+"BFO den grössten Nutzen. Dies ersetzt im Grunde genommen das regelmäßige "
+"Herunterladen großer ISO-Abbilder und dessen Brennen auf CD/ DVD."
 
 #: data/content/faq.html:39
 msgid "What is required?"
@@ -178,6 +195,10 @@ msgid ""
 "as well as HTTP internet access. To use the ISO, a CD/DVD burner. To use the"
 " USB image, a USB stick.  Floppy and lkrn images are also available."
 msgstr ""
+"Für alle Abbild-Typen benötigen Sie DHCP im verwendeten Netzwerk sowie einen"
+" HTTP-Internetzugang - um ISO oder USB-Abbilder zu benutzen entsprechend "
+"einen CD-/ DVD-Brenner oder USB-Stick. Floppy und lkrn-Abbilder sind "
+"ebenfalls verfügbar."
 
 #: data/content/faq.html:41
 msgid "Does BFO replace the installer or anaconda?"
@@ -192,11 +213,11 @@ msgid ""
 "all future versions of Fedora."
 msgstr ""
 "Nein. BFO ist kein Teil von Anaconda. BFO ist eine Möglichkeit den Installer"
-" über das Netzwerk zu laden. Normalerweise laden Nutzer ein großes ISO "
+" über das Netzwerk zu laden. Normalerweise laden Nutzer ein großes ISO-"
 "Abbild herunter, das alle Bestandteile des Installers beinhaltet. BFO ist "
 "eine kleinere Startmethode, die die Bestandteile des Installers zur Laufzeit"
 " herunterlädt. Theoretisch kann mit BFO nach einmaligem Herunterladen einer "
-"ISO jede zukünftige Fedora Version installiert werden."
+"ISO jede zukünftige Fedora-Version installiert werden."
 
 #: data/content/faq.html:43
 msgid "What about the Live CDs?"
@@ -208,7 +229,7 @@ msgid ""
 " have them available soon."
 msgstr ""
 "Zu diesem Zeitpunkt ist das Starten von Live-CDs experimentell und nicht "
-"verfügbar. Wir hoffen dies aber bald zur Verfügung zu haben."
+"verfügbar. Wir hoffen dies aber bald verfügbar zu haben."
 
 #: data/content/faq.html:45
 msgid "Why won't BFO boot?"
@@ -221,11 +242,11 @@ msgid ""
 "for you please check upstream at http://etherboot.org/ for bug updates, etc."
 "  If you feel a bug or device is supported but not working in BFO, contact: "
 msgstr ""
-"BFO benutzt gpxe, also started es zunächst keinen Linux Kernel. Daher können"
-" einige Treiber und Geräte nicht unterstützt sein. In diesem Fall können Sie"
-" auf http://etherboot.org/ nach Aktualisierungen etc. suchen. Wenn Sie "
-"glauben einen Fehler gefunden zu haben oder dass ein Gerät unterstützt wirt,"
-" jedoch bei BFO nicht funktioniert, kontaktieren Sie bitte:"
+"BFO benutzt gpxe, also startet es zunächst keinen Linux-Kernel. Daher "
+"könnten einige Treiber und Geräte nicht unterstützt sein. In diesem Fall "
+"können Sie auf http://etherboot.org/ nach Aktualisierungen suchen. Wenn Sie "
+"glauben einen Fehler gefunden zu haben oder ein unterstütztes Gerät in BFO "
+"nicht funktioniert, kontaktieren Sie bitte:"
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
@@ -237,9 +258,9 @@ msgid ""
 "or other types of media via the network.  It works similarly to a pxeboot "
 "environment."
 msgstr ""
-"boot.fedoraproject.org (BFO) ist eine Möglichkeit Hosts, für die "
-"Installation oder das Ausführen anderer Medien über das Netzwerk, zu "
-"starten."
+"boot.fedoraproject.org (BFO) ist eine Startmethode, um Installations- oder "
+"andere Medien über das Netzwerk auszuführen.  Es funktioniert ähnlich einer "
+"pxeboot-Umgebung."
 
 #: data/content/index.html:12
 msgid "BFO welcome screen"
@@ -252,8 +273,8 @@ msgstr "BFO basiert auf der Arbeit von BKO - "
 #: data/content/index.html:13
 msgid "To download BFO please select BFO Download along the left side menu."
 msgstr ""
-"Um BFO herunterzuladen, bitte wählen Sie BFO Herunterladen im Menü auf der "
-"linken Seite."
+"Um BFO herunterzuladen, wählen Sie bitte \"BFO Herunterladen\" im Menü auf "
+"der linken Seite."
 
 #: data/templates/foot.html:9
 msgid ""

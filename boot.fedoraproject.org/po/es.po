@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PROJECT project.
 # 
 # Translators:
+# Adolfo Jayme Barrientos <fitoschido@gmail.com>, 2011.
 # Claudio Rodrigo Pereyra Diaz <elsupergomez@gmail.com>, 2011.
 # Dennis Tobar <dennis.tobar@gmail.com>, 2011.
 # neb <nick@bebout.net>, 2011.
@@ -10,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2011-09-08 20:04+0200\n"
-"PO-Revision-Date: 2011-09-08 18:30+0000\n"
-"Last-Translator: shaiton <shaiton@fedoraproject.org>\n"
+"POT-Creation-Date: 2011-10-18 20:00-0500\n"
+"PO-Revision-Date: 2011-09-27 13:29+0000\n"
+"Last-Translator: logan <logan@fedoraproject.org>\n"
 "Language-Team: Spanish (Castilian) <trans-es@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -43,7 +44,7 @@ msgstr "USB"
 
 #: data/content/download.html:14
 msgid "Download Floppy: "
-msgstr "Descargar Disquete: "
+msgstr "Descargar disquete: "
 
 #: data/content/download.html:14
 msgid "Floppy"
@@ -59,11 +60,11 @@ msgstr "lkrn"
 
 #: data/content/faq.html:7
 msgid "FAQs - boot.fedoraproject.org"
-msgstr "Preguntas Frecuentes - boot.fedoraproject.org"
+msgstr "Preguntas frecuentes - boot.fedoraproject.org"
 
 #: data/content/faq.html:12
 msgid "Frequently-Asked Questions"
-msgstr "Preguntas Frecuentes"
+msgstr "Preguntas frecuentes"
 
 #: data/content/faq.html:13
 msgid "How do I use it?"
@@ -77,6 +78,12 @@ msgid ""
 "BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora"
 " installer or rescue mode."
 msgstr ""
+"Primero descargue alguna de las imágenes BFO específicas disponibles. Puede "
+"elegir entre imágenes ISO (DVD/CD), USB, Floppy y lkrn. Luego grabe la "
+"imagen en un soporte adecuado. A continuación arranque su equipo desde tal "
+"soporte, y entonces ¡ya está utilizando BFO! Utilice su teclado para elegir "
+"menues que ejecuten diagnósticos, o inicie un instalador de Fedora o un modo"
+" de rescate.  "
 
 #: data/content/faq.html:15
 msgid "Can I use it with grub?"
@@ -84,7 +91,7 @@ msgstr "¿Puedo utilizarlo con grub?"
 
 #: data/content/faq.html:16
 msgid "Yes!  Just run the following commands as root"
-msgstr "¡Claro! Simplemente ejecute los siguientes comandos como usuario root"
+msgstr "¡Claro! Simplemente ejecute las siguientes órdenes como usuario root"
 
 #: data/content/faq.html:22
 msgid "How does it work?"
@@ -110,18 +117,19 @@ msgid ""
 "Download the boot.fedoraproject.org media fitting your preferred boot "
 "method."
 msgstr ""
+"Descargue desde boot.fedoraproject.org el medio de inicio que prefiera."
 
 #: data/content/faq.html:27
 msgid "burn ISO images to a CD-R or DVD-R"
-msgstr ""
+msgstr "grabar imagen ISO a un CD o DVD"
 
 #: data/content/faq.html:28
 msgid "write USB image for a USB stick"
-msgstr ""
+msgstr "grabar imagen USB a una memoria USB"
 
 #: data/content/faq.html:29
 msgid "write Floppy image to a 3.5 inch HD floppy"
-msgstr ""
+msgstr "grabar imagen de disquete a disquete de 3.5 pulgadas HD."
 
 #: data/content/faq.html:30
 #, python-format
@@ -129,6 +137,8 @@ msgid ""
 "lkrn image for PXE booting, grub booting and in conjunction with kexec "
 "(c.f.: <a href=\"%s\">pxkxc</a>)"
 msgstr ""
+"Imagen lkrn para arranque PXE, arranque de grub y en conjunto con kexec "
+"(c.f.: <a href=\"%s\">pxkxc</a>)"
 
 #: data/content/faq.html:32
 msgid "Boot from the medium you created."
@@ -136,7 +146,7 @@ msgstr "Arranque desde un medio creado por usted."
 
 #: data/content/faq.html:33
 msgid "It will first configure network via DHCP."
-msgstr ""
+msgstr "Primero configurará la red vía DHCP."
 
 #: data/content/faq.html:34
 msgid ""
@@ -169,10 +179,17 @@ msgid ""
 "will have the best experience with BFO.  They basically replace having to "
 "regularly download large ISO images and burn them to disk."
 msgstr ""
+"Las descargas BFO son muy pequeñas y una vez que se encuentren en su poder "
+"es muy raro que tenga que descargarlas nuevamente. Aún cuando aparezcan "
+"sucesivos lanzamientos diferentes de Fedora, usted simplemente arranca su "
+"equipo a partir de esta imagen, y las nuevas versiones de Fedora irán "
+"apareciendo. Los usuarios con acceso a una veloz conexión de Internet "
+"encuentran en estas imágenes los mejores resultados. Con ellas básicamente "
+"se evitan las descargas regulares de extensas imágenes ISO."
 
 #: data/content/faq.html:39
 msgid "What is required?"
-msgstr "¿Qué requiero?"
+msgstr "¿Qué se necesita?"
 
 #: data/content/faq.html:40
 msgid ""
@@ -205,19 +222,19 @@ msgstr ""
 
 #: data/content/faq.html:43
 msgid "What about the Live CDs?"
-msgstr "¿Qué pasa con los CDs Vivos?"
+msgstr "¿Qué pasa con los Live CD?"
 
 #: data/content/faq.html:44
 msgid ""
 "At this time booting Live CDs is experimental and not available.  We hope to"
 " have them available soon."
 msgstr ""
-"En este momento iniciar desde CD Vivo es experimental y no está disponible. "
+"En este momento iniciar desde Live CD es experimental y no está disponible. "
 "Esperamos tenerlos disponible pronto."
 
 #: data/content/faq.html:45
 msgid "Why won't BFO boot?"
-msgstr "¿Porqué no inicia BFO?"
+msgstr "¿Porqué no arranca BFO?"
 
 #: data/content/faq.html:46
 msgid ""
@@ -229,8 +246,8 @@ msgstr ""
 "BFO utiliza gPXE así que no es realmente arrancar un kernel de Linux en un "
 "primer momento. Como tal, algunos controladores y dispositivos pueden no ser"
 " soportados. Si es su caso verifique en http://etherboot.org/  por las "
-"actualizaciones de errores, etc. Si  encuentra un error o, el dispositivo es"
-" soportado pero no funciona en BFO, contacte:"
+"actualizaciones de errores, etc. Si encuentra un error o, el dispositivo es "
+"soportado pero no funciona en BFO, contacte:"
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
@@ -257,7 +274,7 @@ msgstr "BFO está basado en el trabajo de BKO - "
 #: data/content/index.html:13
 msgid "To download BFO please select BFO Download along the left side menu."
 msgstr ""
-"Para descargar BFO por favor elija BFO Download en al menú a su izquierda."
+"Para descargar BFO, seleccione Descargar BFO en el menú a su izquierda."
 
 #: data/templates/foot.html:9
 msgid ""
