@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2011-10-18 20:27-0500\n"
-"PO-Revision-Date: 2011-10-19 01:27+0000\n"
-"Last-Translator: neb <nick@bebout.net>\n"
+"POT-Creation-Date: 2011-10-26 21:04+0200\n"
+"PO-Revision-Date: 2011-10-26 19:06+0000\n"
+"Last-Translator: shaiton <shaiton@fedoraproject.org>\n"
 "Language-Team: Italian <trans-it@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -405,15 +405,19 @@ msgstr "Il futuro della internet mobile."
 msgid "Discover. Reflect. Share. Learn."
 msgstr "Scopri. Rifletti. Condividi. Impara."
 
-#: data/content/index.html:33
+#: data/content/index.html:1 data/content/scientific/index.html:56
+msgid "Open Source Scientific Computing."
+msgstr ""
+
+#: data/content/index.html:34
 msgid "Fedora Spins"
 msgstr "Le spin di Fedora"
 
-#: data/content/index.html:36
+#: data/content/index.html:37
 msgid "Meet our spins."
 msgstr "Conosci le nostre spin."
 
-#: data/content/index.html:37
+#: data/content/index.html:38
 msgid ""
 "What is a spin? Fedora spins are alternate version of Fedora, tailored for "
 "various types of users via hand-picked application set or customizations."
@@ -422,27 +426,27 @@ msgstr ""
 "vari tipi di utenti ricorrendo ad un insieme selezionato di applicazioni ed "
 "ad altre personalizzazioni."
 
-#: data/content/index.html:38
+#: data/content/index.html:39
 msgid "Learn more about spins >"
 msgstr "Altre informazioni sulle le spin >"
 
-#: data/content/index.html:40
+#: data/content/index.html:41
 msgid "By Popularity"
 msgstr "Per Popolarità"
 
-#: data/content/index.html:41
+#: data/content/index.html:42
 msgid "Alphabetical Order"
 msgstr "Ordine Alfabetico"
 
-#: data/content/index.html:53
+#: data/content/index.html:54
 msgid "downloads"
 msgstr "download"
 
-#: data/content/index.html:55 data/content/index.html:72
+#: data/content/index.html:56 data/content/index.html:73
 msgid "Learn more & download! >"
 msgstr "Approfondisci & scarica! >"
 
-#: data/content/index.html:59
+#: data/content/index.html:60
 msgid ""
 "Note: Spin popularity is determined by number of downloads since the most "
 "recent Fedora release."
@@ -450,15 +454,15 @@ msgstr ""
 "Nota: la popolarità di una spin rappresenta il numero di download a partire "
 "dall'ultimo rilascio di Fedora."
 
-#: data/content/index.html:79
+#: data/content/index.html:80
 msgid "Meet the Spin Community"
 msgstr "Incontra la Spin Community"
 
-#: data/content/index.html:88 data/content/community/index.html:18
+#: data/content/index.html:89 data/content/community/index.html:18
 msgid "Read more of this interview with"
 msgstr "Leggi l'intervista completa con"
 
-#: data/content/index.html:89
+#: data/content/index.html:90
 msgid "Read more spins community interviews >"
 msgstr "Leggi altre interviste dalla spins community >"
 
@@ -736,8 +740,8 @@ msgstr "Informazioni sulla spin: AOS"
 #: data/content/edu/index.html:46 data/content/fel/index.html:46
 #: data/content/kde/index.html:49 data/content/kiosk/index.html:46
 #: data/content/lxde/index.html:48 data/content/moblin/index.html:46
-#: data/content/security/index.html:46 data/content/soas/index.html:46
-#: data/content/xfce/index.html:47
+#: data/content/scientific/index.html:47 data/content/security/index.html:46
+#: data/content/soas/index.html:46 data/content/xfce/index.html:47
 msgid "Home"
 msgstr "Home"
 
@@ -755,6 +759,7 @@ msgstr "La spin AOS"
 #: data/content/kiosk/index.html:48 data/content/kiosk/index.html:67
 #: data/content/lxde/index.html:49 data/content/lxde/index.html:70
 #: data/content/moblin/index.html:48 data/content/moblin/index.html:73
+#: data/content/scientific/index.html:49 data/content/scientific/index.html:65
 #: data/content/security/index.html:47 data/content/security/index.html:62
 #: data/content/soas/index.html:48 data/content/soas/index.html:96
 #: data/content/xfce/index.html:49 data/content/xfce/index.html:68
@@ -769,9 +774,10 @@ msgstr "Download"
 #: data/content/kde/index.html:52 data/content/kiosk/index.html:49
 #: data/content/kiosk/index.html:100 data/content/lxde/index.html:50
 #: data/content/moblin/index.html:49 data/content/moblin/index.html:106
-#: data/content/security/index.html:48 data/content/soas/index.html:49
-#: data/content/xfce/index.html:50 data/content/xfce/index.html:99
-#: data/templates/foot.html:23 data/templates/head.html:9
+#: data/content/scientific/index.html:50 data/content/security/index.html:48
+#: data/content/soas/index.html:49 data/content/xfce/index.html:50
+#: data/content/xfce/index.html:99 data/templates/foot.html:23
+#: data/templates/head.html:9
 msgid "Support"
 msgstr "Aiuto"
 
@@ -812,18 +818,9 @@ msgid ""
 "and customized for a specific application. The AOS is described in a "
 "kickstart file and is hosted in the Fedora Spins KickstartPool, this "
 "definition is meant to evolve over time to become a smaller, more usable "
-"base appliance defination. The AOS is designed to work as a virtual machine "
+"base appliance definition. The AOS is designed to work as a virtual machine "
 "or as a traditional locked down bare metal appliance."
 msgstr ""
-"Appliance Operating System (AOS) è la definizione di un sistema operativo "
-"minimale, contenente soltanto i pacchetti necessari per eseguire una "
-"appliance. AOS va visto come una base, su cui possono essere inserite nuove "
-"appliance personalizzate per una specifica applicazione. AOS è descritto in "
-"un file di kickstart e si trova nel KickstartPool delle spin di Fedora; "
-"questa descrizione evolve nel tempo al fine di diventare una appliance di "
-"base più ristretta e più usabile. AOS è progettato per funzionare come una "
-"macchina virtuale o come una tradizionale appliance su hardware "
-"proprietario."
 
 #: data/content/aos/index.html:65
 msgid ""
@@ -880,8 +877,8 @@ msgstr ""
 #: data/content/fel/index.html:138 data/content/games/index.html:699
 #: data/content/kde/index.html:129 data/content/kiosk/index.html:68
 #: data/content/lxde/index.html:71 data/content/moblin/index.html:74
-#: data/content/security/index.html:63 data/content/soas/index.html:100
-#: data/content/xfce/index.html:69
+#: data/content/scientific/index.html:68 data/content/security/index.html:63
+#: data/content/soas/index.html:100 data/content/xfce/index.html:69
 msgid "Torrent Download"
 msgstr "Scarica via torrent"
 
@@ -1048,8 +1045,9 @@ msgstr "File Torrent di 54K della ISO per PC a 64-bit"
 #: data/content/design/index.html:95 data/content/fel/index.html:152
 #: data/content/games/index.html:713 data/content/kde/index.html:143
 #: data/content/kiosk/index.html:82 data/content/lxde/index.html:85
-#: data/content/moblin/index.html:88 data/content/security/index.html:77
-#: data/content/soas/index.html:114 data/content/xfce/index.html:83
+#: data/content/moblin/index.html:88 data/content/scientific/index.html:83
+#: data/content/security/index.html:77 data/content/soas/index.html:114
+#: data/content/xfce/index.html:83
 msgid "Direct Download"
 msgstr "Download diretto"
 
@@ -1220,7 +1218,7 @@ msgstr ""
 #: data/content/community/adammiller.html:34
 #, python-format
 msgid ""
-"The terminal; Xfce Terminal is where I spend roughly 85% of my time on a "
+"The terminal; Xfce Terminal is where I spend roughly 85%% of my time on a "
 "computer and while I know it might sound silly, I'm just a really big fan of"
 " Xfce Terminal over other similar products."
 msgstr ""
@@ -1598,14 +1596,14 @@ msgstr ""
 #: data/content/community/chitleshgoorah.html:108
 msgid ""
 "One of the key role of translating FEL packages in French was done by "
-"Fedora's french translator, Alain Portal. He is also the maintainer of "
+"Fedora's French translator, Alain Portal. He is also the maintainer of "
 "Pikloops."
 msgstr ""
 
 #: data/content/community/chitleshgoorah.html:112
 msgid ""
 "In terms of packaging, there aren't many Fedora specific changes other than "
-"doing system-wide compilations, ensuring multi-libs and satifying Fedora "
+"doing system-wide compilations, ensuring multi-libs and satisfying Fedora "
 "packaging guidelines. MamoruTasaka and XavierLamien helped to integrate the "
 "packages in Fedora. But in terms of research, proposal and requests for "
 "enhancements the Fedora community have helped a lot in shaping the spin. "
@@ -1613,7 +1611,7 @@ msgid ""
 "Fedora users called for changes in order to shape the FEL Live spin to their"
 " own usage. Some users did even send some requests to contact certain closed"
 " source projects they use in order to open their code. One of 3 projects "
-"I've contacted responsed positively and perhaps will license his product "
+"I've contacted responded positively and perhaps will license his product "
 "under the BSD license next year."
 msgstr ""
 
@@ -1685,17 +1683,18 @@ msgstr "Informazioni sulle spin: Design Suite"
 
 #: data/content/design/index.html:47 data/content/design/index.html:62
 #: data/content/games/index.html:46 data/content/kiosk/index.html:47
-#: data/content/kiosk/index.html:62 data/content/soas/index.html:47
-#: data/content/soas/index.html:66
+#: data/content/kiosk/index.html:62 data/content/scientific/index.html:48
+#: data/content/soas/index.html:47 data/content/soas/index.html:66
 msgid "About"
 msgstr "La spin Giochi"
 
 #: data/content/design/index.html:56 data/content/edu/index.html:57
 #: data/content/kde/index.html:69 data/content/kde/index.html:91
 #: data/content/kde/index.html:116 data/content/kiosk/index.html:59
-#: data/content/moblin/index.html:59 data/content/soas/index.html:56
-#: data/content/soas/index.html:60 data/content/soas/index.html:79
-#: data/content/xfce/index.html:57 data/content/xfce/index.html:63
+#: data/content/moblin/index.html:59 data/content/scientific/index.html:57
+#: data/content/soas/index.html:56 data/content/soas/index.html:60
+#: data/content/soas/index.html:79 data/content/xfce/index.html:57
+#: data/content/xfce/index.html:63
 msgid "Click image to enlarge"
 msgstr "Cliccare per ingrandire l'immagine"
 
@@ -2451,8 +2450,8 @@ msgid "ASIC Design flows"
 msgstr "ASIC Design flows"
 
 #: data/content/fel/index.html:196
-msgid "Allliance"
-msgstr "Allliance"
+msgid "Alliance"
+msgstr ""
 
 #: data/content/fel/index.html:197
 msgid ""
@@ -2579,8 +2578,8 @@ msgid "A mixed level/signal circuit simulator"
 msgstr "Simulatori di circuito misti livello/segnale"
 
 #: data/content/fel/portfolio.html:44
-msgid "A frontend to Spice circuit similators"
-msgstr "Un frontend per simulatori di circuito Spice"
+msgid "A frontend to Spice circuit simulators"
+msgstr ""
 
 #: data/content/fel/portfolio.html:45
 msgid ""
@@ -4098,12 +4097,12 @@ msgstr ""
 #: data/content/games/index.html:698
 msgid ""
 "This is the latest version of the Fedora Linux operating system's Games "
-"spin. It's everything you need to try out Fedora's games spin--you don't "
-"have to erase anything on your current system to try it out, and it won't "
-"put your files at risk. Take the Fedora Games spin for a test drive, and if "
-"you like it, you can install it directly to your hard drive straight from "
-"the Live Media desktop if you like. <a href=\"/support\">Read more about "
-"using and installing from live media</a>."
+"spin. It's everything you need to try out Fedora's games spin−you don't have"
+" to erase anything on your current system to try it out, and it won't put "
+"your files at risk. Take the Fedora Games spin for a test drive, and if you "
+"like it, you can install it directly to your hard drive straight from the "
+"Live Media desktop if you like. <a href=\"/support\">Read more about using "
+"and installing from live media</a>."
 msgstr ""
 
 #: data/content/games/index.html:729
@@ -4922,6 +4921,34 @@ msgstr "Moblin"
 msgid "Screenshot of the Moblin desktop"
 msgstr "Schermata del desktop Moblin"
 
+#: data/content/scientific/index.html:42
+msgid "About Spin: Fedora Scientific"
+msgstr ""
+
+#: data/content/scientific/index.html:61
+msgid "What is Fedora Scientific?"
+msgstr ""
+
+#: data/content/scientific/index.html:66
+#: data/content/scientific/index.html:111
+msgid "Fedora Scientific"
+msgstr ""
+
+#: data/content/scientific/index.html:100
+msgid "Fedora Scientific Support"
+msgstr ""
+
+#: data/content/scientific/index.html:101
+msgid ""
+"Need help using Fedora Scientific? We have put together a list of resources "
+"you can use to get help below. For help downloading, running, and installing"
+" spins, please visit the main spins support page."
+msgstr ""
+
+#: data/content/scientific/index.html:112 data/content/soas/index.html:143
+msgid "Home View"
+msgstr "Vista Home"
+
 #: data/content/security/index.html:41
 msgid "About Spin: Security"
 msgstr "Informazioni sulle spin: Security"
@@ -5205,7 +5232,7 @@ msgstr "Partecipa!"
 #, python-format
 msgid ""
 "If these ideas excite you, we invite you to join our community of "
-"contributors and help us bring the Sugar Learning Platform to chlidren "
+"contributors and help us bring the Sugar Learning Platform to children "
 "around the world. No prior experience with computers or educational "
 "technology is required - in fact, we actively encourage a diversity of "
 "backgrounds, ages, and perspectives since our ultimate goal is to make the "
@@ -5219,21 +5246,6 @@ msgid ""
 "contributors portal</a> on the <a href=\"http://wiki.sugarlabs.org\">main "
 "Sugar Labs wiki</a>."
 msgstr ""
-"Se queste idee ti entusiasmano, ti invitiamo a partecipare alla nostra "
-"comunità di contributori per aiutarci a portare la Sugar Learning Platform "
-"ai bambini di tutto il mondo. Non è necessaria alcuna esperienza precedente "
-"con i computer o le tecnologie di apprendimento - infatti, incoraggiamo "
-"attivamente partecipanti di differenti estrazioni, età, e prospettive poiché"
-" l'obbiettivo finale è rendere l'esperienza di Sugar distribuibile dagli "
-"insegnanti delle classi e supportabile dai vecchi studenti e dalle comunità "
-"locali. Abbiamo bisogno di volontari per costruire pacchetti, eseguire "
-"prove, sviluppatori, disegnatori di curriculum, distributori locali, e più. "
-"Per ulteriori informazioni controllate la nostra <a "
-"href=\"http://openhatch.org/+projects/Sugar%20on%20a%20Stick\">pagina "
-"OpenHatch</a> e il nostro <a "
-"href=\"http://wiki.sugarlabs.org/go/Sugar_on_a_Stick\">portale dei "
-"contributori Sugar on a Stick</a> sulla <a "
-"href=\"http://wiki.sugarlabs.org\">wiki degli Sugar Labs</a>."
 
 #: data/content/soas/index.html:97 data/content/soas/index.html:142
 #: data/content/soas/index.html:153 data/content/soas/index.html:164
@@ -5277,10 +5289,6 @@ msgstr ""
 "una lista di risorse qui sotto, che puoi usare per ottenere supporto. Se "
 "serve aiuto su come scaricare, usare ed installare una spin, visita la "
 "pagina principale del supporto delle spin."
-
-#: data/content/soas/index.html:143
-msgid "Home View"
-msgstr "Vista Home"
 
 #: data/content/soas/index.html:144
 msgid ""
@@ -5348,19 +5356,10 @@ msgid ""
 " is a lightweight desktop environment that is designed to be speedy, It "
 "loads and executes applications fast, while conserving system resources. The"
 " Fedora Xfce Spin is a high-quality Xfce experience for Fedora users and "
-"developers. Enjoy the benfits of the Xfce desktop's clean and quick "
+"developers. Enjoy the benefits of the Xfce desktop's clean and quick "
 "interface. Get more done faster, and run your desktop on this innovative "
 "Fedora platform."
 msgstr ""
-"Ottieni di più in minor tempo. La spin Xfce di Fedora mette in mostra "
-"l'ambiente desktop Xfce, un mix di applicazioni che aumenteranno la tua "
-"produttività. Xfce è un ambiente desktop leggero progettato per essere "
-"veloce. Esso carica ed esegue le applicazioni velocemente, senza assorbire "
-"grandi risorse di sistema. La spin  promette ad utenti e sviluppatori di "
-"Fedora, una esperienza di alta qualità con Xfce. Prova i vantaggi "
-"dell'interfaccia pulita e rapida del desktop Xfce. Ottieni di più in minor "
-"tempo, e fai funzionare il tuo desktop su questa piattaforma innovativa di "
-"Fedora."
 
 #: data/content/xfce/index.html:65
 msgid "Give Xfce Desktop a try today! >"
@@ -5509,7 +5508,7 @@ msgid "Learn more about the relationship between Red Hat and Fedora >"
 msgstr "Per saperne di più sulla collaborazione tra Red Hat e Fedora >"
 
 #: data/templates/foot.html:60
-msgid "&copy; 2011 Red Hat, Inc. and others."
+msgid "© 2011 Red Hat, Inc. and others."
 msgstr ""
 
 #: data/templates/foot.html:62
