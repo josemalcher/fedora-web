@@ -54,16 +54,15 @@ docs_url = [
 			<div>
 				<h2>${_('Dive into Robotics.')}</h2>
 				<span class="blurb"><img src="/static/images/content/robotics-screenshot-01-sm.png"  rel="#robotics1" /><br />${_('Click image to enlarge')}</span>
-                <p>The Fedora Robotics spin provides a wide variety of free and open robotics software packages. These range from hardware accessory libraries for the Hokuyo laser scanners or Katana robotic arm to software systems like Fawkes or Player/Stage and simulation environments such as Gazebo and RoboCup? Soccer Simulation Server 2D/3D. It also provides a ready to use development environment for robotics including useful libraries such as OpenCV computer vision library, Festival text to speech system and MRPT.</p>
-                <p>The Robotics spin is targeted at people just discovering their interest in robotics as well as experienced roboticists. For the former we provide a readily usable simulation environment with an introductory hands-on demonstration, and for the latter we provide a full development environment, to be used immediately.</p>
-                <p>Want to know more? Check out the Robotics page on the Fedora wiki.</p>
+                <p>${_('The Fedora Robotics spin provides a wide variety of free and open robotics software packages. These range from hardware accessory libraries for the Hokuyo laser scanners or Katana robotic arm to software systems like Fawkes or Player/Stage and simulation environments such as Gazebo and RoboCup? Soccer Simulation Server 2D/3D. It also provides a ready to use development environment for robotics including useful libraries such as OpenCV computer vision library, Festival text to speech system and MRPT.')}</p>
+                <p>${_('The Robotics spin is targeted at people just discovering their interest in robotics as well as experienced roboticists. For the former we provide a readily usable simulation environment with an introductory hands-on demonstration, and for the latter we provide a full development environment, to be used immediately.')}</p>
+                <p>${_('Want to know more? Check out the Robotics page on the Fedora wiki.')}</p>
 			</div>
 			<div>
 				<h2>${_('Downloads')}</h2>
 				<h3>${_('Fedora Scientific')}</h3>
-                   <p>Fedora Scientific is available as a Live DVD download - via torrent or direct download. A LiveDVD is an operating system that is executed upon boot, without installation on a hard drive. A desktop icon can be used to install the OS if wanted. Once you have the ISO, you can either create a <a href="http://fedoraproject.org/wiki/How_to_create_and_use_Live_USB">Bootable USB stick</a> or burn it to a <a href="http://docs.fedoraproject.org/en-US/Fedora/14/html/Burning_ISO_images_to_disc/">DVD</a>. </p>
+                   <p>${Markup(_('Fedora Scientific is available as a Live DVD download - via torrent or direct download. A LiveDVD is an operating system that is executed upon boot, without installation on a hard drive. A desktop icon can be used to install the OS if wanted. Once you have the ISO, you can either create a &lt;a href="%s"&gt;Bootable USB stick&lt;/a&gt; or burn it to a &lt;a href="%s"&gt;DVD&lt;/a&gt;.') % ('http://fedoraproject.org/wiki/How_to_create_and_use_Live_USB', 'http://docs.fedoraproject.org/en-US/Fedora/14/html/Burning_ISO_images_to_disc/'))}</p>
 				<h3>${_('Torrent Download')}</h3>
-<!--
 				<span class="download-option" id="opt1">
 					<h4>${_('32-bit PC Edition')}</h4>
 					<p><img class="download-media" alt="${_('32-bit PC Edition')}" src="/static/images/media-usb.png" />${_('This edition is for the highest compatibility; it will work on both 32-bit and 64-bit computers.')}</p>
@@ -76,21 +75,20 @@ docs_url = [
 					<a class="download-button" href="http://torrent.fedoraproject.org/spins/">${_('Download Now!')}</a>
 					<p class="fine-print">${_('54K Torrent File for 64-bit PC ISO')}<br /> <a href="http://docs.fedoraproject.org/en-US/Fedora/15/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
 				</span>
--->
 				<h3>${_('Direct Download')}</h3>
-<!--				<span class="download-option" id="opt1">
+				<span class="download-option" id="opt1">
 					<h4>${_('32-bit PC Edition')}</h4>
 					<p><img class="download-media" alt="${_('%s-bit PC Edition' % '32')}" src="/static/images/media-usb.png" />${_('This edition is for the highest compatibility; it will work on both 32-bit and 64-bit computers.')}</p>
 					<a class="download-button" href="http://download.fedoraproject.org/pub/alt/spins/linux/releases/">${_('Download Now!')}</a>
-					<p class="fine-print">${_('%(size)s for %(arch)s-bit PC ISO') % {'size': '500 MB', 'arch': '32'}}<br /> <a href="http://docs.fedoraproject.org/en-US/Fedora/15/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+					<p class="fine-print">${_('1.1GB for %(arch)s-bit PC ISO') % {'arch': '32'}}<br /> <a href="http://docs.fedoraproject.org/en-US/Fedora/15/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
 				</span>
 				<span class="download-option" id="opt2">
 					<h4>${_('64-bit PC Edition')}</h4>
 					<p><img class="download-media" alt="${_('%s-bit PC Edition' % '64')}" src="/static/images/media-usb.png" />${_('Enjoy the full power and speed of a 64-bit computer. Not compatible with 32-bit computers.')}</p>
 					<a class="download-button" href="http://download.fedoraproject.org/pub/alt/spins/linux/releases/">${_('Download Now!')}</a>
-					<p class="fine-print">${_('%(size)s for %(arch)s-bit PC ISO') % {'size': '500 MB', 'arch': '64'}}<br /> <a href="http://docs.fedoraproject.org/en-US/Fedora/15/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+					<p class="fine-print">${_('1.1GB for %(arch)s-bit PC ISO') % {'arch': '64'}}<br /> <a href="http://docs.fedoraproject.org/en-US/Fedora/15/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
 				</span>
--->
+
 				<xi:include href="../../templates/download-tab.html" />
 			</div>
 			<div>
