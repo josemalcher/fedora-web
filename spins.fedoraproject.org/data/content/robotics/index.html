@@ -60,8 +60,10 @@ docs_url = [
 			</div>
 			<div>
 				<h2>${_('Downloads')}</h2>
-				<h3>${_('Fedora Scientific')}</h3>
-                   <p>${Markup(_('Fedora Scientific is available as a Live DVD download - via torrent or direct download. A LiveDVD is an operating system that is executed upon boot, without installation on a hard drive. A desktop icon can be used to install the OS if wanted. Once you have the ISO, you can either create a &lt;a href="%s"&gt;Bootable USB stick&lt;/a&gt; or burn it to a &lt;a href="%s"&gt;DVD&lt;/a&gt;.') % ('http://fedoraproject.org/wiki/How_to_create_and_use_Live_USB', 'http://docs.fedoraproject.org/en-US/Fedora/14/html/Burning_ISO_images_to_disc/'))}</p>
+				<h3>${_('Fedora Robotics')}</h3>
+                   <p>${Markup(_('Want to take the Robotics Spin for a test drive? Download the LiveDVD, burn it to DVD or USB (see the &lt;a href="%s"&gt;support tab&lt;/a&gt; for instructions) and boot into a complete Robotics Development environment. If you like what you see, install it to your hard drive for the full experience! ') % '#support')}</p>
+                   <p>${Markup(_('If you\'ve already got Fedora installed, there\'s no need to download the LiveDVD. You can install a full Robotics development environment using the single command: &lt;span class="command"&gt;yum groupinstall "Robotics"&lt;/span&gt;.'))}</p>
+
 				<h3>${_('Torrent Download')}</h3>
 				<span class="download-option" id="opt1">
 					<h4>${_('32-bit PC Edition')}</h4>
