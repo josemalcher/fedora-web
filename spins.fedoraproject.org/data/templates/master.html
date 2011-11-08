@@ -14,7 +14,7 @@ class Torrents(object):
     prerelease_re = re.compile('-(alpha|beta|snap|preview)([0-9]*)$', re.I)
     non_release_re = re.compile('(alpha|beta|snap|preview)', re.I)
     prerelease_order = ['alpha', 'beta', 'snap', 'preview']
-    spins_matches = ['design', 'design-suite', 'kde', 'lxde', 'games', 'xfce', 'security', 'electronic-lab', 'scientific', 'soas', 'robotics']
+    spins_matches = ['design', 'design-suite', 'kde', 'lxde', 'games', 'xfce', 'security', 'electronic-lab', 'scientific-kde', 'soas', 'robotics']
     archlist = ['i386', 'i586', 'i686', 'ix86', 'ppc', 'x86_64', 'source', 'Source']
     #FIXME we should rename the design-suite iso, to match the websites… 
 
@@ -144,7 +144,7 @@ class Torrents(object):
         return random.randint(0, len(list)-1)
 
 torrents = Torrents()
-release = '15'
+release = '16'
 arch = 'i686'
 
 def formatsize(n, format='%0.2f'):
@@ -193,7 +193,7 @@ sdata_feature = {
     'security': "Security analysis tools.",
     'moblin': "The future of the mobile internet.",
     'soas': "Discover. Reflect. Share. Learn.",
-    'scientific': "Open Source Scientific Computing.",
+    'scientific-kde': "Open Source Scientific Computing.",
     'robotics': "Dive into Robotics."
 }
 
