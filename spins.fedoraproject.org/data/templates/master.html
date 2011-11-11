@@ -75,6 +75,8 @@ class Torrents(object):
             if (name.lower() in t_name.lower()):
                 if release and (release.lower() not in t_release.lower()):
                     continue
+                if ("scientific" in t_name.lower()) and ("scientific" not in name.lower()):
+                    continue
                 if arch and (arch.lower() != t_arch.lower()):
                     continue
                 spins.append(row)
