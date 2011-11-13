@@ -130,7 +130,7 @@ do
      fi
      echo "POT updated"
    else
-       echo "POT not updated"
+       git checkout -- po/*.pot     # no real change, undo (only the build time was changed)
    fi
    cd ..
 done
