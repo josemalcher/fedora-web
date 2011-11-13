@@ -51,6 +51,7 @@ function linguas_update {
 }
 
 
+
 # if no argument specified, parse all websites
 if [ -z $1 ]
 then
@@ -69,13 +70,25 @@ fi
 
 for i in "${site[@]}"
 do
-   echo "- Updating $i POs and POT"
+   echo "- Updating $i POs"
    cd $i
    make pullpos
 #   git add po/*.po
-#   make pot && make pushpot 
-#   git add po/*.pot
+   make pot
+
+   insertion_number=`git diff --numstat po/*.pot 2>&1 | awk '{print $1}'` # record the number of insertion,
+									 #if no new string found at least the build time could change (i.e. check if > 1)
+   let "$((++insertion_number))"     # cause in case the file is exactly the same, prevent no git diff output
+   if [ $insertion_number -gt 2 ]
+   then								 # POT should be uploaded
+#       make pushpot
+#       git add po/*.pot
+       echo "POT updated"
+   else
+       echo "POT not updated"
+   fi
    cd ..
+ 
    echo "- Updating $i LINGUAS file"
    linguas_update $i   # LINGUAS changes won't be automatically added in git, you probably want a different commit
 done
