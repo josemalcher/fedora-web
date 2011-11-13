@@ -177,13 +177,15 @@ do
   cat $tmp|sort > $LINGUAS
   rm $tmp
 
-  if [ ! -z $ADD ]
+  git diff --exit-code $LINGUAS > /dev/null   # check if modified
+  if [ $? -eq  1 ] && [ ! -z $ADD ]
   then
     git add $LINGUAS
+    L_COMMIT=1
   fi
 done
 
-if [ ! -z $COMMIT ] && [ ! -z $ADD ]
+if [ ! -z $L_COMMIT ] && [ ! -z $COMMIT ] && [ ! -z $ADD ]
 then
   git commit -m "[`basename $0`] Full LINGUAS update"
 fi
