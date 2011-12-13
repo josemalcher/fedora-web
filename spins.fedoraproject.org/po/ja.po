@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2011-11-11 15:38+0100\n"
-"PO-Revision-Date: 2011-11-22 14:01+0000\n"
+"PO-Revision-Date: 2011-12-12 13:12+0000\n"
 "Last-Translator: katomo <tomo@dream.daynight.jp>\n"
 "Language-Team: Japanese <trans-ja@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
@@ -92,6 +92,9 @@ msgid ""
 "you can also create a bootable USB stick which will also boot into the spin "
 "when you insert it into a computer and turn it on or reboot."
 msgstr ""
+"興味のある Spin に対して提供されている ISO ファイルを使用すると、コンピューターの中に入れて電源を入れるか再起動すると Spin "
+"から起動できる、CD または DVD を作成できます。代わりに、コンピューターの中に入れて電源を入れるか再起動すると Spin から起動できる、USB "
+"メモリーを作成できます。"
 
 #: data/content/about.html:21
 msgid ""
@@ -106,6 +109,9 @@ msgid ""
 "href=\"http://fedoraproject.org/wiki/How_to_create_and_use_a_Live_CD\">Learn"
 " more about creating and using bootable CD or DVD media for spins here</a>.)"
 msgstr ""
+"CDやDVDのスピンオフを実行するときに覚えておくことの一つは、あなたがシステムを使用するとき、あなたがインストールした追加のアプリケーションはすべてコンピューターを再起動するときになくなることです。ブート可能CD/DVDメディアに書き込むことができないので、これを避ける方法はありません。さらに、Fedoraのメディアはハードディスクにアクセスしないので、あなたが保存したすべてのファイルは再起動するときに失われます。ブート可能なCD/DVD"
+" Spinを使用するとき、常に必ずUSBメモリーやUSBハードディスクのような外部のデバイスにファイルを保存してください。（<a "
+"href=\"http://fedoraproject.org/wiki/How_to_create_and_use_a_Live_CD\">Spinのブート可能なCD/DVDメディアを作成・使用することの詳細はここにあります</a>。）"
 
 #: data/content/about.html:22
 msgid ""
@@ -118,6 +124,9 @@ msgid ""
 "href=\"http://fedoraproject.org/wiki/FedoraLiveCD/USBHowTo\">Learn more "
 "about creating and using bootable USB sticks for spins here</a>.)"
 msgstr ""
+"Spinを起動するためにUSBメモリーを使用するとき、永続的なストレージとしてUSBメモリーにあるディスク領域の一部に保存するという別の選択肢があります。このようにSpinのメディアを作成することを選択するならば、実行しているSpinにインストールしたすべてのアプリケーション、およびディスクに保存したすべてのファイルは、USBメモリーの利用可能な空き領域を超えない限り、コンピューターを再起動した後も残っています。（<a"
+" "
+"href=\"http://fedoraproject.org/wiki/FedoraLiveCD/USBHowTo\">ブート可能なSpinの作成および使用についてはここで学んでください</a>。）"
 
 #: data/content/about.html:23
 msgid ""
@@ -126,6 +135,7 @@ msgid ""
 "computer's hard drive, or you can use it to install Fedora directly to your "
 "hard drive."
 msgstr ""
+"あなたがSpinを実行するために、CD、DVDまたはUSBメディアのどれを使用することを決めたかによらず、コンピューターのハードディスクに影響を及ぼすことなくSpinのメディアを実行する、またはハードディスクにFedoraを直接インストールするために使用することを選べます。"
 
 #: data/content/about.html:24
 msgid "Why use a spin?"
@@ -151,6 +161,11 @@ msgid ""
 " kind of spins have done all this legwork for you already, so if you run one"
 " of these spins, the software you need will already be installed."
 msgstr ""
+"いくつかの Fedora Spin は特別な用途のためにカスタマイズされています。<a href=\"/games/\">Fedora ゲーム "
+"Spin</a> と <a href=\"/fel/\">Fedora 電子ラボ</a> はこの種の Spin の良い例です。Fedora "
+"には数多くのパッケージがあります。特定の作業のために必要かもしれないソフトウェアをすべて探してインストールするには時間がかかるかもしれません。この種の "
+"Spin の製作者はすでにあなたのためにこの精査をすべて終えています。そのため、これらの Spin "
+"のどれかを実行すると、必要なソフトウェアがすでにインストールされています。"
 
 #: data/content/about.html:29
 msgid "Use a pre-installed desktop environment"
@@ -180,6 +195,7 @@ msgid ""
 "to use your computer while you wait for your replacement hard drive to "
 "arrive in the mail!"
 msgstr ""
+"Spinは実行するためにハードディスクアクセスが必要ないため、ハードディスク故障やオペレーティングシステム障害に遭遇しているときに、ディスクのファイルの復元を試してみたいならば、Spinを使用できます。ハードディスクの置き換えを待っている間にメールが届くためコンピューターを使用するためにSpinメディアを使用することもできます！"
 
 #: data/content/about.html:33
 msgid "Try something new or demo something, no-risk"
@@ -197,6 +213,9 @@ msgid ""
 "install, they can use the spin media to install straight to their hard "
 "drive. :) )"
 msgstr ""
+"多くの人々が、システムを完全に再インストールする必要なく、新しいソフトウェアを試すことができるよう、Spin の Live "
+"メディアをダウンロードして実行します。たとえば、新しいデスクトップ環境を試したいならば、適切な Spin の Live "
+"メディアを実行して、現在のコンピューター環境にリスクを与えることなく気に入るかどうかを確認できます。完全インストールしたりファイルを消したりする必要なく、Fedoraがどのくらいかっこいいかを示すために、友だちのコンピューターでSpinを実行することもできます！（そして後から、完全インストールすることを納得させたとき、ハードディスクにインストールするためにSpinメディアを使用できます。：））"
 
 #: data/content/about.html:36
 msgid "How do I create my own spin?"
@@ -299,7 +318,7 @@ msgstr "教育およびサイエンスの目的に関連したアプリケーシ
 
 #: data/content/index.html:1
 msgid "Secure kiosks: no longer an oxymoron."
-msgstr ""
+msgstr "セキュア・キオスク: もはや撞着語法でありません。"
 
 #: data/content/index.html:1
 msgid "A complete, modern desktop built using the KDE Plasma Desktop."
@@ -317,7 +336,7 @@ msgstr "軽量、高速、低リソース消費のデスクトップ環境"
 msgid ""
 "A scaled-down version of Fedora with a small footprint for running an "
 "appliance."
-msgstr ""
+msgstr "アプライアンスを実行するためにメモリ使用量の小さなFedoraのスケールダウン・バージョンです。"
 
 #: data/content/index.html:1
 msgid "Fedora's high-end hardware design and simulation platform."
@@ -363,7 +382,7 @@ msgstr "Fedora Spins"
 
 #: data/content/index.html:38
 msgid "Meet our spins."
-msgstr ""
+msgstr "Spinとふれあう"
 
 #: data/content/index.html:39
 msgid ""
@@ -401,7 +420,7 @@ msgstr "注：Spinの人気度は最新のFedoraがリリースされてから�
 
 #: data/content/index.html:81
 msgid "Meet the Spin Community"
-msgstr ""
+msgstr "Spinコミュニティとふれあう"
 
 #: data/content/index.html:90 data/content/community/index.html:18
 msgid "Read more of this interview with"
@@ -442,6 +461,10 @@ msgid ""
 " to download it. BitTorrent client software is available for Windows, Mac "
 "OS, Linux, and many other operating systems."
 msgstr ""
+"BitTorrentのためにソフトウェアがインストールされていなければ、ダウンロードするためにBitTorrentのホームページ <a "
+"href=\"http://www.bittorrent.com/download/\">http://www.bittorrent.com/download/</a>"
+" を訪問してください。BitTorrentクライアントソフトウェアは Windows, Mac OS, Linux "
+"および他の多くのオペレーティングシステムにおいて利用可能です。"
 
 #: data/content/support.html:18
 msgid ""
@@ -449,6 +472,7 @@ msgid ""
 "BitTorrent protocol ensures that your computer participates in a nearby "
 "group."
 msgstr ""
+"BitTorrentファイルの特別なミラーを見つける必要はありません。BitTorrentプロトコルはコンピューターが近くにあるグループに確実に参加します。"
 
 #: data/content/support.html:19
 msgid "What is a 'torrent' file?"
@@ -466,7 +490,7 @@ msgstr ""
 
 #: data/content/support.html:21
 msgid "Okay, I downloaded the spin's 'torrent' file... now what?"
-msgstr ""
+msgstr "わかりました、Spin の 'torrent' ファイルをダウンロードしました... 次は何をしますか？"
 
 #: data/content/support.html:23
 msgid ""
@@ -475,12 +499,15 @@ msgid ""
 " and follow the instructions there to download the BitTorrent software of "
 "your choice."
 msgstr ""
+"コンピューターに BitTorrent ソフトウェアをインストールしていなければ、<a "
+"href=\"http://www.bittorrent.com/download\">http://www.bittorrent.com/download</a>"
+" を訪問して、あなたが選ぶ BitTorrent ソフトウェアをダウンロードするために、そこにある説明に従ってください。"
 
 #: data/content/support.html:24
 msgid ""
 "Start your BitTorrent software and open the torrent file for the spin you "
 "selected inside of BitTorrent."
-msgstr ""
+msgstr "BitTorrent ソフトウェアを起動して、選択したSpinのtorrentファイルをBitTorrent の中で開いてください。"
 
 #: data/content/support.html:25
 msgid ""
@@ -489,6 +516,9 @@ msgid ""
 "may need to press a 'start download' or 'run torrent' button in your "
 "BitTorrent software to start the download."
 msgstr ""
+"使用している BitTorrent ソフトウェアに依存しますが、ISO "
+"イメージのダウンロードが自動的に始まります。ダウンロードが動いているように見えなければ、ダウンロードを開始するために、BitTorrent "
+"ソフトウェアにおいて 'ダウンロードの開始' や 'torrent の実行' ボタンを押す必要があるかもしれません。"
 
 #: data/content/support.html:26
 msgid ""
@@ -530,6 +560,7 @@ msgid ""
 "You can use either a Windows or Linux system to create bootable USB media "
 "using a spin ISO file."
 msgstr ""
+"Spin の ISO ファイルを使用するブート可能な USB メディアを作成するために Windows や Linux のシステムを利用できます。"
 
 #: data/content/support.html:35
 msgid ""
@@ -537,6 +568,7 @@ msgid ""
 "media. You will need 1 GB at a minimum. There is no need to repartition or "
 "reformat your media."
 msgstr ""
+"始めるにあたり、USBメディアに利用可能な空き領域が十分にあるようにしてください。少なくとも1GB必要でしょう。メディアを再パーティションや再フォーマットする必要がありません。"
 
 #: data/content/support.html:36
 msgid ""
@@ -544,12 +576,14 @@ msgid ""
 "creator/\">LiveUSB creator software</a>. The download and instructions are "
 "available at the LiveUSB Creator website."
 msgstr ""
+"<a href=\"https://fedorahosted.org/liveusb-creator/\">LiveUSB creator "
+"ソフトウェア</a>をダウンロードおよびインストールします。ダウンロードおよび説明が LiveUSB Creator ウェブサイトにあります。"
 
 #: data/content/support.html:37
 msgid ""
 "Follow the instructions given at the site and in the liveusb-creator program"
 " to create the bootable USB media."
-msgstr ""
+msgstr "ブート可能メディアを作成するために、サイトおよびliveusb-creatorプログラムにある説明に従ってください。"
 
 #: data/content/support.html:39
 msgid "Using spin media / booting spins"
@@ -557,7 +591,7 @@ msgstr "Spin メディアの使い方 / Spin の起動方法"
 
 #: data/content/support.html:40
 msgid "How do I start using the spin once I've created media for it?"
-msgstr ""
+msgstr "メディアを作成したら、どのようにSpinを使い始めますか？"
 
 #: data/content/support.html:41
 msgid ""
@@ -571,7 +605,7 @@ msgstr ""
 msgid ""
 "Ideally, you should soon see the Fedora boot screen and a ten-second "
 "countdown. If you do not see this screen:"
-msgstr ""
+msgstr "理想的には、すぐに Fedora の起動画面と10秒のカウントダウンが表示されるでしょう。この画面が表示されないならば:"
 
 #: data/content/support.html:44
 msgid ""
@@ -579,12 +613,14 @@ msgid ""
 " file to a disc. Please follow the steps referenced above to ensure you have"
 " valid media."
 msgstr ""
+"メディアを正しく作成できていないかもしれません。単に ISO "
+"ファイルをディスクに書き込むことはできません。有効なメディアを持っていることを確実にするために上で参照されている手順に従ってください。"
 
 #: data/content/support.html:45
 msgid ""
 "You might need to select an option manually to make your computer boot from "
 "the live disc or live USB key."
-msgstr ""
+msgstr "コンピューターをLive ディスクまたは Live USB メモリーから起動するには、オプションを手動で選択する必要があるかもしれません。"
 
 #: data/content/support.html:47
 msgid ""
@@ -602,7 +638,7 @@ msgstr "Spinを作る"
 
 #: data/content/support.html:49
 msgid "I want to create my own Fedora spin! How can I do this?"
-msgstr ""
+msgstr "自分自身の Fedora Spin を作成したいです！どうすればできますか？"
 
 #: data/content/support.html:50
 msgid ""
@@ -710,12 +746,15 @@ msgid ""
 "using the following steps, It is recommended to be running F-10 or greater "
 "this should also work with F-9 or Rawhide."
 msgstr ""
+"一度ダウンロードすると、以下の手順を使用して Fedora において仮想アプライアンスとして AOS を起動できます。これはF-"
+"9またはRawhideにおいて動作しますが、F-10またはそれ以降において実行することが推奨されます。"
 
 #: data/content/aos/index.html:68
 msgid ""
 "Install all prerequisite virt tools using yum: *note to use kvm you must be "
 "running a full virt box"
 msgstr ""
+"yumを使用して必要要件の仮想化ツールをすべてインストールします: *完全仮想化ボックスを実行しなければいけなければKVMを使用することに注意します"
 
 #: data/content/aos/index.html:69
 msgid "Unpack the tarball containing the AOS:"
@@ -723,7 +762,7 @@ msgstr "AOSを含むtarファイルを展開します:"
 
 #: data/content/aos/index.html:70
 msgid "Use virt-imge to launch the image:"
-msgstr ""
+msgstr "イメージを起動するために virt-image を使用します:"
 
 #: data/content/aos/index.html:71
 msgid "Use \"virsh list\" to see if its running and get the IDNUM"
@@ -731,7 +770,7 @@ msgstr "実行しているかを確認して、ID番号を取得するには、\
 
 #: data/content/aos/index.html:72
 msgid "Connect to appliance and log in to verify its running:"
-msgstr ""
+msgstr "アプライアンスに接続して、実行していることを検証するためにログインします:"
 
 #: data/content/aos/index.html:75 data/content/broffice/index.html:65
 #: data/content/design/index.html:81 data/content/edu/index.html:67
@@ -991,6 +1030,7 @@ msgid ""
 "If you want to try an open source operating system with an open source "
 "office application suite you are in the right place!"
 msgstr ""
+"オープンソースのオペレーティングシステムをオープンソースのオフィスアプリケーションスイートとともに試してみたいならば、まさに適切なところにいます！"
 
 #: data/content/broffice/index.html:97 data/content/fel/index.html:170
 msgid "Miscleanous"
@@ -1004,6 +1044,10 @@ msgid ""
 "href=\"http://www.openoffice.org/\">http://www.openoffice.org/</a> for more "
 "information."
 msgstr ""
+"BrOffice.org または OpenOffice.org について具体的な質問をしたければ、詳細について <a "
+"href=\"http://broffice.org/\">http://broffice.org/</a> または <a "
+"href=\"http://www.openoffice.org/\">http://www.openoffice.org/</a> "
+"を訪問することを推奨します。"
 
 #: data/content/broffice/index.html:108 data/content/edu/index.html:110
 #: data/content/moblin/index.html:118
@@ -1018,7 +1062,7 @@ msgstr "BrOffice 起動中のスプラッシュ画面のスクリーンショッ
 #: data/content/community/chitleshgoorah.html:10
 #: data/content/community/index.html:10
 msgid "Spins Community Focus Feature"
-msgstr ""
+msgstr "Spinコミュニティの注目の機能"
 
 #: data/content/community/adammiller.html:13
 #: data/content/community/chitleshgoorah.html:13
@@ -1040,6 +1084,7 @@ msgid ""
 "Originally from Houston, TX (USA). Now in Huntsville, TX (USA) for my "
 "masters and I work at the university I am attending."
 msgstr ""
+"アメリカのテキサス州ヒューストンの出身です。修士課程と仕事のために通っている大学のために、いまはアメリカのテキサス州のハンツビルに住んでいます。"
 
 #: data/content/community/adammiller.html:22
 #: data/content/community/chitleshgoorah.html:22
@@ -1063,7 +1108,7 @@ msgstr "Freenodeにおいてはmaxamillionです。"
 msgid ""
 "Can you explain to our readers a little bit about what Xfce is and why they "
 "might want to give it a try?"
-msgstr ""
+msgstr "読者のために、Xfceがどんなもので、なぜ試したいと思うのかを説明していただけますか？"
 
 #: data/content/community/adammiller.html:29
 msgid ""
@@ -1073,10 +1118,11 @@ msgid ""
 "clean interface, it's simple but not so simple that its lacking, and it has "
 "an overall professional feel to it."
 msgstr ""
+"Xfceは、シンプルかつ高速を目標とするオープンソースのデスクトップ環境です。極めてカスタマイズ可能であり、豊富な機能を持つにも関わらず、デスクトップ環境をより高速にする素晴らしいソリューションです。Xfceは非常にきれいなインターフェースを持ちます。シンプルですが、何か不足するほどシンプルではありません。また、全体的に専門的な感じがあります。"
 
 #: data/content/community/adammiller.html:31
 msgid "What are your top three favorite features in Xfce?"
-msgstr ""
+msgstr "Xfceの好きな機能トップ3は何でしょうか？"
 
 #: data/content/community/adammiller.html:33
 msgid ""
@@ -1084,6 +1130,7 @@ msgid ""
 " me perfectly and I can't find another that suites my needs in the same way."
 " It's fast, stable, and it offers compositing for a little eye candy."
 msgstr ""
+"まっさきに、ウィンドウマネージャーです。なぜかはわかりませんが、私にぴったりと合うようです。そして、同じようなものを他に見つけることができません。高速、安定であり、少し見た目のよいものを提供します。"
 
 #: data/content/community/adammiller.html:34
 #, python-format
@@ -1092,16 +1139,20 @@ msgid ""
 "computer and while I know it might sound silly, I'm just a really big fan of"
 " Xfce Terminal over other similar products."
 msgstr ""
+"端末（ターミナル）; Xfce Terminal は私がコンピューターを使用する時間のだいたい 85%% "
+"を費やします。そして、ばかげて聞こえるかもしれませんが、他の似たようなものに比べて本当に Xfce Terminal の大ファンです。"
 
 #: data/content/community/adammiller.html:35
 msgid ""
 "Thunar, the Xfce default file manager is extremely fast, user friendly and "
 "it has a very clean/simplistic interface which I'm a really big fan of."
 msgstr ""
+"Thunar (Xfce のデフォルトのファイルマネージャー) "
+"は極めて高速、ユーザーフレンドリーであり、私が大好きな非常にきれい/シンプルなインターフェースを持ちます。 "
 
 #: data/content/community/adammiller.html:37
 msgid "How did you first get involved with the Xfce spin?"
-msgstr ""
+msgstr "最初にどのように Xfce Spin と関わったのでしょうか？"
 
 #: data/content/community/adammiller.html:39
 msgid ""
@@ -1110,13 +1161,13 @@ msgid ""
 "from there I simply asked what needed doing. I started by helping test, "
 "clean up the wiki when needed, and just offer up any help I was able to "
 "provide."
-msgstr ""
+msgstr "正直なところユーザーとして始めました。Xfce Spin を使用"
 
 #: data/content/community/adammiller.html:41
 msgid ""
 "How does the Fedora Xfce SIG work? Is it a big SIG? How do you divide the "
 "work?"
-msgstr ""
+msgstr "どのように Fedora Xfce SIG の仕事をしていますか？どのように仕事を分担していますか？"
 
 #: data/content/community/adammiller.html:42
 msgid ""
@@ -1126,10 +1177,13 @@ msgid ""
 "purposes, attend Spins SIG meetings, and email one another when others "
 "aren't on irc for on-going discussions."
 msgstr ""
+"私たちは実際にかなり小さなSIGです。メーリングリストやIRCチャネルを持ちませんが、ほとんどの作業はIRCや電子メールにて行います（そう、ブードゥーマジックのように聞こえます）。一般的には開発目的のために"
+" #fedora-devel をぶらぶらしていて、Spins "
+"SIG会議に参加しています。また、進行中の議論のためにIRCに参加していない人がいると、電子メールを出します。"
 
 #: data/content/community/adammiller.html:43
 msgid "How much contact do you have with Xfce upstream?"
-msgstr ""
+msgstr "Xfceアップストリームとはどのくらい連絡をとっていますか？"
 
 #: data/content/community/adammiller.html:44
 msgid ""
@@ -1144,10 +1198,16 @@ msgid ""
 "involved helping along with their upstream development but it's just not "
 "possible at the moment."
 msgstr ""
+"私は個人的にできる限りアップストリームにフィードバックを送ります。私自身以下であるならば、Xfce "
+"SIGにおいて他のものが同じように行います。私たちがバグを見つけるといつも、確実にアップストリームにバグを送ります。シナリオはパッチと似ています。Xfce"
+" "
+"SIGにおいて時間を費やしますが、アップストリームに1つのバグを報告する必要があるだけでした。そして、それは重複していたので、アップストリームはすでにそれに取り組んでいました。それを除いて、私はできる限り最新知識を持っている状態を保つために、Xfceの開発と"
+" \"goodies\" "
+"メーリングリストのメンバーになっています。余暇があれば、実際にアップストリームの開発と関連する助けをしたいと思っていますが、ただ当面はできそうにありません。"
 
 #: data/content/community/adammiller.html:45
 msgid "How did you first get involved with Fedora?"
-msgstr ""
+msgstr "Fedoraとは最初どのように関わりましたか？"
 
 #: data/content/community/adammiller.html:46
 msgid ""
@@ -1165,6 +1225,14 @@ msgid ""
 "to jump in and contribute. Then I found my way to the Xfce SIG, the rest is "
 "a blur and here I am today."
 msgstr ""
+"これは正直なところ長い話ですが、なるべく要点を述べるようにします。私は Red Hat 7.0 Deluxe Workstation "
+"の箱入りセットを用いて始めました。そこから、Red HatをFedoraが分割されるまで熱心なRed "
+"Hatのユーザーでした。私はしばらく異なるディストリビューションを試して世界の中を冒険しにいきました。そして、結局Fedora "
+"7のリリースのころにRed "
+"Hat/Fedoraの世界に戻ってきました。現在の仕事についたとき、私たちのRHELサーバーのためにソフトウェアをパッケージ化する必要が出てきました。また、私たちはすでにFedora"
+" "
+"EPELを使用していたので、他の人のためになるように（期待を持って）、それらを維持するために私のパッケージをプロジェクトにコミットして進めることを決心しました。そこから私は消費されました、私は関われば関わるほど、プロジェクトを好きになりました。プロジェクトにより出される価値、目標、および情熱すべては、私が飛び込んで、貢献するために手に入れたものです。それから、私はXfce"
+" SIGにいく方法を見つけました。残りはぼやけていますが、今日はここにいます。"
 
 #: data/content/community/adammiller.html:47
 msgid ""
@@ -1180,7 +1248,7 @@ msgstr ""
 
 #: data/content/community/adammiller.html:48
 msgid "What do you like to do in the time you're not working on Fedora?"
-msgstr ""
+msgstr "Fedoraに取り組んでいないときは何をして過ごすのが好きでしょうか？"
 
 #: data/content/community/adammiller.html:49
 msgid ""
@@ -1188,6 +1256,7 @@ msgid ""
 "not working on Fedora, working on school or working my day job I like to go "
 "to the gym, play video games, or spend time with my fiancé."
 msgstr ""
+"現在、コンピューターサイエンスの修士課程に通っています。そのため、Fedoraに取り組んでいなくて、学校や日々の仕事に取り組んでいるとき、ジムに通い、ビデオゲームをして、フィアンセと共に過ごすことが好きです。"
 
 #: data/content/community/adammiller.html:50
 msgid "This interview was given by Máirín Duffy on 3 November 2009."
@@ -1208,6 +1277,8 @@ msgid ""
 " Electronic Lab spin</a>. Here he discusses the help he had from the "
 "community, the spins target audience, and his inspiration for creating it."
 msgstr ""
+"Chitlesh Goorah さんは<a "
+"href=\"/fel\">Fedora電子ラボSpin</a>の製作者かつメンテナーです。ここで彼がコミュニティから受けた支援、Spinの対象者、および作成する動機について議論します。"
 
 #: data/content/community/chitleshgoorah.html:20
 msgid "Strasbourg, France."
@@ -1267,6 +1338,7 @@ msgid ""
 "approach. Being innovative and cutting-edge, Fedora has enough qualities to "
 "lead the opensource electronic simulation environment by example."
 msgstr ""
+"この頃、ほとんどすべての半導体企業は何種類かのファブレスのアプローチを使用します。革新的で、最先端であるので、Fedoraは例によりオープンソースの電子シミュレーション環境を主導するために十分な資質があります。"
 
 #: data/content/community/chitleshgoorah.html:40
 msgid ""
@@ -1274,12 +1346,14 @@ msgid ""
 "for expanding this post Fedora 8, perhaps targeting other areas of "
 "engineering?"
 msgstr ""
+"Fedora 電子ラボに対する目標をお話しいただけますか。おそらくエンジニアリングの他の領域を目標とすると思いますが、このポスト Fedora 8 "
+"を拡大する計画がありますか？"
 
 #: data/content/community/chitleshgoorah.html:42
 msgid ""
 "Facilitating the design and verification of ASIC design flow for our users "
 "remains the key objective of the Fedora Electronic Lab."
-msgstr ""
+msgstr "私たちのユーザーのためにASIC設計フローの設計と検証を促進することが、Fedora電子ラボの主要な目的のままです。"
 
 #: data/content/community/chitleshgoorah.html:43
 msgid ""
@@ -1287,22 +1361,23 @@ msgid ""
 "solutions brought forward many potential advantages for Fedora users, such "
 "as:"
 msgstr ""
+"このアプローチは私たちの目標を形づくり、同様に多くの疑問を発生しました。このように、私たちのソリューションはFedoraユーザーのために多くの潜在的な優位性を出しました。たとえば："
 
 #: data/content/community/chitleshgoorah.html:47
 msgid ""
 "a complete process of creation, management, simulation and implementation "
 "for designs following either top-down and bottom-up strategies."
-msgstr ""
+msgstr "トップダウン戦略にもボトムアップ戦略にも従う、設計に対する作成、管理、シミュレーションおよび実装の完全なプロセス。"
 
 #: data/content/community/chitleshgoorah.html:48
 msgid "interoperability between the packages."
-msgstr ""
+msgstr "パッケージ間の相互運用性。"
 
 #: data/content/community/chitleshgoorah.html:50
 msgid ""
 "a simple fabless semiconductor facility designed to fulfill various design "
 "teams' tasks."
-msgstr ""
+msgstr "さまざまな設計チームの作業を成し遂げるために設計されたシンプルなファブレス半導体設備。"
 
 #: data/content/community/chitleshgoorah.html:52
 msgid ""
@@ -1389,27 +1464,27 @@ msgstr ""
 
 #: data/content/community/chitleshgoorah.html:81
 msgid "Physical Design"
-msgstr ""
+msgstr "物理設計"
 
 #: data/content/community/chitleshgoorah.html:83
 msgid "Backend Product fabrication"
-msgstr ""
+msgstr "バックエンド製品の加工作業"
 
 #: data/content/community/chitleshgoorah.html:85
 msgid "Design Testing"
-msgstr ""
+msgstr "設計テスト"
 
 #: data/content/community/chitleshgoorah.html:87
 msgid "Circuit Design"
-msgstr ""
+msgstr "回路設計"
 
 #: data/content/community/chitleshgoorah.html:89
 msgid "Analog/Digital Design"
-msgstr ""
+msgstr "アナログ/デジタル設計"
 
 #: data/content/community/chitleshgoorah.html:91
 msgid "and many more ..."
-msgstr ""
+msgstr "そして、さらに ..."
 
 #: data/content/community/chitleshgoorah.html:95
 msgid ""
@@ -1417,6 +1492,7 @@ msgid ""
 "basic tools such as a mindmapping tool, gantt diagram editor, numerical "
 "computing tools will be included in the spin."
 msgstr ""
+"たとえば、「バックエンド製品の加工作業」プロジェクト管理のために、マインドマップのツール、ガントチャートエディター、数値計算ツールのような基本的なツールがいくつかがSpinに含まれています。"
 
 #: data/content/community/chitleshgoorah.html:98
 msgid ""
@@ -1424,6 +1500,8 @@ msgid ""
 "pharosc. Pharosc includes essential scripts to allow anyone to wrap up "
 "his/her own standard cell libraries."
 msgstr ""
+"主なものは magic, netgen, xcircuit, irsim, alliance, gnucap および pharosc "
+"です。pharosc はだれでも自分自身の標準セルライブラリを包み隠すことができる基本的なスクリプトを含みます。"
 
 #: data/content/community/chitleshgoorah.html:99
 msgid ""
@@ -1575,6 +1653,8 @@ msgid ""
 "source multimedia production and publishing tools? Try the Design Suite, a "
 "Fedora Spin created by designers, for designers."
 msgstr ""
+"フリーかつオープンなマルチメディア製品と出版ツールに満ちている準備万端なデスクトップ環境を探していますか？デザイナーにより、デザイナーのために作成されたFedora"
+" Spin、Design Suiteを試してください。"
 
 #: data/content/design/index.html:59
 msgid "<a href=\"#about\">Learn More</a>."
@@ -1674,6 +1754,9 @@ msgid ""
 "you can install Fedora directly to your hard drive straight from the Live "
 "Media desktop if you like."
 msgstr ""
+"これは Fedora Linux オペレーティングシステムのデザインスイートの最新版です。Fedora "
+"デザインスイートを試すために必要なものがすべて含まれています。試してみるために現在のシステムを何も消す必要がありません。そして、もし気に入れば、Live"
+" メディアのデスクトップから直接ハードディスクに Fedora をインストールすることができます。"
 
 #: data/content/design/index.html:111
 msgid "Fedora Design Suite Support"
@@ -1685,6 +1768,8 @@ msgid ""
 "you can use to get help below. For help downloading, running, and installing"
 " spins, please visit the main spins support page."
 msgstr ""
+"デザインスイートを使用するヘルプが必要ですか？ヘルプを得るために使用できるリソースの一覧を以下に置いておきます。Spin "
+"のダウンロード、実行、およびインストールに関するヘルプのために、メインの Spin サポートページを訪問してください。"
 
 #: data/content/design/index.html:122
 msgid "Design Suite"
@@ -1692,7 +1777,7 @@ msgstr "デザインスイート"
 
 #: data/content/design/index.html:123
 msgid "A Designer in action"
-msgstr ""
+msgstr "活動しているデザイナー"
 
 #: data/content/design/index.html:124
 msgid ""
@@ -1700,6 +1785,7 @@ msgid ""
 "workflow. Here, tablet support and the Inkscape vector graphics editor power"
 " the creation of a comic strip."
 msgstr ""
+"インストールの数分のうちに、デスクトップが完全なデザインのワークフローの特徴を持つようになります。これは、タブレットのサポートとInkscapeベクターグラフィックスエディターがコマ割り漫画の作成を推進します。"
 
 #: data/content/edu/index.html:41
 msgid "About Spin: Education"
@@ -1711,7 +1797,7 @@ msgstr "教育について"
 
 #: data/content/edu/index.html:55
 msgid "Teach with Fedora."
-msgstr ""
+msgstr "Fedoraを用いて教える"
 
 #: data/content/edu/index.html:56
 msgid ""
@@ -1719,6 +1805,7 @@ msgid ""
 "for contributing to educational projects inside, but also outside of the "
 "Fedora ecosystem."
 msgstr ""
+"このSpinの目的は、教育プロジェクトの貢献者の中だけではなく、Fedoraエコシステムの外に対しても、準備万端の開発環境を作成することです。"
 
 #: data/content/edu/index.html:61
 msgid ""
@@ -1770,7 +1857,7 @@ msgstr "開発者について"
 
 #: data/content/fel/aboutus.html:13
 msgid "How we shaped FEL"
-msgstr ""
+msgstr "私たちはどのように FEL を作り上げるでしょうか"
 
 #: data/content/fel/aboutus.html:17
 msgid ""
@@ -1780,14 +1867,16 @@ msgid ""
 "shape those tools to satisfy design methodologies. For more information, "
 "visit our developers' blogs"
 msgstr ""
+"Fedora電子ラボは、EDAツールとオープンハードウェアコンテンツに専念している、Fedora "
+"Projectのサブプロジェクトです。6か月ごとに新しいバージョンがフリーダウンロードにリリースされます。目標はそれらのツールをパッケージ化するだけではなく、設計技法を満たすようにそれらのツールを作り上げます。"
 
 #: data/content/fel/aboutus.html:19
 msgid "Chitlesh Goorah - Founder and Architect"
-msgstr ""
+msgstr "Chitlesh Goorah - 創設者およびアーキテクト"
 
 #: data/content/fel/aboutus.html:20
 msgid "Shakthi Kannan - Developer"
-msgstr ""
+msgstr "Shakthi Kannan - 開発者"
 
 #: data/content/fel/aboutus.html:26
 msgid "History"
@@ -1829,6 +1918,8 @@ msgid ""
 "revived Fedora Electronic Lab's marketing in India. He performed bug triage "
 "within the community, till F-11's release."
 msgstr ""
+"F-10開発サイクルの間、Aanjhan Ranganathanはチームに加わって、IndiaでFedora "
+"電子ラボのマーケティングを復活させました。F-11のリリースまで、彼はコミュニティ内でバグの優先順位の決定を実行しました。"
 
 #: data/content/fel/aboutus.html:36
 msgid ""
@@ -1857,7 +1948,7 @@ msgstr "FEL 10 Cambridge リリース"
 
 #: data/content/fel/aboutus.html:43
 msgid "FAB approved \"Fedora Electronic Lab\" LiveDVD spin"
-msgstr ""
+msgstr "FAB が「Fedora 電子ラボ」 LiveDVD Spin を承認しました"
 
 #: data/content/fel/aboutus.html:44
 msgid "FEL 9 Sulphur released at Linuxtag2008"
@@ -1869,7 +1960,7 @@ msgstr "FEL 8 Werewolf リリース"
 
 #: data/content/fel/aboutus.html:46
 msgid "FESCo approved \"Fedora Electronic Lab\" as a feature"
-msgstr ""
+msgstr "FESCo が「Fedora 電子ラボ」を機能として承認しました"
 
 #: data/content/fel/aboutus.html:55 data/content/fel/index.html:185
 #: data/content/fel/index.html:205 data/content/fel/portfolio.html:9
@@ -1898,6 +1989,8 @@ msgid ""
 " platform, is dedicated to support the innovation and development brought by"
 " opensource Electronic Design Automation (EDA) community."
 msgstr ""
+"Fedora 電子ラボ、オープンソースのハードウェア設計およびシミュレーションのプラットフォーム、はオープンソースの Electronic Design"
+" Automation (EDA) によりもたらされるイノベーションと開発をサポートすることに専念しています。"
 
 #: data/content/fel/commitment.html:12
 msgid ""
@@ -1907,52 +2000,54 @@ msgid ""
 "source hardware development and enable electronic designers tapeout quickly "
 "and efficiently."
 msgstr ""
+"Fedora "
+"電子ラボは、現在の技術競争についていく助けになるため、信頼できるオープンソースの設計ツールをセットアップした完全な電子ラボを提供します。それは、オープンソースのハードウェア開発のリスクアセスメントを減らして、エレクトロニクス設計者が迅速かつ効率的にテープアウトできるようにします。"
 
 #: data/content/fel/commitment.html:13
 msgid ""
 "Fedora Electronic Lab targets mainly the Micro-Nano Electronic Engineering "
 "field. It introduces:"
-msgstr ""
+msgstr "Fedora電子ラボはおもにマイクロナノ電子エンジニアリング領域を目標にしています。次のものを含みます："
 
 #: data/content/fel/commitment.html:16
 msgid "A collection of Perl modules to extend Verilog and VHDL support."
-msgstr ""
+msgstr "Verilog と VHDL サポートを拡張するための Perl モジュールのコレクション"
 
 #: data/content/fel/commitment.html:17
 msgid ""
 "Tools for Application-Specific Integrated Circuit (ASIC) Design Flow "
 "process."
-msgstr ""
+msgstr "Application-Specific Integrated Circuit (ASIC) 設計フロープロセスのツールです。"
 
 #: data/content/fel/commitment.html:18
 msgid ""
 "Extra standard cell libraries supporting a feature size of 0.13µm. (more "
 "than 300 MB)"
-msgstr ""
+msgstr "0.13µm の機能サイズをサポートする追加の標準セルライブラリ。（300MB以上）"
 
 #: data/content/fel/commitment.html:19
 msgid ""
 "Extracted spice decks which can be simulated with gnucap/ngspice or any "
 "spice simulators."
-msgstr ""
+msgstr "gnucap/ngspice またはあらゆる spice シミュレーターを用いてシミュレートできる、抽出された spice デッキ。"
 
 #: data/content/fel/commitment.html:20
 msgid ""
 "Interoperability between various packages in order to achieve different "
 "design flows."
-msgstr ""
+msgstr "異なる設計フローを達成するためのさまざまなパッケージ間の相互運用性。"
 
 #: data/content/fel/commitment.html:23
 msgid ""
 "A peer review eeb-based solution coupled with an Eclipse IDE for "
 "Embedded/Digital Hardware IP design."
-msgstr ""
+msgstr "組み込み/デジタルハードウェア IP 設計のために Eclipse IDE と連結されたピアレビューの eeb ベースのソリューション。"
 
 #: data/content/fel/commitment.html:24
 msgid ""
 "PLA tools, C-based design methodologies, simulators for 8051 and 8085 "
 "microcontrollers and many more."
-msgstr ""
+msgstr "PLAツール、Cベースの設計技法、8051および8085マイクロコントローラー用シミュレーター、さらにもっといろいろ。"
 
 #: data/content/fel/commitment.html:27
 msgid "FEL's Commitment"
@@ -1964,6 +2059,8 @@ msgid ""
 "community. This problem is usually unknown to many people or taken for "
 "granted."
 msgstr ""
+"Fedora電子ラボ (FEL) "
+"はオープンソースコミュニティにおける一つの大きな問題を解決しにきます。この問題はふつう多くの人に知られていないか、当たり前と考えられています。"
 
 #: data/content/fel/commitment.html:30
 msgid ""
@@ -2079,11 +2176,11 @@ msgstr "ポートフォリオ"
 #: data/content/fel/index.html:49 data/content/fel/index.html:118
 #: data/content/fel/publications.html:21
 msgid "Publications"
-msgstr ""
+msgstr "出版物"
 
 #: data/content/fel/index.html:57
 msgid "Design, simulate, and program electronics."
-msgstr ""
+msgstr "エレクトロニクスの設計、シミュレーションおよびプログラム。"
 
 #: data/content/fel/index.html:58
 msgid ""
@@ -2094,15 +2191,15 @@ msgstr ""
 
 #: data/content/fel/index.html:59
 msgid "Click image for more details."
-msgstr ""
+msgstr "詳細は画像をクリックしてください。"
 
 #: data/content/fel/index.html:62
 msgid "Community Space"
-msgstr ""
+msgstr "コミュニティスペース"
 
 #: data/content/fel/index.html:64
 msgid "User Documentation and Developer Area"
-msgstr ""
+msgstr "ユーザードキュメントおよび開発エリア"
 
 #: data/content/fel/index.html:65
 msgid ""
@@ -2116,7 +2213,7 @@ msgstr "スクリーンショットギャラリー"
 
 #: data/content/fel/index.html:68
 msgid "Nightly Development LiveDVD"
-msgstr ""
+msgstr "ナイトリー開発の LiveDVD"
 
 #: data/content/fel/index.html:72
 msgid "Latest Articles"
@@ -2132,11 +2229,11 @@ msgstr "FEL-12 リリースノート"
 
 #: data/content/fel/index.html:76
 msgid "Position Paper for Research and Development"
-msgstr ""
+msgstr "研究と開発の方針説明書"
 
 #: data/content/fel/index.html:77
 msgid "Installing the core FEL software on"
-msgstr ""
+msgstr "FELの中心的なソフトウェアをインストールする方法： "
 
 #: data/content/fel/index.html:82
 msgid "Fedora Electronic Lab is"
@@ -2148,13 +2245,13 @@ msgstr "Fedora の EDA ポートフォリオです。"
 
 #: data/content/fel/index.html:85
 msgid "a free and opensource EDA provider and community builder."
-msgstr ""
+msgstr "フリーかつオープンソースの EDA プロバイダーおよびコミュニティビルダーです。"
 
 #: data/content/fel/index.html:86
 msgid ""
 "building a bridge between both free and opensource hardware and software "
 "communities."
-msgstr ""
+msgstr "フリーかつオープンソースのハードウェアおよびソフトウェアのコミュニティの架け橋の構築"
 
 #: data/content/fel/index.html:87
 msgid ""
@@ -2164,21 +2261,21 @@ msgstr ""
 
 #: data/content/fel/index.html:91
 msgid "Advantages"
-msgstr ""
+msgstr "優位性"
 
 #: data/content/fel/index.html:93
 msgid "Deployable in both development and production environments."
-msgstr ""
+msgstr "開発環境と本番環境の両方において導入可能です。"
 
 #: data/content/fel/index.html:94
 msgid "No kernel patches are required, making it easy to deploy and use."
-msgstr ""
+msgstr "カーネルパッチが必要ありません、導入と使用が簡単です。"
 
 #: data/content/fel/index.html:95
 msgid ""
 "Free and opensource licensed and NO purchase of extra licenses is required "
 "to activate its features."
-msgstr ""
+msgstr "フリーかつオープンソースのライセンスで、その機能を有効化するために追加のライセンスを購入する必要がありません。"
 
 #: data/content/fel/index.html:101
 msgid "ASIC : Application-Specific Integrated Circuit"
@@ -2196,11 +2293,11 @@ msgstr "VLSI : Very Large Scale Integration、約 10⁶ から 10⁷ 個のト�
 msgid ""
 "Fedora Electronic Lab can be deployed with these simple mechanisms, via "
 "either"
-msgstr ""
+msgstr "Fedora 電子ラボはこれらの簡単なメカニズムを用いて導入できます。"
 
 #: data/content/fel/index.html:126
 msgid "a Fedora Electronic Lab LiveDVD."
-msgstr ""
+msgstr "Fedora 電子ラボ LiveDVD"
 
 #: data/content/fel/index.html:129
 msgid "Yum install"
@@ -2211,6 +2308,8 @@ msgid ""
 "As from <b>Fedora-11 Leonidas</b>, Fedora users can groupinstall all FEL EDA"
 " software at once with:"
 msgstr ""
+"<b>Fedora-11 Leonidas</b> から、Fedora ユーザーはすべての FEL EDA ソフトウェアを一度に "
+"groupinstall できます："
 
 #: data/content/fel/index.html:132
 msgid "# yum groupinstall 'Electronic Lab'"
@@ -2226,6 +2325,9 @@ msgid ""
 "operating system that is executed upon boot, without installation on a hard "
 "drive. A desktop icon can be used to install the OS if wanted."
 msgstr ""
+"LiveDVD は HTTP または torrent 経由でダウンロードできます。LiveDVD "
+"はハードディスクにインストールすることなく起動時に実行されるオペレーティングシステムです。希望すれば、デスクトップ・アイコンを使用して OS "
+"をインストールできます。"
 
 #: data/content/fel/index.html:171
 msgid ""
@@ -2253,13 +2355,13 @@ msgstr ""
 
 #: data/content/fel/index.html:206
 msgid "Determination"
-msgstr ""
+msgstr "決意"
 
 #: data/content/fel/index.html:207
 msgid ""
 "The FEL team strives to provide a suitable EDA platform and design flows for"
 " the real life."
-msgstr ""
+msgstr "FELチームは、適切なEDAプラットホームと設計フローを実生活に提供することに努めます。"
 
 #: data/content/fel/index.html:215
 msgid "Toped Layout Editor"
@@ -2267,44 +2369,44 @@ msgstr ""
 
 #: data/content/fel/index.html:216
 msgid "User's design"
-msgstr ""
+msgstr "ユーザーのデザイン"
 
 #: data/content/fel/index.html:217
 msgid ""
 "This screenshot demonstrates the layout done on Fedora 8 by Svilen Krustev."
-msgstr ""
+msgstr "このスクリーンショットは Fedora 8 において Svilen Krustev さんにより行われたレイアウトを説明します。"
 
 #: data/content/fel/portfolio.html:13
 msgid "Featured Solutions"
-msgstr ""
+msgstr "注目のソリューション"
 
 #: data/content/fel/portfolio.html:15
 msgid "The Fedora Electronic Lab includes design tools for:"
-msgstr ""
+msgstr "Fedora電子ラボは次の目的の設計ツールを含みます："
 
 #: data/content/fel/portfolio.html:17 data/content/fel/portfolio.html:27
 msgid "ASIC Analog Circuit Design and Simulation"
-msgstr ""
+msgstr "ASICアナログ回路の設計とシミュレーション"
 
 #: data/content/fel/portfolio.html:18 data/content/fel/portfolio.html:48
 msgid "ASIC Layout, DRC and LVS"
-msgstr ""
+msgstr "ASIC配置、DRCおよびLVS"
 
 #: data/content/fel/portfolio.html:19 data/content/fel/portfolio.html:71
 msgid "Digital Simulation and Verification"
-msgstr ""
+msgstr "デジタルシミュレーションおよび検証"
 
 #: data/content/fel/portfolio.html:20 data/content/fel/portfolio.html:94
 msgid "RTL and logic synthesis design flows"
-msgstr ""
+msgstr "RTLおよび論理合成設計フロー"
 
 #: data/content/fel/portfolio.html:21 data/content/fel/portfolio.html:123
 msgid "Circuit and PCB Layout"
-msgstr ""
+msgstr "回路およびPCB配置"
 
 #: data/content/fel/portfolio.html:22
 msgid "Micro Controller (µC) Programming and Embedded Systems Development"
-msgstr ""
+msgstr "マイクロコントローラー (µC) プログラミングおよび組み込みシステム開発"
 
 #: data/content/fel/portfolio.html:23 data/content/fel/portfolio.html:176
 msgid "CAD Tools"
@@ -2312,7 +2414,7 @@ msgstr "CADツール"
 
 #: data/content/fel/portfolio.html:24
 msgid "Project Management, Peer Review and budget tracking"
-msgstr ""
+msgstr "プロジェクト管理、ピアレビューおよび予算トラッキング"
 
 #: data/content/fel/portfolio.html:30
 msgid ""
@@ -2338,12 +2440,12 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:35
 msgid "Draws publishable-quality electrical circuit schematic diagrams."
-msgstr ""
+msgstr "出版する価値がある品質の電気回路概略図を描画します。"
 
 #: data/content/fel/portfolio.html:36
 msgid ""
 "Circuit components can be retrieved from libraries which are fully editable."
-msgstr ""
+msgstr "回路コンポーネントは完全に編集可能なライブラリから取り出せます。"
 
 #: data/content/fel/portfolio.html:40 data/content/fel/portfolio.html:86
 #: data/content/fel/portfolio.html:118 data/content/fel/portfolio.html:136
@@ -2352,17 +2454,17 @@ msgstr "ツール:"
 
 #: data/content/fel/portfolio.html:43
 msgid "A mixed level/signal circuit simulator"
-msgstr ""
+msgstr "混合レベル/信号回路シミュレーター"
 
 #: data/content/fel/portfolio.html:44
 msgid "A frontend to Spice circuit simulators"
-msgstr ""
+msgstr "Spice 回路シミュレーターの"
 
 #: data/content/fel/portfolio.html:45
 msgid ""
 "A general-purpose drawing program and also a specific-purpose CAD program "
 "for circuit schematic drawing and schematic capture."
-msgstr ""
+msgstr "汎用作図プログラムおよび回路外略図と回路図入力のための特定用途 CAD プログラム。"
 
 #: data/content/fel/portfolio.html:51
 msgid ""
@@ -2374,15 +2476,15 @@ msgstr ""
 msgid ""
 "A hierarchical circuit extractor that only re-extracts portions of the "
 "circuit that have changed."
-msgstr ""
+msgstr "変更された回路の部分のみを再抽出する階層的な回路抽出器。"
 
 #: data/content/fel/portfolio.html:53
 msgid "Plowing that permits interactive stretching and compaction."
-msgstr ""
+msgstr "対話的な伸張および圧縮を可能にする掘り起こし。"
 
 #: data/content/fel/portfolio.html:54
 msgid "Routing tools that work under and around existing connections."
-msgstr ""
+msgstr "既存の接続の下部や周辺において機能する配線ツール。"
 
 #: data/content/fel/portfolio.html:55
 msgid "Logs and corner stitching to achieve efficient implementations."
@@ -2415,7 +2517,7 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:60
 msgid "Generates GDS II stream format and CIF from a given layout."
-msgstr ""
+msgstr "与えられた配置図から GDS II ストリームフォーマットと CIF を生成します。"
 
 #: data/content/fel/portfolio.html:61
 msgid "Achievement : Thick-film circuit layout using the Magic layout editor."
@@ -2430,13 +2532,13 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:67
 msgid "A cross-platform VLSI IC layout editor."
-msgstr ""
+msgstr "クロスプラットフォーム VLSI IC レイアウトエディター。"
 
 #: data/content/fel/portfolio.html:68
 msgid ""
 "A tool for comparing netlists, in analog or mixed-signal circuits that "
 "cannot be simulated in reasonable time."
-msgstr ""
+msgstr "妥当な時間でシミュレーションできないアナログまたは混合信号の回路における、ネットリストを比較するツールです。"
 
 #: data/content/fel/portfolio.html:73
 msgid ""
@@ -2460,7 +2562,7 @@ msgstr "VHDL と Verilog 両方の設計のサポート。"
 
 #: data/content/fel/portfolio.html:78
 msgid "A Verilog simulator and synthesis tool for IEEE 1364-2001 standard."
-msgstr ""
+msgstr "IEEE 1364-2001 標準のための Verilog シミュレーターおよび合成ツール。"
 
 #: data/content/fel/portfolio.html:79
 msgid ""
@@ -2470,11 +2572,11 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:80
 msgid "Pretty printing or cross references generation in HTML."
-msgstr ""
+msgstr "HTMLのきれいな印刷または相互参照の生成。"
 
 #: data/content/fel/portfolio.html:81
 msgid "Makefile generation for any component in a design."
-msgstr ""
+msgstr "設計におけるあらゆるコンポーネントに対するMakefile生成。"
 
 #: data/content/fel/portfolio.html:82
 msgid ""
@@ -2486,7 +2588,7 @@ msgstr ""
 msgid ""
 "Automatic layout generation from VHDL description via desired standard cell "
 "libraries."
-msgstr ""
+msgstr "希望するセルライブラリー経由でVHDL記述からの自動レイアウト生成"
 
 #: data/content/fel/portfolio.html:84
 msgid ""
@@ -2511,7 +2613,7 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:89
 msgid "Yet another VHDL simulator."
-msgstr ""
+msgstr "もう一つのVHDLシミュレーター。"
 
 #: data/content/fel/portfolio.html:90
 msgid ""
@@ -2535,79 +2637,79 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:97
 msgid "Automatic schematic generation"
-msgstr ""
+msgstr "自動回路図生成"
 
 #: data/content/fel/portfolio.html:98
 msgid "VHDL compilation and simulation"
-msgstr ""
+msgstr "VHDL コンパイルとシミュレーション"
 
 #: data/content/fel/portfolio.html:99
 msgid "Finite State Machines (FSM)"
-msgstr ""
+msgstr "有限状態機械 (FSM: Finite State Machines)"
 
 #: data/content/fel/portfolio.html:100
 msgid "Model checking and formal proof"
-msgstr ""
+msgstr "モデルチェックと形式証明"
 
 #: data/content/fel/portfolio.html:101
 msgid "RTL and Logic synthesis"
-msgstr ""
+msgstr "RTL と論理合成"
 
 #: data/content/fel/portfolio.html:102
 msgid "Data-Path compilation"
-msgstr ""
+msgstr "データパスコンパイル"
 
 #: data/content/fel/portfolio.html:103
 msgid "Macro-cells generation"
-msgstr ""
+msgstr "マクロセル生成"
 
 #: data/content/fel/portfolio.html:104
 msgid "Symbolic Pad cells"
-msgstr ""
+msgstr "記号端子セル"
 
 #: data/content/fel/portfolio.html:105
 msgid "Design rules checking"
-msgstr ""
+msgstr "設計ルールチェック"
 
 #: data/content/fel/portfolio.html:106
 msgid "Place and route"
-msgstr ""
+msgstr "配置と経路"
 
 #: data/content/fel/portfolio.html:107
 msgid "Layout edition"
-msgstr ""
+msgstr "レイアウト編集"
 
 #: data/content/fel/portfolio.html:108
 msgid "Netlist extraction and verification"
-msgstr ""
+msgstr "ネットリストの展開および検証"
 
 #: data/content/fel/portfolio.html:109
 msgid "Automatic Layout generation"
-msgstr ""
+msgstr "自動レイアウト生成"
 
 #: data/content/fel/portfolio.html:110
 msgid "Physical optimization and layout design flows"
-msgstr ""
+msgstr "物理的最適化およびレイアウト設計フロー"
 
 #: data/content/fel/portfolio.html:111
 msgid "Complete RTL to CIF and GDSII flows"
-msgstr ""
+msgstr "CIF および GDSII フローへの完全な RTL"
 
 #: data/content/fel/portfolio.html:112
 msgid "7 extra standard cells up to a feature size of 0.13µm"
-msgstr ""
+msgstr "0.13µm の機能サイズまでの7個の追加の標準セル"
 
 #: data/content/fel/portfolio.html:113
 msgid "Read/write standard ins/outs including Verilog and VHDL"
-msgstr ""
+msgstr "Verilog と VHDL を含む標準的な入出力の読み書き"
 
 #: data/content/fel/portfolio.html:114
 msgid "Creates a POV-Ray (3D view) scene description file of the GDSII data. "
-msgstr ""
+msgstr "GDSIIデータのPOV-Ray (3Dビュー) シーン記述ファイルを作成します。"
 
 #: data/content/fel/portfolio.html:119
 msgid "VLSI and ASIC Technology Standard Cell Libraries"
-msgstr ""
+msgstr "VLSI および ASIC 技術の標準セルライブラリ"
 
 #: data/content/fel/portfolio.html:120
 msgid ""
@@ -2629,13 +2731,13 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:127
 msgid "schematic capture, simulation, prototyping attribute management,"
-msgstr ""
+msgstr "回路図入力、シミュレーション、プロトタイピング属性管理、"
 
 #: data/content/fel/portfolio.html:128
 msgid ""
 "bill of materials (BOM) generation and netlisting into over 20 netlist "
 "formats."
-msgstr ""
+msgstr "部品表 (BOM: bill of materials) 生成および20以上のネットリスト形式へのネットリスト化"
 
 #: data/content/fel/portfolio.html:129
 msgid ""
@@ -2664,7 +2766,7 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:137
 msgid "An interactive printed circuit board editor."
-msgstr ""
+msgstr "対話型のプリント基板エディター。"
 
 #: data/content/fel/portfolio.html:138
 msgid ""
@@ -2675,7 +2777,7 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:139
 msgid "A full suite of Electronic Design Automation tools."
-msgstr ""
+msgstr "エレクトロニクス設計自動化ツールの完全なセット"
 
 #: data/content/fel/portfolio.html:140
 msgid ""
@@ -2685,7 +2787,7 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:142
 msgid "Embedded Systems Development"
-msgstr ""
+msgstr "組み込みシステム開発"
 
 #: data/content/fel/portfolio.html:143
 msgid "µController Programming"
@@ -2703,44 +2805,44 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:148
 msgid "the PIC30 toolchain, the C18 compiler, the JAL and JALV2 compilers,"
-msgstr ""
+msgstr "PIC30 ツールチェーン、C18 コンパイラー、JAL および JALV2 コンパイラー、"
 
 #: data/content/fel/portfolio.html:149
 msgid "the CSC compiler, and the Boost compilers."
-msgstr ""
+msgstr "CSC コンパイラー、および Boost コンパイラー。"
 
 #: data/content/fel/portfolio.html:152
 msgid ""
 "Ease to use IDEs for microcontrollers circuit design, simulation and "
 "programmation to serial, parallel and USB ports."
-msgstr ""
+msgstr "マイクロコントローラー回路設計、シミュレーション、およびシリアル、パラレルならびに USB ポートのプログラムに対する使いやすい IDE。"
 
 #: data/content/fel/portfolio.html:154
 msgid "IDE includes an oscilloscope and a flowchart integration."
-msgstr ""
+msgstr "オシロスコープとフローチャートの統合を含む IDE。"
 
 #: data/content/fel/portfolio.html:157
 msgid "Supported debuggers : ICD2 and GPSim."
-msgstr ""
+msgstr "サポートされるデバッガー : ICD2 および GPSim。"
 
 #: data/content/fel/portfolio.html:158
 msgid ""
 "Supported programmers : ICD2, PICkit1 and PICkit2 and PicStart+ programmers."
-msgstr ""
+msgstr "サポートされるプログラマー : ICD2, PICkit1 と PICkit2 および PicStart+ プログラマー。"
 
 #: data/content/fel/portfolio.html:159
 msgid "Supports 8051 and AVR."
-msgstr ""
+msgstr "8051 と AVR のサポート。"
 
 #: data/content/fel/portfolio.html:161
 msgid "AVR Development System"
-msgstr ""
+msgstr "AVR 開発システム"
 
 #: data/content/fel/portfolio.html:163
 msgid ""
 "Supports the Atmel's STK500 and the PPI (parallel port interface) programmer"
 " types."
-msgstr ""
+msgstr "Atmel の STK500 および PPI (parallel port interface) プログラマー形式をサポートします。"
 
 #: data/content/fel/portfolio.html:165
 msgid "Includes"
@@ -2748,7 +2850,7 @@ msgstr "以下を含みます"
 
 #: data/content/fel/portfolio.html:167
 msgid "Cross compilers and Programmers"
-msgstr ""
+msgstr "クロスコンパイラーとプログラマー"
 
 #: data/content/fel/portfolio.html:168
 msgid "A Universal In-System Programmer for Atmel AVR and 8051"
@@ -2760,7 +2862,7 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:173
 msgid "Special contributions from"
-msgstr ""
+msgstr "特別な貢献者、"
 
 #: data/content/fel/portfolio.html:178
 msgid ""
@@ -2843,7 +2945,7 @@ msgstr "このスクリーンショットは ngspice で基板シミュレーシ
 
 #: data/content/fel/portfolio.html:223
 msgid "Mixed Signal Design"
-msgstr ""
+msgstr "混合信号設定"
 
 #: data/content/fel/portfolio.html:224
 msgid "ASIC Design Flow."
@@ -2851,31 +2953,31 @@ msgstr "ASIC のデザインフロー"
 
 #: data/content/fel/portfolio.html:234
 msgid "GDSII Export"
-msgstr ""
+msgstr "GDSII エクスポート"
 
 #: data/content/fel/portfolio.html:244
 msgid "ASIC Analog Design"
-msgstr ""
+msgstr "ASIC アナログ設計"
 
 #: data/content/fel/portfolio.html:245
 msgid "Analog schematic design with schematic."
-msgstr ""
+msgstr "schematicを用いたアナログ概念設計です。"
 
 #: data/content/fel/portfolio.html:255
 msgid "Digital Design"
-msgstr ""
+msgstr "デジタル設計"
 
 #: data/content/fel/portfolio.html:256
 msgid "Digital Simulation with GTKWave and ghdl."
-msgstr ""
+msgstr "GTKWave および ghdl を用いたデジタルシミュレーションです。"
 
 #: data/content/fel/portfolio.html:266 data/content/fel/portfolio.html:277
 msgid "ASIC Digital Design"
-msgstr ""
+msgstr "ASIC デジタル設計"
 
 #: data/content/fel/portfolio.html:267
 msgid "A screenshot of a place and route."
-msgstr ""
+msgstr "配置と経路のスクリーンショットです。"
 
 #: data/content/fel/portfolio.html:278
 msgid "A screenshot of a schematic generated from VHDL code."
@@ -2883,19 +2985,19 @@ msgstr ""
 
 #: data/content/fel/portfolio.html:288 data/content/fel/portfolio.html:299
 msgid "PCB Design"
-msgstr ""
+msgstr "PCB設計"
 
 #: data/content/fel/portfolio.html:289
 msgid "A screenshot of a PCB layout done with Kicad."
-msgstr ""
+msgstr "Kicadを用いて行ったPCB配置のスクリーンショット"
 
 #: data/content/fel/portfolio.html:300
 msgid "A screenshot of a PCB layout done with PCB."
-msgstr ""
+msgstr "PCBを用いて行ったPCB配置のスクリーンショット"
 
 #: data/content/fel/portfolio.html:310 data/content/fel/portfolio.html:321
 msgid "Project Planning"
-msgstr ""
+msgstr "プロジェクト計画"
 
 #: data/content/fel/portfolio.html:311
 msgid "A screenshot of HDL IP development with Perl and UML."
@@ -2907,7 +3009,7 @@ msgstr "planner を用いたプロジェクト管理のスクリーンショッ�
 
 #: data/content/fel/publications.html:9
 msgid "Publications and Presentations"
-msgstr ""
+msgstr "出版物とプレゼンテーション"
 
 #: data/content/fel/publications.html:11
 #, python-format
@@ -2929,10 +3031,12 @@ msgid ""
 "Use our <a href=\"%s\">OpenOffice template</a> and <a "
 "href=\"%s\">sources</a> for your publications or presentations."
 msgstr ""
+"出版物とプレゼンテーションのために <a href=\"%s\">OpenOffice テンプレート</a> と <a "
+"href=\"%s\">ソース</a> を使用します"
 
 #: data/content/fel/publications.html:18
 msgid "Share your publications"
-msgstr ""
+msgstr "あなたの出版物の共有"
 
 #: data/content/fel/publications.html:23
 msgid "Fedora Electronic Lab 12 Flyer"
@@ -2941,7 +3045,7 @@ msgstr "Fedora 電子ラボ 12 ちらし"
 #: data/content/fel/publications.html:25 data/content/fel/publications.html:44
 #: data/content/fel/publications.html:61
 msgid "By Chitlesh Goorah."
-msgstr ""
+msgstr "Chitlesh Goorah さんによる。"
 
 #: data/content/fel/publications.html:27
 msgid ""
@@ -2958,7 +3062,7 @@ msgstr "ダウンロード"
 
 #: data/content/fel/publications.html:30
 msgid "Fedora Electronic Lab in Research and Development environment"
-msgstr ""
+msgstr "研究開発環境におけるFedora電子ラボ"
 
 #: data/content/fel/publications.html:31
 msgid "ABSTRACT"
@@ -3024,7 +3128,7 @@ msgstr "2009年6月26日"
 #: data/content/fel/publications.html:47 data/content/fel/publications.html:58
 #: data/content/fel/publications.html:64 data/content/fel/publications.html:71
 msgid "Blog Report"
-msgstr ""
+msgstr "ブログレポート"
 
 #: data/content/fel/publications.html:50
 msgid ""
@@ -3151,65 +3255,69 @@ msgstr ""
 
 #: data/content/fel/publications.html:106
 msgid "FOSSCOMM 2009 - Larissa, Greece"
-msgstr ""
+msgstr "FOSSCOMM 2009 - ラリッサ、ギリシャ"
 
 #: data/content/fel/publications.html:107
 msgid "Kostas Antonakoglou explains how various design flows can be achieved."
-msgstr ""
+msgstr "Kostas Antonakoglou さんがどのくらいの設定フローを実現できるのかを説明しました。"
 
 #: data/content/fel/publications.html:117
 msgid "Linuxtag Berlin 2009"
-msgstr ""
+msgstr "Linuxtag Berlin 2009"
 
 #: data/content/fel/publications.html:118
 msgid ""
 "Chitlesh Goorah held a presentation at FUDCon during Linuxtag 2009. This "
 "presentation was to expose FEL's roadmap to the other Fedora developers."
 msgstr ""
+"Chitlesh Goorah さんが Linuxtag 2009 の FUDCon "
+"においてプレゼンテーションを行いました。このプレゼンテーションは他の Fedora 開発者に対して FEL のロードマップを明らかにしました。"
 
 #: data/content/fel/publications.html:128
 msgid "FOSDEM 2009"
-msgstr ""
+msgstr "FOSDEM 2009"
 
 #: data/content/fel/publications.html:129
 msgid ""
 "Chitlesh Goorah details why FEL's is some unique and where it is heading."
-msgstr ""
+msgstr "Chitlesh Goorah さんが、なぜ FEL がユニークなのか、どこに向かっているのかを詳細に説明しました。"
 
 #: data/content/fel/publications.html:139
 msgid "Linuxtag Berlin 2008"
-msgstr ""
+msgstr "Linuxtag Berlin 2008"
 
 #: data/content/fel/publications.html:140
 msgid ""
 "Thibault North gave the FEL's first public presentation at Linuxtag 2008 in "
 "Berlin."
-msgstr ""
+msgstr "Thibault North さんが FEL の最初のプレゼンテーションをベルリンの Linuxtag 2008 において行いました。"
 
 #: data/content/fel/publications.html:150
 msgid "FOSS.in 2008"
-msgstr ""
+msgstr "FOSS.in 2008"
 
 #: data/content/fel/publications.html:151
 msgid ""
 "Aanjhan Ranganathan and other Fedora contributors exposed how users can "
 "benefit with an opensource EDA platform."
 msgstr ""
+"Aanjhan Ranganathan さんと他の Fedora 貢献者が、ユーザーがどのようにオープンソース EDA "
+"プラットフォームから利益を得られるのかを明らかにしました。"
 
 #: data/content/fel/support.html:9
 msgid ""
 "Fedora Electronic Lab team does not provide commercial technical support."
-msgstr ""
+msgstr "Fedora 電子ラボチームは有償の技術サポートを提供していません。"
 
 #: data/content/fel/support.html:10
 msgid "The only types of technical support, FEL provides are through the"
-msgstr ""
+msgstr "FEL が提供する技術サポートの唯一の種類は次のものです"
 
 #: data/content/fel/support.html:16
 msgid ""
 "It is recommended to subscribe to the mailing list for additional news about"
 " the ongoing development."
-msgstr ""
+msgstr "進行中の開発に関する追加のニュースのためにメーリングリストを購読することが推奨されます。"
 
 #: data/content/games/index.html:41
 msgid "About Spin: Games"
@@ -3236,7 +3344,7 @@ msgstr ""
 
 #: data/content/games/index.html:62
 msgid "This spin includes a number of popular games including:"
-msgstr ""
+msgstr "この Spin は以下のものを含む多くの有名なゲームを含みます:"
 
 #: data/content/games/index.html:64
 msgid "Battle for Wesnoth"
@@ -3404,39 +3512,39 @@ msgstr "ミッション・目標型の2Dプラットフォームゲームです�
 
 #: data/content/games/index.html:151
 msgid "The GNU Bombing utility."
-msgstr ""
+msgstr "GNU爆弾ユーティリティです。"
 
 #: data/content/games/index.html:156
 msgid "A futuristic real-time strategy game."
-msgstr ""
+msgstr "未来的なリアルタイム戦略ゲームです。"
 
 #: data/content/games/index.html:161
 msgid "Football (soccer) team management game."
-msgstr ""
+msgstr "サッカーチーム管理ゲームです。"
 
 #: data/content/games/index.html:166
 msgid "3D multiplayer tank battle game."
-msgstr ""
+msgstr "マルチプレイヤー型3D戦車バトルゲームです。"
 
 #: data/content/games/index.html:171
 msgid "An arcade shoot 'em up."
-msgstr ""
+msgstr "アーケードシューティングゲームです。"
 
 #: data/content/games/index.html:176
 msgid "OpenGL real-time visual space simulation."
-msgstr ""
+msgstr "OpenGL リアルタイムビジュアル宇宙シミュレーションです。"
 
 #: data/content/games/index.html:181
 msgid "Suite of educational games for young children."
-msgstr ""
+msgstr "若い子ども向け教育ゲームのコレクションです。"
 
 #: data/content/games/index.html:186
 msgid "Lay bombs and blast the other players of the field game using ClanLib."
-msgstr ""
+msgstr "爆弾を置いて、フィールドの他のプレイヤーを爆破する、ClanLibを使用しているゲームです。"
 
 #: data/content/games/index.html:191
 msgid "Allows people to play Titan against each other or AIs."
-msgstr ""
+msgstr "他のそれぞれのAIに対してTitanを遊ぶことができます。"
 
 #: data/content/games/index.html:196
 msgid "A puzzle action game."
@@ -3444,15 +3552,15 @@ msgstr "パズルアクションゲームです。"
 
 #: data/content/games/index.html:201
 msgid "SDL/OpenGL space shoot 'em up game also known as critter."
-msgstr ""
+msgstr "critterとしても知られているSDL/OpenGLのシューティングゲームです。"
 
 #: data/content/games/index.html:206
 msgid "Client for connecting to crossfire servers."
-msgstr ""
+msgstr "crossfire サーバーに接続するクライアントです。"
 
 #: data/content/games/index.html:211
 msgid "Falling blocks, match 3 or more of the same color crystals."
-msgstr ""
+msgstr "落下するブロックを3個以上の同じ色のクリスタルをくっつけます。"
 
 #: data/content/games/index.html:216
 msgid "Shoot 'em up arcade game."
@@ -3460,11 +3568,11 @@ msgstr "アーケードシューティングゲームです。"
 
 #: data/content/games/index.html:221
 msgid "One on one spaceship duel in a 2D arena."
-msgstr ""
+msgstr "2Dアリーナにおける1対1宇宙船バトルです。"
 
 #: data/content/games/index.html:226
 msgid "A top down graphical (3D) RPG in the spirit of Nethack."
-msgstr ""
+msgstr "ネットハック魂の見下ろし型 (3D) RPGです。"
 
 #: data/content/games/index.html:231
 msgid "Clone of the ATARI game Oxyd."
@@ -3472,19 +3580,19 @@ msgstr "ATARIのゲーム Oxyd のクローンです。"
 
 #: data/content/games/index.html:236
 msgid "Extensible block-pushing puzzle game."
-msgstr ""
+msgstr "拡張可能なブロック押しパズルゲームです。"
 
 #: data/content/games/index.html:241
 msgid "3D racing game featuring Tux."
-msgstr ""
+msgstr "Tuxに触発された3Dレースゲームです。"
 
 #: data/content/games/index.html:246
 msgid "Falling block game."
-msgstr ""
+msgstr "ブロック落下ゲームです。"
 
 #: data/content/games/index.html:251
 msgid "Fish Fillets Next Generation, a puzzle game with 70 levels."
-msgstr ""
+msgstr "次世代のFish Fillets、70レベルまであるパズルゲームです。"
 
 #: data/content/games/index.html:256
 msgid "3D flight simulator."
@@ -3496,28 +3604,28 @@ msgstr "アドベンチャーゲームです。"
 
 #: data/content/games/index.html:266
 msgid "OpenGL billiards game."
-msgstr ""
+msgstr "OpenGLのビリヤードゲームです。"
 
 #: data/content/games/index.html:271
 msgid "Multiplayer empire-building strategy game."
-msgstr ""
+msgstr "マルチプレイヤー型の帝国構築戦略ゲームです。"
 
 #: data/content/games/index.html:276
 msgid "Turn-based multiplayer strategy game."
-msgstr ""
+msgstr "ターン型マルチプレイヤー戦略ゲームです。"
 
 #: data/content/games/index.html:281
 msgid "First-player shoot 'em up using the Doom game engines."
-msgstr ""
+msgstr "Doomゲームエンジンを使用する自分視点のシューティングゲームです。"
 
 #: data/content/games/index.html:286
 msgid "Role-playin game with Freedroid theme and Tux as the hero."
-msgstr ""
+msgstr "Freedroid のテーマとヒーローとして Tux を用いたロールプレイングゲームです。"
 
 #: data/content/games/index.html:291
 msgid ""
 "Arcade game that may be played single player or multiplayer over a network."
-msgstr ""
+msgstr "ネットワーク上で一人または複数人で遊ぶアーケードゲームです。"
 
 #: data/content/games/index.html:296
 msgid "Education suite for kids 2-10 years of age."
@@ -3525,15 +3633,15 @@ msgstr "2～10才の子供向け教育スイートです。"
 
 #: data/content/games/index.html:301
 msgid "Falling blocks puzzle game."
-msgstr ""
+msgstr "ブロック落下型パズルゲームです。"
 
 #: data/content/games/index.html:306
 msgid "Action flight simulator."
-msgstr ""
+msgstr "フライトシミュレーションアクションゲームです。"
 
 #: data/content/games/index.html:311
 msgid "An OpenGL space shooter."
-msgstr ""
+msgstr "OpenGL 宇宙シューティングゲームです。"
 
 #: data/content/games/index.html:316
 msgid "3D real-time strategy game."
@@ -3545,63 +3653,63 @@ msgstr "革新的なリアルタイム戦略ゲームです。"
 
 #: data/content/games/index.html:326
 msgid "A backgammon game an analyzer."
-msgstr ""
+msgstr "バックギャモンゲーム分析器です。"
 
 #: data/content/games/index.html:331
 msgid "A text-based Go program."
-msgstr ""
+msgstr "テキストベースの碁プログラムです。"
 
 #: data/content/games/index.html:336
 msgid "Swapping gem game."
-msgstr ""
+msgstr "宝石を消していくゲームです。"
 
 #: data/content/games/index.html:341
 msgid "A full-featured role-playing game. Uses the Nazghul game engine."
-msgstr ""
+msgstr "完全な機能を持つロールプレイングゲームです。Nazghulゲームエンジンを使用しています。"
 
 #: data/content/games/index.html:346
 msgid "2D tankbattle game with the tanks replaced by hedgehogs."
-msgstr ""
+msgstr "ハリネズミにより置き換えられた戦車を用いた2D戦車バトルゲームです。"
 
 #: data/content/games/index.html:351
 msgid "3rd-person scrolling 2D shooter."
-msgstr ""
+msgstr "第三者視点のスクロール型2Dシューティングゲームです。"
 
 #: data/content/games/index.html:356
 msgid "Aracde-style shoot 'em up."
-msgstr ""
+msgstr "アーケード型シューティングゲームです。"
 
 #: data/content/games/index.html:361
 msgid "Brickbuster arcade game."
-msgstr ""
+msgstr "Brickbuster アーケードゲームです。"
 
 #: data/content/games/index.html:366
 msgid "City simulation game."
-msgstr ""
+msgstr "都市シミュレーションゲームです。"
 
 #: data/content/games/index.html:371
 msgid "Multiplayer wargame with liquid armies."
-msgstr ""
+msgstr "流動的な軍隊を持つマルチプレイヤー型戦争ゲームです。"
 
 #: data/content/games/index.html:376
 msgid "Atomix clone where you create figures out of marbles."
-msgstr ""
+msgstr "おはじき石から図形を作成するAtomixのクローンです。"
 
 #: data/content/games/index.html:381
 msgid "Online multiplayer version of a well known detective boardgame."
-msgstr ""
+msgstr "有名な探偵ボードゲームのオンライン型マルチプレイヤーバージョンです。"
 
 #: data/content/games/index.html:391
 msgid "A futuristic ball game with simple rules."
-msgstr ""
+msgstr "単純なルールの未来的な球技です。"
 
 #: data/content/games/index.html:396
 msgid "Space combat game."
-msgstr ""
+msgstr "スペースコンバットゲームです。"
 
 #: data/content/games/index.html:401
 msgid "Push ice blocks around to extenguish all fires."
-msgstr ""
+msgstr "すべての火を消すために周りにある氷を押します。"
 
 #: data/content/games/index.html:406
 msgid "2D MMORPG world."
@@ -3609,31 +3717,31 @@ msgstr "2D MMORPG の世界です。"
 
 #: data/content/games/index.html:411
 msgid "3D stunt driving game."
-msgstr ""
+msgstr "3Dスタントドライブゲームです。"
 
 #: data/content/games/index.html:416
 msgid "Puzzle game where you steer a beam of light using mirrors."
-msgstr ""
+msgstr "鏡を使用して光線の向きを変えるパズルゲームです。"
 
 #: data/content/games/index.html:421
 msgid "A rogue-like single player dungeon exploration game."
-msgstr ""
+msgstr "rogueのような一人用ダンジョン探検ゲームです。"
 
 #: data/content/games/index.html:426
 msgid "Nethack game."
-msgstr ""
+msgstr "ネットハックゲームです。"
 
 #: data/content/games/index.html:431
 msgid "An online multiplayer tactical warfare game."
-msgstr ""
+msgstr "オンラインのマルチプレイヤー型の戦術的な戦争ゲームです。"
 
 #: data/content/games/index.html:436
 msgid "Roll a ball through an obstacle course."
-msgstr ""
+msgstr "障害物を通ってボールを転がします。"
 
 #: data/content/games/index.html:441
 msgid "Maze-game, eat all the cookies while avoiding the badguys."
-msgstr ""
+msgstr "悪者を避けながらクッキーをすべて食べる迷路ゲームです。"
 
 #: data/content/games/index.html:446
 msgid "3D space shooter."
@@ -3641,7 +3749,7 @@ msgstr "3D宇宙シューティングゲームです。"
 
 #: data/content/games/index.html:451
 msgid "Addictive realtime multiplayer 2D shoot-em-up."
-msgstr ""
+msgstr "習慣性の強いリアルタイムのマルチプレイヤー型2Dシューティングゲームです。"
 
 #: data/content/games/index.html:456
 msgid "Platform game."
@@ -3653,15 +3761,15 @@ msgstr "ピンボールゲームです。"
 
 #: data/content/games/index.html:466
 msgid "Guide the penguins safely home before they drop of the cliff."
-msgstr ""
+msgstr "ペンギンが崖を落下する前に安全に家に導きます。"
 
 #: data/content/games/index.html:471
 msgid "Turn-based board strategy game (colonize an island.)"
-msgstr ""
+msgstr "ターン型戦略ボードゲーム（島を植民地にします）です。"
 
 #: data/content/games/index.html:476
 msgid "Connect the water pipes to create a proper pipeline."
-msgstr ""
+msgstr "正しいパイプラインを作成するために水のパイプを接続します。"
 
 #: data/content/games/index.html:481 data/content/games/index.html:641
 msgid "A pipe-connecting game."
@@ -3669,15 +3777,15 @@ msgstr "パイプ接続ゲームです。"
 
 #: data/content/games/index.html:486
 msgid "A celestial simulator."
-msgstr ""
+msgstr "天体シミュレーターです。"
 
 #: data/content/games/index.html:491
 msgid "GTK poker client to play on a poker network server."
-msgstr ""
+msgstr "ポーカーのネットワークサーバーで遊べるGTKポーカークライアントです。"
 
 #: data/content/games/index.html:496
 msgid "Arcade 2D shoot-them-up game."
-msgstr ""
+msgstr "アーケード型2Dシューティングゲームです。"
 
 #: data/content/games/index.html:501
 msgid "Chess game for GNOME."
@@ -3689,7 +3797,7 @@ msgstr "ソリティアカードゲームのコレクションです。"
 
 #: data/content/games/index.html:511
 msgid "A multi-purpose board game GUI."
-msgstr ""
+msgstr "多目的ボードゲームのGUIです。"
 
 #: data/content/games/index.html:516
 msgid "2d top-down shoot 'em up."
@@ -3697,47 +3805,47 @@ msgstr "2D縦スクロール型シューティングゲームです。"
 
 #: data/content/games/index.html:521
 msgid "Arcade game where you drive a toy wood engine."
-msgstr ""
+msgstr "おもちゃの木のエンジンを運転するアーケードゲームです。"
 
 #: data/content/games/index.html:526
 msgid "Underground digging game."
-msgstr ""
+msgstr "地下を掘るゲームです。"
 
 #: data/content/games/index.html:531
 msgid "The original graphical adventure game."
-msgstr ""
+msgstr "オリジナルのグラフィカル冒険ゲームです。"
 
 #: data/content/games/index.html:536
 msgid "Game based loosely on the classic DOS game Scorched Earth."
-msgstr ""
+msgstr "伝統的なDOSゲームScorched Earthに少し基づいたゲームです。"
 
 #: data/content/games/index.html:541
 msgid "Realtime remake of Scorched Earth."
-msgstr ""
+msgstr "Scorched Earthのリアルタイム化したリメイク版です。"
 
 #: data/content/games/index.html:546
 msgid "Help Barbie the seahorse float on bubbles to the moon."
-msgstr ""
+msgstr "月に向かってタツノオトシゴの人形が泡に浮くのを助けます。"
 
 #: data/content/games/index.html:551
 msgid "Space invaders / Galaxians like game with powerups."
-msgstr ""
+msgstr "パワーアップをできるスペースインベーダーやギャラクシアンのようなゲームです。"
 
 #: data/content/games/index.html:556
 msgid "A python port of SolarFox."
-msgstr ""
+msgstr "SolarFoxのPython移植版です。"
 
 #: data/content/games/index.html:561
 msgid "SDL port of the sopwith game."
-msgstr ""
+msgstr "sopwith ゲームのSDL移植版です。"
 
 #: data/content/games/index.html:566
 msgid "Photo-realistic nightsky renderer."
-msgstr ""
+msgstr "写真のようにリアルな夜空の画像生成装置です。"
 
 #: data/content/games/index.html:571
 msgid "Simulated obstacle course for automobiles."
-msgstr ""
+msgstr "自動車のためにシミュレートされた障害物コースです。"
 
 #: data/content/games/index.html:576
 msgid "2D platform game."
@@ -3745,27 +3853,27 @@ msgstr "2Dのプラットフォームゲームです。"
 
 #: data/content/games/index.html:581
 msgid "Jump'n run-like game."
-msgstr ""
+msgstr "Jump'n run のようなゲームです。"
 
 #: data/content/games/index.html:586
 msgid "Kids 3D go-kart racing game featuring Tux."
-msgstr ""
+msgstr "Tux を特徴とした子供向け3Dゴーカートレースゲームです。"
 
 #: data/content/games/index.html:591
 msgid "Game where you pilot a taxi in space."
-msgstr ""
+msgstr "宇宙でタクシーを操縦するゲームです。"
 
 #: data/content/games/index.html:596
 msgid "A brick-busting game."
-msgstr ""
+msgstr "レンガ破壊ゲームです。"
 
 #: data/content/games/index.html:601
 msgid "The open racing car simulator."
-msgstr ""
+msgstr "オープンのレースカーシミュレーターです。"
 
 #: data/content/games/index.html:606
 msgid "Steer a marble ball through a labyrinth "
-msgstr ""
+msgstr "迷宮で大理石ボールを進めます。"
 
 #: data/content/games/index.html:611
 msgid "First-person shooter game, using the Quake 3 engine."
@@ -3833,7 +3941,7 @@ msgstr "パワーアップ型の小惑星のようなゲームです。"
 
 #: data/content/games/index.html:696
 msgid "Fedora 15 Games Spin"
-msgstr "Fedora 15 ゲーム Spin"
+msgstr "Fedora 16 ゲーム Spin"
 
 #: data/content/games/index.html:698
 msgid ""
@@ -3860,7 +3968,7 @@ msgstr "KDE Plasma デスクトップについて"
 
 #: data/content/kde/index.html:58
 msgid "It's your desktop. Be Free."
-msgstr ""
+msgstr "あなたのデスクトップです。自由でいよう。"
 
 #: data/content/kde/index.html:60
 msgid ""
@@ -3875,12 +3983,19 @@ msgid ""
 "an easy to use interface, accompanied by an outstanding graphical "
 "appearance."
 msgstr ""
+"Fedora KDE Plasma デスクトップ版は、メインのユーザーインターフェースとして KDE Plasma デスクトップを利用しているパワフルな"
+" Fedora オペレーティングシステムです。Fedora KDE Plasma "
+"デスクトップは近代的なデスクトップのすべてのユースケースに合う、トップ品質のアプリケーションを数多く事前に選定しています。ウェブブラウズ、インスタントメッセージおよび電子メール通信のようなオンラインコミュニケーションから、マルチメディアおよびエンターテインメントを通って、オフィスアプリケーションおよび企業レベルの個人情報管理を含む高度な生産性スイートまでです。すべての"
+" KDE "
+"アプリケーションは、非常に優れたグラフィック表現を伴い、似たようなルックアンドフィールと使いやすいインターフェースを持ち、よく統合されています。"
 
 #: data/content/kde/index.html:61
 msgid ""
 "The Fedora KDE Plasma Desktop Edition is based on the latest KDE Platform 4 "
 "technology as provided by KDE open source community."
 msgstr ""
+"Fedora KDE Plasma デスクトップ版は、KDE オープンソースコミュニティにより提供されている最新の KDE プラットフォーム 4 "
+"技術を基にしています。"
 
 #: data/content/kde/index.html:62
 msgid "It's your desktop. <a href=\"#about\">Learn More</a>. >"
@@ -3901,6 +4016,8 @@ msgid ""
 "launcher (start menu), the desktop and the desktop panel (often referred to "
 "simply as the task bar)."
 msgstr ""
+"Plasma "
+"デスクトップは、アプリケーションのランチャー（スタートメニュー）、デスクトップおよびデスクトップパネル（しばしば単にタスクバーとして参照されます）を含めて、デスクトップインターフェースを提供します。"
 
 #: data/content/kde/index.html:70
 msgid ""
@@ -3925,10 +4042,13 @@ msgid ""
 "More info available at <a "
 "href=\"http://userbase.kde.org/Plasma\">http://userbase.kde.org/Plasma</a>"
 msgstr ""
+"<a "
+"href=\"http://userbase.kde.org/Plasma\">http://userbase.kde.org/Plasma</a> "
+"に詳細があります"
 
 #: data/content/kde/index.html:73
 msgid "Desktop Effects"
-msgstr ""
+msgstr "デスクトップ効果"
 
 #: data/content/kde/index.html:74
 msgid ""
@@ -3940,7 +4060,7 @@ msgstr ""
 
 #: data/content/kde/index.html:75
 msgid "Enjoy one of the example videos here:"
-msgstr ""
+msgstr "ここにあるサンプルビデオを楽しんでください:"
 
 #: data/content/kde/index.html:76
 msgid ""
@@ -3948,10 +4068,12 @@ msgid ""
 "graphics card and to enable it in the System settings -> Desktop "
 "configuration tool."
 msgstr ""
+"注記: デスクトップ効果はデフォルトで有効になっていません！サポートされるグラフィックカードが必要で、システム設定 -> "
+"デスクトップ設定ツールにおいて有効にする必要があります。"
 
 #: data/content/kde/index.html:78
 msgid "Going online"
-msgstr ""
+msgstr "オンライン生活"
 
 #: data/content/kde/index.html:79
 msgid ""
@@ -3975,6 +4097,8 @@ msgid ""
 "Are you a downloader? Use <strong>KTorrent</strong> or <strong>KGet</strong>"
 " to get new versions of Fedora KDE Plasma Desktop Edition!"
 msgstr ""
+"ダウンロードしますか？ Fedora KDE Plasma デスクトップ版の新しいバージョンを取得するために "
+"<strong>KTorrent</strong> または <strong>KGet</strong> を使用しましょう！"
 
 #: data/content/kde/index.html:83
 msgid "Utilities and configuration"
@@ -4125,6 +4249,8 @@ msgid ""
 "use interface. Watch and record your favorite digital TV stations and enjoy "
 "content stored on your machine with this intuitive media player."
 msgstr ""
+"<strong>Kaffeine</strong> "
+"は使いやすいインターフェースを持つビデオプレイヤーとデジタルテレビです。この直観的なメディアプレイヤーを用いて、お気に入りのデジタルテレビステーションを視聴および録画して、マシンに保存されているコンテンツを楽しみます。"
 
 #: data/content/kde/index.html:107
 msgid ""
@@ -4222,7 +4348,7 @@ msgstr ""
 
 #: data/content/kde/index.html:160
 msgid "please visit the main spins support page"
-msgstr ""
+msgstr "メインの Spin サポートページを訪問してください"
 
 #: data/content/kde/index.html:172 data/content/kde/index.html:182
 #: data/content/kde/index.html:192
@@ -4247,7 +4373,7 @@ msgstr "Spin について: キオスク"
 
 #: data/content/kiosk/index.html:55
 msgid "Secure kiosks: no longer an oxymoron. "
-msgstr ""
+msgstr "セキュアキオスク：もはや撞着語法ではありません。"
 
 #: data/content/kiosk/index.html:56
 msgid ""
@@ -4255,6 +4381,8 @@ msgid ""
 "only be used as a kiosk. It is intended for use in public locations such as "
 "libraries, schools, and event venues. "
 msgstr ""
+"Fedora キオスク Spin "
+"の目標はキオスクとしてのみ使用できるオペレーティングシステムを作成することです。図書館、学校およびイベント会場のような公共の場所において使用することを意図しています。"
 
 #: data/content/kiosk/index.html:57
 msgid ""
@@ -4272,6 +4400,8 @@ msgid ""
 "With the Fedora Kiosk Spin, your terminal can be as secure as you want it to"
 " be. <b><a href=\"#about\">Learn more.</a></b>"
 msgstr ""
+"Fedora キオスク Spin を用いると、あなたの端末が希望するだけセキュアになります。<b><a "
+"href=\"#about\">もっと知る。</a></b>"
 
 #: data/content/kiosk/index.html:63
 msgid ""
@@ -4298,7 +4428,7 @@ msgstr ""
 msgid ""
 "Moblin™ is a trademark or registered trademark of Intel Corporation or its "
 "subsidiaries in the United States and other countries."
-msgstr ""
+msgstr "Moblin™ はアメリカおよび他の国における Intel Corporation およびその子会社の登録商標です。"
 
 #: data/content/kiosk/index.html:110
 msgid "Kiosk"
@@ -4409,6 +4539,11 @@ msgid ""
 "enriched it with new open source technologies also intended for mobile "
 "development and usage."
 msgstr ""
+"Fedora Moblin Spin はモバイルユーザーを念頭において設計された Fedora "
+"ベースのオペレーティングシステムです。私たちは、モバイルデバイスをまたがった開発を行うために統一方法を提供する <a "
+"href=\"http://www.gnome.org/mobile/\">GNOME Mobile</a> プラットフォームに基づいた、<a "
+"href=\"http://moblin.org/\">Moblin™</a> "
+"インターフェース、ハードウェアおよび使用モデルの独立した層から始めました。そして、モバイル開発と使用法を意図した新しいオープンソース技術を豊かにしました。"
 
 #: data/content/moblin/index.html:57
 msgid ""
@@ -4426,7 +4561,7 @@ msgstr ""
 msgid ""
 "Try the future of the mobile internet today. <b><a href=\"#about\">Learn "
 "more.</a></b>"
-msgstr ""
+msgstr "今日のモバイルインターネットの将来を試そう。<b><a href=\"#about\">もっと知る</a></b>。"
 
 #: data/content/moblin/index.html:64
 msgid ""
@@ -4461,6 +4596,10 @@ msgid ""
 "with consumer electronics products from over 899 vendors working together to"
 " create the the UPnP standard."
 msgstr ""
+"<a href=\"http://www.gupnp.org/\">GUPnP</a>（<a "
+"href=\"http://www.upnp.org/\">UPnP</a> "
+"デバイスと制御点を作成するためのオブジェクト指向フレームワーク）は、Fedora Moblin Spin を実行しているモバイルデバイスが、UPnP "
+"標準を一緒に作成している899以上のベンダーの一般電子機器に接続できるようになります。"
 
 #: data/content/moblin/index.html:68
 msgid ""
@@ -4478,6 +4617,9 @@ msgid ""
 "can find out more details <a "
 "href=\"https://fedoraproject.org/wiki/SIGs/FedoraMini\">here</a>."
 msgstr ""
+"Fedora Moblin Spin は Fedora Mini Special Interest Group (SIG) の一部です。Fedora "
+"Moblin と Fedora Mini SIG の他の部分について詳しく知るには、<a "
+"href=\"https://fedoraproject.org/wiki/SIGs/FedoraMini\">ここで</a>詳しく見ることができます。"
 
 #: data/content/moblin/index.html:79
 msgid "39K Torrent File for 32-bit PC ISO"
@@ -4531,6 +4673,8 @@ msgid ""
 "and boot into a complete Robotics Development environment. If you like what "
 "you see, install it to your hard drive for the full experience! "
 msgstr ""
+"ロボティクスSpinを試運転したいですか？Live DVD をダウンロードして、DVDまたはUSBに書き込んで（手順は<a "
+"href=\"%s\">サポートのタブ</a>を見てください）、完全なロボティクス開発環境を起動してください。もし気に入れば、完全な機能を利用するためハードディスクにインストールしてください！"
 
 #: data/content/robotics/index.html:65
 msgid ""
@@ -4539,6 +4683,8 @@ msgid ""
 "single command: <span class=\"command\">yum groupinstall "
 "\"Robotics\"</span>."
 msgstr ""
+"すでにFedoraをインストールしているならば、LiveDVDをダウンロードする必要がありません。1つのコマンドを使用してロボティクス開発環境を完全にインストールできます:"
+" <span class=\"command\">yum groupinstall \"Robotics\"</span>。"
 
 #: data/content/robotics/index.html:85 data/content/robotics/index.html:91
 #, python-format
@@ -4564,13 +4710,13 @@ msgstr "ロボティクス"
 #: data/content/robotics/index.html:109
 #: data/content/scientific-kde/index.html:108 data/content/soas/index.html:143
 msgid "Home View"
-msgstr ""
+msgstr "ホームビュー"
 
 #: data/content/robotics/index.html:110
 msgid ""
 "We focus on making the latest and greatest robotics software available to "
 "the Fedora community."
-msgstr ""
+msgstr "私たちは最新かつ最高のロボティクスのソフトウェアをFedoraコミュニティにおいて利用可能にすることに焦点を当てています。"
 
 #: data/content/scientific-kde/index.html:42
 msgid "About Spin: Fedora Scientific"
@@ -4647,7 +4793,7 @@ msgstr "Spin について: セキュリティ"
 
 #: data/content/security/index.html:53
 msgid "Thorough, Safe and Secure"
-msgstr ""
+msgstr "完璧、安全、セキュア"
 
 #: data/content/security/index.html:54
 msgid ""
@@ -4655,6 +4801,7 @@ msgid ""
 " auditing, forensics, system rescue and teaching security testing "
 "methodologies in universities and other organizations."
 msgstr ""
+"Fedoraセキュリティラボは、大学や他の組織においてセキュリティ監査、フォレンジクス、システム復旧およびセキュリティテスト方法論の学習にとりかかるために安全なテスト環境を提供します。"
 
 #: data/content/security/index.html:55
 msgid ""
@@ -4667,6 +4814,9 @@ msgid ""
 "overlay feature, you can install and update software and save your test "
 "results permanently."
 msgstr ""
+"Spinはセキュリティのテスターと開発者のコミュニティによりメンテナンスされています。セキュリティテストの適切なテスト経路に従うため、または壊れたシステムを復旧するために必要なすべての設備を提供する、きれいで高速なLXDEデスクトップ環境とカスタマイズメニューを同梱しています。Live"
+" イメージは実行中にソフトウェアをインストールすることが可能にするために作られています。また、オーバーレイ機能を使用して LiveUSB Creator"
+" を用いて作成した USB メモリーから実行しているならば、ソフトウェアのインストールと更新およびテスト結果の永続的な保存ができます。"
 
 #: data/content/security/index.html:58
 msgid "Fedora Security Lab Screenshot"
@@ -4895,11 +5045,11 @@ msgstr ""
 msgid ""
 "A screenshot of your default Home View, which presents the available "
 "Activities you have installed to play and learn with."
-msgstr ""
+msgstr "デフォルトのホームビューのスクリーンショットです、遊んだり学んだりするためにインストールした利用可能なアクティビティが表示されます。"
 
 #: data/content/soas/index.html:154
 msgid "Neighborhood View"
-msgstr ""
+msgstr "地域ビュー"
 
 #: data/content/soas/index.html:155
 msgid ""
@@ -4907,16 +5057,20 @@ msgid ""
 "shows you other users you can work with. Parents and teachers have full "
 "control over who students will be able to see and collaborate with."
 msgstr ""
+"多くの Sugar "
+"アクティビティはデフォルトでコラボレーションできます。地域ビューは一緒に作業できる他のユーザーを表示します。親と先生は、生徒が見てコラボレーションできる人に完全な制御権があります。"
 
 #: data/content/soas/index.html:165
 msgid "Activities Portal"
-msgstr ""
+msgstr "アクティビティ・ポータル"
 
 #: data/content/soas/index.html:166
 msgid ""
 "http://activities.sugarlabs.org has many more free and open source Sugar "
 "Activities to try - or make your own!"
 msgstr ""
+"http://activities.sugarlabs.org には、試してみるもっと多くのフリーかつオープンソース Sugar "
+"アクティビティがあります - またはあなた自身のものを作りましょう!"
 
 #: data/content/xfce/index.html:42
 msgid "About Spin: Xfce"
@@ -4928,7 +5082,7 @@ msgstr "Xfce について"
 
 #: data/content/xfce/index.html:56
 msgid "Your desktop. Speedier."
-msgstr ""
+msgstr "あなたのデスクトップを。より高速に。"
 
 #: data/content/xfce/index.html:58
 msgid ""
@@ -4938,7 +5092,7 @@ msgstr ""
 
 #: data/content/xfce/index.html:59
 msgid "Xfce is a full-fledged desktop using the freedesktop.org standard."
-msgstr ""
+msgstr "Xfceはfreedesktop.org標準を使用している本格的なデスクトップです。"
 
 #: data/content/xfce/index.html:64
 msgid ""
@@ -4954,7 +5108,7 @@ msgstr ""
 
 #: data/content/xfce/index.html:65
 msgid "Give Xfce Desktop a try today! >"
-msgstr ""
+msgstr "Xfceデスクトップを今日から試してみよう！"
 
 #: data/content/xfce/index.html:109 data/content/xfce/index.html:119
 msgid "Xfce Desktop"
@@ -5270,7 +5424,7 @@ msgstr "助けてくれるフォーラムを次から見つけることができ
 
 #: data/templates/support-tab.html:36
 msgid "Specific documentation and tutorials are available at the upstream "
-msgstr ""
+msgstr "具体的なドキュメントとチュートリアルがアップストリームにおいて利用可能です。"
 
 #: data/templates/support-tab.html:36
 msgid "website"
@@ -5278,11 +5432,11 @@ msgstr "ウェブサイト"
 
 #: data/templates/support-tab.html:36
 msgid "Direct links to some highlights from "
-msgstr ""
+msgstr "いくつかの要点へのダイレクトリンクを、"
 
 #: data/templates/support-tab.html:36
 msgid "are listed below."
-msgstr ""
+msgstr "から以下に一覧します。"
 
 #: data/templates/support-tab.html:41
 msgid "General Help Using Fedora"
@@ -5297,6 +5451,6 @@ msgstr ""
 
 #: data/templates/support-tab.html:42
 msgid "Fedora 'Get Help' page"
-msgstr ""
+msgstr "Fedora 'Get Help' ページ"
 
 
