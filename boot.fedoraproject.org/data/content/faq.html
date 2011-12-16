@@ -15,7 +15,7 @@
     <h3 class="question">${_("Can I use it with grub?")}</h3>
         <p class="answer">${_("Yes!  Just run the following commands as root")}
         <pre>
-            wget -O/boot/bfo.lkrn http://serverbeach1.fedoraproject.org/pub/alt/bfo/bfo.lkrn
+            wget -O/boot/bfo.lkrn http://dl.fedoraproject.org/pub/alt/bfo/bfo.lkrn
             grubby --add-kernel=/boot/bfo.lkrn --title="Boot BFO"
             reboot
         </pre></p>
