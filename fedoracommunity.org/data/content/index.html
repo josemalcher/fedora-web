@@ -1,3 +1,17 @@
+<?python
+emea = ('ar', 'bg', 'cs', 'da', 'de', 'el', 'es', 'fi', 'fr', 'he', 'hu', 'is', 'it', 'pl', 'ro', 'ru', 'sr', 'sv', 'th', 'tr')
+apac = ('bn_IN', 'gu', 'hi', 'id', 'ja', 'kn', 'ko', 'ks', 'ml', 'nl', 'pa', 'si', 'zh_CN', 'zh_TW')
+latam = ('pt', 'pt_BR')
+
+if lang in emea:
+  region = 'emea'
+elif lang in apac:
+  region = 'apac'
+elif lang in latam:
+  region = 'latam'
+else:
+  region = 'northam'
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
   xmlns:py="http://genshi.edgewall.org/"
@@ -5,7 +19,7 @@
   <xi:include href="../templates/master.html" />
   <head>
     <title>${_('Fedora Community | Index')}</title>
-    <meta http-equiv="REFRESH" content="0;url=apac"/>
+    <meta http-equiv="REFRESH" content="0;url=${region}"/>
   </head>
 	<body id="fedoracommunity-org">
         <div class="container_16">
