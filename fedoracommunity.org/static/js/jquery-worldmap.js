@@ -1,3 +1,9 @@
+/** The following script was originally made by Marc stewart 
+ *  for the fedoracommunity.org website.
+ *  The design came from the following blog post:
+ *  http://mairin.wordpress.com/2010/08/17/fedoracommunity-org-website-design-progressing/
+ */
+
 // Wrap the worldmap in a new div
 $("#worldmap").wrapAll('<div id="worldmap-wrapper" />');
 $("#worldmap-wrapper").css({"position": "relative"});
