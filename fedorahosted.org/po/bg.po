@@ -1,5 +1,5 @@
 # Translations template for PROJECT.
-# Copyright (C) 2011 ORGANIZATION
+# Copyright (C) 2012 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # 
 # Translators:
@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2011-10-18 20:23-0500\n"
-"PO-Revision-Date: 2011-11-15 20:27+0000\n"
-"Last-Translator: laskov <laskov@festa.bg>\n"
+"POT-Creation-Date: 2012-01-08 13:24+0100\n"
+"PO-Revision-Date: 2012-01-08 12:24+0000\n"
+"Last-Translator: Kévin Raymond <shaiton@fedoraproject.org>\n"
 "Language-Team: Bulgarian <trans-bg@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -142,6 +142,17 @@ msgstr ""
 "href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>"
 
 #: data/content/faq.html:23
+msgid "How can I delete something I uploaded to my archive?"
+msgstr ""
+
+#: data/content/faq.html:24
+msgid ""
+"Please file a ticket in the <a href=\"https://fedorahosted.org/fedora-"
+"infrastructure/\">fedora-infrastructure trac</a> listing the exact file you "
+"wish removed and why"
+msgstr ""
+
+#: data/content/faq.html:25
 msgid ""
 "Is there a more convenient way to access releases than the path "
 "<code>/releases/m/y/myproject</code>?"
@@ -149,7 +160,7 @@ msgstr ""
 "Няма ли по-удобен начин за достъп до проекта вместо "
 "<code>/releases/m/y/myproject</code>?"
 
-#: data/content/faq.html:24
+#: data/content/faq.html:26
 msgid ""
 "There is. <code>https://fedorahosted.org/released/myproject</code> will go "
 "to the same place. The disadvantage of this is you must know the project "
@@ -159,11 +170,11 @@ msgstr ""
 "до същото място. Неудобството е, че трябва да знаете името на проекта и не "
 "се виждат другите проекти."
 
-#: data/content/faq.html:25
+#: data/content/faq.html:27
 msgid "I just got a new git repository, how can I push/pull?"
 msgstr "Току що се сдобих с ново git хранилище, как мога да качвам/свалям?"
 
-#: data/content/faq.html:26
+#: data/content/faq.html:28
 msgid ""
 "Before anyone can clone/push the new repository a master push must be done "
 "with the command (from your local git repo): git push "
@@ -173,11 +184,11 @@ msgstr ""
 "master качване, което трябва да направите с командата (от Вашето локално git"
 " хранилище): git push ssh://git.fedorahosted.org/git/yourproject.git/ master"
 
-#: data/content/faq.html:27
+#: data/content/faq.html:29
 msgid "How do I get permission to commit to a project?"
 msgstr "Как да получа позволение да качвам (commit) към проект?"
 
-#: data/content/faq.html:28
+#: data/content/faq.html:30
 msgid ""
 "You should <a "
 "href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for "
@@ -191,7 +202,7 @@ msgstr ""
 "<code>&lt;scm&gt;&lt;project&gt;</code>, напр. за проекта desktop-effects, "
 "трябва да кандидатствате за групата <code>gitdesktop-effects</code>."
 
-#: data/content/faq.html:29
+#: data/content/faq.html:31
 msgid ""
 "While I wait for my repository to be created, can I work on my code "
 "elsewhere?"
@@ -199,7 +210,7 @@ msgstr ""
 "Мога ли, докато чакам моето хранилище да бъде създадено, да работя върху моя"
 " код другаде?"
 
-#: data/content/faq.html:30
+#: data/content/faq.html:32
 msgid ""
 "Of course. Visit <a "
 "href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a>"
@@ -211,7 +222,7 @@ msgstr ""
 " за инструкции как да си направите временно хранилище във Вашето "
 "fedorapeople.org пространство."
 
-#: data/content/faq.html:31
+#: data/content/faq.html:33
 msgid ""
 "Why does hg tells me the repository doesn't exist even though I know I have "
 "the correct URL?"
@@ -219,7 +230,7 @@ msgstr ""
 "Защо hg ми казва, че хранилището не съществува, въпреки че знам, че имам "
 "правилния URL?"
 
-#: data/content/faq.html:32
+#: data/content/faq.html:34
 msgid ""
 "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a "
 "delimiter between hostname and path and a second \"/\" as the root of the "
@@ -232,11 +243,11 @@ msgstr ""
 "във файловата система.  Например, за достъп до хранилището на authconfig, ще"
 " трябва да ползвате \"hg clone ssh://hg.fedorahosted.org//hg/authconfig\""
 
-#: data/content/faq.html:33
+#: data/content/faq.html:35
 msgid "Can I offer pre-compiled binaries on Fedora Hosted?"
 msgstr "Мога ли на Fedora Hosted да предлагам готови компилирани програми?"
 
-#: data/content/faq.html:34
+#: data/content/faq.html:36
 msgid ""
 "You may, as long as the following conditions are met: <ol><li>The code "
 "project must be available under a Free Software license appropriate for "

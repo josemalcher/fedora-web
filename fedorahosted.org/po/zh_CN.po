@@ -1,5 +1,5 @@
 # Translations template for PROJECT.
-# Copyright (C) 2011 ORGANIZATION
+# Copyright (C) 2012 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # 
 # Translators:
@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2011-10-18 20:23-0500\n"
-"PO-Revision-Date: 2011-03-22 15:53+0000\n"
-"Last-Translator: yusuf <yusufma77@yahoo.com>\n"
+"POT-Creation-Date: 2012-01-08 13:24+0100\n"
+"PO-Revision-Date: 2012-01-08 12:24+0000\n"
+"Last-Translator: Kévin Raymond <shaiton@fedoraproject.org>\n"
 "Language-Team: Chinese (China) (http://www.transifex.net/projects/p/fedora/team/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -133,12 +133,23 @@ msgstr ""
 "href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>"
 
 #: data/content/faq.html:23
+msgid "How can I delete something I uploaded to my archive?"
+msgstr ""
+
+#: data/content/faq.html:24
+msgid ""
+"Please file a ticket in the <a href=\"https://fedorahosted.org/fedora-"
+"infrastructure/\">fedora-infrastructure trac</a> listing the exact file you "
+"wish removed and why"
+msgstr ""
+
+#: data/content/faq.html:25
 msgid ""
 "Is there a more convenient way to access releases than the path "
 "<code>/releases/m/y/myproject</code>?"
 msgstr "有比路径<code>/releases/m/y/myproject</code>更方便的访问发行版的方法吗？"
 
-#: data/content/faq.html:24
+#: data/content/faq.html:26
 msgid ""
 "There is. <code>https://fedorahosted.org/released/myproject</code> will go "
 "to the same place. The disadvantage of this is you must know the project "
@@ -146,11 +157,11 @@ msgid ""
 msgstr ""
 "有的。链接<code>https://fedorahosted.org/released/myproject</code>可转到相同的地方。这个方法的缺点是您必须知道项目名称，并且无法按项目浏览。"
 
-#: data/content/faq.html:25
+#: data/content/faq.html:27
 msgid "I just got a new git repository, how can I push/pull?"
 msgstr "我得到一个新的git仓库，我如何push/pull？"
 
-#: data/content/faq.html:26
+#: data/content/faq.html:28
 msgid ""
 "Before anyone can clone/push the new repository a master push must be done "
 "with the command (from your local git repo): git push "
@@ -159,11 +170,11 @@ msgstr ""
 "在任何人能够clone/push这个新的仓库前，必须用这个命令(从您的本地git repo)完成一个master push：git push "
 "ssh://git.fedorahosted.org/git/yourproject.git/ master"
 
-#: data/content/faq.html:27
+#: data/content/faq.html:29
 msgid "How do I get permission to commit to a project?"
 msgstr "怎样获得提交项目的权限？"
 
-#: data/content/faq.html:28
+#: data/content/faq.html:30
 msgid ""
 "You should <a "
 "href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for "
@@ -175,13 +186,13 @@ msgstr ""
 "href=\"https://admin.fedoraproject.org/accounts/group/list\">加入</a>项目的提交小组，该小组应该是<code>&lt;scm&gt;&lt;project&gt;</code>，例如桌面效果项目，应加入<code"
 ">gitdesktop-effects</code>小组。"
 
-#: data/content/faq.html:29
+#: data/content/faq.html:31
 msgid ""
 "While I wait for my repository to be created, can I work on my code "
 "elsewhere?"
 msgstr "在我等待仓库创建的时候，可以在其它地方编写我的代码吗？"
 
-#: data/content/faq.html:30
+#: data/content/faq.html:32
 msgid ""
 "Of course. Visit <a "
 "href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a>"
@@ -191,13 +202,13 @@ msgstr ""
 "当然。访问<a "
 "href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a>来了解怎样在您的fedorapeople.org空间内建立临时仓库。"
 
-#: data/content/faq.html:31
+#: data/content/faq.html:33
 msgid ""
 "Why does hg tells me the repository doesn't exist even though I know I have "
 "the correct URL?"
 msgstr "尽管确定URL地址正确，为什么hg仍提示仓库不存在？"
 
-#: data/content/faq.html:32
+#: data/content/faq.html:34
 msgid ""
 "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a "
 "delimiter between hostname and path and a second \"/\" as the root of the "
@@ -208,11 +219,11 @@ msgstr ""
 "很遗憾，hg并没有使用真实的URL。您必须使用\"/\"作为主机名和路径之间的分隔符，并且使用另一个\"/\"作为文件系统的根路径。例如，如果您想访问authconfig的仓库，您需要使用\"hg"
 " clone ssh://hg.fedorahosted.org//hg/authconfig\""
 
-#: data/content/faq.html:33
+#: data/content/faq.html:35
 msgid "Can I offer pre-compiled binaries on Fedora Hosted?"
 msgstr "我可以在 Fedora-Hosted 上发布预编译二进制包吗？"
 
-#: data/content/faq.html:34
+#: data/content/faq.html:36
 msgid ""
 "You may, as long as the following conditions are met: <ol><li>The code "
 "project must be available under a Free Software license appropriate for "
