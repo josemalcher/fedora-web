@@ -30,6 +30,7 @@ sdata = {
     'robotics': _('Dive into Robotics.')
 }
 
+comm_info = community_paths[random.randint(0, len(community_paths)-1)]
 
 ?>
   <head>
@@ -80,18 +81,6 @@ sdata = {
 			</div> 
 		</div>
 	<h3>${_('Meet the Spin Community')}</h3>
-	<?python
-	comm_info = community_summary[random.randint(0, len(community_summary)-1)]
-	?>
-	<div id="interview">
-		<img class="meet-image" src="/static/images/community-${comm_info[0]}" />
-		<h4>${comm_info[2]}</h4>
-		<p>${_(comm_info[3])}</p>
-<ul>
-<li><a href="${relpath}/community/${comm_info[0]}.html">${_('Read more of this interview with')} ${comm_info[1]} &gt;</a></li>
-<li><a href="${relpath}/community/">${_('Read more spins community interviews &gt;')}</a></li>
-</ul>
-		<div class="clear-both" />
-	</div>
+    <xi:include href="${comm_info[0]}" />
   </body>
 </html>

@@ -12,10 +12,8 @@
   <body>
     <h2>${_('Spins Community')}</h2>
     <h3>${_('Spins Creator Interviews')}</h3>
-    <div py:for="info in community_summary" class="creator-interview">
-		<img class="meet-image" src="/static/images/community-${info[0]}.png" />
-		<h4>${info[2]}</h4>
-		<p>${_(info[3])}<br /><a href="${relpath}/community/${info[0]}.html">${_("Read more of this interview with")} ${info[1]} &gt;</a></p>
+    <div py:for="info in community_paths" class="creator-interview">
+        <xi:include href="${info[2]}_short.html" />
     </div>
   </body>
 </html>
