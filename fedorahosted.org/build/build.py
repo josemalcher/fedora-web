@@ -139,7 +139,7 @@ def read_trac(path):
             if 'repository_type' in conf['trac']:
                 project['vcs'] = conf['trac']['repository_type']
                 # What happens if this is a trac-only project?
-                if conf['trac']['repository_dir']:
+                if 'repository_dir' in conf['trac'] and conf['trac']['repository_dir']:
                     project['vcsbase'] = os.path.realpath(
                             conf['trac']['repository_dir']).replace('/srv/%s/' % project['vcs'], '', 1)
                 else:
