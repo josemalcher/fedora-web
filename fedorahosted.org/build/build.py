@@ -125,16 +125,20 @@ def read_trac(path):
     for dir in os.listdir(path):
         filename = os.path.join(path, dir, 'conf', 'trac.ini')
         if os.path.isfile(filename):
+            print filename
             conf = iniparse.INIConfig(file(filename, 'r'))
             base_url = 'https://fedorahosted.org/%s' % dir
-            if conf['trac']['base_url']:
+            if 'base_url' in conf['trac'] and conf['trac']['base_url']:
                 base_url = conf['trac']['base_url']
-                
+            descr = ''
+            if 'descr' in conf['project']:
+                descr = conf['project']['descr']
+
             project = {
                 'group': base_url.rstrip('/').split('/')[-1][0].upper(),
                 'url': base_url,
                 'desc': conf['project']['name'].decode('utf-8'),
-                'title': conf['project']['descr'].decode('utf-8')
+                'title': descr.decode('utf-8')
             }
             if 'repository_type' in conf['trac']:
                 project['vcs'] = conf['trac']['repository_type']

@@ -1,0 +1,90 @@
+#!/usr/bin/python -tt
+
+"""Generate HTML output for RPM GPG keys. The output is suitable for pasting
+into data/content/keys.html.
+"""
+
+import os
+import re
+import sys
+import time
+import optparse
+from cgi import escape
+from yum.pgpmsg import decode_msg, str_to_hex
+
+ALGO_ABBREV = (None, 'R', 'D')
+
+def format_fingerprint(fpr):
+    """Format a fingerprint the same as gpg."""
+    count = 0
+    fingerprint = ''
+    chunks = [i for i in re.split('([A-F0-9]{4})', fpr) if i]
+    for chunk in chunks:
+        count += 1
+        fingerprint += ' %s' % chunk
+        if count == len(chunks)/2:
+            fingerprint += ' '
+
+    return fingerprint.strip()
+
+def warn(msg):
+    print >> sys.stderr, msg
+
+def main():
+    usage = '%prog </path/to/RPM-GPG-KEY>...'
+    parser = optparse.OptionParser(usage=usage)
+    opts, args = parser.parse_args()
+
+    for key in args:
+        if not os.path.isfile(key):
+            warn('SKIPPING %s. File does not exist.' % key)
+            continue
+
+        keyname = os.path.basename(key)
+        if not keyname.startswith('RPM-GPG-KEY-'):
+            warn('SKIPPING %s. Is this an RPM GPG key?' % key)
+            continue
+
+        try:
+            crt = decode_msg(open(key).read())
+            kid = str_to_hex(crt.public_key.key_id())[8:].upper()
+            fpr = str_to_hex(crt.public_key.fingerprint()).upper()
+            uid = crt.user_id
+            size = crt.public_key.key_size
+            algo = crt.public_key.pk_algo
+            ctime = time.strftime('%Y-%m-%d', time.gmtime(crt.public_key.timestamp))
+        except Exception, err:
+            warn('SKIPPING %s. Failed to parse key: %s' % (key, err))
+            continue
+
+        try:
+            algo = ALGO_ABBREV[algo]
+        except IndexError:
+            warn('SKIPPING %s. Failed to find algo abbreviation for algo %s' %
+                    (key, algo))
+            continue
+
+        fingerprint = format_fingerprint(fpr)
+        uid_escaped = escape(uid)
+
+        print """\
+                <h4>%(keyname)s</h4>
+                <p>
+                    <pre class="command">
+pub   %(size)s%(algo)s/%(kid)s %(ctime)s
+      Key fingerprint = %(fingerprint)s
+uid                  %(uid_escaped)s</pre>
+                </p>
+                <p>
+                    <ul>
+                        <li>${Markup(_('Download: &lt;a href="%%s"&gt;Fedora Project&lt;/a&gt;') %% 'https://fedoraproject.org/static/%(kid)s.txt')}</li>
+                        <li>${Markup(_('Download: &lt;a href="%%s"&gt;keys.gnupg.net&lt;/a&gt;') %% 'http://keys.gnupg.net:11371/pks/lookup?search=0x%(kid)s&amp;op=get')}</li>
+                    </ul>
+                </p>
+""" % locals()
+
+if __name__ == '__main__':
+    try:
+        main()
+    except KeyboardInterrupt:
+        raise SystemExit(1)
