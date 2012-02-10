@@ -1,10 +1,12 @@
 # Translations template for PROJECT.
-# Copyright (C) 2011 ORGANIZATION
+# Copyright (C) 2012 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # 
 # Translators:
 # chiachen L <luojiazhen@gmail.com>, 2011.
 # Dimitris Glezos <glezos@indifex.com>, 2011.
+#   <fanwuming163@163.com>, 2011.
+# Lex Zhou <giftedcn@gmail.com>, 2012.
 #   <lovenemesis@gmail.com>, 2011.
 # Mike Ma <zhtx10@gmail.com>, 2011.
 # neb <nick@bebout.net>, 2011.
@@ -14,9 +16,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2011-11-13 12:24+0100\n"
-"PO-Revision-Date: 2011-11-10 20:27+0000\n"
-"Last-Translator: sijis <sijis@fedoraproject.org>\n"
+"POT-Creation-Date: 2012-01-08 13:35+0100\n"
+"PO-Revision-Date: 2012-01-21 05:12+0000\n"
+"Last-Translator: Lex Zhou <giftedcn@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.net/projects/p/fedora/team/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -565,7 +567,7 @@ msgstr "Fedora 是 100%% 自由的，您可以尽情享受和分享。"
 msgid "Fedora isn't just free-of-charge. It's free as in freedom. Learn more."
 msgstr "Fedora 不仅允许免费使用，而且可以自由分发。了解更多。"
 
-#: data/content/get-fedora-all.html:28 data/content/get-fedora-all.html:132
+#: data/content/get-fedora-all.html:28 data/content/get-fedora-all.html:134
 #: data/content/keys.html:28 data/content/keys.html:343
 #: data/content/verify.html:28 data/content/verify.html:137
 msgid "&#8592; Back to the main \"Get Fedora\" page"
@@ -725,21 +727,6 @@ msgstr ""
 "买不起安装介质吗？可以到<a "
 "href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Fedora "
 "免费介质计划</a>申请 Fedora 安装介质。"
-
-#: data/content/get-fedora-all.html:130
-msgid ""
-"When you place an order with a <a "
-"href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">participating"
-" vendor</a>, you may also sponsor the cost of media for users who cannot "
-"afford it, such as people in developing nations. Consider participating in "
-"the <a "
-"href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora "
-"Sponsored Media Program</a>."
-msgstr ""
-"当您在<a "
-"href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">加入的经销商</a>下订单时，您还可以资助那些负担不起介质费用的用户，比如发展中国家的人民。请在<a"
-" href=\"http://fedoraproject.org/wiki/Distribution/SponsoredMedia\">Fedora "
-"资助介质项目</a>申请加入。"
 
 #: data/content/get-fedora-options.html:7
 msgid "Fedora Project - Get Fedora by Desktops, Formats or Spins."
@@ -1230,7 +1217,7 @@ msgstr "KDE、Xfce、GNOME 及其它"
 
 #: data/content/get-fedora.html:50
 msgid "Games, Design, Security, and others"
-msgstr ""
+msgstr "游戏，设计，安全， 和其他"
 
 #: data/content/get-fedora.html:51
 msgid "Clouds"
@@ -1739,7 +1726,7 @@ msgstr "查看所有教程 >"
 
 #: data/content/index.html:215
 msgid "Installation Requirements"
-msgstr ""
+msgstr "安装配置"
 
 #: data/content/index.html:217
 #, python-format
@@ -1942,7 +1929,7 @@ msgstr "这些系统管理员和网页开发者创建运行 Fedora 的基础架�
 
 #: data/content/join-fedora.html:130
 msgid "Meet Fedora."
-msgstr ""
+msgstr "遇见Fedora。"
 
 #: data/content/join-fedora.html:134
 msgid "North American events"
@@ -5228,6 +5215,7 @@ msgid ""
 "automatically, constantly run to check for issues, or do you run it manually"
 " to answer specific questions?"
 msgstr ""
+"跟我们说说nmap吧。它如何工作？你能用它来分析不运行Fedora的机器吗？你是持续自动运行nmap以便监控问题呢，还是手动运行来寻找特定问题的答案？"
 
 #: data/content/using/life/stevemilner.html:68
 #, python-format
@@ -5252,13 +5240,14 @@ msgid ""
 "use it to check firewall status, open services of a system along with said "
 "service versions. It helps get a recon baseline."
 msgstr ""
+"我把Nmap和NSE（Nmap脚本引擎）当作审查的一部分，后者多半直接来自于Nmap项目本身。我通常用它来检查防火墙的状态，开启特定版本的系统服务。它能帮我获得追溯转换的基准。"
 
 #: data/content/using/life/stevemilner.html:72
 msgid ""
 "What does ratproxy do? Can it analyze systems that aren't running Fedora? "
 "Can it analyze systems that don't run Linux? Is it a program you run "
 "manually or does it constantly run in the background?"
-msgstr ""
+msgstr "ratproxy是干啥的？能用来分析Fedora之外的系统吗？能分析Linux以外的系统吗？该程序要手动运行还是后台持续运行？"
 
 #: data/content/using/life/stevemilner.html:73
 #, python-format
@@ -6246,7 +6235,7 @@ msgstr "将你的便签保存为PDF格式"
 
 #: data/content/using/tutorials/gnote.html:76
 msgid "Select 'Print' in the menu."
-msgstr ""
+msgstr "在菜单中选择'Print'。"
 
 #: data/content/using/tutorials/gnote.html:77
 msgid ""

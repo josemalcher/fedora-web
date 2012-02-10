@@ -1,16 +1,17 @@
 # Translations template for PROJECT.
-# Copyright (C) 2011 ORGANIZATION
+# Copyright (C) 2012 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # 
 # Translators:
+# Dimitris Tomaras <stilleto89@gmail.com>, 2011.
 # neb <nick@bebout.net>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2011-10-18 20:23-0500\n"
-"PO-Revision-Date: 2011-03-22 15:53+0000\n"
-"Last-Translator: neb <nick@bebout.net>\n"
+"POT-Creation-Date: 2012-01-08 13:35+0100\n"
+"PO-Revision-Date: 2012-01-11 12:49+0000\n"
+"Last-Translator: Kévin Raymond <shaiton@fedoraproject.org>\n"
 "Language-Team: Greek <trans-el@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -147,6 +148,17 @@ msgstr ""
 "href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>"
 
 #: data/content/faq.html:23
+msgid "How can I delete something I uploaded to my archive?"
+msgstr ""
+
+#: data/content/faq.html:24
+msgid ""
+"Please file a ticket in the <a href=\"https://fedorahosted.org/fedora-"
+"infrastructure/\">fedora-infrastructure trac</a> listing the exact file you "
+"wish removed and why"
+msgstr ""
+
+#: data/content/faq.html:25
 msgid ""
 "Is there a more convenient way to access releases than the path "
 "<code>/releases/m/y/myproject</code>?"
@@ -154,7 +166,7 @@ msgstr ""
 "Υπάρχει πιο πειστικός τρόπος να έχω πρόσβαση στις εκδόσεις από το "
 "<code>/releases/m/y/myproject</code>?"
 
-#: data/content/faq.html:24
+#: data/content/faq.html:26
 msgid ""
 "There is. <code>https://fedorahosted.org/released/myproject</code> will go "
 "to the same place. The disadvantage of this is you must know the project "
@@ -164,11 +176,11 @@ msgstr ""
 "πάει στο ίδιο μέρος. Το μειονέκτημα είναι πως θα πρέπει να να γνωρίζετε το "
 "όνομα του έργου και δεν θα μπορείτε να ποληγηθείτε στα έργα."
 
-#: data/content/faq.html:25
+#: data/content/faq.html:27
 msgid "I just got a new git repository, how can I push/pull?"
 msgstr "Μόλις απέκτησα ένα νέο αποθετήριο, πώς μπορώ να κάνω push/pull?"
 
-#: data/content/faq.html:26
+#: data/content/faq.html:28
 msgid ""
 "Before anyone can clone/push the new repository a master push must be done "
 "with the command (from your local git repo): git push "
@@ -178,11 +190,11 @@ msgstr ""
 "push πρέπει να προηγηθεί με μια εντολή (από το τοπικό σας git repo): git "
 "push ssh://git.fedorahosted.org/git/yourproject.git/ master"
 
-#: data/content/faq.html:27
+#: data/content/faq.html:29
 msgid "How do I get permission to commit to a project?"
 msgstr "Πώς παίρνω άδεια να συνεισφέρω σε ένα έργο?"
 
-#: data/content/faq.html:28
+#: data/content/faq.html:30
 msgid ""
 "You should <a "
 "href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for "
@@ -196,7 +208,7 @@ msgstr ""
 "<code>&lt;scm&gt;&lt;project&gt;</code>, π.χ. για το desktop-effects "
 "project, υποβάλλετε αίτηση στην ομάδα <code>gitdesktop-effects</code>."
 
-#: data/content/faq.html:29
+#: data/content/faq.html:31
 msgid ""
 "While I wait for my repository to be created, can I work on my code "
 "elsewhere?"
@@ -204,7 +216,7 @@ msgstr ""
 "Καθώς περιμένω τη δημιουργία του αποθετηρίου μου, μπορώ να δουλεύω τον "
 "κώδικα μου κάπου αλλού;"
 
-#: data/content/faq.html:30
+#: data/content/faq.html:32
 msgid ""
 "Of course. Visit <a "
 "href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a>"
@@ -216,7 +228,7 @@ msgstr ""
 " για πληροφορίες σχετικά με το πώς να φτιάξετε ένα προσωρινό αποθετήριο στο "
 "fedorapeople.org χώρο σας."
 
-#: data/content/faq.html:31
+#: data/content/faq.html:33
 msgid ""
 "Why does hg tells me the repository doesn't exist even though I know I have "
 "the correct URL?"
@@ -224,7 +236,7 @@ msgstr ""
 "Γιατί το hg μου λέει πως το αποθετήριο δεν υπάρχει, αν και γνωρίζω πως έχω "
 "τη σωστή URL;"
 
-#: data/content/faq.html:32
+#: data/content/faq.html:34
 msgid ""
 "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a "
 "delimiter between hostname and path and a second \"/\" as the root of the "
@@ -232,12 +244,17 @@ msgid ""
 "authconfig you need to use \"hg clone "
 "ssh://hg.fedorahosted.org//hg/authconfig\""
 msgstr ""
+"Δυστυχώς το hg δεν χρησιμοποιεί πραγματικούς συνδέσμους. Θα πρέπει να "
+"χρησιμοποιήσετε το \"/\" σαν την ρίζα της διαδρομής του αρχείου συστήματος. "
+"Για παράδειγμα, αν αποκτάτε πρόσβαση στο αποθετήριο για το πρόγραμμα "
+"ρύθμισης παραμέτρων ασφαλείας θα πρέπει να χρησιμοποιήσετε \"hg clone "
+"ssh://hg.fedorahosted.org//hg/authconfig\""
 
-#: data/content/faq.html:33
+#: data/content/faq.html:35
 msgid "Can I offer pre-compiled binaries on Fedora Hosted?"
 msgstr "Μπορώ να προσφέρω pre-compiled binaries στο Fedora Hosted;"
 
-#: data/content/faq.html:34
+#: data/content/faq.html:36
 msgid ""
 "You may, as long as the following conditions are met: <ol><li>The code "
 "project must be available under a Free Software license appropriate for "
@@ -246,6 +263,13 @@ msgid ""
 "available a \"source only\" tarball.</li><li>You must provide clear "
 "instructions for building the software.</li></ol>"
 msgstr ""
+"Μπορείτε, όσο τηρούνται οι παρακάτω προϋποθέσεις: <ol><li>Το έργο κώδικα "
+"πρέπει να διατίθεται υπό Ελεύθερου Κώδικα άδεια κατάλληλη για το "
+"Fedora.</li><li>Πρέπει να διαθέσετε τον πηγαίο κώδικα που χρησιμοποιήσατε "
+"για να μεταγλωττίσετε τα εκτελέσιμα αρχεία, και που δεν βρίσκονται στο ίδιο "
+"πακέτο αρχείων, ή κατ' ελάχιστο να διαθέσετε ένα \"μόνο κώδικα\" πακέτο "
+"αρχείων.</li><li>Πρέπει να παρέχετε ξεκάθαρες οδηγίες για την μεταγλώττιση "
+"του λογισμικού.</li>"
 
 #: data/content/index.html:10
 msgid "Available Projects"
@@ -397,6 +421,9 @@ msgid ""
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
 msgstr ""
+"&copy; 2011 Red Hat, Inc. and others. Παρακαλούμε στείλτε σχόλια ή "
+"διορθώσεις στην <a href=\"mailto:webmaster@fedoraproject.org\">ομάδα "
+"διαχείρισης ιστοσελίδων</a>."
 
 #: data/templates/foot.html:12
 msgid ""
