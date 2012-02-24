@@ -9,8 +9,7 @@ site=( boot.fedoraproject.org
        fedoraproject.org
        fudcon.fedoraproject.org
        spins.fedoraproject.org
-       start.fedoraproject.org
-       talk.fedoraproject.org )
+       start.fedoraproject.org )
 
 
 usage()
