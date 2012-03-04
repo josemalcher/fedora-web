@@ -62,6 +62,7 @@ def process_dir(dirpath, filenames):
             continue
         src_file = os.path.join(dirpath, fn)
         if options.rss:
+            sys.setrecursionlimit(1500)
             for line in fileinput.input(src_file):
                 if line.find('feedparse')>0:
                     match = re.split('^.*feedparse\(\'', line)
