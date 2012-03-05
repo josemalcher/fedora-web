@@ -62,7 +62,7 @@ fdd = feedparse('https://lists.fedoraproject.org/rss/devel-announce.xml')
                     <li py:for="entry in fpp[:5]" py:if="'title' in entry" >
 
                         <h5><a href="${entry['link']}">${entry["title"]}</a></h5>
-                        <p class="community-dates">${_(entry["date"])}</p>
+                        <p class="community-dates">${entry["date"]}</p>
                     </li>
                 </ul>
             </div>
