@@ -41,4 +41,4 @@ def feedparse(url):
     cPickle.dump(feeds, f)
     f.close()
     feed_url = dict()
-    return feed
+    return entry
