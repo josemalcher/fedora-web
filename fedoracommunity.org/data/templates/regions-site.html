@@ -17,14 +17,14 @@
   </py:def>
 
           <!-- Left Column -->
-          <div class="prefix_2 grid_7 apac">
+          <div class="prefix_2 grid_7 ${region}">
             <py:for each="country in contries[:int(index)]">
                ${printblock()}
             </py:for>
           </div>
 
           <!-- Right Column -->
-          <div class="grid_7 apac">
+          <div class="grid_7 ${region}">
             <py:for each="country in contries[int(index):]">
                ${printblock()}
             </py:for>
