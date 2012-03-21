@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  py:strip="">
+
+  <py:def function="printblock(name, title, url)">
+    <div class="community-sites-apac grid_7">
+      <div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
+      <div class="grid_4 omega"></div>
+      <dl>
+	<dt>${name}</dt>
+	<dd>${title}</dd>
+	<dd><a href="${url}">${url}</a></dd>
+      </dl>
+    </div>
+  </py:def>
+
+          <!-- Left Column -->
+          <div class="prefix_2 grid_7 apac">
+            <py:for each="country in contries[:int(index)]">
+               ${printblock(country['name'], country['title'], country['url'])}
+            </py:for>
+          </div>
+
+          <!-- Right Column -->
+          <div class="grid_7 apac">
+            <py:for each="country in contries[int(index):]">
+               ${printblock(country['name'], country['title'], country['url'])}
+            </py:for>
+          </div>
+
+          <div class="clear">&nbsp;</div>
+
+</html>

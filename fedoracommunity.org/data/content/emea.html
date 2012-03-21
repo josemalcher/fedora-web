@@ -1,3 +1,26 @@
+<?python
+import math
+contries = [
+            {'name':_('Belgium'),        'title':_('Fedora Community Belgium'),           'url':'http://be.fedoracommunity.org'},
+            {'name':_('Czech Republic'), 'title':_('Fedora České Project'),               'url':'http://www.fedora.cz'},
+            {'name':_('France'),         'title':_('Communauté Francophone Fedora'),      'url':'http://www.fedora-fr.org'},
+            {'name':_('Germany'),        'title':_('Unofficial German Fedora Portal'),    'url':'http://www.fedorausers.de'},
+            {'name':_('Greece'),         'title':_('Greek Community Portal'),             'url':'http://el.fedoracommunity.org'},
+            {'name':_('Italy'),          'title':_('Il Portale Italiano di Fedora'),      'url':'http://www.fedoraonline.it'},
+            {'name':_('Moldavia'),       'title':_('Fedora MD'),                          'url':'http://fedoramd.org'},
+            {'name':_('Hungary'),        'title':_('Hungarian community'),                'url':'http://hu.fedoracommunity.org'},
+            {'name':_('Netherlands'),    'title':_('Fedora-Linux.nl'),                    'url':'http://www.fedora-linux.nl'},
+            {'name':_('Poland'),         'title':_('Fedora.pl'),                          'url':'http://www.fedora.pl'},
+            {'name':_('Romania'),        'title':_('Comunitatea Romănească Fedora'),      'url':'http://www.fedoraproject.ro'},
+            {'name':_('Russia'),         'title':_('Российское сообщество Fedora'),       'url':'http://ru.fedoracommunity.org'},
+            {'name':_('Spain'),          'title':_('Comunidad Fedora en Castellano'),     'url':'http://www.fedora-es.com'},
+            {'name':_('Tunisia'),        'title':_('Fedora Tunisia'),                     'url':'http://www.fedora-tunisia.org'},
+            {'name':_('United Kingdom'), 'title':_('Fedora UK'),                          'url':'http://uk.fedoracommunity.org'}
+]
+
+contries.sort(key=lambda c: c['name'])
+index=math.ceil(len(contries)/float(2))
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
   xmlns:py="http://genshi.edgewall.org/"
@@ -39,174 +62,11 @@
 						<h3>${_('Community Sites in this Region')}</h3>
 					</div>
 
-					<!-- Left Column -->
-                    <div class="prefix_2 grid_7 emea">
-						<div class="community-sites-emea grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Belgium')}</dt>
-								<dd>${_('Fedora Community Belgium')}</dd>
-								<dd><a href="http://be.fedoracommunity.org">http://be.fedoracommunity.org</a></dd>
-							</dl>
-						</div>
-					
-
-						<div class="community-sites-emea grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Czech Republic')}</dt>
-								<dd>${_('Fedora České Project')}</dd>
-								<dd><a href="http://www.fedora.cz">http://www.fedora.cz</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-emea grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('France')}</dt>
-								<dd>${_('Communauté Francophone Fedora')}</dd>
-								<dd><a href="http://www.fedora-fr.org">http://www.fedora-fr.org</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-emea grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Germany')}</dt>
-								<dd>${_('Unofficial German Fedora Portal')}</dd>
-								<dd><a href="http://www.fedorausers.de">http://www.fedorausers.de</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-emea grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Greece')}</dt>
-								<dd>${_('Greek Community Portal')}</dd>
-								<dd><a href="http://el.fedoracommunity.org/">http://el.fedoracommunity.org/</a></dd>
-							</dl>
-						</div>
+          <!--  Now we includes the region specific websites-->
+          <xi:include href="../templates/regions-site.html" />
 
 
-						<div class="community-sites-emea grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Italy')}</dt>
-								<dd>${_('Il Portale Italiano di Fedora')}</dd>
-								<dd><a href="http://www.fedoraonline.it">http://www.fedoraonline.it</a></dd>
-							</dl>
-						</div>
-
-                        <div class="community-sites-emea grid_7">
-                            <div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-                            <div class="grid_4 omega"></div>
-                            <dl>
-                                <dt>${_('Moldavia')}</dt>
-                                <dd>${_('Fedora MD')}</dd>
-                                <dd><a href="http://fedoramd.org/">http://fedoramd.org/</a></dd>
-                            </dl>
-                        </div>
-
-                        <div class="community-sites-emea grid_7">
-                            <div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-                            <div class="grid_4 omega"></div>
-                            <dl>
-                                <dt>${_('Hungary')}</dt>
-                                <dd>${_('Hungarian community')}</dd>
-                                <dd><a href="http://hu.fedoracommunity.org/">http://hu.fedoracommunity.org</a></dd>
-                            </dl>
-                        </div>
-					</div>
-
-					<!-- End Left Column -->
-
-					<!-- Begin Right Column -->
-
-					<div class="grid_7 emea">
-
-						<div class="community-sites-emea grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Netherlands')}</dt>
-								<dd>Fedora-Linux.nl</dd>
-								<dd><a href="http://www.fedora-linux.nl">http://www.fedora-linux.nl</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-emea grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Poland')}</dt>
-								<dd>Fedora.pl</dd>
-								<dd><a href="http://www.fedora.pl">http://www.fedora.pl</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-emea grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Romania')}</dt>
-								<dd>${_('Comunitatea Romănească Fedora')}</dd>
-								<dd><a href="http://www.fedoraproject.ro">http://www.fedoraproject.ro</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-emea grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Russia')}</dt>
-								<dd>${_('Российское сообщество Fedora')}</dd>
-								<dd><a href="http://ru.fedoracommunity.org/">http://ru.fedoracommunity.org</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-emea grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Spain')}</dt>
-								<dd>${_('Comunidad Fedora en Castellano')}</dd>
-								<dd><a href="http://www.fedora-es.com">http://www.fedora-es.com</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-emea grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Tunisia')}</dt>
-								<dd>${_('Fedora Tunisia')}</dd>
-								<dd><a href="http://www.fedora-tunisia.org">http://www.fedora-tunisia.org</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-emea grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('United Kingdom')}</dt>
-								<dd>${_('Fedora UK')}</dd>
-								<dd><a href="http://uk.fedoracommunity.org">http://uk.fedoracommunity.org</a></dd>
-							</dl>
-						</div>
-				
-
-						<div class="clear">&nbsp;</div>
-					</div>
-<!-- Right column End -->
-
-
-                    <xi:include href="../templates/content-fpolinkback.html" />
+          <xi:include href="../templates/content-fpolinkback.html" />
 				</div>
 	</body>
 </html>

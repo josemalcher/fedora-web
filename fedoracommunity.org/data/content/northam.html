@@ -1,3 +1,12 @@
+<?python
+import math
+contries = [
+            {'name':'United States', 'title':'Fedora', 'url':'http://fedoraproject.org'}
+]
+
+contries.sort(key=lambda c: c['name'])
+index=math.ceil(len(contries)/float(2))
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
   xmlns:py="http://genshi.edgewall.org/"
@@ -41,30 +50,11 @@
 						<h3>${_('Community Sites in this Region')}</h3>
 					</div>
 
-					<!-- Left Column -->
-					<div class="prefix_2 grid_7 northam">
+          <!--  Now we includes the region specific websites-->
+          <xi:include href="../templates/regions-site.html" />
 
-						<div class="community-sites-northam grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('United States')}</dt>
-								<dd>${_('Fedora')}</dd>
-								<dd><a href="http://fedoraproject.org">http://fedoraproject.org</a></dd>
-							</dl>
-						</div>
-					</div>
-					<!-- Left Column End -->
 
-					<!-- Right Column -->
-					<div class="grid_7 northam">
-						
-
-					</div>
-					<div class="clear">&nbsp;</div>
-					<!-- Right Column End -->
-
-                    <xi:include href="../templates/content-fpolinkback.html" />
+          <xi:include href="../templates/content-fpolinkback.html" />
 				</div>
 	</body>
 </html>

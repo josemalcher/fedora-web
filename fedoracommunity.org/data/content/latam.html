@@ -1,3 +1,25 @@
+<?python
+import math
+contries = [
+            {'name':_('Argentina'),     'title':_('Communidad Usuarios Argentina'),  'url':'http://proyectofedora.org/argentina'},
+            {'name':_('Brazil'),        'title':_('Projeto Fedora Brasil'),          'url':'http://www.projetofedora.org'},
+            {'name':_('Brazil'),        'title':_('http://www.fedora.org.br'),       'url':'http://www.fedora.org.br'},
+            {'name':_('Chile'),         'title':_('Proyecto Fedora Chile'),          'url':'http://www.proyectofedora.cl'},
+            {'name':_('Colombia'),      'title':_('Fedora Colombia'),                'url':'http://www.proyectofedora.org/colombia'},
+            {'name':_('El Salvador'),   'title':_('Fedora El Salvador'),             'url':'http://fedora.org.sv'},
+            {'name':_('Guatemala'),     'title':_('Fedora Guatemala'),               'url':'http://www.fedora.org.gt'},
+            {'name':_('Latin America'), 'title':_('Proyecto Fedora Latinoamerica'),  'url':'http://proyectofedora.org'},
+            {'name':_('México'),        'title':_('Fedora México'),                  'url':'http://www.proyectofedora.org/mexico'},
+            {'name':_('Nicaragua'),     'title':_('Fedora Nicaragua'),               'url':'http://fedora.org.ni'},
+            {'name':_('Panamá'),        'title':_('Comunidad Fedora Panamá'),        'url':'http://www.proyectofedora.org/panama'},
+            {'name':_('Peru'),          'title':_('Fedora Peru'),                    'url':'http://proyectofedora.org/peru'},
+            {'name':_('Uruguay'),       'title':_('Fedora UY'),                      'url':'http://fedora-uy.org'},
+            {'name':_('Venezuela'),     'title':_('Fedora Venezuela'),               'url':'http://www.fedora-ve.org'}
+]
+
+contries.sort(key=lambda c: c['name'])
+index=math.ceil(len(contries)/float(2))
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
   xmlns:py="http://genshi.edgewall.org/"
@@ -46,180 +68,12 @@
 						<h3>${_('Community Sites in this Region')}</h3>
 
 					</div>
-	
-					<!-- Left Column -->
-					<div class="prefix_2 grid_7 latam">
-						
-						<div class="community-sites-latam grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Argentina')}</dt>
 
-								<dd>${_('Communidad Usuarios Argentina')}</dd>
-								<dd><a href="http://proyectofedora.org/argentina">http://proyectofedora.org/argentina</a></dd>
-							</dl>
-						</div>
-					
-
-						<div class="community-sites-latam grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-
-								<dt>${_('Brazil')}</dt>
-								<dd>${_('Projeto Fedora Brasil')}</dd>
-								<dd><a href="http://www.projetofedora.org">http://www.projetofedora.org</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-latam grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Brazil')}</dt>
-								<dd>http://www.fedora.org.br</dd>
-								<dd><a href="http://www.fedora.org.br">http://www.fedora.org.br</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-latam grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Chile')}</dt>
-								<dd>${_('Proyecto Fedora Chile')}</dd>
-								<dd><a href="http://www.proyectofedora.cl/">http://www.proyectofedora.cl/</a></dd>
-
-							</dl>
-						</div>
-
-						<div class="community-sites-latam grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Colombia')}</dt>
-								<dd>${_('Fedora Colombia')}</dd>
-								<dd><a href="http://www.proyectofedora.org/colombia">http://www.proyectofedora.org/colombia</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-latam grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('El Salvador')}</dt>
-
-								<dd>${_('Fedora El Salvador')}</dd>
-								<dd><a href="http://fedora.org.sv">http://fedora.org.sv</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-latam grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-
-							<dl>
-								<dt>${_('Guatemala')}</dt>
-								<dd>${_('Fedora Guatemala')}</dd>
-								<dd><a href="http://www.fedora.org.gt">http://www.fedora.org.gt</a></dd>
-							</dl>
-						</div>
-					</div>
-
-					<!-- End Left Column -->
+          <!--  Now we includes the region specific websites-->
+          <xi:include href="../templates/regions-site.html" />
 
 
-					<!-- Right Column -->
-					<div class="grid_7 latam">
-
-						<div class="community-sites-latam grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-
-								<dt>${_('Latin America')}</dt>
-								<dd>${_('Proyecto Fedora Latinoamerica')}</dd>
-								<dd><a href="http://proyectofedora.org/">http://proyectofedora.org/</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-latam grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('MÃ©xico')}</dt>
-								<dd>${_('Fedora MÃ©xico')}</dd>
-								<dd><a href="http://www.proyectofedora.org/mexico">http://www.proyectofedora.org/mexico</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-latam grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Nicaragua')}</dt>
-								<dd>${_('Fedora Nicaragua')}</dd>
-								<dd><a href="http://fedora.org.ni">http://fedora.org.ni</a></dd>
-
-							</dl>
-						</div>
-	
-						<div class="community-sites-latam grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('PanamÃ¡')}</dt>
-								<dd>${_('Comunidad Fedora PanamÃ¡')}</dd>
-
-								<dd><a href="http://www.proyectofedora.org/panama">http://www.proyectofedora.org/panama</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-latam grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Peru')}</dt>
-
-								<dd>${_('Fedora Peru')}</dd>
-								<dd><a href="http://proyectofedora.org/peru">http://proyectofedora.org/peru</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-latam grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-
-							<dl>
-								<dt>${_('Uruguay')}</dt>
-								<dd>${_('Fedora UY')}</dd>
-								<dd><a href="http://fedora-uy.org">http://fedora-uy.org</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-latam grid_7">
-
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Venezuela')}</dt>
-								<dd>${_('Fedora Venezuela')}</dd>
-								<dd><a href="http://www.fedora-ve.org">http://www.fedora-ve.org</a></dd>
-							</dl>
-
-						</div>
-
-						<div class="clear">&nbsp;</div>
-
-					</div>
-					<div class="clear">&nbsp;</div>
-					<!-- End Right Column -->
-
-
-                    <xi:include href="../templates/content-fpolinkback.html" />
+          <xi:include href="../templates/content-fpolinkback.html" />
 				</div>
 
 	</body>

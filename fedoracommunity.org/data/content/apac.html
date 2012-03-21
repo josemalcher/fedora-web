@@ -1,3 +1,20 @@
+<?python
+import math
+contries = [
+            {'name': _('Bangladesh'),   'title':_('Fedora Bangladesh'),     'url':'http://bd.fedoracommunity.org'},
+            {'name': _('China'),        'title':_('Fedora China'),          'url':'http://www.fedorachina.cn'},
+            {'name': _('Indonesia'),    'title':_('Fedora Indonesia'),      'url':'http://id.fedoracommunity.org'},
+            {'name': _('Japan'),        'title':_('Fedora Japan'),          'url':'http://fedorasrv.com'},
+            {'name': _('Phillipines'),  'title':_('Fedora Phillipines'),    'url':'http://ph.fedoracommunity.org'},
+            {'name': _('Taiwan'),       'title':_('Fedora Taiwan'),         'url':'http://fedora.tw'},
+            {'name': _('Sri Lanka'),    'title':_('Fedora Sri Lanka'),      'url':'http://lk.fedoracommunity.org'},
+            {'name': _('Vietnam'),      'title':_('Fedora Vietnam'),        'url':'http://vn.fedoracommunity.org'},
+            {'name': _('Malaysia'),     'title':_('Fedora Malaysia'),       'url':'http://fedora.my'}
+]
+
+contries.sort(key=lambda c: c['name'])
+index=math.ceil(len(contries)/float(2))
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
   xmlns:py="http://genshi.edgewall.org/"
@@ -43,133 +60,11 @@
 						<h3>${_('Community Sites in this Region')}</h3>
 					</div>
 
-					<!-- Left Column -->
-					<div class="prefix_2 grid_7 apac">
-
-						<div class="community-sites-apac grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Bangladesh')}</dt>
-								<dd>${_('Fedora Bangladesh')}</dd>
-								<dd><a href="http://bd.fedoracommunity.org">http://bd.fedoracommunity.org</a></dd>
-
-							</dl>
-						</div>
-					
-
-						<div class="community-sites-apac grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('China')}</dt>
-								<dd>${_('Fedora China')}</dd>
-
-								<dd><a href="http://www.fedorachina.cn">http://www.fedorachina.cn</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-apac grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('China')}</dt>
-
-								<dd>${_('Fedora Chinese User Group Forum')}</dd>
-								<dd><a href="http://www.fedorachina.org">http://www.fedorachina.org</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-apac grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-
-							<dl>
-								<dt>${_('Indonesia')}</dt>
-								<dd>${_('Fedora Indonesia')}</dd>
-								<dd><a href="http://id.fedoracommunity.org/">http://id.fedoracommunity.org</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-apac grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Japan')}</dt>
-
-								<dd>${_('Fedora Japan')}</dd>
-								<dd><a href="http://fedorasrv.com">http://fedorasrv.com</a></dd>
-							</dl>
-						</div>
-
-					</div>
-
-					<!-- Left Column End -->
-
-					<!-- Right Column -->
-					<div class="grid_7 apac">
-
-            <div class="community-sites-apac grid_7">
-              <div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-              <div class="grid_4 omega"></div>
-
-              <dl>
-                <dt>${_('Malaysia')}</dt>
-                <dd>${_('Fedora Malaysia')}</dd>
-                <dd><a href="http://fedora.my">http://fedora.my</a></dd>
-              </dl>
-            </div>
-
-						<div class="community-sites-apac grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-
-							<dl>
-								<dt>${_('Phillipines')}</dt>
-								<dd>${_('Fedora Phillipines')}</dd>
-								<dd><a href="http://ph.fedoracommunity.org">http://ph.fedoracommunity.org</a></dd>
-							</dl>
-						</div>
-
-						<div class="community-sites-apac grid_7">
-
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Taiwan')}</dt>
-								<dd>${_('Fedora Taiwan')}</dd>
-								<dd><a href="http://fedora.tw">http://fedora.tw</a></dd>
-							</dl>
-
-						</div>
-
-                        <div class="community-sites-apac grid_7">
-                            <div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-                            <div class="grid_4 omega"></div>
-                            <dl>
-                                <dt>${_('Sri Lanka')}</dt>
-                                <dd>${_('Fedora Sri Lanka')}</dd>
-                                <dd><a href="http://lk.fedoracommunity.org">http://lk.fedoracommunity.org</a></dd>
-                            </dl>
-                        </div>
-
-						<div class="community-sites-apac grid_7">
-							<div class="grid_2 alpha"><img alt="filler image" src="static/images/screenshots/filler.png" /></div>
-							<div class="grid_4 omega"></div>
-							<dl>
-								<dt>${_('Vietnam')}</dt>
-								<dd>${_('Fedora Vietnam')}</dd>
-
-								<dd><a href="http://vn.fedoracommunity.org">http://vn.fedoracommunity.org</a></dd>
-							</dl>
-						</div>
+          <!--  Now we includes the region specific websites-->
+          <xi:include href="../templates/regions-site.html" />
 
 
-					</div>
-					<div class="clear">&nbsp;</div>
-					<!-- Right Column End -->
-
-                    <xi:include href="../templates/content-fpolinkback.html" />
+          <xi:include href="../templates/content-fpolinkback.html" />
 
 				</div>
 
