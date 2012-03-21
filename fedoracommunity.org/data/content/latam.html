@@ -1,5 +1,6 @@
 <?python
 import math
+from operator import itemgetter
 contries = [
             {'name':_('Argentina'),     'title':_('Communidad Usuarios Argentina'),  'url':'http://proyectofedora.org/argentina'},
             {'name':_('Brazil'),        'title':_('Projeto Fedora Brasil'),          'url':'http://www.projetofedora.org'},
@@ -17,7 +18,7 @@ contries = [
             {'name':_('Venezuela'),     'title':_('Fedora Venezuela'),               'url':'http://www.fedora-ve.org'}
 ]
 region="latam"
-contries.sort(key=lambda c: c['name'])
+contries.sort(key=itemgetter('name'))
 index=math.ceil(len(contries)/float(2))
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">

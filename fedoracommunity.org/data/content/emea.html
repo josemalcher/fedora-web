@@ -1,14 +1,15 @@
 <?python
 import math
+from operator import itemgetter
 contries = [
             {'name':_('Belgium'),        'title':_('Fedora Community Belgium'),           'url':'http://be.fedoracommunity.org'},
             {'name':_('Czech Republic'), 'title':_('Fedora České Project'),               'url':'http://www.fedora.cz'},
             {'name':_('France'),         'title':_('Communauté Francophone Fedora'),      'url':'http://www.fedora-fr.org'},
             {'name':_('Germany'),        'title':_('Unofficial German Fedora Portal'),    'url':'http://www.fedorausers.de'},
             {'name':_('Greece'),         'title':_('Greek Community Portal'),             'url':'http://el.fedoracommunity.org'},
+            {'name':_('Hungary'),        'title':_('Hungarian community'),                'url':'http://hu.fedoracommunity.org'},
             {'name':_('Italy'),          'title':_('Il Portale Italiano di Fedora'),      'url':'http://www.fedoraonline.it'},
             {'name':_('Moldavia'),       'title':_('Fedora MD'),                          'url':'http://fedoramd.org'},
-            {'name':_('Hungary'),        'title':_('Hungarian community'),                'url':'http://hu.fedoracommunity.org'},
             {'name':_('Netherlands'),    'title':_('Fedora-Linux.nl'),                    'url':'http://www.fedora-linux.nl'},
             {'name':_('Poland'),         'title':_('Fedora.pl'),                          'url':'http://www.fedora.pl'},
             {'name':_('Romania'),        'title':_('Comunitatea Romănească Fedora'),      'url':'http://www.fedoraproject.ro'},
@@ -18,7 +19,7 @@ contries = [
             {'name':_('United Kingdom'), 'title':_('Fedora UK'),                          'url':'http://uk.fedoracommunity.org'}
 ]
 region="emea"
-contries.sort(key=lambda c: c['name'])
+contries.sort(key=itemgetter('name'))
 index=math.ceil(len(contries)/float(2))
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">

@@ -1,10 +1,11 @@
 <?python
 import math
+from operator import itemgetter
 contries = [
             {'name':'United States', 'title':'Fedora', 'url':'http://fedoraproject.org'}
 ]
 region="northam"
-contries.sort(key=lambda c: c['name'])
+contries.sort(key=itemgetter('name'))
 index=math.ceil(len(contries)/float(2))
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
