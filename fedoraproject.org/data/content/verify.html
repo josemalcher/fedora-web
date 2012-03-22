@@ -42,16 +42,19 @@
                             <th class="install-media-arch">i386</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-i386-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-i386-CHECKSUM">Fedora 16</a></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-17-Alpha-i386-CHECKSUM">Fedora 17-Alpha</a></td>
                         </tr>
                         <tr>
                             <th class="install-media-arch">x86_64</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-x86_64-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-x86_64-CHECKSUM">Fedora 16</a></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-17-Alpha-x86_64-CHECKSUM">Fedora 17-Alpha</a></td>
                         </tr>
                         <tr>
                             <th class="install-media-arch">source</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-source-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-source-CHECKSUM">Fedora 16</a></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-17-Alpha-source-CHECKSUM">Fedora 17-Alpha</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -68,41 +71,49 @@
                             <th class="install-media-arch">i686</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-i686-Live-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-i686-Live-CHECKSUM">Fedora 16</a></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-17-Alpha-i686-Live-CHECKSUM">Fedora 17-Alpha</a></td>
                         </tr>
                         <tr>
                             <th class="install-media-arch">i686 (KDE)</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-i686-Live-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-i686-Live-CHECKSUM">Fedora 16</a></td>
+                            <td>n/a</td>
                         </tr>
                         <tr>
                             <th class="install-media-arch">i686 (LXDE)</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-i686-Spins-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-i686-Spins-CHECKSUM">Fedora 16</a></td>
+                            <td>n/a</td>
                         </tr>
                         <tr>
                             <th class="install-media-arch">i686 (XFCE)</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-i686-Spins-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-i686-Spins-CHECKSUM">Fedora 16</a></td>
+                            <td>n/a</td>
                         </tr>
                         <tr>
                             <th class="install-media-arch">x86_64</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-x86_64-Live-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-x86_64-Live-CHECKSUM">Fedora 16</a></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-17-Alpha-x86_64-Live-CHECKSUM">Fedora 17-Alpha</a></td>
                         </tr>
                         <tr>
                             <th class="install-media-arch">x86_64 (KDE)</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-x86_64-Live-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-x86_64-Live-CHECKSUM">Fedora 16</a></td>
+                            <td>n/a</td>
                         </tr>
                         <tr>
                             <th class="install-media-arch">x86_64 (LXDE)</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-x86_64-Spins-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-x86_64-Spins-CHECKSUM">Fedora 16</a></td>
+                            <td>n/a</td>
                         </tr>
                         <tr>
                             <th class="install-media-arch">x86_64 (XFCE)</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-x86_64-Spins-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-x86_64-Spins-CHECKSUM">Fedora 16</a></td>
+                            <td>n/a</td>
                         </tr>
                     </tbody>
                 </table>
@@ -115,6 +126,7 @@
                 <pre class="command">$ gpg --verify-files *-CHECKSUM</pre>
                 <p>${Markup(_('The CHECKSUM file should have a good signature from one of the following keys:'))}</p>
                 <ul>
+                    <li><code>1ACA3465</code> - ${Markup(_('Fedora 17'))}</li>
                     <li><code>A82BA4B7</code> - ${Markup(_('Fedora 16'))}</li>
                     <li><code>069C8460</code> - ${Markup(_('Fedora 15'))}</li>
                 </ul>
