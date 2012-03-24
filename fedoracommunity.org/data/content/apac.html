@@ -1,16 +1,17 @@
 <?python
 import math
 from operator import itemgetter
+# see http://en.wikipedia.org/wiki/List_of_countries_and_capitals_in_native_languages
 contries = [
-            {'name': _('Bangladesh'),   'title':_('Fedora Bangladesh'),     'url':'http://bd.fedoracommunity.org'},
-            {'name': _('China'),        'title':_('Fedora China'),          'url':'http://www.fedorachina.cn'},
-            {'name': _('Indonesia'),    'title':_('Fedora Indonesia'),      'url':'http://id.fedoracommunity.org'},
-            {'name': _('Japan'),        'title':_('Fedora Japan'),          'url':'http://fedorasrv.com'},
-            {'name': _('Phillipines'),  'title':_('Fedora Phillipines'),    'url':'http://ph.fedoracommunity.org'},
-            {'name': _('Taiwan'),       'title':_('Fedora Taiwan'),         'url':'http://fedora.tw'},
-            {'name': _('Sri Lanka'),    'title':_('Fedora Sri Lanka'),      'url':'http://lk.fedoracommunity.org'},
-            {'name': _('Vietnam'),      'title':_('Fedora Vietnam'),        'url':'http://vn.fedoracommunity.org'},
-            {'name': _('Malaysia'),     'title':_('Fedora Malaysia'),       'url':'http://fedora.my'}
+            {'name':'Bangladesh',   'title':_('Fedora Bangladesh Community'),     'url':'http://bd.fedoracommunity.org'},
+            {'name':'China',        'title':_('Fedora China Community'),          'url':'http://www.fedorachina.cn'},
+            {'name':'Indonesia',    'title':_('Fedora Indonesia Community'),      'url':'http://id.fedoracommunity.org'},
+            {'name':'日本',         'title':_('Fedora Japan Community'),          'url':'http://fedorasrv.com'},
+            {'name':'Phillipines',  'title':_('Fedora Phillipines Community'),    'url':'http://ph.fedoracommunity.org'},
+            {'name':'Taiwan',       'title':_('Fedora Taiwan Community'),         'url':'http://fedora.tw'},
+            {'name':'Sri Lanka',    'title':_('Fedora Sri Lanka Community'),      'url':'http://lk.fedoracommunity.org'},
+            {'name':'Việt Nam',     'title':_('Fedora Vietnam Community'),        'url':'http://vn.fedoracommunity.org'},
+            {'name':'Malaysia',     'title':_('Fedora Malaysia Community'),       'url':'http://fedora.my'}
 ]
 region="apac"
 contries.sort(key=itemgetter('name'))

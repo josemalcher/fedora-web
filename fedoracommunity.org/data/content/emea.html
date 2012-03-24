@@ -1,22 +1,23 @@
 <?python
 import math
 from operator import itemgetter
+# see http://en.wikipedia.org/wiki/List_of_countries_and_capitals_in_native_languages
 contries = [
-            {'name':_('Belgium'),        'title':_('Fedora Community Belgium'),           'url':'http://be.fedoracommunity.org'},
-            {'name':_('Czech Republic'), 'title':_('Fedora České Project'),               'url':'http://www.fedora.cz'},
-            {'name':_('France'),         'title':_('Communauté Francophone Fedora'),      'url':'http://www.fedora-fr.org'},
-            {'name':_('Germany'),        'title':_('Unofficial German Fedora Portal'),    'url':'http://www.fedorausers.de'},
-            {'name':_('Greece'),         'title':_('Greek Community Portal'),             'url':'http://el.fedoracommunity.org'},
-            {'name':_('Hungary'),        'title':_('Hungarian community'),                'url':'http://hu.fedoracommunity.org'},
-            {'name':_('Italy'),          'title':_('Il Portale Italiano di Fedora'),      'url':'http://www.fedoraonline.it'},
-            {'name':_('Moldavia'),       'title':_('Fedora MD'),                          'url':'http://fedoramd.org'},
-            {'name':_('Netherlands'),    'title':_('Fedora-Linux.nl'),                    'url':'http://www.fedora-linux.nl'},
-            {'name':_('Poland'),         'title':_('Fedora.pl'),                          'url':'http://www.fedora.pl'},
-            {'name':_('Romania'),        'title':_('Comunitatea Romănească Fedora'),      'url':'http://www.fedoraproject.ro'},
-            {'name':_('Russia'),         'title':_('Российское сообщество Fedora'),       'url':'http://ru.fedoracommunity.org'},
-            {'name':_('Spain'),          'title':_('Comunidad Fedora en Castellano'),     'url':'http://www.fedora-es.com'},
-            {'name':_('Tunisia'),        'title':_('Fedora Tunisia'),                     'url':'http://www.fedora-tunisia.org'},
-            {'name':_('United Kingdom'), 'title':_('Fedora UK'),                          'url':'http://uk.fedoracommunity.org'}
+            {'name':'Belgium',         'title':_('Fedora Belgium Community'),                  'url':'http://be.fedoracommunity.org'},
+            {'name':'Česká republika', 'title':_('Fedora Czech Republic Community'),           'url':'http://www.fedora.cz'},
+            {'name':'France',          'title':_('Fedora French Community'),                   'url':'http://www.fedora-fr.org'},
+            {'name':'Deutschland',     'title':_('Fedora unofficial German Fedora Portal'),    'url':'http://www.fedorausers.de'},
+            {'name':'Ελλάδα',          'title':_('Fedora Greek Community Portal'),             'url':'http://el.fedoracommunity.org'},
+            {'name':'Magyarország',    'title':_('Fedora Hungarian Community'),                'url':'http://hu.fedoracommunity.org'},
+            {'name':'Italia',          'title':_('Fedora Italian Community'),                  'url':'http://www.fedoraonline.it'},
+            {'name':'Moldavia',        'title':_('Fedora Moldavia Community'),                 'url':'http://fedoramd.org'},
+            {'name':'Netherlands',     'title':_('Fedora Netherlands Community'),              'url':'http://www.fedora-linux.nl'},
+            {'name':'Polska',          'title':_('Fedora Poland Community'),                   'url':'http://www.fedora.pl'},
+            {'name':'România',         'title':_('Fedora Romania Community'),                  'url':'http://www.fedoraproject.ro'},
+            {'name':'Россия',          'title':_('Fedora Russian Community'),                  'url':'http://ru.fedoracommunity.org'},
+            {'name':'España',          'title':_('Fedora Spanish Community'),                  'url':'http://www.fedora-es.com'},
+            {'name':'Tunisie',         'title':_('Fedora Tunisia Community'),                  'url':'http://www.fedora-tunisia.org'},
+            {'name':'United Kingdom',  'title':_('Fedora UK Community'),                       'url':'http://uk.fedoracommunity.org'}
 ]
 region="emea"
 contries.sort(key=itemgetter('name'))

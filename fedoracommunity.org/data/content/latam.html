@@ -2,20 +2,20 @@
 import math
 from operator import itemgetter
 contries = [
-            {'name':_('Argentina'),     'title':_('Communidad Usuarios Argentina'),  'url':'http://proyectofedora.org/argentina'},
-            {'name':_('Brazil'),        'title':_('Projeto Fedora Brasil'),          'url':'http://www.projetofedora.org'},
-            {'name':_('Brazil'),        'title':_('http://www.fedora.org.br'),       'url':'http://www.fedora.org.br'},
-            {'name':_('Chile'),         'title':_('Proyecto Fedora Chile'),          'url':'http://www.proyectofedora.cl'},
-            {'name':_('Colombia'),      'title':_('Fedora Colombia'),                'url':'http://www.proyectofedora.org/colombia'},
-            {'name':_('El Salvador'),   'title':_('Fedora El Salvador'),             'url':'http://fedora.org.sv'},
-            {'name':_('Guatemala'),     'title':_('Fedora Guatemala'),               'url':'http://www.fedora.org.gt'},
-            {'name':_('Latin America'), 'title':_('Proyecto Fedora Latinoamerica'),  'url':'http://proyectofedora.org'},
-            {'name':_('México'),        'title':_('Fedora México'),                  'url':'http://www.proyectofedora.org/mexico'},
-            {'name':_('Nicaragua'),     'title':_('Fedora Nicaragua'),               'url':'http://fedora.org.ni'},
-            {'name':_('Panamá'),        'title':_('Comunidad Fedora Panamá'),        'url':'http://www.proyectofedora.org/panama'},
-            {'name':_('Peru'),          'title':_('Fedora Peru'),                    'url':'http://proyectofedora.org/peru'},
-            {'name':_('Uruguay'),       'title':_('Fedora UY'),                      'url':'http://fedora-uy.org'},
-            {'name':_('Venezuela'),     'title':_('Fedora Venezuela'),               'url':'http://www.fedora-ve.org'}
+            {'name':'Argentina',     'title':_('Fedora Argentina Comminity'),      'url':'http://proyectofedora.org/argentina'},
+            {'name':'Brasil',        'title':_('Fedora Brazil Portal'),            'url':'http://www.projetofedora.org'},
+            {'name':'Brasil',        'title':_('Fedora Brazil Community'),         'url':'http://www.fedora.org.br'},
+            {'name':'Chile',         'title':_('Fedora Chile Community'),          'url':'http://www.proyectofedora.cl'},
+            {'name':'Colombia',      'title':_('Fedora Colombia Community'),       'url':'http://www.proyectofedora.org/colombia'},
+            {'name':'El Salvador',   'title':_('Fedora El Salvador Community'),    'url':'http://fedora.org.sv'},
+            {'name':'Guatemala',     'title':_('Fedora Guatemala Community'),      'url':'http://www.fedora.org.gt'},
+            {'name':'Latin America', 'title':_('Fedora Latin America Community'),  'url':'http://proyectofedora.org'},
+            {'name':'México',        'title':_('Fedora Mexico Community'),         'url':'http://www.proyectofedora.org/mexico'},
+            {'name':'Nicaragua',     'title':_('Fedora Nicaragua Community'),      'url':'http://fedora.org.ni'},
+            {'name':'Panamá',        'title':_('Fedora Panama Community'),         'url':'http://www.proyectofedora.org/panama'},
+            {'name':'Perú',          'title':_('Fedora Peru Community'),           'url':'http://proyectofedora.org/peru'},
+            {'name':'Uruguay',       'title':_('Fedora Uruguay Community'),        'url':'http://fedora-uy.org'},
+            {'name':'Venezuela',     'title':_('Fedora Venezuela Community'),      'url':'http://www.fedora-ve.org'}
 ]
 region="latam"
 contries.sort(key=itemgetter('name'))
