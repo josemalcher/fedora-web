@@ -32,7 +32,7 @@ image_lang = 'en'
 available_languages = ('ar', 'bg', 'bn_IN', 'cs', 'da', 'de', 'el', 'en', 'es', 'fi', 'fr', 'gu', 'he', 'hi', 'hr', 'hu', 'id', 'is', 'it', 'ja', 'kn', 'ko', 'ks', 'ml', 'nl', 'pa', 'pl', 'pt', 'pt_BR', 'ro', 'ru', 'si', 'sr', 'sv', 'th', 'tr', 'uk', 'zh_CN', 'zh_TW')
 if lang in available_languages:
   image_lang = lang
-image = image_lang + '/fedora16-countdown-banner-' + days + '.' + image_lang + '.png'
+image = image_lang + '/fedora' + str(global_variables.next_release) + '-countdown-banner-' + days + '.' + image_lang + '.png'
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -58,12 +58,12 @@ image = image_lang + '/fedora16-countdown-banner-' + days + '.' + image_lang + '
 								<h2>${_('Free your desktop with Fedora.')}</h2>
 								<p>${_('Fedora is a fast, stable, and powerful operating system for everyday use built by a worldwide community of friends. It\'s completely free to use, study, and share.')}</p>
 								<ul>
-									<li><a href="http://download.fedoraproject.org/pub/fedora/linux/releases/16/Live/i686/Fedora-16-i686-Live-Desktop.iso" id="download-button" class="download-splash">${_('Download Now!')}</a></li>
+									<li><a href="${global_variables.path['download']}/${global_variables.curr_release}/Live/i686/Fedora-${global_variables.curr_release}-i686-Live-Desktop.iso" id="download-button" class="download-splash">${_('Download Now!')}</a></li>
 									<li><a href="${path}/${lang}/get-fedora">${_('Learn More')}</a></li>
 								</ul>
-								<p class="small">${_('%(size)sMB, 1 CD-ROM Disc image for %(arch)s-bit PCs') % {'size':'605', 'arch':'32'}} <br /><a href="${path}/${lang}/get-fedora-options">${Markup(_('More options &gt;'))}</a></p>
+								<p class="small">${_('%(size)sMB, 1 CD-ROM Disc image for %(arch)s-bit PCs') % {'size':global_variables.iso_size['i686_Live_Desktop'], 'arch':'32'}} <br /><a href="${path}/${lang}/get-fedora-options">${Markup(_('More options &gt;'))}</a></p>
                                 <ul>
-                                    <li class="getalpha"><a href="${path}/${lang}/get-prerelease">${_('Try Fedora 17 Alpha Now!')}</a></li>
+                                    <li class="getalpha"><a href="${path}/${lang}/get-prerelease">${_('Try Fedora %(release)s %(state)s Now!') % {'release':global_variables.next_release, 'state':global_variables.curr_state}}</a></li>
                                 </ul>
 							</div>
 							<img src="${path}/static/images/f16_fpo_screenshot.png" alt="screenshot" />
@@ -222,7 +222,7 @@ image = image_lang + '/fedora16-countdown-banner-' + days + '.' + image_lang + '
                 <p><a href="${path}/${lang}/get-fedora-options">${Markup(_('Full set of download options &gt;'))}</a></p>
 
                 <div id="fedora-banners">
-                    <a href="${path}/${lang}/get-fedora"><img alt="Fedora 16 Verne is here!" src="${path}/static/images/banners/f16release.png" /></a>
+                    <a href="${path}/${lang}/get-fedora"><img alt="Fedora ${global_variables.curr_release} ${global_variables.curr_release_name} is here!" src="${path}/static/images/banners/f16release.png" /></a>
                 </div>
 
                 <h4>${_('Upcoming Events')}</h4>
