@@ -8,18 +8,21 @@ Some code/design taken from python.org's website build script
 '''
 
 import os, sys, timing, re, shutil
-
 from pkg_resources import get_distribution 
-
 from optparse import OptionParser
-
 from gettext import GNUTranslations
-
 from genshi.filters import Translator
 from genshi.template import TemplateLoader
 
 from rss import *
 import fileinput
+
+
+try:
+    from config import Config
+except ImportError:
+    print "Config module not found"
+
 
 def process(args):
     if os.path.exists(options.output) and options.erase:
@@ -35,9 +38,11 @@ def process(args):
             copytree(dir, outpath)
     if options.input is not None:
         timing.start()
+        f = file('build/var.cfg')
+        global_var = Config(f)
         for dirpath, dirnames, filenames in os.walk(options.input):
             try:
-                process_dir(dirpath, filenames)
+                process_dir(dirpath, filenames, global_var)
             except:
                 if options.keepgoing:
                     print 'Error!'
@@ -47,7 +52,7 @@ def process(args):
         if not options.rss:
             print 'Website build time: %s' % timing.milli()
 
-def process_dir(dirpath, filenames):
+def process_dir(dirpath, filenames, global_var):
     '''
     Process a directory
     '''
@@ -81,6 +86,7 @@ def process_dir(dirpath, filenames):
             lang=options.lang,
             path=options.basepath,
             curpage=curpage,
+            global_variables=global_var,
             ).render(method='html', doctype='html')
         output = open(dest_file, 'w')
         output.write(page)
