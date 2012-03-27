@@ -22,6 +22,7 @@ try:
     from config import Config
 except ImportError:
     print "Config module not found"
+    raise
 
 
 def process(args):
