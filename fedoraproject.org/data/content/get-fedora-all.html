@@ -131,6 +131,13 @@
                 <p>${Markup(_('When you place an order with a &lt;a href="http://fedoraproject.org/wiki/Distribution/SponsoredMedia"&gt;participating vendor&lt;/a&gt;, you may also sponsor the cost of media for users who cannot afford it, such as people in developing nations. Consider participating in the &lt;a href="http://fedoraproject.org/wiki/Distribution/SponsoredMedia"&gt;Fedora Sponsored Media Program&lt;/a&gt;.'))}</p>
 -->
 
+                <h3 class="header">${Markup(_('Download Fedora Sources'))}</h3>
+                <ul class="download">
+                    <li><a href="${global_variables.path['download']}/${global_variables.curr_release}/Fedora/source/iso/Fedora-${global_variables.curr_release}-source-DVD.iso">${Markup(_('Fedora %(release)s Source DVD (%(size)s GB)') % {'release':global_variables.curr_release, 'size':global_variables.iso_size['source_DVD']})}</a></li>
+                    <li><a href="${global_variables.path['download']}/${global_variables.curr_release}/Fedora/source/SRPMS/">${Markup(_('Fedora %(release)s Source RPMs') % {'release':global_variables.curr_release})}</a></li>
+                </ul>
+
+
 <p id="section-nav-bottom"><a href="${path}/${lang}/get-fedora">${Markup(_('&amp;#8592; Back to the main "Get Fedora" page'))}.</a></p>
 
                 <xi:include href="../templates/content-export-regulations.html" />
