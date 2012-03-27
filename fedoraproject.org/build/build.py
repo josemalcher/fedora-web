@@ -17,13 +17,11 @@ from genshi.template import TemplateLoader
 from rss import *
 import fileinput
 
-
 try:
-    from config import Config
+    import globalvar
 except ImportError:
-    print "Config module not found"
+    print "globalvar.py is used to import globale defines"
     raise
-
 
 def process(args):
     if os.path.exists(options.output) and options.erase:
@@ -39,11 +37,9 @@ def process(args):
             copytree(dir, outpath)
     if options.input is not None:
         timing.start()
-        f = file('build/var.cfg')
-        global_var = Config(f)
         for dirpath, dirnames, filenames in os.walk(options.input):
             try:
-                process_dir(dirpath, filenames, global_var)
+                process_dir(dirpath, filenames)
             except:
                 if options.keepgoing:
                     print 'Error!'
@@ -53,7 +49,7 @@ def process(args):
         if not options.rss:
             print 'Website build time: %s' % timing.milli()
 
-def process_dir(dirpath, filenames, global_var):
+def process_dir(dirpath, filenames):
     '''
     Process a directory
     '''
@@ -87,7 +83,7 @@ def process_dir(dirpath, filenames, global_var):
             lang=options.lang,
             path=options.basepath,
             curpage=curpage,
-            global_variables=global_var,
+            global_variables=globalvar,
             ).render(method='html', doctype='html')
         output = open(dest_file, 'w')
         output.write(page)

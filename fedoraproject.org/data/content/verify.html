@@ -42,19 +42,19 @@
                             <th class="install-media-arch">i386</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-i386-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-i386-CHECKSUM">Fedora 16</a></td>
-                            <td py:if="global_variables.curr_state"><a href="${global_variables.path['checksums']}/Fedora-${global_variables.next_release}-${global_variables.curr_state}-i386-CHECKSUM">Fedora ${global_variables.next_release}-${global_variables.curr_state}</a></td>
+                            <td py:if="global_variables.release['curr_state']"><a href="${global_variables.path['checksums']}/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i386-CHECKSUM">Fedora ${global_variables.release['next_id']}-${global_variables.release['curr_state']}</a></td>
                         </tr>
                         <tr>
                             <th class="install-media-arch">x86_64</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-x86_64-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-x86_64-CHECKSUM">Fedora 16</a></td>
-                            <td py:if="global_variables.curr_state"><a href="${global_variables.path['checksums']}/Fedora-${global_variables.next_release}-${global_variables.curr_state}-x86_64-CHECKSUM">Fedora ${global_variables.next_release}-${global_variables.curr_state}</a></td>
+                            <td py:if="global_variables.release['curr_state']"><a href="${global_variables.path['checksums']}/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-CHECKSUM">Fedora ${global_variables.release['next_id']}-${global_variables.release['curr_state']}</a></td>
                         </tr>
                         <tr>
                             <th class="install-media-arch">source</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-source-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-source-CHECKSUM">Fedora 16</a></td>
-                            <td py:if="global_variables.curr_state"><a href="${global_variables.path['checksums']}/Fedora-${global_variables.next_release}-${global_variables.curr_state}-source-CHECKSUM">Fedora ${global_variables.next_release}-${global_variables.curr_state}</a></td>
+                            <td py:if="global_variables.release['curr_state']"><a href="${global_variables.path['checksums']}/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-source-CHECKSUM">Fedora ${global_variables.release['next_id']}-${global_variables.release['curr_state']}</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -71,49 +71,49 @@
                             <th class="install-media-arch">i686</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-i686-Live-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-i686-Live-CHECKSUM">Fedora 16</a></td>
-                            <td py:if="global_variables.curr_state"><a href="${global_variables.path['checksums']}/Fedora-${global_variables.next_release}-${global_variables.curr_state}-i686-Live-CHECKSUM">Fedora ${global_variables.next_release}-${global_variables.curr_state}</a></td>
+                            <td py:if="global_variables.release['curr_state']"><a href="${global_variables.path['checksums']}/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i686-Live-CHECKSUM">Fedora ${global_variables.release['next_id']}-${global_variables.release['curr_state']}</a></td>
                         </tr>
                         <tr>
                             <th class="install-media-arch">i686 (KDE)</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-i686-Live-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-i686-Live-CHECKSUM">Fedora 16</a></td>
-                            <td py:if="global_variables.curr_state">n/a</td>
+                            <td py:if="global_variables.release['curr_state']">n/a</td>
                         </tr>
                         <tr>
                             <th class="install-media-arch">i686 (LXDE)</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-i686-Spins-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-i686-Spins-CHECKSUM">Fedora 16</a></td>
-                            <td py:if="global_variables.curr_state">n/a</td>
+                            <td py:if="global_variables.release['curr_state']">n/a</td>
                         </tr>
                         <tr>
                             <th class="install-media-arch">i686 (XFCE)</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-i686-Spins-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-i686-Spins-CHECKSUM">Fedora 16</a></td>
-                            <td py:if="global_variables.curr_state">n/a</td>
+                            <td py:if="global_variables.release['curr_state']">n/a</td>
                         </tr>
                         <tr>
                             <th class="install-media-arch">x86_64</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-x86_64-Live-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-x86_64-Live-CHECKSUM">Fedora 16</a></td>
-                            <td py:if="global_variables.curr_state"><a href="${global_variables.path['checksums']}/Fedora-${global_variables.next_release}-${global_variables.curr_state}-x86_64-Live-CHECKSUM">Fedora ${global_variables.next_release}-${global_variables.curr_state}</a></td>
+                            <td py:if="global_variables.release['curr_state']"><a href="${global_variables.path['checksums']}/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-Live-CHECKSUM">Fedora ${global_variables.release['next_id']}-${global_variables.release['curr_state']}</a></td>
                         </tr>
                         <tr>
                             <th class="install-media-arch">x86_64 (KDE)</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-x86_64-Live-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-x86_64-Live-CHECKSUM">Fedora 16</a></td>
-                            <td py:if="global_variables.curr_state">n/a</td>
+                            <td py:if="global_variables.release['curr_state']">n/a</td>
                         </tr>
                         <tr>
                             <th class="install-media-arch">x86_64 (LXDE)</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-x86_64-Spins-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-x86_64-Spins-CHECKSUM">Fedora 16</a></td>
-                            <td py:if="global_variables.curr_state">n/a</td>
+                            <td py:if="global_variables.release['curr_state']">n/a</td>
                         </tr>
                         <tr>
                             <th class="install-media-arch">x86_64 (XFCE)</th>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-15-x86_64-Spins-CHECKSUM">Fedora 15</a></td>
                             <td><a href="https://fedoraproject.org/static/checksums/Fedora-16-x86_64-Spins-CHECKSUM">Fedora 16</a></td>
-                            <td py:if="global_variables.curr_state">n/a</td>
+                            <td py:if="global_variables.release['curr_state']">n/a</td>
                         </tr>
                     </tbody>
                 </table>
