@@ -20,7 +20,7 @@ import fileinput
 try:
     import globalvar
 except ImportError:
-    print "globalvar.py is used to import globale defines"
+    print "globalvar.py is missing. It is needed as it provides release specific variables"
     raise
 
 def process(args):
