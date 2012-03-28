@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-03-27 20:02+0200\n"
+"POT-Creation-Date: 2012-03-28 14:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -455,12 +455,11 @@ msgid ""
 msgstr ""
 
 #: data/content/counter.html:37
+#, python-format
 msgid ""
 "The lang parameter can be changed to display the counter in a different "
-"language.  Currently, the values ar, bg, bn_IN, cs, da, de, el, en, es, "
-"fi, fr, gu, he, hi, hr, hu, id, is, it, ja, kn, ko, ks, ml, nl, pa, pl, "
-"pt, pt_BR, ro, ru, si, sr, sv, th, tr, uk, vi_VN, zh_CN, and zh_TW are "
-"supported.  When no language is specified, English will be used."
+"language. Currently, the values %(codelang)s are supported. When no "
+"language is specified, English will be used."
 msgstr ""
 
 #: data/content/download-splash.html:7
@@ -1722,27 +1721,32 @@ msgstr ""
 msgid "Full set of download options >"
 msgstr ""
 
-#: data/content/index.html:228 data/content/join-fedora.html:133
+#: data/content/index.html:228
+#, python-format
+msgid "Fedora %(release)s %(name)s released in %(number)s days!"
+msgstr ""
+
+#: data/content/index.html:231 data/content/join-fedora.html:133
 msgid "Upcoming Events"
 msgstr ""
 
-#: data/content/index.html:230
+#: data/content/index.html:233
 msgid "North American"
 msgstr ""
 
-#: data/content/index.html:231
+#: data/content/index.html:234
 msgid "Central & South American"
 msgstr ""
 
-#: data/content/index.html:232
+#: data/content/index.html:235
 msgid "European, Middle Eastern, & African"
 msgstr ""
 
-#: data/content/index.html:233
+#: data/content/index.html:236
 msgid "Indian, Asian, & Australian"
 msgstr ""
 
-#: data/content/index.html:236 data/templates/sidebar.html:37
+#: data/content/index.html:239 data/templates/sidebar.html:37
 msgid "Hosting Sponsor"
 msgstr ""
 

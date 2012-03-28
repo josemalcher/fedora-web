@@ -4,6 +4,7 @@ release={
     'curr_id':     '16',
     'next_id':     '17',
     'curr_name':   'Verne',
+    'next_name':   'Beefy Miracle',
     'curr_state':  'Beta'         # either 'alpha', 'beta' or '' (i.e empty)
 }
 
