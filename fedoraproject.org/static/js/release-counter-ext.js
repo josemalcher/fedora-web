@@ -2,7 +2,7 @@ var available_langs = [ "ar", "bg", "bn_IN", "cs", "da", "de", "el", "en", "es",
 
 
 var today = new Date();
-var release = new Date("May 8, 2012 15:00:00 UTC");
+var release = new Date("May 15, 2012 15:00:00 UTC");
 var millisBetweenDates = release - today;
 var days = Math.ceil(millisBetweenDates/1000/60/60/24);
 
