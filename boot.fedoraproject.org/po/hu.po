@@ -5,13 +5,14 @@
 # Translators:
 # neb <nick@bebout.net>, 2011.
 # Peter Borsa <peter.borsa@gmail.com>, 2011.
+# Zoltan Hoppár <hopparz@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-01-08 13:34+0100\n"
-"PO-Revision-Date: 2012-01-11 12:23+0000\n"
-"Last-Translator: Kévin Raymond <shaiton@fedoraproject.org>\n"
+"POT-Creation-Date: 2012-02-13 09:19-0600\n"
+"PO-Revision-Date: 2012-03-18 05:08+0000\n"
+"Last-Translator: Zoltan Hoppár <hopparz@gmail.com>\n"
 "Language-Team: Hungarian <trans-hu@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -75,7 +76,7 @@ msgid ""
 "appropriate medium.  Next boot from that medium.  After that you're using "
 "BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora"
 " installer or rescue mode."
-msgstr ""
+msgstr "Elsőként töltse le az egyik elérhető BFO lemezképet. választhat ISO (DVD/CD), USB, Floppy és lkrn lemezképek közül is. Ezt írja ki a megfelelő médiumra.  Majd bootoljon erről.  Ezek után már BFO rendszert használja.  Használja a billentyűzetét, hogy diagnosztikát futtason, Fedora telepítést kezdjen, vagy mentési módban indíthassa el a rendszert."
 
 #: data/content/faq.html:15
 msgid "Can I use it with grub?"
@@ -96,19 +97,13 @@ msgid ""
 "together is gpxe.  Users familiar with pxe will find gpxe very familiar.  "
 "Latest versions support several protocols beyond just tftp.  We are using "
 "http to transfer files around.  The basic steps are as follows:"
-msgstr ""
-"BFO a boot.kernel.org (BKO) kezdeményezése volt és egy sor ismert "
-"technológiát vonultat fel, hogy egy új, indítható tárolót képezzen. Az "
-"egészet ami összetartja, az nem más mint a gpxe. A felhasználók akik ismerik"
-" a pxe-t, a gpxe-t hasonlóképp elég közelinek érezhetik. A legutolsó verziói"
-" már támogatnak jópár protokollt, jóval többet mint csak a tftp-t. Mi http-t"
-" alkalmazunk fájlok átviteléhez. Az alaplépések a következők:"
+msgstr "BFO a boot.kernel.org (BKO) kezdeményezése volt és egy sor ismert technológiát vonultat fel, hogy egy új, indítható tárolót képezzen. Az egészet ami összetartja, az nem más mint a gpxe. A felhasználók akik ismerik a pxe-t, a gpxe-t hasonlóképp elég közelinek érezhetik. A legutolsó verziói már támogatnak jópár protokollt, jóval többet mint csak a tftp-t. Mi http-t alkalmazunk fájlok átviteléhez. Az alaplépések a következők:"
 
 #: data/content/faq.html:25
 msgid ""
 "Download the boot.fedoraproject.org media fitting your preferred boot "
 "method."
-msgstr ""
+msgstr "Töltse le a boot.fedoraproject.org média típusát ami célszerű boot metódusához"
 
 #: data/content/faq.html:27
 msgid "burn ISO images to a CD-R or DVD-R"
@@ -127,34 +122,28 @@ msgstr "Floppy lemezkép 3.5 inch HD floppy lemezre írása"
 msgid ""
 "lkrn image for PXE booting, grub booting and in conjunction with kexec "
 "(c.f.: <a href=\"%s\">pxkxc</a>)"
-msgstr ""
+msgstr "lkrn kép a PXE bootoláshoz, grub bootolás és összekapcsolva a kexec-el (c.f.: <a href=\"%s\">pxkxc</a>)"
 
 #: data/content/faq.html:32
 msgid "Boot from the medium you created."
-msgstr ""
+msgstr "Indítsa el lemezét amit készített."
 
 #: data/content/faq.html:33
 msgid "It will first configure network via DHCP."
-msgstr ""
+msgstr "Elsőként beállítja a hálózatot a DHCP-n keresztül."
 
 #: data/content/faq.html:34
 msgid ""
 "After network is configured, it will go out to our boot.fedoraproject.org "
 "website and download the menus and other prompts from us"
-msgstr ""
-"Miután a hálózat beállításra került, kilép a mi boot.fedoraproject.org "
-"weboldalunkra és letölti a menüt és más promtokat a számunkra"
+msgstr "Miután a hálózat beállításra került, kilép a mi boot.fedoraproject.org weboldalunkra és letölti a menüt és más promtokat a számunkra"
 
 #: data/content/faq.html:35
 msgid ""
 "Those boot menus will then be displayed to the user for selection.  After a "
 "selection (like install Fedora 12) the regular boot process takes over just "
 "as it would had you booted from normal local media."
-msgstr ""
-"Ezek a boot menük fognak megjelenni a felhasználó választásai szerint. A "
-"választás után (mint akár az eredeti Fedora 12 telepítésénél) a megszokott "
-"rendszerindítási folyamat veszi kezdetét, mintha egy médiáról indítottad "
-"volna."
+msgstr "Ezek a boot menük fognak megjelenni a felhasználó választásai szerint. A választás után (mint akár az eredeti Fedora 12 telepítésénél) a megszokott rendszerindítási folyamat veszi kezdetét, mintha egy médiáról indítottad volna."
 
 #: data/content/faq.html:37
 msgid "Why should I use BFO?"
@@ -167,7 +156,7 @@ msgid ""
 "from your image and they will appear.  Users with fast internet connections "
 "will have the best experience with BFO.  They basically replace having to "
 "regularly download large ISO images and burn them to disk."
-msgstr ""
+msgstr "A BFO letöltések általában nagyon kicsik, és ha egyszer megvannak, ritkán kell letölteni többet.  Még ha több verziója is jelenik meg a Fedorának, csak bebootol a saját BFO lemezéről, azok közt mind megjelenik.  Azoknak akiknek pedig gyors az internet kapcsolatuk, nekik van a legjobb esélyük és lehetőségük ennek a képességnek a használatára.  Számukra ez a lehetőség gyakorlatilag azt jelenti, hogy nincs szükség többé több gigányi anyag periodikus ISO fájlok letöltésére, majd lemezre való kiírására."
 
 #: data/content/faq.html:39
 msgid "What is required?"
@@ -178,7 +167,7 @@ msgid ""
 "For all image types, you need a working DHCP in the network you use it from "
 "as well as HTTP internet access. To use the ISO, a CD/DVD burner. To use the"
 " USB image, a USB stick.  Floppy and lkrn images are also available."
-msgstr ""
+msgstr "Az összes elérhető formátumhoz, mindenképp szükséges egy működő DHCP a hálózatban, mint ahogy a HTTP internet hozzáférés is. Hogy használhassa a ISO fájlt, ahhoz egy CD/DVD író kell. Ahhoz hogy a USB képet, ahhpz pedig egy pendrive kell mindenképp.  Floppy és lkm képek is elérhetőek."
 
 #: data/content/faq.html:41
 msgid "Does BFO replace the installer or anaconda?"
@@ -191,13 +180,7 @@ msgid ""
 " the installer bits.  BFO is a smaller booting method that downloads the "
 "installer bits at runtime.  In theory with BFO one iso download can install "
 "all future versions of Fedora."
-msgstr ""
-"Nem. BFO nem része az Anaconda-nak. BFO egy módszer, hogy a telepítő "
-"keretrendszert betöltsük a hálózaton keresztül. Normál esetben a "
-"felhasználók egy nagy ISO képet töltenek le ami az összes telepítő holmit "
-"tartalmazza. A BFO egy kisebb rendszerindítási mód, ami futása alatt tölti "
-"le ugyanezt. Egy elképzelés szerint, egyetlen BFO ISO képes telepíteni az "
-"összes jövőben kiadásra kerülő Fedora rendszereket is."
+msgstr "Nem. BFO nem része az Anaconda-nak. BFO egy módszer, hogy a telepítő keretrendszert betöltsük a hálózaton keresztül. Normál esetben a felhasználók egy nagy ISO képet töltenek le ami az összes telepítő holmit tartalmazza. A BFO egy kisebb rendszerindítási mód, ami futása alatt tölti le ugyanezt. Egy elképzelés szerint, egyetlen BFO ISO képes telepíteni az összes jövőben kiadásra kerülő Fedora rendszereket is."
 
 #: data/content/faq.html:43
 msgid "What about the Live CDs?"
@@ -207,9 +190,7 @@ msgstr "Mi a helyzet a Live CD-kkel?"
 msgid ""
 "At this time booting Live CDs is experimental and not available.  We hope to"
 " have them available soon."
-msgstr ""
-"A jelen állapotában a live CD-k indítása csak kísérleti jelleggel működik és"
-" nem elérhető még a közösség számára. Reméljük, nemsoká elérhető lesz."
+msgstr "A jelen állapotában a live CD-k indítása csak kísérleti jelleggel működik és nem elérhető még a közösség számára. Reméljük, nemsoká elérhető lesz."
 
 #: data/content/faq.html:45
 msgid "Why won't BFO boot?"
@@ -221,12 +202,7 @@ msgid ""
 "such, some drivers and devices may not be supported.  If this is the case "
 "for you please check upstream at http://etherboot.org/ for bug updates, etc."
 "  If you feel a bug or device is supported but not working in BFO, contact: "
-msgstr ""
-"BFO gpxe-t használ, így nem a linux kernelt indítja elsőként. Emiatt, néhány"
-" meghajtó, eszközkezelő nincs támogatva. Ha ez a szituáció felmerülne, "
-"kérjük ellenőrizze a frissítéseket, stb. az http://etherboot.org/ címen. Ha "
-"úgy érzi, hogy az eszköze támogatott, de nem működik, vagy hibát talált a "
-"BFO-ban, vegye fel velünk a kapcsolatot:"
+msgstr "BFO gpxe-t használ, így nem a linux kernelt indítja elsőként. Emiatt, néhány meghajtó, eszközkezelő nincs támogatva. Ha ez a szituáció felmerülne, kérjük ellenőrizze a frissítéseket, stb. az http://etherboot.org/ címen. Ha úgy érzi, hogy az eszköze támogatott, de nem működik, vagy hibát talált a BFO-ban, vegye fel velünk a kapcsolatot:"
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
@@ -237,10 +213,7 @@ msgid ""
 "boot.fedoraproject.org (BFO) is a way to boot hosts in order to run install "
 "or other types of media via the network.  It works similarly to a pxeboot "
 "environment."
-msgstr ""
-"boot.fedoraproject.org (BFO) egy mód hogy klienseket indítsunk azért, hogy "
-"telepíthessünk, vagy egyéb médiát a hálózaton keresztül. Hasonlóképp működik"
-" a pxeboot környezethez."
+msgstr "boot.fedoraproject.org (BFO) egy mód hogy klienseket indítsunk azért, hogy telepíthessünk, vagy egyéb médiát a hálózaton keresztül. Hasonlóképp működik a pxeboot környezethez."
 
 #: data/content/index.html:12
 msgid "BFO welcome screen"
@@ -252,29 +225,21 @@ msgstr "A BFO a BKO mukájára alapozott fejlesztés -"
 
 #: data/content/index.html:13
 msgid "To download BFO please select BFO Download along the left side menu."
-msgstr ""
-"A BFO letöltéséhez kérem válassza a BFO letöltése menüpontot a bal oldali "
-"menüben"
+msgstr "A BFO letöltéséhez kérem válassza a BFO letöltése menüpontot a bal oldali menüben"
 
 #: data/templates/foot.html:9
 msgid ""
 "&copy; 2011 Red Hat, Inc. and others.  Please send any comments or "
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
-msgstr ""
-"&copy; 2011 Red Hat, Inc. és mások. Kérjük küldjenek bármilyen megjegyzést "
-"vagy javítási javaslatot a <a "
-"href=\"mailto:webmaster@fedoraproject.org\">webmester csapat</a>nak."
+msgstr "&copy; 2011 Red Hat, Inc. és mások. Kérjük küldjenek bármilyen megjegyzést vagy javítási javaslatot a <a href=\"mailto:webmaster@fedoraproject.org\">webmester csapat</a>nak."
 
 #: data/templates/foot.html:12
 msgid ""
 "The Fedora Project is maintained and driven by the community and sponsored "
 "by Red Hat.  This is a community maintained site.  Red Hat is not "
 "responsible for content."
-msgstr ""
-"A Fedora Projekt a közösség által irányított és fenntartott amit a Red Hat "
-"támogat. Ez egy a közösség által fenntartott oldal. Red Hat nem felelős a "
-"tartalmáért."
+msgstr "A Fedora Projekt a közösség által irányított és fenntartott amit a Red Hat támogat. Ez egy a közösség által fenntartott oldal. Red Hat nem felelős a tartalmáért."
 
 #: data/templates/foot.html:15
 msgid "Sponsors"
@@ -282,17 +247,14 @@ msgstr "Támogatók"
 
 #: data/templates/foot.html:16
 msgid "<a href=\"http://fedoraproject.org/wiki/Legal:Main\">Legal</a>"
-msgstr ""
-"<a href=\"http://fedoraproject.org/wiki/Legal:Main\">Jogi megjegyzések</a>"
+msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Main\">Jogi megjegyzések</a>"
 
 #: data/templates/foot.html:17
 msgid ""
 "<a "
 "href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Trademark "
 "Guidelines</a>"
-msgstr ""
-"<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Védjegy"
-" irányelvek</a>"
+msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Védjegy irányelvek</a>"
 
 #: data/templates/head.html:7
 msgid "Fedora"
@@ -317,5 +279,3 @@ msgstr "GYIK"
 #: data/templates/sidebar.html:16
 msgid "Website Language"
 msgstr "Az oldal nyelve"
-
-

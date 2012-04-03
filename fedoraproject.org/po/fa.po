@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-02-23 23:55+0100\n"
-"PO-Revision-Date: 2012-03-14 21:09+0000\n"
+"POT-Creation-Date: 2012-03-28 14:11+0200\n"
+"PO-Revision-Date: 2012-03-28 12:41+0000\n"
 "Last-Translator: Kévin Raymond <shaiton@fedoraproject.org>\n"
 "Language-Team: Persian (http://www.transifex.net/projects/p/fedora/language/fa/)\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgstr ""
 msgid "Fedora Project - What is Fedora and what makes it different?"
 msgstr "پروژه‌ی فدورا - فدورا چیست و چه چیزی آن را متفاوت می‌کند؟"
 
-#: data/content/about-fedora.html:13 data/content/index.html:133
+#: data/content/about-fedora.html:13 data/content/index.html:131
 #: data/templates/foot.html:10
 msgid "About Fedora"
 msgstr "درباره فدورا"
@@ -72,7 +72,7 @@ msgid ""
 "technologies."
 msgstr ""
 
-#: data/content/about-fedora.html:29 data/content/index.html:191
+#: data/content/about-fedora.html:29 data/content/index.html:189
 msgid "What makes Fedora different?"
 msgstr "چرا فدورا متفاوت است؟"
 
@@ -217,9 +217,67 @@ msgstr "مشکلات معمول در فدورا و چگونگی حل آن‌ها
 msgid "Report a new bug or request a change"
 msgstr "یک باگ جدید گزارش دهید و یا درخواست یک تغییر کنید"
 
-#: data/content/about-fedora.html:81 data/content/sponsors.html:65
+#: data/content/about-fedora.html:81 data/content/code-of-conduct.html:31
+#: data/content/sponsors.html:65
 msgid "Return to the main Fedora website."
 msgstr "بازگشت به وب سایت اصلی فدورا"
+
+#: data/content/code-of-conduct.html:7
+msgid "Fedora Project - Fedora Project Code of Conduct"
+msgstr ""
+
+#: data/content/code-of-conduct.html:13
+msgid "Code of Conduct"
+msgstr ""
+
+#: data/content/code-of-conduct.html:14
+msgid "Behave as a community member, follow the Code of Conduct."
+msgstr ""
+
+#: data/content/code-of-conduct.html:21
+msgid ""
+"The Fedora community is made up of a mixture of professionals and volunteers"
+" from all over the world, working on every aspect of the distribution from "
+"coding through to marketing. Diversity is one of our huge strengths, but it "
+"can also lead to communication issues and unhappiness. To that end, we have "
+"a few ground rules that we ask people to adhere to when they're using "
+"project resources. This isn't an exhaustive list of things that you can't "
+"do. Rather, take it in the spirit in which it's intended - a guide to make "
+"it easier to be excellent to each other."
+msgstr ""
+
+#: data/content/code-of-conduct.html:23
+msgid ""
+"Be considerate. Your work will be used by other people, and you in turn will"
+" depend on the work of others. Any decision you take will affect users and "
+"colleagues, and you should take those consequences into account when making "
+"decisions."
+msgstr ""
+
+#: data/content/code-of-conduct.html:25
+msgid ""
+"Be respectful. Not all of us will agree all the time, but disagreement is no"
+" excuse for poor behaviour and poor manners. We might all experience some "
+"frustration now and then, but we cannot allow that frustration to turn into "
+"a personal attack. It's important to remember that a community where people "
+"feel uncomfortable or threatened is not a productive one. Members of the "
+"Fedora community should be respectful when dealing with other contributors "
+"as well as with people outside the Fedora community and with users of "
+"Fedora."
+msgstr ""
+
+#: data/content/code-of-conduct.html:29
+msgid ""
+"When we disagree, we try to understand why. Disagreements, both social and "
+"technical, happen all the time and Fedora is no exception. It is important "
+"that we resolve disagreements and differing views constructively. Remember "
+"that we're different. The strength of Fedora comes from its varied "
+"community, people from a wide range of backgrounds. Different people have "
+"different perspectives on issues. Being unable to understand why someone "
+"holds a viewpoint doesn't mean that they're wrong. Don't forget that it is "
+"human to err and blaming each other doesn't get us anywhere, rather offer to"
+" help resolving issues and to help learn from mistakes."
+msgstr ""
 
 #: data/content/contact.html:7
 msgid "Fedora Project - A list of contacts for various projects and groups."
@@ -396,12 +454,11 @@ msgid ""
 msgstr "برای افزودن شمارشگر انتشار فدورا به سایت خودتان کد زیر را در هر جایی که می خواهید آن ظاهر شود قرار دهید:"
 
 #: data/content/counter.html:37
+#, python-format
 msgid ""
 "The lang parameter can be changed to display the counter in a different "
-"language.  Currently, the values ar, bg, bn_IN, cs, da, de, el, en, es, fi, "
-"fr, gu, he, hi, hr, hu, id, is, it, ja, kn, ko, ks, ml, nl, pa, pl, pt, "
-"pt_BR, ro, ru, si, sr, sv, th, tr, uk, vi_VN, zh_CN, and zh_TW are "
-"supported.  When no language is specified, English will be used."
+"language. Currently, the values %(codelang)s are supported. When no language"
+" is specified, English will be used."
 msgstr ""
 
 #: data/content/download-splash.html:7
@@ -488,30 +545,30 @@ msgid "Get Fedora"
 msgstr "دریافت فدورا"
 
 #: data/content/get-fedora-all.html:16 data/content/get-fedora-options.html:15
-#: data/content/get-fedora.html:14 data/content/get-prerelease.html:73
+#: data/content/get-fedora.html:14 data/content/get-prerelease.html:75
 #, python-format
 msgid "Fedora is 100%% free for you to enjoy and share."
 msgstr "فدورا برای لذت‌بردن و به اشتراک گذاری ۱۰۰%% آزاد است."
 
 #: data/content/get-fedora-all.html:19 data/content/get-fedora-options.html:18
-#: data/content/get-fedora.html:17 data/content/get-prerelease.html:76
+#: data/content/get-fedora.html:17 data/content/get-prerelease.html:78
 msgid "Fedora isn't just free-of-charge. It's free as in freedom. Learn more."
 msgstr "فدورا نه فقط رایگان است بلکه به معنی واقعی کلمه آزاد است. بیشتر بدانید."
 
-#: data/content/get-fedora-all.html:28 data/content/get-fedora-all.html:134
+#: data/content/get-fedora-all.html:28 data/content/get-fedora-all.html:141
 #: data/content/keys.html:28 data/content/keys.html:399
-#: data/content/verify.html:28 data/content/verify.html:125
+#: data/content/verify.html:28 data/content/verify.html:137
 msgid "&#8592; Back to the main \"Get Fedora\" page"
 msgstr "&#8592; بازگشت به صفحه \"گرفتن فدورا\" اصلی"
 
-#: data/content/get-fedora-all.html:29 data/content/get-prerelease.html:85
+#: data/content/get-fedora-all.html:29 data/content/get-prerelease.html:87
 #, python-format
 msgid ""
 "After downloading an ISO, <a "
 "href=\"https://fedoraproject.org%s/%s/verify\">verify</a> it."
 msgstr "بعد از دانلود یک فایل ایزو آن را <a href=\"https://fedoraproject.org%s/%s/verify\">تایید کنید</a>"
 
-#: data/content/get-fedora-all.html:31 data/content/get-prerelease.html:86
+#: data/content/get-fedora-all.html:31 data/content/get-prerelease.html:88
 msgid "Install Media"
 msgstr "نصب رسانه"
 
@@ -522,15 +579,15 @@ msgstr "بیت تورنت"
 
 #: data/content/get-fedora-all.html:36 data/content/get-fedora-all.html:44
 #: data/content/get-fedora-all.html:46 data/content/get-fedora-all.html:53
-#: data/content/get-prerelease.html:91 data/content/get-prerelease.html:98
+#: data/content/get-prerelease.html:93 data/content/get-prerelease.html:100
 msgid "i386"
 msgstr "i۳۸۶"
 
 #: data/content/get-fedora-all.html:36 data/content/get-fedora-all.html:37
 #: data/content/get-fedora-all.html:44 data/content/get-fedora-all.html:45
 #: data/content/get-fedora-all.html:53 data/content/get-fedora-all.html:54
-#: data/content/get-prerelease.html:91 data/content/get-prerelease.html:92
-#: data/content/get-prerelease.html:98 data/content/get-prerelease.html:99
+#: data/content/get-prerelease.html:93 data/content/get-prerelease.html:94
+#: data/content/get-prerelease.html:100 data/content/get-prerelease.html:101
 msgid "Install DVD"
 msgstr "دی وی دی نصب"
 
@@ -539,18 +596,18 @@ msgstr "دی وی دی نصب"
 #: data/content/get-fedora-all.html:71 data/content/get-fedora-all.html:78
 #: data/content/get-fedora-all.html:85 data/content/get-fedora-all.html:97
 #: data/content/get-fedora-all.html:104 data/content/get-fedora-all.html:111
-#: data/content/get-prerelease.html:92 data/content/get-prerelease.html:99
-#: data/content/get-prerelease.html:118 data/content/get-prerelease.html:125
-#: data/content/get-prerelease.html:136 data/content/get-prerelease.html:143
-#: data/content/get-prerelease.html:154 data/content/get-prerelease.html:161
-#: data/content/get-prerelease.html:172 data/content/get-prerelease.html:179
+#: data/content/get-prerelease.html:94 data/content/get-prerelease.html:101
+#: data/content/get-prerelease.html:120 data/content/get-prerelease.html:127
+#: data/content/get-prerelease.html:138 data/content/get-prerelease.html:145
+#: data/content/get-prerelease.html:156 data/content/get-prerelease.html:163
+#: data/content/get-prerelease.html:174 data/content/get-prerelease.html:181
 msgid "x86_64"
 msgstr "x۸۶_۶۴"
 
 #: data/content/get-fedora-all.html:42 data/content/get-fedora-all.html:75
-#: data/content/get-fedora-all.html:101 data/content/get-prerelease.html:96
-#: data/content/get-prerelease.html:122 data/content/get-prerelease.html:140
-#: data/content/get-prerelease.html:158 data/content/get-prerelease.html:176
+#: data/content/get-fedora-all.html:101 data/content/get-prerelease.html:98
+#: data/content/get-prerelease.html:124 data/content/get-prerelease.html:142
+#: data/content/get-prerelease.html:160 data/content/get-prerelease.html:178
 msgid "Direct Download"
 msgstr "دریافت مستقیم"
 
@@ -571,17 +628,17 @@ msgstr "gPXE"
 msgid "BFO"
 msgstr "BFO"
 
-#: data/content/get-fedora-all.html:65 data/content/get-prerelease.html:112
+#: data/content/get-fedora-all.html:65 data/content/get-prerelease.html:114
 msgid "Fedora Desktop Live Media"
 msgstr "رسانه زنده فدورا رومیزی"
 
 #: data/content/get-fedora-all.html:70 data/content/get-fedora-all.html:77
 #: data/content/get-fedora-all.html:84 data/content/get-fedora-all.html:96
 #: data/content/get-fedora-all.html:103 data/content/get-fedora-all.html:110
-#: data/content/get-prerelease.html:117 data/content/get-prerelease.html:124
-#: data/content/get-prerelease.html:135 data/content/get-prerelease.html:142
-#: data/content/get-prerelease.html:153 data/content/get-prerelease.html:160
-#: data/content/get-prerelease.html:171 data/content/get-prerelease.html:178
+#: data/content/get-prerelease.html:119 data/content/get-prerelease.html:126
+#: data/content/get-prerelease.html:137 data/content/get-prerelease.html:144
+#: data/content/get-prerelease.html:155 data/content/get-prerelease.html:162
+#: data/content/get-prerelease.html:173 data/content/get-prerelease.html:180
 msgid "i686"
 msgstr "i۶۸۶"
 
@@ -591,18 +648,18 @@ msgstr "i۶۸۶"
 #: data/content/get-fedora-all.html:96 data/content/get-fedora-all.html:97
 #: data/content/get-fedora-all.html:103 data/content/get-fedora-all.html:104
 #: data/content/get-fedora-all.html:110 data/content/get-fedora-all.html:111
-#: data/content/get-prerelease.html:117 data/content/get-prerelease.html:118
-#: data/content/get-prerelease.html:124 data/content/get-prerelease.html:125
-#: data/content/get-prerelease.html:135 data/content/get-prerelease.html:136
-#: data/content/get-prerelease.html:142 data/content/get-prerelease.html:143
-#: data/content/get-prerelease.html:153 data/content/get-prerelease.html:154
-#: data/content/get-prerelease.html:160 data/content/get-prerelease.html:161
-#: data/content/get-prerelease.html:171 data/content/get-prerelease.html:172
-#: data/content/get-prerelease.html:178 data/content/get-prerelease.html:179
+#: data/content/get-prerelease.html:119 data/content/get-prerelease.html:120
+#: data/content/get-prerelease.html:126 data/content/get-prerelease.html:127
+#: data/content/get-prerelease.html:137 data/content/get-prerelease.html:138
+#: data/content/get-prerelease.html:144 data/content/get-prerelease.html:145
+#: data/content/get-prerelease.html:155 data/content/get-prerelease.html:156
+#: data/content/get-prerelease.html:162 data/content/get-prerelease.html:163
+#: data/content/get-prerelease.html:173 data/content/get-prerelease.html:174
+#: data/content/get-prerelease.html:180 data/content/get-prerelease.html:181
 msgid "Live CD"
 msgstr "سی دی زنده"
 
-#: data/content/get-fedora-all.html:91 data/content/get-prerelease.html:130
+#: data/content/get-fedora-all.html:91 data/content/get-prerelease.html:132
 msgid "Fedora KDE Live Media"
 msgstr "رسانه زنده KDE  فدورا"
 
@@ -610,15 +667,15 @@ msgstr "رسانه زنده KDE  فدورا"
 msgid "Alternative Downloads"
 msgstr "دانلودهای جایگزین"
 
-#: data/content/get-fedora-all.html:118 data/content/get-prerelease.html:186
+#: data/content/get-fedora-all.html:118 data/content/get-prerelease.html:188
 msgid "See all torrents"
 msgstr "مشاهده‌ی همه‌ی تورنت‌ها"
 
-#: data/content/get-fedora-all.html:119 data/content/get-prerelease.html:187
+#: data/content/get-fedora-all.html:119 data/content/get-prerelease.html:189
 msgid "See all mirrors"
 msgstr "مشاهده‌ی همه‌ی آینه‌ها"
 
-#: data/content/get-fedora-all.html:120 data/content/get-prerelease.html:188
+#: data/content/get-fedora-all.html:120 data/content/get-prerelease.html:190
 msgid "See all custom spins"
 msgstr "همه چرخه‌های رسمی را ببینید"
 
@@ -651,6 +708,20 @@ msgid ""
 "Media Program</a>."
 msgstr "قادر به پرداخت هزینه‌ی رسانه‌ی نصب نیستید؟ یک رسانه رایگان از <a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">برنامه رسانه رایگان فدورا</a> درخواست کنید."
 
+#: data/content/get-fedora-all.html:134
+msgid "Download Fedora Sources"
+msgstr ""
+
+#: data/content/get-fedora-all.html:136
+#, python-format
+msgid "Fedora %(release)s Source DVD (%(size)s GB)"
+msgstr ""
+
+#: data/content/get-fedora-all.html:137
+#, python-format
+msgid "Fedora %(release)s Source RPMs"
+msgstr ""
+
 #: data/content/get-fedora-options.html:7
 msgid "Fedora Project - Get Fedora by Desktops, Formats or Spins."
 msgstr "پروژه فدورا - دریافت فدورا بر اساس دستکتاپها، فرمتها یا مشتقها."
@@ -681,7 +752,8 @@ msgid ""
 msgstr "چند دسکتاپ برای استفاده‌ی فدورا وجود دارد. هر کدام شمایل متفاوتی دارند و تنظیمات گوناگونی را فراهم می کنند. دسکتاپ‌ها بر روی پنجره‌ها، آیکان‌ها، منوها و میانگرهای اساسی دسکتاپ‌ها تاثیر می گذارند. شاید بخواهید بدانید که کدامیک برای شما مناسب‌تر است!"
 
 #: data/content/get-fedora-options.html:43
-msgid "Fedora 16 Desktop Edition"
+#, python-format
+msgid "Fedora %(release)s Desktop Edition"
 msgstr ""
 
 #: data/content/get-fedora-options.html:43
@@ -750,7 +822,8 @@ msgid "64-bit"
 msgstr "۶۴ بیت"
 
 #: data/content/get-fedora-options.html:71
-msgid "Fedora 16 KDE Spin"
+#, python-format
+msgid "Fedora %(release)s KDE Spin"
 msgstr ""
 
 #: data/content/get-fedora-options.html:77
@@ -766,7 +839,8 @@ msgid "KDE.org website"
 msgstr "وبسایت KDE.org "
 
 #: data/content/get-fedora-options.html:97
-msgid "Fedora 16 LXDE Spin"
+#, python-format
+msgid "Fedora %(release)s LXDE Spin"
 msgstr ""
 
 #: data/content/get-fedora-options.html:103
@@ -782,7 +856,8 @@ msgid "LXDE.org website"
 msgstr "وبسایت LXDE.org"
 
 #: data/content/get-fedora-options.html:123
-msgid "Fedora 16 Xfce Spin"
+#, python-format
+msgid "Fedora %(release)s Xfce Spin"
 msgstr ""
 
 #: data/content/get-fedora-options.html:129
@@ -802,7 +877,8 @@ msgid "Fedora Downloads by Format"
 msgstr "دانلودهای فدورا بر اساس فرمت"
 
 #: data/content/get-fedora-options.html:157
-msgid "Fedora 16 Live Media / Spins"
+#, python-format
+msgid "Fedora %(release)s Live Media / Spins"
 msgstr ""
 
 #: data/content/get-fedora-options.html:158
@@ -821,7 +897,8 @@ msgid "Go to Spins Directory"
 msgstr "به شاخه‌ی چرخه‌ها برو"
 
 #: data/content/get-fedora-options.html:169
-msgid "Fedora 16 DVD"
+#, python-format
+msgid "Fedora %(release)s DVD"
 msgstr ""
 
 #: data/content/get-fedora-options.html:170
@@ -851,15 +928,15 @@ msgid "3.5GB ISO disk image for 64-bit PC"
 msgstr ""
 
 #: data/content/get-fedora-options.html:195
+#, python-format
 msgid ""
-"For help determining what architecture your system is, <a "
-"href=\"http://docs.fedoraproject.org/en-US/Fedora/16/html/Installation_Guide"
-"/ch-new-users.html#sn-which-arch\">please view our architecture help "
-"guide</a>."
+"For help determining what architecture your system is, <a href=\"%s\">please"
+" view our architecture help guide</a>."
 msgstr ""
 
 #: data/content/get-fedora-options.html:205
-msgid "Fedora 16 Media by Mail"
+#, python-format
+msgid "Fedora %(release)s Media by Mail"
 msgstr ""
 
 #: data/content/get-fedora-options.html:206
@@ -1003,20 +1080,22 @@ msgstr "از اینجا بگیرید"
 msgid "Handy Resources"
 msgstr "منابع مفید"
 
-#: data/content/get-fedora-options.html:304 data/content/get-fedora.html:82
-#: data/content/get-help.html:29
+#: data/content/get-fedora-options.html:304
+#, python-format
 msgid ""
 "http://docs.fedoraproject.org/en-"
-"US/Fedora/16/html/Installation_Guide/index.html"
+"US/Fedora/%(release)s/html/Installation_Guide/index.html"
 msgstr ""
 
 #: data/content/get-fedora-options.html:304 data/content/get-fedora.html:82
 msgid "Installation Guide"
 msgstr "راهنمای نصب"
 
-#: data/content/get-fedora-options.html:305 data/content/get-fedora.html:83
+#: data/content/get-fedora-options.html:305
+#, python-format
 msgid ""
-"http://docs.fedoraproject.org/en-US/Fedora/16/html/Release_Notes/index.html"
+"http://docs.fedoraproject.org/en-"
+"US/Fedora/%(release)s/html/Release_Notes/index.html"
 msgstr ""
 
 #: data/content/get-fedora-options.html:305 data/content/get-fedora.html:83
@@ -1061,7 +1140,8 @@ msgid "Fedora Project - Download Fedora and try it."
 msgstr "پروژه فدورا - دانلود فدورا و امتحان آن."
 
 #: data/content/get-fedora.html:25
-msgid "Did someone say... &ldquo;<a href=\"get-prerelease\">Alpha</a>&rdquo;?"
+#, python-format
+msgid "Did someone say... &ldquo;<a href=\"get-prerelease\">%s</a>&rdquo;?"
 msgstr ""
 
 #: data/content/get-fedora.html:30
@@ -1198,6 +1278,17 @@ msgstr "از این دستورالعمل‌ها پیروی کنید."
 msgid "To install Fedora using a blank CD or DVD"
 msgstr "برای نصب فدورا از یک سی‌دی یا دی‌وی‌دی خالی"
 
+#: data/content/get-fedora.html:82 data/content/get-help.html:29
+msgid ""
+"http://docs.fedoraproject.org/en-"
+"US/Fedora/16/html/Installation_Guide/index.html"
+msgstr ""
+
+#: data/content/get-fedora.html:83
+msgid ""
+"http://docs.fedoraproject.org/en-US/Fedora/16/html/Release_Notes/index.html"
+msgstr ""
+
 #: data/content/get-help.html:7
 msgid "Fedora Project - Get help after installing Fedora."
 msgstr "پروژه فدورا - دریافت کمک بعد از نصب فدورا."
@@ -1317,15 +1408,15 @@ msgid ""
 "mailing lists available."
 msgstr "سوالات خود را در یکی از لیست‌های پستی چند زبانه‌ی مبنی بر ای‌میل فدورا بپرسید."
 
-#: data/content/get-prerelease.html:65
+#: data/content/get-prerelease.html:67
 msgid "Fedora Project - Get the next Fedora"
 msgstr "پروژه فدورا - دریافت فدورای بعدی"
 
-#: data/content/get-prerelease.html:72
+#: data/content/get-prerelease.html:74
 msgid "Get the next Fedora, right now."
 msgstr "فدورای بعدی را همین حالا دریافت کن."
 
-#: data/content/get-prerelease.html:84
+#: data/content/get-prerelease.html:86
 #, python-format
 msgid ""
 "This is pre-release software and is supported by the <a "
@@ -1339,28 +1430,28 @@ msgid ""
 "page for information on commonly-encountered bugs and how to avoid them."
 msgstr ""
 
-#: data/content/get-prerelease.html:89 data/content/get-prerelease.html:115
-#: data/content/get-prerelease.html:133 data/content/get-prerelease.html:151
-#: data/content/get-prerelease.html:169
+#: data/content/get-prerelease.html:91 data/content/get-prerelease.html:117
+#: data/content/get-prerelease.html:135 data/content/get-prerelease.html:153
+#: data/content/get-prerelease.html:171
 msgid ""
 "BitTorrent is a protocol allowing you to download files quickly by allowing "
 "people downloading the file to upload (distribute) parts of it at the same "
 "time."
 msgstr "بیت‌تورنت پروتکلی است که به وسیله‌ی آپلود (به اشتراک گذاری) همزمان بخش‌هایی از فایل‌های در حال دانلود، به شما اجازه‌ی دانلود سریع فایل‌ها را می‌دهد."
 
-#: data/content/get-prerelease.html:104
+#: data/content/get-prerelease.html:106
 msgid "gPXE is an open source (GPL) network bootloader."
 msgstr "gPXE یک راه‌انداز سیستم متن باز (GPL) از طریق شبکه است."
 
-#: data/content/get-prerelease.html:148
+#: data/content/get-prerelease.html:150
 msgid "Fedora XFCE Live Media"
 msgstr "رسانه‌ی ایکس‌اف‌سی‌ای فدورا"
 
-#: data/content/get-prerelease.html:166
+#: data/content/get-prerelease.html:168
 msgid "Fedora LXDE Live Media"
 msgstr "رسانه‌ی ال‌ایکس‌دی‌ای فدورا"
 
-#: data/content/get-prerelease.html:184
+#: data/content/get-prerelease.html:186
 msgid "Let me look around..."
 msgstr "بگذارید نگاهی به اطراف بیاندازم..."
 
@@ -1389,7 +1480,8 @@ msgid "More options >"
 msgstr "گزینه های بیشتر >"
 
 #: data/content/index.html:66
-msgid "Try Fedora 17 Alpha Now!"
+#, python-format
+msgid "Try Fedora %(release)s %(state)s Now!"
 msgstr ""
 
 #: data/content/index.html:75
@@ -1450,114 +1542,103 @@ msgid "Learn more >"
 msgstr "بیشتر بدانید >"
 
 #: data/content/index.html:118
-msgid ""
-"\"Since its first version, in 2003, Red Hat's Fedora Linux has been the best"
-" place to track what's on the leading edge of Linux and open source "
-"software.\""
-msgstr "\"از اولین نسخه‌ خود در سال ۲۰۰۳، فدورای رد هت همواره بهترین مکان برای سنجش بهترین‌های لینوکس و نرم‌افزارهای متن باز بوده است.\""
-
-#: data/content/index.html:119
-msgid "Jason Brooks, <a href=\"http://eweek.com/\">eweek.com</a>"
-msgstr ""
-
-#: data/content/index.html:120
 msgid "\"Fedora has [...] released an amazingly rock-solid operating system.\""
 msgstr "\"فدورا [...] یک سیستم عامل مستحکم را ایجاد کرده است.\""
 
-#: data/content/index.html:121
+#: data/content/index.html:119
 msgid "Jack Wallen, <a href=\"http://techrepublic.com/\">TechRepublic.com</a>"
 msgstr ""
 
-#: data/content/index.html:127
+#: data/content/index.html:125
 msgid "Need help?"
 msgstr "کمک نیاز دارید؟"
 
-#: data/content/index.html:128
+#: data/content/index.html:126
 msgid "Get it here."
 msgstr "از اینجا بگیرید."
 
-#: data/content/index.html:134
+#: data/content/index.html:132
 msgid "What is Fedora, anyway?"
 msgstr "بالاخره فدورا چیست؟"
 
-#: data/content/index.html:139
+#: data/content/index.html:137
 msgid "Join us!"
 msgstr "به ما بپیوندید!"
 
-#: data/content/index.html:140
+#: data/content/index.html:138
 msgid "Help make Fedora!"
 msgstr "به ساخت فدورا کمک کنید!"
 
-#: data/content/index.html:147
+#: data/content/index.html:145
 msgid "What makes Fedora great?"
 msgstr "چرا فدورا مهم است؟"
 
-#: data/content/index.html:152
+#: data/content/index.html:150
 msgid "Freedom is key"
 msgstr "آزادی کلید است"
 
-#: data/content/index.html:153
+#: data/content/index.html:151
 msgid ""
 "Advancing software and content freedom is a key goal of the Fedora Project."
 msgstr "پیشرفت نرم‌افزار و آزادی هدف کلیدیه فدوراست."
 
-#: data/content/index.html:154
+#: data/content/index.html:152
 msgid "Learn how software freedom benefits you >"
 msgstr "فایده آزادی نرفم‌افزار برای شما >"
 
-#: data/content/index.html:158
+#: data/content/index.html:156
 msgid "Our Community"
 msgstr "جامعه ما"
 
-#: data/content/index.html:159
+#: data/content/index.html:157
 msgid "People world-wide work together in Fedora to advance free software."
 msgstr "مردم از تمام جهان در فدورا برای پیشرفت نرم‌افزار آزاد تلاش می‌کنند."
 
-#: data/content/index.html:160
+#: data/content/index.html:158
 msgid "Discover your role in Fedora's community >"
 msgstr "نقش خود را در جامعه فدورا پیدا کنید >"
 
-#: data/content/index.html:164
+#: data/content/index.html:162
 msgid "We share"
 msgstr " ما به اشتراک می‌گذاریم"
 
-#: data/content/index.html:165
+#: data/content/index.html:163
 msgid "Many features that benefit all Linux distributions start in Fedora."
 msgstr "بسیاری از قابلیت‌های جدید لینوکس که تمام توزیع‌ها از آن‌ها سود می‌برند از فدورا آغاز شده است."
 
-#: data/content/index.html:166
+#: data/content/index.html:164
 msgid "See how we share our features for all to use >"
 msgstr "ببینید چگونه قابلیت‌ها را برای استفاده‌ی همگان به اشتراک می‌گذاریم >"
 
-#: data/content/index.html:170
+#: data/content/index.html:168
 msgid "The best tech"
 msgstr "برترین تکنولوژی"
 
-#: data/content/index.html:171
+#: data/content/index.html:169
 msgid "The future of Linux is built into Fedora."
 msgstr "آینده لینوکس در فدورا قرار داده شده."
 
-#: data/content/index.html:172
+#: data/content/index.html:170
 msgid "Learn how Fedora innovates >"
 msgstr "ببینید فدورا چگونه نوآوری می‌کند >"
 
-#: data/content/index.html:179
+#: data/content/index.html:177
 msgid "Fedora highlights"
 msgstr "برجستگی‌های فدورا"
 
-#: data/content/index.html:186
+#: data/content/index.html:184
 msgid "Read more of the story >"
 msgstr "ادامه‌ی داستان را بخوانید >"
 
-#: data/content/index.html:187
+#: data/content/index.html:185
 msgid "Read more Fedora user stories >"
 msgstr "داستان‌های بیشتری از کاربران فدورا بخوانید >"
 
-#: data/content/index.html:192
+#: data/content/index.html:190
 msgid "We fight for software freedom"
 msgstr "ما برای آزادی نرم افزار می‌جنگیم"
 
-#: data/content/index.html:194
+#: data/content/index.html:192
 msgid ""
 "We try to always do the right thing, and provide only free and open source "
 "software. We will fight to protect and promote solutions that anyone can use"
@@ -1569,24 +1650,24 @@ msgid ""
 "focus has had significant and long lasting effects."
 msgstr "ما همیشه تلاش می‌کنیم که کار درست را انجام دهیم، و تنها نرم‌افزارهای آزاد و متن باز را فراهم کنیم. ما می‌جنگیم تا از روش‌هایی که به همگان اجازه‌ی استفاده و توزیع مجدد می‌دهد، حمایت کنیم و آن‌ها را گسترش دهیم. برای رسیدن به این هدف، ما تنها از نرم‌افزارهای متن باز و آزاد استفاده می‌کنیم تا به بنیان فدورا قدرت دهیم. با در نظر گرفتن این دیدگاه، تمام توسعه‌دهندگان ما بر همکاری هر چه نزدیک‌تر با تیم‌های بالادستی توسعه‌ متمرکز شده‌اند تا همگان بتوانند از کار ما بهره برده و هر چه سریعتر به تغییرات ما دسترسی یابند. به دلیل نوآوری‌های زیاد فدورا، این تمرکز، پیامدهایی کارآمد و با عمر بالا به ارمغان آورده است."
 
-#: data/content/index.html:196
+#: data/content/index.html:194
 msgid "Learn more about Fedora's values >"
 msgstr "درباره ارزش‌های فدورا بیشتر بدانید >"
 
-#: data/content/index.html:197
+#: data/content/index.html:195
 msgid "More on what Fedora's all about >"
 msgstr "در \"درباره‌ی فدورا\" بیشتر بخوانید >"
 
-#: data/content/index.html:202 data/content/using/index.html:26
+#: data/content/index.html:200 data/content/using/index.html:26
 msgid "Do it with Fedora"
 msgstr "با فدورا انجامش دهید"
 
-#: data/content/index.html:203 data/content/using/index.html:33
+#: data/content/index.html:201 data/content/using/index.html:33
 #: data/content/using/tutorials/cheese.html:26
 msgid "Have a photobooth party!"
 msgstr "یک میهمانی پر عکس داشته باشید"
 
-#: data/content/index.html:205 data/content/using/index.html:34
+#: data/content/index.html:203 data/content/using/index.html:34
 #: data/content/using/tutorials/cheese.html:27
 msgid ""
 "All you need is a webcam and Fedora, and you can do all sorts of cool photo "
@@ -1594,70 +1675,75 @@ msgid ""
 "and videos!"
 msgstr "فقط به یک وب کم و فدورا نیاز دارید، تا بتوانید همه نوع ترفند جالب با عکس انجام دهید، مثلا دوستانتان را مثل هالک کنید. :) عکس‌ها و فیلم‌های سرگرم کننده بگیرید!"
 
-#: data/content/index.html:207
+#: data/content/index.html:205
 msgid "Learn how to do it yourself! >"
 msgstr "یاد بگیرید خودتان انجامش دهید>"
 
-#: data/content/index.html:208
+#: data/content/index.html:206
 msgid "View all tutorials >"
 msgstr "تمام آموزش‌ها را ببینید >"
 
-#: data/content/index.html:217
+#: data/content/index.html:215
 msgid "Installation Requirements"
 msgstr ""
 
-#: data/content/index.html:219
+#: data/content/index.html:217
 #, python-format
 msgid ""
 "%sMHz Pentium Pro or better processor (comparable AMD, Cyrix, and VIA "
 "processors also acceptable)"
 msgstr ""
 
-#: data/content/index.html:220
+#: data/content/index.html:218
 #, python-format
 msgid "At least %sMB memory (RAM), %sGB recommended for best performance"
 msgstr ""
 
-#: data/content/index.html:221
+#: data/content/index.html:219
 #, python-format
 msgid "%sGB disk space / storage"
 msgstr ""
 
-#: data/content/index.html:223
+#: data/content/index.html:221
 msgid ""
 "http://docs.fedoraproject.org/en-US/Fedora/16/html/Release_Notes/sect-"
 "Release_Notes-Welcome_to_Fedora_16.html#sect-Release_Notes-Hardware_Overview"
 msgstr ""
 
-#: data/content/index.html:223
+#: data/content/index.html:221
 msgid "More about requirements >"
 msgstr "اطلاعات بیشتر در مورد پیش‌نیازها >"
 
-#: data/content/index.html:224
+#: data/content/index.html:222
 msgid "Full set of download options >"
 msgstr "تمام گزینه‌های دانلود >"
 
-#: data/content/index.html:230 data/content/join-fedora.html:133
+#: data/content/index.html:228
+#, python-format
+msgid "Fedora %(release)s %(name)s released in %(number)s days!"
+msgstr ""
+
+#: data/content/index.html:231 data/content/join-fedora.html:133
 msgid "Upcoming Events"
 msgstr "رخدادهای پیش رو"
 
-#: data/content/index.html:232
+#: data/content/index.html:233
 msgid "North American"
 msgstr "آمریکای شمالی"
 
-#: data/content/index.html:233
+#: data/content/index.html:234
 msgid "Central & South American"
 msgstr "آمریکای مرکزی و جنوبی"
 
-#: data/content/index.html:234
+#: data/content/index.html:235
 msgid "European, Middle Eastern, & African"
 msgstr "اروپا، خاورمیانه‌ و آفریقا"
 
-#: data/content/index.html:235
+#: data/content/index.html:236
 msgid "Indian, Asian, & Australian"
 msgstr "هند، آسیا و استرالیا"
 
-#: data/content/index.html:238 data/templates/sidebar.html:37
+#: data/content/index.html:239 data/templates/sidebar.html:37
 msgid "Hosting Sponsor"
 msgstr "حامیان میزبانی"
 
@@ -2171,46 +2257,38 @@ msgstr "هر وقت که فایل ایزو را دانلود کردید آن ر�
 msgid "Install DVD / Rescue CD"
 msgstr "دی وی دی نصب / سی دی بازیابی"
 
-#: data/content/verify.html:63
+#: data/content/verify.html:66
 msgid "Live Media"
 msgstr "رسانه زنده"
 
-#: data/content/verify.html:111
+#: data/content/verify.html:122
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "سپس، اضافه کردن کلید(های) GPG فدورا:"
 
-#: data/content/verify.html:113
+#: data/content/verify.html:124
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
 "href=\"%s/%s/keys\">here</a>."
 msgstr "شما می توانید جزئیات کلید(های) GPG را در <a href=\"https://fedoraproject.org%s/%s/keys\">اینجا</a> آزمایش کنید."
 
-#: data/content/verify.html:114
+#: data/content/verify.html:125
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "حال تایید کنید که فایل CHECKSUM صحیح است:"
 
-#: data/content/verify.html:116
+#: data/content/verify.html:127
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr "فایل CHECKSUM باید یک امضای مناسب از یکی از کلیدهای زیر داشته باشد:"
 
-#: data/content/verify.html:118
-msgid "Fedora 16"
-msgstr ""
-
-#: data/content/verify.html:119
-msgid "Fedora 15"
-msgstr "فدورا ۱۵"
-
-#: data/content/verify.html:121
+#: data/content/verify.html:133
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the ISO's "
 "checksum matches:"
 msgstr "در نهایت، حالا فایل CHECKSUM مورد بازبینی قرار گرفته است، ISO ها را جهت تطبیق چک کنید:"
 
-#: data/content/verify.html:123
+#: data/content/verify.html:135
 msgid "If the output states that the file is valid, then you're good to go!"
 msgstr "اگر خروجی آن فایل درست بود، شما میتونید ادامه دهید!"
 
