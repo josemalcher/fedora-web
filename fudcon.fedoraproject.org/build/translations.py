@@ -1,6 +1,7 @@
 #!/usr/bin/python
 #coding=UTF-8
 import sys
+
 # See http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 # for a list of languages
 language_name_map = {
@@ -19,6 +20,7 @@ language_name_map = {
 'el': 'Ελληνικά',
 'en': 'English',
 'es': 'Español',
+'eu': 'euskera',
 'fa': 'پارسی',
 'fi': 'suomi',
 'fr': 'Français',
@@ -50,14 +52,15 @@ language_name_map = {
 'te': 'తెలుగు',
 'tg': 'тоҷикӣ',
 'th': 'ไทย',
+'tr': 'Tϋrkçe',
 'uk': 'українська',
+'vi': 'Tiếng Việt',
 'zh_CN': '简体中文',
 'zh_TW': '正體中文',
 }
 
-
-file = sys.argv[1]
-f = open(file)
+linguasfile = sys.argv[1]
+f = open(linguasfile)
 print '''
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
