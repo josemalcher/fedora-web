@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # this script pull all translations to transifex,
 #      make an new POT and push it if asked,
 #      and then fill the LINGUAS file
