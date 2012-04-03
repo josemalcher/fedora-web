@@ -16,23 +16,24 @@ story_info = story_paths[random.randint(0, len(story_paths)-1)]
 #print '--- Story ---';
 #print story_info[0];
 
-# banner countdown
-from datetime import datetime
+# banner countdown, only available for beta
+if global_variables.release['curr_state'] == "Beta":
+  from datetime import datetime
 
-today = datetime.utcnow()
-release = datetime(2012, 5, 15, 15)
+  today = datetime.utcnow()
+  release = datetime(2012, 5, 15, 15)
 
-difference = release - today
-days = difference.days
-if difference.seconds > 0 or difference.minutes > 0 or difference.hours > 0: days += 1
-if days < 0: days = 0
-days = str(days)
+  difference = release - today
+  days = difference.days
+  if difference.seconds > 0 or difference.minutes > 0 or difference.hours > 0: days += 1
+  if days < 0: days = 0
+  days = str(days)
 
-image_lang = 'en'
-available_languages = ('ar', 'bg', 'bn_IN', 'cs', 'da', 'de', 'el', 'en', 'es', 'fi', 'fr', 'gu', 'he', 'hi', 'hr', 'hu', 'id', 'is', 'it', 'ja', 'kn', 'ko', 'ks', 'ml', 'nl', 'pa', 'pl', 'pt', 'pt_BR', 'ro', 'ru', 'si', 'sr', 'sv', 'th', 'tr', 'uk', 'vi_VN', 'zh_CN', 'zh_TW')
-if lang in available_languages:
-  image_lang = lang
-image = image_lang + '/fedora' + global_variables.release['next_id'] + '-countdown-banner-' + days + '.' + image_lang + '.png'
+  image_lang = 'en'
+  available_languages = ('ar', 'bg', 'bn_IN', 'cs', 'da', 'de', 'el', 'en', 'es', 'fi', 'fr', 'gu', 'he', 'hi', 'hr', 'hu', 'id', 'is', 'it', 'ja', 'kn', 'ko', 'ks', 'ml', 'nl', 'pa', 'pl', 'pt', 'pt_BR', 'ro', 'ru', 'si', 'sr', 'sv', 'th', 'tr', 'uk', 'vi_VN', 'zh_CN', 'zh_TW')
+  if lang in available_languages:
+    image_lang = lang
+  image = image_lang + '/fedora' + global_variables.release['next_id'] + '-countdown-banner-' + days + '.' + image_lang + '.png'
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -225,7 +226,11 @@ image = image_lang + '/fedora' + global_variables.release['next_id'] + '-countdo
                     <!-- See data/template/js to enable static/js/banner.js
                     <a href="${path}/${lang}/get-fedora"><img alt="Fedora ${global_variables.release['curr_id']} ${global_variables.release['curr_name']} is here!" src="${path}/static/images/banners/f16release.png" /></a>
                     -->
-                    <a href="http://fedoraproject.org/wiki/Releases/${global_variables.release['next_id']}/Schedule"><img src="${path}/static/images/counter/${image}" alt="${Markup(_('Fedora %(release)s %(name)s released in %(number)s days!') % {'release':global_variables.release['next_id'], 'name':global_variables.release['next_name'], 'number':days})}" /></a>
+                    <py:if test="global_variables.release['curr_state'] == 'Beta'">
+                      <a href="http://fedoraproject.org/wiki/Releases/${global_variables.release['next_id']}/Schedule"><img src="${path}/static/images/counter/${image}" alt="${Markup(_('Fedora %(release)s %(name)s released in %(number)s days!') % {'release':global_variables.release['next_id'], 'name':global_variables.release['next_name'], 'number':days})}" /></a>
+                      <a style="text-decoration: none; font-size: 1.6ex; color: #99AABB;" href="${path}/${lang}/counter">${Markup(_('Add a counter to your own site!'))}</a>
+                    </py:if>
+
                 </div>
 
                 <h4>${_('Upcoming Events')}</h4>
