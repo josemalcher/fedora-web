@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # this script pull all translations to transifex,
 #      make an new POT and push it if asked,
 #      and then fill the LINGUAS file
@@ -9,8 +9,7 @@ site=( boot.fedoraproject.org
        fedoraproject.org
        fudcon.fedoraproject.org
        spins.fedoraproject.org
-       start.fedoraproject.org
-       talk.fedoraproject.org )
+       start.fedoraproject.org )
 
 
 usage()
@@ -109,9 +108,9 @@ fi
 
 ### POT
 
-echo "- Updating POT"
 for i in "${site[@]}"
 do
+   echo "- Updating $i POT"
    cd $i
    make pot
    insertion_number=`git diff --numstat po/*.pot 2>&1 | awk '{print $1}'` # record the number of insertion,
@@ -143,9 +142,9 @@ fi
 ### LINGUAS
 # update the LINGUAS file by adding all language code where translations have started
 
-echo "- Updating LINGUAS file"
 for i in "${site[@]}"
 do
+  echo "- Updating $i LINGUAS file"
   PO_PATH="$i/po"
   LINGUAS="$PO_PATH/LINGUAS"
    
