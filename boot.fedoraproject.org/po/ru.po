@@ -3,15 +3,17 @@
 # This file is distributed under the same license as the PROJECT project.
 # 
 # Translators:
+# Artyom Kunyov <artkun@guitarplayer.ru>, 2012.
 # Misha Shnurapet <shnurapet@fedoraproject.org>, 2011.
 # neb <nick@bebout.net>, 2011.
+# Stanislav Hanzhin <hanzhin.stas@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-01-08 13:34+0100\n"
-"PO-Revision-Date: 2012-01-11 12:23+0000\n"
-"Last-Translator: Kévin Raymond <shaiton@fedoraproject.org>\n"
+"POT-Creation-Date: 2012-02-13 09:19-0600\n"
+"PO-Revision-Date: 2012-03-07 08:27+0000\n"
+"Last-Translator: Artyom Kunyov <artkun@guitarplayer.ru>\n"
 "Language-Team: Russian <trans-ru@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -75,7 +77,7 @@ msgid ""
 "appropriate medium.  Next boot from that medium.  After that you're using "
 "BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora"
 " installer or rescue mode."
-msgstr ""
+msgstr "Сначала загрузите один из образов (ISO, USB, Floppy или lkrn). Затем запишите образ на подходящий носитель и загрузитесь с него."
 
 #: data/content/faq.html:15
 msgid "Can I use it with grub?"
@@ -96,30 +98,25 @@ msgid ""
 "together is gpxe.  Users familiar with pxe will find gpxe very familiar.  "
 "Latest versions support several protocols beyond just tftp.  We are using "
 "http to transfer files around.  The basic steps are as follows:"
-msgstr ""
-"BFO создан на основе BKO (boot.kernel.org) и объединяет в себе набор "
-"последних технологий создания нового стека загрузки. Основным компонентом "
-"BFO является gPXE. Если вы знакомы с PXE, то gPXE покажется вам знакомым. "
-"Последние версии не ограничиваются TFTP и поддерживают другие протоколы. "
-"Так, для передачи файлов мы используем HTTP. Последовательность действий:"
+msgstr "BFO создан на основе BKO (boot.kernel.org) и объединяет в себе набор последних технологий создания нового стека загрузки. Основным компонентом BFO является gPXE. Если вы знакомы с PXE, то gPXE покажется вам знакомым. Последние версии не ограничиваются TFTP и поддерживают другие протоколы. Так, для передачи файлов мы используем HTTP. Последовательность действий:"
 
 #: data/content/faq.html:25
 msgid ""
 "Download the boot.fedoraproject.org media fitting your preferred boot "
 "method."
-msgstr ""
+msgstr "Загрузите с boot.fedoraproject.org образ, подходящий для выбранного способа установки."
 
 #: data/content/faq.html:27
 msgid "burn ISO images to a CD-R or DVD-R"
-msgstr ""
+msgstr "Запись ISO-дисков на CD или DVD-R"
 
 #: data/content/faq.html:28
 msgid "write USB image for a USB stick"
-msgstr ""
+msgstr "Запись образа на USB-драйв"
 
 #: data/content/faq.html:29
 msgid "write Floppy image to a 3.5 inch HD floppy"
-msgstr ""
+msgstr "Запись образа на 3,5\"\" дискету"
 
 #: data/content/faq.html:30
 #, python-format
@@ -130,11 +127,11 @@ msgstr ""
 
 #: data/content/faq.html:32
 msgid "Boot from the medium you created."
-msgstr ""
+msgstr "Загрузите компьютер с созданного носителя."
 
 #: data/content/faq.html:33
 msgid "It will first configure network via DHCP."
-msgstr ""
+msgstr "Сначала произойдет настройка сети с помощью DHCP"
 
 #: data/content/faq.html:34
 msgid ""
@@ -147,11 +144,7 @@ msgid ""
 "Those boot menus will then be displayed to the user for selection.  After a "
 "selection (like install Fedora 12) the regular boot process takes over just "
 "as it would had you booted from normal local media."
-msgstr ""
-"на экране появится загрузочное меню, в котором можно будет выбрать действие "
-"(например, установить Fedora 13), после чего будет запущен стандартный "
-"процесс загрузки аналогично тому, как выполняется загрузка с локального "
-"носителя."
+msgstr "на экране появится загрузочное меню, в котором можно будет выбрать действие (например, установить Fedora 13), после чего будет запущен стандартный процесс загрузки аналогично тому, как выполняется загрузка с локального носителя."
 
 #: data/content/faq.html:37
 msgid "Why should I use BFO?"
@@ -164,7 +157,7 @@ msgid ""
 "from your image and they will appear.  Users with fast internet connections "
 "will have the best experience with BFO.  They basically replace having to "
 "regularly download large ISO images and burn them to disk."
-msgstr ""
+msgstr "Образы BFO занимают очень мало места, и вам вряд ли придется загружать их несколько раз. Даже при выходе следующего выпуска Fedora, вы можете загрузиться со старого образа и установить новейшую версию, так что вам не придется загружать большие образы и записывать их на диски, однако для наилучших результатов потребуется широкий интернет-канал."
 
 #: data/content/faq.html:39
 msgid "What is required?"
@@ -175,7 +168,7 @@ msgid ""
 "For all image types, you need a working DHCP in the network you use it from "
 "as well as HTTP internet access. To use the ISO, a CD/DVD burner. To use the"
 " USB image, a USB stick.  Floppy and lkrn images are also available."
-msgstr ""
+msgstr "Для образов всех типов вам понадобится работающий DHCP в вашей сети, а также доступ к интернет по HTTP. Чтобы воспользоваться ISO, понадобится пишущий CD/DVD. Для использования образа USB понадобится USB-носитель.  Также доступны образы дискет и lkrn."
 
 #: data/content/faq.html:41
 msgid "Does BFO replace the installer or anaconda?"
@@ -188,13 +181,7 @@ msgid ""
 " the installer bits.  BFO is a smaller booting method that downloads the "
 "installer bits at runtime.  In theory with BFO one iso download can install "
 "all future versions of Fedora."
-msgstr ""
-"Нет. Также BFO не входит в ее состав. BFO — это лишь способ получить "
-"программу-установщик по сети. Обычно пользователь загружает на компьютер "
-"большой образ ISO, в котором уже содержится все необходимое для установки. "
-"BFO гораздо меньше и загружает данные установщика при каждом запуске. "
-"Теоретически один образ BFO сможет установить любую из будущих версий "
-"Fedora."
+msgstr "Нет. Также BFO не входит в ее состав. BFO — это лишь способ получить программу-установщик по сети. Обычно пользователь загружает на компьютер большой образ ISO, в котором уже содержится все необходимое для установки. BFO гораздо меньше и загружает данные установщика при каждом запуске. Теоретически один образ BFO сможет установить любую из будущих версий Fedora."
 
 #: data/content/faq.html:43
 msgid "What about the Live CDs?"
@@ -204,10 +191,7 @@ msgstr "А как насчет LiveCD?"
 msgid ""
 "At this time booting Live CDs is experimental and not available.  We hope to"
 " have them available soon."
-msgstr ""
-"В настоящий момент возможности загрузки с LiveCD являются экспериментальными"
-" и недоступны. Мы надеемся, что скоро мы сможем предоставить эту "
-"возможность."
+msgstr "В настоящий момент возможности загрузки с LiveCD являются экспериментальными и недоступны. Мы надеемся, что скоро мы сможем предоставить эту возможность."
 
 #: data/content/faq.html:45
 msgid "Why won't BFO boot?"
@@ -219,12 +203,7 @@ msgid ""
 "such, some drivers and devices may not be supported.  If this is the case "
 "for you please check upstream at http://etherboot.org/ for bug updates, etc."
 "  If you feel a bug or device is supported but not working in BFO, contact: "
-msgstr ""
-"В BFO используется gpxe, поэтому загрузка начинается не с запуска ядра "
-"Linux. Таким образом, поддержка устройств и количество драйверов ограничены."
-" В этой ситуации, пожалуйста, ознакомьтесь с основной веткой разработки на "
-"http://etherboot.org на предмет обновлений. Если вы уверены в поддержке всех"
-" устройств, но все же испытываете проблемы при загрузке BFO, пишите:"
+msgstr "В BFO используется gpxe, поэтому загрузка начинается не с запуска ядра Linux. Таким образом, поддержка устройств и количество драйверов ограничены. В этой ситуации, пожалуйста, ознакомьтесь с основной веткой разработки на http://etherboot.org на предмет обновлений. Если вы уверены в поддержке всех устройств, но все же испытываете проблемы при загрузке BFO, пишите:"
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
@@ -235,10 +214,7 @@ msgid ""
 "boot.fedoraproject.org (BFO) is a way to boot hosts in order to run install "
 "or other types of media via the network.  It works similarly to a pxeboot "
 "environment."
-msgstr ""
-"BFO (boot.fedoraproject.org) позволяет выполнить загрузку на узле так, чтобы"
-" затем запустить установку по сети или выполнить другие действия. Загрузку с"
-" помощью BFO в чем-то можно сравнить с загрузкой в окружении PXE."
+msgstr "BFO (boot.fedoraproject.org) позволяет выполнить загрузку на узле так, чтобы затем запустить установку по сети или выполнить другие действия. Загрузку с помощью BFO в чем-то можно сравнить с загрузкой в окружении PXE."
 
 #: data/content/index.html:12
 msgid "BFO welcome screen"
@@ -250,27 +226,21 @@ msgstr "В основе BFO лежит BKO:"
 
 #: data/content/index.html:13
 msgid "To download BFO please select BFO Download along the left side menu."
-msgstr ""
-"Чтобы загрузить BFO, пожалуйста, перейдите в раздел «Загрузки» в меню слева."
+msgstr "Чтобы загрузить BFO, пожалуйста, перейдите в раздел «Загрузки» в меню слева."
 
 #: data/templates/foot.html:9
 msgid ""
 "&copy; 2011 Red Hat, Inc. and others.  Please send any comments or "
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
-msgstr ""
-"© 2011 Red Hat и др. Замечания и правки отправляйте команде <a "
-"href=\"mailto:webmaster@fedoraproject.org\">websites</a>."
+msgstr "© 2011 Red Hat и др. Замечания и правки отправляйте команде <a href=\"mailto:webmaster@fedoraproject.org\">websites</a>."
 
 #: data/templates/foot.html:12
 msgid ""
 "The Fedora Project is maintained and driven by the community and sponsored "
 "by Red Hat.  This is a community maintained site.  Red Hat is not "
 "responsible for content."
-msgstr ""
-"Проект Fedora поддерживается сообществом при финансировании Red Hat. Этот "
-"сайт полностью поддерживается сообществом и Red Hat не несет ответственности"
-" за его содержимое."
+msgstr "Проект Fedora поддерживается сообществом при финансировании Red Hat. Этот сайт полностью поддерживается сообществом и Red Hat не несет ответственности за его содержимое."
 
 #: data/templates/foot.html:15
 msgid "Sponsors"
@@ -278,18 +248,14 @@ msgstr "Спонсоры"
 
 #: data/templates/foot.html:16
 msgid "<a href=\"http://fedoraproject.org/wiki/Legal:Main\">Legal</a>"
-msgstr ""
-"<a href=\"http://fedoraproject.org/wiki/Legal:Main\">Правовые положения</a>"
+msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Main\">Правовые положения</a>"
 
 #: data/templates/foot.html:17
 msgid ""
 "<a "
 "href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Trademark "
 "Guidelines</a>"
-msgstr ""
-"<a "
-"href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Использование"
-" торговой марки</a>"
+msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Использование торговой марки</a>"
 
 #: data/templates/head.html:7
 msgid "Fedora"
@@ -314,5 +280,3 @@ msgstr "— Вопросы"
 #: data/templates/sidebar.html:16
 msgid "Website Language"
 msgstr "Язык сайта"
-
-
