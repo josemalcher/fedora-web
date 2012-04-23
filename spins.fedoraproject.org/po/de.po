@@ -5,6 +5,7 @@
 # Translators:
 # Fabian Affolter <fab@fedoraproject.org>, 2011.
 # Gerd  <koenig.ulm@googlemail.com>, 2011.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2012.
 # neb <nick@bebout.net>, 2011.
 # Roman Spirgi <rspirgi@gmail.com>, 2011.
 #   <rspirgi@gmail.com>, 2011.
@@ -15,8 +16,8 @@ msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2012-02-13 09:20-0600\n"
-"PO-Revision-Date: 2012-02-13 17:07+0000\n"
-"Last-Translator: neb <nick@bebout.net>\n"
+"PO-Revision-Date: 2012-04-23 14:08+0000\n"
+"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: German <trans-de@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -326,7 +327,7 @@ msgstr "Sicherheitsanalyse-Werkzeuge."
 
 #: data/content/index.html:6 data/content/moblin/index.html:55
 msgid "The future of the mobile internet."
-msgstr ""
+msgstr "Die Zukunft des mobilen Internets."
 
 #: data/content/index.html:6 data/content/soas/index.html:55
 msgid "Discover. Reflect. Share. Learn."
@@ -1203,7 +1204,7 @@ msgstr ""
 
 #: data/content/community/chitleshgoorah.html:20
 msgid "Strasbourg, France."
-msgstr ""
+msgstr "Strasbourg, Frankreich."
 
 #: data/content/community/chitleshgoorah.html:24
 msgid "Post-graduate student (micro-nano electronics.)"
@@ -1211,7 +1212,7 @@ msgstr ""
 
 #: data/content/community/chitleshgoorah.html:27
 msgid "ChitleshGoorah on Freenode."
-msgstr ""
+msgstr "ChitleshGoorah auf Freenode."
 
 #: data/content/community/chitleshgoorah.html:29
 msgid ""
@@ -1525,7 +1526,7 @@ msgstr ""
 
 #: data/content/community/chitleshgoorah.html:126
 msgid "VLSI"
-msgstr ""
+msgstr "VLSI"
 
 #: data/content/community/chitleshgoorah.html:127
 msgid "Very Large Scale Integration, about 10⁶ to 10⁷ transistors"
@@ -4235,14 +4236,14 @@ msgstr "Über Spin: Kiosk"
 
 #: data/content/kiosk/index.html:55
 msgid "Secure kiosks: no longer an oxymoron. "
-msgstr ""
+msgstr "Sichere Kiosks: Das ist kein Widerspruch mehr."
 
 #: data/content/kiosk/index.html:56
 msgid ""
 "The goal of the Fedora Kiosk Spin is to create an operating system that can "
 "only be used as a kiosk. It is intended for use in public locations such as "
 "libraries, schools, and event venues. "
-msgstr ""
+msgstr "Das Ziel des Fedora Kiosk-Spin ist die Bereitstellung eines Betriebssystems, das nur als Kiosk verwendet werden kann. Solche Rechner befinden sich üblicherweise an öffentlichen Orten wie Bibliotheken, in Schulen oder bei Veranstaltungen."
 
 #: data/content/kiosk/index.html:57
 msgid ""
@@ -4253,13 +4254,13 @@ msgid ""
 " next user to search for. Since all processes are destroyed on logout, you "
 "can rest assured no one left a process to watch your keystrokes. Starting "
 "from scratch with a clean system is as easy as a reboot. "
-msgstr ""
+msgstr "Stellen Sie sich einen Rechner in (beispielsweise) einer Bibliothek vor, auf dem eine Live-DVD mit einem einzigen Gast-Benutzerkonto läuft. Das Administratorkonto (root) ist deaktiviert. Der Kiosk kann lediglich Web-Ports nutzen, und nach dem Abmelden werden alle Dateien und Prozesse gelöscht, so dass nichts übrig bleibt, wonach der nächste Benutzer suchen könnte. Da alle Prozesse beendet werden, können Sie sich in Sicherheit wissen, dass niemand Ihre Tastendrücke überwacht. Der Start mit einem sauberen System ist ebenso leicht wie ein Neustart."
 
 #: data/content/kiosk/index.html:58
 msgid ""
 "With the Fedora Kiosk Spin, your terminal can be as secure as you want it to"
 " be. <b><a href=\"#about\">Learn more.</a></b>"
-msgstr ""
+msgstr "Mit dem Fedora Kiosk-Spin kann Ihr Terminal so sicher sein, wie Sie wollen. <b><a href=\"#about\">Erfahren Sie mehr.</a></b>"
 
 #: data/content/kiosk/index.html:63
 msgid ""
@@ -4267,7 +4268,7 @@ msgid ""
 "combination of functionality and security. It features the xguest package, "
 "which creates a user of type xguest_t, a special user type designed "
 "specifically with kiosk usage in mind. "
-msgstr ""
+msgstr "Der Fedora Kiosk-Spin nutzt SELinux (Security-Enhanced Linux) in seiner Kombination von Funktionalität und Sicherheit. Dabei kommt das Paket xguest zum Einsatz, welches den Benutzer des Typs xguest_t anlegt, einen speziellen Benutzertyp, der im hinblick auf den Kiosk-Modus entworfen wurde."
 
 #: data/content/kiosk/index.html:64
 msgid ""
@@ -4278,7 +4279,7 @@ msgid ""
 "easily extended by building a liveimage where iptables force all network "
 "traffic to go to a singe host or network so that you can lock down your "
 "kiosk to only work on said network. "
-msgstr ""
+msgstr "Außerdem wird für den Fedora Kiosk-Spin ein PAM (Pluggable Authentication Module) namens pam_sepermit angelegt, das bestimmten Benutzern (xguest) die Anmeldung ohne Passwort gestattet, falls SELinux sich im Enforcing-Modus befindet. Der Spin nutzt pam_namespace zur vorübergehenden Einrichtung der Ordner /home und /tmp. Das System ist durch Erstellung eines Live-Abbildes einfach erweiterbar, wobei iptables jeglichen Netzwerkverkehr auf einen einzelnen Rechner oder Netzwerk zwingt, so dass Sie Ihren Kiosk auf das genannte Netzwerk begrenzen können."
 
 #: data/content/kiosk/index.html:97 data/content/moblin/index.html:60
 #: data/content/moblin/index.html:70 data/content/moblin/index.html:103
@@ -4286,7 +4287,7 @@ msgstr ""
 msgid ""
 "Moblin™ is a trademark or registered trademark of Intel Corporation or its "
 "subsidiaries in the United States and other countries."
-msgstr ""
+msgstr "Moblin™ ist ein Warenzeichen oder eingetragenes Warenzeichen der Intel Corporation oder deren Tochtergesellschaften in den USA oder anderen Ländern."
 
 #: data/content/kiosk/index.html:110
 msgid "Kiosk"
@@ -4300,7 +4301,7 @@ msgstr "Login-Bildschirm"
 msgid ""
 "Users of your kiosk will only be able to access a single guest account, with"
 " information and processes that are wiped and rest after each logout."
-msgstr ""
+msgstr "Die Benutzer des Kiosks erhalten lediglich Zugriff auf dieses eine Gastkonto, wobei sämtliche Informationen und Prozesse nach der Abmeldung gelöscht werden."
 
 #: data/content/lxde/index.html:43
 msgid "About Spin: LXDE"
@@ -4333,7 +4334,7 @@ msgstr "Jetzt probieren. >"
 
 #: data/content/lxde/index.html:61
 msgid "ABOUT LXDE"
-msgstr ""
+msgstr "Info zu LXDE"
 
 #: data/content/lxde/index.html:62
 msgid "The Fedora LXDE Desktop would not be possible without the efforts of"
@@ -4409,7 +4410,7 @@ msgstr ""
 msgid ""
 "Try the future of the mobile internet today. <b><a href=\"#about\">Learn "
 "more.</a></b>"
-msgstr ""
+msgstr "Erleben Sie die Zukunft des mobilen Internets schon heute. <b><a href=\"#about\">Erfahren Sie mehr.</a></b>"
 
 #: data/content/moblin/index.html:64
 msgid ""
@@ -4989,7 +4990,7 @@ msgstr "Fedora herunterladen"
 
 #: data/templates/foot.html:20
 msgid "Full Download List"
-msgstr ""
+msgstr "Vollständige Download-Liste"
 
 #: data/templates/foot.html:24
 msgid "Get Help"
@@ -4997,11 +4998,11 @@ msgstr "Hilfe erhalten"
 
 #: data/templates/foot.html:25
 msgid "IRC Help"
-msgstr ""
+msgstr "IRC-Hilfe"
 
 #: data/templates/foot.html:26
 msgid "Mailing List Help"
-msgstr ""
+msgstr "Mailinglisten-Hilfe"
 
 #: data/templates/foot.html:27
 msgid "Forums"
@@ -5081,7 +5082,7 @@ msgstr "Erfahren Sie mehr über die Beziehung zwischen Red Hat und Fedora >"
 
 #: data/templates/foot.html:60
 msgid "© 2011 Red Hat, Inc. and others."
-msgstr ""
+msgstr "© 2011 Red Hat, Inc. und andere."
 
 #: data/templates/foot.html:62
 msgid "Contact"
@@ -5097,7 +5098,7 @@ msgstr "Rechtliches"
 
 #: data/templates/foot.html:65
 msgid "Trademark Guidelines"
-msgstr ""
+msgstr "Richtlinien zu Warenzeichen"
 
 #: data/templates/foot.html:67
 msgid ""
@@ -5107,7 +5108,7 @@ msgstr ""
 
 #: data/templates/head.html:11
 msgid "Spins Directory"
-msgstr ""
+msgstr "Spins-Ordner"
 
 #: data/templates/head.html:16
 msgid "Explore Fedora's possibilities"
@@ -5139,7 +5140,7 @@ msgstr "Mehr erfahren >"
 
 #: data/templates/sidebar.html:39
 msgid "Want to Make Your Own Spin?"
-msgstr ""
+msgstr "Wollen Sie Ihren eigenen Spin erstellen?"
 
 #: data/templates/sidebar.html:40
 msgid "Anyone can create their very own Fedora spin."
@@ -5147,7 +5148,7 @@ msgstr "Jeder kann seinen eigenen Fedora-Spin erstellen."
 
 #: data/templates/sidebar.html:41
 msgid "Go to the spin creation tutorial >"
-msgstr ""
+msgstr "Zur Anleitung zum Erstellen von Spins >"
 
 #: data/templates/sidebar.html:48
 msgid "How do I use this?"
