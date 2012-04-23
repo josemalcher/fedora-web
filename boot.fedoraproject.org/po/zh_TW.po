@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PROJECT project.
 # 
 # Translators:
+# Walter Cheuk <wwycheuk@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-02-13 09:19-0600\n"
-"PO-Revision-Date: 2012-02-13 17:00+0000\n"
-"Last-Translator: neb <nick@bebout.net>\n"
+"POT-Creation-Date: 2012-04-09 16:28+0200\n"
+"PO-Revision-Date: 2012-04-20 10:07+0000\n"
+"Last-Translator: Walter Cheuk <wwycheuk@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) <trans-zh_TW@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,51 +21,51 @@ msgstr ""
 
 #: data/content/download.html:7
 msgid "Download - boot.fedoraproject.org"
-msgstr ""
+msgstr "下載 - boot.fedoraproject.org"
 
 #: data/content/download.html:12
 msgid "Download ISO: "
-msgstr ""
+msgstr "下載 ISO："
 
 #: data/content/download.html:12
 msgid "DVD/CD"
-msgstr ""
+msgstr "DVD/CD"
 
 #: data/content/download.html:13
 msgid "Download USB: "
-msgstr ""
+msgstr "下載 USB："
 
 #: data/content/download.html:13
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 #: data/content/download.html:14
 msgid "Download Floppy: "
-msgstr ""
+msgstr "下載軟碟："
 
 #: data/content/download.html:14
 msgid "Floppy"
-msgstr ""
+msgstr "軟碟"
 
 #: data/content/download.html:15
 msgid "Download lkrn: "
-msgstr ""
+msgstr "下載 lkrn："
 
 #: data/content/download.html:15
 msgid "lkrn"
-msgstr ""
+msgstr "lkrn"
 
 #: data/content/faq.html:7
 msgid "FAQs - boot.fedoraproject.org"
-msgstr ""
+msgstr "常見問題 - boot.fedoraproject.org"
 
 #: data/content/faq.html:12
 msgid "Frequently-Asked Questions"
-msgstr ""
+msgstr "常見問題"
 
 #: data/content/faq.html:13
 msgid "How do I use it?"
-msgstr ""
+msgstr "如何用？"
 
 #: data/content/faq.html:14
 msgid ""
@@ -73,19 +74,19 @@ msgid ""
 "appropriate medium.  Next boot from that medium.  After that you're using "
 "BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora"
 " installer or rescue mode."
-msgstr ""
+msgstr "首先下載特定的 BFO 映像檔。可選擇 ISO (DVD/CD)、USB、軟碟及 lkrn 映像檔。然後將之寫入合適媒體。用該媒體開機。您就已經在用 BFO！以鍵盤於選單選擇檢測或啟動 Fedora 安裝程序或救機模式。"
 
 #: data/content/faq.html:15
 msgid "Can I use it with grub?"
-msgstr ""
+msgstr "可否和 grub 一起用？"
 
 #: data/content/faq.html:16
 msgid "Yes!  Just run the following commands as root"
-msgstr ""
+msgstr "可以！只需以 root 身份執行以下指令"
 
 #: data/content/faq.html:22
 msgid "How does it work?"
-msgstr ""
+msgstr "原理是什麼？"
 
 #: data/content/faq.html:23
 msgid ""
@@ -94,57 +95,57 @@ msgid ""
 "together is gpxe.  Users familiar with pxe will find gpxe very familiar.  "
 "Latest versions support several protocols beyond just tftp.  We are using "
 "http to transfer files around.  The basic steps are as follows:"
-msgstr ""
+msgstr "BFO 專案由 boot.kernel.org (BKO) 發起，結合最新科技以製作新的開機軟體。  居中引線的就是 gpxe。  熟悉 pxe 的人會發覺 gpxe 很面善。最新版本支援 tftp 以外的多種協定。我們現在用來傳送檔案的是 http。基本步驟如下："
 
 #: data/content/faq.html:25
 msgid ""
 "Download the boot.fedoraproject.org media fitting your preferred boot "
 "method."
-msgstr ""
+msgstr "在 boot.fedoraproject.org 下載符合您喜愛開機方式的媒體。"
 
 #: data/content/faq.html:27
 msgid "burn ISO images to a CD-R or DVD-R"
-msgstr ""
+msgstr "將 ISO 映像檔燒錄至 CD-R 或 DVD-R"
 
 #: data/content/faq.html:28
 msgid "write USB image for a USB stick"
-msgstr ""
+msgstr "將 USB 映像檔燒錄至 USB 隨身碟"
 
 #: data/content/faq.html:29
 msgid "write Floppy image to a 3.5 inch HD floppy"
-msgstr ""
+msgstr "將軟碟映像檔寫入 3.5 吋高密度軟碟"
 
 #: data/content/faq.html:30
 #, python-format
 msgid ""
 "lkrn image for PXE booting, grub booting and in conjunction with kexec "
 "(c.f.: <a href=\"%s\">pxkxc</a>)"
-msgstr ""
+msgstr "lkrn 映像檔用於 PXE 開機、grub 開機以及和 kexec 一起使用 (c.f.: <a href=\"%s\">pxkxc</a>)"
 
 #: data/content/faq.html:32
 msgid "Boot from the medium you created."
-msgstr ""
+msgstr "以所建立的媒體開機。"
 
 #: data/content/faq.html:33
 msgid "It will first configure network via DHCP."
-msgstr ""
+msgstr "會先以 DHCP 設定網路。"
 
 #: data/content/faq.html:34
 msgid ""
 "After network is configured, it will go out to our boot.fedoraproject.org "
 "website and download the menus and other prompts from us"
-msgstr ""
+msgstr "設定好網路之後，就會連接 boot.fedoraproject.org 網站並下載選單及其他所需資料"
 
 #: data/content/faq.html:35
 msgid ""
 "Those boot menus will then be displayed to the user for selection.  After a "
 "selection (like install Fedora 12) the regular boot process takes over just "
 "as it would had you booted from normal local media."
-msgstr ""
+msgstr "然後會有開機選單供您選擇。  選擇之後 (例如安裝 Fedora 12)，會轉為像使用正常本機開機碟的普通開機程序。"
 
 #: data/content/faq.html:37
 msgid "Why should I use BFO?"
-msgstr ""
+msgstr "為何要用 BFO？"
 
 #: data/content/faq.html:38
 msgid ""
@@ -153,22 +154,22 @@ msgid ""
 "from your image and they will appear.  Users with fast internet connections "
 "will have the best experience with BFO.  They basically replace having to "
 "regularly download large ISO images and burn them to disk."
-msgstr ""
+msgstr "BFO 下載檔很小；一旦下載，就不太需要再下載什麼。就算有新版 Fedora，以該映像檔開機，新版本就會出現。有高速網路連線的人會用得最高興。從此毋須再下次大件頭的 ISO 映像檔及燒錄光碟。"
 
 #: data/content/faq.html:39
 msgid "What is required?"
-msgstr ""
+msgstr "有何要求？"
 
 #: data/content/faq.html:40
 msgid ""
 "For all image types, you need a working DHCP in the network you use it from "
 "as well as HTTP internet access. To use the ISO, a CD/DVD burner. To use the"
 " USB image, a USB stick.  Floppy and lkrn images are also available."
-msgstr ""
+msgstr "所有映像檔類型都需要網路有 DHCP 以及 HTTP 網際網路連線。要使用 ISO 檔，則要有 CD/DVD 燒錄器。要使用 USB 映像檔，則要有 USB 隨身碟。另外也有軟碟及 lkrn 映像檔。"
 
 #: data/content/faq.html:41
 msgid "Does BFO replace the installer or anaconda?"
-msgstr ""
+msgstr "BFO 是否代替了安裝程式或 anaconda？"
 
 #: data/content/faq.html:42
 msgid ""
@@ -177,21 +178,21 @@ msgid ""
 " the installer bits.  BFO is a smaller booting method that downloads the "
 "installer bits at runtime.  In theory with BFO one iso download can install "
 "all future versions of Fedora."
-msgstr ""
+msgstr "不是。  BFO 共非 Anaconda 一部份。  BFO 以網路載入安裝程式。  通常使用者要下載包含所有安裝軟體的大 ISO 映像檔。  BFO 較為小巧，只會按需要下載軟體。  理論上只需下載 BFO 一次即可安裝所有新版本的 Fedora。"
 
 #: data/content/faq.html:43
 msgid "What about the Live CDs?"
-msgstr ""
+msgstr "有 Live CD 嗎？"
 
 #: data/content/faq.html:44
 msgid ""
 "At this time booting Live CDs is experimental and not available.  We hope to"
 " have them available soon."
-msgstr ""
+msgstr "開機 Live CD 尚處於實驗階段，還未可以下載。  我們希望可以盡快提供。"
 
 #: data/content/faq.html:45
 msgid "Why won't BFO boot?"
-msgstr ""
+msgstr "我的 BFO 為何不能開機？"
 
 #: data/content/faq.html:46
 msgid ""
@@ -199,80 +200,84 @@ msgid ""
 "such, some drivers and devices may not be supported.  If this is the case "
 "for you please check upstream at http://etherboot.org/ for bug updates, etc."
 "  If you feel a bug or device is supported but not working in BFO, contact: "
-msgstr ""
+msgstr "BFO 一開始並非以 Linux kernel 開機，而是使用 gpxe。  因此可能某些驅動程式及裝置不獲支援。  如有此情況請看看上游網站 http://etherboot.org/ 有否相關問題回報或其他資料。  如您認為有問題，或某樣裝置應有支援但未獲支援，請聯絡："
+
+#: data/content/faq.html:47
+msgid "Where can I find the BFO sources and configuration?"
+msgstr "哪裡有 BFO 源碼和設定檔？"
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
-msgstr ""
+msgstr "boot.fedoraproject.org"
 
 #: data/content/index.html:11
 msgid ""
 "boot.fedoraproject.org (BFO) is a way to boot hosts in order to run install "
 "or other types of media via the network.  It works similarly to a pxeboot "
 "environment."
-msgstr ""
+msgstr "boot.fedoraproject.org (BFO) 為以網路進行的安裝方式。  運作原理與 pxeboot 相近。"
 
 #: data/content/index.html:12
 msgid "BFO welcome screen"
-msgstr ""
+msgstr "BFO 歡迎畫面"
 
 #: data/content/index.html:13
 msgid "BFO is based on the work of the BKO - "
-msgstr ""
+msgstr "BFO 建基於 BKO 的成果 - "
 
 #: data/content/index.html:13
 msgid "To download BFO please select BFO Download along the left side menu."
-msgstr ""
+msgstr "要下載 BFO，請在左邊選單選擇「下載 BFO」。"
 
 #: data/templates/foot.html:9
 msgid ""
 "&copy; 2011 Red Hat, Inc. and others.  Please send any comments or "
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
-msgstr ""
+msgstr "&copy; 2011 Red Hat 公司及其他。任何評語或修正請電郵至<a href=\"mailto:webmaster@fedoraproject.org\">網站團隊</a>。"
 
 #: data/templates/foot.html:12
 msgid ""
 "The Fedora Project is maintained and driven by the community and sponsored "
 "by Red Hat.  This is a community maintained site.  Red Hat is not "
 "responsible for content."
-msgstr ""
+msgstr "Fedora 專案是由社群維護和運作，並由 Red Hat 贊助。這是由社群維護的網站。Red Hat 不為內容負責。"
 
 #: data/templates/foot.html:15
 msgid "Sponsors"
-msgstr ""
+msgstr "贊助商"
 
 #: data/templates/foot.html:16
 msgid "<a href=\"http://fedoraproject.org/wiki/Legal:Main\">Legal</a>"
-msgstr ""
+msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Main\">法律條款</a>"
 
 #: data/templates/foot.html:17
 msgid ""
 "<a "
 "href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">Trademark "
 "Guidelines</a>"
-msgstr ""
+msgstr "<a href=\"http://fedoraproject.org/wiki/Legal:Trademark_guidelines\">商標指南</a>"
 
 #: data/templates/head.html:7
 msgid "Fedora"
-msgstr ""
+msgstr "Fedora"
 
 #: data/templates/sidebar.html:10
 msgid "Navigation"
-msgstr ""
+msgstr "導覽"
 
 #: data/templates/sidebar.html:12
 msgid "Home"
-msgstr ""
+msgstr "主頁"
 
 #: data/templates/sidebar.html:13
 msgid "Download"
-msgstr ""
+msgstr "下載"
 
 #: data/templates/sidebar.html:14
 msgid "FAQ"
-msgstr ""
+msgstr "常見問題"
 
 #: data/templates/sidebar.html:16
 msgid "Website Language"
-msgstr ""
+msgstr "網站語言"
