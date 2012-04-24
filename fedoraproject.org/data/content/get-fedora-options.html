@@ -40,7 +40,7 @@
                         <h3>${_('Fedora Desktops')}</h3>
                         <p>${_('There are multiple desktops available for use with Fedora. Each has a slightly different look and feel and offers varying levels of customization. Desktops affect how windows, icons, menus, and various basic desktop interfaces look and feel. You may want to try a few different ones and figure out which one is best for you!')}</p>
                             <div class="grid_12 alpha omega">
-                                <h4 class="area-callout">${_('Fedora 16 Desktop Edition')}</h4><span class="star-fedora-default">${_('Fedora Default')}</span>
+                                <h4 class="area-callout">${_('Fedora %(release)s Desktop Edition') % {'release':global_variables.release['curr_id']}}</h4><span class="star-fedora-default">${_('Fedora Default')}</span>
                             </div>
 
                             <div class="clear"></div>
@@ -57,18 +57,18 @@
 
                             <div class="grid_3 prefix_2 alpha">
                                 <h5>${_('32-bit')}</h5>
-                                <a class="download-button-mini download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/16/Live/i686/Fedora-16-i686-Live-Desktop.iso">${_('Download Now!')}</a>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/i686/Fedora-${global_variables.release['curr_id']}-i686-Live-Desktop.iso">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sMB CD ISO') % '605'}</p>
                             </div>
                             <div class="grid_3 suffix_4 omega">
                                 <h5>${_('64-bit')}</h5>
-                                <a class="download-button-mini download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/16/Live/x86_64/Fedora-16-x86_64-Live-Desktop.iso">${_('Download Now!')}</a>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-${global_variables.release['curr_id']}-x86_64-Live-Desktop.iso">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sMB CD ISO') % '604'}</p>
                             </div>
                             <div class="clear"></div>
 
                             <div class="grid_12 alpha omega">
-                                <h4>${_('Fedora 16 KDE Spin')}</h4>
+                                <h4>${_('Fedora %(release)s KDE Spin') % {'release':global_variables.release['curr_id']}}</h4>
                             </div>
                             <div class="clear"></div>
                             <div class="grid_2 alpha"><img class="download-media" alt="32-bit PC Edition" src="${path}/static/images/icon-kde-download.png" /></div>
@@ -83,18 +83,18 @@
                             <div class="clear"></div>
                             <div class="grid_3 prefix_2 alpha">
                                 <h5>${_('32-bit')}</h5>
-                                <a class="download-button-mini download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/16/Live/i686/Fedora-16-i686-Live-KDE.iso">${_('Download Now!')}</a>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/i686/Fedora-${global_variables.release['curr_id']}-i686-Live-KDE.iso">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sMB CD ISO') % '697'}</p>
                             </div>
                             <div class="grid_3 suffix_4 omega">
                                 <h5>${_('64-bit')}</h5>
-                                <a class="download-button-mini download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/16/Live/x86_64/Fedora-16-x86_64-Live-KDE.iso">${_('Download Now!')}</a>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-${global_variables.release['curr_id']}-x86_64-Live-KDE.iso">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sMB CD ISO') % '696'}</p>
                             </div>
                             <div class="clear"></div>
 
                             <div class="grid_12 alpha omega">
-                                <h4>${_('Fedora 16 LXDE Spin')}</h4>
+                                <h4>${_('Fedora %(release)s LXDE Spin') % {'release':global_variables.release['curr_id']}}</h4>
                             </div>
                             <div class="clear"></div>
                             <div class="grid_2 alpha"><img class="download-media" alt="32-bit PC Edition" src="${path}/static/images/icon-lxde-download.png" /></div>
@@ -109,18 +109,18 @@
                             <div class="clear"></div>
                             <div class="grid_3 prefix_2 alpha">
                                 <h5>${_('32-bit')}</h5>
-                                <a class="download-button-mini download-splash" href="http://download.fedoraproject.org/pub/alt/spins/linux/releases/16/Spins/i686/Fedora-16-i686-Live-LXDE.iso">${_('Download Now!')}</a>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/i686/Fedora-${global_variables.release['curr_id']}-i686-Live-LXDE.iso">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sMB CD ISO') % '542'}</p>
                             </div>
                             <div class="grid_3 suffix_4 omega">
                                 <h5>${_('64-bit')}</h5>
-                                <a class="download-button-mini download-splash" href="http://download.fedoraproject.org/pub/alt/spins/linux/releases/16/Spins/x86_64/Fedora-16-x86_64-Live-LXDE.iso">${_('Download Now!')}</a>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/x86_64/Fedora-${global_variables.release['curr_id']}-x86_64-Live-LXDE.iso">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sMB CD ISO') % '541'}</p>
                             </div>
                             <div class="clear"></div>
 
                             <div class="grid_12 alpha omega">
-                                <h4>${_('Fedora 16 Xfce Spin')}</h4>
+                                <h4>${_('Fedora %(release)s Xfce Spin') % {'release':global_variables.release['curr_id']}}</h4>
                             </div>
                             <div class="clear"></div>
                             <div class="grid_2 alpha"><img class="download-media" alt="32-bit PC Edition" src="${path}/static/images/icon-xfce-download.png" /></div>
@@ -135,12 +135,12 @@
                             <div class="clear"></div>
                             <div class="grid_3 prefix_2 alpha">
                                 <h5>${_('32-bit')}</h5>
-                                <a class="download-button-mini download-splash" href="http://download.fedoraproject.org/pub/alt/spins/linux/releases/16/Spins/i686/Fedora-16-i686-Live-XFCE.iso">${_('Download Now!')}</a>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/i686/Fedora-${global_variables.release['curr_id']}-i686-Live-XFCE.iso">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sMB CD ISO') % '627'}</p>
                             </div>
                             <div class="grid_3 suffix_4 omega">
                                 <h5>${_('64-bit')}</h5>
-                                <a class="download-button-mini download-splash" href="http://download.fedoraproject.org/pub/alt/spins/linux/releases/16/Spins/x86_64/Fedora-16-x86_64-Live-XFCE.iso">${_('Download Now!')}</a>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/x86_64/Fedora-${global_variables.release['curr_id']}-x86_64-Live-XFCE.iso">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sMB CD ISO') % '625'}</p>
                             </div>
                             <div class="clear"></div>
@@ -154,7 +154,7 @@
                             <img class="download-media" alt="${_('32-bit PC Edition')}" src="${path}/static/images/media.png" />
                         </div>
                         <div class="grid_10 omega format-block">
-                            <h4>${_('Fedora 16 Live Media / Spins')}</h4>
+                            <h4>${_('Fedora %(release)s Live Media / Spins') % {'release':global_variables.release['curr_id']}}</h4>
                             <p>${_('Fedora Live Media images may be used via bootable CD, DVD, or USB drives, and also may be used to install Fedora to hard disk. They are a great way to give Fedora a try, low-risk.')}</p>
                             <p>${_('A directory of alternate Fedora images called Spins may be found at:')}</p>
                             <p><a href="http://spins.fedoraproject.org/">http://spins.fedoraproject.org/</a></p>
@@ -166,7 +166,7 @@
 <img class="download-media" alt="${_('32-bit PC Edition')}" src="${path}/static/images/media.png" />
 			</div>
 			<div class="grid_10 omega">
-                            <h4>${_('Fedora 16 DVD')}</h4>
+                            <h4>${_('Fedora %(release)s DVD') % {'release':global_variables.release['curr_id']}}</h4>
                             <p>${_('The DVD edition of Fedora is not Live Media, but it is bootable.  When you boot from this media, you will be running the installation program.  The DVD requires less memory (RAM) on your computer and contains more software.  This media may be useful if the machine on which you install Fedora is not connected to the Internet.')}</p>
                         </div>
                         <div class="clear"></div>
@@ -176,7 +176,7 @@
                             <h6>${_('32-bit')}</h6>
 			</div>
 			<div class="grid_6 omega arch">
-                            <a href="http://download.fedoraproject.org/pub/fedora/linux/releases/16/Fedora/i386/iso/Fedora-16-i386-DVD.iso" class="download-button-mini download-splash">${_('Download Now!')}</a><span class="star-most-compatible">${_('Most Compatible')}</span>
+                            <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Fedora/i386/iso/Fedora-${global_variables.release['curr_id']}-i386-DVD.iso" class="download-button-mini download-splash">${_('Download Now!')}</a><span class="star-most-compatible">${_('Most Compatible')}</span>
                             <p class="fine-print">${_('3.5GB ISO disk image for 32-bit PC')}</p>
                         </div>
 			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
@@ -185,14 +185,14 @@
                             <h6>${_('64-bit')}</h6>
 			</div>
 			<div class="grid_6 omega arch">
-                            <a href="http://download.fedoraproject.org/pub/fedora/linux/releases/16/Fedora/x86_64/iso/Fedora-16-x86_64-DVD.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
+                            <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Fedora/x86_64/iso/Fedora-${global_variables.release['curr_id']}-x86_64-DVD.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
                             <p class="fine-print">${_('3.5GB ISO disk image for 64-bit PC')}</p>
                         </div>
 			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
                         <div class="clear"></div>
 		
                         <div class="grid_10 prefix_2 alpha omega">
-                            <p class="help" style="clear: both;"><img class="support-icon" src="${path}/static/images/icon-support.png" alt="support-icon" />${Markup(_('For help determining what architecture your system is, &lt;a href="http://docs.fedoraproject.org/en-US/Fedora/16/html/Installation_Guide/ch-new-users.html#sn-which-arch"&gt;please view our architecture help guide&lt;/a&gt;.'))}</p>
+                            <p class="help" style="clear: both;"><img class="support-icon" src="${path}/static/images/icon-support.png" alt="support-icon" />${Markup(_('For help determining what architecture your system is, &lt;a href="%s"&gt;please view our architecture help guide&lt;/a&gt;.') % 'http://docs.fedoraproject.org/en-US/Fedora/%s/html/Installation_Guide/ch-new-users.html#sn-which-arch' % (global_variables.release['curr_id']))}</p>
                         </div>
                         <div class="clear"></div>
 			</div>
@@ -202,7 +202,7 @@
 <img class="download-media" alt="${_('32-bit PC Edition')}" src="${path}/static/images/media.png" />
 			</div>
                         <div class="grid_10 omega">
-                            <h4>${_('Fedora 16 Media by Mail')}</h4>
+                            <h4>${_('Fedora %(release)s Media by Mail') % {'release':global_variables.release['curr_id']}}</h4>
                             <p>${Markup(_('Slow internet? No internet? You can get a copy of Fedora media sent via postal mail through local and online vendors, as well as via the &lt;a href="%s"&gt;Fedora Free Media&lt;/a&gt; program.')) % 'http://fedoraproject.org/wiki/Distribution/FreeMedia'}</p>
                         </div>
                         <div class="clear"></div>
@@ -301,9 +301,9 @@
 
                     <h4>${_('Handy Resources')}</h4>
                     <ul>
-                        <li class="guide-list"><a href="${_('http://docs.fedoraproject.org/en-US/Fedora/16/html/Installation_Guide/index.html')}">${_('Installation Guide')}</a></li>
-                        <li class="guide-list"><a href="${_('http://docs.fedoraproject.org/en-US/Fedora/16/html/Release_Notes/index.html')}">${_('Release Notes')}</a></li>
-                        <li class="webpage-list"><a href="https://fedoraproject.org/wiki/Common_F16_bugs">${_('Common Bugs')}</a></li>
+                        <li class="guide-list"><a href="${_('http://docs.fedoraproject.org/en-US/Fedora/%(release)s/html/Installation_Guide/index.html') % {'release':global_variables.release['curr_id']}}">${_('Installation Guide')}</a></li>
+                        <li class="guide-list"><a href="${_('http://docs.fedoraproject.org/en-US/Fedora/%(release)s/html/Release_Notes/index.html') % {'release':global_variables.release['curr_id']}}">${_('Release Notes')}</a></li>
+                        <li class="webpage-list"><a href="https://fedoraproject.org/wiki/Common_F${global_variables.release['curr_id']}_bugs">${_('Common Bugs')}</a></li>
                         <li class="webpage-list"><a href="http://fedoraproject.org/wiki/Upgrading">${_('Upgrading Fedora')}</a></li>
                         <li class="support-list"><a href="${path}/${lang}/get-help">${_('Help &amp; Support')}</a></li>
                         <li class="verify-list"><a href="${path}/${lang}/verify">${_('Verify Download')}</a></li>

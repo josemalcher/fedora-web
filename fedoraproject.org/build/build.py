@@ -8,18 +8,20 @@ Some code/design taken from python.org's website build script
 '''
 
 import os, sys, timing, re, shutil
-
 from pkg_resources import get_distribution 
-
 from optparse import OptionParser
-
 from gettext import GNUTranslations
-
 from genshi.filters import Translator
 from genshi.template import TemplateLoader
 
 from rss import *
 import fileinput
+
+try:
+    import globalvar
+except ImportError:
+    print "globalvar.py is missing. It is needed as it provides release specific variables"
+    raise
 
 def process(args):
     if os.path.exists(options.output) and options.erase:
@@ -62,6 +64,7 @@ def process_dir(dirpath, filenames):
             continue
         src_file = os.path.join(dirpath, fn)
         if options.rss:
+            sys.setrecursionlimit(1500)
             for line in fileinput.input(src_file):
                 if line.find('feedparse')>0:
                     match = re.split('^.*feedparse\(\'', line)
@@ -80,6 +83,7 @@ def process_dir(dirpath, filenames):
             lang=options.lang,
             path=options.basepath,
             curpage=curpage,
+            global_variables=globalvar,
             ).render(method='html', doctype='html')
         output = open(dest_file, 'w')
         output.write(page)

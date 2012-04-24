@@ -34,7 +34,7 @@ WEBSITE:
 
 EXAMPLES:
          $ $0                                  (1)
-         $ $0 -a spins.fedoraproject.org       (2)
+         $ $0 -a -w spins.fedoraproject.org    (2)
          $ $0 -a -c -p                         (3)
 
    1. Update all but let you git add and push to transifex.net. (Takes time but let you do the job). 

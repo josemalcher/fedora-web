@@ -20,6 +20,7 @@ language_name_map = {
 'el': 'Ελληνικά',
 'en': 'English',
 'es': 'Español',
+'eu': 'euskera',
 'fa': 'پارسی',
 'fi': 'suomi',
 'fr': 'Français',
@@ -51,7 +52,9 @@ language_name_map = {
 'te': 'తెలుగు',
 'tg': 'тоҷикӣ',
 'th': 'ไทย',
+'tr': 'Tϋrkçe',
 'uk': 'українська',
+'vi': 'Tiếng Việt',
 'zh_CN': '简体中文',
 'zh_TW': '正體中文',
 }
