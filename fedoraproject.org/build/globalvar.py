@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # This file defines all variable needed to be edited during the release cycle (alpha, beta...).
 release={
+    'prev_id':     '16',
     'curr_id':     '17',
     'next_id':     '18',
     'curr_name':   'Beefy Miracle',
