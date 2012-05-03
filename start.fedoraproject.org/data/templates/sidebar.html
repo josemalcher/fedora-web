@@ -17,19 +17,19 @@
     ?>
     <div id="news">
         <h3>${fdn.feed.title}</h3>
-        <div py:for="entry in fdn.entries[:3]">
-            <h4><a href="${entry.link}">${entry.title}</a></h4>
+        <div py:for="entry in fdn[:3]" py:if="'title' in entry" >
+            <h4><a href="${entry['link']}">${entry['title']}</a></h4>
             <p>
-                ${Markup(entry.description)}
+                ${Markup(entry['description'])}
             </p>
         </div>
     </div>
     <div id="news">
         <h3>${fpn.feed.title}</h3>
-        <div py:for="entry in fpn.entries[:3]">
-            <h4><a href="${entry.link}">${entry.title}</a></h4>
+        <div py:for="entry in fpn[:3]" py:if="'title' in entry" >
+            <h4><a href="${entry['link']}">${entry['title']}</a></h4>
             <p>
-                ${Markup(entry.description)}
+                ${Markup(entry['description'])}
             </p>
         </div>
     </div>
