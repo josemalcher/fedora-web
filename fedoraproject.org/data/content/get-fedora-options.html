@@ -27,6 +27,7 @@
                     <li><a id="t1" href="#desktops">${_('Desktops')}</a></li>
                     <li><a id="t3" href="#formats">${_('Formats')}</a></li>
                     <li><a id="t4" href="#spins">${_('Spins')}</a></li>
+                    <li><a id="t5" href="#clouds">${_('Clouds')}</a></li>
                 </ul>
             </div>
             <div class="clear"></div>
@@ -235,6 +236,8 @@
 			</div>
 
                     </div>
+
+
                     <div id="get-activities">
                         <noscript><a name="activities"><hr /></a></noscript>
                         <h3>${_('Fedoras that do what you need.')}</h3>
@@ -264,6 +267,37 @@
 			<div class="clear"></div>
                     <xi:include href="../templates/content-export-regulations.html" />
                     </div>
+
+
+
+
+
+                    <div id="cloud-versions">
+                        <noscript><a name="clouds"><hr /></a></noscript>
+                        <h3>${_('Fedora In The Clouds!')}</h3>
+                        <p>${_('… Let\'s your dreams be reallity!')}</p>
+                            <div class="grid_12 alpha omega">
+                                <h4 class="area-callout">${_('Fedora %(release)s Amazone EC2') % {'release':global_variables.release['curr_id']}}</h4>
+                            </div>
+
+                            <div class="clear"></div>
+                            <div class="grid_2 alpha"><img class="download-media" alt="${_('32-bit PC Edition')}" src="${path}/static/images/icon-gnome-download.png" /></div>
+                            <div class="grid_10 omega">
+				<img class="desktop-screenshot" src="${path}/static/images/screenshots/desktop-ss-gnome.png" rel="#gnome1" alt="scr-shot_desk" />
+                                <p>${_('The GNOME-based default Fedora Desktop.')}</p>
+                                <ul>
+                                    <li><a href="${path}/${lang}/get-fedora">${_('Fedora Desktop spin homepage')} &gt;</a></li>
+                                    <li><a href="http://www.gnome.org/">${_('GNOME.org website')} &gt;</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+
+                    <xi:include href="../templates/content-export-regulations.html" />
+                        </div>
+
+
+
+
 
                     <div class="simple_overlay" id="gnome1">
                         <!-- large image -->
