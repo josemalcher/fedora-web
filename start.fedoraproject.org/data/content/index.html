@@ -46,20 +46,23 @@ fdd = feedparse('https://lists.fedoraproject.org/rss/devel-announce.xml')
                 <h4>${_('Latest Announcements')}</h4>
 
                 <ul>
-                    <li py:for="entry in fda[:5]" py:if="'title' in entry" >
-                        <h5><a href="${entry['link']}">${entry["title"]}</a></h5>
+                    <li py:for="entry in fda.entries[:3]">
+                        <h5><a href="${entry.link}">${entry.title}</a></h5>
+                        <p class="community-dates">&nbsp;</p>
                     </li>
-                    <li py:for="entry in fdd[:3]" py:if="'title' in entry" >
-                        <h5><a href="${entry['link']}">${entry["title"]}</a></h5>
+                    <li py:for="entry in fdd.entries[:2]">
+                        <h5><a href="${entry.link}">${entry.title}</a></h5>
+                        <p class="community-dates">&nbsp;</p>
                     </li>
                 </ul>
             </div>
             <div class="grid_6">
                 <h4>${_('Latest Fedora Planet posts')}</h4>
                 <ul>
-                    <li py:for="entry in fpp[:8]" py:if="'title' in entry" >
+                    <li py:for="entry in fpp.entries[:5]">
 
-                        <h5><a href="${entry['link']}">${entry["title"]}</a></h5>
+                        <h5><a href="${entry.link}">${entry.title}</a></h5>
+                        <p class="community-dates">${_(entry.date)}</p>
                     </li>
                 </ul>
             </div>
