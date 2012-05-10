@@ -33,9 +33,9 @@
 
 		<h4>${_('How to add the counter to your website')}</h4>
                 <p>${Markup(_('To add a Fedora Release counter to your own site, simply place the following code wherever you want it to appear:'))}</p>
-                <textarea rows="2" cols="62" style="width: 95%; font-size: 2.35ex;">&lt;script id="fedora-banner" type="text/javascript" src="http://fedoraproject.org/static/js/release-counter-ext.js?lang=${lang}"&gt;&lt;/script&gt;</textarea>
+                <textarea rows="2" cols="62" style="width: 95%; font-size: 2.35ex;">&lt;script id="fedora-banner" type="text/javascript" src="http://fedoraproject.org/static/js/release-counter-ext.js?lang=${lang}&amp;width=200px"&gt;&lt;/script&gt;</textarea>
                 <p>${Markup(_('The lang parameter can be changed to display the counter in a different language. Currently, the values %(codelang)s are supported. When no language is specified, English will be used.') % {'codelang':'ar, bg, bn_IN, cs, da, de, el, en, es, fi, fr, gu, he, hi, hr, hu, id, is, it, ja, kn, ko, ks, ml, nl, pa, pl, pt, pt_BR, ro, ru, si, sr, sv, th, tr, uk, vi_VN, zh_CN, zh_TW'} )}</p>
-
+                <p>${_('The width parameter could be changed to get a smaller banner. This is a CSS scale, you will loose quality. Better to keep the default value (by omitting this parameter).')}</p>
             </div>
         </div>
         <div class="clear"></div>
