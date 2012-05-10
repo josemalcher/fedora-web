@@ -5,11 +5,28 @@ var today = new Date();
 var release = new Date("May 22, 2012 15:00:00 UTC");
 var millisBetweenDates = release - today;
 var days = Math.ceil(millisBetweenDates/1000/60/60/24);
+var url = "https://fedoraproject.org/wiki/Releases/17/Schedule";
 
 var script = document.getElementById('fedora-banner');
 var lang = "en"
-var lang_match = script.src.match(/release-counter-ext\.js\?lang=(.*)$/);
 
+
+// getParam split the GET parameters and return the value
+// of the input `sname' parameter if found or en empty string.
+function getParam (sname) {
+  var params = script.src.substr(script.src.indexOf("?")+1);
+
+  params = params.split("&");
+  for (var i=0; i<params.length; i++) {
+      temp = params[i].split("=");
+      if ([temp[0]] == sname)
+        return temp[1];
+  }
+  return "";
+}
+
+
+var lang_match = getParam("lang");
 if (lang_match) {
     for (var i = 0; i < available_langs.length; ++i) {
         if (available_langs[i] == lang_match) {
@@ -19,15 +36,17 @@ if (lang_match) {
     }
 }
 
-var url = "https://fedoraproject.org/wiki/Releases/17/Schedule";
+var width = getParam("width");
+if (!width)
+  width = "200px";
+
 
 var banner = document.createElement('div');
-
 var bannerlink = document.createElement('a');
-
 var bannerimg = document.createElement("img");
 bannerimg.style.border = "none";
 bannerimg.style.width = width;
+
 
 if (days <= 0) {
     bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/banners/f17release.png");
@@ -36,6 +55,7 @@ if (days <= 0) {
 } else {
     bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora17-countdown-banner-" + days + "." + lang + "." + "png");
     bannerimg.setAttribute("alt", "Fedora 17 Beefy Miracle released in " + days + " days.");
+    bannerimg.style.width = width;
 }
 
 bannerlink.setAttribute("href", url);
