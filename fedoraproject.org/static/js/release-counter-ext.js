@@ -37,9 +37,10 @@ if (lang_match) {
 }
 
 var width = getParam("width");
-if (!width)
-  width = "200px";
+var valid=new RegExp("^[0-9]{2,3}px$","g"); // We should probably forbid more than 300px…
 
+if (!valid.test(width))
+  width="200px";
 
 var banner = document.createElement('div');
 var bannerlink = document.createElement('a');
