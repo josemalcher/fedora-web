@@ -29,8 +29,8 @@ function getParam (sname) {
 var lang_match = getParam("lang");
 if (lang_match) {
     for (var i = 0; i < available_langs.length; ++i) {
-        if (available_langs[i] == lang_match[1]) {
-            lang = lang_match[1];
+        if (available_langs[i] == lang_match) {
+            lang = lang_match;
             break;
         }
     }
