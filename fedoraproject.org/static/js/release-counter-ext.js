@@ -27,6 +27,7 @@ var bannerlink = document.createElement('a');
 
 var bannerimg = document.createElement("img");
 bannerimg.style.border = "none";
+bannerimg.style.width = width;
 
 if (days <= 0) {
     bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/banners/f17release.png");
