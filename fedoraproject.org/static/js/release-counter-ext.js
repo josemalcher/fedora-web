@@ -45,6 +45,7 @@ var banner = document.createElement('div');
 var bannerlink = document.createElement('a');
 var bannerimg = document.createElement("img");
 bannerimg.style.border = "none";
+bannerimg.style.width = width;
 
 
 if (days <= 0) {
@@ -54,7 +55,6 @@ if (days <= 0) {
 } else {
     bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora17-countdown-banner-" + days + "." + lang + "." + "png");
     bannerimg.setAttribute("alt", "Fedora 17 Beefy Miracle released in " + days + " days.");
-    bannerimg.style.width = width;
 }
 
 bannerlink.setAttribute("href", url);
