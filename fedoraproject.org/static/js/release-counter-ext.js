@@ -12,8 +12,8 @@ var lang_match = script.src.match(/release-counter-ext\.js\?lang=(.*)$/);
 
 if (lang_match) {
     for (var i = 0; i < available_langs.length; ++i) {
-        if (available_langs[i] == lang_match[1]) {
-            lang = lang_match[1];
+        if (available_langs[i] == lang_match) {
+            lang = lang_match;
             break;
         }
     }
