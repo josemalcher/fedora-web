@@ -223,9 +223,11 @@ if global_variables.release['curr_state'] == "Beta":
                 <p><a href="${path}/${lang}/get-fedora-options">${Markup(_('Full set of download options &gt;'))}</a></p>
 
                 <div id="fedora-banners">
-                    <!-- See data/template/js to enable static/js/banner.js
-                    <a href="${path}/${lang}/get-fedora"><img alt="Fedora ${global_variables.release['curr_id']} ${global_variables.release['curr_name']} is here!" src="${path}/static/images/banners/f16release.png" /></a>
-                    -->
+                    <py:if test="global_variables.release['curr_state'] != 'Beta'">
+                      <!-- See data/template/js to enable static/js/banner.js -->
+                      <a href="${path}/${lang}/get-fedora"><img alt="Fedora ${global_variables.release['curr_id']} ${global_variables.release['curr_name']} is here!" src="${path}/static/images/banners/f${global_variables.release['curr_id']}release.png" /></a>
+                    </py:if>
+
                     <py:if test="global_variables.release['curr_state'] == 'Beta'">
                       <a href="http://fedoraproject.org/wiki/Releases/${global_variables.release['next_id']}/Schedule"><img src="${path}/static/images/counter/${image}" alt="${Markup(_('Fedora %(release)s %(name)s released in %(number)s days!') % {'release':global_variables.release['next_id'], 'name':global_variables.release['next_name'], 'number':days})}" /></a>
                       <a style="text-decoration: none; font-size: 1.6ex; color: #99AABB;" href="${path}/${lang}/counter">${Markup(_('Add a counter to your own site!'))}</a>
