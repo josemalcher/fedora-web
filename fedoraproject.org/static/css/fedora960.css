@@ -1531,10 +1531,23 @@ li.slide { width: 100% !important; }
 
 .slideShow #feature1 .content {
   left: 0px;
-  height: 200px;
+  width: 440px !important;
+  height: 210px !important;
   margin: 1em;
   padding: 1em;
 }
+
+.slideShow #feature1 img.screenshot {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+#feature1 img.logo {
+  float: left;
+  margin-right: 1em;
+}
+
 .slideShow #feature1 .content li {
 	list-style: disc;
 }
@@ -1584,7 +1597,7 @@ li.slide { width: 100% !important; }
   /* For browsers that don't support RGBa */
   background: rgb(0, 0, 0);
   /* RGBa with 0.6 opacity */
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 8px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
