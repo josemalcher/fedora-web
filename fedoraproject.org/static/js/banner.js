@@ -7,11 +7,11 @@ var banners = [
     "/static/images/banners/f17beta.png",
     "Fedora 17 Beefy Miracle Beta is here!",
     "https://fedoraproject.org/get-prerelease",
-    5
+    0
   ],
   [
-    "/static/images/banners/f16release.png",
-    "Fedora 16 Verne is here!",
+    "/static/images/banners/f17release.png",
+    "Fedora 17 Beefy Miracle is here!",
     "https://fedoraproject.org/get-fedora",
     5
   ],
@@ -25,6 +25,6 @@ var banners = [
     "/static/images/banners/super-packager.png",
     "Fedora Community",
     "https://admin.fedoraproject.org/community/",
-    0
+    1
   ]
 ];

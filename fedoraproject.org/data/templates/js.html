@@ -10,6 +10,8 @@
     <script type="text/javascript" src="${path}/static/js/jquery.slideshow.minified.js"></script>
     <script type="text/javascript" src="${path}/static/js/jquery.tweet.js"></script>
     <script type="text/javascript" src="${path}/static/js/sponsor.js"></script>
-<!--    <script type="text/javascript" src="${path}/static/js/banner.js"></script>
--->    <script type="text/javascript" src="${path}/static/js/init.js"></script>
+    <py:if test="global_variables.release['curr_state'] != 'Beta'"> 
+    <script type="text/javascript" src="${path}/static/js/banner.js"></script>
+    </py:if>
+    <script type="text/javascript" src="${path}/static/js/init.js"></script>
 </html>
