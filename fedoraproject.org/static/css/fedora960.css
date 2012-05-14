@@ -1414,7 +1414,7 @@ li.slide { width: 100% !important; }
 }
 
 .slides #fedora-download { background-color: #444; }
-.slides #feature { background-color: #444; }
+.slides #feature, .slides #feature1 { background-color: #444; }
 .slides #spin { background-color: #444; }
 .slides #group-photo { background-color: #444; }
 
@@ -1529,29 +1529,32 @@ li.slide { width: 100% !important; }
 /* Fedora feature slide */ 
 
 
-.slideShow #feature .content {
+.slideShow #feature1 .content {
   left: 0px;
   height: 200px;
   margin: 1em;
   padding: 1em;
 }
-.slideShow #feature .content li {
+.slideShow #feature1 .content li {
 	list-style: disc;
 }
 
-.slides #feature {
+.slides #feature1 {
   background: #555;
-  background-image: url(../images/banners/virt-manager.png);
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: 60% !important;
-}
+  background-image: url(../images/banners/jbossas7_bkg.png);  
+  background-position: top center;
+  background-repeat: no-repeat;}
 
 .slides #feature .content {
   width: 350px;
   padding-top: 0px !important;
   margin-top: 0px !important;
   margin-left: -50px;
+}
+
+.slides #feature .content h3,
+.slides #feature .content p {
+  color: #444;
 }
 
 /* Fedora spin slide */
@@ -1569,7 +1572,7 @@ li.slide { width: 100% !important; }
 }
 
 .slides #group-photo {
-  background: url(../images/banners/fudcon-milan-2011.jpg) no-repeat top center white;
+  background: url(../images/banners/fudcon-blacksburg-2012.png) no-repeat top center white;
 }
 
 
