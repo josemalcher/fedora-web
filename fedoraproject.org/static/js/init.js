@@ -97,6 +97,7 @@ $(document).ready(function(){
 
 	// main site banners
 	// see: banner.js
+	/* Not used any more
 	var choices = [];
 	var k = 0;
 	for (var i = 0; i < banners.length; ++i) {
@@ -108,7 +109,7 @@ $(document).ready(function(){
     $("#fedora-banners img").attr("src", banners[choices[choice]][0]);
     $("#fedora-banners img").attr("alt", banners[choices[choice]][1]);
     $("#fedora-banners a").attr("href", banners[choices[choice]][2]);
-
+   */
 });
 
 
