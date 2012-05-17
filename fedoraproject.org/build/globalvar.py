@@ -1,5 +1,9 @@
 #!/usr/bin/python
 # This file defines all variable needed to be edited during the release cycle (alpha, beta...).
+# We still have to edit the following files have the right release date:
+# - data/content/index.html
+# - static/js/release-counter-ext.js
+
 release={
     'curr_id':     '16',
     'next_id':     '17',
