@@ -1537,7 +1537,7 @@ li.slide { width: 100% !important; }
   padding: 1em;
 }
 
-.slideShow #feature1 img.screenshot {
+.slideShow img.screenshot {
   position: absolute;
   right: 0px;
   bottom: 0px;
@@ -1579,18 +1579,24 @@ li.slide { width: 100% !important; }
 /* Fedora spin slide */
 
 .slides #spin .content {
+  padding-left: 1em;
   left: 0px;
-  width: 455px;
+  width: 400px;
 }
 
 .slides #spin {
-  background-color: #054C48;
-  background-image: url(../images/banners/fel-banner.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
+background: rgb(39,83,101); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(39,83,101,1) 1%, rgba(81,140,163,1) 36%, rgba(201,218,224,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(39,83,101,1)), color-stop(36%,rgba(81,140,163,1)), color-stop(100%,rgba(201,218,224,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(39,83,101,1) 1%,rgba(81,140,163,1) 36%,rgba(201,218,224,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(39,83,101,1) 1%,rgba(81,140,163,1) 36%,rgba(201,218,224,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(39,83,101,1) 1%,rgba(81,140,163,1) 36%,rgba(201,218,224,1) 100%); /* IE10+ */
+background: linear-gradient(top,  rgba(39,83,101,1) 1%,rgba(81,140,163,1) 36%,rgba(201,218,224,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#275365', endColorstr='#c9dae0',GradientType=0 ); /* IE6-9 */
 }
-
 /* Black backgrounds for slide content where needed */
+
+
 
 .slides #group-photo .content,
 .slides #feature1 .content {
