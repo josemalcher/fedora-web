@@ -8,7 +8,7 @@
 # Diego Búrigo Zacarão <diegobz@indifex.com>, 2011.
 # Dimitris Glezos <glezos@indifex.com>, 2011.
 # Inna Kabanova <ikabanova@russianfedora.ru>, 2012.
-# Misha Shnurapet <shnurapet@fedoraproject.org>, 2010, 2011.
+# Misha Shnurapet <shnurapet@fedoraproject.org>, 2010, 2011, 2012.
 # neb <nick@bebout.net>, 2011.
 #   <sijis@fedoraproject.org>, 2011.
 # Stanislav Darchinov <darchinov@gmail.com>, 2011.
@@ -19,9 +19,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-04-19 23:44+0200\n"
-"PO-Revision-Date: 2012-04-23 10:35+0000\n"
-"Last-Translator: Inna Kabanova <ikabanova@russianfedora.ru>\n"
+"POT-Creation-Date: 2012-05-12 13:29+0200\n"
+"PO-Revision-Date: 2012-05-12 12:01+0000\n"
+"Last-Translator: Kévin Raymond <shaiton@fedoraproject.org>\n"
 "Language-Team: Russian <trans-ru@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -466,6 +466,14 @@ msgid ""
 "language. Currently, the values %(codelang)s are supported. When no language"
 " is specified, English will be used."
 msgstr "Параметр lang можно изменить, чтобы баннер отображался на нужном языке. Поддерживаемые значения:%(codelang)s . Если никакой язык не выбран, баннер отображается на английском."
+
+#: data/content/counter.html:38
+msgid ""
+"The width parameter can be changed to scale the banner. This is a CSS scale,"
+" hence you will loose quality if you change it. Better to keep the default "
+"value (by omitting this parameter). A correct value is between 100px and "
+"200px."
+msgstr ""
 
 #: data/content/download-splash.html:7
 msgid "Fedora Project - Download next steps."
@@ -1179,14 +1187,14 @@ msgstr "Больше возможностей загрузки..."
 
 #: data/content/get-fedora.html:44
 msgid "Need to upgrade Fedora?"
-msgstr "Нужно обновить Fedora?"
+msgstr "Требуются переводчики"
 
 #: data/content/get-fedora.html:45
 msgid ""
 "Live Media can't be used to upgrade Fedora installations. Instead, you can "
 "upgrade Fedora right from your desktop. Do this by using Preupgrade - it  "
 "will  install the packages you need and upgrade your version of Fedora."
-msgstr "Live-носитель не может быть использован для обновления предыдущих установок Fedora. Вместо этого вы можете обновиться прямо из своего рабочего стола. Делайте это с помощью Preupgrade &mdash; эта программа установить пакеты, которые вам необходимы и обновит вашу версию Fedora."
+msgstr "При загрузке и установке у вас будет возможность выбрать русский язык и использовать его в качестве языка по умолчанию. Тем не менее, русской команде локализации требуются переводчики, которые помогут сделать перевод более полным. https://fedoraproject.org/wiki/L10N/ru/Tasks"
 
 #: data/content/get-fedora.html:46
 #, python-format
@@ -6162,8 +6170,8 @@ msgid "Learn more about the relationship between Red Hat and Fedora >"
 msgstr "Подробнее о том, как проект связан с компанией →"
 
 #: data/templates/foot.html:70
-msgid "© 2011 Red Hat, Inc. and others."
-msgstr "© 2011 Red Hat и другие."
+msgid "© 2012 Red Hat, Inc. and others."
+msgstr ""
 
 #: data/templates/foot.html:73
 msgid "Sponsors"
