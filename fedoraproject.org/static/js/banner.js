@@ -24,7 +24,7 @@ var banners = [
   [
     "/static/images/banners/super-packager.png",
     "Fedora Community",
-    "https://admin.fedoraproject.org/community/",
+    "https://apps.fedoraproject.org/packages/",
     1
   ]
 ];
