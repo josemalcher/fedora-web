@@ -5,31 +5,6 @@
   <xi:include href="../templates/master.html" />
 <?python
 area = "main"
-
-#data used for ordering section 
-sdata = {
-    'broffice': _('Brazilian localized spin that provides the legal brand for OpenOffice.org in Brazil.'),
-    'edu': _('A special selection of applications related to educational and scientific purposes.'),
-    'math': "This is math",
-    'kiosk': _('Secure kiosks: no longer an oxymoron.'),
-    'kde': _('A complete, modern desktop built using the KDE Plasma Desktop.'),
-    'xfce': _('A complete, well-integrated Xfce desktop.'),
-    'lxde': _('A light, fast, less-resource hungry desktop environment.'),
-    'aos': _('A scaled-down version of Fedora with a small footprint for running an appliance.'),
-    'developer': "This is developer",
-    'electronic-lab': _('Fedora\'s high-end hardware design and simulation platform.'),
-    'fel': _('Fedora\'s high-end hardware design and simulation platform.'),
-    'games': _('A perfect show-case of the best games available in Fedora.'),
-    'design': _('Open Creativity.'),
-    'design-suite': _('Open Creativity.'),
-    'desktop': _('The Desktop spin of Fedora is the primary spin as provided on fedoraproject.org.'),
-    'security': _('Security analysis tools.'),
-    'moblin': _('The future of the mobile internet.'),
-    'soas': _('Discover. Reflect. Share. Learn.'),
-    'scientific-kde': _('Open Source Scientific Computing.'),
-    'robotics': _('Dive into Robotics.')
-}
-
 comm_info = community_paths[random.randint(0, len(community_paths)-1)]
 
 ?>
@@ -56,7 +31,7 @@ comm_info = community_paths[random.randint(0, len(community_paths)-1)]
 							<td class="rank">#${t+1}</td>
 							<td class="name"><a href="${relpath}/${name.lower()}/">${name}</a> <br />${num} ${_('downloads')}</td>
 							<td><a href="${relpath}/${name.lower()}/"><img src="${relpath}/static/images/spin/${name.lower()}-mini.png" /></a></td>
-							<td>${sdata[name.lower()]}<br /><span class="learn-more"><a href="${relpath}/${name.lower()}/">${_('Learn more &amp; download! &gt;')}</a></span></td>
+							<td>${spin_detail[name.lower()]}<br /><span class="learn-more"><a href="${relpath}/${name.lower()}/">${_('Learn more &amp; download! &gt;')}</a></span></td>
 						</tr>
 					</tbody>
 				</table>
@@ -73,7 +48,7 @@ comm_info = community_paths[random.randint(0, len(community_paths)-1)]
 							<td class="rank">#${t+1}</td>
 							<td class="name"><a href="${relpath}/${name.lower()}/">${name}</a> <br />${num} downloads</td>
 							<td><a href="${relpath}/${name.lower()}/"><img src="${relpath}/static/images/spin/${name.lower()}-mini.png" /></a></td>
-							<td>${sdata[name.lower()]}<br /><span class="learn-more"><a href="${relpath}/${name.lower()}/">${Markup(_('Learn more &amp; download! &gt;'))}</a></span></td>
+							<td>${spin_detail[name.lower()]}<br /><span class="learn-more"><a href="${relpath}/${name.lower()}/">${Markup(_('Learn more &amp; download! &gt;'))}</a></span></td>
 						</tr>
 					</tbody>
 				</table>				

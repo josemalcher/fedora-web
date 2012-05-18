@@ -32,7 +32,7 @@
 				fspinname = spinnames[torrents.getrandomtorrent(spinnames)]
 			?>
 			<a href="${relpath}/${fspinname.lower()}/"><img src="/static/images/spin/${fspinname.lower()}-feature.png" /></a>
-			<p>${_(sdata_feature[fspinname.lower()])}</p>
+			<p>${_(spin_detail[fspinname.lower()])}</p>
 			<h3><a href="${relpath}/${fspinname.lower()}/">${_('Learn more &gt;')}</a></h3>
 		</div>
 		<div id="make-own-spin">
@@ -54,7 +54,7 @@
 		</div>
 		<div id="whatis-this-spin">
 			<h2>${_('What is this Spin?')}</h2>
-			<p>${_(sdata_feature[area.lower()])}</p>
+			<p>${_(spin_detail[area.lower()])}</p>
 			<h3><a href="${relpath}/${area}">${_('Learn more &gt;')}</a></h3>
 		</div>
 		</py:otherwise>

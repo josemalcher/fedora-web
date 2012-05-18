@@ -6,13 +6,13 @@
 # Dimitris Glezos <glezos@indifex.com>, 2011.
 # Juhani Numminen <juhaninumminen0@gmail.com>, 2012.
 # neb <nick@bebout.net>, 2011.
-# Ville-Pekka Vainio <vpvainio@iki.fi>, 2011.
+# Ville-Pekka Vainio <vpvainio@iki.fi>, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-04-19 23:44+0200\n"
-"PO-Revision-Date: 2012-04-19 22:13+0000\n"
+"POT-Creation-Date: 2012-05-12 13:29+0200\n"
+"PO-Revision-Date: 2012-05-12 12:01+0000\n"
 "Last-Translator: Kévin Raymond <shaiton@fedoraproject.org>\n"
 "Language-Team: Finnish (http://www.transifex.net/projects/p/fedora/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -222,15 +222,15 @@ msgstr "Palaa Fedoran pääsivulle."
 
 #: data/content/code-of-conduct.html:7
 msgid "Fedora Project - Fedora Project Code of Conduct"
-msgstr ""
+msgstr "Fedora-projekti - Fedora-projektin käyttäytymisetiketti"
 
 #: data/content/code-of-conduct.html:13
 msgid "Code of Conduct"
-msgstr ""
+msgstr "Käyttäytymisetiketti"
 
 #: data/content/code-of-conduct.html:14
 msgid "Behave as a community member, follow the Code of Conduct."
-msgstr ""
+msgstr "Noudata käyttäytymisetikettiä yhteisön jäsenenä."
 
 #: data/content/code-of-conduct.html:21
 msgid ""
@@ -457,6 +457,14 @@ msgid ""
 "The lang parameter can be changed to display the counter in a different "
 "language. Currently, the values %(codelang)s are supported. When no language"
 " is specified, English will be used."
+msgstr "Lang-parametria voidaan muuttaa laskurin näyttämiseksi eri kielellä. Tällä hetkellä tuetaan arvoja %(codelang)s. Kun kieltä ei ole määritelty, käytetään englantia."
+
+#: data/content/counter.html:38
+msgid ""
+"The width parameter can be changed to scale the banner. This is a CSS scale,"
+" hence you will loose quality if you change it. Better to keep the default "
+"value (by omitting this parameter). A correct value is between 100px and "
+"200px."
 msgstr ""
 
 #: data/content/download-splash.html:7
@@ -707,17 +715,17 @@ msgstr "Jos asennusmedian ostamiseen ei ole varaa, voit pyytää asennusmedioita
 
 #: data/content/get-fedora-all.html:134
 msgid "Download Fedora Sources"
-msgstr ""
+msgstr "Lataa Fedoran lähdekoodit"
 
 #: data/content/get-fedora-all.html:136
 #, python-format
 msgid "Fedora %(release)s Source DVD (%(size)s GB)"
-msgstr ""
+msgstr "Fedora %(release)s lähde-DVD (%(size)s Gt)"
 
 #: data/content/get-fedora-all.html:137
 #, python-format
 msgid "Fedora %(release)s Source RPMs"
-msgstr ""
+msgstr "Fedora %(release)s -lähde-RPM:t"
 
 #: data/content/get-fedora-options.html:7
 msgid "Fedora Project - Get Fedora by Desktops, Formats or Spins."
@@ -751,7 +759,7 @@ msgstr "Fedoran kanssa voi käyttää useita eri työpöytäympäristöjä. Joka
 #: data/content/get-fedora-options.html:43
 #, python-format
 msgid "Fedora %(release)s Desktop Edition"
-msgstr "Fedora %(release)s työpöytäversio"
+msgstr "Fedora %(release)s -työpöytäversio"
 
 #: data/content/get-fedora-options.html:43
 msgid "Fedora Default"
@@ -821,7 +829,7 @@ msgstr "64-bittinen"
 #: data/content/get-fedora-options.html:71
 #, python-format
 msgid "Fedora %(release)s KDE Spin"
-msgstr "Fedora %(release)s KDE-spin"
+msgstr "Fedora %(release)s -KDE-spin"
 
 #: data/content/get-fedora-options.html:77
 msgid "KDE-based Fedora desktop."
@@ -838,7 +846,7 @@ msgstr "KDE.org-verkkosivu"
 #: data/content/get-fedora-options.html:97
 #, python-format
 msgid "Fedora %(release)s LXDE Spin"
-msgstr "Fedora %(release)s LXDE-spin"
+msgstr "Fedora %(release)s -LXDE-spin"
 
 #: data/content/get-fedora-options.html:103
 msgid "LXDE-based Fedora desktop."
@@ -855,7 +863,7 @@ msgstr "LXDE.org-verkkosivu"
 #: data/content/get-fedora-options.html:123
 #, python-format
 msgid "Fedora %(release)s Xfce Spin"
-msgstr "Fedora %(release)s Xfce-spin"
+msgstr "Fedora %(release)s -Xfce-spin"
 
 #: data/content/get-fedora-options.html:129
 msgid "Xfce-based Fedora desktop."
@@ -876,7 +884,7 @@ msgstr "Fedora-lataukset muodon mukaan"
 #: data/content/get-fedora-options.html:157
 #, python-format
 msgid "Fedora %(release)s Live Media / Spins"
-msgstr ""
+msgstr "Fedora %(release)s -livemedia / Spinit"
 
 #: data/content/get-fedora-options.html:158
 msgid ""
@@ -896,7 +904,7 @@ msgstr "Mene Spin-hakemistoon"
 #: data/content/get-fedora-options.html:169
 #, python-format
 msgid "Fedora %(release)s DVD"
-msgstr "Fedora %(release)s DVD"
+msgstr "Fedora %(release)s -DVD"
 
 #: data/content/get-fedora-options.html:170
 msgid ""
@@ -929,12 +937,12 @@ msgstr "3,5 Gt:n ISO-levykuva 64-bittiselle PC:lle"
 msgid ""
 "For help determining what architecture your system is, <a href=\"%s\">please"
 " view our architecture help guide</a>."
-msgstr ""
+msgstr "<a href=\"%s\">Arkkitehtuurioppaamme</a> auttaa selvittämään järjestelmäsi arkkitehtuurin."
 
 #: data/content/get-fedora-options.html:205
 #, python-format
 msgid "Fedora %(release)s Media by Mail"
-msgstr ""
+msgstr "Fedora %(release)s -media postitse"
 
 #: data/content/get-fedora-options.html:206
 #, python-format
@@ -1082,7 +1090,7 @@ msgstr "Kateviä resursseja"
 msgid ""
 "http://docs.fedoraproject.org/en-"
 "US/Fedora/%(release)s/html/Installation_Guide/index.html"
-msgstr ""
+msgstr "http://docs.fedoraproject.org/fi-FI/Fedora/%(release)s/html/Installation_Guide/index.html"
 
 #: data/content/get-fedora-options.html:304 data/content/get-fedora.html:82
 msgid "Installation Guide"
@@ -1093,7 +1101,7 @@ msgstr "Asennusopas"
 msgid ""
 "http://docs.fedoraproject.org/en-"
 "US/Fedora/%(release)s/html/Release_Notes/index.html"
-msgstr ""
+msgstr "http://docs.fedoraproject.org/fi-FI/Fedora/%(release)s/html/Release_Notes/index.html"
 
 #: data/content/get-fedora-options.html:305 data/content/get-fedora.html:83
 msgid "Release Notes"
@@ -1139,7 +1147,7 @@ msgstr "Fedora-projekti - Lataa Fedora ja kokeile sitä."
 #: data/content/get-fedora.html:25
 #, python-format
 msgid "Did someone say... &ldquo;<a href=\"get-prerelease\">%s</a>&rdquo;?"
-msgstr ""
+msgstr "Sanoiko joku... &ldquo;<a href=\"get-prerelease\">%s</a>&rdquo;?"
 
 #: data/content/get-fedora.html:30
 #, python-format
@@ -1199,7 +1207,7 @@ msgstr "KDE, Xfce, Gnome ja muita"
 
 #: data/content/get-fedora.html:53
 msgid "Games, Design, Security, and others"
-msgstr ""
+msgstr "Pelit, suunnittelu, turvallisuus ja muita"
 
 #: data/content/get-fedora.html:54
 msgid "Clouds"
@@ -1479,31 +1487,31 @@ msgstr "Lisää vaihtoehtoja >"
 #: data/content/index.html:67
 #, python-format
 msgid "Try Fedora %(release)s %(state)s Now!"
-msgstr ""
+msgstr "Kokeile %(release)s %(state)sa nyt!"
 
 #: data/content/index.html:76
 msgid "Manage virtual machines better."
-msgstr ""
+msgstr "Hallitse paremmin virtuaalikoneita."
 
 #: data/content/index.html:77
 msgid "From within VirtManager you now can:"
-msgstr ""
+msgstr "VirtManagerista käsin voit:"
 
 #: data/content/index.html:79
 msgid "Browse your VMs' filesystem graphically."
-msgstr ""
+msgstr "Selata virtuaalikoneen tiedostoja graafisesti."
 
 #: data/content/index.html:80
 msgid "Read system registry entries from Windows®-based VMs."
-msgstr ""
+msgstr "Lue järjestelmän rekisteriä Windows®-virtuaalikoneista."
 
 #: data/content/index.html:81
 msgid "View what OS is running on your VMs at a glance via icons."
-msgstr ""
+msgstr "Kuvakkeita vilkaisemalla näet nopeasti mitä käyttöjärjestelmiä virtuaalikoneesi käyttävät."
 
 #: data/content/index.html:82
 msgid "View a list of applications installed in your VMs."
-msgstr ""
+msgstr "Listaa virtuaalikoneisiisi asennetut sovellukset."
 
 #: data/content/index.html:84 data/content/index.html:93
 msgid "Learn More >"
@@ -1511,13 +1519,13 @@ msgstr "Lisätietoja >"
 
 #: data/content/index.html:91
 msgid "Advanced Innovation Platform"
-msgstr ""
+msgstr "Innovaatioita"
 
 #: data/content/index.html:92
 msgid ""
 "Fedora now offers the scientific spin and the robotics spin, to create a "
 "better platform for scientists, engineers and innovators."
-msgstr ""
+msgstr "Fedora tarjoaa tieteellisen ja robotiikkaspinin tutkijoille, insinööreille ja innovaattoreille."
 
 #: data/content/index.html:100
 msgid "A worldwide community of friends."
@@ -1682,7 +1690,7 @@ msgstr "Näytä kaikki ohjeet >"
 
 #: data/content/index.html:216
 msgid "Installation Requirements"
-msgstr ""
+msgstr "Asennusvaatimukset"
 
 #: data/content/index.html:218
 #, python-format
@@ -1718,7 +1726,7 @@ msgstr "Kaikki latausvaihtoehdot >"
 #: data/content/index.html:230
 #, python-format
 msgid "Fedora %(release)s %(name)s released in %(number)s days!"
-msgstr ""
+msgstr "Fedora %(release)s %(name)s julkaistaan %(number)s päivän päästä!"
 
 #: data/content/index.html:231
 msgid "Add a counter to your own site!"
@@ -1892,7 +1900,7 @@ msgstr "Nämä ylläpitäjät ja webiin perehtyneet kehittäjät rakentavat infr
 
 #: data/content/join-fedora.html:130
 msgid "Meet Fedora."
-msgstr ""
+msgstr "Tapaa Fedora."
 
 #: data/content/join-fedora.html:134
 msgid "North American events"
@@ -3017,7 +3025,7 @@ msgid ""
 "integration treats for you. The desktop clock integrates with your Evolution"
 " calendar events and task list, displaying your appointments and to-dos "
 "right alongside the clock."
-msgstr ""
+msgstr "Jos käytät Evolutionia, Fedoran työpöydän kello näyttää kokouksesi ja tehtäväsi kellon vieressä."
 
 #: data/content/features/index.html:421
 msgid ""
@@ -4372,14 +4380,14 @@ msgstr ""
 
 #: data/content/using/life/michelsalim.html:46
 msgid "What chat & instant messaging application in Fedora to you recommend?"
-msgstr ""
+msgstr "Mitä chat- ja pikaviestiohjelmaa suosittelet Fedoraan?"
 
 #: data/content/using/life/michelsalim.html:47
 #, python-format
 msgid ""
 "For instant messaging, I recommend an application called <a "
 "href=\"%s\">Pidgin</a>. There are some cool plugins for it:"
-msgstr ""
+msgstr "Pikaviestintään suosittelen ohjelmaa nimeltä <a href=\"%s\">Pidgin</a>. Sille on joitakin hienoja liitännäisiä:"
 
 #: data/content/using/life/michelsalim.html:49
 msgid ""
@@ -5016,23 +5024,23 @@ msgstr "Tiesitkö, että Fedorasta on olemassa opetusversio lapsille. Lisätieto
 
 #: data/content/using/life/thomascameron.html:34
 msgid "Where are you and your daughter from?"
-msgstr ""
+msgstr "Mistä sinä ja tyttäresi olette kotoisin?"
 
 #: data/content/using/life/thomascameron.html:35
 msgid "We're from Austin, Texas!"
-msgstr ""
+msgstr "Austinista, Texasista!"
 
 #: data/content/using/life/thomascameron.html:37
 msgid "What does your daughter want to be when she grows up?"
-msgstr ""
+msgstr "Miksi tyttäresi haluaa tulla isona?"
 
 #: data/content/using/life/thomascameron.html:38
 msgid "An artist."
-msgstr ""
+msgstr "Taitelijaksi."
 
 #: data/content/using/life/thomascameron.html:40
 msgid "Do you think she'll use Fedora when she grows up?"
-msgstr ""
+msgstr "Luuletko, että hän käyttää Fedoraa isompana?"
 
 #: data/content/using/life/thomascameron.html:41
 msgid "Yes!"
@@ -5040,15 +5048,15 @@ msgstr "Kyllä!"
 
 #: data/content/using/life/thomascameron.html:43
 msgid "When did your daughter first start using Fedora?"
-msgstr ""
+msgstr "Milloin tyttäresi käytti ensimmäisen kerran Fedoraa?"
 
 #: data/content/using/life/thomascameron.html:44
 msgid "Around the time she was three years old."
-msgstr ""
+msgstr "Kun hän oli noin kolmivuotias."
 
 #: data/content/using/life/thomascameron.html:46
 msgid "What are your daughter's favorite things to do in Fedora?"
-msgstr ""
+msgstr "Mitä tyttäresi tekee mieluiten Fedoralla?"
 
 #: data/content/using/life/thomascameron.html:47
 #, python-format
@@ -5067,7 +5075,7 @@ msgstr ""
 
 #: data/content/using/life/thomascameron.html:52
 msgid "AisleRiot Solitaire"
-msgstr ""
+msgstr "AisleRiot-pasianssi"
 
 #: data/content/using/life/thomascameron.html:53
 msgid "KFourInline (it's similar to the Connect-Four board game.)"
@@ -5075,7 +5083,7 @@ msgstr ""
 
 #: data/content/using/life/thomascameron.html:54
 msgid "Kolf (mini-golf!)"
-msgstr ""
+msgstr "Kolf (minigolf!)"
 
 #: data/content/using/life/thomascameron.html:55
 msgid "SameGnome (a color-based puzzle game.)"
@@ -5210,7 +5218,7 @@ msgstr ""
 
 #: data/content/using/tutorials/agave.html:46
 msgid "Color chooser methods"
-msgstr ""
+msgstr "Värinvalintatavat"
 
 #: data/content/using/tutorials/agave.html:47
 msgid ""
@@ -5249,7 +5257,7 @@ msgstr ""
 
 #: data/content/using/tutorials/agave.html:52
 msgid "Have a specific color code in mind?"
-msgstr ""
+msgstr "Haluaisitko jonkun tietyn värin?"
 
 #: data/content/using/tutorials/agave.html:53
 msgid ""
@@ -5263,7 +5271,7 @@ msgstr ""
 
 #: data/content/using/tutorials/agave.html:54
 msgid "Finishing Up"
-msgstr ""
+msgstr "Viimeistely"
 
 #: data/content/using/tutorials/agave.html:55
 msgid ""
@@ -5438,7 +5446,7 @@ msgstr ""
 #: data/content/using/tutorials/gnote.html:91
 #: data/content/using/tutorials/launcher.html:49
 msgid "Enjoy and share!"
-msgstr ""
+msgstr "Nauti ja jaa!"
 
 #: data/content/using/tutorials/agave.html:97
 msgid ""
@@ -5496,7 +5504,7 @@ msgstr ""
 
 #: data/content/using/tutorials/cheese.html:35
 msgid "The basics"
-msgstr ""
+msgstr "Perusteet"
 
 #: data/content/using/tutorials/cheese.html:36
 msgid ""
@@ -5517,7 +5525,7 @@ msgstr ""
 
 #: data/content/using/tutorials/cheese.html:39
 msgid "Sharing your photos and videos"
-msgstr ""
+msgstr "Kuvien ja videoiden jakaminen"
 
 #: data/content/using/tutorials/cheese.html:40
 msgid ""
@@ -6154,8 +6162,8 @@ msgid "Learn more about the relationship between Red Hat and Fedora >"
 msgstr "Lisätietoja Red Hatin ja Fedoran suhteesta >"
 
 #: data/templates/foot.html:70
-msgid "© 2011 Red Hat, Inc. and others."
-msgstr "© 2011 Red Hat, Inc. ja muita."
+msgid "© 2012 Red Hat, Inc. and others."
+msgstr ""
 
 #: data/templates/foot.html:73
 msgid "Sponsors"
