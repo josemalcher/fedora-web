@@ -212,13 +212,13 @@ if global_variables.release['curr_state'] == "Beta":
 
             <!-- start sidebar -->
             <div class="grid_4 omega" id="right-sidebar">
-                <h4>${_('Installation Requirements')}</h4>
+                <h4>${_('Recommended installation requirements')}</h4>
                 <ul class="checkmark-list">
-                    <li>${Markup(_('%sMHz Pentium Pro or better processor (comparable AMD, Cyrix, and VIA processors also acceptable)') % '400')}</li>
-                    <li>${Markup(_('At least %sMB memory (RAM), %sGB recommended for best performance') % ('768', '1'))}</li>
-                    <li>${Markup(_('%sGB disk space / storage') % '10')}</li>
+                    <li>${_('64-bit Intel-compatible PC')}</li>
+                    <li>${_('%sGB memory (RAM)') % '1'}</li>
+                    <li>${_('%sGB disk space / storage') % '10'}</li>
                 </ul>
-                <p><a href="${_('http://docs.fedoraproject.org/en-US/Fedora/16/html/Release_Notes/sect-Release_Notes-Welcome_to_Fedora_16.html#sect-Release_Notes-Hardware_Overview')}">${Markup(_('More about requirements &gt;'))}</a></p>
+                <p><a href="${_('http://docs.fedoraproject.org/en-US/Fedora/17/html/Release_Notes/sect-Release_Notes-Welcome_to_Fedora_17.html#sect-Release_Notes-Hardware_Overview')}">${Markup(_('More about requirements &gt;'))}</a></p>
                 <p><a href="${path}/${lang}/get-fedora-options">${Markup(_('Full set of download options &gt;'))}</a></p>
 
                 <div id="fedora-banners">
