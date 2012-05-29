@@ -12,7 +12,7 @@ release={
 path={
     'torrent':         'http://torrent.fedoraproject.org/torrents',
     'download':        'http://download.fedoraproject.org/pub/fedora/linux/releases',
-    'download_spins':  'http://download.fedoraproject.org/pub/alt/spins/linux/releases',
+    'download_spins':  'http://download.fedoraproject.org/pub/alt/releases',
     'mirrors':         'http://mirrors.fedoraproject.org/metalink?path=pub/fedora/linux/releases',
     'checksums':       'https://fedoraproject.org/static/checksums'
 }
