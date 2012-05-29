@@ -19,8 +19,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-05-12 13:29+0200\n"
-"PO-Revision-Date: 2012-05-12 12:01+0000\n"
+"POT-Creation-Date: 2012-05-18 11:01+0200\n"
+"PO-Revision-Date: 2012-05-19 10:01+0000\n"
 "Last-Translator: Tomoyuki KATO <tomo@dream.daynight.jp>\n"
 "Language-Team: Japanese <trans-ja@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
@@ -34,7 +34,7 @@ msgstr ""
 msgid "Fedora Project - What is Fedora and what makes it different?"
 msgstr "Fedora Project - Fedora とは何ですか？何が異なりますか？"
 
-#: data/content/about-fedora.html:13 data/content/index.html:132
+#: data/content/about-fedora.html:13 data/content/index.html:131
 #: data/templates/foot.html:10
 msgid "About Fedora"
 msgstr "Fedora について"
@@ -78,7 +78,7 @@ msgid ""
 "technologies."
 msgstr "<strong>Fedora Project</strong>は、フリーソフトウェアを愛するユーザーと、それを作り上げる人々が集う世界的なコミュニティの名前です。私たちは、コミュニティとして一緒に働くことによって、フリーコードとコンテンツの創造・普及をリードしたいと考えています。Fedoraは、オープンソース技術の提供者として世界で最も信頼を受けている企業<strong><a href=\"http://redhat.com\">Red Hat</a></strong>により後援されています。Red Hatは、共同開発を促進し、<a href=\"http://ja.wikipedia.org/wiki/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2\">フリーソフトウェア</a>の革新的な新技術を生み出していくために、Fedoraに出資しています。"
 
-#: data/content/about-fedora.html:29 data/content/index.html:190
+#: data/content/about-fedora.html:29 data/content/index.html:189
 msgid "What makes Fedora different?"
 msgstr "Fedoraは何が違いますか？"
 
@@ -568,7 +568,7 @@ msgstr "Fedora は 100%% 自由であり楽しみを共有することができ�
 msgid "Fedora isn't just free-of-charge. It's free as in freedom. Learn more."
 msgstr "Fedora で Free は無料という意味ではありません。Free とは自由です。詳しく知る。"
 
-#: data/content/get-fedora-all.html:28 data/content/get-fedora-all.html:141
+#: data/content/get-fedora-all.html:28 data/content/get-fedora-all.html:142
 #: data/content/keys.html:28 data/content/keys.html:399
 #: data/content/verify.html:28 data/content/verify.html:137
 msgid "&#8592; Back to the main \"Get Fedora\" page"
@@ -696,15 +696,19 @@ msgstr "すべてのカスタム Spin を表示"
 msgid "See old versions of Fedora"
 msgstr "以前のバージョンのFedoraを見る"
 
-#: data/content/get-fedora-all.html:124
+#: data/content/get-fedora-all.html:122
+msgid "Cloud Images"
+msgstr "クラウド向けイメージ"
+
+#: data/content/get-fedora-all.html:125
 msgid "Slow Internet? No Internet?"
 msgstr "インターネット環境がない/回線が遅い場合"
 
-#: data/content/get-fedora-all.html:125
+#: data/content/get-fedora-all.html:126
 msgid "Get a copy of Fedora Media sent via postal mail."
 msgstr "Fedora のインストールメディアを郵送で入手することができます。"
 
-#: data/content/get-fedora-all.html:127
+#: data/content/get-fedora-all.html:128
 msgid ""
 "Purchase installation media for Fedora from <a name=\"media\" "
 "href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">online "
@@ -713,7 +717,7 @@ msgid ""
 "vendor</a> in your area."
 msgstr "<a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">オンラインベンダー</a>もしくはお近くの<a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">ローカルベンダー</a>にインストールメディアを注文します。"
 
-#: data/content/get-fedora-all.html:128
+#: data/content/get-fedora-all.html:129
 msgid ""
 "Can't afford the price of installation media? Request Fedora installation "
 "media from the <a "
@@ -721,16 +725,16 @@ msgid ""
 "Media Program</a>."
 msgstr "インストールメディアの費用負担が困難な場合は、<a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Fedora Free Media Program</a> にメディアの郵送をリクエストします。"
 
-#: data/content/get-fedora-all.html:134
+#: data/content/get-fedora-all.html:135
 msgid "Download Fedora Sources"
 msgstr "Fedora ソースのダウンロード"
 
-#: data/content/get-fedora-all.html:136
+#: data/content/get-fedora-all.html:137
 #, python-format
 msgid "Fedora %(release)s Source DVD (%(size)s GB)"
 msgstr "Fedora %(release)s ソース DVD (%(size)s GB)"
 
-#: data/content/get-fedora-all.html:137
+#: data/content/get-fedora-all.html:138
 #, python-format
 msgid "Fedora %(release)s Source RPMs"
 msgstr "Fedora %(release)s ソース RPM"
@@ -751,11 +755,15 @@ msgstr "形式"
 msgid "Spins"
 msgstr "Spin"
 
-#: data/content/get-fedora-options.html:40
+#: data/content/get-fedora-options.html:30 data/content/get-fedora.html:54
+msgid "Clouds"
+msgstr "クラウド"
+
+#: data/content/get-fedora-options.html:41
 msgid "Fedora Desktops"
 msgstr "Fedora デスクトップ版"
 
-#: data/content/get-fedora-options.html:41
+#: data/content/get-fedora-options.html:42
 msgid ""
 "There are multiple desktops available for use with Fedora. Each has a "
 "slightly different look and feel and offers varying levels of customization."
@@ -764,55 +772,45 @@ msgid ""
 "figure out which one is best for you!"
 msgstr "　Fedora では利用可能なデスクトップが複数あります。それぞれ少しずつ異なるルック＆フィールで、さまざまなレベルのカスタマイズが可能です。デスクトップによりウィンドウ、アイコン、メニュー、各種の基本的なデスクトップインターフェイスのルック＆フィールが異なります。それぞれ試してみてお気に入りのデスクトップを見つけてください。"
 
-#: data/content/get-fedora-options.html:43
+#: data/content/get-fedora-options.html:44
 #, python-format
 msgid "Fedora %(release)s Desktop Edition"
-msgstr "Fedora %(release)s Desktop エディション"
+msgstr "Fedora %(release)s デスクトップ版"
 
-#: data/content/get-fedora-options.html:43
+#: data/content/get-fedora-options.html:44
 msgid "Fedora Default"
 msgstr "Fedora デフォルト"
 
-#: data/content/get-fedora-options.html:47
-#: data/content/get-fedora-options.html:154
-#: data/content/get-fedora-options.html:166
-#: data/content/get-fedora-options.html:202
+#: data/content/get-fedora-options.html:48
+#: data/content/get-fedora-options.html:155
+#: data/content/get-fedora-options.html:167
+#: data/content/get-fedora-options.html:203
+#: data/content/get-fedora-options.html:284
 msgid "32-bit PC Edition"
 msgstr "32 ビット PC 版"
 
-#: data/content/get-fedora-options.html:50
+#: data/content/get-fedora-options.html:51
+#: data/content/get-fedora-options.html:287
 msgid "The GNOME-based default Fedora Desktop."
-msgstr "GNOME ベースのデフォルトとなる Fedora デスクトップ版です。"
-
-#: data/content/get-fedora-options.html:52
-msgid "Fedora Desktop spin homepage"
-msgstr "Fedora Desktop の Spin ホームページ"
+msgstr "標準的な GNOME ベースの Fedora デスクトップ版です。"
 
 #: data/content/get-fedora-options.html:53
+#: data/content/get-fedora-options.html:289
+msgid "Fedora Desktop spin homepage"
+msgstr "Fedora デスクトップ Spin ホームページ"
+
+#: data/content/get-fedora-options.html:54
+#: data/content/get-fedora-options.html:290
 msgid "GNOME.org website"
 msgstr "GNOME.org ウェブサイト"
 
-#: data/content/get-fedora-options.html:59
-#: data/content/get-fedora-options.html:85
-#: data/content/get-fedora-options.html:111
-#: data/content/get-fedora-options.html:137
-#: data/content/get-fedora-options.html:176
+#: data/content/get-fedora-options.html:60
+#: data/content/get-fedora-options.html:86
+#: data/content/get-fedora-options.html:112
+#: data/content/get-fedora-options.html:138
+#: data/content/get-fedora-options.html:177
 msgid "32-bit"
 msgstr "32 ビット"
-
-#: data/content/get-fedora-options.html:60
-#: data/content/get-fedora-options.html:65
-#: data/content/get-fedora-options.html:86
-#: data/content/get-fedora-options.html:91
-#: data/content/get-fedora-options.html:112
-#: data/content/get-fedora-options.html:117
-#: data/content/get-fedora-options.html:138
-#: data/content/get-fedora-options.html:143
-#: data/content/get-fedora-options.html:179
-#: data/content/get-fedora-options.html:188 data/content/get-fedora.html:37
-#: data/content/index.html:62
-msgid "Download Now!"
-msgstr "いますぐダウンロード！"
 
 #: data/content/get-fedora-options.html:61
 #: data/content/get-fedora-options.html:66
@@ -822,99 +820,113 @@ msgstr "いますぐダウンロード！"
 #: data/content/get-fedora-options.html:118
 #: data/content/get-fedora-options.html:139
 #: data/content/get-fedora-options.html:144
+#: data/content/get-fedora-options.html:180
+#: data/content/get-fedora-options.html:189 data/content/get-fedora.html:37
+#: data/content/index.html:62
+msgid "Download Now!"
+msgstr "いますぐダウンロード！"
+
+#: data/content/get-fedora-options.html:62
+#: data/content/get-fedora-options.html:67
+#: data/content/get-fedora-options.html:88
+#: data/content/get-fedora-options.html:93
+#: data/content/get-fedora-options.html:114
+#: data/content/get-fedora-options.html:119
+#: data/content/get-fedora-options.html:140
+#: data/content/get-fedora-options.html:145
 #, python-format
 msgid "%sMB CD ISO"
 msgstr "%sMB CD ISO イメージ"
 
-#: data/content/get-fedora-options.html:64
-#: data/content/get-fedora-options.html:90
-#: data/content/get-fedora-options.html:116
-#: data/content/get-fedora-options.html:142
-#: data/content/get-fedora-options.html:185
+#: data/content/get-fedora-options.html:65
+#: data/content/get-fedora-options.html:91
+#: data/content/get-fedora-options.html:117
+#: data/content/get-fedora-options.html:143
+#: data/content/get-fedora-options.html:186
 msgid "64-bit"
 msgstr "64 ビット"
 
-#: data/content/get-fedora-options.html:71
+#: data/content/get-fedora-options.html:72
 #, python-format
 msgid "Fedora %(release)s KDE Spin"
 msgstr "Fedora %(release)s KDE Spin"
 
-#: data/content/get-fedora-options.html:77
+#: data/content/get-fedora-options.html:78
 msgid "KDE-based Fedora desktop."
 msgstr "KDE ベースの Fedora デスクトップ版です。"
 
-#: data/content/get-fedora-options.html:79
+#: data/content/get-fedora-options.html:80
 msgid "Fedora KDE Spin homepage"
 msgstr "Fedora KDE Spin ホームページ"
 
-#: data/content/get-fedora-options.html:80
+#: data/content/get-fedora-options.html:81
 msgid "KDE.org website"
 msgstr "KDE.org ウェブサイト"
 
-#: data/content/get-fedora-options.html:97
+#: data/content/get-fedora-options.html:98
 #, python-format
 msgid "Fedora %(release)s LXDE Spin"
 msgstr "Fedora %(release)s LXDE Spin"
 
-#: data/content/get-fedora-options.html:103
+#: data/content/get-fedora-options.html:104
 msgid "LXDE-based Fedora desktop."
 msgstr "LXDE ベースの Fedora デスクトップ版です。"
 
-#: data/content/get-fedora-options.html:105
+#: data/content/get-fedora-options.html:106
 msgid "Fedora LXDE Spin homepage"
 msgstr "Fedora LXDE Spin ホームページ"
 
-#: data/content/get-fedora-options.html:106
+#: data/content/get-fedora-options.html:107
 msgid "LXDE.org website"
 msgstr "LXDE.org ウェブサイト"
 
-#: data/content/get-fedora-options.html:123
+#: data/content/get-fedora-options.html:124
 #, python-format
 msgid "Fedora %(release)s Xfce Spin"
 msgstr "Fedora %(release)s Xfce Spin"
 
-#: data/content/get-fedora-options.html:129
+#: data/content/get-fedora-options.html:130
 msgid "Xfce-based Fedora desktop."
 msgstr "Xfce ベースの Fedora デスクトップ版です。"
 
-#: data/content/get-fedora-options.html:131
-msgid "Fedora Xfce Spin homepage"
-msgstr "Fedora Xfce Spin の公式ウェブサイト"
-
 #: data/content/get-fedora-options.html:132
+msgid "Fedora Xfce Spin homepage"
+msgstr "Fedora Xfce Spin ホームページ"
+
+#: data/content/get-fedora-options.html:133
 msgid "Xfce.org website"
 msgstr "Xfce.org ウェブサイト"
 
-#: data/content/get-fedora-options.html:152
+#: data/content/get-fedora-options.html:153
 msgid "Fedora Downloads by Format"
 msgstr "形式別 Fedora ダウンロード"
 
-#: data/content/get-fedora-options.html:157
+#: data/content/get-fedora-options.html:158
 #, python-format
 msgid "Fedora %(release)s Live Media / Spins"
 msgstr "Fedora %(release)s Live メディア / Spin"
 
-#: data/content/get-fedora-options.html:158
+#: data/content/get-fedora-options.html:159
 msgid ""
 "Fedora Live Media images may be used via bootable CD, DVD, or USB drives, "
 "and also may be used to install Fedora to hard disk. They are a great way to"
 " give Fedora a try, low-risk."
 msgstr "　Fedora Live メディアのイメージはブート可能な CD、 DVD、 USB ドライブで使用することができ、 またハードディスクへの Fedora のインストールにも使用できます。 安全に Fedora を試してみるのに適した便利な方法です。"
 
-#: data/content/get-fedora-options.html:159
+#: data/content/get-fedora-options.html:160
 msgid "A directory of alternate Fedora images called Spins may be found at:"
 msgstr "Spin と呼ばれる Fedora の代替イメージのディレクトリは次にあります。"
 
-#: data/content/get-fedora-options.html:161
+#: data/content/get-fedora-options.html:162
 msgid "Go to Spins Directory"
 msgstr "Spin のディレクトリに行く"
 
-#: data/content/get-fedora-options.html:169
+#: data/content/get-fedora-options.html:170
 #, python-format
 msgid "Fedora %(release)s DVD"
 msgstr "Fedora %(release)s DVD"
 
-#: data/content/get-fedora-options.html:170
+#: data/content/get-fedora-options.html:171
 msgid ""
 "The DVD edition of Fedora is not Live Media, but it is bootable.  When you "
 "boot from this media, you will be running the installation program.  The DVD"
@@ -923,36 +935,36 @@ msgid ""
 "connected to the Internet."
 msgstr "　Fedora の DVD 版は Live Mediaではありませんがブート可能です。 このメディアから起動する場合、 インストールプログラムを実行することになります。 DVD の場合使用するコンピュータ上の必要メモリ領域が少なく、 より多くのソフトウェアを含みます。 このメディアは Fedora をインストールするマシンをインターネットに接続させない場合に便利です。"
 
-#: data/content/get-fedora-options.html:175
-#: data/content/get-fedora-options.html:184
+#: data/content/get-fedora-options.html:176
+#: data/content/get-fedora-options.html:185
 msgid "Intel & AMD / PC compatible"
 msgstr "Intel & AMD / PC 互換"
 
-#: data/content/get-fedora-options.html:179
+#: data/content/get-fedora-options.html:180
 msgid "Most Compatible"
 msgstr "最も互換性があります"
 
-#: data/content/get-fedora-options.html:180
+#: data/content/get-fedora-options.html:181
 msgid "3.5GB ISO disk image for 32-bit PC"
 msgstr "32 ビット PC 用 3.5GB ISO ディスクイメージ"
 
-#: data/content/get-fedora-options.html:189
+#: data/content/get-fedora-options.html:190
 msgid "3.5GB ISO disk image for 64-bit PC"
 msgstr "64 ビット PC 用 3.5GB ISO ディスクイメージ"
 
-#: data/content/get-fedora-options.html:195
+#: data/content/get-fedora-options.html:196
 #, python-format
 msgid ""
 "For help determining what architecture your system is, <a href=\"%s\">please"
 " view our architecture help guide</a>."
 msgstr "お使いのシステムがどのアーキテクチャーであるかを決める参考にするには、<a href=\"%s\">アーキテクチャーの参考ガイドを参照してください</a>。"
 
-#: data/content/get-fedora-options.html:205
+#: data/content/get-fedora-options.html:206
 #, python-format
 msgid "Fedora %(release)s Media by Mail"
 msgstr "郵送による Fedora %(release)s メディア"
 
-#: data/content/get-fedora-options.html:206
+#: data/content/get-fedora-options.html:207
 #, python-format
 msgid ""
 "Slow internet? No internet? You can get a copy of Fedora media sent via "
@@ -960,191 +972,204 @@ msgid ""
 "href=\"%s\">Fedora Free Media</a> program."
 msgstr "　インターネットの速度が遅いまたはインターネット環境がない場合は、 お住まいの地域やオンラインの提供業者を利用して郵便で Fedora インストールメディアのコピーを受け取ることができます。 もしくは <a href=\"%s\">Fedora Free Media</a> プログラムにて入手することができます。"
 
-#: data/content/get-fedora-options.html:210
+#: data/content/get-fedora-options.html:211
 msgid "Purchase Fedora Media from a Vendor"
 msgstr "ベンダーから Fedora インストールメディアを購入する"
 
-#: data/content/get-fedora-options.html:216
+#: data/content/get-fedora-options.html:217
 msgid "Locate a Vendor in Your Area"
 msgstr "最寄りの地域のベンダーを探す"
 
-#: data/content/get-fedora-options.html:217
+#: data/content/get-fedora-options.html:218
 msgid ""
 "Select vendors worldwide carry copies of Fedora media at a reasonable price."
 " If a vendor exists in your area and you'd rather not wait for shipping, "
 "this may be a good option for you."
 msgstr "　手頃な価格で Fedora メディアを販売する世界中のベンダーを選択します。 最寄りの地域にベンダーがいて郵送を待ちたくない場合に適した方法です。"
 
-#: data/content/get-fedora-options.html:218
+#: data/content/get-fedora-options.html:219
 msgid "View Local Vendor Directory"
 msgstr "地域のベンダーの一覧を表示する"
 
-#: data/content/get-fedora-options.html:221
+#: data/content/get-fedora-options.html:222
 msgid "Online Vendors"
 msgstr "オンラインのベンダー"
 
-#: data/content/get-fedora-options.html:222
+#: data/content/get-fedora-options.html:223
 msgid ""
 "Numerous vendors worldwide offer Fedora media for online purchase. Select "
 "the vendor closest to you to keep your shipping costs lower."
 msgstr "　世界各地にオンラインによる Fedora メディアの販売を行っているベンダーが数多くあります。 遠方のベンダーの場合余分な発送料がかかることがあるため、 できるだけ最寄りのベンダーをお選びください。"
 
-#: data/content/get-fedora-options.html:223
+#: data/content/get-fedora-options.html:224
 msgid "View Online Vendor Directory"
 msgstr "オンラインのベンダーの一覧を表示する"
 
-#: data/content/get-fedora-options.html:229
+#: data/content/get-fedora-options.html:230
 msgid "Fedora Free Media Program"
 msgstr "Fedora フリーメディアプログラム"
 
-#: data/content/get-fedora-options.html:230
+#: data/content/get-fedora-options.html:231
 msgid ""
 "Can't afford the price of installation media? Request Fedora installation "
 "media from the Fedora Free Media Program."
 msgstr "　インストールメディアが高すぎて購入できない場合には Fedora フリーメディアプログラムに Fedora インストールメディアの郵送を依頼できます。"
 
-#: data/content/get-fedora-options.html:231 data/content/index.html:63
+#: data/content/get-fedora-options.html:232 data/content/index.html:63
 msgid "Learn More"
 msgstr "詳細について"
 
-#: data/content/get-fedora-options.html:240
+#: data/content/get-fedora-options.html:243
 msgid "Fedoras that do what you need."
 msgstr "自分に合った Fedora を選ぶ"
 
-#: data/content/get-fedora-options.html:241
+#: data/content/get-fedora-options.html:244
 msgid ""
 "Fedora spins are alternate versions of Fedora, tailored for various types of"
 " users via hand-picked application sets and other customizations."
 msgstr "Fedora Spin とは、他のバージョンの Fedora および様々なタイプのユーザに合わせて厳選されたアプリケーション、その他カスタマイズを行ったものです。"
 
-#: data/content/get-fedora-options.html:241
+#: data/content/get-fedora-options.html:244
 msgid "Learn more about spins >"
 msgstr "Spin について詳しく知る >"
 
-#: data/content/get-fedora-options.html:242
+#: data/content/get-fedora-options.html:245
 msgid ""
 "Below is just a sampling of the Fedora spins that are available. Visit "
 msgstr "以下は Fedora Spin のサンプルです。詳しく見る。"
 
-#: data/content/get-fedora-options.html:242
+#: data/content/get-fedora-options.html:245
 msgid " for a full listing of all available Fedora spins."
 msgstr "入手可能な全てのFedora Spin一覧"
 
-#: data/content/get-fedora-options.html:247
+#: data/content/get-fedora-options.html:250
 msgid "Fedora Security Lab"
 msgstr "Fedora セキュリティ ラボ"
 
-#: data/content/get-fedora-options.html:247
+#: data/content/get-fedora-options.html:250
 msgid "Security analysis tools."
 msgstr "セキュリティ分析ツール"
 
-#: data/content/get-fedora-options.html:247
-#: data/content/get-fedora-options.html:251
-#: data/content/get-fedora-options.html:255
-#: data/content/get-fedora-options.html:259
+#: data/content/get-fedora-options.html:250
+#: data/content/get-fedora-options.html:254
+#: data/content/get-fedora-options.html:258
+#: data/content/get-fedora-options.html:262
 msgid "More details at spins.fedoraproject.org >"
 msgstr "詳細は spins.fedoraproject.org にて >"
 
-#: data/content/get-fedora-options.html:251
+#: data/content/get-fedora-options.html:254
 msgid "Fedora Design Suite"
 msgstr "Fedora Design Suite"
 
-#: data/content/get-fedora-options.html:251
+#: data/content/get-fedora-options.html:254
 msgid "Open Creativity."
 msgstr "広がる創造性"
 
-#: data/content/get-fedora-options.html:255
+#: data/content/get-fedora-options.html:258 data/content/index.html:87
 msgid "Fedora Games Spin"
-msgstr "Fedora Games Spin"
+msgstr "Fedora ゲーム Spin"
 
-#: data/content/get-fedora-options.html:255
+#: data/content/get-fedora-options.html:258
 msgid "A perfect show-case of the best games available in Fedora."
 msgstr "Fedora で楽しめる人気の高いゲームを満載したショーケース"
 
-#: data/content/get-fedora-options.html:259
+#: data/content/get-fedora-options.html:262
 msgid "Fedora Electronic Lab"
 msgstr "Fedora 電子ラボ"
 
-#: data/content/get-fedora-options.html:259
+#: data/content/get-fedora-options.html:262
 msgid "Fedora's high-end hardware design and simulation platform."
 msgstr "高性能ハードウェア向けのデザインとシミュレーションプラットフォーム"
 
-#: data/content/get-fedora-options.html:263
+#: data/content/get-fedora-options.html:266
 msgid ""
 "Get these and more at <a "
 "href=\"https://spins.fedoraproject.org\">spins.fedoraproject.org</a>."
 msgstr "<a href=\"https://spins.fedoraproject.org\">spins.fedoraproject.org</a> では、 上記の他にもいろいろなものが入手できます。"
 
-#: data/content/get-fedora-options.html:298
+#: data/content/get-fedora-options.html:277
+msgid "Fedora In The Clouds!"
+msgstr "クラウドの中の Fedora !"
+
+#: data/content/get-fedora-options.html:278
+msgid "… Let's your dreams be reality!"
+msgstr "…&nbsp;夢をかなえよう!"
+
+#: data/content/get-fedora-options.html:280
+#, python-format
+msgid "Fedora %(release)s Amazon EC2"
+msgstr "Fedora %(release)s Amazon EC2"
+
+#: data/content/get-fedora-options.html:332
 msgid "Help, I just want Fedora!"
 msgstr "Fedoraを入手するには？"
 
-#: data/content/get-fedora-options.html:299
+#: data/content/get-fedora-options.html:333
 msgid ""
 "There are a lot of options on this page. Would you rather download the "
 "standard Fedora image?"
 msgstr "このページには多くのオプションがあります。 標準の Fedora イメージをダウンロードしますか?"
 
-#: data/content/get-fedora-options.html:300
+#: data/content/get-fedora-options.html:334
 msgid "Get it here"
 msgstr "ここからダウンロード"
 
-#: data/content/get-fedora-options.html:302 data/content/get-fedora.html:80
+#: data/content/get-fedora-options.html:336 data/content/get-fedora.html:80
 msgid "Handy Resources"
 msgstr "役に立つリソース"
 
-#: data/content/get-fedora-options.html:304
+#: data/content/get-fedora-options.html:338
 #, python-format
 msgid ""
 "http://docs.fedoraproject.org/en-"
 "US/Fedora/%(release)s/html/Installation_Guide/index.html"
 msgstr "http://docs.fedoraproject.org/en-US/Fedora/%(release)s/html/Installation_Guide/index.html"
 
-#: data/content/get-fedora-options.html:304 data/content/get-fedora.html:82
+#: data/content/get-fedora-options.html:338 data/content/get-fedora.html:82
 msgid "Installation Guide"
 msgstr "インストールガイド"
 
-#: data/content/get-fedora-options.html:305
+#: data/content/get-fedora-options.html:339
 #, python-format
 msgid ""
 "http://docs.fedoraproject.org/en-"
 "US/Fedora/%(release)s/html/Release_Notes/index.html"
 msgstr "http://docs.fedoraproject.org/en-US/Fedora/%(release)s/html/Release_Notes/index.html"
 
-#: data/content/get-fedora-options.html:305 data/content/get-fedora.html:83
+#: data/content/get-fedora-options.html:339 data/content/get-fedora.html:83
 msgid "Release Notes"
 msgstr "リリースノート"
 
-#: data/content/get-fedora-options.html:306 data/content/get-fedora.html:84
+#: data/content/get-fedora-options.html:340 data/content/get-fedora.html:84
 msgid "Common Bugs"
 msgstr "一般的なバグ"
 
-#: data/content/get-fedora-options.html:307 data/content/get-fedora.html:85
+#: data/content/get-fedora-options.html:341 data/content/get-fedora.html:85
 msgid "Upgrading Fedora"
 msgstr "Fedora のアップグレード"
 
-#: data/content/get-fedora-options.html:308 data/content/get-fedora.html:86
+#: data/content/get-fedora-options.html:342 data/content/get-fedora.html:86
 msgid "Help & Support"
 msgstr "ヘルプとサポート"
 
-#: data/content/get-fedora-options.html:309 data/content/get-fedora.html:87
+#: data/content/get-fedora-options.html:343 data/content/get-fedora.html:87
 msgid "Verify Download"
 msgstr "ダウンロードの検証"
 
-#: data/content/get-fedora-options.html:312 data/content/get-fedora.html:91
+#: data/content/get-fedora-options.html:346 data/content/get-fedora.html:91
 msgid "There's More Fedora!"
 msgstr "機能満載の Fedora!"
 
-#: data/content/get-fedora-options.html:315 data/content/get-fedora.html:95
+#: data/content/get-fedora-options.html:349 data/content/get-fedora.html:95
 msgid "Other ways to get Fedora"
 msgstr "Fedora を入手する他の方法"
 
-#: data/content/get-fedora-options.html:316 data/content/get-fedora.html:97
+#: data/content/get-fedora-options.html:350 data/content/get-fedora.html:97
 msgid ""
 "We offer several alternative Fedora download methods, including torrents:"
 msgstr "Torrent を含む、他のダウンロード方法も提供しています。"
 
-#: data/content/get-fedora-options.html:318 data/content/get-fedora.html:99
+#: data/content/get-fedora-options.html:352 data/content/get-fedora.html:99
 msgid "All download methods"
 msgstr "すべてのダウンロード方法"
 
@@ -1216,10 +1241,6 @@ msgstr "KDE、Xfce、GNOME および その他"
 #: data/content/get-fedora.html:53
 msgid "Games, Design, Security, and others"
 msgstr "ゲーム、デザイン、セキュリティなど"
-
-#: data/content/get-fedora.html:54
-msgid "Clouds"
-msgstr "クラウド"
 
 #: data/content/get-fedora.html:54
 msgid "EC2 Cloud Images"
@@ -1474,14 +1495,14 @@ msgstr "Fedora Project ホームページ"
 
 #: data/content/index.html:59
 msgid "Free your desktop with Fedora."
-msgstr "Fedoraでデスクトップを自由に！"
+msgstr "デスクトップをFedoraで自由に！"
 
 #: data/content/index.html:60
 msgid ""
 "Fedora is a fast, stable, and powerful operating system for everyday use "
 "built by a worldwide community of friends. It's completely free to use, "
 "study, and share."
-msgstr "Fedora は、世界中のコミュニティによって開発が行われており、日常的な使用のために、軽快、 安定、 パワフルなオペレーティングシステムです。その利用、学習、共有が完全に自由です。"
+msgstr "Fedoraは日常的な使用に適した、軽快・安定・高機能なオペレーティングシステムです。世界中のコミュニティ仲間により開発されています。使用・学習・共有が完全に自由です。"
 
 #: data/content/index.html:65
 #, python-format
@@ -1498,160 +1519,147 @@ msgid "Try Fedora %(release)s %(state)s Now!"
 msgstr "今すぐ Fedora %(release)s %(state)s を試そう！"
 
 #: data/content/index.html:76
-msgid "Manage virtual machines better."
-msgstr "改善された仮想マシンの管理"
+msgid "Introducing JBoss Application Server 7."
+msgstr "JBoss Application Server 7 への誘い。"
 
-#: data/content/index.html:77
-msgid "From within VirtManager you now can:"
-msgstr "仮想マシンマネージャーから次のことができます："
+#: data/content/index.html:78
+msgid ""
+"Run full Java EE apps via the fast, lightweight, and modular JBoss AS 7, now"
+" included in Fedora. It is open source and features an elegant "
+"administration experience and strict compliance to the Java EE 6 Full "
+"Profile standard."
+msgstr "高速、軽量、モジュール型の JBoss AS 7 で完全な Java EE アプリケーションを実行しましょう。いま Fedora に含まれているオープンソースです。洗練された管理機能を持ち、Java EE 6 完全準拠の標準と厳密な互換性があります。"
 
-#: data/content/index.html:79
-msgid "Browse your VMs' filesystem graphically."
-msgstr "仮想マシンのファイルシステムをグラフィカルに表示する。"
-
-#: data/content/index.html:80
-msgid "Read system registry entries from Windows®-based VMs."
-msgstr "Windows® の仮想マシンからレジストリの内容を読み取る。"
-
-#: data/content/index.html:81
-msgid "View what OS is running on your VMs at a glance via icons."
-msgstr "仮想マシンで実行している OS をアイコンにより一目で見る。"
-
-#: data/content/index.html:82
-msgid "View a list of applications installed in your VMs."
-msgstr "仮想マシンにインストール済みのアプリケーション一覧を見る。"
-
-#: data/content/index.html:84 data/content/index.html:93
+#: data/content/index.html:79 data/content/index.html:90
 msgid "Learn More >"
 msgstr "詳細について >"
 
-#: data/content/index.html:91
-msgid "Advanced Innovation Platform"
-msgstr "高度なイノベーション・プラットフォーム"
-
-#: data/content/index.html:92
+#: data/content/index.html:89
 msgid ""
-"Fedora now offers the scientific spin and the robotics spin, to create a "
-"better platform for scientists, engineers and innovators."
-msgstr "いま Fedora は、科学者、技術者および革新者のために、サイエンス Spin とロボティクス Spin を提供しています。"
+"There are hundreds of great free and open source games, and the Fedora Games"
+" Spin has bundled some of the very best together in one bootable Fedora "
+"download. Try Quake-engine-based first-person shooter games like Tremulous, "
+"explore the fantasy and adventure of The Battle for Wesnoth, or take Wilber "
+"or Tux for a ride in Super Tux Kart!"
+msgstr "数百もの素晴らしいフリーかつオープンソースのゲームがあります。Fedora ゲーム Spin は Fedora Live イメージに最高のゲームを同梱しています。Tremulous のような Quake エンジンベースの一人称シューティングゲームへの挑戦、The Battle for Wesnoth のファンタジーと冒険への探検、Super Tux Kart に乗って Wilber や Tux のドライブなど！"
 
-#: data/content/index.html:100
+#: data/content/index.html:99
 msgid "A worldwide community of friends."
 msgstr "世界中のコミュニティが友達。"
 
-#: data/content/index.html:101
+#: data/content/index.html:100
 msgid ""
 "Fedora is a Linux-based operating system that showcases the latest in free "
 "software. Fedora is always free for anyone to use, modify, and distribute. "
 "It is built by people across the globe who work together as a community: the"
 " Fedora Project."
-msgstr "　Fedora は、最先端のフリーソフトウェアやオープンソースソフトウェアを提供する Linux ベースのオペレーティングシステムです。誰でも自由に使用し、改変し、そして配布することができます。Fedora は、The Fedora Project に参加する世界中の人々によって支えられています。The Fedora Project は誰もが自由に参加できるオープンなコミュニティです。"
+msgstr "Fedora は最先端のフリーソフトウェアやオープンソースソフトウェアを提供する Linux ベースのオペレーティングシステムです。誰でも自由に使用し、改変し、そして配布することができます。Fedora は Fedora Project に参加する世界中の人々によって支えられています。Fedora Project は誰でも自由に参加できるオープンなコミュニティです。"
 
-#: data/content/index.html:102 data/content/join-fedora.html:83
+#: data/content/index.html:101 data/content/join-fedora.html:83
 #: data/content/join-fedora.html:90 data/content/join-fedora.html:98
 #: data/content/join-fedora.html:106 data/content/join-fedora.html:114
 #: data/content/join-fedora.html:122
 msgid "Learn more >"
 msgstr "詳細について >"
 
-#: data/content/index.html:119
+#: data/content/index.html:118
 msgid "\"Fedora has [...] released an amazingly rock-solid operating system.\""
 msgstr "\"Fedora has [...] released an amazingly rock-solid operating system.\" （Fedoraは [...] 驚くほどに安定したオペレーティングシステムをリリースしてきました。）"
 
-#: data/content/index.html:120
+#: data/content/index.html:119
 msgid "Jack Wallen, <a href=\"http://techrepublic.com/\">TechRepublic.com</a>"
 msgstr "Jack Wallen, <a href=\"http://techrepublic.com/\">TechRepublic.com</a>"
 
-#: data/content/index.html:126
+#: data/content/index.html:125
 msgid "Need help?"
 msgstr "助けが必要ですか？"
 
-#: data/content/index.html:127
+#: data/content/index.html:126
 msgid "Get it here."
 msgstr "ここから得られます。"
 
-#: data/content/index.html:133
+#: data/content/index.html:132
 msgid "What is Fedora, anyway?"
 msgstr "Fedoraとは？"
 
-#: data/content/index.html:138
+#: data/content/index.html:137
 msgid "Join us!"
 msgstr "参加しよう！"
 
-#: data/content/index.html:139
+#: data/content/index.html:138
 msgid "Help make Fedora!"
 msgstr "一緒にFedoraを作りませんか？"
 
-#: data/content/index.html:146
+#: data/content/index.html:145
 msgid "What makes Fedora great?"
 msgstr "Fedoraを素晴らしいものにする４つの合言葉"
 
-#: data/content/index.html:151
+#: data/content/index.html:150
 msgid "Freedom is key"
 msgstr "自由がキーワード！"
 
-#: data/content/index.html:152
+#: data/content/index.html:151
 msgid ""
 "Advancing software and content freedom is a key goal of the Fedora Project."
 msgstr "優れたソフトウェアとコンテンツの自由が The Fedora Project のゴールです。"
 
-#: data/content/index.html:153
+#: data/content/index.html:152
 msgid "Learn how software freedom benefits you >"
 msgstr "ソフトウェアの自由がもたらす有益性について学ぶ >"
 
-#: data/content/index.html:157
+#: data/content/index.html:156
 msgid "Our Community"
 msgstr "我々のコミュニティ！"
 
-#: data/content/index.html:158
+#: data/content/index.html:157
 msgid "People world-wide work together in Fedora to advance free software."
 msgstr "Fedora を通じて、世界中の人々がよりよいフリーソフトウェアを広めるため一緒に協力しています。"
 
-#: data/content/index.html:159
+#: data/content/index.html:158
 msgid "Discover your role in Fedora's community >"
 msgstr "Fedora コミュニティであなたの出来ることを探そう > "
 
-#: data/content/index.html:163
+#: data/content/index.html:162
 msgid "We share"
 msgstr "すべてを共有します！"
 
-#: data/content/index.html:164
+#: data/content/index.html:163
 msgid "Many features that benefit all Linux distributions start in Fedora."
 msgstr "すべての Linux ディストリビューションで使われる多くの仕組みは Fedora から始まります。"
 
-#: data/content/index.html:165
+#: data/content/index.html:164
 msgid "See how we share our features for all to use >"
 msgstr "我々が持つ仕組みはすべての人が使えるように共有しています。 どのように共有しているのかご覧ください。 >"
 
-#: data/content/index.html:169
+#: data/content/index.html:168
 msgid "The best tech"
 msgstr "最良のテクノロジーを！"
 
-#: data/content/index.html:170
+#: data/content/index.html:169
 msgid "The future of Linux is built into Fedora."
 msgstr "Linux の将来の機能は Fedora に実装されます。"
 
-#: data/content/index.html:171
+#: data/content/index.html:170
 msgid "Learn how Fedora innovates >"
 msgstr "Fedoraの革新性について知る >"
 
-#: data/content/index.html:178
+#: data/content/index.html:177
 msgid "Fedora highlights"
 msgstr "Fedora のハイライト"
 
-#: data/content/index.html:185
+#: data/content/index.html:184
 msgid "Read more of the story >"
 msgstr "ストーリーをもっと読む >"
 
-#: data/content/index.html:186
+#: data/content/index.html:185
 msgid "Read more Fedora user stories >"
 msgstr "Fedora ユーザーの声を聞く >"
 
-#: data/content/index.html:191
+#: data/content/index.html:190
 msgid "We fight for software freedom"
 msgstr "ソフトウェアの自由のための戦い"
 
-#: data/content/index.html:193
+#: data/content/index.html:192
 msgid ""
 "We try to always do the right thing, and provide only free and open source "
 "software. We will fight to protect and promote solutions that anyone can use"
@@ -1663,24 +1671,24 @@ msgid ""
 "focus has had significant and long lasting effects."
 msgstr "我々は常に正しいことをするために、無料でオープンソースソフトウェアなものを提供します。 Fedora は誰でも自由に使うことができて、自由に再配布することができます。 ソフトウェアの自由をさらに進めるために戦います。 そして、我々は Fedora のインフラを動かすために無料でオープンソースソフトウェアなものだけ利用します。これにより、 Fedora のすべての開発者はアップストリームの開発チームとともに密接に共同作業することに集中できるます。 誰もが我々の活動成果から有益な結果を得ることができ、できるだけ早く我々の変化へ近づくことができます。この点は Fedora が膨大な数のイノベーションを起こすために、Fedora が長続きするために非常に重要です。"
 
-#: data/content/index.html:195
+#: data/content/index.html:194
 msgid "Learn more about Fedora's values >"
 msgstr "Fedora の価値についてもっと知る >"
 
-#: data/content/index.html:196
+#: data/content/index.html:195
 msgid "More on what Fedora's all about >"
 msgstr "Fedora について、もっと知る >"
 
-#: data/content/index.html:201 data/content/using/index.html:26
+#: data/content/index.html:200 data/content/using/index.html:26
 msgid "Do it with Fedora"
 msgstr "Fedoraでやってみよう"
 
-#: data/content/index.html:202 data/content/using/index.html:33
+#: data/content/index.html:201 data/content/using/index.html:33
 #: data/content/using/tutorials/cheese.html:26
 msgid "Have a photobooth party!"
 msgstr "自分撮りパーティーしよう！"
 
-#: data/content/index.html:204 data/content/using/index.html:34
+#: data/content/index.html:203 data/content/using/index.html:34
 #: data/content/using/tutorials/cheese.html:27
 msgid ""
 "All you need is a webcam and Fedora, and you can do all sorts of cool photo "
@@ -1688,79 +1696,79 @@ msgid ""
 "and videos!"
 msgstr "あなたが用意するのは、ウェブカメラと Fedora だけです。そして、あなたは友人の写真を Hulk っぽく変えることや、いろいろな特殊効果でかっこよく写真を加工することができます。"
 
-#: data/content/index.html:206
+#: data/content/index.html:205
 msgid "Learn how to do it yourself! >"
 msgstr "どうすれば、いいのか知る >"
 
-#: data/content/index.html:207
+#: data/content/index.html:206
 msgid "View all tutorials >"
 msgstr "すべてのチュートリアルを見る >"
 
-#: data/content/index.html:216
+#: data/content/index.html:215
 msgid "Installation Requirements"
 msgstr "インストール要件"
 
-#: data/content/index.html:218
+#: data/content/index.html:217
 #, python-format
 msgid ""
 "%sMHz Pentium Pro or better processor (comparable AMD, Cyrix, and VIA "
 "processors also acceptable)"
 msgstr "%sMHz Pentium Pro またはそれ以上のプロセッサー (AMD、Cyrix および VIA の互換プロセッサーも含む)"
 
-#: data/content/index.html:219
+#: data/content/index.html:218
 #, python-format
 msgid "At least %sMB memory (RAM), %sGB recommended for best performance"
 msgstr "最小 %s MB メモリー、最適なパフォーマンスには %sGB 推奨"
 
-#: data/content/index.html:220
+#: data/content/index.html:219
 #, python-format
 msgid "%sGB disk space / storage"
 msgstr "%sGB ディスク領域"
 
-#: data/content/index.html:222
+#: data/content/index.html:221
 msgid ""
 "http://docs.fedoraproject.org/en-US/Fedora/16/html/Release_Notes/sect-"
 "Release_Notes-Welcome_to_Fedora_16.html#sect-Release_Notes-Hardware_Overview"
 msgstr "http://docs.fedoraproject.org/ja-JP/Fedora/16/html/Release_Notes/sect-Release_Notes-Welcome_to_Fedora_16.html#sect-Release_Notes-Hardware_Overview"
 
-#: data/content/index.html:222
+#: data/content/index.html:221
 msgid "More about requirements >"
 msgstr "要件の詳細 >"
 
-#: data/content/index.html:223
+#: data/content/index.html:222
 msgid "Full set of download options >"
 msgstr "すべてのダウンロードオプション >"
 
-#: data/content/index.html:230
+#: data/content/index.html:231
 #, python-format
 msgid "Fedora %(release)s %(name)s released in %(number)s days!"
 msgstr "Fedora %(release)s %(name)s が %(number)s 日後にリリースされます！"
 
-#: data/content/index.html:231
+#: data/content/index.html:232
 msgid "Add a counter to your own site!"
 msgstr "あなた自身のサイトにカウンターを追加しよう！"
 
-#: data/content/index.html:236 data/content/join-fedora.html:133
+#: data/content/index.html:237 data/content/join-fedora.html:133
 msgid "Upcoming Events"
 msgstr "開催予定のイベント"
 
-#: data/content/index.html:238
+#: data/content/index.html:239
 msgid "North American"
 msgstr "北アメリカ"
 
-#: data/content/index.html:239
+#: data/content/index.html:240
 msgid "Central & South American"
 msgstr "中央・南アメリカ"
 
-#: data/content/index.html:240
+#: data/content/index.html:241
 msgid "European, Middle Eastern, & African"
 msgstr "ヨーロッパ、中東、アフリカ"
 
-#: data/content/index.html:241
+#: data/content/index.html:242
 msgid "Indian, Asian, & Australian"
 msgstr "インド、アジア、オーストラリア"
 
-#: data/content/index.html:244
+#: data/content/index.html:245
 msgid "Hosting Sponsor"
 msgstr "ホスティングスポンサー"
 
