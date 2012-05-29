@@ -1,3 +1,47 @@
+<?python
+
+# see http://fedoraproject.org/wiki/Cloud_SIG/EC2_Images for the complet list
+ec2_f17_beta = [
+                {'region':'us-west-2',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-2ef37f1e'},
+                {'region':'us-west-2',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-2af37f1a'},
+                {'region':'us-west-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-87207bc2'},
+                {'region':'us-west-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-b5207bf0'},
+                {'region':'us-east-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-a1ef36c8'},
+                {'region':'us-east-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-3bf52c52'},
+                {'region':'sa-east-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-d4a07ec9'},
+                {'region':'sa-east-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-c2a07edf'},
+                {'region':'ap-northeast-1',       'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-5ee0505f'},
+                {'region':'ap-northeast-1',       'arch':'i386',      'store':'EBS-backed',     'id':'ami-8ce0508d'},
+                {'region':'ap-southeast-1',       'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-80abecd2'},
+                {'region':'ap-southeast-1',       'arch':'i386',      'store':'EBS-backed',     'id':'ami-a6abecf4'},
+                {'region':'eu-west-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-7938030d'},
+                {'region':'eu-west-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-e3380397'}
+]
+
+ec2_f16 = [
+                {'region':'us-east-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-5f16d836'},
+                {'region':'us-east-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-0316d86a'},
+                {'region':'us-west-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-25e0bc60'},
+                {'region':'us-west-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-69e0bc2c'},
+                {'region':'us-west-2',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-e2f37ed2'},
+                {'region':'us-west-2',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-88f37eb8'},
+                {'region':'eu-west-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-7bf4c90f'},
+                {'region':'eu-west-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-2df4c959'},
+                {'region':'ap-southeast-1',       'arch':'i386',      'store':'EBS-backed',     'id':'ami-9694eec4'},
+                {'region':'ap-southeast-1',       'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-5095ef02'},
+                {'region':'ap-northeast-1',       'arch':'i386',      'store':'EBS-backed',     'id':'ami-f22094f3'},
+                {'region':'ap-northeast-1',       'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-16219517'},
+                {'region':'sa-east-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-5a34eb47'},
+                {'region':'sa-east-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-4c34eb51'}
+]
+
+ec2_f15 = [
+                {'region':'us-east-1',            'arch':'i386',      'store':'Instance store (S3)',    'id':'ami-6ebe4507'},
+                {'region':'us-east-1',            'arch':'x86_64',    'store':'Instance store (S3)',    'id':'ami-72bf441b'},
+                {'region':'us-east-1',            'arch':'i386',      'store':'EBS-backed',             'id':'ami-60bd4609'},
+                {'region':'us-east-1',            'arch':'x86_64',    'store':'EBS-backed',             'id':'ami-2abf4443'}
+]
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
     xmlns:py="http://genshi.edgewall.org/"
@@ -274,23 +318,98 @@
 
                     <div id="cloud-versions">
                         <noscript><a name="clouds"><hr /></a></noscript>
-                        <h3>${_('Fedora In The Clouds!')}</h3>
-                        <p>${_('… Let\'s your dreams be reallity!')}</p>
+                        <h3>${_('Fedora In The Cloud')}</h3>
+
+
                             <div class="grid_12 alpha omega">
-                                <h4 class="area-callout">${_('Fedora %(release)s Amazone EC2') % {'release':global_variables.release['curr_id']}}</h4>
+                                <h4 class="area-callout">${_('Fedora on EC2')}</h4>
+                                <p>${_('Fedora publishes system images for Amazon Web Services\' (AWS) virtual machine platform, Amazon Elastic Compute Cloud (EC2), which allows one to create virtual machines in the cloud with very little effort.')}
+                                <br />${_('These images, known as AMIs (Amazon Machine Images), are available in a variety of zones and architectures, and are identifiable by their unique identification number. This ID can then be utilized to locate and launch an image.')}</p>
+
+                                <p>${Markup(_('Fedora\'s EC2 images follow standard EC2 login conventions, meaning that root login is disabled, but sudo access is granted.  The default username for the images is &lt;strong&gt;%s&lt;/strong&gt;.') % 'ec2-user')}</p>
                             </div>
 
+
                             <div class="clear"></div>
-                            <div class="grid_2 alpha"><img class="download-media" alt="${_('32-bit PC Edition')}" src="${path}/static/images/icon-fedora-cloud-download.png" /></div>
+                            <div class="grid_2 alpha"><img class="download-media" alt="" src="${path}/static/images/icon-fedora-cloud-download.png" /></div>
                             <div class="grid_10 omega">
-				<img class="desktop-screenshot" src="${path}/static/images/screenshots/desktop-ss-gnome.png" rel="#gnome1" alt="scr-shot_desk" />
-                                <p>${_('The GNOME-based default Fedora Desktop.')}</p>
                                 <ul>
-                                    <li><a href="${path}/${lang}/get-fedora">${_('Fedora Desktop spin homepage')} &gt;</a></li>
-                                    <li><a href="http://www.gnome.org/">${_('GNOME.org website')} &gt;</a></li>
+                                    <li>${Markup(_('Not familiar with EC2? &lt;a href="%s"&gt;Read more about the terminology and concepts &gt;&lt;/a&gt;') % 'http://fedoraproject.org/wiki/User:Gholms/EC2_Primer')}</li>
+                                    <li>${Markup(_('Full documentation for interacting with EC2 is available from &lt;a href="%s"&gt;Amazon Web Services &gt;&lt;/a&gt;') % 'http://docs.amazonwebservices.com/AWSEC2/latest/GettingStartedGuide/')}</li>
+                                    <li>${Markup(_('Need help, or have a great idea? &lt;a href="%s"&gt;Join the Fedora Cloud SIG mailing list &gt;&lt;/a&gt;') % 'http://admin.fedoraproject.org/mailman/listinfo/clou')}</li>
                                 </ul>
                             </div>
                             <div class="clear"></div>
+
+															<h4 class="area-callout">${_('Currently supported EC2 Images')}</h4>
+
+                                <h5>${_('Fedora %s Beta') % '17'}</h5>
+                                <table class="verify-live-media">
+																		<thead>
+																				<tr>
+																						<th>${_('Region')}</th>
+																						<th>${_('Architecture')}</th>
+																						<th>${_('Root store')}</th>
+																						<th>${_('AMI ID')}</th>
+																				</tr>
+																		</thead>
+																		<tbody>
+																			<py:for each="img in ec2_f17_beta">
+																				<tr>
+																						<td>${img['region']}</td>
+																						<td>${img['arch']}</td>
+																						<td>${img['store']}</td>
+																						<td>${img['id']}</td>
+																				</tr>
+																			</py:for>
+																		</tbody>
+																</table>
+
+                                
+                                <h5>${_('Fedora %s') % '16'}</h5>
+                                <table class="verify-live-media">
+																		<thead>
+																				<tr>
+																						<th>${_('Region')}</th>
+																						<th>${_('Architecture')}</th>
+																						<th>${_('Root store')}</th>
+																						<th>${_('AMI ID')}</th>
+																				</tr>
+																		</thead>
+																		<tbody>
+																			<py:for each="img in ec2_f16">
+																				<tr>
+																						<td>${img['region']}</td>
+																						<td>${img['arch']}</td>
+																						<td>${img['store']}</td>
+																						<td>${img['id']}</td>
+																				</tr>
+																			</py:for>
+																		</tbody>
+																</table>
+
+
+                                <h5>${_('Fedora %s') % '15'}</h5>
+                                <table class="verify-live-media">
+																		<thead>
+																				<tr>
+																						<th>${_('Region')}</th>
+																						<th>${_('Architecture')}</th>
+																						<th>${_('Root store')}</th>
+																						<th>${_('AMI ID')}</th>
+																				</tr>
+																		</thead>
+																		<tbody>
+																			<py:for each="img in ec2_f15">
+																				<tr>
+																						<td>${img['region']}</td>
+																						<td>${img['arch']}</td>
+																						<td>${img['store']}</td>
+																						<td>${img['id']}</td>
+																				</tr>
+																			</py:for>
+																		</tbody>
+																</table>
 
                     <xi:include href="../templates/content-export-regulations.html" />
                         </div>
