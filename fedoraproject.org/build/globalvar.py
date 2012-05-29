@@ -18,15 +18,15 @@ path={
 }
 
 iso_size={
-    'x86_64_DVD':          '3.5',       # In GB
-    'i386_DVD':            '3.5',       # In GB
-    'source_DVD':          '5.9',       # In GB
-    'i686_Live_Desktop':   '605',       # In MB
-    'x86_64_Live_Desktop': '604',       # In MB, default download from F17
-    'i686_Live_KDE':       '697',       # In MB
-    'x86_64_Live_KDE':     '696',       # In MB
-    'i686_Live_LXDE':      '542',       # In MB
-    'x86_64_Live_LXDE':    '541',       # In MB
-    'i686_Live_XFCE':      '627',       # In MB
-    'x86_64_Live_XFCE':    '625'        # In MB
+    'x86_64_DVD':          '3.6',       # In GB
+    'i386_DVD':            '3.6',       # In GB
+    'source_DVD':          '6.1',       # In GB
+    'i686_Live_Desktop':   '646',       # In MB
+    'x86_64_Live_Desktop': '645',       # In MB, default download from F17
+    'i686_Live_KDE':       '695',       # In MB
+    'x86_64_Live_KDE':     '692',       # In MB
+    'i686_Live_LXDE':      '590',       # In MB
+    'x86_64_Live_LXDE':    '587',       # In MB
+    'i686_Live_XFCE':      '672',       # In MB
+    'x86_64_Live_XFCE':    '670'        # In MB
 }
