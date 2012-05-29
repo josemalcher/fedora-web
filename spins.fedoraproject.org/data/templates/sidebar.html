@@ -15,7 +15,12 @@
 		<div id="top-spins">
 			<h2>${_('Top Spins This Release')}</h2>
 			<table>
-				<tr py:for="t in range(0,5)">
+				<?python
+				max_list_downloaded = len(most_downloaded)
+				if max_list_downloaded > 5:
+					max_list_download = 5
+				?>
+				<tr py:for="t in range(0, max_list_downloaded)">
 					<?python
 					name = most_downloaded[t][0]
 					num = most_downloaded[t][1]['downloads']
