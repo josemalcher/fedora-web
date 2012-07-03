@@ -3,7 +3,7 @@
 #      make an new POT and push it if asked,
 #      and then fill the LINGUAS file
 
-site=( boot.fedoraproject.org 
+site=( boot.fedoraproject.org
        fedoracommunity.org
        fedorahosted.org
        fedoraproject.org
@@ -24,7 +24,7 @@ This script update all L10n things. Will never git push.
 
 OPTIONS:
    -h      Show this message
-   -a      Git add all 
+   -a      Git add all
    -c      With -a, git commit with default message (POs, POT and LINGUAS in different commits)
    -p      With -c make pushpot (update POT on transifex.net)
 
@@ -37,7 +37,7 @@ EXAMPLES:
          $ $0 -a -w spins.fedoraproject.org    (2)
          $ $0 -a -c -p                         (3)
 
-   1. Update all but let you git add and push to transifex.net. (Takes time but let you do the job). 
+   1. Update all but let you git add and push to transifex.net. (Takes time but let you do the job).
    2. Update POs POT and LINGUAS of spins.fedoraproject.org website. Let you commit and push (git/transifex).
    3. Update all and commit changes in 3 different commits. That's what you were looking for.
 
@@ -147,21 +147,21 @@ do
   echo "- Updating $i LINGUAS file"
   PO_PATH="$i/po"
   LINGUAS="$PO_PATH/LINGUAS"
-   
-  
+
+
   if [ ! -f $LINGUAS ]
   then
      echo "No $LINGUAS file there"
   fi
-  
+
   tmp="l_tmp"
   sed -i 's#\s##g' $LINGUAS                   # remove trailing whitespaces
-  
+
   for file in `ls $PO_PATH/*.po`
   do
     stat=`msgfmt -c --statistics $file 2>&1 | awk '{print $1}'`
     if [ "$stat" != "0" ]                     # if translation is started
-    then                                 
+    then
       lang=`echo $file| sed -n "s#.*/\(.*\).po#\1#p" `   # filter the language code
       echo $lang >> $tmp                      # add it in a temp file
       new=`grep $lang"\$" $LINGUAS`
@@ -171,7 +171,7 @@ do
       fi
     fi
   done
-  
+
   rm $LINGUAS
   cat $tmp|sort > $LINGUAS
   rm $tmp
