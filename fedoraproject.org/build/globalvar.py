@@ -28,5 +28,7 @@ iso_size={
     'i686_Live_LXDE':      '590',       # In MB
     'x86_64_Live_LXDE':    '587',       # In MB
     'i686_Live_XFCE':      '672',       # In MB
-    'x86_64_Live_XFCE':    '670'        # In MB
+    'x86_64_Live_XFCE':    '670',       # In MB
+    'i386_Netinstall':     '199',       # In MB
+    'x86_64_Netinstall':   '162'        # In MB
 }
