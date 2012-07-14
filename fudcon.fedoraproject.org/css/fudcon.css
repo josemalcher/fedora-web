@@ -273,10 +273,10 @@ ul {
 	margin-right:22px;
 	margin-bottom:20px;
 	padding-bottom:25px;
-	float:left;
 	padding-left:10px;
 	text-align:justify;
 	border-bottom:#CCC dotted thin;
+	overflow: hidden;
 }
 
 #venue {
@@ -307,19 +307,30 @@ ul {
 	padding:0px;
 }
 
+img.center {
+	display: block;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 25px;
+}
+
+#imgbox {
+	height: 250px;
+}
+
 #column_one {
-	width:300px;
-	height:200px;
-	background-image:url(../images/logo_paris.png);
-	background-repeat:no-repeat;
+	text-align: center;
+	width: 49%;
+	float: left;
 	padding-left:20;
 }
 
 #column_two {
-	width:300px;
-	background-image:url(../images/logo_valencia.png);
-	background-repeat:no-repeat;
-	height:175px;
+	text-align: center;
+	width: 49%;
+	float: right;
+	padding-left:20;
+	border-left:#CCC dotted thin;
 }
 
 #column_one_pune {
