@@ -28,6 +28,13 @@
 # boot images (like Fedora 8's Everything tree) then an installurl or
 # installmirrorlist is required.
 #
+[Fedora 18 Branched Pre-release (Spherical Cow)]
+stable=False
+preupgrade-ok=True
+version=18
+mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-18&arch=$basearch
+installmirrorlist=http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/development/18/$basearch/os/
+
 [Fedora 17 (Beefy Miracle)]
 stable=True
 preupgrade-ok=True
