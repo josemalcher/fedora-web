@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-04-09 16:28+0200\n"
-"PO-Revision-Date: 2012-04-24 08:32+0000\n"
+"POT-Creation-Date: 2012-07-04 01:02+0200\n"
+"PO-Revision-Date: 2012-07-16 01:58+0000\n"
 "Last-Translator: Walter Cheuk <wwycheuk@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) <trans-zh_TW@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
@@ -92,10 +92,10 @@ msgstr "原理是什麼？"
 msgid ""
 "BFO was started by boot.kernel.org (BKO) and combines a series of recent "
 "technologies to produce a new boot stack.  The glue that holds everything "
-"together is gpxe.  Users familiar with pxe will find gpxe very familiar.  "
+"together is ipxe.  Users familiar with pxe will find ipxe very familiar.  "
 "Latest versions support several protocols beyond just tftp.  We are using "
 "http to transfer files around.  The basic steps are as follows:"
-msgstr "BFO 專案由 boot.kernel.org (BKO) 發起，結合最新科技以製作新的開機軟體，居中引線的就是 gpxe，熟悉 pxe 的人會發覺 gpxe 很面善。 最新版本支援 tftp 以外的多種協定；我們現在用來傳送檔案的是 http。 基本步驟如下："
+msgstr "BFO 由 boot.kernel.org (BKO) 啟動，結合一系列最新科技製作的開機軟體程式。主要關鍵為 ipxe。熟悉 pxe 者會覺得 ipxe 很面熟。最新版本支援 tftp 以外的許多協定，但主要以 http 傳送檔案。基本步驟如下："
 
 #: data/content/faq.html:25
 msgid ""
@@ -196,15 +196,25 @@ msgstr "我的 BFO 為何不能開機？"
 
 #: data/content/faq.html:46
 msgid ""
-"BFO uses gpxe so it's not actually booting a Linux kernel at first.  As "
+"BFO uses ipxe so it's not actually booting a Linux kernel at first.  As "
 "such, some drivers and devices may not be supported.  If this is the case "
 "for you please check upstream at http://etherboot.org/ for bug updates, etc."
 "  If you feel a bug or device is supported but not working in BFO, contact: "
-msgstr "BFO 一開始並非以 Linux kernel 開機，而是使用 gpxe。 因此可能某些驅動程式及裝置不獲支援。 如有此情況請看看上游網站 http://etherboot.org/ 有否相關問題回報或其他資料。 如您認為有問題，或某樣裝置應有支援但未獲支援，請聯絡："
+msgstr "BFO 使用 ipxe，故並非一開始就以 Linux kernel 開機。故此可能有些驅動程式和裝置未能支援。如發生此情況，請留意上游之 http://etherboot.org/ 看看有否更新。如認為某些裝置應該支援卻沒有支援，又或有其他問題，請聯絡："
 
 #: data/content/faq.html:47
 msgid "Where can I find the BFO sources and configuration?"
 msgstr "哪裡有 BFO 源碼和設定檔？"
+
+#: data/content/faq.html:49
+msgid "Where do I report issues?"
+msgstr "如何報告問題？"
+
+#: data/content/faq.html:56
+msgid ""
+"At this time booting Live CDs is experimental and not available. We hope to "
+"have them available soon."
+msgstr "現時可用作開機的 Live CD 仍屬試驗性質，尚未提供。希望盡快完成。"
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
@@ -231,10 +241,10 @@ msgstr "要下載 BFO，請在左邊選單選擇「下載 BFO」。"
 
 #: data/templates/foot.html:9
 msgid ""
-"&copy; 2011 Red Hat, Inc. and others.  Please send any comments or "
+"&copy; 2012 Red Hat, Inc. and others.  Please send any comments or "
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
-msgstr "&copy; 2011 Red Hat 公司及其他。 任何評語或修正請電郵至<a href=\"mailto:webmaster@fedoraproject.org\">網站團隊</a>。"
+msgstr "&copy; 2012 Red Hat, Inc. 及其他人。任何意見或改進建議請聯絡<a href=\"mailto:webmaster@fedoraproject.org\">網站團隊</a>。"
 
 #: data/templates/foot.html:12
 msgid ""

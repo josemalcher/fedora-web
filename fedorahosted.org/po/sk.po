@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-02-13 09:19-0600\n"
-"PO-Revision-Date: 2012-04-10 11:01+0000\n"
-"Last-Translator: feonsu <feonsu@gmail.com>\n"
+"POT-Creation-Date: 2012-07-04 01:02+0200\n"
+"PO-Revision-Date: 2012-07-03 23:12+0000\n"
+"Last-Translator: Kévin Raymond <shaiton@fedoraproject.org>\n"
 "Language-Team: Slovak (http://www.transifex.com/projects/p/fedora/language/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -107,10 +107,55 @@ msgid ""
 msgstr "Váš bežný Fedora účet funguje s Fedora Hosted. Jednoducho si <a href=\"https://admin.fedoraproject.org/accounts/\">vytvor</a> účet Fedora Project, ak ho nemáš. Poznámka: na prispievanie kódom musíš podpísať licenčnú zmluvu prispievateľa s projektom Fedora."
 
 #: data/content/faq.html:21
+msgid "How do I configure git so that I can push to my Fedora Hosted repo?"
+msgstr ""
+
+#: data/content/faq.html:22
+msgid ""
+"Do a git clone of your repo. Then, in your repo's directory on your system, "
+"edit .git/config under the [remote \"origin\"] section to follow the "
+"following pattern for the URL setting: "
+msgstr ""
+
+#: data/content/faq.html:22
+msgid "url = ssh://"
+msgstr ""
+
+#: data/content/faq.html:22
+msgid "username"
+msgstr ""
+
+#: data/content/faq.html:22
+msgid "@git.fedorahosted.org/git/"
+msgstr ""
+
+#: data/content/faq.html:22
+msgid "projectname"
+msgstr ""
+
+#: data/content/faq.html:22
+msgid ".git"
+msgstr ""
+
+#: data/content/faq.html:22
+msgid "Where:"
+msgstr ""
+
+#: data/content/faq.html:22
+msgid " is your Fedora Account System username."
+msgstr ""
+
+#: data/content/faq.html:22
+msgid ""
+" is the name of your fedorahosted.org project as listed on the front of "
+"fedorahosted.org."
+msgstr ""
+
+#: data/content/faq.html:23
 msgid "How can I publish archive releases (tgz, zip, etc) for my project?"
 msgstr "Ako môžem publikovať vydania môjho projektu (tgz, zip, atď)?"
 
-#: data/content/faq.html:22
+#: data/content/faq.html:24
 msgid ""
 "Create the archive on your workstation and run <code>scp "
 "myProject-0.1.tar.gz fedorahosted.org:&lt;Project Name&gt;</code>. The "
@@ -118,46 +163,46 @@ msgid ""
 "href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>"
 msgstr "Vytvorte na svojom počítači archív a spustite príkaz <code>scp mojProjekt-0.1.tar.gz fedorahosted.org:&lt;Názov projektu&gt;</code>. Archív sa bude nachádzať v <a href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>"
 
-#: data/content/faq.html:23
+#: data/content/faq.html:25
 msgid "How can I delete something I uploaded to my archive?"
 msgstr "Ako môžem niečo odstrániť z môjho archívu?"
 
-#: data/content/faq.html:24
+#: data/content/faq.html:26
 msgid ""
 "Please file a ticket in the <a href=\"https://fedorahosted.org/fedora-"
 "infrastructure/\">fedora-infrastructure trac</a> listing the exact file you "
 "wish removed and why"
 msgstr "Prosím, vyplňte tiket v <a href=\"https://fedorahosted.org/fedora-infrastructure/\">systéme fedora-infrastructure trac</a> s presným názvom súboru, ktorý chcete odstrániť, a prečo"
 
-#: data/content/faq.html:25
+#: data/content/faq.html:27
 msgid ""
 "Is there a more convenient way to access releases than the path "
 "<code>/releases/m/y/myproject</code>?"
 msgstr "Existuje pohodlnejšia cesta ako pristupovať k jednotlivým vydaniam než cez cestu <code>/releases/m/y/myproject</code>?"
 
-#: data/content/faq.html:26
+#: data/content/faq.html:28
 msgid ""
 "There is. <code>https://fedorahosted.org/released/myproject</code> will go "
 "to the same place. The disadvantage of this is you must know the project "
 "name and can't browse for projects."
 msgstr "Existuje. <code>https://fedorahosted.org/released/myproject</code> vás zavedie na rovnaké miesto. Nevýhodou je, že musíte poznať názov projektu a nemôžete prezerať ďalšie projekty."
 
-#: data/content/faq.html:27
+#: data/content/faq.html:29
 msgid "I just got a new git repository, how can I push/pull?"
 msgstr "Mám nový git repozitár, ako môžem urobiť push/pull?"
 
-#: data/content/faq.html:28
+#: data/content/faq.html:30
 msgid ""
 "Before anyone can clone/push the new repository a master push must be done "
 "with the command (from your local git repo): git push "
 "ssh://git.fedorahosted.org/git/yourproject.git/ master"
 msgstr "Predtým ako môže ktokoľvek urobiť clone/push z/do nového repozitára, musí byť hotový master push pomocou príkazu (z vášho lokálneho git repozitára): git push ssh://git.fedorahosted.org/git/yourproject.git/ master"
 
-#: data/content/faq.html:29
+#: data/content/faq.html:31
 msgid "How do I get permission to commit to a project?"
 msgstr "Ako získam povolenie na nahrávanie do projektu?"
 
-#: data/content/faq.html:30
+#: data/content/faq.html:32
 msgid ""
 "You should <a "
 "href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for "
@@ -166,13 +211,13 @@ msgid ""
 "project, apply to the <code>gitdesktop-effects</code> group."
 msgstr ""
 
-#: data/content/faq.html:31
+#: data/content/faq.html:33
 msgid ""
 "While I wait for my repository to be created, can I work on my code "
 "elsewhere?"
 msgstr "Zatiaľ čo čakám na vytvorenie môjho repozitára, môžem pracovať na svojom kóde niekde inde?"
 
-#: data/content/faq.html:32
+#: data/content/faq.html:34
 msgid ""
 "Of course. Visit <a "
 "href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a>"
@@ -180,13 +225,13 @@ msgid ""
 "fedorapeople.org space."
 msgstr "Samozrejme. Pre bližšie informácie navštívte <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a>, kde nájdete informácie ako vytvoriť dočasný repozitár vo vašom priestore fedorapeople.org."
 
-#: data/content/faq.html:33
+#: data/content/faq.html:35
 msgid ""
 "Why does hg tells me the repository doesn't exist even though I know I have "
 "the correct URL?"
 msgstr "Prečo mi hq tvrdí, že repozitár neexistuje aj keď som si istý, že mám správne URL?"
 
-#: data/content/faq.html:34
+#: data/content/faq.html:36
 msgid ""
 "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a "
 "delimiter between hostname and path and a second \"/\" as the root of the "
@@ -195,11 +240,11 @@ msgid ""
 "ssh://hg.fedorahosted.org//hg/authconfig\""
 msgstr ""
 
-#: data/content/faq.html:35
+#: data/content/faq.html:37
 msgid "Can I offer pre-compiled binaries on Fedora Hosted?"
 msgstr "Môžem poskytnúť na Fedora Hosted pred-kompilované programy?"
 
-#: data/content/faq.html:36
+#: data/content/faq.html:38
 msgid ""
 "You may, as long as the following conditions are met: <ol><li>The code "
 "project must be available under a Free Software license appropriate for "
@@ -328,10 +373,10 @@ msgstr ""
 
 #: data/templates/foot.html:9
 msgid ""
-"&copy; 2011 Red Hat, Inc. and others.  Please send any comments or "
+"&copy; 2012 Red Hat, Inc. and others.  Please send any comments or "
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
-msgstr "&copy; 2011 Red Hat, Inc. a iní.  Svoje komentáre a opravy posielajte na <a href=\"mailto:webmaster@fedoraproject.org\">adresu tímu webových stránok</a>."
+msgstr ""
 
 #: data/templates/foot.html:12
 msgid ""

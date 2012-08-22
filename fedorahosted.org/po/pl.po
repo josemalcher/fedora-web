@@ -9,10 +9,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-02-13 09:19-0600\n"
-"PO-Revision-Date: 2012-02-13 17:08+0000\n"
-"Last-Translator: neb <nick@bebout.net>\n"
-"Language-Team: Polish (http://www.transifex.com/projects/p/fedora/language/pl/)\n"
+"POT-Creation-Date: 2012-07-04 01:02+0200\n"
+"PO-Revision-Date: 2012-07-03 23:17+0000\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"Language-Team: Polish <trans-pl@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -107,10 +107,55 @@ msgid ""
 msgstr "Normalne konto Projektu Fedora działa z Fedora Hosted. Należy po prostu <a href=\"https://admin.fedoraproject.org/accounts/\">założyć</a> konto Projektu Fedora, jeśli się go jeszcze nie ma. Proszę zauważyć, że należy podpisać warunki licencyjne współtwórcy Projektu Fedora, aby móc wysyłać kod."
 
 #: data/content/faq.html:21
+msgid "How do I configure git so that I can push to my Fedora Hosted repo?"
+msgstr "Jak skonfigurować program git, aby można było wysyłać zmiany do repozytorium Fedora Hosted?"
+
+#: data/content/faq.html:22
+msgid ""
+"Do a git clone of your repo. Then, in your repo's directory on your system, "
+"edit .git/config under the [remote \"origin\"] section to follow the "
+"following pattern for the URL setting: "
+msgstr "Najpierw należy wykonać polecenie \"git clone\" na repozytorium. Następnie należy przejść do katalogu repozytorium w komputerze i zmodyfikować plik .git/config w sekcji [remote \"origin\"], aby ustawienie adresu URL używało poniższego formatu: "
+
+#: data/content/faq.html:22
+msgid "url = ssh://"
+msgstr "url = ssh://"
+
+#: data/content/faq.html:22
+msgid "username"
+msgstr "nazwa-użytkownika"
+
+#: data/content/faq.html:22
+msgid "@git.fedorahosted.org/git/"
+msgstr "@git.fedorahosted.org/git/"
+
+#: data/content/faq.html:22
+msgid "projectname"
+msgstr "nazwa-projektu"
+
+#: data/content/faq.html:22
+msgid ".git"
+msgstr ".git"
+
+#: data/content/faq.html:22
+msgid "Where:"
+msgstr "Gdzie:"
+
+#: data/content/faq.html:22
+msgid " is your Fedora Account System username."
+msgstr " jest nazwą użytkownika w Systemie kont Fedory."
+
+#: data/content/faq.html:22
+msgid ""
+" is the name of your fedorahosted.org project as listed on the front of "
+"fedorahosted.org."
+msgstr " jest nazwą projektu w formie używanej na głównej stronie fedorahosted.org."
+
+#: data/content/faq.html:23
 msgid "How can I publish archive releases (tgz, zip, etc) for my project?"
 msgstr "Jak można publikować wydania (tgz, zip itp.) projektu?"
 
-#: data/content/faq.html:22
+#: data/content/faq.html:24
 msgid ""
 "Create the archive on your workstation and run <code>scp "
 "myProject-0.1.tar.gz fedorahosted.org:&lt;Project Name&gt;</code>. The "
@@ -118,46 +163,46 @@ msgid ""
 "href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>"
 msgstr "Należy utworzyć archiwum na własnym komputerze i wykonać polecenie <code>scp mójProjekt-0.1.tar.gz fedorahosted.org:&lt;Nazwa projektu&gt;</code>. Archiwum zostanie umieszczone na <a href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>"
 
-#: data/content/faq.html:23
+#: data/content/faq.html:25
 msgid "How can I delete something I uploaded to my archive?"
 msgstr "Jak usunąć coś z archiwum?"
 
-#: data/content/faq.html:24
+#: data/content/faq.html:26
 msgid ""
 "Please file a ticket in the <a href=\"https://fedorahosted.org/fedora-"
 "infrastructure/\">fedora-infrastructure trac</a> listing the exact file you "
 "wish removed and why"
 msgstr "Proszę wypełnić zgłoszenie <a href=\"https://fedorahosted.org/fedora-infrastructure/\">w systemie trac projektu fedora-infrastructure</a> wymieniając dokładnie które pliki mają zostać usunięte i dlaczego"
 
-#: data/content/faq.html:25
+#: data/content/faq.html:27
 msgid ""
 "Is there a more convenient way to access releases than the path "
 "<code>/releases/m/y/myproject</code>?"
 msgstr "Czy jest jakiś bardziej wygodny sposób na dostęp do wydań od ścieżki <code>/releases/m/y/mój_projekt</code>?"
 
-#: data/content/faq.html:26
+#: data/content/faq.html:28
 msgid ""
 "There is. <code>https://fedorahosted.org/released/myproject</code> will go "
 "to the same place. The disadvantage of this is you must know the project "
 "name and can't browse for projects."
 msgstr "Jest taki. <code>https://fedorahosted.org/released/mój_projekt</code> prowadzi do tego samego miejsca. Wada tego rozwiązania jest taka, że trzeba znać nazwę projektu, i nie można przeglądać innych projektów."
 
-#: data/content/faq.html:27
+#: data/content/faq.html:29
 msgid "I just got a new git repository, how can I push/pull?"
 msgstr "Jak można wykonać polecenia push/pull po założeniu repozytorium git?"
 
-#: data/content/faq.html:28
+#: data/content/faq.html:30
 msgid ""
 "Before anyone can clone/push the new repository a master push must be done "
 "with the command (from your local git repo): git push "
 "ssh://git.fedorahosted.org/git/yourproject.git/ master"
 msgstr "Zanim ktokolwiek będzie mógł wykonać polecenia clone/push na nowym repozytorium, należy wykonać polecenie push na gałęzi master (z lokalnego repozytorium git): git push ssh://git.fedorahosted.org/git/mój_projekt.git/ master"
 
-#: data/content/faq.html:29
+#: data/content/faq.html:31
 msgid "How do I get permission to commit to a project?"
 msgstr "Jak uzyskać uprawnienie do wysyłania do projektu?"
 
-#: data/content/faq.html:30
+#: data/content/faq.html:32
 msgid ""
 "You should <a "
 "href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for "
@@ -166,13 +211,13 @@ msgid ""
 "project, apply to the <code>gitdesktop-effects</code> group."
 msgstr "Należy wysłać <a href=\"https://admin.fedoraproject.org/accounts/group/list\">aplikację</a> do grupy z uprawnieniami do wysyłania do projektu, czyli <code>&lt;VCS&gt;&lt;projekt&gt;</code>, czyli dla projektu desktop-effects należy dołączyć do grupy <code>gitdesktop-effects</code>."
 
-#: data/content/faq.html:31
+#: data/content/faq.html:33
 msgid ""
 "While I wait for my repository to be created, can I work on my code "
 "elsewhere?"
 msgstr "Czy można pracować nad kodem, kiedy repozytorium jeszcze nie zostało utworzone?"
 
-#: data/content/faq.html:32
+#: data/content/faq.html:34
 msgid ""
 "Of course. Visit <a "
 "href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a>"
@@ -180,13 +225,13 @@ msgid ""
 "fedorapeople.org space."
 msgstr "Oczywiście. Proszę odwiedzić <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a>, aby zobaczyć instrukcje ustawiania tymczasowego repozytorium w przestrzeni fedorapeople.org."
 
-#: data/content/faq.html:33
+#: data/content/faq.html:35
 msgid ""
 "Why does hg tells me the repository doesn't exist even though I know I have "
 "the correct URL?"
 msgstr "Dlaczego hg twierdzi, że repozytorium nie istnieje, mimo że podano poprawny adres URL?"
 
-#: data/content/faq.html:34
+#: data/content/faq.html:36
 msgid ""
 "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a "
 "delimiter between hostname and path and a second \"/\" as the root of the "
@@ -195,11 +240,11 @@ msgid ""
 "ssh://hg.fedorahosted.org//hg/authconfig\""
 msgstr "Niestety hg nie używa prawdziwych adresów URL. Należy użyć znaku \"/\" do oddzielenia nazwy komputera i ścieżki oraz drugi znak \"/\" jako root ścieżki w systemie plików. Na przykład, jeśli uzyskiwany jest dostęp do repozytorium authconfig, należy użyć adresu \"hg clone ssh://hg.fedorahosted.org//hg/authconfig\""
 
-#: data/content/faq.html:35
+#: data/content/faq.html:37
 msgid "Can I offer pre-compiled binaries on Fedora Hosted?"
 msgstr "Czy można udostępniać skompilowane programy w serwisie Fedora Hosted?"
 
-#: data/content/faq.html:36
+#: data/content/faq.html:38
 msgid ""
 "You may, as long as the following conditions are met: <ol><li>The code "
 "project must be available under a Free Software license appropriate for "
@@ -328,10 +373,10 @@ msgstr "Zawsze staramy się skontaktować z zagubionymi programistami i upewnić
 
 #: data/templates/foot.html:9
 msgid ""
-"&copy; 2011 Red Hat, Inc. and others.  Please send any comments or "
+"&copy; 2012 Red Hat, Inc. and others.  Please send any comments or "
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
-msgstr "&copy; 2011 Red Hat, Inc. i inni. Proszę wysyłać wszelkie komentarze i korekty do <a href=\"mailto:webmaster@fedoraproject.org\">zespołu stron WWW</a> (w języku angielskim)."
+msgstr "&copy; 2012 Red Hat, Inc. i inni. Proszę wysyłać wszelkie komentarze i korekty do <a href=\"mailto:webmaster@fedoraproject.org\">zespołu stron WWW</a> (w języku angielskim)."
 
 #: data/templates/foot.html:12
 msgid ""

@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-02-13 09:19-0600\n"
-"PO-Revision-Date: 2012-03-30 13:42+0000\n"
+"POT-Creation-Date: 2012-07-04 01:02+0200\n"
+"PO-Revision-Date: 2012-07-23 05:03+0000\n"
 "Last-Translator: Christopher Meng <cickumqt@gmail.com>\n"
 "Language-Team: Chinese (China) <trans-zh_cn@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgstr "驻留的项目 - Fedora Hosted"
 
 #: data/content/410.html:12
 msgid "No such project."
-msgstr "没有此项目。"
+msgstr "没有该项目。"
 
 #: data/content/410.html:14
 msgid "The requested project does not exist on Fedora Hosted."
@@ -56,7 +56,7 @@ msgstr "您新建的项目只差一个 <a href=\"new\">work ticket</a> 了。"
 
 #: data/content/faq.html:7
 msgid "FAQs - Fedora Hosted"
-msgstr "FAQs - Fedora Hosted"
+msgstr "常见问题解答 - Fedora Hosted"
 
 #: data/content/faq.html:12 data/templates/sidebar.html:13
 msgid "Frequently-Asked Questions"
@@ -80,7 +80,7 @@ msgstr "我该如何申请一个新项目？"
 #: data/content/faq.html:16
 msgid ""
 "File a <a href=\"new\">work ticket</a> with the Fedora Infrastructure team."
-msgstr "向 Fedora 基础设施团队申请 <a href=\"new\">work ticket</a>。"
+msgstr "向 Fedora 基础设施团队申请一个 <a href=\"new\">新项目</a>。"
 
 #: data/content/faq.html:17
 msgid "Where can I go for help?"
@@ -93,11 +93,11 @@ msgid ""
 "href=\"http://www.freenode.net/\">Freenode</a> or to <a "
 "href=\"https://fedorahosted.org/fedora-infrastructure/\">open a ticket</a> "
 "with the Fedora Infrastructure team."
-msgstr "获得帮助的最好方式是加入<a href=\"http://www.freenode.net/\">Freenode</a>上的<a href=\"irc://irc.freenode.net/#fedora-admin\"><code>#fedora-admin</code></a>IRC 频道，或者给 Fedora 基础设施团队<a href=\"https://fedorahosted.org/fedora-infrastructure/\">打开一个 ticket</a>。"
+msgstr "获得帮助的最好方式是加入<a href=\"http://www.freenode.net/\">Freenode</a>上的<a href=\"irc://irc.freenode.net/#fedora-admin\"><code>#fedora-admin</code></a>IRC 频道，或者给 Fedora 基础设施团队<a href=\"https://fedorahosted.org/fedora-infrastructure/\">留下一个 ticket</a>。"
 
 #: data/content/faq.html:19
 msgid "How can I get a Fedora Hosted account?"
-msgstr "我如何得到 Fedora Hosted 的帐户?"
+msgstr "我该如何获得一个 Fedora Hosted 帐户?"
 
 #: data/content/faq.html:20
 msgid ""
@@ -106,13 +106,58 @@ msgid ""
 "Project account if you haven't already. Do note that you must sign a "
 "Contributor License Agreement with the Fedora Project in order to contribute"
 " code."
-msgstr "您的正常的 Fedora 项目帐户就可以在 Fedora Hosted 中使用。如果您还没有，只需<a href=\"https://admin.fedoraproject.org/accounts/\">申请</a>一个 Fedora 项目帐户。请注意：为了贡献代码您必须和 Fedora 项目签署一个贡献者许可协议。"
+msgstr "您的 Fedora 项目的账户就可以在 Fedora Hosted 中使用。如果您还没有，只需<a href=\"https://admin.fedoraproject.org/accounts/\">申请</a>一个 Fedora 项目账户。请注意：为了贡献代码您必须和 Fedora 项目签署一个贡献者许可协议。"
 
 #: data/content/faq.html:21
+msgid "How do I configure git so that I can push to my Fedora Hosted repo?"
+msgstr "我该如何设置 git 以便提交我的内容至 Fedora Hosted 源？"
+
+#: data/content/faq.html:22
+msgid ""
+"Do a git clone of your repo. Then, in your repo's directory on your system, "
+"edit .git/config under the [remote \"origin\"] section to follow the "
+"following pattern for the URL setting: "
+msgstr ""
+
+#: data/content/faq.html:22
+msgid "url = ssh://"
+msgstr "url = ssh://"
+
+#: data/content/faq.html:22
+msgid "username"
+msgstr "用户名"
+
+#: data/content/faq.html:22
+msgid "@git.fedorahosted.org/git/"
+msgstr "@git.fedorahosted.org/git/"
+
+#: data/content/faq.html:22
+msgid "projectname"
+msgstr "项目名称"
+
+#: data/content/faq.html:22
+msgid ".git"
+msgstr "git"
+
+#: data/content/faq.html:22
+msgid "Where:"
+msgstr "位置："
+
+#: data/content/faq.html:22
+msgid " is your Fedora Account System username."
+msgstr " 是您的 Fedora 账户系统用户名。"
+
+#: data/content/faq.html:22
+msgid ""
+" is the name of your fedorahosted.org project as listed on the front of "
+"fedorahosted.org."
+msgstr " 是在 fedorahosted.org 的首页显示中您的项目的名称。"
+
+#: data/content/faq.html:23
 msgid "How can I publish archive releases (tgz, zip, etc) for my project?"
 msgstr "我如何为我的项目发布归档版本(tgz, zip, 等)？"
 
-#: data/content/faq.html:22
+#: data/content/faq.html:24
 msgid ""
 "Create the archive on your workstation and run <code>scp "
 "myProject-0.1.tar.gz fedorahosted.org:&lt;Project Name&gt;</code>. The "
@@ -120,46 +165,46 @@ msgid ""
 "href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>"
 msgstr "在您的工作站上创建一个归档文件，然后运行<code>scp myProject-0.1.tar.gz fedorahosted.org:&lt;项目名称&gt;</code>命令。这个归档文件会放在<a href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>"
 
-#: data/content/faq.html:23
+#: data/content/faq.html:25
 msgid "How can I delete something I uploaded to my archive?"
 msgstr "我如何删除那些我已经上传到我文件夹里的东西？"
 
-#: data/content/faq.html:24
+#: data/content/faq.html:26
 msgid ""
 "Please file a ticket in the <a href=\"https://fedorahosted.org/fedora-"
 "infrastructure/\">fedora-infrastructure trac</a> listing the exact file you "
 "wish removed and why"
-msgstr "请在此填写申请<a href=\"https://fedorahosted.org/fedora-infrastructure/\">fedora-infrastructure trac</a> 详细列举你希望删除的文件盒原因"
+msgstr "请在此填写申请<a href=\"https://fedorahosted.org/fedora-infrastructure/\">fedora-infrastructure trac</a> 详细列举您希望删除的文件盒原因"
 
-#: data/content/faq.html:25
+#: data/content/faq.html:27
 msgid ""
 "Is there a more convenient way to access releases than the path "
 "<code>/releases/m/y/myproject</code>?"
 msgstr "有比路径<code>/releases/m/y/myproject</code>更方便的访问发行版的方法吗？"
 
-#: data/content/faq.html:26
+#: data/content/faq.html:28
 msgid ""
 "There is. <code>https://fedorahosted.org/released/myproject</code> will go "
 "to the same place. The disadvantage of this is you must know the project "
 "name and can't browse for projects."
 msgstr "有的。链接<code>https://fedorahosted.org/released/myproject</code>可转到相同的地方。这个方法的缺点是您必须知道项目名称，并且无法按项目浏览。"
 
-#: data/content/faq.html:27
+#: data/content/faq.html:29
 msgid "I just got a new git repository, how can I push/pull?"
 msgstr "我得到一个新的 git 仓库，我如何 push/pull？"
 
-#: data/content/faq.html:28
+#: data/content/faq.html:30
 msgid ""
 "Before anyone can clone/push the new repository a master push must be done "
 "with the command (from your local git repo): git push "
 "ssh://git.fedorahosted.org/git/yourproject.git/ master"
 msgstr "在任何人能够 clone/push 这个新的仓库前，必须用这个命令(从您的本地git repo)完成一个 master push：git push ssh://git.fedorahosted.org/git/yourproject.git/ master"
 
-#: data/content/faq.html:29
+#: data/content/faq.html:31
 msgid "How do I get permission to commit to a project?"
 msgstr "怎样获得提交项目的权限？"
 
-#: data/content/faq.html:30
+#: data/content/faq.html:32
 msgid ""
 "You should <a "
 "href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for "
@@ -168,40 +213,40 @@ msgid ""
 "project, apply to the <code>gitdesktop-effects</code> group."
 msgstr "您应该<a href=\"https://admin.fedoraproject.org/accounts/group/list\">加入</a>项目的提交小组，该小组应该是<code>&lt;scm&gt;&lt;project&gt;</code>，例如桌面效果项目，应加入<code>gitdesktop-effects</code>小组。"
 
-#: data/content/faq.html:31
+#: data/content/faq.html:33
 msgid ""
 "While I wait for my repository to be created, can I work on my code "
 "elsewhere?"
 msgstr "在我等待仓库创建的时候，可以在其它地方编写我的代码吗？"
 
-#: data/content/faq.html:32
+#: data/content/faq.html:34
 msgid ""
 "Of course. Visit <a "
 "href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a>"
 " for instructions on how to set up a temporary repository in your "
 "fedorapeople.org space."
-msgstr "当然。访问<a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a>来了解怎样在您的fedorapeople.org空间内建立临时仓库。"
+msgstr "当然。访问<a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a>来了解怎样在您的 fedorapeople.org 空间内建立临时仓库。"
 
-#: data/content/faq.html:33
+#: data/content/faq.html:35
 msgid ""
 "Why does hg tells me the repository doesn't exist even though I know I have "
 "the correct URL?"
-msgstr "尽管确定 URL 地址正确，为什么hg 仍提示仓库不存在？"
+msgstr "尽管确定 URL 地址正确，为什么 hg 仍提示仓库不存在？"
 
-#: data/content/faq.html:34
+#: data/content/faq.html:36
 msgid ""
 "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a "
 "delimiter between hostname and path and a second \"/\" as the root of the "
 "filesystem path.  For instance, if you're accessing the repository for "
 "authconfig you need to use \"hg clone "
 "ssh://hg.fedorahosted.org//hg/authconfig\""
-msgstr "很遗憾，hg 并没有使用真实的URL。您必须使用\"/\"作为主机名和路径之间的分隔符，并且使用另一个\"/\"作为文件系统的根路径。例如，如果您想访问authconfig的仓库，您需要使用\"hg clone ssh://hg.fedorahosted.org//hg/authconfig\""
+msgstr " 是您在 fedorahosted.org 存放的项目在名称project as listed on the front of fedorahosted.org."
 
-#: data/content/faq.html:35
+#: data/content/faq.html:37
 msgid "Can I offer pre-compiled binaries on Fedora Hosted?"
 msgstr "我可以在 Fedora-Hosted 上发布预编译二进制包吗？"
 
-#: data/content/faq.html:36
+#: data/content/faq.html:38
 msgid ""
 "You may, as long as the following conditions are met: <ol><li>The code "
 "project must be available under a Free Software license appropriate for "
@@ -241,11 +286,11 @@ msgstr "验证 URL"
 
 #: data/content/index.html:33
 msgid "Right-click and copy the anonymous VCS URI to your clipboard"
-msgstr "点击右键，然后复制匿名的版本控制系统的 URI 到你的剪切板"
+msgstr "点击右键，然后复制匿名的版本控制系统的 URI 到您的剪切板"
 
 #: data/content/index.html:34
 msgid "Right-click and copy the authorized VCS URI to your clipboard"
-msgstr "点击右键，然后复制已授权的版本控制系统的 URI 到你的剪切板"
+msgstr "点击右键，然后复制已授权的版本控制系统的 URI 到您的剪切板"
 
 #: data/content/index.html:37
 msgid "No projects registered in this group"
@@ -265,7 +310,7 @@ msgid ""
 "href=\"https://fedorahosted.org/fedora-infrastructure\">Fedora "
 "Infrastructure Trac instance</a>. Be sure to log in before attempting to "
 "create a ticket."
-msgstr "新项目需要在<a href=\"https://fedorahosted.org/fedora-infrastructure\">Fedora Infrastructure Trac instance</a>里通过 ticket 提出。请在尝试创建一个 ticket 之前首先确保登录。"
+msgstr "新项目需要在<a href=\"https://fedorahosted.org/fedora-infrastructure\">Fedora Infrastructure Trac instance</a>里通过 ticket 提出。请在尝试创建一个 ticket 之前首先确保已经登录。"
 
 #: data/content/new.html:14
 msgid "Fill in the fields as follows:"
@@ -280,7 +325,7 @@ msgid ""
 "<code>minor</code> unless this is an urgent request. If you are uncertain "
 "whether or not the request is urgent then set this field to "
 "<code>minor</code>."
-msgstr "<code>minor</code> 如果这不是一个紧急请求。如果你不确定请求是否紧急，那么设置 <code>minor</code> 字段。"
+msgstr "<code>minor</code> 如果这不是一个紧急请求。如果您不确定请求是否紧急，那么设置 <code>minor</code> 字段。"
 
 #: data/content/new.html:21
 msgid "Use the following template for the full description of the ticket:"
@@ -300,7 +345,7 @@ msgid ""
 "best-effort basis. Many of the people that manage it are volunteers. "
 "Response time to new project requests is typically between 1 hour and 3 "
 "days. Outages, should they occur, are handled with a much higher priority."
-msgstr "Fedora 项目基础设施团队尽最大努力提供 Fedora Hosted 服务。管理它的人中，很多是志愿者。一个新项目申请的回应时间一般是1小时到3天。如果有停机事件，该事件将得到更高优先级的处理。"
+msgstr "Fedora 项目的基础设施团队尽最大努力提供 Fedora Hosted 服务。管理它的人中，很多是志愿者。一个新项目申请的回应时间一般是1小时到3天。如果有停机事件，该事件将得到更高优先级的处理。"
 
 #: data/content/terms.html:14
 msgid ""
@@ -330,10 +375,10 @@ msgstr "我们将总是尽最大努力联系不见的开发者并把现有的代
 
 #: data/templates/foot.html:9
 msgid ""
-"&copy; 2011 Red Hat, Inc. and others.  Please send any comments or "
+"&copy; 2012 Red Hat, Inc. and others.  Please send any comments or "
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
-msgstr "&copy; 2011年红帽公司等。请将意见或更正发送到<a href=\"mailto:webmaster@fedoraproject.org\">网站团队</a> 。"
+msgstr "&copy; 2012 红帽公司及其他。如有任何问题或错误修正，请发送邮件至 <a href=\"mailto:webmaster@fedoraproject.org\">网站团队邮箱</a>。"
 
 #: data/templates/foot.html:12
 msgid ""

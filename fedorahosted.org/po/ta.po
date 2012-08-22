@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-02-13 09:19-0600\n"
-"PO-Revision-Date: 2012-03-01 17:25+0000\n"
-"Last-Translator: Arun Prakash <arunprakash.pts@gmail.com>\n"
+"POT-Creation-Date: 2012-07-04 01:02+0200\n"
+"PO-Revision-Date: 2012-07-03 23:12+0000\n"
+"Last-Translator: Kévin Raymond <shaiton@fedoraproject.org>\n"
 "Language-Team: Tamil <tamil-users@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -108,10 +108,55 @@ msgid ""
 msgstr "உங்கள் சாதாரண Fedora திட்ட கணக்கு Fedora Hosted உடன் வேலை செய்யும். உங்களிடம் கணக்கு இல்லையெனில் வெறுமனே ஒரு Fedora திட்டத்தை <a href=\"https://admin.fedoraproject.org/accounts/\">விண்ணப்பிக்கவும்</a>. நீங்கள் ஒரு கொடையாளர் உரிம ஒப்பந்தத்தில் Fedora திட்டத்தில் குறியீட்டை கொடுக்க கையெழுத்திட வேண்டும்."
 
 #: data/content/faq.html:21
+msgid "How do I configure git so that I can push to my Fedora Hosted repo?"
+msgstr ""
+
+#: data/content/faq.html:22
+msgid ""
+"Do a git clone of your repo. Then, in your repo's directory on your system, "
+"edit .git/config under the [remote \"origin\"] section to follow the "
+"following pattern for the URL setting: "
+msgstr ""
+
+#: data/content/faq.html:22
+msgid "url = ssh://"
+msgstr ""
+
+#: data/content/faq.html:22
+msgid "username"
+msgstr ""
+
+#: data/content/faq.html:22
+msgid "@git.fedorahosted.org/git/"
+msgstr ""
+
+#: data/content/faq.html:22
+msgid "projectname"
+msgstr ""
+
+#: data/content/faq.html:22
+msgid ".git"
+msgstr ""
+
+#: data/content/faq.html:22
+msgid "Where:"
+msgstr ""
+
+#: data/content/faq.html:22
+msgid " is your Fedora Account System username."
+msgstr ""
+
+#: data/content/faq.html:22
+msgid ""
+" is the name of your fedorahosted.org project as listed on the front of "
+"fedorahosted.org."
+msgstr ""
+
+#: data/content/faq.html:23
 msgid "How can I publish archive releases (tgz, zip, etc) for my project?"
 msgstr "என் திட்டத்தில் எவ்வாறு காப்பு வெளியீடுகளை பதிப்பது (tgz, zip, முதலியவை)?"
 
-#: data/content/faq.html:22
+#: data/content/faq.html:24
 msgid ""
 "Create the archive on your workstation and run <code>scp "
 "myProject-0.1.tar.gz fedorahosted.org:&lt;Project Name&gt;</code>. The "
@@ -119,46 +164,46 @@ msgid ""
 "href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>"
 msgstr "உங்கள் கணினியில் ஒரு காப்பினை உருவாக்க <code>scp myProject-0.1.tar.gz fedorahosted.org:&lt;Project Name&gt;</code>ஐ இயக்கவும். காப்பு <a href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>இன் கீழ் வைக்கப்பட வேண்டும்"
 
-#: data/content/faq.html:23
+#: data/content/faq.html:25
 msgid "How can I delete something I uploaded to my archive?"
 msgstr "எனது ஆவணக்காப்பகத்தில் பதிவேற்றிய ஏதோவொன்றை நான் எப்படி அழிப்பேன்?"
 
-#: data/content/faq.html:24
+#: data/content/faq.html:26
 msgid ""
 "Please file a ticket in the <a href=\"https://fedorahosted.org/fedora-"
 "infrastructure/\">fedora-infrastructure trac</a> listing the exact file you "
 "wish removed and why"
 msgstr "நீங்கள் எந்த கோப்பை அழிக்க விரும்புகிறீர்கள் மற்றும் எதற்க்காக என்பதை குறிப்பிட்டு <a href=\"https://fedorahosted.org/fedora-infrastructure/\">fedora-infrastructure trac</a>த்தில் ஒரு சீட்டை பதிவு செய்யவும்"
 
-#: data/content/faq.html:25
+#: data/content/faq.html:27
 msgid ""
 "Is there a more convenient way to access releases than the path "
 "<code>/releases/m/y/myproject</code>?"
 msgstr "பாதை <code>/releases/m/y/myproject</code>ஐ விட வெளியீடுகளை அணுக வேறு வழிகள் உள்ளனவா?"
 
-#: data/content/faq.html:26
+#: data/content/faq.html:28
 msgid ""
 "There is. <code>https://fedorahosted.org/released/myproject</code> will go "
 "to the same place. The disadvantage of this is you must know the project "
 "name and can't browse for projects."
 msgstr "இது. <code>https://fedorahosted.org/released/myproject</code> அதே இடத்திற்கு செல்லும். இதன் தீமை என்னவென்றால் திட்டத்தை அறிய வேண்டும் திட்டங்களுக்கு உலாவ முடியாது"
 
-#: data/content/faq.html:27
+#: data/content/faq.html:29
 msgid "I just got a new git repository, how can I push/pull?"
 msgstr "நான் ஒரு புதிய git தொகுபதிவகத்தை பெற்றேன், நான் எவ்வாறு push/pull செய்வது?"
 
-#: data/content/faq.html:28
+#: data/content/faq.html:30
 msgid ""
 "Before anyone can clone/push the new repository a master push must be done "
 "with the command (from your local git repo): git push "
 "ssh://git.fedorahosted.org/git/yourproject.git/ master"
 msgstr "யாராவது ஒரு புதிய தொகுபதிவகத்தை clone/push செய்யும் முன் அவர்கள் பின்வரும் கட்டளையை கொடுக்க வேண்டும் (உங்கள் உள்ளமை git repoலிருந்து): git push ssh://git.fedorahosted.org/git/yourproject.git/ master"
 
-#: data/content/faq.html:29
+#: data/content/faq.html:31
 msgid "How do I get permission to commit to a project?"
 msgstr "ஒரு திட்டத்தை ஒப்படைக்க எப்படி அனுமதி பெறுவது?"
 
-#: data/content/faq.html:30
+#: data/content/faq.html:32
 msgid ""
 "You should <a "
 "href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for "
@@ -167,13 +212,13 @@ msgid ""
 "project, apply to the <code>gitdesktop-effects</code> group."
 msgstr "நீங்கள் இந்த குழுவின் திட்டத்திற்கு <a href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a>ஒப்பந்தமாகி இருக்க வேண்டும், எதுவாகவெனில் <code>&lt;scm&gt;&lt;project&gt;</code>, எ.கா. பணிமேடை- விளைவுகள் மிட்டம், இந்த <code>gitdesktop-effects</code> குழுவில் செயல்படுத்தலாம்."
 
-#: data/content/faq.html:31
+#: data/content/faq.html:33
 msgid ""
 "While I wait for my repository to be created, can I work on my code "
 "elsewhere?"
 msgstr "என்னுடைய தொகுபதிவகம் உருவாக்குவதற்கு நான் காத்திருக்கும் போது, என்னுடைய குறியீட்டை கொண்டு நான்எங்காவது பணிபுரியலாமா?"
 
-#: data/content/faq.html:32
+#: data/content/faq.html:34
 msgid ""
 "Of course. Visit <a "
 "href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a>"
@@ -181,13 +226,13 @@ msgid ""
 "fedorapeople.org space."
 msgstr "இருந்தாலும். ஒரு தற்காலிக தொகுபதிவகத்தை உங்கள் fedorapeople.org இடத்தில் அமைப்பு பற்றிய விவரங்களை அமைப்பது பற்றி தெரிய <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> ஐ பார்க்கவும்."
 
-#: data/content/faq.html:33
+#: data/content/faq.html:35
 msgid ""
 "Why does hg tells me the repository doesn't exist even though I know I have "
 "the correct URL?"
 msgstr "சரியான URL எனக்கு தெரிந்திருக்கும் போதே hg என்னிடம் களஞ்சியம் இல்லை என சொல்லுகிறது ?"
 
-#: data/content/faq.html:34
+#: data/content/faq.html:36
 msgid ""
 "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a "
 "delimiter between hostname and path and a second \"/\" as the root of the "
@@ -196,11 +241,11 @@ msgid ""
 "ssh://hg.fedorahosted.org//hg/authconfig\""
 msgstr "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a delimiter between hostname and path and a second \"/\" as the root of the filesystem path.  For instance, if you're accessing the repository for authconfig you need to use \"hg clone ssh://hg.fedorahosted.org//hg/authconfig\""
 
-#: data/content/faq.html:35
+#: data/content/faq.html:37
 msgid "Can I offer pre-compiled binaries on Fedora Hosted?"
 msgstr "Can I offer pre-compiled binaries on Fedora Hosted?"
 
-#: data/content/faq.html:36
+#: data/content/faq.html:38
 msgid ""
 "You may, as long as the following conditions are met: <ol><li>The code "
 "project must be available under a Free Software license appropriate for "
@@ -329,10 +374,10 @@ msgstr "நாங்கள் எப்போதும் விடுபட்�
 
 #: data/templates/foot.html:9
 msgid ""
-"&copy; 2011 Red Hat, Inc. and others.  Please send any comments or "
+"&copy; 2012 Red Hat, Inc. and others.  Please send any comments or "
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
-msgstr "&copy; 2011 Red Hat, Inc. and others.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
+msgstr ""
 
 #: data/templates/foot.html:12
 msgid ""

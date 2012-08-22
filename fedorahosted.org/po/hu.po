@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-02-13 09:19-0600\n"
-"PO-Revision-Date: 2012-05-31 23:24+0000\n"
+"POT-Creation-Date: 2012-07-04 01:02+0200\n"
+"PO-Revision-Date: 2012-08-15 13:28+0000\n"
 "Last-Translator: Peter Borsa <peter.borsa@gmail.com>\n"
 "Language-Team: Hungarian <trans-hu@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
@@ -109,10 +109,55 @@ msgid ""
 msgstr "Fedora Hosted rendes Fedora Projekt felhasználói azonosítóval működik. Egyszerű <a href=\"https://admin.fedoraproject.org/accounts/\">jelentkezés</a> kell egy Fedora Projekt felhasználói azonosítóért, ha még ez nem történt volna még meg. Vegye észre, hogy kódokkal történő hozzájáruláshoz alá kell írnia egy Hozzájáruló Engedély Szerződést a Fedora Projekttel!"
 
 #: data/content/faq.html:21
+msgid "How do I configure git so that I can push to my Fedora Hosted repo?"
+msgstr ""
+
+#: data/content/faq.html:22
+msgid ""
+"Do a git clone of your repo. Then, in your repo's directory on your system, "
+"edit .git/config under the [remote \"origin\"] section to follow the "
+"following pattern for the URL setting: "
+msgstr ""
+
+#: data/content/faq.html:22
+msgid "url = ssh://"
+msgstr "url = ssh://"
+
+#: data/content/faq.html:22
+msgid "username"
+msgstr "felhasználói név"
+
+#: data/content/faq.html:22
+msgid "@git.fedorahosted.org/git/"
+msgstr "@git.fedorahosted.org/git/"
+
+#: data/content/faq.html:22
+msgid "projectname"
+msgstr "projekt név"
+
+#: data/content/faq.html:22
+msgid ".git"
+msgstr ".git"
+
+#: data/content/faq.html:22
+msgid "Where:"
+msgstr ""
+
+#: data/content/faq.html:22
+msgid " is your Fedora Account System username."
+msgstr ""
+
+#: data/content/faq.html:22
+msgid ""
+" is the name of your fedorahosted.org project as listed on the front of "
+"fedorahosted.org."
+msgstr ""
+
+#: data/content/faq.html:23
 msgid "How can I publish archive releases (tgz, zip, etc) for my project?"
 msgstr "Hogyan publikálhat archív kiadásokat (tgz, zip, stb.) a saját projektjéhez?"
 
-#: data/content/faq.html:22
+#: data/content/faq.html:24
 msgid ""
 "Create the archive on your workstation and run <code>scp "
 "myProject-0.1.tar.gz fedorahosted.org:&lt;Project Name&gt;</code>. The "
@@ -120,46 +165,46 @@ msgid ""
 "href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>"
 msgstr "Archíválás után a saját munkaállomáson futtatni kell az <code>scp myProject-0.1.tar.gz fedorahosted.org:&lt;terv név&gt;</code> parancsot. Az archívum a <a href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a> helyre kerül."
 
-#: data/content/faq.html:23
+#: data/content/faq.html:25
 msgid "How can I delete something I uploaded to my archive?"
 msgstr "Hogy törölhetem az archívumomba feltöltött dolgokat?"
 
-#: data/content/faq.html:24
+#: data/content/faq.html:26
 msgid ""
 "Please file a ticket in the <a href=\"https://fedorahosted.org/fedora-"
 "infrastructure/\">fedora-infrastructure trac</a> listing the exact file you "
 "wish removed and why"
 msgstr "Please file a ticket in the <a href=\"https://fedorahosted.org/fedora-infrastructure/\">fedora-infrastructure trac</a> listing the exact file you wish removed and why"
 
-#: data/content/faq.html:25
+#: data/content/faq.html:27
 msgid ""
 "Is there a more convenient way to access releases than the path "
 "<code>/releases/m/y/myproject</code>?"
 msgstr "Van kényelmesebb módja a kiadások elérésének, mint a <code>/kiadas/e/n/projektem</code> út??"
 
-#: data/content/faq.html:26
+#: data/content/faq.html:28
 msgid ""
 "There is. <code>https://fedorahosted.org/released/myproject</code> will go "
 "to the same place. The disadvantage of this is you must know the project "
 "name and can't browse for projects."
 msgstr "Van. <code>https://fedorahosted.org/released/myproject</code> ugyanarra a helyre megy. Ennek a hátránya persze az, hogy tudnia kell a projekt nevét,és nem böngészheti a projekteket."
 
-#: data/content/faq.html:27
+#: data/content/faq.html:29
 msgid "I just got a new git repository, how can I push/pull?"
 msgstr "Éppen van egy új git tárolóm. Hogyan tudom nyomni/húzni?"
 
-#: data/content/faq.html:28
+#: data/content/faq.html:30
 msgid ""
 "Before anyone can clone/push the new repository a master push must be done "
 "with the command (from your local git repo): git push "
 "ssh://git.fedorahosted.org/git/yourproject.git/ master"
 msgstr "Mielőtt bárki klónozhatna/nyomhatna egy új tárolót, egy mester nyomást kell csinálni, a következő paranccsal (a helyi git tárból): git push ssh://git.fedorahosted.org/git/yourproject.git/ master"
 
-#: data/content/faq.html:29
+#: data/content/faq.html:31
 msgid "How do I get permission to commit to a project?"
 msgstr "Hogy kaphatok engedélyt egy projekt beküldéséhez?"
 
-#: data/content/faq.html:30
+#: data/content/faq.html:32
 msgid ""
 "You should <a "
 "href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for "
@@ -168,13 +213,13 @@ msgid ""
 "project, apply to the <code>gitdesktop-effects</code> group."
 msgstr "<a href=\"https://admin.fedoraproject.org/accounts/group/list\">Jelentkezzen</a> a projekt karbantartóinak csoportjába, melyek neve az <code><scm><projekt></code> formát követi. <code>gitdesktop-effects</code> például a desktop-effects projekthez tartozó csoport."
 
-#: data/content/faq.html:31
+#: data/content/faq.html:33
 msgid ""
 "While I wait for my repository to be created, can I work on my code "
 "elsewhere?"
 msgstr "Amíg várok a tárolóm létrehozására, dolgozhatok a kódomon máshol?"
 
-#: data/content/faq.html:32
+#: data/content/faq.html:34
 msgid ""
 "Of course. Visit <a "
 "href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a>"
@@ -182,13 +227,13 @@ msgid ""
 "fedorapeople.org space."
 msgstr "Természetesen. Látogasson el a <a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> helyre tájékoztatásért arról, hogyan állíthat fel egy ideiglenes tárolót a saját fedorapeople.org helyén."
 
-#: data/content/faq.html:33
+#: data/content/faq.html:35
 msgid ""
 "Why does hg tells me the repository doesn't exist even though I know I have "
 "the correct URL?"
 msgstr "Miért mondja a hg, hogy nem létezik a tároló, még akkor is, ha biztosan jó URL-t adtam meg?"
 
-#: data/content/faq.html:34
+#: data/content/faq.html:36
 msgid ""
 "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a "
 "delimiter between hostname and path and a second \"/\" as the root of the "
@@ -197,11 +242,11 @@ msgid ""
 "ssh://hg.fedorahosted.org//hg/authconfig\""
 msgstr "Sajnos a hg nem igazi URL-eket használ.  A \"/\" jelet kell használni elválasztóként a hosztnév és az útvonal között, és még egy \"/\"-t a gyökérkönyvtár megfelelőjeként.  Például az authconfig eléréséhez használja a \"hg clone ssh://hg.fedorahosted.org//hg/authconfig\" parancsot"
 
-#: data/content/faq.html:35
+#: data/content/faq.html:37
 msgid "Can I offer pre-compiled binaries on Fedora Hosted?"
 msgstr "Felajánlhatok előrefordított binárisokat a Fedora Hosted-en?"
 
-#: data/content/faq.html:36
+#: data/content/faq.html:38
 msgid ""
 "You may, as long as the following conditions are met: <ol><li>The code "
 "project must be available under a Free Software license appropriate for "
@@ -330,10 +375,10 @@ msgstr "Mi mindig mindent megteszünk, hogy elérjük a hiányzó fejlesztőket 
 
 #: data/templates/foot.html:9
 msgid ""
-"&copy; 2011 Red Hat, Inc. and others.  Please send any comments or "
+"&copy; 2012 Red Hat, Inc. and others.  Please send any comments or "
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
-msgstr "&copy; 2011 Red Hat, Inc. és mások. Kérjük küldjenek bármilyen megjegyzést vagy javítási javaslatot a <a href=\"mailto:webmaster@fedoraproject.org\">webmester csapat</a>nak."
+msgstr "&copy; 2012 Red Hat, Inc. and others.  Please send any comments or corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a>."
 
 #: data/templates/foot.html:12
 msgid ""

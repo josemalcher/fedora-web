@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PROJECT project.
 # 
 # Translators:
+# Christopher Meng <cickumqt@gmail.com>, 2012.
 #   <lovenemesis@gmail.com>, 2011.
 # neb <nick@bebout.net>, 2011.
 # tiansworld <tiansworld@fedoraproject.org>, 2011.
@@ -11,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-04-09 16:28+0200\n"
-"PO-Revision-Date: 2012-04-17 06:28+0000\n"
-"Last-Translator: Tommy He <lovenemesis@gmail.com>\n"
+"POT-Creation-Date: 2012-07-04 01:02+0200\n"
+"PO-Revision-Date: 2012-07-23 11:26+0000\n"
+"Last-Translator: Christopher Meng <cickumqt@gmail.com>\n"
 "Language-Team: Chinese (China) <trans-zh_cn@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -95,10 +96,10 @@ msgstr "它怎样工作？"
 msgid ""
 "BFO was started by boot.kernel.org (BKO) and combines a series of recent "
 "technologies to produce a new boot stack.  The glue that holds everything "
-"together is gpxe.  Users familiar with pxe will find gpxe very familiar.  "
+"together is ipxe.  Users familiar with pxe will find ipxe very familiar.  "
 "Latest versions support several protocols beyond just tftp.  We are using "
 "http to transfer files around.  The basic steps are as follows:"
-msgstr "BFO 由 boot.kernel.org(BKO) 发起，它整合了一些列新技术制作出一个新的引导集合。它们通过 gpxe 整合到一起。熟悉 pxe 的用户会发现 gpxe 与 pxe 极其相似。最新版本可支持除 tftp 外的其它协议。目前我们使用 http 来传输文件。基本步骤如下："
+msgstr ""
 
 #: data/content/faq.html:25
 msgid ""
@@ -108,7 +109,7 @@ msgstr "下载最适合您引导方式的 boot.fedoraproject.org 介质。"
 
 #: data/content/faq.html:27
 msgid "burn ISO images to a CD-R or DVD-R"
-msgstr "将 ISO 镜像烧录成 CD-R 或 DVD-R"
+msgstr "将 ISO 镜像烧录至 CD-R 或 DVD-R"
 
 #: data/content/faq.html:28
 msgid "write USB image for a USB stick"
@@ -157,7 +158,7 @@ msgid ""
 "from your image and they will appear.  Users with fast internet connections "
 "will have the best experience with BFO.  They basically replace having to "
 "regularly download large ISO images and burn them to disk."
-msgstr "BFO 下载非常小，而且一旦您完成，你几乎不需要再次下载。  就算以后有更多版本的 Fedora 发布，您依然可以从您的镜像引导并发现它们。  拥有高速互联网连接的用户会有最佳的 BFO 使用体验。  这将替代以往下载大型 ISO 镜像并刻录的过程。"
+msgstr "BFO 下载非常小，而且一旦您完成，您几乎不需要再次下载。  就算以后有更多版本的 Fedora 发布，您依然可以从您的镜像引导发现它们。  拥有高速互联网连接的用户会有最佳的 BFO 使用体验。  这将替代以往下载大型 ISO 镜像并刻录的过程。"
 
 #: data/content/faq.html:39
 msgid "What is required?"
@@ -199,15 +200,25 @@ msgstr "为什么 BFO 不引导？"
 
 #: data/content/faq.html:46
 msgid ""
-"BFO uses gpxe so it's not actually booting a Linux kernel at first.  As "
+"BFO uses ipxe so it's not actually booting a Linux kernel at first.  As "
 "such, some drivers and devices may not be supported.  If this is the case "
 "for you please check upstream at http://etherboot.org/ for bug updates, etc."
 "  If you feel a bug or device is supported but not working in BFO, contact: "
-msgstr "BFO 的使用 gpxe 所以它实际上并不是一开始启动一个 Linux 内核。因此，有些驱动和设备可能不支持。如果是这种情况，请在 http://etherboot.org 上检查上游的 bug 更新。如果你觉得 bug 或设备已被支持但在 BFO 这里不工作，请联系："
+msgstr ""
 
 #: data/content/faq.html:47
 msgid "Where can I find the BFO sources and configuration?"
-msgstr "我在哪里可以找到 BFO 源代码和配置？"
+msgstr "我在哪里可以找到 BFO 的源代码和配置？"
+
+#: data/content/faq.html:49
+msgid "Where do I report issues?"
+msgstr "我应该在哪里提交问题报告？"
+
+#: data/content/faq.html:56
+msgid ""
+"At this time booting Live CDs is experimental and not available. We hope to "
+"have them available soon."
+msgstr "目前启动 Live CD 还处于试验阶段且并不可用。我们希望它尽快上线。"
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
@@ -234,10 +245,10 @@ msgstr "要下载 BFO 请沿左侧菜单选择 BFO 下载。"
 
 #: data/templates/foot.html:9
 msgid ""
-"&copy; 2011 Red Hat, Inc. and others.  Please send any comments or "
+"&copy; 2012 Red Hat, Inc. and others.  Please send any comments or "
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
-msgstr "&copy; 2011 Red Hat 公司及其它。请将建议和改正发送至 <a href=\"mailto:webmaster@fedoraproject.org\">网站小组</a>。"
+msgstr "&copy; 2012 红帽公司及其它。如有任何疑问请<a href=\"mailto:webmaster@fedoraproject.org\">向网站团队发送邮件</a>。"
 
 #: data/templates/foot.html:12
 msgid ""

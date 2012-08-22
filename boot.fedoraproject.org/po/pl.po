@@ -9,10 +9,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-04-09 16:28+0200\n"
-"PO-Revision-Date: 2012-04-09 15:25+0000\n"
+"POT-Creation-Date: 2012-07-04 01:02+0200\n"
+"PO-Revision-Date: 2012-07-03 23:13+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish (http://www.transifex.com/projects/p/fedora/language/pl/)\n"
+"Language-Team: Polish <trans-pl@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -93,10 +93,10 @@ msgstr "Jak to działa?"
 msgid ""
 "BFO was started by boot.kernel.org (BKO) and combines a series of recent "
 "technologies to produce a new boot stack.  The glue that holds everything "
-"together is gpxe.  Users familiar with pxe will find gpxe very familiar.  "
+"together is ipxe.  Users familiar with pxe will find ipxe very familiar.  "
 "Latest versions support several protocols beyond just tftp.  We are using "
 "http to transfer files around.  The basic steps are as follows:"
-msgstr "BFO zostało rozpoczęte przez witrynę boot.kernel.org (BKO). Składa się z kilku najnowszych technologii, aby utworzyć nowy stos uruchamiania. Oprogramowaniem sklejającym wszystko jest gpxe. Użytkownicy zaznajomieni z PXE powinni szybko zrozumieć gpxe. Najnowsze wersje obsługują wiele protokołów poza TFTP. Tutaj używany jest protokół HTTP do przesyłania plików. Oto podstawowa instrukcja:"
+msgstr "BFO zostało rozpoczęte przez witrynę boot.kernel.org (BKO). Składa się z kilku najnowszych technologii, aby utworzyć nowy stos uruchamiania. Oprogramowaniem sklejającym wszystko jest ipxe. Użytkownicy zaznajomieni z PXE powinni szybko zrozumieć ipxe. Najnowsze wersje obsługują wiele protokołów poza TFTP. Tutaj używany jest protokół HTTP do przesyłania plików. Oto podstawowa instrukcja:"
 
 #: data/content/faq.html:25
 msgid ""
@@ -197,15 +197,25 @@ msgstr "Dlaczego BFO się nie uruchamia?"
 
 #: data/content/faq.html:46
 msgid ""
-"BFO uses gpxe so it's not actually booting a Linux kernel at first.  As "
+"BFO uses ipxe so it's not actually booting a Linux kernel at first.  As "
 "such, some drivers and devices may not be supported.  If this is the case "
 "for you please check upstream at http://etherboot.org/ for bug updates, etc."
 "  If you feel a bug or device is supported but not working in BFO, contact: "
-msgstr "BFO używa programu gpxe, więc właściwie na początku nie uruchamia jądra Linux. Dlatego niektóre sterowniki i urządzenia mogą nie być obsługiwane. Jeśli tak jest, to proszę sprawdzić, czy na stronie projektu http://etherboot.org/ nie ma aktualizacji naprawiających błędy. Jeśli to błąd lub urządzenie jest obsługiwane, ale nie działa z BFO, należy się skontaktować z: "
+msgstr "BFO używa programu ipxe, więc właściwie na początku nie uruchamia jądra Linux. Dlatego niektóre sterowniki i urządzenia mogą nie być obsługiwane. Jeśli tak jest, to proszę sprawdzić, czy na stronie projektu http://etherboot.org/ nie ma aktualizacji naprawiających błędy. Jeśli to błąd lub urządzenie jest obsługiwane, ale nie działa z BFO, należy się skontaktować z: "
 
 #: data/content/faq.html:47
 msgid "Where can I find the BFO sources and configuration?"
 msgstr "Gdzie można znaleźć źródła i konfigurację BFO?"
+
+#: data/content/faq.html:49
+msgid "Where do I report issues?"
+msgstr "Gdzie można zgłaszać problemy?"
+
+#: data/content/faq.html:56
+msgid ""
+"At this time booting Live CDs is experimental and not available. We hope to "
+"have them available soon."
+msgstr "Obecnie uruchamianie z płyt Live CD jest eksperymentalne i niedostępne. Mamy nadzieję, że to się niedługo zmieni."
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
@@ -232,10 +242,10 @@ msgstr "Aby pobrać BFO, należy wybrać Pobieranie BFO z menu po lewej stronie.
 
 #: data/templates/foot.html:9
 msgid ""
-"&copy; 2011 Red Hat, Inc. and others.  Please send any comments or "
+"&copy; 2012 Red Hat, Inc. and others.  Please send any comments or "
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
-msgstr "copy; 2011 Red Hat, Inc. i inni. Proszę wysyłać wszelkie komentarze i korekty do <a href=\"mailto:webmaster@fedoraproject.org\">zespołu stron WWW</a> (w języku angielskim)."
+msgstr "copy; 2012 Red Hat, Inc. i inni. Proszę wysyłać wszelkie komentarze i korekty do <a href=\"mailto:webmaster@fedoraproject.org\">zespołu stron WWW</a> (w języku angielskim)."
 
 #: data/templates/foot.html:12
 msgid ""

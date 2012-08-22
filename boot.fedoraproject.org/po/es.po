@@ -11,10 +11,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-04-09 16:28+0200\n"
-"PO-Revision-Date: 2012-04-16 11:58+0000\n"
-"Last-Translator: Claudio Rodrigo Pereyra Diaz <elsupergomez@gmail.com>\n"
-"Language-Team: Spanish (Castilian) <trans-es@lists.fedoraproject.org>\n"
+"POT-Creation-Date: 2012-07-04 01:02+0200\n"
+"PO-Revision-Date: 2012-07-17 15:32+0000\n"
+"Last-Translator: Daniel Cabrera <logan@fedoraproject.org>\n"
+"Language-Team: Spanish <trans-es@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -95,10 +95,10 @@ msgstr "¿Cómo funciona?"
 msgid ""
 "BFO was started by boot.kernel.org (BKO) and combines a series of recent "
 "technologies to produce a new boot stack.  The glue that holds everything "
-"together is gpxe.  Users familiar with pxe will find gpxe very familiar.  "
+"together is ipxe.  Users familiar with pxe will find ipxe very familiar.  "
 "Latest versions support several protocols beyond just tftp.  We are using "
 "http to transfer files around.  The basic steps are as follows:"
-msgstr "BFO inició desde boot.kernel.org (BKO) y combina una serie de tecnologías recientes para producir una nueva plataforma de inicio. El pegamento que mantiene todo en su lugar es gpxe. Usuarios familiarizados con PXE encontrarán gpxe muy parecido. Las versiones más recientes soporte otros protocolos además de tftp. Usamos http para transferir archivos. Los pasos básicos son los siguientes:"
+msgstr "BFO fue originado por boot.kernel.org (BKO) y combina una serie de tecnologías con las que producir un nuevo sistema de arranque. El elemento que mantiene a todas estas tecnologías juntas es ipxe. Los usuarios que ya están familiarizados con pxe no encontrarán diferencias significativas con ipxe. Las versiones más recientes ofrecen soporte para diferentes protocolos, además de tftp. Para la transferencia de archivos estamos utilizando http. Las etapas fundamentales son las siguientes:"
 
 #: data/content/faq.html:25
 msgid ""
@@ -199,15 +199,25 @@ msgstr "¿Porqué no arranca BFO?"
 
 #: data/content/faq.html:46
 msgid ""
-"BFO uses gpxe so it's not actually booting a Linux kernel at first.  As "
+"BFO uses ipxe so it's not actually booting a Linux kernel at first.  As "
 "such, some drivers and devices may not be supported.  If this is the case "
 "for you please check upstream at http://etherboot.org/ for bug updates, etc."
 "  If you feel a bug or device is supported but not working in BFO, contact: "
-msgstr "BFO utiliza gPXE así que no es realmente arrancar un kernel de Linux en un primer momento. Como tal, algunos controladores y dispositivos pueden no ser soportados. Si es su caso verifique en http://etherboot.org/  por las actualizaciones de errores, etc. Si encuentra un error o, el dispositivo es soportado pero no funciona en BFO, contacte:"
+msgstr "BFO utiliza ipxe, de modo que en el momento inicial no se ejecuta en un kernel Linux. Y por esto, es muy probable que no sean soportados algunos controladores y dispositivos. Si este es su caso, por favor verifique en la rama desarrollo (http://etherboot.org/) la existencia de errores, actualizaciones, etc. Si usted considera que existe un error, o que un dispositivo soportado no funciona con BFO, por favor comuníquese con:"
 
 #: data/content/faq.html:47
 msgid "Where can I find the BFO sources and configuration?"
 msgstr "¿Dónde puedo encontrar los fuentes y configuración de BFO?"
+
+#: data/content/faq.html:49
+msgid "Where do I report issues?"
+msgstr "¿Dónde envío informes de errores?"
+
+#: data/content/faq.html:56
+msgid ""
+"At this time booting Live CDs is experimental and not available. We hope to "
+"have them available soon."
+msgstr "En estos momentos no se encuentra disponible el arranque desde CDs vivos ya que está en proceso de experimentación. Esperamos poder ofrecerlo en breve."
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
@@ -234,10 +244,10 @@ msgstr "Para descargar BFO, seleccione Descargar BFO en el menú a su izquierda.
 
 #: data/templates/foot.html:9
 msgid ""
-"&copy; 2011 Red Hat, Inc. and others.  Please send any comments or "
+"&copy; 2012 Red Hat, Inc. and others.  Please send any comments or "
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
-msgstr "&copy; 2011 Red Hat, Inc. y otros. Por favor envíe cualquier comentario o corrección a <a href=\"mailto:webmaster@fedoraproject.org\">equipo de sitios web</a>."
+msgstr "&copy; 2012 Red Hat, Inc. y otros.  Por favor envíe cualquier tipo de comentarios o correcciones al <a href=\"mailto:webmaster@fedoraproject.org\">equipo de sitios web</a>."
 
 #: data/templates/foot.html:12
 msgid ""

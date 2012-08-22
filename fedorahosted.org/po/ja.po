@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-02-13 09:19-0600\n"
-"PO-Revision-Date: 2012-02-13 17:08+0000\n"
-"Last-Translator: neb <nick@bebout.net>\n"
+"POT-Creation-Date: 2012-07-04 01:02+0200\n"
+"PO-Revision-Date: 2012-07-04 02:09+0000\n"
+"Last-Translator: Tomoyuki KATO <tomo@dream.daynight.jp>\n"
 "Language-Team: Japanese <trans-ja@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -108,10 +108,55 @@ msgid ""
 msgstr "通常のFedora ProjectアカウントでFedora Hostedを使用できます。 Fedora Projectのアカウントをお持ちでない場合は、<a href=\"https://admin.fedoraproject.org/accounts/\">申請</a>してください。 コードを提供するには、Fedora Projectのコントリビュータライセンス契約 (Contributor License Agreement) に署名する必要があります。"
 
 #: data/content/faq.html:21
+msgid "How do I configure git so that I can push to my Fedora Hosted repo?"
+msgstr "Fedora Hosted リポジトリにプッシュできるようにするために、どのように Git を設定しますか？"
+
+#: data/content/faq.html:22
+msgid ""
+"Do a git clone of your repo. Then, in your repo's directory on your system, "
+"edit .git/config under the [remote \"origin\"] section to follow the "
+"following pattern for the URL setting: "
+msgstr "リポジトリの Git クローンを実行します。そして、お使いのシステムにある、リポジトリのディレクトリーにおいて、.git/config を編集します。[remote \"origin\"] セクションの下に、以下の URL 設定のパターンを書きます: "
+
+#: data/content/faq.html:22
+msgid "url = ssh://"
+msgstr "url = ssh://"
+
+#: data/content/faq.html:22
+msgid "username"
+msgstr "ユーザー名"
+
+#: data/content/faq.html:22
+msgid "@git.fedorahosted.org/git/"
+msgstr "@git.fedorahosted.org/git/"
+
+#: data/content/faq.html:22
+msgid "projectname"
+msgstr "プロジェクト名"
+
+#: data/content/faq.html:22
+msgid ".git"
+msgstr ".git"
+
+#: data/content/faq.html:22
+msgid "Where:"
+msgstr "箇所:"
+
+#: data/content/faq.html:22
+msgid " is your Fedora Account System username."
+msgstr " あなたの Fedora Account System ユーザー名です。"
+
+#: data/content/faq.html:22
+msgid ""
+" is the name of your fedorahosted.org project as listed on the front of "
+"fedorahosted.org."
+msgstr " fedorahosted.org のフロントに一覧化されている、あなたなの fedorahosted.org プロジェクトの名前です。"
+
+#: data/content/faq.html:23
 msgid "How can I publish archive releases (tgz, zip, etc) for my project?"
 msgstr "自分のプロジェクトのアーカイブリリース（tgz、zip など）を公開するにはどうしたらよいですか？"
 
-#: data/content/faq.html:22
+#: data/content/faq.html:24
 msgid ""
 "Create the archive on your workstation and run <code>scp "
 "myProject-0.1.tar.gz fedorahosted.org:&lt;Project Name&gt;</code>. The "
@@ -119,46 +164,46 @@ msgid ""
 "href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>"
 msgstr "ご自分のワークステーションでアーカイブを作成し、<code>scp myProject-0.1.tar.gz fedorahosted.org:&lt;Project Name&gt;</code>を実行します。アーカイブは<a href=\"https://fedorahosted.org/releases/\">https://fedorahosted.org/releases/</a>以下に置かれます。"
 
-#: data/content/faq.html:23
+#: data/content/faq.html:25
 msgid "How can I delete something I uploaded to my archive?"
 msgstr "どのように自分のアーカイブにアップロードしたものを削除できますか？"
 
-#: data/content/faq.html:24
+#: data/content/faq.html:26
 msgid ""
 "Please file a ticket in the <a href=\"https://fedorahosted.org/fedora-"
 "infrastructure/\">fedora-infrastructure trac</a> listing the exact file you "
 "wish removed and why"
 msgstr "あなたが削除したい正確なファイルとその理由を一覧にして、<a href=\"https://fedorahosted.org/fedora-infrastructure/\">fedora-infrastructure trac</a> にチケットを提出してください。"
 
-#: data/content/faq.html:25
+#: data/content/faq.html:27
 msgid ""
 "Is there a more convenient way to access releases than the path "
 "<code>/releases/m/y/myproject</code>?"
 msgstr "パス<code>/releases/m/y/myproject</code>以外に、簡単にリリースへとアクセスできる方法はありますか？"
 
-#: data/content/faq.html:26
+#: data/content/faq.html:28
 msgid ""
 "There is. <code>https://fedorahosted.org/released/myproject</code> will go "
 "to the same place. The disadvantage of this is you must know the project "
 "name and can't browse for projects."
 msgstr "あります。<code>https://fedorahosted.org/released/myproject</code> でも同じ場所にアクセスできます。プロジェクト名を認識していなければならず、プロジェクトのブラウズはできません。"
 
-#: data/content/faq.html:27
+#: data/content/faq.html:29
 msgid "I just got a new git repository, how can I push/pull?"
 msgstr "新しい git レポジトリを git push または git pull する方法は？"
 
-#: data/content/faq.html:28
+#: data/content/faq.html:30
 msgid ""
 "Before anyone can clone/push the new repository a master push must be done "
 "with the command (from your local git repo): git push "
 "ssh://git.fedorahosted.org/git/yourproject.git/ master"
 msgstr "新しいレポジトリを git clone または git push できるようにするには、最初にコマンド git push ssh://git.fedorahosted.org/git/yourproject.git/ master を実行して (ローカル git レポジトリより) マスタープッシュを完了しなければなりません。"
 
-#: data/content/faq.html:29
+#: data/content/faq.html:31
 msgid "How do I get permission to commit to a project?"
 msgstr "プロジェクトへのコミット権はどのように取得するのですか?"
 
-#: data/content/faq.html:30
+#: data/content/faq.html:32
 msgid ""
 "You should <a "
 "href=\"https://admin.fedoraproject.org/accounts/group/list\">apply</a> for "
@@ -167,13 +212,13 @@ msgid ""
 "project, apply to the <code>gitdesktop-effects</code> group."
 msgstr "プロジェクトのコミットグループに <a href=\"https://admin.fedoraproject.org/accounts/group/list\">参加申請</a> しましょう。コミットグループ名は <code>&lt;scm&gt;&lt;project&gt;</code> のような形をしています(例: desktop-effects プロジェクトの場合 <code>gitdesktop-effects</code> グループ)。"
 
-#: data/content/faq.html:31
+#: data/content/faq.html:33
 msgid ""
 "While I wait for my repository to be created, can I work on my code "
 "elsewhere?"
 msgstr "レポジトリが作成されるのを待つ間に、別の場所でコードの作業を行ってもよいですか？"
 
-#: data/content/faq.html:32
+#: data/content/faq.html:34
 msgid ""
 "Of course. Visit <a "
 "href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a>"
@@ -181,13 +226,13 @@ msgid ""
 "fedorapeople.org space."
 msgstr "もちろんです。 ご自分の fedorapeople.org スペースに一時的なレポジトリを設定する方法についての説明は、<a href=\"http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org\">http://fedoraproject.org/wiki/Infrastructure/fedorapeople.org</a> をご覧ください。"
 
-#: data/content/faq.html:33
+#: data/content/faq.html:35
 msgid ""
 "Why does hg tells me the repository doesn't exist even though I know I have "
 "the correct URL?"
 msgstr "正しい URL を使っているのにも関わらず、なぜ hg はレポジトリが存在しないと応答するのでしょうか?"
 
-#: data/content/faq.html:34
+#: data/content/faq.html:36
 msgid ""
 "Unfortunately hg doesn't use true URLs.  You have to use a \"/\" as a "
 "delimiter between hostname and path and a second \"/\" as the root of the "
@@ -196,11 +241,11 @@ msgid ""
 "ssh://hg.fedorahosted.org//hg/authconfig\""
 msgstr "残念ながら、hgは本当のURLを使いません。ホスト名とパスとの間の区切りとして\"/\"を、ファイルシステムのパスのルートとして二つ目の\"/\"を使わなければいけません。たとえば、もしauthconfigのリポジトリにアクセスしているならば、\"hg clone ssh://hg.fedorahosted.org//hg/authconfig\"を使う必要があります。"
 
-#: data/content/faq.html:35
+#: data/content/faq.html:37
 msgid "Can I offer pre-compiled binaries on Fedora Hosted?"
 msgstr "Fedora Hosted にコンパイル済みのバイナリファイルを提供できますか?"
 
-#: data/content/faq.html:36
+#: data/content/faq.html:38
 msgid ""
 "You may, as long as the following conditions are met: <ol><li>The code "
 "project must be available under a Free Software license appropriate for "
@@ -329,10 +374,10 @@ msgstr "プロジェクトが削除される場合、最大限に努力して不
 
 #: data/templates/foot.html:9
 msgid ""
-"&copy; 2011 Red Hat, Inc. and others.  Please send any comments or "
+"&copy; 2012 Red Hat, Inc. and others.  Please send any comments or "
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
-msgstr "&copy; 2011 Red Hat, Inc. and others. このサイトに関する問い合わせは <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a> までお願いします。"
+msgstr "&copy; 2012 Red Hat, Inc. and others.  すべてのコメントや訂正は <a href=\"mailto:webmaster@fedoraproject.org\">websites team</a> までお送りください。"
 
 #: data/templates/foot.html:12
 msgid ""

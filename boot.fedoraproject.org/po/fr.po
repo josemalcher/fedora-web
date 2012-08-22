@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-04-09 16:28+0200\n"
-"PO-Revision-Date: 2012-04-15 15:58+0000\n"
-"Last-Translator: Jérôme Fenal <jfenal@gmail.com>\n"
+"POT-Creation-Date: 2012-07-04 01:02+0200\n"
+"PO-Revision-Date: 2012-07-03 23:13+0000\n"
+"Last-Translator: Kévin Raymond <shaiton@fedoraproject.org>\n"
 "Language-Team: French <trans-fr@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -94,10 +94,10 @@ msgstr "Comment cela fonctionne-t-il ?"
 msgid ""
 "BFO was started by boot.kernel.org (BKO) and combines a series of recent "
 "technologies to produce a new boot stack.  The glue that holds everything "
-"together is gpxe.  Users familiar with pxe will find gpxe very familiar.  "
+"together is ipxe.  Users familiar with pxe will find ipxe very familiar.  "
 "Latest versions support several protocols beyond just tftp.  We are using "
 "http to transfer files around.  The basic steps are as follows:"
-msgstr "BFO fut initié par boot.kernel.org et combine un ensemble de technologies récentes produisant ainsi une nouvelle pile de démarrage. Toutes ces technologies sont rassemblées autour de GPXE. Si vous  connaissez déjà PXE, vous ne serez pas dépaysé. Les dernières versionsprennent en charge plusieurs protocoles en plus de tftp. Nous utilisons HTTP pour transférer les fichiers. Les étapes ci-dessous résument le fonctionnement général."
+msgstr ""
 
 #: data/content/faq.html:25
 msgid ""
@@ -198,15 +198,25 @@ msgstr "Pourquoi BFO ne démarre pas ?"
 
 #: data/content/faq.html:46
 msgid ""
-"BFO uses gpxe so it's not actually booting a Linux kernel at first.  As "
+"BFO uses ipxe so it's not actually booting a Linux kernel at first.  As "
 "such, some drivers and devices may not be supported.  If this is the case "
 "for you please check upstream at http://etherboot.org/ for bug updates, etc."
 "  If you feel a bug or device is supported but not working in BFO, contact: "
-msgstr "BFO utilise gpxe, il ne peut donc pas démarer un noyau Linux. Ainsi, certains pilotes et périphériques ne peuvent pas être pris en charge. Si vous êtes dans cette situation vérifier le projet en amont sur http://etherboot.org/ afin de trouver des corrections, etc. Si vous trouvez une anomalie ou si un périphérique est supporté mais ne fonctionne pas dans BFO, contactez : "
+msgstr ""
 
 #: data/content/faq.html:47
 msgid "Where can I find the BFO sources and configuration?"
 msgstr "Où puis-je trouver les sources et la configuration de BFO ?"
+
+#: data/content/faq.html:49
+msgid "Where do I report issues?"
+msgstr ""
+
+#: data/content/faq.html:56
+msgid ""
+"At this time booting Live CDs is experimental and not available. We hope to "
+"have them available soon."
+msgstr ""
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
@@ -233,10 +243,10 @@ msgstr "Pour télécharger BFO, sélectionnez-le à partir du menu de gauche."
 
 #: data/templates/foot.html:9
 msgid ""
-"&copy; 2011 Red Hat, Inc. and others.  Please send any comments or "
+"&copy; 2012 Red Hat, Inc. and others.  Please send any comments or "
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
-msgstr "&copy; 2011 Red Hat, Inc. et autres. Veuillez transmettre tous commentaires ou corrections à <a href=\"mailto:webmaster@fedoraproject.org\">l'équipe des sites internet</a>."
+msgstr ""
 
 #: data/templates/foot.html:12
 msgid ""
