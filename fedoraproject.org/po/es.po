@@ -18,9 +18,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-06-09 16:20+0200\n"
-"PO-Revision-Date: 2012-07-17 15:12+0000\n"
-"Last-Translator: Daniel Cabrera <logan@fedoraproject.org>\n"
+"POT-Creation-Date: 2012-08-22 20:55+0200\n"
+"PO-Revision-Date: 2012-08-22 18:59+0000\n"
+"Last-Translator: Kévin Raymond <shaiton@fedoraproject.org>\n"
 "Language-Team: Spanish <trans-es@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,7 +33,7 @@ msgstr ""
 msgid "Fedora Project - What is Fedora and what makes it different?"
 msgstr "Proyecto Fedora - ¿Qué es Fedora y qué lo hace diferente?"
 
-#: data/content/about-fedora.html:13 data/content/index.html:130
+#: data/content/about-fedora.html:13 data/content/index.html:132
 #: data/templates/foot.html:10
 msgid "About Fedora"
 msgstr "Acerca de Fedora"
@@ -77,7 +77,7 @@ msgid ""
 "technologies."
 msgstr "<strong>Proyecto Fedora</strong> es el nombre de una comunidad de personas en todo el planeta que aman, utilizan y construyen software libre. Trabajando como comunidad, nuestra intención es liderar la creación y la distribución tanto de código como de contenidos libres. Fedora es patrocinado por <strong><a href=\"http://redhat.com\">Red Hat</a></strong>, el proveedor de tecnología de código abierto más confiable en todo el mundo. Red Hat invierte en Fedora para estimular la colaboración y la innovación en tecnologías de <a href=\"http://es.wikipedia.org/wiki/Software_libre\">software libre</a>."
 
-#: data/content/about-fedora.html:29 data/content/index.html:188
+#: data/content/about-fedora.html:29 data/content/index.html:190
 msgid "What makes Fedora different?"
 msgstr "¿Qué es lo que hace que Fedora sea diferente?"
 
@@ -223,7 +223,7 @@ msgid "Report a new bug or request a change"
 msgstr "Reporte un nuevo error, o haga una sugerencia."
 
 #: data/content/about-fedora.html:81 data/content/code-of-conduct.html:31
-#: data/content/sponsors.html:65
+#: data/content/sponsors.html:63
 msgid "Return to the main Fedora website."
 msgstr "Volver a la página principal de Fedora."
 
@@ -783,7 +783,8 @@ msgstr "Predeterminado en Fedora"
 #: data/content/get-fedora-options.html:92
 #: data/content/get-fedora-options.html:199
 #: data/content/get-fedora-options.html:211
-#: data/content/get-fedora-options.html:247
+#: data/content/get-fedora-options.html:242
+#: data/content/get-fedora-options.html:278
 msgid "32-bit PC Edition"
 msgstr "Edición de PC de 32 bits"
 
@@ -804,6 +805,7 @@ msgstr "Sitio web de GNOME.org"
 #: data/content/get-fedora-options.html:156
 #: data/content/get-fedora-options.html:182
 #: data/content/get-fedora-options.html:221
+#: data/content/get-fedora-options.html:252
 msgid "32-bit"
 msgstr "32 bits"
 
@@ -816,7 +818,9 @@ msgstr "32 bits"
 #: data/content/get-fedora-options.html:183
 #: data/content/get-fedora-options.html:188
 #: data/content/get-fedora-options.html:224
-#: data/content/get-fedora-options.html:233 data/content/get-fedora.html:37
+#: data/content/get-fedora-options.html:233
+#: data/content/get-fedora-options.html:255
+#: data/content/get-fedora-options.html:264 data/content/get-fedora.html:37
 #: data/content/index.html:62
 msgid "Download Now!"
 msgstr "¡Descargar Ahora!"
@@ -838,6 +842,7 @@ msgstr "%sMB CD ISO"
 #: data/content/get-fedora-options.html:161
 #: data/content/get-fedora-options.html:187
 #: data/content/get-fedora-options.html:230
+#: data/content/get-fedora-options.html:261
 msgid "64-bit"
 msgstr "64 bits"
 
@@ -932,34 +937,55 @@ msgstr "La edición en DVD de Fedora no es un Medio vivo, pero es arrancable. Cu
 
 #: data/content/get-fedora-options.html:220
 #: data/content/get-fedora-options.html:229
+#: data/content/get-fedora-options.html:251
+#: data/content/get-fedora-options.html:260
 msgid "Intel & AMD / PC compatible"
 msgstr "PCs Compatibles Intel y AMD"
 
 #: data/content/get-fedora-options.html:224
+#: data/content/get-fedora-options.html:255
 msgid "Most Compatible"
 msgstr "El más compatible"
 
 #: data/content/get-fedora-options.html:225
-msgid "3.5GB ISO disk image for 32-bit PC"
-msgstr "3.5GB ISO Imagen del disco para Computadoras de 32-bit"
-
 #: data/content/get-fedora-options.html:234
-msgid "3.5GB ISO disk image for 64-bit PC"
-msgstr "3.5GB ISO Imagen del disco para Computadoras de 64-bit"
+#, python-format
+msgid "%(size)sGB ISO disk image for %(arch)s PC"
+msgstr ""
 
-#: data/content/get-fedora-options.html:240
+#: data/content/get-fedora-options.html:245
+#, python-format
+msgid "Fedora %(release)s Network Install CD"
+msgstr ""
+
+#: data/content/get-fedora-options.html:246
+msgid ""
+"The Network Install CD edition of Fedora is useful if you have a fast "
+"Internet connection available.  When you boot from this media, you will be "
+"running the installation program and you get the selected packages directly "
+"from the repositories. The CD ensures you having the latest stable versions "
+"of the packages installed."
+msgstr ""
+
+#: data/content/get-fedora-options.html:256
+#: data/content/get-fedora-options.html:265
+#, python-format
+msgid "%(size)sMB ISO disk image for %(arch)s PC"
+msgstr ""
+
+#: data/content/get-fedora-options.html:271
 #, python-format
 msgid ""
 "For help determining what architecture your system is, <a href=\"%s\">please"
 " view our architecture help guide</a>."
 msgstr "Si necesita ayuda para determinar que arquitectura tiene su sistema, <a href=\"%s\">por favor vea la guia de ayuda de arquitectura</a>."
 
-#: data/content/get-fedora-options.html:250
+#: data/content/get-fedora-options.html:281
 #, python-format
 msgid "Fedora %(release)s Media by Mail"
 msgstr "Fedora %(release)s Medio por correo"
 
-#: data/content/get-fedora-options.html:251
+#: data/content/get-fedora-options.html:282
 #, python-format
 msgid ""
 "Slow internet? No internet? You can get a copy of Fedora media sent via "
@@ -967,137 +993,137 @@ msgid ""
 "href=\"%s\">Fedora Free Media</a> program."
 msgstr "¿Internet lenta? ¿sin internet? Puede solicitar una copia de los medios instalables de Fedora, a ser enviada por correo postal gracias a proveedores locales o en línea, o también mediante el programa <a href=\"%s\">Free Media de Fedora</a>."
 
-#: data/content/get-fedora-options.html:255
+#: data/content/get-fedora-options.html:286
 msgid "Purchase Fedora Media from a Vendor"
 msgstr "Adquiera los medios de instalación de Fedora a través de un proveedor"
 
-#: data/content/get-fedora-options.html:261
+#: data/content/get-fedora-options.html:292
 msgid "Locate a Vendor in Your Area"
 msgstr "Ubique un proveedor en su zona"
 
-#: data/content/get-fedora-options.html:262
+#: data/content/get-fedora-options.html:293
 msgid ""
 "Select vendors worldwide carry copies of Fedora media at a reasonable price."
 " If a vendor exists in your area and you'd rather not wait for shipping, "
 "this may be a good option for you."
 msgstr "En todo el planeta, proveedores seleccionados poseen copias de los medios de instalación de Fedora que pueden adquirirse a precios muy razonables. Si existe un proveedor en su zona, y prefiere no esperar el envío, esta opción podría ser ideal para usted."
 
-#: data/content/get-fedora-options.html:263
+#: data/content/get-fedora-options.html:294
 msgid "View Local Vendor Directory"
 msgstr "Ver el directorio de proveedores locales"
 
-#: data/content/get-fedora-options.html:266
+#: data/content/get-fedora-options.html:297
 msgid "Online Vendors"
 msgstr "Proveedores en línea"
 
-#: data/content/get-fedora-options.html:267
+#: data/content/get-fedora-options.html:298
 msgid ""
 "Numerous vendors worldwide offer Fedora media for online purchase. Select "
 "the vendor closest to you to keep your shipping costs lower."
 msgstr "Gran cantidad de proveedores ofrecen los medios de instalación de Fedora para ser adquiridos en línea. Elija el más cercano a su ubicación de modo de poder abaratar los gastos de envío. "
 
-#: data/content/get-fedora-options.html:268
+#: data/content/get-fedora-options.html:299
 msgid "View Online Vendor Directory"
 msgstr "Ver el directorio de proveedores en línea"
 
-#: data/content/get-fedora-options.html:274
+#: data/content/get-fedora-options.html:305
 msgid "Fedora Free Media Program"
 msgstr "Programa Free Media de Fedora "
 
-#: data/content/get-fedora-options.html:275
+#: data/content/get-fedora-options.html:306
 msgid ""
 "Can't afford the price of installation media? Request Fedora installation "
 "media from the Fedora Free Media Program."
 msgstr "¿No puede permitirse el gasto del medio de instalación? Solicite el medio de intalación de Fedora al Programa Free Media de Fedora."
 
-#: data/content/get-fedora-options.html:276 data/content/index.html:63
+#: data/content/get-fedora-options.html:307 data/content/index.html:63
 msgid "Learn More"
 msgstr "Conozca más"
 
-#: data/content/get-fedora-options.html:287
+#: data/content/get-fedora-options.html:318
 msgid "Fedoras that do what you need."
 msgstr "Diferentes versiones de Fedora que realizan lo que usted necesite."
 
-#: data/content/get-fedora-options.html:288
+#: data/content/get-fedora-options.html:319
 msgid ""
 "Fedora spins are alternate versions of Fedora, tailored for various types of"
 " users via hand-picked application sets and other customizations."
 msgstr "Las Ediciones (spins) son versiones alternativas de Fedora que han sido realizadas utilizando conjuntos de aplicaciones determinados, pensando en diferentes tipos de usuarios."
 
-#: data/content/get-fedora-options.html:288
+#: data/content/get-fedora-options.html:319
 msgid "Learn more about spins >"
 msgstr "Conozca más acerca de las ediciones >"
 
-#: data/content/get-fedora-options.html:289
+#: data/content/get-fedora-options.html:320
 msgid ""
 "Below is just a sampling of the Fedora spins that are available. Visit "
 msgstr "A continuación le ofrecemos a modo de ejemplo algunas de las Ediciones de Fedora que se encuentran disponibles. Visite "
 
-#: data/content/get-fedora-options.html:289
+#: data/content/get-fedora-options.html:320
 msgid " for a full listing of all available Fedora spins."
 msgstr " para conocer la lista completa de ellas."
 
-#: data/content/get-fedora-options.html:294
+#: data/content/get-fedora-options.html:325
 msgid "Fedora Security Lab"
 msgstr "Laboratorio de seguridad de Fedora"
 
-#: data/content/get-fedora-options.html:294
+#: data/content/get-fedora-options.html:325
 msgid "Security analysis tools."
 msgstr "Herramientas de análisis de seguridad."
 
-#: data/content/get-fedora-options.html:294
-#: data/content/get-fedora-options.html:298
-#: data/content/get-fedora-options.html:302
-#: data/content/get-fedora-options.html:306
+#: data/content/get-fedora-options.html:325
+#: data/content/get-fedora-options.html:329
+#: data/content/get-fedora-options.html:333
+#: data/content/get-fedora-options.html:337
 msgid "More details at spins.fedoraproject.org >"
 msgstr "Más detalles en spins.fedoraproject.org >"
 
-#: data/content/get-fedora-options.html:298
+#: data/content/get-fedora-options.html:329
 msgid "Fedora Design Suite"
 msgstr "Suite de diseño de Fedora"
 
-#: data/content/get-fedora-options.html:298
+#: data/content/get-fedora-options.html:329
 msgid "Open Creativity."
 msgstr "Creatividad abierta."
 
-#: data/content/get-fedora-options.html:302 data/content/index.html:87
+#: data/content/get-fedora-options.html:333 data/content/index.html:87
 msgid "Fedora Games Spin"
 msgstr "Edición de juegos de Fedora"
 
-#: data/content/get-fedora-options.html:302
+#: data/content/get-fedora-options.html:333
 msgid "A perfect show-case of the best games available in Fedora."
 msgstr "Un muestra perfecta de los mejores juegos disponibles en Fedora."
 
-#: data/content/get-fedora-options.html:306
+#: data/content/get-fedora-options.html:337
 msgid "Fedora Electronic Lab"
 msgstr "Laboratorio electrónico de Fedora"
 
-#: data/content/get-fedora-options.html:306
+#: data/content/get-fedora-options.html:337
 msgid "Fedora's high-end hardware design and simulation platform."
 msgstr "Fedora como plataforma de alto nivel para el diseño y simulación de hardware."
 
-#: data/content/get-fedora-options.html:310
+#: data/content/get-fedora-options.html:341
 msgid ""
 "Get these and more at <a "
 "href=\"https://spins.fedoraproject.org\">spins.fedoraproject.org</a>."
 msgstr "Obtenga todo esto y más en <a href=\"https://spins.fedoraproject.org\">spins.fedoraproject.org</a>."
 
-#: data/content/get-fedora-options.html:321
+#: data/content/get-fedora-options.html:352
 msgid "Fedora In The Cloud"
 msgstr "Fedora en la Nube"
 
-#: data/content/get-fedora-options.html:325
+#: data/content/get-fedora-options.html:356
 msgid "Fedora on EC2"
 msgstr "Fedora en EC2"
 
-#: data/content/get-fedora-options.html:326
+#: data/content/get-fedora-options.html:357
 msgid ""
 "Fedora publishes system images for Amazon Web Services' (AWS) virtual "
 "machine platform, Amazon Elastic Compute Cloud (EC2), which allows one to "
 "create virtual machines in the cloud with very little effort."
 msgstr "Fedora publica imágenes del sistema para la plataforma de máquinas virtuales Amazon Web Services (AWS, Servicios web de Amazon) y Amazon Elastic Compute Cloud (EC2), que permiten con muy poco esfuerzo la creación de máquinas virtuales en la nube."
 
-#: data/content/get-fedora-options.html:327
+#: data/content/get-fedora-options.html:358
 msgid ""
 "These images, known as AMIs (Amazon Machine Images), are available in a "
 "variety of zones and architectures, and are identifiable by their unique "
@@ -1105,7 +1131,7 @@ msgid ""
 "image."
 msgstr "Estas imágenes, también conocidas como AMIs (por las iniciales en inglés de Amazon Machine Images), se encuentran disponibles en numerosas regiones y arquitecturas, y son identificadas con un número identificador propio. Este ID puede luego ser utilizado para ubicar e inicializar la imagen"
 
-#: data/content/get-fedora-options.html:329
+#: data/content/get-fedora-options.html:360
 #, python-format
 msgid ""
 "Fedora's EC2 images follow standard EC2 login conventions, meaning that root"
@@ -1113,136 +1139,136 @@ msgid ""
 "the images is <strong>%s</strong>."
 msgstr "Las imágenes EC2 de fedora satisfacen el registro EC2 estándard, lo que significa que si bien se ha deshabilitado el registro de usuario root, se encuentra garantizado el registro de un usuario sudo. El nombre de usuario predeterminado para las imágenes es <strong>%s</strong>."
 
-#: data/content/get-fedora-options.html:337
+#: data/content/get-fedora-options.html:368
 #, python-format
 msgid ""
 "Not familiar with EC2? <a href=\"%s\">Read more about the terminology and "
 "concepts ></a>"
 msgstr "¿No está familiarizado con EC2? <a href=\"%s\">Conozca más acerca de su terminología y conceptos involucrados ></a>"
 
-#: data/content/get-fedora-options.html:338
+#: data/content/get-fedora-options.html:369
 #, python-format
 msgid ""
 "Full documentation for interacting with EC2 is available from <a "
 "href=\"%s\">Amazon Web Services ></a>"
 msgstr "Una documentación completa para interactuar con EC2 se encuentra disponible en <a href=\"%s\">Servicios web de Amazon ></a>"
 
-#: data/content/get-fedora-options.html:339
+#: data/content/get-fedora-options.html:370
 #, python-format
 msgid ""
 "Need help, or have a great idea? <a href=\"%s\">Join the Fedora Cloud SIG "
 "mailing list ></a>"
 msgstr "¿Necesita ayuda, o tiene alguna idea que sugerir? <a href=\"%s\">Unase a la lista de correos del grupo de interés especial Fedora Cloud ></a>"
 
-#: data/content/get-fedora-options.html:344
+#: data/content/get-fedora-options.html:375
 msgid "Currently supported EC2 Images"
 msgstr "Actualmente con soporte para imágenes EC2"
 
-#: data/content/get-fedora-options.html:346
+#: data/content/get-fedora-options.html:377
 #, python-format
 msgid "Fedora %s "
 msgstr "Fedora %s"
 
-#: data/content/get-fedora-options.html:350
-#: data/content/get-fedora-options.html:373
-#: data/content/get-fedora-options.html:396
+#: data/content/get-fedora-options.html:381
+#: data/content/get-fedora-options.html:404
+#: data/content/get-fedora-options.html:427
 msgid "Region"
 msgstr "Región"
 
-#: data/content/get-fedora-options.html:351
-#: data/content/get-fedora-options.html:374
-#: data/content/get-fedora-options.html:397
+#: data/content/get-fedora-options.html:382
+#: data/content/get-fedora-options.html:405
+#: data/content/get-fedora-options.html:428
 msgid "Architecture"
 msgstr "Arquitectura"
 
-#: data/content/get-fedora-options.html:352
-#: data/content/get-fedora-options.html:375
-#: data/content/get-fedora-options.html:398
+#: data/content/get-fedora-options.html:383
+#: data/content/get-fedora-options.html:406
+#: data/content/get-fedora-options.html:429
 msgid "Root store"
 msgstr "Depósito raíz"
 
-#: data/content/get-fedora-options.html:353
-#: data/content/get-fedora-options.html:376
-#: data/content/get-fedora-options.html:399
+#: data/content/get-fedora-options.html:384
+#: data/content/get-fedora-options.html:407
+#: data/content/get-fedora-options.html:430
 msgid "AMI ID"
 msgstr "ID AMI"
 
-#: data/content/get-fedora-options.html:369
-#: data/content/get-fedora-options.html:392
+#: data/content/get-fedora-options.html:400
+#: data/content/get-fedora-options.html:423
 #, python-format
 msgid "Fedora %s"
 msgstr "Fedora %s"
 
-#: data/content/get-fedora-options.html:451
+#: data/content/get-fedora-options.html:482
 msgid "Help, I just want Fedora!"
 msgstr "¡Socorro, yo sólo quiero Fedora!"
 
-#: data/content/get-fedora-options.html:452
+#: data/content/get-fedora-options.html:483
 msgid ""
 "There are a lot of options on this page. Would you rather download the "
 "standard Fedora image?"
 msgstr "Existen numerosas opciones en esta página. ¿Prefiere simplemente descargar la imagen estándar de Fedora?"
 
-#: data/content/get-fedora-options.html:453
+#: data/content/get-fedora-options.html:484
 msgid "Get it here"
 msgstr "Obténgala aquí"
 
-#: data/content/get-fedora-options.html:455 data/content/get-fedora.html:80
+#: data/content/get-fedora-options.html:486 data/content/get-fedora.html:80
 msgid "Handy Resources"
 msgstr "Recursos prácticos"
 
-#: data/content/get-fedora-options.html:457
+#: data/content/get-fedora-options.html:488
 #, python-format
 msgid ""
 "http://docs.fedoraproject.org/en-"
 "US/Fedora/%(release)s/html/Installation_Guide/index.html"
 msgstr "http://docs.fedoraproject.org/en-US/Fedora/%(release)s/html/Installation_Guide/index.html"
 
-#: data/content/get-fedora-options.html:457 data/content/get-fedora.html:82
+#: data/content/get-fedora-options.html:488 data/content/get-fedora.html:82
 msgid "Installation Guide"
 msgstr "Guía de instalación"
 
-#: data/content/get-fedora-options.html:458
+#: data/content/get-fedora-options.html:489
 #, python-format
 msgid ""
 "http://docs.fedoraproject.org/en-"
 "US/Fedora/%(release)s/html/Release_Notes/index.html"
 msgstr "http://docs.fedoraproject.org/en-US/Fedora/%(release)s/html/Release_Notes/index.html"
 
-#: data/content/get-fedora-options.html:458 data/content/get-fedora.html:83
+#: data/content/get-fedora-options.html:489 data/content/get-fedora.html:83
 msgid "Release Notes"
 msgstr "Notas del lanzamiento"
 
-#: data/content/get-fedora-options.html:459 data/content/get-fedora.html:84
+#: data/content/get-fedora-options.html:490 data/content/get-fedora.html:84
 msgid "Common Bugs"
 msgstr "Errores comunes"
 
-#: data/content/get-fedora-options.html:460 data/content/get-fedora.html:85
+#: data/content/get-fedora-options.html:491 data/content/get-fedora.html:85
 msgid "Upgrading Fedora"
 msgstr "Cómo actualizar Fedora"
 
-#: data/content/get-fedora-options.html:461 data/content/get-fedora.html:86
+#: data/content/get-fedora-options.html:492 data/content/get-fedora.html:86
 msgid "Help & Support"
 msgstr "Asistencia y soporte"
 
-#: data/content/get-fedora-options.html:462 data/content/get-fedora.html:87
+#: data/content/get-fedora-options.html:493 data/content/get-fedora.html:87
 msgid "Verify Download"
 msgstr "Verifique la descarga"
 
-#: data/content/get-fedora-options.html:465 data/content/get-fedora.html:91
+#: data/content/get-fedora-options.html:496 data/content/get-fedora.html:91
 msgid "There's More Fedora!"
 msgstr "¡Hay más Fedora!"
 
-#: data/content/get-fedora-options.html:468 data/content/get-fedora.html:95
+#: data/content/get-fedora-options.html:499 data/content/get-fedora.html:95
 msgid "Other ways to get Fedora"
 msgstr "Otras formas de obtener Fedora"
 
-#: data/content/get-fedora-options.html:469 data/content/get-fedora.html:97
+#: data/content/get-fedora-options.html:500 data/content/get-fedora.html:97
 msgid ""
 "We offer several alternative Fedora download methods, including torrents:"
 msgstr "Ofrecemos diferentes métodos alternativos para poder descargar Fedora, incluyendo archivos torrent:"
 
-#: data/content/get-fedora-options.html:471 data/content/get-fedora.html:99
+#: data/content/get-fedora-options.html:502 data/content/get-fedora.html:99
 msgid "All download methods"
 msgstr "Todos los métodos de descarga"
 
@@ -1391,7 +1417,7 @@ msgid ""
 "US/Fedora/17/html/Installation_Guide/index.html"
 msgstr "http://docs.fedoraproject.org/en-US/Fedora/17/html/Installation_Guide/index.html"
 
-#: data/content/get-fedora.html:83 data/content/index.html:115
+#: data/content/get-fedora.html:83
 msgid ""
 "http://docs.fedoraproject.org/en-US/Fedora/17/html/Release_Notes/index.html"
 msgstr "http://docs.fedoraproject.org/en-US/Fedora/17/html/Release_Notes/index.html"
@@ -1634,112 +1660,96 @@ msgstr "Fedora es un sistema operativo basado en Linux que ofrece lo último en 
 msgid "Learn more >"
 msgstr "Conozca más >"
 
-#: data/content/index.html:115
-msgid "news"
-msgstr "Noticias"
-
-#: data/content/index.html:115
-msgid "Fedora 17 released on May 29, 2012!"
-msgstr "¡Fedora 17, lanzada el 29 de mayo del 2012!"
-
-#: data/content/index.html:115
-msgid "Read the release notes"
-msgstr "Lea las notas de la versión"
-
-#: data/content/index.html:115
-msgid "Download now"
-msgstr "Descargar Ahora"
-
-#: data/content/index.html:124
+#: data/content/index.html:126
 msgid "Need help?"
 msgstr "¿Necesita ayuda?"
 
-#: data/content/index.html:125
+#: data/content/index.html:127
 msgid "Get it here."
 msgstr "Obténgala aquí."
 
-#: data/content/index.html:131
+#: data/content/index.html:133
 msgid "What is Fedora, anyway?"
 msgstr "Exactamente, ¿qué es Fedora?"
 
-#: data/content/index.html:136
+#: data/content/index.html:138
 msgid "Join us!"
 msgstr "¡Únase a nosotros!"
 
-#: data/content/index.html:137
+#: data/content/index.html:139
 msgid "Help make Fedora!"
 msgstr "¡Ayude a construir Fedora!"
 
-#: data/content/index.html:144
+#: data/content/index.html:146
 msgid "What makes Fedora great?"
 msgstr "¿Qué es lo que hace que Fedora sea genial?"
 
-#: data/content/index.html:149
+#: data/content/index.html:151
 msgid "Freedom is key"
 msgstr "La libertad es la clave"
 
-#: data/content/index.html:150
+#: data/content/index.html:152
 msgid ""
 "Advancing software and content freedom is a key goal of the Fedora Project."
 msgstr "Impulsar la libertad de software y los contenidos abiertos es un objetivo fundamental del Proyecto Fedora."
 
-#: data/content/index.html:151
+#: data/content/index.html:153
 msgid "Learn how software freedom benefits you >"
 msgstr "Aprenda como lo beneficia la libertad del software >"
 
-#: data/content/index.html:155
+#: data/content/index.html:157
 msgid "Our Community"
 msgstr "Nuestra comunidad"
 
-#: data/content/index.html:156
+#: data/content/index.html:158
 msgid "People world-wide work together in Fedora to advance free software."
 msgstr "Gente de todo el planeta trabaja codo a codo en Fedora para ofrecer software libre."
 
-#: data/content/index.html:157
+#: data/content/index.html:159
 msgid "Discover your role in Fedora's community >"
 msgstr "Descubra cuál es su función en la comunidad Fedora >"
 
-#: data/content/index.html:161
+#: data/content/index.html:163
 msgid "We share"
 msgstr "Compartimos"
 
-#: data/content/index.html:162
+#: data/content/index.html:164
 msgid "Many features that benefit all Linux distributions start in Fedora."
 msgstr "Numerosas características que favorecen a todas las distribuciones Linux tienen su origen en Fedora."
 
-#: data/content/index.html:163
+#: data/content/index.html:165
 msgid "See how we share our features for all to use >"
 msgstr "Compartimos nuestras características, para que todos puedan utilizarlas. ¿Cómo lo hacemos?>"
 
-#: data/content/index.html:167
+#: data/content/index.html:169
 msgid "The best tech"
 msgstr "La mejor tecnología"
 
-#: data/content/index.html:168
+#: data/content/index.html:170
 msgid "The future of Linux is built into Fedora."
 msgstr "El futuro de Linux es construido dentro de Fedora."
 
-#: data/content/index.html:169
+#: data/content/index.html:171
 msgid "Learn how Fedora innovates >"
 msgstr "Aprenda como Fedora innova >"
 
-#: data/content/index.html:176
+#: data/content/index.html:178
 msgid "Fedora highlights"
 msgstr "Lo más destacado en Fedora"
 
-#: data/content/index.html:183
+#: data/content/index.html:185
 msgid "Read more of the story >"
 msgstr "Lea más acerca de esta historia >"
 
-#: data/content/index.html:184
+#: data/content/index.html:186
 msgid "Read more Fedora user stories >"
 msgstr "Conozca más historias de usuarios de Fedora >"
 
-#: data/content/index.html:189
+#: data/content/index.html:191
 msgid "We fight for software freedom"
 msgstr "Luchamos por la libertad del software"
 
-#: data/content/index.html:191
+#: data/content/index.html:193
 msgid ""
 "We try to always do the right thing, and provide only free and open source "
 "software. We will fight to protect and promote solutions that anyone can use"
@@ -1751,24 +1761,24 @@ msgid ""
 "focus has had significant and long lasting effects."
 msgstr "Siempre buscamos hacer lo correcto y distribuir solamente software libre y de código abierto. Luchamos para proteger y promover soluciones que cualquiera pueda utilizar y redistribuir. Con este fin, la propia infraestructura de Fedora se basa sólo en software libre y de código abierto. Todos nuestros desarrolladores se mantienen trabajando codo a codo con las comunidades desarrolladoras de software, de modo que todos puedan servirse de nuestro trabajo y acceder tan pronto como sea posible a nuestros avances. Dada la enorme cantidad de innovación que Fedora ofrece, esta forma de actuar tiene un efecto a largo plazo muy significativo."
 
-#: data/content/index.html:193
+#: data/content/index.html:195
 msgid "Learn more about Fedora's values >"
 msgstr "Aprenda más acerca de los valores de Fedora >"
 
-#: data/content/index.html:194
+#: data/content/index.html:196
 msgid "More on what Fedora's all about >"
 msgstr "Más acerca de lo que representa Fedora >"
 
-#: data/content/index.html:199 data/content/using/index.html:26
+#: data/content/index.html:201 data/content/using/index.html:26
 msgid "Do it with Fedora"
 msgstr "Hágalo con Fedora"
 
-#: data/content/index.html:200 data/content/using/index.html:33
+#: data/content/index.html:202 data/content/using/index.html:33
 #: data/content/using/tutorials/cheese.html:26
 msgid "Have a photobooth party!"
 msgstr "¡Ten una fiesta fotográfica!"
 
-#: data/content/index.html:202 data/content/using/index.html:34
+#: data/content/index.html:204 data/content/using/index.html:34
 #: data/content/using/tutorials/cheese.html:27
 msgid ""
 "All you need is a webcam and Fedora, and you can do all sorts of cool photo "
@@ -1776,76 +1786,76 @@ msgid ""
 "and videos!"
 msgstr "Todo lo que necesitas es una cámara web y Fedora. Podrás realizar todo tipo de trucos fotográficos, incluso convertir a tus amigos en Hulk :) ¡Diviértete con tus fotos y videos!"
 
-#: data/content/index.html:204
+#: data/content/index.html:206
 msgid "Learn how to do it yourself! >"
 msgstr "¡Aprende como hacerlo tu mismo! >"
 
-#: data/content/index.html:205
+#: data/content/index.html:207
 msgid "View all tutorials >"
 msgstr "Ver todos los tutoriales >"
 
-#: data/content/index.html:214
+#: data/content/index.html:216
 msgid "Recommended installation requirements"
 msgstr "Requerimientos de instalación recomendados"
 
-#: data/content/index.html:216
+#: data/content/index.html:218
 msgid "64-bit Intel-compatible PC"
 msgstr "PC compatible con procesadores Intel de 64 bits"
 
-#: data/content/index.html:217
+#: data/content/index.html:219
 #, python-format
 msgid "%sGB memory (RAM)"
 msgstr "%sGB de memoria (RAM)"
 
-#: data/content/index.html:218
+#: data/content/index.html:220
 #, python-format
 msgid "%sGB disk space / storage"
 msgstr "%sGB espacio en el disco / almacenamiento"
 
-#: data/content/index.html:220
+#: data/content/index.html:222
 msgid ""
 "http://docs.fedoraproject.org/en-US/Fedora/17/html/Release_Notes/sect-"
 "Release_Notes-Welcome_to_Fedora_17.html#sect-Release_Notes-Hardware_Overview"
 msgstr "http://docs.fedoraproject.org/en-US/Fedora/17/html/Release_Notes/sect-Release_Notes-Welcome_to_Fedora_17.html#sect-Release_Notes-Hardware_Overview"
 
-#: data/content/index.html:220
+#: data/content/index.html:222
 msgid "More about requirements >"
 msgstr "Más acerca de los requerimientos >"
 
-#: data/content/index.html:221
+#: data/content/index.html:223
 msgid "Full set of download options >"
 msgstr "Todas las opciones de descarga >"
 
-#: data/content/index.html:230
+#: data/content/index.html:232
 #, python-format
 msgid "Fedora %(release)s %(name)s released in %(number)s days!"
 msgstr "!Lanzamiento  de Fedora %(release)s %(name)s en %(number)s dias!"
 
-#: data/content/index.html:231
+#: data/content/index.html:233
 msgid "Add a counter to your own site!"
 msgstr "¡Agrega un contador a tu propio sitio!"
 
-#: data/content/index.html:236 data/content/join-fedora.html:133
+#: data/content/index.html:238 data/content/join-fedora.html:133
 msgid "Upcoming Events"
 msgstr "Próximos eventos"
 
-#: data/content/index.html:238
+#: data/content/index.html:240
 msgid "North American"
 msgstr "América del Norte"
 
-#: data/content/index.html:239
+#: data/content/index.html:241
 msgid "Central & South American"
 msgstr "América central y América del sur"
 
-#: data/content/index.html:240
+#: data/content/index.html:242
 msgid "European, Middle Eastern, & African"
 msgstr "Europa, Medio Oriente y Africa"
 
-#: data/content/index.html:241
+#: data/content/index.html:243
 msgid "Indian, Asian, & Australian"
 msgstr "India, Asia y Australia"
 
-#: data/content/index.html:244
+#: data/content/index.html:246
 msgid "Hosting Sponsor"
 msgstr "Patrocinadores"
 
@@ -2327,15 +2337,15 @@ msgid ""
 "substantial support:"
 msgstr "El Proyecto Fedora también agradece a los siguientes patrocinadores por ofrecer un apoyo sustancial:"
 
-#: data/content/sponsors.html:62
+#: data/content/sponsors.html:60
 msgid "Interested in sponsoring something for Fedora?"
 msgstr "¿Interesado en patrocinar alguna parte de Fedora?"
 
-#: data/content/sponsors.html:63
+#: data/content/sponsors.html:61
 msgid "Interested in sponsoring something for Fedora? Contact "
 msgstr "¿Interesado en patrocinar a Fedora? Contacto"
 
-#: data/content/sponsors.html:63
+#: data/content/sponsors.html:61
 msgid ""
 "or stop by <strong>#fedora-admin</strong> on "
 "<strong>irc.freenode.net</strong>."
