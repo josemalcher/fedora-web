@@ -222,7 +222,7 @@ ec2_f15 = [
 			</div>
 			<div class="grid_6 omega arch">
                             <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Fedora/i386/iso/Fedora-${global_variables.release['curr_id']}-i386-DVD.iso" class="download-button-mini download-splash">${_('Download Now!')}</a><span class="star-most-compatible">${_('Most Compatible')}</span>
-                            <p class="fine-print">${_('%sGB ISO disk image for 32-bit PC') % global_variables.iso_size['i386_DVD']}</p>
+                            <p class="fine-print">${_('%(size)sGB ISO disk image for %(arch)s PC') % {'size':global_variables.iso_size['i386_DVD'], 'arch':'32-bit'}}</p>
                         </div>
 			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
                         <div class="grid_4 prefix_2 alpha arch">
@@ -231,7 +231,7 @@ ec2_f15 = [
 			</div>
 			<div class="grid_6 omega arch">
                             <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Fedora/x86_64/iso/Fedora-${global_variables.release['curr_id']}-x86_64-DVD.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
-                            <p class="fine-print">${_('%sGB ISO disk image for 64-bit PC') % global_variables.iso_size['x86_64_DVD']}</p>
+                            <p class="fine-print">${_('%(size)sGB ISO disk image for %(arch)s PC') % {'size':global_variables.iso_size['x86_64_DVD'], 'arch':'64-bit'}}</p>
                         </div>
 			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
                         <div class="clear"></div>
@@ -253,7 +253,7 @@ ec2_f15 = [
 			</div>
 			<div class="grid_6 omega arch">
                             <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Fedora/i386/iso/Fedora-${global_variables.release['curr_id']}-i386-netinst.iso" class="download-button-mini download-splash">${_('Download Now!')}</a><span class="star-most-compatible">${_('Most Compatible')}</span>
-									 <p class="fine-print">${_('%sMB ISO disk image for 32-bit PC') % global_variables.iso_size['i386_Netinstall']}</p>
+                   <p class="fine-print">${_('%(size)sMB ISO disk image for %(arch)s PC') % {'size':global_variables.iso_size['i386_Netinstall'], 'arch':'32-bit'}}</p>
                         </div>
 			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
                         <div class="grid_4 prefix_2 alpha arch">
@@ -262,7 +262,7 @@ ec2_f15 = [
 			</div>
 			<div class="grid_6 omega arch">
                             <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Fedora/x86_64/iso/Fedora-${global_variables.release['curr_id']}-x86_64-netinst.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
-                            <p class="fine-print">${_('%sMB ISO disk image for 64-bit PC') % global_variables.iso_size['x86_64_Netinstall']}</p>
+                            <p class="fine-print">${_('%(size)sMB ISO disk image for %(arch)s PC') % {'size':global_variables.iso_size['x86_64_Netinstall'], 'arch':'64-bit'}}</p>
                         </div>
 			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
                         <div class="clear"></div>
