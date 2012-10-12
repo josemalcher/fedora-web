@@ -1,7 +1,19 @@
-#site-content .grid_6 {
-	direction: ltr; /* Planet posts and announcements are English, so should be LTR*/
-	float: left;
+body {
+    text-align: right;
 }
-#site-content .grid_6 h4 {
-	direction: rtl;
+ul.feed {
+	direction: ltr; /* Planet posts and announcements are English, so should be LTR*/
+	text-align: left;
+}
+
+h4 {
+    padding-right: 21px;
+    padding-left: 0px;
+    background-position: center right;
+}
+#subscribe li {
+    padding-right: 17px;
+    padding-left: 0px;
+    background-repeat: no-repeat;
+    background-position: center right;
 }

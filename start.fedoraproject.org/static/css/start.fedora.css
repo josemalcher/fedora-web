@@ -27,12 +27,26 @@ h2.start {
 	margin-left: 0px;
 }
 
+#announcement {
+    width: 240px;
+}
+
+#planet {
+    width: 360px;
+}
+
+#links {
+    width: 180px;
+}
 
 .container_12 .grid_6 {
     width: auto;
     padding: 15px;
     margin: 15px;
-    max-width: 290px;
+}
+
+.container_12, .container_16 {
+    width: 995px !important;
 }
 
 .container_12 #planet {
@@ -62,7 +76,9 @@ h4 {
 #announcement h4 {
     background-image: url('../images/announcements.png');
 }
-
+#site-heading {
+    float: none !important;
+}
 #site-heading-rh {
     float: right;
 }
@@ -80,6 +96,8 @@ h4 {
     font-family: "ComfortaaRegular","sans-serif";
     font-size: 12px;
     font-weight: normal;
+    text-align: left;
+    direction: ltr;
 }
 
 #startfpofooter {

@@ -24,7 +24,7 @@ for item in fda:
             <div class="grid_6" id="announcement">
                 <h4>${_('Latest Announcements')}</h4>
 
-                <ul>
+                <ul class="feed">
                     <li py:for="entry in fda[:5]" py:if="'title' in entry" >
                         <h5><a href="${entry['link']}">${entry["title"]}</a></h5>
                     </li>
@@ -39,7 +39,7 @@ for item in fda:
             </div>
             <div class="grid_6" id="planet">
                 <h4>${_('Planet Fedora')}</h4>
-                <ul>
+                <ul class="feed"    >
                     <li class="planet_feed" py:for="entry in fpp[:8]" py:if="'title' in entry" >
 
                         <h5><a href="${entry['link']}">${entry["title"]}</a></h5><span class="post_author">${entry['source']}</span>
