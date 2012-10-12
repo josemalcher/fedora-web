@@ -29,10 +29,13 @@ def feedparse(url):
     entry = [{}]
     for feed in main_feed["entries"]:
         '''We only need to save the link, title and date of blog posts'''
+        date = ''
+        source = ''
         if "updated" in feed:
-            entry.append({'link':feed["link"], 'title':feed["title"], 'date':feed["date"]})
-        else:
-            entry.append({'link':feed["link"], 'title':feed["title"], 'date':""})
+            date = feed["date"]
+        if 'author' in feed:
+            source = feed['source']['title']
+        entry.append({'link':feed["link"], 'title':feed["title"], 'date':date, 'source':source})
     url_entries = [{}]
     url_entries.append({'url':url, 'feed':entry})
     feeds.append(url_entries)

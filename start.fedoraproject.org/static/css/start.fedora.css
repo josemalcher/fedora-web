@@ -19,27 +19,126 @@
  *            Toshio Kuratomi <tkuratom@redhat.com>
  */
 
-.cc_logo_76x18
-{
-  width: 76px;
-  height: 18px;
+body {
+    background-color: white;
 }
 
 h2.start {
 	margin-left: 0px;
 }
 
-.form
-{
-	margin-top: 15px;
+
+.container_12 .grid_6 {
+    width: auto;
+    padding: 15px;
+    margin: 15px;
+    max-width: 290px;
 }
 
-.search-form-field
-{
-  width: 400px;
+.container_12 #planet {
+    border-right: 2px solid  #8c8c8c;
+    border-left: 2px solid  #8c8c8c;
 }
 
-.fedora-quick-links
-{
+.footer-copyright {
+    text-align: center;
+}
+
+h4 {
+    padding-left: 21px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    margin-bottom: 15px;
+}
+
+#links h4 {
+    background-image: url('../images/links.png');
+}
+
+#planet h4 {
+    background-image: url('../images/planet.png');
+}
+
+#announcement h4 {
+    background-image: url('../images/announcements.png');
+}
+
+#site-heading-rh {
+    float: right;
+}
+
+#site-heading-rh a {
+    margin-top: 0px;
+}
+
+.lang-dropdown {
+    display: block;
+}
+
+#four-f {
+    color: rgb(60, 110, 180);
+    font-family: "ComfortaaRegular","sans-serif";
+    font-size: 12px;
+    font-weight: normal;
+}
+
+#startfpofooter {
+  font: normal 0.8em/1.5 sans-serif;
   text-align: center;
+}
+
+
+#bottom
+{
+  margin-left: 18px;
+  padding-right: 18px;
+}
+
+#startfpofooter ul
+{
+  list-style: none;
+  margin-bottom: .8em;
+}
+
+#startfpofooter li
+{
+  display: inline;
+  border-left: 1px solid #AAAAAA;
+  padding: 0 0.75ex;
+  margin-left: -1px;
+}
+
+#startfpofooter li.first
+{
+  border-left: none;
+}
+
+#startfpofooter a
+{
+  color: #3771C8;
+}
+
+#startfpofooter a:hover
+{
+  color: #112233;
+}
+#subscribe {
+    margin-top: 50px;
+}
+#subscribe ul {
+    list-style: none;
+}
+
+#subscribe li {
+    padding-left: 17px;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+#subscribe li.ml {
+    background-image: url('../images/mailinglist.png');
+}
+
+#subscribe li.rss {
+    background-image: url('../images/rss.png');
 }

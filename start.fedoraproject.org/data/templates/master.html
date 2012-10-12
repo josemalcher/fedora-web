@@ -4,6 +4,7 @@
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
   <head py:match="head" py:attrs="select('@*')">
+    <meta charset="utf-8" />
     <xi:include href="css.html" />
     <xi:include href="js.html" />
     <meta py:replace="select('*|text()')" />
@@ -16,7 +17,7 @@
         ${select('*')}
       </div>
     </div>
-        <div id="bottom">
+        <div id="startfpobottom">
             <xi:include href="foot.html" />
         </div>
   </body>

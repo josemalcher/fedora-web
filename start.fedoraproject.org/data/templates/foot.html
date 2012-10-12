@@ -3,79 +3,17 @@
   xmlns:py="http://genshi.edgewall.org/"
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
-    <div class="container_12">
-        <div class="grid_2 sitelinks">
-            <dl>
-                <dt>Fedora</dt>
-                <dd><a href="http://fedoraproject.org/${lang}/about-fedora">${_('About Fedora')}</a></dd>
-                <dd><a href="http://planet.fedoraproject.org/">${_('Planet Fedora')}</a></dd>
-                <dd><a href="http://fedoraproject.org/wiki/FWN/LatestIssue">${_('Fedora Weekly News')}</a></dd>
-                <dd><a href="http://docs.fedoraproject.org/">${_('Documentation')}</a></dd>
-                <dd><a href="http://fedoraproject.org/wiki/">${_('Fedora Wiki')}</a></dd>
-                <dd><a href="http://fedoraproject.org/wiki/FedoraEvents">${_('Events')}</a></dd>
-            </dl>
-        </div>
-        <div class="grid_2 sitelinks">
-            <dl>
-                <dt>${_('Download')}</dt>
-                <dd><a href="http://fedoraproject.org/${lang}/get-fedora">${_('Get Fedora')}</a></dd>
-                <dd><a href="http://fedoraproject.org/${lang}/get-fedora-options">${_('Full Download List')}</a></dd>
-            </dl>
-        </div>
-        <div class="grid_2 sitelinks">
-            <dl>
-                <dt>${_('Support')}</dt>
-                <dd><a href="http://fedoraproject.org/${lang}/get-help">${_('Get Help')}</a></dd>
-                <dd><a href="irc://irc.freenode.org/#fedora">${_('IRC Help')}</a></dd>
-                <dd><a href="https://admin.fedoraproject.org/mailman/listinfo/users">${_('Mailing List Help')}</a></dd>
-                <dd><a href="http://www.fedoraforum.org/">${_('Forums')}</a></dd>
-                <dd><a href="http://docs.fedoraproject.org/">${_('Documentation')}</a></dd>
-            </dl>
-        </div>
-        <div class="grid_2 sitelinks">
-                <dl>
-                    <dt>${_('Join')}</dt>
-                    <dd><a href="http://fedoraproject.org/${lang}/join-fedora">${_('Join Fedora')}</a></dd>
-                    <dd><a href="http://fedoraproject.org/wiki/SIGs">${_('Fedora SIGs')}</a></dd>
-                    <dd><a href="https://admin.fedoraproject.org/accounts/">${_('Fedora Account System')}</a></dd>
-                    <dd><a href="https://admin.fedoraproject.org/community/">${_('Fedora Community')}</a></dd>
-                </dl>
-        </div>
-        <div class="grid_2 sitelinks">
-            <dl>
-                <dt>${_('Subprojects')}</dt>
-                <dd><a href="http://fedoraproject.org/wiki/DocsProject">${_('Documentation')}</a></dd>
-                <dd><a href="http://fedoraproject.org/wiki/L10N">${_('Translation')}</a></dd>
-                <dd><a href="http://fedoraproject.org/wiki/Marketing">${_('Marketing')}</a></dd>
-                <dd><a href="http://fedoraproject.org/wiki/Ambassadors">${_('Ambassadors')}</a></dd>
-                <dd><a href="http://fedoraproject.org/wiki/Design">${_('Design')}</a></dd>
-                <dd><a href="http://fedoraproject.org/wiki/Infrastructure">${_('Infrastructure')}</a></dd>
-            </dl>							
-        </div>
-        <div class="grid_2 sitelinks">
-            <dl>
-                <dt>&nbsp;</dt>
-                <dd><a href="http://fedoraproject.org/wiki/Websites">${_('Websites')}</a></dd>
-                <dd><a href="http://fedoraproject.org/wiki/I18N">${_('Internationalization')}</a></dd>
-                <dd><a href="http://fedoraproject.org/wiki/NewsProject">${_('News')}</a></dd>
-                <dd><a href="http://fedoraproject.org/wiki/Distribution/Project">${_('Distribution')}</a></dd>
-                <dd><a href="http://fedoraproject.org/wiki/SIGs">${_('Special Interest Groups (SIGs)')}</a></dd>
-            </dl>				
-        </div>
-        <div class="clear"></div>
-        <div id="footer" class="grid_12">
-            <a href="http://www.redhat.com/"><img class="rh-logo" src="${path}/static/images/sponsors/sidebar/redhat.png" alt="Red Hat Logo" /></a>
-            <p class="sponsor">${_('Fedora is sponsored by Red Hat.')}</p>
-            <p class="sponsor"><a href="http://www.redhat.com/rhel/fedora/">${_('Learn more about the relationship between Red Hat and Fedora &gt;')}</a></p>
-            <p class="copy">${_('&copy; 2012 Red Hat, Inc. and others.')}</p>
-            <ul>
-                <li class="first"><a href="http://fedoraproject.org/${lang}/contact">${_('Contact')}</a></li>
-                <li><a href="http://fedoraproject.org/${lang}/sponsors">${_('Sponsors')}</a></li>
-                <li><a href="http://fedoraproject.org/wiki/Legal:Main">${_('Legal')}</a></li>
-                <li class="last"><a href="http://fedoraproject.org/wiki/Legal:Trademark_guidelines">${_('Trademark Guidelines')}</a></li>
-            </ul>
-            <p class="disclaimer">${_('The Fedora Project is maintained and driven by the community. This is a community maintained site. Red Hat is not responsible for content.')}</p>
-        </div>
-        <div class="clear">&nbsp;</div>
+    <div id="startfpofooter">
+      <p class="copy">
+      ${Markup(_('&amp;copy; 2012 Red Hat, Inc. and others.  Please send any comments or corrections to the &lt;a href="mailto:webmaster@fedoraproject.org"&gt;websites team&lt;/a&gt;.'))}
+      </p>
+      <p class="disclaimer">
+      ${Markup(_('The Fedora Project is maintained and driven by the community and sponsored by Red Hat.  This is a community maintained site.  Red Hat is not responsible for content.'))}
+      </p>
+      <ul>
+        <li class="first"><a href="http://fedoraproject.org/sponsors">${_('Sponsors')}</a></li>
+        <li>${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Legal:Main"&gt;Legal&lt;/a&gt;'))}</li>
+        <li>${Markup(_('&lt;a href="http://fedoraproject.org/wiki/Legal:Trademark_guidelines"&gt;Trademark Guidelines&lt;/a&gt;'))}</li>
+      </ul>
     </div>
 </html>

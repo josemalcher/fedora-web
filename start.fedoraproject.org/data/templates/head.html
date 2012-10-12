@@ -5,23 +5,20 @@
   py:strip="">
 <div id="header">
     <div class="container_16">
-		<div class="grid_6 prefix_10">
-			<form action="" method="GET" class="lang-dropdown">
-				<select name="lang">
-				<xi:include href="translations.html" />
-				</select>
-				<input type="submit" value="${_('OK')}" />
-			</form>
-		</div>
-        <div class="clear"></div>
-        <div class="grid_9" id="site-heading">
+        <div id="site-heading-rh">
+            <a href="http://redhat.com">${_('A Red Hat-Sponsored Community Project')}&nbsp;&nbsp;<img id="rh-community" src="static/images/sponsors/redhat-community.png" /></a>
+        </div>
+        <!--<form action="" method="GET" class="lang-dropdown">
+			<select name="lang">
+			<xi:include href="translations.html" />
+			</select>
+			<input type="submit" value="${_('OK')}" />
+		</form>!-->
+        <div id="site-heading">
             <a href="http://fedoraproject.org/"><h1><span id="logo">Fedora Project</span></h1></a>
-            <h2>${_('Freedom. Friends. Features. First.')}</h2>
         </div>
-        <div class="grid_1">&nbsp;<!-- search filler --></div>
-        <div class="grid_6" id="site-heading-rh">
-            <a href="http://redhat.com">${_('A Red Hat-Sponsored Community Project')}&nbsp;&nbsp;<img id="rh-community" src="/static/images/sponsors/redhat-community.png" /></a>
-        </div>
+        <br />
+        <h2 id="four-f">${_('Freedom. Friends. Features. First.')}</h2>
         <div class="clear"></div>
     </div>
 </div>
