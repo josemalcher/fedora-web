@@ -4,10 +4,6 @@ fpp = feedparse('http://planet.fedoraproject.org/atom.xml')
 
 # Announce List
 fda = feedparse('https://lists.fedoraproject.org/rss/announce.xml')
-for item in fda:
-    if 'title' in item:
-        announcement = item
-        break
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -55,34 +51,7 @@ for item in fda:
                     <li><a href="https://fedoraproject.org/en/get-help">${_('Get Help')}</a></li>
                     <li><a href="http://docs.fedoraproject.org/">${_('Fedora Documentation')}</a></li>
                 </ul>
-            </div>
-                        <div class="clear"></div>
-                    <div class="grid_4">
-                <div class="download-hl-box callout-style1">
-                    <h5>${_('Documentation')}</h5>
-                    <p>${_('New to Fedora? Want to learn more?')}</p>
-                    <p>${Markup(_('You should &lt;a href="%s"&gt;read the documentation&lt;/a&gt;!') % 'http://docs.fedoraproject.org/')}</p>
-                </div>
-            </div>
-            <div class="grid_4">
-                <div class="download-hl-box callout-style1">
-                    <h5>${_('I need help running or installing Fedora.')}</h5>
-                    <p>${_('There\'s several ways you can get help with Fedora, from forums to live chat to mailing lists.')}</p>
-                    <p><a href="${path}/${lang}/get-help">${_('Get help with Fedora')}</a>.</p>
-                </div>
-            </div>
-            <div class="grid_4">
-                <div class="download-hl-box callout-style1">
-                    <h5>${_('Join Fedora!')}</h5>
-                    <p>${_('Do you ♥ Fedora? Me too! You should totally join us to help make Fedora even more awesome, everyone can help!')}</p>
-                    <p><a href="http://www.fedoraproject.org/join-fedora">${_('Join now!')}</a></p>
-                </div>
-            </div>
-            <div class="clear"></div>
-            <div class="grid_12 download-pandas">
-                <div class="grid_4 alpha"><img src="http://www.fedoraproject.org/static/images/panda-list.png" alt="" /></div>
-                <div class="grid_4"><img src="http://www.fedoraproject.org/static/images/panda-question.png" alt="" /></div>
-                <div class="grid_4 omega"><img src="http://www.fedoraproject.org/static/images/panda-wave.png" alt="" /></div>
+                <img src="http://www.fedoraproject.org/static/images/panda-wave.png" alt="" />
             </div>
             <div class="clear"></div>
          </div>
