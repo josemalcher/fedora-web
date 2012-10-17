@@ -3,21 +3,21 @@
 # This file is distributed under the same license as the PROJECT project.
 # 
 # Translators:
-# Ricardo Pinto <ricardo.bigote@gmail.com>, 2011.
+# Ricardo Pinto <ricardo.bigote@gmail.com>, 2011-2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2012-07-04 01:02+0200\n"
-"PO-Revision-Date: 2012-07-03 23:13+0000\n"
-"Last-Translator: Kévin Raymond <shaiton@fedoraproject.org>\n"
+"PO-Revision-Date: 2012-09-05 16:14+0000\n"
+"Last-Translator: Ricardo Pinto <ricardo.bigote@gmail.com>\n"
 "Language-Team: Portuguese <trans-pt@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 "Language: pt\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: data/content/download.html:7
 msgid "Download - boot.fedoraproject.org"
@@ -74,7 +74,7 @@ msgid ""
 "appropriate medium.  Next boot from that medium.  After that you're using "
 "BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora"
 " installer or rescue mode."
-msgstr ""
+msgstr "Primeiro descarregue uma das imagens específicas BFO. Pode escolher ISO (DVD/CD), USB, Disquetes e imagens lkrn. Depois grave a imagem no média adequado.  Depois arranque por esse média.  Depois disso está a usar o BFO!  Utilize o seu tectado para seleccionar os menus e correr diagnósticos, ou para arrancar o instalador do Fedora ou em modo de recuperação."
 
 #: data/content/faq.html:15
 msgid "Can I use it with grub?"
@@ -95,40 +95,40 @@ msgid ""
 "together is ipxe.  Users familiar with pxe will find ipxe very familiar.  "
 "Latest versions support several protocols beyond just tftp.  We are using "
 "http to transfer files around.  The basic steps are as follows:"
-msgstr ""
+msgstr "O BFO por iniciado pelo boot.kernel.org (BKO) e combina uma série de tecnologias recentes para produzir uma nova pilha de arranque.  O que junta tudo é o ipxe.  Utilizadores familiarizados com o pxe acharão o ipxe muito familiar.  As últimas versões suportam vários protocolos além de apenas o tftp.  Estamos a usar o http para transferir ficheiros.  Os passos mais simples são os seguintes:"
 
 #: data/content/faq.html:25
 msgid ""
 "Download the boot.fedoraproject.org media fitting your preferred boot "
 "method."
-msgstr ""
+msgstr "Descrregue o média boot.fedoraproject.org de acordo com a sua forma de arranque preferida."
 
 #: data/content/faq.html:27
 msgid "burn ISO images to a CD-R or DVD-R"
-msgstr ""
+msgstr "grave imagens ISO num CD-R ou DVD-R"
 
 #: data/content/faq.html:28
 msgid "write USB image for a USB stick"
-msgstr ""
+msgstr "grave uma imagem USB numa pendrive USB"
 
 #: data/content/faq.html:29
 msgid "write Floppy image to a 3.5 inch HD floppy"
-msgstr ""
+msgstr "grave imagens de Disquetes numa drive de disquetes 3.5"
 
 #: data/content/faq.html:30
 #, python-format
 msgid ""
 "lkrn image for PXE booting, grub booting and in conjunction with kexec "
 "(c.f.: <a href=\"%s\">pxkxc</a>)"
-msgstr ""
+msgstr "Imagem lkrn para arranque por PXE, arranque grub e em conjunto com kexec (c.f.: <a href=\"%s\">pxkxc</a>)"
 
 #: data/content/faq.html:32
 msgid "Boot from the medium you created."
-msgstr ""
+msgstr "Arrancar por um média criado por si."
 
 #: data/content/faq.html:33
 msgid "It will first configure network via DHCP."
-msgstr ""
+msgstr "Irá primeiro configurar a rede via DHCP."
 
 #: data/content/faq.html:34
 msgid ""
@@ -154,7 +154,7 @@ msgid ""
 "from your image and they will appear.  Users with fast internet connections "
 "will have the best experience with BFO.  They basically replace having to "
 "regularly download large ISO images and burn them to disk."
-msgstr ""
+msgstr "Os descarregamentos BFO são muito pequenos e uma vez que os tenha, raramente necessitará de descarregar mais.  Mesmo que mais versões do Fedora sejam lançadas, apenas necessitará de arrancar pela sua imagem e elas aparecerão.  Utilizadores com ligações rápidas à Internet terão a melhor experiência com o BFO.  Eles basicamente deixarão de ter que descarregar imagens ISO e de ter que as gravar em disco."
 
 #: data/content/faq.html:39
 msgid "What is required?"
@@ -165,7 +165,7 @@ msgid ""
 "For all image types, you need a working DHCP in the network you use it from "
 "as well as HTTP internet access. To use the ISO, a CD/DVD burner. To use the"
 " USB image, a USB stick.  Floppy and lkrn images are also available."
-msgstr ""
+msgstr "Para todos os tipos de imagens, necessita de ter o DHCP a funcionar na rede que utiliza, bem como acesso à Internet por HTTP. Para utilizar um ISO, gravador de CD/DVD. Para utilizar a imagem USB, uma pendrive USB.  Imagens de disquetes e lkrn estão também disponíveis."
 
 #: data/content/faq.html:41
 msgid "Does BFO replace the installer or anaconda?"
@@ -200,21 +200,21 @@ msgid ""
 "such, some drivers and devices may not be supported.  If this is the case "
 "for you please check upstream at http://etherboot.org/ for bug updates, etc."
 "  If you feel a bug or device is supported but not working in BFO, contact: "
-msgstr ""
+msgstr "O BFO utiliza o ipxe, por isso, no início, não está a arrancar um kernel de Linux.  Assim, alguns drivers e dispositivos podem não ser suportados.  Neste caso, por favor procure no upstream em  http://etherboot.org/ por bugs, actualizações, etc.  Se acha que um bug ou dispositivo é suportado mas não funciona no BFO, contacte:"
 
 #: data/content/faq.html:47
 msgid "Where can I find the BFO sources and configuration?"
-msgstr ""
+msgstr "Onde posso encontrar recursos BFO e sua configuração?"
 
 #: data/content/faq.html:49
 msgid "Where do I report issues?"
-msgstr ""
+msgstr "Onde relato problemas?"
 
 #: data/content/faq.html:56
 msgid ""
 "At this time booting Live CDs is experimental and not available. We hope to "
 "have them available soon."
-msgstr ""
+msgstr "Neste momento, o arranque por CDs Live é um método experimental e não disponível. Esperamos tê-los disponíveis em breve."
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
@@ -244,7 +244,7 @@ msgid ""
 "&copy; 2012 Red Hat, Inc. and others.  Please send any comments or "
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
-msgstr ""
+msgstr "&copy; 2012 Red Hat, Inc. e outros.  Por favor envie comentários e correcções para a <a href=\"mailto:webmaster@fedoraproject.org\">equipa de sítios web</a>."
 
 #: data/templates/foot.html:12
 msgid ""
