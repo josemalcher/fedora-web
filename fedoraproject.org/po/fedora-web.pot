@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-08-28 23:03+0200\n"
+"POT-Creation-Date: 2012-10-17 18:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -586,6 +586,10 @@ msgstr ""
 #: data/content/get-fedora-all.html:36 data/content/get-fedora-all.html:44
 #: data/content/get-fedora-all.html:46 data/content/get-fedora-all.html:53
 #: data/content/get-prerelease.html:93 data/content/get-prerelease.html:100
+#: data/content/get-prerelease.html:119 data/content/get-prerelease.html:126
+#: data/content/get-prerelease.html:137 data/content/get-prerelease.html:144
+#: data/content/get-prerelease.html:155 data/content/get-prerelease.html:162
+#: data/content/get-prerelease.html:173 data/content/get-prerelease.html:180
 msgid "i386"
 msgstr ""
 
@@ -641,10 +645,6 @@ msgstr ""
 #: data/content/get-fedora-all.html:70 data/content/get-fedora-all.html:77
 #: data/content/get-fedora-all.html:84 data/content/get-fedora-all.html:96
 #: data/content/get-fedora-all.html:103 data/content/get-fedora-all.html:110
-#: data/content/get-prerelease.html:119 data/content/get-prerelease.html:126
-#: data/content/get-prerelease.html:137 data/content/get-prerelease.html:144
-#: data/content/get-prerelease.html:155 data/content/get-prerelease.html:162
-#: data/content/get-prerelease.html:173 data/content/get-prerelease.html:180
 msgid "i686"
 msgstr ""
 
@@ -749,7 +749,7 @@ msgid "Spins"
 msgstr ""
 
 #: data/content/get-fedora-options.html:74 data/content/get-fedora.html:54
-msgid "Clouds"
+msgid "Cloud"
 msgstr ""
 
 #: data/content/get-fedora-options.html:85
@@ -1105,18 +1105,18 @@ msgstr ""
 msgid "Fedora In The Cloud"
 msgstr ""
 
-#: data/content/get-fedora-options.html:356
+#: data/content/get-fedora-options.html:355
 msgid "Fedora on EC2"
 msgstr ""
 
-#: data/content/get-fedora-options.html:357
+#: data/content/get-fedora-options.html:356
 msgid ""
 "Fedora publishes system images for Amazon Web Services' (AWS) virtual "
 "machine platform, Amazon Elastic Compute Cloud (EC2), which allows one to"
 " create virtual machines in the cloud with very little effort."
 msgstr ""
 
-#: data/content/get-fedora-options.html:358
+#: data/content/get-fedora-options.html:357
 msgid ""
 "These images, known as AMIs (Amazon Machine Images), are available in a "
 "variety of zones and architectures, and are identifiable by their unique "
@@ -1124,7 +1124,7 @@ msgid ""
 "an image."
 msgstr ""
 
-#: data/content/get-fedora-options.html:360
+#: data/content/get-fedora-options.html:359
 #, python-format
 msgid ""
 "Fedora's EC2 images follow standard EC2 login conventions, meaning that "
@@ -1132,135 +1132,135 @@ msgid ""
 " for the images is <strong>%s</strong>."
 msgstr ""
 
-#: data/content/get-fedora-options.html:368
+#: data/content/get-fedora-options.html:366
 #, python-format
 msgid ""
 "Not familiar with EC2? <a href=\"%s\">Read more about the terminology and"
 " concepts ></a>"
 msgstr ""
 
-#: data/content/get-fedora-options.html:369
+#: data/content/get-fedora-options.html:367
 #, python-format
 msgid ""
 "Full documentation for interacting with EC2 is available from <a "
 "href=\"%s\">Amazon Web Services ></a>"
 msgstr ""
 
-#: data/content/get-fedora-options.html:370
+#: data/content/get-fedora-options.html:368
 #, python-format
 msgid ""
 "Need help, or have a great idea? <a href=\"%s\">Join the Fedora Cloud SIG"
 " mailing list ></a>"
 msgstr ""
 
-#: data/content/get-fedora-options.html:375
+#: data/content/get-fedora-options.html:373
 msgid "Currently supported EC2 Images"
 msgstr ""
 
-#: data/content/get-fedora-options.html:377
+#: data/content/get-fedora-options.html:375
 #, python-format
 msgid "Fedora %s "
+msgstr ""
+
+#: data/content/get-fedora-options.html:379
+#: data/content/get-fedora-options.html:402
+#: data/content/get-fedora-options.html:425
+msgid "Region"
+msgstr ""
+
+#: data/content/get-fedora-options.html:380
+#: data/content/get-fedora-options.html:403
+#: data/content/get-fedora-options.html:426
+msgid "Architecture"
 msgstr ""
 
 #: data/content/get-fedora-options.html:381
 #: data/content/get-fedora-options.html:404
 #: data/content/get-fedora-options.html:427
-msgid "Region"
+msgid "Root store"
 msgstr ""
 
 #: data/content/get-fedora-options.html:382
 #: data/content/get-fedora-options.html:405
 #: data/content/get-fedora-options.html:428
-msgid "Architecture"
-msgstr ""
-
-#: data/content/get-fedora-options.html:383
-#: data/content/get-fedora-options.html:406
-#: data/content/get-fedora-options.html:429
-msgid "Root store"
-msgstr ""
-
-#: data/content/get-fedora-options.html:384
-#: data/content/get-fedora-options.html:407
-#: data/content/get-fedora-options.html:430
 msgid "AMI ID"
 msgstr ""
 
-#: data/content/get-fedora-options.html:400
-#: data/content/get-fedora-options.html:423
+#: data/content/get-fedora-options.html:398
+#: data/content/get-fedora-options.html:421
 #, python-format
 msgid "Fedora %s"
 msgstr ""
 
-#: data/content/get-fedora-options.html:482
+#: data/content/get-fedora-options.html:480
 msgid "Help, I just want Fedora!"
 msgstr ""
 
-#: data/content/get-fedora-options.html:483
+#: data/content/get-fedora-options.html:481
 msgid ""
 "There are a lot of options on this page. Would you rather download the "
 "standard Fedora image?"
 msgstr ""
 
-#: data/content/get-fedora-options.html:484
+#: data/content/get-fedora-options.html:482
 msgid "Get it here"
 msgstr ""
 
-#: data/content/get-fedora-options.html:486 data/content/get-fedora.html:80
+#: data/content/get-fedora-options.html:484 data/content/get-fedora.html:80
 msgid "Handy Resources"
 msgstr ""
 
-#: data/content/get-fedora-options.html:488
+#: data/content/get-fedora-options.html:486
 #, python-format
 msgid ""
 "http://docs.fedoraproject.org/en-"
 "US/Fedora/%(release)s/html/Installation_Guide/index.html"
 msgstr ""
 
-#: data/content/get-fedora-options.html:488 data/content/get-fedora.html:82
+#: data/content/get-fedora-options.html:486 data/content/get-fedora.html:82
 msgid "Installation Guide"
 msgstr ""
 
-#: data/content/get-fedora-options.html:489
+#: data/content/get-fedora-options.html:487
 #, python-format
 msgid ""
 "http://docs.fedoraproject.org/en-"
 "US/Fedora/%(release)s/html/Release_Notes/index.html"
 msgstr ""
 
-#: data/content/get-fedora-options.html:489 data/content/get-fedora.html:83
+#: data/content/get-fedora-options.html:487 data/content/get-fedora.html:83
 msgid "Release Notes"
 msgstr ""
 
-#: data/content/get-fedora-options.html:490 data/content/get-fedora.html:84
+#: data/content/get-fedora-options.html:488 data/content/get-fedora.html:84
 msgid "Common Bugs"
 msgstr ""
 
-#: data/content/get-fedora-options.html:491 data/content/get-fedora.html:85
+#: data/content/get-fedora-options.html:489 data/content/get-fedora.html:85
 msgid "Upgrading Fedora"
 msgstr ""
 
-#: data/content/get-fedora-options.html:492 data/content/get-fedora.html:86
+#: data/content/get-fedora-options.html:490 data/content/get-fedora.html:86
 msgid "Help & Support"
 msgstr ""
 
-#: data/content/get-fedora-options.html:493 data/content/get-fedora.html:87
+#: data/content/get-fedora-options.html:491 data/content/get-fedora.html:87
 msgid "Verify Download"
 msgstr ""
 
-#: data/content/get-fedora-options.html:496 data/content/get-fedora.html:91
+#: data/content/get-fedora-options.html:494 data/content/get-fedora.html:91
 msgid "There's More Fedora!"
 msgstr ""
 
-#: data/content/get-fedora-options.html:499 data/content/get-fedora.html:95
+#: data/content/get-fedora-options.html:497 data/content/get-fedora.html:95
 msgid "Other ways to get Fedora"
 msgstr ""
 
-#: data/content/get-fedora-options.html:500 data/content/get-fedora.html:97
+#: data/content/get-fedora-options.html:498 data/content/get-fedora.html:97
 msgid "We offer several alternative Fedora download methods, including torrents:"
 msgstr ""
 
-#: data/content/get-fedora-options.html:502 data/content/get-fedora.html:99
+#: data/content/get-fedora-options.html:500 data/content/get-fedora.html:99
 msgid "All download methods"
 msgstr ""
 

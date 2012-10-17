@@ -71,7 +71,7 @@ ec2_f15 = [
                     <li><a id="t1" href="#desktops">${_('Desktops')}</a></li>
                     <li><a id="t3" href="#formats">${_('Formats')}</a></li>
                     <li><a id="t4" href="#spins">${_('Spins')}</a></li>
-                    <li><a id="t5" href="#clouds">${_('Clouds')}</a></li>
+                    <li><a id="t5" href="#clouds">${_('Cloud')}</a></li>
                 </ul>
             </div>
             <div class="clear"></div>
@@ -348,9 +348,8 @@ ec2_f15 = [
 
 
                     <div id="cloud-versions">
-                        <noscript><a name="clouds"><hr /></a></noscript>
+                        <noscript> <a name="clouds"><hr /></a> </noscript>
                         <h3>${_('Fedora In The Cloud')}</h3>
-
 
                             <div class="grid_12 alpha omega">
                                 <h4 class="area-callout">${_('Fedora on EC2')}</h4>
@@ -359,7 +358,6 @@ ec2_f15 = [
 
                                 <p>${Markup(_('Fedora\'s EC2 images follow standard EC2 login conventions, meaning that root login is disabled, but sudo access is granted.  The default username for the images is &lt;strong&gt;%s&lt;/strong&gt;.') % 'ec2-user')}</p>
                             </div>
-
 
                             <div class="clear"></div>
                             <div class="grid_2 alpha"><img class="download-media" alt="" src="${path}/static/images/icon-fedora-cloud-download.png" /></div>
