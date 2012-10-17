@@ -26,6 +26,7 @@ language_name_map = {
 'he': 'עברית',
 'hi': 'हिन्दी',
 'hu': 'Magyar',
+'ia': 'Interlingua',
 'id': 'Indonesia',
 'is': 'Íslenska',
 'it': 'Italiano',
