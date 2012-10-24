@@ -16,18 +16,19 @@ story_info = story_paths[random.randint(0, len(story_paths)-1)]
 #print '--- Story ---';
 #print story_info[0];
 
+from datetime import datetime
+
+today = datetime.utcnow()
+release = datetime(2012, 11, 6, 15)
+
+difference = release - today
+days = difference.days
+if difference.seconds > 0 or difference.minutes > 0 or difference.hours > 0: days += 1
+if days < 0: days = 0
+days = str(days)
+
 # banner countdown, only available for beta
 if global_variables.release['curr_state'] == "Beta":
-  from datetime import datetime
-
-  today = datetime.utcnow()
-  release = datetime(2012, 5, 22, 15)
-
-  difference = release - today
-  days = difference.days
-  if difference.seconds > 0 or difference.minutes > 0 or difference.hours > 0: days += 1
-  if days < 0: days = 0
-  days = str(days)
 
   image_lang = 'en'
   available_languages = ('ar', 'bg', 'bn_IN', 'cs', 'da', 'de', 'el', 'en', 'es', 'fi', 'fr', 'gu', 'he', 'hi', 'hr', 'hu', 'id', 'is', 'it', 'ja', 'kn', 'ko', 'ks', 'ml', 'nl', 'pa', 'pl', 'pt', 'pt_BR', 'ro', 'ru', 'si', 'sr', 'sv', 'th', 'tr', 'uk', 'vi_VN', 'zh_CN', 'zh_TW')
@@ -64,7 +65,7 @@ if global_variables.release['curr_state'] == "Beta":
 								</ul>
 								<p class="small">${_('%(size)sMB, 1 CD-ROM Disc image for %(arch)s-bit PCs') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}} <br /><a href="${path}/${lang}/get-fedora-options">${Markup(_('More options &gt;'))}</a></p>
                                 <ul py:if="global_variables.release['curr_state']">
-                                    <li class="getalpha"><a href="${path}/${lang}/get-prerelease">${_('Try Fedora %(release)s %(state)s Now!') % {'release':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</a></li>
+                                    <li class="getalpha">${_('Fedora %(release)s Beta Comming in %(days)s days!') % {'release':global_variables.release['next_id'], 'days':days}}</li>
                                 </ul>
 							</div>
 							<img src="${path}/static/images/f17_fpo_screenshot.png" alt="screenshot" />
