@@ -1,4 +1,4 @@
-var available_langs = [ "ar", "bg", "bn_IN", "cs", "da", "de", "el", "en", "es", "fi", "fr", "gu", "he", "hi", "hr", "hu", "id", "is", "it", "ja", "kn", "ko", "ks", "ml", "nl", "pa", "pl", "pt", "pt_BR", "ro", "ru", "si", "sr", "sv", "th", "tr", "uk", "vi_VN", "zh_CN", "zh_TW" ];
+var available_langs = [ "bg", "bn_IN", "cs", "da", "de", "el", "en", "es", "fi", "fr", "gu", "he", "hi", "hr", "hu", "id", "is", "it", "ja", "kn", "ko", "ks", "ml", "nl", "pa", "pl", "pt", "ro", "ru", "si", "sr", "sv", "th", "tr", "uk", "vi_VN", "zh_CN", "zh_TW" ];
 
 
 var today = new Date();

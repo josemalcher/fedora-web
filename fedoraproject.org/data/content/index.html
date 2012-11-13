@@ -30,7 +30,7 @@ if global_variables.release['curr_state'] == "Beta":
   days = str(days)
 
   image_lang = 'en'
-  available_languages = ('ar', 'bg', 'bn_IN', 'cs', 'da', 'de', 'el', 'en', 'es', 'fi', 'fr', 'gu', 'he', 'hi', 'hr', 'hu', 'id', 'is', 'it', 'ja', 'kn', 'ko', 'ks', 'ml', 'nl', 'pa', 'pl', 'pt', 'pt_BR', 'ro', 'ru', 'si', 'sr', 'sv', 'th', 'tr', 'uk', 'vi_VN', 'zh_CN', 'zh_TW')
+  available_languages = ('bg', 'bn_IN', 'cs', 'da', 'de', 'el', 'en', 'es', 'fi', 'fr', 'gu', 'he', 'hi', 'hr', 'hu', 'id', 'is', 'it', 'ja', 'kn', 'ko', 'ks', 'ml', 'nl', 'pa', 'pl', 'pt', 'ro', 'ru', 'si', 'sr', 'sv', 'th', 'tr', 'uk', 'vi_VN', 'zh_CN', 'zh_TW')
   if lang in available_languages:
     image_lang = lang
   image = image_lang + '/fedora' + global_variables.release['next_id'] + '-countdown-banner-' + days + '.' + image_lang + '.png'
