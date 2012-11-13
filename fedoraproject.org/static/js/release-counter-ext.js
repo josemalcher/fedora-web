@@ -50,12 +50,12 @@ bannerimg.style.width = width;
 
 
 if (days <= 0) {
-    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/banners/f17release.png");
-    bannerimg.setAttribute("alt", "Fedora 17 is here!");
+    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/banners/f18release.png");
+    bannerimg.setAttribute("alt", "Fedora 18 is here!");
     url = "http://get.fedoraproject.org/";
 } else {
-    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora17-countdown-banner-" + days + "." + lang + "." + "png");
-    bannerimg.setAttribute("alt", "Fedora 17 Beefy Miracle released in " + days + " days.");
+    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora18-countdown-banner-" + days + "." + lang + "." + "png");
+    bannerimg.setAttribute("alt", "Fedora 18 Spherical Cow released in " + days + " days.");
 }
 
 bannerlink.setAttribute("href", url);
