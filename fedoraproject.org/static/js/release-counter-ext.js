@@ -5,7 +5,7 @@ var today = new Date();
 var release = new Date("January 08, 2013 15:00:00 UTC");
 var millisBetweenDates = release - today;
 var days = Math.ceil(millisBetweenDates/1000/60/60/24);
-var url = "https://fedoraproject.org/wiki/Releases/17/Schedule";
+var url = "https://fedoraproject.org/wiki/Releases/18/Schedule";
 
 var script = document.getElementById('fedora-banner');
 var lang = "en"
