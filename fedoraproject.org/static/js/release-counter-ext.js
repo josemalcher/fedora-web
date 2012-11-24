@@ -56,7 +56,7 @@ if (days <= 0) {
 } else {
     bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora18-countdown-banner-" + days + "." + lang + "." + "png");
     bannerimg.setAttribute("alt", "Fedora 18 Spherical Cow released in " + days + " days.");
-    bannerimg.setAttribute("style", "background-image:url(https://stg.fedoraproject.org/static/images/counter/animated.gif);background-repeat:no-repeat;width:" + width);
+    bannerimg.setAttribute("style", "background-image:url(https://fedoraproject.org/static/images/counter/animated.gif);background-repeat:no-repeat;width:" + width);
 
 }
 
