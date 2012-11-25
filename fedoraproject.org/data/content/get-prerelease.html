@@ -97,8 +97,8 @@ l_code = l_map.get(lang, dflt_language)
                     <li>
                         <h5>${Markup(_('Direct Download'))}</h5>
                         <ul>
-                            <li><a class="download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Fedora/i386/iso/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i386-DVD.iso">${Markup(_('i386'))}</a> - ${Markup(_('Install DVD'))}</li>
-                            <li><a class="download-splash" href="http://download.fedoraproject.org/pub/fedora/linux/releases/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Fedora/x86_64/iso/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-DVD.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Install DVD'))}</li>
+                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Fedora/i386/iso/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i386-DVD.iso">${Markup(_('i386'))}</a> - ${Markup(_('Install DVD'))}</li>
+                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Fedora/x86_64/iso/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-DVD.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Install DVD'))}</li>
                         </ul>
                     </li>
                     <!-- experimental -->
