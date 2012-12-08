@@ -552,7 +552,7 @@ ec2_f15 = [
                         </div>
                         <div class="grid_10 omega">
                             <h4>${_('Fedora 17 PPC')}</h4>
-                            <p>${_('Fedora Releases fo Power PC has been most extensively tested on IBM Power systems, but is also known to work on Apple Mac G5 systems.')}</p>
+                            <p>${_('Fedora Releases for Power PC has been most extensively tested on IBM Power systems, but is also known to work on Apple Mac G5 systems.')}</p>
 								</div>
 									<div class="clear"></div>
 			<div class="purchase-options">
@@ -578,11 +578,21 @@ ec2_f15 = [
          </div>
                         <div class="clear"></div>
 
+         				   <div class="grid_1 suffix_1 alpha">
+                        <img class="download-media" alt="${_('ARM architecture')}" src="${path}/static/images/s390.png" />
+                        </div>
+                        <div class="grid_10 omega">
+                            <h4>${_('Fedora 17 s390')}</h4>
+                            <p>${_('Fedora Release Image based on the s390x architecture.')}</p>
+                            <h5>${_('DVD Image')}</h5>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download_arch']}/17/Fedora/s390x/iso/Fedora-17-s390x-DVD.iso">${_('Download Now!')}</a>
+                                <p class="fine-print">${_('%sGB DVD ISO') % global_variables.iso_size['s390_DVD']}</p>
+								</div>
+									<div class="clear"></div>
+
                     <xi:include href="../templates/content-export-regulations.html" />
 
       </div>
-
-
 
                     <div class="simple_overlay" id="gnome1">
                         <!-- large image -->

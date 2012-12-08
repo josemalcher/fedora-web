@@ -13,7 +13,7 @@ path={
     'torrent':         'http://torrent.fedoraproject.org/torrents',
     'download':        'http://download.fedoraproject.org/pub/fedora/linux/releases',
     'download_spins':  'http://download.fedoraproject.org/pub/alt/releases',
-    'download_arch':   'http://dl.fedoraproject.org/pub/fedora-secondary/releases/',
+    'download_arch':   'http://dl.fedoraproject.org/pub/fedora-secondary/releases',
     'mirrors':         'http://mirrors.fedoraproject.org/metalink?path=pub/fedora/linux/releases',
     'checksums':       'https://fedoraproject.org/static/checksums'
 }
