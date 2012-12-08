@@ -456,9 +456,10 @@ ec2_f15 = [
                             <p>${_('ARM chips are the most widely-produced processor family in the world; they have historically been used in cell phones and embedded applications, and are increasingly used in tablet devices and low-power-consumption servers. The Fedora-ARM project is an initiative to bring Fedora to this processor family.')}</p>
                             <p>${_('A list of currently supplied prebuilt images for the Fedora 17 ARM GA release can be found at:')}</p>
                             <p><a href="https://fedoraproject.org/wiki/Architectures/ARM/Fedora_17_GA#Featured_Images/">${_('Fedora 17 GA Featured_Images')}</a></p>
+                            <p class="arch-note">${_('Raspberry Pi support is not included in Fedora 17 GA because it does not meet the Fedora release guidelines. Specifically, the Raspberry Pi relies upon a custom kernel version, not upstream, as well as special GPU binary blobs which are not acceptable under the current firmware exception. Nonetheless, an')} <a href="http://scotland.proximity.on.ca/arm-nightlies/">${_('unsupported "nightly" Fedora 17 snapshot')}</a> ${_('is available.')}</p>	
+
 								</div>
                         <div class="clear"></div>
-			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
 			<div class="grid_10 prefix_2 alpha omega">
                             <h6>${_('Available images and instructions:')}</h6>
 							<p>${_('The following images have been tested and are recommended for most users and includes Versatile Express (QEMU), Trimslice, Beagleboard xM, Pandaboard, Kirkwood Plugs, Highbank and iMX based hardware platforms. For the whole list of images please visit')} <a href="https://fedoraproject.org/wiki/Architectures/ARM/Fedora_17_GA#Featured_Images/">${_('all the prebuilt images')}</a> ${_('for the Fedora 17 ARM GA release.')}</p>
@@ -511,12 +512,12 @@ ec2_f15 = [
 			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
 			<div class="clear"></div>
                         <div class="grid_10 prefix_2 alpha omega">
-                            <p>${_('If you would like to provide your own kernel and just require a root file system:')}</p>
+                            <p><strong>${_('If you would like to provide your own kernel and just require a root file system:')}</strong></p>
                         </div>
                         <div class="clear"></div>
 			<div class="purchase-options">
                         	<div class="grid_5 prefix_2 alpha">
-                            <div style="padding-left: 59px"><h5>${_('SFP Serial Image')}</h5>
+                            <div style="padding: 0 0 10px 59px"><h5>${_('SFP Serial Image')}</h5>
                             <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/17/Images/arm/Fedora-17-arm-console.tar.xz" class="download-button-mini">${_('Download')}</a>
                       	 	 </div>
                       	 	 </div>
@@ -530,12 +531,12 @@ ec2_f15 = [
 			<div class="grid_10 prefix_2 alpha omega">
          <div class="clear"></div>
          <br />
-                            <p>${_('XFCE Desktop:')}</p>
+                            <p><strong>${_('XFCE Desktop:')}</strong></p>
                         </div>
                         <div class="clear"></div>
 			<div class="purchase-options">
                         	<div class="grid_5 prefix_2 alpha">
-                            <div style="padding-left: 59px"><h5>${_('SFP XFCE Image')}</h5>
+                            <div style="padding: 0 0 10px 59px"><h5>${_('SFP XFCE Image')}</h5>
                             <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/17/Images/arm/Fedora-17-arm-xfce.tar.xz" class="download-button-mini">${_('Download')}</a>
                       	 	 </div>
                       	 	 </div>
@@ -543,10 +544,11 @@ ec2_f15 = [
                             <h5>${_('HFP XFCE Image')}</h5>
                             <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/17/Images/armhfp/Fedora-17-armhfp-xfce.tar.xz" class="download-button-mini">${_('Download')}</a>
                      	   </div>
+         </div>
+         <div class="clear"></div>
 
-                        <div class="clear"></div>
                     <xi:include href="../templates/content-export-regulations.html" />
-			</div>
+
       </div>
 
 
