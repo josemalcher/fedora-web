@@ -456,7 +456,7 @@ ec2_f15 = [
                             <p>${_('ARM chips are the most widely-produced processor family in the world; they have historically been used in cell phones and embedded applications, and are increasingly used in tablet devices and low-power-consumption servers. The Fedora-ARM project is an initiative to bring Fedora to this processor family.')}</p>
                             <p>${_('A list of currently supplied prebuilt images for the Fedora 17 ARM GA release can be found at:')}</p>
                             <p><a href="https://fedoraproject.org/wiki/Architectures/ARM/Fedora_17_GA#Featured_Images/">${_('Fedora 17 GA Featured_Images')}</a></p>
-                            <p class="arch-note">${_('Raspberry Pi support is not included in Fedora 17 GA because it does not meet the Fedora release guidelines. Specifically, the Raspberry Pi relies upon a custom kernel version, not upstream, as well as special GPU binary blobs which are not acceptable under the current firmware exception. Nonetheless, an')} <a href="http://scotland.proximity.on.ca/arm-nightlies/">${_('unsupported "nightly" Fedora 17 snapshot')}</a> ${_('is available.')}</p>	
+                            <p class="arch-note"><strong>${_('Raspberry Pi')}</strong> ${_('support is not included in Fedora 17 GA because it does not meet the Fedora release guidelines. Specifically, the Raspberry Pi relies upon a custom kernel version, not upstream, as well as special GPU binary blobs which are not acceptable under the current firmware exception. Nonetheless, an')} <a href="http://scotland.proximity.on.ca/arm-nightlies/">${_('unsupported "nightly" Fedora 17 snapshot')}</a> ${_('is available.')}</p>	
 
 								</div>
                         <div class="clear"></div>
@@ -546,6 +546,37 @@ ec2_f15 = [
                      	   </div>
          </div>
          <div class="clear"></div>
+
+         				   <div class="grid_1 suffix_1 alpha">
+                        <img class="download-media" alt="${_('ARM architecture')}" src="${path}/static/images/ppc.png" />
+                        </div>
+                        <div class="grid_10 omega">
+                            <h4>${_('Fedora 17 PPC')}</h4>
+                            <p>${_('Fedora Releases fo Power PC has been most extensively tested on IBM Power systems, but is also known to work on Apple Mac G5 systems.')}</p>
+								</div>
+									<div class="clear"></div>
+			<div class="purchase-options">
+                            <div class="grid_5 prefix_2 alpha">
+
+                                <h6>${_('PPC')}</h6>
+                            <h5>${_('DVD Image')}</h5>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download_arch']}/17/Fedora/ppc/iso/Fedora-17-ppc-DVD.iso">${_('Download Now!')}</a>
+                                <p class="fine-print">${_('%sGB DVD ISO') % global_variables.iso_size['PPC_DVD']}</p>
+                            <h5>${_('Netinstall CD')}</h5>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download_arch']}/17/Fedora/ppc/iso/Fedora-17-ppc-netinst.iso">${_('Download Now!')}</a>
+                                <p class="fine-print">${_('%sMB CD ISO') % global_variables.iso_size['PPC_Netinstall']}</p>
+                            </div>
+                     	   <div class="grid_4 prefix_1 omega online-vendors">
+                                <h6>${_('PPC64')}</h6>
+                                <h5>${_('DVD Image')}</h5>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download_arch']}/17/Fedora/ppc64/iso/Fedora-17-ppc64-DVD.iso">${_('Download Now!')}</a>
+                                <p class="fine-print">${_('%sGB DVD ISO') % global_variables.iso_size['PPC64_DVD']}</p>
+                           <h5>${_('Netinstall CD')}</h5>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download_arch']}/17/Fedora/ppc64/iso/Fedora-17-ppc64-netinst.iso">${_('Download Now!')}</a>
+                                <p class="fine-print">${_('%sMB CD ISO') % global_variables.iso_size['PPC64_Netinstall']}</p>
+                            </div>
+         </div>
+                        <div class="clear"></div>
 
                     <xi:include href="../templates/content-export-regulations.html" />
 
