@@ -108,6 +108,10 @@ a:hover {
     margin-top: 1px;
 }
 
+#site-heading a {
+outline: none;
+}
+
 #site-heading h1 span#logo {
     background:transparent url(../images/fedora-logo.png) no-repeat scroll 0px 0px;
     height: 45px;
@@ -222,8 +226,8 @@ a:hover {
     padding-bottom: 5px;
 }
 
-#main-nav div { 
-	background-color: inherit !important; 
+#main-nav div {
+	background-color: inherit !important;
 	text-align: center;
 }
 
@@ -277,7 +281,7 @@ a#nav-special {
 	padding-bottom: 0px !important;
 }
 
-#header-nav ul.tabs li a {	
+#header-nav ul.tabs li a {
 	padding-top: .9em;
 	padding-bottom: 1em;
 	background: none;
@@ -408,7 +412,7 @@ background-image: -webkit-gradient(radial, 30% 30%, 0, 30% 30%, 900, from(#a07cb
 }
 
 #header-features {
-background: url('http://localhost:5000/static/images/headers/features-laptops.png') no-repeat bottom right #7bcd40; 
+background: url('http://localhost:5000/static/images/headers/features-laptops.png') no-repeat bottom right #7bcd40;
 background: #e59728; /* orange */
 background-image: -moz-radial-gradient(30% 30% 45deg, circle farthest-side, #ffa72b, #df9428);
 background-image: -webkit-gradient(radial, 30% 30%, 0, 30% 30%, 900, from(#ffa72b), to(#df9428));
@@ -583,9 +587,9 @@ h4.main-section-hl { font-size: small; }
   margin-bottom: 0px;
 }
 
-#four-fs p { 
+#four-fs p {
   margin-left: 10px;
-  min-height: 5em; 
+  min-height: 5em;
 }
 
 /* what can you do with fedora front page section */
@@ -652,7 +656,7 @@ h4.main-section-hl { font-size: small; }
 /* get-* pages */
 #main-download-section {
     background: #ffffff url('../images/bg_main-download-section.png') repeat-x bottom left;
-    margin-bottom: 3em; 
+    margin-bottom: 3em;
 }
 
 #main-download-section img {
@@ -788,7 +792,7 @@ a.interactive-section, .bugs-section a { font-weight: normal; }
   padding-bottom: 1em;
 }
 
-#header-join p.twitter { 
+#header-join p.twitter {
 	margin-top: 5px;
     margin-right: 10px;
     text-align: right;
@@ -964,7 +968,7 @@ pre.command {
     padding: 0.5ex 2ex;
 }
 
-.fine-print { font-style: italic; color: #888; } 
+.fine-print { font-style: italic; color: #888; }
 .back-to-top a {
     border-radius: 1.5ex;
     -webkit-border-radius: 1.5ex;
@@ -1180,11 +1184,11 @@ li.resource-download
 
 
 /* export regulations */
-.export-regulations { 
-   padding-bottom: 30px; 
-   padding-top: 8px; 
-   border-top: 1px solid #ccc; 
-   margin-top: 4em; 
+.export-regulations {
+   padding-bottom: 30px;
+   padding-top: 8px;
+   border-top: 1px solid #ccc;
+   margin-top: 4em;
    color: #aaa;
 }
 .export-regulations .read-more img, .export-regulations .details img { margin: 0; }
@@ -1448,7 +1452,7 @@ li.slide { width: 100% !important; }
   margin-bottom: 1em;
 }
 
-/* Fedora download slide */ 
+/* Fedora download slide */
 
 
 .slides #fedora-download div h2 {
@@ -1474,8 +1478,8 @@ li.slide { width: 100% !important; }
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-bottom: 2px solid #255591;
-  background: -moz-linear-gradient(bottom, #a9c8da, #fff); 
-  background: -webkit-gradient(linear, left bottom, left top, from(#a9c8da), to(#fff)); 
+  background: -moz-linear-gradient(bottom, #a9c8da, #fff);
+  background: -webkit-gradient(linear, left bottom, left top, from(#a9c8da), to(#fff));
   float: right;
   margin-right: .5em;
   font-size: 1.1em;
@@ -1497,8 +1501,8 @@ li.slide { width: 100% !important; }
 
 .slides #fedora-download li a:hover {
   color: #255591;
-  background: -moz-linear-gradient(top, #a9c8da, #fff); 
-  background: -webkit-gradient(linear, left top, left bottom, from(#a9c8da), to(#fff)); 
+  background: -moz-linear-gradient(top, #a9c8da, #fff);
+  background: -webkit-gradient(linear, left top, left bottom, from(#a9c8da), to(#fff));
   text-shadow: white -1px -1px 0px;
 }
 
@@ -1516,7 +1520,7 @@ li.slide { width: 100% !important; }
 	color: orange;
 }
 
-/* Fedora feature slide */ 
+/* Fedora feature slide */
 
 
 .slideShow #feature1 .content {
@@ -1544,10 +1548,10 @@ li.slide { width: 100% !important; }
 
 .slides #feature1 {
   background: #555;
-  background-image: url(../images/banners/jbossas7_bkg.png);  
+  background-image: url(../images/banners/jbossas7_bkg.png);
   background-position: top center;
   background-repeat: repeat-x;}
-  
+
 .slides #feature1 .content {
   left: 0px;
   height: 200px;
@@ -1601,7 +1605,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#275365', end
   padding: 1em;
 }
 
-/* Fedora group photo slide */ 
+/* Fedora group photo slide */
 
 .slides #group-photo {
   background: url(../images/banners/fudcon-blacksburg-2012.png) no-repeat top center black;
@@ -1615,7 +1619,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#275365', end
 
 /* end: slideshow styles */
 
-/* sponsors */ 
+/* sponsors */
 
 ul#sponsors {
   display: block;
@@ -1686,7 +1690,7 @@ div.news span.news_title {
 	background: -webkit-linear-gradient(left, transparent, #784516 47%) repeat scroll 0 0 #784516;
 	background: -moz-linear-gradient(left center , transparent, #784516 47%) repeat scroll 0 0 #784516;
 }
-div.news a.news_relnotes { 
+div.news a.news_relnotes {
 	margin: 27px;
 	padding-left: 20px;
 	background: url(/static/images/news_relnotes.png) no-repeat left;
@@ -1698,4 +1702,4 @@ div.news a.news_download  {
 div.news a.news_relnotes, div.news a.news_download  {
 	font-weight: bold;
 	color: white;
-} 
+}
