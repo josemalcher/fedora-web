@@ -1,46 +1,45 @@
 <?python
 
 # see http://fedoraproject.org/wiki/Cloud_SIG/EC2_Images for the complet list
+# Generated using the following:
+# :%s#^| \([a-zA-Z*-9]*\)[ |]*\(i386\|x86_64\)[ |]*\(EBS-backed\)[ |]* \(ami.*\)#{'region':'\1', 'arch':'\2', 'store':'\3', 'id':'\4'},#g
+
 ec2_f17 = [
-                {'region':'ap-northeast-1',       'arch':'i386',      'store':'EBS-backed',     'id':'ami-5ae6555b'},
-                {'region':'ap-northeast-1',       'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-26e65527'},
-                {'region':'ap-southeast-1',       'arch':'i386',      'store':'EBS-backed',     'id':'ami-cc86c09e'},
-                {'region':'ap-southeast-1',       'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-2e86c07c'},
-                {'region':'eu-west-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-e981bb9d'},
-                {'region':'eu-west-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-9980baed'},
-                {'region':'sa-east-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-1ae33d07'},
-                {'region':'sa-east-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-eee23cf3'},
-                {'region':'us-east-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-08d97e61'},
-                {'region':'us-east-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-2ea50247'},
-                {'region':'us-west-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-417f2504'},
-                {'region':'us-west-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-877e24c2'},
-                {'region':'us-west-2',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-e269e5d2'},
-                {'region':'us-west-2',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-8e69e5be'}
+      {'region':'ap-northeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-5ae6555b'},
+      {'region':'ap-northeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-26e65527'},
+      {'region':'ap-southeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-cc86c09e'},
+      {'region':'ap-southeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-2e86c07c'},
+      {'region':'ap-southeast-2', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-87a433bd'},
+      {'region':'ap-southeast-2', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-e3a433d9'},
+      {'region':'eu-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-e981bb9d'},
+      {'region':'eu-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-9980baed'},
+      {'region':'sa-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-1ae33d07'},
+      {'region':'sa-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-eee23cf3'},
+      {'region':'us-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-08d97e61'},
+      {'region':'us-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-2ea50247'},
+      {'region':'us-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-417f2504'},
+      {'region':'us-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-877e24c2'},
+      {'region':'us-west-2',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-e269e5d2'},
+      {'region':'us-west-2',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-8e69e5be'}
 ]
 
 ec2_f16 = [
-                {'region':'ap-northeast-1',       'arch':'i386',      'store':'EBS-backed',     'id':'ami-f22094f3'},
-                {'region':'ap-northeast-1',       'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-16219517'},
-                {'region':'ap-southeast-1',       'arch':'i386',      'store':'EBS-backed',     'id':'ami-9694eec4'},
-                {'region':'ap-southeast-1',       'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-5095ef02'},
-                {'region':'eu-west-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-7bf4c90f'},
-                {'region':'eu-west-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-2df4c959'},
-                {'region':'sa-east-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-5a34eb47'},
-                {'region':'sa-east-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-4c34eb51'},
-                {'region':'us-east-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-5f16d836'},
-                {'region':'us-east-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-0316d86a'},
-                {'region':'us-west-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-25e0bc60'},
-                {'region':'us-west-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-69e0bc2c'},
-                {'region':'us-west-2',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-e2f37ed2'},
-                {'region':'us-west-2',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-88f37eb8'}
+      {'region':'ap-northeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-f22094f3'},
+      {'region':'ap-northeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-16219517'},
+      {'region':'ap-southeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-9694eec4'},
+      {'region':'ap-southeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-5095ef02'},
+      {'region':'eu-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-7bf4c90f'},
+      {'region':'eu-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-2df4c959'},
+      {'region':'sa-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-5a34eb47'},
+      {'region':'sa-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-4c34eb51'},
+      {'region':'us-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-5f16d836'},
+      {'region':'us-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-0316d86a'},
+      {'region':'us-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-25e0bc60'},
+      {'region':'us-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-69e0bc2c'},
+      {'region':'us-west-2',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-e2f37ed2'},
+      {'region':'us-west-2',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-88f37eb8'}
 ]
 
-ec2_f15 = [
-                {'region':'us-east-1',            'arch':'i386',      'store':'EBS-backed',             'id':'ami-60bd4609'},
-                {'region':'us-east-1',            'arch':'i386',      'store':'Instance store (S3)',    'id':'ami-6ebe4507'},
-                {'region':'us-east-1',            'arch':'x86_64',    'store':'EBS-backed',             'id':'ami-2abf4443'},
-                {'region':'us-east-1',            'arch':'x86_64',    'store':'Instance store (S3)',    'id':'ami-72bf441b'}
-]
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -418,35 +417,9 @@ ec2_f15 = [
 																</table>
 
 
-                                <h5>${_('Fedora %s') % '15'}</h5>
-                                <table class="verify-live-media">
-																		<thead>
-																				<tr>
-																						<th>${_('Region')}</th>
-																						<th>${_('Architecture')}</th>
-																						<th>${_('Root store')}</th>
-																						<th>${_('AMI ID')}</th>
-																				</tr>
-																		</thead>
-																		<tbody>
-																			<py:for each="img in ec2_f15">
-																				<tr>
-																						<td>${img['region']}</td>
-																						<td>${img['arch']}</td>
-																						<td>${img['store']}</td>
-																						<td>${img['id']}</td>
-																				</tr>
-																			</py:for>
-																		</tbody>
-																</table>
-
                     <xi:include href="../templates/content-export-regulations.html" />
                     		</div>
                         </div>
-
-
-
-
 
                     <div class="simple_overlay" id="gnome1">
                         <!-- large image -->
