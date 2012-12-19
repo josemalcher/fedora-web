@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="clear"></div>
-            
+
         <div class="container_16">
             <div class="grid_16">
                 <p py:if="global_variables.release['curr_state']" class="note"><img src="${path}/static/images/smirk.png" class="smirk" />${Markup(_('Did someone say... &amp;ldquo;&lt;a href="get-prerelease"&gt;%s&lt;/a&gt;&amp;rdquo;?') % global_variables.release['curr_state'])}</p>
@@ -52,7 +52,7 @@
                         <li><a href="${path}/${lang}/get-fedora-options#desktops">${Markup(_('Desktops'))}</a>: ${_('KDE, Xfce, GNOME, and others')}</li>
                         <li><a href="${path}/${lang}/get-fedora-options#spins">${Markup(_('Spins'))}</a>: ${_('Games, Design, Security, and others')}</li>
                         <li><a href="${path}/${lang}/get-fedora-options#cloud">${Markup(_('Cloud'))}</a>: ${Markup(_('EC2 Cloud Images'))}</li>
-                        <li><a href="${path}/${lang}/get-fedora-options#other">${Markup(_('Other Arches'))}</a>: ${Markup(_('ARM, s390, PPC'))}</li>
+                        <li><a href="${path}/${lang}/get-fedora-options#2nd_arches">${Markup(_('Secondary Arches'))}</a>: ${Markup(_('ARM, s390, PPC'))}</li>
                     </ul>
                     <p><a href="${path}/${lang}/get-fedora-options">${Markup(_('View more Fedora options...'))}</a></p>
                 </div>
@@ -85,7 +85,7 @@
                     <li class="webpage-list"><a href="https://fedoraproject.org/wiki/Common_F${global_variables.release['curr_id']}_bugs">${_('Common Bugs')}</a></li>
                     <li class="webpage-list"><a href="http://fedoraproject.org/wiki/Upgrading">${_('Upgrading Fedora')}</a></li>
                     <li class="support-list"><a href="${path}/${lang}/get-help">${_('Help &amp; Support')}</a></li>
-                    <li class="verify-list"><a href="${path}/${lang}/verify">${_('Verify Download')}</a></li>	  
+                    <li class="verify-list"><a href="${path}/${lang}/verify">${_('Verify Download')}</a></li>
                 </ul>
 
 
