@@ -227,8 +227,16 @@ if global_variables.release['curr_state'] == "Beta":
                 <p><a href="${path}/${lang}/get-fedora-options">${Markup(_('Full set of download options &gt;'))}</a></p>
 
                 <div id="fedora-banners">
-						<script id="fedora-banner" type="text/javascript" src="${path}/static/js/release-counter-ext.js?lang=${lang}"></script>
+                <py:if test="global_variables.release['curr_state'] != 'Beta'">
+                      <!-- See data/template/js to enable static/js/banner.js -->
+                      <a href="${path}/${lang}/get-fedora"><img alt="Fedora ${global_variables.release['curr_id']} ${global_variables.release['curr_name']} is here!" src="${path}/static/images/banners/f${global_variables.release['curr_id']}release.png" /></a>
+                    </py:if>
 
+                    <py:if test="global_variables.release['curr_state'] == 'Beta'">
+                      <script id="fedora-banner" type="text/javascript" src="${path}/static/js/release-counter-ext.js?lang=${lang}"></script>
+                      <a style="text-decoration: none; font-size: 1.6ex; color: #99AABB;" href="${path}/${lang}/counter">${Markup(_('Add a counter to your own site!'))}</a>
+                    </py:if>
+						
                 </div>
 
                 <h4>${_('Upcoming Events')}</h4>
