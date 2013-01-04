@@ -9,15 +9,15 @@
 # Máté Gelei <gelei.mate1@gmail.com>, 2011.
 # Máté Gelei <mate.gelei@yahoo.com>, 2012.
 # neb <nick@bebout.net>, 2011.
-# Peter Borsa <peter.borsa@gmail.com>, 2011, 2012.
-# Zoltan Hoppár <hopparz@gmail.com>, 2011.
+# Peter Borsa <peter.borsa@gmail.com>, 2011-2012.
+# Zoltan Hoppár <hopparz@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-08-22 20:55+0200\n"
-"PO-Revision-Date: 2012-08-22 19:33+0000\n"
-"Last-Translator: Kévin Raymond <shaiton@fedoraproject.org>\n"
+"POT-Creation-Date: 2012-12-30 00:48+0100\n"
+"PO-Revision-Date: 2012-12-31 16:41+0000\n"
+"Last-Translator: Zoltan Hoppár <hopparz@gmail.com>\n"
 "Language-Team: Hungarian <trans-hu@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,7 +30,7 @@ msgstr ""
 msgid "Fedora Project - What is Fedora and what makes it different?"
 msgstr "Fedora Projekt -Mi az a Fedora és mitől különleges?"
 
-#: data/content/about-fedora.html:13 data/content/index.html:132
+#: data/content/about-fedora.html:13 data/content/index.html:136
 #: data/templates/foot.html:10
 msgid "About Fedora"
 msgstr "A Fedoráról"
@@ -74,7 +74,7 @@ msgid ""
 "technologies."
 msgstr ""
 
-#: data/content/about-fedora.html:29 data/content/index.html:190
+#: data/content/about-fedora.html:29 data/content/index.html:194
 msgid "What makes Fedora different?"
 msgstr "Mi teszi a Fedorát mássá?"
 
@@ -226,15 +226,15 @@ msgstr "Visszatérés a fő Fedora weboldalra."
 
 #: data/content/code-of-conduct.html:7
 msgid "Fedora Project - Fedora Project Code of Conduct"
-msgstr ""
+msgstr "Fedora Project - Fedora Project Magatartási kódex"
 
 #: data/content/code-of-conduct.html:13
 msgid "Code of Conduct"
-msgstr ""
+msgstr "Magatartási kódex"
 
 #: data/content/code-of-conduct.html:14
 msgid "Behave as a community member, follow the Code of Conduct."
-msgstr ""
+msgstr "Viselkedjen úgy mint a közösség tagja, kövesse a magatartási kódexet."
 
 #: data/content/code-of-conduct.html:21
 msgid ""
@@ -414,62 +414,62 @@ msgid ""
 "Wiki</a>."
 msgstr "Más kapcsolatok listája megtekinthető a wiki<a href=\"https://fedoraproject.org/wiki/Contact\">Contact</a> oldalán."
 
-#: data/content/counter.html:7
+#: data/content/counter.html:11
 msgid "Fedora Project - Release countdown widget."
 msgstr "Fedora Projekt - Visszaszámláló a kiadásig."
 
-#: data/content/counter.html:15
+#: data/content/counter.html:19
 msgid "Release Counter"
 msgstr "Kiadási számláló"
 
-#: data/content/counter.html:16
+#: data/content/counter.html:20
 msgid "Counter used for Fedora Releases"
 msgstr "A Fedora kiadásokhoz használt számláló"
 
-#: data/content/counter.html:28
+#: data/content/counter.html:32
 msgid "Fedora Release Counter"
 msgstr "Fedora számláló"
 
-#: data/content/counter.html:29
+#: data/content/counter.html:33
 msgid "Help us spread the excitement!"
 msgstr "Segítsen továbbadni az izgatottságot!"
 
-#: data/content/counter.html:30
+#: data/content/counter.html:34
 msgid ""
 "Are you as excited about the upcoming Fedora release as we are? Share in the"
 " fun of the countdown - add a Fedora release countdown widget to your "
 "website!"
 msgstr "Ön ugyanolyan izgatott az új Fedora kiadás miatt, mint mi? Ossza meg a várakozás élményét - adjon egy Fedora visszaszámláló widget-et a honlapjához!"
 
-#: data/content/counter.html:31
+#: data/content/counter.html:35
 msgid "When placed on your website, the counter will appear just like this:"
 msgstr "Amikor kikerül az oldalra, akkor a számláló pontosan így fog kinézni: "
 
-#: data/content/counter.html:34
+#: data/content/counter.html:38
 msgid "How to add the counter to your website"
 msgstr "Hogyan adjuk a számlálót a weboldalunkhoz"
 
-#: data/content/counter.html:35
+#: data/content/counter.html:39
 msgid ""
 "To add a Fedora Release counter to your own site, simply place the following"
 " code wherever you want it to appear:"
 msgstr "A Fedora kiadás visszaszámlálóját úgy lehet hozzáadni egy webhelyhez, hogy egyszerűen odamásoljuk a következő sorokat:"
 
-#: data/content/counter.html:37
+#: data/content/counter.html:41
 #, python-format
 msgid ""
 "The lang parameter can be changed to display the counter in a different "
 "language. Currently, the values %(codelang)s are supported. When no language"
 " is specified, English will be used."
-msgstr ""
+msgstr "A lang paraméter megváltoztatható hogy más nyelven is megjelenítse a számlálót. Jelenleg, a támogatott nyelvek a következőek: %(codelang)s. Ha nincs nyelv meghatározva, az alapértelmezett angol kerül felhasználásra."
 
-#: data/content/counter.html:38
+#: data/content/counter.html:42
 msgid ""
 "The width parameter can be changed to scale the banner. This is a CSS scale,"
 " hence you will loose quality if you change it. Better to keep the default "
 "value (by omitting this parameter). A correct value is between 100px and "
 "200px."
-msgstr ""
+msgstr "A szélességi paraméter megváltoztatható, hogy átméretezhesse a bannert. Ez egy CCS méret, ezért csökken a minősége ha megváltoztatja. Jobb ha változatlanul hagyja (azzal hogy kihagyja ezt a paramétert). A helyes torzításmentes érték 100px és 200px között van."
 
 #: data/content/download-splash.html:7
 msgid "Fedora Project - Download next steps."
@@ -510,11 +510,11 @@ msgid ""
 "instructions</a>."
 msgstr "Nem kell aggódnia, <a href=\"%s\">csak kövesse lépésenként az utasításainkat</a>."
 
-#: data/content/download-splash.html:33 data/content/get-fedora.html:76
+#: data/content/download-splash.html:33 data/content/get-fedora.html:77
 msgid ""
 "http://docs.fedoraproject.org/en-US/Fedora/17/html/Installation_Guide/sn-"
 "making-media.html#sn-making-disc-media"
-msgstr ""
+msgstr "http://docs.fedoraproject.org/en-US/Fedora/17/html/Installation_Guide/sn-making-media.html#sn-making-disc-media"
 
 #: data/content/download-splash.html:38
 msgid "I need help running or installing Fedora."
@@ -589,6 +589,8 @@ msgstr "BitTorrent"
 #: data/content/get-fedora-all.html:36 data/content/get-fedora-all.html:44
 #: data/content/get-fedora-all.html:46 data/content/get-fedora-all.html:53
 #: data/content/get-prerelease.html:93 data/content/get-prerelease.html:100
+#: data/content/get-prerelease.html:126 data/content/get-prerelease.html:144
+#: data/content/get-prerelease.html:162 data/content/get-prerelease.html:180
 msgid "i386"
 msgstr "i386"
 
@@ -644,10 +646,8 @@ msgstr "Fedora asztali Live média"
 #: data/content/get-fedora-all.html:70 data/content/get-fedora-all.html:77
 #: data/content/get-fedora-all.html:84 data/content/get-fedora-all.html:96
 #: data/content/get-fedora-all.html:103 data/content/get-fedora-all.html:110
-#: data/content/get-prerelease.html:119 data/content/get-prerelease.html:126
-#: data/content/get-prerelease.html:137 data/content/get-prerelease.html:144
-#: data/content/get-prerelease.html:155 data/content/get-prerelease.html:162
-#: data/content/get-prerelease.html:173 data/content/get-prerelease.html:180
+#: data/content/get-prerelease.html:119 data/content/get-prerelease.html:137
+#: data/content/get-prerelease.html:155 data/content/get-prerelease.html:173
 msgid "i686"
 msgstr "i686"
 
@@ -694,7 +694,7 @@ msgstr "Régebbi Fedora változatok megjelenítése"
 
 #: data/content/get-fedora-all.html:122
 msgid "Cloud Images"
-msgstr ""
+msgstr "Cloud lemezképek"
 
 #: data/content/get-fedora-all.html:125
 msgid "Slow Internet? No Internet?"
@@ -723,17 +723,17 @@ msgstr "Nem engedheti meg magának a telepítő média árát? Igényeljen Fedor
 
 #: data/content/get-fedora-all.html:135
 msgid "Download Fedora Sources"
-msgstr ""
+msgstr "Fedora forráskód letöltése"
 
 #: data/content/get-fedora-all.html:137
 #, python-format
 msgid "Fedora %(release)s Source DVD (%(size)s GB)"
-msgstr ""
+msgstr "Fedora %(release)s Forráskód DVD (%(size)s GB)"
 
 #: data/content/get-fedora-all.html:138
 #, python-format
 msgid "Fedora %(release)s Source RPMs"
-msgstr ""
+msgstr "Fedora %(release)s forrás RPM-ek"
 
 #: data/content/get-fedora-options.html:51
 msgid "Fedora Project - Get Fedora by Desktops, Formats or Spins."
@@ -752,14 +752,18 @@ msgid "Spins"
 msgstr "Spin-ek"
 
 #: data/content/get-fedora-options.html:74 data/content/get-fedora.html:54
-msgid "Clouds"
-msgstr ""
+msgid "Cloud"
+msgstr "Cloud"
 
-#: data/content/get-fedora-options.html:85
+#: data/content/get-fedora-options.html:75 data/content/get-fedora.html:55
+msgid "Secondary Arches"
+msgstr "Másodlagos Architektúrák"
+
+#: data/content/get-fedora-options.html:86
 msgid "Fedora Desktops"
 msgstr "Fedora Asztalok"
 
-#: data/content/get-fedora-options.html:86
+#: data/content/get-fedora-options.html:87
 msgid ""
 "There are multiple desktops available for use with Fedora. Each has a "
 "slightly different look and feel and offers varying levels of customization."
@@ -768,59 +772,43 @@ msgid ""
 "figure out which one is best for you!"
 msgstr "Több asztali környezettel is használhatja a Fedorát. Mindegyiknek egy kicsit más a megjelenése, illetve kezelése. A választás befolyásolja, hogy az alapvető asztali elemek - ikonok, menük, stb. - hogyan jelennek meg. Ha nem tudja biztosan, melyiket szeretné, ki is próbálhatja őket, hogy eldöntse, melyik a legjobb."
 
-#: data/content/get-fedora-options.html:88
+#: data/content/get-fedora-options.html:89
 #, python-format
 msgid "Fedora %(release)s Desktop Edition"
-msgstr ""
+msgstr "Fedora %(release)s Desktop változat"
 
-#: data/content/get-fedora-options.html:88
+#: data/content/get-fedora-options.html:89
 msgid "Fedora Default"
 msgstr "Fedora alapértelmezett"
 
-#: data/content/get-fedora-options.html:92
-#: data/content/get-fedora-options.html:199
-#: data/content/get-fedora-options.html:211
-#: data/content/get-fedora-options.html:242
-#: data/content/get-fedora-options.html:278
+#: data/content/get-fedora-options.html:93
+#: data/content/get-fedora-options.html:200
+#: data/content/get-fedora-options.html:212
+#: data/content/get-fedora-options.html:243
+#: data/content/get-fedora-options.html:279
 msgid "32-bit PC Edition"
 msgstr "32-bit PC Kiadás"
 
-#: data/content/get-fedora-options.html:95
+#: data/content/get-fedora-options.html:96
 msgid "The GNOME-based default Fedora Desktop."
 msgstr "A GNOME-alapú alapértelemezett Fedora felület."
 
-#: data/content/get-fedora-options.html:97
+#: data/content/get-fedora-options.html:98
 msgid "Fedora Desktop spin homepage"
 msgstr "Fedora Asztali spin honlap"
 
-#: data/content/get-fedora-options.html:98
+#: data/content/get-fedora-options.html:99
 msgid "GNOME.org website"
 msgstr "GNOME.org weboldal"
 
-#: data/content/get-fedora-options.html:104
-#: data/content/get-fedora-options.html:130
-#: data/content/get-fedora-options.html:156
-#: data/content/get-fedora-options.html:182
-#: data/content/get-fedora-options.html:221
-#: data/content/get-fedora-options.html:252
+#: data/content/get-fedora-options.html:105
+#: data/content/get-fedora-options.html:131
+#: data/content/get-fedora-options.html:157
+#: data/content/get-fedora-options.html:183
+#: data/content/get-fedora-options.html:222
+#: data/content/get-fedora-options.html:253
 msgid "32-bit"
 msgstr "32-bit"
-
-#: data/content/get-fedora-options.html:105
-#: data/content/get-fedora-options.html:110
-#: data/content/get-fedora-options.html:131
-#: data/content/get-fedora-options.html:136
-#: data/content/get-fedora-options.html:157
-#: data/content/get-fedora-options.html:162
-#: data/content/get-fedora-options.html:183
-#: data/content/get-fedora-options.html:188
-#: data/content/get-fedora-options.html:224
-#: data/content/get-fedora-options.html:233
-#: data/content/get-fedora-options.html:255
-#: data/content/get-fedora-options.html:264 data/content/get-fedora.html:37
-#: data/content/index.html:62
-msgid "Download Now!"
-msgstr "Letöltés most!"
 
 #: data/content/get-fedora-options.html:106
 #: data/content/get-fedora-options.html:111
@@ -830,100 +818,123 @@ msgstr "Letöltés most!"
 #: data/content/get-fedora-options.html:163
 #: data/content/get-fedora-options.html:184
 #: data/content/get-fedora-options.html:189
+#: data/content/get-fedora-options.html:225
+#: data/content/get-fedora-options.html:234
+#: data/content/get-fedora-options.html:256
+#: data/content/get-fedora-options.html:265
+#: data/content/get-fedora-options.html:566
+#: data/content/get-fedora-options.html:569
+#: data/content/get-fedora-options.html:575
+#: data/content/get-fedora-options.html:578
+#: data/content/get-fedora-options.html:592 data/content/get-fedora.html:37
+#: data/content/index.html:66
+msgid "Download Now!"
+msgstr "Letöltés most!"
+
+#: data/content/get-fedora-options.html:107
+#: data/content/get-fedora-options.html:112
+#: data/content/get-fedora-options.html:133
+#: data/content/get-fedora-options.html:138
+#: data/content/get-fedora-options.html:159
+#: data/content/get-fedora-options.html:164
+#: data/content/get-fedora-options.html:185
+#: data/content/get-fedora-options.html:190
+#: data/content/get-fedora-options.html:570
+#: data/content/get-fedora-options.html:579
 #, python-format
 msgid "%sMB CD ISO"
-msgstr ""
+msgstr "%sMB CD ISO"
 
-#: data/content/get-fedora-options.html:109
-#: data/content/get-fedora-options.html:135
-#: data/content/get-fedora-options.html:161
-#: data/content/get-fedora-options.html:187
-#: data/content/get-fedora-options.html:230
-#: data/content/get-fedora-options.html:261
+#: data/content/get-fedora-options.html:110
+#: data/content/get-fedora-options.html:136
+#: data/content/get-fedora-options.html:162
+#: data/content/get-fedora-options.html:188
+#: data/content/get-fedora-options.html:231
+#: data/content/get-fedora-options.html:262
 msgid "64-bit"
 msgstr "64-bit"
 
-#: data/content/get-fedora-options.html:116
+#: data/content/get-fedora-options.html:117
 #, python-format
 msgid "Fedora %(release)s KDE Spin"
-msgstr ""
+msgstr "Fedora %(release)s KDE Spin"
 
-#: data/content/get-fedora-options.html:122
+#: data/content/get-fedora-options.html:123
 msgid "KDE-based Fedora desktop."
 msgstr "Fedora KDE felülettel."
 
-#: data/content/get-fedora-options.html:124
+#: data/content/get-fedora-options.html:125
 msgid "Fedora KDE Spin homepage"
 msgstr "Fedora KDE Spin honlap"
 
-#: data/content/get-fedora-options.html:125
+#: data/content/get-fedora-options.html:126
 msgid "KDE.org website"
 msgstr "KDE.org weboldal"
 
-#: data/content/get-fedora-options.html:142
+#: data/content/get-fedora-options.html:143
 #, python-format
 msgid "Fedora %(release)s LXDE Spin"
-msgstr ""
+msgstr "Fedora %(release)s LXDE Spin"
 
-#: data/content/get-fedora-options.html:148
+#: data/content/get-fedora-options.html:149
 msgid "LXDE-based Fedora desktop."
 msgstr "Fedora LXDE felülettel."
 
-#: data/content/get-fedora-options.html:150
+#: data/content/get-fedora-options.html:151
 msgid "Fedora LXDE Spin homepage"
 msgstr "Fedora LXDE Spin honlap"
 
-#: data/content/get-fedora-options.html:151
+#: data/content/get-fedora-options.html:152
 msgid "LXDE.org website"
 msgstr "LXDE.org weboldal"
 
-#: data/content/get-fedora-options.html:168
+#: data/content/get-fedora-options.html:169
 #, python-format
 msgid "Fedora %(release)s Xfce Spin"
-msgstr ""
+msgstr "Fedora %(release)s Xfce Spin"
 
-#: data/content/get-fedora-options.html:174
+#: data/content/get-fedora-options.html:175
 msgid "Xfce-based Fedora desktop."
 msgstr "Xfce alapú Fedora asztal."
 
-#: data/content/get-fedora-options.html:176
+#: data/content/get-fedora-options.html:177
 msgid "Fedora Xfce Spin homepage"
 msgstr "A Fedora Xfce változat honlapja"
 
-#: data/content/get-fedora-options.html:177
+#: data/content/get-fedora-options.html:178
 msgid "Xfce.org website"
 msgstr "Xfce.org honlap"
 
-#: data/content/get-fedora-options.html:197
+#: data/content/get-fedora-options.html:198
 msgid "Fedora Downloads by Format"
 msgstr "Fedora letöltések formátum alapján"
 
-#: data/content/get-fedora-options.html:202
+#: data/content/get-fedora-options.html:203
 #, python-format
 msgid "Fedora %(release)s Live Media / Spins"
-msgstr ""
+msgstr "Fedora %(release)s Live Media / Spins"
 
-#: data/content/get-fedora-options.html:203
+#: data/content/get-fedora-options.html:204
 msgid ""
 "Fedora Live Media images may be used via bootable CD, DVD, or USB drives, "
 "and also may be used to install Fedora to hard disk. They are a great way to"
 " give Fedora a try, low-risk."
 msgstr "A Fedora Live használható CD-ről, DVD-ről, vagy USB meghajtóról. Ezekről a számítógép adatainak módosítása nélkül kipróbálható a rendszer, de ha megtetszik, fel is telepíthető."
 
-#: data/content/get-fedora-options.html:204
+#: data/content/get-fedora-options.html:205
 msgid "A directory of alternate Fedora images called Spins may be found at:"
 msgstr "Az alternatív Fedora összeállítások amelyeket Spin-eknek hívnak itt megtalálhatóak:"
 
-#: data/content/get-fedora-options.html:206
+#: data/content/get-fedora-options.html:207
 msgid "Go to Spins Directory"
 msgstr "Ugrás a Spin könyvtárba"
 
-#: data/content/get-fedora-options.html:214
+#: data/content/get-fedora-options.html:215
 #, python-format
 msgid "Fedora %(release)s DVD"
-msgstr ""
+msgstr "Fedora %(release)s DVD"
 
-#: data/content/get-fedora-options.html:215
+#: data/content/get-fedora-options.html:216
 msgid ""
 "The DVD edition of Fedora is not Live Media, but it is bootable.  When you "
 "boot from this media, you will be running the installation program.  The DVD"
@@ -932,57 +943,57 @@ msgid ""
 "connected to the Internet."
 msgstr "A DVD kiadás nem Live Media.  Ha ezt használja rendszerindításhoz, rögtön a telepítő indul el.  A DVD-nek kevesebb memória (RAM) kell, és több szoftver fér el rajta.  Ez különösen akkor hasznos, ha internetkapcsolat nélküli számítógépre szeretne telepíteni."
 
-#: data/content/get-fedora-options.html:220
-#: data/content/get-fedora-options.html:229
-#: data/content/get-fedora-options.html:251
-#: data/content/get-fedora-options.html:260
+#: data/content/get-fedora-options.html:221
+#: data/content/get-fedora-options.html:230
+#: data/content/get-fedora-options.html:252
+#: data/content/get-fedora-options.html:261
 msgid "Intel & AMD / PC compatible"
 msgstr "Intel & AMD / PC kompatibilis"
 
-#: data/content/get-fedora-options.html:224
-#: data/content/get-fedora-options.html:255
+#: data/content/get-fedora-options.html:225
+#: data/content/get-fedora-options.html:256
 msgid "Most Compatible"
 msgstr "Legkompatibilisebb"
 
-#: data/content/get-fedora-options.html:225
-#: data/content/get-fedora-options.html:234
+#: data/content/get-fedora-options.html:226
+#: data/content/get-fedora-options.html:235
 #, python-format
 msgid "%(size)sGB ISO disk image for %(arch)s PC"
-msgstr ""
-
-#: data/content/get-fedora-options.html:245
-#, python-format
-msgid "Fedora %(release)s Network Install CD"
-msgstr ""
+msgstr "%(size)sGB ISO lemezkép %(arch)s PC-khez"
 
 #: data/content/get-fedora-options.html:246
+#, python-format
+msgid "Fedora %(release)s Network Install CD"
+msgstr "Fedora %(release)s Hálózati telepítő CD"
+
+#: data/content/get-fedora-options.html:247
 msgid ""
 "The Network Install CD edition of Fedora is useful if you have a fast "
 "Internet connection available.  When you boot from this media, you will be "
 "running the installation program and you get the selected packages directly "
 "from the repositories. The CD ensures you having the latest stable versions "
 "of the packages installed."
-msgstr ""
+msgstr "A Hálózati telepítő CD Fedora összeállítás hasznos ha gyors internet elérése van. Amikor elindítja a rendszert a lemezről, közvetlen a telepítőt fogja futtatni amelyben lehetősége nyílik a csomagok kiválasztására a tárolókból. A CD lehetővé teszi, hogy biztosan a legutolsó, legfrissebb verziójú csomagok kerüljenek telepítésre."
 
-#: data/content/get-fedora-options.html:256
-#: data/content/get-fedora-options.html:265
+#: data/content/get-fedora-options.html:257
+#: data/content/get-fedora-options.html:266
 #, python-format
 msgid "%(size)sMB ISO disk image for %(arch)s PC"
-msgstr ""
+msgstr "%(size)sMB ISO lemezkép %(arch)s PC-khez"
 
-#: data/content/get-fedora-options.html:271
+#: data/content/get-fedora-options.html:272
 #, python-format
 msgid ""
 "For help determining what architecture your system is, <a href=\"%s\">please"
 " view our architecture help guide</a>."
-msgstr ""
-
-#: data/content/get-fedora-options.html:281
-#, python-format
-msgid "Fedora %(release)s Media by Mail"
-msgstr ""
+msgstr "A gépe architektúrájának meghatározásához <a href=\"%s\">kérjük tekintse meg az architetúra tájékoztatónkat</a>."
 
 #: data/content/get-fedora-options.html:282
+#, python-format
+msgid "Fedora %(release)s Media by Mail"
+msgstr "Fedora %(release)s média a postán keresztül"
+
+#: data/content/get-fedora-options.html:283
 #, python-format
 msgid ""
 "Slow internet? No internet? You can get a copy of Fedora media sent via "
@@ -990,137 +1001,137 @@ msgid ""
 "href=\"%s\">Fedora Free Media</a> program."
 msgstr "Lassú az internet kapcsolat? Beszerezheti Fedora médiáját postán keresztül is a helyi vagy online kereskedőktől is, mint ahogy a <a href=\"%s\">Fedora Ingyen Média</a> programjában."
 
-#: data/content/get-fedora-options.html:286
+#: data/content/get-fedora-options.html:287
 msgid "Purchase Fedora Media from a Vendor"
 msgstr "Vásároljon Fedora Médiát egy eladótól"
 
-#: data/content/get-fedora-options.html:292
+#: data/content/get-fedora-options.html:293
 msgid "Locate a Vendor in Your Area"
 msgstr "Keresse meg helyi terjesztőjét az Ön közelében"
 
-#: data/content/get-fedora-options.html:293
+#: data/content/get-fedora-options.html:294
 msgid ""
 "Select vendors worldwide carry copies of Fedora media at a reasonable price."
 " If a vendor exists in your area and you'd rather not wait for shipping, "
 "this may be a good option for you."
 msgstr "Bizonyos eladók világszerte adnak el Fedora adathordozókat elfogadható áron. Ha van a közelében ilyen, és nem akar hosszú időt várni a kiszállításra, ez is egy jó megoldás lehet."
 
-#: data/content/get-fedora-options.html:294
+#: data/content/get-fedora-options.html:295
 msgid "View Local Vendor Directory"
 msgstr "Tekintse meg a helyi terjesztők listáját"
 
-#: data/content/get-fedora-options.html:297
+#: data/content/get-fedora-options.html:298
 msgid "Online Vendors"
 msgstr "Online terjesztők"
 
-#: data/content/get-fedora-options.html:298
+#: data/content/get-fedora-options.html:299
 msgid ""
 "Numerous vendors worldwide offer Fedora media for online purchase. Select "
 "the vendor closest to you to keep your shipping costs lower."
 msgstr "Számos eladó világszerte ajánl fel Fedora mediát online vásárlásra. Válassza ki a legközelebbit Önhöz, hogy a szállítási költségeket alacsonyan tarthassa."
 
-#: data/content/get-fedora-options.html:299
+#: data/content/get-fedora-options.html:300
 msgid "View Online Vendor Directory"
 msgstr "Tekintse meg az Online terjesztők listáját"
 
-#: data/content/get-fedora-options.html:305
+#: data/content/get-fedora-options.html:306
 msgid "Fedora Free Media Program"
 msgstr "Fedora Szabad Média Program"
 
-#: data/content/get-fedora-options.html:306
+#: data/content/get-fedora-options.html:307
 msgid ""
 "Can't afford the price of installation media? Request Fedora installation "
 "media from the Fedora Free Media Program."
 msgstr "Nem engedheti meg magának a telepítő média árát? Igényeljen Fedora telepítő médiát a Fedora Szabad Média Programban."
 
-#: data/content/get-fedora-options.html:307 data/content/index.html:63
+#: data/content/get-fedora-options.html:308 data/content/index.html:67
 msgid "Learn More"
 msgstr "Tudjon meg többet"
 
-#: data/content/get-fedora-options.html:318
+#: data/content/get-fedora-options.html:319
 msgid "Fedoras that do what you need."
 msgstr "Spinek, amikre szükség lehet"
 
-#: data/content/get-fedora-options.html:319
+#: data/content/get-fedora-options.html:320
 msgid ""
 "Fedora spins are alternate versions of Fedora, tailored for various types of"
 " users via hand-picked application sets and other customizations."
 msgstr "A Fedora spinek a Fedora alternatív változatai, különböző felhasználói igényekhez szabva."
 
-#: data/content/get-fedora-options.html:319
+#: data/content/get-fedora-options.html:320
 msgid "Learn more about spins >"
 msgstr "Tudjon meg többet a spin-ekről >"
 
-#: data/content/get-fedora-options.html:320
+#: data/content/get-fedora-options.html:321
 msgid ""
 "Below is just a sampling of the Fedora spins that are available. Visit "
 msgstr "Alább csak példák láthatóak az elérhető Fedora spinekről. Látogassa meg "
 
-#: data/content/get-fedora-options.html:320
+#: data/content/get-fedora-options.html:321
 msgid " for a full listing of all available Fedora spins."
 msgstr "a teljes listáért az elérhető összeállításokhoz."
 
-#: data/content/get-fedora-options.html:325
+#: data/content/get-fedora-options.html:326
 msgid "Fedora Security Lab"
 msgstr "Fedora Security Lab"
 
-#: data/content/get-fedora-options.html:325
+#: data/content/get-fedora-options.html:326
 msgid "Security analysis tools."
 msgstr "Biztonsági elemző eszközök."
 
-#: data/content/get-fedora-options.html:325
-#: data/content/get-fedora-options.html:329
-#: data/content/get-fedora-options.html:333
-#: data/content/get-fedora-options.html:337
+#: data/content/get-fedora-options.html:326
+#: data/content/get-fedora-options.html:330
+#: data/content/get-fedora-options.html:334
+#: data/content/get-fedora-options.html:338
 msgid "More details at spins.fedoraproject.org >"
 msgstr "Még bővebben a spins.fedoraproject.org -on >"
 
-#: data/content/get-fedora-options.html:329
+#: data/content/get-fedora-options.html:330
 msgid "Fedora Design Suite"
 msgstr "Fedora Design Suite"
 
-#: data/content/get-fedora-options.html:329
+#: data/content/get-fedora-options.html:330
 msgid "Open Creativity."
 msgstr "Nyílt kreativitás."
 
-#: data/content/get-fedora-options.html:333 data/content/index.html:87
+#: data/content/get-fedora-options.html:334 data/content/index.html:91
 msgid "Fedora Games Spin"
 msgstr "Fedora Games Spin"
 
-#: data/content/get-fedora-options.html:333
+#: data/content/get-fedora-options.html:334
 msgid "A perfect show-case of the best games available in Fedora."
 msgstr "Tökéletes bemutató az elérhető játékokból Fedorán."
 
-#: data/content/get-fedora-options.html:337
+#: data/content/get-fedora-options.html:338
 msgid "Fedora Electronic Lab"
 msgstr "Fedora Electronic Lab"
 
-#: data/content/get-fedora-options.html:337
+#: data/content/get-fedora-options.html:338
 msgid "Fedora's high-end hardware design and simulation platform."
 msgstr "Fedora csúcskategóriás hardvertervező és szimulációs platformja."
 
-#: data/content/get-fedora-options.html:341
+#: data/content/get-fedora-options.html:342
 msgid ""
 "Get these and more at <a "
 "href=\"https://spins.fedoraproject.org\">spins.fedoraproject.org</a>."
 msgstr "Szerezze be ezeket és még többet a <a href=\"http://spins.fedoraproject.org\">spins.fedoraproject.org</a> oldalon."
 
-#: data/content/get-fedora-options.html:352
+#: data/content/get-fedora-options.html:353
 msgid "Fedora In The Cloud"
-msgstr ""
+msgstr "Fedora a Cloud szolgáltatásban"
 
-#: data/content/get-fedora-options.html:356
+#: data/content/get-fedora-options.html:355
 msgid "Fedora on EC2"
-msgstr ""
+msgstr "Fedora on EC2"
 
-#: data/content/get-fedora-options.html:357
+#: data/content/get-fedora-options.html:361
 msgid ""
 "Fedora publishes system images for Amazon Web Services' (AWS) virtual "
 "machine platform, Amazon Elastic Compute Cloud (EC2), which allows one to "
 "create virtual machines in the cloud with very little effort."
-msgstr ""
+msgstr "Fedora lemezképeket publikál az Amazon Web Services (AWS) virtuális gép platform számára,  Amazon Elastic Compute Cloud (EC2) számára, ami lehetővé teszi, hogy virtuális gépeket készítsen a Cloud szolgáltatásban megeröltetés nélkül."
 
-#: data/content/get-fedora-options.html:358
+#: data/content/get-fedora-options.html:362
 msgid ""
 "These images, known as AMIs (Amazon Machine Images), are available in a "
 "variety of zones and architectures, and are identifiable by their unique "
@@ -1128,144 +1139,332 @@ msgid ""
 "image."
 msgstr ""
 
-#: data/content/get-fedora-options.html:360
+#: data/content/get-fedora-options.html:364
 #, python-format
 msgid ""
 "Fedora's EC2 images follow standard EC2 login conventions, meaning that root"
 " login is disabled, but sudo access is granted.  The default username for "
 "the images is <strong>%s</strong>."
-msgstr ""
+msgstr "Fedora EC2 lemezképei az EC2 bejelentkezési szabályokat követik, ami annyit jelent, hogy a root login ki van kapcsolva, de a sudo hozzáférés engedélyezett. Az alapértelmezett felhasználói név a lemezképeknél: <strong>%s</strong>."
 
-#: data/content/get-fedora-options.html:368
+#: data/content/get-fedora-options.html:367
 #, python-format
 msgid ""
 "Not familiar with EC2? <a href=\"%s\">Read more about the terminology and "
 "concepts ></a>"
-msgstr ""
+msgstr "Nem ismeri az EC2 szolgáltatást? <a href=\"%s\">Olvasson többet a terminológiáról és a koncepciókról innen ></a>"
 
-#: data/content/get-fedora-options.html:369
+#: data/content/get-fedora-options.html:368
 #, python-format
 msgid ""
 "Full documentation for interacting with EC2 is available from <a "
 "href=\"%s\">Amazon Web Services ></a>"
-msgstr ""
+msgstr "Teljes dokumentációért az EC2 felhasználásával kapcsolatban forduljon az  <a href=\"%s\">Amazon Web Services ></a> szolgáltatáshoz."
 
-#: data/content/get-fedora-options.html:370
+#: data/content/get-fedora-options.html:369
 #, python-format
 msgid ""
-"Need help, or have a great idea? <a href=\"%s\">Join the Fedora Cloud SIG "
-"mailing list ></a>"
-msgstr ""
+"Need help, or have a great idea? <a href=\"%s\">Join the Fedora Cloud SIG "
+"></a>"
+msgstr "Szüksége van segítségre, vagy van egy nagyszerű ötlete? <a href=\"%s\">Csatlakozzon a Fedora Cloud SIG csapathoz ></a>"
 
-#: data/content/get-fedora-options.html:375
+#: data/content/get-fedora-options.html:374
 msgid "Currently supported EC2 Images"
-msgstr ""
+msgstr "Jelenleg támogatott EC2 összeállítások"
 
-#: data/content/get-fedora-options.html:377
+#: data/content/get-fedora-options.html:376
 #, python-format
 msgid "Fedora %s "
-msgstr ""
+msgstr "Fedora %s "
+
+#: data/content/get-fedora-options.html:380
+#: data/content/get-fedora-options.html:403
+#: data/content/get-fedora-options.html:426
+msgid "Region"
+msgstr "Régió"
 
 #: data/content/get-fedora-options.html:381
 #: data/content/get-fedora-options.html:404
 #: data/content/get-fedora-options.html:427
-msgid "Region"
-msgstr ""
+msgid "Architecture"
+msgstr "Architektúra"
 
 #: data/content/get-fedora-options.html:382
 #: data/content/get-fedora-options.html:405
 #: data/content/get-fedora-options.html:428
-msgid "Architecture"
-msgstr ""
+msgid "Root store"
+msgstr "Root áruház"
 
 #: data/content/get-fedora-options.html:383
 #: data/content/get-fedora-options.html:406
 #: data/content/get-fedora-options.html:429
-msgid "Root store"
-msgstr ""
-
-#: data/content/get-fedora-options.html:384
-#: data/content/get-fedora-options.html:407
-#: data/content/get-fedora-options.html:430
 msgid "AMI ID"
-msgstr ""
+msgstr "AMI ID"
 
-#: data/content/get-fedora-options.html:400
-#: data/content/get-fedora-options.html:423
+#: data/content/get-fedora-options.html:399
+#: data/content/get-fedora-options.html:422
 #, python-format
 msgid "Fedora %s"
-msgstr ""
+msgstr "Fedora %s"
 
-#: data/content/get-fedora-options.html:482
+#: data/content/get-fedora-options.html:450
+msgid "Fedora Secondary Architectures"
+msgstr "Fedora Másodlagos Architektúrák"
+
+#: data/content/get-fedora-options.html:452
+#: data/content/get-fedora-options.html:553
+#: data/content/get-fedora-options.html:585
+msgid "ARM architecture"
+msgstr "ARM architektúra"
+
+#: data/content/get-fedora-options.html:457
+msgid "Fedora 17 ARM"
+msgstr "Fedora 17 ARM"
+
+#: data/content/get-fedora-options.html:458
+msgid ""
+"ARM chips are the most widely-produced processor family in the world; they "
+"have historically been used in cell phones and embedded applications, and "
+"are increasingly used in tablet devices and low-power-consumption servers. "
+"The Fedora-ARM project is an initiative to bring Fedora to this processor "
+"family."
+msgstr "Az ARM rendszerű processzorok a világon legszélesebben gyártott processzorcsaládja a világon, és történetükben elsőként mobiltelefonokban használták mobil alkalmazásokhoz, de jelenleg már terjednek táblagépeken, smartbook-ban és alacsony fogyasztású kiszolgálókban is. A Fedora-ARM projekt egy kezdet, hogy a Fedora rendszert bevezesse ezekre a processzor családra is."
+
+#: data/content/get-fedora-options.html:459
+msgid ""
+"A list of currently supplied prebuilt images for the Fedora 17 ARM GA "
+"release can be found at:"
+msgstr "A jelenleg támogatott előre megépített lemezképek listája a Fedora 17 GA kiadáshoz itt találhatóak meg:"
+
+#: data/content/get-fedora-options.html:460
+msgid "Fedora 17 GA Featured_Images"
+msgstr "Fedora 17 GA Bővíített lemezképek"
+
+#: data/content/get-fedora-options.html:461
+msgid "Raspberry Pi"
+msgstr "Raspberry Pi"
+
+#: data/content/get-fedora-options.html:461
+msgid ""
+"support is not included in Fedora 17 GA because it does not meet the Fedora "
+"release guidelines. Specifically, the Raspberry Pi relies upon a custom "
+"kernel version, not upstream, as well as special GPU binary blobs which are "
+"not acceptable under the current firmware exception. Nonetheless, an"
+msgstr "a támogatás nem tartozik a Fedora 17 GA kiadásokhoz, mivel nem egyeznek a Fedora kiadási irányelveivel. Pontosabban, a Raspberry Pi egy egyéni kernelre építkezik, nem upstream verzió, és további speciális GPU bináris modulokat igényel, ami jelenleg nem elfogadható a jelenlegi firmware kivételével. Mindazonáltal, egy"
+
+#: data/content/get-fedora-options.html:461
+msgid "unsupported \"nightly\" Fedora 17 snapshot"
+msgstr "nem támogatott \"nightly\" Fedora 17 állapotkép"
+
+#: data/content/get-fedora-options.html:461
+msgid "is available."
+msgstr "elérhető."
+
+#: data/content/get-fedora-options.html:466
+msgid "Available images and instructions:"
+msgstr "Elérhető lemezképek és instrukciók:"
+
+#: data/content/get-fedora-options.html:467
+msgid ""
+"The following images have been tested and are recommended for most users and"
+" include Versatile Express (QEMU), Trimslice, Beagleboard xM, Pandaboard, "
+"Kirkwood Plugs, Highbank and iMX based hardware platforms. For the whole "
+"list of images please visit"
+msgstr "A következő lemezképek teszteltek, és ajánlottak a legtöbb felhasználó számára, és ebbe beletartoznak a Versatile Express (QEMU), Trimslice, Beagleboard xM, Pandaboard, Kirkwood Plugs, Highbank és az iMX alapú hardver platformok. A teljes elérhető listáért kérem látogassa meg "
+
+#: data/content/get-fedora-options.html:467
+msgid "all the prebuilt images"
+msgstr "az összes előre elkészített lemezkép"
+
+#: data/content/get-fedora-options.html:467
+msgid "for the Fedora 17 ARM GA release."
+msgstr "a Fedora 17 ARM GA kiadáshoz."
+
+#: data/content/get-fedora-options.html:473
+msgid "BeagleBoard-xM"
+msgstr "BeagleBoard-xM"
+
+#: data/content/get-fedora-options.html:476
+#: data/content/get-fedora-options.html:483
+#: data/content/get-fedora-options.html:490
+#: data/content/get-fedora-options.html:497
+#: data/content/get-fedora-options.html:504
+#: data/content/get-fedora-options.html:511
+msgid "Download Image and Instructions!"
+msgstr "Lemezkép és instrukciók letöltése!"
+
+#: data/content/get-fedora-options.html:480
+msgid "Kirkwood Devices"
+msgstr "Kirkwood eszközök"
+
+#: data/content/get-fedora-options.html:487
+msgid "iMX"
+msgstr "iMX"
+
+#: data/content/get-fedora-options.html:494
+msgid "Pandaboard"
+msgstr "Pandaboard"
+
+#: data/content/get-fedora-options.html:501
+msgid "Trimslice"
+msgstr "Trimslice"
+
+#: data/content/get-fedora-options.html:508
+msgid "Versatile_Express"
+msgstr "Versatile Express"
+
+#: data/content/get-fedora-options.html:512
+msgid "Images for virtualization through QEMU"
+msgstr "QEMU-n keresztüli virtualizációs lemezképek"
+
+#: data/content/get-fedora-options.html:517
+msgid ""
+"If you would like to provide your own kernel and just require a root file "
+"system:"
+msgstr "Ha csak a saját kernelét szeretné hozzáadni, és csak a root fájlrendszerre van szüksége:"
+
+#: data/content/get-fedora-options.html:522
+msgid "SFP Serial Image"
+msgstr "SFP Serial lemezkép"
+
+#: data/content/get-fedora-options.html:523
+#: data/content/get-fedora-options.html:528
+#: data/content/get-fedora-options.html:542
+#: data/content/get-fedora-options.html:547 data/templates/foot.html:20
+#: data/templates/head.html:34
+msgid "Download"
+msgstr "Letöltés"
+
+#: data/content/get-fedora-options.html:527
+msgid "HFP Serial Image"
+msgstr "HFP Serial lemezkép"
+
+#: data/content/get-fedora-options.html:536
+msgid "XFCE Desktop:"
+msgstr "XFCE felület:"
+
+#: data/content/get-fedora-options.html:541
+msgid "SFP XFCE Image"
+msgstr "SFP XFCE lemezkép"
+
+#: data/content/get-fedora-options.html:546
+msgid "HFP XFCE Image"
+msgstr "HFP XFCE lemezkép"
+
+#: data/content/get-fedora-options.html:557
+msgid "Fedora 17 PPC"
+msgstr "Fedora 17 PPC"
+
+#: data/content/get-fedora-options.html:558
+msgid ""
+"Fedora Releases for Power PC has been most extensively tested on IBM Power "
+"systems, but is also known to work on Apple Mac G5 systems."
+msgstr "A Fedora kiadásai a PowerPC-re leginkább IBM Power rendszereken kerül tesztelésre, de ismert hogy működik Apple Mac G5 rendszereken is."
+
+#: data/content/get-fedora-options.html:564
+msgid "PPC"
+msgstr "PPC"
+
+#: data/content/get-fedora-options.html:565
+#: data/content/get-fedora-options.html:574
+#: data/content/get-fedora-options.html:591
+msgid "DVD Image"
+msgstr "DVD lemezkép"
+
+#: data/content/get-fedora-options.html:567
+#: data/content/get-fedora-options.html:576
+#: data/content/get-fedora-options.html:593
+#, python-format
+msgid "%sGB DVD ISO"
+msgstr "%sGB DVD ISO"
+
+#: data/content/get-fedora-options.html:568
+#: data/content/get-fedora-options.html:577
+msgid "Netinstall CD"
+msgstr "Netinstall CD"
+
+#: data/content/get-fedora-options.html:573
+msgid "PPC64"
+msgstr "PPC64"
+
+#: data/content/get-fedora-options.html:589
+msgid "Fedora 17 s390"
+msgstr "Fedora 17 s390"
+
+#: data/content/get-fedora-options.html:590
+msgid "Fedora Release Image based on the s390x architecture."
+msgstr "Fedora kiadási lemezkép az s390x architektúrára alapozva."
+
+#: data/content/get-fedora-options.html:631
 msgid "Help, I just want Fedora!"
 msgstr "Segítség, Én csak a Fedorát szeretném!"
 
-#: data/content/get-fedora-options.html:483
+#: data/content/get-fedora-options.html:632
 msgid ""
 "There are a lot of options on this page. Would you rather download the "
 "standard Fedora image?"
 msgstr "Rengeteg lehetőség van ezen az oldalon. Vagy inkább csak egy szabványos Fedora lemezképet szeretne?"
 
-#: data/content/get-fedora-options.html:484
+#: data/content/get-fedora-options.html:633
 msgid "Get it here"
 msgstr "Szerezze be itt"
 
-#: data/content/get-fedora-options.html:486 data/content/get-fedora.html:80
+#: data/content/get-fedora-options.html:635 data/content/get-fedora.html:81
 msgid "Handy Resources"
 msgstr "Kéznél levő erőforrások"
 
-#: data/content/get-fedora-options.html:488
+#: data/content/get-fedora-options.html:637
 #, python-format
 msgid ""
 "http://docs.fedoraproject.org/en-"
 "US/Fedora/%(release)s/html/Installation_Guide/index.html"
-msgstr ""
+msgstr "http://docs.fedoraproject.org/en-US/Fedora/%(release)s/html/Installation_Guide/index.html"
 
-#: data/content/get-fedora-options.html:488 data/content/get-fedora.html:82
+#: data/content/get-fedora-options.html:637 data/content/get-fedora.html:83
 msgid "Installation Guide"
 msgstr "Telepítési útmutató"
 
-#: data/content/get-fedora-options.html:489
+#: data/content/get-fedora-options.html:638
 #, python-format
 msgid ""
 "http://docs.fedoraproject.org/en-"
 "US/Fedora/%(release)s/html/Release_Notes/index.html"
-msgstr ""
+msgstr "http://docs.fedoraproject.org/en-US/Fedora/%(release)s/html/Release_Notes/index.html"
 
-#: data/content/get-fedora-options.html:489 data/content/get-fedora.html:83
+#: data/content/get-fedora-options.html:638 data/content/get-fedora.html:84
 msgid "Release Notes"
 msgstr "Kiadási megjegyzések"
 
-#: data/content/get-fedora-options.html:490 data/content/get-fedora.html:84
+#: data/content/get-fedora-options.html:639 data/content/get-fedora.html:85
 msgid "Common Bugs"
 msgstr "Gyakori hibák"
 
-#: data/content/get-fedora-options.html:491 data/content/get-fedora.html:85
+#: data/content/get-fedora-options.html:640 data/content/get-fedora.html:86
 msgid "Upgrading Fedora"
 msgstr "Fedora frissítése"
 
-#: data/content/get-fedora-options.html:492 data/content/get-fedora.html:86
+#: data/content/get-fedora-options.html:641 data/content/get-fedora.html:87
 msgid "Help & Support"
 msgstr "Súgó & Támogatás"
 
-#: data/content/get-fedora-options.html:493 data/content/get-fedora.html:87
+#: data/content/get-fedora-options.html:642 data/content/get-fedora.html:88
 msgid "Verify Download"
 msgstr "Letöltés ellenőrzése"
 
-#: data/content/get-fedora-options.html:496 data/content/get-fedora.html:91
+#: data/content/get-fedora-options.html:645 data/content/get-fedora.html:92
 msgid "There's More Fedora!"
 msgstr "De van még több Fedora is!"
 
-#: data/content/get-fedora-options.html:499 data/content/get-fedora.html:95
+#: data/content/get-fedora-options.html:648 data/content/get-fedora.html:96
 msgid "Other ways to get Fedora"
 msgstr "Más módszerek a Fedora beszerzéséhez"
 
-#: data/content/get-fedora-options.html:500 data/content/get-fedora.html:97
+#: data/content/get-fedora-options.html:649 data/content/get-fedora.html:98
 msgid ""
 "We offer several alternative Fedora download methods, including torrents:"
 msgstr "Jónéhány alternatív letöltési módszert kínálunk a Fedora letöltésére, a torrenteket is beleértve:"
 
-#: data/content/get-fedora-options.html:502 data/content/get-fedora.html:99
+#: data/content/get-fedora-options.html:651 data/content/get-fedora.html:100
 msgid "All download methods"
 msgstr "Összes letöltési mód"
 
@@ -1276,7 +1475,7 @@ msgstr "Fedora Projekt - Töltse le a Fedorát, és próbálja ki."
 #: data/content/get-fedora.html:25
 #, python-format
 msgid "Did someone say... &ldquo;<a href=\"get-prerelease\">%s</a>&rdquo;?"
-msgstr ""
+msgstr "Valaki mondott olyasmit, hogy... &ldquo;<a href=\"get-prerelease\">%s</a>&rdquo;?"
 
 #: data/content/get-fedora.html:30
 #, python-format
@@ -1300,7 +1499,7 @@ msgstr "Ez a Fedora Linux asztali kiadásának legújabb változata. Ezen minden
 #: data/content/get-fedora.html:38
 #, python-format
 msgid "%(size)sMB, ISO format image for Intel-compatible PCs (%(arch)s-bit)"
-msgstr ""
+msgstr "%(size)sMB, ISO formátumú lemezkép Intel kompatibilis PC-k számára  (%(arch)s-bit)"
 
 #: data/content/get-fedora.html:39
 msgid "More download options..."
@@ -1336,88 +1535,92 @@ msgstr "KDE, Xfce, GNOME és a többi"
 
 #: data/content/get-fedora.html:53
 msgid "Games, Design, Security, and others"
-msgstr ""
+msgstr "Játékok, Dizájn, Biztonság, és egyéb változatok"
 
 #: data/content/get-fedora.html:54
 msgid "EC2 Cloud Images"
-msgstr ""
+msgstr "EC2 Cloud lemezképek"
 
-#: data/content/get-fedora.html:56
+#: data/content/get-fedora.html:55
+msgid "ARM, s390, PPC"
+msgstr "ARM, s390, PPC"
+
+#: data/content/get-fedora.html:57
 msgid "View more Fedora options..."
 msgstr "További Fedora opciók megjelenítése..."
 
-#: data/content/get-fedora.html:63
+#: data/content/get-fedora.html:64
 msgid "What will I need?"
 msgstr "Mire lesz szükségem?"
 
-#: data/content/get-fedora.html:65
+#: data/content/get-fedora.html:66
 msgid "A blank CD or DVD"
 msgstr "Egy üres CD-re vagy DVD-re"
 
-#: data/content/get-fedora.html:65
+#: data/content/get-fedora.html:66
 msgid " or "
 msgstr "vagy"
 
-#: data/content/get-fedora.html:65
+#: data/content/get-fedora.html:66
 #, python-format
 msgid "a blank %sGB+ USB stick."
 msgstr "egy üres %sGB+ USB pendrive."
 
-#: data/content/get-fedora.html:66
+#: data/content/get-fedora.html:67
 #, python-format
 msgid "A %sMHz or faster processor"
-msgstr ""
+msgstr "%sMHz vagy gyorsabb processzor"
 
-#: data/content/get-fedora.html:67
+#: data/content/get-fedora.html:68
 #, python-format
 msgid "At least %s MB memory (RAM), %s GB recommended for best performance"
 msgstr "Legalább %s MB memória (RAM), %s GB ajánlott a legjobb teljesítményért"
 
-#: data/content/get-fedora.html:68
+#: data/content/get-fedora.html:69
 #, python-format
 msgid "At least %s GB hard drive space (only required for installation)"
 msgstr "Legalább %s GB merevlemez tárhely (csak a telepítéshez szükséges)"
 
-#: data/content/get-fedora.html:71
+#: data/content/get-fedora.html:72
 msgid "What do I do?"
 msgstr "Mit kell tennem?"
 
-#: data/content/get-fedora.html:73
+#: data/content/get-fedora.html:74
 msgid "First,"
 msgstr "Először,"
 
-#: data/content/get-fedora.html:73
+#: data/content/get-fedora.html:74
 msgid "download a Fedora ISO image"
 msgstr "töltsön le egy Fedora ISO lemezképet"
 
-#: data/content/get-fedora.html:75
+#: data/content/get-fedora.html:76
 msgid "To install Fedora using a USB stick"
 msgstr "Fedora telepítése pendrive használatával"
 
-#: data/content/get-fedora.html:75
+#: data/content/get-fedora.html:76
 msgid ""
 "http://docs.fedoraproject.org/en-"
 "US/Fedora/17/html/Installation_Guide/Making_USB_Media.html"
-msgstr ""
+msgstr "http://docs.fedoraproject.org/en-US/Fedora/17/html/Installation_Guide/Making_USB_Media.html"
 
-#: data/content/get-fedora.html:75 data/content/get-fedora.html:76
+#: data/content/get-fedora.html:76 data/content/get-fedora.html:77
 msgid "follow these instructions."
 msgstr "kövesse ezeket az utasításokat."
 
-#: data/content/get-fedora.html:76
+#: data/content/get-fedora.html:77
 msgid "To install Fedora using a blank CD or DVD"
 msgstr "Fedora telepítése egy üres CD vagy DVD felhasználásával"
 
-#: data/content/get-fedora.html:82 data/content/get-help.html:29
+#: data/content/get-fedora.html:83 data/content/get-help.html:29
 msgid ""
 "http://docs.fedoraproject.org/en-"
 "US/Fedora/17/html/Installation_Guide/index.html"
-msgstr ""
+msgstr "http://docs.fedoraproject.org/en-US/Fedora/17/html/Installation_Guide/index.html"
 
-#: data/content/get-fedora.html:83
+#: data/content/get-fedora.html:84
 msgid ""
 "http://docs.fedoraproject.org/en-US/Fedora/17/html/Release_Notes/index.html"
-msgstr ""
+msgstr "http://docs.fedoraproject.org/en-US/Fedora/17/html/Release_Notes/index.html"
 
 #: data/content/get-help.html:7
 msgid "Fedora Project - Get help after installing Fedora."
@@ -1558,7 +1761,7 @@ msgid ""
 " href=\"%(relnotes_url)s\">Release Notes</a> for more information on changes"
 " and new features, and the <a href=\"%(commonbugs_url)s\">Common Bugs</a> "
 "page for information on commonly-encountered bugs and how to avoid them."
-msgstr ""
+msgstr "Ez egy kiadás előtti szoftver, amit a <a href=\"http://fedoraproject.org/wiki/QA\">QA csapat</a> támogat. Kérjük irányítsa a kérdéseit a  test@lists.fedoraproject.org vagy a #fedora-qa IRC csatornára a freenode kiszolgálón. Minden felmerülő problémát vagy hibát jelentenie kell a <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a> nyomkövető rendszerébe. A Fedora Project nem garantálja az alkalmasságát vagy a hasznosságát. Olvassa el a <a href=\"%(relnotes_url)s\">Kiadási jegyzetünket</a> a további információkért a változásokról, és lehetőségekről, valamit kövesse az  <a href=\"%(commonbugs_url)s\">Ismert hibák</a> listáját, arról hogy hogyan kerülheti el őket."
 
 #: data/content/get-prerelease.html:91 data/content/get-prerelease.html:117
 #: data/content/get-prerelease.html:135 data/content/get-prerelease.html:153
@@ -1585,64 +1788,64 @@ msgstr "Fedora LXDE Live Media"
 msgid "Let me look around..."
 msgstr "Hadd nézzek körül..."
 
-#: data/content/index.html:45
+#: data/content/index.html:49
 msgid "Fedora Project Homepage"
 msgstr "Fedora Projekt honlap"
 
-#: data/content/index.html:59
+#: data/content/index.html:63
 msgid "Free your desktop with Fedora."
 msgstr "Tegye szabaddá asztalát Fedorával!"
 
-#: data/content/index.html:60
+#: data/content/index.html:64
 msgid ""
 "Fedora is a fast, stable, and powerful operating system for everyday use "
 "built by a worldwide community of friends. It's completely free to use, "
 "study, and share."
 msgstr "A Fedora egy gyors, stabil és hatékony operációs rendszer mindennapi használatra, melyet egy nemzetközi közösség készít. Teljesen ingyenes a használata, tanulmányozása és megosztása is."
 
-#: data/content/index.html:65
+#: data/content/index.html:69
 #, python-format
 msgid "%(size)sMB, 1 CD-ROM Disc image for %(arch)s-bit PCs"
-msgstr ""
+msgstr "%(size)sMB, 1 CD-ROM lemezkép %(arch)s-bit PC-khez"
 
-#: data/content/index.html:65
+#: data/content/index.html:69
 msgid "More options >"
 msgstr "További opciók >"
 
-#: data/content/index.html:67
+#: data/content/index.html:71
 #, python-format
 msgid "Try Fedora %(release)s %(state)s Now!"
-msgstr ""
+msgstr "Próbálja ki a  Fedora %(release)s %(state)s most!"
 
-#: data/content/index.html:76
+#: data/content/index.html:80
 msgid "Introducing JBoss Application Server 7."
-msgstr ""
+msgstr "Bemutatkozik a JBoss Application Server 7."
 
-#: data/content/index.html:78
+#: data/content/index.html:82
 msgid ""
 "Run full Java EE apps via the fast, lightweight, and modular JBoss AS 7, now"
 " included in Fedora. It is open source and features a powerful "
 "administration experience and compliance to the Java EE Web Profile."
-msgstr ""
+msgstr "Futtasson teljesértékű Java EE alkalmazásokat a gyors, könnyű és moduláris JBoss AS 7-en keresztül, ami most hozzáadásra került a Fedora rendszerhez."
 
-#: data/content/index.html:79 data/content/index.html:90
+#: data/content/index.html:83 data/content/index.html:94
 msgid "Learn More >"
 msgstr "Tudjon meg többet >"
 
-#: data/content/index.html:89
+#: data/content/index.html:93
 msgid ""
 "There are hundreds of great free and open source games, and the Fedora Games"
 " Spin has bundled some of the very best together in one bootable Fedora "
 "download. Try Quake-engine-based first-person shooter games like Tremulous, "
 "explore the fantasy and adventure of The Battle for Wesnoth, or take Wilber "
 "or Tux for a ride in Super Tux Kart!"
-msgstr ""
+msgstr "Több száz nagyszerű szabad és nyiltforrású játék elérhető, és a Fedora Games Spin kiadása ezekből a legjobbakból válogatott össze egy bootolható Fedora rendszerré. Próbálja ki a Quake motorral rendelkező FPS lövöldözős játékokat, mint a Tremolus-t, fedezze fel a fantázia világát a Harc Wesnoth pályáin, vagy vigye Wilber-t vagy Tux-ot egy fantasztikus száguldásra a Tux Kart versenypályáin!"
 
-#: data/content/index.html:99
+#: data/content/index.html:103
 msgid "A worldwide community of friends."
 msgstr "Barátok nemzetközi közössége."
 
-#: data/content/index.html:100
+#: data/content/index.html:104
 msgid ""
 "Fedora is a Linux-based operating system that showcases the latest in free "
 "software. Fedora is always free for anyone to use, modify, and distribute. "
@@ -1650,103 +1853,103 @@ msgid ""
 " Fedora Project."
 msgstr "Fedora egy Linux-alapú operációs rendszer, ami a legújabb szabad és nyílt forrású szoftvereket vonultatja fel. A Fedora <strong>mindig bárki számára szabadon használható, módosítható és terjeszthető. Olyan emberek készítik szerte a világon akik együtt dolgoznak egy közösségként: ez a Fedora Projekt."
 
-#: data/content/index.html:101 data/content/join-fedora.html:83
+#: data/content/index.html:105 data/content/join-fedora.html:83
 #: data/content/join-fedora.html:90 data/content/join-fedora.html:98
 #: data/content/join-fedora.html:106 data/content/join-fedora.html:114
 #: data/content/join-fedora.html:122
 msgid "Learn more >"
 msgstr "Tudjon meg többet >"
 
-#: data/content/index.html:126
+#: data/content/index.html:130
 msgid "Need help?"
 msgstr "Segítséget keres?"
 
-#: data/content/index.html:127
+#: data/content/index.html:131
 msgid "Get it here."
 msgstr "Itt megkaphatja."
 
-#: data/content/index.html:133
+#: data/content/index.html:137
 msgid "What is Fedora, anyway?"
 msgstr "Mi is ez a Fedora, egyébként?"
 
-#: data/content/index.html:138
+#: data/content/index.html:142
 msgid "Join us!"
 msgstr "Csatlakozzon hozzánk!"
 
-#: data/content/index.html:139
+#: data/content/index.html:143
 msgid "Help make Fedora!"
 msgstr "Segítse a Fedora elkészítését!"
 
-#: data/content/index.html:146
+#: data/content/index.html:150
 msgid "What makes Fedora great?"
 msgstr "Mi teszi a Fedorát nagyszerűvé?"
 
-#: data/content/index.html:151
+#: data/content/index.html:155
 msgid "Freedom is key"
 msgstr "A szabadság kulcsfontosságú"
 
-#: data/content/index.html:152
+#: data/content/index.html:156
 msgid ""
 "Advancing software and content freedom is a key goal of the Fedora Project."
 msgstr "Fejlett szoftver és tartalom szabadság kulcsfontosságú célok egyike a Fedora Projectnek."
 
-#: data/content/index.html:153
+#: data/content/index.html:157
 msgid "Learn how software freedom benefits you >"
 msgstr "Tapasztalja meg, hogy a szoftver szabadságával hogyan profitálhat >"
 
-#: data/content/index.html:157
+#: data/content/index.html:161
 msgid "Our Community"
 msgstr "A közösségünk"
 
-#: data/content/index.html:158
+#: data/content/index.html:162
 msgid "People world-wide work together in Fedora to advance free software."
 msgstr "Világszerte az emberek együtt dolgoznak a Fedorában szabad szoftverek fejlődéséért."
 
-#: data/content/index.html:159
+#: data/content/index.html:163
 msgid "Discover your role in Fedora's community >"
 msgstr "Fedezze fel a lehetőségeit a Fedora közösségben >"
 
-#: data/content/index.html:163
+#: data/content/index.html:167
 msgid "We share"
 msgstr "Mi megosztjuk"
 
-#: data/content/index.html:164
+#: data/content/index.html:168
 msgid "Many features that benefit all Linux distributions start in Fedora."
 msgstr "Rengeteg képesség, amiből az összes Linux disztribúció alapoz a Fedorából indult."
 
-#: data/content/index.html:165
+#: data/content/index.html:169
 msgid "See how we share our features for all to use >"
 msgstr "Nézze meg, hogyan osztjuk meg sajátosságainkat másokkal >"
 
-#: data/content/index.html:169
+#: data/content/index.html:173
 msgid "The best tech"
 msgstr "A legjobb technika"
 
-#: data/content/index.html:170
+#: data/content/index.html:174
 msgid "The future of Linux is built into Fedora."
 msgstr "A linux jövője a Fedorában beépítve."
 
-#: data/content/index.html:171
+#: data/content/index.html:175
 msgid "Learn how Fedora innovates >"
 msgstr "Tudja meg, hogy a Fedora hogyan tud innovatív lenni >"
 
-#: data/content/index.html:178
+#: data/content/index.html:182
 msgid "Fedora highlights"
 msgstr "A Fedora kiemelt témái"
 
-#: data/content/index.html:185
+#: data/content/index.html:189
 msgid "Read more of the story >"
 msgstr "Tovább a történetben >"
 
-#: data/content/index.html:186
+#: data/content/index.html:190
 msgid "Read more Fedora user stories >"
 msgstr "Olvasson további történeteket >"
 
-#: data/content/index.html:191
+#: data/content/index.html:195
 msgid "We fight for software freedom"
 msgstr "Mi a szoftver szabadságáért harcolunk"
 
-#: data/content/index.html:193
+#: data/content/index.html:197
 msgid ""
 "We try to always do the right thing, and provide only free and open source "
 "software. We will fight to protect and promote solutions that anyone can use"
@@ -1758,24 +1961,24 @@ msgid ""
 "focus has had significant and long lasting effects."
 msgstr "Mindig a helyes dolgot próbáljuk tenni, és csak szabad szoftvereket terjesztünk. Védjük és terjesztjük azokat a megoldásokat, amiket bárki használhat és terjeszthet. Emiatt a Fedora Projekt saját rendszereit is csak szabad szoftverek működtetik. Ezt észben tartva a Fedora-fejlesztők más csapatokkal is összedolgoznak, hogy mindenki profitáljon munkájukból. A számtalan újításnak köszönhetően ez különösen jelentős eredményeket hoz."
 
-#: data/content/index.html:195
+#: data/content/index.html:199
 msgid "Learn more about Fedora's values >"
 msgstr "Ismerje meg a Fedora értékeit >"
 
-#: data/content/index.html:196
+#: data/content/index.html:200
 msgid "More on what Fedora's all about >"
 msgstr "Ismerje meg, hogy miről szól a Fedora >"
 
-#: data/content/index.html:201 data/content/using/index.html:26
+#: data/content/index.html:205 data/content/using/index.html:26
 msgid "Do it with Fedora"
 msgstr "Tegye meg a Fedorával"
 
-#: data/content/index.html:202 data/content/using/index.html:33
+#: data/content/index.html:206 data/content/using/index.html:33
 #: data/content/using/tutorials/cheese.html:26
 msgid "Have a photobooth party!"
 msgstr "Hozzon össze egy fotófülke partit!"
 
-#: data/content/index.html:204 data/content/using/index.html:34
+#: data/content/index.html:208 data/content/using/index.html:34
 #: data/content/using/tutorials/cheese.html:27
 msgid ""
 "All you need is a webcam and Fedora, and you can do all sorts of cool photo "
@@ -1783,76 +1986,76 @@ msgid ""
 "and videos!"
 msgstr "Minden amire szüksége lehet, az egy webkamera, és a Fedora. Ezzel pedig egy sor fotótrükköt tehet azonnal, pl. szuperhős Hulk-ot varázsolhat a barátaiból. :) Készítsen szórakoztató képeket és videokat!"
 
-#: data/content/index.html:206
+#: data/content/index.html:210
 msgid "Learn how to do it yourself! >"
 msgstr "Itt megtanulhatja hogyan készítheti el sajátkezűleg! >"
 
-#: data/content/index.html:207
+#: data/content/index.html:211
 msgid "View all tutorials >"
 msgstr "Összes oktatóanyag megtekintése >"
 
-#: data/content/index.html:216
-msgid "Recommended installation requirements"
-msgstr ""
-
-#: data/content/index.html:218
-msgid "64-bit Intel-compatible PC"
-msgstr ""
-
-#: data/content/index.html:219
-#, python-format
-msgid "%sGB memory (RAM)"
-msgstr ""
-
 #: data/content/index.html:220
-#, python-format
-msgid "%sGB disk space / storage"
-msgstr ""
+msgid "Recommended installation requirements"
+msgstr "Ajánlott telepítési igények"
 
 #: data/content/index.html:222
+msgid "64-bit Intel-compatible PC"
+msgstr "64-bites Intel kompatibilis PC"
+
+#: data/content/index.html:223
+#, python-format
+msgid "%sGB memory (RAM)"
+msgstr "%sGB memória (RAM)"
+
+#: data/content/index.html:224
+#, python-format
+msgid "%sGB disk space / storage"
+msgstr "%sGB lemezterület / tárhely"
+
+#: data/content/index.html:226
 msgid ""
 "http://docs.fedoraproject.org/en-US/Fedora/17/html/Release_Notes/sect-"
 "Release_Notes-Welcome_to_Fedora_17.html#sect-Release_Notes-Hardware_Overview"
-msgstr ""
+msgstr "http://docs.fedoraproject.org/en-US/Fedora/17/html/Release_Notes/sect-Release_Notes-Welcome_to_Fedora_17.html#sect-Release_Notes-Hardware_Overview"
 
-#: data/content/index.html:222
+#: data/content/index.html:226
 msgid "More about requirements >"
 msgstr "Még többet a feltételekről >"
 
-#: data/content/index.html:223
+#: data/content/index.html:227
 msgid "Full set of download options >"
 msgstr "Összes letöltési lehetőségek >"
 
-#: data/content/index.html:232
+#: data/content/index.html:236
 #, python-format
 msgid "Fedora %(release)s %(name)s released in %(number)s days!"
-msgstr ""
+msgstr "Fedora %(release)s %(name)s kiadásra kerül %(number)s nap múlva!"
 
-#: data/content/index.html:233
+#: data/content/index.html:237
 msgid "Add a counter to your own site!"
-msgstr ""
+msgstr "Adjon egy számlálót a saját oldalához!"
 
-#: data/content/index.html:238 data/content/join-fedora.html:133
+#: data/content/index.html:242 data/content/join-fedora.html:133
 msgid "Upcoming Events"
 msgstr "Következő események"
 
-#: data/content/index.html:240
+#: data/content/index.html:244
 msgid "North American"
 msgstr "Észak Amerika"
 
-#: data/content/index.html:241
+#: data/content/index.html:245
 msgid "Central & South American"
 msgstr "Közép- és Dél Amerika"
 
-#: data/content/index.html:242
+#: data/content/index.html:246
 msgid "European, Middle Eastern, & African"
 msgstr "Europa, Közép Kelet & Afrika"
 
-#: data/content/index.html:243
+#: data/content/index.html:247
 msgid "Indian, Asian, & Australian"
 msgstr "India, Ázsia, & Ausztrália"
 
-#: data/content/index.html:246
+#: data/content/index.html:250
 msgid "Hosting Sponsor"
 msgstr "Tárhely támogató"
 
@@ -1886,14 +2089,14 @@ msgstr "A Fedorához számos <a href=\"%s\">IRC csatorna tartozik</a>, több eze
 
 #: data/content/join-fedora.html:43
 msgid "Join our lists"
-msgstr ""
+msgstr "Csatlakozzon a levelezési listáinkhoz"
 
 #: data/content/join-fedora.html:44
 #, python-format
 msgid ""
 "We have mailing lists for all your needs... <a href=\"%s\">plenty of "
 "them</a>."
-msgstr ""
+msgstr "Mindenféle levelezési listával rendelkezünk, minden igényre...<a href=\"%s\">töménytelen mennyiségben</a>."
 
 #: data/content/join-fedora.html:49 data/templates/foot.html:12
 msgid "Fedora Weekly News"
@@ -2000,7 +2203,7 @@ msgstr "Ezek a rendszeradminisztrátorok és webes fejlesztők építik és trat
 
 #: data/content/join-fedora.html:130
 msgid "Meet Fedora."
-msgstr ""
+msgstr "Ismerkedjen meg Fedorával."
 
 #: data/content/join-fedora.html:134
 msgid "North American events"
@@ -2169,12 +2372,12 @@ msgstr "Jelenleg használt kulcsok"
 #: data/content/keys.html:67 data/content/keys.html:81
 #: data/content/keys.html:95 data/content/keys.html:109
 #: data/content/keys.html:123 data/content/keys.html:138
-#: data/content/keys.html:152 data/content/keys.html:166
-#: data/content/keys.html:181 data/content/keys.html:240
-#: data/content/keys.html:255 data/content/keys.html:270
+#: data/content/keys.html:152 data/content/keys.html:167
+#: data/content/keys.html:226 data/content/keys.html:241
+#: data/content/keys.html:256 data/content/keys.html:271
 #: data/content/keys.html:285 data/content/keys.html:299
 #: data/content/keys.html:313 data/content/keys.html:327
-#: data/content/keys.html:341 data/content/keys.html:356
+#: data/content/keys.html:342 data/content/keys.html:356
 #, python-format
 msgid "Download: <a href=\"%s\">Fedora Project</a>"
 msgstr "Letöltés: <a href=\"%s\">Fedora Projekt</a>"
@@ -2182,35 +2385,35 @@ msgstr "Letöltés: <a href=\"%s\">Fedora Projekt</a>"
 #: data/content/keys.html:68 data/content/keys.html:82
 #: data/content/keys.html:96 data/content/keys.html:110
 #: data/content/keys.html:124 data/content/keys.html:139
-#: data/content/keys.html:153 data/content/keys.html:167
-#: data/content/keys.html:182 data/content/keys.html:206
-#: data/content/keys.html:226 data/content/keys.html:241
-#: data/content/keys.html:256 data/content/keys.html:271
+#: data/content/keys.html:153 data/content/keys.html:168
+#: data/content/keys.html:192 data/content/keys.html:212
+#: data/content/keys.html:227 data/content/keys.html:242
+#: data/content/keys.html:257 data/content/keys.html:272
 #: data/content/keys.html:286 data/content/keys.html:300
 #: data/content/keys.html:314 data/content/keys.html:328
-#: data/content/keys.html:342 data/content/keys.html:357
+#: data/content/keys.html:343 data/content/keys.html:357
 #: data/content/keys.html:380
 #, python-format
 msgid "Download: <a href=\"%s\">keys.gnupg.net</a>"
 msgstr "Letöltés: <a href=\"%s\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:186
+#: data/content/keys.html:172
 msgid "Obsolete keys"
 msgstr "Elavult kulcsok"
 
-#: data/content/keys.html:197
+#: data/content/keys.html:183
 msgid "Fedora Core (version 6 and earlier)"
 msgstr "Fedora Core (6-os változat és korábbiak)"
 
-#: data/content/keys.html:198
+#: data/content/keys.html:184
 msgid "Fedora (version 7, 8, and 9)"
 msgstr "Fedora (7, 8 és 9-es változat)"
 
-#: data/content/keys.html:199
+#: data/content/keys.html:185
 msgid "Both GA and updates"
 msgstr "GA és frissítések"
 
-#: data/content/keys.html:202
+#: data/content/keys.html:188
 msgid ""
 "Packages on installation media are signed with this key.  The relevant yum "
 "repositories are <strong>fedora</strong>, <strong>fedora-updates</strong> "
@@ -2222,16 +2425,16 @@ msgid ""
 "is obsolete."
 msgstr "Csomagokat a telepítő adathordozókon ezzel a kulccsal írták alá.  A hozzá tartozó yum tárolók a <strong>fedora</strong>, <strong>fedora-updates</strong> Fedora 7-9-hez; illetve <strong>core</strong> és <strong>core-updates</strong> Fedora Core-hoz (6-os és korábbi változatok).  Lásd <a·href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> oldalt további tudnivalókért arról, hogy ez a kulcs miért avult el."
 
-#: data/content/keys.html:205
+#: data/content/keys.html:191
 #, python-format
 msgid "Path: <a href=\"%s\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 msgstr "Elérési út: <a href=\"%s\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora</a>"
 
-#: data/content/keys.html:219
+#: data/content/keys.html:205
 msgid "Fedora (version 7 and newer) testing updates"
 msgstr "Fedora (7-es változat és újabbak) próba frissítések"
 
-#: data/content/keys.html:222
+#: data/content/keys.html:208
 msgid ""
 "If you participate in testing of the packages, this is the key you will use "
 "to verify the testing packages.  This key signs the packages that are in "
@@ -2242,7 +2445,7 @@ msgid ""
 "is obsolete."
 msgstr "Ha részt vesz a csomagok tesztelésében, ezt a kulcsot fogja használni a tesztcsomagok ellenőrzéséhez.  Ez a kulcs írja alá a csomagokat, amik a <strong>fedora-testing</strong> tárolóban vannak.  Lásd <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> további tudnivalókért arról, hogy ez a kulcs miért avult el."
 
-#: data/content/keys.html:225
+#: data/content/keys.html:211
 #, python-format
 msgid "Path: <a href=\"%s\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
 msgstr "Elérési út: <a href=\"%s\">/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-test</a>"
@@ -2277,7 +2480,7 @@ msgstr "E kulcsot használták a Fedora Örökség fejlesztés által kiadott cs
 #: data/content/quotes.html:1
 #, python-format
 msgid " − Jack Wallen, <a href=\"%s\">TechRepublic.com</a>"
-msgstr ""
+msgstr " − Jack Wallen, <a href=\"%s\">TechRepublic.com</a>"
 
 #: data/content/quotes.html:1
 msgid "\"Fedora has [...] released an amazingly rock-solid operating system.\""
@@ -2286,7 +2489,7 @@ msgstr "\"A Fedora egy sziklaszilárd operációs rendszer.\""
 #: data/content/quotes.html:1
 #, python-format
 msgid " − Carla Schroder, <a href=\"%s\">linux.com</a>"
-msgstr ""
+msgstr " − Carla Schroder, <a href=\"%s\">linux.com</a>"
 
 #: data/content/quotes.html:1
 msgid ""
@@ -3151,7 +3354,7 @@ msgstr ""
 msgid ""
 "Try it now in Fedora! Simply click on the clock in the top bar of your "
 "desktop!"
-msgstr ""
+msgstr "Próbálja ki a Fedorában! Egyszerűen kattintson az órán a felső sávon asztalán!"
 
 #: data/content/features/index.html:426
 msgid "Network Manager"
@@ -3643,7 +3846,7 @@ msgstr ""
 
 #: data/content/using/life/chrisbredesen.html:49
 msgid "<strong>Eclipse</strong> - my IDE of choice, packaged in Fedora."
-msgstr ""
+msgstr "<strong>Eclipse</strong> - a saját választott IDE fejlesztő környezetem, ami le van csomagolva a Fedorában."
 
 #: data/content/using/life/chrisbredesen.html:50
 msgid "<strong>Git</strong> - amazing distributed version control system."
@@ -3653,7 +3856,7 @@ msgstr "<strong>Git</strong> - egy elképesztő elosztott verziókezelő rendsze
 msgid ""
 "<strong>bash/zsh</strong> - I can't effectively do my job without a real "
 "shell. :)"
-msgstr ""
+msgstr "<strong>bash/zsh</strong> -Nem tudom másképp elképzelni, elvégezni a munkám igazi shell alkalmazás nélkül. :)"
 
 #: data/content/using/life/chrisbredesen.html:52
 msgid "<strong>meld</strong> - Nice visual diff tool."
@@ -3987,7 +4190,7 @@ msgid ""
 " podcast</a> with Dan Lynch. Fab reveals in this interview that he uses "
 "Fedora and the audio tools available in it for the podcast's recording and "
 "post-production."
-msgstr ""
+msgstr "Fabian A. Scherschel, egy egyetemi diák Bonnból, Németországból, jól ismert a Linux közösségekben betöltött szerepéért, ő készíti a <a href=\"%s\">Linux Outlaws adásait</a> Dan Lynch-el együtt. Fab elárulja ebben az interjúban, hogy Fedora operációs rendszert használ, valamint a tárolókból készen elérhető audio eszközöket a felvételeihez, és utómunkálataihoz."
 
 #: data/content/using/life/fabianscherschel.html:32
 msgid ""
@@ -3999,7 +4202,7 @@ msgstr "Németországban, Duisburgban születtem és jelenleg Bonnban élek (ame
 msgid ""
 "I am currently enrolled in university, studying Modern History, Politics and"
 " English Literature. I also work part-time in tech support."
-msgstr ""
+msgstr "Jelenleg az egyetemen tanulok, Modern Történelmet, Politikát és Angol irodalmat. De emellett részidőben technikai segítségnyújtóként is dolgozom."
 
 #: data/content/using/life/fabianscherschel.html:40
 #: data/content/using/life/robynbergeron.html:41
@@ -4011,27 +4214,27 @@ msgstr "Mikor kezdtél először foglalkozni a Fedora-val?"
 msgid ""
 "After stumbling into FUDCon from LinuxTag in 2009. I first tried Fedora 11 "
 "then and went full-time when Fedora 12 came out."
-msgstr ""
+msgstr "Miután belebotlottam a FudCon-ba a 2009-es LinuxTag után. Elsőként a Fedora 11-et próbáltam ki, azután már teljes egészében csak Fedora 12-őt amikor már megjelent."
 
 #: data/content/using/life/fabianscherschel.html:43
 #, python-format
 msgid ""
 "Many folks know you as a podcaster from the <a href=\"%s\">Linux Outlaws "
 "podcast</a>. Do you use Fedora to produce any podcasts?"
-msgstr ""
+msgstr "Sokan podcaster készítőként ismernek a <a href=\"%s\">Linux Outlaws podcast</a> révén. Fedorát használsz az adások elkészítéséhez?"
 
 #: data/content/using/life/fabianscherschel.html:44
 msgid ""
 "Yes. All the recording and editing on my end is done on Fedora, that "
 "includes the live streaming of the episodes. Our web servers all run CentOS "
 "now."
-msgstr ""
+msgstr "Igen. Az összes felvétel és utómunkálat mind Fedora rendszeren készül, beleértve az élő adású részeket is. A webkiszolgálóink viszont CentOS-t futtatnak."
 
 #: data/content/using/life/fabianscherschel.html:46
 msgid ""
 "What applications in Fedora do you use to help produce your podcast? What "
 "does each app do?"
-msgstr ""
+msgstr "Milyen alkalmazásokat használsz a Fedorán az adásaidnál? Melyik miben segít?"
 
 #: data/content/using/life/fabianscherschel.html:47
 msgid ""
@@ -4047,11 +4250,11 @@ msgid ""
 "writing and coding in GEdit which is the best text editor known to mankind "
 "and for surfing the web, which I do a lot especially to research topics for "
 "the show and to do the show notes, I use Chromium."
-msgstr ""
+msgstr "Töménytelen munkát az Audacity-vel végzem, főleg az utómunkálatokban és az összes szerkesztést is benne. Az Audacity lényegében egy wave fájl szerkesztő. Időnként előveszem az Ardour-t is, ami inkább egy teljes digitális audio munkaállomás felvételekhez, és szerkesztésekhez. Természetesen ezek használhatóak intro felkeverésére, és szerkesztésére is. Ezen kívül amióta én felelek az összes dizájn és weboldal külalakjáért a műsor kapcsán, ehhez Inkscape-t és GIMP-et használok. Inkscape-pel inkább az eredeti rajzokat alkotom meg, mivel ez egy vektorgrafikus alkalmazás, de a feldolgozása, és a letisztítása inkább GIMP alkalmasabb, mivel az egy raszter alapú eszköz. Ehhez még hozzájön az összes szöveg szerkesztés és kódolás is amit gEdit-tel, mivel szerintem az egyik az emberiség által ismert legjobb szerkesztő. Internethez, amikor anyagot, és témát keresek a műsorhoz, ahhoz pedig Chromium-ot."
 
 #: data/content/using/life/fabianscherschel.html:49
 msgid "Where do you find interesting audio samples for your podcasts?"
-msgstr ""
+msgstr "Honnan szerzed be az hanganyagaid az adásaidhoz?"
 
 #: data/content/using/life/fabianscherschel.html:50
 #, python-format
@@ -4060,7 +4263,7 @@ msgid ""
 "Freesound</a> and we find nearly all the <a href=\"%s\">Creative Commons</a>"
 " music we use on the show on either <a href=\"%s\">Jamendo</a> or <a "
 "href=\"%s\">Soundclick</a>."
-msgstr ""
+msgstr "Hangeffektekért, véleményem szerint a <a href=\"%s\">Project Freesound</a> és a <a href=\"%s\">Creative Commons</a> anyagai a legjobbak, az előadásban használt zenékhez pedig a <a href=\"%s\">Jamendo</a> vagy <a href=\"%s\">Soundclick</a> forrásait is felhasználjuk."
 
 #: data/content/using/life/fabianscherschel.html:52
 msgid ""
@@ -5594,13 +5797,13 @@ msgstr ""
 
 #: data/content/using/tutorials/cheese.html:29
 msgid "The perfect setup for your party"
-msgstr ""
+msgstr "A tökéletes összeállítás a partid számára"
 
 #: data/content/using/tutorials/cheese.html:31
 msgid ""
 "You've got a big party planned, and want something fun & unique to offer "
 "your guests. Why not set up a photobooth with Fedora?"
-msgstr ""
+msgstr "Egy nagy bulit tervezel, és szeretnél valamit ami szórakoztató és egyedi a vendégeid számára. Miért nem készítesz egy fotófülkét Fedorával?"
 
 #: data/content/using/tutorials/cheese.html:32
 #, python-format
@@ -6181,10 +6384,6 @@ msgstr "Fedora Wiki"
 msgid "Events"
 msgstr "Események"
 
-#: data/templates/foot.html:20 data/templates/head.html:34
-msgid "Download"
-msgstr "Letöltés"
-
 #: data/templates/foot.html:22
 msgid "Full Download List"
 msgstr "Teljes letöltési lista"
@@ -6283,7 +6482,7 @@ msgstr "Tudjon meg többet a Red Hat és Fedora kapcsoaltáról >"
 
 #: data/templates/foot.html:70
 msgid "© 2012 Red Hat, Inc. and others."
-msgstr ""
+msgstr "© 2012 Red Hat, Inc. és mások."
 
 #: data/templates/foot.html:73
 msgid "Sponsors"
