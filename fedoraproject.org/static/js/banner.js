@@ -4,16 +4,16 @@ var banners = [
 //  Target URL
 //  Weight
   [
-    "/static/images/banners/f17beta.png",
-    "Fedora 17 Beefy Miracle Beta is here!",
+    "/static/images/banners/f18beta.png",
+    "Fedora 18 Spherical Cow Beta is here!",
     "https://fedoraproject.org/get-prerelease",
-    0
+    5
   ],
   [
-    "/static/images/banners/f17release.png",
-    "Fedora 17 Beefy Miracle is here!",
+    "/static/images/banners/f18release.png",
+    "Fedora 18 Spherical Cow here!",
     "https://fedoraproject.org/get-fedora",
-    5
+    0
   ],
   [
     "/static/images/banners/picturebanner-envelope-1.png",
@@ -25,6 +25,6 @@ var banners = [
     "/static/images/banners/super-packager.png",
     "Fedora Community",
     "https://apps.fedoraproject.org/packages/",
-    1
+    0
   ]
 ];

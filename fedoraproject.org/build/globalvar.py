@@ -5,8 +5,8 @@ release={
     'curr_id':     '17',
     'next_id':     '18',
     'curr_name':   'Beefy Miracle',
-    'next_name':   '',
-    'curr_state':  ''         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'next_name':   'Spherical Cow',
+    'curr_state':  'Beta'         # either 'Alpha', 'Beta' or '' (i.e empty)
 }
 
 path={

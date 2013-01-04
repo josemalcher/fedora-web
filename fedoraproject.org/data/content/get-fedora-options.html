@@ -1,46 +1,45 @@
 <?python
 
 # see http://fedoraproject.org/wiki/Cloud_SIG/EC2_Images for the complet list
+# Generated using the following:
+# :%s#^| \([a-zA-Z*-9]*\)[ |]*\(i386\|x86_64\)[ |]*\(EBS-backed\)[ |]* \(ami.*\)#{'region':'\1', 'arch':'\2', 'store':'\3', 'id':'\4'},#g
+
 ec2_f17 = [
-                {'region':'ap-northeast-1',       'arch':'i386',      'store':'EBS-backed',     'id':'ami-5ae6555b'},
-                {'region':'ap-northeast-1',       'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-26e65527'},
-                {'region':'ap-southeast-1',       'arch':'i386',      'store':'EBS-backed',     'id':'ami-cc86c09e'},
-                {'region':'ap-southeast-1',       'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-2e86c07c'},
-                {'region':'eu-west-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-e981bb9d'},
-                {'region':'eu-west-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-9980baed'},
-                {'region':'sa-east-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-1ae33d07'},
-                {'region':'sa-east-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-eee23cf3'},
-                {'region':'us-east-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-08d97e61'},
-                {'region':'us-east-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-2ea50247'},
-                {'region':'us-west-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-417f2504'},
-                {'region':'us-west-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-877e24c2'},
-                {'region':'us-west-2',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-e269e5d2'},
-                {'region':'us-west-2',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-8e69e5be'}
+      {'region':'ap-northeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-5ae6555b'},
+      {'region':'ap-northeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-26e65527'},
+      {'region':'ap-southeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-cc86c09e'},
+      {'region':'ap-southeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-2e86c07c'},
+      {'region':'ap-southeast-2', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-87a433bd'},
+      {'region':'ap-southeast-2', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-e3a433d9'},
+      {'region':'eu-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-e981bb9d'},
+      {'region':'eu-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-9980baed'},
+      {'region':'sa-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-1ae33d07'},
+      {'region':'sa-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-eee23cf3'},
+      {'region':'us-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-08d97e61'},
+      {'region':'us-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-2ea50247'},
+      {'region':'us-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-417f2504'},
+      {'region':'us-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-877e24c2'},
+      {'region':'us-west-2',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-e269e5d2'},
+      {'region':'us-west-2',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-8e69e5be'}
 ]
 
 ec2_f16 = [
-                {'region':'ap-northeast-1',       'arch':'i386',      'store':'EBS-backed',     'id':'ami-f22094f3'},
-                {'region':'ap-northeast-1',       'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-16219517'},
-                {'region':'ap-southeast-1',       'arch':'i386',      'store':'EBS-backed',     'id':'ami-9694eec4'},
-                {'region':'ap-southeast-1',       'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-5095ef02'},
-                {'region':'eu-west-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-7bf4c90f'},
-                {'region':'eu-west-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-2df4c959'},
-                {'region':'sa-east-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-5a34eb47'},
-                {'region':'sa-east-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-4c34eb51'},
-                {'region':'us-east-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-5f16d836'},
-                {'region':'us-east-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-0316d86a'},
-                {'region':'us-west-1',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-25e0bc60'},
-                {'region':'us-west-1',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-69e0bc2c'},
-                {'region':'us-west-2',            'arch':'i386',      'store':'EBS-backed',     'id':'ami-e2f37ed2'},
-                {'region':'us-west-2',            'arch':'x86_64',    'store':'EBS-backed',     'id':'ami-88f37eb8'}
+      {'region':'ap-northeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-f22094f3'},
+      {'region':'ap-northeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-16219517'},
+      {'region':'ap-southeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-9694eec4'},
+      {'region':'ap-southeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-5095ef02'},
+      {'region':'eu-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-7bf4c90f'},
+      {'region':'eu-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-2df4c959'},
+      {'region':'sa-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-5a34eb47'},
+      {'region':'sa-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-4c34eb51'},
+      {'region':'us-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-5f16d836'},
+      {'region':'us-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-0316d86a'},
+      {'region':'us-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-25e0bc60'},
+      {'region':'us-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-69e0bc2c'},
+      {'region':'us-west-2',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-e2f37ed2'},
+      {'region':'us-west-2',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-88f37eb8'}
 ]
 
-ec2_f15 = [
-                {'region':'us-east-1',            'arch':'i386',      'store':'EBS-backed',             'id':'ami-60bd4609'},
-                {'region':'us-east-1',            'arch':'i386',      'store':'Instance store (S3)',    'id':'ami-6ebe4507'},
-                {'region':'us-east-1',            'arch':'x86_64',    'store':'EBS-backed',             'id':'ami-2abf4443'},
-                {'region':'us-east-1',            'arch':'x86_64',    'store':'Instance store (S3)',    'id':'ami-72bf441b'}
-]
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -222,7 +221,7 @@ ec2_f15 = [
 			</div>
 			<div class="grid_6 omega arch">
                             <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Fedora/i386/iso/Fedora-${global_variables.release['curr_id']}-i386-DVD.iso" class="download-button-mini download-splash">${_('Download Now!')}</a><span class="star-most-compatible">${_('Most Compatible')}</span>
-                            <p class="fine-print">${_('%sGB ISO disk image for 32-bit PC') % global_variables.iso_size['i386_DVD']}</p>
+                            <p class="fine-print">${_('%(size)sGB ISO disk image for %(arch)s PC') % {'size':global_variables.iso_size['i386_DVD'], 'arch':'32-bit'}}</p>
                         </div>
 			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
                         <div class="grid_4 prefix_2 alpha arch">
@@ -231,7 +230,7 @@ ec2_f15 = [
 			</div>
 			<div class="grid_6 omega arch">
                             <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Fedora/x86_64/iso/Fedora-${global_variables.release['curr_id']}-x86_64-DVD.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
-                            <p class="fine-print">${_('%sGB ISO disk image for 64-bit PC') % global_variables.iso_size['x86_64_DVD']}</p>
+                            <p class="fine-print">${_('%(size)sGB ISO disk image for %(arch)s PC') % {'size':global_variables.iso_size['x86_64_DVD'], 'arch':'64-bit'}}</p>
                         </div>
 			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
                         <div class="clear"></div>
@@ -253,7 +252,7 @@ ec2_f15 = [
 			</div>
 			<div class="grid_6 omega arch">
                             <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Fedora/i386/iso/Fedora-${global_variables.release['curr_id']}-i386-netinst.iso" class="download-button-mini download-splash">${_('Download Now!')}</a><span class="star-most-compatible">${_('Most Compatible')}</span>
-									 <p class="fine-print">${_('%sMB ISO disk image for 32-bit PC') % global_variables.iso_size['i386_Netinstall']}</p>
+                   <p class="fine-print">${_('%(size)sMB ISO disk image for %(arch)s PC') % {'size':global_variables.iso_size['i386_Netinstall'], 'arch':'32-bit'}}</p>
                         </div>
 			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
                         <div class="grid_4 prefix_2 alpha arch">
@@ -262,7 +261,7 @@ ec2_f15 = [
 			</div>
 			<div class="grid_6 omega arch">
                             <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Fedora/x86_64/iso/Fedora-${global_variables.release['curr_id']}-x86_64-netinst.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
-                            <p class="fine-print">${_('%sMB ISO disk image for 64-bit PC') % global_variables.iso_size['x86_64_Netinstall']}</p>
+                            <p class="fine-print">${_('%(size)sMB ISO disk image for %(arch)s PC') % {'size':global_variables.iso_size['x86_64_Netinstall'], 'arch':'64-bit'}}</p>
                         </div>
 			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
                         <div class="clear"></div>
@@ -348,29 +347,27 @@ ec2_f15 = [
 
 
                     <div id="cloud-versions">
-                        <noscript><a name="clouds"><hr /></a></noscript>
+                        <noscript> <a name="clouds"><hr /></a> </noscript>
                         <h3>${_('Fedora In The Cloud')}</h3>
+                        <div class="grid_12 alpha omega">
+                        <h4 class="area-callout">${_('Fedora on EC2')}</h4>
+                        </div>
 
-
-                            <div class="grid_12 alpha omega">
-                                <h4 class="area-callout">${_('Fedora on EC2')}</h4>
+                            <div class="clear"></div>
+                            <div class="grid_2 alpha"><img class="download-media" alt="" src="${path}/static/images/cloudicontrans.png" /></div>
+                            <div class="grid_10 omega">
                                 <p>${_('Fedora publishes system images for Amazon Web Services\' (AWS) virtual machine platform, Amazon Elastic Compute Cloud (EC2), which allows one to create virtual machines in the cloud with very little effort.')}
                                 <br />${_('These images, known as AMIs (Amazon Machine Images), are available in a variety of zones and architectures, and are identifiable by their unique identification number. This ID can then be utilized to locate and launch an image.')}</p>
 
                                 <p>${Markup(_('Fedora\'s EC2 images follow standard EC2 login conventions, meaning that root login is disabled, but sudo access is granted.  The default username for the images is &lt;strong&gt;%s&lt;/strong&gt;.') % 'ec2-user')}</p>
-                            </div>
 
-
-                            <div class="clear"></div>
-                            <div class="grid_2 alpha"><img class="download-media" alt="" src="${path}/static/images/icon-fedora-cloud-download.png" /></div>
-                            <div class="grid_10 omega">
                                 <ul>
                                     <li>${Markup(_('Not familiar with EC2? &lt;a href="%s"&gt;Read more about the terminology and concepts &gt;&lt;/a&gt;') % 'http://fedoraproject.org/wiki/User:Gholms/EC2_Primer')}</li>
                                     <li>${Markup(_('Full documentation for interacting with EC2 is available from &lt;a href="%s"&gt;Amazon Web Services &gt;&lt;/a&gt;') % 'http://docs.amazonwebservices.com/AWSEC2/latest/GettingStartedGuide/')}</li>
-                                    <li>${Markup(_('Need help, or have a great idea? &lt;a href="%s"&gt;Join the Fedora Cloud SIG mailing list &gt;&lt;/a&gt;') % 'http://admin.fedoraproject.org/mailman/listinfo/clou')}</li>
+                                    <li>${Markup(_('Need help, or have a great idea? &lt;a href="%s"&gt;Join the Fedora Cloud SIG &gt;&lt;/a&gt;') % 'https://fedoraproject.org/wiki/Cloud_SIG')}</li>
                                 </ul>
                             </div>
-                            <div class="clear"></div>
+                            <div class="grid_12 alpha omega">
 
 															<h4 class="area-callout">${_('Currently supported EC2 Images')}</h4>
 
@@ -420,34 +417,9 @@ ec2_f15 = [
 																</table>
 
 
-                                <h5>${_('Fedora %s') % '15'}</h5>
-                                <table class="verify-live-media">
-																		<thead>
-																				<tr>
-																						<th>${_('Region')}</th>
-																						<th>${_('Architecture')}</th>
-																						<th>${_('Root store')}</th>
-																						<th>${_('AMI ID')}</th>
-																				</tr>
-																		</thead>
-																		<tbody>
-																			<py:for each="img in ec2_f15">
-																				<tr>
-																						<td>${img['region']}</td>
-																						<td>${img['arch']}</td>
-																						<td>${img['store']}</td>
-																						<td>${img['id']}</td>
-																				</tr>
-																			</py:for>
-																		</tbody>
-																</table>
-
                     <xi:include href="../templates/content-export-regulations.html" />
+                    		</div>
                         </div>
-
-
-
-
 
                     <div class="simple_overlay" id="gnome1">
                         <!-- large image -->

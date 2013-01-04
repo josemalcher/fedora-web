@@ -1,11 +1,11 @@
-var available_langs = [ "ar", "bg", "bn_IN", "cs", "da", "de", "el", "en", "es", "fi", "fr", "gu", "he", "hi", "hr", "hu", "id", "is", "it", "ja", "kn", "ko", "ks", "ml", "nl", "pa", "pl", "pt", "pt_BR", "ro", "ru", "si", "sr", "sv", "th", "tr", "uk", "vi_VN", "zh_CN", "zh_TW" ];
+var available_langs = [ "bg", "bn_IN", "cs", "da", "de", "el", "en", "es", "fi", "fr", "gu", "he", "hi", "hr", "hu", "id", "is", "it", "ja", "kn", "ko", "ks", "ml", "nl", "pa", "pl", "pt", "ro", "ru", "si", "sr", "sv", "th", "tr", "uk", "vi_VN", "zh_CN", "zh_TW" ];
 
 
 var today = new Date();
-var release = new Date("May 22, 2012 15:00:00 UTC");
+var release = new Date("January 15, 2013 15:00:00 UTC");
 var millisBetweenDates = release - today;
 var days = Math.ceil(millisBetweenDates/1000/60/60/24);
-var url = "https://fedoraproject.org/wiki/Releases/17/Schedule";
+var url = "https://fedoraproject.org/wiki/Releases/18/Schedule";
 
 var script = document.getElementById('fedora-banner');
 var lang = "en"
@@ -50,12 +50,16 @@ bannerimg.style.width = width;
 
 
 if (days <= 0) {
-    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/banners/f17release.png");
-    bannerimg.setAttribute("alt", "Fedora 17 is here!");
+    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/banners/f18release.png");
+    bannerimg.setAttribute("alt", "Fedora 18 is here!");
     url = "http://get.fedoraproject.org/";
 } else {
-    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora17-countdown-banner-" + days + "." + lang + "." + "png");
-    bannerimg.setAttribute("alt", "Fedora 17 Beefy Miracle released in " + days + " days.");
+    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora18-countdown-banner-" + days + "." + lang + "." + "png");
+    bannerimg.setAttribute("alt", "Fedora 18 Spherical Cow released in " + days + " days.");
+    if (days < 36) {
+        // as we don't have more than 35 pngs
+        bannerimg.setAttribute("style", "background-image:url(https://fedoraproject.org/static/images/counter/animated.gif);background-repeat:no-repeat;background-size:" + width +";width:" + width);
+    }
 }
 
 bannerlink.setAttribute("href", url);

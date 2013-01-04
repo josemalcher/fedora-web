@@ -19,9 +19,10 @@ story_info = story_paths[random.randint(0, len(story_paths)-1)]
 # banner countdown, only available for beta
 if global_variables.release['curr_state'] == "Beta":
   from datetime import datetime
+  import os
 
   today = datetime.utcnow()
-  release = datetime(2012, 5, 22, 15)
+  release = datetime(2013, 1, 15, 15)
 
   difference = release - today
   days = difference.days
@@ -30,10 +31,13 @@ if global_variables.release['curr_state'] == "Beta":
   days = str(days)
 
   image_lang = 'en'
-  available_languages = ('ar', 'bg', 'bn_IN', 'cs', 'da', 'de', 'el', 'en', 'es', 'fi', 'fr', 'gu', 'he', 'hi', 'hr', 'hu', 'id', 'is', 'it', 'ja', 'kn', 'ko', 'ks', 'ml', 'nl', 'pa', 'pl', 'pt', 'pt_BR', 'ro', 'ru', 'si', 'sr', 'sv', 'th', 'tr', 'uk', 'vi_VN', 'zh_CN', 'zh_TW')
+  available_languages = os.walk('static/images/counter/').next()[1]
   if lang in available_languages:
     image_lang = lang
-  image = image_lang + '/fedora' + global_variables.release['next_id'] + '-countdown-banner-' + days + '.' + image_lang + '.png'
+  image = 'counter/' + image_lang + '/fedora' + global_variables.release['next_id'] + '-countdown-banner-' + days + '.' + image_lang + '.png'
+
+  if not os.path.isfile(image):
+    image = 'banners/f' + global_variables.release['next_id'] + 'beta.png'
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -189,7 +193,7 @@ if global_variables.release['curr_state'] == "Beta":
                   <div class="grid_6 alpha story">
                     <h3 class="main-section-hl">${_('What makes Fedora different?')}</h3>
                     <h4><a href="${path}/${lang}/about-fedora#different">${_('We fight for software freedom')}</a></h4>
-    <a href="${path}/${lang}/about-fedora#different"><img src="${path}/static/images/4f-freedom.png" /></a>
+    <a href="${path}/${lang}/about-fedora#different"><img src="${path}/static/images/4f-freedom.png" alt="Freedom" /></a>
                     <p>${_('We try to always do the right thing, and provide only free and open source software. We will fight to protect and promote solutions that anyone can use and redistribute. To this end, we use only free and open source software to power the Fedora infrastructure itself. With this in mind, all of our developers are focused on working closely with upstream development teams, so everyone can benefit from our work and get access to our changes as soon as possible. Due to the huge amount of innovation that Fedora drives, this focus has had significant and long lasting effects.')}</p>
                     <ul>
                         <li><a href="${path}/${lang}/about-fedora#different">${Markup(_('Learn more about Fedora\'s values &gt;'))}</a></li>
@@ -200,7 +204,7 @@ if global_variables.release['curr_state'] == "Beta":
                   <div class="grid_12 alpha story">
                     <h3 class="main-section-hl">${_('Do it with Fedora')}</h3>
                     <h4><a href="${path}/${lang}/using/tutorials/cheese.html">${_('Have a photobooth party!')}</a></h4>
-                    <a href="${path}/${lang}/using/tutorials/cheese.html"><img src="${path}/static/images/hulk-pfrields.png" /></a>
+                    <a href="${path}/${lang}/using/tutorials/cheese.html"><img src="${path}/static/images/hulk-pfrields.png" alt="Photobooth Party (yarr!)"  /></a>
                     <p>${_('All you need is a webcam and Fedora, and you can do all sorts of cool photo tricks, including turning your friends into The Hulk. :) Take fun snapshots and videos!')}</p>
                     <ul>
                         <li><a href="${path}/${lang}/using/tutorials/cheese.html">${Markup(_('Learn how to do it yourself! &gt;'))}</a></li>
@@ -223,16 +227,16 @@ if global_variables.release['curr_state'] == "Beta":
                 <p><a href="${path}/${lang}/get-fedora-options">${Markup(_('Full set of download options &gt;'))}</a></p>
 
                 <div id="fedora-banners">
-                    <py:if test="global_variables.release['curr_state'] != 'Beta'">
+                <py:if test="global_variables.release['curr_state'] != 'Beta'">
                       <!-- See data/template/js to enable static/js/banner.js -->
                       <a href="${path}/${lang}/get-fedora"><img alt="Fedora ${global_variables.release['curr_id']} ${global_variables.release['curr_name']} is here!" src="${path}/static/images/banners/f${global_variables.release['curr_id']}release.png" /></a>
                     </py:if>
 
                     <py:if test="global_variables.release['curr_state'] == 'Beta'">
-                      <a href="http://fedoraproject.org/wiki/Releases/${global_variables.release['next_id']}/Schedule"><img src="${path}/static/images/counter/${image}" alt="${Markup(_('Fedora %(release)s %(name)s released in %(number)s days!') % {'release':global_variables.release['next_id'], 'name':global_variables.release['next_name'], 'number':days})}" /></a>
+                      <script id="fedora-banner" type="text/javascript" src="${path}/static/js/release-counter-ext.js?lang=${lang}"></script>
                       <a style="text-decoration: none; font-size: 1.6ex; color: #99AABB;" href="${path}/${lang}/counter">${Markup(_('Add a counter to your own site!'))}</a>
                     </py:if>
-
+						
                 </div>
 
                 <h4>${_('Upcoming Events')}</h4>

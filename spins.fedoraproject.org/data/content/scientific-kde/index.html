@@ -68,27 +68,27 @@ docs_url = [
 				<span class="download-option" id="opt1">
 					<h4>${_('32-bit PC Edition')}</h4>
 					<p><img class="download-media" alt="${_('32-bit PC Edition')}" src="/static/images/media-usb.png" />${_('This edition is for the highest compatibility; it will work on both 32-bit and 64-bit computers.')}</p>
-					<a class="download-button" href="http://torrent.fedoraproject.org/spins/Fedora-17-i686-Live-Scientific-KDE.torrent">${_('Download Now!')}</a>
-					<p class="fine-print">${_('54K Torrent File for 32-bit PC ISO')}<br /> <a href="http://docs.fedoraproject.org/en-US/Fedora/17/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+					<a class="download-button" href="${global_variables.path['torrent_spins']}/Fedora-${global_variables.release['curr_id']}-i686-Live-Scientific-KDE.torrent">${_('Download Now!')}</a>
+					<p class="fine-print">${_('54K Torrent File for 32-bit PC ISO')}<br /> <a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
 				</span>
 				<span class="download-option" id="opt2">
 					<h4>${_('64-bit PC Edition')}</h4>
 					<p><img class="download-media" alt="${_('64-bit PC Edition')}" src="/static/images/media-usb.png" />${_('Enjoy the full power and speed of a 64-bit computer. Not compatible with 32-bit computers.')}</p>
-					<a class="download-button" href="http://torrent.fedoraproject.org/spins/Fedora-17-x86_64-Live-Scientific-KDE.torrent">${_('Download Now!')}</a>
-					<p class="fine-print">${_('54K Torrent File for 64-bit PC ISO')}<br /> <a href="http://docs.fedoraproject.org/en-US/Fedora/17/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+					<a class="download-button" href="${global_variables.path['torrent_spins']}/Fedora-${global_variables.release['curr_id']}-x86_64-Live-Scientific-KDE.torrent">${_('Download Now!')}</a>
+					<p class="fine-print">${_('54K Torrent File for 64-bit PC ISO')}<br /> <a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
 				</span>
 				<h3>${_('Direct Download')}</h3>
 				<span class="download-option" id="opt1">
 					<h4>${_('32-bit PC Edition')}</h4>
 					<p><img class="download-media" alt="${_('%s-bit PC Edition' % '32')}" src="/static/images/media-usb.png" />${_('This edition is for the highest compatibility; it will work on both 32-bit and 64-bit computers.')}</p>
-					<a class="download-button" href="http://download.fedoraproject.org/pub/alt/releases/17/Spins/i686/Fedora-17-i686-Live-Scientific-KDE.iso">${_('Download Now!')}</a>
-					<p class="fine-print">${_('2.4GB for %(arch)s-bit PC ISO') % {'arch': '32'}}<br /> <a href="http://docs.fedoraproject.org/en-US/Fedora/17/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+					<a class="download-button" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/i686/Fedora-${global_variables.release['curr_id']}-i686-Live-Scientific-KDE.iso">${_('Download Now!')}</a>
+					<p class="fine-print">${_('%(size)sGB for %(arch)s PC ISO') % {'size':global_variables.iso_size['i686_Live_Sci-kde'], 'arch':'64-bit'}}<br /> <a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
 				</span>
 				<span class="download-option" id="opt2">
 					<h4>${_('64-bit PC Edition')}</h4>
 					<p><img class="download-media" alt="${_('%s-bit PC Edition' % '64')}" src="/static/images/media-usb.png" />${_('Enjoy the full power and speed of a 64-bit computer. Not compatible with 32-bit computers.')}</p>
-					<a class="download-button" href="http://download.fedoraproject.org/pub/alt/releases/17/Spins/x86_64/Fedora-17-x86_64-Live-Scientific-KDE.iso">${_('Download Now!')}</a>
-					<p class="fine-print">${_('2.4GB for %(arch)s-bit PC ISO') % {'arch': '64'}}<br /> <a href="http://docs.fedoraproject.org/en-US/Fedora/17/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+					<a class="download-button" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/x86_64/Fedora-${global_variables.release['curr_id']}-x86_64-Live-Scientific-KDE.iso">${_('Download Now!')}</a>
+					<p class="fine-print">${_('%(size)sGB for %(arch)s PC ISO') % {'size':global_variables.iso_size['x86_64_Live_Sci-kde'], 'arch':'64-bit'}}<br /> <a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
 				</span>
 				<xi:include href="../../templates/download-tab.html" />
 			</div>

@@ -71,7 +71,7 @@ docs_url = [
 				 <li>${_('Nethack')}</li>
 				 <li><a href="#games">${_('And over 100 more...!')}</a></li>
 				</ul>
-			        
+
 			</div>
 			<div>
 				<h2>${_('Games Listing')}</h2>
@@ -693,35 +693,35 @@ docs_url = [
 			</div>
 			<div>
 				<h2>${_('Downloads')}</h2>
-				<h3>${_('Fedora 17 Games Spin')}</h3>
+				<h3>${_('Fedora %s Games Spin') % global_variables.release['curr_id']}</h3>
 				<h4><em>${_('Installable Live Media')}</em></h4>
 				<p>${Markup(_('This is the latest version of the Fedora Linux operating system\'s Games spin. It\'s everything you need to try out Fedora\'s games spin−you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take the Fedora Games spin for a test drive, and if you like it, you can install it directly to your hard drive straight from the Live Media desktop if you like. &lt;a href="/support"&gt;Read more about using and installing from live media&lt;/a&gt;.'))}</p>
 				<h3>${_('Torrent Download')}</h3>
 				<span class="download-option" id="opt1">
 					<h4>${_('32-bit PC Edition')}</h4>
 					<p><img class="download-media" alt="${_('32-bit PC Edition')}" src="/static/images/media-cd.png" />${_('This edition is for the highest compatibility; it will work on both 32-bit and 64-bit computers.')}</p>
-					<a class="download-button" href="http://torrent.fedoraproject.org/spins/Fedora-17-i686-Live-Games.torrent">${_('Download Now!')}</a>
-					<p class="fine-print">${_('54K Torrent File for 32-bit PC ISO')}<br /> <a href="http://docs.fedoraproject.org/en-US/Fedora/17/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+					<a class="download-button" href="${global_variables.path['torrent_spins']}/Fedora-${global_variables.release['curr_id']}-i686-Live-Games.torrent">${_('Download Now!')}</a>
+					<p class="fine-print">${_('54K Torrent File for 32-bit PC ISO')}<br /> <a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
 				</span>
 				<span class="download-option" id="opt2">
 					<h4>${_('64-bit PC Edition')}</h4>
 					<p><img class="download-media" alt="${_('64-bit PC Edition')}" src="/static/images/media-cd.png" />${_('Enjoy the full power and speed of a 64-bit computer. Not compatible with 32-bit computers.')}</p>
-					<a class="download-button" href="http://torrent.fedoraproject.org/spins/Fedora-17-x86_64-Live-Games.torrent">${_('Download Now!')}</a>
-					<p class="fine-print">${_('54K Torrent File for 64-bit PC ISO')}<br /> <a href="http://docs.fedoraproject.org/en-US/Fedora/17/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+					<a class="download-button" href="${global_variables.path['torrent_spins']}/Fedora-${global_variables.release['curr_id']}-x86_64-Live-Games.torrent">${_('Download Now!')}</a>
+					<p class="fine-print">${_('54K Torrent File for 64-bit PC ISO')}<br /> <a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
 				</span>
 
 				<h3>${_('Direct Download')}</h3>
 				<span class="download-option" id="opt1">
 					<h4>${_('32-bit PC Edition')}</h4>
 					<p><img class="download-media" alt="${_('%s-bit PC Edition' % '32')}" src="/static/images/media-cd.png" />${_('This edition is for the highest compatibility; it will work on both 32-bit and 64-bit computers.')}</p>
-					<a class="download-button" href="http://download.fedoraproject.org/pub/alt/releases/17/Spins/i686/Fedora-17-i686-Live-Games.iso">${_('Download Now!')}</a>
-					<p class="fine-print">${_('%(size)s for %(arch)s-bit PC ISO') % {'size': '4 GB', 'arch': '32'}}<br /> <a href="http://docs.fedoraproject.org/en-US/Fedora/17/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+					<a class="download-button" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/i686/Fedora-${global_variables.release['curr_id']}-i686-Live-Games.iso">${_('Download Now!')}</a>
+					<p class="fine-print">${_('%(size)sGB for %(arch)s PC ISO') % {'size':global_variables.iso_size['i686_Live_Games'], 'arch':'32-bit'}}<br /> <a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
 				</span>
 				<span class="download-option" id="opt2">
 					<h4>${_('64-bit PC Edition')}</h4>
 					<p><img class="download-media" alt="${_('%s-bit PC Edition' % '64')}" src="/static/images/media-cd.png" />${_('Enjoy the full power and speed of a 64-bit computer. Not compatible with 32-bit computers.')}</p>
-					<a class="download-button" href="http://download.fedoraproject.org/pub/alt/releases/17/Spins/x86_64/Fedora-17-x86_64-Live-Games.iso">${_('Download Now!')}</a>
-					<p class="fine-print">${_('%(size)s for %(arch)s-bit PC ISO') % {'size': '4 GB', 'arch': '64'}}<br /> <a href="http://docs.fedoraproject.org/en-US/Fedora/17/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+					<a class="download-button" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/x86_64/Fedora-${global_variables.release['curr_id']}-x86_64-Live-Games.iso">${_('Download Now!')}</a>
+					<p class="fine-print">${_('%(size)sGB for %(arch)s PC ISO') % {'size':global_variables.iso_size['x86_64_Live_Games'], 'arch':'64-bit'}}<br /> <a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
 				</span>
                 <xi:include href="../../templates/download-tab.html" />
 			</div>
