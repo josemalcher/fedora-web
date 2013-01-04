@@ -13,6 +13,7 @@ path={
     'torrent':         'http://torrent.fedoraproject.org/torrents',
     'download':        'http://download.fedoraproject.org/pub/fedora/linux/releases',
     'download_spins':  'http://download.fedoraproject.org/pub/alt/releases',
+    'download_arch':   'http://download.fedoraproject.org/pub/fedora-secondary/releases',
     'mirrors':         'http://mirrors.fedoraproject.org/metalink?path=pub/fedora/linux/releases',
     'checksums':       'https://fedoraproject.org/static/checksums'
 }
@@ -30,5 +31,10 @@ iso_size={
     'i686_Live_XFCE':      '672',       # In MB
     'x86_64_Live_XFCE':    '670',       # In MB
     'i386_Netinstall':     '199',       # In MB
-    'x86_64_Netinstall':   '162'        # In MB
+    'x86_64_Netinstall':   '162',       # In MB
+    'PPC_DVD':             '1.8',       # In GB
+    'PPC_Netinstall':      '195',       # In MB
+    'PPC64_DVD':           '2.4',       # In GB
+    'PPC64_Netinstall':    '217',       # In MB
+    's390_DVD':            '2.7',       # In GB
 }
