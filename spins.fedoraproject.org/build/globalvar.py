@@ -1,12 +1,12 @@
 #!/usr/bin/python
 # This file defines all variable needed to be edited during the release cycle (alpha, beta...).
 release={
-    'prev_id':     '16',
-    'curr_id':     '17',
-    'next_id':     '18',
-    'curr_name':   'Beefy Miracle',
-    'next_name':   'Spherical Cow',
-    'curr_state':  'Beta'         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'prev_id':     '17',
+    'curr_id':     '18',
+    'next_id':     '19',
+    'curr_name':   'Spherical Cow',
+    'next_name':   'Schroedingers Cat',
+    'curr_state':  ''         # either 'Alpha', 'Beta' or '' (i.e empty)
 }
 
 path={
