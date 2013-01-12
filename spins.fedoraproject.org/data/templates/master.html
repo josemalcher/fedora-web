@@ -123,7 +123,7 @@ class Torrents(object):
         :returns: True if the name is a spin and in a released Fedora.
         '''
         if self.non_release_re.search(name):
-            return False    
+            return False
         for part in self.spins_matches:
             if part in name.lower():
                 return True

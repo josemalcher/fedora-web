@@ -3,12 +3,12 @@
   xmlns:py="http://genshi.edgewall.org/"
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
-  
+
 	<span class="which-arch">
 		<h4>${_('Unsure if your computer is 32-bit or 64-bit?')}</h4>
 		<ul>
 			<li>${_('The 32-bit edition is compatible with both 32-bit and 64-bit PCs.')}</li>
-			<li>${Markup(_('Read our &lt;a href="%s"&gt;documentation on how to tell if your computer is 32-bit or 64-bit&lt;/a&gt;.' % 'http://docs.fedoraproject.org/en-US/Fedora/17/html/Installation_Guide/ch-new-users.html#sn-which-arch'))}</li>
+         <li><a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Installation_Guide/ch-new-users.html#sn-which-arch')">${Markup(_('Read our documentation on how to tell if your computer is 32-bit or 64-bit.'))}</a></li>
 		</ul>
 	</span>
 
@@ -18,7 +18,7 @@
 		<tr>
 			<td><strong>${_('Release Name')}</strong></td>
 			<td><strong>${_('Size in MBs')}</strong></td>
-		</tr>				
+		</tr>
 		<tr py:for="i in [x for x in torrents.specific_spin(area, release, latest=False) if x not in torrents.specific_spin(area, release)]">
 			<td><a href="http://torrent.fedoraproject.org/spins/${i['name']}.torrent">${i['name']}</a></td>
 			<td>${formatsize(i['size'])}</td>
