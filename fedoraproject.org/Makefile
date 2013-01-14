@@ -10,6 +10,8 @@ GENERIC_HEADER = msgid ""\
 PO_FILES = $(wildcard po/*.po)
 MO_FILES = $(PO_FILES:.po=.mo)
 HTML_FILES = $(shell find data -name "*.html")
+# Check if the Fedora release is at least Fedora 18 (httpd-2.4.3 or later)
+NEW_HTTPD = $(shell expr `cat /etc/redhat-release  |awk '{print $$3}'` \>= 18)
 
 PYTHON = python
 PYBABEL = $(PYTHON) /usr/bin/pybabel
@@ -61,11 +63,17 @@ push:
 	git push
 
 httpd/conf/httpd.conf: httpd/conf/httpd.conf.in
+ifeq ($(NEW_HTTPD),1)
 	cp httpd/conf/httpd.conf.in httpd/conf/httpd.conf
+else
+	@echo "Using the old httpd config file"
+	cp httpd/conf/httpd.conf.old.in httpd/conf/httpd.conf
+endif
 	sed -i \
 		-e 's#@SERVERROOT@#$(PWD)/httpd#g' \
 		-e 's#@DOCUMENTROOT@#$(PWD)/out#g' \
 		httpd/conf/httpd.conf
+
 
 httpd/conf/languages.conf.in: po/LINGUAS
 	$(PYTHON) build/buildconf.py $^ > $@
