@@ -49,7 +49,9 @@
 		<py:otherwise>
 		<div id="download-now" py:for="i in torrents.specific_spin(area, release, 'x86_64')">
 			<a class="big-button" href="http://torrent.fedoraproject.org/spins/${i['name']}.torrent"><img src="/static/images/down-arrow.png" />${_('Download Now!')}</a>
-			<p>54K Torrent File for 64-bit PC ISO (${formatsize(torrents.gettorrentinfo(area, release, 'size'))} MB)</p>
+<!--			<p>54K Torrent File for 64-bit PC ISO (${formatsize(torrents.gettorrentinfo(area, release, 'size'))} MB)</p>
+-->
+			<p>54K Torrent File for 64-bit PC ISO</p>
 			<h3><a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this?')}</a> | <a py:if="area=='kde'" href="http://fedoraproject.org/get-fedora-all#kde">${_('More download options ...')}</a><a py:if="area!='kde'" href="#downloads">${_('More download options ...')}</a> </h3>
 		</div>
 		<div id="whatis-spin">
