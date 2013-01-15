@@ -77,7 +77,7 @@ class Torrents(object):
                     continue
                 if ("scientific" in t_name.lower()) and ("scientific" not in name.lower()):
                     continue
-                if arch and (arch.lower() != t_arch.lower()):
+                if arch.lower() != t_arch.lower():
                     continue
                 spins.append(row)
 
@@ -147,7 +147,6 @@ class Torrents(object):
 
 torrents = Torrents()
 release = '18'
-arch = 'i686'
 
 def formatsize(n, format='%0.2f'):
     # this is awful.
