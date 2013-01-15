@@ -4,6 +4,25 @@
 # Generated using the following:
 # :%s#^| \([a-zA-Z*-9]*\)[ |]*\(i386\|x86_64\)[ |]*\(EBS-backed\)[ |]* \(ami.*\)#{'region':'\1', 'arch':'\2', 'store':'\3', 'id':'\4'},#g
 
+ec2_f18 = [
+{'region':'ap-southeast-1', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-30aeec62'},
+{'region':'ap-southeast-1', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-caa9eb98'},
+{'region':'ap-southeast-2', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-9ae472a0'},
+{'region':'ap-southeast-2', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-dce771e6'},
+{'region':'ap-northeast-1', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-5f01bb5e'},
+{'region':'ap-northeast-1', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-7100ba70'},
+{'region':'us-east-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-6145cc08'},
+{'region':'us-east-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-0d44cd64'},
+{'region':'us-west-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-0899b94d'},
+{'region':'us-west-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-de99b99b'},
+{'region':'us-west-2',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-0266ed32'},
+{'region':'us-west-2',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-6467ec54'},
+{'region':'eu-west-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-bafcf3ce'},
+{'region':'eu-west-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-cafef1be'},
+{'region':'sa-east-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-81558d9c'},
+{'region':'sa-east-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-e5548cf8'}
+]
+
 ec2_f17 = [
       {'region':'ap-northeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-5ae6555b'},
       {'region':'ap-northeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-26e65527'},
@@ -371,6 +390,27 @@ ec2_f16 = [
                             <div class="grid_12 alpha omega">
 
 															<h4 class="area-callout">${_('Currently supported EC2 Images')}</h4>
+                                <h5>${_('Fedora %s ') % '18'}</h5>
+                                <table class="verify-live-media">
+																		<thead>
+																				<tr>
+																						<th>${_('Region')}</th>
+																						<th>${_('Architecture')}</th>
+																						<th>${_('Root store')}</th>
+																						<th>${_('AMI ID')}</th>
+																				</tr>
+																		</thead>
+																		<tbody>
+																			<py:for each="img in ec2_f18">
+																				<tr>
+																						<td>${img['region']}</td>
+																						<td>${img['arch']}</td>
+																						<td>${img['store']}</td>
+																						<td>${img['id']}</td>
+																				</tr>
+																			</py:for>
+																		</tbody>
+																</table>
 
                                 <h5>${_('Fedora %s ') % '17'}</h5>
                                 <table class="verify-live-media">
