@@ -4,7 +4,8 @@ endif
 HTML_FILES = $(shell find data -name "*.html")
 # Check if the Fedora release is at least Fedora 18 (httpd-2.4.3 or later)
 NEW_HTTPD = $(shell expr `cat /etc/redhat-release  |awk '{print $$3}'` \>= 18)
-
+PO_DIR = /tmp/po_dir
+RESOURCE := $(shell cat .tx/config | sed -n 's,^\[\(fedora-web.*\)\],\1,p')
 PYTHON = python
 PYBABEL = $(PYTHON) /usr/bin/pybabel
 BASEPATH = /
@@ -48,8 +49,11 @@ pushpot:
 	tx push -s
 
 pullpos:
-#	tx pull -af
-#	tx pull --lang=en
+	tx pull -af
+	tx pull --lang=en
+
+syncpos:
+	rsync -az $(PO_DIR)/$(RESOURCE)/* po/
 
 push:
 	git push
