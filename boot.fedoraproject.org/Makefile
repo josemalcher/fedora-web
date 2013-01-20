@@ -1,31 +1,26 @@
 ifndef LANGUAGES
 LANGUAGES := $(shell grep -v "^\#" po/LINGUAS)
 endif
-GENERIC_HEADER = msgid ""\
-                 msgstr ""\
-                 "Project-Id-Version: PROJECT VERSION\n"\
-                 "MIME-Version: 1.0\n"\
-                 "Content-Type: text/plain; charset=utf-8\n"\
-                 "Content-Transfer-Encoding: 8bit"
-PO_FILES = $(wildcard po/*.po)
-MO_FILES = $(PO_FILES:.po=.mo)
 HTML_FILES = $(shell find data -name "*.html")
 # Check if the Fedora release is at least Fedora 18 (httpd-2.4.3 or later)
 NEW_HTTPD = $(shell expr `cat /etc/redhat-release  |awk '{print $$3}'` \>= 18)
 
 PYTHON = python
-PYBABEL = pybabel
+PYBABEL = $(PYTHON) /usr/bin/pybabel
 BASEPATH = /
 PWD = $(shell pwd)
 
 all: $(LANGUAGES)
 	cp static/robots.txt out/
+rss-cache:
+	@echo Caching RSS...
+	$(PYTHON) build/build.py -o out -i data/content -r -b $(BASEPATH)
 
 static:
 	@echo Copying static...
 	$(PYTHON) build/build.py -o out -s static -b $(BASEPATH)
 
-$(LANGUAGES): % : | static po/%.mo data/templates/translations.html
+$(LANGUAGES): % : | static rss-cache po/%.mo data/templates/translations.html
 	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -b $(BASEPATH)
 
 po/%.mo: po/%.po
@@ -33,16 +28,6 @@ po/%.mo: po/%.po
 
 po/fedora-web.pot: $(HTML_FILES)
 	${PYBABEL} extract -F build/pybabel.cfg data -o $@
-
-pot: $(HTML_FILES)
-	${PYBABEL} extract -F build/pybabel.cfg data -o po/boot.fedoraproject.org.pot
-
-pushpot:
-	tx push -s
-
-pullpos:
-	tx pull -af
-	tx pull --lang=en
 
 data/templates/translations.html: po/LINGUAS
 	$(PYTHON) build/translations.py $^ > $@
@@ -55,6 +40,16 @@ clean:
 	rm -f httpd/conf/*.conf httpd/conf/languages.conf.in
 
 msgmerge: $(wildcard po/*.po)
+
+pot: $(HTML_FILES)
+	${PYBABEL} extract -F build/pybabel.cfg data -o po/fedora-web.pot
+
+pushpot:
+	tx push -s
+
+pullpos:
+#	tx pull -af
+#	tx pull --lang=en
 
 push:
 	git push
@@ -70,6 +65,7 @@ endif
 		-e 's#@SERVERROOT@#$(PWD)/httpd#g' \
 		-e 's#@DOCUMENTROOT@#$(PWD)/out#g' \
 		httpd/conf/httpd.conf
+
 
 httpd/conf/languages.conf.in: po/LINGUAS
 	$(PYTHON) build/buildconf.py $^ > $@

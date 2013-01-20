@@ -1,14 +1,6 @@
 ifndef LANGUAGES
 LANGUAGES := $(shell grep -v "^\#" po/LINGUAS)
 endif
-GENERIC_HEADER = msgid ""\
-                 msgstr ""\
-                 "Project-Id-Version: PROJECT VERSION\n"\
-                 "MIME-Version: 1.0\n"\
-                 "Content-Type: text/plain; charset=utf-8\n"\
-                 "Content-Transfer-Encoding: 8bit"
-PO_FILES = $(wildcard po/*.po)
-MO_FILES = $(PO_FILES:.po=.mo)
 HTML_FILES = $(shell find data -name "*.html")
 # Check if the Fedora release is at least Fedora 18 (httpd-2.4.3 or later)
 NEW_HTTPD = $(shell expr `cat /etc/redhat-release  |awk '{print $$3}'` \>= 18)
@@ -56,8 +48,8 @@ pushpot:
 	tx push -s
 
 pullpos:
-	tx pull -af
-	tx pull --lang=en
+#	tx pull -af
+#	tx pull --lang=en
 
 push:
 	git push
