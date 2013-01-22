@@ -14,22 +14,16 @@ PWD = $(shell pwd)
 
 all: $(LANGUAGES)
 	cp static/robots.txt out/
-rss-cache:
-	@echo Caching RSS...
-	$(PYTHON) build/build.py -o out -i data/content -r -b $(BASEPATH)
 
 static:
 	@echo Copying static...
 	$(PYTHON) build/build.py -o out -s static -b $(BASEPATH)
 
-$(LANGUAGES): % : | static rss-cache po/%.mo data/templates/translations.html
+$(LANGUAGES): % : | static po/%.mo data/templates/translations.html
 	$(PYTHON) build/build.py -o out -i data/content -l $@ -p po -b $(BASEPATH)
 
 po/%.mo: po/%.po
 	msgfmt -o $@ $<
-
-po/fedora-web.pot: $(HTML_FILES)
-	${PYBABEL} extract -F build/pybabel.cfg data -o $@
 
 data/templates/translations.html: po/LINGUAS
 	$(PYTHON) build/translations.py $^ > $@
@@ -44,7 +38,7 @@ clean:
 msgmerge: $(wildcard po/*.po)
 
 pot: $(HTML_FILES)
-	${PYBABEL} extract -F build/pybabel.cfg data -o po/fedora-web.pot
+	${PYBABEL} extract -F build/pybabel.cfg data -o po/spins.fedoraproject.org.pot
 
 pushpot:
 	tx push -s
