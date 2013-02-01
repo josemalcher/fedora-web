@@ -11,13 +11,19 @@ HTML_FILES = $(shell find data -name "*.html")
 # Check if the Fedora release is at least Fedora 18 (httpd-2.4.3 or later)
 NEW_HTTPD = $(shell expr `cat /etc/redhat-release  |awk '{print $$3}'` \>= 18)
 RESOURCE_NAME = /tmp/po_dir
-RESOURCE_NAME := $(RESOURCE_NAME)/$(shell cat .tx/config | sed -n 's,^\[\(fedora-web.*\)\],\1,p')
-RESOURCE = $(shell ls -d $(RESOURCE_NAME))
 PYTHON = python
 PYBABEL = $(PYTHON) /usr/bin/pybabel
 BASEPATH = /
 PWD = $(shell pwd)
 POT_FILE := $(shell ls po/*.pot)
+
+sync = \
+	if test -d $1/$2; then   \
+		rsync -az $1/$2/* po/; \
+		echo ">>> POs pulled"; \
+	else \
+		echo ">>> Error, \`$1/$2' should exists"; \
+	fi
 
 all: $(LANGUAGES)
 	cp static/robots.txt out/
@@ -56,12 +62,10 @@ pullpos:
 	tx pull -af
 	tx pull --lang=en
 
+# The next call get the Transifex resource from the config file,
+# and if it exists rsync the POs
 syncpos:
-ifneq ($(RESOURCE),)
-	rsync -az $(RESOURCE)/* po/
-else
-	@echo "Error, RESOURCE not existing. \`$(RESOURCE_NAME)' should exists"
-endif
+	$(call sync,$(RESOURCE_NAME),$(shell cat .tx/config | sed -n 's,^\[\(fedora-web.*\)\],\1,p'))
 
 push:
 	git push
