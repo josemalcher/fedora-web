@@ -1,20 +1,19 @@
 # Translations template for PROJECT.
-# Copyright (C) 2012 ORGANIZATION
+# Copyright (C) 2013 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # 
 # Translators:
 # Francesco D'Aluisio <fdaluisio@fedoraproject.org>, 2011.
 # Luigi Votta <lewis41@fedoraproject.org>, 2011.
 #   <lukefiltroman@gmail.com>, 2011.
-# Mario Santagiuliana <fedora at marionline.it>, 2011-2012.
 # neb <nick@bebout.net>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-07-04 01:03+0200\n"
-"PO-Revision-Date: 2012-09-15 14:25+0000\n"
-"Last-Translator: Mario Santagiuliana marionline <marionline@fedoraproject.org>\n"
+"POT-Creation-Date: 2013-01-13 00:17+0100\n"
+"PO-Revision-Date: 2013-01-14 17:41+0000\n"
+"Last-Translator: robyduck <robyduck@fedoraproject.org>\n"
 "Language-Team: Italian <trans-it@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -842,15 +841,16 @@ msgstr "Download diretto"
 #: data/content/aos/index.html:94 data/content/aos/index.html:100
 #: data/content/broffice/index.html:84 data/content/broffice/index.html:90
 #: data/content/design/index.html:100 data/content/design/index.html:106
-#: data/content/fel/index.html:159 data/content/fel/index.html:165
-#: data/content/games/index.html:718 data/content/games/index.html:724
-#: data/content/kde/index.html:154 data/content/kiosk/index.html:87
-#: data/content/kiosk/index.html:93 data/content/moblin/index.html:93
-#: data/content/moblin/index.html:99 data/content/security/index.html:82
-#: data/content/security/index.html:88
+#: data/content/kde/index.html:148 data/content/kde/index.html:154
+#: data/content/kiosk/index.html:87 data/content/kiosk/index.html:93
+#: data/content/lxde/index.html:90 data/content/lxde/index.html:96
+#: data/content/moblin/index.html:93 data/content/moblin/index.html:99
+#: data/content/security/index.html:82 data/content/security/index.html:88
+#: data/content/soas/index.html:119 data/content/soas/index.html:125
+#: data/content/xfce/index.html:88 data/content/xfce/index.html:94
 #, python-format
-msgid "%(size)s for %(arch)s-bit PC ISO"
-msgstr "ISO %(size)s per PC %(arch)s-bit"
+msgid "%(size)sMB for %(arch)s PC ISO"
+msgstr ""
 
 #: data/content/broffice/index.html:43
 msgid "About Spin: BrOffice.org"
@@ -2149,6 +2149,15 @@ msgid ""
 "operating system that is executed upon boot, without installation on a hard "
 "drive. A desktop icon can be used to install the OS if wanted."
 msgstr "Il disco LiveDVD può essere scaricato sia via http sia via torrent. Un LiveDVD è un sistema operativo che si avvia al boot, senza bisogno di installare su un disco rigido. Un'icona sul desktop permette di installare il SO, se lo si desidera."
+
+#: data/content/fel/index.html:159 data/content/fel/index.html:165
+#: data/content/games/index.html:718 data/content/games/index.html:724
+#: data/content/robotics/index.html:85 data/content/robotics/index.html:91
+#: data/content/scientific-kde/index.html:85
+#: data/content/scientific-kde/index.html:91
+#, python-format
+msgid "%(size)sGB for %(arch)s PC ISO"
+msgstr ""
 
 #: data/content/fel/index.html:173
 msgid ""
@@ -3750,8 +3759,9 @@ msgid "Asteroid-like game with powerups."
 msgstr "Gioco spaziale simile ad asteroid con power-up."
 
 #: data/content/games/index.html:696
-msgid "Fedora 17 Games Spin"
-msgstr "Fedora 17 Games Spin"
+#, python-format
+msgid "Fedora %s Games Spin"
+msgstr ""
 
 #: data/content/games/index.html:698
 msgid ""
@@ -4106,8 +4116,9 @@ msgid ""
 msgstr "Nota: Non tutte le applicazioni qui elencate sono presenti, per ragioni di spazio, nel Live CD. Dopo l'installazione, puoi scoprire molte altre interessanti applicazioni di KDE, usando la suite integrata  di gestione dei pacchetti: System Settings -> Add & Remove programs!"
 
 #: data/content/kde/index.html:125
-msgid "Fedora 17 KDE Plasma Desktop Spin"
-msgstr "Fedora 17 KDE Plasma Desktop Spin"
+#, python-format
+msgid "Fedora %s KDE Plasma Desktop Spin"
+msgstr ""
 
 #: data/content/kde/index.html:127
 msgid ""
@@ -4118,14 +4129,6 @@ msgid ""
 "if you like it, you can install Fedora directly  to your hard drive straight"
 " from the Live Media desktop if you like."
 msgstr "Questa è la più recente versione di Plasma Desktop Edition di KDE del sistema operativo Linux di Fedora. E' corredata di tutto ciò che serve per provare Plasma Desktop Edition di KDE di Fedora—non hai bisogno di cancellare il tuo attuale sistema per provarla e i tuoi file non sono a rischio. Prova Fedora, e se ti piace puoi installarla direttamente sull'hard disk con il desktop che ti piace. "
-
-#: data/content/kde/index.html:148 data/content/lxde/index.html:90
-#: data/content/lxde/index.html:96 data/content/soas/index.html:119
-#: data/content/soas/index.html:125 data/content/xfce/index.html:88
-#: data/content/xfce/index.html:94
-#, python-format
-msgid "%(size)sMB for %(arch)s-bit PC ISO"
-msgstr "%(size)sMB per %(arch)s-bit PC ISO"
 
 #: data/content/kde/index.html:159
 msgid "KDE Plasma Desktop Support"
@@ -4461,11 +4464,6 @@ msgid ""
 "\"Robotics\"</span>."
 msgstr "Se hai già Fedora installata, non c'è necessità di scaricare il LiveDVD. Puoi installare un ambiente di sviluppo per la robotica usando il semplice comando: <span class=\"command\">yum groupinstall \"Robotics\"</span>."
 
-#: data/content/robotics/index.html:85 data/content/robotics/index.html:91
-#, python-format
-msgid "1.1GB for %(arch)s-bit PC ISO"
-msgstr "1.1GB per %(arch)s-bit PC ISO"
-
 #: data/content/robotics/index.html:97
 msgid "Robotics Support"
 msgstr "Robotics Support"
@@ -4540,12 +4538,6 @@ msgid ""
 "install the OS if wanted. Once you have the ISO, you can either create a <a "
 "href=\"%s\">Bootable USB stick</a> or burn it to a <a href=\"%s\">DVD</a>."
 msgstr "Fedora Scientific è disponibile come Live DVD scaricabile - via torrent o download diretto. Un LiveDVD è un sistema operativo che è eseguito al boot, senza l'installazione sul disco fisso. Una icona sul desktop fornisce l'installazione del SO se si vuole. Quando si ha l'ISO, si può creare una <a href=\"%s\">penna USB bootabile</a> o masterizzarla su un <a href=\"%s\">DVD</a>."
-
-#: data/content/scientific-kde/index.html:85
-#: data/content/scientific-kde/index.html:91
-#, python-format
-msgid "2.4GB for %(arch)s-bit PC ISO"
-msgstr "2.4GB per %(arch)s-bit PC ISO"
 
 #: data/content/scientific-kde/index.html:96
 msgid "Fedora Scientific Support"
@@ -4899,6 +4891,11 @@ msgstr "Non sai se il tuo PC è a 32-bit o a 64-bit?"
 #: data/templates/download-tab.html:10
 msgid "The 32-bit edition is compatible with both 32-bit and 64-bit PCs."
 msgstr "La versione a 32-bit è compatibile sia con PC a 32-bit che con PC a 64-bit."
+
+#: data/templates/download-tab.html:11
+msgid ""
+"Read our documentation on how to tell if your computer is 32-bit or 64-bit."
+msgstr "Leggi la nostra documentazione su come capire se un computer è 32-bit o 64-bit."
 
 #: data/templates/foot.html:9 data/templates/head.html:7
 msgid "Fedora"

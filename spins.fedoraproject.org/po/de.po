@@ -1,9 +1,8 @@
 # Translations template for PROJECT.
-# Copyright (C) 2012 ORGANIZATION
+# Copyright (C) 2013 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # 
 # Translators:
-# Fabian Affolter <fab@fedoraproject.org>, 2011-2012.
 # Gerd  <koenig.ulm@googlemail.com>, 2011.
 # Maik Wagner <maikwagner@yahoo.com>, 2012.
 # Mario Blättermann <mario.blaettermann@gmail.com>, 2012.
@@ -17,9 +16,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-07-04 01:03+0200\n"
-"PO-Revision-Date: 2012-10-26 14:44+0000\n"
-"Last-Translator: Fabian Affolter <fab@fedoraproject.org>\n"
+"POT-Creation-Date: 2013-01-13 00:17+0100\n"
+"PO-Revision-Date: 2013-01-12 23:14+0000\n"
+"Last-Translator: robyduck <robyduck@fedoraproject.org>\n"
 "Language-Team: German <trans-de@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -847,15 +846,16 @@ msgstr "Direkter Download"
 #: data/content/aos/index.html:94 data/content/aos/index.html:100
 #: data/content/broffice/index.html:84 data/content/broffice/index.html:90
 #: data/content/design/index.html:100 data/content/design/index.html:106
-#: data/content/fel/index.html:159 data/content/fel/index.html:165
-#: data/content/games/index.html:718 data/content/games/index.html:724
-#: data/content/kde/index.html:154 data/content/kiosk/index.html:87
-#: data/content/kiosk/index.html:93 data/content/moblin/index.html:93
-#: data/content/moblin/index.html:99 data/content/security/index.html:82
-#: data/content/security/index.html:88
+#: data/content/kde/index.html:148 data/content/kde/index.html:154
+#: data/content/kiosk/index.html:87 data/content/kiosk/index.html:93
+#: data/content/lxde/index.html:90 data/content/lxde/index.html:96
+#: data/content/moblin/index.html:93 data/content/moblin/index.html:99
+#: data/content/security/index.html:82 data/content/security/index.html:88
+#: data/content/soas/index.html:119 data/content/soas/index.html:125
+#: data/content/xfce/index.html:88 data/content/xfce/index.html:94
 #, python-format
-msgid "%(size)s for %(arch)s-bit PC ISO"
-msgstr "%(size)s für %(arch)s-bit PC ISO"
+msgid "%(size)sMB for %(arch)s PC ISO"
+msgstr ""
 
 #: data/content/broffice/index.html:43
 msgid "About Spin: BrOffice.org"
@@ -2154,6 +2154,15 @@ msgid ""
 "operating system that is executed upon boot, without installation on a hard "
 "drive. A desktop icon can be used to install the OS if wanted."
 msgstr "Die Live-DVD kann via http oder als Torrent-Datei heruntergeladen werden. Eine Live-DVD ist ein Betriebssystem, das beim Start von der DVD geladen wird, ohne sich auf Ihre Festplatte zu installieren. Falls Sie das System direkt installieren möchten, steht ein Symbol auf der Schreibtischoberfläche bereit."
+
+#: data/content/fel/index.html:159 data/content/fel/index.html:165
+#: data/content/games/index.html:718 data/content/games/index.html:724
+#: data/content/robotics/index.html:85 data/content/robotics/index.html:91
+#: data/content/scientific-kde/index.html:85
+#: data/content/scientific-kde/index.html:91
+#, python-format
+msgid "%(size)sGB for %(arch)s PC ISO"
+msgstr ""
 
 #: data/content/fel/index.html:173
 msgid ""
@@ -3755,8 +3764,9 @@ msgid "Asteroid-like game with powerups."
 msgstr "Asteroid-ähnliches Spiel mit Erweiterungen."
 
 #: data/content/games/index.html:696
-msgid "Fedora 17 Games Spin"
-msgstr "Fedora 17 Games Spin"
+#, python-format
+msgid "Fedora %s Games Spin"
+msgstr ""
 
 #: data/content/games/index.html:698
 msgid ""
@@ -4111,8 +4121,9 @@ msgid ""
 msgstr "HInweis: Aus Platzgründen sind nicht alle aufgelisteten Programme auf der Live-CD enthalten. Nach der Installation, können Sie viele weitere tolle KDE-Anwendungen entdecken, indem Sie die integrierte Paketverwaltung unter Systemeinstellungen -> Programme hinzufügen und entfernen verwenden!"
 
 #: data/content/kde/index.html:125
-msgid "Fedora 17 KDE Plasma Desktop Spin"
-msgstr "Fedora 17 KDE Plasma Desktop Spin"
+#, python-format
+msgid "Fedora %s KDE Plasma Desktop Spin"
+msgstr ""
 
 #: data/content/kde/index.html:127
 msgid ""
@@ -4123,14 +4134,6 @@ msgid ""
 "if you like it, you can install Fedora directly  to your hard drive straight"
 " from the Live Media desktop if you like."
 msgstr ""
-
-#: data/content/kde/index.html:148 data/content/lxde/index.html:90
-#: data/content/lxde/index.html:96 data/content/soas/index.html:119
-#: data/content/soas/index.html:125 data/content/xfce/index.html:88
-#: data/content/xfce/index.html:94
-#, python-format
-msgid "%(size)sMB for %(arch)s-bit PC ISO"
-msgstr "%(size)sMB für %(arch)s-bit PC ISO"
 
 #: data/content/kde/index.html:159
 msgid "KDE Plasma Desktop Support"
@@ -4466,11 +4469,6 @@ msgid ""
 "\"Robotics\"</span>."
 msgstr ""
 
-#: data/content/robotics/index.html:85 data/content/robotics/index.html:91
-#, python-format
-msgid "1.1GB for %(arch)s-bit PC ISO"
-msgstr "1.1GB für %(arch)s-bit PC ISO"
-
 #: data/content/robotics/index.html:97
 msgid "Robotics Support"
 msgstr "Robotik-Unterstützung"
@@ -4545,12 +4543,6 @@ msgid ""
 "install the OS if wanted. Once you have the ISO, you can either create a <a "
 "href=\"%s\">Bootable USB stick</a> or burn it to a <a href=\"%s\">DVD</a>."
 msgstr ""
-
-#: data/content/scientific-kde/index.html:85
-#: data/content/scientific-kde/index.html:91
-#, python-format
-msgid "2.4GB for %(arch)s-bit PC ISO"
-msgstr "2.4GB für %(arch)s-bit PC ISO"
 
 #: data/content/scientific-kde/index.html:96
 msgid "Fedora Scientific Support"
@@ -4904,6 +4896,11 @@ msgstr "Unsicher, ob Ihr Computer 32- oder 64-Bit unterstützt?"
 #: data/templates/download-tab.html:10
 msgid "The 32-bit edition is compatible with both 32-bit and 64-bit PCs."
 msgstr "Die 32-Bit-Version ist sowohl mit 32-Bit- wie auch 64-Bit PCs kompatibel."
+
+#: data/templates/download-tab.html:11
+msgid ""
+"Read our documentation on how to tell if your computer is 32-bit or 64-bit."
+msgstr ""
 
 #: data/templates/foot.html:9 data/templates/head.html:7
 msgid "Fedora"
