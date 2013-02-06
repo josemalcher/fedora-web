@@ -4,6 +4,9 @@ release={
     'prev_id':     '17',
     'curr_id':     '18',
     'next_id':     '19',
+    'curr_arm_id': '18',
+    'curr_ppc_id': '18',
+    'curr_s390_id': '18',
     'curr_name':   'Spherical Cow',
     'next_name':   'Schroedingers Cat',
     'curr_state':  ''         # either 'Alpha', 'Beta' or '' (i.e empty)
@@ -33,9 +36,7 @@ iso_size={
     'x86_64_Live_XFCE':    '691',       # In MB
     'i386_Netinstall':     '327',       # In MB
     'x86_64_Netinstall':   '294',       # In MB
-    'PPC_DVD':             '1.8',       # In GB
-    'PPC_Netinstall':      '195',       # In MB
-    'PPC64_DVD':           '2.4',       # In GB
-    'PPC64_Netinstall':    '217',       # In MB
-    's390_DVD':            '2.7',       # In GB
+    'PPC64_DVD':           '4.2',       # In GB
+    'PPC64_Netinstall':    '303',       # In MB
+    's390_DVD':            '4.0',       # In GB
 }

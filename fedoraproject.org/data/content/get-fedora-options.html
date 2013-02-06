@@ -471,128 +471,131 @@ ec2_f16 = [
 
                         </div>
                         <div class="grid_10 omega format-block">
-                            <h4>${_('Fedora 17 ARM')}</h4>
+                            <h4>${_('Fedora %(release)s ARM') % {'release':global_variables.release['curr_arm_id']}}</h4>
                             <p>${_('ARM chips are the most widely-produced processor family in the world; they have historically been used in cell phones and embedded applications, and are increasingly used in tablet devices and low-power-consumption servers. The Fedora-ARM project is an initiative to bring Fedora to this processor family.')}</p>
-                            <p>${_('A list of currently supplied prebuilt images for the Fedora 17 ARM GA release can be found at:')}</p>
-                            <p><a href="https://fedoraproject.org/wiki/Architectures/ARM/Fedora_17_GA#Featured_Images/">${_('Fedora 17 GA Featured Images')}</a></p>
-                            <div class="arch-note"><p><strong>${_('Note for Raspberry Pi users')}</strong></p><p>${Markup(_('Raspberry Pi support is not included in Fedora 17 GA because it does not meet the Fedora release guidelines. Specifically, the Raspberry Pi relies upon a custom kernel version, not upstream, as well as special GPU binary blobs which are not acceptable under the current firmware exception. Nonetheless, an &lt;a href="%s"&gt;unsupported "nightly" Fedora 17 snapshot&lt;/a&gt; is available.') % 'http://scotland.proximity.on.ca/arm-nightlies/')}</p></div>
+                            <p>${_('A list of currently supplied prebuilt images for the Fedora %(release)s ARM GA release can be found at:') % {'release':global_variables.release['curr_arm_id']}}</p>
+                            <p><a href="http://fedoraproject.org/wiki/Architectures/ARM/F18_Release_Announcement#Release_Notes/">${_('Fedora %(release)s GA Release Announcement') % {'release':global_variables.release['curr_arm_id']}}</a></p>
+                            <div class="arch-note"><p><strong>${_('Note for Raspberry Pi users')}</strong></p><p>${Markup(_('Raspberry Pi support is not included in Fedora %(release)s GA because it does not meet the Fedora release guidelines. Specifically, the Raspberry Pi relies upon a custom kernel version, not upstream, as well as special GPU binary blobs which are not acceptable under the current firmware exception. Nonetheless, an &lt;a href="%(nightly)s"&gt;unsupported "nightly" Fedora %(release)s snapshot&lt;/a&gt; is available.') % {'release':'18', 'nightly':'http://cdot.senecacollege.ca/raspberry_pi_fedora_remix/'})}</p></div>
 
 								</div>
                         <div class="clear"></div>
 			<div class="grid_10 prefix_2 alpha omega">
                             <h6>${_('Available images and instructions:')}</h6>
-							<p>${_('The following images have been tested and are recommended for most users and include Versatile Express (QEMU), Trimslice, Beagleboard xM, Pandaboard, Kirkwood Plugs, Highbank and iMX based hardware platforms. For the whole list of images please visit')} <a href="https://fedoraproject.org/wiki/Architectures/ARM/Fedora_17_GA#Featured_Images/">${_('all the prebuilt images')}</a> ${_('for the Fedora 17 ARM GA release.')}</p>
+							<p>${_('The following images have been tested and are recommended for most users and include Versatile Express (QEMU), Trimslice (TEGRA), Beagleboard (OMAP3), Pandaboard (OMAP4) and GuruPlug (Kirkwood) based hardware platforms. For the whole list of images please visit')} <a href="http://fedoraproject.org/wiki/Architectures/ARM/F18_Release_Announcement#What_is_included_in_the_Fedora_18_for_ARM_release.3F">${_('all the prebuilt images')}</a> ${_('for the Fedora %(release)s ARM GA release.') % {'release':global_variables.release['curr_arm_id']}}</p>
 
                         </div>
                         <div class="clear"></div>
-			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
-                        <div class="grid_4 prefix_2 alpha arch">
-                            <h5><a href="https://fedoraproject.org/wiki/Architectures/ARM/BeagleBoard-xM">${_('BeagleBoard-xM')}</a></h5>
-			</div>
-			<div class="grid_6 omega arch">
-                            <a href="https://fedoraproject.org/wiki/Architectures/ARM/BeagleBoard-xM#Download_the_image" class="download-button-mini">${_('Download Image and Instructions')}</a>
-                        </div>
-			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
-                        <div class="grid_4 prefix_2 alpha arch">
-                            <h5><a href="https://fedoraproject.org/wiki/Architectures/ARM/Kirkwood">${_('Kirkwood Devices')}</a></h5>
-			</div>
-			<div class="grid_6 omega arch">
-                            <a href="https://fedoraproject.org/wiki/Architectures/ARM/Kirkwood#Downloading_the_image" class="download-button-mini">${_('Download Image and Instructions')}</a>
-                        </div>
-                        <div class="grid_10 prefix_2 alpha omega"><hr /></div>
-                        <div class="grid_4 prefix_2 alpha arch">
-                            <h5><a href="https://fedoraproject.org/wiki/Architectures/ARM/EFIKA_MX_Smarttop">${_('iMX')}</a></h5>
-			</div>
-			<div class="grid_6 omega arch">
-                            <a href="https://fedoraproject.org/wiki/Architectures/ARM/EFIKA_MX_Smarttop#Download_the_image" class="download-button-mini">${_('Download Image and Instructions')}</a>
-                        </div>
-                        <div class="grid_10 prefix_2 alpha omega"><hr /></div>
-                        <div class="grid_4 prefix_2 alpha arch">
-                            <h5><a href="https://fedoraproject.org/wiki/Architectures/ARM/Pandaboard">${_('Pandaboard')}</a></h5>
-			</div>
-			<div class="grid_6 omega arch">
-                            <a href="https://fedoraproject.org/wiki/Architectures/ARM/Pandaboard#Download_the_image" class="download-button-mini">${_('Download Image and Instructions')}</a>
-                        </div>
-                        <div class="grid_10 prefix_2 alpha omega"><hr /></div>
-                        <div class="grid_4 prefix_2 alpha arch">
-                            <h5><a href="https://fedoraproject.org/wiki/Architectures/ARM/Trimslice">${_('Trimslice')}</a></h5>
-			</div>
-			<div class="grid_6 omega arch">
-                            <a href="https://fedoraproject.org/wiki/Architectures/ARM/Trimslice#Download_the_image" class="download-button-mini">${_('Download Image and Instructions')}</a>
-                        </div>
-                        <div class="grid_10 prefix_2 alpha omega"><hr /></div>
-                        <div class="grid_4 prefix_2 alpha arch">
-                            <h5><a href="https://fedoraproject.org/wiki/Architectures/ARM/Versatile_Express">${_('Versatile Express')}</a></h5>
-			</div>
-			<div class="grid_6 omega arch">
-                            <a href="https://fedoraproject.org/wiki/Architectures/ARM/Versatile_Express#Download_the_image" class="download-button-mini">${_('Download Image and Instructions')}</a>
-                            <p class="fine-print">${_('Images for virtualization through QEMU')}</p>
-                        </div>
-			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
-			<div class="clear"></div>
-                        <div class="grid_10 prefix_2 alpha omega">
-                            <p><strong>${_('If you would like to provide your own kernel and just require a root file system:')}</strong></p>
-                        </div>
-                        <div class="clear"></div>
-			<div class="purchase-options">
-                        	<div class="grid_5 prefix_2 alpha">
-                            <div style="padding: 0 0 10px 59px"><h5>${_('SFP Serial Image')}</h5>
-                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/17/Images/arm/Fedora-17-arm-console.tar.xz" class="download-button-mini download-splash">${_('Download Now!')}</a>
-                      	 	 </div>
-                      	 	 </div>
-                     	   <div class="grid_4 prefix_1 omega online-vendors">
-                            <h5>${_('HFP Serial Image')}</h5>
-                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/17/Images/armhfp/Fedora-17-armhfp-console.tar.xz" class="download-button-mini download-splash">${_('Download Now!')}</a>
-                     	   </div>
-
-                        <div class="clear"></div>
-			</div>
 			<div class="grid_10 prefix_2 alpha omega">
          <div class="clear"></div>
-         <br />
-                            <p><strong>${_('XFCE Desktop:')}</strong></p>
+                            <p><strong>${_('BeagleBoard:')}</strong></p>
                         </div>
                         <div class="clear"></div>
 			<div class="purchase-options">
                         	<div class="grid_5 prefix_2 alpha">
-                            <div style="padding: 0 0 10px 59px"><h5>${_('SFP XFCE Image')}</h5>
-                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/17/Images/arm/Fedora-17-arm-xfce.tar.xz" class="download-button-mini download-splash">${_('Download Now!')}</a>
+                            <div style="padding: 0 0 10px 59px"><h5>${_('SFP BeagleBoard Image')}</h5>
+                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/18/Images/arm/Fedora-18-beagle-arm.img.xz" class="download-button-mini download-splash">${_('Download Now!')}</a>
                       	 	 </div>
                       	 	 </div>
                      	   <div class="grid_4 prefix_1 omega online-vendors">
-                            <h5>${_('HFP XFCE Image')}</h5>
-                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/17/Images/armhfp/Fedora-17-armhfp-xfce.tar.xz" class="download-button-mini download-splash">${_('Download Now!')}</a>
+                            <h5>${_('HFP BeagleBoard Image')}</h5>
+                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/18/Images/armhfp/Fedora-18-beagle-armhfp.img.xz" class="download-button-mini download-splash">${_('Download Now!')}</a>
                      	   </div>
          </div>
          <div class="clear"></div>
-
+			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
+			<div class="grid_10 prefix_2 alpha omega">
+         <div class="clear"></div>
+                            <p><strong><a href="http://fedoraproject.org/wiki/Architectures/ARM/F18/GuruPlug">${_('GuruPlug (Kirkwood)')}</a></strong></p>
+                        </div>
+                        <div class="clear"></div>
+			<div class="purchase-options">
+                        	<div class="grid_5 prefix_2 alpha">
+                            <div style="padding: 0 0 10px 59px"><h5>${_('SFP GuruPlug Image')}</h5>
+                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/18/Images/arm/Fedora-18-kirkwood-arm.img.xz" class="download-button-mini download-splash">${_('Download Now!')}</a>
+                      	 	 </div>
+                      	 	 </div>
+                     	   <div class="grid_4 prefix_1 omega online-vendors">
+                            
+                     	   </div>
+         </div>
+         <div class="clear"></div>
+			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
+			<div class="grid_10 prefix_2 alpha omega">
+         <div class="clear"></div>
+                            <p><strong><a href="http://fedoraproject.org/wiki/Architectures/ARM/F18/Versatile_Express">${_('Versatile Express')}</a></strong></p>
+                        </div>
+                        <div class="clear"></div>
+			<div class="purchase-options">
+                        	<div class="grid_5 prefix_2 alpha">
+                            <div style="padding: 0 0 10px 59px"><h5>${_('SFP Vexpress XFCE Image')}</h5>
+                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/18/Images/arm/Fedora-18-vexpress-xfce-arm.tar.xz" class="download-button-mini download-splash">${_('Download Now!')}</a>
+                      	 	 </div>
+                      	 	 </div>
+                     	   <div class="grid_4 prefix_1 omega online-vendors">
+                            <h5>${_('HFP Vexpress XFCE Image')}</h5>
+                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/18/Images/armhfp/Fedora-18-vexpress-xfce-armhfp.tar.xz" class="download-button-mini download-splash">${_('Download Now!')}</a>
+                     	   </div>
+         </div>
+         <div class="clear"></div>
+			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
+			<div class="grid_10 prefix_2 alpha omega">
+         <div class="clear"></div>
+                            <p><strong><a href="http://fedoraproject.org/wiki/Architectures/ARM/F18/Pandaboard">${_('Pandaboard')}</a></strong></p>
+                        </div>
+                        <div class="clear"></div>
+			<div class="purchase-options">
+                        	<div class="grid_5 prefix_2 alpha">
+                            <div style="padding: 0 0 10px 59px"><h5>${_('SFP Pandaboard Image')}</h5>
+                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/18/Images/arm/Fedora-18-panda-arm.img.xz" class="download-button-mini download-splash">${_('Download Now!')}</a>
+                      	 	 </div>
+                      	 	 </div>
+                     	   <div class="grid_4 prefix_1 omega online-vendors">
+                            <h5>${_('HFP Pandaboard Image')}</h5>
+                            <a href="http://downloadl.fedoraproject.org/pub/fedora-secondary/releases/18/Images/armhfp/Fedora-18-panda-armhfp.img.xz" class="download-button-mini download-splash">${_('Download Now!')}</a>
+                     	   </div>
+         </div>
+         <div class="clear"></div>
+			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
+			<div class="grid_10 prefix_2 alpha omega">
+         <div class="clear"></div>
+                            <p><strong><a href="http://fedoraproject.org/wiki/Architectures/ARM/F18/Trimslice">${_('TrimSlice')}</a></strong></p>
+                        </div>
+                        <div class="clear"></div>
+			<div class="purchase-options">
+                        	<div class="grid_5 prefix_2 alpha">
+                            <div style="padding: 0 0 10px 59px"><h5>${_('SFP Pandaboard Image')}</h5>
+                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/18/Images/arm/Fedora-18-trimslice-arm.img.xz" class="download-button-mini download-splash">${_('Download Now!')}</a>
+                      	 	 </div>
+                      	 	 </div>
+                     	   <div class="grid_4 prefix_1 omega online-vendors">
+                            <h5>${_('HFP Pandaboard Image')}</h5>
+                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/18/Images/armhfp/Fedora-18-trimslice-armhfp.img.xz" class="download-button-mini download-splash">${_('Download Now!')}</a>
+                     	   </div>
+         </div>
+         <div class="clear"></div>
+			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
+			<div class="grid_10 prefix_2 alpha omega">
+<p>${Markup(_('The list of known Fedora 18 remixes is catalogued at &lt;a href="%s"&gt;Architectures/ARM/F18/Remixes&lt;/a&gt;. Likewise, root filesystem tarballs are provided to help you make your own remixes.') % 'http://fedoraproject.org/wiki/Architectures/ARM/F18/Remixes')}</p>
+            </div>
          				   <div class="grid_1 suffix_1 alpha">
                         <a href="https://fedoraproject.org/wiki/Architectures/PowerPC"><img class="download-media" alt="${_('ARM architecture')}" src="${path}/static/images/ppc.png" />
                         </a>
                         </div>
                         <div class="grid_10 omega">
-                            <h4>${_('Fedora 17 PPC')}</h4>
+                            <h4>${_('Fedora %(release)s PPC64') % {'release':global_variables.release['curr_ppc_id']}}</h4>
                             <p>${_('Fedora Releases for PowerPC have been most extensively tested on IBM Power systems, but is also known to work on Apple Mac G5 systems.')}</p>
 								</div>
 									<div class="clear"></div>
 			<div class="purchase-options">
                             <div class="grid_5 prefix_2 alpha">
 
-                                <h6>${_('PPC')}</h6>
                             <h5>${_('DVD Image')}</h5>
-                                <a href="${global_variables.path['download_arch']}/17/Fedora/ppc/iso/Fedora-17-ppc-DVD.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
-                                <p class="fine-print">${_('%sGB DVD ISO') % global_variables.iso_size['PPC_DVD']}</p>
-                            <h5>${_('Netinstall CD')}</h5>
-                                <a href="${global_variables.path['download_arch']}/17/Fedora/ppc/iso/Fedora-17-ppc-netinst.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
-                                <p class="fine-print">${_('%sMB CD ISO') % global_variables.iso_size['PPC_Netinstall']}</p>
+                                <a href="${global_variables.path['download_arch']}/18/Fedora/ppc64/iso/Fedora-18-ppc64-DVD.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
+                                <p class="fine-print">${_('%sGB DVD ISO') % global_variables.iso_size['PPC64_DVD']}</p>
                             </div>
                      	   <div class="grid_4 prefix_1 omega online-vendors">
-                                <h6>${_('PPC64')}</h6>
-                                <h5>${_('DVD Image')}</h5>
-                                <a href="${global_variables.path['download_arch']}/17/Fedora/ppc64/iso/Fedora-17-ppc64-DVD.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
-                                <p class="fine-print">${_('%sGB DVD ISO') % global_variables.iso_size['PPC64_DVD']}</p>
-                           <h5>${_('Netinstall CD')}</h5>
-                                <a href="${global_variables.path['download_arch']}/17/Fedora/ppc64/iso/Fedora-17-ppc64-netinst.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
+                                <h5>${_('Netinstall CD')}</h5>
+                                <a href="${global_variables.path['download_arch']}/18/Fedora/ppc64/iso/Fedora-18-ppc64-netinst.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sMB CD ISO') % global_variables.iso_size['PPC64_Netinstall']}</p>
                             </div>
          </div>
@@ -603,10 +606,10 @@ ec2_f16 = [
                         </a>
                         </div>
                         <div class="grid_10 omega">
-                            <h4>${_('Fedora 17 s390')}</h4>
+                            <h4>${_('Fedora %(release)s s390') % {'release':global_variables.release['curr_s390_id']}}</h4>
                             <p>${_('Fedora Release Image based on the s390x architecture.')}</p>
                             <h5>${_('DVD Image')}</h5>
-                                <a href="${global_variables.path['download_arch']}/17/Fedora/s390x/iso/Fedora-17-s390x-DVD.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
+                                <a href="${global_variables.path['download_arch']}/18/Fedora/s390x/iso/Fedora-18-s390x-DVD.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sGB DVD ISO') % global_variables.iso_size['s390_DVD']}</p>
 								</div>
 									<div class="clear"></div>
