@@ -14,7 +14,7 @@
     <link py:if="lang in ('ar', 'bal', 'fa', 'he')" rel="stylesheet" type="text/css" media="all" href="${path}/static/css/rtl_960.css" />
     <link py:if="lang in ('ar', 'bal', 'fa', 'he')" rel="stylesheet" type="text/css" media="all" href="${path}/static/css/fpo960-rtl.css" />
 
-    ${Markup('&lt;!--[if IE 7]&gt;')}
+    <!--[if IE 7]>
         <link rel="stylesheet" type="text/css" href="${path}/static/css/ie7.css" media="screen" />
         <style type="text/css">
             #wrapper
@@ -27,7 +27,7 @@
             }
         </style>
 
-    ${Markup('&lt;![endif]--&gt;')}
+    <![endif]-->
 
     <noscript> 
         <link rel="stylesheet" type="text/css" media="all" href="${path}/static/css/nojs.css" />
