@@ -10,7 +10,7 @@ endif
 HTML_FILES = $(shell find data -name "*.html")
 # Check if the Fedora release is at least Fedora 18 (httpd-2.4.3 or later)
 NEW_HTTPD = $(shell expr `cat /etc/redhat-release  |awk '{print $$3}'` \>= 18)
-RESOURCE_NAME = /tmp/po_dir
+RESOURCE_NAME = /var/tmp/po_dir
 PYTHON = python
 PYBABEL = $(PYTHON) /usr/bin/pybabel
 BASEPATH = /
