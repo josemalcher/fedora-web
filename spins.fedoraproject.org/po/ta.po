@@ -1,5 +1,5 @@
 # Translations template for PROJECT.
-# Copyright (C) 2012 ORGANIZATION
+# Copyright (C) 2013 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # 
 # Translators:
@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-07-04 01:03+0200\n"
-"PO-Revision-Date: 2012-07-03 23:19+0000\n"
-"Last-Translator: Kévin Raymond <shaiton@fedoraproject.org>\n"
+"POT-Creation-Date: 2013-01-13 00:17+0100\n"
+"PO-Revision-Date: 2013-01-12 23:22+0000\n"
+"Last-Translator: robyduck <robyduck@fedoraproject.org>\n"
 "Language-Team: Tamil <tamil-users@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -837,14 +837,15 @@ msgstr "நேரடி பதிவிறக்கம்"
 #: data/content/aos/index.html:94 data/content/aos/index.html:100
 #: data/content/broffice/index.html:84 data/content/broffice/index.html:90
 #: data/content/design/index.html:100 data/content/design/index.html:106
-#: data/content/fel/index.html:159 data/content/fel/index.html:165
-#: data/content/games/index.html:718 data/content/games/index.html:724
-#: data/content/kde/index.html:154 data/content/kiosk/index.html:87
-#: data/content/kiosk/index.html:93 data/content/moblin/index.html:93
-#: data/content/moblin/index.html:99 data/content/security/index.html:82
-#: data/content/security/index.html:88
+#: data/content/kde/index.html:148 data/content/kde/index.html:154
+#: data/content/kiosk/index.html:87 data/content/kiosk/index.html:93
+#: data/content/lxde/index.html:90 data/content/lxde/index.html:96
+#: data/content/moblin/index.html:93 data/content/moblin/index.html:99
+#: data/content/security/index.html:82 data/content/security/index.html:88
+#: data/content/soas/index.html:119 data/content/soas/index.html:125
+#: data/content/xfce/index.html:88 data/content/xfce/index.html:94
 #, python-format
-msgid "%(size)s for %(arch)s-bit PC ISO"
+msgid "%(size)sMB for %(arch)s PC ISO"
 msgstr ""
 
 #: data/content/broffice/index.html:43
@@ -2143,6 +2144,15 @@ msgid ""
 "The LiveDVD can be downloaded either via http or torrent. A LiveDVD is an "
 "operating system that is executed upon boot, without installation on a hard "
 "drive. A desktop icon can be used to install the OS if wanted."
+msgstr ""
+
+#: data/content/fel/index.html:159 data/content/fel/index.html:165
+#: data/content/games/index.html:718 data/content/games/index.html:724
+#: data/content/robotics/index.html:85 data/content/robotics/index.html:91
+#: data/content/scientific-kde/index.html:85
+#: data/content/scientific-kde/index.html:91
+#, python-format
+msgid "%(size)sGB for %(arch)s PC ISO"
 msgstr ""
 
 #: data/content/fel/index.html:173
@@ -3745,7 +3755,8 @@ msgid "Asteroid-like game with powerups."
 msgstr ""
 
 #: data/content/games/index.html:696
-msgid "Fedora 17 Games Spin"
+#, python-format
+msgid "Fedora %s Games Spin"
 msgstr ""
 
 #: data/content/games/index.html:698
@@ -4101,7 +4112,8 @@ msgid ""
 msgstr ""
 
 #: data/content/kde/index.html:125
-msgid "Fedora 17 KDE Plasma Desktop Spin"
+#, python-format
+msgid "Fedora %s KDE Plasma Desktop Spin"
 msgstr ""
 
 #: data/content/kde/index.html:127
@@ -4112,14 +4124,6 @@ msgid ""
 "out, and it won't put your files at risk. Take Fedora for a test drive, and "
 "if you like it, you can install Fedora directly  to your hard drive straight"
 " from the Live Media desktop if you like."
-msgstr ""
-
-#: data/content/kde/index.html:148 data/content/lxde/index.html:90
-#: data/content/lxde/index.html:96 data/content/soas/index.html:119
-#: data/content/soas/index.html:125 data/content/xfce/index.html:88
-#: data/content/xfce/index.html:94
-#, python-format
-msgid "%(size)sMB for %(arch)s-bit PC ISO"
 msgstr ""
 
 #: data/content/kde/index.html:159
@@ -4456,11 +4460,6 @@ msgid ""
 "\"Robotics\"</span>."
 msgstr ""
 
-#: data/content/robotics/index.html:85 data/content/robotics/index.html:91
-#, python-format
-msgid "1.1GB for %(arch)s-bit PC ISO"
-msgstr ""
-
 #: data/content/robotics/index.html:97
 msgid "Robotics Support"
 msgstr ""
@@ -4534,12 +4533,6 @@ msgid ""
 "boot, without installation on a hard drive. A desktop icon can be used to "
 "install the OS if wanted. Once you have the ISO, you can either create a <a "
 "href=\"%s\">Bootable USB stick</a> or burn it to a <a href=\"%s\">DVD</a>."
-msgstr ""
-
-#: data/content/scientific-kde/index.html:85
-#: data/content/scientific-kde/index.html:91
-#, python-format
-msgid "2.4GB for %(arch)s-bit PC ISO"
 msgstr ""
 
 #: data/content/scientific-kde/index.html:96
@@ -4893,6 +4886,11 @@ msgstr ""
 
 #: data/templates/download-tab.html:10
 msgid "The 32-bit edition is compatible with both 32-bit and 64-bit PCs."
+msgstr ""
+
+#: data/templates/download-tab.html:11
+msgid ""
+"Read our documentation on how to tell if your computer is 32-bit or 64-bit."
 msgstr ""
 
 #: data/templates/foot.html:9 data/templates/head.html:7

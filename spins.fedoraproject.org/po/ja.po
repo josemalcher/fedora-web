@@ -1,5 +1,5 @@
 # Translations template for PROJECT.
-# Copyright (C) 2012 ORGANIZATION
+# Copyright (C) 2013 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # 
 # Translators:
@@ -7,14 +7,14 @@
 # Hajime Taira <htaira@redhat.com>, 2011.
 # KATO Tomoyuki <tomo@dream.daynight.jp>, 2011.
 # Takanori MATSUURA <t.matsuu@gmail.com>, 2011.
-# Tomoyuki KATO <tomo@dream.daynight.jp>, 2011, 2012.
+# Tomoyuki KATO <tomo@dream.daynight.jp>, 2011-2013.
 #   <www.carrotsoft@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-07-04 01:03+0200\n"
-"PO-Revision-Date: 2012-07-04 01:52+0000\n"
+"POT-Creation-Date: 2013-01-13 00:17+0100\n"
+"PO-Revision-Date: 2013-01-13 11:07+0000\n"
 "Last-Translator: Tomoyuki KATO <tomo@dream.daynight.jp>\n"
 "Language-Team: Japanese <trans-ja@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
@@ -843,15 +843,16 @@ msgstr "直接ダウンロード"
 #: data/content/aos/index.html:94 data/content/aos/index.html:100
 #: data/content/broffice/index.html:84 data/content/broffice/index.html:90
 #: data/content/design/index.html:100 data/content/design/index.html:106
-#: data/content/fel/index.html:159 data/content/fel/index.html:165
-#: data/content/games/index.html:718 data/content/games/index.html:724
-#: data/content/kde/index.html:154 data/content/kiosk/index.html:87
-#: data/content/kiosk/index.html:93 data/content/moblin/index.html:93
-#: data/content/moblin/index.html:99 data/content/security/index.html:82
-#: data/content/security/index.html:88
+#: data/content/kde/index.html:148 data/content/kde/index.html:154
+#: data/content/kiosk/index.html:87 data/content/kiosk/index.html:93
+#: data/content/lxde/index.html:90 data/content/lxde/index.html:96
+#: data/content/moblin/index.html:93 data/content/moblin/index.html:99
+#: data/content/security/index.html:82 data/content/security/index.html:88
+#: data/content/soas/index.html:119 data/content/soas/index.html:125
+#: data/content/xfce/index.html:88 data/content/xfce/index.html:94
 #, python-format
-msgid "%(size)s for %(arch)s-bit PC ISO"
-msgstr "%(size)s %(arch)sビットPC版ISO"
+msgid "%(size)sMB for %(arch)s PC ISO"
+msgstr "%(arch)s PC 向け %(size)sMB ISO"
 
 #: data/content/broffice/index.html:43
 msgid "About Spin: BrOffice.org"
@@ -2150,6 +2151,15 @@ msgid ""
 "operating system that is executed upon boot, without installation on a hard "
 "drive. A desktop icon can be used to install the OS if wanted."
 msgstr "LiveDVD は HTTP または torrent 経由でダウンロードできます。LiveDVD はハードディスクにインストールすることなく起動時に実行されるオペレーティングシステムです。希望すれば、デスクトップ・アイコンを使用して OS をインストールできます。"
+
+#: data/content/fel/index.html:159 data/content/fel/index.html:165
+#: data/content/games/index.html:718 data/content/games/index.html:724
+#: data/content/robotics/index.html:85 data/content/robotics/index.html:91
+#: data/content/scientific-kde/index.html:85
+#: data/content/scientific-kde/index.html:91
+#, python-format
+msgid "%(size)sGB for %(arch)s PC ISO"
+msgstr "%(arch)s PC 向け %(size)sGB ISO"
 
 #: data/content/fel/index.html:173
 msgid ""
@@ -3751,8 +3761,9 @@ msgid "Asteroid-like game with powerups."
 msgstr "パワーアップ型の小惑星のようなゲームです。"
 
 #: data/content/games/index.html:696
-msgid "Fedora 17 Games Spin"
-msgstr "Fedora 17 ゲーム Spin"
+#, python-format
+msgid "Fedora %s Games Spin"
+msgstr "Fedora %s ゲーム Spin"
 
 #: data/content/games/index.html:698
 msgid ""
@@ -4107,8 +4118,9 @@ msgid ""
 msgstr "注：容量の都合から、記載したすべてのアプリケーションが Live CD において利用可能とは限りません。インストール後、システム設定→ソフトウェアの追加/削除にある統合されたパッケージ管理製品群を使用して、もっとかっこいい KDE アプリケーションを発見できます！"
 
 #: data/content/kde/index.html:125
-msgid "Fedora 17 KDE Plasma Desktop Spin"
-msgstr "Fedora 17 KDE Plasma デスクトップ Spin"
+#, python-format
+msgid "Fedora %s KDE Plasma Desktop Spin"
+msgstr "Fedora %s KDE Plasma デスクトップ Spin"
 
 #: data/content/kde/index.html:127
 msgid ""
@@ -4119,14 +4131,6 @@ msgid ""
 "if you like it, you can install Fedora directly  to your hard drive straight"
 " from the Live Media desktop if you like."
 msgstr "これは Fedora Linux オペレーティングシステムの KDE Plasma Desktop 版の最新バージョンです。これさえあれば Fedora の KDE Plasma Desktop を試せます—試してみるために現在のシステムにあるものを何も削除する必要がありません。また、ファイルを置くリスクがありません。テストを実行するためにFedoraを使います。もし気に入れば、好きなLiveメディアデスクトップから直接ハードディスクにインストールできます。"
-
-#: data/content/kde/index.html:148 data/content/lxde/index.html:90
-#: data/content/lxde/index.html:96 data/content/soas/index.html:119
-#: data/content/soas/index.html:125 data/content/xfce/index.html:88
-#: data/content/xfce/index.html:94
-#, python-format
-msgid "%(size)sMB for %(arch)s-bit PC ISO"
-msgstr "%(arch)s ビット PC 向け %(size)sMB ISO"
 
 #: data/content/kde/index.html:159
 msgid "KDE Plasma Desktop Support"
@@ -4462,11 +4466,6 @@ msgid ""
 "\"Robotics\"</span>."
 msgstr "すでにFedoraをインストールしているならば、LiveDVDをダウンロードする必要がありません。1つのコマンドを使用してロボティクス開発環境を完全にインストールできます: <span class=\"command\">yum groupinstall \"Robotics\"</span>。"
 
-#: data/content/robotics/index.html:85 data/content/robotics/index.html:91
-#, python-format
-msgid "1.1GB for %(arch)s-bit PC ISO"
-msgstr "%(arch)s ビット PC 向け 1.1GB ISO"
-
 #: data/content/robotics/index.html:97
 msgid "Robotics Support"
 msgstr "ロボティクス・サポート"
@@ -4541,12 +4540,6 @@ msgid ""
 "install the OS if wanted. Once you have the ISO, you can either create a <a "
 "href=\"%s\">Bootable USB stick</a> or burn it to a <a href=\"%s\">DVD</a>."
 msgstr "Fedoraサイエンスはtorrent経由または直接ダウンロードでLive DVDとして利用可能です。Live DVDはハードディスクにインストールせずに起動できる実行可能なオペレーティングシステムです。希望するならば、デスクトップのアイコンを使用して、OSをインストールするために使用できます。一度ISOを手に入れると、<a href=\"%s\">起動可能USBメモリー</a>を作成する、または<a href=\"%s\">DVD</a>を書き込むことができます。"
-
-#: data/content/scientific-kde/index.html:85
-#: data/content/scientific-kde/index.html:91
-#, python-format
-msgid "2.4GB for %(arch)s-bit PC ISO"
-msgstr "%(arch)s ビット PC 向け 2.4GB ISO"
 
 #: data/content/scientific-kde/index.html:96
 msgid "Fedora Scientific Support"
@@ -4900,6 +4893,11 @@ msgstr "お使いのコンピューターが32ビットか64ビットかわか�
 #: data/templates/download-tab.html:10
 msgid "The 32-bit edition is compatible with both 32-bit and 64-bit PCs."
 msgstr "32ビット版は32ビットPCと64ビットPCのどちらにも互換性があります。"
+
+#: data/templates/download-tab.html:11
+msgid ""
+"Read our documentation on how to tell if your computer is 32-bit or 64-bit."
+msgstr "お使いのコンピューターが 32 ビットか 64 ビットかを確認する方法は、私たちのドキュメントを参照してください。"
 
 #: data/templates/foot.html:9 data/templates/head.html:7
 msgid "Fedora"

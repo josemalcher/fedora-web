@@ -1,10 +1,10 @@
 # Translations template for PROJECT.
-# Copyright (C) 2012 ORGANIZATION
+# Copyright (C) 2013 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # 
 # Translators:
 # alick <alick9188@gmail.com>, 2011.
-# Christopher Meng <cickumqt@gmail.com>, 2012.
+# Christopher Meng <cickumqt@gmail.com>, 2012-2013.
 # David Young <dhyang555@gmail.com>, 2011.
 # dongfengweixiao <dongfengweixiao@gmail.com>, 2011.
 #   <dongfengweixiao@gmail.com>, 2011.
@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-07-04 01:03+0200\n"
-"PO-Revision-Date: 2012-07-23 11:25+0000\n"
+"POT-Creation-Date: 2013-01-13 00:17+0100\n"
+"PO-Revision-Date: 2013-01-15 09:09+0000\n"
 "Last-Translator: Christopher Meng <cickumqt@gmail.com>\n"
 "Language-Team: Chinese (China) <trans-zh_cn@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
@@ -845,15 +845,16 @@ msgstr "直接下载"
 #: data/content/aos/index.html:94 data/content/aos/index.html:100
 #: data/content/broffice/index.html:84 data/content/broffice/index.html:90
 #: data/content/design/index.html:100 data/content/design/index.html:106
-#: data/content/fel/index.html:159 data/content/fel/index.html:165
-#: data/content/games/index.html:718 data/content/games/index.html:724
-#: data/content/kde/index.html:154 data/content/kiosk/index.html:87
-#: data/content/kiosk/index.html:93 data/content/moblin/index.html:93
-#: data/content/moblin/index.html:99 data/content/security/index.html:82
-#: data/content/security/index.html:88
+#: data/content/kde/index.html:148 data/content/kde/index.html:154
+#: data/content/kiosk/index.html:87 data/content/kiosk/index.html:93
+#: data/content/lxde/index.html:90 data/content/lxde/index.html:96
+#: data/content/moblin/index.html:93 data/content/moblin/index.html:99
+#: data/content/security/index.html:82 data/content/security/index.html:88
+#: data/content/soas/index.html:119 data/content/soas/index.html:125
+#: data/content/xfce/index.html:88 data/content/xfce/index.html:94
 #, python-format
-msgid "%(size)s for %(arch)s-bit PC ISO"
-msgstr "%(size)s 适用于 %(arch)s 位 PC 的 ISO 文件"
+msgid "%(size)sMB for %(arch)s PC ISO"
+msgstr "%(size)sMB for %(arch)s PC ISO"
 
 #: data/content/broffice/index.html:43
 msgid "About Spin: BrOffice.org"
@@ -865,7 +866,7 @@ msgstr "来自巴西的办公工具套件。"
 
 #: data/content/broffice/index.html:57
 msgid "Click to enlarge"
-msgstr ""
+msgstr "点击以放大"
 
 #: data/content/broffice/index.html:58
 msgid ""
@@ -1046,7 +1047,7 @@ msgstr ""
 
 #: data/content/community/adammiller.html:45
 msgid "How did you first get involved with Fedora?"
-msgstr ""
+msgstr "您第一次是如何参与 Fedora 的？"
 
 #: data/content/community/adammiller.html:46
 msgid ""
@@ -1079,7 +1080,7 @@ msgstr ""
 
 #: data/content/community/adammiller.html:48
 msgid "What do you like to do in the time you're not working on Fedora?"
-msgstr ""
+msgstr "当您不在 Fedora 社区中工作时您喜欢做些什么？"
 
 #: data/content/community/adammiller.html:49
 msgid ""
@@ -1099,7 +1100,7 @@ msgstr ""
 
 #: data/content/community/adammiller_short.html:9
 msgid "Adam Miller, XFCE Desktop"
-msgstr ""
+msgstr "Adam Miller，XFCE 桌面定制版"
 
 #: data/content/community/adammiller_short.html:10
 msgid ""
@@ -1132,7 +1133,7 @@ msgstr ""
 
 #: data/content/community/chitleshgoorah.html:20
 msgid "Strasbourg, France."
-msgstr ""
+msgstr "斯特拉斯堡，法国。"
 
 #: data/content/community/chitleshgoorah.html:24
 msgid "Post-graduate student (micro-nano electronics.)"
@@ -1140,7 +1141,7 @@ msgstr ""
 
 #: data/content/community/chitleshgoorah.html:27
 msgid "ChitleshGoorah on Freenode."
-msgstr ""
+msgstr "Freenode 上的 ChitleshGoorah。"
 
 #: data/content/community/chitleshgoorah.html:29
 msgid ""
@@ -1309,7 +1310,7 @@ msgstr ""
 
 #: data/content/community/chitleshgoorah.html:81
 msgid "Physical Design"
-msgstr ""
+msgstr "物理设计"
 
 #: data/content/community/chitleshgoorah.html:83
 msgid "Backend Product fabrication"
@@ -1329,7 +1330,7 @@ msgstr ""
 
 #: data/content/community/chitleshgoorah.html:91
 msgid "and many more ..."
-msgstr ""
+msgstr "和更多..."
 
 #: data/content/community/chitleshgoorah.html:95
 msgid ""
@@ -1470,7 +1471,7 @@ msgstr ""
 
 #: data/content/community/chitleshgoorah_short.html:12
 msgid "Read more of this interview with Chitlesh"
-msgstr ""
+msgstr "阅读更多与 Chitlesh 的访谈"
 
 #: data/content/community/index.html:14
 msgid "Spins Creator Interviews"
@@ -2152,6 +2153,15 @@ msgid ""
 "operating system that is executed upon boot, without installation on a hard "
 "drive. A desktop icon can be used to install the OS if wanted."
 msgstr "LiveDVD 可以通过 http 或者种子下载。LiveDVD 是个可在引导时运行的、不需要在硬盘上安装的操作系统。如果想要安装的话，可以使用桌面图标来安装这个操作系统。"
+
+#: data/content/fel/index.html:159 data/content/fel/index.html:165
+#: data/content/games/index.html:718 data/content/games/index.html:724
+#: data/content/robotics/index.html:85 data/content/robotics/index.html:91
+#: data/content/scientific-kde/index.html:85
+#: data/content/scientific-kde/index.html:91
+#, python-format
+msgid "%(size)sGB for %(arch)s PC ISO"
+msgstr "%(size)sGB for %(arch)s PC ISO"
 
 #: data/content/fel/index.html:173
 msgid ""
@@ -3454,7 +3464,7 @@ msgstr ""
 
 #: data/content/games/index.html:311
 msgid "An OpenGL space shooter."
-msgstr ""
+msgstr "一个基于 OpenGL 引擎的空间射击游戏。"
 
 #: data/content/games/index.html:316
 msgid "3D real-time strategy game."
@@ -3486,7 +3496,7 @@ msgstr ""
 
 #: data/content/games/index.html:351
 msgid "3rd-person scrolling 2D shooter."
-msgstr ""
+msgstr "第三人称的连续 2D 射击游戏"
 
 #: data/content/games/index.html:356
 msgid "Aracde-style shoot 'em up."
@@ -3753,8 +3763,9 @@ msgid "Asteroid-like game with powerups."
 msgstr ""
 
 #: data/content/games/index.html:696
-msgid "Fedora 17 Games Spin"
-msgstr ""
+#, python-format
+msgid "Fedora %s Games Spin"
+msgstr "Fedora %s 游戏定制版"
 
 #: data/content/games/index.html:698
 msgid ""
@@ -4109,8 +4120,9 @@ msgid ""
 msgstr ""
 
 #: data/content/kde/index.html:125
-msgid "Fedora 17 KDE Plasma Desktop Spin"
-msgstr ""
+#, python-format
+msgid "Fedora %s KDE Plasma Desktop Spin"
+msgstr "Fedora %s KDE Plasma 桌面定制版"
 
 #: data/content/kde/index.html:127
 msgid ""
@@ -4122,17 +4134,9 @@ msgid ""
 " from the Live Media desktop if you like."
 msgstr ""
 
-#: data/content/kde/index.html:148 data/content/lxde/index.html:90
-#: data/content/lxde/index.html:96 data/content/soas/index.html:119
-#: data/content/soas/index.html:125 data/content/xfce/index.html:88
-#: data/content/xfce/index.html:94
-#, python-format
-msgid "%(size)sMB for %(arch)s-bit PC ISO"
-msgstr ""
-
 #: data/content/kde/index.html:159
 msgid "KDE Plasma Desktop Support"
-msgstr ""
+msgstr "KDE Plasma Desktop支持"
 
 #: data/content/kde/index.html:160
 msgid ""
@@ -4148,11 +4152,11 @@ msgstr "请访问主要定制版的支持页面"
 #: data/content/kde/index.html:172 data/content/kde/index.html:182
 #: data/content/kde/index.html:192
 msgid "KDE Plasma Desktop"
-msgstr ""
+msgstr "KDE Plasma Desktop"
 
 #: data/content/kde/index.html:174
 msgid "A screenshot of the KDE Plasma Desktop 4"
-msgstr ""
+msgstr "一张 KDE Plasma Desktop 4 的截图"
 
 #: data/content/kde/index.html:184
 msgid "A screenshot of the Kontact with a few features."
@@ -4160,7 +4164,7 @@ msgstr "Kontact和一些特性的截屏。"
 
 #: data/content/kde/index.html:194
 msgid "A few of the games available on KDE Plasma Desktop"
-msgstr ""
+msgstr "只有少量游戏在 KDE Plasma Desktop 上可用"
 
 #: data/content/kiosk/index.html:41
 msgid "About Spin: Kiosk"
@@ -4464,11 +4468,6 @@ msgid ""
 "\"Robotics\"</span>."
 msgstr ""
 
-#: data/content/robotics/index.html:85 data/content/robotics/index.html:91
-#, python-format
-msgid "1.1GB for %(arch)s-bit PC ISO"
-msgstr ""
-
 #: data/content/robotics/index.html:97
 msgid "Robotics Support"
 msgstr ""
@@ -4513,7 +4512,7 @@ msgstr ""
 
 #: data/content/scientific-kde/index.html:60
 msgid "What is Fedora Scientific?"
-msgstr ""
+msgstr "什么是 Fedora 科学定制版？"
 
 #: data/content/scientific-kde/index.html:61
 #, python-format
@@ -4532,7 +4531,7 @@ msgstr ""
 #: data/content/scientific-kde/index.html:65
 #: data/content/scientific-kde/index.html:107
 msgid "Fedora Scientific"
-msgstr ""
+msgstr "Fedora 科学定制版"
 
 #: data/content/scientific-kde/index.html:66
 #, python-format
@@ -4544,15 +4543,9 @@ msgid ""
 "href=\"%s\">Bootable USB stick</a> or burn it to a <a href=\"%s\">DVD</a>."
 msgstr ""
 
-#: data/content/scientific-kde/index.html:85
-#: data/content/scientific-kde/index.html:91
-#, python-format
-msgid "2.4GB for %(arch)s-bit PC ISO"
-msgstr ""
-
 #: data/content/scientific-kde/index.html:96
 msgid "Fedora Scientific Support"
-msgstr ""
+msgstr "Fedora 科学定制版支持"
 
 #: data/content/scientific-kde/index.html:97
 msgid ""
@@ -4903,6 +4896,11 @@ msgstr "不能确定您的电脑是32位还是64位？"
 msgid "The 32-bit edition is compatible with both 32-bit and 64-bit PCs."
 msgstr "32位版与32位和64位PC都兼容."
 
+#: data/templates/download-tab.html:11
+msgid ""
+"Read our documentation on how to tell if your computer is 32-bit or 64-bit."
+msgstr "阅读我们的一篇如何判断您的电脑是32位还是64位的文档。"
+
 #: data/templates/foot.html:9 data/templates/head.html:7
 msgid "Fedora"
 msgstr "Fedora"
@@ -5102,7 +5100,7 @@ msgstr ""
 
 #: data/templates/master.html:1
 msgid "This is developer"
-msgstr ""
+msgstr "这是开发人员"
 
 #: data/templates/master.html:1
 msgid "Fedora's high-end hardware design and simulation platform."
