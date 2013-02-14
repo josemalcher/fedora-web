@@ -42,23 +42,6 @@ ec2_f17 = [
       {'region':'us-west-2',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-8e69e5be'}
 ]
 
-ec2_f16 = [
-      {'region':'ap-northeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-f22094f3'},
-      {'region':'ap-northeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-16219517'},
-      {'region':'ap-southeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-9694eec4'},
-      {'region':'ap-southeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-5095ef02'},
-      {'region':'eu-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-7bf4c90f'},
-      {'region':'eu-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-2df4c959'},
-      {'region':'sa-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-5a34eb47'},
-      {'region':'sa-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-4c34eb51'},
-      {'region':'us-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-5f16d836'},
-      {'region':'us-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-0316d86a'},
-      {'region':'us-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-25e0bc60'},
-      {'region':'us-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-69e0bc2c'},
-      {'region':'us-west-2',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-e2f37ed2'},
-      {'region':'us-west-2',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-88f37eb8'}
-]
-
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -424,29 +407,6 @@ ec2_f16 = [
 																		</thead>
 																		<tbody>
 																			<py:for each="img in ec2_f17">
-																				<tr>
-																						<td>${img['region']}</td>
-																						<td>${img['arch']}</td>
-																						<td>${img['store']}</td>
-																						<td>${img['id']}</td>
-																				</tr>
-																			</py:for>
-																		</tbody>
-																</table>
-
-
-                                <h5>${_('Fedora %s') % '16'}</h5>
-                                <table class="verify-live-media">
-																		<thead>
-																				<tr>
-																						<th>${_('Region')}</th>
-																						<th>${_('Architecture')}</th>
-																						<th>${_('Root store')}</th>
-																						<th>${_('AMI ID')}</th>
-																				</tr>
-																		</thead>
-																		<tbody>
-																			<py:for each="img in ec2_f16">
 																				<tr>
 																						<td>${img['region']}</td>
 																						<td>${img['arch']}</td>
