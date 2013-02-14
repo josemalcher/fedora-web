@@ -47,6 +47,4 @@ iso_size={
     'x86_64_Live_Sci-kde': '2.7',       # In GB
     'i686_Live_Robotics':  '1.6',       # In GB
     'x86_64_Live_Robotics':'1.6',       # In GB
-    'i686_Live_Jam':       '1.4',       # In GB
-    'x86_64_Live_Jam':     '1.4',       # In GB
 }
