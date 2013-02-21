@@ -118,6 +118,40 @@
                     </tbody>
                 </table>
 
+                <table class="verify-install-media">
+                    <thead>
+                        <tr>
+                            <th colspan="4">${Markup(_('Secondary Arches'))}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="install-media-arch">ARM</th>
+                            <td></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-${global_variables.release['curr_arm_id']}-arm-Images-CHECKSUM">Fedora ${global_variables.release['curr_arm_id']}</a></td>
+                            <td py:if="global_variables.release['curr_arm_state']"><a href="${global_variables.path['checksums']}/Fedora-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-arm-Images-CHECKSUM">Fedora ${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}</a></td>
+                        </tr>
+                        <tr>
+                            <th class="install-media-arch">ARM HFP</th>
+                            <td></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-${global_variables.release['curr_arm_id']}-armhfp-Images-CHECKSUM">Fedora ${global_variables.release['curr_arm_id']}</a></td>
+                            <td py:if="global_variables.release['curr_arm_state']"><a href="${global_variables.path['checksums']}/Fedora-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-armhfp-Images-CHECKSUM">Fedora ${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}</a></td>
+                        </tr>
+                        <tr>
+                            <th class="install-media-arch">PPC64</th>
+                            <td></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-${global_variables.release['curr_ppc64_id']}-ppc64-CHECKSUM">Fedora ${global_variables.release['curr_ppc64_id']}</a></td>
+                            <td py:if="global_variables.release['curr_ppc64_state']"><a href="${global_variables.path['checksums']}/Fedora-${global_variables.release['next_ppc64_id']}-${global_variables.release['curr_ppc64_state']}-ppc64-CHECKSUM">Fedora ${global_variables.release['next_ppc64_id']}-${global_variables.release['curr_ppc64_state']}</a></td>
+                        </tr>
+                        <tr>
+                            <th class="install-media-arch">s390</th>
+                            <td></td>
+                            <td><a href="https://fedoraproject.org/static/checksums/Fedora-${global_variables.release['curr_s390_id']}-s390x-CHECKSUM">Fedora ${global_variables.release['curr_s390_id']}</a></td>
+                            <td py:if="global_variables.release['curr_s390_state']"><a href="${global_variables.path['checksums']}/Fedora-${global_variables.release['next_s390_id']}-${global_variables.release['curr_s390_state']}-s390x-CHECKSUM">Fedora ${global_variables.release['next_s390_id']}-${global_variables.release['curr_s390_state']}</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
 
                 <p>${Markup(_('Next, import Fedora\'s GPG key(s):'))}</p>
                 <pre class="command">$ curl https://fedoraproject.org/static/fedora.gpg | gpg --import</pre>
@@ -127,6 +161,7 @@
                 <p>${Markup(_('The CHECKSUM file should have a good signature from one of the following keys:'))}</p>
                 <ul>
                     <li><code>DE7F38BD</code> - Fedora 18</li>
+                    <li><code>A4D647E9</code> - Fedora 18 secondary arches (ARM, PPC64, s390)</li>
                     <li><code>1ACA3465</code> - Fedora 17</li>
                 </ul>
                 <p>${Markup(_('Finally, now that the CHECKSUM file has been verified, check that the ISO\'s checksum matches:'))}</p>
