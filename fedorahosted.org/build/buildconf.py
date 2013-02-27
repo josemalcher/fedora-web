@@ -12,7 +12,12 @@ for l in linguas:
         languages.append((lang, code))
 linguas.close()
 
-print 'LoadModule negotiation_module modules/mod_negotiation.so'
+print '# Define the correct MIME type for specific languages'
+for (lang, code) in languages:
+    if lang in ['bn', 'el', 'pl', 'tr']:
+      print 'AddType text/html .%s' % (lang)
+
+print ' '
 
 for (lang, code) in languages:
     print 'AddLanguage %s .%s' % (code, lang)
