@@ -1,4 +1,6 @@
 #!/usr/bin/python
+# imported from the spins directory.
+# TODO: remove the globalvar dependancy
 '''
 build.py - A script to generate static, translated HTML pages from Genshi
 templates/PO files.
@@ -8,15 +10,17 @@ Some code/design taken from python.org's website build script
 '''
 
 import os, sys, timing, re, shutil
-
 from pkg_resources import get_distribution 
-
 from optparse import OptionParser
-
 from gettext import GNUTranslations
-
 from genshi.filters import Translator
 from genshi.template import TemplateLoader
+
+try:
+    import globalvar
+except ImportError:
+    print "globalvar.py is missing. It is needed as it provides release specific variables"
+    raise
 
 def process(args):
     if os.path.exists(options.output) and options.erase:
@@ -72,6 +76,7 @@ def process_dir(dirpath, filenames):
             relpath=relpath,
             path=options.basepath,
             curpage=curpage,
+            global_variables=globalvar,
             ).render(method='html', doctype='html')
         output = open(dest_file, 'w')
         output.write(page)
