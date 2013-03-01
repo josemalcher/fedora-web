@@ -6,7 +6,16 @@ release={
     'next_id':     '19',
     'curr_name':   'Spherical Cow',
     'next_name':   'Schroedingers Cat',
-    'curr_state':  ''         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_state':  '',             # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_ppc64_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_s390_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_id': '18',
+    'curr_ppc64_id': '18',
+    'curr_s390_id': '18',
+    'next_arm_id': '19',
+    'next_ppc64_id': '19',
+    'next_s390_id': '19',
 }
 
 path={
@@ -14,6 +23,7 @@ path={
     'torrent_spins':   'http://torrent.fedoraproject.org/spins',
     'download':        'http://download.fedoraproject.org/pub/fedora/linux/releases',
     'download_spins':  'http://download.fedoraproject.org/pub/alt/releases',
+    'download_arch':   'http://download.fedoraproject.org/pub/fedora-secondary/releases',
     'mirrors':         'http://mirrors.fedoraproject.org/metalink?path=pub/fedora/linux/releases',
     'checksums':       'https://fedoraproject.org/static/checksums',
     'doc':             'http://docs.fedoraproject.org/en-US/Fedora'
@@ -47,4 +57,7 @@ iso_size={
     'x86_64_Live_Sci-kde': '2.7',       # In GB
     'i686_Live_Robotics':  '1.6',       # In GB
     'x86_64_Live_Robotics':'1.6',       # In GB
+    'PPC64_DVD':           '4.2',       # In GB
+    'PPC64_Netinstall':    '303',       # In MB
+    's390_DVD':            '4.0'        # In GB
 }
