@@ -17,6 +17,7 @@ BASEPATH = /
 PWD = $(shell pwd)
 POT_FILE := $(shell ls po/*.pot)
 BUILDDIR = $(PWD)/../build.d
+HTTPDDIR = $(PWD)/../httpd
 
 sync = \
 	if test -d $1/$2; then   \
@@ -56,7 +57,7 @@ clean:
 	rm -f po/*.mo
 	rm -f data/templates/translations.html
 	rm -f $(BUILDDIR)/rss.cache $(BUILDDIR)/rss.pyc
-	rm -f httpd/conf/*.conf httpd/conf/languages.conf.in
+	rm -f $(HTTPDDIR)/conf/*.conf $(HTTPDDIR)/conf/languages.conf.in
 
 msgmerge: $(wildcard po/*.po)
 
@@ -75,35 +76,35 @@ syncpos:
 push:
 	git push
 
-httpd/conf/httpd.conf: httpd/conf/httpd.conf.in
+$(HTTPDDIR)/conf/httpd.conf: $(HTTPDDIR)/conf/httpd.conf.in
 ifeq ($(NEW_HTTPD),1)
-	cp httpd/conf/httpd.conf.in httpd/conf/httpd.conf
+	cp $(HTTPDDIR)/conf/httpd.conf.in $(HTTPDDIR)/conf/httpd.conf
 else
 	@echo "Using the old httpd config file"
-	cp httpd/conf/httpd.conf.old.in httpd/conf/httpd.conf
+	cp $(HTTPDDIR)/conf/httpd.conf.old.in $(HTTPDDIR)/conf/httpd.conf
 endif
 	sed -i \
-		-e 's#@SERVERROOT@#$(PWD)/httpd#g' \
+		-e 's#@SERVERROOT@#$(HTTPDDIR)#g' \
 		-e 's#@DOCUMENTROOT@#$(PWD)/out#g' \
-		httpd/conf/httpd.conf
+		$(HTTPDDIR)/conf/httpd.conf
 
 
-httpd/conf/languages.conf.in: po/LINGUAS
+$(HTTPDDIR)/conf/languages.conf.in: po/LINGUAS
 	$(PYTHON) $(BUILDDIR)/buildconf.py $^ > $@
 
-httpd/conf/languages.conf: httpd/conf/languages.conf.in
-	cp httpd/conf/languages.conf.in httpd/conf/languages.conf
+$(HTTPDDIR)/conf/languages.conf: $(HTTPDDIR)/conf/languages.conf.in
+	cp $(HTTPDDIR)/conf/languages.conf.in $(HTTPDDIR)/conf/languages.conf
 	sed -i \
-		-e 's#@SERVERROOT@#$(PWD)/httpd#g' \
+		-e 's#@SERVERROOT@#$(HTTPDDIR)#g' \
 		-e 's#@DOCUMENTROOT@#$(PWD)/out#g' \
-		httpd/conf/languages.conf
+		$(HTTPDDIR)/conf/languages.conf
 
-test: 	httpd/conf/httpd.conf httpd/conf/languages.conf
-	/usr/sbin/httpd -d httpd -f conf/httpd.conf
+test: 	$(HTTPDDIR)/conf/httpd.conf $(HTTPDDIR)/conf/languages.conf
+	/usr/sbin/httpd -d $(HTTPDDIR) -f conf/httpd.conf
 	@echo "Test instance started at: http://localhost:5000/"
 
 stoptest:
-	pid=`cat httpd/run/httpd.pid` && \
+	pid=`cat $(HTTPDDIR)/run/httpd.pid` && \
 	kill -TERM $$pid
 
 .PHONY: all static rss-cache clean push test stoptest
