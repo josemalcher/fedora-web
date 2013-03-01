@@ -30,7 +30,6 @@ all: $(LANGUAGES)
 	cp static/robots.txt out/
 
 static:
-	@echo Copying static...
 	$(PYTHON) $(BUILDDIR)/build.py -o out -s static -b $(BASEPATH)
 
 # Used by fedorahosted.org
