@@ -33,6 +33,11 @@ all: $(LANGUAGES)
 static:
 	$(PYTHON) $(BUILDDIR)/build.py -o out -s static -b $(BASEPATH)
 
+staticSnd:
+	$(PYTHON) $(BUILDDIR)/build.py -o out -s css -b $(BASEPATH)
+	$(PYTHON) $(BUILDDIR)/build.py -o out -s js -b $(BASEPATH)
+	$(PYTHON) $(BUILDDIR)/build.py -o out -s images -b $(BASEPATH)
+
 # Used by fedorahosted.org
 jquery:
 	mkdir -p out/static/js
