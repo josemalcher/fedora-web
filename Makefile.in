@@ -32,6 +32,11 @@ static:
 	@echo Copying static...
 	$(PYTHON) build/build.py -o out -s static -b $(BASEPATH)
 
+staticSnd:
+	$(PYTHON) build/build.py -o out -s css -b $(BASEPATH)
+	$(PYTHON) build/build.py -o out -s js -b $(BASEPATH)
+	$(PYTHON) build/build.py -o out -s images -b $(BASEPATH)
+
 # Used by fedorahosted.org
 jquery:
 	mkdir -p out/static/js
