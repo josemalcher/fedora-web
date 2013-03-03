@@ -1,7 +1,6 @@
 #!/usr/bin/python
 # imported from the spins directory.
-# TODO: remove the globalvar dependancy
-# Replace this by the one at fedorahosted if we build fedorahosted
+# TODO: fedorahosted.org use a specific one. Should we merge?
 
 '''
 build.py - A script to generate static, translated HTML pages from Genshi
