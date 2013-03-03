@@ -18,13 +18,14 @@ from gettext import GNUTranslations
 from genshi.filters import Translator
 from genshi.template import TemplateLoader
 import fileinput
-import imp
 
-# Import local modules
+# We import build/rss.py if exists
+sys.path.append('build')
 try:
-    rss = imp.load_source('feedparser', 'build/rss.py')
-except:
-		print 'Not using rss'
+		from rss import *
+except ImportError:
+		feedparse = None
+		pass
 
 try:
     import globalvar
@@ -73,14 +74,13 @@ def process_dir(dirpath, filenames):
             continue
         src_file = os.path.join(dirpath, fn)
         if options.rss:
+            sys.setrecursionlimit(1500)
             for line in fileinput.input(src_file):
                 if line.find('feedparse')>0:
                     match = re.split('^.*feedparse\(\'', line)
                     feedurl = re.split('\'\)', match[1])
                     feedparse(feedurl[0])
             continue;
-        else:
-        		feedparse = 'Not using RSS during this build'
         dest_file = os.path.join(options.output, src_file[len(options.input):]) + '.' + options.lang # Hideous
         curpage = src_file[len(options.input):].rstrip('.html')
         relpath = '../' * (dest_file.count('/') - 1)
