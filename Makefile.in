@@ -61,7 +61,7 @@ clean:
 	rm -rf out
 	rm -f po/*.mo
 	rm -f data/templates/translations.html
-	rm -f $(BUILDDIR)/rss.cache $(BUILDDIR)/rss.pyc
+	rm -f build/rss.cache build/rss.pyc
 	rm -f $(HTTPDDIR)/conf/*.conf $(HTTPDDIR)/conf/languages.conf.in
 
 msgmerge: $(wildcard po/*.po)
