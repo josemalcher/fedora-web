@@ -1,9 +1,5 @@
 # Default Makefile include by subdirs
-# The $(LANGUAGES): % receip is different for websites using cache. They currently are:
-# fpo, fedorahosted, start, fudcon
-# TODO: prevent to call it directly
-# include pathes from Thomas (shaiton task)
-#
+# Should not be called from here (root folder)
 ifndef LANGUAGES
 LANGUAGES := $(shell grep -v "^\#" po/LINGUAS)
 endif
@@ -57,30 +53,18 @@ endif
 data/templates/translations.html: po/LINGUAS
 	$(PYTHON) $(BUILDDIR)/construct-translations.py $(BUILDDIR)/translations.ini $^ $@
 
-clean:
-	rm -rf out
-	rm -f po/*.mo
-	rm -f data/templates/translations.html
-	rm -f build/rss.cache build/rss.pyc
-	rm -f build/json.cache
-	rm -f $(HTTPDDIR)/conf/*.conf $(HTTPDDIR)/conf/languages.conf.in
-
 msgmerge: $(wildcard po/*.po)
 
 pushpot:
 	tx push -s
 
 pullpos:
-	tx pull -af
-	tx pull --lang=en
+	tx pull -a
 
 # The next call get the Transifex resource from the config file,
 # and if it exists rsync the POs
 syncpos:
 	$(call sync,$(RESOURCE_NAME),$(shell cat .tx/config | sed -n 's,^\[\(fedora-web.*\)\],\1,p'))
-
-push:
-	git push
 
 $(HTTPDDIR)/conf/httpd.conf: $(HTTPDDIR)/conf/httpd.conf.in
 ifeq ($(NEW_HTTPD),1)
@@ -112,5 +96,13 @@ test: 	$(HTTPDDIR)/conf/httpd.conf $(HTTPDDIR)/conf/languages.conf
 stoptest:
 	pid=`cat $(HTTPDDIR)/run/httpd.pid` && \
 	kill -TERM $$pid
+
+clean:
+	rm -rf out
+	rm -f po/*.mo
+	rm -f data/templates/translations.html
+	rm -f build/rss.cache build/rss.pyc
+	rm -f build/json.cache
+	rm -f $(HTTPDDIR)/conf/*.conf $(HTTPDDIR)/conf/languages.conf.in
 
 .PHONY: all static rss-cache clean push test stoptest
