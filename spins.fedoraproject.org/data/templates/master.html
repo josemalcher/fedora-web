@@ -25,6 +25,8 @@ class Torrents(object):
     def torrents(self):
         # 20 sec timeout
         socket.setdefaulttimeout(20)
+        if not os.path.isdir('build'):
+            os.makedirs('build')
         cachefile = os.path.join(os.getcwd(), 'build/json.cache')
 
         if not self._torrents:
