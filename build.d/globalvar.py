@@ -11,6 +11,9 @@ release={
     'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_ppc64_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_s390_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'prev_arm_id': '17',
+    'prev_ppc64_id': '17',
+    'prev_s390_id': '17',
     'curr_arm_id': '18',
     'curr_ppc64_id': '18',
     'curr_s390_id': '18',
