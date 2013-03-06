@@ -1,4 +1,7 @@
 #!/usr/bin/python
+# imported from the spins directory.
+# TODO: fedorahosted.org use a specific one. Should we merge?
+
 '''
 build.py - A script to generate static, translated HTML pages from Genshi
 templates/PO files.
@@ -8,15 +11,20 @@ Some code/design taken from python.org's website build script
 '''
 
 import os, sys, timing, re, shutil
-
-from pkg_resources import get_distribution 
-
+from pkg_resources import get_distribution
 from optparse import OptionParser
-
 from gettext import GNUTranslations
-
 from genshi.filters import Translator
 from genshi.template import TemplateLoader
+import fileinput
+
+# We import build/rss.py if exists
+sys.path.append('build')
+try:
+		from rss import *
+except ImportError:
+		feedparse = None
+		pass
 
 try:
     import globalvar
@@ -47,7 +55,8 @@ def process(args):
                 else:
                     raise
         timing.finish()
-        print 'Website build time: %s' % timing.milli()
+        if not options.rss:
+            print 'Website build time: %s' % timing.milli()
 
 def process_dir(dirpath, filenames):
     '''
@@ -63,6 +72,14 @@ def process_dir(dirpath, filenames):
         if fn.endswith('~') or fn.endswith('.swp'):
             continue
         src_file = os.path.join(dirpath, fn)
+        if options.rss:
+            sys.setrecursionlimit(1500)
+            for line in fileinput.input(src_file):
+                if line.find('feedparse')>0:
+                    match = re.split('^.*feedparse\(\'', line)
+                    feedurl = re.split('\'\)', match[1])
+                    feedparse(feedurl[0])
+            continue;
         dest_file = os.path.join(options.output, src_file[len(options.input):]) + '.' + options.lang # Hideous
         curpage = src_file[len(options.input):].rstrip('.html')
         relpath = '../' * (dest_file.count('/') - 1)
@@ -74,6 +91,7 @@ def process_dir(dirpath, filenames):
         # Variables made availble to all templates
         page = template.generate(
             _=lambda text: translations.ugettext(text),
+            feedparse=feedparse,
             lang=options.lang,
             relpath=relpath,
             path=options.basepath,
@@ -121,6 +139,9 @@ def main():
     parser.add_option('-e', '--erase',
         action='store_true', dest='erase', default=False,
         help='Erase any existing output directory first')
+    parser.add_option('-r', '--rss-cache',
+        action='store_true', dest='rss', default=False,
+        help='Cache RSS feeds')
     base_path = os.path.dirname(os.path.abspath(__file__))
     (options, args) = parser.parse_args()
     options.basepath = options.basepath.rstrip('/')

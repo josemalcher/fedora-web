@@ -1,19 +1,27 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 # This file defines all variable needed to be edited during the release cycle (alpha, beta...).
 release={
     'prev_id':     '17',
     'curr_id':     '18',
     'next_id':     '19',
-    'curr_arm_id': '18',
-    'curr_ppc_id': '18',
-    'curr_s390_id': '18',
     'curr_name':   'Spherical Cow',
-    'next_name':   'Schroedingers Cat',
-    'curr_state':  ''         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'next_name':   'Schrödinger\'s Cat',
+    'curr_state':  '',             # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_ppc64_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_s390_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_id': '18',
+    'curr_ppc64_id': '18',
+    'curr_s390_id': '18',
+    'next_arm_id': '19',
+    'next_ppc64_id': '19',
+    'next_s390_id': '19',
 }
 
 path={
     'torrent':         'http://torrent.fedoraproject.org/torrents',
+    'torrent_spins':   'http://torrent.fedoraproject.org/spins',
     'download':        'http://download.fedoraproject.org/pub/fedora/linux/releases',
     'download_spins':  'http://download.fedoraproject.org/pub/alt/releases',
     'download_arch':   'http://download.fedoraproject.org/pub/fedora-secondary/releases',
@@ -36,7 +44,21 @@ iso_size={
     'x86_64_Live_XFCE':    '691',       # In MB
     'i386_Netinstall':     '327',       # In MB
     'x86_64_Netinstall':   '294',       # In MB
+    'i686_Live_Security':  '694',       # In MB
+    'x86_64_Live_Security':'724',       # In MB
+    'i686_Live_Games':     '3.8',       # In GB
+    'x86_64_Live_Games':   '3.79',      # In GB
+    'i686_Live_Elab':      '1.9',       # In GB
+    'x86_64_Live_Elab':    '1.9',       # In GB
+    'i686_Live_Soas':      '546',       # In MB
+    'x86_64_Live_Soas':    '576',       # In MB
+    'i686_Live_Design':    '928',       # In MB
+    'x86_64_Live_Design':  '961',       # In MB
+    'i686_Live_Sci-kde':   '2.7',       # In GB
+    'x86_64_Live_Sci-kde': '2.7',       # In GB
+    'i686_Live_Robotics':  '1.6',       # In GB
+    'x86_64_Live_Robotics':'1.6',       # In GB
     'PPC64_DVD':           '4.2',       # In GB
     'PPC64_Netinstall':    '303',       # In MB
-    's390_DVD':            '4.0',       # In GB
+    's390_DVD':            '4.0'        # In GB
 }

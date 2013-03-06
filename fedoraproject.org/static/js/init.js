@@ -81,6 +81,47 @@ $(document).ready(function(){
         });
     }
 
+    // redirect download links to ARM splash page
+    $("a.download-arm-splash").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+
+        // this passes the URL path to the ARM splash page
+        window.location = 'download-arm-splash?file='+linkLocation;
+    });
+
+
+    // ARM splash download page stuff
+    if (/.*download-arm-splash.*/i.test(window.location.href)) {
+        $("p.download-path").ready(function(){
+            // get file path from URL, then display it
+            var valid = false;
+            var allowed_prefixes = [
+                'http://download.fedoraproject.org/',
+                'http://torrent.fedoraproject.org/',
+                'http://mirrors.fedoraproject.org/'
+            ]
+
+            var file_url = $.query.get('file');
+
+            // Only accept URLs beginning with our known prefix.
+            for (i in allowed_prefixes) {
+                prefix = allowed_prefixes[i];
+                if (file_url.substring(0, prefix.length) == prefix) {
+                    valid = true;
+                }
+            }
+
+            if (valid) {
+                $("p.download-path").prepend($("<a>", {
+                    href: encodeURI(file_url),
+                    text: file_url
+                }))
+                setTimeout(function() { window.location = file_url }, "2000");
+            }
+        });
+    }
+
     $(".tweet").tweet({
         username: "fedora",
         count: 1,
