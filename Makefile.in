@@ -39,16 +39,6 @@ jquery:
 	mkdir -p out/static/js
 	wget http://code.jquery.com/jquery-latest.js -O out/static/js/jquery.js -q
 
-staticSnd:
-	$(PYTHON) build/build.py -o out -s css -b $(BASEPATH)
-	$(PYTHON) build/build.py -o out -s js -b $(BASEPATH)
-	$(PYTHON) build/build.py -o out -s images -b $(BASEPATH)
-
-# Used by fedorahosted.org
-jquery:
-	mkdir -p out/static/js
-	wget http://code.jquery.com/jquery-latest.js -O out/static/js/jquery.js -q
-
 po/%.mo: po/%.po
 	msgfmt -o $@ $<
 
