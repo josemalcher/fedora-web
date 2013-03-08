@@ -3,24 +3,26 @@
 #      make an new POT and push it if asked,
 #      and then fill the LINGUAS file
 
-site=( boot.fedoraproject.org
-       fedoracommunity.org
-       fedorahosted.org
-       fedoraproject.org
-       fudcon.fedoraproject.org
-       spins.fedoraproject.org
-       start.fedoraproject.org )
+# This represent the relative path to the website.
+site=( ../boot.fedoraproject.org
+       ../fedoracommunity.org
+       ../fedorahosted.org
+       ../fedoraproject.org
+       ../fudcon.fedoraproject.org
+       ../spins.fedoraproject.org
+       ../start.fedoraproject.org )
 
+root=$PWD
 
 usage()
 {
 cat << EOF
-usage: $0 [OPTIONS] [-w WEBSITE]
+usage: $0 [OPTIONS] [-w WEBSITE_PATH]
 
 This script update all L10n things. Will never git push.
- * pull translations from transifex against WEBSITE in current branch
- * make new POT in WEBSITE
- * update the LINGUAS file in WEBSITE
+ * pull translations from transifex against WEBSITE_PATH in current branch
+ * make new POT in WEBSITE_PATH
+ * update the LINGUAS file in WEBSITE_PATH
 
 OPTIONS:
    -h      Show this message
@@ -33,9 +35,9 @@ WEBSITE:
     Without WEBSITE specifyed, will parse the whole website array.
 
 EXAMPLES:
-         $ $0                                  (1)
-         $ $0 -a -w spins.fedoraproject.org    (2)
-         $ $0 -a -c -p                         (3)
+         $ $0                                     (1)
+         $ $0 -a -w ../spins.fedoraproject.org    (2)
+         $ $0 -a -c -p                            (3)
 
    1. Update all but let you git add and push to transifex.net. (Takes time but let you do the job).
    2. Update POs POT and LINGUAS of spins.fedoraproject.org website. Let you commit and push (git/transifex).
@@ -97,7 +99,7 @@ do
    then
      git add po/*.po
    fi
-   cd ..
+   cd $root
 done
 
 if [ ! -z $COMMIT ] && [ ! -z $ADD ]
@@ -131,7 +133,7 @@ do
    else
        git checkout -- po/*.pot     # no real change, undo (only the build time was changed)
    fi
-   cd ..
+   cd $root
 done
 
 if [ ! -z $NEED_COMMIT ] && [ ! -z $COMMIT ] && [ ! -z $ADD ]
