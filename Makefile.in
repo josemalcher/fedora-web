@@ -29,6 +29,10 @@ all: $(LANGUAGES)
 static:
 	$(PYTHON) $(BUILDDIR)/build.py -o out -s static -b $(BASEPATH)
 
+rss-cache:
+	@echo Caching RSS...
+	$(PYTHON) $(BUILDDIR)/build.py -o out -i data/content -r -b $(BASEPATH)
+
 staticSnd:
 	$(PYTHON) $(BUILDDIR)/build.py -o out -s css -b $(BASEPATH)
 	$(PYTHON) $(BUILDDIR)/build.py -o out -s js -b $(BASEPATH)
