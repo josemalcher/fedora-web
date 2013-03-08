@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-02-23 19:13+0100\n"
+"POT-Creation-Date: 2013-03-08 17:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -470,24 +470,78 @@ msgid ""
 "100px and 200px."
 msgstr ""
 
-#: data/content/download-splash.html:7
+#: data/content/download-arm-splash.html:7 data/content/download-splash.html:7
 msgid "Fedora Project - Download next steps."
 msgstr ""
 
+#: data/content/download-arm-splash.html:13
 #: data/content/download-splash.html:13
 msgid "Thanks for downloading Fedora!"
 msgstr ""
 
+#: data/content/download-arm-splash.html:14
 #: data/content/download-splash.html:14
 msgid "We know you'll love it!"
 msgstr ""
 
+#: data/content/download-arm-splash.html:17
 #: data/content/download-splash.html:17
 msgid "Fedora is built by people across the globe. Everyone is welcome to join!"
 msgstr ""
 
+#: data/content/download-arm-splash.html:25
 #: data/content/download-splash.html:25
 msgid "Your download should begin in a few seconds. If not, click the link below"
+msgstr ""
+
+#: data/content/download-arm-splash.html:31
+msgid "What should I do with this .xz image?"
+msgstr ""
+
+#: data/content/download-arm-splash.html:32
+msgid ""
+"You'll need to write the .xz image to a SD Card in order to use it. "
+"Please read the specific instructions for your ARM chip for more details."
+msgstr ""
+
+#: data/content/download-arm-splash.html:33
+msgid ""
+"Not to worry, <a href=\"../verify\">verify</a> your download before "
+"writing it."
+msgstr ""
+
+#: data/content/download-arm-splash.html:38
+#: data/content/download-splash.html:38
+msgid "I need help running or installing Fedora."
+msgstr ""
+
+#: data/content/download-arm-splash.html:39
+#: data/content/download-splash.html:39
+msgid ""
+"There's several ways you can get help with Fedora, from forums to live "
+"chat to mailing lists."
+msgstr ""
+
+#: data/content/download-arm-splash.html:40
+#: data/content/download-splash.html:40
+msgid "Get help with Fedora"
+msgstr ""
+
+#: data/content/download-arm-splash.html:45
+#: data/content/download-splash.html:45
+msgid "I want to learn more about Fedora."
+msgstr ""
+
+#: data/content/download-arm-splash.html:46
+#: data/content/download-splash.html:46
+msgid ""
+"Fedora is more than an operating system - it's a vibrant community "
+"focused on freedom and innovation."
+msgstr ""
+
+#: data/content/download-arm-splash.html:47
+#: data/content/download-splash.html:47
+msgid "Learn more about Fedora"
 msgstr ""
 
 #: data/content/download-splash.html:31
@@ -505,34 +559,6 @@ msgstr ""
 msgid ""
 "Not to worry, <a href=\"../verify\">verify</a> your download and <a "
 "href=\"%s\">just follow our step-by-step instructions</a>."
-msgstr ""
-
-#: data/content/download-splash.html:38
-msgid "I need help running or installing Fedora."
-msgstr ""
-
-#: data/content/download-splash.html:39
-msgid ""
-"There's several ways you can get help with Fedora, from forums to live "
-"chat to mailing lists."
-msgstr ""
-
-#: data/content/download-splash.html:40
-msgid "Get help with Fedora"
-msgstr ""
-
-#: data/content/download-splash.html:45
-msgid "I want to learn more about Fedora."
-msgstr ""
-
-#: data/content/download-splash.html:46
-msgid ""
-"Fedora is more than an operating system - it's a vibrant community "
-"focused on freedom and innovation."
-msgstr ""
-
-#: data/content/download-splash.html:47
-msgid "Learn more about Fedora"
 msgstr ""
 
 #: data/content/get-fedora-all.html:7
@@ -557,7 +583,7 @@ msgstr ""
 
 #: data/content/get-fedora-all.html:28 data/content/get-fedora-all.html:142
 #: data/content/keys.html:28 data/content/keys.html:340
-#: data/content/verify.html:28 data/content/verify.html:136
+#: data/content/verify.html:28 data/content/verify.html:166
 msgid "&#8592; Back to the main \"Get Fedora\" page"
 msgstr ""
 
@@ -688,7 +714,7 @@ msgid "Cloud Images"
 msgstr ""
 
 #: data/content/get-fedora-all.html:125
-msgid "Slow Internet? No Internet?"
+msgid "No Internet connection?"
 msgstr ""
 
 #: data/content/get-fedora-all.html:126
@@ -747,6 +773,7 @@ msgid "Cloud"
 msgstr ""
 
 #: data/content/get-fedora-options.html:76 data/content/get-fedora.html:55
+#: data/content/verify.html:123
 msgid "Secondary Arches"
 msgstr ""
 
@@ -2466,64 +2493,49 @@ msgstr ""
 msgid "Make sure the iso downloaded is correct."
 msgstr ""
 
-#: data/content/verify.html:30
-msgid ""
-"Please note that the <em>Hash: SHA256</em> line in the CHECKSUM file is "
-"part of the PGP signature.  It does <strong>not</strong> specify the type"
-" of hash used to verify the .iso files."
-msgstr ""
-
 #: data/content/verify.html:31
-msgid ""
-"Windows user?  Follow <a href=\"http://docs.fedoraproject.org/en-"
-"US/Fedora/14/html/Burning_ISO_images_to_disc/sect-"
-"Burning_ISO_images_to_disc-Validating_the_Files.html\">these "
-"instructions</a> instead."
-msgstr ""
-
-#: data/content/verify.html:32
 msgid ""
 "Once you have downloaded an ISO, verify it for security and integrity.  "
 "To verify your ISO, start by downloading the proper CHECKSUM file into "
 "the same directory as the ISO:"
 msgstr ""
 
-#: data/content/verify.html:37
+#: data/content/verify.html:36
 msgid "Install DVD / Rescue CD"
 msgstr ""
 
-#: data/content/verify.html:66
+#: data/content/verify.html:65
 msgid "Live Media"
 msgstr ""
 
-#: data/content/verify.html:122
+#: data/content/verify.html:151
 msgid "Next, import Fedora's GPG key(s):"
 msgstr ""
 
-#: data/content/verify.html:124
+#: data/content/verify.html:153
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
 "href=\"%s/%s/keys\">here</a>."
 msgstr ""
 
-#: data/content/verify.html:125
+#: data/content/verify.html:154
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr ""
 
-#: data/content/verify.html:127
+#: data/content/verify.html:156
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr ""
 
-#: data/content/verify.html:132
+#: data/content/verify.html:162
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the "
 "ISO's checksum matches:"
 msgstr ""
 
-#: data/content/verify.html:134
+#: data/content/verify.html:164
 msgid "If the output states that the file is valid, then you're good to go!"
 msgstr ""
 
