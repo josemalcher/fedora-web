@@ -63,7 +63,7 @@ pushpot:
 	tx push -s
 
 pullpos:
-	tx pull -a
+	tx pull -a --minimum-perc 10
 
 # The next call get the Transifex resource from the config file,
 # and if it exists rsync the POs
