@@ -14,7 +14,7 @@ linguas.close()
 
 print '# Define the correct MIME type for specific languages'
 for (lang, code) in languages:
-    if lang in ['bn', 'el', 'pl', 'tr']:
+    if lang in ['bn', 'el', 'nb', 'pl', 'tr']:
       print 'AddType text/html .%s' % (lang)
 
 print ' '
