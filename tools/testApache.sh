@@ -3,7 +3,7 @@
 # Assumption:
 # - The return code should not be 404
 # - The Content-Type should be "text/html"
-# - The Content-Location should reflect the Accept-Language provided
+# - The Content-Language should reflect the Accept-Language provided
 # TODO: check fedorahosted.org ?
 
 LANG="po/LINGUAS"
@@ -21,7 +21,7 @@ site=( boot.fedoraproject.org
 function check
 {
 	website=$1
-	echo "=== Currently checking the \`$website' website..."
+	echo "=== Checking \`$website' ==="
 	cd $ROOT_PATH/$1
 
 	if [ ! -f $LANG ]
@@ -32,6 +32,8 @@ function check
 
 	for l in `cat $LANG`
 	do
+    l=${l/_/-}
+    l=${l,,}
 		status=`curl -Iis $website --header "Accept-Language: $l"`
 
 		# Checking the HTTP answer
@@ -47,15 +49,11 @@ function check
 		[[ $? -eq 0 ]] || echo "$l: `echo "$status"|grep "$CONTENTTYPE"`"
 
 		# Checking the Content-Language
-		locale=`echo "$status"|grep "Content-Location"|tr -d '\r'`
-		locale=${locale##*.}
-		if [ "$locale" != "$l" ]; then
-      res=`echo "$status" |grep Content-Language`
-      echo "$l: Content-Location: $locale and $res"
+		locale=`echo "$status"|grep "Content-Language"|tr -d '\r'`
+		if [ "$locale" != "Content-Language: $l" ]; then
+      echo "$l: $locale"
     fi
-
 	done
-	echo "... Done"
 }
 
 for i in "${site[@]}"
