@@ -381,6 +381,7 @@ ec2_f17 = [
 																						<th>${_('Architecture')}</th>
 																						<th>${_('Root store')}</th>
 																						<th>${_('AMI ID')}</th>
+                                                                                        <th>${_('Launch')}</th>
 																				</tr>
 																		</thead>
 																		<tbody>
@@ -389,7 +390,8 @@ ec2_f17 = [
 																						<td>${img['region']}</td>
 																						<td>${img['arch']}</td>
 																						<td>${img['store']}</td>
-																						<td><a href="https://console.aws.amazon.com?region=${img['region']}#launchAmi=${img['id']}"><img style="vertical-align: bottom; margin-right: 8px" alt="${_('Launch instance')}" src="${path}/static/images/cloud_icon.png" /></a>${img['id']}</td>
+																						<td>${img['id']}</td>
+                                                                                        <td style="vertical-align: middle"><a href="https://console.aws.amazon.com?region=${img['region']}#launchAmi=${img['id']}"><img style="vertical-align: bottom; display: block; margin: 0 auto" title="${_('Launch AMI instance')}" src="${path}/static/images/cloud_icon.png" /></a></td>
 																				</tr>
 																			</py:for>
 																		</tbody>
@@ -403,6 +405,7 @@ ec2_f17 = [
 																						<th>${_('Architecture')}</th>
 																						<th>${_('Root store')}</th>
 																						<th>${_('AMI ID')}</th>
+                                                                                        <th>${_('Launch')}</th>
 																				</tr>
 																		</thead>
 																		<tbody>
@@ -411,7 +414,8 @@ ec2_f17 = [
 																						<td>${img['region']}</td>
 																						<td>${img['arch']}</td>
 																						<td>${img['store']}</td>
-																						<td><a href="https://console.aws.amazon.com?region=${img['region']}#launchAmi=${img['id']}"><img style="vertical-align: bottom; margin-right: 8px" alt="${_('Launch instance')}" src="${path}/static/images/cloud_icon.png" /></a>${img['id']}</td>
+																						<td>${img['id']}</td>
+                                                                                        <td style="vertical-align: middle"><a href="https://console.aws.amazon.com?region=${img['region']}#launchAmi=${img['id']}"><img style="vertical-align: bottom; display: block; margin: 0 auto" title="${_('Launch AMI instance')}" src="${path}/static/images/cloud_icon.png" /></a></td>
 																				</tr>
 																			</py:for>
 																		</tbody>
