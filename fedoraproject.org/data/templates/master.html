@@ -9,6 +9,7 @@ buildstring = '<!-- build time: %s -->' % buildtime
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
     <head py:match="head" py:attrs="select('@*')">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <xi:include href="css.html" />
         <meta py:replace="select('*|text()')" />
     </head>
