@@ -1,13 +1,6 @@
 
 // load tabs on pageload
 $(function() {
-	// for export regulations
-	$(".export-regulations").expander({
-		slicePoint: 350,
-		widow: 1,
-		userCollapse: true,
-		expandText: 'Read full export regulations',
-		userCollapseText: 'Hide full export regulations'});
 	// setup ul.tabs to work as tabs for each div directly under div.panes
 	// now remembers history
 	$("ul.tabs").tabs("div.panes > div").history();
@@ -28,4 +21,15 @@ $(function() {
 	$("img[rel]").overlay();
 
 
+});
+$(document).ready(function(){
+
+	// for export regulations
+	$(".export-regulations").expander({
+		slicePoint: 350,
+		widow: 1,
+		userCollapse: true,
+		expandText: 'Read full export regulations',
+		userCollapseText: 'Hide full export regulations'
+	});
 });
