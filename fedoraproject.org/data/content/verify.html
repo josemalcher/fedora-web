@@ -155,9 +155,10 @@
                 <pre class="command">$ gpg --verify-files *-CHECKSUM</pre>
                 <p>${Markup(_('The CHECKSUM file should have a good signature from one of the following keys:'))}</p>
                 <ul>
+                    <li><code>FB4B18E6</code> - Fedora 19</li>
+                    <li><code>BA094068</code> - Fedora 19 secondary arches (ARM, PPC64, s390)</li>
                     <li><code>DE7F38BD</code> - Fedora 18</li>
                     <li><code>A4D647E9</code> - Fedora 18 secondary arches (ARM, PPC64, s390)</li>
-                    <li><code>1ACA3465</code> - Fedora 17</li>
                 </ul>
                 <p>${Markup(_('Finally, now that the CHECKSUM file has been verified, check that the ISO\'s checksum matches:'))}</p>
                 <pre class="command">$ sha256sum -c *-CHECKSUM</pre>
