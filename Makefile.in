@@ -92,7 +92,7 @@ test: 	$(HTTPDDIR)/conf/httpd.conf $(HTTPDDIR)/conf/languages.conf
 	/usr/sbin/httpd -d $(HTTPDDIR) -f conf/httpd.conf
 	@echo "Test instance started at: http://localhost:5000/"
 
-stoptest:
+stoptest: clean
 	pid=`cat $(HTTPDDIR)/run/httpd.pid` && \
 	kill -TERM $$pid
 
