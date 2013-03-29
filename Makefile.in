@@ -16,11 +16,15 @@ BUILDDIR = $(PWD)/../build.d
 HTTPDDIR = $(PWD)/../httpd
 
 sync = \
-	if test -d $1/$2; then   \
-		rsync -az $1/$2/* po/; \
-		echo ">>> POs pulled"; \
-	else \
-		echo ">>> Error, \`$1/$2' should exists"; \
+	if test -f "PO_FREEZE"; then \
+		echo "> Not pulling POs for $2"; \
+	else   \
+		if test -d $1/$2; then   \
+			rsync -az $1/$2/* po/; \
+			echo ">>> POs pulled"; \
+		else \
+			echo ">>> Error, \`$1/$2' should exists"; \
+		fi   \
 	fi
 
 all: $(LANGUAGES)
