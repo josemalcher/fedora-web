@@ -369,117 +369,6 @@ ec2_f17 = [
                                     <li>${Markup(_('Full documentation for interacting with EC2 is available from &lt;a href="%s"&gt;Amazon Web Services &gt;&lt;/a&gt;') % 'http://docs.amazonwebservices.com/AWSEC2/latest/GettingStartedGuide/')}</li>
                                     <li>${Markup(_('Need help, or have a great idea? &lt;a href="%s"&gt;Join the Fedora Cloud SIG &gt;&lt;/a&gt;') % 'https://fedoraproject.org/wiki/Cloud_SIG')}</li>
                                 </ul>
-                                <p>${_('Select and launch the image of your architecture located nearest to you from the following menu or click the button beside each image in the table.')}</p>
-                                <div class="ami_instance">
-                                <ul id="nav">
-                                    <li><img src="${path}/static/images/cloud_bann.png" /></li>
-                                    <li><a>${_('Fedora %s ') % '18'}</a>
-                                        <ul>
-                                            <li><a>${_('ap-southeast-1')}</a>
-                                                <ul>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=ap-southeast-1#launchAmi=ami-30aeec62">x86_64</a></li>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=ap-southeast-1#launchAmi=ami-caa9eb98">i386</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a>${_('ap-southeast-2')}</a>
-                                                <ul>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=ap-southeast-2#launchAmi=ami-9ae472a0">x86_64</a></li>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=ap-southeast-2#launchAmi=ami-dce771e6">i386</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a>${_('ap-northeast-1')}</a>
-                                                <ul>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=ap-northeast-1#launchAmi=ami-5f01bb5e">x86_64</a></li>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=ap-northeast-1#launchAmi=ami-7100ba70">i386</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a>${_('us-east-1')}</a>
-                                                <ul>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-6145cc08">x86_64</a></li>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-0d44cd64">i386</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a>${_('us-west-1')}</a>
-                                                <ul>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=us-west-1#launchAmi=ami-0899b94d">x86_64</a></li>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=us-west-1#launchAmi=ami-de99b99b">i386</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a>${_('us-west-2')}</a>
-                                                <ul>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=us-west-2#launchAmi=ami-0266ed32">x86_64</a></li>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=us-west-2#launchAmi=ami-6467ec54">i386</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a>${_('eu-west-1')}</a>
-                                                <ul>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=eu-west-1#launchAmi=ami-bafcf3ce">x86_64</a></li>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=eu-west-1#launchAmi=ami-cafef1be">i386</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a>${_('sa-east-1')}</a>
-                                                <ul>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=sa-east-1#launchAmi=ami-81558d9c">x86_64</a></li>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=sa-east-1#launchAmi=ami-e5548cf8">i386</a></li>
-                                                </ul>
-                                            </li>
-
-                                        </ul>
-                                    </li>
-                                    <li><a>${_('Fedora %s ') % '17'}</a>
-                                        <ul>
-                                            <li><a>${_('ap-southeast-1')}</a>
-                                                <ul>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=ap-southeast-1#launchAmi=ami-2e86c07c">x86_64</a></li>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=ap-southeast-1#launchAmi=ami-cc86c09e">i386</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a>${_('ap-southeast-2')}</a>
-                                                <ul>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=ap-southeast-2#launchAmi=ami-e3a433d9">x86_64</a></li>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=ap-southeast-2#launchAmi=ami-87a433bd">i386</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a>${_('ap-northeast-1')}</a>
-                                                <ul>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=ap-northeast-1#launchAmi=ami-26e65527">x86_64</a></li>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=ap-northeast-1#launchAmi=ami-5ae6555b">i386</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a>${_('us-east-1')}</a>
-                                                <ul>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-2ea50247">x86_64</a></li>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=us-east-1#launchAmi=ami-08d97e61">i386</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a>${_('us-west-1')}</a>
-                                                <ul>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=us-west-1#launchAmi=ami-877e24c2">x86_64</a></li>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=us-west-1#launchAmi=ami-417f2504">i386</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a>${_('us-west-2')}</a>
-                                                <ul>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=us-west-2#launchAmi=ami-8e69e5be">x86_64</a></li>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=us-west-2#launchAmi=ami-e269e5d2">i386</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a>${_('eu-west-1')}</a>
-                                                <ul>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=eu-west-1#launchAmi=ami-9980baed">x86_64</a></li>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=eu-west-1#launchAmi=ami-e981bb9d">i386</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a>${_('sa-east-1')}</a>
-                                                <ul>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=sa-east-1#launchAmi=ami-eee23cf3">x86_64</a></li>
-                                                    <li><a href="https://console.aws.amazon.com/ec2/home?region=sa-east-1#launchAmi=ami-1ae33d07">i386</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                </div>
                             </div>
                             <div class="grid_12 alpha omega">
 
@@ -531,6 +420,7 @@ ec2_f17 = [
 																			</py:for>
 																		</tbody>
 																</table>
+
 
                     <xi:include href="../templates/content-export-regulations.html" />
                     		</div>
