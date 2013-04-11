@@ -1,4 +1,9 @@
 <?python
+# This file is used to generate the "static/js/cloud_ec2.js" file snd the get-fedora-options#cloud tab
+# You should only edit
+# - the bellow dictionnary containing the AMI ID (get them on the wiki)
+# - the two python list ec2_fXX_regions
+# - the template call at the end of file near "noscript" and "if JS enabled".
 
 # Returns a sorted list of unique available regions from the array
 def sorted_region(arr):
@@ -30,8 +35,6 @@ ec2_f18 = [
 			{'region':'sa-east-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-e5548cf8'}
 ]
 
-ec2_f18_regions = sorted_region(ec2_f18)
-
 ec2_f17 = [
 			{'region':'ap-northeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-5ae6555b'},
 			{'region':'ap-northeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-26e65527'},
@@ -51,10 +54,13 @@ ec2_f17 = [
 			{'region':'us-west-2',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-8e69e5be'}
 ]
 
+ec2_f18_regions = sorted_region(ec2_f18)
 ec2_f17_regions = sorted_region(ec2_f17)
+
 
 # The idea is to get something similar to http://jsfiddle.net/shaiton/wChSv/5/
 # But we have to generate it in order to have to maintain only one list of AMI ID
+# Simply read the output at "static/js/cloud_ec2.js"
 def gen_js(*args):
 	js="// File generated from cloud-tab.html.\n"
 	js+="window.onload=function(){\n"
