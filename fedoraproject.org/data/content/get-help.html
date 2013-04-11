@@ -19,18 +19,18 @@
             </div>
             </div>
             <div class="clear"></div>
-            
+
         <div class="container_16">
             <div class="grid_1 num"><p>1</p></div>
             <div class="grid_10 step-section">
                 <h3>${_('Check the Frequently Asked Questions')}</h3>
                 <h4>${_('Top 5 questions from the FAQ:')}</h4>
                 <ul>
-                    <li><a href="${_('http://docs.fedoraproject.org/en-US/Fedora/17/html/Installation_Guide/index.html')}">${_('How can I install Fedora?')}</a></li>
+                    <li><a href="http://docs.fedoraproject.org/en-US/Fedora/${global_variables.release['curr_id']}/html/Installation_Guide/index.html">${_('How can I install Fedora?')}</a></li>
                     <li><a href="http://fedoraproject.org/wiki/FAQ#How_do_I_configure_network_connections.3F_How_does_Fedora_support_wireless_connections.3F">${_('How do I configure network connections?')}</a></li>
                     <li><a href="http://fedoraproject.org/wiki/FAQ#How_do_I_install_new_software_on_Fedora.3F_Is_there_anything_like_APT.3F">${_('How do I install new software on Fedora?')}</a></li>
                     <li><a href="http://fedoraproject.org/wiki/FAQ#How_do_I_keep_Fedora_systems_updated.3F">${_('How do I keep Fedora systems updated?')}</a></li>
-                    <li><a href="http://fedoraproject.org/wiki/Releases/18/Schedule">${_('When is the next release of Fedora? What is the release schedule?')}</a></li>
+                    <li><a href="http://fedoraproject.org/wiki/Releases/${global_variables.release['next_id']}/Schedule">${_('When is the next release of Fedora? What is the release schedule?')}</a></li>
                 </ul>
                 <p><a href="http://fedoraproject.org/wiki/FAQ">${_('Show the entire FAQ')} &gt;</a></p>
             </div>
