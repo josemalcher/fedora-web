@@ -136,6 +136,7 @@ $(document).ready(function(){
     $("#hosting-sponsor img").attr("alt", sponsor_banner[1]);
     $("#hosting-sponsor a").attr("href", sponsor_banner[2]);
 
+/* Not actually used anywhere.
 	// main site banners
 	// see: banner.js
 	var choices = [];
@@ -149,7 +150,7 @@ $(document).ready(function(){
     $("#fedora-banners img").attr("src", banners[choices[choice]][0]);
     $("#fedora-banners img").attr("alt", banners[choices[choice]][1]);
     $("#fedora-banners a").attr("href", banners[choices[choice]][2]);
-
+*/
 });
 
 
