@@ -141,15 +141,15 @@ gen_js(['18',ec2_f18], ['17',ec2_f17])
 
 <!-- Genshi Template for Cloud html form  (with JS) -->
   <py:def function="printform(release, regions)">
-            <form id="cloud_options_${release}" name="cloud_options_${release}" onchange="getval();" style="visibility:hidden;">
+            <form id="cloud_options_${release}" name="cloud_options_${release}" style="visibility:hidden;">
 								<h5>${_('Fedora %s ') % release}</h5>
-                <select id="region_${release}" name="region_${release}">
+                <select id="region_${release}" name="region_${release}" onchange="getval();">
                     <option value='null'>${_('Select the nearest region')}</option>
 										<py:for each="reg in regions">
                     <option>$reg</option>
 										</py:for>
                 </select>
-                <select id="arch_${release}">
+                <select id="arch_${release}" onchange="getval();">
                     <option value="x86_64">64 bit (x86_64)</option>
                     <option value="i386">32 bit (i386)</option>
                 </select>
