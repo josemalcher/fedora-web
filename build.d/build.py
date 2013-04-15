@@ -28,11 +28,7 @@ except ImportError:
     pass
 
 # Import of build/release_schedule.py
-try:
-		from release_schedule import schedule
-except ImportError:
-		schedule = None
-		pass
+os.system("../fedoraproject.org/build/release_schedule.py")
 
 try:
     import globalvar

@@ -107,15 +107,15 @@ final =  convert_date(final)
 					<tbody>
 						<tr>
 							<td>${_('Alpha Release Public Availability')}</td>
-							<td>${alpha}</td>
+							<td><xi:include href="../../build/schedule_alpha.cache" parse='text' /></td>
     					</tr>
     					<tr>
 							<td>${_('Beta Release Public Availability')}</td>
-							<td>${beta}</td>
+							<td><xi:include href="../../build/schedule_beta.cache" parse='text' /></td>
     					</tr>
     					<tr>
 							<td>${_('Final Release Public Availability (GA)')}</td>
-							<td>${final}</td>
+							<td><xi:include href="../../build/schedule_final.cache" parse='text' /></td>
     					</tr>
 	                </tbody>
 					</table>
