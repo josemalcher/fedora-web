@@ -26,6 +26,9 @@ except ImportError:
 		feedparse = None
 		pass
 
+# Import of build/release_schedule.py
+os.system("../fedoraproject.org/build/release_schedule.py")
+
 try:
     import globalvar
 except ImportError:
