@@ -22,10 +22,10 @@ import errno
 # We import build/rss.py if exists
 sys.path.append('build')
 try:
-		from rss import *
+    from rss import *
 except ImportError:
-		feedparse = None
-		pass
+    feedparse = None
+    pass
 
 try:
     import globalvar
