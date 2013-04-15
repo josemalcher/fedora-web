@@ -17,6 +17,7 @@ from gettext import GNUTranslations
 from genshi.filters import Translator
 from genshi.template import TemplateLoader
 import fileinput
+import errno
 
 # We import build/rss.py if exists
 sys.path.append('build')
@@ -32,11 +33,18 @@ except ImportError:
     print "globalvar.py is missing. It is needed as it provides release specific variables"
     raise
 
+# Avoid race condition for concurrent builds
+def safe_makedir(path):
+    try:
+        os.makedirs(path)
+    except OSError as err:
+        if err.errno != errno.EEXIST:
+            raise
+
 def process(args):
     if os.path.exists(options.output) and options.erase:
         shutil.rmtree(options.output)
-    if not os.path.exists(options.output):
-        os.makedirs(options.output)
+    safe_makedir(options.output)
     if options.static is not None:
         static = options.static.split(',');
         for dir in static:
@@ -85,8 +93,7 @@ def process_dir(dirpath, filenames):
         relpath = '../' * (dest_file.count('/') - 1)
         relpath = relpath.rstrip('/')
         if relpath == '': relpath = '.'
-        if not os.path.exists(os.path.dirname(dest_file)):
-            os.makedirs(os.path.dirname(dest_file))
+        safe_makedir(os.path.dirname(dest_file))
         template = loader.load(src_file)
         # Variables made availble to all templates
         page = template.generate(
@@ -106,7 +113,7 @@ def copytree(src, dest):
     '''
     Recursively copy a directory, skipping .git directories.
     '''
-    os.makedirs(dest)
+    safe_makedir(dest)
     ls = os.listdir(src)
     for name in ls:
         if name == '.git':
