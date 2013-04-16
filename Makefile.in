@@ -37,11 +37,6 @@ rss-cache:
 	@echo Caching RSS...
 	$(PYTHON) $(BUILDDIR)/build.py -o out -i data/content -r -b $(BASEPATH)
 
-# Used by fedorahosted.org
-jquery:
-	mkdir -p out/static/js
-	wget http://code.jquery.com/jquery-latest.js -O out/static/js/jquery.js -q
-
 po/%.mo: po/%.po
 	msgfmt -o $@ $<
 
