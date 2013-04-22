@@ -83,7 +83,14 @@ l_code = l_map.get(lang, dflt_language)
 
         <div class="container_16">
             <div class="grid_16">
-                <p class="warning">${Markup(_('This is pre-release software and is supported by the &lt;a href="http://fedoraproject.org/wiki/QA"&gt;QA team&lt;/a&gt;. Please direct questions to test@lists.fedoraproject.org or #fedora-qa on freenode. All issues or bugs should be reported via the &lt;a href="https://bugzilla.redhat.com/"&gt;Red Hat Bugzilla&lt;/a&gt;. The Fedora Project makes no guarantees as to its suitability or usefulness. Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url': 'http://fedorapeople.org/groups/docs/release-notes/%s/' % (l_code), 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}</p>
+                <p class="warning">${Markup(_('This is pre-release software and is supported by the &lt;a href="http://fedoraproject.org/wiki/QA"&gt;QA team&lt;/a&gt;. Please direct questions to test@lists.fedoraproject.org or #fedora-qa on freenode. All issues or bugs should be reported via the &lt;a href="https://bugzilla.redhat.com/"&gt;Red Hat Bugzilla&lt;/a&gt;. The Fedora Project makes no guarantees as to its suitability or usefulness.'))}
+										<py:choose>
+											<py:when test="global_variables.release['curr_state'] == 'Alpha'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'http://fedoraproject.org/wiki/Fedora_%s_Alpha_release_notes' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
+											</py:when>
+											<py:otherwise>${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url': 'http://fedorapeople.org/groups/docs/release-notes/%s/' % (l_code), 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
+											</py:otherwise>
+										</py:choose>
+								</p>
                 <p class="note">${Markup(_('After downloading an ISO, &lt;a href="https://fedoraproject.org%s/%s/verify"&gt;verify&lt;/a&gt; it.') % (path, lang))}</p>
                 <h4>${Markup(_('Install Media'))}</h4>
                 <ul class="downloadbox installdvd">
@@ -116,15 +123,15 @@ l_code = l_map.get(lang, dflt_language)
                     <li>
                         <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
                         <ul>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i686-Live-Desktop.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-Live-Desktop.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
+                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-Desktop-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-1.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
+                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-Desktop-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-1.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
                         </ul>
                     </li>
                     <li>
                         <h5>${Markup(_('Direct Download'))}</h5>
                         <ul>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/i386/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i686-Live-Desktop.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/x86_64/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-Live-Desktop.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
+                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/i386/Fedora-Live-Desktop-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-1.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
+                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-1.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
                         </ul>
                     </li>
                 </ul>
@@ -134,15 +141,15 @@ l_code = l_map.get(lang, dflt_language)
                     <li>
                         <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
                         <ul>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i686-Live-KDE.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-Live-KDE.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
+                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-KDE-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-1.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
+                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-KDE-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-1.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
                         </ul>
                     </li>
                     <li>
                         <h5>${Markup(_('Direct Download'))}</h5>
                         <ul>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/i386/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i686-Live-KDE.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/x86_64/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-Live-KDE.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
+                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/i386/Fedora-Live-KDE-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-1.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
+                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/x86_64/Fedora-Live-KDE-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-1.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
                         </ul>
                     </li>
                 </ul>
@@ -152,37 +159,37 @@ l_code = l_map.get(lang, dflt_language)
                     <li>
                         <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
                         <ul>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i686-Live-XFCE.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-Live-XFCE.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
+                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-XFCE-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-1.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
+                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-XFCE-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-1.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
                         </ul>
                     </li>
                     <li>
                         <h5>${Markup(_('Direct Download'))}</h5>
                         <ul>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/i386/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i686-Live-XFCE.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/x86_64/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-Live-XFCE.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
+                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/i386/Fedora-Live-XFCE-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-1.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
+                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/x86_64/Fedora-Live-XFCE-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-1.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
                         </ul>
                     </li>
                 </ul>
-
+<!-- LXDE Alpha dropped
                 <h4>${Markup(_('Fedora LXDE Live Media'))}</h4>
                 <ul class="downloadbox lxdelive">
                     <li>
                         <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
                         <ul>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i686-Live-LXDE.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-Live-LXDE.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
+                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-LXDE-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-1.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
+                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-LXDE-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-1.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
                         </ul>
                     </li>
                     <li>
                         <h5>${Markup(_('Direct Download'))}</h5>
                         <ul>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/i386/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i686-Live-LXDE.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/x86_64/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-Live-LXDE.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
+                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/i386/Fedora-Live-LXDE-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-1.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
+                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/x86_64/Fedora-Live-LXDE-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-1.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
                         </ul>
                     </li>
                 </ul>
-
+-->
                 <h4>${Markup(_('Let me look around...'))}</h4>
                 <ul class="download">
                     <li><a href="http://torrent.fedoraproject.org/">${Markup(_('See all torrents'))}</a></li>
