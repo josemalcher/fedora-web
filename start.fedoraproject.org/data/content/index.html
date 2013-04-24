@@ -22,7 +22,7 @@ fda = feedparse('https://lists.fedoraproject.org/rss/announce.xml')
 
                 <ul class="feed">
                     <li py:for="entry in fda[:5]" py:if="'title' in entry" >
-                        <h5><a href="${entry['link']}">${entry["title"]}</a></h5>
+                        <a href="${entry['link']}">${entry["title"]}</a>
                     </li>
                 </ul>
                 <div id="subscribe">
@@ -35,10 +35,10 @@ fda = feedparse('https://lists.fedoraproject.org/rss/announce.xml')
             </div>
             <div class="grid_6" id="planet">
                 <h4>${_('Planet Fedora')}</h4>
-                <ul class="feed"    >
+                <ul>
                     <li class="planet_feed" py:for="entry in fpp[:8]" py:if="'title' in entry" >
-
-                        <h5><a href="${entry['link']}">${entry["title"]}</a></h5><span class="post_author">${entry['source']}</span>
+                        <a href="${entry['link']}">${entry["title"]}</a><br />
+						<span class="post_author">${entry['source']}</span>
                     </li>
                 </ul>
             </div>
