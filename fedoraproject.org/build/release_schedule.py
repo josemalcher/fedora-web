@@ -3,52 +3,28 @@
 # dates: Alpha Release Public Availability, Beta Release Public Availability and Final Release Public Availability.
 
 import urllib
-from xml.etree import ElementTree
+from StringIO import StringIO
 import gzip
-import os
+from lxml import etree
 
 a = open('build/schedule_alpha.cache', 'w')
 b = open('build/schedule_beta.cache', 'w')
-f = open('build/schedule_final.cache', 'w')
+g = open('build/schedule_final.cache', 'w')
 
-urllib.urlretrieve('http://fedorapeople.org/groups/schedule/f-19/f-19-key-milestones.tjx', 'build/f-19-key-milestones.tjx')
-localFile = gzip.open('build/f-19-key-milestones.tjx', 'r')
+u = urllib.urlopen('http://fedorapeople.org/groups/schedule/f-19/f-19-key-milestones.tjx')
+buf = StringIO(u.read())
+f = gzip.GzipFile(fileobj=buf)
+data = f.read().strip() # looks like there is a leading space in the file
 
-tree = ElementTree.parse(localFile)
-root = tree.getroot()
-for elem in tree.iterfind('taskList/task/task/task/task[@id="f19.TestingPhase.alpha.alpha_drop"]/taskScenario/start'):
-	alpha_tag = elem.tag
-        alpha_attr = elem.attrib
+root = etree.fromstring(data)
 
-for elem in tree.iterfind('taskList/task/task/task/task[@id="f19.TestingPhase.beta.beta_drop"]/taskScenario/start'):
-	beta_tag = elem.tag
-        beta_attr = elem.attrib
+alpha_release = root.xpath('//task[@id="f19.TestingPhase.alpha.alpha_drop"]/taskScenario/start/@humanReadable')
+beta_release = root.xpath('//task[@id="f19.TestingPhase.beta.beta_drop"]/taskScenario/start/@humanReadable')
+final_release = root.xpath('//task[@id="f19.LaunchPhase.final"]/taskScenario/start/@humanReadable')
 
-for elem in tree.iterfind('taskList/task/task/task[@id="f19.LaunchPhase.final"]/taskScenario/start'):
-	final_tag = elem.tag
-        final_attr = elem.attrib
-
-def sanitize_output(element):
-	string = ' '.join('{0}{1}'.format(key, val) for key, val in sorted(element.items()))
-	blacklist = ["humanReadable"]
-	for i in range(len(blacklist)):
-		string = string.replace(blacklist[i],"")
-	blacklist = ["-"]
-	for i in range(len(blacklist)):
-		string = string.replace(blacklist[i]," ")
-	return string
-
-alpha = sanitize_output(alpha_attr)
-beta = sanitize_output(beta_attr)
-final = sanitize_output(final_attr)
-
-output_alpha = """%s""" % (alpha)
-output_beta = """%s""" % (beta)
-output_final = """%s""" % (final)
-
-a.write(output_alpha)
+a.write(alpha_release[0])
 a.close
-b.write(output_beta)
+b.write(beta_release[0])
 b.close
-f.write(output_final)
-f.close
+g.write(final_release[0])
+g.close
