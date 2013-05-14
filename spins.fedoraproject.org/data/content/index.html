@@ -15,11 +15,11 @@ comm_info = community_paths[random.randint(0, len(community_paths)-1)]
     <h2>${_('Meet our spins.')}</h2>
     <p>${_('What is a spin? Fedora spins are alternate version of Fedora, tailored for various types of users via hand-picked application set or customizations.')} </p>
     <p><a href="${relpath}/about">${_('Learn more about spins &gt;')}</a></p>
-		<ul class="tabs"> 
-			<li><a id="t1" href="#bypopularity">${_('By Popularity')}</a></li> 
-			<li><a id="t2" href="#alphaorder">${_('Alphabetical Order')}</a></li> 
-		</ul> 
-		<div class="panes"> 
+		<ul class="tabs">
+			<li><a id="t1" href="#bypopularity">${_('By Popularity')}</a></li>
+			<li><a id="t2" href="#alphaorder">${_('Alphabetical Order')}</a></li>
+		</ul>
+		<div class="panes">
 			<div id="popular-spins">
 				<table>
 					<tbody>
@@ -29,14 +29,14 @@ comm_info = community_paths[random.randint(0, len(community_paths)-1)]
 							num = most_downloaded[t][1]['downloads']
 							?>
 							<td class="rank">#${t+1}</td>
-							<td class="name"><a href="${relpath}/${name.lower()}/">${name}</a> <br />${num} ${_('downloads')}</td>
+							<td class="name"><a href="${relpath}/${name.lower()}/">${name}</a></td>
 							<td><a href="${relpath}/${name.lower()}/"><img src="${relpath}/static/images/spin/${name.lower()}-mini.png" /></a></td>
 							<td>${spin_detail[name.lower()]}<br /><span class="learn-more"><a href="${relpath}/${name.lower()}/">${_('Learn more &amp; download! &gt;')}</a></span></td>
 						</tr>
 					</tbody>
 				</table>
-				<p class="footnote">${_('Note: Spin popularity is determined by number of torrent downloads since the most recent Fedora release.')}</p>				
-			</div> 
+				<p class="footnote">${_('Note: Spin popularity is determined by number of torrent downloads since the most recent Fedora release.')}</p>
+			</div>
 				<div id="alpha-spins">
 				<table>
 					<tbody>
@@ -51,9 +51,9 @@ comm_info = community_paths[random.randint(0, len(community_paths)-1)]
 							<td>${spin_detail[name.lower()]}<br /><span class="learn-more"><a href="${relpath}/${name.lower()}/">${Markup(_('Learn more &amp; download! &gt;'))}</a></span></td>
 						</tr>
 					</tbody>
-				</table>				
+				</table>
 
-			</div> 
+			</div>
 		</div>
 	<h3>${_('Meet the Spin Community')}</h3>
     <xi:include href="${comm_info[0]}" />
