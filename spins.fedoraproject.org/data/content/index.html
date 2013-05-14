@@ -46,7 +46,7 @@ comm_info = community_paths[random.randint(0, len(community_paths)-1)]
 							num = alphabetical[t][1]['downloads']
 							?>
 							<td class="rank">#${t+1}</td>
-							<td class="name"><a href="${relpath}/${name.lower()}/">${name}</a> <br />${num} downloads</td>
+							<td class="name"><a href="${relpath}/${name.lower()}/">${name}</a></td>
 							<td><a href="${relpath}/${name.lower()}/"><img src="${relpath}/static/images/spin/${name.lower()}-mini.png" /></a></td>
 							<td>${spin_detail[name.lower()]}<br /><span class="learn-more"><a href="${relpath}/${name.lower()}/">${Markup(_('Learn more &amp; download! &gt;'))}</a></span></td>
 						</tr>
