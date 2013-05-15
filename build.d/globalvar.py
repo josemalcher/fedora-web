@@ -7,7 +7,7 @@ release={
     'next_id':     '19',
     'curr_name':   'Spherical Cow',
     'next_name':   'Schrödinger\'s Cat',
-    'curr_state':  'Alpha',             # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_state':  'Beta',             # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_ppc64_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_s390_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
