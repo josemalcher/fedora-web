@@ -2,10 +2,10 @@ var available_langs = [ "bg", "bn_IN", "cs", "da", "de", "el", "en", "es", "fi",
 
 
 var today = new Date();
-var release = new Date("January 15, 2013 15:00:00 UTC");
+var release = new Date("July 2, 2013 14:00:00 UTC");
 var millisBetweenDates = release - today;
 var days = Math.ceil(millisBetweenDates/1000/60/60/24);
-var url = "https://fedoraproject.org/wiki/Releases/18/Schedule";
+var url = "https://fedoraproject.org/wiki/Releases/19/Schedule";
 
 var script = document.getElementById('fedora-banner');
 var lang = "en"
@@ -50,12 +50,12 @@ bannerimg.style.width = width;
 
 
 if (days <= 0) {
-    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/banners/f18release.png");
-    bannerimg.setAttribute("alt", "Fedora 18 is here!");
+    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/banners/f19release.png");
+    bannerimg.setAttribute("alt", "Fedora 19 is here!");
     url = "http://get.fedoraproject.org/";
 } else {
     bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora18-countdown-banner-" + days + "." + lang + "." + "png");
-    bannerimg.setAttribute("alt", "Fedora 18 Spherical Cow released in " + days + " days.");
+    bannerimg.setAttribute("alt", "Fedora 19 Spherical Cow released in " + days + " days.");
     if (days < 36) {
         // as we don't have more than 35 pngs
         bannerimg.setAttribute("style", "background-image:url(https://fedoraproject.org/static/images/counter/animated.gif);background-repeat:no-repeat;background-size:" + width +";width:" + width);
