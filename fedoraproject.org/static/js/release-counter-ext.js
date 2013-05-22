@@ -1,4 +1,4 @@
-var available_langs = [ "bg", "bn_IN", "cs", "da", "de", "el", "en", "es", "fi", "fr", "gu", "he", "hi", "hr", "hu", "id", "is", "it", "ja", "kn", "ko", "ks", "ml", "nl", "pa", "pl", "pt", "ro", "ru", "si", "sr", "sv", "th", "tr", "uk", "vi_VN", "zh_CN", "zh_TW" ];
+var available_langs = [ "ar", "bg", "bn_IN", "cs", "da", "de", "el", "en", "es", "fi", "fr", "gu", "he", "hi", "hr", "hu", "id", "is", "it", "ja", "kn", "ko", "ks", "ml", "nl", "pa", "pl", "pt", "pt_BR", "ro", "ru", "si", "sr", "sv", "th", "tr", "uk", "vi_VN", "zh_CN", "zh_TW" ];
 
 
 var today = new Date();
@@ -50,16 +50,12 @@ bannerimg.style.width = width;
 
 
 if (days <= 0) {
-    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/banners/f19release.png");
+    bannerimg.setAttribute("src", "/static/images/banners/f19release.png");
     bannerimg.setAttribute("alt", "Fedora 19 is here!");
     url = "http://get.fedoraproject.org/";
 } else {
-    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora18-countdown-banner-" + days + "." + lang + "." + "png");
-    bannerimg.setAttribute("alt", "Fedora 19 Spherical Cow released in " + days + " days.");
-    if (days < 36) {
-        // as we don't have more than 35 pngs
-        bannerimg.setAttribute("style", "background-image:url(https://fedoraproject.org/static/images/counter/animated.gif);background-repeat:no-repeat;background-size:" + width +";width:" + width);
-    }
+    bannerimg.setAttribute("src", "/static/images/counter/" + lang + "/fedora19-countdown-banner-" + days + "." + lang + "." + "png");
+    bannerimg.setAttribute("alt", "Fedora 19 Schrödinger\'s Cat released in " + days + " days.");
 }
 
 bannerlink.setAttribute("href", url);
