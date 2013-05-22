@@ -35,11 +35,7 @@ if global_variables.release['curr_state'] == "Beta":
   available_languages = os.walk('static/images/counter/').next()[1]
   if lang in available_languages:
     image_lang = lang
-  image = 'counter/' + image_lang + '/fedora' + global_variables.release['next_id'] + '-countdown-banner-' + days + '.' + image_lang + '.png'
-
-  if not os.path.isfile(image):
-    image = 'banners/f' + global_variables.release['next_id'] + 'beta.png'
-
+  image = '/static/images/counter/' + image_lang + '/fedora' + global_variables.release['next_id'] + '-countdown-banner-' + days + '.' + image_lang + '.png'
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
