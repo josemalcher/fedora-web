@@ -5,41 +5,41 @@
 # :%s#^| \([a-zA-Z*-9]*\)[ |]*\(i386\|x86_64\)[ |]*\(EBS-backed\)[ |]* \(ami.*\)#{'region':'\1', 'arch':'\2', 'store':'\3', 'id':'\4'},#g
 
 ec2_f18 = [
-{'region':'ap-southeast-1', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-30aeec62'},
-{'region':'ap-southeast-1', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-caa9eb98'},
-{'region':'ap-southeast-2', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-9ae472a0'},
-{'region':'ap-southeast-2', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-dce771e6'},
-{'region':'ap-northeast-1', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-5f01bb5e'},
-{'region':'ap-northeast-1', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-7100ba70'},
-{'region':'us-east-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-d13758b8'},
-{'region':'us-east-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-dd3758b4'},
-{'region':'us-west-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-0899b94d'},
-{'region':'us-west-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-de99b99b'},
-{'region':'us-west-2',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-0266ed32'},
-{'region':'us-west-2',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-6467ec54'},
-{'region':'eu-west-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-bafcf3ce'},
-{'region':'eu-west-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-cafef1be'},
-{'region':'sa-east-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-81558d9c'},
-{'region':'sa-east-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-e5548cf8'}
+{'region':'ap-southeast-1', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-4c327c1e'},
+{'region':'ap-southeast-1', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-f8357baa'},
+{'region':'ap-southeast-2', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-33d24109'},
+{'region':'ap-southeast-2', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-f5d340cf'},
+{'region':'ap-northeast-1', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-33b23b32'},
+{'region':'ap-northeast-1', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-51bc3550'},
+{'region':'us-east-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-b71078de'},
+{'region':'us-east-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-6f640c06'},
+{'region':'us-west-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-674f6122'},
+{'region':'us-west-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-634f6126'},
+{'region':'us-west-2',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-fd9302cd'},
+{'region':'us-west-2',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-67930257'},
+{'region':'eu-west-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-43809137'},
+{'region':'eu-west-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-2d819059'},
+{'region':'sa-east-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-08eb4e15'},
+{'region':'sa-east-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-d2e84dcf'}
 ]
 
 ec2_f17 = [
-      {'region':'ap-northeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-5ae6555b'},
-      {'region':'ap-northeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-26e65527'},
-      {'region':'ap-southeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-cc86c09e'},
-      {'region':'ap-southeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-2e86c07c'},
-      {'region':'ap-southeast-2', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-87a433bd'},
-      {'region':'ap-southeast-2', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-e3a433d9'},
-      {'region':'eu-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-e981bb9d'},
-      {'region':'eu-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-9980baed'},
-      {'region':'sa-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-1ae33d07'},
-      {'region':'sa-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-eee23cf3'},
-      {'region':'us-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-ed375884'},
-      {'region':'us-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-fd375894'},
-      {'region':'us-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-417f2504'},
-      {'region':'us-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-877e24c2'},
-      {'region':'us-west-2',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-e269e5d2'},
-      {'region':'us-west-2',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-8e69e5be'}
+      {'region':'ap-northeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-b1f37db0'},
+      {'region':'ap-northeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-45bd3444'},
+      {'region':'ap-southeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-6af1be38'},
+      {'region':'ap-southeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-54f0bf06'},
+      {'region':'ap-southeast-2', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-210a9a1b'},
+      {'region':'ap-southeast-2', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-850999bf'},
+      {'region':'eu-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-f14e5f85'},
+      {'region':'eu-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-234c5d57'},
+      {'region':'sa-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-aa7da7b7'},
+      {'region':'sa-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-567da74b'},
+      {'region':'us-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-4b0b6422'},
+      {'region':'us-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-2509664c'},
+      {'region':'us-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-d7be9192'},
+      {'region':'us-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-01bf9044'},
+      {'region':'us-west-2',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-e70a9cd7'},
+      {'region':'us-west-2',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-150a9c25'}
 ]
 
 ?>
