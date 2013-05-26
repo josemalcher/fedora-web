@@ -7,19 +7,22 @@ release={
     'next_id':     '19',
     'curr_name':   'Spherical Cow',
     'next_name':   'Schrödinger\'s Cat',
-    'curr_state':  'Alpha',             # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_state':  'Beta',             # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_ppc64_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_s390_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  'Beta',   # either 'Alpha', 'Beta' or '' (i.e empty)
     'prev_arm_id': '17',
     'prev_ppc64_id': '17',
     'prev_s390_id': '17',
     'curr_arm_id': '18',
     'curr_ppc64_id': '18',
     'curr_s390_id': '18',
+    'curr_cloud_id': '18',
     'next_arm_id': '19',
     'next_ppc64_id': '19',
     'next_s390_id': '19',
+    'next_cloud_id': '19',
 }
 
 path={
