@@ -50,11 +50,11 @@ bannerimg.style.width = width;
 
 
 if (days <= 0) {
-    bannerimg.setAttribute("src", "/static/images/banners/f19release.png");
+    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/banners/f19release.png");
     bannerimg.setAttribute("alt", "Fedora 19 is here!");
     url = "http://get.fedoraproject.org/";
 } else {
-    bannerimg.setAttribute("src", "/static/images/counter/" + lang + "/fedora19-countdown-banner-" + days + "." + lang + "." + "png");
+    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora19-countdown-banner-" + days + "." + lang + "." + "png");
     bannerimg.setAttribute("alt", "Fedora 19 Schrödinger\'s Cat released in " + days + " days.");
 }
 
