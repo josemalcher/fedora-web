@@ -26,6 +26,7 @@
         <div class="container_16">
             <div class="grid_16">
 		<p id="section-nav-top"><a href="${path}/${lang}/get-fedora">${Markup(_('&amp;#8592; Back to the main "Get Fedora" page'))}.</a></p>
+            <p py:if="global_variables.release['curr_state']" class="note"><img src="${path}/static/images/smirk.png" class="smirk" />${Markup(_('Did someone say... &amp;ldquo;&lt;a href="get-prerelease"&gt;%s&lt;/a&gt;&amp;rdquo;?') % global_variables.release['curr_state'])}</p>
                 <p class="note">${Markup(_('After downloading an ISO, &lt;a href="https://fedoraproject.org%s/%s/verify"&gt;verify&lt;/a&gt; it.') % (path, lang))}</p>
 
                 <h3 class="header">${Markup(_('Install Media'))}</h3>
