@@ -17,12 +17,12 @@ $(document).ready(function(){
 
 	// hide all "learn more" links
 	$("span.learn-more").hide();
-	
+
 	// toggles links on/off on hover
 	$("tr.spin-row").hover(
 		function () {
 			$(this).find("span.learn-more").show();
-		}, 
+		},
 		function () {
 			$(this).find("span.learn-more").hide();
 		}
@@ -90,6 +90,26 @@ $(document).ready(function(){
         window.location = 'download-arm-splash?file='+linkLocation;
     });
 
+    // Random banners
+    function random_banner(){
+    var images = [], ry, lnk;
+    images[0] = "/static/images/banners/random/formats.png";
+    images[1] = "/static/images/banners/random/spins.png";
+    images[2] = "/static/images/banners/random/clouds.png";
+    images[3] = "/static/images/banners/random/2nd_arches.png";
+
+    var links = [];
+    links[0] = "/get-fedora-options#formats";
+    links[1] = "http://spins.fedoraproject.org/";
+    links[2] = "/get-fedora-options#clouds";
+    links[3] = "/get-fedora-options#2nd_arches";
+
+    ry = Math.floor(Math.random() * images.length);
+    lnk = document.getElementById('archreleases');
+    lnk.href = links[ry];
+    lnk.getElementsByTagName('img')[0].src = images[ry];
+    }
+    random_banner();
 
     // ARM splash download page stuff
     if (/.*download-arm-splash.*/i.test(window.location.href)) {
