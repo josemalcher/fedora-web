@@ -104,10 +104,18 @@ $(document).ready(function(){
     links[2] = "/get-fedora-options#clouds";
     links[3] = "/get-fedora-options#2nd_arches";
 
+    var alt = [];
+    alt[0] = "Desktop";
+    alt[1] = "Spins";
+    alt[2] = "Cloud";
+    alt[3] = "Secondary Arches";
+
     ry = Math.floor(Math.random() * images.length);
     lnk = document.getElementById('archreleases');
     lnk.href = links[ry];
+    lnk.alt = alt[ry];
     lnk.getElementsByTagName('img')[0].src = images[ry];
+    lnk.getElementsByTagName('img')[0].alt = alt[ry];
     }
     random_banner();
 
