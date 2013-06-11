@@ -2,27 +2,27 @@
 # -*- coding: utf-8 -*-
 # This file defines all variable needed to be edited during the release cycle (alpha, beta...).
 release={
-    'prev_id':     '17',
-    'curr_id':     '18',
-    'next_id':     '19',
-    'curr_name':   'Spherical Cow',
-    'next_name':   'Schrödinger\'s Cat',
-    'curr_state':  'Beta',             # either 'Alpha', 'Beta' or '' (i.e empty)
+    'prev_id':     '18',
+    'curr_id':     '19',
+    'next_id':     '20',
+    'curr_name':   'Schrödinger\'s Cat',
+    'next_name':   '',
+    'curr_state':  '',             # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_ppc64_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_s390_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  'Beta',   # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'prev_arm_id': '17',
     'prev_ppc64_id': '17',
     'prev_s390_id': '17',
     'curr_arm_id': '18',
     'curr_ppc64_id': '18',
     'curr_s390_id': '18',
-    'curr_cloud_id': '18',
+    'curr_cloud_id': '19',
     'next_arm_id': '19',
     'next_ppc64_id': '19',
     'next_s390_id': '19',
-    'next_cloud_id': '19',
+    'next_cloud_id': '20',
 }
 
 path={
