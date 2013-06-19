@@ -45,7 +45,7 @@ docs_url = [
 		<ul class="tabs">
 			<li><a id="t1" href="#about">${_('About')}</a></li>
 			<li><a id="t2" href="#games">${_('Games')}</a></li>
-	<!--		<li><a id="t3" href="#downloads">${_('Downloads')}</a></li> -->
+			<li><a id="t3" href="#downloads">${_('Downloads')}</a></li>
 			<li><a id="t4" href="#support">${_('Support')}</a></li>
 		</ul>
 
@@ -71,7 +71,6 @@ docs_url = [
 				 <li>${_('Nethack')}</li>
 				 <li><a href="#games">${_('And over 100 more...!')}</a></li>
 				</ul>
-				<p style="color: red;">${_('Games Spin is not available for the last Fedora release. Join us to make it real again!')}</p>
 			</div>
 
 			<div>
@@ -692,7 +691,7 @@ docs_url = [
 				<p>${_('Asteroid-like game with powerups.')}</p>
 				<p><a href="http://www.bob.allegronetwork.com/zasx/index.html">${_('Visit homepage &gt;')}</a></p>
 			</div>
-		<!--	<div>
+			<div>
 				<h2>${_('Downloads')}</h2>
 				<h3>${_('Fedora %s Games Spin') % global_variables.release['curr_id']}</h3>
 				<h4><em>${_('Installable Live Media')}</em></h4>
@@ -725,7 +724,7 @@ docs_url = [
 					<p class="fine-print">${_('%(size)sGB for %(arch)s PC ISO') % {'size':global_variables.iso_size['x86_64_Live_Games'], 'arch':'64-bit'}}<br /> <a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
 				</span>
                 <xi:include href="../../templates/download-tab.html" />
-			</div> -->
+			</div>
 			<div>
 				<h2>${_('Games Spin Support')}</h2>
 				<xi:include href="../../templates/support-tab.html" />
