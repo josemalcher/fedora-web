@@ -60,7 +60,7 @@ if global_variables.release['curr_state'] == "Beta":
 								<h2>${_('Free your desktop with Fedora.')}</h2>
 								<p>${_('Fedora is a fast, stable, and powerful operating system for everyday use built by a worldwide community of friends. It\'s completely free to use, study, and share.')}</p>
 								<ul>
-									<li><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-${global_variables.release['curr_id']}-x86_64-Live-Desktop.iso" id="download-button" class="download-splash">${_('Download Now!')}</a></li>
+									<li><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" id="download-button" class="download-splash">${_('Download Now!')}</a></li>
 									<li><a href="${path}/${lang}/get-fedora">${_('Learn More')}</a></li>
 								</ul>
 								<p class="small">${_('%(size)sMB, ISO image for %(arch)s-bit PCs') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}} <br /><a href="${path}/${lang}/get-fedora-options">${Markup(_('More options &gt;'))}</a></p>
@@ -113,7 +113,7 @@ if global_variables.release['curr_state'] == "Beta":
 				</div>
 
 		<div class="clear"></div>
-        <div class="news"><span class="news_title">${_('news')}</span>${_('Fedora 19 released on July 2, 2013!')}<a class="news_relnotes" href="${_('http://docs.fedoraproject.org/en-US/Fedora/19/html/Release_Notes/index.html')}">${_('Read the release notes')}</a><a class="news_download" href="http://download.fedoraproject.org/pub/fedora/linux/releases/19/Live/x86_64/Fedora-Live Desktop-x86_64-19-1.iso">${_('Download now')}</a></div>
+        <div class="news"><span class="news_title">${_('news')}</span>${_('Fedora 19 released on July 2, 2013!')}<a class="news_relnotes" href="${_('http://docs.fedoraproject.org/en-US/Fedora/19/html/Release_Notes/index.html')}">${_('Read the release notes')}</a><a class="news_download" href="http://download.fedoraproject.org/pub/fedora/linux/releases/19/Live/x86_64/Fedora-Live-Desktop-x86_64-19-1.iso">${_('Download now')}</a></div>
 		<div class="clear"></div>
 
 		<div class="container_16">
@@ -235,7 +235,7 @@ if global_variables.release['curr_state'] == "Beta":
                       <a href="${path}/${lang}/get-prerelease"><img alt="Fedora ${global_variables.release['next_id']} Beta ${global_variables.release['curr_name']} is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}beta.png" /></a>
                     </py:when>
 										<py:otherwise>
-											<a href="${path}/${lang}/get-prerelease"><img alt="Fedora ${global_variables.release['curr_id']} ${global_variables.release['curr_name']} is here!" src="${path}/static/images/banners/f${global_variables.release['curr_id']}release.png" /></a>
+											<a href="${path}/${lang}/get-fedora"><img alt="Fedora ${global_variables.release['curr_id']} ${global_variables.release['curr_name']} is here!" src="${path}/static/images/banners/f${global_variables.release['curr_id']}release.png" /></a>
 										</py:otherwise>
 									</py:choose>
                 </div>
