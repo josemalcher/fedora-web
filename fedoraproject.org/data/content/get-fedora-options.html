@@ -359,8 +359,8 @@ ec2_f17 = [
                             <div class="grid_10 omega">
                                 <p>${Markup(_('Fedora provides ready-to-run cloud images for each supported Fedora release. These are available in Amazon EC2 and for direct download. The downloadable images are available in compressed raw image format and in qcow2 for immediate use with &lt;a href="%s"&gt;OpenStack&lt;/a&gt;. The images are configured with cloud-init, and so will take advantage of ec2-compatible metadata services for provisioning ssh keys.') % 'http://openstack.redhat.com/')}</p>
 
-                                <p>${Markup(_('Note that the root account is disabled, but sudo access is granted to a special login user, For Fedora 19 and newer, this user is &lt;strong&gt;%s&lt;/strong&gt;.') % 'fedora')}
-                                <br /> ${Markup(_('For Fedora 18 or older releases the user is &lt;strong&gt;%s&lt;/strong&gt;.') % 'ec2-user')}</p>
+                                <p>${Markup(_('Note that the root account is disabled, but sudo access is granted to a special login user. For Fedora 19 and newer releases, this user is &lt;strong&gt;%s&lt;/strong&gt;.') % 'fedora')}
+                                <br /> ${Markup(_('For Fedora 18 and older releases the user is &lt;strong&gt;%s&lt;/strong&gt;.') % 'ec2-user')}</p>
                                 <ul>
                                     <li>${Markup(_('Not familiar with EC2? &lt;a href="%s"&gt;Read more about the terminology and concepts &gt;&lt;/a&gt;') % 'http://fedoraproject.org/wiki/User:Gholms/EC2_Primer')}</li>
                                     <li>${Markup(_('Full documentation for interacting with EC2 is available from &lt;a href="%s"&gt;Amazon Web Services &gt;&lt;/a&gt;') % 'http://docs.amazonwebservices.com/AWSEC2/latest/GettingStartedGuide/')}</li>
@@ -438,9 +438,9 @@ ec2_f17 = [
                                     <h6>${_('32-bit (i386)')}</h6>
                                     </div>
                             <div class="grid_6 omega arch">
-                                    <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/i386/Fedora-i386-${global_variables.release['curr_id']}-sda.qcow2" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
+                                    <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/i386/Fedora-i386-${global_variables.release['curr_id']}-sda.qcow2" class="download-button-mini download-cloud-splash">${_('Download Now!')}</a>
                                     <p class="fine-print">${_('%(size)sMB sda.qcow2 disk image') % {'size':global_variables.iso_size['i686_sda.qcow2']}}</p>
-                                    <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/i386/Fedora-i386-${global_variables.release['curr_id']}-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
+                                    <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/i386/Fedora-i386-${global_variables.release['curr_id']}-sda.raw.xz" class="download-button-mini download-cloud-splash">${_('Download Now!')}</a>
                                     <p class="fine-print">${_('%(size)sMB Raw disk image') % {'size':global_variables.iso_size['i686_raw']}}</p>
                             </div>
                             <div class="grid_10 prefix_2 alpha omega"><hr /></div>
@@ -448,9 +448,9 @@ ec2_f17 = [
                                     <h6>${_('64-bit (x86_64)')}</h6>
                             </div>
                             <div class="grid_6 omega arch">
-                                    <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/x86_64/Fedora-x86_64-${global_variables.release['curr_id']}-sda.qcow2" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
+                                    <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/x86_64/Fedora-x86_64-${global_variables.release['curr_id']}-sda.qcow2" class="download-button-mini download-cloud-splash">${_('Download Now!')}</a>
                                     <p class="fine-print">${_('%(size)sMB sda.qcow2 disk image') % {'size':global_variables.iso_size['x86_64_sda.qcow2']}}</p>
-                                    <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/x86_64/Fedora-x86_64-${global_variables.release['curr_id']}-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
+                                    <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/x86_64/Fedora-x86_64-${global_variables.release['curr_id']}-sda.raw.xz" class="download-button-mini download-cloud-splash">${_('Download Now!')}</a>
                                     <p class="fine-print">${_('%(size)sMB Raw disk image') % {'size':global_variables.iso_size['x86_64_raw']}}</p>
                             </div>
                             <div class="grid_10 prefix_2 alpha omega"><hr /></div>
