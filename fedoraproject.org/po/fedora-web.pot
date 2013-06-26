@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-06-25 21:31+0200\n"
+"POT-Creation-Date: 2013-06-26 22:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -470,26 +470,32 @@ msgid ""
 "100px and 200px."
 msgstr ""
 
-#: data/content/download-arm-splash.html:7 data/content/download-splash.html:7
+#: data/content/download-arm-splash.html:7
+#: data/content/download-cloud-splash.html:7
+#: data/content/download-splash.html:7
 msgid "Fedora Project - Download next steps."
 msgstr ""
 
 #: data/content/download-arm-splash.html:13
+#: data/content/download-cloud-splash.html:13
 #: data/content/download-splash.html:13
 msgid "Thanks for downloading Fedora!"
 msgstr ""
 
 #: data/content/download-arm-splash.html:14
+#: data/content/download-cloud-splash.html:14
 #: data/content/download-splash.html:14
 msgid "We know you'll love it!"
 msgstr ""
 
 #: data/content/download-arm-splash.html:17
+#: data/content/download-cloud-splash.html:17
 #: data/content/download-splash.html:17
 msgid "Fedora is built by people across the globe. Everyone is welcome to join!"
 msgstr ""
 
 #: data/content/download-arm-splash.html:25
+#: data/content/download-cloud-splash.html:25
 #: data/content/download-splash.html:25
 msgid "Your download should begin in a few seconds. If not, click the link below"
 msgstr ""
@@ -511,11 +517,13 @@ msgid ""
 msgstr ""
 
 #: data/content/download-arm-splash.html:38
+#: data/content/download-cloud-splash.html:39
 #: data/content/download-splash.html:38
 msgid "I need help running or installing Fedora."
 msgstr ""
 
 #: data/content/download-arm-splash.html:39
+#: data/content/download-cloud-splash.html:40
 #: data/content/download-splash.html:39
 msgid ""
 "There's several ways you can get help with Fedora, from forums to live "
@@ -523,16 +531,19 @@ msgid ""
 msgstr ""
 
 #: data/content/download-arm-splash.html:40
+#: data/content/download-cloud-splash.html:41
 #: data/content/download-splash.html:40
 msgid "Get help with Fedora"
 msgstr ""
 
 #: data/content/download-arm-splash.html:45
+#: data/content/download-cloud-splash.html:46
 #: data/content/download-splash.html:45
 msgid "I want to learn more about Fedora."
 msgstr ""
 
 #: data/content/download-arm-splash.html:46
+#: data/content/download-cloud-splash.html:47
 #: data/content/download-splash.html:46
 msgid ""
 "Fedora is more than an operating system - it's a vibrant community "
@@ -540,8 +551,33 @@ msgid ""
 msgstr ""
 
 #: data/content/download-arm-splash.html:47
+#: data/content/download-cloud-splash.html:48
 #: data/content/download-splash.html:47
 msgid "Learn more about Fedora"
+msgstr ""
+
+#: data/content/download-cloud-splash.html:31
+msgid "What should I do with this image?"
+msgstr ""
+
+#: data/content/download-cloud-splash.html:32
+msgid ""
+"You'll need to uncompress the raw image in order to use it, while the "
+"qcow2 images can be used directly by OpenStack."
+msgstr ""
+
+#: data/content/download-cloud-splash.html:33
+#: data/content/get-fedora-options.html:433
+#, python-format
+msgid ""
+"For any doubts about running Instances on OpenStack read the <a "
+"href=\"%s\">official documentation</a>."
+msgstr ""
+
+#: data/content/download-cloud-splash.html:34
+msgid ""
+"Not to worry, <a href=\"../verify\">verify</a> your download before using"
+" it."
 msgstr ""
 
 #: data/content/download-splash.html:31
@@ -820,6 +856,7 @@ msgstr ""
 #: data/content/get-fedora-options.html:213
 #: data/content/get-fedora-options.html:244
 #: data/content/get-fedora-options.html:280
+#: data/content/get-fedora-options.html:429
 msgid "32-bit PC Edition"
 msgstr ""
 
@@ -856,18 +893,22 @@ msgstr ""
 #: data/content/get-fedora-options.html:235
 #: data/content/get-fedora-options.html:257
 #: data/content/get-fedora-options.html:266
-#: data/content/get-fedora-options.html:459
-#: data/content/get-fedora-options.html:463
-#: data/content/get-fedora-options.html:474
-#: data/content/get-fedora-options.html:488
-#: data/content/get-fedora-options.html:492
-#: data/content/get-fedora-options.html:503
-#: data/content/get-fedora-options.html:507
-#: data/content/get-fedora-options.html:518
+#: data/content/get-fedora-options.html:440
+#: data/content/get-fedora-options.html:442
+#: data/content/get-fedora-options.html:450
+#: data/content/get-fedora-options.html:452
+#: data/content/get-fedora-options.html:493
+#: data/content/get-fedora-options.html:497
+#: data/content/get-fedora-options.html:508
 #: data/content/get-fedora-options.html:522
-#: data/content/get-fedora-options.html:540
-#: data/content/get-fedora-options.html:545
-#: data/content/get-fedora-options.html:558 data/content/get-fedora.html:37
+#: data/content/get-fedora-options.html:526
+#: data/content/get-fedora-options.html:537
+#: data/content/get-fedora-options.html:541
+#: data/content/get-fedora-options.html:552
+#: data/content/get-fedora-options.html:556
+#: data/content/get-fedora-options.html:574
+#: data/content/get-fedora-options.html:579
+#: data/content/get-fedora-options.html:592 data/content/get-fedora.html:37
 #: data/content/index.html:63
 msgid "Download Now!"
 msgstr ""
@@ -1152,56 +1193,60 @@ msgstr ""
 msgid "Fedora In The Cloud"
 msgstr ""
 
-#: data/content/get-fedora-options.html:356
-msgid "Fedora on EC2"
+#: data/content/get-fedora-options.html:359
+#, python-format
+msgid ""
+"Fedora provides ready-to-run cloud images for each supported Fedora "
+"release. These are available in Amazon EC2 and for direct download. The "
+"downloadable images are available in compressed raw image format and in "
+"qcow2 for immediate use with <a href=\"%s\">OpenStack</a>. The images are"
+" configured with cloud-init, and so will take advantage of ec2-compatible"
+" metadata services for provisioning ssh keys."
+msgstr ""
+
+#: data/content/get-fedora-options.html:361
+#, python-format
+msgid ""
+"Note that the root account is disabled, but sudo access is granted to a "
+"special login user. For Fedora 19 and newer releases, this user is "
+"<strong>%s</strong>."
 msgstr ""
 
 #: data/content/get-fedora-options.html:362
-msgid ""
-"Fedora publishes system images for Amazon Web Services' (AWS) virtual "
-"machine platform, Amazon Elastic Compute Cloud (EC2), which allows one to"
-" create virtual machines in the cloud with very little effort."
-msgstr ""
-
-#: data/content/get-fedora-options.html:363
-msgid ""
-"These images, known as AMIs (Amazon Machine Images), are available in a "
-"variety of zones and architectures, and are identifiable by their unique "
-"identification number. This ID can then be utilized to locate and launch "
-"an image."
-msgstr ""
-
-#: data/content/get-fedora-options.html:365
 #, python-format
-msgid ""
-"Fedora's EC2 images follow standard EC2 login conventions, meaning that "
-"root login is disabled, but sudo access is granted.  The default username"
-" for the images is <strong>%s</strong>."
+msgid "For Fedora 18 and older releases the user is <strong>%s</strong>."
 msgstr ""
 
-#: data/content/get-fedora-options.html:368
+#: data/content/get-fedora-options.html:364
 #, python-format
 msgid ""
 "Not familiar with EC2? <a href=\"%s\">Read more about the terminology and"
 " concepts ></a>"
 msgstr ""
 
-#: data/content/get-fedora-options.html:369
+#: data/content/get-fedora-options.html:365
 #, python-format
 msgid ""
 "Full documentation for interacting with EC2 is available from <a "
 "href=\"%s\">Amazon Web Services ></a>"
 msgstr ""
 
-#: data/content/get-fedora-options.html:370
+#: data/content/get-fedora-options.html:366
 #, python-format
 msgid ""
 "Need help, or have a great idea? <a href=\"%s\">Join the Fedora Cloud "
 "SIG ></a>"
 msgstr ""
 
-#: data/content/get-fedora-options.html:375
+#: data/content/get-fedora-options.html:370
 msgid "Currently supported EC2 Images"
+msgstr ""
+
+#: data/content/get-fedora-options.html:373
+msgid ""
+"Choose the region and machine architecture and just click to launch in "
+"your Amazon Web Services account. Or, copy the AMI ID and use that to "
+"launch from the AWS Console or command-line tools."
 msgstr ""
 
 #: data/content/get-fedora-options.html:376
@@ -1240,22 +1285,55 @@ msgstr ""
 msgid "Launch AMI instance"
 msgstr ""
 
-#: data/content/get-fedora-options.html:431
+#: data/content/get-fedora-options.html:426
+#, python-format
+msgid "Fedora %(release)s Downloadable Cloud Images"
+msgstr ""
+
+#: data/content/get-fedora-options.html:432
+msgid ""
+"Download these images for use with your local private cloud, or to modify"
+" and upload to a public cloud. The qcow2 images can be used directly by "
+"OpenStack. The raw.xz images can be used by other cloud infrastructure "
+"software but will need to be uncompressed first."
+msgstr ""
+
+#: data/content/get-fedora-options.html:437
+msgid "32-bit (i386)"
+msgstr ""
+
+#: data/content/get-fedora-options.html:441
+#: data/content/get-fedora-options.html:451
+#, python-format
+msgid "%(size)sMB sda.qcow2 disk image"
+msgstr ""
+
+#: data/content/get-fedora-options.html:443
+#: data/content/get-fedora-options.html:453
+#, python-format
+msgid "%(size)sMB Raw disk image"
+msgstr ""
+
+#: data/content/get-fedora-options.html:447
+msgid "64-bit (x86_64)"
+msgstr ""
+
+#: data/content/get-fedora-options.html:465
 msgid "Fedora Secondary Architectures"
 msgstr ""
 
-#: data/content/get-fedora-options.html:433
-#: data/content/get-fedora-options.html:530
-#: data/content/get-fedora-options.html:551
+#: data/content/get-fedora-options.html:467
+#: data/content/get-fedora-options.html:564
+#: data/content/get-fedora-options.html:585
 msgid "ARM architecture"
 msgstr ""
 
-#: data/content/get-fedora-options.html:438
+#: data/content/get-fedora-options.html:472
 #, python-format
 msgid "Fedora %(release)s ARM"
 msgstr ""
 
-#: data/content/get-fedora-options.html:439
+#: data/content/get-fedora-options.html:473
 msgid ""
 "ARM chips are the most widely-produced processor family in the world; "
 "they have historically been used in cell phones and embedded "
@@ -1264,23 +1342,23 @@ msgid ""
 "Fedora to this processor family."
 msgstr ""
 
-#: data/content/get-fedora-options.html:440
+#: data/content/get-fedora-options.html:474
 #, python-format
 msgid ""
 "A list of currently supplied prebuilt images for the Fedora %(release)s "
 "ARM GA release can be found at:"
 msgstr ""
 
-#: data/content/get-fedora-options.html:441
+#: data/content/get-fedora-options.html:475
 #, python-format
 msgid "Fedora %(release)s GA Release Announcement"
 msgstr ""
 
-#: data/content/get-fedora-options.html:442
+#: data/content/get-fedora-options.html:476
 msgid "Note for Raspberry Pi users"
 msgstr ""
 
-#: data/content/get-fedora-options.html:442
+#: data/content/get-fedora-options.html:476
 #, python-format
 msgid ""
 "Raspberry Pi support is not included in Fedora %(release)s GA because it "
@@ -1291,11 +1369,11 @@ msgid ""
 "\"nightly\" Fedora %(release)s snapshot</a> is available."
 msgstr ""
 
-#: data/content/get-fedora-options.html:447
+#: data/content/get-fedora-options.html:481
 msgid "Available images and instructions:"
 msgstr ""
 
-#: data/content/get-fedora-options.html:448
+#: data/content/get-fedora-options.html:482
 msgid ""
 "The following images have been tested and are recommended for most users "
 "and include Versatile Express (QEMU), Trimslice (TEGRA), Beagleboard "
@@ -1303,51 +1381,51 @@ msgid ""
 "platforms. For the whole list of images please visit"
 msgstr ""
 
-#: data/content/get-fedora-options.html:448
+#: data/content/get-fedora-options.html:482
 msgid "all the prebuilt images"
 msgstr ""
 
-#: data/content/get-fedora-options.html:448
+#: data/content/get-fedora-options.html:482
 #, python-format
 msgid "for the Fedora %(release)s ARM GA release."
 msgstr ""
 
-#: data/content/get-fedora-options.html:454
+#: data/content/get-fedora-options.html:488
 msgid "BeagleBoard"
 msgstr ""
 
-#: data/content/get-fedora-options.html:458
-#: data/content/get-fedora-options.html:473
-#: data/content/get-fedora-options.html:487
-#: data/content/get-fedora-options.html:502
-#: data/content/get-fedora-options.html:517
+#: data/content/get-fedora-options.html:492
+#: data/content/get-fedora-options.html:507
+#: data/content/get-fedora-options.html:521
+#: data/content/get-fedora-options.html:536
+#: data/content/get-fedora-options.html:551
 msgid "SFP Image"
 msgstr ""
 
-#: data/content/get-fedora-options.html:462
-#: data/content/get-fedora-options.html:491
-#: data/content/get-fedora-options.html:506
-#: data/content/get-fedora-options.html:521
+#: data/content/get-fedora-options.html:496
+#: data/content/get-fedora-options.html:525
+#: data/content/get-fedora-options.html:540
+#: data/content/get-fedora-options.html:555
 msgid "HFP Image"
 msgstr ""
 
-#: data/content/get-fedora-options.html:469
+#: data/content/get-fedora-options.html:503
 msgid "GuruPlug (Kirkwood)"
 msgstr ""
 
-#: data/content/get-fedora-options.html:483
+#: data/content/get-fedora-options.html:517
 msgid "Versatile Express XFCE"
 msgstr ""
 
-#: data/content/get-fedora-options.html:498
+#: data/content/get-fedora-options.html:532
 msgid "Pandaboard"
 msgstr ""
 
-#: data/content/get-fedora-options.html:513
+#: data/content/get-fedora-options.html:547
 msgid "TrimSlice"
 msgstr ""
 
-#: data/content/get-fedora-options.html:527
+#: data/content/get-fedora-options.html:561
 #, python-format
 msgid ""
 "The list of known Fedora 18 remixes is catalogued at <a "
@@ -1355,116 +1433,116 @@ msgid ""
 "tarballs are provided to help you make your own remixes."
 msgstr ""
 
-#: data/content/get-fedora-options.html:534
+#: data/content/get-fedora-options.html:568
 #, python-format
 msgid "Fedora %(release)s PPC64"
 msgstr ""
 
-#: data/content/get-fedora-options.html:535
+#: data/content/get-fedora-options.html:569
 msgid ""
 "Fedora Releases for PowerPC have been most extensively tested on IBM "
 "Power systems, but is also known to work on Apple Mac G5 systems."
 msgstr ""
 
-#: data/content/get-fedora-options.html:539
-#: data/content/get-fedora-options.html:557
+#: data/content/get-fedora-options.html:573
+#: data/content/get-fedora-options.html:591
 msgid "DVD Image"
 msgstr ""
 
-#: data/content/get-fedora-options.html:541
-#: data/content/get-fedora-options.html:559
+#: data/content/get-fedora-options.html:575
+#: data/content/get-fedora-options.html:593
 #, python-format
 msgid "%sGB DVD ISO"
 msgstr ""
 
-#: data/content/get-fedora-options.html:544
+#: data/content/get-fedora-options.html:578
 #: data/content/get-prerelease.html:116 data/content/get-prerelease.html:117
 msgid "Netinstall CD"
 msgstr ""
 
-#: data/content/get-fedora-options.html:546
+#: data/content/get-fedora-options.html:580
 #, python-format
 msgid "%sMB CD ISO"
 msgstr ""
 
-#: data/content/get-fedora-options.html:555
+#: data/content/get-fedora-options.html:589
 #, python-format
 msgid "Fedora %(release)s s390"
 msgstr ""
 
-#: data/content/get-fedora-options.html:556
+#: data/content/get-fedora-options.html:590
 msgid "Fedora Release Image based on the s390x architecture."
 msgstr ""
 
-#: data/content/get-fedora-options.html:597
+#: data/content/get-fedora-options.html:631
 msgid "Help, I just want Fedora!"
 msgstr ""
 
-#: data/content/get-fedora-options.html:598
+#: data/content/get-fedora-options.html:632
 msgid ""
 "There are a lot of options on this page. Would you rather download the "
 "standard Fedora image?"
 msgstr ""
 
-#: data/content/get-fedora-options.html:599
+#: data/content/get-fedora-options.html:633
 msgid "Get it here"
 msgstr ""
 
-#: data/content/get-fedora-options.html:601 data/content/get-fedora.html:81
+#: data/content/get-fedora-options.html:635 data/content/get-fedora.html:81
 msgid "Handy Resources"
 msgstr ""
 
-#: data/content/get-fedora-options.html:603
+#: data/content/get-fedora-options.html:637
 #, python-format
 msgid ""
 "http://docs.fedoraproject.org/en-"
 "US/Fedora/%(release)s/html/Installation_Guide/index.html"
 msgstr ""
 
-#: data/content/get-fedora-options.html:603 data/content/get-fedora.html:83
+#: data/content/get-fedora-options.html:637 data/content/get-fedora.html:83
 msgid "Installation Guide"
 msgstr ""
 
-#: data/content/get-fedora-options.html:604
+#: data/content/get-fedora-options.html:638
 #, python-format
 msgid ""
 "http://docs.fedoraproject.org/en-"
 "US/Fedora/%(release)s/html/Release_Notes/index.html"
 msgstr ""
 
-#: data/content/get-fedora-options.html:604 data/content/get-fedora.html:84
+#: data/content/get-fedora-options.html:638 data/content/get-fedora.html:84
 msgid "Release Notes"
 msgstr ""
 
-#: data/content/get-fedora-options.html:605 data/content/get-fedora.html:85
+#: data/content/get-fedora-options.html:639 data/content/get-fedora.html:85
 msgid "Common Bugs"
 msgstr ""
 
-#: data/content/get-fedora-options.html:606 data/content/get-fedora.html:86
+#: data/content/get-fedora-options.html:640 data/content/get-fedora.html:86
 msgid "Upgrading Fedora"
 msgstr ""
 
-#: data/content/get-fedora-options.html:607 data/content/get-fedora.html:87
+#: data/content/get-fedora-options.html:641 data/content/get-fedora.html:87
 msgid "Help & Support"
 msgstr ""
 
-#: data/content/get-fedora-options.html:608 data/content/get-fedora.html:88
+#: data/content/get-fedora-options.html:642 data/content/get-fedora.html:88
 msgid "Verify Download"
 msgstr ""
 
-#: data/content/get-fedora-options.html:611 data/content/get-fedora.html:92
+#: data/content/get-fedora-options.html:645 data/content/get-fedora.html:92
 msgid "There's More Fedora!"
 msgstr ""
 
-#: data/content/get-fedora-options.html:614 data/content/get-fedora.html:95
+#: data/content/get-fedora-options.html:648 data/content/get-fedora.html:95
 msgid "Other ways to get Fedora"
 msgstr ""
 
-#: data/content/get-fedora-options.html:615 data/content/get-fedora.html:97
+#: data/content/get-fedora-options.html:649 data/content/get-fedora.html:97
 msgid "We offer several alternative Fedora download methods, including torrents:"
 msgstr ""
 
-#: data/content/get-fedora-options.html:617 data/content/get-fedora.html:99
+#: data/content/get-fedora-options.html:651 data/content/get-fedora.html:99
 msgid "All download methods"
 msgstr ""
 
