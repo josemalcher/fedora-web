@@ -1,55 +1,10 @@
-<?python
-
-# see http://fedoraproject.org/wiki/Cloud_SIG/EC2_Images for the complet list
-# Generated using the following:
-# :%s#^| \([a-zA-Z*-9]*\)[ |]*\(i386\|x86_64\)[ |]*\(EBS-backed\)[ |]* \(ami.*\)#{'region':'\1', 'arch':'\2', 'store':'\3', 'id':'\4'},#g
-
-ec2_f18 = [
-{'region':'ap-southeast-1', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-4c327c1e'},
-{'region':'ap-southeast-1', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-f8357baa'},
-{'region':'ap-southeast-2', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-33d24109'},
-{'region':'ap-southeast-2', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-f5d340cf'},
-{'region':'ap-northeast-1', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-33b23b32'},
-{'region':'ap-northeast-1', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-51bc3550'},
-{'region':'us-east-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-b71078de'},
-{'region':'us-east-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-6f640c06'},
-{'region':'us-west-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-674f6122'},
-{'region':'us-west-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-634f6126'},
-{'region':'us-west-2',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-fd9302cd'},
-{'region':'us-west-2',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-67930257'},
-{'region':'eu-west-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-43809137'},
-{'region':'eu-west-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-2d819059'},
-{'region':'sa-east-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-08eb4e15'},
-{'region':'sa-east-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-d2e84dcf'}
-]
-
-ec2_f17 = [
-      {'region':'ap-northeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-b1f37db0'},
-      {'region':'ap-northeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-45bd3444'},
-      {'region':'ap-southeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-6af1be38'},
-      {'region':'ap-southeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-54f0bf06'},
-      {'region':'ap-southeast-2', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-210a9a1b'},
-      {'region':'ap-southeast-2', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-850999bf'},
-      {'region':'eu-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-f14e5f85'},
-      {'region':'eu-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-234c5d57'},
-      {'region':'sa-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-aa7da7b7'},
-      {'region':'sa-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-567da74b'},
-      {'region':'us-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-4b0b6422'},
-      {'region':'us-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-2509664c'},
-      {'region':'us-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-d7be9192'},
-      {'region':'us-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-01bf9044'},
-      {'region':'us-west-2',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-e70a9cd7'},
-      {'region':'us-west-2',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-150a9c25'}
-]
-
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
     xmlns:py="http://genshi.edgewall.org/"
     xmlns:xi="http://www.w3.org/2001/XInclude">
     <xi:include href="../templates/master.html" />
     <head>
-				<script type="text/javascript" src="${path}/static/js/cloud_ec2.js"></script>
+        <script type="text/javascript" src="${path}/static/js/cloud_ec2.js"></script>
         <title>${Markup(_('Fedora Project - Get Fedora by Desktops, Formats or Spins.'))}</title>
     </head>
 	<body id="fedoraproject-org" class="lang-${lang}">
@@ -369,58 +324,10 @@ ec2_f17 = [
                             </div>
                             <div class="grid_12 alpha omega">
 								<h4 class="area-callout">${_('Currently supported EC2 Images')}</h4>
-                            </div>
-                                <div class="grid_10 prefix_2 alpha omega">
-                                    <p>${_('Choose the region and machine architecture and just click to launch in your Amazon Web Services account. Or, copy the AMI ID and use that to launch from the AWS Console or command-line tools.')}</p>
-                                </div>
-                            <div class='grid 12 alpha omega'>
-                                <h5>${_('Fedora %s ') % '18'}</h5>
-                                <table class="verify-live-media">
-																		<thead>
-																				<tr>
-																						<th>${_('Region')}</th>
-																						<th>${_('Architecture')}</th>
-																						<th>${_('Root store')}</th>
-																						<th>${_('AMI ID')}</th>
-                                                                                        <th>${_('Launch')}</th>
-																				</tr>
-																		</thead>
-																		<tbody>
-																			<py:for each="img in ec2_f18">
-																				<tr>
-																						<td>${img['region']}</td>
-																						<td>${img['arch']}</td>
-																						<td>${img['store']}</td>
-																						<td>${img['id']}</td>
-                                                                                        <td style="vertical-align: middle"><a href="https://console.aws.amazon.com/ec2/home?region=${img['region']}#launchAmi=${img['id']}"><img style="vertical-align: bottom; display: block; margin: 0 auto" title="${_('Launch AMI instance')}" src="${path}/static/images/cloud_icon.png" /></a></td>
-																				</tr>
-																			</py:for>
-																		</tbody>
-																</table>
+<!-- Specific AMI selector -->
+								<xi:include href="../templates/cloud-tab.html" />
+<!-- /Specific AMI selector -->
 
-                                <h5>${_('Fedora %s ') % '17'}</h5>
-                                <table class="verify-live-media">
-																		<thead>
-																				<tr>
-																						<th>${_('Region')}</th>
-																						<th>${_('Architecture')}</th>
-																						<th>${_('Root store')}</th>
-																						<th>${_('AMI ID')}</th>
-                                                                                        <th>${_('Launch')}</th>
-																				</tr>
-																		</thead>
-																		<tbody>
-																			<py:for each="img in ec2_f17">
-																				<tr>
-																						<td>${img['region']}</td>
-																						<td>${img['arch']}</td>
-																						<td>${img['store']}</td>
-																						<td>${img['id']}</td>
-                                                                                        <td style="vertical-align: middle"><a href="https://console.aws.amazon.com/ec2/home?region=${img['region']}#launchAmi=${img['id']}"><img style="vertical-align: bottom; display: block; margin: 0 auto" title="${_('Launch AMI instance')}" src="${path}/static/images/cloud_icon.png" /></a></td>
-																				</tr>
-																			</py:for>
-																		</tbody>
-																</table>
 
                             <div class="format-block">
                                 <div class="grid_12 alpha omega">
@@ -456,7 +363,6 @@ ec2_f17 = [
                             <div class="grid_10 prefix_2 alpha omega"><hr /></div>
                             <div class="clear"></div>
                             </div>
-
                     <xi:include href="../templates/content-export-regulations.html" />
                     		</div>
                         </div>
