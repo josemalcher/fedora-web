@@ -70,5 +70,9 @@ iso_size={
     'x86_64_Live_Mate':    '1.4',       # In GB
     'PPC64_DVD':           '4.2',       # In GB
     'PPC64_Netinstall':    '303',       # In MB
-    's390_DVD':            '4.0'        # In GB
+    's390_DVD':            '4.0',       # In GB
+    'i686_sda.qcow2':      '889',       # In MB
+    'x86_64_sda.qcow2':    '916',       # In MB
+    'i686_raw':            '889',       # In MB
+    'x86_64_raw':          '916'        # In MB
 }
