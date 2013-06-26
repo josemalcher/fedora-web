@@ -90,6 +90,15 @@ $(document).ready(function(){
         window.location = 'download-arm-splash?file='+linkLocation;
     });
 
+    // redirect download links to CLOUD splash page
+    $("a.download-cloud-splash").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+
+        // this passes the URL path to the CLOUD splash page
+        window.location = 'download-cloud-splash?file='+linkLocation;
+    });
+
     // Random banners
     function random_banner(){
     var images = [], ry, lnk;
