@@ -5,7 +5,7 @@ release={
     'prev_id':     '18',
     'curr_id':     '19',
     'next_id':     '20',
-    'curr_name':   'Schroedinger\'s Cat',
+    'curr_name':   u'Schrödinger’s Cat',
     'next_name':   '',
     'curr_state':  '',             # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
