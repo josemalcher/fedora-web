@@ -63,12 +63,12 @@ ec2_f17_regions = sorted_region(ec2_f17)
 # Simply read the output at "out/static/js/cloud_ec2.js"
 def gen_js(*args):
 	js="// File generated from cloud-tab.html.\n"
-	js+="window.onload=function(){\n"
+	js+="addEventListener('DOMContentLoaded', function(){\n"
 
 	for release in args:
 		js+="\tdocument.getElementById('cloud_options_" + release[0] + "').style.visibility='visible';\n"
 		js+="\tdocument.getElementById('amihref_" + release[0] + "').style.visibility='hidden';\n"
-	js+="}\n"
+	js+="});\n"
 
 	js+="\nfunction getval() {\n"
 	js+="\t// We get the number of regions, and define a two dimensional array (region,arch) to store the AMI ID\n"
