@@ -67,6 +67,7 @@ def gen_js(*args):
 
 	for release in args:
 		js+="\tdocument.getElementById('cloud_options_" + release[0] + "').style.visibility='visible';\n"
+		js+="\tdocument.getElementById('amihref_" + release[0] + "').style.visibility='hidden';\n"
 	js+="}\n"
 
 	js+="\nfunction getval() {\n"
@@ -88,9 +89,11 @@ def gen_js(*args):
 		js+="\t\tform_" + release[0] + ".amiid_" + release[0] + ".value = ami_id;\n"
 		js+="\t\tvar url = 'https://console.aws.amazon.com/ec2/home?region=' + form_" + release[0] + ".region_" + release[0] + ".value + '#launchAmi=' + ami_id;\n"
 		js+="\t\tdocument.getElementById('amihref_" + release[0] + "').href = url;\n"
+		js+="\t\tdocument.getElementById('amihref_" + release[0] + "').style.visibility='visible';\n"
 		js+="\t} else {\n"
 		js+="\t\tform_" + release[0] + ".amiid_" + release[0] + ".value = '';\n"
 		js+="\t\tdocument.getElementById('amihref_" + release[0] + "').href = '';\n"
+		js+="\t\tdocument.getElementById('amihref_" + release[0] + "').style.visibility='hidden';\n"
 		js+="\t}\n"
 
 	js+="}\n"
