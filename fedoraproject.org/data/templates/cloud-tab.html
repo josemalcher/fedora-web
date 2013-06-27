@@ -157,7 +157,9 @@ gen_js(['18',ec2_f18], ['17',ec2_f17])
                     <option value="i386">32 bit (i386)</option>
                 </select>
                 <input type="text" name="AMI ID" id="amiid_${release}" class="ami-box" size="12"/>
-								<a href="#clouds" id="amihref_${release}" name="amihref_${release}">${_('Launch it!')}</a>
+								<a href="#clouds" id="amihref_${release}" name="amihref_${release}">
+								<img style="vertical-align: bottom;" title="${_('Launch AMI instance')}" src="${path}/static/images/cloud_icon.png" />
+								</a>
             </form>
 
   </py:def>
