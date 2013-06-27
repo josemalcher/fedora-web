@@ -1,5 +1,5 @@
 <?python
-# This file is used to generate the "static/js/cloud_ec2.js" file snd the get-fedora-options#cloud tab
+# This file is used to generate the "out/static/js/cloud_ec2.js" file snd the get-fedora-options#cloud tab
 # You should only edit
 # - the bellow dictionnary containing the AMI ID (get them on the wiki)
 # - the two python list ec2_fXX_regions
@@ -60,7 +60,7 @@ ec2_f17_regions = sorted_region(ec2_f17)
 
 # The idea is to get something similar to http://jsfiddle.net/shaiton/wChSv/5/
 # But we have to generate it in order to have to maintain only one list of AMI ID
-# Simply read the output at "static/js/cloud_ec2.js"
+# Simply read the output at "out/static/js/cloud_ec2.js"
 def gen_js(*args):
 	js="// File generated from cloud-tab.html.\n"
 	js+="window.onload=function(){\n"
@@ -94,7 +94,7 @@ def gen_js(*args):
 		js+="\t}\n"
 
 	js+="}\n"
-	f = open('static/js/cloud_ec2.js', 'w+')
+	f = open('out/static/js/cloud_ec2.js', 'w+')
 	f.write(js)
 	f.close()
 
