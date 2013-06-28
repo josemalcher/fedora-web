@@ -86,14 +86,14 @@ def gen_js(*args):
 	for release in args:
 		js+="\n\tif (form_" + release[0] + ".region_" + release[0] + ".value != 'null') {\n"
 		js+="\t\tvar ami_id = id_" + release[0] + "[form_" + release[0] + ".region_" + release[0] + ".value][form_" + release[0] + ".arch_" + release[0] + ".value];\n"
-		js+="\t\tform_" + release[0] + ".amiid_" + release[0] + ".value = ami_id;\n"
 		js+="\t\tvar url = 'https://console.aws.amazon.com/ec2/home?region=' + form_" + release[0] + ".region_" + release[0] + ".value + '#launchAmi=' + ami_id;\n"
 		js+="\t\tdocument.getElementById('amihref_" + release[0] + "').href = url;\n"
 		js+="\t\tdocument.getElementById('amihref_" + release[0] + "').style.visibility='visible';\n"
+		js+="\t\tdocument.getElementById('label_" + release[0] + "').innerHTML = 'AMI ID: ' + ami_id;\n"
 		js+="\t} else {\n"
-		js+="\t\tform_" + release[0] + ".amiid_" + release[0] + ".value = '';\n"
 		js+="\t\tdocument.getElementById('amihref_" + release[0] + "').href = '';\n"
 		js+="\t\tdocument.getElementById('amihref_" + release[0] + "').style.visibility='hidden';\n"
+		js+="\t\tdocument.getElementById('label_" + release[0] + "').innerHTML = '';\n"
 		js+="\t}\n"
 
 	js+="}\n"
@@ -156,8 +156,9 @@ gen_js(['18',ec2_f18], ['17',ec2_f17])
                     <option value="x86_64">64 bit (x86_64)</option>
                     <option value="i386">32 bit (i386)</option>
                 </select>
-                <input type="text" name="AMI ID" id="amiid_${release}" class="ami-box" size="12"/>
-					<a href="#clouds" id="amihref_${release}" name="amihref_${release}" class="download-button-mini download-cloud-splash">${_('Launch it!')}</a>
+				<input type="hidden" id="amiid_${release}" />
+                <label for="amiid_${release}" id="label_${release}" class="ami-label"></label>
+				<a href="#clouds" id="amihref_${release}" name="amihref_${release}" class="download-button-mini download-cloud-splash">${_('Launch it!')}</a>
             </form>
 
   </py:def>
