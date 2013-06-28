@@ -89,7 +89,7 @@ def gen_js(*args):
 		js+="\t\tvar url = 'https://console.aws.amazon.com/ec2/home?region=' + form_" + release[0] + ".region_" + release[0] + ".value + '#launchAmi=' + ami_id;\n"
 		js+="\t\tdocument.getElementById('amihref_" + release[0] + "').href = url;\n"
 		js+="\t\tdocument.getElementById('amihref_" + release[0] + "').style.visibility='visible';\n"
-		js+="\t\tdocument.getElementById('label_" + release[0] + "').innerHTML = 'AMI ID: ' + ami_id;\n"
+		js+="\t\tdocument.getElementById('label_" + release[0] + "').innerHTML = ami_id;\n"
 		js+="\t} else {\n"
 		js+="\t\tdocument.getElementById('amihref_" + release[0] + "').href = '';\n"
 		js+="\t\tdocument.getElementById('amihref_" + release[0] + "').style.visibility='hidden';\n"
@@ -158,7 +158,7 @@ gen_js(['18',ec2_f18], ['17',ec2_f17])
                 </select>
 				<input type="hidden" id="amiid_${release}" />
                 <label for="amiid_${release}" id="label_${release}" class="ami-label"></label>
-				<a href="#clouds" id="amihref_${release}" name="amihref_${release}" class="download-button-mini download-cloud-splash">${_('Launch it!')}</a>
+				<a href="#clouds" id="amihref_${release}" name="amihref_${release}" class="download-button-mini">${_('Launch it!')}</a>
             </form>
 
   </py:def>
