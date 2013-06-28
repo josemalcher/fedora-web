@@ -17,41 +17,41 @@ def sorted_region(arr):
 # :%s#^| \([a-zA-Z*-9]*\)[ |]*\(i386\|x86_64\)[ |]*\(EBS-backed\)[ |]* \(ami.*\)#{'region':'\1', 'arch':'\2', 'store':'\3', 'id':'\4'},#g
 
 ec2_f18 = [
-			{'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-30aeec62'},
-			{'region':'Asia Pacific (Singapore)', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-caa9eb98'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-9ae472a0'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-dce771e6'},
-			{'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-5f01bb5e'},
-			{'region':'Asia Pacific (Tokyo)', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-7100ba70'},
-			{'region':'US East (Northern Virginia)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-6145cc08'},
-			{'region':'US East (Northern Virginia)',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-0d44cd64'},
-			{'region':'US West (Northern California)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-0899b94d'},
-			{'region':'US West (Northern California)',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-de99b99b'},
-			{'region':'US West (Oregon)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-0266ed32'},
-			{'region':'US West (Oregon)',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-6467ec54'},
-			{'region':'EU (Ireland)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-bafcf3ce'},
-			{'region':'EU (Ireland)',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-cafef1be'},
-			{'region':'South America (Sao Paulo)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-81558d9c'},
-			{'region':'South America (Sao Paulo)',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-e5548cf8'}
+			{'region':'ap-southeast-1', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-30aeec62'},
+			{'region':'ap-southeast-1', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-caa9eb98'},
+			{'region':'ap-southeast-2', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-9ae472a0'},
+			{'region':'ap-southeast-2', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-dce771e6'},
+			{'region':'ap-northeast-1', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-5f01bb5e'},
+			{'region':'ap-northeast-1', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-7100ba70'},
+			{'region':'us-east-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-6145cc08'},
+			{'region':'us-east-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-0d44cd64'},
+			{'region':'us-west-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-0899b94d'},
+			{'region':'us-west-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-de99b99b'},
+			{'region':'us-west-2',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-0266ed32'},
+			{'region':'us-west-2',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-6467ec54'},
+			{'region':'eu-west-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-bafcf3ce'},
+			{'region':'eu-west-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-cafef1be'},
+			{'region':'sa-east-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-81558d9c'},
+			{'region':'sa-east-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-e5548cf8'}
 ]
 
 ec2_f17 = [
-			{'region':'Asia Pacific (Tokyo)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-5ae6555b'},
-			{'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-26e65527'},
-			{'region':'Asia Pacific (Singapore)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-cc86c09e'},
-			{'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-2e86c07c'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-87a433bd'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-e3a433d9'},
-			{'region':'EU (Ireland)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-e981bb9d'},
-			{'region':'EU (Ireland)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-9980baed'},
-			{'region':'South America (Sao Paulo)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-1ae33d07'},
-			{'region':'South America (Sao Paulo)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-eee23cf3'},
-			{'region':'US East (Northern Virginia)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-08d97e61'},
-			{'region':'US East (Northern Virginia)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-2ea50247'},
-			{'region':'US West (Northern California)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-417f2504'},
-			{'region':'US West (Northern California)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-877e24c2'},
-			{'region':'US West (Oregon)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-e269e5d2'},
-			{'region':'US West (Oregon)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-8e69e5be'}
+			{'region':'ap-northeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-5ae6555b'},
+			{'region':'ap-northeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-26e65527'},
+			{'region':'ap-southeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-cc86c09e'},
+			{'region':'ap-southeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-2e86c07c'},
+			{'region':'ap-southeast-2', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-87a433bd'},
+			{'region':'ap-southeast-2', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-e3a433d9'},
+			{'region':'eu-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-e981bb9d'},
+			{'region':'eu-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-9980baed'},
+			{'region':'sa-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-1ae33d07'},
+			{'region':'sa-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-eee23cf3'},
+			{'region':'us-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-08d97e61'},
+			{'region':'us-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-2ea50247'},
+			{'region':'us-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-417f2504'},
+			{'region':'us-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-877e24c2'},
+			{'region':'us-west-2',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-e269e5d2'},
+			{'region':'us-west-2',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-8e69e5be'}
 ]
 
 ec2_f18_regions = sorted_region(ec2_f18)
