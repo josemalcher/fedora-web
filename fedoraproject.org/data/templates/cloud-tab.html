@@ -16,7 +16,7 @@ def sorted_region(arr):
 # Generated using the following:
 # :%s#^| \([a-zA-Z*-9]*\)[ |]*\(i386\|x86_64\)[ |]*\(EBS-backed\)[ |]* \(ami.*\)#{'region':'\1', 'arch':'\2', 'store':'\3', 'id':'\4'},#g
 
-ec2_f18 = [
+ec2_f19 = [
 			{'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-30aeec62'},
 			{'region':'Asia Pacific (Singapore)', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-caa9eb98'},
 			{'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-9ae472a0'},
@@ -35,7 +35,7 @@ ec2_f18 = [
 			{'region':'South America (Sao Paulo)',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-e5548cf8'}
 ]
 
-ec2_f17 = [
+ec2_f18 = [
 			{'region':'Asia Pacific (Tokyo)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-5ae6555b'},
 			{'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-26e65527'},
 			{'region':'Asia Pacific (Singapore)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-cc86c09e'},
@@ -48,14 +48,14 @@ ec2_f17 = [
 			{'region':'South America (Sao Paulo)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-eee23cf3'},
 			{'region':'US East (Northern Virginia)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-08d97e61'},
 			{'region':'US East (Northern Virginia)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-2ea50247'},
-			{'region':'US West (Northern California)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-417f2504'},
+			{'region':'US West (Northern California)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-418f2504'},
 			{'region':'US West (Northern California)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-877e24c2'},
 			{'region':'US West (Oregon)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-e269e5d2'},
 			{'region':'US West (Oregon)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-8e69e5be'}
 ]
 
+ec2_f19_regions = sorted_region(ec2_f19)
 ec2_f18_regions = sorted_region(ec2_f18)
-ec2_f17_regions = sorted_region(ec2_f17)
 
 
 # The idea is to get something similar to http://jsfiddle.net/shaiton/wChSv/5/
@@ -111,7 +111,7 @@ def gen_js(*args):
 	f.write(js)
 	f.close()
 
-gen_js(['18',ec2_f18], ['17',ec2_f17])
+gen_js(['19',ec2_f19], ['18',ec2_f18])
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -175,13 +175,13 @@ gen_js(['18',ec2_f18], ['17',ec2_f17])
 <!-- /end Genshi Template for Cloud html form  (with JS) -->
 
 						<noscript>
+               ${printrelease('19', ec2_f19)}
                ${printrelease('18', ec2_f18)}
-               ${printrelease('17', ec2_f17)}
 						</noscript>
 
 						<!-- If JS enabled -->
+               ${printform('19', ec2_f19_regions)}
                ${printform('18', ec2_f18_regions)}
-               ${printform('17', ec2_f17_regions)}
 						<!-- /end If JS enabled -->
 
 </html>
