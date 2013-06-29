@@ -71,8 +71,8 @@ iso_size={
     'PPC64_DVD':           '4.3',       # In GB
     'PPC64_Netinstall':    '333',       # In MB
     's390_DVD':            '4.0',       # In GB
-    'i686_sda.qcow2':      '889',       # In MB
-    'x86_64_sda.qcow2':    '916',       # In MB
-    'i686_raw':            '889',       # In MB
-    'x86_64_raw':          '916'        # In MB
+    'i686_sda.qcow2':      '225',       # In MB
+    'x86_64_sda.qcow2':    '226',       # In MB
+    'i686_raw':            '137',       # In MB
+    'x86_64_raw':          '129'        # In MB
 }
