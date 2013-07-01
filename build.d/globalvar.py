@@ -23,6 +23,7 @@ release={
     'next_ppc64_id': '20',
     'next_s390_id': '19',
     'next_cloud_id': '20',
+    'cloud_composedate': '20130627'
 }
 
 path={
