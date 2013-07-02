@@ -14,7 +14,7 @@ class Torrents(object):
     prerelease_re = re.compile('-(alpha|beta|snap|preview)([0-9]*)$', re.I)
     non_release_re = re.compile('(alpha|beta|snap|preview)', re.I)
     prerelease_order = ['alpha', 'beta', 'snap', 'preview']
-    spins_matches = ['design-suite', 'kde', 'lxde', 'games', 'xfce', 'security', 'electronic-lab', 'soas', 'robotics', 'mate-compiz', 'jam']
+    spins_matches = ['design-suite', 'kde', 'lxde', 'games', 'xfce', 'security', 'electronic-lab', 'soas', 'robotics', 'mate-compiz', 'jam-kde']
     archlist = ['i386', 'i586', 'i686', 'ix86', 'ppc', 'x86_64', 'source', 'Source']
     #FIXME we should rename the design-suite iso, to match the websites...
 
@@ -205,7 +205,7 @@ spin_detail = {
     'soas':           _("Discover. Reflect. Share. Learn."),
     'scientific-kde': _("Open Source Scientific Computing."),
     'robotics':       _("Dive into Robotics."),
-    'jam':        _("Unleash your inner musician."),
+    'jam-kde':        _("Unleash your inner musician."),
     'mate-compiz':    _("A classic Fedora Desktop. With wobbly Windows.")
 }
 
