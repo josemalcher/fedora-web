@@ -60,7 +60,7 @@ if global_variables.release['curr_state'] == "Beta":
 								<h2>${_('Free your desktop with Fedora.')}</h2>
 								<p>${_('Fedora is a fast, stable, and powerful operating system for everyday use built by a worldwide community of friends. It\'s completely free to use, study, and share.')}</p>
 								<ul>
-									<li><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-${global_variables.release['curr_id']}-x86_64-Live-Desktop.iso" id="download-button" class="download-splash">${_('Download Now!')}</a></li>
+									<li><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" id="download-button" class="download-splash">${_('Download Now!')}</a></li>
 									<li><a href="${path}/${lang}/get-fedora">${_('Learn More')}</a></li>
 								</ul>
 								<p class="small">${_('%(size)sMB, ISO image for %(arch)s-bit PCs') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}} <br /><a href="${path}/${lang}/get-fedora-options">${Markup(_('More options &gt;'))}</a></p>
@@ -68,28 +68,27 @@ if global_variables.release['curr_state'] == "Beta":
                                     <li class="getalpha"><a href="${path}/${lang}/get-prerelease">${_('Try Fedora %(release)s %(state)s Now!') % {'release':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</a></li>
                                 </ul>
 							</div>
-							<img src="${path}/static/images/f18_fpo_screenshot.png" alt="screenshot" />
+							<img src="${path}/static/images/f19_fpo_screenshot.png" alt="screenshot" />
 						  </div>
 						</li>
 						<li class="slide" id="feature1">
 						  <div class="slide-canvas">
 							<div class="content">
-								<h2>${_('Introducing the New Installer')}</h2>
-								<p>${_('Fedora 18 features an installer that is rewritten and redesigned from the ground up. It replaces the old 13+ year old installer from previous versions of Fedora. You can learn more about it at the new installer informational page on the Fedora wiki.')}</p>
-								<p><a href="https://fedoraproject.org/wiki/Anaconda/NewInstaller">${Markup(_('Learn More &gt;'))}</a></p>
+								<h2>${_('3D Printing with Fedora 19')}</h2>
+								<p>${_('Freely model and print in 3D using the new tools now included in Fedora. Software such as OpenSCAD, Skeinforge, SFACT, Printrun, and RepetierHost are now ready-to-go in the Fedora 19 repositories.')}</p>
+								<p><a href="http://fedoraproject.org/wiki/Features/3D_Printing">${Markup(_('Learn More &gt;'))}</a></p>
 							</div>
-              <img class="screenshot" src="${path}/static/images/banners/anaconda.png" alt="screenshot" />
 						  </div>
 						</li>
 						<li class="slide" id="spin">
 					          <div class="slide-canvas">
 							<div class="content">
-								<h2 style="visibility: hidden !important; font-size: 0; height: 1px !important;">${_('Fedora KDE Spin')}</h2>
-                <img src="${path}/static/images/banners/kdespin.png" alt="Fedora Games Spin" />
-								<p>${_('The Fedora KDE Desktop is a powerful Fedora-based operating system utilizing KDE as the main user interface. Fedora KDE Desktop comes with many pre-selected top quality applications that suit all modern desktop use cases - from online communication like web browsing, IM and email, through multimedia and entertainment, to an advanced productivity suite.')}</p>
-								<p><a href="http://spins.fedoraproject.org/kde">${Markup(_('Learn More &gt;'))}</a></p>
+						<!--		<h2 style="visibility: hidden !important; font-size: 0; height: 1px !important;">${_('Fedora KDE Spin')}</h2>  -->
+                <img src="${path}/static/images/banners/pidoraspin.png" alt="Pidora Spin" />
+								<p>${_('Pidora offers all the Fedora packages you love in a Fedora Remix compiled specifically for the Raspberry Pi hardware. The graphical first boot includes additional Pi-specific modules. Or if you\'re going headless, you can do it from the start with some special Pidora features.')}</p>
+								<p><a href="http://pidora.ca">${Markup(_('Learn More &gt;'))}</a></p>
 							</div>
-              <img class="screenshot" src="${path}/static/images/banners/kdespin2.png" alt="characters from games" />
+              <img class="screenshot" src="${path}/static/images/banners/pidoraspin2.png" alt="Pidora screenshot" />
 
 						  </div>
 						</li>
@@ -111,11 +110,11 @@ if global_variables.release['curr_state'] == "Beta":
 						</ul>
 
 				</div>
+
 		<div class="clear"></div>
-<!--
-        <div class="news"><span class="news_title">${_('news')}</span>${_('Fedora 17 released on May 29, 2012!')}<a class="news_relnotes" href="${_('http://docs.fedoraproject.org/en-US/Fedora/17/html/Release_Notes/index.html')}">${_('Read the release notes')}</a><a class="news_download" href="http://download.fedoraproject.org/pub/fedora/linux/releases/17/Live/x86_64/Fedora-17-x86_64-Live-Desktop.iso">${_('Download now')}</a></div>
+        <div class="news"><span class="news_title">${_('news')}</span>${_('Fedora 19 released on July 2, 2013!')}<a class="news_relnotes" href="${_('http://docs.fedoraproject.org/en-US/Fedora/19/html/Release_Notes/index.html')}">${_('Read the release notes')}</a><a class="news_download" href="http://download.fedoraproject.org/pub/fedora/linux/releases/19/Live/x86_64/Fedora-Live-Desktop-x86_64-19-1.iso">${_('Download now')}</a></div>
 		<div class="clear"></div>
--->
+
 		<div class="container_16">
             <div class="grid_12 alpha">
                 <xi:include href="quotes.html" />
@@ -219,7 +218,7 @@ if global_variables.release['curr_state'] == "Beta":
                     <li>${_('%sGB memory (RAM)') % '1'}</li>
                     <li>${_('%sGB disk space / storage') % '10'}</li>
                 </ul>
-                <p><a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Installation_Quick_Start_Guide/Requirements.html">${Markup(_('More about requirements &gt;'))}</a></p>
+                <p><a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Release_Notes/sect-Release_Notes-Welcome_to_Fedora_.html#hardware_overview">${Markup(_('More about requirements &gt;'))}</a></p>
                 <p><a href="${path}/${lang}/get-fedora-options">${Markup(_('Full set of download options &gt;'))}</a></p>
 
                 <div id="fedora-banners">
@@ -235,7 +234,7 @@ if global_variables.release['curr_state'] == "Beta":
                       <a href="${path}/${lang}/get-prerelease"><img alt="Fedora ${global_variables.release['next_id']} Beta ${global_variables.release['curr_name']} is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}beta.png" /></a>
                     </py:when>
 										<py:otherwise>
-											<a href="${path}/${lang}/get-prerelease"><img alt="Fedora ${global_variables.release['curr_id']} ${global_variables.release['curr_name']} is here!" src="${path}/static/images/banners/f${global_variables.release['curr_id']}release.png" /></a>
+											<a href="${path}/${lang}/get-fedora"><img alt="Fedora ${global_variables.release['curr_id']} ${global_variables.release['curr_name']} is here!" src="${path}/static/images/banners/f${global_variables.release['curr_id']}release.png" /></a>
 										</py:otherwise>
 									</py:choose>
                 </div>

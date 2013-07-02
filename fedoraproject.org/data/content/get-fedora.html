@@ -34,7 +34,7 @@
                     </div>
                     <div class="grid_10 omega">
                         <p>${_('This is the latest version of the Fedora Linux operating system\'s Desktop Edition. It\'s everything you need to try out Fedora — you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop if you like.')}</p>
-                        <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-${global_variables.release['curr_id']}-x86_64-Live-Desktop.iso" class="big-button download-splash">${_('Download Now!')}</a>
+                        <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" class="big-button download-splash">${_('Download Now!')}</a>
                         <p class="small">${_('%(size)sMB, ISO format image for Intel-compatible PCs (%(arch)s-bit)') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}}<br />
 			<a href="${path}/${lang}/get-fedora-options">${_('More download options...')}</a></p>
                     </div>
@@ -64,14 +64,17 @@
                 <h4>${_('What will I need?')}</h4>
                 <ul class="checkmark-list">
                     <li>${_('A blank CD or DVD')} <em><strong>${_(' or ')}</strong></em> ${Markup(_('a blank %sGB+ USB stick.') % ('1'))} </li>
-                    <li>${Markup(_('A %sMHz or faster processor') % '400')}</li>
+                    <li>${_('64-bit Intel-compatible PC')}</li>
                     <li>${_('%sGB memory (RAM)') % '1'}</li>
                     <li>${Markup(_('At least %s GB hard drive space (only required for installation)') % '10')}</li>
+                <ul class="checkmark-list">
+                </ul>
+
                 </ul>
 
 		<h4>${_('What do I do?')}</h4>
 			<ul class="checkmark-list">
-				<li>${_('First,')} <a class="download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-${global_variables.release['curr_id']}-x86_64-Live-Desktop.iso">${_('download a Fedora ISO image')}</a>.</li>
+				<li>${_('First,')} <a class="download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso">${_('download a Fedora ISO image')}</a>.</li>
 
                 <li>${_('To install Fedora using a USB stick')},  <a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Installation_Guide/Making_USB_Media.html">${_('follow these instructions.')}</a></li>
                 <li>${_('To install Fedora using a blank CD or DVD')},  <a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Installation_Guide/sn-making-media.html#sn-making-disc-media">${_('follow these instructions.')}</a></li>

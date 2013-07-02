@@ -1,54 +1,10 @@
-<?python
-
-# see http://fedoraproject.org/wiki/Cloud_SIG/EC2_Images for the complet list
-# Generated using the following:
-# :%s#^| \([a-zA-Z*-9]*\)[ |]*\(i386\|x86_64\)[ |]*\(EBS-backed\)[ |]* \(ami.*\)#{'region':'\1', 'arch':'\2', 'store':'\3', 'id':'\4'},#g
-
-ec2_f18 = [
-{'region':'ap-southeast-1', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-4c327c1e'},
-{'region':'ap-southeast-1', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-f8357baa'},
-{'region':'ap-southeast-2', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-33d24109'},
-{'region':'ap-southeast-2', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-f5d340cf'},
-{'region':'ap-northeast-1', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-33b23b32'},
-{'region':'ap-northeast-1', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-51bc3550'},
-{'region':'us-east-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-b71078de'},
-{'region':'us-east-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-6f640c06'},
-{'region':'us-west-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-674f6122'},
-{'region':'us-west-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-634f6126'},
-{'region':'us-west-2',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-fd9302cd'},
-{'region':'us-west-2',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-67930257'},
-{'region':'eu-west-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-43809137'},
-{'region':'eu-west-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-2d819059'},
-{'region':'sa-east-1',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-08eb4e15'},
-{'region':'sa-east-1',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-d2e84dcf'}
-]
-
-ec2_f17 = [
-      {'region':'ap-northeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-b1f37db0'},
-      {'region':'ap-northeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-45bd3444'},
-      {'region':'ap-southeast-1', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-6af1be38'},
-      {'region':'ap-southeast-1', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-54f0bf06'},
-      {'region':'ap-southeast-2', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-210a9a1b'},
-      {'region':'ap-southeast-2', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-850999bf'},
-      {'region':'eu-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-f14e5f85'},
-      {'region':'eu-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-234c5d57'},
-      {'region':'sa-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-aa7da7b7'},
-      {'region':'sa-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-567da74b'},
-      {'region':'us-east-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-4b0b6422'},
-      {'region':'us-east-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-2509664c'},
-      {'region':'us-west-1',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-d7be9192'},
-      {'region':'us-west-1',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-01bf9044'},
-      {'region':'us-west-2',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-e70a9cd7'},
-      {'region':'us-west-2',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-150a9c25'}
-]
-
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
     xmlns:py="http://genshi.edgewall.org/"
     xmlns:xi="http://www.w3.org/2001/XInclude">
     <xi:include href="../templates/master.html" />
     <head>
+        <script type="text/javascript" src="${path}/static/js/cloud_ec2.js"></script>
         <title>${Markup(_('Fedora Project - Get Fedora by Desktops, Formats or Spins.'))}</title>
     </head>
 	<body id="fedoraproject-org" class="lang-${lang}">
@@ -104,12 +60,12 @@ ec2_f17 = [
 
                             <div class="grid_3 prefix_2 alpha">
                                 <h5>${_('32-bit')}</h5>
-                                <a class="download-button-mini download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/i386/Fedora-${global_variables.release['curr_id']}-i686-Live-Desktop.iso">${_('Download Now!')}</a>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/i386/Fedora-Live-Desktop-i686-${global_variables.release['curr_id']}-1.iso">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['i686_Live_Desktop']}</p>
                             </div>
                             <div class="grid_3 suffix_4 omega">
                                 <h5>${_('64-bit')}</h5>
-                                <a class="download-button-mini download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-${global_variables.release['curr_id']}-x86_64-Live-Desktop.iso">${_('Download Now!')}</a>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['x86_64_Live_Desktop']}</p>
                             </div>
                             <div class="clear"></div>
@@ -130,12 +86,12 @@ ec2_f17 = [
                             <div class="clear"></div>
                             <div class="grid_3 prefix_2 alpha">
                                 <h5>${_('32-bit')}</h5>
-                                <a class="download-button-mini download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/i386/Fedora-${global_variables.release['curr_id']}-i686-Live-KDE.iso">${_('Download Now!')}</a>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/i386/Fedora-Live-KDE-i686-${global_variables.release['curr_id']}-1.iso">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['i686_Live_KDE']}</p>
                             </div>
                             <div class="grid_3 suffix_4 omega">
                                 <h5>${_('64-bit')}</h5>
-                                <a class="download-button-mini download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-${global_variables.release['curr_id']}-x86_64-Live-KDE.iso">${_('Download Now!')}</a>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-KDE-x86_64-${global_variables.release['curr_id']}-1.iso">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['x86_64_Live_KDE']}</p>
                             </div>
                             <div class="clear"></div>
@@ -156,12 +112,12 @@ ec2_f17 = [
                             <div class="clear"></div>
                             <div class="grid_3 prefix_2 alpha">
                                 <h5>${_('32-bit')}</h5>
-                                <a class="download-button-mini download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/i386/Fedora-${global_variables.release['curr_id']}-i686-Live-LXDE.iso">${_('Download Now!')}</a>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/i386/Fedora-Live-LXDE-i686-${global_variables.release['curr_id']}-1.iso">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['i686_Live_LXDE']}</p>
                             </div>
                             <div class="grid_3 suffix_4 omega">
                                 <h5>${_('64-bit')}</h5>
-                                <a class="download-button-mini download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/x86_64/Fedora-${global_variables.release['curr_id']}-x86_64-Live-LXDE.iso">${_('Download Now!')}</a>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/x86_64/Fedora-Live-LXDE-x86_64-${global_variables.release['curr_id']}-1.iso">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['x86_64_Live_LXDE']}</p>
                             </div>
                             <div class="clear"></div>
@@ -182,12 +138,12 @@ ec2_f17 = [
                             <div class="clear"></div>
                             <div class="grid_3 prefix_2 alpha">
                                 <h5>${_('32-bit')}</h5>
-                                <a class="download-button-mini download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/i386/Fedora-${global_variables.release['curr_id']}-i686-Live-XFCE.iso">${_('Download Now!')}</a>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/i386/Fedora-Live-XFCE-i686-${global_variables.release['curr_id']}-1.iso">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['i686_Live_XFCE']}</p>
                             </div>
                             <div class="grid_3 suffix_4 omega">
                                 <h5>${_('64-bit')}</h5>
-                                <a class="download-button-mini download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/x86_64/Fedora-${global_variables.release['curr_id']}-x86_64-Live-XFCE.iso">${_('Download Now!')}</a>
+                                <a class="download-button-mini download-splash" href="${global_variables.path['download_spins']}/${global_variables.release['curr_id']}/Spins/x86_64/Fedora-Live-XFCE-x86_64-${global_variables.release['curr_id']}-1.iso">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['x86_64_Live_XFCE']}</p>
                             </div>
                             <div class="clear"></div>
@@ -352,18 +308,14 @@ ec2_f17 = [
                     <div id="cloud-versions">
                         <noscript> <a name="clouds"><hr /></a> </noscript>
                         <h3>${_('Fedora In The Cloud')}</h3>
-                        <div class="grid_12 alpha omega">
-                        <h4 class="area-callout">${_('Fedora on EC2')}</h4>
-                        </div>
 
                             <div class="clear"></div>
                             <div class="grid_2 alpha"><img class="download-media" alt="" src="${path}/static/images/cloudicontrans.png" /></div>
                             <div class="grid_10 omega">
-                                <p>${_('Fedora publishes system images for Amazon Web Services\' (AWS) virtual machine platform, Amazon Elastic Compute Cloud (EC2), which allows one to create virtual machines in the cloud with very little effort.')}
-                                <br />${_('These images, known as AMIs (Amazon Machine Images), are available in a variety of zones and architectures, and are identifiable by their unique identification number. This ID can then be utilized to locate and launch an image.')}</p>
+                                <p>${Markup(_('Fedora provides ready-to-run cloud images for each supported Fedora release. These are available in Amazon EC2 and for direct download. The downloadable images are available in compressed raw image format and in qcow2 for immediate use with &lt;a href="%s"&gt;OpenStack&lt;/a&gt;. The images are configured with cloud-init, and so will take advantage of ec2-compatible metadata services for provisioning ssh keys.') % 'http://openstack.redhat.com/')}</p>
 
-                                <p>${Markup(_('Fedora\'s EC2 images follow standard EC2 login conventions, meaning that root login is disabled, but sudo access is granted.  The default username for the images is &lt;strong&gt;%s&lt;/strong&gt;.') % 'ec2-user')}</p>
-
+                                <p>${Markup(_('Note that the root account is disabled, but sudo access is granted to a special login user. For Fedora 19 and newer releases, this user is &lt;strong&gt;%s&lt;/strong&gt;.') % 'fedora')}
+                                <br /> ${Markup(_('For Fedora 18 and older releases the user is &lt;strong&gt;%s&lt;/strong&gt;.') % 'ec2-user')}</p>
                                 <ul>
                                     <li>${Markup(_('Not familiar with EC2? &lt;a href="%s"&gt;Read more about the terminology and concepts &gt;&lt;/a&gt;') % 'http://fedoraproject.org/wiki/User:Gholms/EC2_Primer')}</li>
                                     <li>${Markup(_('Full documentation for interacting with EC2 is available from &lt;a href="%s"&gt;Amazon Web Services &gt;&lt;/a&gt;') % 'http://docs.amazonwebservices.com/AWSEC2/latest/GettingStartedGuide/')}</li>
@@ -371,56 +323,36 @@ ec2_f17 = [
                                 </ul>
                             </div>
                             <div class="grid_12 alpha omega">
+								<h4 class="area-callout">${_('Currently supported EC2 Images')}</h4>
+                                <p>${_('Choose the region and machine architecture and just click to launch in your Amazon Web Services account. Or, copy the AMI ID and use that to launch from the AWS Console or command-line tools.')}</p>
+<!-- Specific AMI selector -->
+								<xi:include href="../templates/cloud-tab.html" />
+<!-- /Specific AMI selector -->
 
-															<h4 class="area-callout">${_('Currently supported EC2 Images')}</h4>
-                                <h5>${_('Fedora %s ') % '18'}</h5>
-                                <table class="verify-live-media">
-																		<thead>
-																				<tr>
-																						<th>${_('Region')}</th>
-																						<th>${_('Architecture')}</th>
-																						<th>${_('Root store')}</th>
-																						<th>${_('AMI ID')}</th>
-                                                                                        <th>${_('Launch')}</th>
-																				</tr>
-																		</thead>
-																		<tbody>
-																			<py:for each="img in ec2_f18">
-																				<tr>
-																						<td>${img['region']}</td>
-																						<td>${img['arch']}</td>
-																						<td>${img['store']}</td>
-																						<td>${img['id']}</td>
-                                                                                        <td style="vertical-align: middle"><a href="https://console.aws.amazon.com/ec2/home?region=${img['region']}#launchAmi=${img['id']}"><img style="vertical-align: bottom; display: block; margin: 0 auto" title="${_('Launch AMI instance')}" src="${path}/static/images/cloud_icon.png" /></a></td>
-																				</tr>
-																			</py:for>
-																		</tbody>
-																</table>
 
-                                <h5>${_('Fedora %s ') % '17'}</h5>
-                                <table class="verify-live-media">
-																		<thead>
-																				<tr>
-																						<th>${_('Region')}</th>
-																						<th>${_('Architecture')}</th>
-																						<th>${_('Root store')}</th>
-																						<th>${_('AMI ID')}</th>
-                                                                                        <th>${_('Launch')}</th>
-																				</tr>
-																		</thead>
-																		<tbody>
-																			<py:for each="img in ec2_f17">
-																				<tr>
-																						<td>${img['region']}</td>
-																						<td>${img['arch']}</td>
-																						<td>${img['store']}</td>
-																						<td>${img['id']}</td>
-                                                                                        <td style="vertical-align: middle"><a href="https://console.aws.amazon.com/ec2/home?region=${img['region']}#launchAmi=${img['id']}"><img style="vertical-align: bottom; display: block; margin: 0 auto" title="${_('Launch AMI instance')}" src="${path}/static/images/cloud_icon.png" /></a></td>
-																				</tr>
-																			</py:for>
-																		</tbody>
-																</table>
-
+                            <div class="format-block">
+                                <div class="grid_12 alpha omega">
+									<h4 class="area-callout">${_('Fedora %(release)s Downloadable Cloud Images') % {'release':global_variables.release['curr_id']}}</h4>
+                                </div>
+								<div class="clear"></div>
+									<p>${_('Download these images for use with your local private cloud, or to modify and upload to a public cloud. The qcow2 images can be used directly by OpenStack. The raw.xz images can be used by other cloud infrastructure software but will need to be uncompressed first.')}
+									<br />${Markup(_('For any doubts about running Instances on OpenStack read the &lt;a href="%s"&gt;official documentation&lt;/a&gt;.') % 'http://openstack.redhat.com/Running_an_instance')}</p>
+								<div class="grid_5 prefix_2 alpha">
+                                    <h5>64-bit</h5>
+                                    <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/x86_64/Fedora-x86_64-${global_variables.release['curr_id']}-${global_variables.release['cloud_composedate']}-sda.qcow2" class="download-button-mini download-cloud-splash">${_('Download Now!')}</a>
+                                    <p class="fine-print">${_('%(size)sMB qcow2 image') % {'size':global_variables.iso_size['x86_64_sda.qcow2']}}</p>
+                                    <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/x86_64/Fedora-x86_64-${global_variables.release['curr_id']}-${global_variables.release['cloud_composedate']}-sda.raw.xz" class="download-button-mini download-cloud-splash">${_('Download Now!')}</a>
+                                    <p class="fine-print">${_('%(size)sMB Raw image') % {'size':global_variables.iso_size['x86_64_raw']}}</p>
+								</div>
+								<div class="grid_4 prefix_1 omega">
+                                    <h5>32-bit</h5>
+                                    <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/i386/Fedora-i386-${global_variables.release['curr_id']}-${global_variables.release['cloud_composedate']}-sda.qcow2" class="download-button-mini download-cloud-splash">${_('Download Now!')}</a>
+                                    <p class="fine-print">${_('%(size)sMB qcow2 image') % {'size':global_variables.iso_size['i686_sda.qcow2']}}</p>
+                                    <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Images/i386/Fedora-i386-${global_variables.release['curr_id']}-${global_variables.release['cloud_composedate']}-sda.raw.xz" class="download-button-mini download-cloud-splash">${_('Download Now!')}</a>
+                                    <p class="fine-print">${_('%(size)sMB Raw image') % {'size':global_variables.iso_size['i686_raw']}}</p>
+								</div>
+								<div class="clear"></div>
+                            </div>
 
                     <xi:include href="../templates/content-export-regulations.html" />
                     		</div>
@@ -437,94 +369,110 @@ ec2_f17 = [
                         <div class="grid_10 omega format-block">
                             <h4>${_('Fedora %(release)s ARM') % {'release':global_variables.release['curr_arm_id']}}</h4>
                             <p>${_('ARM chips are the most widely-produced processor family in the world; they have historically been used in cell phones and embedded applications, and are increasingly used in tablet devices and low-power-consumption servers. The Fedora-ARM project is an initiative to bring Fedora to this processor family.')}</p>
-                            <p>${_('A list of currently supplied prebuilt images for the Fedora %(release)s ARM GA release can be found at:') % {'release':global_variables.release['curr_arm_id']}}</p>
-                            <p><a href="http://fedoraproject.org/wiki/Architectures/ARM/F18_Release_Announcement#Release_Notes/">${_('Fedora %(release)s GA Release Announcement') % {'release':global_variables.release['curr_arm_id']}}</a></p>
-                            <div class="arch-note"><p><strong>${_('Note for Raspberry Pi users')}</strong></p><p>${Markup(_('Raspberry Pi support is not included in Fedora %(release)s GA because it does not meet the Fedora release guidelines. Specifically, the Raspberry Pi relies upon a custom kernel version, not upstream, as well as special GPU binary blobs which are not acceptable under the current firmware exception. Nonetheless, an &lt;a href="%(nightly)s"&gt;unsupported "nightly" Fedora %(release)s snapshot&lt;/a&gt; is available.') % {'release':global_variables.release['curr_arm_id'], 'nightly':'http://cdot.senecacollege.ca/raspberry_pi_fedora_remix/'})}</p></div>
-
-								</div>
+                            <p>${Markup(_('For more informations about changes and new features please read the &lt;a href="http://fedoraproject.org/wiki/Architectures/ARM/F19_Release_Announcement#Release_Notes/"&gt;Release Notes&lt;/a&gt;.'))}</p>
+                            <div class="arch-note"><p><strong>${_('Note for Raspberry Pi users')}</strong></p><p>${Markup(_('Raspberry Pi support is now included in &lt;a href="http://pidora.ca/"&gt;Pidora&lt;/a&gt;, an optimized Fedora Remix which includes additional Pi-modules.'))}</p></div>
+						</div>
                         <div class="clear"></div>
-			<div class="grid_10 prefix_2 alpha omega">
+			             <div class="grid_10 prefix_2 alpha omega">
                             <h6>${_('Available images and instructions:')}</h6>
-							<p>${_('The following images have been tested and are recommended for most users and include Versatile Express (QEMU), Trimslice (TEGRA), Beagleboard (OMAP3), Pandaboard (OMAP4) and GuruPlug (Kirkwood) based hardware platforms. For the whole list of images please visit')} <a href="http://fedoraproject.org/wiki/Architectures/ARM/F18_Release_Announcement#What_is_included_in_the_Fedora_18_for_ARM_release.3F">${_('all the prebuilt images')}</a> ${_('for the Fedora %(release)s ARM GA release.') % {'release':global_variables.release['curr_arm_id']}}</p>
+							<p>${_('Fedora %(release)s for ARM includes two image types–one for use with platforms requiring a VFAT partition (Pandaboard), the other for use with devices that boot from an EXT partition (Trimslice). For each of these there are a number of desktop choices including MATE, KDE, Xfce, LXDE, SOAS and a minimal image that does not include the desktop. Any of these images can be used with QEMU.') % {'release':global_variables.release['curr_arm_id']}}</p>
+                        </div>
+                        <div class="clear"></div>
+			<div class="grid_10 prefix_2 alpha omega">
+         <div class="clear"></div>
+                            <p><strong>${_('KDE')}</strong></p>
+                        </div>
+                        <div class="clear"></div>
+                        	<div class="grid_3 prefix_2 alpha">
+                            <h5>${_('VFAT HFP image')}</h5>
+                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/arm/Fedora-KDE-VFAT-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
+                            </div>
+                     	    <div class="grid_4 suffix_3 omega">
+                            <h5>${_('HFP image')}</h5>
+                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/arm/Fedora-KDE-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
+                     	   </div>
+         <div class="clear"></div>
+			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
+			<div class="grid_10 prefix_2 alpha omega">
+         <div class="clear"></div>
+                            <p><strong>${_('Xfce')}</strong></p>
+                        </div>
+                        <div class="clear"></div>
+                        	<div class="grid_3 prefix_2 alpha">
+                            <h5>${_('VFAT HFP image')}</h5>
+                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/arm/Fedora-XFCE-VFAT-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
+                            </div>
+                            <div class="grid_4 suffix_3 omega">
+                            <h5>${_('HFP image')}</h5>
+                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/arm/Fedora-XFCE-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
+                           </div>
+                     	   <div class="grid_4 suffix_3 omega">
 
-                        </div>
-                        <div class="clear"></div>
-			<div class="grid_10 prefix_2 alpha omega">
-         <div class="clear"></div>
-                            <p><strong><a href="http://fedoraproject.org/wiki/Architectures/ARM/F18/BeagleBoard-xM">${_('BeagleBoard')}</a></strong></p>
-                        </div>
-                        <div class="clear"></div>
-                        	<div class="grid_3 prefix_2 alpha">
-                            <h5>${_('SFP Image')}</h5>
-                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/18/Images/arm/Fedora-18-beagle-arm.img.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
-                      	 	 </div>
-                     	   <div class="grid_4 suffix_3 omega">
-                            <h5>${_('HFP Image')}</h5>
-                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/18/Images/armhfp/Fedora-18-beagle-armhfp.img.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
                      	   </div>
          <div class="clear"></div>
 			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
 			<div class="grid_10 prefix_2 alpha omega">
          <div class="clear"></div>
-                            <p><strong><a href="http://fedoraproject.org/wiki/Architectures/ARM/F18/GuruPlug">${_('GuruPlug (Kirkwood)')}</a></strong></p>
+                            <p><strong>${_('LXDE')}</strong></p>
                         </div>
                         <div class="clear"></div>
                         	<div class="grid_3 prefix_2 alpha">
-                            <h5>${_('SFP Image')}</h5>
-                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/18/Images/arm/Fedora-18-kirkwood-arm.img.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
-                      	 	 </div>
-                     	   <div class="grid_4 suffix_3 omega">
-
+                            <h5>${_('VFAT HFP image')}</h5>
+                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/arm/Fedora-LXDE-VFAT-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
+                            </div>
+                            <div class="grid_4 suffix_3 omega">
+                            <h5>${_('HFP image')}</h5>
+                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/arm/Fedora-LXDE-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
                      	   </div>
          <div class="clear"></div>
 			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
 			<div class="grid_10 prefix_2 alpha omega">
          <div class="clear"></div>
-                            <p><strong><a href="http://fedoraproject.org/wiki/Architectures/ARM/F18/Versatile_Express">${_('Versatile Express XFCE')}</a></strong></p>
+                            <p><strong>${_('MATE')}</strong></p>
                         </div>
                         <div class="clear"></div>
                         	<div class="grid_3 prefix_2 alpha">
-                            <h5>${_('SFP Image')}</h5>
-                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/18/Images/arm/Fedora-18-vexpress-xfce-arm.tar.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
-                      	 	 </div>
-                     	   <div class="grid_4 suffix_3 omega">
-                            <h5>${_('HFP Image')}</h5>
-                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/18/Images/armhfp/Fedora-18-vexpress-xfce-armhfp.tar.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
+                            <h5>${_('VFAT HFP image')}</h5>
+                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/arm/Fedora-Mate-VFAT-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
+                            </div>
+                            <div class="grid_4 suffix_3 omega">
+                            <h5>${_('HFP image')}</h5>
+                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/arm/Fedora-Mate-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
                      	   </div>
          <div class="clear"></div>
 			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
 			<div class="grid_10 prefix_2 alpha omega">
          <div class="clear"></div>
-                            <p><strong><a href="http://fedoraproject.org/wiki/Architectures/ARM/F18/Pandaboard">${_('Pandaboard')}</a></strong></p>
+                            <p><strong>${_('SoaS')}</strong></p>
                         </div>
                         <div class="clear"></div>
                         	<div class="grid_3 prefix_2 alpha">
-                            <h5>${_('SFP Image')}</h5>
-                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/18/Images/arm/Fedora-18-panda-arm.img.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
-                      	 	 </div>
-                     	   <div class="grid_4 suffix_3 omega">
-                            <h5>${_('HFP Image')}</h5>
-                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/18/Images/armhfp/Fedora-18-panda-armhfp.img.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
+                            <h5>${_('VFAT HFP image')}</h5>
+                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/arm/Fedora-SoaS-VFAT-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
+                            </div>
+                            <div class="grid_4 suffix_3 omega">
+                            <h5>${_('HFP image')}</h5>
+                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/arm/Fedora-SoaS-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
                      	   </div>
          <div class="clear"></div>
 			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
 			<div class="grid_10 prefix_2 alpha omega">
-         <div class="clear"></div>
-                            <p><strong><a href="http://fedoraproject.org/wiki/Architectures/ARM/F18/Trimslice">${_('TrimSlice')}</a></strong></p>
+        <div class="clear"></div>
+                            <p><strong>${_('Minimal')}</strong></p>
                         </div>
                         <div class="clear"></div>
-                        	<div class="grid_3 prefix_2 alpha">
-                            <h5>${_('SFP Image')}</h5>
-                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/18/Images/arm/Fedora-18-trimslice-arm.img.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
-                      	 	 </div>
-                     	   <div class="grid_4 suffix_3 omega">
-                            <h5>${_('HFP Image')}</h5>
-                            <a href="http://download.fedoraproject.org/pub/fedora-secondary/releases/18/Images/armhfp/Fedora-18-trimslice-armhfp.img.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
-                     	   </div>
+                            <div class="grid_3 prefix_2 alpha">
+                            <h5>${_('VFAT HFP image')}</h5>
+                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/arm/Fedora-Minimal-VFAT-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
+                            </div>
+                            <div class="grid_4 suffix_3 omega">
+                            <h5>${_('HFP image')}</h5>
+                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/arm/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
+                           </div>
          <div class="clear"></div>
-			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
-			<div class="grid_10 prefix_2 alpha omega">
-<p>${Markup(_('The list of known Fedora 18 remixes is catalogued at &lt;a href="%s"&gt;Architectures/ARM/F18/Remixes&lt;/a&gt;. Likewise, root filesystem tarballs are provided to help you make your own remixes.') % 'http://fedoraproject.org/wiki/Architectures/ARM/F18/Remixes')}</p>
+            <div class="grid_10 prefix_2 alpha omega"><hr /></div>
+            <div class="grid_10 prefix_2 alpha omega">
+<p>${Markup(_('For specific install instructions on the compatible boards please read the &lt;a href="%s"&gt;Installation Notes&lt;/a&gt;.') % 'https://fedoraproject.org/wiki/Architectures/ARM/F19/Installation')}</p>
             </div>
          				   <div class="grid_1 suffix_1 alpha">
                         <a href="https://fedoraproject.org/wiki/Architectures/PowerPC"><img class="download-media" alt="${_('ARM architecture')}" src="${path}/static/images/ppc.png" />
@@ -537,12 +485,12 @@ ec2_f17 = [
 									<div class="clear"></div>
                             <div class="grid_3 prefix_2 alpha">
                             <h5>${_('DVD Image')}</h5>
-                                <a href="${global_variables.path['download_arch']}/18/Fedora/ppc64/iso/Fedora-18-ppc64-DVD.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
+                                <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_ppc64_id']}/Fedora/ppc64/iso/Fedora-${global_variables.release['curr_ppc64_id']}-ppc64-DVD.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sGB DVD ISO') % global_variables.iso_size['PPC64_DVD']}</p>
                             </div>
                      	   <div class="grid_4 suffix_3 omega">
                                 <h5>${_('Netinstall CD')}</h5>
-                                <a href="${global_variables.path['download_arch']}/18/Fedora/ppc64/iso/Fedora-18-ppc64-netinst.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
+                                <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_ppc64_id']}/Fedora/ppc64/iso/Fedora-${global_variables.release['curr_ppc64_id']}-ppc64-netinst.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sMB CD ISO') % global_variables.iso_size['PPC64_Netinstall']}</p>
                             </div>
                         <div class="clear"></div>

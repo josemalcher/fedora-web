@@ -1594,7 +1594,7 @@ li.slide { width: 100% !important; }
 }
 
 .slides #fedora-download {
-  background: url(../images/banners/f18_banner_background.jpg) no-repeat top center black;
+  background: url(../images/banners/f19_banner_background.jpg) no-repeat top center #012643;
 }
 .slides #fedora-download .content, .slides #fedora-download p.small {
 	color: white;
@@ -1635,9 +1635,9 @@ li.slide { width: 100% !important; }
 
 .slides #feature1 {
   background: #555;
-  background-image: url(../images/banners/gold_scale.png);
+  background-image: url(../images/banners/3d_printing.jpg);
   background-position: top center;
-  background-repeat: repeat;}
+  background-repeat: no-repeat;}
 
 .slides #feature1 .content {
   left: 0px;
@@ -1663,17 +1663,22 @@ li.slide { width: 100% !important; }
   padding-left: 1em;
   left: 0px;
   width: 400px;
+  color:#333;
+}
+
+.slides #spin .content a {
+  color: #3B6EB4;
 }
 
 .slides #spin {
-background: rgb(39,83,101); /* Old browsers */
-background: -moz-linear-gradient(center top , #333333 1%, #555555 36%, #888888 100%) repeat scroll 0 0 transparent;
-background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(39,83,101,1)), color-stop(36%,rgba(81,140,163,1)), color-stop(100%,rgba(201,218,224,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(39,83,101,1) 1%,rgba(81,140,163,1) 36%,rgba(201,218,224,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(39,83,101,1) 1%,rgba(81,140,163,1) 36%,rgba(201,218,224,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(39,83,101,1) 1%,rgba(81,140,163,1) 36%,rgba(201,218,224,1) 100%); /* IE10+ */
-background: linear-gradient(top,  rgba(39,83,101,1) 1%,rgba(81,140,163,1) 36%,rgba(201,218,224,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#275365', endColorstr='#c9dae0',GradientType=0 ); /* IE6-9 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(center top , #FFFFFF 1%, #FFFFFF 36%, #AAAAAA 100%) repeat scroll 0 0 transparent;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(255,255,255,1)), color-stop(36%,rgba(255,255,255,1)), color-stop(100%,rgba(170,170,170,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 1%,rgba(255,255,255,1) 36%,rgba(170,170,170,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 1%,rgba(255,255,255,1) 36%,rgba(170,170,170,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(3255,255,255,1) 1%,rgba(255,255,255,1) 36%,rgba(170,170,170,1) 100%); /* IE10+ */
+background: linear-gradient(top,  rgba(3255,255,255,1) 1%,rgba(255,255,255,1) 36%,rgba(170,170,170,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#AAAAAA',GradientType=0 ); /* IE6-9 */
 }
 /* Black backgrounds for slide content where needed */
 
@@ -1756,6 +1761,13 @@ th.install-media-arch { background-color: #e8e8e8; width: 120px; }
   font-weight:normal;
 }
 
+.cloud-options {
+  padding: 0px 0px 20px 0px;
+}
+
+.ami-label {
+  margin-right: 2px;
+}
 
 /* end: cloud */
 
