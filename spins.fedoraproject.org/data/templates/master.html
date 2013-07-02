@@ -14,7 +14,7 @@ class Torrents(object):
     prerelease_re = re.compile('-(alpha|beta|snap|preview)([0-9]*)$', re.I)
     non_release_re = re.compile('(alpha|beta|snap|preview)', re.I)
     prerelease_order = ['alpha', 'beta', 'snap', 'preview']
-    spins_matches = ['design-suite', 'kde', 'lxde', 'games', 'xfce', 'security', 'electronic-lab', 'soas', 'robotics', 'jam', 'mate-compiz']
+    spins_matches = ['design-suite', 'kde', 'lxde', 'games', 'xfce', 'security', 'electronic-lab', 'soas', 'robotics', 'mate-compiz', 'jam']
     archlist = ['i386', 'i586', 'i686', 'ix86', 'ppc', 'x86_64', 'source', 'Source']
     #FIXME we should rename the design-suite iso, to match the websites...
 
@@ -48,8 +48,8 @@ class Torrents(object):
         for arch in self.archlist:
             arch_pos = name.find('-%s-' % arch)
             if arch_pos != -1:
-                release = name[0:arch_pos]
-                spin = name[arch_pos + len(arch) + 2:]
+                release = name[name.rfind('-') + 1:]
+                spin = name[len("Fedora-"):arch_pos]
                 return spin, release, arch
         raise Exception('No known architecture in the spin name: %s' % name)
 
@@ -161,7 +161,14 @@ def formatsize(n, format='%0.2f'):
 spins = {}
 for t in torrents.torrents:
     if torrents.matches_a_spin(t['name']) and release in t['name']:
-        name = t['name'].split('-', 4)[-1]
+        name = t['name']
+
+        name = name.split('Fedora-')[1]
+        if 'Live-' in name:
+            name = name.split('Live-')[1]
+
+        name = name.rsplit('-', 2)[0]
+
         if name not in spins:
             spins[name] = {
                 'torrents': [t['name']],
@@ -198,7 +205,7 @@ spin_detail = {
     'soas':           _("Discover. Reflect. Share. Learn."),
     'scientific-kde': _("Open Source Scientific Computing."),
     'robotics':       _("Dive into Robotics."),
-    'jam':            _("Unleash your inner musician."),
+    'jam':        _("Unleash your inner musician."),
     'mate-compiz':    _("A classic Fedora Desktop. With wobbly Windows.")
 }
 
