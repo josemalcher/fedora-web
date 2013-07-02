@@ -22,9 +22,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-05-15 22:50+0200\n"
-"PO-Revision-Date: 2013-05-16 08:51+0000\n"
-"Last-Translator: Tiansworld <tiansworld@fedoraproject.org>\n"
+"POT-Creation-Date: 2013-07-02 23:14+0200\n"
+"PO-Revision-Date: 2013-07-02 21:14+0000\n"
+"Last-Translator: robyduck <robyduck@fedoraproject.org>\n"
 "Language-Team: Chinese (China) <trans-zh_cn@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,7 +37,7 @@ msgstr ""
 msgid "Fedora Project - What is Fedora and what makes it different?"
 msgstr "Fedora Project - Fedora 是什么，又是什么让它与众不同？"
 
-#: data/content/about-fedora.html:13 data/content/index.html:136
+#: data/content/about-fedora.html:13 data/content/index.html:131
 #: data/templates/foot.html:10
 msgid "About Fedora"
 msgstr "关于 Fedora"
@@ -81,7 +81,7 @@ msgid ""
 "technologies."
 msgstr "<strong>Fedora 项目</strong> 的名字代表着一群热爱、使用并创建自由软件的世界范围内社区。  我们以社区的方式工作，引领创新并传播自由的代码和内容。  Fedora 由<strong><a href=\"http://redhat.com\">红帽</a></strong>赞助，后者是世界上最受信赖的开源技术提供商。红帽对 Fedora 的投入是为了鼓励协作并孵化创新的<a href=\"http://en.wikipedia.org/wiki/Free_software\">自由软件</a>技术。"
 
-#: data/content/about-fedora.html:29 data/content/index.html:194
+#: data/content/about-fedora.html:29 data/content/index.html:189
 msgid "What makes Fedora different?"
 msgstr "是什么让 Fedora 与众不同？"
 
@@ -478,27 +478,33 @@ msgid ""
 "200px."
 msgstr "宽度参数可用于缩放条幅尺寸。这是基于 CSS 的缩放，因此更改后条幅质量会下降。最好保留默认值 (即忽略该参数)。正确值在 100px 到 200px 之间。"
 
-#: data/content/download-arm-splash.html:7 data/content/download-splash.html:7
+#: data/content/download-arm-splash.html:7
+#: data/content/download-cloud-splash.html:7
+#: data/content/download-splash.html:7
 msgid "Fedora Project - Download next steps."
 msgstr "Fedora Project - 下载之后的步骤。"
 
 #: data/content/download-arm-splash.html:13
+#: data/content/download-cloud-splash.html:13
 #: data/content/download-splash.html:13
 msgid "Thanks for downloading Fedora!"
 msgstr "感谢您下载 Fedora！"
 
 #: data/content/download-arm-splash.html:14
+#: data/content/download-cloud-splash.html:14
 #: data/content/download-splash.html:14
 msgid "We know you'll love it!"
 msgstr "我们知道您一定喜欢！"
 
 #: data/content/download-arm-splash.html:17
+#: data/content/download-cloud-splash.html:17
 #: data/content/download-splash.html:17
 msgid ""
 "Fedora is built by people across the globe. Everyone is welcome to join!"
 msgstr "Fedora 由全球各地的爱好者构建。我们欢迎每个人的加入！"
 
 #: data/content/download-arm-splash.html:25
+#: data/content/download-cloud-splash.html:25
 #: data/content/download-splash.html:25
 msgid ""
 "Your download should begin in a few seconds. If not, click the link below"
@@ -521,11 +527,13 @@ msgid ""
 msgstr "不用担心，您可以在刻录之前先<a href=\"../verify\">验证</a>下载所得的文件。"
 
 #: data/content/download-arm-splash.html:38
+#: data/content/download-cloud-splash.html:39
 #: data/content/download-splash.html:38
 msgid "I need help running or installing Fedora."
 msgstr "我需要有关开始运行及安装 Fedora 的帮助。"
 
 #: data/content/download-arm-splash.html:39
+#: data/content/download-cloud-splash.html:40
 #: data/content/download-splash.html:39
 msgid ""
 "There's several ways you can get help with Fedora, from forums to live chat "
@@ -533,16 +541,19 @@ msgid ""
 msgstr "您可使用多种方法得到 Fedora 的帮助，从论坛到实时聊天再到邮件列表。"
 
 #: data/content/download-arm-splash.html:40
+#: data/content/download-cloud-splash.html:41
 #: data/content/download-splash.html:40
 msgid "Get help with Fedora"
 msgstr "从 Fedora 获得帮助"
 
 #: data/content/download-arm-splash.html:45
+#: data/content/download-cloud-splash.html:46
 #: data/content/download-splash.html:45
 msgid "I want to learn more about Fedora."
 msgstr "我想了解关于 Fedora 的更多信息。"
 
 #: data/content/download-arm-splash.html:46
+#: data/content/download-cloud-splash.html:47
 #: data/content/download-splash.html:46
 msgid ""
 "Fedora is more than an operating system - it's a vibrant community focused "
@@ -550,9 +561,33 @@ msgid ""
 msgstr "Fedora 不只是一个操作系统 - 它是一个充满活力、致力于自由和革新的社区。"
 
 #: data/content/download-arm-splash.html:47
+#: data/content/download-cloud-splash.html:48
 #: data/content/download-splash.html:47
 msgid "Learn more about Fedora"
 msgstr "了解 Fedora 的更多信息"
+
+#: data/content/download-cloud-splash.html:31
+msgid "What should I do with this image?"
+msgstr "我该怎么使用这个镜像文件？"
+
+#: data/content/download-cloud-splash.html:32
+msgid ""
+"You'll need to uncompress the raw image in order to use it, while the qcow2 "
+"images can be used directly by OpenStack."
+msgstr "您需要将原始镜像解压后才可以使用，而 qcow2 镜像则可通过 OpenStack 直接使用。"
+
+#: data/content/download-cloud-splash.html:33
+#, python-format
+msgid ""
+"For any doubts about running Instances on OpenStack read the <a "
+"href=\"%s\">official documentation</a>."
+msgstr "有关 OpenStack 上运行实例的任何疑问可阅读<a href=\"%s\">官方文档</a>。"
+
+#: data/content/download-cloud-splash.html:34
+msgid ""
+"Not to worry, <a href=\"../verify\">verify</a> your download before using "
+"it."
+msgstr "不用担心，您可以在使用前先<a href=\"../verify\">校验</a>下载的文件。"
 
 #: data/content/download-splash.html:31
 msgid "What should I do with this ISO file?"
@@ -575,117 +610,127 @@ msgstr "别担心，<a href=\"../verify\">验证</a>您的下载并<a href=\"%s\
 msgid "Fedora Project - All available methods to get Fedora."
 msgstr "Fedora Project - 获得 Fedora 的全部方法。"
 
-#: data/content/get-fedora-all.html:15 data/content/get-fedora-options.html:59
+#: data/content/get-fedora-all.html:15 data/content/get-fedora-options.html:15
 #: data/content/get-fedora.html:13 data/templates/foot.html:21
 msgid "Get Fedora"
 msgstr "获得 Fedora"
 
-#: data/content/get-fedora-all.html:16 data/content/get-fedora-options.html:60
+#: data/content/get-fedora-all.html:16 data/content/get-fedora-options.html:16
 #: data/content/get-fedora.html:14 data/content/get-prerelease.html:75
 #, python-format
 msgid "Fedora is 100%% free for you to enjoy and share."
 msgstr "Fedora 是 100%% 自由的，您可以尽情享受和分享。"
 
-#: data/content/get-fedora-all.html:19 data/content/get-fedora-options.html:63
+#: data/content/get-fedora-all.html:19 data/content/get-fedora-options.html:19
 #: data/content/get-fedora.html:17 data/content/get-prerelease.html:78
 msgid "Fedora isn't just free-of-charge. It's free as in freedom. Learn more."
 msgstr "Fedora 不仅允许免费使用，而且可以自由分发。了解更多。"
 
-#: data/content/get-fedora-all.html:28 data/content/get-fedora-all.html:142
+#: data/content/get-fedora-all.html:28 data/content/get-fedora-all.html:143
 #: data/content/keys.html:28 data/content/keys.html:367
-#: data/content/verify.html:28 data/content/verify.html:179
+#: data/content/verify.html:28 data/content/verify.html:228
 msgid "&#8592; Back to the main \"Get Fedora\" page"
 msgstr "&#8592; 返回到\"获得 Fedora\" 主页面"
 
-#: data/content/get-fedora-all.html:29 data/content/get-prerelease.html:96
+#: data/content/get-fedora-all.html:29 data/content/get-fedora.html:25
+#, python-format
+msgid "Did someone say... &ldquo;<a href=\"get-prerelease\">%s</a>&rdquo;?"
+msgstr "有人在说... &ldquo;<a href=\"get-prerelease\">%s</a>&rdquo;?"
+
+#: data/content/get-fedora-all.html:30 data/content/get-prerelease.html:96
 #, python-format
 msgid ""
 "After downloading an ISO, <a "
 "href=\"https://fedoraproject.org%s/%s/verify\">verify</a> it."
 msgstr "下载 ISO 后，进行<a href=\"https://fedoraproject.org%s/%s/verify\">校验</a>。"
 
-#: data/content/get-fedora-all.html:31 data/content/get-prerelease.html:97
+#: data/content/get-fedora-all.html:32 data/content/get-prerelease.html:97
 msgid "Install Media"
 msgstr "安装介质"
 
-#: data/content/get-fedora-all.html:34 data/content/get-fedora-all.html:68
-#: data/content/get-fedora-all.html:94
+#: data/content/get-fedora-all.html:35 data/content/get-fedora-all.html:69
+#: data/content/get-fedora-all.html:95
 msgid "BitTorrent"
 msgstr "BitTorrent"
 
-#: data/content/get-fedora-all.html:36 data/content/get-fedora-all.html:44
-#: data/content/get-fedora-all.html:46 data/content/get-fedora-all.html:53
+#: data/content/get-fedora-all.html:37 data/content/get-fedora-all.html:45
+#: data/content/get-fedora-all.html:47 data/content/get-fedora-all.html:54
 #: data/content/get-prerelease.html:102 data/content/get-prerelease.html:109
 #: data/content/get-prerelease.html:116 data/content/get-prerelease.html:142
 #: data/content/get-prerelease.html:160 data/content/get-prerelease.html:178
-#: data/content/get-prerelease.html:195
+#: data/content/get-prerelease.html:195 data/content/get-prerelease.html:212
+#: data/content/get-prerelease.html:229
 msgid "i386"
 msgstr "i386"
 
-#: data/content/get-fedora-all.html:36 data/content/get-fedora-all.html:37
-#: data/content/get-fedora-all.html:44 data/content/get-fedora-all.html:45
-#: data/content/get-fedora-all.html:53 data/content/get-fedora-all.html:54
+#: data/content/get-fedora-all.html:37 data/content/get-fedora-all.html:38
+#: data/content/get-fedora-all.html:45 data/content/get-fedora-all.html:46
+#: data/content/get-fedora-all.html:54 data/content/get-fedora-all.html:55
 #: data/content/get-prerelease.html:102 data/content/get-prerelease.html:103
 #: data/content/get-prerelease.html:109 data/content/get-prerelease.html:110
 msgid "Install DVD"
 msgstr "安装 DVD"
 
-#: data/content/get-fedora-all.html:37 data/content/get-fedora-all.html:45
-#: data/content/get-fedora-all.html:47 data/content/get-fedora-all.html:54
-#: data/content/get-fedora-all.html:71 data/content/get-fedora-all.html:78
-#: data/content/get-fedora-all.html:85 data/content/get-fedora-all.html:97
-#: data/content/get-fedora-all.html:104 data/content/get-fedora-all.html:111
+#: data/content/get-fedora-all.html:38 data/content/get-fedora-all.html:46
+#: data/content/get-fedora-all.html:48 data/content/get-fedora-all.html:55
+#: data/content/get-fedora-all.html:72 data/content/get-fedora-all.html:79
+#: data/content/get-fedora-all.html:86 data/content/get-fedora-all.html:98
+#: data/content/get-fedora-all.html:105 data/content/get-fedora-all.html:112
 #: data/content/get-prerelease.html:103 data/content/get-prerelease.html:110
 #: data/content/get-prerelease.html:117 data/content/get-prerelease.html:136
 #: data/content/get-prerelease.html:143 data/content/get-prerelease.html:154
 #: data/content/get-prerelease.html:161 data/content/get-prerelease.html:172
 #: data/content/get-prerelease.html:179 data/content/get-prerelease.html:189
-#: data/content/get-prerelease.html:196
+#: data/content/get-prerelease.html:196 data/content/get-prerelease.html:206
+#: data/content/get-prerelease.html:213 data/content/get-prerelease.html:223
+#: data/content/get-prerelease.html:230
 msgid "x86_64"
 msgstr "x86_64"
 
-#: data/content/get-fedora-all.html:42 data/content/get-fedora-all.html:75
-#: data/content/get-fedora-all.html:101 data/content/get-prerelease.html:107
+#: data/content/get-fedora-all.html:43 data/content/get-fedora-all.html:76
+#: data/content/get-fedora-all.html:102 data/content/get-prerelease.html:107
 #: data/content/get-prerelease.html:140 data/content/get-prerelease.html:158
 #: data/content/get-prerelease.html:176 data/content/get-prerelease.html:193
+#: data/content/get-prerelease.html:210 data/content/get-prerelease.html:227
 msgid "Direct Download"
 msgstr "直接下载"
 
-#: data/content/get-fedora-all.html:46 data/content/get-fedora-all.html:47
+#: data/content/get-fedora-all.html:47 data/content/get-fedora-all.html:48
 msgid "Network Install CD"
 msgstr "网络安装 CD"
 
-#: data/content/get-fedora-all.html:51 data/content/get-fedora-all.html:82
-#: data/content/get-fedora-all.html:108
+#: data/content/get-fedora-all.html:52 data/content/get-fedora-all.html:83
+#: data/content/get-fedora-all.html:109
 msgid "Metalinks"
 msgstr "Metalinks"
 
-#: data/content/get-fedora-all.html:58
+#: data/content/get-fedora-all.html:59
 msgid "gPXE"
 msgstr "gPXE"
 
-#: data/content/get-fedora-all.html:60
+#: data/content/get-fedora-all.html:61
 msgid "BFO"
 msgstr "BFO"
 
-#: data/content/get-fedora-all.html:65 data/content/get-prerelease.html:130
+#: data/content/get-fedora-all.html:66 data/content/get-prerelease.html:130
 msgid "Fedora Desktop Live Media"
 msgstr "Fedora 桌面 Live 介质"
 
-#: data/content/get-fedora-all.html:70 data/content/get-fedora-all.html:77
-#: data/content/get-fedora-all.html:84 data/content/get-fedora-all.html:96
-#: data/content/get-fedora-all.html:103 data/content/get-fedora-all.html:110
+#: data/content/get-fedora-all.html:71 data/content/get-fedora-all.html:78
+#: data/content/get-fedora-all.html:85 data/content/get-fedora-all.html:97
+#: data/content/get-fedora-all.html:104 data/content/get-fedora-all.html:111
 #: data/content/get-prerelease.html:135 data/content/get-prerelease.html:153
 #: data/content/get-prerelease.html:171 data/content/get-prerelease.html:188
+#: data/content/get-prerelease.html:205 data/content/get-prerelease.html:222
 msgid "i686"
 msgstr "i686"
 
-#: data/content/get-fedora-all.html:70 data/content/get-fedora-all.html:71
-#: data/content/get-fedora-all.html:77 data/content/get-fedora-all.html:78
-#: data/content/get-fedora-all.html:84 data/content/get-fedora-all.html:85
-#: data/content/get-fedora-all.html:96 data/content/get-fedora-all.html:97
-#: data/content/get-fedora-all.html:103 data/content/get-fedora-all.html:104
-#: data/content/get-fedora-all.html:110 data/content/get-fedora-all.html:111
+#: data/content/get-fedora-all.html:71 data/content/get-fedora-all.html:72
+#: data/content/get-fedora-all.html:78 data/content/get-fedora-all.html:79
+#: data/content/get-fedora-all.html:85 data/content/get-fedora-all.html:86
+#: data/content/get-fedora-all.html:97 data/content/get-fedora-all.html:98
+#: data/content/get-fedora-all.html:104 data/content/get-fedora-all.html:105
+#: data/content/get-fedora-all.html:111 data/content/get-fedora-all.html:112
 #: data/content/get-prerelease.html:135 data/content/get-prerelease.html:136
 #: data/content/get-prerelease.html:142 data/content/get-prerelease.html:143
 #: data/content/get-prerelease.html:153 data/content/get-prerelease.html:154
@@ -694,46 +739,50 @@ msgstr "i686"
 #: data/content/get-prerelease.html:178 data/content/get-prerelease.html:179
 #: data/content/get-prerelease.html:188 data/content/get-prerelease.html:189
 #: data/content/get-prerelease.html:195 data/content/get-prerelease.html:196
+#: data/content/get-prerelease.html:205 data/content/get-prerelease.html:206
+#: data/content/get-prerelease.html:212 data/content/get-prerelease.html:213
+#: data/content/get-prerelease.html:222 data/content/get-prerelease.html:223
+#: data/content/get-prerelease.html:229 data/content/get-prerelease.html:230
 msgid "Live Image"
 msgstr "Live 镜像"
 
-#: data/content/get-fedora-all.html:91 data/content/get-prerelease.html:148
+#: data/content/get-fedora-all.html:92 data/content/get-prerelease.html:148
 msgid "Fedora KDE Live Media"
 msgstr "Fedora KDE Live 介质"
 
-#: data/content/get-fedora-all.html:116
+#: data/content/get-fedora-all.html:117
 msgid "Alternative Downloads"
 msgstr "其它下载"
 
-#: data/content/get-fedora-all.html:118 data/content/get-prerelease.html:202
+#: data/content/get-fedora-all.html:119 data/content/get-prerelease.html:253
 msgid "See all torrents"
 msgstr "查看所有种子"
 
-#: data/content/get-fedora-all.html:119 data/content/get-prerelease.html:203
+#: data/content/get-fedora-all.html:120 data/content/get-prerelease.html:254
 msgid "See all mirrors"
 msgstr "查看所有镜像"
 
-#: data/content/get-fedora-all.html:120 data/content/get-prerelease.html:204
+#: data/content/get-fedora-all.html:121 data/content/get-prerelease.html:255
 msgid "See all custom spins"
 msgstr "查看所有自定义版本"
 
-#: data/content/get-fedora-all.html:121
+#: data/content/get-fedora-all.html:122
 msgid "See old versions of Fedora"
 msgstr "查看旧版本的 Fedora"
 
-#: data/content/get-fedora-all.html:122
+#: data/content/get-fedora-all.html:123 data/content/verify.html:194
 msgid "Cloud Images"
 msgstr "云图像"
 
-#: data/content/get-fedora-all.html:125
+#: data/content/get-fedora-all.html:126
 msgid "No Internet connection?"
 msgstr "没有互联网连接？"
 
-#: data/content/get-fedora-all.html:126
+#: data/content/get-fedora-all.html:127
 msgid "Get a copy of Fedora Media sent via postal mail."
 msgstr "通过邮递获得一份 Fedora 介质。"
 
-#: data/content/get-fedora-all.html:128
+#: data/content/get-fedora-all.html:129
 msgid ""
 "Purchase installation media for Fedora from <a name=\"media\" "
 "href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">online "
@@ -742,7 +791,7 @@ msgid ""
 "vendor</a> in your area."
 msgstr "从<a name=\"media\" href=\"http://fedoraproject.org/wiki/Distribution/OnlineVendors\">网上经销商</a>或您当地的<a href=\"http://fedoraproject.org/wiki/Distribution/LocalVendors\">本地经销商</a>购买 Fedora 安装介质。"
 
-#: data/content/get-fedora-all.html:129
+#: data/content/get-fedora-all.html:130
 msgid ""
 "Can't afford the price of installation media? Request Fedora installation "
 "media from the <a "
@@ -750,50 +799,50 @@ msgid ""
 "Media Program</a>."
 msgstr "买不起安装介质吗？可以到<a href=\"http://fedoraproject.org/wiki/Distribution/FreeMedia\">Fedora 免费介质计划</a>申请 Fedora 安装介质。"
 
-#: data/content/get-fedora-all.html:135
+#: data/content/get-fedora-all.html:136
 msgid "Download Fedora Sources"
 msgstr "下载Fedora源代码"
 
-#: data/content/get-fedora-all.html:137
+#: data/content/get-fedora-all.html:138
 #, python-format
 msgid "Fedora %(release)s Source DVD (%(size)s GB)"
 msgstr "Fedora %(release)s 源代码 DVD (%(size)s GB)"
 
-#: data/content/get-fedora-all.html:138
+#: data/content/get-fedora-all.html:139
 #, python-format
 msgid "Fedora %(release)s Source RPMs"
 msgstr "Fedora %(release)s 源代码RPM包"
 
-#: data/content/get-fedora-options.html:52
+#: data/content/get-fedora-options.html:8
 msgid "Fedora Project - Get Fedora by Desktops, Formats or Spins."
 msgstr "Fedora Project - 按照桌面环境、格式或者定制版获取 Fedora。"
 
-#: data/content/get-fedora-options.html:72 data/content/get-fedora.html:52
+#: data/content/get-fedora-options.html:28 data/content/get-fedora.html:52
 msgid "Desktops"
 msgstr "桌面环境"
 
-#: data/content/get-fedora-options.html:73 data/content/get-fedora.html:51
+#: data/content/get-fedora-options.html:29 data/content/get-fedora.html:51
 msgid "Formats"
 msgstr "格式"
 
-#: data/content/get-fedora-options.html:74 data/content/get-fedora.html:53
+#: data/content/get-fedora-options.html:30 data/content/get-fedora.html:53
 msgid "Spins"
 msgstr "定制版"
 
-#: data/content/get-fedora-options.html:75 data/content/get-fedora.html:54
+#: data/content/get-fedora-options.html:31 data/content/get-fedora.html:54
 msgid "Cloud"
 msgstr "云"
 
-#: data/content/get-fedora-options.html:76 data/content/get-fedora.html:55
-#: data/content/verify.html:135
+#: data/content/get-fedora-options.html:32 data/content/get-fedora.html:55
+#: data/content/verify.html:160
 msgid "Secondary Arches"
 msgstr "次级架构"
 
-#: data/content/get-fedora-options.html:87
+#: data/content/get-fedora-options.html:43
 msgid "Fedora Desktops"
 msgstr "Fedora 桌面"
 
-#: data/content/get-fedora-options.html:88
+#: data/content/get-fedora-options.html:44
 msgid ""
 "There are multiple desktops available for use with Fedora. Each has a "
 "slightly different look and feel and offers varying levels of customization."
@@ -802,174 +851,181 @@ msgid ""
 "figure out which one is best for you!"
 msgstr "有多种桌面环境可供 Fedora 使用。每一个都有着不同的样式和感觉并且提供了各种各样的自定义功能。桌面环境不同会带来不同样式的窗口、图标、菜单以及多种桌面界面外观和体验。您可以尝试一下不同的桌面环境，以找到最适合您的一种！"
 
-#: data/content/get-fedora-options.html:90
+#: data/content/get-fedora-options.html:46
 #, python-format
 msgid "Fedora %(release)s Desktop Edition"
 msgstr "Fedora %(release)s 桌面版"
 
-#: data/content/get-fedora-options.html:90
+#: data/content/get-fedora-options.html:46
 msgid "Fedora Default"
 msgstr "Fedora 默认"
 
-#: data/content/get-fedora-options.html:94
-#: data/content/get-fedora-options.html:201
-#: data/content/get-fedora-options.html:213
-#: data/content/get-fedora-options.html:244
-#: data/content/get-fedora-options.html:280
+#: data/content/get-fedora-options.html:50
+#: data/content/get-fedora-options.html:157
+#: data/content/get-fedora-options.html:169
+#: data/content/get-fedora-options.html:200
+#: data/content/get-fedora-options.html:236
 msgid "32-bit PC Edition"
 msgstr "32位 PC 版本"
 
-#: data/content/get-fedora-options.html:97
+#: data/content/get-fedora-options.html:53
 msgid "The GNOME-based default Fedora Desktop."
 msgstr "基于 GNOME 的默认 Fedora 桌面环境。"
 
-#: data/content/get-fedora-options.html:99
+#: data/content/get-fedora-options.html:55
 msgid "Fedora Desktop spin homepage"
 msgstr "Fedora 桌面定制版首页"
 
-#: data/content/get-fedora-options.html:100
+#: data/content/get-fedora-options.html:56
 msgid "GNOME.org website"
 msgstr "GNOME.org 网站"
 
-#: data/content/get-fedora-options.html:106
-#: data/content/get-fedora-options.html:132
-#: data/content/get-fedora-options.html:158
-#: data/content/get-fedora-options.html:184
-#: data/content/get-fedora-options.html:223
-#: data/content/get-fedora-options.html:254
+#: data/content/get-fedora-options.html:62
+#: data/content/get-fedora-options.html:88
+#: data/content/get-fedora-options.html:114
+#: data/content/get-fedora-options.html:140
+#: data/content/get-fedora-options.html:179
+#: data/content/get-fedora-options.html:210
 msgid "32-bit"
 msgstr "32位"
 
-#: data/content/get-fedora-options.html:107
-#: data/content/get-fedora-options.html:112
-#: data/content/get-fedora-options.html:133
-#: data/content/get-fedora-options.html:138
-#: data/content/get-fedora-options.html:159
-#: data/content/get-fedora-options.html:164
-#: data/content/get-fedora-options.html:185
-#: data/content/get-fedora-options.html:190
-#: data/content/get-fedora-options.html:226
-#: data/content/get-fedora-options.html:235
-#: data/content/get-fedora-options.html:257
-#: data/content/get-fedora-options.html:266
-#: data/content/get-fedora-options.html:459
-#: data/content/get-fedora-options.html:463
-#: data/content/get-fedora-options.html:474
+#: data/content/get-fedora-options.html:63
+#: data/content/get-fedora-options.html:68
+#: data/content/get-fedora-options.html:89
+#: data/content/get-fedora-options.html:94
+#: data/content/get-fedora-options.html:115
+#: data/content/get-fedora-options.html:120
+#: data/content/get-fedora-options.html:141
+#: data/content/get-fedora-options.html:146
+#: data/content/get-fedora-options.html:182
+#: data/content/get-fedora-options.html:191
+#: data/content/get-fedora-options.html:213
+#: data/content/get-fedora-options.html:222
+#: data/content/get-fedora-options.html:342
+#: data/content/get-fedora-options.html:344
+#: data/content/get-fedora-options.html:349
+#: data/content/get-fedora-options.html:351
+#: data/content/get-fedora-options.html:388
+#: data/content/get-fedora-options.html:392
+#: data/content/get-fedora-options.html:403
+#: data/content/get-fedora-options.html:407
+#: data/content/get-fedora-options.html:421
+#: data/content/get-fedora-options.html:425
+#: data/content/get-fedora-options.html:436
+#: data/content/get-fedora-options.html:440
+#: data/content/get-fedora-options.html:451
+#: data/content/get-fedora-options.html:455
+#: data/content/get-fedora-options.html:466
+#: data/content/get-fedora-options.html:470
 #: data/content/get-fedora-options.html:488
-#: data/content/get-fedora-options.html:492
-#: data/content/get-fedora-options.html:503
-#: data/content/get-fedora-options.html:507
-#: data/content/get-fedora-options.html:518
-#: data/content/get-fedora-options.html:522
-#: data/content/get-fedora-options.html:540
-#: data/content/get-fedora-options.html:545
-#: data/content/get-fedora-options.html:558 data/content/get-fedora.html:37
-#: data/content/index.html:67
+#: data/content/get-fedora-options.html:493
+#: data/content/get-fedora-options.html:506 data/content/get-fedora.html:37
+#: data/content/index.html:63
 msgid "Download Now!"
 msgstr "马上下载！"
 
-#: data/content/get-fedora-options.html:108
-#: data/content/get-fedora-options.html:113
-#: data/content/get-fedora-options.html:134
-#: data/content/get-fedora-options.html:139
-#: data/content/get-fedora-options.html:160
-#: data/content/get-fedora-options.html:165
-#: data/content/get-fedora-options.html:186
-#: data/content/get-fedora-options.html:191
+#: data/content/get-fedora-options.html:64
+#: data/content/get-fedora-options.html:69
+#: data/content/get-fedora-options.html:90
+#: data/content/get-fedora-options.html:95
+#: data/content/get-fedora-options.html:116
+#: data/content/get-fedora-options.html:121
+#: data/content/get-fedora-options.html:142
+#: data/content/get-fedora-options.html:147
 #, python-format
 msgid "%sMB ISO Image"
 msgstr "%sMB ISO 镜像"
 
-#: data/content/get-fedora-options.html:111
-#: data/content/get-fedora-options.html:137
-#: data/content/get-fedora-options.html:163
-#: data/content/get-fedora-options.html:189
-#: data/content/get-fedora-options.html:232
-#: data/content/get-fedora-options.html:263
+#: data/content/get-fedora-options.html:67
+#: data/content/get-fedora-options.html:93
+#: data/content/get-fedora-options.html:119
+#: data/content/get-fedora-options.html:145
+#: data/content/get-fedora-options.html:188
+#: data/content/get-fedora-options.html:219
 msgid "64-bit"
 msgstr "64位"
 
-#: data/content/get-fedora-options.html:118
+#: data/content/get-fedora-options.html:74
 #, python-format
 msgid "Fedora %(release)s KDE Spin"
 msgstr "Fedora %(release)s KDE 定制版"
 
-#: data/content/get-fedora-options.html:124
+#: data/content/get-fedora-options.html:80
 msgid "KDE-based Fedora desktop."
 msgstr "基于 KDE 的 Fedora 桌面环境。"
 
-#: data/content/get-fedora-options.html:126
+#: data/content/get-fedora-options.html:82
 msgid "Fedora KDE Spin homepage"
 msgstr "Fedora KDE 定制版首页"
 
-#: data/content/get-fedora-options.html:127
+#: data/content/get-fedora-options.html:83
 msgid "KDE.org website"
 msgstr "KDE.org 网站"
 
-#: data/content/get-fedora-options.html:144
+#: data/content/get-fedora-options.html:100
 #, python-format
 msgid "Fedora %(release)s LXDE Spin"
 msgstr "Fedora %(release)s LXDE 定制版"
 
-#: data/content/get-fedora-options.html:150
+#: data/content/get-fedora-options.html:106
 msgid "LXDE-based Fedora desktop."
 msgstr "基于 LXDE 的 Fedora 桌面环境。"
 
-#: data/content/get-fedora-options.html:152
+#: data/content/get-fedora-options.html:108
 msgid "Fedora LXDE Spin homepage"
 msgstr "Fedora LXDE 定制版首页"
 
-#: data/content/get-fedora-options.html:153
+#: data/content/get-fedora-options.html:109
 msgid "LXDE.org website"
 msgstr "LXDE.org 网站"
 
-#: data/content/get-fedora-options.html:170
+#: data/content/get-fedora-options.html:126
 #, python-format
 msgid "Fedora %(release)s Xfce Spin"
 msgstr "Fedora %(release)s Xfce 定制版"
 
-#: data/content/get-fedora-options.html:176
+#: data/content/get-fedora-options.html:132
 msgid "Xfce-based Fedora desktop."
 msgstr "基于 Xfce 的 Fedora 桌面环境。"
 
-#: data/content/get-fedora-options.html:178
+#: data/content/get-fedora-options.html:134
 msgid "Fedora Xfce Spin homepage"
 msgstr "Fedora Xfce 定制版首页"
 
-#: data/content/get-fedora-options.html:179
+#: data/content/get-fedora-options.html:135
 msgid "Xfce.org website"
 msgstr "Xfce.org 网站"
 
-#: data/content/get-fedora-options.html:199
+#: data/content/get-fedora-options.html:155
 msgid "Fedora Downloads by Format"
 msgstr "按格式分类的 Fedora 下载"
 
-#: data/content/get-fedora-options.html:204
+#: data/content/get-fedora-options.html:160
 #, python-format
 msgid "Fedora %(release)s Live Media / Spins"
 msgstr "Fedora %(release)s Live介质 / 定制版"
 
-#: data/content/get-fedora-options.html:205
+#: data/content/get-fedora-options.html:161
 msgid ""
 "Fedora Live Media images may be used via bootable CD, DVD, or USB drives, "
 "and also may be used to install Fedora to hard disk. They are a great way to"
 " give Fedora a try, low-risk."
 msgstr "Fedora Live 介质镜像可以用在可引导的 CD、DVD 或 USB 驱动器上，同时也可以用于将 Fedora 安装到硬盘。它们是以低风险体验 Fedora 的极好方式。"
 
-#: data/content/get-fedora-options.html:206
+#: data/content/get-fedora-options.html:162
 msgid "A directory of alternate Fedora images called Spins may be found at:"
 msgstr "其它的定制版 Fedora 镜像位于"
 
-#: data/content/get-fedora-options.html:208
+#: data/content/get-fedora-options.html:164
 msgid "Go to Spins Directory"
 msgstr "前往定制版目录"
 
-#: data/content/get-fedora-options.html:216
+#: data/content/get-fedora-options.html:172
 #, python-format
 msgid "Fedora %(release)s DVD"
 msgstr "Fedora %(release)s DVD"
 
-#: data/content/get-fedora-options.html:217
+#: data/content/get-fedora-options.html:173
 msgid ""
 "The DVD edition of Fedora is not Live Media, but it is bootable.  When you "
 "boot from this media, you will be running the installation program.  The DVD"
@@ -978,25 +1034,25 @@ msgid ""
 "connected to the Internet."
 msgstr "DVD 版本不是 Live 介质，但是同样可以启动。 当您从该介质启动时，将会启动安装程序。 DVD 安装仅需要很少的内存（RAM）但是可以提供更多的软件。这种介质比较适合没有网络连接的用户安装 Fedora。"
 
-#: data/content/get-fedora-options.html:222
-#: data/content/get-fedora-options.html:231
-#: data/content/get-fedora-options.html:253
-#: data/content/get-fedora-options.html:262
+#: data/content/get-fedora-options.html:178
+#: data/content/get-fedora-options.html:187
+#: data/content/get-fedora-options.html:209
+#: data/content/get-fedora-options.html:218
 msgid "Intel & AMD / PC compatible"
 msgstr "Intel & AMD/ 兼容 PC"
 
-#: data/content/get-fedora-options.html:227
-#: data/content/get-fedora-options.html:236
+#: data/content/get-fedora-options.html:183
+#: data/content/get-fedora-options.html:192
 #, python-format
 msgid "%(size)sGB ISO disk image for %(arch)s PC"
 msgstr "%(size)sGB ISO 镜像，适用于 %(arch)s 位 PC"
 
-#: data/content/get-fedora-options.html:247
+#: data/content/get-fedora-options.html:203
 #, python-format
 msgid "Fedora %(release)s Network Install CD"
 msgstr "Fedora %(release)s 网络安装 CD"
 
-#: data/content/get-fedora-options.html:248
+#: data/content/get-fedora-options.html:204
 msgid ""
 "The Network Install CD edition of Fedora is useful if you have a fast "
 "Internet connection available.  When you boot from this media, you will be "
@@ -1005,254 +1061,254 @@ msgid ""
 "of the packages installed."
 msgstr "如果您有高速网络连接，那么 Fedora 的网络安装 CD 将会对您十分有帮助。 当您使用该介质启动时，您将会运行安装程序并会直接获取已在软件源中选中的软件包。该 CD 会确保您能安装最新的稳定版软件包。"
 
-#: data/content/get-fedora-options.html:258
-#: data/content/get-fedora-options.html:267
+#: data/content/get-fedora-options.html:214
+#: data/content/get-fedora-options.html:223
 #, python-format
 msgid "%(size)sMB ISO disk image for %(arch)s PC"
 msgstr "%(size)sMB ISO 镜像，适用于 %(arch)s 位 PC"
 
-#: data/content/get-fedora-options.html:273
+#: data/content/get-fedora-options.html:229
 #, python-format
 msgid ""
 "For help determining what architecture your system is, <a href=\"%s\">please"
 " view our architecture help guide</a>."
 msgstr "为确定您的系统是何种架构，<a href=\"%s\">请查阅我们的架构帮助指南。</a>。"
 
-#: data/content/get-fedora-options.html:283
+#: data/content/get-fedora-options.html:239
 #, python-format
 msgid "Fedora %(release)s Media by Mail"
 msgstr "邮寄 Fedora %(release)s 介质"
 
-#: data/content/get-fedora-options.html:284
+#: data/content/get-fedora-options.html:240
 msgid ""
 "No internet connection? You can get a copy of Fedora media sent via postal "
 "mail through local and online vendors, as well as via the Fedora Free Media "
 "program."
 msgstr "没有网络连接？没关系，您可以通过当地或在线经销商，或从 Fedora 免费光盘项目通过邮寄获取一张 Fedora 安装光盘。"
 
-#: data/content/get-fedora-options.html:288
+#: data/content/get-fedora-options.html:244
 msgid "Purchase Fedora Media from a Vendor"
 msgstr "从经销商处购买 Fedora 光盘"
 
-#: data/content/get-fedora-options.html:294
+#: data/content/get-fedora-options.html:250
 msgid "Locate a Vendor in Your Area"
 msgstr "选择您所在地区的经销商"
 
-#: data/content/get-fedora-options.html:295
+#: data/content/get-fedora-options.html:251
 msgid ""
 "Select vendors worldwide carry copies of Fedora media at a reasonable price."
 " If a vendor exists in your area and you'd rather not wait for shipping, "
 "this may be a good option for you."
 msgstr "在全球范围内找一家价格合理的 Fedora 光盘经销商。如果您所在地区恰好有经销商，而且您也不想等着邮寄，那这也是个不错的选择。"
 
-#: data/content/get-fedora-options.html:296
+#: data/content/get-fedora-options.html:252
 msgid "View Local Vendor Directory"
 msgstr "浏览本地经销商目录"
 
-#: data/content/get-fedora-options.html:299
+#: data/content/get-fedora-options.html:255
 msgid "Online Vendors"
 msgstr "网上经销商"
 
-#: data/content/get-fedora-options.html:300
+#: data/content/get-fedora-options.html:256
 msgid ""
 "Numerous vendors worldwide offer Fedora media for online purchase. Select "
 "the vendor closest to you to keep your shipping costs lower."
 msgstr "众多经销商均提供了 Fedora 光盘的在线购买业务。选择一个离您较近的经销商以便降低运费。"
 
-#: data/content/get-fedora-options.html:301
+#: data/content/get-fedora-options.html:257
 msgid "View Online Vendor Directory"
 msgstr "浏览在线经销商目录"
 
-#: data/content/get-fedora-options.html:307
+#: data/content/get-fedora-options.html:263
 msgid "Fedora Free Media Program"
 msgstr "Fedora 免费光盘项目"
 
-#: data/content/get-fedora-options.html:308
+#: data/content/get-fedora-options.html:264
 msgid ""
 "Can't afford the price of installation media? Request Fedora installation "
 "media from the Fedora Free Media Program."
 msgstr "买不起安装光盘吗？可以从 Fedora 免费光盘项目申请 Fedora 安装光盘。"
 
-#: data/content/get-fedora-options.html:309 data/content/index.html:68
+#: data/content/get-fedora-options.html:265 data/content/index.html:64
 msgid "Learn More"
 msgstr "了解更多"
 
-#: data/content/get-fedora-options.html:320
+#: data/content/get-fedora-options.html:276
 msgid "Fedoras that do what you need."
 msgstr "Fedora 满足您的需求。"
 
-#: data/content/get-fedora-options.html:321
+#: data/content/get-fedora-options.html:277
 msgid ""
 "Fedora spins are alternate versions of Fedora, tailored for various types of"
 " users via hand-picked application sets and other customizations."
 msgstr "Fedora 定制版是 Fedora 的其它可选版本，通过人工挑选应用套件以及其它定制方案以满足各种类型的用户。"
 
-#: data/content/get-fedora-options.html:321
+#: data/content/get-fedora-options.html:277
 msgid "Learn more about spins >"
 msgstr "了解更多定制版的信息 >"
 
-#: data/content/get-fedora-options.html:322
+#: data/content/get-fedora-options.html:278
 msgid ""
 "Below is just a sampling of the Fedora spins that are available. Visit "
 msgstr "以下只是 Fedora 定制版的选样。请访问"
 
-#: data/content/get-fedora-options.html:322
+#: data/content/get-fedora-options.html:278
 msgid " for a full listing of all available Fedora spins."
 msgstr "以获得可用的所有 Fedora 定制版列表。"
 
-#: data/content/get-fedora-options.html:327
+#: data/content/get-fedora-options.html:283
 msgid "Fedora Security Lab"
 msgstr "Fedora 安全实验室"
 
-#: data/content/get-fedora-options.html:327
+#: data/content/get-fedora-options.html:283
 msgid "Security analysis tools."
 msgstr "安全分析工具。"
 
-#: data/content/get-fedora-options.html:327
-#: data/content/get-fedora-options.html:331
-#: data/content/get-fedora-options.html:335
-#: data/content/get-fedora-options.html:339
+#: data/content/get-fedora-options.html:283
+#: data/content/get-fedora-options.html:287
+#: data/content/get-fedora-options.html:291
+#: data/content/get-fedora-options.html:295
 msgid "More details at spins.fedoraproject.org >"
 msgstr "位于 spins.fedoraproject.org 的更多详情 >"
 
-#: data/content/get-fedora-options.html:331
+#: data/content/get-fedora-options.html:287
 msgid "Fedora Design Suite"
 msgstr "Fedora 设计组件"
 
-#: data/content/get-fedora-options.html:331
+#: data/content/get-fedora-options.html:287
 msgid "Open Creativity."
 msgstr "开放创新。"
 
-#: data/content/get-fedora-options.html:335
+#: data/content/get-fedora-options.html:291
 msgid "Fedora SoaS Spin"
 msgstr "Fedora SoaS 定制版"
 
-#: data/content/get-fedora-options.html:335
+#: data/content/get-fedora-options.html:291
 msgid "Discover. Reflect. Share. Learn."
 msgstr "发现。反应。分享。学习。"
 
-#: data/content/get-fedora-options.html:339
+#: data/content/get-fedora-options.html:295
 msgid "Fedora Electronic Lab"
 msgstr "Fedora Electronic Lab"
 
-#: data/content/get-fedora-options.html:339
+#: data/content/get-fedora-options.html:295
 msgid "Fedora's high-end hardware design and simulation platform."
 msgstr "Fedora 的高端硬件设计和仿真平台。"
 
-#: data/content/get-fedora-options.html:343
+#: data/content/get-fedora-options.html:299
 msgid ""
 "Get these and more at <a "
 "href=\"https://spins.fedoraproject.org\">spins.fedoraproject.org</a>."
 msgstr "从 <a href=\"https://spins.fedoraproject.org\">spins.fedoraproject.org</a> 可获得这些及更多。"
 
-#: data/content/get-fedora-options.html:354
+#: data/content/get-fedora-options.html:310
 msgid "Fedora In The Cloud"
 msgstr "Fedora 云计算"
 
-#: data/content/get-fedora-options.html:356
-msgid "Fedora on EC2"
-msgstr "在 EC2 上部署 Fedora "
-
-#: data/content/get-fedora-options.html:362
-msgid ""
-"Fedora publishes system images for Amazon Web Services' (AWS) virtual "
-"machine platform, Amazon Elastic Compute Cloud (EC2), which allows one to "
-"create virtual machines in the cloud with very little effort."
-msgstr "Fedora 发布适用于 Amazon 网络服务 (AWS) 虚拟机平台和 Amazon Elastic 云计算 (EC2) 的系统镜像，允许非常便捷的在云端创建虚拟机。"
-
-#: data/content/get-fedora-options.html:363
-msgid ""
-"These images, known as AMIs (Amazon Machine Images), are available in a "
-"variety of zones and architectures, and are identifiable by their unique "
-"identification number. This ID can then be utilized to locate and launch an "
-"image."
-msgstr "这些镜像，称为 AMI (Amazon 虚拟机镜像)，将以各种区域和架构分类，并以唯一标识码区分出来。这个 ID 可以用来定位并启动一个镜像。"
-
-#: data/content/get-fedora-options.html:365
+#: data/content/get-fedora-options.html:315
 #, python-format
 msgid ""
-"Fedora's EC2 images follow standard EC2 login conventions, meaning that root"
-" login is disabled, but sudo access is granted.  The default username for "
-"the images is <strong>%s</strong>."
-msgstr "Fedora's EC2 镜像遵循标准的 EC2 登录传统，意味着禁用了根用户登录，但是允许提权访问。  镜像的默认用户名是 <strong>%s</strong>。"
+"Fedora provides ready-to-run cloud images for each supported Fedora release."
+" These are available in Amazon EC2 and for direct download. The downloadable"
+" images are available in compressed raw image format and in qcow2 for "
+"immediate use with <a href=\"%s\">OpenStack</a>. The images are configured "
+"with cloud-init, and so will take advantage of ec2-compatible metadata "
+"services for provisioning ssh keys."
+msgstr "Fedora 为受支持的各个 Fedora 发行版提供了即可运行的云镜像。它们位于亚马逊 EC2 中并可直接下载。下载镜像以压缩的原始镜像和能够在 <a href=\"%s\">OpenStack</a> 中直接运行的 qcow2 文件形式提供。镜像均通过 cloud-init 配置，因此可利用 ec2 兼容的元数据服务配置 ssh 密钥。"
 
-#: data/content/get-fedora-options.html:368
+#: data/content/get-fedora-options.html:317
+#, python-format
+msgid ""
+"Note that the root account is disabled, but sudo access is granted to a "
+"special login user. For Fedora 19 and newer releases, this user is "
+"<strong>%s</strong>."
+msgstr "要注意的是，root 用户已禁用，但 sudo 访问资格已被授予一个特殊的登录用户。对 Fedora 19 和更新的发行版来说，这个用户是 <strong>%s</strong>。"
+
+#: data/content/get-fedora-options.html:318
+#, python-format
+msgid "For Fedora 18 and older releases the user is <strong>%s</strong>."
+msgstr "对 Fedora 18 和更早发行版来说，该用户是 <strong>%s</strong>。"
+
+#: data/content/get-fedora-options.html:320
 #, python-format
 msgid ""
 "Not familiar with EC2? <a href=\"%s\">Read more about the terminology and "
 "concepts ></a>"
 msgstr "不了解 EC2？ <a href=\"%s\">阅读更多关于它的术语和概念></a>"
 
-#: data/content/get-fedora-options.html:369
+#: data/content/get-fedora-options.html:321
 #, python-format
 msgid ""
 "Full documentation for interacting with EC2 is available from <a "
 "href=\"%s\">Amazon Web Services ></a>"
 msgstr "与 EC2 进行交互的完整文档位于 <a href=\"%s\">Amazon Web Services&nbsp;></a>"
 
-#: data/content/get-fedora-options.html:370
+#: data/content/get-fedora-options.html:322
 #, python-format
 msgid ""
 "Need help, or have a great idea? <a href=\"%s\">Join the Fedora Cloud SIG "
 "></a>"
 msgstr "需要帮助，还是有很棒的想法？<a href=\"%s\">欢迎加入 Fedora 云特别兴趣小组 (SIG)></a>"
 
-#: data/content/get-fedora-options.html:375
+#: data/content/get-fedora-options.html:326
 msgid "Currently supported EC2 Images"
 msgstr "当前支持的 EC2 镜像"
 
-#: data/content/get-fedora-options.html:376
-#: data/content/get-fedora-options.html:400
+#: data/content/get-fedora-options.html:327
+msgid ""
+"Choose the region and machine architecture and just click to launch in your "
+"Amazon Web Services account. Or, copy the AMI ID and use that to launch from"
+" the AWS Console or command-line tools."
+msgstr "选择地区和机器架构，然后在您的亚马逊网络服务（Amazon Web Services）帐户中点击运行。或者拷贝 AMI ID 并用它在 AWS 终端或命令行工具下运行。"
+
+#: data/content/get-fedora-options.html:335
 #, python-format
-msgid "Fedora %s "
-msgstr "Fedora %s "
+msgid "Fedora %(release)s Downloadable Cloud Images"
+msgstr "Fedora %(release)s 可下载的云镜像"
 
-#: data/content/get-fedora-options.html:380
-#: data/content/get-fedora-options.html:404
-msgid "Region"
-msgstr "区域"
+#: data/content/get-fedora-options.html:338
+msgid ""
+"Download these images for use with your local private cloud, or to modify "
+"and upload to a public cloud. The qcow2 images can be used directly by "
+"OpenStack. The raw.xz images can be used by other cloud infrastructure "
+"software but will need to be uncompressed first."
+msgstr "将这些镜像下载后用于您本地的私有云，或者修改并上传到公共云上。qcow2 镜像可在 OpenStack 上直接运行。raw.xz 镜像可运行于其它云基础设施软件中，但先要进行解压。"
 
-#: data/content/get-fedora-options.html:381
-#: data/content/get-fedora-options.html:405
-msgid "Architecture"
-msgstr "架构"
+#: data/content/get-fedora-options.html:339
+#, python-format
+msgid ""
+"For any doubts about running Instances on OpenStack read the <a "
+"href=\"%s\">documentation</a>."
+msgstr ""
 
-#: data/content/get-fedora-options.html:382
-#: data/content/get-fedora-options.html:406
-msgid "Root store"
-msgstr "根存储"
+#: data/content/get-fedora-options.html:343
+#: data/content/get-fedora-options.html:350
+#, python-format
+msgid "%(size)sMB qcow2 image"
+msgstr "%(size)sMB qcow2 镜像"
 
-#: data/content/get-fedora-options.html:383
-#: data/content/get-fedora-options.html:407
-msgid "AMI ID"
-msgstr "AMI ID"
+#: data/content/get-fedora-options.html:345
+#: data/content/get-fedora-options.html:352
+#, python-format
+msgid "%(size)sMB Raw image"
+msgstr "%(size)sMB 原始镜像"
 
-#: data/content/get-fedora-options.html:384
-#: data/content/get-fedora-options.html:408
-msgid "Launch"
-msgstr "启动"
-
-#: data/content/get-fedora-options.html:394
-#: data/content/get-fedora-options.html:418
-msgid "Launch AMI instance"
-msgstr "启动 AMI 虚拟机"
-
-#: data/content/get-fedora-options.html:431
+#: data/content/get-fedora-options.html:363
 msgid "Fedora Secondary Architectures"
 msgstr "Fedora 次级架构"
 
-#: data/content/get-fedora-options.html:433
-#: data/content/get-fedora-options.html:530
-#: data/content/get-fedora-options.html:551
+#: data/content/get-fedora-options.html:365
+#: data/content/get-fedora-options.html:478
+#: data/content/get-fedora-options.html:499
 msgid "ARM architecture"
 msgstr "ARM 架构"
 
-#: data/content/get-fedora-options.html:438
+#: data/content/get-fedora-options.html:370
 #, python-format
 msgid "Fedora %(release)s ARM"
 msgstr "Fedora %(release)s ARM 架构专用版"
 
-#: data/content/get-fedora-options.html:439
+#: data/content/get-fedora-options.html:371
 msgid ""
 "ARM chips are the most widely-produced processor family in the world; they "
 "have historically been used in cell phones and embedded applications, and "
@@ -1261,219 +1317,205 @@ msgid ""
 "family."
 msgstr "ARM 芯片是世界上最为广泛生产的处理器家族；它们一直用于手机及嵌入式设备中，并不断地被应用到平板设备及低功耗服务器上。Fedora-ARM 项目就是将 Fedora 带到该处理器家族的先锋。"
 
-#: data/content/get-fedora-options.html:440
-#, python-format
+#: data/content/get-fedora-options.html:372
 msgid ""
-"A list of currently supplied prebuilt images for the Fedora %(release)s ARM "
-"GA release can be found at:"
-msgstr "Fedora %(release)s ARM 正式版预构建镜像列表："
+"For more informations about changes and new features please read the <a "
+"href=\"http://fedoraproject.org/wiki/Architectures/ARM/F19_Release_Announcement#Release_Notes/\">Release"
+" Notes</a>."
+msgstr "有关变更和新特性的详细信息可阅读<a href=\"http://fedoraproject.org/wiki/Architectures/ARM/F19_Release_Announcement#Release_Notes/\">发行注记</a>。"
 
-#: data/content/get-fedora-options.html:441
-#, python-format
-msgid "Fedora %(release)s GA Release Announcement"
-msgstr "Fedora %(release)s GA 发行公告"
-
-#: data/content/get-fedora-options.html:442
+#: data/content/get-fedora-options.html:373
 msgid "Note for Raspberry Pi users"
 msgstr "Raspberry Pi 用户注意事项"
 
-#: data/content/get-fedora-options.html:442
-#, python-format
+#: data/content/get-fedora-options.html:373
 msgid ""
-"Raspberry Pi support is not included in Fedora %(release)s GA because it "
-"does not meet the Fedora release guidelines. Specifically, the Raspberry Pi "
-"relies upon a custom kernel version, not upstream, as well as special GPU "
-"binary blobs which are not acceptable under the current firmware exception. "
-"Nonetheless, an <a href=\"%(nightly)s\">unsupported \"nightly\" Fedora "
-"%(release)s snapshot</a> is available."
-msgstr "Raspberry Pi 不在 Fedora %(release)s 正式版支持范围内。因为该平台不符合 Fedora 的发行规定。尤其是 Raspberry Pi 本身依赖一个经过修改的内核版本，而不是上游发布的原始版本。 这种情况同样出现在 GPU 上，该平台需要特殊的 GPU 二进制 blob，同样不符合目前的规定。不过，一个 <a href=\"%(nightly)s\">不受支持的 Fedora %(release)s 每日构建快照版本</a> 仍然会是用户的选择。"
+"Raspberry Pi support is now included in <a "
+"href=\"http://pidora.ca/\">Pidora</a>, an optimized Fedora Remix which "
+"includes additional Pi-modules."
+msgstr "<a href=\"http://pidora.ca/\">Pidora</a> 提供了对 Raspberry Pi 的支持，它是一个优化过的 Fedora Remix，并带有额外的 Pi 模块。"
 
-#: data/content/get-fedora-options.html:447
+#: data/content/get-fedora-options.html:377
 msgid "Available images and instructions:"
 msgstr "可用镜像及说明："
 
-#: data/content/get-fedora-options.html:448
-msgid ""
-"The following images have been tested and are recommended for most users and"
-" include Versatile Express (QEMU), Trimslice (TEGRA), Beagleboard (OMAP3), "
-"Pandaboard (OMAP4) and GuruPlug (Kirkwood) based hardware platforms. For the"
-" whole list of images please visit"
-msgstr "下列镜像文件已经被严格测试，并将其推荐给绝大多数用户。这些包括基于 Versatile Express (QEMU)，Trimslice (TEGRA)，Beagleboard (OMAP3)，Pandaboard (OMAP4) 和 GuruPlug (Kirkwood) 的硬件平台。欲查看完整列表请访问"
-
-#: data/content/get-fedora-options.html:448
-msgid "all the prebuilt images"
-msgstr "所有预构建镜像"
-
-#: data/content/get-fedora-options.html:448
+#: data/content/get-fedora-options.html:378
 #, python-format
-msgid "for the Fedora %(release)s ARM GA release."
-msgstr "面向 Fedora %(release)s ARM GA。"
+msgid ""
+"Fedora %(release)s for ARM includes two image types–one for use with "
+"platforms requiring a VFAT partition (Pandaboard), the other for use with "
+"devices that boot from an EXT partition (Trimslice). For each of these there"
+" are a number of desktop choices including MATE, KDE, Xfce, LXDE, SOAS and a"
+" minimal image that does not include the desktop. Any of these images can be"
+" used with QEMU."
+msgstr "用于 ARM 的 Fedora %(release)s 提供了两种镜像 - 一种用于需要 VFAT（Pandaboard） 分区的平台，另一种用于从 EXT 分区（Trimslice）引导的设备。每一种又都可在 MATE、KDE、Xfce、LXDE、SOAS 等桌面环境中进行选择，同时还有不带桌面环境的最小化镜像。这些镜像都可用于 QEMU。"
 
+#: data/content/get-fedora-options.html:383
+msgid "KDE"
+msgstr "KDE"
+
+#: data/content/get-fedora-options.html:387
+#: data/content/get-fedora-options.html:402
+#: data/content/get-fedora-options.html:420
+#: data/content/get-fedora-options.html:435
+#: data/content/get-fedora-options.html:450
+#: data/content/get-fedora-options.html:465
+msgid "VFAT HFP image"
+msgstr "VFAT HFP 镜像"
+
+#: data/content/get-fedora-options.html:391
+#: data/content/get-fedora-options.html:406
+#: data/content/get-fedora-options.html:424
+#: data/content/get-fedora-options.html:439
 #: data/content/get-fedora-options.html:454
-msgid "BeagleBoard"
-msgstr "BeagleBoard"
-
-#: data/content/get-fedora-options.html:458
-#: data/content/get-fedora-options.html:473
-#: data/content/get-fedora-options.html:487
-#: data/content/get-fedora-options.html:502
-#: data/content/get-fedora-options.html:517
-msgid "SFP Image"
-msgstr "SFP 镜像"
-
-#: data/content/get-fedora-options.html:462
-#: data/content/get-fedora-options.html:491
-#: data/content/get-fedora-options.html:506
-#: data/content/get-fedora-options.html:521
-msgid "HFP Image"
+#: data/content/get-fedora-options.html:469
+msgid "HFP image"
 msgstr "HFP 镜像"
 
-#: data/content/get-fedora-options.html:469
-msgid "GuruPlug (Kirkwood)"
-msgstr "GuruPlug (Kirkwood)"
+#: data/content/get-fedora-options.html:398
+msgid "Xfce"
+msgstr "Xfce"
 
-#: data/content/get-fedora-options.html:483
-msgid "Versatile Express XFCE"
-msgstr "Versatile Express XFCE"
+#: data/content/get-fedora-options.html:416
+msgid "LXDE"
+msgstr "LXDE"
 
-#: data/content/get-fedora-options.html:498
-msgid "Pandaboard"
-msgstr "Pandaboard"
+#: data/content/get-fedora-options.html:431
+msgid "MATE"
+msgstr "MATE"
 
-#: data/content/get-fedora-options.html:513
-msgid "TrimSlice"
-msgstr "TrimSlice"
+#: data/content/get-fedora-options.html:446
+msgid "SoaS"
+msgstr "SoaS"
 
-#: data/content/get-fedora-options.html:527
+#: data/content/get-fedora-options.html:461
+msgid "Minimal"
+msgstr "最小化"
+
+#: data/content/get-fedora-options.html:475
 #, python-format
 msgid ""
-"The list of known Fedora 18 remixes is catalogued at <a "
-"href=\"%s\">Architectures/ARM/F18/Remixes</a>. Likewise, root filesystem "
-"tarballs are provided to help you make your own remixes."
-msgstr "已知的所有 Fedora 18 Remix 版本都在这里列出 <a href=\"%s\">Architectures/ARM/F18/Remixes</a>。root 文件系统已经列出，方便您制作自己的 Remix 版本。"
+"For specific install instructions on the compatible boards please read the "
+"<a href=\"%s\">Installation Notes</a>."
+msgstr "有关在兼容设备上的具体安装介绍可阅读<a href=\"%s\">安装说明</a>。"
 
-#: data/content/get-fedora-options.html:534
+#: data/content/get-fedora-options.html:482
 #, python-format
 msgid "Fedora %(release)s PPC64"
 msgstr "Fedora %(release)s PPC64 架构专用版"
 
-#: data/content/get-fedora-options.html:535
+#: data/content/get-fedora-options.html:483
 msgid ""
 "Fedora Releases for PowerPC have been most extensively tested on IBM Power "
 "systems, but is also known to work on Apple Mac G5 systems."
 msgstr "为 PowerPC 架构发布的 Feodra 版本绝大部分都在  IBM Power 系统上测试，但是，它也可被用在 Apple Mac G5 系统。"
 
-#: data/content/get-fedora-options.html:539
-#: data/content/get-fedora-options.html:557
+#: data/content/get-fedora-options.html:487
+#: data/content/get-fedora-options.html:505
 msgid "DVD Image"
 msgstr "DVD 镜像"
 
-#: data/content/get-fedora-options.html:541
-#: data/content/get-fedora-options.html:559
+#: data/content/get-fedora-options.html:489
+#: data/content/get-fedora-options.html:507
 #, python-format
 msgid "%sGB DVD ISO"
 msgstr "%sGB DVD ISO"
 
-#: data/content/get-fedora-options.html:544
+#: data/content/get-fedora-options.html:492
 #: data/content/get-prerelease.html:116 data/content/get-prerelease.html:117
 msgid "Netinstall CD"
 msgstr "网络安装 CD"
 
-#: data/content/get-fedora-options.html:546
+#: data/content/get-fedora-options.html:494
 #, python-format
 msgid "%sMB CD ISO"
 msgstr "%sMB CD ISO"
 
-#: data/content/get-fedora-options.html:555
+#: data/content/get-fedora-options.html:503
 #, python-format
 msgid "Fedora %(release)s s390"
 msgstr "Fedora %(release)s s390 架构专用版"
 
-#: data/content/get-fedora-options.html:556
+#: data/content/get-fedora-options.html:504
 msgid "Fedora Release Image based on the s390x architecture."
 msgstr "基于 s390x 架构的 Fedora 发行版镜像。"
 
-#: data/content/get-fedora-options.html:597
+#: data/content/get-fedora-options.html:545
 msgid "Help, I just want Fedora!"
 msgstr "求助，我只是想要 Fedora！"
 
-#: data/content/get-fedora-options.html:598
+#: data/content/get-fedora-options.html:546
 msgid ""
 "There are a lot of options on this page. Would you rather download the "
 "standard Fedora image?"
 msgstr "本页有很多选择。您只是想下载标准的 Fedora 镜像吗？"
 
-#: data/content/get-fedora-options.html:599
+#: data/content/get-fedora-options.html:547
 msgid "Get it here"
 msgstr "从这里获取"
 
-#: data/content/get-fedora-options.html:601 data/content/get-fedora.html:81
+#: data/content/get-fedora-options.html:549 data/content/get-fedora.html:84
 msgid "Handy Resources"
 msgstr "便捷资源"
 
-#: data/content/get-fedora-options.html:603
+#: data/content/get-fedora-options.html:551
 #, python-format
 msgid ""
 "http://docs.fedoraproject.org/en-"
 "US/Fedora/%(release)s/html/Installation_Guide/index.html"
 msgstr "http://docs.fedoraproject.org/en-US/Fedora/%(release)s/html/Installation_Guide/index.html"
 
-#: data/content/get-fedora-options.html:603 data/content/get-fedora.html:83
+#: data/content/get-fedora-options.html:551 data/content/get-fedora.html:86
 msgid "Installation Guide"
 msgstr "安装指南"
 
-#: data/content/get-fedora-options.html:604
+#: data/content/get-fedora-options.html:552
 #, python-format
 msgid ""
 "http://docs.fedoraproject.org/en-"
 "US/Fedora/%(release)s/html/Release_Notes/index.html"
 msgstr "http://docs.fedoraproject.org/zh-CN/Fedora/%(release)s/html/Release_Notes/index.html"
 
-#: data/content/get-fedora-options.html:604 data/content/get-fedora.html:84
+#: data/content/get-fedora-options.html:552 data/content/get-fedora.html:87
 msgid "Release Notes"
 msgstr "发行注记"
 
-#: data/content/get-fedora-options.html:605 data/content/get-fedora.html:85
+#: data/content/get-fedora-options.html:553 data/content/get-fedora.html:88
 msgid "Common Bugs"
 msgstr "常见错误"
 
-#: data/content/get-fedora-options.html:606 data/content/get-fedora.html:86
+#: data/content/get-fedora-options.html:554 data/content/get-fedora.html:89
 msgid "Upgrading Fedora"
 msgstr "升级 Fedora"
 
-#: data/content/get-fedora-options.html:607 data/content/get-fedora.html:87
+#: data/content/get-fedora-options.html:555 data/content/get-fedora.html:90
 msgid "Help & Support"
 msgstr "帮助和支持"
 
-#: data/content/get-fedora-options.html:608 data/content/get-fedora.html:88
+#: data/content/get-fedora-options.html:556 data/content/get-fedora.html:91
 msgid "Verify Download"
 msgstr "验证下载的文件"
 
-#: data/content/get-fedora-options.html:611 data/content/get-fedora.html:92
+#: data/content/get-fedora-options.html:559 data/content/get-fedora.html:95
 msgid "There's More Fedora!"
 msgstr "还有更多版本的 Fedora！"
 
-#: data/content/get-fedora-options.html:614 data/content/get-fedora.html:96
+#: data/content/get-fedora-options.html:562 data/content/get-fedora.html:98
 msgid "Other ways to get Fedora"
 msgstr "获得 Fedora 的其它方式"
 
-#: data/content/get-fedora-options.html:615 data/content/get-fedora.html:98
+#: data/content/get-fedora-options.html:563 data/content/get-fedora.html:100
 msgid ""
 "We offer several alternative Fedora download methods, including torrents:"
 msgstr "我们提供了 Fedora 的其它几种下载方法，包括种子文件："
 
-#: data/content/get-fedora-options.html:617 data/content/get-fedora.html:100
+#: data/content/get-fedora-options.html:565 data/content/get-fedora.html:102
 msgid "All download methods"
 msgstr "所有下载方式"
 
 #: data/content/get-fedora.html:7
 msgid "Fedora Project - Download Fedora and try it."
 msgstr "Fedora Project - 下载并尝试 Fedora。"
-
-#: data/content/get-fedora.html:25
-#, python-format
-msgid "Did someone say... &ldquo;<a href=\"get-prerelease\">%s</a>&rdquo;?"
-msgstr "有人在说... &ldquo;<a href=\"get-prerelease\">%s</a>&rdquo;?"
 
 #: data/content/get-fedora.html:30
 #, python-format
@@ -1564,12 +1606,11 @@ msgstr "或者"
 msgid "a blank %sGB+ USB stick."
 msgstr "空白的 %s GB+ U 盘。"
 
-#: data/content/get-fedora.html:67
-#, python-format
-msgid "A %sMHz or faster processor"
-msgstr "%sMHz 或更快的处理器"
+#: data/content/get-fedora.html:67 data/content/index.html:217
+msgid "64-bit Intel-compatible PC"
+msgstr "64 位 Intel 兼容 PC"
 
-#: data/content/get-fedora.html:68 data/content/index.html:223
+#: data/content/get-fedora.html:68 data/content/index.html:218
 #, python-format
 msgid "%sGB memory (RAM)"
 msgstr "%sGB 内存 (RAM)"
@@ -1579,27 +1620,27 @@ msgstr "%sGB 内存 (RAM)"
 msgid "At least %s GB hard drive space (only required for installation)"
 msgstr "至少 %s GB 的硬盘空间(仅在安装时需要)"
 
-#: data/content/get-fedora.html:72
+#: data/content/get-fedora.html:75
 msgid "What do I do?"
 msgstr "我需要做什么？"
 
-#: data/content/get-fedora.html:74
+#: data/content/get-fedora.html:77
 msgid "First,"
 msgstr "首先，"
 
-#: data/content/get-fedora.html:74
+#: data/content/get-fedora.html:77
 msgid "download a Fedora ISO image"
 msgstr "下载 Fedora ISO 镜像"
 
-#: data/content/get-fedora.html:76
+#: data/content/get-fedora.html:79
 msgid "To install Fedora using a USB stick"
 msgstr "要用 U 盘安装 Fedora"
 
-#: data/content/get-fedora.html:76 data/content/get-fedora.html:77
+#: data/content/get-fedora.html:79 data/content/get-fedora.html:80
 msgid "follow these instructions."
 msgstr "请采用这些步骤。"
 
-#: data/content/get-fedora.html:77
+#: data/content/get-fedora.html:80
 msgid "To install Fedora using a blank CD or DVD"
 msgstr "要用空白 CD 或 DVD 安装 Fedora"
 
@@ -1738,7 +1779,7 @@ msgid ""
 "issues or bugs should be reported via the <a "
 "href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a>. The Fedora "
 "Project makes no guarantees as to its suitability or usefulness."
-msgstr "这是得到 <a href=\"http://fedoraproject.org/wiki/QA\">质量保证小组(QA)</a> 支持的预发布版本。请发送任何问题至 test@lists.fedoraproject.org 或者 freenode 上的 #fedora-qa 频道。请通过 <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a> 汇报所有问题或错误。Fedora 项目不对该版本做任何稳定性或可用性方面的保证。"
+msgstr "这是得到<a href=\"http://fedoraproject.org/wiki/QA\">质量保证(QA)团队</a>支持的预发布版本。请发送任何疑问至 test@lists.fedoraproject.org 或者 freenode 上的 #fedora-qa 频道。请通过 <a href=\"https://bugzilla.redhat.com/\">Red Hat Bugzilla</a> 汇报所有问题或错误。Fedora 项目不对该版本做适用性或有用性的保证。"
 
 #: data/content/get-prerelease.html:88 data/content/get-prerelease.html:90
 #: data/content/get-prerelease.html:92
@@ -1748,11 +1789,12 @@ msgid ""
 " on changes and new features, and the <a href=\"%(commonbugs_url)s\">Common "
 "Bugs</a> page for information on commonly-encountered bugs and how to avoid "
 "them."
-msgstr "阅读 <a href=\"%(relnotes_url)s\">发行注记</a> 以了解有关变化和新特性的说明。您还可以访问 <a href=\"%(commonbugs_url)s\">常见 Bug</a> 页面来了解一些会遇到的常见问题及如何避免它们的方法。"
+msgstr "阅读<a href=\"%(relnotes_url)s\">发行注记</a>以了解有关变化和新特性的说明。您还可以访问<a href=\"%(commonbugs_url)s\">常见 Bug</a> 页面来了解容易遇到的常见问题以及避免它们的方法。"
 
 #: data/content/get-prerelease.html:100 data/content/get-prerelease.html:133
 #: data/content/get-prerelease.html:151 data/content/get-prerelease.html:169
-#: data/content/get-prerelease.html:186
+#: data/content/get-prerelease.html:186 data/content/get-prerelease.html:203
+#: data/content/get-prerelease.html:220
 msgid ""
 "BitTorrent is a protocol allowing you to download files quickly by allowing "
 "people downloading the file to upload (distribute) parts of it at the same "
@@ -1769,79 +1811,101 @@ msgstr "gPXE 是一个开源（GPL）网络引导程序。"
 
 #: data/content/get-prerelease.html:166
 msgid "Fedora XFCE Live Media"
-msgstr "Fedora XFCE 免安装介质"
+msgstr "Fedora XFCE Live 介质"
 
 #: data/content/get-prerelease.html:183
 msgid "Fedora LXDE Live Media"
 msgstr "Fedora LXDE Live 介质"
 
 #: data/content/get-prerelease.html:200
+msgid "Fedora SoaS Live Media"
+msgstr "Fedora SoaS Live 介质"
+
+#: data/content/get-prerelease.html:217
+msgid "Fedora MATE-Compiz Live Media"
+msgstr "Fedora MATE-Compiz Live 介质"
+
+#: data/content/get-prerelease.html:234
+msgid "Fedora Cloud Images"
+msgstr "Fedora 云镜像"
+
+#: data/content/get-prerelease.html:237
+msgid "64 bit"
+msgstr "64 位"
+
+#: data/content/get-prerelease.html:239 data/content/get-prerelease.html:246
+msgid "Raw Disk Image"
+msgstr "原始磁盘镜像"
+
+#: data/content/get-prerelease.html:240 data/content/get-prerelease.html:247
+msgid "qcow2 Disk Image"
+msgstr "qcow2 格式磁盘镜像"
+
+#: data/content/get-prerelease.html:244
+msgid "32 bit"
+msgstr "32 位"
+
+#: data/content/get-prerelease.html:251
 msgid "Let me look around..."
 msgstr "让我看看..."
 
-#: data/content/index.html:50
+#: data/content/index.html:46
 msgid "Fedora Project Homepage"
 msgstr "Fedora Project 主页"
 
-#: data/content/index.html:64
+#: data/content/index.html:60
 msgid "Free your desktop with Fedora."
 msgstr "用 Fedora 让您的计算机更自由。"
 
-#: data/content/index.html:65
+#: data/content/index.html:61
 msgid ""
 "Fedora is a fast, stable, and powerful operating system for everyday use "
 "built by a worldwide community of friends. It's completely free to use, "
 "study, and share."
 msgstr "Fedora 是一款由全球社区爱好者构建的面向日常应用的快速、稳定、强大的操作系统。它可完全自由使用、学习和分享。"
 
-#: data/content/index.html:70
+#: data/content/index.html:66
 #, python-format
 msgid "%(size)sMB, ISO image for %(arch)s-bit PCs"
 msgstr "%(size)sMB，针对 %(arch)s位 PC 的 ISO 镜像"
 
-#: data/content/index.html:70
+#: data/content/index.html:66
 msgid "More options >"
 msgstr "更多选择 >"
 
-#: data/content/index.html:72
+#: data/content/index.html:68
 #, python-format
 msgid "Try Fedora %(release)s %(state)s Now!"
 msgstr "马上尝试 Fedora %(release)s %(state)s ！"
 
-#: data/content/index.html:81
-msgid "Introducing the New Installer"
-msgstr "新安装器介绍"
+#: data/content/index.html:77
+msgid "3D Printing with Fedora 19"
+msgstr "使用 Fedora 19 进行 3D 打印"
 
-#: data/content/index.html:82
+#: data/content/index.html:78
 msgid ""
-"Fedora 18 features an installer that is rewritten and redesigned from the "
-"ground up. It replaces the old 13+ year old installer from previous versions"
-" of Fedora. You can learn more about it at the new installer informational "
-"page on the Fedora wiki."
-msgstr "Fedora 18 包含完全重新编写和设计的安装器。它取代了在先前版本中已经有 13 余年的老安装器。您可以从 Fedora Wiki 页面上获得更多关于新安装器的信息。"
+"Freely model and print in 3D using the new tools now included in Fedora. "
+"Software such as OpenSCAD, Skeinforge, SFACT, Printrun, and RepetierHost are"
+" now ready-to-go in the Fedora 19 repositories."
+msgstr "Fedora 提供了自由建模并以 3D 打印的新工具。像 OpenSCAD，Skeinforge，SFACT，Printrun 和 RepetierHost 等软件均以在 Fedora 19 软件仓库中就绪。"
 
-#: data/content/index.html:83 data/content/index.html:94
+#: data/content/index.html:79 data/content/index.html:89
 msgid "Learn More >"
 msgstr "了解更多 >"
 
-#: data/content/index.html:91
-msgid "Fedora KDE Spin"
-msgstr "Fedora KDE 定制版"
-
-#: data/content/index.html:93
+#: data/content/index.html:88
 msgid ""
-"The Fedora KDE Desktop is a powerful Fedora-based operating system utilizing"
-" KDE as the main user interface. Fedora KDE Desktop comes with many pre-"
-"selected top quality applications that suit all modern desktop use cases - "
-"from online communication like web browsing, IM and email, through "
-"multimedia and entertainment, to an advanced productivity suite."
-msgstr "Fedora KDE 桌面版是一个使用 KDE 作为主要用户界面的 Fedora 操作系统。Fedora KDE 桌面版搭载了经过精心挑选的高质量应用程序，适用于全部现代桌面用途，从网页浏览、即时聊天、电子邮件等在线沟通，到多媒体和娱乐，以及先进的办公套件。"
+"Pidora offers all the Fedora packages you love in a Fedora Remix compiled "
+"specifically for the Raspberry Pi hardware. The graphical first boot "
+"includes additional Pi-specific modules. Or if you're going headless, you "
+"can do it from the start with some special Pidora features."
+msgstr "Pidora 是一个经过专门针对 Raspberry Pi 硬件进行编译的 Fedora Remix ，提供了您所喜爱的全部 Fedora 软件包。图形化首次引导还加入了额外的 Pi 专有模块。如果您还是摸不清头脑的话，您可以从头开始体验这些 Pidora 特有的特性。"
 
-#: data/content/index.html:103
+#: data/content/index.html:98
 msgid "A worldwide community of friends."
 msgstr "世界各地朋友们组成的社区"
 
-#: data/content/index.html:104
+#: data/content/index.html:99
 msgid ""
 "Fedora is a Linux-based operating system that showcases the latest in free "
 "software. Fedora is always free for anyone to use, modify, and distribute. "
@@ -1849,103 +1913,124 @@ msgid ""
 " Fedora Project."
 msgstr "Fedora 是基于 Linux 的集最新自由开源软件于一体的操作系统。Fedora 始终允许任何人自由使用，修改和发布。它由来自世界各地的人们在 Fedora 项目社区下共同合作而成。"
 
-#: data/content/index.html:105 data/content/join-fedora.html:83
+#: data/content/index.html:100 data/content/join-fedora.html:83
 #: data/content/join-fedora.html:90 data/content/join-fedora.html:98
 #: data/content/join-fedora.html:106 data/content/join-fedora.html:114
 #: data/content/join-fedora.html:122
 msgid "Learn more >"
 msgstr "了解更多 >"
 
-#: data/content/index.html:130
+#: data/content/index.html:115
+msgid "news"
+msgstr "新闻"
+
+#: data/content/index.html:115
+msgid "Fedora 19 released on July 2, 2013!"
+msgstr "Fedora 19 将于 2013 年 7 月 2 日发布！"
+
+#: data/content/index.html:115
+msgid ""
+"http://docs.fedoraproject.org/en-US/Fedora/19/html/Release_Notes/index.html"
+msgstr "http://docs.fedoraproject.org/en-US/Fedora/19/html/Release_Notes/index.html"
+
+#: data/content/index.html:115
+msgid "Read the release notes"
+msgstr "阅读发行注记"
+
+#: data/content/index.html:115
+msgid "Download now"
+msgstr "马上下载"
+
+#: data/content/index.html:125
 msgid "Need help?"
 msgstr "需要帮助吗？"
 
-#: data/content/index.html:131
+#: data/content/index.html:126
 msgid "Get it here."
 msgstr "从这里获取。"
 
-#: data/content/index.html:137
+#: data/content/index.html:132
 msgid "What is Fedora, anyway?"
 msgstr "到底什么是 Fedora？"
 
-#: data/content/index.html:142
+#: data/content/index.html:137
 msgid "Join us!"
 msgstr "加入我们！"
 
-#: data/content/index.html:143
+#: data/content/index.html:138
 msgid "Help make Fedora!"
 msgstr "制作 Fedora 的相关帮助！"
 
-#: data/content/index.html:150
+#: data/content/index.html:145
 msgid "What makes Fedora great?"
 msgstr "是什么让 Fedora 这么棒？"
 
-#: data/content/index.html:155
+#: data/content/index.html:150
 msgid "Freedom is key"
 msgstr "自由是关键"
 
-#: data/content/index.html:156
+#: data/content/index.html:151
 msgid ""
 "Advancing software and content freedom is a key goal of the Fedora Project."
 msgstr "推进软件和内容的自由是 Fedora 项目的一个关键目标。"
 
-#: data/content/index.html:157
+#: data/content/index.html:152
 msgid "Learn how software freedom benefits you >"
 msgstr "了解软件自由是如何让您受益的 >"
 
-#: data/content/index.html:161
+#: data/content/index.html:156
 msgid "Our Community"
 msgstr "我们的社区"
 
-#: data/content/index.html:162
+#: data/content/index.html:157
 msgid "People world-wide work together in Fedora to advance free software."
 msgstr "全世界的人们团结在 Fedora 来推进自由软件"
 
-#: data/content/index.html:163
+#: data/content/index.html:158
 msgid "Discover your role in Fedora's community >"
 msgstr "发掘您在 Fedora 社区中的角色 >"
 
-#: data/content/index.html:167
+#: data/content/index.html:162
 msgid "We share"
 msgstr "我们分享"
 
-#: data/content/index.html:168
+#: data/content/index.html:163
 msgid "Many features that benefit all Linux distributions start in Fedora."
 msgstr "许多让所有 Linux 发行版都受益的特性出自 Fedora 。"
 
-#: data/content/index.html:169
+#: data/content/index.html:164
 msgid "See how we share our features for all to use >"
 msgstr "了解我们是如何向大家分享特性的 >"
 
-#: data/content/index.html:173
+#: data/content/index.html:168
 msgid "The best tech"
 msgstr "最好的技术"
 
-#: data/content/index.html:174
+#: data/content/index.html:169
 msgid "The future of Linux is built into Fedora."
 msgstr "Linux 的未来在 Fedora 上体现。"
 
-#: data/content/index.html:175
+#: data/content/index.html:170
 msgid "Learn how Fedora innovates >"
 msgstr "了解 Fedora 是如何创新的"
 
-#: data/content/index.html:182
+#: data/content/index.html:177
 msgid "Fedora highlights"
 msgstr "Fedora 的亮点"
 
-#: data/content/index.html:189
+#: data/content/index.html:184
 msgid "Read more of the story >"
 msgstr "阅读更多相关事项 >"
 
-#: data/content/index.html:190
+#: data/content/index.html:185
 msgid "Read more Fedora user stories >"
 msgstr "阅读更多 Fedora 用户的故事 >"
 
-#: data/content/index.html:195
+#: data/content/index.html:190
 msgid "We fight for software freedom"
 msgstr "我们为软件自由而奋斗"
 
-#: data/content/index.html:197
+#: data/content/index.html:192
 msgid ""
 "We try to always do the right thing, and provide only free and open source "
 "software. We will fight to protect and promote solutions that anyone can use"
@@ -1957,24 +2042,24 @@ msgid ""
 "focus has had significant and long lasting effects."
 msgstr "我们尝试做正确的事情，并只提供自由和开源软件。我们宣传那些允许所有人使用且自由分享的解决方案，并为此奋斗。为了这个目的，我们只在 Fedora 基础架构中使用自由和开源软件。带着这个思想，我们所有开发者和上游开发组保持着密切的联系。所以所有人都可以会从我们的工作中受益，并且可以即时的了解到我们的变化。正是由于大量创新成果源自 Fedora，我们的工作重心才会产生具有显著并持久的效果。"
 
-#: data/content/index.html:199
+#: data/content/index.html:194
 msgid "Learn more about Fedora's values >"
 msgstr "了解更多有关 Fedora 价值的信息 >"
 
-#: data/content/index.html:200
+#: data/content/index.html:195
 msgid "More on what Fedora's all about >"
 msgstr "深入了解 Fedora"
 
-#: data/content/index.html:205 data/content/using/index.html:26
+#: data/content/index.html:200 data/content/using/index.html:26
 msgid "Do it with Fedora"
 msgstr "Fedora 帮您实现"
 
-#: data/content/index.html:206 data/content/using/index.html:33
+#: data/content/index.html:201 data/content/using/index.html:33
 #: data/content/using/tutorials/cheese.html:26
 msgid "Have a photobooth party!"
 msgstr "来个趣味摄影派对！"
 
-#: data/content/index.html:208 data/content/using/index.html:34
+#: data/content/index.html:203 data/content/using/index.html:34
 #: data/content/using/tutorials/cheese.html:27
 msgid ""
 "All you need is a webcam and Fedora, and you can do all sorts of cool photo "
@@ -1982,56 +2067,56 @@ msgid ""
 "and videos!"
 msgstr "您只需要一个摄像头和 Fedora，就可以在相片上实现各种超酷的特效，包括将您朋友变成绿巨人 :) 快来制作有趣的快照和视频短片吧！"
 
-#: data/content/index.html:210
+#: data/content/index.html:205
 msgid "Learn how to do it yourself! >"
 msgstr "学学怎样制作！"
 
-#: data/content/index.html:211
+#: data/content/index.html:206
 msgid "View all tutorials >"
 msgstr "查看所有教程 >"
 
-#: data/content/index.html:220
+#: data/content/index.html:215
 msgid "Recommended installation requirements"
 msgstr "推荐安装需求"
 
-#: data/content/index.html:222
-msgid "64-bit Intel-compatible PC"
-msgstr "64 位 Intel 兼容 PC"
-
-#: data/content/index.html:224
+#: data/content/index.html:219
 #, python-format
 msgid "%sGB disk space / storage"
 msgstr "%sGB 磁盘空间 / 存储"
 
-#: data/content/index.html:226
+#: data/content/index.html:221
 msgid "More about requirements >"
 msgstr "需求详情 >"
 
-#: data/content/index.html:227
+#: data/content/index.html:222
 msgid "Full set of download options >"
 msgstr "完整下载选项 >"
 
-#: data/content/index.html:247 data/content/join-fedora.html:133
+#: data/content/index.html:231
+msgid "Add a counter to your own site!"
+msgstr "在您的网站添加倒计时器！"
+
+#: data/content/index.html:242 data/content/join-fedora.html:133
 msgid "Upcoming Events"
 msgstr "近期活动"
 
-#: data/content/index.html:249
+#: data/content/index.html:244
 msgid "North American"
 msgstr "北美洲"
 
-#: data/content/index.html:250
+#: data/content/index.html:245
 msgid "Central & South American"
 msgstr "中南美洲"
 
-#: data/content/index.html:251
+#: data/content/index.html:246
 msgid "European, Middle Eastern, & African"
 msgstr "欧洲、中东和非洲"
 
-#: data/content/index.html:252
+#: data/content/index.html:247
 msgid "Indian, Asian, & Australian"
 msgstr "印度、亚洲和澳洲"
 
-#: data/content/index.html:255
+#: data/content/index.html:250
 msgid "Hosting Sponsor"
 msgstr "主机赞助商"
 
@@ -2521,49 +2606,54 @@ msgstr "验证您下载 ISO 文件"
 msgid "Make sure the iso downloaded is correct."
 msgstr "确保下载的 iso 文件是正确的。"
 
-#: data/content/verify.html:31
+#: data/content/verify.html:30
+#, python-format
+msgid "Windows user? Follow <a href=\"%s\">these instructions</a> instead."
+msgstr "是 Windows 用户吗？请参考<a href=\"%s\">这些说明</a>。"
+
+#: data/content/verify.html:32
 msgid ""
 "Once you have downloaded an ISO, verify it for security and integrity.  To "
 "verify your ISO, start by downloading the proper CHECKSUM file into the same"
 " directory as the ISO:"
 msgstr "当您下载一个 ISO 文件后，请验证它的安全性和完整性。要验证 ISO 文件，请下载对应的 CHECKSUM 文件到 ISO 文件所在的目录："
 
-#: data/content/verify.html:36
+#: data/content/verify.html:37
 msgid "Install DVD / Rescue CD"
 msgstr "安装 DVD/救援 CD"
 
-#: data/content/verify.html:77
+#: data/content/verify.html:78
 msgid "Live Media"
 msgstr "Live 介质"
 
-#: data/content/verify.html:163
+#: data/content/verify.html:212
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "下一步，导入 Fedora 的 GPG 密钥："
 
-#: data/content/verify.html:165
+#: data/content/verify.html:214
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
 "href=\"%s/%s/keys\">here</a>."
 msgstr "您可在<a href=\"%s/%s/keys\">这里</a>验证 GPG 密钥的详情。"
 
-#: data/content/verify.html:166
+#: data/content/verify.html:215
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "现在验证 CHECKSUM 文件的有效性："
 
-#: data/content/verify.html:168
+#: data/content/verify.html:217
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr "CHECKSUM 文件应有来自以下密钥之一的签名："
 
-#: data/content/verify.html:175
+#: data/content/verify.html:224
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the ISO's "
 "checksum matches:"
 msgstr "现在 CHECKSUM 文件已通过验证，检查 ISO 文件是否符合："
 
-#: data/content/verify.html:177
+#: data/content/verify.html:226
 msgid "If the output states that the file is valid, then you're good to go!"
 msgstr "如果结果显示文件有效，那您就可以继续了！"
 
@@ -6306,9 +6396,46 @@ msgid ""
 "it. Have fun, and be sure to share these tips you learned with others"
 msgstr "现在您有了一个能按照您想要的方式定义您的桌面的小技巧。好好玩吧，一定记着把您学到的这些小窍门和大家分享哦"
 
+#: data/templates/cloud-tab.html:125 data/templates/cloud-tab.html:158
+#, python-format
+msgid "Fedora %s "
+msgstr "Fedora %s "
+
+#: data/templates/cloud-tab.html:129
+msgid "Region"
+msgstr "区域"
+
+#: data/templates/cloud-tab.html:130
+msgid "Architecture"
+msgstr "架构"
+
+#: data/templates/cloud-tab.html:131
+msgid "Root store"
+msgstr "根存储"
+
+#: data/templates/cloud-tab.html:132
+msgid "AMI ID"
+msgstr "AMI ID"
+
+#: data/templates/cloud-tab.html:133
+msgid "Launch"
+msgstr "启动"
+
+#: data/templates/cloud-tab.html:145
+msgid "Launch AMI instance"
+msgstr "启动 AMI 虚拟机"
+
+#: data/templates/cloud-tab.html:160
+msgid "Select the nearest region"
+msgstr "选择最近的地区"
+
+#: data/templates/cloud-tab.html:171
+msgid "Launch it!"
+msgstr "运行吧！"
+
 #: data/templates/content-export-regulations.html:9
 msgid "Export Regulations"
-msgstr "出口原则"
+msgstr "出口规定"
 
 #: data/templates/content-export-regulations.html:11
 msgid "Read full export regulations"
