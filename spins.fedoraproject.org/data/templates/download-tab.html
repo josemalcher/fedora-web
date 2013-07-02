@@ -20,7 +20,7 @@
 			<td><strong>${_('Size in MBs')}</strong></td>
 		</tr>
 		<tr py:for="i in [x for x in torrents.specific_spin(area, release, latest=False) if x not in torrents.specific_spin(area, release)]">
-			<td><a href="http://torrent.fedoraproject.org/spins/${i['name']}.torrent">${i['name']}</a></td>
+			<td><a href="http://torrent.fedoraproject.org/torrents/${i['name']}.torrent">${i['name']}</a></td>
 			<td>${formatsize(i['size'])}</td>
 		</tr>
 	</table>
