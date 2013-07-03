@@ -24,8 +24,8 @@
                 <h4>${Markup(_('We apologize, but the file you requested could not be found.'))}</h4>
                 <ul>
                     <li>${Markup(_('Double-check the URL if you entered it manually. Did you copy it correctly?'))}</li>
-                    <li>${Markup(_('Did a bad link bring you here? Contact &lt;a href="mailto:webmaster@fedoraproject.org"&gt;the fedoraproject.org webmaster&lt;/a&gt; and let them know which link brought you here.'))}</li>
-                    <li>${Markup(_('The file you are looking for may have moved. Check our main site at &lt;a href="http://fedoraproject.org/"&gt;http://fedoraproject.org/&lt;/a&gt; or search our &lt;a href="http://fedoraproject.org/wiki/"&gt;wiki&lt;/a&gt;.'))}</li>
+                    <li>${Markup(_('Did a bad link bring you here? Contact &lt;a href="%s"&gt;the fedoraproject.org webmaster&lt;/a&gt; and let them know which link brought you here.') % 'mailto:webmaster@fedoraproject.org')}</li>
+                    <li>${Markup(_('The file you are looking for may have moved. Check our main site at &lt;a href="%(fpo)s"&gt;%(fpo)s&lt;/a&gt; or search our &lt;a href="%(wiki)s"&gt;wiki&lt;/a&gt;.') % {'fpo':'http://fedoraproject.org/', 'wiki':'https://fedoraproject.org/wiki/Fedora_Project_Wiki'} )}</li>
                 </ul>
             </div>
             <div class="clear"></div>
