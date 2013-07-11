@@ -104,7 +104,7 @@ def process_dir(dirpath, filenames):
             path=options.basepath,
             curpage=curpage,
             global_variables=globalvar,
-            ).render(method='html', doctype='html')
+            ).render(method='html', doctype='html', encoding='utf-8')
         output = open(dest_file, 'w')
         output.write(page)
         output.close()
