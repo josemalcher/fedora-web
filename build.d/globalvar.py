@@ -14,14 +14,14 @@ release={
     'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'prev_arm_id': '18',
     'prev_ppc64_id': '18',
-    'prev_s390_id': '17',
+    'prev_s390_id': '18',
     'curr_arm_id': '19',
     'curr_ppc64_id': '19',
-    'curr_s390_id': '18',
+    'curr_s390_id': '19',
     'curr_cloud_id': '19',
     'next_arm_id': '20',
     'next_ppc64_id': '20',
-    'next_s390_id': '19',
+    'next_s390_id': '20',
     'next_cloud_id': '20',
     'cloud_composedate': '20130627'
 }
