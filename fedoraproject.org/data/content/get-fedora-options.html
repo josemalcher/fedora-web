@@ -503,7 +503,7 @@
                             <h4>${_('Fedora %(release)s s390') % {'release':global_variables.release['curr_s390_id']}}</h4>
                             <p>${_('Fedora Release Image based on the s390x architecture.')}</p>
                             <h5>${_('DVD Image')}</h5>
-                                <a href="${global_variables.path['download_arch']}/18/Fedora/s390x/iso/Fedora-18-s390x-DVD.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
+                                <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_s390_id']}/Fedora/s390x/iso/Fedora-${global_variables.release['curr_s390_id']}-s390x-DVD.iso" class="download-button-mini download-splash">${_('Download Now!')}</a>
                                 <p class="fine-print">${_('%sGB DVD ISO') % global_variables.iso_size['s390_DVD']}</p>
 								</div>
 									<div class="clear"></div>
