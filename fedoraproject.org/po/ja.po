@@ -20,9 +20,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-07-02 23:14+0200\n"
-"PO-Revision-Date: 2013-07-02 21:14+0000\n"
-"Last-Translator: robyduck <robyduck@fedoraproject.org>\n"
+"POT-Creation-Date: 2013-07-11 17:31+0200\n"
+"PO-Revision-Date: 2013-07-27 12:30+0000\n"
+"Last-Translator: Tomoyuki KATO <tomo@dream.daynight.jp>\n"
 "Language-Team: Japanese <trans-ja@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,7 +35,7 @@ msgstr ""
 msgid "Fedora Project - What is Fedora and what makes it different?"
 msgstr "Fedora Project - Fedora とは何ですか？何が異なりますか？"
 
-#: data/content/about-fedora.html:13 data/content/index.html:131
+#: data/content/about-fedora.html:13 data/content/index.html:145
 #: data/templates/foot.html:10
 msgid "About Fedora"
 msgstr "Fedoraについて"
@@ -79,7 +79,7 @@ msgid ""
 "technologies."
 msgstr "<strong>Fedora Project</strong>は、フリーソフトウェアを愛するユーザーと、それを作り上げる人々が集う世界的なコミュニティの名前です。私たちは、コミュニティとして一緒に働くことによって、フリーコードとコンテンツの創造・普及をリードしたいと考えています。Fedoraは、オープンソース技術の提供者として世界で最も信頼を受けている企業<strong><a href=\"http://redhat.com\">Red Hat</a></strong>により後援されています。Red Hatは、共同開発を促進し、<a href=\"http://ja.wikipedia.org/wiki/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2\">フリーソフトウェア</a>の革新的な新技術を生み出していくために、Fedoraに出資しています。"
 
-#: data/content/about-fedora.html:29 data/content/index.html:189
+#: data/content/about-fedora.html:29 data/content/index.html:203
 msgid "What makes Fedora different?"
 msgstr "Fedoraは何が違いますか？"
 
@@ -126,7 +126,7 @@ msgstr "Fedora が持つ真の価値は何ですか？"
 msgid ""
 "The four foundations of freedom, features, friends, and first are the core "
 "values of the Fedora community. Read more about them below."
-msgstr "Freedom（自由）、Features（機能）、Friends（友達）、First（最速）、これら4つの基礎は Fedora コミュニティの中核となる価値観です。詳しくは以下をお読みください。"
+msgstr "Freedom（自由）、Features（機能）、Friends（友達）、First（最新）、これら4つの基礎は Fedora コミュニティの中核となる価値観です。詳しくは以下をお読みください。"
 
 #: data/content/about-fedora.html:41
 msgid "Freedom"
@@ -171,7 +171,7 @@ msgstr "私たちは新しい技術的特徴を作成する激務が数百万人
 
 #: data/content/about-fedora.html:62
 msgid "First"
-msgstr "First（最速）"
+msgstr "First（最新）"
 
 #: data/content/about-fedora.html:63
 msgid ""
@@ -298,7 +298,7 @@ msgstr "Fedoraの連絡先"
 msgid "Contact list of various projects and groups."
 msgstr "多くのプロジェクトおよびグループのコンタクト先の一覧"
 
-#: data/content/contact.html:27 data/templates/foot.html:71
+#: data/content/contact.html:27 data/templates/foot.html:70
 msgid "Contact"
 msgstr "連絡先"
 
@@ -812,8 +812,10 @@ msgid "Fedora %(release)s Source RPMs"
 msgstr "Fedora %(release)s ソース RPM"
 
 #: data/content/get-fedora-options.html:8
-msgid "Fedora Project - Get Fedora by Desktops, Formats or Spins."
-msgstr "Fedora Project - Fedora のデスクトップ版、形式、Spin を入手"
+msgid ""
+"Fedora Project - Get Fedora: Desktops, Other Formats, Spins, Cloud Images or"
+" Secondary Arches."
+msgstr "Fedora Project - Fedora のデスクトップ版、他の形式、Spin、クラウドイメージおよび Secondary Arches を入手"
 
 #: data/content/get-fedora-options.html:28 data/content/get-fedora.html:52
 msgid "Desktops"
@@ -1277,7 +1279,7 @@ msgstr "プライベートクラウドで使用するために、これらのイ
 msgid ""
 "For any doubts about running Instances on OpenStack read the <a "
 "href=\"%s\">documentation</a>."
-msgstr ""
+msgstr "OpenStack においてインスタンスを実行することに関する詳細は、<a href=\"%s\">公式ドキュメント</a>を参照してください。"
 
 #: data/content/get-fedora-options.html:343
 #: data/content/get-fedora-options.html:350
@@ -1576,8 +1578,8 @@ msgid "Games, Design, Security, and others"
 msgstr "ゲーム、デザイン、セキュリティなど"
 
 #: data/content/get-fedora.html:54
-msgid "EC2 Cloud Images"
-msgstr "EC2 クラウドイメージ"
+msgid "Images for public and private clouds"
+msgstr "パブリッククラウドとプライベートクラウドのためのイメージ"
 
 #: data/content/get-fedora.html:55
 msgid "ARM, s390, PPC"
@@ -1604,11 +1606,11 @@ msgstr " もしくは、"
 msgid "a blank %sGB+ USB stick."
 msgstr "空き容量 %s GB の USB メモリー"
 
-#: data/content/get-fedora.html:67 data/content/index.html:217
+#: data/content/get-fedora.html:67 data/content/index.html:231
 msgid "64-bit Intel-compatible PC"
 msgstr "64 ビット Intel 互換 PC"
 
-#: data/content/get-fedora.html:68 data/content/index.html:218
+#: data/content/get-fedora.html:68 data/content/index.html:232
 #, python-format
 msgid "%sGB memory (RAM)"
 msgstr "%sGB メモリー (RAM)"
@@ -1876,22 +1878,36 @@ msgstr "その他オプション >"
 msgid "Try Fedora %(release)s %(state)s Now!"
 msgstr "今すぐ Fedora %(release)s %(state)s を試そう！"
 
-#: data/content/index.html:77
+#: data/content/index.html:81
+msgid ""
+"“To say he will be missed is an understatement. He has been a colleague, a "
+"team member, a source of wisdom and advice, and above all, a friend and "
+"inspiration to countless people in the Fedora community over the past "
+"decade. His seminal and invaluable work in Fedora and free software will "
+"live on for years to come, and the legacy of his spirit will stay with the "
+"community, and with many of us individually, forever.”"
+msgstr "“To say he will be missed is an understatement. He has been a colleague, a team member, a source of wisdom and advice, and above all, a friend and inspiration to countless people in the Fedora community over the past decade. His seminal and invaluable work in Fedora and free software will live on for years to come, and the legacy of his spirit will stay with the community, and with many of us individually, forever.”"
+
+#: data/content/index.html:82
+msgid "Share your Seth stories >"
+msgstr "Seth さんとの思い出を共有する >"
+
+#: data/content/index.html:90
 msgid "3D Printing with Fedora 19"
 msgstr "Fedora 19 を用いた 3D プリント"
 
-#: data/content/index.html:78
+#: data/content/index.html:91
 msgid ""
 "Freely model and print in 3D using the new tools now included in Fedora. "
 "Software such as OpenSCAD, Skeinforge, SFACT, Printrun, and RepetierHost are"
 " now ready-to-go in the Fedora 19 repositories."
 msgstr "Fedora に含まれる新しいツールを使用して、自由に 3D でモデリングおよびプリントできます。OpenSCAD, Skeinforge, SFACT, Printrun や RepetierHost のようなソフトウェアが Fedora 19 のリポジトリですぐに利用できます。"
 
-#: data/content/index.html:79 data/content/index.html:89
+#: data/content/index.html:92 data/content/index.html:102
 msgid "Learn More >"
 msgstr "詳細について >"
 
-#: data/content/index.html:88
+#: data/content/index.html:101
 msgid ""
 "Pidora offers all the Fedora packages you love in a Fedora Remix compiled "
 "specifically for the Raspberry Pi hardware. The graphical first boot "
@@ -1899,11 +1915,11 @@ msgid ""
 "can do it from the start with some special Pidora features."
 msgstr "Pidora は Raspberry Pi のために特別にコンパイルされたFedora Remixであり、あなたが愛してやまない Fedora のパッケージをすべて提供しています。グラフィカルブートには追加の Pi 固有のモジュールが組み込まれています。もし、ヘッドレス運用を行うのであれば、いくつかの Pidora 固有の特別の機能でヘッドレス運用をすぐに始めることができます。"
 
-#: data/content/index.html:98
+#: data/content/index.html:111
 msgid "A worldwide community of friends."
 msgstr "世界中のコミュニティが友達。"
 
-#: data/content/index.html:99
+#: data/content/index.html:112
 msgid ""
 "Fedora is a Linux-based operating system that showcases the latest in free "
 "software. Fedora is always free for anyone to use, modify, and distribute. "
@@ -1911,124 +1927,124 @@ msgid ""
 " Fedora Project."
 msgstr "Fedora は最先端のフリーソフトウェアやオープンソースソフトウェアを提供する Linux ベースのオペレーティングシステムです。誰でも自由に使用し、改変し、そして配布することができます。Fedora は Fedora Project に参加する世界中の人々によって支えられています。Fedora Project は誰でも自由に参加できるオープンなコミュニティです。"
 
-#: data/content/index.html:100 data/content/join-fedora.html:83
+#: data/content/index.html:113 data/content/join-fedora.html:83
 #: data/content/join-fedora.html:90 data/content/join-fedora.html:98
 #: data/content/join-fedora.html:106 data/content/join-fedora.html:114
 #: data/content/join-fedora.html:122
 msgid "Learn more >"
 msgstr "詳細について >"
 
-#: data/content/index.html:115
+#: data/content/index.html:129
 msgid "news"
 msgstr "ニュース"
 
-#: data/content/index.html:115
+#: data/content/index.html:129
 msgid "Fedora 19 released on July 2, 2013!"
 msgstr "Fedora 19  2013年7月2日リリース！"
 
-#: data/content/index.html:115
+#: data/content/index.html:129
 msgid ""
 "http://docs.fedoraproject.org/en-US/Fedora/19/html/Release_Notes/index.html"
 msgstr "http://docs.fedoraproject.org/ja-JP/Fedora/19/html/Release_Notes/index.html"
 
-#: data/content/index.html:115
+#: data/content/index.html:129
 msgid "Read the release notes"
 msgstr "リリースノートを読む"
 
-#: data/content/index.html:115
+#: data/content/index.html:129
 msgid "Download now"
 msgstr "いますぐダウンロード"
 
-#: data/content/index.html:125
+#: data/content/index.html:139
 msgid "Need help?"
 msgstr "ヘルプ？"
 
-#: data/content/index.html:126
+#: data/content/index.html:140
 msgid "Get it here."
 msgstr "ここにあります。"
 
-#: data/content/index.html:132
+#: data/content/index.html:146
 msgid "What is Fedora, anyway?"
 msgstr "Fedoraとは？"
 
-#: data/content/index.html:137
+#: data/content/index.html:151
 msgid "Join us!"
 msgstr "参加しよう！"
 
-#: data/content/index.html:138
+#: data/content/index.html:152
 msgid "Help make Fedora!"
 msgstr "一緒に作りましょう！"
 
-#: data/content/index.html:145
+#: data/content/index.html:159
 msgid "What makes Fedora great?"
 msgstr "Fedoraを素晴らしいものにする４つの合言葉"
 
-#: data/content/index.html:150
+#: data/content/index.html:164
 msgid "Freedom is key"
 msgstr "キーワードは自由！"
 
-#: data/content/index.html:151
+#: data/content/index.html:165
 msgid ""
 "Advancing software and content freedom is a key goal of the Fedora Project."
 msgstr "優れたソフトウェアとコンテンツの自由が Fedora Project のゴールです。"
 
-#: data/content/index.html:152
+#: data/content/index.html:166
 msgid "Learn how software freedom benefits you >"
 msgstr "ソフトウェアの自由がもたらす有益性について知る >"
 
-#: data/content/index.html:156
+#: data/content/index.html:170
 msgid "Our Community"
 msgstr "私たちのコミュニティ！"
 
-#: data/content/index.html:157
+#: data/content/index.html:171
 msgid "People world-wide work together in Fedora to advance free software."
 msgstr "世界中の人々がフリーソフトウェアをより良くするために Fedora で一緒に協力しています。"
 
-#: data/content/index.html:158
+#: data/content/index.html:172
 msgid "Discover your role in Fedora's community >"
 msgstr "Fedora コミュニティであなたのできることを探そう > "
 
-#: data/content/index.html:162
+#: data/content/index.html:176
 msgid "We share"
 msgstr "すべてを共有！"
 
-#: data/content/index.html:163
+#: data/content/index.html:177
 msgid "Many features that benefit all Linux distributions start in Fedora."
 msgstr "すべての Linux ディストリビューションで使われる多くの仕組みは Fedora から始まります。"
 
-#: data/content/index.html:164
+#: data/content/index.html:178
 msgid "See how we share our features for all to use >"
 msgstr "私たちが持つ仕組みはすべての人が使えるように共有しています。詳細は >"
 
-#: data/content/index.html:168
+#: data/content/index.html:182
 msgid "The best tech"
 msgstr "最良のテクノロジー！"
 
-#: data/content/index.html:169
+#: data/content/index.html:183
 msgid "The future of Linux is built into Fedora."
 msgstr "Linux の将来の機能が Fedora に組み込まれています。"
 
-#: data/content/index.html:170
+#: data/content/index.html:184
 msgid "Learn how Fedora innovates >"
 msgstr "Fedora の革新性について知る >"
 
-#: data/content/index.html:177
+#: data/content/index.html:191
 msgid "Fedora highlights"
 msgstr "Fedoraのハイライト"
 
-#: data/content/index.html:184
+#: data/content/index.html:198
 msgid "Read more of the story >"
 msgstr "ストーリーをもっと読む >"
 
-#: data/content/index.html:185
+#: data/content/index.html:199
 msgid "Read more Fedora user stories >"
 msgstr "Fedora ユーザーの声を聞く >"
 
-#: data/content/index.html:190
+#: data/content/index.html:204
 msgid "We fight for software freedom"
 msgstr "ソフトウェアの自由のための戦い"
 
-#: data/content/index.html:192
+#: data/content/index.html:206
 msgid ""
 "We try to always do the right thing, and provide only free and open source "
 "software. We will fight to protect and promote solutions that anyone can use"
@@ -2040,24 +2056,24 @@ msgid ""
 "focus has had significant and long lasting effects."
 msgstr "我々は常に正しいことをするために、無料でオープンソースソフトウェアなものを提供します。 Fedora は誰でも自由に使うことができて、自由に再配布することができます。 ソフトウェアの自由をさらに進めるために戦います。 そして、我々は Fedora のインフラを動かすために無料でオープンソースソフトウェアなものだけ利用します。これにより、 Fedora のすべての開発者はアップストリームの開発チームとともに密接に共同作業することに集中できるます。 誰もが我々の活動成果から有益な結果を得ることができ、できるだけ早く我々の変化へ近づくことができます。この点は Fedora が膨大な数のイノベーションを起こすために、Fedora が長続きするために非常に重要です。"
 
-#: data/content/index.html:194
+#: data/content/index.html:208
 msgid "Learn more about Fedora's values >"
 msgstr "Fedora の価値についてもっと知る >"
 
-#: data/content/index.html:195
+#: data/content/index.html:209
 msgid "More on what Fedora's all about >"
 msgstr "Fedora について、もっと知る >"
 
-#: data/content/index.html:200 data/content/using/index.html:26
+#: data/content/index.html:214 data/content/using/index.html:26
 msgid "Do it with Fedora"
 msgstr "Fedoraでやってみよう"
 
-#: data/content/index.html:201 data/content/using/index.html:33
+#: data/content/index.html:215 data/content/using/index.html:33
 #: data/content/using/tutorials/cheese.html:26
 msgid "Have a photobooth party!"
 msgstr "自分撮りパーティーしよう！"
 
-#: data/content/index.html:203 data/content/using/index.html:34
+#: data/content/index.html:217 data/content/using/index.html:34
 #: data/content/using/tutorials/cheese.html:27
 msgid ""
 "All you need is a webcam and Fedora, and you can do all sorts of cool photo "
@@ -2065,56 +2081,56 @@ msgid ""
 "and videos!"
 msgstr "あなたが用意するのは、ウェブカメラと Fedora だけです。そして、あなたは友人の写真を Hulk っぽく変えることや、いろいろな特殊効果でかっこよく写真を加工することができます。"
 
-#: data/content/index.html:205
+#: data/content/index.html:219
 msgid "Learn how to do it yourself! >"
 msgstr "どうすれば、いいのか知る >"
 
-#: data/content/index.html:206
+#: data/content/index.html:220
 msgid "View all tutorials >"
 msgstr "すべてのチュートリアルを見る >"
 
-#: data/content/index.html:215
+#: data/content/index.html:229
 msgid "Recommended installation requirements"
 msgstr "推奨インストール要件"
 
-#: data/content/index.html:219
+#: data/content/index.html:233
 #, python-format
 msgid "%sGB disk space / storage"
 msgstr "%sGB ディスク領域"
 
-#: data/content/index.html:221
+#: data/content/index.html:235
 msgid "More about requirements >"
 msgstr "要件の詳細 >"
 
-#: data/content/index.html:222
+#: data/content/index.html:236
 msgid "Full set of download options >"
 msgstr "すべてのダウンロード一覧 >"
 
-#: data/content/index.html:231
+#: data/content/index.html:245
 msgid "Add a counter to your own site!"
 msgstr "あなた自身のサイトにカウンターを追加しよう！"
 
-#: data/content/index.html:242 data/content/join-fedora.html:133
+#: data/content/index.html:256 data/content/join-fedora.html:133
 msgid "Upcoming Events"
 msgstr "開催予定のイベント"
 
-#: data/content/index.html:244
+#: data/content/index.html:258
 msgid "North American"
 msgstr "北アメリカ"
 
-#: data/content/index.html:245
+#: data/content/index.html:259
 msgid "Central & South American"
 msgstr "中央・南アメリカ"
 
-#: data/content/index.html:246
+#: data/content/index.html:260
 msgid "European, Middle Eastern, & African"
 msgstr "ヨーロッパ、中東、アフリカ"
 
-#: data/content/index.html:247
+#: data/content/index.html:261
 msgid "Indian, Asian, & Australian"
 msgstr "インド、アジア、オーストラリア"
 
-#: data/content/index.html:250
+#: data/content/index.html:264
 msgid "Hosting Sponsor"
 msgstr "ホスティング・スポンサー"
 
@@ -2565,12 +2581,13 @@ msgid "Primary Sponsor"
 msgstr "主なスポンサー"
 
 #: data/content/sponsors.html:30
+#, python-format
 msgid ""
-"<a href=\"http://redhat.com/\">Red Hat, Inc.</a> is the primary sponsor for "
-"the Fedora Project. Red Hat provides the Fedora project with a wide variety "
-"of resources, including full-time employee support, infrastructure hardware "
-"and bandwidth, event funding, and legal counsel."
-msgstr "<a href=\"http://redhat.com/\">Red Hat, Inc.</a> は The Fedora Project の主なスポンサーです。様々なフルタイムの従業員の支援や、ハードウェアやネットワーク回線、イベント開催時の金銭的支援や法的な助言を行っています。"
+"<a href=\"%s\">Red Hat, Inc.</a> is the primary sponsor for the Fedora "
+"Project. Red Hat provides the Fedora project with a wide variety of "
+"resources, including full-time employee support, infrastructure hardware and"
+" bandwidth, event funding, and legal counsel."
+msgstr "<a href=\"%s\">Red Hat, Inc.</a> は The Fedora Project の主なスポンサーです。様々なフルタイムの従業員の支援や、ハードウェアやネットワーク回線、イベント開催時の金銭的支援や法的な助言を行っています。"
 
 #: data/content/sponsors.html:33
 msgid ""
@@ -2673,18 +2690,18 @@ msgid ""
 msgstr "手動で URL を入力した場合は、もう一度入力内容を確認してください。正しくコピーされていますか?"
 
 #: data/content/e/404.html:27
+#, python-format
 msgid ""
-"Did a bad link bring you here? Contact <a "
-"href=\"mailto:webmaster@fedoraproject.org\">the fedoraproject.org "
+"Did a bad link bring you here? Contact <a href=\"%s\">the fedoraproject.org "
 "webmaster</a> and let them know which link brought you here."
-msgstr "無効なリンクがありましたか? <a href=\"mailto:webmaster@fedoraproject.org\">fedoraproject.org ウェブマスター</a> に、どのリンクが無効だったかをお知らせください。"
+msgstr "無効なリンクがありましたか? <a href=\"%s\">fedoraproject.org ウェブマスター</a>に、どのリンクが無効だったかをお知らせください。"
 
 #: data/content/e/404.html:28
+#, python-format
 msgid ""
 "The file you are looking for may have moved. Check our main site at <a "
-"href=\"http://fedoraproject.org/\">http://fedoraproject.org/</a> or search "
-"our <a href=\"http://fedoraproject.org/wiki/\">wiki</a>."
-msgstr "お探しのファイルは移動したかもしれません。メインサイト <a href=\"http://fedoraproject.org/\">http://fedoraproject.org/</a> をご覧になるか、<a href=\"http://fedoraproject.org/wiki/\">wiki</a> で検索してみてください。"
+"href=\"%(fpo)s\">%(fpo)s</a> or search our <a href=\"%(wiki)s\">wiki</a>."
+msgstr "お探しのファイルは移動したかもしれません。メインサイト <a href=\"%(fpo)s\">%(fpo)s</a> をご覧になるか、<a href=\"%(wiki)s\">wiki</a> で検索してみてください。"
 
 #: data/content/e/404.html:33
 msgid "Fedora Resources"
@@ -2740,7 +2757,7 @@ msgstr "創造性"
 msgid "Office / Productivity"
 msgstr "Office と生産性"
 
-#: data/content/features/index.html:32 data/content/features/index.html:407
+#: data/content/features/index.html:32 data/content/features/index.html:401
 msgid "Desktop Basics"
 msgstr "デスクトップの基本機能"
 
@@ -2874,9 +2891,9 @@ msgid "Our stats"
 msgstr "今、何人いるかな"
 
 #: data/content/features/index.html:114 data/content/features/index.html:174
-#: data/content/features/index.html:246 data/content/features/index.html:331
-#: data/content/features/index.html:400 data/content/features/index.html:469
-#: data/content/using/index.html:94 data/content/using/index.html:164
+#: data/content/features/index.html:246 data/content/features/index.html:325
+#: data/content/features/index.html:394 data/content/features/index.html:463
+#: data/content/using/index.html:86 data/content/using/index.html:156
 msgid "Back to top"
 msgstr "Top に戻る"
 
@@ -2964,9 +2981,9 @@ msgstr "ネットワーク上の共有ファイルに接続したり、あなた
 #: data/content/features/index.html:169 data/content/features/index.html:213
 #: data/content/features/index.html:219 data/content/features/index.html:225
 #: data/content/features/index.html:282 data/content/features/index.html:288
-#: data/content/features/index.html:294 data/content/features/index.html:383
-#: data/content/features/index.html:389 data/content/features/index.html:395
-#: data/content/features/index.html:442 data/content/features/index.html:448
+#: data/content/features/index.html:377 data/content/features/index.html:383
+#: data/content/features/index.html:389 data/content/features/index.html:436
+#: data/content/features/index.html:442
 msgid "Learn more."
 msgstr "詳しく知る"
 
@@ -3174,123 +3191,113 @@ msgid ""
 msgstr "Scribus はパワフルなページレイアウトアプリケーションです。印刷できるレベルのニュースレターや、ポスターなどを作ることができるツールです。"
 
 #: data/content/features/index.html:286
-msgid "Agave Color Palette Chooser"
-msgstr "Agave"
-
-#: data/content/features/index.html:287
-msgid ""
-"Agave is a color-palette generation program. It enables you to build and "
-"manipulate a harmonious color palette around any color you choose."
-msgstr "Agave はカラーパレット生成プログラムです。 あなたが選択したどのような色でも、 まわりと調和したカラーパレットを作り出します。"
-
-#: data/content/features/index.html:292
 msgid "Simple Scan"
 msgstr "Simple Scan"
 
-#: data/content/features/index.html:293
+#: data/content/features/index.html:287
 msgid ""
 "Have a mess of paper notes, sketches, and diagrams? Simple scan makes it "
 "easy to digitize your paper work."
 msgstr "紙のメモや、スケッチ、図版などが机の上をふさいでいませんか？Simple Scan は、紙での仕事を簡単にデジタル化します。"
 
-#: data/content/features/index.html:301
+#: data/content/features/index.html:295
 msgid "Blender 3D Studio"
 msgstr "Blender 3D Studio"
 
-#: data/content/features/index.html:302
+#: data/content/features/index.html:296
 msgid ""
 "Are you a fan of 3D games or movies, and wish you could create your own? Try"
 " Blender - a suite of 3D content creation tools - animate, model, render, "
 "composite, and more."
 msgstr "もし、あなたが3Dゲームや映画のファンならば、自分の手で作ってみたいと思ったことはありませんか？ Blender を試しに使ってみてください。 Blender は 3D コンテンツを創作できる統合ツールです。アニメーション、モデリング、レンダリング、コンポージングといった一連の工程を１つのツールで実現できます。"
 
-#: data/content/features/index.html:303
+#: data/content/features/index.html:297
 msgid ""
 "Learn more about Blender <a href=\"http://blender.org\">on Blender's "
 "homepage</a>."
 msgstr "Blender について詳しく知りたい場合は、 <a href=\"http://blender.org\">Blender 公式ウェブサイト</a> をご覧ください。"
 
-#: data/content/features/index.html:308
+#: data/content/features/index.html:302
 msgid "MyPaint Digital Sketchbook"
 msgstr "MyPaint デジタル・スケッチブック"
 
-#: data/content/features/index.html:309
+#: data/content/features/index.html:303
 msgid ""
 "Create beautiful sketches with MyPaint, a sketchbook app that includes "
 "hundreds of painterly brushes, sketch pencils, and other effects. Sketch and"
 " paint digitally with a natural feel."
 msgstr "MyPaint で芸術的なスケッチをしてみませんか？ MyPaint はスケッチブックアプリケーションです。数百のペイントブラシ、色鉛筆、特殊効果、デジタルなスケッチとペイントが自然に行えます。"
 
-#: data/content/features/index.html:310
+#: data/content/features/index.html:304
 msgid ""
 "Learn more about MyPaint on <a href=\"http://mypaint.intilinux.com/\">the "
 "MyPaint homepage</a>."
 msgstr "MyPaint について詳しく知りたい場合は、 <a href=\"http://mypaint.intilinux.com/\">MyPaint 公式ウェブサイト</a> をご覧ください。"
 
-#: data/content/features/index.html:317
+#: data/content/features/index.html:311
 msgid "PiTiVi Video Editor"
 msgstr "PiTiVi 動画エディタ"
 
-#: data/content/features/index.html:318
+#: data/content/features/index.html:312
 msgid ""
 "PiTiVi is a linear video editing tool. Import video files from your camera "
 "or handheld device, and cut and paste clips and add audio tracks."
 msgstr "PiTiVi は、ビデオのリニア編集ツールです。デジタルカメラやカメラ付き端末からビデオファイルを取り込み、映像クリップと音声トラックをカット＆ペーストして編集できます。"
 
-#: data/content/features/index.html:319
+#: data/content/features/index.html:313
 msgid ""
 "Learn more about PiTiVi on <a href=\"http://www.pitivi.org/\">the PiTiVi "
 "homepage</a>."
 msgstr "PiTiVi について詳しく知りたい場合は、 <a href=\"http://www.pitivi.org/\">PiTiVi 公式ウェブサイト</a> をご覧ください。"
 
-#: data/content/features/index.html:324
+#: data/content/features/index.html:318
 msgid "Audacity Sound Editor"
 msgstr "Audacity: 音声エディター"
 
-#: data/content/features/index.html:325
+#: data/content/features/index.html:319
 msgid ""
 "Audacity is a multi-track audio editor for sound files. Record, edit, "
 "splice, add effects, and more."
 msgstr "Audacity はマルチトラックの音声ファイルを編集できる音声エディターです。録音と編集、切り出し、特殊効果の追加などを行うことができます。"
 
-#: data/content/features/index.html:326
+#: data/content/features/index.html:320
 msgid ""
 "Learn more about Audacity on <a "
 "href=\"http://audacity.sourceforge.net/\">the Audacity homepage</a>."
 msgstr "Audacity について詳しく知りたい場合は <a href=\"http://audacity.sourceforge.net/\">Audacity 公式ウェブサイト</a> をご覧ください。"
 
-#: data/content/features/index.html:338
+#: data/content/features/index.html:332
 msgid "Office & Productivity Features"
 msgstr "Office と生産性のための特徴"
 
-#: data/content/features/index.html:343
+#: data/content/features/index.html:337
 msgid ""
 "You've got things to do, and you need to concentrate and manage your time. "
 "Can Fedora help? Absolutely."
 msgstr "あなたには、やるべきことがある。やるべき事に集中し、効率よく時間を管理する必要があります。 Fedora で実現できますか？ もちろんですとも！"
 
-#: data/content/features/index.html:350
+#: data/content/features/index.html:344
 msgid "Hamster Time Tracker"
 msgstr "Hamster タイム・トラッカー"
 
-#: data/content/features/index.html:351
+#: data/content/features/index.html:345
 msgid ""
 "Tell Hamster what you're working on, and it'll time your progress and poke "
 "you at regular intervals to make sure you're not distracted! It also "
 "generates weekly reports so you can examine how you've spent your week."
 msgstr "日々取り組んだ仕事を Hamster に伝えてください。そうすれば、リアルタイムに進捗状況を把握することができます。怠けないように定期的にあなたに確認をしていきます。Hamster を使えば、週次の作業報告も簡単に生成できてしまいます。"
 
-#: data/content/features/index.html:352
+#: data/content/features/index.html:346
 msgid ""
 "Learn more at <a href=\"http://projecthamster.wordpress.com/\">the Hamster "
 "website</a>."
 msgstr "詳しく知りたい場合は、<a href=\"http://projecthamster.wordpress.com/\">Hamster 公式ウェブサイト</a> をご覧ください。"
 
-#: data/content/features/index.html:357
+#: data/content/features/index.html:351
 msgid "Gnote Note-taking"
 msgstr "Gnote 付箋ソフト"
 
-#: data/content/features/index.html:358
+#: data/content/features/index.html:352
 msgid ""
 "Neatly integrated into the desktop, Gnote is a note-taking application that "
 "you can use to build a personal database of notes and to track your to-dos. "
@@ -3298,82 +3305,82 @@ msgid ""
 "rich search interface."
 msgstr "Gnote は付箋ソフトです。 個人的なデータベースを構築して、デスクトップに細切れに表示されたメモをデータベースに蓄積し、 TO-DO 管理を行うことできます。 Gnote は、 あなたに気づかれずにメモを自動的に保存して、 強力な検索インターフェースを提供します。"
 
-#: data/content/features/index.html:359
+#: data/content/features/index.html:353
 msgid ""
 "Learn more at <a href=\"http://live.gnome.org/Gnote\">the Gnote website</a>."
 msgstr "詳しく知りたい場合は、<a href=\"http://live.gnome.org/Gnote\">Gnote 公式ウェブサイト </a>をご覧ください。"
 
-#: data/content/features/index.html:366
+#: data/content/features/index.html:360
 msgid "LibreOffice Writer"
 msgstr "LibreOffice Writer"
 
-#: data/content/features/index.html:367
+#: data/content/features/index.html:361
 msgid ""
 "LibreOffice Writer is a free word processor that allows you to open, create,"
 " modify, and print digital documents. It has a built-in PDF exporter, and it"
 " can open and save in Microsoft (R) formats as well as open formats."
 msgstr "LibreOffice Writer はワープロソフトです。ファイルを開いたり、作成、変更、印刷、PDF出力などを行うことができます。もちろん、Microsoft (R) 社の文書ファイルを開いたり、保存することもできます。"
 
-#: data/content/features/index.html:368 data/content/features/index.html:375
+#: data/content/features/index.html:362 data/content/features/index.html:369
 msgid ""
 "Learn more about LibreOffice on <a href=\"https://www.libreoffice.org/\">the"
 " LibreOffice homepage</a>."
 msgstr "LibreOffice について詳しく知りたい場合は、 <a href=\"https://ja.libreoffice.org/\">LibreOffice</a> 公式ウェブサイト をご覧ください。"
 
-#: data/content/features/index.html:373
+#: data/content/features/index.html:367
 msgid "LibreOffice Impress"
 msgstr "LibreOffice Impress"
 
-#: data/content/features/index.html:374
+#: data/content/features/index.html:368
 msgid ""
 "Open, create, and edit presentation slideshows with LibreOffice Impress. Add"
 " slide transitions and download free slide templates. You  may export "
 "presentations as PDF files for easy exchange."
 msgstr "LibreOffice Impress はプレゼンテーションを行うための機能が揃っています。スライドを作成したり、編集したり、プレゼンテーションを行ったりすることができます。スライドの特殊効果やフリーのスライドテンプレートを追加でダウンロードすることで増やせます。また、ファイルの受け渡しのためにスライドを PDF 出力する作業も非常に簡単です。"
 
-#: data/content/features/index.html:381
+#: data/content/features/index.html:375
 msgid "LibreOffice Calc"
 msgstr "LibreOffice Calc"
 
-#: data/content/features/index.html:382
+#: data/content/features/index.html:376
 msgid ""
 "Part of the LibreOffice suite, Calc is a full-featured spreadsheet "
 "application. Crunch numbers or simply organize tabular information."
 msgstr "LibreOffice Calc はフル機能の表計算アプリケーションです。数字を集計したり、表形式の情報を整理します。"
 
-#: data/content/features/index.html:387
+#: data/content/features/index.html:381
 msgid "GScan2PDF Text Recognition"
 msgstr "gscan2pdf 文書整理"
 
-#: data/content/features/index.html:388
+#: data/content/features/index.html:382
 msgid ""
 "Scanning documents into PDF format is easy, but can you search their "
 "content? Gscan2pdf uses optical recognition software to scan your PDF "
 "documents and convert images to text."
 msgstr "文書をスキャニングし、簡単に PDF 形式へ出力します。しかし、それだけではキーワード検索を行えませんよね？ gscan2pdfは、PDF 文書をスキャンして画像情報をテキストデータへ変えるために、 OCR 認識ソフトウェアを使用します。"
 
-#: data/content/features/index.html:393
+#: data/content/features/index.html:387
 msgid "Vym Mind-Mapper"
 msgstr "Vym マインドマップ 作成ツール"
 
-#: data/content/features/index.html:394
+#: data/content/features/index.html:388
 msgid ""
 "Got a complex project and need to organize your thoughts and map out the "
 "project's different aspects? Try Vym, a mind-mapping tool that helps you "
 "easily diagram your thoughts."
 msgstr "あなたの考えを組織化して、プロジェクトの異なる面の計画を立てられる方法をお持ちですか？ Vym をお試しください。簡単にあなたの考えを図解するのに役立つマインドマッピングツールです。"
 
-#: data/content/features/index.html:412
+#: data/content/features/index.html:406
 msgid ""
 "There's some cool basics built into our desktop that you might not be aware "
 "of. Learn about some of these treasures here!"
 msgstr "あなたが気がついていないかもしれませんが、Fedora のデスクトップにはたくさんの素敵な機能があります。いくつかの輝く機能をご紹介します。"
 
-#: data/content/features/index.html:419
+#: data/content/features/index.html:413
 msgid "Integrated Clock"
 msgstr "統合化された時計"
 
-#: data/content/features/index.html:420
+#: data/content/features/index.html:414
 msgid ""
 "If you're an Evolution user, Fedora's desktop clock has some nice "
 "integration treats for you. The desktop clock integrates with your Evolution"
@@ -3381,17 +3388,17 @@ msgid ""
 "right alongside the clock."
 msgstr "もし、あなたが Evolution ユーザーであれば、Fedora のデスクトップの時計には、いくつかの統合化された素晴らしい処理をおこなってくれます。"
 
-#: data/content/features/index.html:421
+#: data/content/features/index.html:415
 msgid ""
 "Try it now in Fedora! Simply click on the clock in the top bar of your "
 "desktop!"
 msgstr "Fedora で今すぐ試してみてください！デスクトップの上部にある時計をクリックするだけです！"
 
-#: data/content/features/index.html:426
+#: data/content/features/index.html:420
 msgid "Network Manager"
 msgstr "Network Manager"
 
-#: data/content/features/index.html:427
+#: data/content/features/index.html:421
 msgid ""
 "Getting connected to the internet has never been easier. Whether you're "
 "using a wired internet connection, a wireless access point, an encrypted "
@@ -3399,54 +3406,54 @@ msgid ""
 " broadband phone, Network Manager makes it easy."
 msgstr "インターネットに接続できるように設定することは、これまでは簡単なものでありませんでした。 Network Manager を使えば、 有線接続のインターネット接続や無線LANのアクセスポイント、 暗号化されたり、 隠された無線LANのアクセスポイント、 3Gの携帯電話によるダイヤルアップ、 会社へのVPN接続などあらゆるネットワーク接続を一括管理することができます。"
 
-#: data/content/features/index.html:428
+#: data/content/features/index.html:422
 msgid ""
 "Learn more at <a href=\"http://projects.gnome.org/NetworkManager/\">the "
 "Network Manager website</a>."
 msgstr "詳しく知りたい場合は、 <a href=\"http://projects.gnome.org/NetworkManager/\">Network Manager の公式ウェブサイト</a> をご覧ください。"
 
-#: data/content/features/index.html:434
+#: data/content/features/index.html:428
 msgid "Animated & slideshow backgrounds"
 msgstr "定期的に自動で 切り替わる壁紙"
 
-#: data/content/features/index.html:435
+#: data/content/features/index.html:429
 msgid ""
 "Fedora has support for background animations and slideshows. In fact, some "
 "of the backgrounds in Fedora change color with the time of day! Look for it!"
 msgstr "Fedora は背景のアニメーションとスライドショーをサポートします。事実、Fedora のいくつかの背景は時刻とともに色を変えます! 期待しましょう!"
 
-#: data/content/features/index.html:436
+#: data/content/features/index.html:430
 msgid ""
 "Look for wallpapers with a clock emblem in System Settings > Background."
 msgstr "システム設定 > 背景 にある時計のエンブレムを持つ壁紙を探します。"
 
-#: data/content/features/index.html:440
+#: data/content/features/index.html:434
 msgid "Power Manager"
 msgstr "電源管理"
 
-#: data/content/features/index.html:441
+#: data/content/features/index.html:435
 msgid ""
 "GNOME power manager system lets you customize how your Fedora laptop behaves"
 " in different battery-charging and non-battery-charging scenarios. Control "
 "how the screen dims and when the computer suspends, and more."
 msgstr "GNOME の電源管理は、Fedora をノートPCで利用する際に、 バッテリー動作とACアダプタ駆動のシナリオを定義することができます。 液晶モニターの輝度やサスペンド時の挙動など細かく設定することができます。"
 
-#: data/content/features/index.html:446
+#: data/content/features/index.html:440
 msgid "Disk Utility"
 msgstr "ディスク・ユーティリティ"
 
-#: data/content/features/index.html:447
+#: data/content/features/index.html:441
 msgid ""
 "View all the harddrives and removeable drives connected to your machine. "
 "Perform basic maintenance operations and more advanced formatting and "
 "connection configuration options."
 msgstr "あなたがお使いのシステムに接続されたすべてのハードディスクとリムーバブルメディアを確認することができます。基本的なメンテナンス操作と、より先進的なフォーマット作業、ストレージの接続管理にお使いください。"
 
-#: data/content/features/index.html:455
+#: data/content/features/index.html:449
 msgid "Disk Usage Analyzer"
 msgstr "ディスク使用量の解析"
 
-#: data/content/features/index.html:456
+#: data/content/features/index.html:450
 msgid ""
 "No more space on your hard drive? Where did the gigabytes and megabytes go? "
 "The disk usage analyzer examines your hard drive and provides interactive "
@@ -3454,17 +3461,17 @@ msgid ""
 " you clean them out."
 msgstr "このチュートリアルでは、簡単に素早くデスクトップやパネル上にカスタムのアプリケーションランチャーを作成する方法について紹介しています。日頃よく使うアプリケーションで試してみてください。"
 
-#: data/content/features/index.html:457
+#: data/content/features/index.html:451
 msgid ""
 "Learn more at <a href=\"http://www.marzocca.net/linux/baobab/\">the Disk "
 "Usage Analyzer website</a>."
 msgstr "詳しく知りたい場合は、<a href=\"http://www.marzocca.net/linux/baobab/\">ディスク使用量の解析ツールの公式ウェブサイト</a> をご覧ください。"
 
-#: data/content/features/index.html:462
+#: data/content/features/index.html:456
 msgid "IBus Keyboard Input"
 msgstr "iBus キーボード入力"
 
-#: data/content/features/index.html:463
+#: data/content/features/index.html:457
 msgid ""
 "IBus is a keyboard input system with a handy little applet built right into "
 "the desktop. Do you speak one or more languages that require an advanced "
@@ -3472,7 +3479,7 @@ msgid ""
 "so you can write in your preferred language whenever you want."
 msgstr "iBus はキーボード入力システムで Fedora のデスクトップ上での日本語入力を可能にします。 iBus はデスクトップの右上に小さいアプレットとして組み込まれます。先進的な入力システムを必要とする言語を複数必要とする場合、必要な時にいつでも異なる言語に切り替えることができます。"
 
-#: data/content/features/index.html:464
+#: data/content/features/index.html:458
 msgid ""
 "Learn more at <a href=\"http://code.google.com/p/ibus/\">the IBus "
 "website</a>."
@@ -3491,7 +3498,6 @@ msgstr "Fedora Project - Fedora を使う場合の便利なテクニック"
 #: data/content/using/life/robynbergeron.html:15
 #: data/content/using/life/stevemilner.html:15
 #: data/content/using/life/thomascameron.html:15
-#: data/content/using/tutorials/agave.html:13
 #: data/content/using/tutorials/cheese.html:13
 #: data/content/using/tutorials/gnote.html:13
 #: data/content/using/tutorials/launcher.html:13 data/templates/head.html:36
@@ -3515,37 +3521,26 @@ msgid ""
 msgstr "一連のチュートリアルにおいて、あなたが Fedora を用いて作成できる楽しいプロジェクトを詳しく説明していきます。"
 
 #: data/content/using/index.html:35 data/content/using/index.html:41
-#: data/content/using/index.html:49 data/content/using/index.html:55
+#: data/content/using/index.html:47
 msgid "Learn how to do it yourself!"
 msgstr "やり方を確認しましょう！"
 
-#: data/content/using/index.html:39
-msgid "Build beautiful color palettes for your home and wardrobe"
-msgstr "あなたの家とワードローブのために美しいカラーパレットをつくる"
-
-#: data/content/using/index.html:40
-msgid ""
-"Build harmonious color palettes quickly and easily, and use them across "
-"various graphics programs in Fedora, share them online, or even simply use "
-"them as inspiration for your home and wardrobe."
-msgstr "調和のとれたカラーパレットを素早く簡単につくります。そして、Fedoraにあるさまざまなグラフィックス・プログラムにわたって使用したり、オンラインで共有したり、単に家とワードローブのためのインスピレーションとして使ったりします。"
-
-#: data/content/using/index.html:47 data/content/using/tutorials/gnote.html:25
+#: data/content/using/index.html:39 data/content/using/tutorials/gnote.html:25
 msgid "3 ways to unclutter your life using Gnote"
 msgstr "Gnote を用いて日常生活の散らかりを取り除く3つの方法"
 
-#: data/content/using/index.html:48 data/content/using/tutorials/gnote.html:26
+#: data/content/using/index.html:40 data/content/using/tutorials/gnote.html:26
 msgid ""
 "Get organized! Here are 3 ways to unclutter your life and build a personal "
 "database with Gnote."
 msgstr "さあ整理しよう！ここでは Gnote であなたの日常生活を整頓し、個人的データベースを構築する3つの方法を紹介します。"
 
-#: data/content/using/index.html:53
+#: data/content/using/index.html:45
 #: data/content/using/tutorials/launcher.html:25
 msgid "Create custom app launchers"
 msgstr "カスタムのアプリケーション・ランチャーを作ろう"
 
-#: data/content/using/index.html:54
+#: data/content/using/index.html:46
 #: data/content/using/tutorials/launcher.html:27
 msgid ""
 "This quick and easy tutorial will show you how to create custom app "
@@ -3553,43 +3548,43 @@ msgid ""
 "the apps you use the most close at hand!"
 msgstr "この素早く簡単なチュートリアルは、あなたの好きなアイコンを用いて、デスクトップやパネルに、カスタム・アプリケーション・ランチャーを作成する方法を示します。使用するアプリケーションをもっとも手元近くに置いておきます。"
 
-#: data/content/using/index.html:63
+#: data/content/using/index.html:55
 msgid "More Tutorials!"
 msgstr "もっとチュートリアルを読みたい！"
 
-#: data/content/using/index.html:64
+#: data/content/using/index.html:56
 msgid ""
 "Here's some more great tutorials on software in Fedora, written by the free "
 "software community:"
 msgstr "ここでは、フリーソフトウェアのコミュニティにより書かれた、Fedora にあるソフトウェアのいくつかの詳細なチュートリアルを紹介します。"
 
-#: data/content/using/index.html:70
+#: data/content/using/index.html:62
 msgid "Be a slideshow and Spreadsheet pro!"
 msgstr "スライドショーとスプレッドシートのプロになろう！"
 
-#: data/content/using/index.html:71
+#: data/content/using/index.html:63
 #, python-format
 msgid ""
 "Visit <a href=\"%s\">LearnOpenOffice.org</a> for some awesome, real-life "
 "example tutorials creating slideshows and spreadsheets."
 msgstr "スライドショーとスプレッドシートを作成する、素晴らしい現実的な例のチュートリアルのために <a href=\"%s\">LearnOpenOffice.org</a> を訪ねてください。"
 
-#: data/content/using/index.html:76
+#: data/content/using/index.html:68
 msgid "Create stunning graphics in Inkscape"
 msgstr "Inkscape で美しいグラフィックを作ろう"
 
-#: data/content/using/index.html:77
+#: data/content/using/index.html:69
 #, python-format
 msgid ""
 "<a href=\"%s\">Heathenx's Inkscape video tutorials</a> are very easy-to-"
 "follow and walk you through tons of fun art projects!"
 msgstr "<a href=\"%s\">Heathenx 氏による Inkscape のビデオチュートリアル</a> は、とても簡単に試せて、たくさんの楽しいアートプロジェクトを詳しく説明します。"
 
-#: data/content/using/index.html:82
+#: data/content/using/index.html:74
 msgid "Explore the fantasy of Battle for Wesnoth"
 msgstr "Battle for Wesnoth の物語を探検する"
 
-#: data/content/using/index.html:83
+#: data/content/using/index.html:75
 #, python-format
 msgid ""
 "Get up and running in the medieval fantasy world of Battle for Wesnoth, a "
@@ -3597,34 +3592,34 @@ msgid ""
 "Guide</a>."
 msgstr "ネットワーク型戦略アドベンチャーゲーム Battle for Wesnoth の中世ファンタジー世界で、<a href=\"%s\">The Official Play Guide</a>を用いて稼働可能になりましょう。"
 
-#: data/content/using/index.html:88
+#: data/content/using/index.html:80
 msgid "Find out where all that time went with Hamster!"
 msgstr "Hamster を用いてすべての時間がどこにいったのかを見つけよう！"
 
-#: data/content/using/index.html:89
+#: data/content/using/index.html:81
 #, python-format
 msgid ""
 "<a href=\"%s\">GNOME Journal has a great tutorial</a> for Hamster, a time-"
 "tracking tool that keeps you on task and analyzes how you spend your time."
 msgstr "あなたを仕事に保ち、あなたがどのように時間を費やしたかを分析する、時間追跡ツール、Hamster のために <a href=\"%s\">GNOME Journal に素晴らしいチュートリアルがあります</a>。"
 
-#: data/content/using/index.html:100
+#: data/content/using/index.html:92
 msgid "Your life on Fedora"
 msgstr "あなたの生活のFedora"
 
-#: data/content/using/index.html:101
+#: data/content/using/index.html:93
 msgid ""
 "Sit down and enjoy a chat with a current Fedora user, and learn about their "
 "favorite apps and tips and tricks for using Fedora!"
 msgstr "座って、いまのFedoraユーザとおしゃべりを楽しみましょう。そして、彼ら彼女らの好きなアプリケーションやFedoraを使うためのヒントと裏技について知りましょう。"
 
-#: data/content/using/index.html:107
+#: data/content/using/index.html:99
 #: data/content/using/life/ericchristensen.html:27
 #: data/content/using/life/ericchristensen_short.html:6
 msgid "Eric, Amateur Radio Hobbyist"
 msgstr "Eric氏、アマチュア無線愛好家"
 
-#: data/content/using/index.html:109
+#: data/content/using/index.html:101
 #: data/content/using/life/ericchristensen_short.html:8
 msgid ""
 "Eric \"Sparks\" Christensen, a computer security expert from North Carolina,"
@@ -3634,20 +3629,20 @@ msgid ""
 "Fedora!"
 msgstr "Eric \"Sparks\" Christensen氏（ノースカロライナのコンピュータセキュリティ専門家）は、高校生のときからアマチュア無線に熱心です。この頃、Ericはアマチュア無線について世界中の人々とつながるためにFedoraを使います。アマチュア無線が何であるか、およびFedoraを用いてどのように始めるかについて、もっと学びましょう!"
 
-#: data/content/using/index.html:110 data/content/using/index.html:116
-#: data/content/using/index.html:124 data/content/using/index.html:130
-#: data/content/using/index.html:138 data/content/using/index.html:144
-#: data/content/using/index.html:152 data/content/using/index.html:158
+#: data/content/using/index.html:102 data/content/using/index.html:108
+#: data/content/using/index.html:116 data/content/using/index.html:122
+#: data/content/using/index.html:130 data/content/using/index.html:136
+#: data/content/using/index.html:144 data/content/using/index.html:150
 msgid "Read more >"
 msgstr "さらに読む >"
 
-#: data/content/using/index.html:114
+#: data/content/using/index.html:106
 #: data/content/using/life/robynbergeron.html:28
 #: data/content/using/life/robynbergeron_short.html:6
 msgid "Robyn, Community Marketeer"
 msgstr "Robyn氏、コミュニティ市場調査担当"
 
-#: data/content/using/index.html:115
+#: data/content/using/index.html:107
 #: data/content/using/life/robynbergeron.html:29
 #: data/content/using/life/robynbergeron_short.html:8
 msgid ""
@@ -3657,14 +3652,14 @@ msgid ""
 "conference presentations. Learn how she does it in this chat!"
 msgstr "Robyn Bergeron は、アリゾナ州フラッグスタッフ出身の市場調査の経歴を持つお母さんです。日々のコンピューティングの必要性を満たすために Fedora を使用します。また、カンファレンスのプレゼンテーションを含め、Fedora Project のマーケティングの仕事において使用します。このお話で彼女がどのようにしているか詳しく知りましょう！"
 
-#: data/content/using/index.html:122
+#: data/content/using/index.html:114
 #: data/content/using/life/chrisbredesen_short.html:6
 #: data/content/using/life/thomascameron.html:30
 #: data/content/using/life/thomascameron_short.html:6
 msgid "Thomas, Doting Dad"
 msgstr "Thomas氏、溺愛するお父さん"
 
-#: data/content/using/index.html:123
+#: data/content/using/index.html:115
 #: data/content/using/life/chrisbredesen_short.html:8
 #: data/content/using/life/thomascameron.html:31
 #: data/content/using/life/thomascameron_short.html:8
@@ -3675,13 +3670,13 @@ msgid ""
 "Check this interview out!"
 msgstr "Thomas Cameron は、長期間の Fedora ユーザーでテキサス州出身のお父さんです。また、彼の7歳の娘によりテストされ認められるので、子ども用ゲームとアプリケーションの概要を与えます。あなたの子どものためにどのアプリケーションを Fedora にインストールするか決めていませんか？このインタビューをチェックしましょう！"
 
-#: data/content/using/index.html:128
+#: data/content/using/index.html:120
 #: data/content/using/life/stevemilner.html:28
 #: data/content/using/life/stevemilner_short.html:6
 msgid "Steve, Information Security Analyst"
 msgstr "Steve氏、情報セキュリティアナリスト"
 
-#: data/content/using/index.html:129
+#: data/content/using/index.html:121
 #: data/content/using/life/stevemilner.html:29
 #: data/content/using/life/stevemilner_short.html:8
 msgid ""
@@ -3691,13 +3686,13 @@ msgid ""
 "for you in keeping your systems safe, too!"
 msgstr "Steve Milnerは、ノースカロライナの情報セキュリティアナリストです。彼はセキュリティ問題のためにウェブアプリケーションを監査するためにFedoraを使います。Steveはセキュリティ分析のためにFedoraにいくつかの素晴らしいアプリを私たちに丹念に教えます。また、あなたのシステムを安全に保ち続けるいくつかのヒントも持っています。"
 
-#: data/content/using/index.html:136
+#: data/content/using/index.html:128
 #: data/content/using/life/fabianscherschel.html:27
 #: data/content/using/life/fabianscherschel_short.html:6
 msgid "Fab, Linux Outlaws Podcaster"
 msgstr "Fab氏、Linux Outlawsポッドキャスター"
 
-#: data/content/using/index.html:137
+#: data/content/using/index.html:129
 #: data/content/using/life/fabianscherschel_short.html:8
 msgid ""
 "Fabian A. Scherschel, a university student from Bonn, Germany, is well-known"
@@ -3706,11 +3701,11 @@ msgid ""
 "tools available in it for the podcast's recording and post-production."
 msgstr "Fabian A. Scherschel氏（ドイツのボン生まれの大学生）は、Dan LynchさんとともにLinux Outlawsポッドキャストを運営する役割でLinuxコミュニティにおいてよく知られています。Fab氏は、Fedoraとそれで使えるオーディオツールをポッドキャストの録音とポストプロダクションのために使用していることを、このインタビューで明らかにしました。"
 
-#: data/content/using/index.html:142
+#: data/content/using/index.html:134
 msgid "Michel, Social Media and Web Researcher"
 msgstr "Michel氏、ソーシャルメディアとウェブの研究者"
 
-#: data/content/using/index.html:143
+#: data/content/using/index.html:135
 #: data/content/using/life/michelsalim.html:28
 #: data/content/using/life/michelsalim_short.html:8
 msgid ""
@@ -3721,11 +3716,11 @@ msgid ""
 "with Fedora."
 msgstr "Michel Alexandre Salim は、元々インドネシアの出身で、現在はドイツで博士号取得に励んでいます。彼の研究グループはウィキとソフトウェア開発ツールのあたりに焦点を当てています。Michel は長年の Fedora ユーザーです。また、Fedora とともに使用するための最も良いソーシャルメディアとウェブ開発ツールの最高のものを探しています。"
 
-#: data/content/using/index.html:150
+#: data/content/using/index.html:142
 msgid "Máirín, Artist and Designer"
 msgstr "Máirín氏、アーティストおよびデザイナー"
 
-#: data/content/using/index.html:151
+#: data/content/using/index.html:143
 #: data/content/using/life/mairinduffy.html:29
 #: data/content/using/life/mairinduffy_short.html:8
 msgid ""
@@ -3735,12 +3730,12 @@ msgid ""
 "creative itch? Máirín recommends a ton of apps in Fedora for you!"
 msgstr "Máirín Duffy は、ボストン出身のインタラクションデザイナーでありグラフィックアーティストです。すべてのデザインの仕事のために Fedora だけを使用します。ウェブサイト、GUI モックアップ、T シャツ、ポスター、ユーザビリティテスト - 彼女はすべて Fedora を使用します。クリエイティブな欲求がわきましたか？ Máirín は Fedora にある数多くのアプリケーションを推薦します！"
 
-#: data/content/using/index.html:156
+#: data/content/using/index.html:148
 #: data/content/using/life/chrisbredesen.html:26
 msgid "Chris, Java Web Application Developer"
 msgstr "Chris氏、Java Web アプリケーション開発者"
 
-#: data/content/using/index.html:157
+#: data/content/using/index.html:149
 #: data/content/using/life/chrisbredesen.html:27
 msgid ""
 "Chris Bredesen is a Java developer from Ft. Lauderdale who uses Fedora as "
@@ -3761,7 +3756,6 @@ msgstr "Fedora Project - Chris Bredesenへのインタビュー"
 #: data/content/using/life/robynbergeron.html:16
 #: data/content/using/life/stevemilner.html:16
 #: data/content/using/life/thomascameron.html:16
-#: data/content/using/tutorials/agave.html:14
 #: data/content/using/tutorials/cheese.html:14
 #: data/content/using/tutorials/gnote.html:14
 #: data/content/using/tutorials/launcher.html:14
@@ -4644,7 +4638,6 @@ msgstr "Fedora が多くのソーシャルメディアネットワークにお�
 
 #: data/content/using/life/michelsalim.html:25
 #: data/content/using/life/robynbergeron.html:26
-#: data/content/using/tutorials/agave.html:24
 msgid "&#8592; Back to the main 'Using Fedora' page"
 msgstr "&#8592; \"Fedoraの使い方\"のメインページに戻る"
 
@@ -5488,334 +5481,6 @@ msgstr "SameGnome または Solitaire !"
 msgid "Thanks, Thomas!"
 msgstr "ありがとう、Thomas!"
 
-#: data/content/using/tutorials/agave.html:7
-msgid "Fedora Project - Creating color palettes with Agave."
-msgstr "Fedora Project - Agaveを用いたカラーパレットの作り方"
-
-#: data/content/using/tutorials/agave.html:17
-msgid ""
-"Did you know the artwork for Fedora is produced by community team using the "
-"creative tools in Fedora? Learn more."
-msgstr "FedoraのアートワークはFedoraにあるクリエイティブなツールを用いてコミュニティのチームにより作られていることを知っているでしょうか？もっと知りましょう。"
-
-#: data/content/using/tutorials/agave.html:26
-msgid "Building beautiful color palettes for your home and wardrobe"
-msgstr "あなたの家とワードローブのために美しいカラーパレットをつくる"
-
-#: data/content/using/tutorials/agave.html:28
-msgid "Installing Agave"
-msgstr "Agaveをインストールする"
-
-#: data/content/using/tutorials/agave.html:30
-msgid "If you have never used Agave before, you'll need to install it:"
-msgstr "まだAgaveを使ったことがなければ、インストールする必要があります:"
-
-#: data/content/using/tutorials/agave.html:32
-msgid ""
-"Open up the Add/Remove Software wizard by selecting the <strong>System → "
-"Administration → Add/Remove Software</strong> desktop menu item."
-msgstr "<strong>システム → 管理 → ソフトウェアの追加/削除</strong> デスクトップメニュー項目を選択して、ソフトウェアの追加/削除ウィザードを開きます。"
-
-#: data/content/using/tutorials/agave.html:33
-msgid ""
-"The Add/Remove Software wizard will appear. (See screenshot on the right.)"
-msgstr "ソフトウェアの追加/削除ウィザードが表示されます。 (右にあるスクリーンショットを参照してください。)"
-
-#: data/content/using/tutorials/agave.html:34
-msgid ""
-"In the search box in the upper left, search for <strong>>Agave</strong> and "
-"click the \"Find\" button."
-msgstr "左上にある検索ボックスに <strong>Agave</strong> と入力して \"検索\" ボタンをクリックします。"
-
-#: data/content/using/tutorials/agave.html:35
-msgid ""
-"Check the Agave checkbox on the right, and click on the \"Apply\" button in "
-"the lower right of the Add/Remove Software wizard."
-msgstr "右側の Agave チェックボックスをチェックして、ソフトウェアの追加/削除ウィザードの右下にある \"適用\" ボタンをクリックします。"
-
-#: data/content/using/tutorials/agave.html:36
-msgid ""
-"Once the Add/Remove Software wizard finishes, you should have Agave "
-"installed on your system!"
-msgstr "ソフトウェアの追加/削除ウィザードを終了すると、あなたのシステムに Agave がインストールされます！"
-
-#: data/content/using/tutorials/agave.html:38
-msgid ""
-"Now that you have Agave installed, go ahead and open it up by selecting the "
-"<strong>Applications  →  Graphics  →  Agave</strong> desktop menu item."
-msgstr "これで Agave がインストールされました、続けて、<strong>アプリケーション  →  グラフィックス  →  Agave</strong> デスクトップメニュー項目を選択して開きましょう。"
-
-#: data/content/using/tutorials/agave.html:40
-msgid "Picking a base color for your first palette"
-msgstr "初めてのパレットのベースカラーを選択する"
-
-#: data/content/using/tutorials/agave.html:42
-msgid ""
-"At the right, you'll see a screenshot of Agave. Your Agave window should "
-"look something like this, although you likely won't have any favorite "
-"palettes saved in the right panel."
-msgstr "右に Agave のスクリーンショットが見えるでしょう。Agave ウィンドウは、右パネルに保存されたお気に入りのパレットがないかもしれませんが、このように見えるでしょう。"
-
-#: data/content/using/tutorials/agave.html:43
-msgid ""
-"The first thing you'll want to do is to choose a base color for your "
-"palette. From this base color, Agave can automatically generate a number of "
-"different harmonious color palettes using multiple techniques. So let's pick"
-" that base color!"
-msgstr "あなたがしたい最初のことは、パレットのベースカラーを選択することです。Agave は複数の技術を使用して、このベースカラーから、多くの異なる調和されたカラーパレットを自動的に生成することができます。"
-
-#: data/content/using/tutorials/agave.html:44
-msgid ""
-"There are two main ways to pick a base color, using the color chooser button"
-" or using the palettes along the bottom of the window."
-msgstr "ベースカラーを選択する2つのおもな方法があります。カラー選択ボタンを使用する方法とウィンドウ下部のパレットを使用する方法です。"
-
-#: data/content/using/tutorials/agave.html:46
-msgid "Color chooser methods"
-msgstr "カラー選択による方法"
-
-#: data/content/using/tutorials/agave.html:47
-msgid ""
-"Click on the small button on the left side of the Agave window, immediately "
-"above the 'Palette' label. That will bring up the <strong>Pick a "
-"Color</strong> dialog."
-msgstr "Agave ウィンドウの左側にある小さなボタン（ 'Palette' ラベルのすぐ上）をクリックします。<strong>Pick a Color</strong> ダイアログが表れるでしょう。"
-
-#: data/content/using/tutorials/agave.html:48
-msgid "Want to visually explore the color possibilities?"
-msgstr "利用可能なカラーを視覚的に調べたいですか？"
-
-#: data/content/using/tutorials/agave.html:49
-msgid ""
-"You may drag the small black circle within the triangle on the left of the "
-"<strong>Pick a color</strong> dialog to change the color's shade, and drag "
-"it circularly around the rainbow to change the hue of the color."
-msgstr "カラーの明度を変更するために、<strong>Pick a color</strong> ダイアログの左で三角形の中にある小さな黒丸をドラッグできます。また、カラーの色相を変更するために、虹色の周りを丸くドラッグできます。"
-
-#: data/content/using/tutorials/agave.html:50
-msgid "Want to pick a color you like from a photo or other graphic?"
-msgstr "写真や他のグラフィックから好きなカラーを選択したいですか？"
-
-#: data/content/using/tutorials/agave.html:51
-msgid ""
-"Keep the <strong>Pick a color</strong> dialog open. Open up the graphic "
-"you'd like to pick a color from. It can be in a browser window, image "
-"viewer, or email client - it really doesn't matter, it just needs to be on "
-"screen. Now, click on the small eyedropper icon button in the lower left of "
-"the <strong>Pick a color</strong> dialog. Your mouse pointer will turn into "
-"a little color dropper icon. Hover your new dropper mouse pointer over the "
-"graphic you want to pick a color from, and click on the area that has the "
-"color. The <strong>Pick a color</strong> dialog will update and show the "
-"color you picked."
-msgstr "<strong>Pick a color</strong> ダイアログを開いたままにしておきます。カラーを選択したいグラフィックを開きます。ブラウザ・ウィンドウ、イメージ・ビューアー、または email クライアントで構いません － それは大したことではありません、ただ画面にある必要があります。ここで、<strong>Pick a color</strong> ダイアログの左下にある小さな点眼器のアイコンボタンをクリックします。マウスポインターが小さなカラー・スポイト・アイコンに変わります。カラーを選択したいグラフィックに新しいスポイトのマウスポインターを持っていき、そのカラーのある範囲をクリックします。<strong>Pick a color</strong> ダイアログが更新され、選択したカラーが表示されるでしょう。"
-
-#: data/content/using/tutorials/agave.html:52
-msgid "Have a specific color code in mind?"
-msgstr "具体的なカラーコードが頭にありますか？"
-
-#: data/content/using/tutorials/agave.html:53
-msgid ""
-"Using the <strong>Color name:</strong> field in the <strong>Pick a "
-"color</strong> dialog, you can enter in HTML Hex color codes (They look like"
-" this: #FFCC00). You may also enter in manual Hue/Saturation/Value or "
-"Red/Green/Blue color values. This is helpful if you've picked a color in "
-"another graphics program or in HTML and want to generate a palette of more "
-"colors that will work with it."
-msgstr "<strong>Pick a color</strong> ダイアログにある <strong>Color name:</strong> フィールドを使用して、HTML 16進カラーコード（このように見えます: #FFCC00）を入力することができます。手動で色相/彩度/明度または赤/緑/青のカラー値を入力することもできます。他のグラフィックス・アプリケーションや HTML でカラーを選択して、それでうまくいくより多くのカラーのパレットを作成したいならば、これは役に立ちます。"
-
-#: data/content/using/tutorials/agave.html:54
-msgid "Finishing Up"
-msgstr "これで終わりです"
-
-#: data/content/using/tutorials/agave.html:55
-msgid ""
-"Once you've picked the color you like, click on the <strong>OK</strong> "
-"button in the lower right of the <strong>Pick a color</strong> dialog to set"
-" the color."
-msgstr "好きなカラーを選択すると、カラーを設定するために、<strong>Pick a color</strong> ダイアログの右下部にある <strong>OK</strong> ボタンをクリックします。"
-
-#: data/content/using/tutorials/agave.html:57
-msgid "Palette methods"
-msgstr "パレットによる方法"
-
-#: data/content/using/tutorials/agave.html:58
-msgid ""
-"Agave comes pre-loaded with a set of large color palettes. They include "
-"\"Visibone,\" \"Tango Icon Theme Palette,\" \"GNOME Icon Palette,\" and "
-"\"Web Safe Colors.\" There is a <strong>Palette</strong> dropdown in the "
-"lower left of the main Agave application window. You can pick between these "
-"palettes from that dropdown. Once the palette is visible, you can hover over"
-" the colors in the palette to view their HTML hex codes, and you can click "
-"on any color with the hand icon to set that color."
-msgstr "Agave は大きなカラーパレットのセットを事前にロードしています。それらは \"Visibone\", \"Tango Icon Theme Palette\", \"GNOME Icon Palette\", および \"Web Safe Colors\" を含みます。Agave アプリケーションのメイン・ウィンドウの左下にある<strong>パレット</strong> ・ドロップダウンがあります。そのドロップダウンからこれらのパレットの中から選択できます。パレットが見えるようになると、それらの HTML 16進コードを見るためにパレットで色を選択できます、またカラーをセットするために手アイコンであらゆるカラーをクリックできます。"
-
-#: data/content/using/tutorials/agave.html:60
-msgid "Exploring your first palette"
-msgstr "初めてのパレットを探索する"
-
-#: data/content/using/tutorials/agave.html:62
-msgid ""
-"Now it's time to dig into your base color and discover what kinds of color "
-"palettes you can create with it. There are three main ways you can work with"
-" your base color to generate palettes - changing the color scheme of the "
-"palette, changing the saturation of the palette, and changing the brightness"
-" of the palette."
-msgstr "今こそ、あなたのベースカラーに手をつけて、それとともにどんなカラーパレットを作成できるかをわかるときです。パレットを生成するためにベースカラーを取り扱える3つのおもな方法があります - パレットのカラースキーマを変更する、パレットの彩度を変更する、およびパレットの明るさを変更する。"
-
-#: data/content/using/tutorials/agave.html:63
-msgid "Changing the color schemes"
-msgstr "カラースキーマの変更"
-
-#: data/content/using/tutorials/agave.html:65
-msgid ""
-"You can change the number of colors in the palette associated with your base"
-" color by changing the scheme between the colors. Depending on the "
-"relationship you choose, Agave will select between one to three companion "
-"colors for your base color. Here's a summary of the color schemes you can "
-"choose from. Choose between these via the dropdown in the center left of "
-"Agave."
-msgstr "カラーの間のスキーマを変更することにより、ベースカラーに関連したパレットにおけるカラーの数を変更できます。選択したものに依存して、Agave はベースカラーに対する1つから3つの仲間のカラーを選択します。これはあなたが選択したカラースキーマの概要です。Agave の中央左にあるドロップダウンを通してこれらの中で選択します。"
-
-#: data/content/using/tutorials/agave.html:67
-msgid ""
-"<strong>Complements</strong> - complementary colors are opposite each other "
-"on the color wheel."
-msgstr "<strong>補色 (Complements)</strong> - 補色は色相環においてお互いに反対にあります。"
-
-#: data/content/using/tutorials/agave.html:68
-msgid ""
-"<strong>Split-Complements</strong> - A split complements color scheme is a "
-"three-color scheme, involving a base color, and two colors that are "
-"equidistant from the base color and its complement."
-msgstr "<strong>分裂補色 (Split-Complements)</strong> - 分裂補色カラースキーマは、ベースカラー、およびベースカラーとその補色から等距離にある2色、を含む3色スキーマです。"
-
-#: data/content/using/tutorials/agave.html:69
-msgid ""
-"<strong>Triads</strong> - Triad color schemes involved three colors that are"
-" equally spaced along the color wheel, and you can draw a regular triangle "
-"between them."
-msgstr "<strong>三色配色 (Triads)</strong> - 三色配色スキーマは、色相環において等距離にある三色を含み、それらの間に正三角形を描けます。"
-
-#: data/content/using/tutorials/agave.html:70
-msgid ""
-"<strong>Tetrads</strong> - A tetrad color scheme in Agave simply involves "
-"four colors evenly spaced around the color scheme, such that you could draw "
-"a square between them."
-msgstr "<strong>四色配色 (Tetrads)</strong> - 四色配色スキーマは Agave では単に、それらの間に正方形を描けるような、色相環の周りで等間隔の四色を含みます。"
-
-#: data/content/using/tutorials/agave.html:71
-msgid ""
-"<strong>Analogous</strong> - An analogous color scheme in Agave is a three-"
-"color scheme of three adjacent colors."
-msgstr "<strong>類似色 (Analogous)</strong> - Agave の類似色スキーマは3つの隣接的な色の三色スキーマです。"
-
-#: data/content/using/tutorials/agave.html:72
-msgid ""
-"<strong>Monochromatic</strong> - Monochromatic color schemes in Agave "
-"involve three colors, all of the same hue, but with different brightness "
-"levels."
-msgstr "<strong>単色 (Monochromatic)</strong> - Agave の単色スキーマは、すべて同じ色相で、異なる明るさレベルを持つ、三色を含みます。"
-
-#: data/content/using/tutorials/agave.html:75
-msgid "Changing the saturation of the palette"
-msgstr "パレットの彩度の変更"
-
-#: data/content/using/tutorials/agave.html:77
-msgid ""
-"Once you've picked a color scheme you like, you can tweak the saturation of "
-"the palette by pressing the up and down saturation icons in Agave as shown "
-"in the screenshot. Toning down saturation in a color palette can convert "
-"your palette from having very deep rich colors, to having very delicate and "
-"slight tones. Changing the saturation of a palette is a technique you can "
-"use to change its mood."
-msgstr "一度あなたが好きなカラースキーマを選択すると、スクリーンショットに示されるように、Agave にある彩度を上げ下げするアイコンを押すことにより、パレットの彩度を微調整することができます。カラーパレットで彩度を下げることにより、パレットを非常に深く濃い色から非常に微妙でわずかなトーンに変えることができます。パレットの彩度を変更することは、あなたがそのムードを変えるために使えるテクニックです。"
-
-#: data/content/using/tutorials/agave.html:79
-msgid "Changing the brightness of the palette"
-msgstr "パレットの明るさの変更"
-
-#: data/content/using/tutorials/agave.html:80
-msgid ""
-"Tweaking the brightness of a palette is another way to change the mood and "
-"feeling of a color scheme. By pressing the up and down brightness icons in "
-"Agave as shown in the screenshot, you can turn the brightness of all colors "
-"in the palette up or down."
-msgstr "パレットの明るさを微調整することは、カラースキーマのムードと感覚を変えるもう一つの方法です。スクリーンショットに示されるように Agave で明るさを上げ下げするアイコンを押すことにより、パレットにあるすべての色の明るさを上げたり下げたりできます。"
-
-#: data/content/using/tutorials/agave.html:84
-msgid "Saving your palette & using it!"
-msgstr "パレットの保存と使用！"
-
-#: data/content/using/tutorials/agave.html:86
-msgid ""
-"Once you've got a palette you're happy with, the simplest way to save your "
-"palette is to press \"PrtSc\" on your keyboard to create a screenshot of the"
-" color scheme that you can print and bring to the store to pick out clothing"
-" or decorations for your home."
-msgstr "あなたが幸せになれるパレットを得たならば、衣服や家の飾りを選ぶために、印刷したりお店に持っていったりできる、カラースキーマのスクリーンショットを作成するために、パレットを保存する最も簡単な方法はキーボードにある \"PrtSc\" を押すことです。"
-
-#: data/content/using/tutorials/agave.html:87
-msgid ""
-"However, it's very useful to keep a list of your favorite colors handy in "
-"Agave. You'll notice a screenshot of the Agave favorites pane. To save your "
-"full palette here, color-by-color:"
-msgstr "しかしながら、Agave で便利なお気に入りのカラーのリストをキープすることは非常に役立ちます。Agave のお気に入りペインのスクリーンショットに注目してください。完全なパレットを保存するために、1色ごとに以下を実行します:"
-
-#: data/content/using/tutorials/agave.html:89
-msgid ""
-"Double-click on the first color of your palette. It should have a thick "
-"black border around it to indicate that it is selected."
-msgstr "パレットの最初のカラーをダブルクリックします。選択されたことを表すために、その周りが太い黒い枠線になるでしょう。"
-
-#: data/content/using/tutorials/agave.html:90
-msgid ""
-"Press the <strong>+</strong> icon on the bottom of the \"Favorites\" pane on"
-" the right of Agave's window."
-msgstr "Agave ウィンドウの右にある \"お気に入り\" ペインの下部にある <strong>+</strong> アイコンを押します。"
-
-#: data/content/using/tutorials/agave.html:91
-msgid ""
-"Repeat this process until you've saved each color in your favorites pane."
-msgstr "お気に入りペインにそれぞれのカラーを保存するまで、このプロセスを繰り返します。"
-
-#: data/content/using/tutorials/agave.html:92
-msgid ""
-"If at any point your color palette changes during this process, you can "
-"press the <strong>Back</strong> button in the upper left of the application "
-"to go back to your color palette."
-msgstr "このプロセス中にカラーパレットが変更されるときいつでも、カラーパレットを元に戻すために、アプリケーションの左上にある<strong>戻る</strong>ボタンを押すことができます。"
-
-#: data/content/using/tutorials/agave.html:94
-#, python-format
-msgid ""
-"You can save all of your favorite colors in the Gimp palette file format "
-"(GPL) by visiting the <strong>File → Export Favorites...</strong> item in "
-"the Agave main menu. You may import this palette into the Gimp graphics "
-"application - <a href=\"%s\">the Gimp manual has more information on this "
-"process</a>."
-msgstr "Agave のメインメニューで <strong>ファイル → お気に入りをエクスポート...</strong> とすることにより、Gimp palette file format (GPL) でお気に入りのカラーをすべて保存できます。このパレットを Gimp グラフィックス・アプリケーションにインポートすることができます。<a href=\"%s\">Gimp マニュアルにこのプロセスの詳細があります</a>。"
-
-#: data/content/using/tutorials/agave.html:96
-#: data/content/using/tutorials/cheese.html:62
-#: data/content/using/tutorials/gnote.html:91
-#: data/content/using/tutorials/launcher.html:49
-msgid "Enjoy and share!"
-msgstr "楽しもう！共有しよう！"
-
-#: data/content/using/tutorials/agave.html:97
-msgid ""
-"Now you know a little bit about how to create harmonious color palettes by "
-"exploring Agave. Have fun, and be sure to share these tips you learned with "
-"others!"
-msgstr "これで Agave を探索することにより、調和のとれたカラーパレットを作成する方法について少し知ることができました。楽しんでください、そしてこれらのヒントを他の誰かと確実に共有してください"
-
-#: data/content/using/tutorials/agave.html:99
-#: data/content/using/tutorials/cheese.html:66
-#: data/content/using/tutorials/gnote.html:96
-#: data/content/using/tutorials/launcher.html:53
-msgid "&#8592; Read about more ways to use Fedora!"
-msgstr "&#8592; Fedora の使い方について、もっと知りたい！"
-
 #: data/content/using/tutorials/cheese.html:7
 msgid "Fedora Project - Using Cheese for photo tricks."
 msgstr "Fedora Project - 写真トリック用のCheeseの使い方"
@@ -5983,11 +5648,23 @@ msgid ""
 "your nose disappears and your eyes grow huge! This effect warps your image."
 msgstr "<strong>Warp</strong> - 私、なんて鼻が大きいのでしょう - ひとつの誤りと鼻が消え、目が大きくなります! この効果は画像をゆがめます。"
 
+#: data/content/using/tutorials/cheese.html:62
+#: data/content/using/tutorials/gnote.html:91
+#: data/content/using/tutorials/launcher.html:49
+msgid "Enjoy and share!"
+msgstr "楽しもう！共有しよう！"
+
 #: data/content/using/tutorials/cheese.html:64
 msgid ""
 "Now you have a fun idea to try out for your next party! Have fun, and be "
 "sure to share these tips you learned with others!"
 msgstr "次のパーティに備えて、楽しいアイディアを試しましょう! 楽しんでください、そしてこれらの学んだヒントを他の人と確実に共有してください!"
+
+#: data/content/using/tutorials/cheese.html:66
+#: data/content/using/tutorials/gnote.html:96
+#: data/content/using/tutorials/launcher.html:53
+msgid "&#8592; Read about more ways to use Fedora!"
+msgstr "&#8592; Fedora の使い方について、もっと知りたい！"
 
 #: data/content/using/tutorials/gnote.html:7
 msgid "Fedora Project - Using Gnote to unclutter your life."
@@ -6540,35 +6217,31 @@ msgstr "国際化"
 msgid "News"
 msgstr "ニュース"
 
-#: data/templates/foot.html:61
-msgid "Distribution"
-msgstr "ディストリビューション"
-
-#: data/templates/foot.html:67
+#: data/templates/foot.html:66
 msgid "Fedora is sponsored by Red Hat."
 msgstr "Fedora is sponsored by Red Hat."
 
-#: data/templates/foot.html:68
+#: data/templates/foot.html:67
 msgid "Learn more about the relationship between Red Hat and Fedora >"
 msgstr "Red Hat と Fedora の関係性について詳しく知る >"
 
-#: data/templates/foot.html:69
-msgid "© 2012 Red Hat, Inc. and others."
-msgstr "© 2012 Red Hat, Inc. and others."
+#: data/templates/foot.html:68
+msgid "© 2013 Red Hat, Inc. and others."
+msgstr "© 2013 Red Hat, Inc. and others."
 
-#: data/templates/foot.html:72
+#: data/templates/foot.html:71
 msgid "Sponsors"
 msgstr "スポンサー"
 
-#: data/templates/foot.html:73
+#: data/templates/foot.html:72
 msgid "Legal"
 msgstr "Legal"
 
-#: data/templates/foot.html:74
+#: data/templates/foot.html:73
 msgid "Trademark Guidelines"
 msgstr "商標使用ガイドライン"
 
-#: data/templates/foot.html:76
+#: data/templates/foot.html:75
 msgid ""
 "The Fedora Project is maintained and driven by the community. This is a "
 "community maintained site. Red Hat is not responsible for content."

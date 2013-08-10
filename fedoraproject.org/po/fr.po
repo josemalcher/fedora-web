@@ -4,8 +4,8 @@
 # 
 # Translators:
 # Dimitris Glezos <glezos@indifex.com>, 2011
-# dominique bribanick <chepioq@gmail.com>, 2011, 2012
-# Elodie <djezael@gmail.com>, 2011
+# dominique bribanick <chepioq@gmail.com>, 2011-2013
+# Elodie, 2011
 # MarbolanGos Fabien <marbolangos@gmail.com>, 2012
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2011
 # Jérôme Fenal <jfenal@gmail.com>, 2013
@@ -15,9 +15,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-07-02 23:14+0200\n"
-"PO-Revision-Date: 2013-07-02 21:14+0000\n"
-"Last-Translator: robyduck <robyduck@fedoraproject.org>\n"
+"POT-Creation-Date: 2013-07-11 17:31+0200\n"
+"PO-Revision-Date: 2013-07-28 05:40+0000\n"
+"Last-Translator: dominique bribanick <chepioq@gmail.com>\n"
 "Language-Team: French <trans-fr@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,7 +30,7 @@ msgstr ""
 msgid "Fedora Project - What is Fedora and what makes it different?"
 msgstr "Projet Fedora - Qu'est-ce que Fedora et pourquoi est-il différent ?"
 
-#: data/content/about-fedora.html:13 data/content/index.html:131
+#: data/content/about-fedora.html:13 data/content/index.html:145
 #: data/templates/foot.html:10
 msgid "About Fedora"
 msgstr "À propos de Fedora"
@@ -74,7 +74,7 @@ msgid ""
 "technologies."
 msgstr "Le <strong>projet Fedora</strong> est le nom d'une communauté mondiale qui aime, utilise et développe les logiciels libres. Nous voulons faire avancer le développement, la diffusion de code libre et de contenu en travaillant ensemble, en tant que communauté. Fedora est sponsorisé par <strong><a href=\\\"http://redhat.com\\\">Red Hat</a></strong>, le plus grand fournisseur au monde de technologies Open Source. Red Hat investit dans Fedora pour encourager la collaboration et l'élaboration de nouveaux <a href=\\\"http://fr.wikipedia.org/wiki/Logiciel_libre\\\">logiciels libres</a>."
 
-#: data/content/about-fedora.html:29 data/content/index.html:189
+#: data/content/about-fedora.html:29 data/content/index.html:203
 msgid "What makes Fedora different?"
 msgstr "Pourquoi Fedora est-il différent ?"
 
@@ -293,7 +293,7 @@ msgstr "Contacter Fedora"
 msgid "Contact list of various projects and groups."
 msgstr "Liste des contacts des principaux projets et groupes."
 
-#: data/content/contact.html:27 data/templates/foot.html:71
+#: data/content/contact.html:27 data/templates/foot.html:70
 msgid "Contact"
 msgstr "Contacter"
 
@@ -807,8 +807,10 @@ msgid "Fedora %(release)s Source RPMs"
 msgstr "Les RPM sources de Fedora %(release)s"
 
 #: data/content/get-fedora-options.html:8
-msgid "Fedora Project - Get Fedora by Desktops, Formats or Spins."
-msgstr "Projet Fedora - Obtenir Fedora par gestionnaire de bureaux, formats ou versions personnalisées."
+msgid ""
+"Fedora Project - Get Fedora: Desktops, Other Formats, Spins, Cloud Images or"
+" Secondary Arches."
+msgstr "Fedora Project - Obtenez Fedora : environnements de bureau, autres formats, spins, images cloud ou architectures exotiques."
 
 #: data/content/get-fedora-options.html:28 data/content/get-fedora.html:52
 msgid "Desktops"
@@ -1272,7 +1274,7 @@ msgstr "Téléchargez ces images afin de les utiliser dans votre cloud privé, o
 msgid ""
 "For any doubts about running Instances on OpenStack read the <a "
 "href=\"%s\">documentation</a>."
-msgstr ""
+msgstr "En cas de doutes sur l'éxécution d'instances sur OpenStack, veuillez lire la <a href=\"%s\">documentation</a>."
 
 #: data/content/get-fedora-options.html:343
 #: data/content/get-fedora-options.html:350
@@ -1571,8 +1573,8 @@ msgid "Games, Design, Security, and others"
 msgstr "Jeux, design, sécurité et autres"
 
 #: data/content/get-fedora.html:54
-msgid "EC2 Cloud Images"
-msgstr "Image pour cloud EC2"
+msgid "Images for public and private clouds"
+msgstr "Images pour les clouds puplics ou privés."
 
 #: data/content/get-fedora.html:55
 msgid "ARM, s390, PPC"
@@ -1599,11 +1601,11 @@ msgstr " ou "
 msgid "a blank %sGB+ USB stick."
 msgstr "une clé USB vierge d'au moins %s Gio."
 
-#: data/content/get-fedora.html:67 data/content/index.html:217
+#: data/content/get-fedora.html:67 data/content/index.html:231
 msgid "64-bit Intel-compatible PC"
 msgstr "PC compatible Intel 64 bits"
 
-#: data/content/get-fedora.html:68 data/content/index.html:218
+#: data/content/get-fedora.html:68 data/content/index.html:232
 #, python-format
 msgid "%sGB memory (RAM)"
 msgstr "%s Gio de mémoire (RAM)"
@@ -1871,22 +1873,36 @@ msgstr "Plus d'options >"
 msgid "Try Fedora %(release)s %(state)s Now!"
 msgstr "Essayer Fedora %(release)s %(state)s !"
 
-#: data/content/index.html:77
+#: data/content/index.html:81
+msgid ""
+"“To say he will be missed is an understatement. He has been a colleague, a "
+"team member, a source of wisdom and advice, and above all, a friend and "
+"inspiration to countless people in the Fedora community over the past "
+"decade. His seminal and invaluable work in Fedora and free software will "
+"live on for years to come, and the legacy of his spirit will stay with the "
+"community, and with many of us individually, forever.”"
+msgstr "« Dire qu'il nous manquera est un euphémisme. Il a été un collègue, un membre, un mentor précieux et surtout, un ami et un modèle pour de nombreuses personnes au sein de la communauté Fedora lors de la dernière décennie. Son travail prolifique et inestimable dans Fedora et les logiciels libres continuera à vivre dans les années à venir, et son esprit restera présent au sein de la communauté et dans nos cœurs. Éternellement. »"
+
+#: data/content/index.html:82
+msgid "Share your Seth stories >"
+msgstr "Partagez votre perte >"
+
+#: data/content/index.html:90
 msgid "3D Printing with Fedora 19"
 msgstr "L'impression 3D sous Fedora 19"
 
-#: data/content/index.html:78
+#: data/content/index.html:91
 msgid ""
 "Freely model and print in 3D using the new tools now included in Fedora. "
 "Software such as OpenSCAD, Skeinforge, SFACT, Printrun, and RepetierHost are"
 " now ready-to-go in the Fedora 19 repositories."
 msgstr "Modélisez et imprimez en 3D simplement en utilisant les nouveaux outils inclus dans Fedora. Les logiciels tels que OpenSCAD, Skeinforge, SFACT, Printrun et RepetierHost sont dorénavant prêt à l'emploi dans les dépôts logiciels de Fedora 19."
 
-#: data/content/index.html:79 data/content/index.html:89
+#: data/content/index.html:92 data/content/index.html:102
 msgid "Learn More >"
 msgstr "En savoir plus >"
 
-#: data/content/index.html:88
+#: data/content/index.html:101
 msgid ""
 "Pidora offers all the Fedora packages you love in a Fedora Remix compiled "
 "specifically for the Raspberry Pi hardware. The graphical first boot "
@@ -1894,11 +1910,11 @@ msgid ""
 "can do it from the start with some special Pidora features."
 msgstr "Pidora offre tous vos paquets Fedora préférés dans une distribution personnalisée Fedora compilée spécifiquement pour les matériels Raspberry Pi. L'interface graphique de démarrage initial inclut des modules spécifiques au Pi. À moins que vous ne choisissiez de travailler sans écran, auquel vous pourrez utiliser les fonctionnalités spécifiques Pidora dès le départ."
 
-#: data/content/index.html:98
+#: data/content/index.html:111
 msgid "A worldwide community of friends."
 msgstr "Une communauté mondiale d'amis"
 
-#: data/content/index.html:99
+#: data/content/index.html:112
 msgid ""
 "Fedora is a Linux-based operating system that showcases the latest in free "
 "software. Fedora is always free for anyone to use, modify, and distribute. "
@@ -1906,124 +1922,124 @@ msgid ""
 " Fedora Project."
 msgstr "Fedora est un système d'exploitation basé sur Linux servant de vitrine aux logiciels libres. Fedora est libre : tout le monde peut l'utiliser, le modifier et le distribuer. Il est construit de par le monde par une communauté de passionnés : le Projet Fedora. "
 
-#: data/content/index.html:100 data/content/join-fedora.html:83
+#: data/content/index.html:113 data/content/join-fedora.html:83
 #: data/content/join-fedora.html:90 data/content/join-fedora.html:98
 #: data/content/join-fedora.html:106 data/content/join-fedora.html:114
 #: data/content/join-fedora.html:122
 msgid "Learn more >"
 msgstr "En savoir plus >"
 
-#: data/content/index.html:115
+#: data/content/index.html:129
 msgid "news"
 msgstr "actualités"
 
-#: data/content/index.html:115
+#: data/content/index.html:129
 msgid "Fedora 19 released on July 2, 2013!"
 msgstr "Fedora 19 publiée le 2 juillet 2013 !"
 
-#: data/content/index.html:115
+#: data/content/index.html:129
 msgid ""
 "http://docs.fedoraproject.org/en-US/Fedora/19/html/Release_Notes/index.html"
 msgstr "http://docs.fedoraproject.org/en-US/Fedora/19/html/Release_Notes/index.html"
 
-#: data/content/index.html:115
+#: data/content/index.html:129
 msgid "Read the release notes"
 msgstr "Lire les notes de version"
 
-#: data/content/index.html:115
+#: data/content/index.html:129
 msgid "Download now"
 msgstr "Télécharger !"
 
-#: data/content/index.html:125
+#: data/content/index.html:139
 msgid "Need help?"
 msgstr "Besoin d'aide ?"
 
-#: data/content/index.html:126
+#: data/content/index.html:140
 msgid "Get it here."
 msgstr "C'est ici !"
 
-#: data/content/index.html:132
+#: data/content/index.html:146
 msgid "What is Fedora, anyway?"
 msgstr "Mais c'est quoi au juste ?"
 
-#: data/content/index.html:137
+#: data/content/index.html:151
 msgid "Join us!"
 msgstr "Rejoignez-nous !"
 
-#: data/content/index.html:138
+#: data/content/index.html:152
 msgid "Help make Fedora!"
 msgstr "Participez à Fedora"
 
-#: data/content/index.html:145
+#: data/content/index.html:159
 msgid "What makes Fedora great?"
 msgstr "Pourquoi Fedora est-il si apprécié ?"
 
-#: data/content/index.html:150
+#: data/content/index.html:164
 msgid "Freedom is key"
 msgstr "La liberté est la clé"
 
-#: data/content/index.html:151
+#: data/content/index.html:165
 msgid ""
 "Advancing software and content freedom is a key goal of the Fedora Project."
 msgstr "Améliorer la liberté des logiciels et du contenu est un but clé du Projet Fedora."
 
-#: data/content/index.html:152
+#: data/content/index.html:166
 msgid "Learn how software freedom benefits you >"
 msgstr "En savoir plus sur l'impact des logiciels libres >"
 
-#: data/content/index.html:156
+#: data/content/index.html:170
 msgid "Our Community"
 msgstr "Notre communauté"
 
-#: data/content/index.html:157
+#: data/content/index.html:171
 msgid "People world-wide work together in Fedora to advance free software."
 msgstr "Des gens du monde entier travaillent ensemble sur Fedora afin d'améliorer les logiciels libres."
 
-#: data/content/index.html:158
+#: data/content/index.html:172
 msgid "Discover your role in Fedora's community >"
 msgstr "Découvrez votre rôle au sein de la communauté Fedora >"
 
-#: data/content/index.html:162
+#: data/content/index.html:176
 msgid "We share"
 msgstr "Nous partageons"
 
-#: data/content/index.html:163
+#: data/content/index.html:177
 msgid "Many features that benefit all Linux distributions start in Fedora."
 msgstr "De nombreuses fonctionnalités, qui profitent à toutes les distributions Linux, arrivent en premier sous Fedora."
 
-#: data/content/index.html:164
+#: data/content/index.html:178
 msgid "See how we share our features for all to use >"
 msgstr "En savoir plus sur notre manière de partager notre expérience au bénéfice de tous >"
 
-#: data/content/index.html:168
+#: data/content/index.html:182
 msgid "The best tech"
 msgstr "Les meilleures technologies"
 
-#: data/content/index.html:169
+#: data/content/index.html:183
 msgid "The future of Linux is built into Fedora."
 msgstr "L'avenir de Linux se construit dans Fedora."
 
-#: data/content/index.html:170
+#: data/content/index.html:184
 msgid "Learn how Fedora innovates >"
 msgstr "En savoir plus sur les innovations de Fedora >"
 
-#: data/content/index.html:177
+#: data/content/index.html:191
 msgid "Fedora highlights"
 msgstr "Aperçu de Fedora"
 
-#: data/content/index.html:184
+#: data/content/index.html:198
 msgid "Read more of the story >"
 msgstr "Lire l'entretien >"
 
-#: data/content/index.html:185
+#: data/content/index.html:199
 msgid "Read more Fedora user stories >"
 msgstr "Lire davantage d'expériences utilisateurs >"
 
-#: data/content/index.html:190
+#: data/content/index.html:204
 msgid "We fight for software freedom"
 msgstr "Nous luttons pour la liberté logicielle"
 
-#: data/content/index.html:192
+#: data/content/index.html:206
 msgid ""
 "We try to always do the right thing, and provide only free and open source "
 "software. We will fight to protect and promote solutions that anyone can use"
@@ -2035,24 +2051,24 @@ msgid ""
 "focus has had significant and long lasting effects."
 msgstr "Nous essayons toujours de faire au mieux et de ne proposer que des logiciels libres et gratuits. Nous luttons pour protéger et promouvoir les solutions que tout le monde peut utiliser et redistribuer. À cette fin, nous utilisons uniquement des logiciels libres et gratuits afin de faire tourner l'infrastructure de Fedora. Avec cette optique à l'esprit, tous nos développeurs sont concentrés sur les projets en amont, de telle sorte que tout le monde puisse bénéficier de notre travail et puisse obtenir nos modifications au plus tôt. En raison de l'énorme quantité d'innovation que Fedora conduit, cette orientation a eu d'importants effets à long terme."
 
-#: data/content/index.html:194
+#: data/content/index.html:208
 msgid "Learn more about Fedora's values >"
 msgstr "En savoir plus à propos des valeurs de Fedora >"
 
-#: data/content/index.html:195
+#: data/content/index.html:209
 msgid "More on what Fedora's all about >"
 msgstr "Tout connaitre sur Fedora >"
 
-#: data/content/index.html:200 data/content/using/index.html:26
+#: data/content/index.html:214 data/content/using/index.html:26
 msgid "Do it with Fedora"
 msgstr "Faites-le avec Fedora"
 
-#: data/content/index.html:201 data/content/using/index.html:33
+#: data/content/index.html:215 data/content/using/index.html:33
 #: data/content/using/tutorials/cheese.html:26
 msgid "Have a photobooth party!"
 msgstr "Amusez-vous avec vos photos !"
 
-#: data/content/index.html:203 data/content/using/index.html:34
+#: data/content/index.html:217 data/content/using/index.html:34
 #: data/content/using/tutorials/cheese.html:27
 msgid ""
 "All you need is a webcam and Fedora, and you can do all sorts of cool photo "
@@ -2060,56 +2076,56 @@ msgid ""
 "and videos!"
 msgstr "Vous n'avez besoin que d'une webcam et de Fedora. Vous pouvez faire plein de photos sympa, tel que transformer vos amis en Hulk :-). Faites des photos et des vidéos amusantes !"
 
-#: data/content/index.html:205
+#: data/content/index.html:219
 msgid "Learn how to do it yourself! >"
 msgstr "Apprenez à le faire vous même ! >"
 
-#: data/content/index.html:206
+#: data/content/index.html:220
 msgid "View all tutorials >"
 msgstr "Consultez tous les tutoriels >"
 
-#: data/content/index.html:215
+#: data/content/index.html:229
 msgid "Recommended installation requirements"
 msgstr "Configuration recommandée"
 
-#: data/content/index.html:219
+#: data/content/index.html:233
 #, python-format
 msgid "%sGB disk space / storage"
 msgstr "%s Gio d'espace de stockage"
 
-#: data/content/index.html:221
+#: data/content/index.html:235
 msgid "More about requirements >"
 msgstr "En savoir plus sur la configuration recommandée >"
 
-#: data/content/index.html:222
+#: data/content/index.html:236
 msgid "Full set of download options >"
 msgstr "Plus d'options de téléchargement >"
 
-#: data/content/index.html:231
+#: data/content/index.html:245
 msgid "Add a counter to your own site!"
 msgstr "Ajouter un compteur à votre propre site !"
 
-#: data/content/index.html:242 data/content/join-fedora.html:133
+#: data/content/index.html:256 data/content/join-fedora.html:133
 msgid "Upcoming Events"
 msgstr "Futurs événements"
 
-#: data/content/index.html:244
+#: data/content/index.html:258
 msgid "North American"
 msgstr "Amérique du Nord"
 
-#: data/content/index.html:245
+#: data/content/index.html:259
 msgid "Central & South American"
 msgstr "Amérique Centrale et Amérique du Sud"
 
-#: data/content/index.html:246
+#: data/content/index.html:260
 msgid "European, Middle Eastern, & African"
 msgstr "Europe, Moyen-Orient et Afrique"
 
-#: data/content/index.html:247
+#: data/content/index.html:261
 msgid "Indian, Asian, & Australian"
 msgstr "Inde, Asie et Australie"
 
-#: data/content/index.html:250
+#: data/content/index.html:264
 msgid "Hosting Sponsor"
 msgstr "Sponsors d'hébergement"
 
@@ -2560,12 +2576,13 @@ msgid "Primary Sponsor"
 msgstr "Sponsor principal de Fedora"
 
 #: data/content/sponsors.html:30
+#, python-format
 msgid ""
-"<a href=\"http://redhat.com/\">Red Hat, Inc.</a> is the primary sponsor for "
-"the Fedora Project. Red Hat provides the Fedora project with a wide variety "
-"of resources, including full-time employee support, infrastructure hardware "
-"and bandwidth, event funding, and legal counsel."
-msgstr "<a href=\"http://redhat.com/\">Red Hat, Inc.</a> est le sponsor principal pour le Projet Fedora, offrant une variété de ressources incluant l'appui à plein temps d'employés, le matériel de l'infrastructure et de la bande passante, le financement d'événement et le conseil juridique."
+"<a href=\"%s\">Red Hat, Inc.</a> is the primary sponsor for the Fedora "
+"Project. Red Hat provides the Fedora project with a wide variety of "
+"resources, including full-time employee support, infrastructure hardware and"
+" bandwidth, event funding, and legal counsel."
+msgstr "<a href=\"%s\">Red Hat, Inc.</a> est le sponsor principal de Fedora Project. Red Hat propose le projet Fedora avec une grande variété de ressources, y compris le soutien d'employés à plein temps, du matériel d'infrastructure et de bande passante, le financement de l'événement et des conseils juridiques."
 
 #: data/content/sponsors.html:33
 msgid ""
@@ -2668,18 +2685,18 @@ msgid ""
 msgstr "Vérifiez à nouveau l'URL si vous l'avez saisi manuellement. L'avez-vous copié correctement ?"
 
 #: data/content/e/404.html:27
+#, python-format
 msgid ""
-"Did a bad link bring you here? Contact <a "
-"href=\"mailto:webmaster@fedoraproject.org\">the fedoraproject.org "
+"Did a bad link bring you here? Contact <a href=\"%s\">the fedoraproject.org "
 "webmaster</a> and let them know which link brought you here."
-msgstr "Un lien incorrect vous a amené ici ? Contactez <a href=\"mailto:webmaster@fedoraproject.org\">le webmestre fedoraproject.org</a> et indiquez-leur le lien défectueux."
+msgstr "Est-ce un mauvais lien qui vous amené ici ? Contactez <a href=\"%s\">le webmaster de fedoraproject.org</a> et indiquez -lui le lien qui vous a amené ici."
 
 #: data/content/e/404.html:28
+#, python-format
 msgid ""
 "The file you are looking for may have moved. Check our main site at <a "
-"href=\"http://fedoraproject.org/\">http://fedoraproject.org/</a> or search "
-"our <a href=\"http://fedoraproject.org/wiki/\">wiki</a>."
-msgstr "Le fichier que vous cherchez a peut-être été déplacé. Vérifiez sur notre site principal <a href=\"http://fedoraproject.org\">http://fedoraproject.org/</a> ou cherchez sur notre <a href=\"http://fedoraproject.org/wiki/\">wiki</a>."
+"href=\"%(fpo)s\">%(fpo)s</a> or search our <a href=\"%(wiki)s\">wiki</a>."
+msgstr "Le fichier que vous cherchez a peut-être été modifié. Consultez notre site principal <a href=\"%(fpo)s\">%(fpo)s</a> ou faites une recherche sur notre <a href=\"%(wiki)s\">wiki</a>."
 
 #: data/content/e/404.html:33
 msgid "Fedora Resources"
@@ -2735,7 +2752,7 @@ msgstr "Créativité"
 msgid "Office / Productivity"
 msgstr "Office / Productivité"
 
-#: data/content/features/index.html:32 data/content/features/index.html:407
+#: data/content/features/index.html:32 data/content/features/index.html:401
 msgid "Desktop Basics"
 msgstr "Bureautique"
 
@@ -2869,9 +2886,9 @@ msgid "Our stats"
 msgstr "Nos statistiques"
 
 #: data/content/features/index.html:114 data/content/features/index.html:174
-#: data/content/features/index.html:246 data/content/features/index.html:331
-#: data/content/features/index.html:400 data/content/features/index.html:469
-#: data/content/using/index.html:94 data/content/using/index.html:164
+#: data/content/features/index.html:246 data/content/features/index.html:325
+#: data/content/features/index.html:394 data/content/features/index.html:463
+#: data/content/using/index.html:86 data/content/using/index.html:156
 msgid "Back to top"
 msgstr "Remonter"
 
@@ -2959,9 +2976,9 @@ msgstr "Connectez-vous à des fichiers partagés sur un réseau et partagez vos 
 #: data/content/features/index.html:169 data/content/features/index.html:213
 #: data/content/features/index.html:219 data/content/features/index.html:225
 #: data/content/features/index.html:282 data/content/features/index.html:288
-#: data/content/features/index.html:294 data/content/features/index.html:383
-#: data/content/features/index.html:389 data/content/features/index.html:395
-#: data/content/features/index.html:442 data/content/features/index.html:448
+#: data/content/features/index.html:377 data/content/features/index.html:383
+#: data/content/features/index.html:389 data/content/features/index.html:436
+#: data/content/features/index.html:442
 msgid "Learn more."
 msgstr "En savoir plus."
 
@@ -3169,123 +3186,113 @@ msgid ""
 msgstr "Scribus est une application de mise en page complète. Réalisez des lettres d'informations prêtes pour impression, des affiches et bien plus avec cet outil impressionnant."
 
 #: data/content/features/index.html:286
-msgid "Agave Color Palette Chooser"
-msgstr "Le sélectionneur de palette de couleurs Agave"
-
-#: data/content/features/index.html:287
-msgid ""
-"Agave is a color-palette generation program. It enables you to build and "
-"manipulate a harmonious color palette around any color you choose."
-msgstr "Agave est un outil de génération de palette de couleurs. Il vous permet de créer et de manipuler une palette de couleur harmonieuse en fonction de la couleur que vous choisissez."
-
-#: data/content/features/index.html:292
 msgid "Simple Scan"
 msgstr "Simple Scan"
 
-#: data/content/features/index.html:293
+#: data/content/features/index.html:287
 msgid ""
 "Have a mess of paper notes, sketches, and diagrams? Simple scan makes it "
 "easy to digitize your paper work."
 msgstr "C'est le fouilli dans vos notes, croquis et schémas ? Simple scan rend facile la numérisation de vos documents."
 
-#: data/content/features/index.html:301
+#: data/content/features/index.html:295
 msgid "Blender 3D Studio"
 msgstr "Blender 3D Studio"
 
-#: data/content/features/index.html:302
+#: data/content/features/index.html:296
 msgid ""
 "Are you a fan of 3D games or movies, and wish you could create your own? Try"
 " Blender - a suite of 3D content creation tools - animate, model, render, "
 "composite, and more."
 msgstr "Vous êtes fan de jeux 3D ou de films et vous souhaitez créer le votre ? Essayez Blender, une suite d'outils de création de contenu 3D, pour l'animation, la modélisation, le rendu, la composition et bien plus."
 
-#: data/content/features/index.html:303
+#: data/content/features/index.html:297
 msgid ""
 "Learn more about Blender <a href=\"http://blender.org\">on Blender's "
 "homepage</a>."
 msgstr "Apprenez-en plus au travers du <a href=\"http://blender.org\">site internet de Blender</a>."
 
-#: data/content/features/index.html:308
+#: data/content/features/index.html:302
 msgid "MyPaint Digital Sketchbook"
 msgstr "MyPaint, le carnet à croquis numérique"
 
-#: data/content/features/index.html:309
+#: data/content/features/index.html:303
 msgid ""
 "Create beautiful sketches with MyPaint, a sketchbook app that includes "
 "hundreds of painterly brushes, sketch pencils, and other effects. Sketch and"
 " paint digitally with a natural feel."
 msgstr "Créez de magnifiques croquis avec MyPaint, un carnet de croquis qui inclut des centaines de brosses à peinture, crayons à croquis et autres effets. Dessinez et peignez en numérique naturellement."
 
-#: data/content/features/index.html:310
+#: data/content/features/index.html:304
 msgid ""
 "Learn more about MyPaint on <a href=\"http://mypaint.intilinux.com/\">the "
 "MyPaint homepage</a>."
 msgstr "Apprenez-en plus au travers du <a href=\"http://mypaint.intilinux.com/\">site internet de MyPaint</a>."
 
-#: data/content/features/index.html:317
+#: data/content/features/index.html:311
 msgid "PiTiVi Video Editor"
 msgstr "L'édition vidéo avec PiTiVi"
 
-#: data/content/features/index.html:318
+#: data/content/features/index.html:312
 msgid ""
 "PiTiVi is a linear video editing tool. Import video files from your camera "
 "or handheld device, and cut and paste clips and add audio tracks."
 msgstr "PiTiVi est un éditeur de vidéo linéaire. Importez des vidéos de votre appareil photo ou de tout autre appareil portatif afin de couper ou coller des scènes et ajouter des pistes audio."
 
-#: data/content/features/index.html:319
+#: data/content/features/index.html:313
 msgid ""
 "Learn more about PiTiVi on <a href=\"http://www.pitivi.org/\">the PiTiVi "
 "homepage</a>."
 msgstr "Apprenez-en plus au travers du <a href=\"http://www.pitivi.org/\">site internet de PiTiVi</a>."
 
-#: data/content/features/index.html:324
+#: data/content/features/index.html:318
 msgid "Audacity Sound Editor"
 msgstr "L'édition sonore avec Audacity"
 
-#: data/content/features/index.html:325
+#: data/content/features/index.html:319
 msgid ""
 "Audacity is a multi-track audio editor for sound files. Record, edit, "
 "splice, add effects, and more."
 msgstr "Audacity est un lecteur audio gérant plusieurs fichiers sons. Entre autres, vous pourrez enregistrez, éditez, coupez et ajoutez des effets à vos fichiers."
 
-#: data/content/features/index.html:326
+#: data/content/features/index.html:320
 msgid ""
 "Learn more about Audacity on <a "
 "href=\"http://audacity.sourceforge.net/\">the Audacity homepage</a>."
 msgstr "Apprenez-en plus au travers du <a href=\"http://audacity.sourceforge.net/\">site internet de Audacity</a>."
 
-#: data/content/features/index.html:338
+#: data/content/features/index.html:332
 msgid "Office & Productivity Features"
 msgstr "Fonctionnalités bureautiques et de productivité"
 
-#: data/content/features/index.html:343
+#: data/content/features/index.html:337
 msgid ""
 "You've got things to do, and you need to concentrate and manage your time. "
 "Can Fedora help? Absolutely."
 msgstr "Vous avez certaines tâches à effectuer nécessitant concentration et gestion de temps ? Est-ce que Fedora peut vous aider ? Absolument."
 
-#: data/content/features/index.html:350
+#: data/content/features/index.html:344
 msgid "Hamster Time Tracker"
 msgstr "La gestion du temps avec Hamster"
 
-#: data/content/features/index.html:351
+#: data/content/features/index.html:345
 msgid ""
 "Tell Hamster what you're working on, and it'll time your progress and poke "
 "you at regular intervals to make sure you're not distracted! It also "
 "generates weekly reports so you can examine how you've spent your week."
 msgstr "Dites à Hamster sur quoi vous travaillez Ainsi, il pourra mesurer vos progrès tout en vous signalant sa présence régulièrement, afin de vérifier que vous n'êtes pas distraits ! Il génère également des comptes rendus hebdomadaires de sorte que vous puissiez vérifier de quelle manière vous avez passé la semaine."
 
-#: data/content/features/index.html:352
+#: data/content/features/index.html:346
 msgid ""
 "Learn more at <a href=\"http://projecthamster.wordpress.com/\">the Hamster "
 "website</a>."
 msgstr "Apprenez-en plus au travers du <a href=\"http://projecthamster.wordpress.com/\">site internet de Hamster</a>."
 
-#: data/content/features/index.html:357
+#: data/content/features/index.html:351
 msgid "Gnote Note-taking"
 msgstr "La prise de notes avec Gnote"
 
-#: data/content/features/index.html:358
+#: data/content/features/index.html:352
 msgid ""
 "Neatly integrated into the desktop, Gnote is a note-taking application that "
 "you can use to build a personal database of notes and to track your to-dos. "
@@ -3293,82 +3300,82 @@ msgid ""
 "rich search interface."
 msgstr "Correctement intégré à votre bureau, Gnote est une application de prise de notes que vous pouvez utiliser pour construire une base de données personnelle afin de répertorier vos tâches en attentes. Il enregistre vos notes automatiquement, sans intervention de votre part et possède une fonction de recherche avancée."
 
-#: data/content/features/index.html:359
+#: data/content/features/index.html:353
 msgid ""
 "Learn more at <a href=\"http://live.gnome.org/Gnote\">the Gnote website</a>."
 msgstr "Apprenez-en plus au travers du <a href=\"http://live.gnome.org/Gnote\">site internet de Gnote</a>."
 
-#: data/content/features/index.html:366
+#: data/content/features/index.html:360
 msgid "LibreOffice Writer"
 msgstr "LibreOffice Writer"
 
-#: data/content/features/index.html:367
+#: data/content/features/index.html:361
 msgid ""
 "LibreOffice Writer is a free word processor that allows you to open, create,"
 " modify, and print digital documents. It has a built-in PDF exporter, and it"
 " can open and save in Microsoft (R) formats as well as open formats."
 msgstr "LibreOffice Writer est un traitement de texte gratuit qui vous permet d'ouvrir, créer, modifier et imprimer des documents numériques. Il est doté d'un exportateur en PDF et il peut ouvrir et enregistrer des formats Microsoft (R) ainsi que des formats ouverts."
 
-#: data/content/features/index.html:368 data/content/features/index.html:375
+#: data/content/features/index.html:362 data/content/features/index.html:369
 msgid ""
 "Learn more about LibreOffice on <a href=\"https://www.libreoffice.org/\">the"
 " LibreOffice homepage</a>."
 msgstr "Apprenez en plus sur LibreOffice sur <a href=\"https://www.libreoffice.org/\"> la page d'accueil de LibreOffice"
 
-#: data/content/features/index.html:373
+#: data/content/features/index.html:367
 msgid "LibreOffice Impress"
 msgstr "LibreOffice Impress"
 
-#: data/content/features/index.html:374
+#: data/content/features/index.html:368
 msgid ""
 "Open, create, and edit presentation slideshows with LibreOffice Impress. Add"
 " slide transitions and download free slide templates. You  may export "
 "presentations as PDF files for easy exchange."
 msgstr "Ouvrir, créer et modifier des diaporamas de présentation avec LibreOffice Impress. Ajouter et télécharger gratuitement des modèles de transitions entre les diapositives. Vous pouvez exporter des présentations sous forme de fichiers PDF pour les échanger facilement."
 
-#: data/content/features/index.html:381
+#: data/content/features/index.html:375
 msgid "LibreOffice Calc"
 msgstr "LibreOffice Calc"
 
-#: data/content/features/index.html:382
+#: data/content/features/index.html:376
 msgid ""
 "Part of the LibreOffice suite, Calc is a full-featured spreadsheet "
 "application. Crunch numbers or simply organize tabular information."
 msgstr "Une partie de la suite LibreOffice, Calc est un tableur complet. Il vous permet d'échanger des chiffres ou tout simplement d'organiser l'information sous forme de tableau."
 
-#: data/content/features/index.html:387
+#: data/content/features/index.html:381
 msgid "GScan2PDF Text Recognition"
 msgstr "Reconnaissance de texte avec GScan2PDF"
 
-#: data/content/features/index.html:388
+#: data/content/features/index.html:382
 msgid ""
 "Scanning documents into PDF format is easy, but can you search their "
 "content? Gscan2pdf uses optical recognition software to scan your PDF "
 "documents and convert images to text."
 msgstr "Scanner des documents dans le format PDF est facile, mais pouvez vous faire des recherches dans leurs contenus ? Gscan2pdf utilise la reconnaissance visuelle afin de scanner vos PDF pour convertir l'image en texte."
 
-#: data/content/features/index.html:393
+#: data/content/features/index.html:387
 msgid "Vym Mind-Mapper"
 msgstr "Vym, outil de carte heuristique"
 
-#: data/content/features/index.html:394
+#: data/content/features/index.html:388
 msgid ""
 "Got a complex project and need to organize your thoughts and map out the "
 "project's different aspects? Try Vym, a mind-mapping tool that helps you "
 "easily diagram your thoughts."
 msgstr "Vous avez un projet complexe et vous avez besoin d'organiser votre courant de pensée, en dessinant les différents aspects du projet ? Essayez Vym, un outil de création de cartes heuristiques  qui vous aide à schématiser le courant de vos pensées."
 
-#: data/content/features/index.html:412
+#: data/content/features/index.html:406
 msgid ""
 "There's some cool basics built into our desktop that you might not be aware "
 "of. Learn about some of these treasures here!"
 msgstr "Il existe de nombreuses fonctionnalités de bases dans notre environnement, dont vous pourriez ne pas avoir connaissance. Renseignez-vous sur ces trésors par ici !"
 
-#: data/content/features/index.html:419
+#: data/content/features/index.html:413
 msgid "Integrated Clock"
 msgstr "Une horloge intégrée"
 
-#: data/content/features/index.html:420
+#: data/content/features/index.html:414
 msgid ""
 "If you're an Evolution user, Fedora's desktop clock has some nice "
 "integration treats for you. The desktop clock integrates with your Evolution"
@@ -3376,17 +3383,17 @@ msgid ""
 "right alongside the clock."
 msgstr "Si vous utilisez Evolution, l'horloge du bureau de Fedora vous offre quelques améliorations utiles. Elle s'intègre à votre calendrier des événements Evolution, affiche vos rendez-vous et la liste des tâches à effectuer juste à côté de l'horloge."
 
-#: data/content/features/index.html:421
+#: data/content/features/index.html:415
 msgid ""
 "Try it now in Fedora! Simply click on the clock in the top bar of your "
 "desktop!"
 msgstr "Essayez-le maintenant dans Fedora ! Il suffit de cliquer sur l'horloge dans la barre du haut de votre bureau !"
 
-#: data/content/features/index.html:426
+#: data/content/features/index.html:420
 msgid "Network Manager"
 msgstr "Gestionnaire du réseau"
 
-#: data/content/features/index.html:427
+#: data/content/features/index.html:421
 msgid ""
 "Getting connected to the internet has never been easier. Whether you're "
 "using a wired internet connection, a wireless access point, an encrypted "
@@ -3394,54 +3401,54 @@ msgid ""
 " broadband phone, Network Manager makes it easy."
 msgstr "Se connecter à internet n'a jamais été aussi facile. Que vous utilisiez une connexion internet câblée, un point d'accès sans fil, une connexion cryptée ou un point d'accès sans fil masqué, un VPN d'entreprise, ou même la connexion d'un téléphone à large bande, Network Manager vous facilite la tâche."
 
-#: data/content/features/index.html:428
+#: data/content/features/index.html:422
 msgid ""
 "Learn more at <a href=\"http://projects.gnome.org/NetworkManager/\">the "
 "Network Manager website</a>."
 msgstr "Apprenez-en plus au travers du <a href=\"http://projects.gnome.org/NetworkManager/\">site internet de Network Manager</a>."
 
-#: data/content/features/index.html:434
+#: data/content/features/index.html:428
 msgid "Animated & slideshow backgrounds"
 msgstr "Un arrière-plan animé"
 
-#: data/content/features/index.html:435
+#: data/content/features/index.html:429
 msgid ""
 "Fedora has support for background animations and slideshows. In fact, some "
 "of the backgrounds in Fedora change color with the time of day! Look for it!"
 msgstr "Fedora prend en charge les fonds d'écran animés et les diaporamas. De fait, certains fonds d'écran de Fedora changent de couleurs au cours de la journée ! Essayez-les !"
 
-#: data/content/features/index.html:436
+#: data/content/features/index.html:430
 msgid ""
 "Look for wallpapers with a clock emblem in System Settings > Background."
 msgstr "Essayez les arrières plan avec horloge qui sont dans Paramètres système > Fond d'écran."
 
-#: data/content/features/index.html:440
+#: data/content/features/index.html:434
 msgid "Power Manager"
 msgstr "Gestionnaire d'énergie"
 
-#: data/content/features/index.html:441
+#: data/content/features/index.html:435
 msgid ""
 "GNOME power manager system lets you customize how your Fedora laptop behaves"
 " in different battery-charging and non-battery-charging scenarios. Control "
 "how the screen dims and when the computer suspends, and more."
 msgstr "Le gestionnaire d'énergie de GNOME vous permet de personnaliser la manière dont votre ordinateur portable Fedora se comporte dans les différents modes, en chargement ou sur batterie. Contrôlez entre autres, la luminosité de l'écran et quand il l'ordinateur doit se mettre en veille. "
 
-#: data/content/features/index.html:446
+#: data/content/features/index.html:440
 msgid "Disk Utility"
 msgstr "Utilitaire de disque"
 
-#: data/content/features/index.html:447
+#: data/content/features/index.html:441
 msgid ""
 "View all the harddrives and removeable drives connected to your machine. "
 "Perform basic maintenance operations and more advanced formatting and "
 "connection configuration options."
 msgstr "Visualisez tous les disques durs et lecteurs amovibles à votre machine. Effectuer des opérations de base ainsi et accédez à des options de configuration plus avancées pour le formatage et la connexion."
 
-#: data/content/features/index.html:455
+#: data/content/features/index.html:449
 msgid "Disk Usage Analyzer"
 msgstr "Analyseur de l'utilisation du disque"
 
-#: data/content/features/index.html:456
+#: data/content/features/index.html:450
 msgid ""
 "No more space on your hard drive? Where did the gigabytes and megabytes go? "
 "The disk usage analyzer examines your hard drive and provides interactive "
@@ -3449,17 +3456,17 @@ msgid ""
 " you clean them out."
 msgstr "Vous n'avez plus d'espace libre sur votre disque dur ? Où sont partis vos gigaoctets ? L'analyseur d'utilisation des disques examine vos disques durs et affiche des diagrammes interactifs vous permettant de trouver quels sont les dossiers qui vous font perdre de la place, afin de vous aider à faire le ménage."
 
-#: data/content/features/index.html:457
+#: data/content/features/index.html:451
 msgid ""
 "Learn more at <a href=\"http://www.marzocca.net/linux/baobab/\">the Disk "
 "Usage Analyzer website</a>."
 msgstr "Apprenez-en plus au travers du <a href=\"http://www.marzocca.net/linux/baobab/\">site internet de Disk Usage Analyzer</a>."
 
-#: data/content/features/index.html:462
+#: data/content/features/index.html:456
 msgid "IBus Keyboard Input"
 msgstr "Saisie clavier par IBus"
 
-#: data/content/features/index.html:463
+#: data/content/features/index.html:457
 msgid ""
 "IBus is a keyboard input system with a handy little applet built right into "
 "the desktop. Do you speak one or more languages that require an advanced "
@@ -3467,7 +3474,7 @@ msgid ""
 "so you can write in your preferred language whenever you want."
 msgstr "IBus est un système de saisie au clavier avec un applet pratique intégré directement au bureau. Parlez-vous une ou plusieurs langues qui nécessitent un système de saisie avancé ? IBus vous permet d'ajouter et de basculer entre différents systèmes de saisie afin que vous puissiez écrire dans votre langue préférée quand vous le souhaitez."
 
-#: data/content/features/index.html:464
+#: data/content/features/index.html:458
 msgid ""
 "Learn more at <a href=\"http://code.google.com/p/ibus/\">the IBus "
 "website</a>."
@@ -3486,7 +3493,6 @@ msgstr "Projet Fedora - Trucs et astuces pour l'utilisation de Fedora."
 #: data/content/using/life/robynbergeron.html:15
 #: data/content/using/life/stevemilner.html:15
 #: data/content/using/life/thomascameron.html:15
-#: data/content/using/tutorials/agave.html:13
 #: data/content/using/tutorials/cheese.html:13
 #: data/content/using/tutorials/gnote.html:13
 #: data/content/using/tutorials/launcher.html:13 data/templates/head.html:36
@@ -3510,37 +3516,26 @@ msgid ""
 msgstr "Dans cette série de tutoriels, nous vous guiderons au travers de projets amusant que vous pouvez réaliser en utilisant Fedora."
 
 #: data/content/using/index.html:35 data/content/using/index.html:41
-#: data/content/using/index.html:49 data/content/using/index.html:55
+#: data/content/using/index.html:47
 msgid "Learn how to do it yourself!"
 msgstr "Apprenez à le faire vous même !"
 
-#: data/content/using/index.html:39
-msgid "Build beautiful color palettes for your home and wardrobe"
-msgstr "Créez de somptueuses palettes de couleurs pour votre maison et votre garde-robe"
-
-#: data/content/using/index.html:40
-msgid ""
-"Build harmonious color palettes quickly and easily, and use them across "
-"various graphics programs in Fedora, share them online, or even simply use "
-"them as inspiration for your home and wardrobe."
-msgstr "Créez facilement des palettes de couleurs harmonieuses puis utilisez-les sur divers outils graphiques dans Fedora, partagez-les en ligne, ou inspirez-vous-en pour votre maison ou votre garde-robe."
-
-#: data/content/using/index.html:47 data/content/using/tutorials/gnote.html:25
+#: data/content/using/index.html:39 data/content/using/tutorials/gnote.html:25
 msgid "3 ways to unclutter your life using Gnote"
 msgstr "3 manières de vous simplifier la vie en utilisant Gnote"
 
-#: data/content/using/index.html:48 data/content/using/tutorials/gnote.html:26
+#: data/content/using/index.html:40 data/content/using/tutorials/gnote.html:26
 msgid ""
 "Get organized! Here are 3 ways to unclutter your life and build a personal "
 "database with Gnote."
 msgstr "Organisez-vous ! Voici 3 façons de vous simplifier la vie en construisant une base de donnée avec Gnote."
 
-#: data/content/using/index.html:53
+#: data/content/using/index.html:45
 #: data/content/using/tutorials/launcher.html:25
 msgid "Create custom app launchers"
 msgstr "Créez des lanceurs personnalisés"
 
-#: data/content/using/index.html:54
+#: data/content/using/index.html:46
 #: data/content/using/tutorials/launcher.html:27
 msgid ""
 "This quick and easy tutorial will show you how to create custom app "
@@ -3548,43 +3543,43 @@ msgid ""
 "the apps you use the most close at hand!"
 msgstr "Ce tutoriel simple et rapide va vous apprendre à créer des lanceurs d'applications à placer sur votre bureau ou dans un tableau de bord en utilisant votre icône préférée. Gardez les applications que vous aimez sous la main !"
 
-#: data/content/using/index.html:63
+#: data/content/using/index.html:55
 msgid "More Tutorials!"
 msgstr "D'autres tutoriels !"
 
-#: data/content/using/index.html:64
+#: data/content/using/index.html:56
 msgid ""
 "Here's some more great tutorials on software in Fedora, written by the free "
 "software community:"
 msgstr "Voici quelques tutoriels intéressants sur des logiciels inclus dans Fedora, écrits par la communauté du logiciel libre."
 
-#: data/content/using/index.html:70
+#: data/content/using/index.html:62
 msgid "Be a slideshow and Spreadsheet pro!"
 msgstr "Devenez un pro des présentations et du tableur !"
 
-#: data/content/using/index.html:71
+#: data/content/using/index.html:63
 #, python-format
 msgid ""
 "Visit <a href=\"%s\">LearnOpenOffice.org</a> for some awesome, real-life "
 "example tutorials creating slideshows and spreadsheets."
 msgstr "Visitez <a href=\"%s\">LearnOpenOffice.org</a> pour des tutoriels impressionnants appliqués à des situations du quotidien, pour maitriser les présentations et les feuilles de calculs."
 
-#: data/content/using/index.html:76
+#: data/content/using/index.html:68
 msgid "Create stunning graphics in Inkscape"
 msgstr "Créez des graphismes époustouflants avec Inkscape"
 
-#: data/content/using/index.html:77
+#: data/content/using/index.html:69
 #, python-format
 msgid ""
 "<a href=\"%s\">Heathenx's Inkscape video tutorials</a> are very easy-to-"
 "follow and walk you through tons of fun art projects!"
 msgstr "<a href=\"%s\">Les tutoriaux vidéo sur Inkscape de Heathenx Inkscape</a> sont très faciles à suivre et vous font voyager dans de nombreux projets artistiques !"
 
-#: data/content/using/index.html:82
+#: data/content/using/index.html:74
 msgid "Explore the fantasy of Battle for Wesnoth"
 msgstr "Explorez le monde fantastique de Battle for Wesnoth"
 
-#: data/content/using/index.html:83
+#: data/content/using/index.html:75
 #, python-format
 msgid ""
 "Get up and running in the medieval fantasy world of Battle for Wesnoth, a "
@@ -3592,34 +3587,34 @@ msgid ""
 "Guide</a>."
 msgstr "Réveillez-vous et parcourrez le monde médiéval fantastique de Battle for Wesnoth, un jeu d'aventure et de stratégie en réseau, avec <a href=\"%s\">le guide de jeu officiel</a>."
 
-#: data/content/using/index.html:88
+#: data/content/using/index.html:80
 msgid "Find out where all that time went with Hamster!"
 msgstr "Découvrez où passe le temps perdu grâce à Hamster !"
 
-#: data/content/using/index.html:89
+#: data/content/using/index.html:81
 #, python-format
 msgid ""
 "<a href=\"%s\">GNOME Journal has a great tutorial</a> for Hamster, a time-"
 "tracking tool that keeps you on task and analyzes how you spend your time."
 msgstr "<a href=\"%s\">GNOME Journal contient un tutoriel intéressant</a> pour Hamster, un outil d'analyse temporelle qui surveille la manière dont vous gérez votre temps en fonction de vos travaux afin de vous aider à les optimiser !"
 
-#: data/content/using/index.html:100
+#: data/content/using/index.html:92
 msgid "Your life on Fedora"
 msgstr "Votre vie au sein de Fedora"
 
-#: data/content/using/index.html:101
+#: data/content/using/index.html:93
 msgid ""
 "Sit down and enjoy a chat with a current Fedora user, and learn about their "
 "favorite apps and tips and tricks for using Fedora!"
 msgstr "Prenez place et discuter avec les utilisateurs actuels de Fedora et découvrez leurs applications préférées et leurs astuces pour utiliser Fedora !"
 
-#: data/content/using/index.html:107
+#: data/content/using/index.html:99
 #: data/content/using/life/ericchristensen.html:27
 #: data/content/using/life/ericchristensen_short.html:6
 msgid "Eric, Amateur Radio Hobbyist"
 msgstr "Eric, radioamateur"
 
-#: data/content/using/index.html:109
+#: data/content/using/index.html:101
 #: data/content/using/life/ericchristensen_short.html:8
 msgid ""
 "Eric \"Sparks\" Christensen, a computer security expert from North Carolina,"
@@ -3629,20 +3624,20 @@ msgid ""
 "Fedora!"
 msgstr "Eric « Sparks » Christensen, expert en sécurité informatique de Caroline du Nord, est radioamateur depuis le lycée. Aujourd'hui, Eric utilise Fedora pour communiquer partout dans le monde grâce au radioamateurisme. Découvrez ce qu'est le radioamateurisme et comment commencer avec Fedora !"
 
-#: data/content/using/index.html:110 data/content/using/index.html:116
-#: data/content/using/index.html:124 data/content/using/index.html:130
-#: data/content/using/index.html:138 data/content/using/index.html:144
-#: data/content/using/index.html:152 data/content/using/index.html:158
+#: data/content/using/index.html:102 data/content/using/index.html:108
+#: data/content/using/index.html:116 data/content/using/index.html:122
+#: data/content/using/index.html:130 data/content/using/index.html:136
+#: data/content/using/index.html:144 data/content/using/index.html:150
 msgid "Read more >"
 msgstr "En savoir plus >"
 
-#: data/content/using/index.html:114
+#: data/content/using/index.html:106
 #: data/content/using/life/robynbergeron.html:28
 #: data/content/using/life/robynbergeron_short.html:6
 msgid "Robyn, Community Marketeer"
 msgstr "Robyn, spécialiste marketing communautaire"
 
-#: data/content/using/index.html:115
+#: data/content/using/index.html:107
 #: data/content/using/life/robynbergeron.html:29
 #: data/content/using/life/robynbergeron_short.html:8
 msgid ""
@@ -3652,14 +3647,14 @@ msgid ""
 "conference presentations. Learn how she does it in this chat!"
 msgstr "Robyn Bergeron est une mère nous venant de Flagstaff, dans l'Arizona, avec un bagage de chercheuse en marketing. Elle utilise Fedora pour ses besoins quotidiens ainsi que pour sa collaboration au sein de l'équipe marketing du Projet Fedora - qui implique de donner des conférences. Lisez la suite pour savoir de quelle manière elle procède !"
 
-#: data/content/using/index.html:122
+#: data/content/using/index.html:114
 #: data/content/using/life/chrisbredesen_short.html:6
 #: data/content/using/life/thomascameron.html:30
 #: data/content/using/life/thomascameron_short.html:6
 msgid "Thomas, Doting Dad"
 msgstr "Thomas, papa 2.0"
 
-#: data/content/using/index.html:123
+#: data/content/using/index.html:115
 #: data/content/using/life/chrisbredesen_short.html:8
 #: data/content/using/life/thomascameron.html:31
 #: data/content/using/life/thomascameron_short.html:8
@@ -3670,13 +3665,13 @@ msgid ""
 "Check this interview out!"
 msgstr "Thomas Cameron est un utilisateur de la première heure de Fedora. Mais il est aussi père de famille, dans le Texas et nous propose sa sélection d'applications et de jeux à destination des enfants, testés et approuvés par sa fille de sept ans ! Vous avez du mal à faire votre choix dans les applications pour les enfants de Fedora ? Lisez donc cet entretien !"
 
-#: data/content/using/index.html:128
+#: data/content/using/index.html:120
 #: data/content/using/life/stevemilner.html:28
 #: data/content/using/life/stevemilner_short.html:6
 msgid "Steve, Information Security Analyst"
 msgstr "Steve, analyste en sécurité de l'information"
 
-#: data/content/using/index.html:129
+#: data/content/using/index.html:121
 #: data/content/using/life/stevemilner.html:29
 #: data/content/using/life/stevemilner_short.html:8
 msgid ""
@@ -3686,13 +3681,13 @@ msgid ""
 "for you in keeping your systems safe, too!"
 msgstr "Steve Milner est analyste en sécurité de l'information en Caroline du nord. Il utilise Fedora pour auditer les applications internet sur les problèmes de sécurité. Steve nous fait part des applications les plus utiles dans Fedora pour les analystes en sécurité et donne également des conseils pour assurer la sécurité de votre système."
 
-#: data/content/using/index.html:136
+#: data/content/using/index.html:128
 #: data/content/using/life/fabianscherschel.html:27
 #: data/content/using/life/fabianscherschel_short.html:6
 msgid "Fab, Linux Outlaws Podcaster"
 msgstr "Fab, créateur du podcast Linux Outlaws"
 
-#: data/content/using/index.html:137
+#: data/content/using/index.html:129
 #: data/content/using/life/fabianscherschel_short.html:8
 msgid ""
 "Fabian A. Scherschel, a university student from Bonn, Germany, is well-known"
@@ -3701,11 +3696,11 @@ msgid ""
 "tools available in it for the podcast's recording and post-production."
 msgstr "Fabian A. Scherschel, étudiant à l'université de Bonn, en Allemagne, est un membre connu de la communauté Linux pour son podcast Linux Outlaws, réalisé avec Dan Lynch. Fab explique dans son entretien qu'il utilise Fedora et les outils de traitement de son qui y sont présents pour l'enregistrement et la post-production du podcast."
 
-#: data/content/using/index.html:142
+#: data/content/using/index.html:134
 msgid "Michel, Social Media and Web Researcher"
 msgstr "Michel, chercheur en technologies de l'information"
 
-#: data/content/using/index.html:143
+#: data/content/using/index.html:135
 #: data/content/using/life/michelsalim.html:28
 #: data/content/using/life/michelsalim_short.html:8
 msgid ""
@@ -3716,11 +3711,11 @@ msgid ""
 "with Fedora."
 msgstr "Michel Alexandre Salim, originaire d'Indonésie, effectue actuellement son doctorat en Allemagne. Son groupe de recherche se concentre sur les wikis et les outils de développement d'applications. Michel est un utilisateur Fedora de longue date et nous dresse un tableau des meilleures applications de développement web à utiliser dans Fedora."
 
-#: data/content/using/index.html:150
+#: data/content/using/index.html:142
 msgid "Máirín, Artist and Designer"
 msgstr "Máirín, graphiste et ergonome"
 
-#: data/content/using/index.html:151
+#: data/content/using/index.html:143
 #: data/content/using/life/mairinduffy.html:29
 #: data/content/using/life/mairinduffy_short.html:8
 msgid ""
@@ -3730,12 +3725,12 @@ msgid ""
 "creative itch? Máirín recommends a ton of apps in Fedora for you!"
 msgstr "Máirín Duffy, ergonome et graphiste originaire de Boston, utilise Fedora pour toutes ses réalisations artistiques. Des sites internet, des ébauches d'interfaces graphiques, des t-shirts, des posters, des tests d'utilisabilité - elle utilise Fedora pour tout faire. Vous avez l'âme d'un artiste ? Máirín vous recommande une tonne d'applications sur Fedora !"
 
-#: data/content/using/index.html:156
+#: data/content/using/index.html:148
 #: data/content/using/life/chrisbredesen.html:26
 msgid "Chris, Java Web Application Developer"
 msgstr "Chris, développeur d'applications web en Java"
 
-#: data/content/using/index.html:157
+#: data/content/using/index.html:149
 #: data/content/using/life/chrisbredesen.html:27
 msgid ""
 "Chris Bredesen is a Java developer from Ft. Lauderdale who uses Fedora as "
@@ -3756,7 +3751,6 @@ msgstr "Projet Fedora - Interview de Chris Bredesen."
 #: data/content/using/life/robynbergeron.html:16
 #: data/content/using/life/stevemilner.html:16
 #: data/content/using/life/thomascameron.html:16
-#: data/content/using/tutorials/agave.html:14
 #: data/content/using/tutorials/cheese.html:14
 #: data/content/using/tutorials/gnote.html:14
 #: data/content/using/tutorials/launcher.html:14
@@ -4639,7 +4633,6 @@ msgstr "Saviez-vous que Fedora était présente sur les réseaux sociaux ? En s
 
 #: data/content/using/life/michelsalim.html:25
 #: data/content/using/life/robynbergeron.html:26
-#: data/content/using/tutorials/agave.html:24
 msgid "&#8592; Back to the main 'Using Fedora' page"
 msgstr "&#8592; Retour à la page principal « Obtenir Fedora »"
 
@@ -5483,334 +5476,6 @@ msgstr "SameGnome ou Solitaire !"
 msgid "Thanks, Thomas!"
 msgstr "Merci Thomas !"
 
-#: data/content/using/tutorials/agave.html:7
-msgid "Fedora Project - Creating color palettes with Agave."
-msgstr "Projet Fedora - Créer des palettes de couleurs avec Agave."
-
-#: data/content/using/tutorials/agave.html:17
-msgid ""
-"Did you know the artwork for Fedora is produced by community team using the "
-"creative tools in Fedora? Learn more."
-msgstr "Saviez-vous que les graphismes dans Fedora sont créés par une équipe communautaire qui utilise les outils fournis dans Fedora ? En savoir plus."
-
-#: data/content/using/tutorials/agave.html:26
-msgid "Building beautiful color palettes for your home and wardrobe"
-msgstr "Créez de magnifiques palettes de couleurs pour votre maison et votre garde-robe"
-
-#: data/content/using/tutorials/agave.html:28
-msgid "Installing Agave"
-msgstr "Installation d'Agave"
-
-#: data/content/using/tutorials/agave.html:30
-msgid "If you have never used Agave before, you'll need to install it:"
-msgstr "Si vous n'avez jamais utilisé Agave auparavant, vous devrez l'installer :"
-
-#: data/content/using/tutorials/agave.html:32
-msgid ""
-"Open up the Add/Remove Software wizard by selecting the <strong>System → "
-"Administration → Add/Remove Software</strong> desktop menu item."
-msgstr "Lancez l'outil d'Ajout/Suppression de logiciels depuis <strong>Système → Administration → Ajouter/Supprimer des logiciels</strong> depuis le menu du bureau."
-
-#: data/content/using/tutorials/agave.html:33
-msgid ""
-"The Add/Remove Software wizard will appear. (See screenshot on the right.)"
-msgstr "L'assistant d'Ajout/Suppression de logiciels apparaît (voir capture sur la droite)."
-
-#: data/content/using/tutorials/agave.html:34
-msgid ""
-"In the search box in the upper left, search for <strong>>Agave</strong> and "
-"click the \"Find\" button."
-msgstr "Dans le champ de recherche en haut à gauche, recherchez <strong>>Agave</strong> et cliquez sur le bouton « Recherchez »."
-
-#: data/content/using/tutorials/agave.html:35
-msgid ""
-"Check the Agave checkbox on the right, and click on the \"Apply\" button in "
-"the lower right of the Add/Remove Software wizard."
-msgstr "Cochez la case devant Agave dans la partie droite, puis cliquez sur le bouton « Appliquer » en bas à droite de l'assistante d'ajout/suppression de logiciels."
-
-#: data/content/using/tutorials/agave.html:36
-msgid ""
-"Once the Add/Remove Software wizard finishes, you should have Agave "
-"installed on your system!"
-msgstr "Une fois que l'assistant d'ajout/suppression de logiciels a terminé, vous devriez avoir installé Agave sur votre système !"
-
-#: data/content/using/tutorials/agave.html:38
-msgid ""
-"Now that you have Agave installed, go ahead and open it up by selecting the "
-"<strong>Applications  →  Graphics  →  Agave</strong> desktop menu item."
-msgstr "Maintenant qu'il est installé, lancez-le depuis le menu <strong>Applications  →  Graphisme  →  Agave</strong>."
-
-#: data/content/using/tutorials/agave.html:40
-msgid "Picking a base color for your first palette"
-msgstr "Choisissez une couleur de base pour votre première palette"
-
-#: data/content/using/tutorials/agave.html:42
-msgid ""
-"At the right, you'll see a screenshot of Agave. Your Agave window should "
-"look something like this, although you likely won't have any favorite "
-"palettes saved in the right panel."
-msgstr "À droite, vous verrez une capture d'écran d'Agave. Votre fenêtre d'Agave devrait ressembler à quelque chose comme cela, bien que vous n'aurez certainement pas de palettes dans vos favoris sur la droite."
-
-#: data/content/using/tutorials/agave.html:43
-msgid ""
-"The first thing you'll want to do is to choose a base color for your "
-"palette. From this base color, Agave can automatically generate a number of "
-"different harmonious color palettes using multiple techniques. So let's pick"
-" that base color!"
-msgstr "La première chose à faire est de choisir une couleur de base pour votre palette. Depuis cette couleur de base, Agave peut générer automatiquement des palettes harmonieuses de couleurs différentes en utilisant plusieurs techniques. Allez, choisissons cette couleur de base !"
-
-#: data/content/using/tutorials/agave.html:44
-msgid ""
-"There are two main ways to pick a base color, using the color chooser button"
-" or using the palettes along the bottom of the window."
-msgstr "Il y a deux manières de choisir une couleur de base, en utilisant le bouton de sélection de couleur ou en utilisant la palette dans la partie basse de la fenêtre."
-
-#: data/content/using/tutorials/agave.html:46
-msgid "Color chooser methods"
-msgstr "Méthodes de sélection de couleurs"
-
-#: data/content/using/tutorials/agave.html:47
-msgid ""
-"Click on the small button on the left side of the Agave window, immediately "
-"above the 'Palette' label. That will bring up the <strong>Pick a "
-"Color</strong> dialog."
-msgstr "Cliquez sur le bouton à gauche de la fenêtre d'Agave, au dessus du mot « Palette ». Ce bouton ouvre la boîte de dialogue <strong>Choisissez une couleur</strong>"
-
-#: data/content/using/tutorials/agave.html:48
-msgid "Want to visually explore the color possibilities?"
-msgstr "Vous voulez voir la couleurs qu'il est possible de choisir ?"
-
-#: data/content/using/tutorials/agave.html:49
-msgid ""
-"You may drag the small black circle within the triangle on the left of the "
-"<strong>Pick a color</strong> dialog to change the color's shade, and drag "
-"it circularly around the rainbow to change the hue of the color."
-msgstr "Pour cela, déplacez le petit cercle à l'intérieur du triangle à gauche de la boîte de dialogue <strong>Choisissez une couleur</strong> pour changer le ton de la couleur et déplacez le curseur sur le cercle pour changer la teinte de la couleur."
-
-#: data/content/using/tutorials/agave.html:50
-msgid "Want to pick a color you like from a photo or other graphic?"
-msgstr "Vous voulez choisir une couleur que vous aimez depuis une photo ou une illustration ?"
-
-#: data/content/using/tutorials/agave.html:51
-msgid ""
-"Keep the <strong>Pick a color</strong> dialog open. Open up the graphic "
-"you'd like to pick a color from. It can be in a browser window, image "
-"viewer, or email client - it really doesn't matter, it just needs to be on "
-"screen. Now, click on the small eyedropper icon button in the lower left of "
-"the <strong>Pick a color</strong> dialog. Your mouse pointer will turn into "
-"a little color dropper icon. Hover your new dropper mouse pointer over the "
-"graphic you want to pick a color from, and click on the area that has the "
-"color. The <strong>Pick a color</strong> dialog will update and show the "
-"color you picked."
-msgstr "Laissez la fenêtre <strong>Choisissez une couleur</strong> ouverte. Ouvrez l'illustration où se trouve la couleur que vous voulez utiliser. Elle peut-être dans votre navigateur internet, votre visualiseur de photos ou votre client de messagerie. Ça n'a vraiment pas d'importance, il suffit qu'elle soit à l'écran. Cliquez maintenant sur la petite pipette en bas à gauche de la fenêtre de sélection de couleur. Votre curseur de souris se transformera en pipette également. Déplacez votre curseur vers l'illustration où se trouve la couleur et cliquez sur la couleur en question. La fenêtre de sélection de couleur affiche alors la couleur que vous avez sélectionnée."
-
-#: data/content/using/tutorials/agave.html:52
-msgid "Have a specific color code in mind?"
-msgstr "Vous connaissez un code couleur bien précis ?"
-
-#: data/content/using/tutorials/agave.html:53
-msgid ""
-"Using the <strong>Color name:</strong> field in the <strong>Pick a "
-"color</strong> dialog, you can enter in HTML Hex color codes (They look like"
-" this: #FFCC00). You may also enter in manual Hue/Saturation/Value or "
-"Red/Green/Blue color values. This is helpful if you've picked a color in "
-"another graphics program or in HTML and want to generate a palette of more "
-"colors that will work with it."
-msgstr "En utilisant le champ <strong>Nom de la couleur</strong> depuis la fenêtre <strong>Choisissez une couleur</strong>, vous pouvez entrer du code HTML hexadécimal (comme ceci : #FFCC00). Vous pouvez également saisir manuellement les valeurs de Teinte/Saturation/Valeur ou Rouge/Vert/Bleu. C'est très pratique si vous avez  récupérer un code couleur depuis une autre application ou depuis du code HTML et que vous voulez créer une palette de plusieurs couleurs qui vont bien ensemble."
-
-#: data/content/using/tutorials/agave.html:54
-msgid "Finishing Up"
-msgstr "Les étapes finales"
-
-#: data/content/using/tutorials/agave.html:55
-msgid ""
-"Once you've picked the color you like, click on the <strong>OK</strong> "
-"button in the lower right of the <strong>Pick a color</strong> dialog to set"
-" the color."
-msgstr "Une fois que vous avez sélectionné la couleur de votre choix, cliquez sur le bouton <strong>OK</strong> en bas à droite de la fenêtre de sélection de couleur."
-
-#: data/content/using/tutorials/agave.html:57
-msgid "Palette methods"
-msgstr "À propos des palettes"
-
-#: data/content/using/tutorials/agave.html:58
-msgid ""
-"Agave comes pre-loaded with a set of large color palettes. They include "
-"\"Visibone,\" \"Tango Icon Theme Palette,\" \"GNOME Icon Palette,\" and "
-"\"Web Safe Colors.\" There is a <strong>Palette</strong> dropdown in the "
-"lower left of the main Agave application window. You can pick between these "
-"palettes from that dropdown. Once the palette is visible, you can hover over"
-" the colors in the palette to view their HTML hex codes, and you can click "
-"on any color with the hand icon to set that color."
-msgstr "Agave est fourni avec un ensemble pré-défini de palettes : « Visibone », « Tango Icon Theme Palette », « GNOME Icon Palette » et « Web Safe Colors ». Elles sont accessibles depuis la liste déroulante de <strong>palettes</strong> en bas à gauche de la fenêtre principale d'Agave, à partir de laquelle vous pouvez sélectionner la palette de votre choix. Lorsqu'un palette est visible, vous pouvez obtenir le code HTML des couleurs en les survolant et vous pouvez sélectionner n'importe laquelle de ces couleurs en cliquant dessus."
-
-#: data/content/using/tutorials/agave.html:60
-msgid "Exploring your first palette"
-msgstr "Explorer votre première palette"
-
-#: data/content/using/tutorials/agave.html:62
-msgid ""
-"Now it's time to dig into your base color and discover what kinds of color "
-"palettes you can create with it. There are three main ways you can work with"
-" your base color to generate palettes - changing the color scheme of the "
-"palette, changing the saturation of the palette, and changing the brightness"
-" of the palette."
-msgstr "Il est temps maintenant d'approfondir ce qu'il est possible de faire à partir cette couleur de base et de découvrir les palettes de couleurs que vous pouvez créer à partir de celle-ci. Il existe trois manières de travailler votre couleur de base pour en obtenir des palettes : en changeant l'arrangement de la palette, sa saturation et sa luminosité."
-
-#: data/content/using/tutorials/agave.html:63
-msgid "Changing the color schemes"
-msgstr "Modifier l'arrangement des couleurs"
-
-#: data/content/using/tutorials/agave.html:65
-msgid ""
-"You can change the number of colors in the palette associated with your base"
-" color by changing the scheme between the colors. Depending on the "
-"relationship you choose, Agave will select between one to three companion "
-"colors for your base color. Here's a summary of the color schemes you can "
-"choose from. Choose between these via the dropdown in the center left of "
-"Agave."
-msgstr "Vous pouvez changer le nombre de couleurs associées à votre couleur de base dans votre palette en changeant l'arrangement entre les couleurs. En fonction de l'arrangement choisi, Agave sélectionnera une ou trois couleurs associées à votre couleur de base. Voici un résumé des arrangements de couleurs que vous pouvez choisir. Sélectionnez les depuis la liste déroulante dans le centre à gauche de la fenêtre principale d'Agave."
-
-#: data/content/using/tutorials/agave.html:67
-msgid ""
-"<strong>Complements</strong> - complementary colors are opposite each other "
-"on the color wheel."
-msgstr "<strong>Compléments</strong> - les couleurs complémentaires sont des couleurs opposées les unes aux autres sur la roue des couleurs."
-
-#: data/content/using/tutorials/agave.html:68
-msgid ""
-"<strong>Split-Complements</strong> - A split complements color scheme is a "
-"three-color scheme, involving a base color, and two colors that are "
-"equidistant from the base color and its complement."
-msgstr "<strong>Compléments divisés</strong> - un schéma de couleur par compléments divisés comprend trois couleurs, une couleur principale et deux couleurs équidistantes entre la couleur de base et le complément."
-
-#: data/content/using/tutorials/agave.html:69
-msgid ""
-"<strong>Triads</strong> - Triad color schemes involved three colors that are"
-" equally spaced along the color wheel, and you can draw a regular triangle "
-"between them."
-msgstr "<strong>Triades</strong> - l'arrangement en triade choisit trois couleurs à égale distance les unes des autres sur la roue des couleurs. Vous pourriez dessiner un triangle équilatéral dans la roue des couleurs à partir de cette sélection de couleurs."
-
-#: data/content/using/tutorials/agave.html:70
-msgid ""
-"<strong>Tetrads</strong> - A tetrad color scheme in Agave simply involves "
-"four colors evenly spaced around the color scheme, such that you could draw "
-"a square between them."
-msgstr "<strong>Tétrades</strong> - un arrangement en tétrade implique une sélection de quatre couleurs à égale distance les unes des autres. Vous pourriez tracer un carré dans la roue des couleurs à partir de cette sélection de couleurs."
-
-#: data/content/using/tutorials/agave.html:71
-msgid ""
-"<strong>Analogous</strong> - An analogous color scheme in Agave is a three-"
-"color scheme of three adjacent colors."
-msgstr "<strong>Analogues</strong> - un arrangement de couleurs analogues comporte trois couleurs adjacentes les unes aux autres."
-
-#: data/content/using/tutorials/agave.html:72
-msgid ""
-"<strong>Monochromatic</strong> - Monochromatic color schemes in Agave "
-"involve three colors, all of the same hue, but with different brightness "
-"levels."
-msgstr "<strong>Monochromatique</strong> - l'arrangement monochromatique implique une sélection de trois couleurs, toutes de la même tonalité mais de luminosité différente."
-
-#: data/content/using/tutorials/agave.html:75
-msgid "Changing the saturation of the palette"
-msgstr "Modifier la saturation de la palette"
-
-#: data/content/using/tutorials/agave.html:77
-msgid ""
-"Once you've picked a color scheme you like, you can tweak the saturation of "
-"the palette by pressing the up and down saturation icons in Agave as shown "
-"in the screenshot. Toning down saturation in a color palette can convert "
-"your palette from having very deep rich colors, to having very delicate and "
-"slight tones. Changing the saturation of a palette is a technique you can "
-"use to change its mood."
-msgstr "Une fois que vous avez choisi un arrangement de couleurs à votre goût, vous pouvez modifier la saturation générale de la palette à partir de des boutons haut et bas comme précisé sur la capture d'écran d'Agave. Diminuer la tonalité d'une palette peut la transformer d'une palette aux couleurs riches et profondes à des tons légers et délicats. Modifier la saturation d'une palette est une technique pour modifier son humeur générale."
-
-#: data/content/using/tutorials/agave.html:79
-msgid "Changing the brightness of the palette"
-msgstr "Modifier la luminosité de la palette"
-
-#: data/content/using/tutorials/agave.html:80
-msgid ""
-"Tweaking the brightness of a palette is another way to change the mood and "
-"feeling of a color scheme. By pressing the up and down brightness icons in "
-"Agave as shown in the screenshot, you can turn the brightness of all colors "
-"in the palette up or down."
-msgstr "Modifier la luminosité d'une palette est une autre manière de changer son humeur et le ressenti sur l'arrangement. En utilisant les boutons haut et bas de luminosité dans Agave comme expliqué sur la capture d'écran, vous pouvez modifier la luminosité de toutes les couleurs de votre palette."
-
-#: data/content/using/tutorials/agave.html:84
-msgid "Saving your palette & using it!"
-msgstr "Sauvegarder votre palette pour l'utiliser"
-
-#: data/content/using/tutorials/agave.html:86
-msgid ""
-"Once you've got a palette you're happy with, the simplest way to save your "
-"palette is to press \"PrtSc\" on your keyboard to create a screenshot of the"
-" color scheme that you can print and bring to the store to pick out clothing"
-" or decorations for your home."
-msgstr "Une fois que vous êtes satisfait du résultat avec votre palette, la manière la plus simple de la sauvegarder est de faire une impression d'écran de votre palette pour l'imprimer et l'apporter au magasin de décoration d'intérieur le plus proche de chez vous. Pour faire une impression d'écran, appuyez sur la touche « Impr écran » de votre clavier."
-
-#: data/content/using/tutorials/agave.html:87
-msgid ""
-"However, it's very useful to keep a list of your favorite colors handy in "
-"Agave. You'll notice a screenshot of the Agave favorites pane. To save your "
-"full palette here, color-by-color:"
-msgstr "Il est cependant très pratique de conserver une liste de vos couleurs préférées dans Agave. Vous remarquerez le panneau favoris à droite de l'application. Pour sauvegarder votre palette à cet endroit, couleur par couleur :"
-
-#: data/content/using/tutorials/agave.html:89
-msgid ""
-"Double-click on the first color of your palette. It should have a thick "
-"black border around it to indicate that it is selected."
-msgstr "Double-cliquez sur la première couleur de votre palette. Une bordure noire devrait l'entourer pour indiquer qu'elle est sélectionnée."
-
-#: data/content/using/tutorials/agave.html:90
-msgid ""
-"Press the <strong>+</strong> icon on the bottom of the \"Favorites\" pane on"
-" the right of Agave's window."
-msgstr "Cliquez sur l'icône <strong>+</strong> présente sous le panneau « Favoris » à droite de la fenêtre d'Agave."
-
-#: data/content/using/tutorials/agave.html:91
-msgid ""
-"Repeat this process until you've saved each color in your favorites pane."
-msgstr "Répétez cette opération jusqu'à ce que vous ayez enregistré vos couleurs préférées dans le panneau."
-
-#: data/content/using/tutorials/agave.html:92
-msgid ""
-"If at any point your color palette changes during this process, you can "
-"press the <strong>Back</strong> button in the upper left of the application "
-"to go back to your color palette."
-msgstr "Si à n'importe quel moment votre palette est modifiée durant ces étapes, vous pouvez utiliser le bouton <strong>précédent</strong> en haut à gauche de l'application pour retrouver votre palette originale."
-
-#: data/content/using/tutorials/agave.html:94
-#, python-format
-msgid ""
-"You can save all of your favorite colors in the Gimp palette file format "
-"(GPL) by visiting the <strong>File → Export Favorites...</strong> item in "
-"the Agave main menu. You may import this palette into the Gimp graphics "
-"application - <a href=\"%s\">the Gimp manual has more information on this "
-"process</a>."
-msgstr "Vous pouvez sauvegarder toutes vos palettes dans un fichier palette de Gimp (format ouvert) en utilisant le menu <strong>Fichiers → Exporter les favoris...</strong>. Vous pouvez importer cette palette dans Gimp par la suite. Consultez <a href=\"%s\">le manuel de Gimp</a> pour plus d'informations sur ce sujet."
-
-#: data/content/using/tutorials/agave.html:96
-#: data/content/using/tutorials/cheese.html:62
-#: data/content/using/tutorials/gnote.html:91
-#: data/content/using/tutorials/launcher.html:49
-msgid "Enjoy and share!"
-msgstr "Amusez-vous et partagez !"
-
-#: data/content/using/tutorials/agave.html:97
-msgid ""
-"Now you know a little bit about how to create harmonious color palettes by "
-"exploring Agave. Have fun, and be sure to share these tips you learned with "
-"others!"
-msgstr "Maintenant vous savez comment créer des palettes aux couleurs harmonieuses en utilisant Agave. Amusez-vous et n'oubliez pas de partager ces astuces à votre entourage !"
-
-#: data/content/using/tutorials/agave.html:99
-#: data/content/using/tutorials/cheese.html:66
-#: data/content/using/tutorials/gnote.html:96
-#: data/content/using/tutorials/launcher.html:53
-msgid "&#8592; Read about more ways to use Fedora!"
-msgstr "&#8592; En savoir plus sur les différentes manières d'utiliser Fedora !"
-
 #: data/content/using/tutorials/cheese.html:7
 msgid "Fedora Project - Using Cheese for photo tricks."
 msgstr "Projet Fedora - Utiliser Cheese pour des trucages photo."
@@ -5978,11 +5643,23 @@ msgid ""
 "your nose disappears and your eyes grow huge! This effect warps your image."
 msgstr "<strong>Déformer</strong> - mais dis donc ! Vous avez un gros nez ! Un faux mouvement et votre nez disparaît et vos yeux deviennent énormes ! Cet effet déforme votre image."
 
+#: data/content/using/tutorials/cheese.html:62
+#: data/content/using/tutorials/gnote.html:91
+#: data/content/using/tutorials/launcher.html:49
+msgid "Enjoy and share!"
+msgstr "Amusez-vous et partagez !"
+
 #: data/content/using/tutorials/cheese.html:64
 msgid ""
 "Now you have a fun idea to try out for your next party! Have fun, and be "
 "sure to share these tips you learned with others!"
 msgstr "Maintenant vous avez des idées super à essayer lors de votre prochaine soirée ! Amusez-vous et n'hésitez pas à partager ces astuces autour de vous !"
+
+#: data/content/using/tutorials/cheese.html:66
+#: data/content/using/tutorials/gnote.html:96
+#: data/content/using/tutorials/launcher.html:53
+msgid "&#8592; Read about more ways to use Fedora!"
+msgstr "&#8592; En savoir plus sur les différentes manières d'utiliser Fedora !"
 
 #: data/content/using/tutorials/gnote.html:7
 msgid "Fedora Project - Using Gnote to unclutter your life."
@@ -6535,35 +6212,31 @@ msgstr "Internationalisation"
 msgid "News"
 msgstr "Les nouvelles"
 
-#: data/templates/foot.html:61
-msgid "Distribution"
-msgstr "Distribution"
-
-#: data/templates/foot.html:67
+#: data/templates/foot.html:66
 msgid "Fedora is sponsored by Red Hat."
 msgstr "Fedora est sponsorisé par Red Hat."
 
-#: data/templates/foot.html:68
+#: data/templates/foot.html:67
 msgid "Learn more about the relationship between Red Hat and Fedora >"
 msgstr "En savoir plus sur la relation entre Red Hat et Fedora >"
 
-#: data/templates/foot.html:69
-msgid "© 2012 Red Hat, Inc. and others."
-msgstr "© 2012 Red Hat, Inc et autres."
+#: data/templates/foot.html:68
+msgid "© 2013 Red Hat, Inc. and others."
+msgstr "© 2013 Red Hat, Inc et autres."
 
-#: data/templates/foot.html:72
+#: data/templates/foot.html:71
 msgid "Sponsors"
 msgstr "Sponsors"
 
-#: data/templates/foot.html:73
+#: data/templates/foot.html:72
 msgid "Legal"
 msgstr "Légal"
 
-#: data/templates/foot.html:74
+#: data/templates/foot.html:73
 msgid "Trademark Guidelines"
 msgstr "Informations sur la marque"
 
-#: data/templates/foot.html:76
+#: data/templates/foot.html:75
 msgid ""
 "The Fedora Project is maintained and driven by the community. This is a "
 "community maintained site. Red Hat is not responsible for content."
