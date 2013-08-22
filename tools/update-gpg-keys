@@ -89,7 +89,7 @@ def natsorted(l):
 usage = '%prog [options] keyfile [keyfile...]'
 parser = optparse.OptionParser(usage=usage, epilog=__doc__)
 parser.add_option('-d', '--keydir', dest='keydir',
-                  metavar='dir', default='static',
+                  metavar='dir', default='../fedoraproject.org/static',
                   help='Location of fedora keyblock and key files [%default/]')
 parser.add_option('-k', '--keyblock', dest='keyblock',
                   metavar='file', default='fedora.gpg',
