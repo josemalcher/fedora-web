@@ -6,7 +6,7 @@ release={
     'curr_id':     '19',
     'next_id':     '20',
     'curr_name':   u'Schrödinger’s Cat',
-    'next_name':   '',
+    'next_name':   'Heisenbug',
     'curr_state':  'Alpha',             # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_ppc64_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
