@@ -8,10 +8,10 @@ release={
     'curr_name':   u'Schrödinger’s Cat',
     'next_name':   'Heisenbug',
     'curr_state':  'Alpha',             # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  'Alpha',         # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_ppc64_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_s390_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  'Alpha',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'prev_arm_id': '18',
     'prev_ppc64_id': '18',
     'prev_s390_id': '18',
