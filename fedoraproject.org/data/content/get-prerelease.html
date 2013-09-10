@@ -348,9 +348,9 @@ l_code = l_map.get(lang, dflt_language)
                     </li>
                     <!-- experimental -->
                     <li>
-                        <h5><acronym title="${_('gPXE is an open source (GPL) network bootloader.')}">gPXE</acronym></h5>
+                        <h5><acronym title="${_('gPXE is an open source (GPL) network bootloader.')}"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Fedora/armhfp/os/images/pxeboot/">${_('gPXE tree')}</a></acronym></h5>
                         <ul>
-                            <li><a href="http://boot.fedoraproject.org/">BFO</a></li>
+                            <li><a href="http://docs.fedoraproject.org/en-US/Fedora/19/html/Installation_Guide/ap-install-server.html">${Markup(_('Setup your PXE server'))}</a></li>
                         </ul>
                     </li>
                     <!-- /experimental -->
