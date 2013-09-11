@@ -137,7 +137,7 @@ l_code = l_map.get(lang, dflt_language)
                         <ul>
                             <li><a href="http://boot.fedoraproject.org/">BFO</a></li>
 							<li><acronym title="${_('gPXE is an open source (GPL) network bootloader.')}">${_('gPXE tree:')}</acronym>
-								<a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Fedora/i386/os/images/pxeboot/">i386</a>
+								<a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Fedora/i386/os/images/pxeboot/">i386</a> / 
 								<a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Fedora/x86_64/os/images/pxeboot/">x86_64</a>
 								</li>
                             <li><a href="http://docs.fedoraproject.org/en-US/Fedora/19/html/Installation_Guide/ap-install-server.html">${Markup(_('Setup your PXE server'))}</a></li>
@@ -300,7 +300,7 @@ l_code = l_map.get(lang, dflt_language)
                                 </p>
                 <p class="note">${Markup(_('After downloading an Image, &lt;a href="https://fedoraproject.org%s/%s/verify"&gt;verify&lt;/a&gt; it.') % (path, lang))}</p>
 
-                        <h4>${Markup(_('Main ARM Images'))}</h4>
+                        <h4>${Markup(_('ARM Images'))}</h4>
                 <ul class="downloadbox armimage">
                     <li>
                         <h5>${Markup(_('Desktop'))}</h5>
@@ -327,7 +327,7 @@ l_code = l_map.get(lang, dflt_language)
                     <!-- /experimental -->
                 </ul>
 
-                        <h4>${Markup(_('ARM Images DE specific'))}</h4>
+                        <h4>${Markup(_('ARM Desktop Spins'))}</h4>
                 <ul class="downloadbox armimage">
                     <li>
                         <h5>${Markup(_('KDE'))}</h5>
