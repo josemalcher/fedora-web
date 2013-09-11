@@ -300,7 +300,7 @@ l_code = l_map.get(lang, dflt_language)
                                 </p>
                 <p class="note">${Markup(_('After downloading an Image, &lt;a href="https://fedoraproject.org%s/%s/verify"&gt;verify&lt;/a&gt; it.') % (path, lang))}</p>
 
-                        <h4>${Markup(_('ARM Images'))}</h4>
+                        <h4>${Markup(_('Main ARM Images'))}</h4>
                 <ul class="downloadbox armimage">
                     <li>
                         <h5>${Markup(_('Desktop'))}</h5>
@@ -309,6 +309,26 @@ l_code = l_map.get(lang, dflt_language)
                             <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Desktop-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a> - ${Markup(_('Image'))}</li>
                         </ul>
                     </li>
+                    <li>
+                        <h5>${Markup(_('Minimal'))}</h5>
+                        <ul>
+                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Minimal-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a> - ${Markup(_('Image'))}</li>
+                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a> - ${Markup(_('Image'))}</li>
+                        </ul>
+                    </li>
+                    <!-- experimental -->
+                    <li>
+                        <h5>PXE</h5>
+                        <ul>
+                            <li><acronym title="${_('gPXE is an open source (GPL) network bootloader.')}"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Fedora/armhfp/os/images/pxeboot/">${_('gPXE tree')}</a></acronym></li>
+                            <li><a href="http://docs.fedoraproject.org/en-US/Fedora/19/html/Installation_Guide/ap-install-server.html">${Markup(_('Setup your PXE server'))}</a></li>
+                        </ul>
+                    </li>
+                    <!-- /experimental -->
+                </ul>
+
+                        <h4>${Markup(_('ARM Images DE specific'))}</h4>
+                <ul class="downloadbox armimage">
                     <li>
                         <h5>${Markup(_('KDE'))}</h5>
                         <ul>
@@ -331,6 +351,7 @@ l_code = l_map.get(lang, dflt_language)
                         </ul>
                     </li>
                     <li>
+                                                                                                                    299,49        88%
                         <h5>${Markup(_('Mate'))}</h5>
                         <ul>
                             <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Mate-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a> - ${Markup(_('Image'))}</li>
@@ -344,22 +365,7 @@ l_code = l_map.get(lang, dflt_language)
                             <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-SoaS-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a> - ${Markup(_('Image'))}</li>
                         </ul>
                     </li>
-                    <li>
-                        <h5>${Markup(_('Minimal'))}</h5>
-                        <ul>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Minimal-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a> - ${Markup(_('Image'))}</li>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a> - ${Markup(_('Image'))}</li>
-                        </ul>
-                    </li>
-                    <!-- experimental -->
-                    <li>
-                        <h5><acronym title="${_('gPXE is an open source (GPL) network bootloader.')}"><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Fedora/armhfp/os/images/pxeboot/">${_('gPXE tree')}</a></acronym></h5>
-                        <ul>
-                            <li><a href="http://docs.fedoraproject.org/en-US/Fedora/19/html/Installation_Guide/ap-install-server.html">${Markup(_('Setup your PXE server'))}</a></li>
-                        </ul>
-                    </li>
-                    <!-- /experimental -->
-                </ul>
+					</ul>
 
                 <div class="clear"></div>
                 <xi:include href="../templates/content-export-regulations.html" />
