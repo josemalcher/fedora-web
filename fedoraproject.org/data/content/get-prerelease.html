@@ -137,7 +137,8 @@ l_code = l_map.get(lang, dflt_language)
                         <h5><acronym title="${_('gPXE is an open source (GPL) network bootloader.')}">${_('gPXE')}</acronym></h5>
                         <ul>
                             <li><a href="http://boot.fedoraproject.org/">BFO</a></li>
-							<li>${Markup(_('gPXE tree: &lt;a href="%(32b)s"&gt; i386&lt;/a&gt; / &lt;a href="%(64b)s"&gt; x86_64&lt;/a&gt;') % {'32b':global_variables.path['download']+'/test/'+global_variables.release['next_id']+'-'+global_variables.release['curr_state']+'/Fedora/i386/os/images/pxeboot/', '64b':global_variables.path['download']+'/test/'+global_variables.release['next_id']+'-'+global_variables.release['curr_state']+'/Fedora/x86_64/os/images/pxeboot/'})}
+							<li>${Markup(_('gPXE tree:'))}<br />
+                                ${Markup(_('&lt;a href="%(32b)s"&gt; i386&lt;/a&gt; / &lt;a href="%(64b)s"&gt; x86_64&lt;/a&gt;') % {'32b':global_variables.path['download']+'/test/'+global_variables.release['next_id']+'-'+global_variables.release['curr_state']+'/Fedora/i386/os/images/pxeboot/', '64b':global_variables.path['download']+'/test/'+global_variables.release['next_id']+'-'+global_variables.release['curr_state']+'/Fedora/x86_64/os/images/pxeboot/'})}
 								</li>
                             <li><a href="http://docs.fedoraproject.org/en-US/Fedora/19/html/Installation_Guide/ap-install-server.html">${Markup(_('Setup your PXE server'))}</a></li>
                         </ul>
