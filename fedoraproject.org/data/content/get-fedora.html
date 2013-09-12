@@ -1,3 +1,22 @@
+<?python
+import locale, time
+
+# We need to localize the date format. First, set locale to the original format
+locale.setlocale(locale.LC_ALL, 'en_US')
+# Then convert to time_struct
+alpha =  time.strptime(schedule[global_variables.release['next_id']]['alpha'], "%Y-%b-%d")
+beta =  time.strptime(schedule[global_variables.release['next_id']]['beta'], "%Y-%b-%d")
+final =  time.strptime(schedule[global_variables.release['next_id']]['final'], "%Y-%b-%d")
+# Move to the right locale (if known)
+try:
+	locale.setlocale(locale.LC_ALL, locale.locale_alias[lang])
+except:
+	pass
+# Convert back!
+alpha =  time.strftime("%x", alpha)
+beta =  time.strftime("%x", beta)
+final =  time.strftime("%x", final)
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
     xmlns:py="http://genshi.edgewall.org/"
@@ -72,15 +91,15 @@
 					<tbody>
 						<tr>
 							<td>${_('Alpha Release Public Availability')}</td>
-							<td>${schedule[global_variables.release['next_id']]['alpha']}</td>
+							<td>${alpha}</td>
     					</tr>
     					<tr>
 							<td>${_('Beta Release Public Availability')}</td>
-							<td>${schedule[global_variables.release['next_id']]['beta']}</td>
+							<td>${beta}</td>
     					</tr>
     					<tr>
 							<td>${_('Final Release Public Availability (GA)')}</td>
-							<td>${schedule[global_variables.release['next_id']]['final']}</td>
+							<td>${final}</td>
     					</tr>
 	                </tbody>
 					</table>
