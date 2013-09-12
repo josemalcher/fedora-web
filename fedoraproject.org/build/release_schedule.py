@@ -1,30 +1,64 @@
 #!/usr/bin/python
-# This script will parse the f-19-key-milestones.tjx file and retrieve three relevant
+# This script will parse the f-XX-key-milestones.tjx file and retrieve three relevant
 # dates: Alpha Release Public Availability, Beta Release Public Availability and Final Release Public Availability.
 
-import urllib
+import urllib2
 from StringIO import StringIO
 import gzip
 from lxml import etree
+import cPickle, os
 
-a = open('build/schedule_alpha.cache', 'w')
-b = open('build/schedule_beta.cache', 'w')
-g = open('build/schedule_final.cache', 'w')
+def parse(cache, r):
+    root = etree.fromstring(cache)
+    date={}
 
-u = urllib.urlopen('http://fedorapeople.org/groups/schedule/f-19/f-19-key-milestones.tjx')
-buf = StringIO(u.read())
-f = gzip.GzipFile(fileobj=buf)
-data = f.read().strip() # looks like there is a leading space in the file
+    alpha_release = root.xpath('//task[@id="f' + r + '.TestingPhase.alpha.alpha_drop"]/taskScenario/start/@humanReadable')
+    beta_release = root.xpath('//task[@id="f' + r + '.TestingPhase.beta.beta_drop"]/taskScenario/start/@humanReadable')
+    final_release = root.xpath('//task[@id="f' + r + '.LaunchPhase.final"]/taskScenario/start/@humanReadable')
 
-root = etree.fromstring(data)
 
-alpha_release = root.xpath('//task[@id="f19.TestingPhase.alpha.alpha_drop"]/taskScenario/start/@humanReadable')
-beta_release = root.xpath('//task[@id="f19.TestingPhase.beta.beta_drop"]/taskScenario/start/@humanReadable')
-final_release = root.xpath('//task[@id="f19.LaunchPhase.final"]/taskScenario/start/@humanReadable')
+    try:
+        date[r] = {'alpha':alpha_release[0], 'beta':beta_release[0], 'final':final_release[0]}
+        return date
+    except IndexError:
+        return {}
 
-a.write(alpha_release[0])
-a.close
-b.write(beta_release[0])
-b.close
-g.write(final_release[0])
-g.close
+
+def schedule(release):
+    date={}
+    ec = None
+    cachefile = os.path.join(os.getcwd(), 'build/schedule.cache')
+
+
+    if os.path.isfile(cachefile):
+        f = open(cachefile)
+        try:
+            ec = cPickle.load(f)
+        except:
+            pass
+        f.close()
+
+    if ec is not None:
+        date = parse(ec, release)
+        if release in date:
+            return date
+
+    # We need to generate the cache!
+    # Download the schedule
+    try:
+        u = urllib2.urlopen('http://fedorapeople.org/groups/schedule/f-' + release + '/f-' + release + '-key-milestones.tjx')
+    except HTTPError:
+        date[release] = {'alpha':'-', 'beta':'-', 'final':'-'}
+        pass
+
+    # Release is already present in date if we got HTTPError
+    if not release in date:
+        buf = StringIO(u.read())
+        f = gzip.GzipFile(fileobj=buf)
+        data = f.read().strip() # looks like there is a leading space in the file
+
+        f = open(cachefile, 'w')
+        cPickle.dump(data, f)
+        f.close()
+
+    return parse(data, release)
