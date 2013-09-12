@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*-
 # This file defines all variable needed to be edited during the release cycle (alpha, beta...).
 release={
-    'prev_id':     '17',
-    'curr_id':     '18',
-    'next_id':     '19',
-    'curr_name':   'Spherical Cow',
-    'next_name':   'Schrödinger\'s Cat',
+    'prev_id':     '18',
+    'curr_id':     '19',
+    'next_id':     '20',
+    'curr_name':   '',
+    'next_name':   '',
     'curr_state':  '',             # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_ppc64_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
