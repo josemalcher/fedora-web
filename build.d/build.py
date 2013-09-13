@@ -95,6 +95,10 @@ def process_dir(dirpath, filenames):
                     feedurl = re.split('\'\)', match[1])
                     feedparse(feedurl[0])
             continue;
+        release_date = None
+        if schedule is not None:
+            release_date = schedule(globalvar.release['next_id'])
+
         dest_file = os.path.join(options.output, src_file[len(options.input):]) + '.' + options.lang # Hideous
         curpage = src_file[len(options.input):].rstrip('.html')
         relpath = '../' * (dest_file.count('/') - 1)
@@ -111,7 +115,7 @@ def process_dir(dirpath, filenames):
             path=options.basepath,
             curpage=curpage,
             global_variables=globalvar,
-            schedule=schedule(globalvar.release['next_id'])
+            schedule = release_date
             ).render(method='html', doctype='html', encoding='utf-8')
         output = open(dest_file, 'w')
         output.write(page)
