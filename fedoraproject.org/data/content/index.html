@@ -20,10 +20,11 @@ story_info = story_paths[random.randint(0, len(story_paths)-1)]
 if global_variables.release['curr_state'] == "Beta":
   from datetime import datetime
   import os
+  from time import strftime
 
   today = datetime.utcnow()
-	# http://fedorapeople.org/groups/schedule/f-19/f-19-key-tasks.html
-  release = datetime(2013, 7, 2, 14)
+  release_date = time.strptime(schedule[global_variables.release['next_id']]['final'], "%Y-%b-%d")
+  release = datetime(strftime("%Y", release_date), strftime("%m", release_date), strftime("%d", release_date), 14)
 
   difference = release - today
   days = difference.days
