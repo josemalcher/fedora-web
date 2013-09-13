@@ -10,7 +10,7 @@ def convert_date(t):
 		localized=d[:d.find(s[0])]
 	except IndexError:
 		localized=d
-	return localized.decode('utf-8')
+	return localized.decode(locale.nl_langinfo(locale.CODESET))
 
 # We need to localize the date format. First, set locale to the original format
 locale.setlocale(locale.LC_ALL, 'en_US')
