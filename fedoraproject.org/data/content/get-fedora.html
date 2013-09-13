@@ -1,21 +1,32 @@
 <?python
 import locale, time
+import re
+
+def convert_date(t):
+   d = time.strftime("%c", t)
+   #now strip the time from the string
+   s = re.findall(r'\d\d:\d\d:\d\d', d)
+   return d[:d.find(s[0])]
 
 # We need to localize the date format. First, set locale to the original format
 locale.setlocale(locale.LC_ALL, 'en_US')
+
 # Then convert to time_struct
 alpha =  time.strptime(schedule[global_variables.release['next_id']]['alpha'], "%Y-%b-%d")
 beta =  time.strptime(schedule[global_variables.release['next_id']]['beta'], "%Y-%b-%d")
 final =  time.strptime(schedule[global_variables.release['next_id']]['final'], "%Y-%b-%d")
+
 # Move to the right locale (if known)
 try:
-	locale.setlocale(locale.LC_ALL, locale.locale_alias[lang])
+    locale.setlocale(locale.LC_ALL, locale.locale_alias[lang])
 except:
-	pass
+    pass
+
 # Convert back!
-alpha =  time.strftime("%x", alpha)
-beta =  time.strftime("%x", beta)
-final =  time.strftime("%x", final)
+alpha =  convert_date(alpha)
+beta =  convert_date(beta)
+final =  convert_date(final)
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
