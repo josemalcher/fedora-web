@@ -1,6 +1,8 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 # This script will parse the f-XX-key-milestones.tjx file and retrieve three relevant
 # dates: Alpha Release Public Availability, Beta Release Public Availability and Final Release Public Availability.
+
 
 import urllib2
 from StringIO import StringIO
