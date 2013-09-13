@@ -3,10 +3,15 @@ import locale, time
 import re
 
 def convert_date(t):
-   d = time.strftime("%c", t)
-   #now strip the time from the string
-   s = re.findall(r'\d\d:\d\d:\d\d', d)
-   return d[:d.find(s[0])]
+	d = time.strftime("%c", t)
+	#now strip the time from the string
+	s = re.findall(r'\d\d:\d\d:\d\d', d)
+	try:
+		localized=d[:d.find(s[0])]
+	except IndexError:
+		localized=d
+
+	return localized
 
 # We need to localize the date format. First, set locale to the original format
 locale.setlocale(locale.LC_ALL, 'en_US')
