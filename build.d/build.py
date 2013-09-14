@@ -19,26 +19,29 @@ from genshi.template import TemplateLoader
 import fileinput
 import errno
 
-# We import build/rss.py if exists
+# Main import
+try:
+    import globalvar
+except ImportError:
+    print "globalvar.py is missing. It is needed as it provides release specific variables"
+    raise
+
+# Import websites specific modules, used to create specific
+# variables/cache
 sys.path.append('build')
+
 try:
     from rss import *
 except ImportError:
     feedparse = None
     pass
 
-# Import of build/release_schedule.py
 try:
-		from release_schedule import schedule
+    from release_schedule import schedule
 except ImportError:
-		schedule = None
-		pass
+    schedule = None
+    pass
 
-try:
-    import globalvar
-except ImportError:
-    print "globalvar.py is missing. It is needed as it provides release specific variables"
-    raise
 
 # Avoid race condition for concurrent builds
 def safe_makedir(path):
