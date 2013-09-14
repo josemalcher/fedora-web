@@ -57,15 +57,4 @@
 
   </py:def>
 <!-- /end Genshi Template for Cloud html form  (with JS) -->
-
-						<noscript>
-               ${printrelease('19', ec2_ami['f19'])}
-               ${printrelease('18', ec2_ami['f18'])}
-						</noscript>
-
-						<!-- If JS enabled -->
-               ${printform('19', ec2_ami['f19_regions'])}
-               ${printform('18', ec2_ami['f18_regions'])}
-						<!-- /end If JS enabled -->
-
 </html>

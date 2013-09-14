@@ -295,9 +295,16 @@ l_code = l_map.get(lang, dflt_language)
                 </ul>
                         <h4>${Markup(_('Fedora EC2 Images'))}</h4>
                 <ul class="downloadbox cloudimage">
-                    <!-- Specific AMI selector -->
-                                <xi:include href="../templates/cloud-tab.html" />
-                    <!-- /Specific AMI selector -->
+<!-- Specific AMI selector -->
+					<xi:include href="../templates/cloud-tab.html" />
+					<noscript>
+					${printrelease('20_Alpha', ec2_ami['f20_Alpha'])}
+					</noscript>
+
+					<!-- If JS enabled -->
+					${printform('20_Alpha', ec2_ami['f20_Alpha_regions'])}
+					<!-- /end If JS enabled -->
+<!-- /Specific AMI selector -->
                 </ul>
 
                 <div class="clear"></div>
