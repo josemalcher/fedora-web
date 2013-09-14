@@ -327,6 +327,16 @@
                                 <p>${_('Choose the region and machine architecture and just click to launch in your Amazon Web Services account. Or, copy the AMI ID and use that to launch from the AWS Console or command-line tools.')}</p>
 <!-- Specific AMI selector -->
 								<xi:include href="../templates/cloud-tab.html" />
+								<noscript>
+								${printrelease('19', ec2_ami['f19'])}
+								${printrelease('18', ec2_ami['f18'])}
+								</noscript>
+
+								<!-- If JS enabled -->
+								${printform('19', ec2_ami['f19_regions'])}
+								${printform('18', ec2_ami['f18_regions'])}
+								<!-- /end If JS enabled -->
+
 <!-- /Specific AMI selector -->
 
 
