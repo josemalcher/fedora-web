@@ -37,6 +37,12 @@ except ImportError:
     pass
 
 try:
+    from cloud import get_amis
+except ImportError:
+    get_amis = None
+    pass
+
+try:
     from release_schedule import schedule
 except ImportError:
     schedule = None
@@ -102,6 +108,10 @@ def process_dir(dirpath, filenames):
         if schedule is not None:
             release_date = schedule(globalvar.release['next_id'])
 
+        ec2 = None
+        if get_amis is not None:
+            ec2 = get_amis()
+
         dest_file = os.path.join(options.output, src_file[len(options.input):]) + '.' + options.lang # Hideous
         curpage = src_file[len(options.input):].rstrip('.html')
         relpath = '../' * (dest_file.count('/') - 1)
@@ -118,7 +128,8 @@ def process_dir(dirpath, filenames):
             path=options.basepath,
             curpage=curpage,
             global_variables=globalvar,
-            schedule = release_date
+            schedule = release_date,
+            ec2_ami = ec2
             ).render(method='html', doctype='html', encoding='utf-8')
         output = open(dest_file, 'w')
         output.write(page)
