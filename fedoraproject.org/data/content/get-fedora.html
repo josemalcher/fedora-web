@@ -13,7 +13,7 @@ def convert_date(t):
 	try:
 		res = localized.decode(locale.nl_langinfo(locale.CODESET))
 	except:
-		res = False
+		res = time.strftime("%F", t)
 	return res
 
 # We need to localize the date format. First, set locale to the original format
@@ -31,15 +31,9 @@ except:
 	pass
 
 # Convert back!
-r = convert_date(alpha)
-if r:
-	alpha = r
-r = convert_date(beta)
-if r:
-	beta =  r
-r = convert_date(final)
-if r:
-	final = r
+alpha = convert_date(alpha)
+beta = convert_date(beta)
+final = convert_date(final)
 
 locale.setlocale(locale.LC_ALL, 'en_US')
 
