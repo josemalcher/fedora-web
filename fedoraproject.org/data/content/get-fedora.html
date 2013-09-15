@@ -5,13 +5,13 @@ import re
 def convert_date(t):
 	d = time.strftime("%c", t)
 	#now strip the time from the string
-	s = re.findall(r'\d{1,2}[\.:,]\d\d[\.:,]\d{0,2}[^\d]', d)
+	s = re.search('(, )?(kl\. )?\d{1,2}(?(2)\.|[\.:,])\d\d[\.:,]?\d{0,2}[^\d\.][^(]', d)
+
+	if s:
+		d=d[:d.find(s.group(0))]
+
 	try:
-		localized=d[:d.find(s[0])]
-	except IndexError:
-		localized=d
-	try:
-		res = localized.decode(locale.nl_langinfo(locale.CODESET))
+		res = d.decode(locale.nl_langinfo(locale.CODESET))
 	except:
 		res = time.strftime("%F", t)
 		pass
@@ -27,8 +27,9 @@ final =  time.strptime(schedule[global_variables.release['next_id']]['final'], "
 
 # Move to the right locale (if known)
 try:
-	locale.setlocale(locale.LC_ALL, locale.locale_alias[lang])
+	locale.setlocale(locale.LC_ALL, locale.locale_alias[lang.lower()])
 except:
+	print 'Locale error'
 	pass
 
 # Convert back!
