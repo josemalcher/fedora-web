@@ -16,13 +16,12 @@ def sorted_region(arr):
 		list.append(i['region'])
 	return(sorted(set(list), key=lambda  item: (int(item.partition(' ')[0]) if item[0].isdigit() else float('inf'), item)))
 
-# see http://fedoraproject.org/wiki/Cloud_SIG/EC2_Images for the complet list
 # Generated using the following:
 # :%s#^| \([a-zA-Z*-9]*\)[ |]*\(i386\|x86_64\)[ |]*\(EBS-backed\)[ |]* \(ami.*\)#{'region':'\1', 'arch':'\2', 'store':'\3', 'id':'\4'},#g
 
+# Get the list at: https://dl.fedoraproject.org/pub/alt/stage/20-Alpha-RC2/Images/x86_64/
 ec2_f20_Alpha = [
-			{'region':'US West (Northern California)',      'arch':'i386',   'store':'EBS-Backed', 'id':'test-0000000'},
-			{'region':'US West (Oregon)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'test-0000001'}
+			{'region':'US East (Northern Virginia)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-03c8816a'}
 ]
 
 ec2_f19 = [
