@@ -26,7 +26,7 @@
 											<td>${img['id']}</td>
 											<td style="vertical-align: middle">
 												<a href="https://console.aws.amazon.com/ec2/home?region=${img['region']}#launchAmi=${img['id']}">
-												<img style="vertical-align: bottom; display: block; margin: 0 auto" title="${_('Launch AMI instance')}" src="${path}/static/images/cloud_icon.png" />
+												<img style="vertical-align: bottom; display: block; margin: 0 auto" title="${_('Launch AMI instance')}" src="${path}/static/images/cloud_icon.png " alt=""/>
 												</a></td>
 									</tr>
 								</py:for>
@@ -38,7 +38,7 @@
 
 <!-- Genshi Template for Cloud html form  (with JS) -->
   <py:def function="printform(release)">
-            <form id="cloud_options_${release}" class="cloud-options" name="cloud_options_${release}" style="visibility:hidden;">
+            <form id="cloud_options_${release}" class="cloud-options" name="cloud_options_${release}" style="visibility:hidden;" action=''>
 								<h5>${_('Fedora %s ') % release}</h5>
                 <select id="region_${release}" name="region_${release}" onchange="getval();">
                     <option value='null'>${_('Select the nearest region')}</option>
