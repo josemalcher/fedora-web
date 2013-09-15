@@ -14,6 +14,7 @@ def convert_date(t):
 		res = localized.decode(locale.nl_langinfo(locale.CODESET))
 	except:
 		res = time.strftime("%F", t)
+		pass
 	return res
 
 # We need to localize the date format. First, set locale to the original format
