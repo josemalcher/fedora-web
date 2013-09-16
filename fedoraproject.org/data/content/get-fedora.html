@@ -5,10 +5,14 @@ import re
 def convert_date(t):
 	d = time.strftime("%c", t)
 	#now strip the time from the string
-	s = re.search('(, )?(kl\. )?\d{1,2}(?(2)\.|[\.:,])\d\d[\.:,]?\d{0,2}[^\d\.][^(]', d)
+	time_l = time.strftime('%X',time.gmtime(0))
 
-	if s:
-		d=d[:d.find(s.group(0))]
+	try:
+		d=d[:d.find(time_l)]
+		s = re.search('[,\. ]*$',d)
+		d=d[:d.rfind(s.group(0))]
+	except:
+		pass
 
 	try:
 		res = d.decode(locale.nl_langinfo(locale.CODESET))
