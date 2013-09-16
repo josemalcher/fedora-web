@@ -1,15 +1,16 @@
 # Translations template for PROJECT.
-# Copyright (C) 2012 ORGANIZATION
+# Copyright (C) 2013 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # 
 # Translators:
-# ప్రవీణ్ యిళ్ళ <mail2ipn@gmail.com>, 2011.
+# sudheesh001 <sudheesh1995@outlook.com>, 2013
+# ప్రవీణ్ ఇళ్ళ <mail2ipn@gmail.com>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-07-04 01:02+0200\n"
-"PO-Revision-Date: 2012-07-03 23:13+0000\n"
+"POT-Creation-Date: 2013-08-10 10:24+0200\n"
+"PO-Revision-Date: 2013-08-10 08:40+0000\n"
 "Last-Translator: Kévin Raymond <shaiton@fedoraproject.org>\n"
 "Language-Team: Telugu (http://www.transifex.com/projects/p/fedora/language/te/)\n"
 "MIME-Version: 1.0\n"
@@ -74,7 +75,7 @@ msgid ""
 "appropriate medium.  Next boot from that medium.  After that you're using "
 "BFO!  Use your keyboard to select menus to run diagnostics, or boot a Fedora"
 " installer or rescue mode."
-msgstr ""
+msgstr "మొదటి అందుబాటులో BFO నిర్దిష్ట చిత్రాలు ఒకటి డౌన్లోడ్ చేయండి.మీరు ISO (DVD / CD), USB, ఫ్లాపీ మరియు lkrn చిత్రాల ఎంపిక చేసుకొనవచ్చు. అప్పుడు తగిన మీడియం కు చిత్రాన్ని రాయo. మాధ్యమం నుండి తదుపరి బూట్.ఆ తర్వాత మీరు BFO ఉపయోగిస్తున్నారు! విశ్లేషణ అమలు మెనూలను ఎంచుకోండి మీ కీబోర్డ్ ఉపయోగించండి, లేదా ఒక Fedora సంస్థాపకి లేదా దూరస్థ రీతిలో బూట్."
 
 #: data/content/faq.html:15
 msgid "Can I use it with grub?"
@@ -82,7 +83,7 @@ msgstr "గ్రబ్ తో దానిని వాడగలనా?"
 
 #: data/content/faq.html:16
 msgid "Yes!  Just run the following commands as root"
-msgstr ""
+msgstr "అవును! ఈ క్రింది ఆదేశాలను కేవలం రూట్"
 
 #: data/content/faq.html:22
 msgid "How does it work?"
@@ -95,13 +96,13 @@ msgid ""
 "together is ipxe.  Users familiar with pxe will find ipxe very familiar.  "
 "Latest versions support several protocols beyond just tftp.  We are using "
 "http to transfer files around.  The basic steps are as follows:"
-msgstr ""
+msgstr "BFO boot.kernel.org (BKO) ద్వారా ప్రారంభించారు మరియు ఒక కొత్త బూట్ స్టాక్ ఉత్పత్తి ఇటీవల సాంకేతిక వరుస మిళితం చేశారు. కలిసి ప్రతిదీ కలిగి ఆ గ్లూ ipxe ఉంది. PXE తెలిసిన వినియోగదారులు బాగా తెలిసిన ipxe కనుగొంటారు. తాజా వెర్షన్లు కేవలం tftp దాటి అనేక ప్రోటోకాల్స్ సమర్థిస్తాయి. మేము చుట్టూ ఫైళ్లు బదిలీ http ఉపయోగిస్తున్నారు. ప్రాథమిక దశలు క్రింది విధంగా ఉన్నాయి:"
 
 #: data/content/faq.html:25
 msgid ""
 "Download the boot.fedoraproject.org media fitting your preferred boot "
 "method."
-msgstr ""
+msgstr "boot.fedoraproject.org మీరు ఇష్టపడే బూట్ పద్ధతిలో సరిపోయేలా మీడియా డౌన్లోడ్ చేయండి."
 
 #: data/content/faq.html:27
 msgid "burn ISO images to a CD-R or DVD-R"
@@ -113,108 +114,108 @@ msgstr "ఒక USB స్టిక్కుకు USB ఇమేజును వ�
 
 #: data/content/faq.html:29
 msgid "write Floppy image to a 3.5 inch HD floppy"
-msgstr ""
+msgstr "ఒక 3.5 అంగుళాల HD ఫ్లాపీ కు ఫ్లాపీ చిత్రాన్ని రాయటానికి"
 
 #: data/content/faq.html:30
 #, python-format
 msgid ""
 "lkrn image for PXE booting, grub booting and in conjunction with kexec "
 "(c.f.: <a href=\"%s\">pxkxc</a>)"
-msgstr ""
+msgstr "బూట్ PXE బూట్, grub మరియు kexec కలిపి lkrn చిత్రం (cf: <a href=\"%s\"> pxkxc </ a>)"
 
-#: data/content/faq.html:32
+#: data/content/faq.html:33
 msgid "Boot from the medium you created."
 msgstr "మీరు సృష్టించిన మాధ్యమం నుండి బూట్ చేయి."
 
-#: data/content/faq.html:33
+#: data/content/faq.html:34
 msgid "It will first configure network via DHCP."
 msgstr "అది మొదట DHCP ద్వారా నెట్వర్కును స్వరూపిస్తుంది."
 
-#: data/content/faq.html:34
+#: data/content/faq.html:35
 msgid ""
 "After network is configured, it will go out to our boot.fedoraproject.org "
 "website and download the menus and other prompts from us"
-msgstr ""
+msgstr "నెట్వర్క్ కాన్ఫిగర్ తర్వాత, అది మా boot.fedoraproject.org వెబ్సైట్ బయటకు వెళ్లి మా నుండి మెనూలను మరియు ఇతర ప్రాంప్ట్ డౌన్లోడ్ చేస్తుంది"
 
-#: data/content/faq.html:35
+#: data/content/faq.html:36
 msgid ""
 "Those boot menus will then be displayed to the user for selection.  After a "
 "selection (like install Fedora 12) the regular boot process takes over just "
 "as it would had you booted from normal local media."
-msgstr ""
+msgstr "ఆ బూట్ మెనూలను అప్పుడు ఎంపిక కోసం యూజర్ ప్రదర్శించబడుతుంది. ఒక ఎంపిక తరువాత (సంస్థాపన Fedora 12 వంటి) సాధారణ బూట్ విధానాన్ని మీరు సాధారణ స్థానిక మీడియా నుండి బూట్ కలిగి ఉంటుంది కేవలం పైగా పడుతుంది."
 
-#: data/content/faq.html:37
+#: data/content/faq.html:38
 msgid "Why should I use BFO?"
 msgstr "BFO నే ఎందుకు వాడాలి?"
 
-#: data/content/faq.html:38
+#: data/content/faq.html:39
 msgid ""
 "The BFO downloads are very small and once you have them, you'll rarely have "
 "to download more.  Even as more versions of Fedora come out, you just boot "
 "from your image and they will appear.  Users with fast internet connections "
 "will have the best experience with BFO.  They basically replace having to "
 "regularly download large ISO images and burn them to disk."
-msgstr ""
+msgstr "BFO డౌన్లోడ్ చాలా చిన్న మరియు ఒకసారి మీరు వాటిని కలిగి ఉంటాయి, మీరు మరింత డౌన్లోడ్ కలిగి అరుదుగా వస్తుంది. Fedora యొక్క మరింత వెర్షన్లు బయటకు వస్తారు కూడా, మీరు కేవలం మీరు చిత్రం నుండి బూట్ మరియు వారు కనిపిస్తుంది. ఫాస్ట్ ఇంటర్నెట్ కనెక్షన్లు వినియోగదారులు BFO తో ఉత్తమ అనుభవం ఉంటుంది. ఇవి ప్రధానంగా క్రమం తప్పకుండా పెద్ద ISO చిత్రాలను డౌన్లోడ్ చేయండి మరియు డిస్కు వాటిని బర్న్ కలిగి స్థానంలో."
 
-#: data/content/faq.html:39
+#: data/content/faq.html:40
 msgid "What is required?"
 msgstr "ఏమి అవసరం?"
 
-#: data/content/faq.html:40
+#: data/content/faq.html:41
 msgid ""
 "For all image types, you need a working DHCP in the network you use it from "
 "as well as HTTP internet access. To use the ISO, a CD/DVD burner. To use the"
 " USB image, a USB stick.  Floppy and lkrn images are also available."
-msgstr ""
-
-#: data/content/faq.html:41
-msgid "Does BFO replace the installer or anaconda?"
-msgstr ""
+msgstr "అన్ని చిత్రం రకాల, మీరు HTTP ఇంటర్నెట్ సదుపాయం అలాగే నుండి ఉపయోగించడానికి నెట్వర్క్ లో ఒక పని DHCP అవసరం. ISO, ఒక CD / DVD బర్నర్ ఉపయోగించడానికి. USB చిత్రం, ఒక USB స్టిక్ ఉపయోగించడానికి. ఫ్లాపీ మరియు lkrn చిత్రాలు కూడా అందుబాటులో ఉన్నాయి."
 
 #: data/content/faq.html:42
+msgid "Does BFO replace the installer or anaconda?"
+msgstr "BFO సంస్థాపకి anaconda స్థానంలో ఉందా?"
+
+#: data/content/faq.html:43
 msgid ""
 "No.  BFO is also not part of Anaconda.  BFO is a way to load the installer "
 "via network.  Normally users download a large ISO image that contains all of"
 " the installer bits.  BFO is a smaller booting method that downloads the "
 "installer bits at runtime.  In theory with BFO one iso download can install "
 "all future versions of Fedora."
-msgstr ""
+msgstr "కాదు BFO కూడా అనకొండ యొక్క భాగం కాదు. BFO నెట్వర్క్ ద్వారా సంస్థాపకి లోడ్ కు ఒక మార్గం. సాధారణంగా వినియోగదారులు సంస్థాపకి బిట్స్ అన్ని కలిగి పెద్ద ISO ప్రతిబింబ డౌన్లోడ్. BFO పని సంస్థాపకి బిట్స్ డౌన్లోడ్ ఒక చిన్న బూట్ విధానం. BFO ఒక సిద్దాంతంలో లో iso డౌన్లోడ్ Fedora యొక్క అన్ని రాబోయే సంస్కరణలకు ఇన్స్టాల్ చేయవచ్చు."
 
-#: data/content/faq.html:43
+#: data/content/faq.html:44
 msgid "What about the Live CDs?"
 msgstr "లైవ్ సీడీల సంగతి ఏమిటి?"
 
-#: data/content/faq.html:44
+#: data/content/faq.html:45
 msgid ""
 "At this time booting Live CDs is experimental and not available.  We hope to"
 " have them available soon."
-msgstr ""
-
-#: data/content/faq.html:45
-msgid "Why won't BFO boot?"
-msgstr ""
+msgstr "లైవ్ CD లు బూట్ ఈ సమయం ప్రయోగాత్మక మరియు అందుబాటులో లేదు. మేము వాటిని అందుబాటులో కలిగి ఉంటాయి ఆశిస్తున్నాము."
 
 #: data/content/faq.html:46
+msgid "Why won't BFO boot?"
+msgstr "BFO బూట్ ఎందుకు కాదు?"
+
+#: data/content/faq.html:47
 msgid ""
 "BFO uses ipxe so it's not actually booting a Linux kernel at first.  As "
 "such, some drivers and devices may not be supported.  If this is the case "
 "for you please check upstream at http://etherboot.org/ for bug updates, etc."
 "  If you feel a bug or device is supported but not working in BFO, contact: "
-msgstr ""
+msgstr "నిజానికి ఇది మొదటి వద్ద ఒక Linux కెర్నల్ బూట్ కనుక BFO ipxe ఉపయోగిస్తుంది. అందుకని, కొన్ని డ్రైవర్లు మరియు పరికరములు మద్దతు ఉండకపోవచ్చు. ఈ మీరు విషయంలో ఉంటే మీరు ఒక బగ్ లేదా పరికరం మద్దతు కానీ BFO, పరిచయం పని లేదు భావిస్తే బగ్ నవీకరణలను, మొదలైనవి కోసం http://etherboot.org/ వద్ద అప్స్ట్రీమ్ చూడండి:"
 
-#: data/content/faq.html:47
+#: data/content/faq.html:48
 msgid "Where can I find the BFO sources and configuration?"
-msgstr ""
+msgstr "BFO గురించి నేను ఎక్కడ మూలాల మరియు ఆకృతీకరణ వెదుక్కోవచ్చు?"
 
-#: data/content/faq.html:49
+#: data/content/faq.html:50
 msgid "Where do I report issues?"
-msgstr ""
+msgstr "సమస్యలు గురించి నేను ఎక్కడ రిపోర్ట్ చెయ్యాలి?"
 
-#: data/content/faq.html:56
+#: data/content/faq.html:55
 msgid ""
 "At this time booting Live CDs is experimental and not available. We hope to "
 "have them available soon."
-msgstr ""
+msgstr "లైవ్ CD లు బూట్ ఈ సమయం ప్రయోగాత్మక మరియు అందుబాటులో లేదు. మేము వాటిని అందుబాటులో కలిగి ఉంటాయి ఆశిస్తున్నాము."
 
 #: data/content/index.html:7 data/content/index.html:10
 msgid "boot.fedoraproject.org"
@@ -225,7 +226,7 @@ msgid ""
 "boot.fedoraproject.org (BFO) is a way to boot hosts in order to run install "
 "or other types of media via the network.  It works similarly to a pxeboot "
 "environment."
-msgstr ""
+msgstr "boot.fedoraproject.org (BFO) నెట్వర్క్ ద్వారా మీడియా సంస్థాపన లేదా ఇతర రకాల అమలు చేయడానికి ఆతిథ్య బూట్ మార్గం. ఇది ఒక pxeboot వాతావరణంలో అదేవిధంగా పనిచేస్తుంది."
 
 #: data/content/index.html:12
 msgid "BFO welcome screen"
@@ -233,15 +234,15 @@ msgstr "BFO స్వాగతపు తెర"
 
 #: data/content/index.html:13
 msgid "BFO is based on the work of the BKO - "
-msgstr ""
+msgstr "BFO, BKO యొక్క కృషి మీద ఆధారపడి ఉంది -"
 
 #: data/content/index.html:13
 msgid "To download BFO please select BFO Download along the left side menu."
-msgstr ""
+msgstr "BFO డౌన్లోడ్ చేయడానికి ఎడమవైపు మెనులో BFO డౌన్లోడ్ దయచేసి ఎంచుకోండి"
 
 #: data/templates/foot.html:9
 msgid ""
-"&copy; 2012 Red Hat, Inc. and others.  Please send any comments or "
+"&copy; 2013 Red Hat, Inc. and others.  Please send any comments or "
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
 msgstr ""

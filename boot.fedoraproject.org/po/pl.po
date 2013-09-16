@@ -1,16 +1,16 @@
 # Translations template for PROJECT.
-# Copyright (C) 2012 ORGANIZATION
+# Copyright (C) 2013 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # 
 # Translators:
-# neb <nick@bebout.net>, 2011.
-# Piotr Drąg <piotrdrag@gmail.com>, 2011, 2012.
+# neb <nick@bebout.net>, 2011
+# Piotr Drąg <piotrdrag@gmail.com>, 2011-2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2012-07-04 01:02+0200\n"
-"PO-Revision-Date: 2012-07-03 23:13+0000\n"
+"POT-Creation-Date: 2013-08-10 10:24+0200\n"
+"PO-Revision-Date: 2013-08-10 18:30+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <trans-pl@lists.fedoraproject.org>\n"
 "MIME-Version: 1.0\n"
@@ -123,32 +123,32 @@ msgid ""
 "(c.f.: <a href=\"%s\">pxkxc</a>)"
 msgstr "obraz lkrn do uruchamiania za pomocą PXE lub programu GRUB oraz w połączeniu z kexec (np.: <a href=\"%s\">pxkxc</a>)"
 
-#: data/content/faq.html:32
+#: data/content/faq.html:33
 msgid "Boot from the medium you created."
 msgstr "Należy uruchomić z utworzonego nośnika."
 
-#: data/content/faq.html:33
+#: data/content/faq.html:34
 msgid "It will first configure network via DHCP."
 msgstr "Najpierw zostanie skonfigurowana sieć przez DHCP."
 
-#: data/content/faq.html:34
+#: data/content/faq.html:35
 msgid ""
 "After network is configured, it will go out to our boot.fedoraproject.org "
 "website and download the menus and other prompts from us"
 msgstr "Po skonfigurowaniu sieci przejdzie na stronę WWW boot.fedoraproject.org, gdzie pobierze menu i inne żądania"
 
-#: data/content/faq.html:35
+#: data/content/faq.html:36
 msgid ""
 "Those boot menus will then be displayed to the user for selection.  After a "
 "selection (like install Fedora 12) the regular boot process takes over just "
 "as it would had you booted from normal local media."
 msgstr "Następnie zostanie wyświetlone użytkownikowi menu uruchamiania, aby mógł dokonać wyboru. Po wybraniu (np. zainstalowania Fedory 12) nastąpi przełączenie na zwykły proces uruchamiania, taki sam jak w przypadku zwykłych lokalnych nośników."
 
-#: data/content/faq.html:37
+#: data/content/faq.html:38
 msgid "Why should I use BFO?"
 msgstr "Dlaczego używać BFO?"
 
-#: data/content/faq.html:38
+#: data/content/faq.html:39
 msgid ""
 "The BFO downloads are very small and once you have them, you'll rarely have "
 "to download more.  Even as more versions of Fedora come out, you just boot "
@@ -157,22 +157,22 @@ msgid ""
 "regularly download large ISO images and burn them to disk."
 msgstr "Obrazy BFO są bardzo małe, i po ich zdobyciu rzadko istnieje pobierać je ponownie. Nawet, jeśli wyjdzie nowa wersja Fedory, to wystarczy uruchomić posiadany nośnik i ona się tam pojawi. Użytkownicy posiadający szybkie połączenia z Internetem najbardziej docenią BFO: nie będą już musieli regularnie pobierać dużych obrazów ISO i nagrywać ich na płyty."
 
-#: data/content/faq.html:39
+#: data/content/faq.html:40
 msgid "What is required?"
 msgstr "Co jest wymagane?"
 
-#: data/content/faq.html:40
+#: data/content/faq.html:41
 msgid ""
 "For all image types, you need a working DHCP in the network you use it from "
 "as well as HTTP internet access. To use the ISO, a CD/DVD burner. To use the"
 " USB image, a USB stick.  Floppy and lkrn images are also available."
 msgstr "Dla wszystkich typów obrazów wymagane jest działające w sieci DHCP i dostęp do Internetu przez protokół HTTP. Aby użyć obrazu ISO, potrzebna jest także nagrywarka płyt CD/DVD. Aby użyć obrazu USB, potrzebny jest nośnik USB. Dostępne są także obrazy dla dyskietki i lkrn."
 
-#: data/content/faq.html:41
+#: data/content/faq.html:42
 msgid "Does BFO replace the installer or anaconda?"
 msgstr "Czy BFO zastępuje instalator lub program anaconda?"
 
-#: data/content/faq.html:42
+#: data/content/faq.html:43
 msgid ""
 "No.  BFO is also not part of Anaconda.  BFO is a way to load the installer "
 "via network.  Normally users download a large ISO image that contains all of"
@@ -181,21 +181,21 @@ msgid ""
 "all future versions of Fedora."
 msgstr "Nie. BFO nie jest także częścią programu anaconda. BFO jest sposobem wczytania instalatora przez sieć. Zwykle użytkownicy pobierają duży obraz ISO, który zawiera wszystkie dane instalatora. BFO jest mniejszą metodą uruchamiania, pobierającą dane instalatora w czasie uruchamiania. Teoretycznie za pomocą BFO raz pobrany obraz ISO może zainstalować wszystkie przyszłe wersje Fedory."
 
-#: data/content/faq.html:43
+#: data/content/faq.html:44
 msgid "What about the Live CDs?"
 msgstr "A co z płytami Live CD?"
 
-#: data/content/faq.html:44
+#: data/content/faq.html:45
 msgid ""
 "At this time booting Live CDs is experimental and not available.  We hope to"
 " have them available soon."
 msgstr "Na razie uruchamianie Live CD jest eksperymentalne i niedostępne. Mamy nadzieję, że to się niedługo zmieni."
 
-#: data/content/faq.html:45
+#: data/content/faq.html:46
 msgid "Why won't BFO boot?"
 msgstr "Dlaczego BFO się nie uruchamia?"
 
-#: data/content/faq.html:46
+#: data/content/faq.html:47
 msgid ""
 "BFO uses ipxe so it's not actually booting a Linux kernel at first.  As "
 "such, some drivers and devices may not be supported.  If this is the case "
@@ -203,15 +203,15 @@ msgid ""
 "  If you feel a bug or device is supported but not working in BFO, contact: "
 msgstr "BFO używa programu ipxe, więc właściwie na początku nie uruchamia jądra Linux. Dlatego niektóre sterowniki i urządzenia mogą nie być obsługiwane. Jeśli tak jest, to proszę sprawdzić, czy na stronie projektu http://etherboot.org/ nie ma aktualizacji naprawiających błędy. Jeśli to błąd lub urządzenie jest obsługiwane, ale nie działa z BFO, należy się skontaktować z: "
 
-#: data/content/faq.html:47
+#: data/content/faq.html:48
 msgid "Where can I find the BFO sources and configuration?"
 msgstr "Gdzie można znaleźć źródła i konfigurację BFO?"
 
-#: data/content/faq.html:49
+#: data/content/faq.html:50
 msgid "Where do I report issues?"
 msgstr "Gdzie można zgłaszać problemy?"
 
-#: data/content/faq.html:56
+#: data/content/faq.html:55
 msgid ""
 "At this time booting Live CDs is experimental and not available. We hope to "
 "have them available soon."
@@ -242,10 +242,10 @@ msgstr "Aby pobrać BFO, należy wybrać Pobieranie BFO z menu po lewej stronie.
 
 #: data/templates/foot.html:9
 msgid ""
-"&copy; 2012 Red Hat, Inc. and others.  Please send any comments or "
+"&copy; 2013 Red Hat, Inc. and others.  Please send any comments or "
 "corrections to the <a href=\"mailto:webmaster@fedoraproject.org\">websites "
 "team</a>."
-msgstr "copy; 2012 Red Hat, Inc. i inni. Proszę wysyłać wszelkie komentarze i korekty do <a href=\"mailto:webmaster@fedoraproject.org\">zespołu stron WWW</a> (w języku angielskim)."
+msgstr "&copy; 2013 Red Hat, Inc. i inni. Proszę wysyłać wszelkie komentarze i korekty do <a href=\"mailto:webmaster@fedoraproject.org\">zespołu stron WWW</a> (w języku angielskim)."
 
 #: data/templates/foot.html:12
 msgid ""
