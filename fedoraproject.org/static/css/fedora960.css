@@ -782,7 +782,7 @@ h4.main-section-hl { font-size: small; }
 .desktop-screenshot { float: right; }
 #desktop-versions h4 {  margin-top: 1em; margin-bottom: 10px; }
 #desktop-versions li {  margin-left: 1em !important; }
-#desktop-versions p.note { margin-bottom: 35px; }
+#desktop-versions p.warning { margin-bottom: 25px; }
 
 div.image-des
 {
@@ -1046,6 +1046,18 @@ p.warning {
     margin-bottom: 2.5em;
     font-size: 120%;
     display: none;
+}
+
+
+p.rel_sched {
+    padding: .7em 4em;
+    color: #000000;
+    background: #fcf7d5 url('../images/schedule.png') no-repeat 10px center;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    margin-bottom: 2.5em;
+    font-size: 120%;
 }
 
 pre.command {
