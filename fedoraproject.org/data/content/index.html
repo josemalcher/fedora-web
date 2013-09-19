@@ -19,12 +19,13 @@ story_info = story_paths[random.randint(0, len(story_paths)-1)]
 # banner countdown, only available for beta
 if global_variables.release['curr_state'] == "Beta":
   from datetime import datetime
+  from calendar import timegm
   import os
-  from time import strftime
+  from time import strftime, strptime
 
   today = datetime.utcnow()
-  release_date = time.strptime(schedule[global_variables.release['next_id']]['final'], "%Y-%b-%d")
-  release = datetime(strftime("%Y", release_date), strftime("%m", release_date), strftime("%d", release_date), 14)
+  release_date = strptime(schedule[global_variables.release['next_id']]['final'], "%Y-%b-%d")
+  release = datetime.fromtimestamp(timegm(release_date)+50400) # + 14h
 
   difference = release - today
   days = difference.days
