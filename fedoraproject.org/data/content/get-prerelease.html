@@ -62,15 +62,22 @@ import locale, time
 import re
 
 def convert_date(t):
-    d = time.strftime("%A %d %B %Y", t)
+    d = time.strftime("%c", t)
     #now strip the time from the string
     time_l = time.strftime('%X',time.gmtime(0))
+
+    try:
+        d=d[:d.find(time_l)]
+        s = re.search('[,\. ]*$',d)
+        d=d[:d.rfind(s.group(0))]
+    except:
+        pass
 
     try:
         res = d.decode(locale.nl_langinfo(locale.CODESET))
     except:
         import time
-        res = time.strftime("%A %d %B %Y", t)
+        res = time.strftime("%F", t)
         pass
     return res
 
