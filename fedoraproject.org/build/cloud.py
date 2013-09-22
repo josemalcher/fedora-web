@@ -21,7 +21,8 @@ def sorted_region(arr):
 
 # Get the list at: https://dl.fedoraproject.org/pub/alt/stage/20-Alpha-RC2/Images/x86_64/
 ec2_f20_Alpha = [
-			{'region':'US East (Northern Virginia)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-03c8816a'}
+			{'region':'US East (Northern Virginia)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-03c8816a'},
+			{'region':'US East (Northern Virginia)',      'arch':'i386', 'store':'EBS-Backed', 'id':'ami-c187cca8'}
 ]
 
 ec2_f19 = [
