@@ -100,6 +100,7 @@ clean:
 	rm -f po/*.mo
 	rm -f data/templates/translations.html
 	rm -f build/rss.cache build/rss.pyc
+	rm -f build/schedule.cache
 	rm -f build/json.cache
 	rm -f $(HTTPDDIR)/conf/*.conf $(HTTPDDIR)/conf/languages.conf.in
 

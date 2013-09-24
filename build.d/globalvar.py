@@ -6,12 +6,12 @@ release={
     'curr_id':     '19',
     'next_id':     '20',
     'curr_name':   u'Schrödinger’s Cat',
-    'next_name':   '',
-    'curr_state':  '',             # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'next_name':   'Heisenbug',
+    'curr_state':  'Alpha',             # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  'Alpha',         # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_ppc64_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_s390_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  'Alpha',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'prev_arm_id': '18',
     'prev_ppc64_id': '18',
     'prev_s390_id': '18',
@@ -23,7 +23,9 @@ release={
     'next_ppc64_id': '20',
     'next_s390_id': '20',
     'next_cloud_id': '20',
-    'cloud_composedate': '20130627'
+    'cloud_composedate': '20130627',
+    'pre_cloud_composedate': '20130918',
+    'RC_gold': '4'                      # insert the number of the RC version declared GOLD
 }
 
 path={

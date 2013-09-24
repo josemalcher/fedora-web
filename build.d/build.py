@@ -19,8 +19,17 @@ from genshi.template import TemplateLoader
 import fileinput
 import errno
 
-# We import build/rss.py if exists
+# Main import
+try:
+    import globalvar
+except ImportError:
+    print "globalvar.py is missing. It is needed as it provides release specific variables"
+    raise
+
+# Import websites specific modules, used to create specific
+# variables/cache
 sys.path.append('build')
+
 try:
     from rss import *
 except ImportError:
@@ -28,10 +37,17 @@ except ImportError:
     pass
 
 try:
-    import globalvar
+    from cloud import get_amis
 except ImportError:
-    print "globalvar.py is missing. It is needed as it provides release specific variables"
-    raise
+    get_amis = None
+    pass
+
+try:
+    from release_schedule import schedule
+except ImportError:
+    schedule = None
+    pass
+
 
 # Avoid race condition for concurrent builds
 def safe_makedir(path):
@@ -88,6 +104,14 @@ def process_dir(dirpath, filenames):
                     feedurl = re.split('\'\)', match[1])
                     feedparse(feedurl[0])
             continue;
+        release_date = None
+        if schedule is not None:
+            release_date = schedule(globalvar.release['next_id'])
+
+        ec2 = None
+        if get_amis is not None:
+            ec2 = get_amis()
+
         dest_file = os.path.join(options.output, src_file[len(options.input):]) + '.' + options.lang # Hideous
         curpage = src_file[len(options.input):].rstrip('.html')
         relpath = '../' * (dest_file.count('/') - 1)
@@ -104,6 +128,8 @@ def process_dir(dirpath, filenames):
             path=options.basepath,
             curpage=curpage,
             global_variables=globalvar,
+            schedule = release_date,
+            ec2_ami = ec2
             ).render(method='html', doctype='html', encoding='utf-8')
         output = open(dest_file, 'w')
         output.write(page)

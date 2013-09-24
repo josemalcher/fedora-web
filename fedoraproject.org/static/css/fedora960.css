@@ -782,6 +782,13 @@ h4.main-section-hl { font-size: small; }
 .desktop-screenshot { float: right; }
 #desktop-versions h4 {  margin-top: 1em; margin-bottom: 10px; }
 #desktop-versions li {  margin-left: 1em !important; }
+#desktop-versions p.warning { margin-bottom: 25px; }
+
+div.image-des
+{
+  margin: 30px 15px 35px 15px;
+  font-size: 120%;
+}
 
 /* support/help pages */
 .bugs-section {
@@ -1041,6 +1048,18 @@ p.warning {
     display: none;
 }
 
+
+p.rel_sched {
+    padding: .7em 4em;
+    color: #000000;
+    background: #fcf7d5 url('../images/schedule.png') no-repeat 10px center;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    margin-bottom: 2.5em;
+    font-size: 120%;
+}
+
 pre.command {
     font-size: 1.3em;
     border: solid #DDDDDD;
@@ -1111,7 +1130,7 @@ pre.command {
 ul.downloadbox {
     overflow: hidden;
     list-style: none;
-    padding: 3ex 2ex 1ex 130px;
+    padding: 3ex 2ex 1ex 160px;
     border-radius: 1.5ex;
     -webkit-border-radius: 1.5ex;
     -moz-border-radius: 1.5ex;
@@ -1125,7 +1144,8 @@ ul.kdelive { background-image: url(../images/kdelive.png); }
 ul.xfcelive { background-image: url(../images/xfcelive.png); }
 ul.lxdelive { background-image: url(../images/lxdelive.png); }
 ul.livemedia { background-image: url(../images/livemedia.png); }
-ul.cloudimage { background-image: url(../images/icon-fedora-cloud-download.png); }
+ul.cloudimage { background-image: url(../images/cloudicontrans.png); }
+ul.armimage { background-image: url(../images/arm.png); }
 
 .downloadbox li {
     width: 27ex;
@@ -1809,6 +1829,35 @@ th.install-media-arch { background-color: #e8e8e8; width: 120px; }
 .ami-label {
   margin-right: 2px;
 }
+
+/* end: cloud */
+
+/* release schedule */
+#table .schedule tr, #table .schedule td {
+  text-align: left;
+  font-weight:normal;
+}
+.schedule {
+  margin: 20px auto;
+  width: 98%;
+  padding: 2px;
+}
+
+.schedule th {
+  background: #ddd;
+}
+
+.schedule thead {
+  font-size: larger;
+}
+
+.schedule tr, .schedule td  {
+  border: 1px solid #c8c8c8;
+  text-align: center;
+  font-weight: normal;
+  padding: 4px;
+}
+
 
 /* end: cloud */
 

@@ -1,3 +1,50 @@
+<?python
+import locale, time
+import re
+
+def convert_date(t):
+	d = time.strftime("%c", t)
+	#now strip the time from the string
+	time_l = time.strftime('%X',time.gmtime(0))
+
+	try:
+		d=d[:d.find(time_l)]
+		s = re.search('[,\. ]*$',d)
+		d=d[:d.rfind(s.group(0))]
+	except:
+		pass
+
+	try:
+		res = d.decode(locale.nl_langinfo(locale.CODESET))
+	except:
+		import time
+		res = time.strftime("%F", t)
+		pass
+	return res
+
+# We need to localize the date format. First, set locale to the original format
+locale.setlocale(locale.LC_ALL, 'en_US')
+
+# Then convert to time_struct
+alpha =  time.strptime(schedule[global_variables.release['next_id']]['alpha'], "%Y-%b-%d")
+beta =  time.strptime(schedule[global_variables.release['next_id']]['beta'], "%Y-%b-%d")
+final =  time.strptime(schedule[global_variables.release['next_id']]['final'], "%Y-%b-%d")
+
+# Move to the right locale (if known)
+try:
+	locale.setlocale(locale.LC_ALL, locale.locale_alias[lang.lower()])
+except:
+	print 'Locale error'
+	pass
+
+# Convert back!
+alpha = convert_date(alpha)
+beta = convert_date(beta)
+final = convert_date(final)
+
+locale.setlocale(locale.LC_ALL, 'en_US')
+
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
     xmlns:py="http://genshi.edgewall.org/"
@@ -56,6 +103,32 @@
                     </ul>
                     <p><a href="${path}/${lang}/get-fedora-options">${Markup(_('View more Fedora options...'))}</a></p>
                 </div>
+                <div class="grid_12 alpha omega">
+                    <h4><a name='schedule'></a>${Markup(_('Fedora %s Release Schedule') % global_variables.release['next_id'])}</h4>
+                    <table class="schedule">
+					<thead>
+						<tr>
+						    <th>${_('Release State')}</th>
+						    <th>${_('Release Date')}</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>${_('Alpha Release Public Availability')}</td>
+							<td>${alpha}</td>
+    					</tr>
+    					<tr>
+							<td>${_('Beta Release Public Availability')}</td>
+							<td>${beta}</td>
+    					</tr>
+    					<tr>
+							<td>${_('Final Release Public Availability (GA)')}</td>
+							<td>${final}</td>
+    					</tr>
+	                </tbody>
+					</table>
+					<p><a href="http://fedoraproject.org/wiki/Releases/${global_variables.release['next_id']}/Schedule">${_('Read all the key milestones of the release schedule...')}</a></p>
+                </div>
                 <xi:include href="../templates/content-export-regulations.html" />
             </div>
 
@@ -93,7 +166,7 @@
 
 
                 <h4>${_('There\'s More Fedora!')}</h4>
-                <a id="archreleases" href="/data/content/get-fedora-options#formats"><img src="/static/images/banners/random/formats.png" /></a>
+                <a id="archreleases" href="/data/content/get-fedora-options#formats"><img src="/static/images/banners/random/formats.png" alt=""/></a>
 
 		<h4>${_('Other ways to get Fedora')}</h4>
 

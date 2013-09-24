@@ -1,119 +1,3 @@
-<?python
-# This file is used to generate the "out/static/js/cloud_ec2.js" file snd the get-fedora-options#cloud tab
-# You should only edit
-# - the bellow dictionnary containing the AMI ID (get them on the wiki)
-# - the two python list ec2_fXX_regions
-# - the template call at the end of file near "noscript" and "if JS enabled".
-
-# Returns a sorted list of unique available regions from the array
-def sorted_region(arr):
-	list = []
-	for i in arr:
-		list.append(i['region'])
-	return(sorted(set(list), key=lambda  item: (int(item.partition(' ')[0]) if item[0].isdigit() else float('inf'), item)))
-
-# see http://fedoraproject.org/wiki/Cloud_SIG/EC2_Images for the complet list
-# Generated using the following:
-# :%s#^| \([a-zA-Z*-9]*\)[ |]*\(i386\|x86_64\)[ |]*\(EBS-backed\)[ |]* \(ami.*\)#{'region':'\1', 'arch':'\2', 'store':'\3', 'id':'\4'},#g
-
-ec2_f19 = [
-			{'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-da450c88'},
-			{'region':'Asia Pacific (Singapore)', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-fe450cac'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-5565f66f'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-bb65f681'},
-			{'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-95b52094'},
-			{'region':'Asia Pacific (Tokyo)', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-abb520aa'},
-			{'region':'US East (Northern Virginia)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-b22e5cdb'},
-			{'region':'US East (Northern Virginia)',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-182f5d71'},
-			{'region':'US West (Northern California)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-10cce555'},
-			{'region':'US West (Northern California)',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-50cce515'},
-			{'region':'US West (Oregon)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-9727b7a7'},
-			{'region':'US West (Oregon)',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-c327b7f3'},
-			{'region':'EU (Ireland)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-f1031e85'},
-			{'region':'EU (Ireland)',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-9f031eeb'},
-			{'region':'South America (Sao Paulo)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-b055f0ad'},
-			{'region':'South America (Sao Paulo)',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-a255f0bf'}
-]
-
-ec2_f18 = [
-			{'region':'Asia Pacific (Tokyo)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-51bc3550'},
-			{'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-33b23b32'},
-			{'region':'Asia Pacific (Singapore)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-f8357baa'},
-			{'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-4c327c1e'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-f5d340cf'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-33d24109'},
-			{'region':'EU (Ireland)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-2d819059'},
-			{'region':'EU (Ireland)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-43809137'},
-			{'region':'South America (Sao Paulo)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-d2e84dcf'},
-			{'region':'South America (Sao Paulo)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-08eb4e15'},
-			{'region':'US East (Northern Virginia)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-6f640c06'},
-			{'region':'US East (Northern Virginia)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-b71078de'},
-			{'region':'US West (Northern California)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-634f6126'},
-			{'region':'US West (Northern California)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-674f6122'},
-			{'region':'US West (Oregon)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-67930257'},
-			{'region':'US West (Oregon)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-fd9302cd'}
-]
-
-ec2_f19_regions = sorted_region(ec2_f19)
-ec2_f18_regions = sorted_region(ec2_f18)
-
-
-# The idea is to get something similar to http://jsfiddle.net/shaiton/wChSv/5/
-# But we have to generate it in order to have to maintain only one list of AMI ID
-# Simply read the output at "out/static/js/cloud_ec2.js"
-def gen_js(*args):
-	js="// File generated from cloud-tab.html.\n"
-	js+="addEventListener('DOMContentLoaded', function(){\n"
-
-	for release in args:
-		js+="\tdocument.getElementById('cloud_options_" + release[0] + "').style.visibility='visible';\n"
-		js+="\tdocument.getElementById('amihref_" + release[0] + "').style.visibility='hidden';\n"
-	js+="});\n"
-
-	js+="\nfunction getval() {\n"
-	js+="\t// We get the number of regions, and define a two dimensional array (region,arch) to store the AMI ID\n"
-	js+="\t// We limit to i > 1 as we don't need the first null entry'\n"
-	js+="\t// For each release providen. '\n"
-	js+="\tvar region_name = {\n"
- 	js+="\t  'Asia Pacific (Tokyo)': 'ap-northeast-1',\n"
-	js+="\t  'Asia Pacific (Singapore)': 'ap-southeast-1',\n"
-	js+="\t  'Asia Pacific (Sydney)': 'ap-southeast-2',\n"
-	js+="\t  'EU (Ireland)': 'eu-west-1',\n"
-	js+="\t  'South America (Sao Paulo)': 'sa-east-1',\n"
-	js+="\t  'US East (Northern Virginia)': 'us-east-1',\n"
-	js+="\t  'US West (Northern California)': 'us-west-1',\n"
-	js+="\t  'US West (Oregon)': 'us-west-2'\n"
-	js+="\t}\n"
-	for release in args:
-		js+="\n\tvar form_" + release[0] + " = document.forms['cloud_options_" + release[0] + "'];\n"
-		js+="\tif (form_" + release[0] + ".region_" + release[0] + ".value != 'null') {\n"
-		js+="\t\tfor (var i = form_" + release[0] + ".region_" + release[0] + ".options.length, id_" + release[0] + " = new Array(form_" + release[0] + ".region_" + release[0] + ".options.length); i > 1; i--)\n"
-		js+="\t\t\tid_" + release[0] + "[form_" + release[0] + ".region_" + release[0] + ".options[i - 1].value] = new Array(2);\n\n"
-
-		for img in release[1]:
-			js+="\t\tid_" + release[0] + "['" + img['region'] + "']['" + img['arch'] + "'] = '" + img['id'] + "';\n"
-		js+="\t}\n"
-	for release in args:
-		js+="\n\tif (form_" + release[0] + ".region_" + release[0] + ".value != 'null') {\n"
-		js+="\t\tvar ami_id = id_" + release[0] + "[form_" + release[0] + ".region_" + release[0] + ".value][form_" + release[0] + ".arch_" + release[0] + ".value];\n"
-		js+="\t\tvar url = 'https://console.aws.amazon.com/ec2/home?region=' + region_name[form_" + release[0] + ".region_" + release[0] + ".value] + '#launchAmi=' + ami_id;\n"
-		js+="\t\tdocument.getElementById('amihref_" + release[0] + "').href = url;\n"
-		js+="\t\tdocument.getElementById('amihref_" + release[0] + "').style.visibility='visible';\n"
-		js+="\t\tdocument.getElementById('label_" + release[0] + "').innerHTML = ami_id;\n"
-		js+="\t} else {\n"
-		js+="\t\tdocument.getElementById('amihref_" + release[0] + "').href = '';\n"
-		js+="\t\tdocument.getElementById('amihref_" + release[0] + "').style.visibility='hidden';\n"
-		js+="\t\tdocument.getElementById('label_" + release[0] + "').innerHTML = '';\n"
-		js+="\t}\n"
-
-	js+="}\n"
-	f = open('out/static/js/cloud_ec2.js', 'w+')
-	f.write(js)
-	f.close()
-
-gen_js(['19',ec2_f19], ['18',ec2_f18])
-
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
   xmlns:py="http://genshi.edgewall.org/"
@@ -121,7 +5,7 @@ gen_js(['19',ec2_f19], ['18',ec2_f18])
   py:strip="">
 
 <!-- Genshi Template for Cloud table (without JS) -->
-  <py:def function="printrelease(release, array)">
+  <py:def function="printrelease(release)">
 					<h5>${_('Fedora %s ') % release}</h5>
 					<table class="verify-live-media">
 							<thead>
@@ -134,7 +18,7 @@ gen_js(['19',ec2_f19], ['18',ec2_f18])
 									</tr>
 							</thead>
 							<tbody>
-								<py:for each="img in array">
+								<py:for each="img in ec2_ami['f' + release]">
 									<tr>
 											<td>${img['region']}</td>
 											<td>${img['arch']}</td>
@@ -142,7 +26,7 @@ gen_js(['19',ec2_f19], ['18',ec2_f18])
 											<td>${img['id']}</td>
 											<td style="vertical-align: middle">
 												<a href="https://console.aws.amazon.com/ec2/home?region=${img['region']}#launchAmi=${img['id']}">
-												<img style="vertical-align: bottom; display: block; margin: 0 auto" title="${_('Launch AMI instance')}" src="${path}/static/images/cloud_icon.png" />
+												<img style="vertical-align: bottom; display: block; margin: 0 auto" title="${_('Launch AMI instance')}" src="${path}/static/images/cloud_icon.png " alt=""/>
 												</a></td>
 									</tr>
 								</py:for>
@@ -153,18 +37,18 @@ gen_js(['19',ec2_f19], ['18',ec2_f18])
 <!-- /end Genshi Template for Cloud table (without JS) -->
 
 <!-- Genshi Template for Cloud html form  (with JS) -->
-  <py:def function="printform(release, regions)">
-            <form id="cloud_options_${release}" class="cloud-options" name="cloud_options_${release}" style="visibility:hidden;">
+  <py:def function="printform(release)">
+            <form id="cloud_options_${release}" class="cloud-options" name="cloud_options_${release}" style="visibility:hidden;" action=''>
 								<h5>${_('Fedora %s ') % release}</h5>
                 <select id="region_${release}" name="region_${release}" onchange="getval();">
                     <option value='null'>${_('Select the nearest region')}</option>
-										<py:for each="reg in regions">
-                    <option>$reg</option>
-										</py:for>
+					<py:for each="reg in ec2_ami['f' + release + '_regions']">
+						<option>$reg</option>
+					</py:for>
                 </select>
                 <select id="arch_${release}" onchange="getval();">
-                    <option value="x86_64">64 bit (x86_64)</option>
-                    <option value="i386">32 bit (i386)</option>
+					<option value="x86_64" py:if="any(a.get('arch', False) == 'x86_64' for a in ec2_ami['f' + release])">64 bit (x86_64)</option>
+					<option value="i386" py:if="any(a.get('arch', False) == 'i386' for a in ec2_ami['f' + release])">32 bit (i386)</option>
                 </select>
 				<input type="hidden" id="amiid_${release}" />
                 <label for="amiid_${release}" id="label_${release}" class="ami-label"></label>
@@ -173,15 +57,4 @@ gen_js(['19',ec2_f19], ['18',ec2_f18])
 
   </py:def>
 <!-- /end Genshi Template for Cloud html form  (with JS) -->
-
-						<noscript>
-               ${printrelease('19', ec2_f19)}
-               ${printrelease('18', ec2_f18)}
-						</noscript>
-
-						<!-- If JS enabled -->
-               ${printform('19', ec2_f19_regions)}
-               ${printform('18', ec2_f18_regions)}
-						<!-- /end If JS enabled -->
-
 </html>
