@@ -57,52 +57,6 @@ l_map = {
 'zh_TW': 'zh-TW'
 }
 l_code = l_map.get(lang, dflt_language)
-
-import locale, time
-import re
-
-def convert_date(t):
-    d = time.strftime("%c", t)
-    #now strip the time from the string
-    time_l = time.strftime('%X',time.gmtime(0))
-
-    try:
-        d=d[:d.find(time_l)]
-        s = re.search('[,\. ]*$',d)
-        d=d[:d.rfind(s.group(0))]
-    except:
-        pass
-
-    try:
-        res = d.decode(locale.nl_langinfo(locale.CODESET))
-    except:
-        import time
-        res = time.strftime("%F", t)
-        pass
-    return res
-
-# We need to localize the date format. First, set locale to the original format
-locale.setlocale(locale.LC_ALL, 'en_US')
-
-# Then convert to time_struct
-alpha =  time.strptime(schedule[global_variables.release['next_id']]['alpha'], "%Y-%b-%d")
-beta =  time.strptime(schedule[global_variables.release['next_id']]['beta'], "%Y-%b-%d")
-final =  time.strptime(schedule[global_variables.release['next_id']]['final'], "%Y-%b-%d")
-
-# Move to the right locale (if known)
-try:
-    locale.setlocale(locale.LC_ALL, locale.locale_alias[lang.lower()])
-except:
-    print 'Locale error'
-    pass
-
-# Convert back!
-alpha = convert_date(alpha)
-beta = convert_date(beta)
-final = convert_date(final)
-
-locale.setlocale(locale.LC_ALL, 'en_US')
-
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -156,9 +110,9 @@ locale.setlocale(locale.LC_ALL, 'en_US')
                                 </p>
                                 <p class="rel_sched">
                                         <py:choose>
-                                            <py:when test="global_variables.release['curr_state'] == 'Alpha'">${_('Upcoming Beta Release is planned for')}&nbsp;${beta}
+                                            <py:when test="global_variables.release['curr_state'] == 'Alpha'">${_('Upcoming Beta Release is planned for')}&nbsp;${schedule['beta']}
                                             </py:when>
-                                            <py:when test="global_variables.release['curr_state'] == 'Beta'">${_('Upcoming Final Release is planned for')}&nbsp;${final}
+                                            <py:when test="global_variables.release['curr_state'] == 'Beta'">${_('Upcoming Final Release is planned for')}&nbsp;${schedule['final']}
                                             </py:when>
                                         </py:choose>
                                 </p>
@@ -329,9 +283,9 @@ locale.setlocale(locale.LC_ALL, 'en_US')
                                 </p>
                                 <p class="rel_sched">
                                         <py:choose>
-                                            <py:when test="global_variables.release['curr_state'] == 'Alpha'">${_('Upcoming Beta Release is planned for')}&nbsp;${beta}
+                                            <py:when test="global_variables.release['curr_state'] == 'Alpha'">${_('Upcoming Beta Release is planned for')}&nbsp;${schedule['beta']}
                                             </py:when>
-                                            <py:when test="global_variables.release['curr_state'] == 'Beta'">${_('Upcoming Final Release is planned for')}&nbsp;${final}
+                                            <py:when test="global_variables.release['curr_state'] == 'Beta'">${_('Upcoming Final Release is planned for')}&nbsp;${schedule['final']}
                                             </py:when>
                                         </py:choose>
                                 </p>
@@ -387,9 +341,9 @@ locale.setlocale(locale.LC_ALL, 'en_US')
                                 </p>
                                 <p class="rel_sched">
                                         <py:choose>
-                                            <py:when test="global_variables.release['curr_state'] == 'Alpha'">${_('Upcoming Beta Release is planned for')}&nbsp;${beta}
+                                            <py:when test="global_variables.release['curr_state'] == 'Alpha'">${_('Upcoming Beta Release is planned for')}&nbsp;${schedule['beta']}
                                             </py:when>
-                                            <py:when test="global_variables.release['curr_state'] == 'Beta'">${_('Upcoming Final Release is planned for')}&nbsp;${final}
+                                            <py:when test="global_variables.release['curr_state'] == 'Beta'">${_('Upcoming Final Release is planned for')}&nbsp;${schedule['final']}
                                             </py:when>
                                         </py:choose>
                                 </p>

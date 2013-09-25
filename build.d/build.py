@@ -18,6 +18,7 @@ from genshi.filters import Translator
 from genshi.template import TemplateLoader
 import fileinput
 import errno
+import locale, time
 
 # Main import
 try:
@@ -56,6 +57,28 @@ def safe_makedir(path):
     except OSError as err:
         if err.errno != errno.EEXIST:
             raise
+
+def convert_date(t):
+    import time
+    d = time.strftime("%c", t)
+    #now strip the time from the string
+    time_l = time.strftime('%X',time.gmtime(0))
+
+    try:
+        d=d[:d.find(time_l)]
+        s = re.search('[,\. ]*$',d)
+        d=d[:d.rfind(s.group(0))]
+    except:
+        pass
+
+    try:
+        res = d.decode(locale.nl_langinfo(locale.CODESET))
+    except:
+        import time
+        res = time.strftime("%F", t)
+        pass
+    return res
+
 
 def process(args):
     if os.path.exists(options.output) and options.erase:
@@ -107,6 +130,27 @@ def process_dir(dirpath, filenames):
         release_date = None
         if schedule is not None:
             release_date = schedule(globalvar.release['next_id'])
+            # We need to localize the date format. First, set locale to the original format
+            locale.setlocale(locale.LC_ALL, 'en_US')
+
+            # Then convert to time_struct
+            alpha =  time.strptime(release_date[globalvar.release['next_id']]['alpha'], "%Y-%b-%d")
+            beta =  time.strptime(release_date[globalvar.release['next_id']]['beta'], "%Y-%b-%d")
+            final =  time.strptime(release_date[globalvar.release['next_id']]['final'], "%Y-%b-%d")
+
+            # Move to the right locale (if known)
+            try:
+                locale.setlocale(locale.LC_ALL, locale.locale_alias[options.lang.lower()])
+            except:
+                pass
+
+            # Convert back!
+            alpha = convert_date(alpha)
+            beta = convert_date(beta)
+            final = convert_date(final)
+
+            locale.setlocale(locale.LC_ALL, 'en_US')
+            release_date = {'alpha':alpha, 'beta':beta, 'final':final}
 
         ec2 = None
         if get_amis is not None:
