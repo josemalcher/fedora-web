@@ -66,9 +66,10 @@ if global_variables.release['curr_state'] == "Beta":
 									<li><a href="${path}/${lang}/get-fedora">${_('Learn More')}</a></li>
 								</ul>
 								<p class="small">${_('%(size)sMB, ISO image for %(arch)s-bit PCs') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}} <br /><a href="${path}/${lang}/get-fedora-options">${Markup(_('More options &gt;'))}</a></p>
-                                <ul py:if="global_variables.release['curr_state']">
+           <!--                     <ul py:if="global_variables.release['curr_state']">
                                     <li class="getalpha"><a href="${path}/${lang}/get-prerelease">${_('Try Fedora %(release)s %(state)s Now!') % {'release':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</a></li>
                                 </ul>
+            -->
 							</div>
 							<img src="${path}/static/images/f19_fpo_screenshot.png" alt="screenshot" />
 						  </div>
