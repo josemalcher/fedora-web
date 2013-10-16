@@ -130,6 +130,7 @@ def process_dir(dirpath, filenames):
         release_date = None
         if schedule is not None:
             release_date = schedule(globalvar.release['next_id'])
+
             # We need to localize the date format. First, set locale to the original format
             locale.setlocale(locale.LC_ALL, 'en_US')
 
@@ -137,6 +138,11 @@ def process_dir(dirpath, filenames):
             alpha =  time.strptime(release_date[globalvar.release['next_id']]['alpha'], "%Y-%b-%d")
             beta =  time.strptime(release_date[globalvar.release['next_id']]['beta'], "%Y-%b-%d")
             final =  time.strptime(release_date[globalvar.release['next_id']]['final'], "%Y-%b-%d")
+
+            # Stort the US format for further processing
+            alpha_us = time.strftime("%Y-%b-%d", alpha)
+            beta_us = time.strftime("%Y-%b-%d", beta)
+            final_us = time.strftime("%Y-%b-%d", final)
 
             # Move to the right locale (if known)
             try:
@@ -150,7 +156,7 @@ def process_dir(dirpath, filenames):
             final = convert_date(final)
 
             locale.setlocale(locale.LC_ALL, 'en_US')
-            release_date = {'alpha':alpha, 'beta':beta, 'final':final}
+            release_date = {'alpha':alpha, 'beta':beta, 'final':final, 'alpha_us':alpha_us, 'beta_us':beta_us, 'final_us':final_us}
 
         ec2 = None
         if get_amis is not None:
