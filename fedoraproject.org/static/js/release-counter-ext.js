@@ -2,10 +2,10 @@ var available_langs = [ "ar", "bg", "bn_IN", "cs", "da", "de", "el", "en", "es",
 
 
 var today = new Date();
-var release = new Date("July 2, 2013 14:00:00 UTC");
+var release = new Date("December 3, 2013 14:00:00 UTC");
 var millisBetweenDates = release - today;
 var days = Math.ceil(millisBetweenDates/1000/60/60/24);
-var url = "https://fedoraproject.org/wiki/Releases/19/Schedule";
+var url = "https://fedoraproject.org/wiki/Releases/20/Schedule";
 
 var script = document.getElementById('fedora-banner');
 var lang = "en"
@@ -50,12 +50,12 @@ bannerimg.style.width = width;
 
 
 if (days <= 0) {
-    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/banners/f19release.png");
-    bannerimg.setAttribute("alt", "Fedora 19 is here!");
+    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/banners/f20release.png");
+    bannerimg.setAttribute("alt", "Fedora 20 is here!");
     url = "http://get.fedoraproject.org/";
 } else {
-    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora19-countdown-banner-" + days + "." + lang + "." + "png");
-    bannerimg.setAttribute("alt", "Fedora 19 Schrödinger\'s Cat released in " + days + " days.");
+    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora20-countdown-banner-" + days + "." + lang + "." + "png");
+    bannerimg.setAttribute("alt", "Fedora 20 Heisenbug released in " + days + " days.");
 }
 
 bannerlink.setAttribute("href", url);
