@@ -24,7 +24,7 @@ if global_variables.release['curr_state'] == "Beta":
   from time import strftime, strptime
 
   today = datetime.utcnow()
-  release_date = strptime(schedule[global_variables.release['next_id']]['final'], "%Y-%b-%d")
+  release_date = strptime(schedule['final'], "%a %d %b %Y")
   release = datetime.fromtimestamp(timegm(release_date)+50400) # + 14h
 
   difference = release - today
