@@ -19,8 +19,8 @@ def sorted_region(arr):
 # Generated using the following:
 # :%s#^| \([a-zA-Z*-9]*\)[ |]*\(i386\|x86_64\)[ |]*\(EBS-backed\)[ |]* \(ami.*\)#{'region':'\1', 'arch':'\2', 'store':'\3', 'id':'\4'},#g
 
-# Get the list at: https://dl.fedoraproject.org/pub/alt/stage/20-Alpha-RC2/Images/x86_64/
-ec2_f20_Alpha = [
+# Get the list at: https://dl.fedoraproject.org/pub/alt/stage/20-Beta-RC2/Images/x86_64/
+ec2_f20_Beta = [
 			{'region':'US East (Northern Virginia)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-5985ce30'},
 			{'region':'US East (Northern Virginia)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-c187cca8'},
 			{'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-8ce4afde'},
@@ -138,7 +138,7 @@ def gen_js(*args):
 	f.close()
 
 def get_amis():
-    ec2_f20_Alpha_regions = sorted_region(ec2_f20_Alpha)
+    ec2_f20_Beta_regions = sorted_region(ec2_f20_Beta)
     ec2_f19_regions = sorted_region(ec2_f19)
     ec2_f18_regions = sorted_region(ec2_f18)
 
@@ -146,11 +146,11 @@ def get_amis():
         gen_js(
             ['19',ec2_f19],
             ['18',ec2_f18],
-            ['20_Alpha',ec2_f20_Alpha])
+            ['20_Beta',ec2_f20_Beta])
 
     return {
         'f18':ec2_f18, 'f18_regions':ec2_f18_regions,
         'f19':ec2_f19, 'f19_regions':ec2_f19_regions,
-        'f20_Alpha':ec2_f20_Alpha, 'f20_Alpha_regions':ec2_f20_Alpha_regions
+        'f20_Beta':ec2_f20_Beta, 'f20_Beta_regions':ec2_f20_Beta_regions
            }
 
