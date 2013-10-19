@@ -79,6 +79,8 @@ class Torrents(object):
                     continue
                 if ("scientific" in t_name.lower()) and ("scientific" not in name.lower()):
                     continue
+                if ("jam" in t_name.lower()) and ("jam" not in name.lower()):
+                    continue
                 if arch.lower() != t_arch.lower():
                     continue
                 spins.append(row)
