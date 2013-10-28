@@ -1,4 +1,4 @@
-var available_langs = [ "ar", "bg", "bn_IN", "cs", "da", "de", "el", "en", "es", "fi", "fr", "gu", "he", "hi", "hr", "hu", "id", "is", "it", "ja", "kn", "ko", "ks", "ml", "nl", "pa", "pl", "pt", "pt_BR", "ro", "ru", "si", "sr", "sv", "th", "tr", "uk", "vi_VN", "zh_CN", "zh_TW" ];
+var available_langs = [ "ar", "bg", "bn_IN", "cs", "da", "de", "el", "en", "es", "fi", "fr", "gu", "he", "hi", "hr", "hu", "id", "is", "it", "ja", "kn", "ko", "ks", "ml", "nl", "pa", "pl", "pt", "pt_BR", "ro", "ru", "si", "sr", "sv", "th", "tr", "uk", "vi", "zh_CN", "zh_TW" ];
 
 
 var today = new Date();
@@ -54,7 +54,7 @@ if (days <= 0) {
     bannerimg.setAttribute("alt", "Fedora 20 is here!");
     url = "http://get.fedoraproject.org/";
 } else {
-    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora-20-" + lang + "." + days + "." + "png");
+    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora-20." + lang + "." + days + ".png");
     bannerimg.setAttribute("alt", "Fedora 20 Heisenbug released in " + days + " days.");
 }
 
