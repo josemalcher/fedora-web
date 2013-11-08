@@ -50,11 +50,11 @@ bannerimg.style.width = width;
 
 
 if (days <= 0) {
-    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/banners/f20release.png");
+    bannerimg.setAttribute("src", "../static/images/banners/f20release.png");
     bannerimg.setAttribute("alt", "Fedora 20 is here!");
     url = "http://get.fedoraproject.org/";
 } else {
-    bannerimg.setAttribute("src", "https://fedoraproject.org/static/images/counter/" + lang + "/fedora-20." + lang + "." + days + ".png");
+    bannerimg.setAttribute("src", "../static/images/counter/" + lang + "/fedora-20." + lang + "." + days + ".png");
     bannerimg.setAttribute("alt", "Fedora 20 Heisenbug released in " + days + " days.");
 }
 
