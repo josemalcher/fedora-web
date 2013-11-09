@@ -35,7 +35,7 @@ path={
     'download_spins':  'http://download.fedoraproject.org/pub/alt/releases',
     'download_arch':   'http://download.fedoraproject.org/pub/fedora-secondary/releases',
     'mirrors':         'http://mirrors.fedoraproject.org/metalink?path=pub/fedora/linux/releases',
-    'checksums':       'https://fedoraproject.org/static/checksums',
+    'checksums':       './static/checksums',
     'doc':             'http://docs.fedoraproject.org/en-US/Fedora'
 }
 
