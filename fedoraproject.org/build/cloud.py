@@ -21,22 +21,22 @@ def sorted_region(arr):
 
 # Get the list at: https://dl.fedoraproject.org/pub/alt/stage/20-Beta-RC2/Images/x86_64/
 ec2_f20_Beta = [
-			{'region':'US East (Northern Virginia)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-5985ce30'},
-			{'region':'US East (Northern Virginia)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-c187cca8'},
-			{'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-8ce4afde'},
-			{'region':'Asia Pacific (Singapore)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-68fbb03a'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-3952cf03'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-2f52cf15'},
-			{'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-bf46d9be'},
-			{'region':'Asia Pacific (Tokyo)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-3f45da3e'},
-			{'region':'US West (Northern California)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-be8abffb'},
-			{'region':'US West (Northern California)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-b88abffd'},
-			{'region':'US West (Oregon)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-f4108fc4'},
-			{'region':'US West (Oregon)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-080f9038'},
-			{'region':'EU (Ireland)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-1eb35469'},
-			{'region':'EU (Ireland)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-7ab0570d'},
-			{'region':'South America (Sao Paulo)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-f966c1e4'},
-			{'region':'South America (Sao Paulo)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-0d65c210'}
+			{'region':'US East (Northern Virginia)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-2f421946'},
+			{'region':'US East (Northern Virginia)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-8b4219e2'},
+			{'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-0ab2e758'},
+			{'region':'Asia Pacific (Singapore)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-0eb2e75c'},
+			{'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-e163ffdb'},
+			{'region':'Asia Pacific (Sydney)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-db63ffe1'},
+			{'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-dd5135dc'},
+			{'region':'Asia Pacific (Tokyo)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-e15135e0'},
+			{'region':'US West (Northern California)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-56d0e613'},
+			{'region':'US West (Northern California)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-00d0e645'},
+			{'region':'US West (Oregon)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-5cca516c'},
+			{'region':'US West (Oregon)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-48ca5178'},
+			{'region':'EU (Ireland)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-ad7b99da'},
+			{'region':'EU (Ireland)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-897b99fe'},
+			{'region':'South America (Sao Paulo)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-4d5cfa50'},
+			{'region':'South America (Sao Paulo)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-4b5cfa56'}
 ]
 
 ec2_f19 = [
