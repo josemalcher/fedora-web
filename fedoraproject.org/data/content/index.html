@@ -24,7 +24,7 @@ if global_variables.release['curr_state'] == "Beta":
   from time import strftime, strptime
 
   today = datetime.utcnow()
-  release_date = strptime(schedule[global_variables.release['next_id']]['final'], "%Y-%b-%d")
+  release_date = strptime(schedule['final_us'], "%Y-%b-%d")
   release = datetime.fromtimestamp(timegm(release_date)+50400) # + 14h
 
   difference = release - today
@@ -37,7 +37,7 @@ if global_variables.release['curr_state'] == "Beta":
   available_languages = os.walk('static/images/counter/').next()[1]
   if lang in available_languages:
     image_lang = lang
-  image = '/static/images/counter/' + image_lang + '/fedora' + global_variables.release['next_id'] + '-countdown-banner-' + days + '.' + image_lang + '.png'
+  image = '/static/images/counter/' + image_lang + '/fedora-' + global_variables.release['next_id'] + '.' + image_lang + '.' + days + '.png'
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -243,10 +243,10 @@ if global_variables.release['curr_state'] == "Beta":
 										<py:when test="global_variables.release['curr_state'] == 'Alpha'">
 											<a href="${path}/${lang}/get-prerelease"><img alt="Fedora ${global_variables.release['next_id']} Alpha ${global_variables.release['curr_name']} is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}alpha.png" /></a>
 										</py:when>
-										<py:when test="global_variables.release['curr_state'] == 'Beta'">
+										<!--<py:when test="global_variables.release['curr_state'] == 'Beta'">
 											<a href="http://fedoraproject.org/wiki/Releases/${global_variables.release['next_id']}/Schedule"><img alt="Fedora ${global_variables.release['next_id']} Beta ${global_variables.release['curr_name']} is here! Final release in ${days} days" src="${image}" /></a>
 											<br /><a style="text-decoration: none; font-size: 1.6ex; color: #99AABB;" href="${path}/${lang}/counter">${Markup(_('Add a counter to your own site!'))}</a>
-										</py:when>
+										</py:when>-->
                     <py:when test="global_variables.release['curr_state'] == 'Beta'">
                       <a href="${path}/${lang}/get-prerelease"><img alt="Fedora ${global_variables.release['next_id']} Beta ${global_variables.release['curr_name']} is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}beta.png" /></a>
                     </py:when>

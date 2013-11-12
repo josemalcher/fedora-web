@@ -7,11 +7,11 @@ release={
     'next_id':     '20',
     'curr_name':   u'Schrödinger’s Cat',
     'next_name':   'Heisenbug',
-    'curr_state':  'Alpha',             # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  'Alpha',         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_state':  'Beta',             # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  'Beta',         # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_ppc64_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_s390_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  'Alpha',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'prev_arm_id': '18',
     'prev_ppc64_id': '18',
     'prev_s390_id': '18',
@@ -24,8 +24,8 @@ release={
     'next_s390_id': '20',
     'next_cloud_id': '20',
     'cloud_composedate': '20130627',
-    'pre_cloud_composedate': '20130918',
-    'RC_gold': '4'                      # insert the number of the RC version declared GOLD
+    'pre_cloud_composedate': '20131106',
+    'RC_gold': '5'                      # insert the number of the RC version declared GOLD
 }
 
 path={
@@ -35,7 +35,7 @@ path={
     'download_spins':  'http://download.fedoraproject.org/pub/alt/releases',
     'download_arch':   'http://download.fedoraproject.org/pub/fedora-secondary/releases',
     'mirrors':         'http://mirrors.fedoraproject.org/metalink?path=pub/fedora/linux/releases',
-    'checksums':       'https://fedoraproject.org/static/checksums',
+    'checksums':       './static/checksums',
     'doc':             'http://docs.fedoraproject.org/en-US/Fedora'
 }
 
