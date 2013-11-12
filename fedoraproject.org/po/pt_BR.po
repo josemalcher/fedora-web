@@ -24,7 +24,7 @@
 # Ricardo Gyorfy <rgyorfy@redhat.com>, 2011
 # Taylon Silmer <taylon@taylon.eti.br>, 2011
 # Teseu <tuliomac@gmail.com>, 2011
-# Teseu <tuliomac@gmail.com>, 2011
+# Teseu <tuliomac@gmail.com>, 2011,2013
 # ufa <ufa@technotroll.org>, 2011
 # ufa <ufa@technotroll.org>, 2011
 # ufa <ufa@technotroll.org>, 2011
@@ -33,9 +33,9 @@ msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2013-09-25 14:02+0200\n"
-"PO-Revision-Date: 2013-09-25 12:03+0000\n"
-"Last-Translator: Kévin Raymond <shaiton@fedoraproject.org>\n"
-"Language-Team: Portuguese (Brazil) <trans-pt_br@lists.fedoraproject.org>\n"
+"PO-Revision-Date: 2013-10-06 06:20+0000\n"
+"Last-Translator: Henrique P. Machado <zehrique@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/fedora/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1358,7 +1358,7 @@ msgid ""
 "desktop choices including MATE, KDE, Xfce, LXDE, SOAS and a minimal image "
 "that does not include the desktop. Any of these images can be used with "
 "QEMU."
-msgstr ""
+msgstr "O Fedora para ARM incluí dois tipos de imagem - uma para ser utilizada em plataformas que precisam de uma partição VFAT (Pandaboard) e outra para ser utilizar com dispositivos que inicializam de uma partição EXT (Trimslice). Para cada uma delas existe um número de escolhas de desktop incluindo MATE, KDE, Xfce, LXDE, SOAS e uma imagem mínima que não inclui desktop. Qualquer uma dessas imagens pode ser utilizada com o QEMU."
 
 #: data/content/get-fedora-options.html:393
 #: data/content/get-prerelease.html:404
@@ -1607,31 +1607,31 @@ msgstr "Ver mais opções do Fedora"
 #: data/content/get-fedora.html:107
 #, python-format
 msgid "Fedora %s Release Schedule"
-msgstr ""
+msgstr "Calendário de lançamento do Fedora %s"
 
 #: data/content/get-fedora.html:111
 msgid "Release State"
-msgstr ""
+msgstr "Estado do lançamento"
 
 #: data/content/get-fedora.html:112
 msgid "Release Date"
-msgstr ""
+msgstr "Data de lançamento"
 
 #: data/content/get-fedora.html:117
 msgid "Alpha Release Public Availability"
-msgstr ""
+msgstr "Disponibilidade pública da versão alfa"
 
 #: data/content/get-fedora.html:121
 msgid "Beta Release Public Availability"
-msgstr ""
+msgstr "Disponibilidade pública da versão beta"
 
 #: data/content/get-fedora.html:125
 msgid "Final Release Public Availability (GA)"
-msgstr ""
+msgstr "Disponibilidade pública da versão final (GA)"
 
 #: data/content/get-fedora.html:130
 msgid "Read all the key milestones of the release schedule..."
-msgstr ""
+msgstr "Leia todos os marcações chave da agenda de lançamentos..."
 
 #: data/content/get-fedora.html:137
 msgid "What will I need?"
@@ -1817,7 +1817,7 @@ msgstr "Obtenha o próximo Fedora, agora."
 
 #: data/content/get-prerelease.html:135
 msgid "ARM"
-msgstr ""
+msgstr "ARM"
 
 #: data/content/get-prerelease.html:146
 #, python-format
@@ -1825,7 +1825,7 @@ msgid ""
 "This is pre-release software and is supported by the <a "
 "href=\"%(team_url)s\">QA team</a>. Please direct questions to %(team_list)s "
 "or %(team_irc)s on freenode."
-msgstr ""
+msgstr "Este é um software em pré-lançamento e suportado pela <a href=\"%(team_url)s\">Equipe de QA</a>. Por favor, direcione perguntas para %(team_list)s ou %(team_irc)s na freenode."
 
 #: data/content/get-prerelease.html:147 data/content/get-prerelease.html:320
 #: data/content/get-prerelease.html:378
@@ -1834,7 +1834,7 @@ msgid ""
 "All issues or bugs should be reported via the <a href=\"%s\">Red Hat "
 "Bugzilla</a>. The Fedora Project makes no guarantees as to its suitability "
 "or usefulness."
-msgstr ""
+msgstr "Todas as questões ou bugs devem ser relatados através do <a href=\"%s\">Bugzilla da Red Hat</a>. O Projeto Fedora não oferece garantias quanto à sua adequação ou qualidade."
 
 #: data/content/get-prerelease.html:149 data/content/get-prerelease.html:151
 #: data/content/get-prerelease.html:153 data/content/get-prerelease.html:322
@@ -1852,12 +1852,12 @@ msgstr "Leia as <a href=\"%(relnotes_url)s\">Notas de lançamento</a> para maior
 #: data/content/get-prerelease.html:159 data/content/get-prerelease.html:332
 #: data/content/get-prerelease.html:390
 msgid "Upcoming Beta Release is planned for"
-msgstr ""
+msgstr "Próximo lançamento Beta está planejado para"
 
 #: data/content/get-prerelease.html:161 data/content/get-prerelease.html:334
 #: data/content/get-prerelease.html:392
 msgid "Upcoming Final Release is planned for"
-msgstr ""
+msgstr "Próximo lançamento Final está planejado para"
 
 #: data/content/get-prerelease.html:168 data/content/get-prerelease.html:204
 #: data/content/get-prerelease.html:222 data/content/get-prerelease.html:240
@@ -1880,11 +1880,11 @@ msgstr "gPXE é um inicializador de rede open source (GPL)"
 #: data/content/get-prerelease.html:193
 #, python-format
 msgid "gPXE tree: <a href=\"%(32b)s\"> i386</a> / <a href=\"%(64b)s\"> x86_64</a>"
-msgstr ""
+msgstr "árvore gPXE: <a href=\"%(32b)s\"> i386</a> / <a href=\"%(64b)s\"> x86_64</a>"
 
 #: data/content/get-prerelease.html:195 data/content/get-prerelease.html:422
 msgid "Setup your PXE server"
-msgstr ""
+msgstr "Configure seu servidor PXE"
 
 #: data/content/get-prerelease.html:237
 msgid "Fedora XFCE Live Media"
@@ -1912,7 +1912,7 @@ msgid ""
 "This is pre-release software and is supported by the <a "
 "href=\"%(team_url)s\">Cloud team</a>. Please direct questions to "
 "%(team_list)s or %(team_irc)s on freenode."
-msgstr ""
+msgstr "Este é um software em pré-lançamento e suportado pela <a href=\"%(team_url)s\">Equipe de Nuvem</a>. Por favor, direcione perguntas para %(team_list)s ou %(team_irc)s na freenode."
 
 #: data/content/get-prerelease.html:338
 msgid "Fedora Cloud Images"
@@ -1936,7 +1936,7 @@ msgstr "32 bit"
 
 #: data/content/get-prerelease.html:355
 msgid "Fedora EC2 Images"
-msgstr ""
+msgstr "Imagens do Fedora EC2"
 
 #: data/content/get-prerelease.html:377
 #, python-format
@@ -1944,42 +1944,42 @@ msgid ""
 "This is pre-release software and is supported by the <a "
 "href=\"%(team_url)s\">ARM team</a>. Please direct questions to %(team_list)s"
 " or %(team_irc)s on freenode."
-msgstr ""
+msgstr "Este é um software em pré-lançamento e suportado pela <a href=\"%(team_url)s\">Equipe ARM</a>. Por favor, direcione perguntas para %(team_list)s ou %(team_irc)s na freenode."
 
 #: data/content/get-prerelease.html:398
 #, python-format
 msgid ""
 "To get more information, read the <a href=\"%s\">installation "
 "instructions</a>."
-msgstr ""
+msgstr "Para maiores informações, leia as <a href=\"%s\">instruções de instalação</a>."
 
 #: data/content/get-prerelease.html:401
 msgid "Fedora ARM Images"
-msgstr ""
+msgstr "Imagens do Fedora ARM"
 
 #: data/content/get-prerelease.html:406 data/content/get-prerelease.html:413
 #: data/content/get-prerelease.html:433 data/content/get-prerelease.html:440
 #: data/content/get-prerelease.html:447 data/content/get-prerelease.html:454
 msgid "VFAT HFP"
-msgstr ""
+msgstr "VFAT HFP"
 
 #: data/content/get-prerelease.html:407 data/content/get-prerelease.html:414
 #: data/content/get-prerelease.html:434 data/content/get-prerelease.html:441
 #: data/content/get-prerelease.html:448 data/content/get-prerelease.html:455
 msgid "HFP"
-msgstr ""
+msgstr "HFP"
 
 #: data/content/get-prerelease.html:421
 msgid "PXE tree"
-msgstr ""
+msgstr "árvore PXE"
 
 #: data/content/get-prerelease.html:428
 msgid "Fedora ARM Desktop Spins"
-msgstr ""
+msgstr "Spins do Fedora Desktop para ARM"
 
 #: data/content/get-prerelease.html:445
 msgid "Mate"
-msgstr ""
+msgstr "Mate"
 
 #: data/content/index.html:48
 msgid "Fedora Project Homepage"
@@ -2388,7 +2388,7 @@ msgstr "Eventos norte americanos"
 msgid ""
 "Events include OhioCon 2013 in Columbus Ohio, and LinuxCon NA 2013 in New "
 "Orleans, Louisiana."
-msgstr ""
+msgstr "Eventos incluindo OhioCon 2013 em Columbus, Ohio e LinuxCon NA 2013, em New Orleans, Louisiana."
 
 #: data/content/join-fedora.html:130 data/content/join-fedora.html:133
 #: data/content/join-fedora.html:136 data/content/join-fedora.html:139
@@ -2403,7 +2403,7 @@ msgstr "Eventos da América Central & Sul"
 msgid ""
 "Events include ENSOL ValedoAçu 2013, FAD Fedora Warao 2013 startup, and O "
 "Projeto Fedora e seu sistema operacional"
-msgstr ""
+msgstr "Eventos incluindo ENSOL ValedoAçu 2013, FAD Fedora Warao 2013 startup e O Projeto Fedora e seu sistema operacional"
 
 #: data/content/join-fedora.html:134
 msgid "European, Middle Eastern, & African events"
@@ -2413,7 +2413,7 @@ msgstr "Eventos europeus, médio orientais & africanos"
 msgid ""
 "Events include LinuxCon Europe 2013 in the United Kingdom, OpenRheinRuhr2013"
 " in Germany, and LinuxDay 2013 in Austria."
-msgstr ""
+msgstr "Eventos incluindo a LinuxCon Europe 2013, no Reino Unido, OpenRheinRuhr2013, na Alemanha e o LinuxDay 2013, na Áustria."
 
 #: data/content/join-fedora.html:137
 msgid "Indian, Asian, & Australian events"
@@ -2423,7 +2423,7 @@ msgstr "Eventos indianos, asiáticos & australianos"
 msgid ""
 "Events include the Fedora Community Engagement Can Tho 2013 in Vietnam and "
 "Akihabara Fedora 19 Distribution In Japan."
-msgstr ""
+msgstr "Eventos incluindo o Compromisso com a Comunidade Fedora Can Tho 2013, no Vietnã e Akihabara Fedora 19 Distribution, no Japão."
 
 #: data/content/join-fedora.html:143
 msgid "Latest Announcements"
@@ -2745,7 +2745,7 @@ msgstr "Mídia live"
 
 #: data/content/verify.html:180
 msgid "ARM Images"
-msgstr ""
+msgstr "Imagens ARM"
 
 #: data/content/verify.html:221
 msgid "Next, import Fedora's GPG key(s):"
@@ -6338,7 +6338,7 @@ msgstr "Saiba mais sobre a relação entre Red Hat e Fedora >"
 #: data/templates/foot.html:68
 #, python-format
 msgid "© %(year)s Red Hat, Inc. and others."
-msgstr ""
+msgstr "© %(year)s Red Hat, Inc. e outros."
 
 #: data/templates/foot.html:71
 msgid "Sponsors"
