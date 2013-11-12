@@ -24,7 +24,7 @@ release={
     'next_s390_id': '20',
     'next_cloud_id': '20',
     'cloud_composedate': '20130627',
-    'pre_cloud_composedate': '20130918',
+    'pre_cloud_composedate': '20131106',
     'RC_gold': '5'                      # insert the number of the RC version declared GOLD
 }
 
