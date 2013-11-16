@@ -53,7 +53,7 @@ docs_url = [
 		<div class="panes">
 			<div>
 				<h2>${_('A lighter, faster, less resource-hungry desktop.')}</h2>
-				<img class="splash-right" src="/static/images/spin/lxde-screenshot.png" />
+				<span class="blurb blurb-right"><img src="/static/images/content/lxde-screenshot-01-sm.png" rel="#lxde" /></span>
 				<p>${_('LXDE, the "Lightweight X11 Desktop Environment", is an extremely fast, performant, and energy-saving desktop environment. It  maintained by an international community of developers and comes with a beautiful interface, multi-language support, standard keyboard shortcuts and additional features like tabbed file browsing.')}</p>
 
 				<p>${_('LXDE is not designed to be powerful and bloated, but to be usable and slim. A main goal of LXDE is to keep computer resource usage low. It is especially designed for computers with low hardware specifications like netbooks, mobile devices (e.g. MIDs) or older computers.')}</p>
@@ -101,6 +101,17 @@ docs_url = [
 				<xi:include href="../../templates/support-tab.html" />
 			</div>
 		</div>
+		<div class="simple_overlay" id="lxde">
+                <!-- large image -->
+                <img src="/static/images/content/lxde-screenshot-02-lg.png" />
+                <!-- image details -->
+                <div class="details">
+                    <h3>${_('LXDE')}</h3>
+                    <h4>${_('Lightweight X11 Desktop Environment')}</h4>
+                    <p>${_('A screenshot of the KDE Desktop Environment')}</p>
+                </div>
+        </div>
+
                 <xi:include href="../../templates/content-export-regulations.html" />
   </body>
 </html>
