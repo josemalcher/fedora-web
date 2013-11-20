@@ -121,7 +121,7 @@ def gen_js(*args):
 		js+="\n\tif (is_form_" + release[0] + " != 'undefined') {\n"
 		js+="\n\t\tif (form_" + release[0] + ".region_" + release[0] + ".value != 'null') {\n"
 		js+="\t\t\tvar ami_id = id_" + release[0] + "[form_" + release[0] + ".region_" + release[0] + ".value][form_" + release[0] + ".arch_" + release[0] + ".value];\n"
-		js+="\t\t\tvar url = 'https://console.aws.amazon.com/ec2/home?region=' + region_name[form_" + release[0] + ".region_" + release[0] + ".value] + '#launchAmi=' + ami_id;\n"
+		js+="\t\t\tvar url = 'https://console.aws.amazon.com/ec2/v2/home?region=' + region_name[form_" + release[0] + ".region_" + release[0] + ".value] + '#LaunchInstanceWizard:ami=' + ami_id;\n"
 		js+="\t\t\tdocument.getElementById('amihref_" + release[0] + "').href = url;\n"
 		js+="\t\t\tdocument.getElementById('amihref_" + release[0] + "').style.visibility='visible';\n"
 		js+="\t\t\tdocument.getElementById('label_" + release[0] + "').innerHTML = ami_id;\n"
@@ -131,7 +131,6 @@ def gen_js(*args):
 		js+="\t\t\tdocument.getElementById('label_" + release[0] + "').innerHTML = '';\n"
 		js+="\t\t}\n"
 		js+="\t}\n"
-
 	js+="}\n"
 	f = open(OUTPUT, 'w+')
 	f.write(js)
