@@ -5,6 +5,7 @@
 
 
 import urllib2
+from urllib2 import HTTPError
 from StringIO import StringIO
 import gzip
 from lxml import etree
@@ -50,8 +51,8 @@ def schedule(release):
     try:
         u = urllib2.urlopen('http://fedorapeople.org/groups/schedule/f-' + release + '/f-' + release + '-key-milestones.tjx')
     except HTTPError:
-        date[release] = {'alpha':'-', 'beta':'-', 'final':'-'}
-        pass
+        date[release] = {'alpha':'2014-jan-01', 'beta':'2014-jan-01', 'final':'2014-jan-01'}
+        return date
 
     # Release is already present in date if we got HTTPError
     if not release in date:
@@ -63,4 +64,4 @@ def schedule(release):
         cPickle.dump(data, f)
         f.close()
 
-    return parse(data, release)
+        return parse(data, release)
