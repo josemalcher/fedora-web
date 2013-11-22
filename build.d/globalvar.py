@@ -49,8 +49,8 @@ iso_size={
     'x86_64_Live_KDE':     '878',       # In MB
     'i686_Live_LXDE':      '656',       # In MB
     'x86_64_Live_LXDE':    '691',       # In MB
-    'i686_Live_XFCE':      '588',       # In MB
-    'x86_64_Live_XFCE':    '621',       # In MB
+    'i686_Live_Xfce':      '588',       # In MB
+    'x86_64_Live_Xfce':    '621',       # In MB
     'i386_Netinstall':     '353',       # In MB
     'x86_64_Netinstall':   '317',       # In MB
     'i686_Live_Security':  '730',       # In MB
