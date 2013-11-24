@@ -29,6 +29,7 @@
                     <li><a id="t3" href="#formats">${_('Formats')}</a></li>
                     <li><a id="t4" href="#spins">${_('Spins')}</a></li>
                     <li><a id="t5" href="#clouds">${_('Cloud')}</a></li>
+                    <li><a id="t5" href="#arm">${_('ARM')}</a></li>
                     <li><a id="t6" href="#2nd_arches">${_('Secondary Arches')}</a></li>
                 </ul>
             </div>
@@ -368,9 +369,9 @@
                     		</div>
                         </div>
 
-						<div id="get-formats">
+                        <div id="get-formats">
                         <noscript><a name="formats"><hr /></a></noscript>
-                        <h3>${_('Fedora Secondary Architectures')}</h3>
+                        <h3>${_('Fedora ARM')}</h3>
                         <div class="grid_1 suffix_1 alpha">
                         <a href="https://fedoraproject.org/wiki/Architectures/ARM"><img class="download-media" alt="${_('ARM architecture')}" src="${path}/static/images/arm.png" />
                         </a>
@@ -381,110 +382,119 @@
                             <p>${_('ARM chips are the most widely-produced processor family in the world; they have historically been used in cell phones and embedded applications, and are increasingly used in tablet devices and low-power-consumption servers. The Fedora-ARM project is an initiative to bring Fedora to this processor family.')}</p>
                             <p>${Markup(_('For more informations about changes and new features please read the &lt;a href="http://fedoraproject.org/wiki/Architectures/ARM/F19_Release_Announcement#Release_Notes/"&gt;Release Notes&lt;/a&gt;.'))}</p>
                             <div class="arch-note"><p><strong>${_('Note for Raspberry Pi users')}</strong></p><p>${Markup(_('Raspberry Pi support is now included in &lt;a href="http://pidora.ca/"&gt;Pidora&lt;/a&gt;, an optimized Fedora Remix which includes additional Pi-modules.'))}</p></div>
-						</div>
+                        </div>
                         <div class="clear"></div>
-			             <div class="grid_10 prefix_2 alpha omega">
+                         <div class="grid_12 panes">
                             <h6>${_('Available images and instructions:')}</h6>
-							<p>${_('Fedora for ARM includes two image types–one for use with platforms requiring a VFAT partition (Pandaboard), the other for use with devices that boot from an EXT partition (Trimslice). For each of these there are a number of desktop choices including MATE, KDE, Xfce, LXDE, SOAS and a minimal image that does not include the desktop. Any of these images can be used with QEMU.')}</p>
+                            <p>${_('Fedora for ARM includes two image types–one for use with platforms requiring a VFAT partition (Pandaboard), the other for use with devices that boot from an EXT partition (Trimslice). For each of these there are a number of desktop choices including MATE, KDE, Xfce, LXDE, SOAS and a minimal image that does not include the desktop. Any of these images can be used with QEMU.')}</p>
                         </div>
                         <div class="clear"></div>
-			<div class="grid_10 prefix_2 alpha omega">
-         <div class="clear"></div>
-                            <p><strong>${_('KDE')}</strong></p>
-                        </div>
-                        <div class="clear"></div>
-                        	<div class="grid_3 prefix_2 alpha">
-                            <h5>${_('VFAT HFP image')}</h5>
-                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-KDE-VFAT-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
-                            </div>
-                     	    <div class="grid_4 suffix_3 omega">
-                            <h5>${_('HFP image')}</h5>
-                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-KDE-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
-                     	   </div>
-         <div class="clear"></div>
-			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
-			<div class="grid_10 prefix_2 alpha omega">
-         <div class="clear"></div>
-                            <p><strong>${_('Xfce')}</strong></p>
-                        </div>
-                        <div class="clear"></div>
-                        	<div class="grid_3 prefix_2 alpha">
-                            <h5>${_('VFAT HFP image')}</h5>
-                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-Xfce-VFAT-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
-                            </div>
-                            <div class="grid_4 suffix_3 omega">
-                            <h5>${_('HFP image')}</h5>
-                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-Xfce-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
-                           </div>
-                     	   <div class="grid_4 suffix_3 omega">
 
-                     	   </div>
-         <div class="clear"></div>
-			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
-			<div class="grid_10 prefix_2 alpha omega">
-         <div class="clear"></div>
-                            <p><strong>${_('LXDE')}</strong></p>
+                        <div class="grid_2 alpha"><img alt="" src="${path}/static/images/arm-icon-gnome-download.png" /></div>
+                        <div class="grid_10 omega format-block">
+                            <div class="grid_3 alpha">
+                                <h5>${_('VFAT HFP image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['download']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-Desktop-VFAT-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
+                            <div class="grid_3 suffix_4 omega">
+                                <h5>${_('HFP image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['download']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-Desktop-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
                         </div>
                         <div class="clear"></div>
-                        	<div class="grid_3 prefix_2 alpha">
-                            <h5>${_('VFAT HFP image')}</h5>
-                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-LXDE-VFAT-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
+
+                        <div class="grid_2 alpha"><img alt="" src="${path}/static/images/arm-icon-kde-download.png" /></div>
+                        <div class="grid_10 omega format-block">
+                            <div class="grid_3 alpha">
+                                <h5>${_('VFAT HFP image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['download']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-KDE-VFAT-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz">${_('Download Now!')}</a>
                             </div>
-                            <div class="grid_4 suffix_3 omega">
-                            <h5>${_('HFP image')}</h5>
-                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-LXDE-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
-                     	   </div>
-         <div class="clear"></div>
-			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
-			<div class="grid_10 prefix_2 alpha omega">
-         <div class="clear"></div>
-                            <p><strong>${_('MATE')}</strong></p>
+                            <div class="grid_3 suffix_4 omega">
+                                <h5>${_('HFP image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['download']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-KDE-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
                         </div>
                         <div class="clear"></div>
-                        	<div class="grid_3 prefix_2 alpha">
-                            <h5>${_('VFAT HFP image')}</h5>
-                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-Mate-VFAT-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
+
+                        <div class="grid_2 alpha"><img alt="" src="${path}/static/images/arm-icon-xfce-download.png" /></div>
+                        <div class="grid_10 omega format-block">
+                            <div class="grid_3 alpha">
+                                <h5>${_('VFAT HFP image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['download']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-Xfce-VFAT-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz">${_('Download Now!')}</a>
                             </div>
-                            <div class="grid_4 suffix_3 omega">
-                            <h5>${_('HFP image')}</h5>
-                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-Mate-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
-                     	   </div>
-         <div class="clear"></div>
-			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
-			<div class="grid_10 prefix_2 alpha omega">
-         <div class="clear"></div>
-                            <p><strong>${_('SoaS')}</strong></p>
+                            <div class="grid_3 suffix_4 omega">
+                                <h5>${_('HFP image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['download']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-Xfce-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
                         </div>
                         <div class="clear"></div>
-                        	<div class="grid_3 prefix_2 alpha">
-                            <h5>${_('VFAT HFP image')}</h5>
-                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-SoaS-VFAT-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
+
+                        <div class="grid_2 alpha"><img alt="" src="${path}/static/images/arm-icon-lxde-download.png" /></div>
+                        <div class="grid_10 omega format-block">
+                            <div class="grid_3 alpha">
+                                <h5>${_('VFAT HFP image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['download']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-LXDE-VFAT-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz">${_('Download Now!')}</a>
                             </div>
-                            <div class="grid_4 suffix_3 omega">
-                            <h5>${_('HFP image')}</h5>
-                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-SoaS-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
-                     	   </div>
-         <div class="clear"></div>
-			<div class="grid_10 prefix_2 alpha omega"><hr /></div>
-			<div class="grid_10 prefix_2 alpha omega">
-        <div class="clear"></div>
-                            <p><strong>${_('Minimal')}</strong></p>
+                            <div class="grid_3 suffix_4 omega">
+                                <h5>${_('HFP image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['download']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-LXDE-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
                         </div>
                         <div class="clear"></div>
-                            <div class="grid_3 prefix_2 alpha">
-                            <h5>${_('VFAT HFP image')}</h5>
-                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-Minimal-VFAT-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
+
+                        <div class="grid_2 alpha"><img alt="" src="${path}/static/images/arm-icon-mate-download.png" /></div>
+                        <div class="grid_10 omega format-block">
+                            <div class="grid_3 alpha">
+                                <h5>${_('VFAT HFP image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['download']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-Mate-VFAT-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz">${_('Download Now!')}</a>
                             </div>
-                            <div class="grid_4 suffix_3 omega">
-                            <h5>${_('HFP image')}</h5>
-                            <a href="${global_variables.path['download_arch']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz" class="download-button-mini download-arm-splash">${_('Download Now!')}</a>
-                           </div>
-         <div class="clear"></div>
-            <div class="grid_10 prefix_2 alpha omega"><hr /></div>
-            <div class="grid_10 prefix_2 alpha omega">
-<p>${Markup(_('For specific install instructions on the compatible boards please read the &lt;a href="%s"&gt;Installation Notes&lt;/a&gt;.') % 'https://fedoraproject.org/wiki/Architectures/ARM/F19/Installation')}</p>
-            </div>
-         				   <div class="grid_1 suffix_1 alpha">
+                            <div class="grid_3 suffix_4 omega">
+                                <h5>${_('HFP image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['download']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-Mate-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+                        <div class="grid_2 alpha"><img alt="" src="${path}/static/images/arm-icon-soas-download.png" /></div>
+                        <div class="grid_10 omega format-block">
+                            <div class="grid_3 alpha">
+                                <h5>${_('VFAT HFP image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['download']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-SoaS-VFAT-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
+                            <div class="grid_3 suffix_4 omega">
+                                <h5>${_('HFP image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['download']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-SoaS-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+                        <div class="grid_2 alpha"><img alt="" src="${path}/static/images/arm-icon-minimal-download.png" /></div>
+                        <div class="grid_10 omega format-block">
+                            <div class="grid_3 alpha">
+                                <h5>${_('VFAT HFP image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['download']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-Minimal-VFAT-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
+                            <div class="grid_3 suffix_4 omega">
+                                <h5>${_('HFP image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['download']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['curr_arm_id']}-1-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+                        <div class="grid_12 panes">
+                        <p>${Markup(_('For specific install instructions on the compatible boards please read the &lt;a href="%s"&gt;Installation Notes&lt;/a&gt;.') % 'https://fedoraproject.org/wiki/Architectures/ARM/F19/Installation')}</p>
+                        <p>${Markup(_('If you want to install Fedora directly from the &lt;a href="%s"&gt;PXE tree&lt;/a&gt;, please read &lt;a href="http://docs.fedoraproject.org/en-US/Fedora/19/html/Installation_Guide/ap-install-server.html"&gt;how to setup your PXE server&lt;/a&gt;.') % 'http://download.fedoraproject.org/pub/fedora/linux/releases/%s/Fedora/armhfp/os/images/pxeboot' % (global_variables.release['curr_arm_id']))}</p>
+                        </div>
+
+                        <div class="clear"></div>
+                        <xi:include href="../templates/content-export-regulations.html" />
+                        </div>
+
+						<div id="get-formats">
+                        <noscript><a name="formats"><hr /></a></noscript>
+                        <h3>${_('Fedora Secondary Architectures')}</h3>
+
+                        <div class="grid_1 suffix_1 alpha">
                         <a href="https://fedoraproject.org/wiki/Architectures/PowerPC"><img class="download-media" alt="${_('ARM architecture')}" src="${path}/static/images/ppc.png" />
                         </a>
                         </div>
