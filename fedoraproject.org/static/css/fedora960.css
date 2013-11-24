@@ -1723,30 +1723,29 @@ li.slide { width: 100% !important; }
 .slides #spin .content {
   padding-left: 1em;
   left: 0px;
-  width: 400px;
-  color:#333;
+  width: 400px !important;
+  height: 200px !important;
+  color:#fff;
 }
 
 .slides #spin .content a {
-  color: #3B6EB4;
+  left: 0px;
+  height: 200px !important;
+  width: 475px !important;
+  color: #fff;
+  font-weight: bold;
 }
 
 .slides #spin {
-background: rgb(255,255,255); /* Old browsers */
-background: -moz-linear-gradient(center top , #FFFFFF 1%, #FFFFFF 36%, #AAAAAA 100%) repeat scroll 0 0 transparent;
-background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(255,255,255,1)), color-stop(36%,rgba(255,255,255,1)), color-stop(100%,rgba(170,170,170,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 1%,rgba(255,255,255,1) 36%,rgba(170,170,170,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(255,255,255,1) 1%,rgba(255,255,255,1) 36%,rgba(170,170,170,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(3255,255,255,1) 1%,rgba(255,255,255,1) 36%,rgba(170,170,170,1) 100%); /* IE10+ */
-background: linear-gradient(top,  rgba(3255,255,255,1) 1%,rgba(255,255,255,1) 36%,rgba(170,170,170,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#AAAAAA',GradientType=0 ); /* IE6-9 */
+background: url(../images/banners/f20_cloud_bg.png) no-repeat top center #012643;
 }
 /* Black backgrounds for slide content where needed */
 
 
 
 .slides #group-photo .content,
-.slides #feature1 .content {
+.slides #feature1 .content,
+.slides #spin .content {
   /* For browsers that don't support RGBa */
   background: rgb(0, 0, 0);
   /* RGBa with 0.6 opacity */
