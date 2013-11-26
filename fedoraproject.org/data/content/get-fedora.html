@@ -40,21 +40,19 @@
                     </div>
                 </div>
                 <div class="clear"></div>
-                <div class="grid_6 alpha">
+                <div class="format-block">
                     <h4>${Markup(_('Need to upgrade Fedora?'))}</h4>
                     <p>${Markup(_('Live Media can\'t be used to upgrade Fedora installations. Instead, you can upgrade Fedora right from your desktop. Do this by using Fedup - it  will  install the packages you need and upgrade your version of Fedora.'))}</p>
                     <p>${Markup(_('&lt;a href="%s"&gt;Learn more about upgrading Fedora...&lt;/a&gt;') % 'http://fedoraproject.org/wiki/Upgrading')}</p>
                 </div>
-                <div class="grid_6 omega">
-                    <h4>${Markup(_('Other Options'))}</h4>
-                    <ul>
-                        <li><a href="${path}/${lang}/get-fedora-options#formats">${Markup(_('Formats'))}</a>: ${_('DVD ISOs, Physical Media')}</li>
-                        <li><a href="${path}/${lang}/get-fedora-options#desktops">${Markup(_('Desktops'))}</a>: ${_('KDE, Xfce, GNOME, and others')}</li>
-                        <li><a href="${path}/${lang}/get-fedora-options#spins">${Markup(_('Spins'))}</a>: ${_('Games, Design, Security, and others')}</li>
-                        <li><a href="${path}/${lang}/get-fedora-options#cloud">${Markup(_('Cloud'))}</a>: ${Markup(_('Images for public and private clouds'))}</li>
-                        <li><a href="${path}/${lang}/get-fedora-options#2nd_arches">${Markup(_('Secondary Arches'))}</a>: ${Markup(_('ARM, s390, PPC'))}</li>
-                    </ul>
-                    <p><a href="${path}/${lang}/get-fedora-options">${Markup(_('View more Fedora options...'))}</a></p>
+                <div class="grid_12 alpha omega" id="button-box">
+                    <h3>${_('Which Fedora do you want today?')}</h3>
+                        <a class="button-desktop" href="get-fedora-options#desktops" alt="Desktops"></a>
+                        <a class="button-spins" href="get-fedora-options#spins" alt="Spins"></a>
+                        <a class="button-cloud" href="get-fedora-options#cloud" alt="Cloud"></a>
+                        <a class="button-formats" href="get-fedora-options#formats" alt="Formats"></a>
+                        <a class="button-arm" href="get-fedora-options#arm" alt="ARM"></a>
+                        <a class="button-2ndarch" href="get-fedora-options#2nd_arches" alt="2nd Arches"></a>
                 </div>
 <!--                <div class="grid_12 alpha omega">
                     <h4><a name='schedule'></a>${Markup(_('Fedora %s Release Schedule') % global_variables.release['next_id'])}</h4>
