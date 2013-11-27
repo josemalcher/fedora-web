@@ -39,6 +39,25 @@ ec2_f20_Beta = [
 			{'region':'South America (Sao Paulo)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-4b5cfa56'}
 ]
 
+ec2_f20 = [
+			{'region':'Asia Pacific (Tokyo)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-51bc3550'},
+			{'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-33b23b32'},
+			{'region':'Asia Pacific (Singapore)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-f8357baa'},
+			{'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-4c327c1e'},
+			{'region':'Asia Pacific (Sydney)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-f5d340cf'},
+			{'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-33d24109'},
+			{'region':'EU (Ireland)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-2d819059'},
+			{'region':'EU (Ireland)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-43809137'},
+			{'region':'South America (Sao Paulo)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-d2e84dcf'},
+			{'region':'South America (Sao Paulo)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-08eb4e15'},
+			{'region':'US East (Northern Virginia)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-6f640c06'},
+			{'region':'US East (Northern Virginia)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-b71078de'},
+			{'region':'US West (Northern California)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-634f6126'},
+			{'region':'US West (Northern California)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-674f6122'},
+			{'region':'US West (Oregon)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-67930257'},
+			{'region':'US West (Oregon)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-fd9302cd'}
+]
+
 ec2_f19 = [
 			{'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-da450c88'},
 			{'region':'Asia Pacific (Singapore)', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-fe450cac'},
@@ -56,25 +75,6 @@ ec2_f19 = [
 			{'region':'EU (Ireland)',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-9f031eeb'},
 			{'region':'South America (Sao Paulo)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-b055f0ad'},
 			{'region':'South America (Sao Paulo)',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-a255f0bf'}
-]
-
-ec2_f18 = [
-			{'region':'Asia Pacific (Tokyo)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-51bc3550'},
-			{'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-33b23b32'},
-			{'region':'Asia Pacific (Singapore)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-f8357baa'},
-			{'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-4c327c1e'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-f5d340cf'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-33d24109'},
-			{'region':'EU (Ireland)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-2d819059'},
-			{'region':'EU (Ireland)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-43809137'},
-			{'region':'South America (Sao Paulo)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-d2e84dcf'},
-			{'region':'South America (Sao Paulo)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-08eb4e15'},
-			{'region':'US East (Northern Virginia)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-6f640c06'},
-			{'region':'US East (Northern Virginia)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-b71078de'},
-			{'region':'US West (Northern California)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-634f6126'},
-			{'region':'US West (Northern California)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-674f6122'},
-			{'region':'US West (Oregon)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-67930257'},
-			{'region':'US West (Oregon)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-fd9302cd'}
 ]
 
 # The idea is to get something similar to http://jsfiddle.net/shaiton/wChSv/5/
@@ -139,17 +139,17 @@ def gen_js(*args):
 
 def get_amis():
     ec2_f20_Beta_regions = sorted_region(ec2_f20_Beta)
+    ec2_f20_regions = sorted_region(ec2_f20)
     ec2_f19_regions = sorted_region(ec2_f19)
-    ec2_f18_regions = sorted_region(ec2_f18)
-
+    
     if not os.path.exists(OUTPUT):
         gen_js(
+        	['20',ec2_f20],
             ['19',ec2_f19],
-            ['18',ec2_f18],
             ['20_Beta',ec2_f20_Beta])
 
     return {
-        'f18':ec2_f18, 'f18_regions':ec2_f18_regions,
+        'f20':ec2_f20, 'f20_regions':ec2_f20_regions,
         'f19':ec2_f19, 'f19_regions':ec2_f19_regions,
         'f20_Beta':ec2_f20_Beta, 'f20_Beta_regions':ec2_f20_Beta_regions
            }
