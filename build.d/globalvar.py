@@ -15,6 +15,7 @@ release={
     'prev_arm_id': '19',
     'prev_ppc64_id': '19',
     'prev_s390_id': '19',
+    'prev_cloud_id': '19',
     'curr_arm_id': '20',
     'curr_ppc64_id': '20',
     'curr_s390_id': '20',
