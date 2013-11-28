@@ -185,11 +185,13 @@
                     <tbody>
                         <tr>
                             <th class="install-media-arch">x86_64</th>
+                            <td><a href="${global_variables.path['checksums']}/Fedora-Images-x86_64-${global_variables.release['prev_cloud_id']}-CHECKSUM">Fedora ${global_variables.release['prev_cloud_id']}</a></td>
                             <td><a href="${global_variables.path['checksums']}/Fedora-Images-x86_64-${global_variables.release['curr_cloud_id']}-CHECKSUM">Fedora ${global_variables.release['curr_cloud_id']}</a></td>
                             <td py:if="global_variables.release['curr_cloud_state']"><a href="${global_variables.path['checksums']}/Fedora-Images-x86_64-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-CHECKSUM">Fedora ${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}</a></td>
                         </tr>
                         <tr>
                             <th class="install-media-arch">i386</th>
+                            <td><a href="${global_variables.path['checksums']}/Fedora-Images-i386-${global_variables.release['prev_cloud_id']}-CHECKSUM">Fedora ${global_variables.release['prev_cloud_id']}</a></td>
                             <td><a href="${global_variables.path['checksums']}/Fedora-Images-i386-${global_variables.release['curr_cloud_id']}-CHECKSUM">Fedora ${global_variables.release['curr_cloud_id']}</a></td>
                             <td py:if="global_variables.release['curr_cloud_state']"><a href="${global_variables.path['checksums']}/Fedora-Images-i386-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-CHECKSUM">Fedora ${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}</a></td>
                         </tr>
