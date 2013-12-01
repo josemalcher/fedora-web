@@ -1897,18 +1897,32 @@ div.news a.news_relnotes, div.news a.news_download  {
 #button-box {
   position: relative;
   background: url("../images/bg_main-download-section.png") repeat-x scroll left bottom #FFFFFF;
-  margin-bottom: 3em;
-  height: 420px;
+  margin: 2em 0 3em 0;
+  height: 335px;
 }
 
 #button-box a {
   background-image: url("../images/banners/random/over.png");
 }
 
+#button-box a.button-formats {
+  position: absolute;
+  top: 40px;
+  left: 120px;
+  display: block;
+  width: 200px;
+  height: 75px;
+  background-position:0px 0px;
+}
+
+#button-box a:hover.button-formats {
+  background-position:0 -75px;
+}
+
 #button-box a.button-desktop {
   position: absolute;
   top: 40px;
-  left: 250px;
+  right: 120px;
   display: block;
   width: 200px;
   height: 75px;
@@ -1921,7 +1935,7 @@ div.news a.news_relnotes, div.news a.news_download  {
 
 #button-box a.button-spins {
   position: absolute;
-  top: 130px;
+  top: 140px;
   left: 0px;
   display: block;
   width: 200px;
@@ -1933,9 +1947,16 @@ div.news a.news_relnotes, div.news a.news_download  {
   background-position:0 -75px;
 }
 
+#button-box img.logo {
+  position: absolute;
+  top: 143px;
+  left: 318px;
+  display: block;
+}
+
 #button-box a.button-cloud {
   position: absolute;
-  top: 130px;
+  top: 140px;
   right: 0px;
   display: block;
   width: 200px;
@@ -1947,24 +1968,10 @@ div.news a.news_relnotes, div.news a.news_download  {
   background-position:0 -75px;
 }
 
-#button-box a.button-formats {
-  position: absolute;
-  top: 190px;
-  left: 250px;
-  display: block;
-  width: 200px;
-  height: 75px;
-  background-position:0px 0px;
-}
-
-#button-box a:hover.button-formats {
-  background-position:0 -75px;
-}
-
 #button-box a.button-arm {
   position: absolute;
-  top: 310px;
-  left: 80px;
+  top: 240px;
+  left: 120px;
   display: block;
   width: 200px;
   height: 75px;
@@ -1977,8 +1984,8 @@ div.news a.news_relnotes, div.news a.news_download  {
 
 #button-box a.button-2ndarch {
   position: absolute;
-  top: 310px;
-  right: 80px;
+  top: 240px;
+  right: 120px;
   display: block;
   width: 200px;
   height: 75px;
