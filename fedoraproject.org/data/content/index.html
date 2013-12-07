@@ -225,14 +225,14 @@ if global_variables.release['curr_state'] == "Beta":
                 <div id="fedora-banners">
 									<py:choose>
 										<py:when test="global_variables.release['curr_state'] == 'Alpha'">
-											<a href="${path}/${lang}/get-prerelease"><img alt="Fedora ${global_variables.release['next_id']} Alpha ${global_variables.release['curr_name']} is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}alpha.png" /></a>
+											<a href="${path}/${lang}/get-prerelease"><img alt="Fedora ${global_variables.release['next_id']} Alpha ${global_variables.release['next_name']} is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}alpha.png" /></a>
 										</py:when>
 										<py:when test="global_variables.release['curr_state'] == 'Beta'">
-											<a href="http://fedoraproject.org/wiki/Releases/${global_variables.release['next_id']}/Schedule"><img alt="Fedora ${global_variables.release['next_id']} Beta ${global_variables.release['curr_name']} is here! Final release in ${days} days" src="${image}" /></a>
+											<a href="http://fedoraproject.org/wiki/Releases/${global_variables.release['next_id']}/Schedule"><img alt="Fedora ${global_variables.release['next_id']} Beta ${global_variables.release['next_name']} is here! Final release in ${days} days" src="${image}" /></a>
 											<br /><a style="text-decoration: none; font-size: 1.6ex; color: #99AABB;" href="${path}/${lang}/counter">${Markup(_('Add a counter to your own site!'))}</a>
 										</py:when>
                     <py:when test="global_variables.release['curr_state'] == 'Beta'">
-                      <a href="${path}/${lang}/get-prerelease"><img alt="Fedora ${global_variables.release['next_id']} Beta ${global_variables.release['curr_name']} is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}beta.png" /></a>
+                      <a href="${path}/${lang}/get-prerelease"><img alt="Fedora ${global_variables.release['next_id']} Beta ${global_variables.release['next_name']} is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}beta.png" /></a>
                     </py:when>
 										<py:otherwise>
 											<a href="${path}/${lang}/get-fedora"><img alt="Fedora ${global_variables.release['curr_id']} ${global_variables.release['curr_name']} is here!" src="${path}/static/images/banners/f${global_variables.release['curr_id']}release.png" /></a>
