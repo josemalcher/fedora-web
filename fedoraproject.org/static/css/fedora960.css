@@ -1630,9 +1630,9 @@ li.slide { width: 100% !important; }
 /* Fedora feature slide */
 
 .slideShow #feature1 .content {
-  left: 0px;
-  width: 440px !important;
-  height: 210px !important;
+  right: 0px;
+  width: 370px !important;
+  height: 200px !important;
   margin: 1em;
   padding: 1em;
 }
@@ -1653,15 +1653,24 @@ li.slide { width: 100% !important; }
 }
 
 .slides #feature1 {
-  background: #555;
-  background-image: url(../images/banners/3d_printing.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;}
+  background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(center top , #FFFFFF 1%, #FFFFFF 36%, #AAAAAA 100%) repeat scroll 0 0 transparent;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(255,255,255,1)), color-stop(36%,rgba(255,255,255,1)), color-stop(100%,rgba(170,170,170,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 1%,rgba(255,255,255,1) 36%,rgba(170,170,170,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 1%,rgba(255,255,255,1) 36%,rgba(170,170,170,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(3255,255,255,1) 1%,rgba(255,255,255,1) 36%,rgba(170,170,170,1) 100%); /* IE10+ */
+background: linear-gradient(top,  rgba(3255,255,255,1) 1%,rgba(255,255,255,1) 36%,rgba(170,170,170,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#AAAAAA',GradientType=0 ); /* IE6-9 */
+}
 
-.slides #feature1 .content {
-  left: 0px;
-  height: 200px;
-  width: 475px !important;
+.slides #feature1 .content,
+.slides #feature1 .content h2 {
+  right: 0px;
+  color: #000;
+}
+
+.slides #feature1 .content a {
+  color: #3c6eb4;
 }
 
 .slides #feature .content {
@@ -1674,6 +1683,12 @@ li.slide { width: 100% !important; }
 .slides #feature .content h3,
 .slides #feature .content p {
   color: #444;
+}
+
+.slides #feature1 img.balloons {
+  float: left;
+  position: absolute;
+  top: 52px;
 }
 
 /* Fedora spin slide */
@@ -1702,7 +1717,6 @@ background: url(../images/banners/f20_cloud_bg.png) no-repeat top center #65aef3
 
 
 .slides #group-photo .content,
-.slides #feature1 .content,
 .slides #spin .content {
   /* For browsers that don't support RGBa */
   background: rgb(0, 0, 0);
