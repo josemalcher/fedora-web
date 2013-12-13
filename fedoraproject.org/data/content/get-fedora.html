@@ -33,30 +33,29 @@
                         <img src="${path}/static/images/media.png" alt="Live CD" />
                     </div>
                     <div class="grid_10 omega">
-                        <p>${_('This is the latest version of the Fedora Linux operating system\'s Desktop Edition. It\'s everything you need to try out Fedora — you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop if you like.')}</p>
+                        <p>${_('This is the latest version of the Fedora Linux operating system\'s Desktop Edition. It\'s everything you need to try out Fedora — you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop.')}</p>
                         <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" class="big-button download-splash">${_('Download Now!')}</a>
                         <p class="small">${_('%(size)sMB, ISO format image for Intel-compatible PCs (%(arch)s-bit)') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}}<br />
 			<a href="${path}/${lang}/get-fedora-options">${_('More download options...')}</a></p>
                     </div>
                 </div>
                 <div class="clear"></div>
-                <div class="grid_6 alpha">
+                <div class="format-block">
                     <h4>${Markup(_('Need to upgrade Fedora?'))}</h4>
                     <p>${Markup(_('Live Media can\'t be used to upgrade Fedora installations. Instead, you can upgrade Fedora right from your desktop. Do this by using Fedup - it  will  install the packages you need and upgrade your version of Fedora.'))}</p>
                     <p>${Markup(_('&lt;a href="%s"&gt;Learn more about upgrading Fedora...&lt;/a&gt;') % 'http://fedoraproject.org/wiki/Upgrading')}</p>
                 </div>
-                <div class="grid_6 omega">
-                    <h4>${Markup(_('Other Options'))}</h4>
-                    <ul>
-                        <li><a href="${path}/${lang}/get-fedora-options#formats">${Markup(_('Formats'))}</a>: ${_('DVD ISOs, Physical Media')}</li>
-                        <li><a href="${path}/${lang}/get-fedora-options#desktops">${Markup(_('Desktops'))}</a>: ${_('KDE, Xfce, GNOME, and others')}</li>
-                        <li><a href="${path}/${lang}/get-fedora-options#spins">${Markup(_('Spins'))}</a>: ${_('Games, Design, Security, and others')}</li>
-                        <li><a href="${path}/${lang}/get-fedora-options#cloud">${Markup(_('Cloud'))}</a>: ${Markup(_('Images for public and private clouds'))}</li>
-                        <li><a href="${path}/${lang}/get-fedora-options#2nd_arches">${Markup(_('Secondary Arches'))}</a>: ${Markup(_('ARM, s390, PPC'))}</li>
-                    </ul>
-                    <p><a href="${path}/${lang}/get-fedora-options">${Markup(_('View more Fedora options...'))}</a></p>
+                <div class="grid_12 alpha omega" id="button-box">
+                    <h3>${_('Which Fedora do you want today?')}</h3>
+                        <a class="button-formats" href="get-fedora-options#formats" alt="Formats"></a>
+                        <a class="button-desktop" href="get-fedora-options#desktops" alt="Desktops"></a>
+                        <a class="button-spins" href="get-fedora-options#spins" alt="Spins"></a>
+                        <img class="logo" src="${path}/static/images/fedora_infinity_64x64.png" alt="Fedora Logo"></img>
+                        <a class="button-cloud" href="get-fedora-options#cloud" alt="Cloud"></a>
+                        <a class="button-arm" href="get-fedora-options#arm" alt="ARM"></a>
+                        <a class="button-2ndarch" href="get-fedora-options#2nd_arches" alt="2nd Arches"></a>
                 </div>
-                <div class="grid_12 alpha omega">
+<!--                <div class="grid_12 alpha omega">
                     <h4><a name='schedule'></a>${Markup(_('Fedora %s Release Schedule') % global_variables.release['next_id'])}</h4>
                     <table class="schedule">
 					<thead>
@@ -82,6 +81,7 @@
 					</table>
 					<p><a href="http://fedoraproject.org/wiki/Releases/${global_variables.release['next_id']}/Schedule">${_('Read all the key milestones of the release schedule...')}</a></p>
                 </div>
+-->
                 <xi:include href="../templates/content-export-regulations.html" />
             </div>
 
@@ -116,10 +116,6 @@
                     <li class="support-list"><a href="${path}/${lang}/get-help">${_('Help &amp; Support')}</a></li>
                     <li class="verify-list"><a href="${path}/${lang}/verify">${_('Verify Download')}</a></li>
                 </ul>
-
-
-                <h4>${_('There\'s More Fedora!')}</h4>
-                <a id="archreleases" href="/data/content/get-fedora-options#formats"><img src="/static/images/banners/random/formats.png" alt=""/></a>
 
 		<h4>${_('Other ways to get Fedora')}</h4>
 

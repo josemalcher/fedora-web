@@ -2,28 +2,29 @@
 # -*- coding: utf-8 -*-
 # This file defines all variable needed to be edited during the release cycle (alpha, beta...).
 release={
-    'prev_id':     '18',
-    'curr_id':     '19',
-    'next_id':     '20',
-    'curr_name':   u'Schrödinger’s Cat',
-    'next_name':   'Heisenbug',
-    'curr_state':  'Beta',             # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  'Beta',         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'prev_id':     '19',
+    'curr_id':     '20',
+    'next_id':     '21',
+    'curr_name':   'Heisenbug',
+    'next_name':   '',
+    'curr_state':  '',             # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_ppc64_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_s390_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  'Beta',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'prev_arm_id': '18',
-    'prev_ppc64_id': '18',
-    'prev_s390_id': '18',
-    'curr_arm_id': '19',
-    'curr_ppc64_id': '19',
-    'curr_s390_id': '19',
-    'curr_cloud_id': '19',
-    'next_arm_id': '20',
-    'next_ppc64_id': '20',
-    'next_s390_id': '20',
-    'next_cloud_id': '20',
-    'cloud_composedate': '20130627',
+    'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'prev_arm_id': '19',
+    'prev_ppc64_id': '19',
+    'prev_s390_id': '19',
+    'prev_cloud_id': '19',
+    'curr_arm_id': '20',
+    'curr_ppc64_id': '20',
+    'curr_s390_id': '20',
+    'curr_cloud_id': '20',
+    'next_arm_id': '21',
+    'next_ppc64_id': '21',
+    'next_s390_id': '21',
+    'next_cloud_id': '21',
+    'cloud_composedate': '20131211',
     'pre_cloud_composedate': '20131106',
     'RC_gold': '5'                      # insert the number of the RC version declared GOLD
 }
@@ -49,8 +50,8 @@ iso_size={
     'x86_64_Live_KDE':     '878',       # In MB
     'i686_Live_LXDE':      '656',       # In MB
     'x86_64_Live_LXDE':    '691',       # In MB
-    'i686_Live_XFCE':      '588',       # In MB
-    'x86_64_Live_XFCE':    '621',       # In MB
+    'i686_Live_Xfce':      '588',       # In MB
+    'x86_64_Live_Xfce':    '621',       # In MB
     'i386_Netinstall':     '353',       # In MB
     'x86_64_Netinstall':   '317',       # In MB
     'i686_Live_Security':  '730',       # In MB

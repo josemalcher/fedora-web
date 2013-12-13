@@ -188,7 +188,9 @@ $(document).ready(function(){
     lnk.getElementsByTagName('img')[0].src = images[ry];
     lnk.getElementsByTagName('img')[0].alt = alt[ry];
     }
-    random_banner();
+    if (/.*get-fedora-options.*/i.test(window.location.href)) {
+		random_banner();
+	}
 
     // ARM splash download page stuff
     if (/.*download-arm-splash.*/i.test(window.location.href)) {
@@ -234,6 +236,7 @@ $(document).ready(function(){
     $("#hosting-sponsor img").attr("src", sponsor_banner[0]);
     $("#hosting-sponsor img").attr("alt", sponsor_banner[1]);
     $("#hosting-sponsor a").attr("href", sponsor_banner[2]);
+
 
 /* Not actually used anywhere.
 	// main site banners
