@@ -535,7 +535,7 @@
                         <div class="clear"></div>
 
                         <div class="grid_12 panes">
-                        <p>${Markup(_('For specific install instructions on the compatible boards please read the &lt;a href="%s"&gt;Installation Notes&lt;/a&gt;.') % 'https://fedoraproject.org/wiki/Architectures/ARM/F19/Installation')}</p>
+                        <p>${Markup(_('For specific install instructions on the compatible boards please read the &lt;a href="%s"&gt;Installation Notes&lt;/a&gt;.') % 'https://fedoraproject.org/wiki/Architectures/ARM/F%s/Installation' % (global_variables.release['curr_arm_id']))}</p>
                         <p>${Markup(_('If you want to install Fedora directly from the &lt;a href="%s"&gt;PXE tree&lt;/a&gt;, please read &lt;a href="http://docs.fedoraproject.org/en-US/Fedora/19/html/Installation_Guide/ap-install-server.html"&gt;how to setup your PXE server&lt;/a&gt;.') % 'http://download.fedoraproject.org/pub/fedora/linux/releases/%s/Fedora/armhfp/os/images/pxeboot' % (global_variables.release['curr_arm_id']))}</p>
                         </div>
 
