@@ -25,6 +25,7 @@
             <div class="container_16" id="get-nav">
                 <!-- tabs -->
                 <ul class="tabs grid_16">
+                    <li><a id="t1" href="#main">${_('Main')}</a></li>
                     <li><a id="t1" href="#desktops">${_('Desktops')}</a></li>
                     <li><a id="t3" href="#formats">${_('Formats')}</a></li>
                     <li><a id="t4" href="#spins">${_('Spins')}</a></li>
@@ -39,6 +40,71 @@
         <div class="container_16">
                 <div class="grid_12 panes">
                 <!-- tab "panes" -->
+
+                    <div id="main">
+                        <noscript> <a name="main"><hr /></a> </noscript>
+                        <div class="grid_16">
+                    <p py:if="global_variables.release['curr_state']" class="note"><img src="${path}/static/images/smirk.png" class="smirk" />${Markup(_('Did someone say... &amp;ldquo;&lt;a href="get-prerelease"&gt;%s&lt;/a&gt;&amp;rdquo;?') % global_variables.release['curr_state'])}</p>
+                    </div>
+                    <div class="grid_12 alpha omega" id="main-download-section">
+                        <h3>${Markup(_('Fedora %s Desktop Edition') % global_variables.release['curr_id'])}</h3>
+                    <h4>${_('Installable Live Media')}</h4>
+                    <div class="grid_2 alpha">
+                        <img src="${path}/static/images/media.png" alt="Live CD" />
+                    </div>
+                    <div class="grid_10 omega">
+                        <p>${_('This is the latest version of the Fedora Linux operating system\'s Desktop Edition. It\'s everything you need to try out Fedora — you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop.')}</p>
+                        <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" class="big-button download-splash">${_('Download Now!')}</a>
+                        <p class="small">${_('%(size)sMB, ISO format image for Intel-compatible PCs (%(arch)s-bit)') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}}<br />
+            <a href="${path}/${lang}/get-fedora-options">${_('More download options...')}</a></p>
+                    </div>
+                    </div>
+                <div class="clear"></div>
+                <div class="format-block">
+                    <h4>${Markup(_('Need to upgrade Fedora?'))}</h4>
+                    <p>${Markup(_('Live Media can\'t be used to upgrade Fedora installations. Instead, you can upgrade Fedora right from your desktop. Do this by using Fedup - it  will  install the packages you need and upgrade your version of Fedora.'))}</p>
+                    <p>${Markup(_('&lt;a href="%s"&gt;Learn more about upgrading Fedora...&lt;/a&gt;') % 'http://fedoraproject.org/wiki/Upgrading')}</p>
+                </div>
+                <div class="grid_12 alpha omega" id="button-box">
+                    <h3>${_('Which Fedora do you want today?')}</h3>
+                        <a class="button-formats" href="get-fedora-options#formats" alt="Formats"></a>
+                        <a class="button-desktop" href="get-fedora-options#desktops" alt="Desktops"></a>
+                        <a class="button-spins" href="get-fedora-options#spins" alt="Spins"></a>
+                        <img class="logo" src="${path}/static/images/fedora_infinity_64x64.png" alt="Fedora Logo"></img>
+                        <a class="button-cloud" href="get-fedora-options#cloud" alt="Cloud"></a>
+                        <a class="button-arm" href="get-fedora-options#arm" alt="ARM"></a>
+                        <a class="button-2ndarch" href="get-fedora-options#2nd_arches" alt="2nd Arches"></a>
+                </div>
+<!--                <div class="grid_12 alpha omega">
+                    <h4><a name='schedule'></a>${Markup(_('Fedora %s Release Schedule') % global_variables.release['next_id'])}</h4>
+                    <table class="schedule">
+                    <thead>
+                        <tr>
+                            <th>${_('Release State')}</th>
+                            <th>${_('Release Date')}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>${_('Alpha Release Public Availability')}</td>
+                            <td>${schedule['alpha']}</td>
+                        </tr>
+                        <tr>
+                            <td>${_('Beta Release Public Availability')}</td>
+                            <td>${schedule['beta']}</td>
+                        </tr>
+                        <tr>
+                            <td>${_('Final Release Public Availability (GA)')}</td>
+                            <td>${schedule['final']}</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <p><a href="http://fedoraproject.org/wiki/Releases/${global_variables.release['next_id']}/Schedule">${_('Read all the key milestones of the release schedule...')}</a></p>
+                </div>
+-->
+                <xi:include href="../templates/content-export-regulations.html" />
+                </div>
+
                     <div id="desktop-versions">
                         <noscript><a name="desktops"><hr /></a></noscript>
                         <h3>${_('Fedora Desktops')}</h3>
