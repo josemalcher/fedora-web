@@ -65,7 +65,7 @@ if global_variables.release['curr_state'] == "Beta":
 									<li><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" id="download-button" class="download-splash">${_('Download Now!')}</a></li>
 									<li><a href="${path}/${lang}/get-fedora">${_('Learn More')}</a></li>
 								</ul>
-								<p class="small">${_('%(size)sMB, ISO image for %(arch)s-bit PCs') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}} <br /><a href="${path}/${lang}/get-fedora-options">${Markup(_('More options &gt;'))}</a></p>
+								<p class="small">${_('%(size)sMB, ISO image for %(arch)s-bit PCs') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}} <br /><a href="${path}/${lang}/get-fedora#desktops">${Markup(_('More options &gt;'))}</a></p>
                                 <ul py:if="global_variables.release['curr_state']">
                                     <li class="getalpha"><a href="${path}/${lang}/get-prerelease">${_('Try Fedora %(release)s %(state)s Now!') % {'release':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</a></li>
                                 </ul>
@@ -89,7 +89,7 @@ if global_variables.release['curr_state'] == "Beta":
 							<div class="content">
 						    <h2>${_('Cloud Computing with Fedora')}</h2>
 								<p>${_('The Fedora Project provides images for public and private clouds that provide a perfect foundation for fast-moving cloud projects. Fedora is available on Amazon EC2 and other public cloud providers. For private clouds, you can download Fedora in a format suitable for OpenStack, CloudStack, and Eucalyptus.')}</p>
-								<p><a href="${path}/${lang}/get-fedora-options#clouds">${Markup(_('Learn More &gt;'))}</a></p>
+								<p><a href="${path}/${lang}/get-fedora#clouds">${Markup(_('Learn More &gt;'))}</a></p>
 							</div>
               <img class="screenshot" src="${path}/static/images/banners/f20_balloons.png" alt="Cloud balloons" />
 
@@ -186,7 +186,7 @@ if global_variables.release['curr_state'] == "Beta":
                     <li>${_('%sGB disk space / storage') % '10'}</li>
                 </ul>
                 <p><a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Release_Notes/sect-Release_Notes-Welcome_to_Fedora_.html#hardware_overview">${Markup(_('More about requirements &gt;'))}</a></p>
-                <p><a href="${path}/${lang}/get-fedora-options">${Markup(_('Full set of download options &gt;'))}</a></p>
+                <p><a href="${path}/${lang}/get-fedora">${Markup(_('Full set of download options &gt;'))}</a></p>
 
                 <div id="fedora-banners">
 									<py:choose>
