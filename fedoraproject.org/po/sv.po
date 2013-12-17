@@ -15,14 +15,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-12 14:44+0100\n"
-"PO-Revision-Date: 2013-11-12 14:00+0000\n"
+"POT-Creation-Date: 2013-12-16 10:36+0100\n"
+"PO-Revision-Date: 2013-12-16 09:37+0000\n"
 "Last-Translator: robyduck <robyduck@fedoraproject.org>\n"
 "Language-Team: Swedish (http://www.transifex.com/projects/p/fedora/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 0.9.6\n"
+"Generated-By: Babel 1.3\n"
 "Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
@@ -30,7 +30,7 @@ msgstr ""
 msgid "Fedora Project - What is Fedora and what makes it different?"
 msgstr "Fedoraprojektet — Vad är Fedora och vad gör det annorlunda?"
 
-#: data/content/about-fedora.html:13 data/content/index.html:147
+#: data/content/about-fedora.html:13 data/content/index.html:134
 #: data/templates/foot.html:10
 msgid "About Fedora"
 msgstr "Om Fedora"
@@ -74,7 +74,7 @@ msgid ""
 "technologies."
 msgstr "<strong>Fedoraprojektet</strong> är namnet på en global gemenskap av människor som älskar, använder och bygger fri programvara. Vi vill vara ledande i skapandet och spridandet av fri kod och innehåll genom att arbeta tillsammans som en gemenskap. Fedora sponsras av <strong><a href=\"http://redhat.com\">Red Hat</a></strong>, världens mest pålitliga leverantör av teknologi med öppen källkod. Red Hat investerar i Fedora för att uppmuntra till samarbete och kapa uppfinningsrika nya teknologier med <a href=\"http://sv.wikipedia.org/wiki/Fri_programvara\">fri programvara</a>."
 
-#: data/content/about-fedora.html:29 data/content/index.html:205
+#: data/content/about-fedora.html:29
 msgid "What makes Fedora different?"
 msgstr "Vad gör Fedora annorlunda?"
 
@@ -289,7 +289,7 @@ msgstr "Fedorakontakter"
 msgid "Contact list of various projects and groups."
 msgstr "Kontaktlista för olika projekt och grupper"
 
-#: data/content/contact.html:27 data/templates/foot.html:70
+#: data/content/contact.html:27 data/templates/foot.html:71
 msgid "Contact"
 msgstr "Kontakt"
 
@@ -599,29 +599,29 @@ msgstr "För att undvika oro, <a href=\"../verify\">verifiera</a> din hämtning 
 msgid "Fedora Project - All available methods to get Fedora."
 msgstr "Fedoraprojektet — Alla tillgängliga metoder för att få tag i Fedora."
 
-#: data/content/get-fedora-all.html:15 data/content/get-fedora-options.html:15
-#: data/content/get-fedora.html:13 data/templates/foot.html:21
+#: data/content/get-fedora-all.html:15 data/content/get-fedora.html:15
+#: data/templates/foot.html:21
 msgid "Get Fedora"
 msgstr "Skaffa Fedora"
 
-#: data/content/get-fedora-all.html:16 data/content/get-fedora-options.html:16
-#: data/content/get-fedora.html:14 data/content/get-prerelease.html:76
+#: data/content/get-fedora-all.html:16 data/content/get-fedora.html:16
+#: data/content/get-prerelease.html:76
 #, python-format
 msgid "Fedora is 100%% free for you to enjoy and share."
 msgstr "Fedora är 100%% gratis för dig att ha nytta av och dela med dig av."
 
-#: data/content/get-fedora-all.html:19 data/content/get-fedora-options.html:19
-#: data/content/get-fedora.html:17 data/content/get-prerelease.html:79
+#: data/content/get-fedora-all.html:19 data/content/get-fedora.html:19
+#: data/content/get-prerelease.html:79
 msgid "Fedora isn't just free-of-charge. It's free as in freedom. Learn more."
 msgstr "Fedora är inte bara kostnadsfritt. Det är också fritt som i frihet. Ta reda på mer."
 
 #: data/content/get-fedora-all.html:28 data/content/get-fedora-all.html:143
 #: data/content/keys.html:28 data/content/keys.html:394
-#: data/content/verify.html:28 data/content/verify.html:261
+#: data/content/verify.html:28 data/content/verify.html:257
 msgid "&#8592; Back to the main \"Get Fedora\" page"
 msgstr "&#8592; Tillbaka till \"Hämta Fedora\"-sidan"
 
-#: data/content/get-fedora-all.html:29 data/content/get-fedora.html:25
+#: data/content/get-fedora-all.html:29 data/content/get-fedora.html:47
 #, python-format
 msgid "Did someone say... &ldquo;<a href=\"get-prerelease\">%s</a>&rdquo;?"
 msgstr "Var det någon som sade... &ldquo;<a href=\"get-prerelease\">%s</a>&rdquo;?"
@@ -661,7 +661,7 @@ msgstr "i386"
 #: data/content/get-prerelease.html:125 data/content/get-prerelease.html:126
 #: data/content/get-prerelease.html:132 data/content/get-prerelease.html:133
 msgid "Install DVD"
-msgstr "Installera DVD"
+msgstr "Installations-DVD"
 
 #: data/content/get-fedora-all.html:38 data/content/get-fedora-all.html:46
 #: data/content/get-fedora-all.html:48 data/content/get-fedora-all.html:55
@@ -837,41 +837,109 @@ msgstr "Fedora %(release)s källkods-DVD (%(size)s GB)"
 msgid "Fedora %(release)s Source RPMs"
 msgstr "Fedora %(release)s källkods-RPM:er"
 
-#: data/content/get-fedora-options.html:8
+#: data/content/get-fedora.html:8
 msgid ""
-"Fedora Project - Get Fedora: Desktops, Other Formats, Spins, Cloud Images or"
-" Secondary Arches."
-msgstr "Fedoraprojektet — Få tag i Fedora: Skrivbord, andra format, spinn, molnavbilder eller sekundära arkitekturer."
+"Fedora Project - Get Fedora: Desktops, Other Formats, Spins, Cloud Images, "
+"ARM or Secondary Arches."
+msgstr ""
 
-#: data/content/get-fedora-options.html:28 data/content/get-fedora.html:52
-#: data/content/get-prerelease.html:87
+#: data/content/get-fedora.html:28
+msgid "Main"
+msgstr ""
+
+#: data/content/get-fedora.html:29 data/content/get-prerelease.html:87
 msgid "Desktops"
 msgstr "Skrivbord"
 
-#: data/content/get-fedora-options.html:29 data/content/get-fedora.html:51
+#: data/content/get-fedora.html:30
 msgid "Formats"
 msgstr "Format"
 
-#: data/content/get-fedora-options.html:30 data/content/get-fedora.html:53
-#: data/content/get-prerelease.html:88 data/content/verify.html:160
+#: data/content/get-fedora.html:31 data/content/get-prerelease.html:88
+#: data/content/verify.html:160
 msgid "Spins"
 msgstr "Spinn"
 
-#: data/content/get-fedora-options.html:31 data/content/get-fedora.html:54
-#: data/content/get-prerelease.html:89
+#: data/content/get-fedora.html:32 data/content/get-prerelease.html:89
 msgid "Cloud"
 msgstr "Moln"
 
-#: data/content/get-fedora-options.html:32 data/content/get-fedora.html:55
-#: data/content/verify.html:224
+#: data/content/get-fedora.html:33 data/content/get-prerelease.html:90
+msgid "ARM"
+msgstr "ARM"
+
+#: data/content/get-fedora.html:34 data/content/verify.html:220
 msgid "Secondary Arches"
 msgstr "Sekundära arkitekturer"
 
-#: data/content/get-fedora-options.html:43
+#: data/content/get-fedora.html:50
+#, python-format
+msgid "Fedora %s Desktop Edition"
+msgstr "Fedora %s skrivbordsutgåva"
+
+#: data/content/get-fedora.html:51
+msgid "Installable Live Media"
+msgstr "Installerbart live-medium"
+
+#: data/content/get-fedora.html:56
+msgid ""
+"This is the latest version of the Fedora Linux operating system's Desktop "
+"Edition. It's everything you need to try out Fedora — you don't have to "
+"erase anything on your current system to try it out, and it won't put your "
+"files at risk. Take Fedora for a test drive, and if you like it, you can "
+"install Fedora directly to your hard drive straight from the Live Media "
+"desktop."
+msgstr ""
+
+#: data/content/get-fedora.html:57 data/content/get-fedora.html:119
+#: data/content/get-fedora.html:124 data/content/get-fedora.html:145
+#: data/content/get-fedora.html:150 data/content/get-fedora.html:171
+#: data/content/get-fedora.html:176 data/content/get-fedora.html:197
+#: data/content/get-fedora.html:202 data/content/get-fedora.html:223
+#: data/content/get-fedora.html:228 data/content/get-fedora.html:249
+#: data/content/get-fedora.html:254 data/content/get-fedora.html:290
+#: data/content/get-fedora.html:299 data/content/get-fedora.html:321
+#: data/content/get-fedora.html:330 data/content/get-fedora.html:460
+#: data/content/get-fedora.html:462 data/content/get-fedora.html:467
+#: data/content/get-fedora.html:469 data/content/get-fedora.html:505
+#: data/content/get-fedora.html:509 data/content/get-fedora.html:518
+#: data/content/get-fedora.html:522 data/content/get-fedora.html:531
+#: data/content/get-fedora.html:535 data/content/get-fedora.html:544
+#: data/content/get-fedora.html:548 data/content/get-fedora.html:557
+#: data/content/get-fedora.html:561 data/content/get-fedora.html:570
+#: data/content/get-fedora.html:574 data/content/get-fedora.html:583
+#: data/content/get-fedora.html:587 data/content/get-fedora.html:616
+#: data/content/get-fedora.html:621 data/content/get-fedora.html:634
+#: data/content/index.html:65
+msgid "Download Now!"
+msgstr "Hämta nu!"
+
+#: data/content/get-fedora.html:58
+#, python-format
+msgid "%(size)sMB, ISO format image for Intel-compatible PCs (%(arch)s-bit)"
+msgstr "%(size)s MB, ISO-formaterad avbild för Intelkompatibla PC (%(arch)s-bitars)"
+
+#: data/content/get-fedora.html:63
+msgid "Need to upgrade Fedora?"
+msgstr "Behöver du uppgradera Fedora?"
+
+#: data/content/get-fedora.html:64
+msgid ""
+"Live Media can't be used to upgrade Fedora installations. Instead, you can "
+"upgrade Fedora right from your desktop. Do this by using Fedup - it  will  "
+"install the packages you need and upgrade your version of Fedora."
+msgstr "Live-medium kan inte användas för att uppgradera Fedorainstallationer.  Istället kan du uppgradera Fedora direkt från ditt skrivbord.  Gör detta med Fedup — det kommer installera paketen du behöver och uppgradera din version av Fedora."
+
+#: data/content/get-fedora.html:65
+#, python-format
+msgid "<a href=\"%s\">Learn more about upgrading Fedora...</a>"
+msgstr "<a href=\"%s\">Ta reda på mer om uppgradering av Fedora …</a>"
+
+#: data/content/get-fedora.html:99
 msgid "Fedora Desktops"
 msgstr "Fedoraskrivbord"
 
-#: data/content/get-fedora-options.html:44
+#: data/content/get-fedora.html:100
 msgid ""
 "There are multiple desktops available for use with Fedora. Each has a "
 "slightly different look and feel and offers varying levels of customization."
@@ -880,181 +948,172 @@ msgid ""
 "figure out which one is best for you!"
 msgstr "Det finns flera olika skrivbord tillgängliga att använda i Fedora.  Var och en har lite olika utseende och känsla och erbjuder varierande möjligheter till anpassningar.  Skrivbord påverkar hur fönster, ikoner, menyer och diversa andra skrivbordsgränssnitt ser ut och fungerar.  Du kanske vill prova några olika och ta reda på vilken som passar bäst för dig!"
 
-#: data/content/get-fedora-options.html:46
+#: data/content/get-fedora.html:102
 #, python-format
 msgid "Fedora %(release)s Desktop Edition"
 msgstr "Fedora %(release)s skrivbordsutgåva"
 
-#: data/content/get-fedora-options.html:46
+#: data/content/get-fedora.html:102
 msgid "Fedora Default"
 msgstr "Fedora standard"
 
-#: data/content/get-fedora-options.html:50
-#: data/content/get-fedora-options.html:157
-#: data/content/get-fedora-options.html:169
-#: data/content/get-fedora-options.html:200
-#: data/content/get-fedora-options.html:236
+#: data/content/get-fedora.html:106 data/content/get-fedora.html:265
+#: data/content/get-fedora.html:277 data/content/get-fedora.html:308
+#: data/content/get-fedora.html:344
 msgid "32-bit PC Edition"
 msgstr "32-bitars PC-version"
 
-#: data/content/get-fedora-options.html:53
+#: data/content/get-fedora.html:109
 msgid "The GNOME-based default Fedora Desktop."
 msgstr "Det GNOME-baserade standardskrivbordet för Fedora."
 
-#: data/content/get-fedora-options.html:55
+#: data/content/get-fedora.html:111
 msgid "Fedora Desktop spin homepage"
 msgstr "Hemsidan för Fedora skrivbordsspinn"
 
-#: data/content/get-fedora-options.html:56
+#: data/content/get-fedora.html:112
 msgid "GNOME.org website"
 msgstr "GNOME.orgs webbsida"
 
-#: data/content/get-fedora-options.html:62
-#: data/content/get-fedora-options.html:88
-#: data/content/get-fedora-options.html:114
-#: data/content/get-fedora-options.html:140
-#: data/content/get-fedora-options.html:179
-#: data/content/get-fedora-options.html:210
+#: data/content/get-fedora.html:118 data/content/get-fedora.html:144
+#: data/content/get-fedora.html:170 data/content/get-fedora.html:196
+#: data/content/get-fedora.html:222 data/content/get-fedora.html:248
+#: data/content/get-fedora.html:287 data/content/get-fedora.html:318
 msgid "32-bit"
 msgstr "32-bitars"
 
-#: data/content/get-fedora-options.html:63
-#: data/content/get-fedora-options.html:68
-#: data/content/get-fedora-options.html:89
-#: data/content/get-fedora-options.html:94
-#: data/content/get-fedora-options.html:115
-#: data/content/get-fedora-options.html:120
-#: data/content/get-fedora-options.html:141
-#: data/content/get-fedora-options.html:146
-#: data/content/get-fedora-options.html:182
-#: data/content/get-fedora-options.html:191
-#: data/content/get-fedora-options.html:213
-#: data/content/get-fedora-options.html:222
-#: data/content/get-fedora-options.html:352
-#: data/content/get-fedora-options.html:354
-#: data/content/get-fedora-options.html:359
-#: data/content/get-fedora-options.html:361
-#: data/content/get-fedora-options.html:398
-#: data/content/get-fedora-options.html:402
-#: data/content/get-fedora-options.html:413
-#: data/content/get-fedora-options.html:417
-#: data/content/get-fedora-options.html:431
-#: data/content/get-fedora-options.html:435
-#: data/content/get-fedora-options.html:446
-#: data/content/get-fedora-options.html:450
-#: data/content/get-fedora-options.html:461
-#: data/content/get-fedora-options.html:465
-#: data/content/get-fedora-options.html:476
-#: data/content/get-fedora-options.html:480
-#: data/content/get-fedora-options.html:498
-#: data/content/get-fedora-options.html:503
-#: data/content/get-fedora-options.html:516 data/content/get-fedora.html:37
-#: data/content/index.html:65
-msgid "Download Now!"
-msgstr "Hämta nu!"
-
-#: data/content/get-fedora-options.html:64
-#: data/content/get-fedora-options.html:69
-#: data/content/get-fedora-options.html:90
-#: data/content/get-fedora-options.html:95
-#: data/content/get-fedora-options.html:116
-#: data/content/get-fedora-options.html:121
-#: data/content/get-fedora-options.html:142
-#: data/content/get-fedora-options.html:147
+#: data/content/get-fedora.html:120 data/content/get-fedora.html:125
+#: data/content/get-fedora.html:146 data/content/get-fedora.html:151
+#: data/content/get-fedora.html:172 data/content/get-fedora.html:177
+#: data/content/get-fedora.html:198 data/content/get-fedora.html:203
+#: data/content/get-fedora.html:224 data/content/get-fedora.html:229
+#: data/content/get-fedora.html:250 data/content/get-fedora.html:255
 #, python-format
 msgid "%sMB ISO Image"
 msgstr "%s MB ISO-avbild"
 
-#: data/content/get-fedora-options.html:67
-#: data/content/get-fedora-options.html:93
-#: data/content/get-fedora-options.html:119
-#: data/content/get-fedora-options.html:145
-#: data/content/get-fedora-options.html:188
-#: data/content/get-fedora-options.html:219
+#: data/content/get-fedora.html:123 data/content/get-fedora.html:149
+#: data/content/get-fedora.html:175 data/content/get-fedora.html:201
+#: data/content/get-fedora.html:227 data/content/get-fedora.html:253
+#: data/content/get-fedora.html:296 data/content/get-fedora.html:327
 msgid "64-bit"
 msgstr "64-bitars"
 
-#: data/content/get-fedora-options.html:74
+#: data/content/get-fedora.html:130
 #, python-format
 msgid "Fedora %(release)s KDE Spin"
 msgstr "Fedora %(release)s KDE-spinn"
 
-#: data/content/get-fedora-options.html:80
+#: data/content/get-fedora.html:136
 msgid "KDE-based Fedora desktop."
 msgstr "KDE-baserat Fedoraskrivbord."
 
-#: data/content/get-fedora-options.html:82
+#: data/content/get-fedora.html:138
 msgid "Fedora KDE Spin homepage"
 msgstr "Fedoras KDE-spinns hemsida"
 
-#: data/content/get-fedora-options.html:83
+#: data/content/get-fedora.html:139
 msgid "KDE.org website"
 msgstr "Websajten KDE.org"
 
-#: data/content/get-fedora-options.html:100
+#: data/content/get-fedora.html:156
 #, python-format
 msgid "Fedora %(release)s LXDE Spin"
 msgstr "Fedora %(release)s LXDE-spinn"
 
-#: data/content/get-fedora-options.html:106
+#: data/content/get-fedora.html:162
 msgid "LXDE-based Fedora desktop."
 msgstr "LXDE-baserat Fedoraskrivbord."
 
-#: data/content/get-fedora-options.html:108
+#: data/content/get-fedora.html:164
 msgid "Fedora LXDE Spin homepage"
 msgstr "Fedora LXDE-spinnets hemsida"
 
-#: data/content/get-fedora-options.html:109
+#: data/content/get-fedora.html:165
 msgid "LXDE.org website"
 msgstr "LXDE.org-webbsajten"
 
-#: data/content/get-fedora-options.html:126
+#: data/content/get-fedora.html:182
 #, python-format
 msgid "Fedora %(release)s Xfce Spin"
 msgstr "Fedora %(release)s Xfce-spinn"
 
-#: data/content/get-fedora-options.html:132
+#: data/content/get-fedora.html:188
 msgid "Xfce-based Fedora desktop."
 msgstr "Xfce-baserad Fedoraskrivbord."
 
-#: data/content/get-fedora-options.html:134
+#: data/content/get-fedora.html:190
 msgid "Fedora Xfce Spin homepage"
 msgstr "Fedora Xfce-spinnets hemsida"
 
-#: data/content/get-fedora-options.html:135
+#: data/content/get-fedora.html:191
 msgid "Xfce.org website"
 msgstr "Xfce.org-webbsajten"
 
-#: data/content/get-fedora-options.html:155
+#: data/content/get-fedora.html:208
+#, python-format
+msgid "Fedora %(release)s MATE-Compiz Spin"
+msgstr ""
+
+#: data/content/get-fedora.html:214
+msgid "MATE-Compiz-based Fedora desktop."
+msgstr ""
+
+#: data/content/get-fedora.html:216
+msgid "Fedora MATE-Compiz Spin homepage"
+msgstr ""
+
+#: data/content/get-fedora.html:217
+msgid "Mate-desktop.org website"
+msgstr ""
+
+#: data/content/get-fedora.html:234
+#, python-format
+msgid "Fedora %(release)s SoaS Spin"
+msgstr ""
+
+#: data/content/get-fedora.html:240
+msgid "SoaS-based Fedora desktop."
+msgstr ""
+
+#: data/content/get-fedora.html:242
+msgid "Fedora SoaS Spin homepage"
+msgstr ""
+
+#: data/content/get-fedora.html:243
+msgid "Sugarlabs website"
+msgstr ""
+
+#: data/content/get-fedora.html:263
 msgid "Fedora Downloads by Format"
 msgstr "Fedora saker att hämta per format"
 
-#: data/content/get-fedora-options.html:160
+#: data/content/get-fedora.html:268
 #, python-format
 msgid "Fedora %(release)s Live Media / Spins"
 msgstr "Fedora %(release)s live-medium / spinn"
 
-#: data/content/get-fedora-options.html:161
+#: data/content/get-fedora.html:269
 msgid ""
 "Fedora Live Media images may be used via bootable CD, DVD, or USB drives, "
 "and also may be used to install Fedora to hard disk. They are a great way to"
 " give Fedora a try, low-risk."
 msgstr "Fedora live-mediaavbilder kan användas via startbara CD-, DVD- eller USB-enheter, och kan också användas för att installera Fedora på en hårddisk.  De är ett bra sätt att prova Fedora, med liten risk."
 
-#: data/content/get-fedora-options.html:162
+#: data/content/get-fedora.html:270
 msgid "A directory of alternate Fedora images called Spins may be found at:"
 msgstr "En katalog över alternativa Fedora-avbilder kallade spinn finns på:"
 
-#: data/content/get-fedora-options.html:164
+#: data/content/get-fedora.html:272
 msgid "Go to Spins Directory"
 msgstr "Gå till spinnkatalogen"
 
-#: data/content/get-fedora-options.html:172
+#: data/content/get-fedora.html:280
 #, python-format
 msgid "Fedora %(release)s DVD"
 msgstr "Fedora %(release)s DVD"
 
-#: data/content/get-fedora-options.html:173
+#: data/content/get-fedora.html:281
 msgid ""
 "The DVD edition of Fedora is not Live Media, but it is bootable.  When you "
 "boot from this media, you will be running the installation program.  The DVD"
@@ -1063,25 +1122,22 @@ msgid ""
 "connected to the Internet."
 msgstr "DVD-utgåvan av Fedora är inte ett Live-medium, men går att starta ifrån.  När du startar från detta medium kommer du köra installationsprogrammet.  DVD:n behöver mindre minne (RAM) på din dator och innehåller mer programvara.  Detta medium kan vara användbart om maskinen som du installerar Fedora på inte är ansluten till Internet."
 
-#: data/content/get-fedora-options.html:178
-#: data/content/get-fedora-options.html:187
-#: data/content/get-fedora-options.html:209
-#: data/content/get-fedora-options.html:218
+#: data/content/get-fedora.html:286 data/content/get-fedora.html:295
+#: data/content/get-fedora.html:317 data/content/get-fedora.html:326
 msgid "Intel & AMD / PC compatible"
 msgstr "Intel & AMD / PC-kompatibla"
 
-#: data/content/get-fedora-options.html:183
-#: data/content/get-fedora-options.html:192
+#: data/content/get-fedora.html:291 data/content/get-fedora.html:300
 #, python-format
 msgid "%(size)sGB ISO disk image for %(arch)s PC"
 msgstr "%(size)s GB ISO-diskavbild för %(arch)s PC"
 
-#: data/content/get-fedora-options.html:203
+#: data/content/get-fedora.html:311
 #, python-format
 msgid "Fedora %(release)s Network Install CD"
 msgstr "Fedora %(release)s nätverksinstallations-CD"
 
-#: data/content/get-fedora-options.html:204
+#: data/content/get-fedora.html:312
 msgid ""
 "The Network Install CD edition of Fedora is useful if you have a fast "
 "Internet connection available.  When you boot from this media, you will be "
@@ -1090,151 +1146,148 @@ msgid ""
 "of the packages installed."
 msgstr "CD-utgåvan för nätverksinstallation av Fedora är användbar om du har en snabb internetanslutning tillgänglig.  När du startar från det här mediet kommer du köra installationprogrammet och du får de valda paketen direkt från förråden.  CD:n ser till att du har de senaste stabila versionerna av de installerade paketen."
 
-#: data/content/get-fedora-options.html:214
-#: data/content/get-fedora-options.html:223
+#: data/content/get-fedora.html:322 data/content/get-fedora.html:331
 #, python-format
 msgid "%(size)sMB ISO disk image for %(arch)s PC"
 msgstr "%(size)s MB ISO-diskavbild för %(arch)s PC"
 
-#: data/content/get-fedora-options.html:229
+#: data/content/get-fedora.html:337
 #, python-format
 msgid ""
 "For help determining what architecture your system is, <a href=\"%s\">please"
 " view our architecture help guide</a>."
 msgstr "Som hjälp i att avgöra vilken arkitektur ditt system har, <a href=\"%s\">se vår arkitekturhjälpsguide</a>."
 
-#: data/content/get-fedora-options.html:239
+#: data/content/get-fedora.html:347
 #, python-format
 msgid "Fedora %(release)s Media by Mail"
 msgstr "Fedora %(release)s medium via post"
 
-#: data/content/get-fedora-options.html:240
+#: data/content/get-fedora.html:348
 msgid ""
 "No internet connection? You can get a copy of Fedora media sent via postal "
 "mail through local and online vendors, as well as via the Fedora Free Media "
 "program."
 msgstr "Ingen internetanslutning?  Du kan få ett exemplar av Fedoramedium skickat via traditionell post via lokala affärer och nätaffärer, liksom via programmet för gratis Fedoramedium."
 
-#: data/content/get-fedora-options.html:244
+#: data/content/get-fedora.html:352
 msgid "Purchase Fedora Media from a Vendor"
 msgstr "Köp Fedoramedium från en affär"
 
-#: data/content/get-fedora-options.html:250
+#: data/content/get-fedora.html:358
 msgid "Locate a Vendor in Your Area"
 msgstr "Hitta en affär i ditt område"
 
-#: data/content/get-fedora-options.html:251
+#: data/content/get-fedora.html:359
 msgid ""
 "Select vendors worldwide carry copies of Fedora media at a reasonable price."
 " If a vendor exists in your area and you'd rather not wait for shipping, "
 "this may be a good option for you."
 msgstr "Utvalda affärer över hela världen för exemplar av Fedoramedium till rimliga priser.  Om en affär finns i ditt område och du föredrar att inte vänta på leveransen kan detta vara en bra möjlighet för dig."
 
-#: data/content/get-fedora-options.html:252
+#: data/content/get-fedora.html:360
 msgid "View Local Vendor Directory"
 msgstr "Se katalogen över lokala affärer"
 
-#: data/content/get-fedora-options.html:255
+#: data/content/get-fedora.html:363
 msgid "Online Vendors"
 msgstr "Nätaffärer"
 
-#: data/content/get-fedora-options.html:256
+#: data/content/get-fedora.html:364
 msgid ""
 "Numerous vendors worldwide offer Fedora media for online purchase. Select "
 "the vendor closest to you to keep your shipping costs lower."
 msgstr "Många affärer över hela världen erbjuder Fedoramedium till salu över nätet.  Välj affären närmast dig för att hålla nere transportkostnaden."
 
-#: data/content/get-fedora-options.html:257
+#: data/content/get-fedora.html:365
 msgid "View Online Vendor Directory"
 msgstr "Se katalogen över nätaffärer"
 
-#: data/content/get-fedora-options.html:263
+#: data/content/get-fedora.html:371
 msgid "Fedora Free Media Program"
 msgstr "Programmet för gratis Fedoramedium"
 
-#: data/content/get-fedora-options.html:264
+#: data/content/get-fedora.html:372
 msgid ""
 "Can't afford the price of installation media? Request Fedora installation "
 "media from the Fedora Free Media Program."
 msgstr "Har du inte råd med priset för installationsmedium?  Be om Fedorainstallationsmedium från programmet för gratis Fedoramedium."
 
-#: data/content/get-fedora-options.html:265 data/content/index.html:66
+#: data/content/get-fedora.html:373 data/content/index.html:66
 msgid "Learn More"
 msgstr "Ta reda på mer"
 
-#: data/content/get-fedora-options.html:276
+#: data/content/get-fedora.html:384
 msgid "Fedoras that do what you need."
 msgstr "Fedoror som gör vad du behöver."
 
-#: data/content/get-fedora-options.html:277
+#: data/content/get-fedora.html:385
 msgid ""
 "Fedora spins are alternate versions of Fedora, tailored for various types of"
 " users via hand-picked application sets and other customizations."
 msgstr "Fedoraspinn är alternativa versioner av Fedora, anpassade för olika typer av användare via handplockade programuppsättningar och andra anpassningar."
 
-#: data/content/get-fedora-options.html:277
+#: data/content/get-fedora.html:385
 msgid "Learn more about spins >"
 msgstr "Ta reda på mer om spinn →"
 
-#: data/content/get-fedora-options.html:278
+#: data/content/get-fedora.html:386
 msgid ""
 "Below is just a sampling of the Fedora spins that are available. Visit "
 msgstr "Vad som syns nedan är bara ett urval av de Fedoraspinn som finns tillgängliga.  Besök "
 
-#: data/content/get-fedora-options.html:278
+#: data/content/get-fedora.html:386
 msgid " for a full listing of all available Fedora spins."
 msgstr " för en fullständig listning av alla tillgängliga Fedoraspinn."
 
-#: data/content/get-fedora-options.html:283
+#: data/content/get-fedora.html:391
 msgid "Fedora Security Lab"
 msgstr "Fedoras säkerhetslabb"
 
-#: data/content/get-fedora-options.html:283
+#: data/content/get-fedora.html:391
 msgid "Security analysis tools."
 msgstr "Verktyg för säkerhetsanalys."
 
-#: data/content/get-fedora-options.html:283
-#: data/content/get-fedora-options.html:287
-#: data/content/get-fedora-options.html:291
-#: data/content/get-fedora-options.html:295
+#: data/content/get-fedora.html:391 data/content/get-fedora.html:395
+#: data/content/get-fedora.html:399 data/content/get-fedora.html:403
 msgid "More details at spins.fedoraproject.org >"
 msgstr "Fler detaljer på spins.fedoraproject.org →"
 
-#: data/content/get-fedora-options.html:287
+#: data/content/get-fedora.html:395
 msgid "Fedora Design Suite"
 msgstr "Fedoras designsvit"
 
-#: data/content/get-fedora-options.html:287
+#: data/content/get-fedora.html:395
 msgid "Open Creativity."
 msgstr "Öppen kreativitet."
 
-#: data/content/get-fedora-options.html:291
-msgid "Fedora SoaS Spin"
-msgstr "Fedoras SoaS-spinn"
+#: data/content/get-fedora.html:399 data/content/get-prerelease.html:313
+msgid "Fedora Scientific-KDE Spin"
+msgstr "Fedoras vetenskaps-/KDE-spinn"
 
-#: data/content/get-fedora-options.html:291
-msgid "Discover. Reflect. Share. Learn."
-msgstr "Upptäck.  Reflektera.  Dela. Lär."
+#: data/content/get-fedora.html:399
+msgid "Open Source Scientific Computing."
+msgstr ""
 
-#: data/content/get-fedora-options.html:295
+#: data/content/get-fedora.html:403
 msgid "Fedora Electronic Lab"
 msgstr "Fedoras elektroniklabb"
 
-#: data/content/get-fedora-options.html:295
+#: data/content/get-fedora.html:403
 msgid "Fedora's high-end hardware design and simulation platform."
 msgstr "Fedoras exklusiva plattform för hårdvarudesign och -simulering."
 
-#: data/content/get-fedora-options.html:299
+#: data/content/get-fedora.html:407
 msgid ""
 "Get these and more at <a "
 "href=\"https://spins.fedoraproject.org\">spins.fedoraproject.org</a>."
 msgstr "Hämta dessa och fler från <a href=\"https://spins.fedoraproject.org\">spins.fedoraproject.org</a>."
 
-#: data/content/get-fedora-options.html:310
+#: data/content/get-fedora.html:418
 msgid "Fedora In The Cloud"
 msgstr "Fedora i molnet"
 
-#: data/content/get-fedora-options.html:315
+#: data/content/get-fedora.html:423
 #, python-format
 msgid ""
 "Fedora provides ready-to-run cloud images for each supported Fedora release."
@@ -1245,7 +1298,7 @@ msgid ""
 "services for provisioning ssh keys."
 msgstr "Fedora tillhandahåller körklara molnavbilder för varje stödd Fedorautgåva.  Dessa finns tillgängliga i Amazon EC2 och för direkt hämtning.  Avbilderna som kan hämtas finns tillgängliga i formatet komprimerad rå avbild och qcow2 för direkt användning med <a href=\\\"%s\\\">OpenStack</a>.  Avbilderna är konfigurerade med cloud-init, och kan därmed dra nytta av ec2-kompatibla metadatatjänster för att förses med ssh-nycklar."
 
-#: data/content/get-fedora-options.html:317
+#: data/content/get-fedora.html:425
 #, python-format
 msgid ""
 "Note that the root account is disabled, but sudo access is granted to a "
@@ -1253,49 +1306,49 @@ msgid ""
 "<strong>%s</strong>."
 msgstr "Observera att root-kontot är avaktiverat, men sudo-åtkomst tillåts för en speciell inloggningsanvändare.  För Fedora 19 och senare utgåvor är denna användaren <strong>%s</strong>."
 
-#: data/content/get-fedora-options.html:318
+#: data/content/get-fedora.html:426
 #, python-format
 msgid "For Fedora 18 and older releases the user is <strong>%s</strong>."
 msgstr "För Fedora 18 och äldre utgåvor är användaren <strong>%s</strong>."
 
-#: data/content/get-fedora-options.html:320
+#: data/content/get-fedora.html:428
 #, python-format
 msgid ""
 "Not familiar with EC2? <a href=\"%s\">Read more about the terminology and "
 "concepts ></a>"
 msgstr "Inte bekant med EC2?  <a href=\"%s\">Läs mer om terminologin och begreppen →</a>"
 
-#: data/content/get-fedora-options.html:321
+#: data/content/get-fedora.html:429
 #, python-format
 msgid ""
 "Full documentation for interacting with EC2 is available from <a "
 "href=\"%s\">Amazon Web Services ></a>"
 msgstr "Fullständig dokumentation för att interagera med EC2 finns tillgänglig från <a href=\"%s\">Amazon Web Services →</a>"
 
-#: data/content/get-fedora-options.html:322
+#: data/content/get-fedora.html:430
 #, python-format
 msgid ""
 "Need help, or have a great idea? <a href=\"%s\">Join the Fedora Cloud SIG "
 "></a>"
 msgstr "Behöver du hjälp, eller har en strålande idé?  <a href=\"%s\">Gå med i Fedoras moln-SIG →</a>"
 
-#: data/content/get-fedora-options.html:326
+#: data/content/get-fedora.html:434
 msgid "Currently supported EC2 Images"
 msgstr "EC2-avbilder som för närvarande stödjs"
 
-#: data/content/get-fedora-options.html:327
+#: data/content/get-fedora.html:435
 msgid ""
 "Choose the region and machine architecture and just click to launch in your "
 "Amazon Web Services account. Or, copy the AMI ID and use that to launch from"
 " the AWS Console or command-line tools."
 msgstr "Välj regionen och maskinarkitekturen och klicka bara för att starta ditt Amazon Web Services-konto.  Eller, kopiera AMI ID:t och använd det för att starta från AWS-konsolen eller kommandoradsverktyg."
 
-#: data/content/get-fedora-options.html:345
+#: data/content/get-fedora.html:453
 #, python-format
 msgid "Fedora %(release)s Downloadable Cloud Images"
 msgstr "Fedora %(release)s molnavbilder att hämta"
 
-#: data/content/get-fedora-options.html:348
+#: data/content/get-fedora.html:456
 msgid ""
 "Download these images for use with your local private cloud, or to modify "
 "and upload to a public cloud. The qcow2 images can be used directly by "
@@ -1303,41 +1356,38 @@ msgid ""
 "software but will need to be uncompressed first."
 msgstr "Hämta dessa avbilder för att använda med ditt lokala privata moln, eller modifiera och skicka till ett publikt moln.  Qcow2-avbilderna kan användas direkt av OpenStack.  Raw.xz-avbilderna kan användas av andra molninfrastrukturprogram men behöver dekomprimeras först."
 
-#: data/content/get-fedora-options.html:349
+#: data/content/get-fedora.html:457
 #, python-format
 msgid ""
 "For any doubts about running Instances on OpenStack read the <a "
 "href=\"%s\">documentation</a>."
 msgstr "Vid eventuella tveksamheter kring att köra instanser på OpenStack läs <a href=\"%s\">dokumentationen</a>."
 
-#: data/content/get-fedora-options.html:353
-#: data/content/get-fedora-options.html:360
+#: data/content/get-fedora.html:461 data/content/get-fedora.html:468
 #, python-format
 msgid "%(size)sMB qcow2 image"
 msgstr "%(size)s MB qcow2-avbild"
 
-#: data/content/get-fedora-options.html:355
-#: data/content/get-fedora-options.html:362
+#: data/content/get-fedora.html:463 data/content/get-fedora.html:470
 #, python-format
 msgid "%(size)sMB Raw image"
 msgstr "%(size)s MB Raw-avbild"
 
-#: data/content/get-fedora-options.html:373
-msgid "Fedora Secondary Architectures"
-msgstr "Fedoras sekundära arkitekturer"
+#: data/content/get-fedora.html:481
+msgid "Fedora ARM"
+msgstr "Fedora ARM"
 
-#: data/content/get-fedora-options.html:375
-#: data/content/get-fedora-options.html:488
-#: data/content/get-fedora-options.html:509
+#: data/content/get-fedora.html:483 data/content/get-fedora.html:606
+#: data/content/get-fedora.html:627
 msgid "ARM architecture"
 msgstr "Arkitekturen ARM"
 
-#: data/content/get-fedora-options.html:380
+#: data/content/get-fedora.html:488
 #, python-format
 msgid "Fedora %(release)s ARM"
 msgstr "Fedora %(release)s ARM"
 
-#: data/content/get-fedora-options.html:381
+#: data/content/get-fedora.html:489
 msgid ""
 "ARM chips are the most widely-produced processor family in the world; they "
 "have historically been used in cell phones and embedded applications, and "
@@ -1346,366 +1396,210 @@ msgid ""
 "family."
 msgstr "ARM-chip är den mest producerade processorfamiljen i världen.  De har historiskt använts i mobiltelefoner och inbyggda system, och används i ökande utsträckning i datorplattor och servrar med låg strömförbrukning.  Projektet Fedora-ARM är ett initiativ för att få Fedora till denna processorfamilj."
 
-#: data/content/get-fedora-options.html:382
+#: data/content/get-fedora.html:490
 msgid ""
 "For more informations about changes and new features please read the <a "
 "href=\"http://fedoraproject.org/wiki/Architectures/ARM/F19_Release_Announcement#Release_Notes/\">Release"
 " Notes</a>."
 msgstr "För mer information om ändringar och nya funktioner läs <a href=\"http://fedoraproject.org/wiki/Architectures/ARM/F19_Release_Announcement#Release_Notes/\">utgåvenoteringarna</a>."
 
-#: data/content/get-fedora-options.html:383
+#: data/content/get-fedora.html:491
 msgid "Note for Raspberry Pi users"
 msgstr "Anmärkning för användare av Raspberry Pi"
 
-#: data/content/get-fedora-options.html:383
+#: data/content/get-fedora.html:491
 msgid ""
 "Raspberry Pi support is now included in <a "
 "href=\"http://pidora.ca/\">Pidora</a>, an optimized Fedora Remix which "
 "includes additional Pi-modules."
 msgstr "Stöd för Raspberry Pi ingår nu i <a href=\"http://pidora.ca/\">Pidora</a>, en optimerad Fedora-remix som innehåller ytterligare Pi-moduler."
 
-#: data/content/get-fedora-options.html:387
+#: data/content/get-fedora.html:495
 msgid "Available images and instructions:"
 msgstr "Tillgängliga avbilder och instruktioner:"
 
-#: data/content/get-fedora-options.html:388
-#: data/content/get-prerelease.html:511
+#: data/content/get-fedora.html:496
 msgid ""
 "Fedora for ARM includes two image types–one for use with platforms requiring"
-" a VFAT partition (Pandaboard), the other for use with devices that boot "
-"from an EXT partition (Trimslice). For each of these there are a number of "
-"desktop choices including MATE, KDE, Xfce, LXDE, SOAS and a minimal image "
-"that does not include the desktop. Any of these images can be used with "
-"QEMU."
-msgstr "Fedora för ARM innehåller två avbildstyper — en för att användas med plattformar som behöver en VFAT-partition (Pandaboard), den andra för att användas med enheter som startar från en EXT-partition (Trimslice).  För var och en av dessa finns det ett antal skrivbordsval inklusive MATE, KDE, Xfce, LXDE, SOAS och en minimal avbild som inte innehåller skrivbordet.  Alla dessa avbilder kan användas med QEMU."
+" a VFAT partition (BeagleBone Black), the other for use with devices that "
+"boot from an EXT partition (Trimslice). For each of these there are a number"
+" of desktop choices including MATE, KDE, Xfce, LXDE, SOAS and a minimal "
+"image that does not include the desktop. Any of these images can be used "
+"with QEMU."
+msgstr ""
 
-#: data/content/get-fedora-options.html:393
-#: data/content/get-prerelease.html:518
-msgid "KDE"
-msgstr "KDE"
+#: data/content/get-fedora.html:497
+msgid "All images are ARMv7 32bit specific."
+msgstr ""
 
-#: data/content/get-fedora-options.html:397
-#: data/content/get-fedora-options.html:412
-#: data/content/get-fedora-options.html:430
-#: data/content/get-fedora-options.html:445
-#: data/content/get-fedora-options.html:460
-#: data/content/get-fedora-options.html:475
-msgid "VFAT HFP image"
-msgstr "VFAT HFP-avbild"
+#: data/content/get-fedora.html:504 data/content/get-fedora.html:517
+#: data/content/get-fedora.html:530 data/content/get-fedora.html:543
+#: data/content/get-fedora.html:556 data/content/get-fedora.html:569
+#: data/content/get-fedora.html:582
+msgid "VFAT ARMv7 image"
+msgstr ""
 
-#: data/content/get-fedora-options.html:401
-#: data/content/get-fedora-options.html:416
-#: data/content/get-fedora-options.html:434
-#: data/content/get-fedora-options.html:449
-#: data/content/get-fedora-options.html:464
-#: data/content/get-fedora-options.html:479
-msgid "HFP image"
-msgstr "HFP-avbild"
+#: data/content/get-fedora.html:508 data/content/get-fedora.html:521
+#: data/content/get-fedora.html:534 data/content/get-fedora.html:547
+#: data/content/get-fedora.html:560 data/content/get-fedora.html:573
+#: data/content/get-fedora.html:586
+msgid "ARMv7 image"
+msgstr ""
 
-#: data/content/get-fedora-options.html:408
-#: data/content/get-prerelease.html:552
-msgid "Xfce"
-msgstr "Xfce"
-
-#: data/content/get-fedora-options.html:426
-#: data/content/get-prerelease.html:559
-msgid "LXDE"
-msgstr "LXDE"
-
-#: data/content/get-fedora-options.html:441
-msgid "MATE"
-msgstr "MATE"
-
-#: data/content/get-fedora-options.html:456
-#: data/content/get-prerelease.html:573
-msgid "SoaS"
-msgstr "SoaS"
-
-#: data/content/get-fedora-options.html:471
-#: data/content/get-prerelease.html:525
-msgid "Minimal"
-msgstr "Minimal"
-
-#: data/content/get-fedora-options.html:485
+#: data/content/get-fedora.html:593
 #, python-format
 msgid ""
 "For specific install instructions on the compatible boards please read the "
 "<a href=\"%s\">Installation Notes</a>."
 msgstr "För specifika installationsinstruktioner på kompatibla kort läs <a href=\"%s\">installationsnoteringarna</a>."
 
-#: data/content/get-fedora-options.html:492
+#: data/content/get-fedora.html:594
+#, python-format
+msgid ""
+"If you want to install Fedora directly from the <a href=\"%s\">PXE tree</a>,"
+" please read <a href=\"http://docs.fedoraproject.org/en-"
+"US/Fedora/19/html/Installation_Guide/ap-install-server.html\">how to setup "
+"your PXE server</a>."
+msgstr "Om du vill installera Fedora direkt från <a href=\"%s\">PXE-trädet</a>, läs <a href=\"http://docs.fedoraproject.org/en-US/Fedora/19/html/Installation_Guide/ap-install-server.html\">hur man sätter upp sin PXE-server</a>."
+
+#: data/content/get-fedora.html:603
+msgid "Fedora Secondary Architectures"
+msgstr "Fedoras sekundära arkitekturer"
+
+#: data/content/get-fedora.html:610
 #, python-format
 msgid "Fedora %(release)s PPC64"
 msgstr "Fedora %(release)s PPC64"
 
-#: data/content/get-fedora-options.html:493
+#: data/content/get-fedora.html:611
 msgid ""
 "Fedora Releases for PowerPC have been most extensively tested on IBM Power "
 "systems, but is also known to work on Apple Mac G5 systems."
 msgstr "Fedorautgåvor för PowerPC har i stor omfattning testats på IBM Power-system, men det är också känt att de fungerar på Apple Mac G5-system."
 
-#: data/content/get-fedora-options.html:497
-#: data/content/get-fedora-options.html:515
+#: data/content/get-fedora.html:615 data/content/get-fedora.html:633
 msgid "DVD Image"
 msgstr "DVD-avbild"
 
-#: data/content/get-fedora-options.html:499
-#: data/content/get-fedora-options.html:517
+#: data/content/get-fedora.html:617 data/content/get-fedora.html:635
 #, python-format
 msgid "%sGB DVD ISO"
 msgstr "%s GB DVD ISO"
 
-#: data/content/get-fedora-options.html:502
-#: data/content/get-prerelease.html:139 data/content/get-prerelease.html:140
+#: data/content/get-fedora.html:620 data/content/get-prerelease.html:139
+#: data/content/get-prerelease.html:140
 msgid "Netinstall CD"
 msgstr "Nätinstallations-CD"
 
-#: data/content/get-fedora-options.html:504
+#: data/content/get-fedora.html:622
 #, python-format
 msgid "%sMB CD ISO"
 msgstr "%s MB CD ISO"
 
-#: data/content/get-fedora-options.html:513
+#: data/content/get-fedora.html:631
 #, python-format
 msgid "Fedora %(release)s s390"
 msgstr "Fedora %(release)s s390"
 
-#: data/content/get-fedora-options.html:514
+#: data/content/get-fedora.html:632
 msgid "Fedora Release Image based on the s390x architecture."
 msgstr "Fedorautgåveavbild baserad på arkitekturen s390x."
 
-#: data/content/get-fedora-options.html:555
-msgid "Help, I just want Fedora!"
-msgstr "Hjälp, jag vill bara ha Fedora!"
-
-#: data/content/get-fedora-options.html:556
-msgid ""
-"There are a lot of options on this page. Would you rather download the "
-"standard Fedora image?"
-msgstr "Det finns många alternativ på denna sida.  Vill du hellre hämta en standardavbild av Fedora?"
-
-#: data/content/get-fedora-options.html:557
-msgid "Get it here"
-msgstr "Skaffa det här"
-
-#: data/content/get-fedora-options.html:559 data/content/get-fedora.html:110
-msgid "Handy Resources"
-msgstr "Praktiska resurser"
-
-#: data/content/get-fedora-options.html:561
-#, python-format
-msgid ""
-"http://docs.fedoraproject.org/en-"
-"US/Fedora/%(release)s/html/Installation_Guide/index.html"
-msgstr "http://docs.fedoraproject.org/en-US/Fedora/%(release)s/html/Installation_Guide/index.html"
-
-#: data/content/get-fedora-options.html:561 data/content/get-fedora.html:112
-msgid "Installation Guide"
-msgstr "Installationshandledning"
-
-#: data/content/get-fedora-options.html:562
-#, python-format
-msgid ""
-"http://docs.fedoraproject.org/en-"
-"US/Fedora/%(release)s/html/Release_Notes/index.html"
-msgstr "http://docs.fedoraproject.org/en-US/Fedora/%(release)s/html/Release_Notes/index.html"
-
-#: data/content/get-fedora-options.html:562 data/content/get-fedora.html:113
-msgid "Release Notes"
-msgstr "Utgåvenoteringar"
-
-#: data/content/get-fedora-options.html:563 data/content/get-fedora.html:114
-msgid "Common Bugs"
-msgstr "Vanliga fel"
-
-#: data/content/get-fedora-options.html:564 data/content/get-fedora.html:115
-msgid "Upgrading Fedora"
-msgstr "Uppgradering av Fedora"
-
-#: data/content/get-fedora-options.html:565 data/content/get-fedora.html:116
-msgid "Help & Support"
-msgstr "Hjälp & support"
-
-#: data/content/get-fedora-options.html:566 data/content/get-fedora.html:117
-msgid "Verify Download"
-msgstr "Verifiera det hämtade"
-
-#: data/content/get-fedora-options.html:569 data/content/get-fedora.html:121
-msgid "There's More Fedora!"
-msgstr "Det finns mer Fedora!"
-
-#: data/content/get-fedora-options.html:572 data/content/get-fedora.html:124
-msgid "Other ways to get Fedora"
-msgstr "Andra sätt att hämta Fedora"
-
-#: data/content/get-fedora-options.html:573 data/content/get-fedora.html:126
-msgid ""
-"We offer several alternative Fedora download methods, including torrents:"
-msgstr "Vi erbjuder flera alternativa metoder att hämta Fedora, inklusive torrentar:"
-
-#: data/content/get-fedora-options.html:575 data/content/get-fedora.html:128
-msgid "All download methods"
-msgstr "Alla nedladdningsmetoder"
-
-#: data/content/get-fedora.html:7
-msgid "Fedora Project - Download Fedora and try it."
-msgstr "Fedoraprojektet — Hämta fedora och prova det."
-
-#: data/content/get-fedora.html:30
-#, python-format
-msgid "Fedora %s Desktop Edition"
-msgstr "Fedora %s skrivbordsutgåva"
-
-#: data/content/get-fedora.html:31
-msgid "Installable Live Media"
-msgstr "Installerbart live-medium"
-
-#: data/content/get-fedora.html:36
-msgid ""
-"This is the latest version of the Fedora Linux operating system's Desktop "
-"Edition. It's everything you need to try out Fedora — you don't have to "
-"erase anything on your current system to try it out, and it won't put your "
-"files at risk. Take Fedora for a test drive, and if you like it, you can "
-"install Fedora directly to your hard drive straight from the Live Media "
-"desktop if you like."
-msgstr "Detta är senaste versionen av operativsystemet Fedoras skrivbordsutgåva.  Det är allt du behöver för att prova Fedora — du behöver inte ta bort något från ditt nuvarande system för att prova, och det kommer inte utsätta dina filer för någon risk.  Ta en testtur med Fedora, och om du gillar det kan du installera Fedora direkt till din hårddisk direkt från live-mediets skrivbord om du vill."
-
-#: data/content/get-fedora.html:38
-#, python-format
-msgid "%(size)sMB, ISO format image for Intel-compatible PCs (%(arch)s-bit)"
-msgstr "%(size)s MB, ISO-formaterad avbild för Intelkompatibla PC (%(arch)s-bitars)"
-
-#: data/content/get-fedora.html:39
-msgid "More download options..."
-msgstr "Fler alternativ för att hämta …"
-
-#: data/content/get-fedora.html:44
-msgid "Need to upgrade Fedora?"
-msgstr "Behöver du uppgradera Fedora?"
-
-#: data/content/get-fedora.html:45
-msgid ""
-"Live Media can't be used to upgrade Fedora installations. Instead, you can "
-"upgrade Fedora right from your desktop. Do this by using Fedup - it  will  "
-"install the packages you need and upgrade your version of Fedora."
-msgstr "Live-medium kan inte användas för att uppgradera Fedorainstallationer.  Istället kan du uppgradera Fedora direkt från ditt skrivbord.  Gör detta med Fedup — det kommer installera paketen du behöver och uppgradera din version av Fedora."
-
-#: data/content/get-fedora.html:46
-#, python-format
-msgid "<a href=\"%s\">Learn more about upgrading Fedora...</a>"
-msgstr "<a href=\"%s\">Ta reda på mer om uppgradering av Fedora …</a>"
-
-#: data/content/get-fedora.html:49
-msgid "Other Options"
-msgstr "Andra alternativ"
-
-#: data/content/get-fedora.html:51
-msgid "DVD ISOs, Physical Media"
-msgstr "DVD ISO:er, fysiska medium"
-
-#: data/content/get-fedora.html:52
-msgid "KDE, Xfce, GNOME, and others"
-msgstr "KDE, Xfce, GNOME med flera"
-
-#: data/content/get-fedora.html:53
-msgid "Games, Design, Security, and others"
-msgstr "Spel, design, säkerhet med flera"
-
-#: data/content/get-fedora.html:54
-msgid "Images for public and private clouds"
-msgstr "Avbilder för publika och privata moln"
-
-#: data/content/get-fedora.html:55
-msgid "ARM, s390, PPC"
-msgstr "ARM, s390, PPC"
-
-#: data/content/get-fedora.html:57
-msgid "View more Fedora options..."
-msgstr "Visa fler Fedoraalternativ …"
-
-#: data/content/get-fedora.html:60
-#, python-format
-msgid "Fedora %s Release Schedule"
-msgstr "Fedora %s tidtabell för utgåvor"
-
-#: data/content/get-fedora.html:64
-msgid "Release State"
-msgstr "Utgåvestatus"
-
-#: data/content/get-fedora.html:65
-msgid "Release Date"
-msgstr "Utgåvedatum"
-
-#: data/content/get-fedora.html:70
-msgid "Alpha Release Public Availability"
-msgstr "Alfautgåvan allmänt tillgänglig"
-
-#: data/content/get-fedora.html:74
-msgid "Beta Release Public Availability"
-msgstr "Betautgåvan allmänt tillgänglig"
-
-#: data/content/get-fedora.html:78
-msgid "Final Release Public Availability (GA)"
-msgstr "Slutlig utgåva allmänt tillgänglig (GA)"
-
-#: data/content/get-fedora.html:83
-msgid "Read all the key milestones of the release schedule..."
-msgstr "Läs alla avgörande milstenar i tidtabellen för utgåvan …"
-
-#: data/content/get-fedora.html:90
+#: data/content/get-fedora.html:680
 msgid "What will I need?"
 msgstr "Vad kommer jag behöva?"
 
-#: data/content/get-fedora.html:92
+#: data/content/get-fedora.html:682
 msgid "A blank CD or DVD"
 msgstr "En tom CD eller DVD"
 
-#: data/content/get-fedora.html:92
+#: data/content/get-fedora.html:682
 msgid " or "
 msgstr "eller"
 
-#: data/content/get-fedora.html:92
+#: data/content/get-fedora.html:682
 #, python-format
 msgid "a blank %sGB+ USB stick."
 msgstr "en tom %sGB+ USB-minne."
 
-#: data/content/get-fedora.html:93 data/content/index.html:233
+#: data/content/get-fedora.html:683 data/content/index.html:184
 msgid "64-bit Intel-compatible PC"
 msgstr "64-bitars Intelkompatibel PC"
 
-#: data/content/get-fedora.html:94 data/content/index.html:234
+#: data/content/get-fedora.html:684 data/content/index.html:185
 #, python-format
 msgid "%sGB memory (RAM)"
 msgstr "%s GB minne (RAM)"
 
-#: data/content/get-fedora.html:95
+#: data/content/get-fedora.html:685
 #, python-format
 msgid "At least %s GB hard drive space (only required for installation)"
 msgstr "Minst %s GB ledigt hårddiskutrymme (behövs endast vid installation)"
 
-#: data/content/get-fedora.html:101
+#: data/content/get-fedora.html:691
 msgid "What do I do?"
 msgstr "Vad gör jag?"
 
-#: data/content/get-fedora.html:103
+#: data/content/get-fedora.html:693
 msgid "First,"
 msgstr "Först,"
 
-#: data/content/get-fedora.html:103
+#: data/content/get-fedora.html:693
 msgid "download a Fedora ISO image"
 msgstr "ladda ned en Fedora-ISO-avbild"
 
-#: data/content/get-fedora.html:105
+#: data/content/get-fedora.html:695
 msgid "To install Fedora using a USB stick"
 msgstr "För att installera Fedora med ett USB-minne"
 
-#: data/content/get-fedora.html:105 data/content/get-fedora.html:106
+#: data/content/get-fedora.html:695 data/content/get-fedora.html:696
 msgid "follow these instructions."
 msgstr "följ dessa instruktioner."
 
-#: data/content/get-fedora.html:106
+#: data/content/get-fedora.html:696
 msgid "To install Fedora using a blank CD or DVD"
 msgstr "För att installera Fedora med en tom CD eller DVD"
+
+#: data/content/get-fedora.html:700
+msgid "Handy Resources"
+msgstr "Praktiska resurser"
+
+#: data/content/get-fedora.html:702
+msgid "Installation Guide"
+msgstr "Installationshandledning"
+
+#: data/content/get-fedora.html:703
+msgid "Release Notes"
+msgstr "Utgåvenoteringar"
+
+#: data/content/get-fedora.html:704
+msgid "Common Bugs"
+msgstr "Vanliga fel"
+
+#: data/content/get-fedora.html:705
+msgid "Upgrading Fedora"
+msgstr "Uppgradering av Fedora"
+
+#: data/content/get-fedora.html:706
+msgid "Help & Support"
+msgstr "Hjälp och stöd"
+
+#: data/content/get-fedora.html:707
+msgid "Verify Download"
+msgstr "Verifiera det hämtade"
+
+#: data/content/get-fedora.html:710
+msgid "Other ways to get Fedora"
+msgstr "Andra sätt att hämta Fedora"
+
+#: data/content/get-fedora.html:712
+msgid ""
+"We offer several alternative Fedora download methods, including torrents:"
+msgstr "Vi erbjuder flera alternativa metoder att hämta Fedora, inklusive torrentar:"
+
+#: data/content/get-fedora.html:714
+msgid "All download methods"
+msgstr "Alla nedladdningsmetoder"
 
 #: data/content/get-help.html:7
 msgid "Fedora Project - Get help after installing Fedora."
@@ -1724,7 +1618,7 @@ msgstr "Känner du dig vilsen?  Följ dessa steg för att hitta svar på alla di
 msgid ""
 "For support in other languages than English, have a look at "
 "fedoracommunity.org!"
-msgstr "För stöd på andra språk än engelska, titta på fedoracommunity.org!"
+msgstr "För hjälp på andra språk än engelska, titta på fedoracommunity.org!"
 
 #: data/content/get-help.html:26
 msgid "Check the Frequently Asked Questions"
@@ -1799,7 +1693,7 @@ msgstr "Hittar du inget svar?  Få interaktiv hjälp här:"
 
 #: data/content/get-help.html:62
 msgid "Forums Support"
-msgstr "Forumstöd"
+msgstr "Forumhjälp"
 
 #: data/content/get-help.html:64
 msgid ""
@@ -1808,7 +1702,7 @@ msgstr "Sök Fedoraforumen efter hjälp, eller registrera och fråga en fråga s
 
 #: data/content/get-help.html:67
 msgid "Chat support"
-msgstr "Tjattstöd"
+msgstr "Tjatthjälp"
 
 #: data/content/get-help.html:69
 msgid ""
@@ -1818,7 +1712,7 @@ msgstr "Få direkt hjälp på Fedoras IRC-kanal.  Kanaler finns på många språ
 
 #: data/content/get-help.html:72
 msgid "Email support"
-msgstr "Epoststöd"
+msgstr "Eposthjälp"
 
 #: data/content/get-help.html:74
 msgid ""
@@ -1833,10 +1727,6 @@ msgstr "Fedoraprojektet — Få nästa Fedora"
 #: data/content/get-prerelease.html:75
 msgid "Get the next Fedora, right now."
 msgstr "Få nästa Fedora, nu direkt."
-
-#: data/content/get-prerelease.html:90
-msgid "ARM"
-msgstr "ARM"
 
 #: data/content/get-prerelease.html:101 data/content/get-prerelease.html:272
 #, python-format
@@ -1932,38 +1822,34 @@ msgstr "Låt mig titta runt …"
 #: data/content/get-prerelease.html:292
 #, python-format
 msgid ""
-"Fedora Spins are alternate versions of Fedora, tailored for various types of"
-" users via hand-picked application sets or customizations. Desktop specific "
-"Spins are available in the <a href=\"%s\">Desktops section</a>."
-msgstr ""
+"Fedora Spins are alternative versions of Fedora, tailored for various types "
+"of users via hand-picked application sets or customizations. Desktop "
+"specific Spins are available in the <a href=\"%s\">Desktops section</a>."
+msgstr "Fedoraspinn är alternativa versioner av Fedora, skräddarsydda för olika typer av användare via handplockade uppsättningar program eller anpassningar.  Skrivbordsspecifika spinn finns tillgängliga i <a href=\"%s\">Skrivbordsavsnittet</a>."
 
 #: data/content/get-prerelease.html:295
 msgid "Fedora Security Spin"
-msgstr ""
-
-#: data/content/get-prerelease.html:313
-msgid "Fedora Scientific-KDE Spin"
-msgstr ""
+msgstr "Fedoras säkerhetsspinn"
 
 #: data/content/get-prerelease.html:331
 msgid "Fedora Electronic Lab Spin"
-msgstr ""
+msgstr "Fedoras elektroniklaboratoriumsspinn"
 
 #: data/content/get-prerelease.html:349
 msgid "Fedora Jam-KDE Spin"
-msgstr ""
+msgstr "Fedoras Jam-/KDE-spinn"
 
 #: data/content/get-prerelease.html:367
 msgid "Fedora Design-suite Spin"
-msgstr ""
+msgstr "Fedoras designsvitspinn"
 
 #: data/content/get-prerelease.html:385
 msgid "Fedora Games Spin"
-msgstr "Fedora Games Spin"
+msgstr "Fedoras spelspinn"
 
 #: data/content/get-prerelease.html:403
 msgid "Fedora Robotics Spin"
-msgstr ""
+msgstr "Fedoras robotspinn"
 
 #: data/content/get-prerelease.html:433
 #, python-format
@@ -2005,6 +1891,16 @@ msgid ""
 " or %(team_irc)s on freenode."
 msgstr "Detta är en förhandsutgåva av systemet och stödjs av <a href=\"%(team_url)s\">ARM-gruppen</a>.  Rikta frågor till %(team_list)s eller %(team_irc)s på freenode."
 
+#: data/content/get-prerelease.html:511
+msgid ""
+"Fedora for ARM includes two image types–one for use with platforms requiring"
+" a VFAT partition (Pandaboard), the other for use with devices that boot "
+"from an EXT partition (Trimslice). For each of these there are a number of "
+"desktop choices including MATE, KDE, Xfce, LXDE, SOAS and a minimal image "
+"that does not include the desktop. Any of these images can be used with "
+"QEMU."
+msgstr "Fedora för ARM innehåller två avbildstyper — en för att användas med plattformar som behöver en VFAT-partition (Pandaboard), den andra för att användas med enheter som startar från en EXT-partition (Trimslice).  För var och en av dessa finns det ett antal skrivbordsval inklusive MATE, KDE, Xfce, LXDE, SOAS och en minimal avbild som inte innehåller skrivbordet.  Alla dessa avbilder kan användas med QEMU."
+
 #: data/content/get-prerelease.html:512
 #, python-format
 msgid ""
@@ -2015,6 +1911,10 @@ msgstr "För att få mer information, läs <a href=\"%s\">installationsinstrukti
 #: data/content/get-prerelease.html:515
 msgid "Fedora ARM Images"
 msgstr "Fedora ARM-avbilder"
+
+#: data/content/get-prerelease.html:518
+msgid "KDE"
+msgstr "KDE"
 
 #: data/content/get-prerelease.html:520 data/content/get-prerelease.html:527
 #: data/content/get-prerelease.html:547 data/content/get-prerelease.html:554
@@ -2030,6 +1930,10 @@ msgstr "VFAT HFP"
 msgid "HFP"
 msgstr "HFP"
 
+#: data/content/get-prerelease.html:525
+msgid "Minimal"
+msgstr "Minimal"
+
 #: data/content/get-prerelease.html:535
 msgid "PXE tree"
 msgstr "PXE-trädet"
@@ -2040,11 +1944,23 @@ msgstr "Fedora ARM skrivbordsspinn"
 
 #: data/content/get-prerelease.html:545
 msgid "Desktop"
-msgstr ""
+msgstr "Skrivbord"
+
+#: data/content/get-prerelease.html:552
+msgid "Xfce"
+msgstr "Xfce"
+
+#: data/content/get-prerelease.html:559
+msgid "LXDE"
+msgstr "LXDE"
 
 #: data/content/get-prerelease.html:566
 msgid "Mate"
 msgstr "Mate"
+
+#: data/content/get-prerelease.html:573
+msgid "SoaS"
+msgstr "SoaS"
 
 #: data/content/index.html:48
 msgid "Fedora Project Homepage"
@@ -2075,48 +1991,40 @@ msgstr "Fler alternativ →"
 msgid "Try Fedora %(release)s %(state)s Now!"
 msgstr "Prova Fedora %(release)s %(state)s nu!"
 
-#: data/content/index.html:83
+#: data/content/index.html:79
+msgid "Celebrating 10 years"
+msgstr ""
+
+#: data/content/index.html:80
 msgid ""
-"“To say he will be missed is an understatement. He has been a colleague, a "
-"team member, a source of wisdom and advice, and above all, a friend and "
-"inspiration to countless people in the Fedora community over the past "
-"decade. His seminal and invaluable work in Fedora and free software will "
-"live on for years to come, and the legacy of his spirit will stay with the "
-"community, and with many of us individually, forever.”"
-msgstr "”Att säga att han kommer vara saknad är en underdrift.  Han har varit en kollega, en lagmedlem, en källa till klokhet och råd, och framför allt, en vän och inspirationskälla för otaliga medlemmar i Fedoragemenskapen under det senaste decenniet.  Hans nyskapande och ovärderliga arbete med Fedora och fri programvara kommer fortsätta leva under många år, hans anda kommer att leva kvar i gemenskapen, och hos många av oss personligen, för alltid.”"
+"Fedora recently celebrated it's 10th anniversary. It's been a decade of "
+"freedom, friends, features, and first! Join in on the festivities by "
+"watching our 10 year anniversary video, interviewing our current and some "
+"past Fedora Project leaders to talk about Fedora's history!"
+msgstr ""
 
-#: data/content/index.html:84
-msgid "Share your Seth stories >"
-msgstr "Dela dina Sethhistorier →"
-
-#: data/content/index.html:92
-msgid "3D Printing with Fedora 19"
-msgstr "3D-utskrifter med Fedora 19"
-
-#: data/content/index.html:93
-msgid ""
-"Freely model and print in 3D using the new tools now included in Fedora. "
-"Software such as OpenSCAD, Skeinforge, SFACT, Printrun, and RepetierHost are"
-" now ready-to-go in the Fedora 19 repositories."
-msgstr "Modellera fritt och skriv i 3D med de nya verktyg som nu ingår i Fedora.  Program såsom OpenSCAD, Skeinforge, SFACT, Printrun och RepetierHost finns nu klara att köra i Fedora 19:s förråd."
-
-#: data/content/index.html:94 data/content/index.html:104
+#: data/content/index.html:81 data/content/index.html:92
 msgid "Learn More >"
 msgstr "Ta reda på mer →"
 
-#: data/content/index.html:103
-msgid ""
-"Pidora offers all the Fedora packages you love in a Fedora Remix compiled "
-"specifically for the Raspberry Pi hardware. The graphical first boot "
-"includes additional Pi-specific modules. Or if you're going headless, you "
-"can do it from the start with some special Pidora features."
-msgstr "Pidora erbjuder alla Fedorapaketen du gillar i en Fedora-remix sammansatt speciellt för hårdvaran Raspberry Pi.  Den grafiska första uppstarten inkluderar ytterligare Pi-specifika moduler.  Eller om du kör utan konsol kan du göra det från början med några speciella Pidorafunktioner."
+#: data/content/index.html:90
+msgid "Cloud Computing with Fedora"
+msgstr ""
 
-#: data/content/index.html:113
+#: data/content/index.html:91
+msgid ""
+"The Fedora Project provides images for public and private clouds that "
+"provide a perfect foundation for fast-moving cloud projects. Fedora is "
+"available on Amazon EC2 and other public cloud providers. For private "
+"clouds, you can download Fedora in a format suitable for OpenStack, "
+"CloudStack, and Eucalyptus."
+msgstr ""
+
+#: data/content/index.html:101
 msgid "A worldwide community of friends."
 msgstr "En världsomfattande gemenskap av vänner."
 
-#: data/content/index.html:114
+#: data/content/index.html:102
 msgid ""
 "Fedora is a Linux-based operating system that showcases the latest in free "
 "software. Fedora is always free for anyone to use, modify, and distribute. "
@@ -2124,185 +2032,149 @@ msgid ""
 " Fedora Project."
 msgstr "Fedora är ett Linuxbaserat operativsystem som visar det senaste i fri programvara.  Fedora är alltid fitt för alla att använda, ändra och distribuera.  Det byggs av folk jorden runt som arbetar tillsammans som en gemenskap: Fedoraprojektet."
 
-#: data/content/index.html:115 data/content/join-fedora.html:77
+#: data/content/index.html:103 data/content/join-fedora.html:77
 #: data/content/join-fedora.html:84 data/content/join-fedora.html:92
 #: data/content/join-fedora.html:100 data/content/join-fedora.html:108
 #: data/content/join-fedora.html:116
 msgid "Learn more >"
 msgstr "Ta reda på mer →"
 
-#: data/content/index.html:141
-msgid "Need help?"
-msgstr "Behöver du hjölp?"
+#: data/content/index.html:119
+msgid "news"
+msgstr "nyheter"
 
-#: data/content/index.html:142
+#: data/content/index.html:119
+msgid "Fedora 20 released on December 17, 2013!"
+msgstr ""
+
+#: data/content/index.html:119
+msgid ""
+"http://docs.fedoraproject.org/en-US/Fedora/20/html/Release_Notes/index.html"
+msgstr "http://docs.fedoraproject.org/en-US/Fedora/20/html/Release_Notes/index.html"
+
+#: data/content/index.html:119
+msgid "Read the release notes"
+msgstr "Läs utgåvenoteringarna"
+
+#: data/content/index.html:119
+msgid "Download now"
+msgstr "Hämta nu"
+
+#: data/content/index.html:128
+msgid "Need help?"
+msgstr "Behöver du hjälp?"
+
+#: data/content/index.html:129
 msgid "Get it here."
 msgstr "Få det här."
 
-#: data/content/index.html:148
+#: data/content/index.html:135
 msgid "What is Fedora, anyway?"
 msgstr "Vad är Fedora, egentligen?"
 
-#: data/content/index.html:153
+#: data/content/index.html:140
 msgid "Join us!"
 msgstr "Gå med!"
 
-#: data/content/index.html:154
+#: data/content/index.html:141
 msgid "Help make Fedora!"
 msgstr "Hjälp oss skapa Fedora!"
 
-#: data/content/index.html:161
+#: data/content/index.html:148
 msgid "What makes Fedora great?"
 msgstr "Vad gör Fedora fantastiskt?"
 
-#: data/content/index.html:166
+#: data/content/index.html:153
 msgid "Freedom is key"
 msgstr "Frihet är nyckeln"
 
-#: data/content/index.html:167
+#: data/content/index.html:154
 msgid ""
 "Advancing software and content freedom is a key goal of the Fedora Project."
 msgstr "Att vidareutveckla friheten för program och innehåll är ett nyckelmål för Fedoraprojektet."
 
-#: data/content/index.html:168
+#: data/content/index.html:155
 msgid "Learn how software freedom benefits you >"
 msgstr "Ta reda på mer om hur frihet för programvara är till nytta för dig →"
 
-#: data/content/index.html:172
+#: data/content/index.html:159
 msgid "Our Community"
 msgstr "Vår gemenskap"
 
-#: data/content/index.html:173
+#: data/content/index.html:160
 msgid "People world-wide work together in Fedora to advance free software."
 msgstr "Folk runt hela världen arbetar tillsammans i Fedora för att vidareutveckla fri programvara."
 
-#: data/content/index.html:174
+#: data/content/index.html:161
 msgid "Discover your role in Fedora's community >"
 msgstr "Upptäck din roll i Fedoras gemenskap →"
 
-#: data/content/index.html:178
+#: data/content/index.html:165
 msgid "We share"
 msgstr "Vi delar"
 
-#: data/content/index.html:179
+#: data/content/index.html:166
 msgid "Many features that benefit all Linux distributions start in Fedora."
 msgstr "Många funktioner som är till nytta för alla Linuxdistributioner börjar i Fedora."
 
-#: data/content/index.html:180
+#: data/content/index.html:167
 msgid "See how we share our features for all to use >"
 msgstr "Se hur vi delar våra funktioner så att alla kan använda dem →"
 
-#: data/content/index.html:184
+#: data/content/index.html:171
 msgid "The best tech"
 msgstr "Bästa tekniken"
 
-#: data/content/index.html:185
+#: data/content/index.html:172
 msgid "The future of Linux is built into Fedora."
 msgstr "Linux framtid är byggs in i Fedora."
 
-#: data/content/index.html:186
+#: data/content/index.html:173
 msgid "Learn how Fedora innovates >"
 msgstr "Ta reda på mer om hur Fedora uppfinner →"
 
-#: data/content/index.html:193
-msgid "Fedora highlights"
-msgstr "Höjdpunkter i Fedora"
-
-#: data/content/index.html:200
-msgid "Read more of the story >"
-msgstr "Läs mer om historien →"
-
-#: data/content/index.html:201
-msgid "Read more Fedora user stories >"
-msgstr "Läs fler historier från Fedoras användare →"
-
-#: data/content/index.html:206
-msgid "We fight for software freedom"
-msgstr "Vi slåss för programvarans frihet"
-
-#: data/content/index.html:208
-msgid ""
-"We try to always do the right thing, and provide only free and open source "
-"software. We will fight to protect and promote solutions that anyone can use"
-" and redistribute. To this end, we use only free and open source software to"
-" power the Fedora infrastructure itself. With this in mind, all of our "
-"developers are focused on working closely with upstream development teams, "
-"so everyone can benefit from our work and get access to our changes as soon "
-"as possible. Due to the huge amount of innovation that Fedora drives, this "
-"focus has had significant and long lasting effects."
-msgstr "Vi försöker att alltid göra det rätta, och tillhandahålla endast programvara med fri och öppen källkod.  Vi kommer slåss för att skydda och förespråka lösningar som vem som helst kan använda och återdistribuera.  Med detta mål använder vi bara programvara med fri och öppen källkod för att driva Fedoras egen infrastruktur.  Och med detta i åtanke fokuserar alla våra utvecklare på att arbeta nära uppströms utvecklingsgrupper, så att alla kan dra nytta av vårt arbete och få tillgång till våra ändringar så snart som möjligt.  På grund av den stora mängd nyheter som Fedora driver har detta fokus haft betydande och bestående effekter."
-
-#: data/content/index.html:210
-msgid "Learn more about Fedora's values >"
-msgstr "Ta reda på mer om Fedoras värden →"
-
-#: data/content/index.html:211
-msgid "More on what Fedora's all about >"
-msgstr "Mer om vad Fedora handlar om →"
-
-#: data/content/index.html:216 data/content/using/index.html:26
-msgid "Do it with Fedora"
-msgstr "Gör det med Fedora"
-
-#: data/content/index.html:217 data/content/using/index.html:33
-#: data/content/using/tutorials/cheese.html:26
-msgid "Have a photobooth party!"
-msgstr "Ha en fotoautomatsfest!"
-
-#: data/content/index.html:219 data/content/using/index.html:34
-#: data/content/using/tutorials/cheese.html:27
-msgid ""
-"All you need is a webcam and Fedora, and you can do all sorts of cool photo "
-"tricks, including turning your friends into The Hulk. :) Take fun snapshots "
-"and videos!"
-msgstr "Allt du behöver är en webbkamera och Fedora, och du kan göra all möjliga roliga fototrick, som att göra dina vänner till Hulken. :)  Ta roliga kort och videor!"
-
-#: data/content/index.html:221
-msgid "Learn how to do it yourself! >"
-msgstr "Ta reda på hur du gör det själv! →"
-
-#: data/content/index.html:222
-msgid "View all tutorials >"
-msgstr "Se alla handledningar →"
-
-#: data/content/index.html:231
+#: data/content/index.html:182
 msgid "Recommended installation requirements"
 msgstr "Rekommenderade installationskrav"
 
-#: data/content/index.html:235
+#: data/content/index.html:186
 #, python-format
 msgid "%sGB disk space / storage"
 msgstr "%s GB diskutrymme/lagring"
 
-#: data/content/index.html:237
+#: data/content/index.html:188
 msgid "More about requirements >"
 msgstr "Mer om kraven →"
 
-#: data/content/index.html:238
+#: data/content/index.html:189
 msgid "Full set of download options >"
 msgstr "Alla sätt att hämta →"
 
-#: data/content/index.html:258 data/content/join-fedora.html:127
+#: data/content/index.html:198
+msgid "Add a counter to your own site!"
+msgstr "Lägg till en nedräknare på din egen sajt!"
+
+#: data/content/index.html:209 data/content/join-fedora.html:127
 msgid "Upcoming Events"
 msgstr "Kommande händelser"
 
-#: data/content/index.html:260
+#: data/content/index.html:211
 msgid "North American"
 msgstr "Nordamerikanska"
 
-#: data/content/index.html:261
+#: data/content/index.html:212
 msgid "Central & South American"
 msgstr "Central- och sydamerikanska"
 
-#: data/content/index.html:262
+#: data/content/index.html:213
 msgid "European, Middle Eastern, & African"
 msgstr "Europeiska, Mellanöstern och afrikanska"
 
-#: data/content/index.html:263
+#: data/content/index.html:214
 msgid "Indian, Asian, & Australian"
 msgstr "Indiska, asiatiska och australiensiska"
 
-#: data/content/index.html:266
+#: data/content/index.html:217
 msgid "Hosting Sponsor"
 msgstr "Värdsponsor"
 
@@ -2802,40 +2674,40 @@ msgstr "Installations-DVD / Räddnings-CD"
 
 #: data/content/verify.html:78
 msgid "Desktop Live Media"
-msgstr ""
+msgstr "Skrivbords-live-medium"
 
-#: data/content/verify.html:202
+#: data/content/verify.html:204
 msgid "ARM Images"
 msgstr "ARM-avbilder"
 
-#: data/content/verify.html:243
+#: data/content/verify.html:239
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Därefter, importera Fedoras GPG-nycklar:"
 
-#: data/content/verify.html:245
+#: data/content/verify.html:241
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
 "href=\"%s/%s/keys\">here</a>."
 msgstr "Du kan verifiera detaljerna hos GPG-nycklarna <a href=\"%s/%s/keys\">här</a>."
 
-#: data/content/verify.html:246
+#: data/content/verify.html:242
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Nu, verifiera att CHECKSUM-filen är giltig:"
 
-#: data/content/verify.html:248
+#: data/content/verify.html:244
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr "CHECKSUM-filen skall ha en korrekt signatur från en av de följande nycklarna:"
 
-#: data/content/verify.html:257
+#: data/content/verify.html:253
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the ISO's "
 "checksum matches:"
 msgstr "Slutligen, nu när CHECKSUM-filen har verifierats, kontrollera att ISO:ns kontrollsumma stämmer:"
 
-#: data/content/verify.html:259
+#: data/content/verify.html:255
 msgid "If the output states that the file is valid, then you're good to go!"
 msgstr "Om utdata säger att filen är giltig, då är du klar att börja!"
 
@@ -3681,11 +3553,28 @@ msgid ""
 "demos and classes on using Fedora. Learn more."
 msgstr "Fedoras användar- och utvecklarkonferens är en bra plats att vara med om demostrationer och kurser om användningen av Fedora.  Ta reda på mer."
 
+#: data/content/using/index.html:26
+msgid "Do it with Fedora"
+msgstr "Gör det med Fedora"
+
 #: data/content/using/index.html:27
 msgid ""
 "In this series of tutorials, we'll walk you through fun projects you can "
 "create using Fedora."
 msgstr "I denna serie med handledningar kommer vi gå igenom roliga projekt som du kan göra med Fedora."
+
+#: data/content/using/index.html:33
+#: data/content/using/tutorials/cheese.html:26
+msgid "Have a photobooth party!"
+msgstr "Ha en fotoautomatsfest!"
+
+#: data/content/using/index.html:34
+#: data/content/using/tutorials/cheese.html:27
+msgid ""
+"All you need is a webcam and Fedora, and you can do all sorts of cool photo "
+"tricks, including turning your friends into The Hulk. :) Take fun snapshots "
+"and videos!"
+msgstr "Allt du behöver är en webbkamera och Fedora, och du kan göra all möjliga roliga fototrick, som att göra dina vänner till Hulken. :)  Ta roliga kort och videor!"
 
 #: data/content/using/index.html:35 data/content/using/index.html:41
 #: data/content/using/index.html:47
@@ -4431,11 +4320,11 @@ msgid ""
 "writing and coding in GEdit which is the best text editor known to mankind "
 "and for surfing the web, which I do a lot especially to research topics for "
 "the show and to do the show notes, I use Chromium."
-msgstr ""
+msgstr "Jag använder Audacity för det tunga arbetet i efterbearbetningen och gör all redigeringen i det.  Audacity är i huvudsak en vågfilsredigerare.  Då och då spelar jag också in eller redigerar med Ardour som är en mer fullständig digital arbetsstation för audio.  Vi spelade också in och mixade intromusiken för poddsändningen med dessa verktyg.  Eftersom jag också är ansvarig för för allt design- och webbsajtsarbetet kring programmet använder jag Inkscape och GIMP en hel del för att skapa grafik.  Jag ritar normalt orginaldesigner i Inkscape som är ett vektorgrafikprogram och gör bearbetning och allmänt förbättringsarbete i GIMP eftersom det är ett rasterbaserat verktyg.  På toppen av det skriver och kodar jag allt i GEdit som är den bästa textredigeraren mänskligheten känner till och för att surfa på webben, vilket jag gör en hel del särskilt för att forska kring ämnen till programmet och för att skapa avsnittens noteringar, använder jag Chromium."
 
 #: data/content/using/life/fabianscherschel.html:49
 msgid "Where do you find interesting audio samples for your podcasts?"
-msgstr ""
+msgstr "Var hittar du intressanta audioprov till din poddsändning?"
 
 #: data/content/using/life/fabianscherschel.html:50
 #, python-format
@@ -4444,13 +4333,13 @@ msgid ""
 "Freesound</a> and we find nearly all the <a href=\"%s\">Creative Commons</a>"
 " music we use on the show on either <a href=\"%s\">Jamendo</a> or <a "
 "href=\"%s\">Soundclick</a>."
-msgstr ""
+msgstr "För ljudeffekter är den bästa platsen att gå till <a href=\"%s\">Freesound-projektet</a> och vi hittar nästan all <a href=\"%s\">Creative Commons</a>-musiken vi använder i programmet antingen på <a href=\"%s\">Jamendo</a> eller <a href=\"%s\">Soundclick</a>."
 
 #: data/content/using/life/fabianscherschel.html:52
 msgid ""
 "Do you have any tips for enthusiastic future podcasters in using Fedora to "
 "create awesome podcasts?"
-msgstr ""
+msgstr "Har du några tips för entusiastiska framtida poddsändare för användning av Fedora för att skapa fantastiska poddsändningar?"
 
 #: data/content/using/life/fabianscherschel.html:53
 msgid ""
@@ -4465,13 +4354,13 @@ msgid ""
 "drivers or the like, don't be afraid to file bugs and ask on the mailing "
 "list. People in Fedora are incredibly nice and helpful if you can just "
 "muster the courage and ask them..."
-msgstr ""
+msgstr "Alla verktyg man behöver finns lätt tillgängliga och de är alla fria.  Mit viktigaste tips vore att skaffa en hyfsad kondensatormikrofon och en lite mixer för tillsammans runt $ 150 och mata in det i din dator via ett USB-gränssnitt.  På det sättet undviker du en hel del problem med billiga ljudkort (särskilt i bärbara datorer) och kan professionell nivå på ljudkvaliteten utan att behöva krångla till det med headset som låter dåligt och sådana saker.  Utöver det behöver du bara engagemanget att ihärdigt fortsätta pumpa ut avsnitt regelbundet.  Ja, om du får några problem med ljuddrivrutiner eller liknande, var inte rädd att rapportera fel och fråga på e-postlistorna.  Folk i Fedora är otroligt vänliga och hjälpsamma om du bara kan ta modet till dig att fråga dem …"
 
 #: data/content/using/life/fabianscherschel.html:55
 msgid ""
 "If I have a friend who doesn't use Fedora, can they still listen to your "
 "podcasts?"
-msgstr ""
+msgstr "Om jag har en vän som inte använder Fedora, kan de fortfarande lyssna på dina poddsändningar?"
 
 #: data/content/using/life/fabianscherschel.html:56
 msgid ""
@@ -4480,13 +4369,13 @@ msgid ""
 "themselves in a place where that isn't supported they can use the MP3 feed "
 "instead. MP3 is pretty universal and should work on nearly any device that "
 "can play audio digitally."
-msgstr ""
+msgstr "Vi distribuerar alla våra avsnitt i både formatet Ogg Vorbis och MP3.  Vi föredrar att folk använder Ogg eftersom det är det fria alternativet men skulle någon hamna på en plats där det inte stödjs kan de använda MP3-flödet istället.  MP3 är rätt universellt och bör fungera på nästan vilken enhet som helst som kan spela ljud digitalt."
 
 #: data/content/using/life/fabianscherschel.html:58
 msgid ""
 "Can you tell us about a recent podcast you made using Fedora? Where can we "
 "listen to it?"
-msgstr ""
+msgstr "Kan du berätta för oss om en poddsändning du gjorde nyligen med Fedora?  Var kan vi lyssna på den?"
 
 #: data/content/using/life/fabianscherschel.html:59
 #, python-format
@@ -4495,12 +4384,12 @@ msgid ""
 "href=\"%s\">linuxoutlaws.com</a>, all powered by Fedora and CentOS. I often "
 "talk about Fedora topics on the show, we did a whole special episode on the "
 "release of Fedora 13 for example (<a href=\"%s\">Check it out here!</a>)"
-msgstr ""
+msgstr "Alla Linux Outlaws avsnitt finns på <a href=\"%s\">linuxoutlaws.com</a>, samtliga drivna av Fedora och CentOS.  Jag talar ofta om Fedoraämnen i programmet, vi gjorde ett helt specialavsnitt om utgåvan Fedora 13 till exempel (<a href=\"%s\">Kolla in det här!</a>)"
 
 #: data/content/using/life/fabianscherschel.html:61
 #: data/content/using/life/mairinduffy.html:82
 msgid "Can you tell us about a hidden treasure in Fedora you'd like to share?"
-msgstr ""
+msgstr "Kan du berätta för oss om en gömd skatt i Fedora du vill dela med dig av?"
 
 #: data/content/using/life/fabianscherschel.html:62
 msgid ""
@@ -4510,7 +4399,7 @@ msgid ""
 "repositories. I also recently became very fond of drawing things in MyPaint "
 "which is an excellent artistic tool, especially if you have a pen-based "
 "drawing tablet."
-msgstr ""
+msgstr "Som poddsändare och någon som lyssnar till några timmar av poddsändningar varje dag tycker jag att ett av de häftigaste programmet i Fedora är gPodder som är en väldigt komplett poddsändninginsamlare som du kan installera  från huvudförråden.  Jag blev också nyligen väldigt förtjust i att rita saker i MyPaint som är ett utmärkt artistverktyg, särskilt om du har en pennbaserad ritplatta."
 
 #: data/content/using/life/fabianscherschel.html:65
 msgid "Thanks, Fab!"
@@ -4518,7 +4407,7 @@ msgstr "Tack, Fab!"
 
 #: data/content/using/life/mairinduffy.html:7
 msgid "Fedora Project - Interview with Máirín Duffy."
-msgstr ""
+msgstr "Fedoraprojektet — Intervju med Máirín Duffy."
 
 #: data/content/using/life/mairinduffy.html:18
 msgid ""
@@ -4543,7 +4432,7 @@ msgid ""
 "I'm an interaction designer and I work at <a href=\"%s\">Red Hat</a>. As an "
 "interaction designer, I create UI designs, charts, mockups, diagrams, and "
 "graphics to help build usable and elegant software."
-msgstr ""
+msgstr "Jag är en interaktivitetsdesigner och jag arbetar på <a href=\"%s\">Red Hat</a>.  Som interaktivitetsdesinger skapar jag designer för grafiska gränssnitt, tabeller, attrapper, diagram och grafik för att hjälpa till att bygga användbar och elegant programvara."
 
 #: data/content/using/life/mairinduffy.html:39
 #, python-format
@@ -4552,7 +4441,7 @@ msgid ""
 " by \"Mizmo\"</a> - but that's not why I'm Mizmo! While my name is Máirín "
 "(Irish spelling for 'Maureen'), many of my friends call me \"Mo,\" and the "
 "\"Miz\" is for \"Miss,\" so Mizmo is really just \"Miss Mo.\""
-msgstr ""
+msgstr "Mizmo.  Jag hör talas om att det finns ett <a href=\"%s\">företag för utrustning för att fiska havsabborre som kallas ”Mizmo”</a> — men det är inte därför jag är  Mizmo!  Medan mitt namn är Máirín (irländsk stavning av ”Maureen”) kallar många av mina vänner mig ”Mo,” och ”Miz” är för ”Miss,” så Mizmo är egentligen bara ”Miss Mo.”"
 
 #: data/content/using/life/mairinduffy.html:42
 msgid ""
@@ -4562,11 +4451,11 @@ msgid ""
 "until my first year at grad school, when I tried Fedora Core 3 (I wanted to "
 "try the latest GNOME release and Debian's was just too old.) I've been a "
 "Fedora user ever since. So, probably since 2004-ish."
-msgstr ""
+msgstr "Tja, jag började först att använda Red Hat 5.0 när jag gick i high school.  När jag kom in på college tog jag med mig en dator med Red Hat Linux, men universitetsområdets Linux Users' Group övertygade mig om att Debian var den rätta vägen.  Så jag använde Debian tills mitt första år på forskarutbildning, då jag provade Fedora Core 3 (Jag ville prova den senaste utgåvan av GNOME och Debians var bara för gammalt.)  Jag har varit en Fedoraanvändare sedan dess.  Så förmodligen sedan 2004 eller däromkring."
 
 #: data/content/using/life/mairinduffy.html:44
 msgid "How did you first get into interaction design?"
-msgstr ""
+msgstr "Hur hamnade du först i interaktionsdesign?"
 
 #: data/content/using/life/mairinduffy.html:45
 msgid ""
@@ -4583,13 +4472,13 @@ msgid ""
 "and learned a lot about Linux as well and decided that Linux would be a "
 "whole lot cooler if it was easier to use. So that became my new passion - "
 "making software easier to use."
-msgstr ""
+msgstr "När jag växte upp spelade jag äventyrsspel på en IBM XT PC.  De var skapade av ett spelföretag som hette Sierra On-Line.  De hade EGA (16 färger) med inmatning med texttolk så du skrev in vad du ville att gestalterna skulle göra och du fick dialogen tillbaka till dig.  Hela min familj gillade dessa spel väldigt mycket.  De hade en sådan effekt på mig — jag lärde mig faktiskt läsa genom att spela dem — att jag i en tidig ålder bestämde mig för att jag ville bli en videospelsgrafiker för Sierra när jag blev stor.  När jag gick i high school hade dock Sierra ändrat sig en hel del, det hade blivit uppköpt av ett mycket större företag och de slutade ge ut fantastiska spel.  Oj.  Men jag hade bestämt mig för att studera datalogi och elektronisk konst i vilket fall som helst, så jag gjorde det och lärde mig mycket om Linux också och bestämde mig för att Linux vore en hel del tuffare om det vore enklare att använda.  Så det blev min nya passion — att göra programvara enklare att använda."
 
 #: data/content/using/life/mairinduffy.html:47
 msgid ""
 "Many designers use Macs. Do you? How about the Adobe Creative Suite - do you"
 " use that?"
-msgstr ""
+msgstr "Många designer använder Mac:ar.  Gör du det?  Och hur är det med Adobe Creative Suite — använder du det?"
 
 #: data/content/using/life/mairinduffy.html:48
 msgid ""
@@ -4597,17 +4486,17 @@ msgid ""
 "Enterprise Linux) has been my primary desktop for some years now. I don't "
 "use any of Adobe's design tools either. I use a number of free & open source"
 " design applications to get my job done."
-msgstr ""
+msgstr "Nepp, jag har inte använt någon sedan 2006.  Fedora (och ibland, Red Hat Enterprise Linux) har varit mitt huvudsakliga skrivbord i några år nu.  Jag använder inte några av Adobes designverktyg heller.  Jag använder ett antal fira designprogram med öppen källkod för att få mitt jobb gjort."
 
 #: data/content/using/life/mairinduffy.html:50
 msgid ""
 "What applications in Fedora do you use to create your designs? What does "
 "each app do?"
-msgstr ""
+msgstr "Vilka program i Fedora använder du för att skapa dina designer?  Vad gör varje program?"
 
 #: data/content/using/life/mairinduffy.html:51
 msgid "Let me give you a rundown!"
-msgstr ""
+msgstr "Låt mig ge den en genomgång!"
 
 #: data/content/using/life/mairinduffy.html:54
 msgid ""
@@ -4616,7 +4505,7 @@ msgid ""
 "proprietary design software completely. It's a vector graphics program (kind"
 " of like Adobe Illustrator, but better) and I use it for everything from UI "
 "mockups, to logo & icon design, to diagrams."
-msgstr ""
+msgstr "<strong>Inkscape</strong> — detta är det enskilt viktigaste programmet för mig.  Det är det avgörande programmet som gjorde det möjligt för mig att släppa OS X och proprietära desginprogram helt.  Det är ett vektorgrafikprogram (ungefär liksom Adobe Illustrator, fast bättre) och jag använder det för allt från prototyper för grafiska gränssnitt, till design av logotyper och ikoner, till diagram."
 
 #: data/content/using/life/mairinduffy.html:55
 msgid ""
@@ -4624,7 +4513,7 @@ msgid ""
 "program - it's similar to Adobe Photoshop. I use it for photo-editing, but I"
 " also use it for slicing up UI screens - I use the slices in Inkscape to "
 "modify UI designs - and I use it for some digital painting too."
-msgstr ""
+msgstr "<strong>Gimp</strong> — Gimp är ett verkligt fullständigt bildbehandlingsprogram — det är liknande Adobe Photoshop.  Jag använder det för fotoredigering, men jag använder det också för att dela upp grafiska gränssnittsbilder — jag använder delarna i Inkscape för att ändra grafiska gränssnittsdesinger — och jag använder det för en del målande också."
 
 #: data/content/using/life/mairinduffy.html:56
 msgid ""
@@ -4634,37 +4523,37 @@ msgid ""
 "brushes that in many cases have a very similar feel to natural drawing "
 "implements. I like using it for sketching out concepts that I then fully "
 "flesh out in vectors via Inkscape."
-msgstr ""
+msgstr "<strong>MyPaint</strong> — MyPaint är en relativ nykomling på scenen för fria grafikprogram, men det är ett riktigt trevligt program.  Det är ett digitalt skiss-/målningsprogram som kommer fullt utrustat med tonvis av utmärkta penslar som i många fall har en känsla som är väldigt lik normala ritverktyg.  Jag tycker om att använda det för att skissa koncept som jag den sedan utformar helt i vektorer med Inkscape."
 
 #: data/content/using/life/mairinduffy.html:57
 msgid ""
 "<strong>Scribus</strong> - Scribus is a page layout program that is very "
 "handy for creating print-ready artwork."
-msgstr ""
+msgstr "<strong>Scribus</strong> — Scribus är ett sidlayoutprogram som är väldigt praktiskt för att skapa utskriftsfärdiga konstverk."
 
 #: data/content/using/life/mairinduffy.html:58
 msgid ""
 "<strong>Xournal</strong> - Xournal is a great tool for taking notes and for "
 "annotating PDF documents. I use it to take notes when I'm 'in the field' "
 "conducting user research."
-msgstr ""
+msgstr "<strong>Xournal</strong> — Xournal är ett fantastiskt verktyg för att göra anteckningar och för att annotera PDF-dokument.  Jag använder det för att göra anteckningar när jag är ”ute i fält” och gör användningsforskning."
 
 #: data/content/using/life/mairinduffy.html:59
 msgid ""
 "<strong>PDF Mod</strong> - Another great tool for manipulating PDF files. It"
 " helps you stitch together separate PDFs into one visually, or you can even "
 "reorder an existing multi-page PDF file."
-msgstr ""
+msgstr "<strong>PDF Mod</strong> — Ett annat bra verktyg för att hantera PDF-filer  Det hjälper dig att sy ihop separata PDF:er till en visuellt, eller så kan du till och med ordna om en befintlig flersidig PDF-fil."
 
 #: data/content/using/life/mairinduffy.html:62
 msgid "There's a ton more, but that should be a good set to start with! :)"
-msgstr ""
+msgstr "Det finns tonvis med flera, men det bör vara en bra uppsättning att börja med! :)"
 
 #: data/content/using/life/mairinduffy.html:64
 msgid ""
 "If my friends and/or co-workers don't use Fedora for their design work, will"
 " I still be able to collaborate with them?"
-msgstr ""
+msgstr "Om mina vänner och/eller medarbetare inte använder Fedora för sitt designarbete, kommer jag fortfarande kunna samarbeta med dem?"
 
 #: data/content/using/life/mairinduffy.html:65
 msgid ""
@@ -4672,7 +4561,7 @@ msgid ""
 "often. The free software creative tools in Fedora all support open standards"
 " in file formats, and as far as I'm aware all of the major proprietary tools"
 " designers use can open these formats - PNG, SVG, PDF, etc."
-msgstr ""
+msgstr "Absolut.  Jag samarbetar ofta med designer som använder Adobe-verktygen oå OS X.  De fria kreativa programverktygen i Fedora stödjer alla öppna standarder i filformat, och såvitt jag vet kan alla de stora proprietära verktygen designer använder öppna dessa format — PNG, SVG, PDF, etc."
 
 #: data/content/using/life/mairinduffy.html:66
 msgid ""
@@ -4681,13 +4570,13 @@ msgid ""
 "files. For once, though, I'm with Apple in hoping Flash becomes less "
 "relevant as HTML5 and javascript-based frameworks become more and more "
 "prevalent."
-msgstr ""
+msgstr "Det enda filformatet som kan vara problematiskt är Flash-filer.  Världen med fri programvara har inte ännu någon redigerare som kan öppna Flash-källkodsfiler.  Dock, för en gångs skull är jag på Apples sida och hoppas att Flash blir mindre relevant allteftersom HTML5 och javascript-baserade ramverk blir mer och mer förhärskande."
 
 #: data/content/using/life/mairinduffy.html:68
 msgid ""
 "Do you have any tips for enthusiastic future designers in using Fedora to "
 "create awesome interface designs?"
-msgstr ""
+msgstr "Har du några tips för entusiastiska framtida designer i att använda Fedora för att skapa fantastiska gränssnittsdesigner?"
 
 #: data/content/using/life/mairinduffy.html:69
 msgid ""
@@ -4698,7 +4587,7 @@ msgid ""
 " you'll find that the communities around these design applications are "
 "really large and rich and there's tons of tutorials, videos, and assets like"
 " brushes and palettes available for these applications."
-msgstr ""
+msgstr "Jag antar att mitt bästa tips skulle vara ”ha ett öppet sinne”.  Praktiskt taget allt man gör med användning av en Mac eller Windows som använder proprietära program är möjligt i Fedora.  Ibland kan saker fungera lite annorlunda än man är van vid (Jag tittar på dig, Gimp!) men all funktionaliteten du behöver finns där, och du kommer upptäcka att gemenskaperna runt dessa designprogram är riktigt stora och rikliga och det finns tonvis med handledningar, videor och tillbehör som penslar och paletter tillgängliga för dessa program."
 
 #: data/content/using/life/mairinduffy.html:70
 #, python-format
@@ -4706,7 +4595,7 @@ msgid ""
 "My second tip is - try out the <a href=\"%s\">the Fedora Design Suite</a>. "
 "This is a special edition of Fedora that has many great free & open source "
 "creative apps pre-installed for you to discover!"
-msgstr ""
+msgstr "Mitt andra tips är — prova <a href=\"%s\">Fedoras designsvit</a>.  Detta är en specialutgåva av Fedora som har många bra fria kreativitetsprogram med öppen källkod förinstallerade så du kan upptäcka dem!"
 
 #: data/content/using/life/mairinduffy.html:71
 #, python-format
@@ -4720,7 +4609,7 @@ msgid ""
 "of the apps. You'll want to at least check out the materials from that "
 "conference (there are full videos of many of the sessions from the last one "
 "available online), if not take a trip and see and learn for yourself!"
-msgstr ""
+msgstr "Det finns en bra årlig konferens som heter <a href=\"%s\">Libre Graphics Meeting</a> där användarna av dessa fria kreativitetsverktyg och utvecklarna som skapar dem träffas i några dagar och talar om de intressanta saker de åstadkommer med användnig av programmen, och den framtida vägkartan för programmen.  Det är verkligen ett energigivande arrangemang och den gemenskapen är en bra plats för att upptäcka nya program som kommer ut och gömda skatter bland funktionsuppsättningarna i programmen.  Du kommer åtminstone vilja ta en titt på materialet från den konferensen (det finns fullständiga videor av många av sessionerna från den senaste tillgängliga på nätet), om du inte tar en tur och ser och upptäcker själv!"
 
 #: data/content/using/life/mairinduffy.html:72
 #, python-format
@@ -4732,17 +4621,17 @@ msgid ""
 "assets for the Fedora project itself, and we are always trading tips and "
 "tricks and ideas on that team. You are more than welcome to ask us for help "
 "and to hang out with us!"
-msgstr ""
+msgstr "Mitt sista tips är att aldrig hålla en fråga eller ett problem du har med programmet för dig själv.  Tala ut!  Fedoragemenskapen är en extremt välkomnande och vänlig gemenskap, och du kommer hitta mängder av folk villiga att hjälpa.  Vi har <a href=\"%s\">design team</a> som använder Fedora för att designa tillgångar för Fedoraprojektet självt, och vi byter alltid tips och trick och idéer i den gruppen.  Du är mer än välkommen att fråga oss om hjälp och umgås med oss!"
 
 #: data/content/using/life/mairinduffy.html:74
 msgid "Where do you get openly-licensed assets to use in your design work?"
-msgstr ""
+msgstr "Var får du tag i fritt licensierade tillgångar att använda i ditt designarbete?"
 
 #: data/content/using/life/mairinduffy.html:75
 msgid ""
 "Here's the three links to libraries of openly-licensed assets that I use "
 "quite often:"
-msgstr ""
+msgstr "Här är de tre länkar till bibliotek med fritt licensierade tillgångar som jag använder ganska ofta:"
 
 #: data/content/using/life/mairinduffy.html:77
 #, python-format
@@ -4750,14 +4639,14 @@ msgid ""
 "<a href=\"%s\">Open Clip Art Library</a> - a vast library of SVG-format, "
 "public-domain artwork. The quality varies widely but there's a ton of great "
 "treasures in there."
-msgstr ""
+msgstr "<a href=\"%s\">Open Clip Art Library</a> — ett ofantligt bibliotek med allmänt tillgängliga bilder i SVG-format.  Kvaliteten varierar mycket men det finns tonvis med fantastiska skatter där."
 
 #: data/content/using/life/mairinduffy.html:78
 #, python-format
 msgid ""
 "<a href=\"%s\">CompFight</a> - CompFight is a search engine that queries "
 "Flickr for Creative Commons licensed photography."
-msgstr ""
+msgstr "<a href=\"%s\">CompFight</a> — CompFight är en sökmotor som letar i Flickr efter fotografier med Creative Commons-licens."
 
 #: data/content/using/life/mairinduffy.html:79
 #, python-format
@@ -4766,7 +4655,7 @@ msgid ""
 "Library, the OFL has a ton of openly-licensed fonts. I also have <a "
 "href=\"%s\">an ongoing blog series</a> where I highlight particular openly-"
 "licensed fonts I like to use."
-msgstr ""
+msgstr "<a href=\"%s\">>Open Font Library</a> — en systersajt till Open Clip Art Library, OFL har tonvis av fritt licensierade typsnitt.  Jag har också <a href=\"%s\">en pågående bloggserie</a> där jag lyfter fram särskilda typsnitt med fri licens som jag tycker om att använda."
 
 #: data/content/using/life/mairinduffy.html:83
 msgid ""
@@ -4776,42 +4665,42 @@ msgid ""
 "CellWriter that does text recognition, so I can write in the CellWriter pane"
 " and it automatically converts my scribbling into real text. It's a very "
 "nice tool that many Linux users seem to be unaware of!"
-msgstr ""
+msgstr "Ooh, jag tänker på en bra sak.  Så, min bärbara dator är egentligen en platta också.  Ibland när jag gör anteckningar i plattläge är det för obekvämt att vända runt den i tangentbord-/bärbar dator-läge.  Så det finns ett program som heter CellWriter som gör textegenkänning, sä jag kan skriva i CellWriter-penelen och det konverterar automatiskt mitt klotter till riktig text.  Det är ett väldigt trevligt verktyg som många Linuxanvändare inte verkar känna till!"
 
 #: data/content/using/life/mairinduffy.html:86
 msgid "Thanks, Mo!"
-msgstr ""
+msgstr "Tack, Mo!"
 
 #: data/content/using/life/michelsalim.html:7
 msgid "Fedora Project - Interview with Michel Alexandre Salim."
-msgstr ""
+msgstr "Fedoraprojektet — intervju med Michel Alexandre Salim."
 
 #: data/content/using/life/michelsalim.html:18
 msgid ""
 "Did you know Fedora has a presence on many social media networks? Learn "
 "more."
-msgstr ""
+msgstr "Visste du att Fedora är närvarande i många sociala medianätverk?  Ta reda på mer."
 
 #: data/content/using/life/michelsalim.html:25
 #: data/content/using/life/robynbergeron.html:26
 msgid "&#8592; Back to the main 'Using Fedora' page"
-msgstr ""
+msgstr "&#8592; Tillbaka till huvudsidan ”Använda Fedora”"
 
 #: data/content/using/life/michelsalim.html:27
 #: data/content/using/life/michelsalim_short.html:6
 msgid "Michel, Social Media & Web Researcher"
-msgstr ""
+msgstr "Michel, sociala media- och webbforskare"
 
 #: data/content/using/life/michelsalim.html:32
 msgid ""
 "I'm an Indonesian, born in Indonesia but have lived in many different places"
 " -- Singapore, UK, USA. I'm now doing my doctorate at a university in "
 "Germany."
-msgstr ""
+msgstr "Jag är en indonesier, född i Indonesien men har bott på många olika platser — Singapore, Storbritannien, USA.  Jag håller nu på och doktorerar på ett universitet i Tyskland."
 
 #: data/content/using/life/michelsalim.html:34
 msgid "What are you studying?"
-msgstr ""
+msgstr "Vad studerar du?"
 
 #: data/content/using/life/michelsalim.html:35
 msgid ""
@@ -4822,7 +4711,7 @@ msgid ""
 "readily reuse it in different contexts. We're a Linux-based shop -- mostly "
 "Debian/Ubuntu and openSUSE right now, but I'm happy to say we do have a "
 "laptop running Fedora right now."
-msgstr ""
+msgstr "Min forskningsgrupp fokuserar på wiki:er och programutvecklingsverktyg.  Vi arbetar nu med att skapa en mer solid ingengörsplattform för båda — t.ex. göra wiki:er mer strukturerade och programmerbara, och göra det möjligt att beskriva en organisations programutvecklingsprocess på ett sådant sätt att man direkt kan återanvända den i olika sammanhang.  Vi är en Linuxbaserad plats — huvudsakligen Debian/Ubuntu och openSUSE för närvarande, men jag är glad att kunna berätta att vi har en bärbar dator som kör Fedora just nu."
 
 #: data/content/using/life/michelsalim.html:38
 msgid ""
@@ -4833,7 +4722,7 @@ msgid ""
 "astrology and at all those verses in the Gospel that enjoin people to be "
 "like sheep rather than like goats -- though I'm personally not *that* "
 "rebellious :)"
-msgstr ""
+msgstr "Hircus.  Det finns en intressant historia bakom det.  Jag har ett väldigt litet intresse i astrologi, men jag råkar vara född under samma Grekisk-Romerska och kinesiska stjärntecken.  Stenbocken, i getens år.  Och ”Capra hircus” är, tror jag, det vetenskapliga namnet på getter.  Det är ironisk vinkling på både astrologi och alla verserna i evangeliumet som anbefaller folk att vara som får snarare än som getter — fast personligen är jag inte *så* rebellisk :)"
 
 #: data/content/using/life/michelsalim.html:41
 msgid ""
@@ -4856,11 +4745,11 @@ msgid ""
 "support was really broken a few releases back. but I liked the way it "
 "pioneered the \"virtual folders\" concept, and that's been the focus, if "
 "there's a focus, of my Fedora packaging. Cool stuff."
-msgstr ""
+msgstr "På sätt och vis, före Fedora Extras ens fanns!  Jag upptäckte första gången Linux på en datormässa i Singapore.  Hade inte ens en egen PC då, och detta är på tiden före live-CD/USB så min första Unix/Linuxkunskap var helt teoretisk.  Från en bok som kom med en Caldera-CD 98 fick jag min egen dator, och … dessa problem med grafikkort kommer att bli ett återkommande mönster … den hade ett Diamond FireGL-kort.  Den första Linux jag lade på den var RHL … 5.1 eller 5.2, förmodligen det förra.  Och naturligtvis startade X i 640x480x16 färger.  Så medan jag körde den datorn körde den för det mesta SuSE Linux och Debian.  Så jag fick prova på flera RPM-baserade distributioner såväl som Debian i början.  Men för att göra en lång historia kort, med början runt tiden för Red Hat 7.x använde jag huvudsakligen I Red Hat; vid något tillfälle började jag bakåtportera vissa paket från Fedora Rawhide-trädet — Evolution, och ett par andra — och det var runt den tiden då Warren Togami startade sitt Fedoraprojekt, och vi talade några gånger om det.  Och sedan blev det Fedora Extras, och sedan togs uppdelningen Core/Extras bort.  Lustigt nog kör jag inte Evolution längre.  Slutade när IMAP-stödet var riktigt trasigt för någora utgåvor sedan.  Men jag tyckte om sättet det banade väg för begreppet ”virtuella mappar”, och det har varit fokuset, om det finns ett fokus, för min paketering för Fedora.  Jättebra grejor."
 
 #: data/content/using/life/michelsalim.html:43
 msgid "How did you first get involved in web & social media topics?"
-msgstr ""
+msgstr "Hur blev du från början inblandad i ämnena webb och sociala media?"
 
 #: data/content/using/life/michelsalim.html:44
 msgid ""
@@ -4879,24 +4768,24 @@ msgid ""
 "excellent bti</a> (a <a href=\"http://twitter.com\">Twitter</a> & <a "
 "href=\"http://identi.ca\">identi.ca</a> client that enables you to make "
 "posts from a Linux command prompt called bash.)"
-msgstr ""
+msgstr "Jag har denna fascination för elektroniska kommunikationsmedia.  Och på sätt och vis härstammar det mesta av de tidiga nätverksbegreppen från Unix (webben började på en NextSTEP-burk, tror jag, men det är fortfarande Unix-igt).  Vid en viss tidpunkt bestämde jag mig för att använda Linux för det mesta så långt jag kunde (min Windowspartition finns mest för att flash:a BIOS) och behövde se till att jag fortfarande kan blogga, tjattra, etc. som jag kunde normalt.  Som tur är är det en enklara uppgift nu.  Jag tenderar att vara gammaldags när det gäller Twitter-liknande tjänster.  Jag använder dem antingen direkt från sajten, kedjar det via en tjänst (t.ex. <a href=\"http://ping.fm\">Ping.fm</a> för att sända ut till flera mikrobloggar och <a href=\"http://hootsuite.com\">HootSuite</a> för att läsa av mina bloggar och automatiskt vidarebefodra dem till Ping.fm), eller använda kommandoradsverktyg såsom <a href=\"http://gregkh.github.com/bti/\">Greg KH:s utmärkta bti</a> (en <a href=\"http://twitter.com\">Twitter</a>- och <a href=\"http://identi.ca\">identi.ca</a>-klient som gör att man kan posta från en Linux-kommandorad vid namn bash.)"
 
 #: data/content/using/life/michelsalim.html:46
 msgid "What chat & instant messaging application in Fedora to you recommend?"
-msgstr ""
+msgstr "Vilka tjatt- och snabbmeddelandeprogram i Fedora rekommenderar du?"
 
 #: data/content/using/life/michelsalim.html:47
 #, python-format
 msgid ""
 "For instant messaging, I recommend an application called <a "
 "href=\"%s\">Pidgin</a>. There are some cool plugins for it:"
-msgstr ""
+msgstr "För snabbmeddelanden rekommenderar jag ett program som heter <a href=\"%s\">Pidgin</a>.  Det finns några tuffa insticksmoduler för det:"
 
 #: data/content/using/life/michelsalim.html:49
 msgid ""
 "OTR (off the record) that gives easy-to-use end-to-end encryption. I use it "
 "with my sister who's a Mac user."
-msgstr ""
+msgstr "OTR (off the record, inofficiellt) som som ger en lättanvänd kryptering mellan ändpunkter.  Jag använder det med min systerm som är en Mac-användare."
 
 #: data/content/using/life/michelsalim.html:50
 msgid ""
@@ -4907,7 +4796,7 @@ msgid ""
 " still typing :) (the popular Mac client, Adium, is based on Pidgin's "
 "backend -- libpurple, so it's also nice that there's some cross-platform "
 "support for it))"
-msgstr ""
+msgstr "Psychic mode, som är riktigt fantastiskt.  På en del tjattnätverk får du faktiskt ett påpekande när någon börjar skriva ett meddelande till dig.  De flesta tjattprogram använder inte det påpekandet.  Men Pidgin gör det — så du kan överraska den andra personen genom att skicka dem ett snabbt ”ja?” medan de fortfarande skriver :) (den populära Mac-klienten, Adium, är baserad på Pidgins bakände — libpurple, så det är också trevligt att det finns en del stöd mellan plattformar för det)"
 
 #: data/content/using/life/michelsalim.html:51
 #, python-format
@@ -4916,15 +4805,15 @@ msgid ""
 "song in the <a href=\"%s\">Rhythmbox music application</a>. The open-source "
 "<a href=\"%s\">Last.fm</a> application, <a href=\"%s\">Vagalume</a>, can "
 "also update Pidgin's status."
-msgstr ""
+msgstr "Det finns en musikinsticksmodul som uppdaterar din status med vilken låt du just nu spelar i <a href=\"%s\">musikprogrammet Rhythmbox</a>.  Programmet <a href=\"%s\">Last.fm</a> i öppen källkod, <a href=\"%s\">Vagalume</a>, kan också uppdatera Pidgins status."
 
 #: data/content/using/life/michelsalim.html:53
 msgid "Pidgin's IRC client is quite decent too."
-msgstr ""
+msgstr "Pidgins IRC-klient är riktigt hyfsad också."
 
 #: data/content/using/life/michelsalim.html:55
 msgid "What blogging software do you recommend using with Fedora?"
-msgstr ""
+msgstr "Vilket bloggprogram rekomenderar du att man använder med Fedora?"
 
 #: data/content/using/life/michelsalim.html:56
 #, python-format
@@ -4934,7 +4823,7 @@ msgid ""
 " the browser-based ScribeFire works really well, and now works on Chrome in "
 "addition to Firefox. It supports <a href=\"%s\">pretty much any blog "
 "platform you can name</a>."
-msgstr ""
+msgstr "För bloggande använde jag förut Drivel — som stödjer LiveJournal, WordPress, och andra bloggsystem — men tyvärr underhålls det inte längre uppströms.  Men det webbläsarbaserade ScribeFire fungerar riktigt bra, och fungerar nu i Chrome utöver Firefox.  Det stödjer <a href=\\\"%s\\\">nära nog alla bloggplattformar man kan komma på</a>."
 
 #: data/content/using/life/michelsalim.html:58
 msgid ""
@@ -4942,7 +4831,7 @@ msgid ""
 "social web applications like Facebook, Twitter, MySpace, and the like - "
 "would you expect them encountering any issues running these favorite web "
 "apps while running Fedora, or will it just work?"
-msgstr ""
+msgstr "För någon som är nybörjare med Linux och fri programvara och som är en flitig användare av sociala webbsystem på nätet som Facebook, Twitter, MySpace och liknande — Förväntar du dig att de stöter på några problem med att köra dessa favoritwebbprogram när de kör Fedora, eller kommer det bara fungera?"
 
 #: data/content/using/life/michelsalim.html:59
 #, python-format
@@ -4957,13 +4846,13 @@ msgid ""
 " where they can download Flash, but alas it's not as automated as on "
 "Windows/Mac (the Flash download site can be quite cryptic if you don't know "
 "what RPM and Deb files are.)"
-msgstr ""
+msgstr "Linuxanvändare kan videotjattra med varandra (på en stationär Linuxdator liksom på mobila enheter såsom den Maemo-baserade Nokia N-serien).  Men interoperabiliteten med Google Talkanvändare på Windows/Mac är lite problematisk.  Pidgin brukade krascha när en GTalk-användare startade videosamtalet med 32-bitars Linux, inga problem.  Med 64-bitars Fedora är jag rädd att instruktionerna för att få Flash att fungera lite komplicerade.  <a href=\"%s\">Vi dokumenterar processen rätt bra</a> — och jag tror Firefox kommer dirigera om användare till Adobes sajt där de kan hämta Flash, men desvärre är det inte så automatiserat som på Windows/Mac (sajten där man hämtar Flash kan vara ganska kryptisk om du inte vet vad RPM- och Deb-filer är.)"
 
 #: data/content/using/life/michelsalim.html:61
 msgid ""
 "But websites that don't use flash, no problem? Web 2.0 / ajax sites work "
 "fine?"
-msgstr ""
+msgstr "Men websajter som inte använder flash, är det inga problem?  Web 2.0 / ajax-sajter fungerar bra?"
 
 #: data/content/using/life/michelsalim.html:62
 msgid ""
@@ -4975,7 +4864,7 @@ msgid ""
 "you can install it, but your bookmark list is empty - and the developers "
 "acknowledged they did not test it on Linux! But older releases continue to "
 "work, and they fixed the issue within a couple of weeks."
-msgstr ""
+msgstr "AJAX fungerar utan problem.  Jag har på senare tid bara stött på *ett* verktyg för sociala nätverk som var trasigt på Linux — Delicious.com:s insticksmodul för Firefox.  Delicious är en social bokmärkestjänst, men man kan också ange att ens bokmärken är privata, vilket är smidigt om man använder mer än 1 typ av webbläsare så att man inte kan lita på verkygen från leverantören.  En uppdatering nyligen gjorde sönder stödet för Linux — man kan installera det, men bokmärkeslistan är tom — och utvecklarna bekräftade att de inte testade det på Linux!  Men tidigare utgåvor fungerar fortsatt, och de fixade problemet inom några veckor."
 
 #: data/content/using/life/michelsalim.html:63
 msgid ""
@@ -4983,13 +4872,13 @@ msgid ""
 "even by sticking to stable releases you get new functionality not long after"
 " they're announced. Fedora 14 will have the new WebM codec, for instance. I "
 "believe YouTube is encoding all its new HD videos in it as well as in H.264."
-msgstr ""
+msgstr "En riktigt häftig sak med att Fedora är en distribution i framkanten är, även om man håller sig till stabila utgåvor får man ny funktionalitet inte långt efter att den tillkännagivits.  Fedora 14 kommer ha den nya omkodaren WebM, till exempel.  Jag tror YouTube kodar alla sina ny HD-videor i det såväl som i H.264."
 
 #: data/content/using/life/michelsalim.html:65
 msgid ""
 "What about developers interested in developing for the web on Fedora? How "
 "can a web developer benefit from using Fedora?"
-msgstr ""
+msgstr "Vad gäller för utvecklare som är intresserade av att utveckla för webben med Fedora?  Hur kan en webbutvecklare dra nytta av att använda Fedora?"
 
 #: data/content/using/life/michelsalim.html:66
 msgid ""
@@ -5002,31 +4891,31 @@ msgid ""
 "flawlessly support BSD guest installations, and Richard WM Jones (Red Hat "
 "employee) is working on a really cool project, guestfish, that let you "
 "access guest images from the host OS."
-msgstr ""
+msgstr "Fedora är förmodligen ett av de bästa valen av utvecklingsplattform, tack vare den virtualiseringsteknik som finns tillgänglig.  Red Hat leder utvecklingen av KVM, och Oracles VirtualBox (huvudsakligen öppen källkod, förutom en del stöd för USB och 3D) finns också tillgänglig, fast endast för stabila utgåvor.  Så om man vill göra all sin testning från en enda maskin är Fedora förmodligen ett riktigt bra val.  KVM är den enda virtualiseringslösningen jag känner till som felfritt stödjer gästinstallationer med BSD, och Richard WM Jones (Red Hat-anställd) jobbar med ett riktigt häftigt projekt, guestfish, som gör att du kan komma åt gästavbilder från värd-OS:et."
 
 #: data/content/using/life/michelsalim.html:68
 msgid ""
 "So with guestfish, you don't even have to run the guest to be able to access"
 " the files in it? You can just mount it like a regular filesystem?"
-msgstr ""
+msgstr "Så med guestfish behöver men inte ens köra gästen för att kunna komma åt filer i den?  Man kan helt enkelt montera den som et vanligt filsystem?"
 
 #: data/content/using/life/michelsalim.html:69
 msgid ""
 "You don't have to, and I believe it can even mount LVM, and let you hex edit"
 " parts of the disk image, etc."
-msgstr ""
+msgstr "Det behöver man inte, och jag tror att den till och med kan montera LVM, och tillåta redigering av delar av diskavbilden med en hex-redigerare, etc."
 
 #: data/content/using/life/michelsalim.html:71
 msgid ""
 "What about the web development platforms available on Fedora? Is there Ruby "
 "on Rails and the like? What about applications for developers?"
-msgstr ""
+msgstr "Hur är det med tillgängliga webbutvecklingsplattformar i Fedora?  Finns Ruby on Rails och liknande?  Hur är det med program för utvecklare?"
 
 #: data/content/using/life/michelsalim.html:72
 msgid ""
 "I do believe we have Ruby on Rails, and the more popular Python-based "
 "platforms (TurboGears, Django, etc.)."
-msgstr ""
+msgstr "Jag tror vi har Ruby on Rails, och de mer populära Pythonbaserade plattformarna (TurboGears, Django, etc.)."
 
 #: data/content/using/life/michelsalim.html:73
 msgid ""
@@ -5048,14 +4937,14 @@ msgid ""
 " it into a Vala IDE (with code completion etc) by the folks who develop "
 "Shotwell. It's called Valencia and it's currently being reviewed, after "
 "which it should be in Fedora 13 and Fedora 14."
-msgstr ""
+msgstr "När det gäller kodredigering, det beror på; jag är inte fäst vid en enda redigerare.  Speciellt för utveckling för sociala media skulle jag säga att kodredigeraren man skall använda beror på vilket ramverk man använder för den kringliggande plattformen.  Om det är Java, då kan man använda Eclipse eller Netbeans (vi har med båda i våra förråd, fast om du vill installera tredjepartsfunktioner är vår Netbeans-paketering förmodligen enklare att använda; om du vill anpassa Eclipse föreslår jag att hämta den från eclipse.org).  För Python är det antingen Eclipse, Netbeans (båda har bra stöd för Python) eller — min favorit — använd ipython på konsolen, ihopkopplat med Emacs för redigering av källkoden.  ipython är ett förbättrat skal runt pythontolken.  Man får syntaxmarkeringar, kodkomplettering, etc.  Låt oss inte glömma gedit.  Vårt standardskrivbord GNOME använder ett delat bibliotek för syntaxmarkering, så gedit, Anjuta (ett GNOME-IDE) och andra program får alla stöd för samma språk.  Vi levererar ett C#-liknande språk, Vala, som används av några av våra nyckelprogram på skrivbordet (fotoredigeraren Shotwell, mikroblogglienten Pino), och det finns en riktigt bra insticksmodul till gedit som gör om den till ett Vala-IDE (med kodkomplettering etc) av folket som utvecklar Shotwell.  Den kallas Valencia och granskas för närvarande, varefter den bör ingå i Fedora 13 och Fedora 14."
 
 #: data/content/using/life/michelsalim.html:75
 msgid ""
 "So if you were to build the ultimate web development workstation in Fedora, "
 "it seems like there are a lot of options! What would <strong>you</strong> "
 "pick in terms of web framework & IDE?"
-msgstr ""
+msgstr "Så om man skall bygga den slutgiltiga arbetsstationen för webbutveckling i Fedora verkar det som det finns många alternativ!  Vad skulle <strong>du</strong> välja i termer av webbramver och IDE?"
 
 #: data/content/using/life/michelsalim.html:76
 msgid ""
@@ -5070,29 +4959,29 @@ msgid ""
 "framework is that it's the first Java-based framework I know that works just"
 " like Python / Ruby on Rails. You also don't need to manually run the "
 "compilation step, and it auto-detects changed code."
-msgstr ""
+msgstr "Jag är förtjust i Django-liknande plattformar.  De där man inte behöver känna till alla olika komponenter den består av — de skall bara *fungera* tillsammans.  Så jag skulle säga Django för Python, och om man vill ha något mer skalbart, är ramverket Play för Java/Scala riktigt häftigt.  Båda gör att man kan placera ut på Googles App Engine också, så man får gratis värd för sitt webbsystem (App Engine har två bakändar; den för Python är en lätt modifierad Django och den för Java gör i huvudsak att man kan använda sitt eget ramverk, inom vissa gränser.)  Skönheten i ramverket Play är att det är det första Java-baserade ramverket jag känner till som fungerar precis som Python / Ruby on Rails.  Man behöver inte heller manuellt köra kompileringssteget, och det upptäcker automatiskt ändrad kod."
 
 #: data/content/using/life/michelsalim.html:77
 msgid ""
 "For an IDE, I'm a Netbeans & Eclipse fan. If you're a J2EE developer, "
 "Netbeans just works with your Ant and Maven project - and you can even edit "
 "the configuration files within Netbeans."
-msgstr ""
+msgstr "Som IDE gillar jag Netbeans och Eclipse.  Om du utvecklar för J2EE fungerar Netbeans utan vidare med ditt Ant- och Mavenprojekt — och du kan till och med redigera konfigurationsfilerna med Netbeans."
 
 #: data/content/using/life/michelsalim.html:79
 msgid "Will Netbeans and Eclipse work with Django?"
-msgstr ""
+msgstr "Skulle Netbeans och Eclipse fungera med Django?"
 
 #: data/content/using/life/michelsalim.html:80
 msgid ""
 "Netbeans has good support for Python, so sure. You normally just start "
 "Django from the command-line, though, and it automatically detects whenever "
 "the code has changed so you don't need to restart your development server."
-msgstr ""
+msgstr "Netbeans har bra stöd för Python, så, javisst.  Normalt startar du dock bara Django från kommandoraden, och det upptäcker automatiskt när koden är ändrad så du behöver inte starta om din utvecklingsserver."
 
 #: data/content/using/life/michelsalim.html:82
 msgid "How do you recommend web developers use Fedora for collaboration?"
-msgstr ""
+msgstr "Hur rekommenderar du att webbutvecklare använder Fedora för att samarbeta?"
 
 #: data/content/using/life/michelsalim.html:83
 msgid ""
@@ -5101,11 +4990,11 @@ msgid ""
 "send email notifications to the developers in that project. So, if there's "
 "any problem with a particular commit we can create a thread off the commit "
 "email."
-msgstr ""
+msgstr "Vad gäller samarbete beror det på.  Epost är förmodligen fortfarande det bästa valet.  På jobbet använder vi Git till versionshantering, och vi konfigurerar ett krok efter incheckning som skickar epostnotifieringar till utvecklarna i projektet.  So om det blir några problem med en viss incheckning kan vi skapa en tråd från incheckningsbrevet."
 
 #: data/content/using/life/michelsalim.html:85
 msgid "Anything else to share with Fedora users and potential Fedora users?"
-msgstr ""
+msgstr "Något mer du vill dela med dig av till Fedoraanvändare och potentiella Fedoraanvändare?"
 
 #: data/content/using/life/michelsalim.html:86
 msgid ""
@@ -5113,21 +5002,21 @@ msgid ""
 " picking video cards myself, be careful when picking a new laptop. :) If "
 "possible, try it in the shop with a live CD or try the live CD on a friend's"
 " laptop, to make sure you'll be able to get proper 3D support."
-msgstr ""
+msgstr "Bara ett vänligt tillkännagivande att, som någon med själv riktigt dåligt omdöme när det gäller att välja videokort, var noggrann när du väljer en ny bärbar dator. :)  Om möjligt, prova den i affären med en live-CD eller prova live-CD:n på en väns bärbara dator, för att förvissa dig om att kunna få ordentligt 3D-stöd."
 
 #: data/content/using/life/michelsalim.html:89
 msgid "Thanks, Michel!"
-msgstr ""
+msgstr "Tack, Michel!"
 
 #: data/content/using/life/robynbergeron.html:7
 msgid "Fedora Project - Interview with Robyn Bergeron."
-msgstr ""
+msgstr "Fedoraprojektet — intervju med Roby Bergeron."
 
 #: data/content/using/life/robynbergeron.html:19
 msgid ""
 "Did you know Fedora's marketing materials are developed by a community-lead "
 "marketing team? Learn more."
-msgstr ""
+msgstr "Visste du att Fedoras marknadsföringsmaterial utvecklas av en marknadsföringsgrupp ledd av gemenskapen?  Ta reda på mer."
 
 #: data/content/using/life/robynbergeron.html:33
 msgid ""
@@ -5136,7 +5025,7 @@ msgid ""
 "People always wonder why I'm shovelling snow in the winter when I live in "
 "Arizona - very few realize that we also have a great high country "
 "environment, replete with pine trees and a ski resort :)"
-msgstr ""
+msgstr "Jag bor för närvarande i Flagstaff i Arizona; jag tillbringar det mesta av min tid i Phoenix, som ligger ungefär 2 söder om mig, och ungefär 5000 fot lägre.  Folk undrar alltid varför jag skottar snö på vintern när jag bor i Arizona — väldig få inser att att vi också har höghödslandskap, fyllt med granar och en skidort :)"
 
 #: data/content/using/life/robynbergeron.html:36
 msgid ""
@@ -5144,11 +5033,11 @@ msgid ""
 "goddess\" - in other words, a homemaker.  I've been in this role for about 7"
 " years; before that, I had lives as a market research analyst, a business "
 "analyst doing strategic marketing, and I am also a recovering sysadmin."
-msgstr ""
+msgstr "Jag brukar ange det som ”lokal hushållsingenjör” ”lokal gudinna” — med andra ord, en hemmafru.  Jag har haft den rollen i ungefär 7 år; innan dess levde jag som marknadsundersökningsanalytiker, en affärsanlytiker som gör strategisk marknadsföring, och jag återhämtar mig även från att varit systemadministratör."
 
 #: data/content/using/life/robynbergeron.html:39
 msgid "rbergeron - not very exciting :)"
-msgstr ""
+msgstr "rbergeron — inte så spännande :)"
 
 #: data/content/using/life/robynbergeron.html:42
 msgid ""
@@ -5158,11 +5047,11 @@ msgid ""
 "delighted to discover that there were outlets for all the knowledge I had "
 "built over the years - the writing, the sysadmin-type stuff, and of course, "
 "marketing and strategy."
-msgstr ""
+msgstr "För länge sedan, ända tillbaks när det började; jag blev inte aktivt inblandad förrän jag upptäckte marknadsföringsgruppen för lite mer än ett år sedan på sidan join.fedoraproject.org, gick med i epostlistan, och upptäckte till min förtjusning att det fanns användning för all kunskap jag byggt upp under åren — skrivandet, saker av systemadministratörstyp, och naturlitgtvis, marknadsföring och strategi."
 
 #: data/content/using/life/robynbergeron.html:44
 msgid "Can you tell us about one of the ways you use Fedora?"
-msgstr ""
+msgstr "Kan du berätta för oss om ett av de sätt du använder Fedora?"
 
 #: data/content/using/life/robynbergeron.html:45
 msgid ""
@@ -5173,7 +5062,7 @@ msgid ""
 " six, also loves the online games, but is especially in love with the "
 "SuperTux game, which is reminiscent of a certain game with two Italian "
 "plumbers whom we all know and love. :)"
-msgstr ""
+msgstr "Fedora fyller faktiskt många behov i mitt hushåll.  Min respektive använder det för sitt dagliga jobb som utvecklingsplattform; min dotter, som är åtta, älskar att använda GIMP för att göra bilder, Cheese för att ta oändliga serier av webbkamerafoton och Firefox för att göra en del av sina webbsajtbaserade läxor; min son, som är sex, älskar också spel på nätet, men gillar särskilt spelet SuperTux, som påminner om ett visst spel med två italienska rörmokare som vi alla känner till och älskar. :)"
 
 #: data/content/using/life/robynbergeron.html:47
 msgid ""
@@ -5184,11 +5073,11 @@ msgid ""
 "chatting online in IRC, Firefox for keeping up with the wiki work that needs"
 " to happen for every release, and I make good use of Open Office for making "
 "presentations for conferences."
-msgstr ""
+msgstr "För mig fyller Fedora en mängd dagliga behov; jag använder Firefox för att kolla min webbaserade epost, anteckningsblocket för att göra oändliga listor med uppgifter, empathy och pidgin för att hålla kontakt med folk via video och direktmeddelanden.  För en del av arbetet jag gör i Fedora Marketing har jag allt jag behöver — irssi för att tjattra över nätet i IRC, Firefox för att sköta arbetet med wiki:n som behöver göras för varje utgåva, och jag använder Open Office en hel del för att göra presentationer för konferenser."
 
 #: data/content/using/life/robynbergeron.html:49
 msgid "How do you use Fedora to develop and give your presentations?"
-msgstr ""
+msgstr "Hur använder du Fedora för att utveckla och göra dina presentationer?"
 
 #: data/content/using/life/robynbergeron.html:50
 msgid ""
@@ -5197,11 +5086,11 @@ msgid ""
 "plan on reusing just the diagram for non-presentation purposes - I'm a big "
 "fan of having to do things once, and the compatibility to be able to pull "
 "those diagrams into OO for a presentation is definitely a win for me."
-msgstr ""
+msgstr "Jag använder huvudsakligen OpenOffice Impress — det gör allt jag har behov av att det gör.  Jag använder ibland Inkscape för att göra diagram och dra med, särskilt om jag planerar att återanvända själva diagrammet för andra ändamål än presentationer — jag är väldigt förtjust i att bara göra saker en gång, och kompatibiliteten att kunna dra dessa diagram in i OO för en presentation är definitivt en vinst för mig."
 
 #: data/content/using/life/robynbergeron.html:52
 msgid "Where do you get templates for your presentations?"
-msgstr ""
+msgstr "Var får du tag i mallar för dina presentationer?"
 
 #: data/content/using/life/robynbergeron.html:53
 msgid ""
@@ -5211,11 +5100,11 @@ msgid ""
 "their applications, including Impress, and I use their website often to find"
 " new templates.  My favorite right now, however, is the Fedora-design-team "
 "created template."
-msgstr ""
+msgstr "Från ett antal platser; jag har använt gamla Fedorapresentationer som jag fått från andra som har lämpliga licenser och lånat deras bilddesigner.  OpenOffice har också en mängd mallar som gemenskapen bidragit med för alla sina program, inklusive Impress, och jag använder deras  webbsajt ofta för att hitta nya mallar.  Min favorit just nu är dock den mall Fedoras designteam skapat."
 
 #: data/content/using/life/robynbergeron.html:55
 msgid "Where do you get the clip art for your presentations?"
-msgstr ""
+msgstr "Var får du tag i clipart till dina presentationer?"
 
 #: data/content/using/life/robynbergeron.html:56
 #, python-format
@@ -5225,13 +5114,13 @@ msgid ""
 "I also occasionally use images or photos I find that are appropriately "
 "licensed - the search function on the Creative Commons website is really "
 "great for that."
-msgstr ""
+msgstr "Jag använder vanligen <a href=\"%s\">Open Clip Art Library</a>; det är väldigt enkelt att hämta bilder och lägga till dem till clipart-galleriet i OpenOffice.org.  Jag använder ibland även bilder eller foton jag hittar som har lämpliga licenser — sökfunktionen på Creative Commons webbsajt är riktigt bra för det."
 
 #: data/content/using/life/robynbergeron.html:58
 msgid ""
 "Do you have any other tips to share for giving awesome presentations using "
 "Fedora?"
-msgstr ""
+msgstr "Har du några andra tips att dela med dig av för att ge häftiga presentationer med Fedora?"
 
 #: data/content/using/life/robynbergeron.html:59
 msgid ""
@@ -5246,13 +5135,13 @@ msgid ""
 "as well to make sure you're talking about what is on the screen, without "
 "having to look back at it. It's much easier to keep eye contact with your "
 "audience that way, too."
-msgstr ""
+msgstr "För det första — jag älskar att ge presentationer om Fedora medan jag <strong>använder</strong> Fedora, så att folk kan se precis hur mångsidigt det är.  För det andra — jag tycker alltid om att familiarisera mig med den situation jag skall presentera i före jag sätter igång och gör det — jag gillar helt enkelt att se till att projektorn har lämpliga sladdar för min maskin.  En av de fina sakerna med OO Impress är möjligheten att ha noteringarna på skärmen på min bärbara dator, medan mina bilder visas på projektorn — det hjälper verkligen till för att verka mer organiserad, och hjälper faktiskt till en hel del under presentationen för att vara säker på att man talar om det som syns på bilden, utan att behöva vända sig om och titta på den.  Det är mycket enklare att behålla ögonkontakt med sin publik på det sättet också."
 
 #: data/content/using/life/robynbergeron.html:61
 msgid ""
 "If I have a co-worker who doesn't use Fedora or OpenOffice.org, can they "
 "open up my presentation files?"
-msgstr ""
+msgstr "Om jag har en medarbetare som inte använder Fedora eller OpenOffice.org, kan de öppna mina presentationsfiler?"
 
 #: data/content/using/life/robynbergeron.html:62
 msgid ""
@@ -5261,11 +5150,11 @@ msgid ""
 "any other presentation software installed.  You can also save presentations "
 "in a .ppt format, if you know that your recipient is using \"the other\" "
 "presentation software."
-msgstr ""
+msgstr "Javisst!  Jag tycker ofta att spara presentationerna i .pdf-format fungerar bäst — särskilt i fall när folk kanske inte har Open Office eller någon annan presentationsprogramvara installerad.  Man kan också spara presentationer i ett .ppt-format, om man vet att mottagaren använder ”det andra” presentationsprogrammet."
 
 #: data/content/using/life/robynbergeron.html:64
 msgid "Can you tell us about a recent presentation you gave using Fedora?"
-msgstr ""
+msgstr "Kan du berätta för oss om en presentation du nyligen gav där du använde Fedora?"
 
 #: data/content/using/life/robynbergeron.html:65
 msgid ""
@@ -5275,36 +5164,36 @@ msgid ""
 "of the presentation was actually talking about how presentations are a great"
 " way to market - and even showed off how cool it was that I was using a "
 "community-designed template for my actual presentation."
-msgstr ""
+msgstr "Visst!  Jag talade nyligen om gemenskapsmarknadsföring på Ohio LinuxFest i början av september — jag talade om de olika sätt marknadsföring kan göras på öppna, transparenta sätt i en FOSS-gemenskap, stor eller liten.  Jag tror den bästa delen av presentationen faktiskt var att tala om hur presentationer är ett utmärkt sätt att marknadsföra — och skröt även om hur fräckt det var att jag använde en mall skapad av gemenskapen för min presentation."
 
 #: data/content/using/life/robynbergeron.html:68
 msgid "Thanks, Robyn!"
-msgstr ""
+msgstr "Tack, Robyn!"
 
 #: data/content/using/life/stevemilner.html:7
 msgid "Fedora Project - Interview with Steve Milner."
-msgstr ""
+msgstr "Fedoraprojektet — intervju med Steve Milner."
 
 #: data/content/using/life/stevemilner.html:19
 msgid ""
 "Did you know there's a Fedora Security Lab edition available specifically "
 "for tracking down security holes? Learn more."
-msgstr ""
+msgstr "Visste du att det finns en säkerhetslaboratorieutgåva av Fedora tillgänglig särskilt för att spåra säkerhetshål?  Ta reda på mer."
 
 #: data/content/using/life/stevemilner.html:33
 msgid "All over the USA. Currently live in Raleigh."
-msgstr ""
+msgstr "Från hela USA.  Bor för närvarande i Raleigh."
 
 #: data/content/using/life/stevemilner.html:36
 msgid "Security Analyst/Developer."
-msgstr ""
+msgstr "Säkerhetsanalytiker/utvecklare."
 
 #: data/content/using/life/stevemilner.html:39
 msgid ""
 "Ashcrow. When I was in middle school I really liked The Crow. I would use "
 "many different Crow references in my IRC nicks but ashcrow was the one that "
 "I ended up sticking with."
-msgstr ""
+msgstr "Ashcrow.  När jag gick i middle school gillade jag verkligen The Crow.  Jag använde många olika Crow-referenser i mina IRC-smeknamn men ashcrow var det jag i slutänden behöll."
 
 #: data/content/using/life/stevemilner.html:42
 msgid ""
@@ -5313,11 +5202,11 @@ msgid ""
 "Fedora Core 2 a chance. I honestly thought Fedora Core 2 was just OK at the "
 "time but Fedora Core 3 impressed me so much that I decided to put it on my "
 "parents machine. My Mom really liked it!"
-msgstr ""
+msgstr "Första gången jag använde Fedora var det Fedora Core 2.  På den tiden var jag en ganska inbiten Debiananvändare.  Eftersom jag hade använt Red Hat Linux tidigare bestämde jag mig för att ge Fedora Core 2 en chans.  Jag tyckte ärligt talat att Fedora Core 2 bara var OK vid den tiden men Fedora Core 3 imponerade på mig så mycket att jag bestämde mig för att lägga det på mina föräldrars maskin.  Min mamma gillade det verkligen!"
 
 #: data/content/using/life/stevemilner.html:44
 msgid "How did you first become a developer?"
-msgstr ""
+msgstr "Hur blev du en utvecklare från början?"
 
 #: data/content/using/life/stevemilner.html:45
 msgid ""
@@ -5328,13 +5217,13 @@ msgid ""
 "Free and Open Source coders at work. From there I started writing code and "
 "submitting patches to projects and ended up being hired at a small yet "
 "before it's time web app development firm in Orlando, Florida."
-msgstr ""
+msgstr "Genom att läsa kod.  I high school var jag väldigt intresserad av kod men de flesta programmeringsböckerna var för dyra för mig.  Jag minns att jag fick ett exemplar av en gammal bok om C i mitten av 90-talet som hade en tillhörande 5¼-tums floppy som lärde mig en del.  Det viktigaste som lärde mig att koda var att se på kodare av fri och öppen källkod i arbete.  Därifrån började jag skriva kod och skicka in patchar till projekt och hamnade i slutänden på ett litet men före sin tid webbutvecklingsföretag i Orlando i Florida."
 
 #: data/content/using/life/stevemilner.html:47
 msgid ""
 "Can you explain what security auditing means? How did you get into security "
 "auditing?"
-msgstr ""
+msgstr "Kan du förklara vad säkerhetsrevision betyder?  Hur hamnade du inom säkerhetsrevision?"
 
 #: data/content/using/life/stevemilner.html:48
 #, python-format
@@ -5344,13 +5233,13 @@ msgid ""
 "developers with information on how to fix the problems. I primarily do web "
 "application security audits and <a href=\"%s\">pentests</a> (Penetration "
 "tests.)"
-msgstr ""
+msgstr "I ett nötskal är säkerhetsrevsion att leta efter säkerhetsproblem i ett program eller system.  När de hittas, noteras sakerna och tas till utvecklarna med information om hur problemen kan rättas.  Jag gör huvudsakligen säkerhetsrevsioner av webbprogram och <a href=\\\"%s\\\">pentests</a> (penetration tests, intrångstester.)"
 
 #: data/content/using/life/stevemilner.html:50
 msgid ""
 "What kinds of issues are you typically looking for when performing a "
 "security audit?"
-msgstr ""
+msgstr "Vilken sorts fel letar du typiskt efter när du utför en säkerhetsrevision?"
 
 #: data/content/using/life/stevemilner.html:51
 #, python-format
@@ -5361,29 +5250,29 @@ msgid ""
 "site request forgeries and unvalidated redirects. After looking for the most"
 " common I start looking deeper into the application to find logic issues, "
 "error messages, etc.. which will help uncover other security issues."
-msgstr ""
+msgstr "Den första omgången fel jag letar efter är samma som är listade på <a href=\"%s\">OWASP:s top-tio</a>.  Av de 10 listade börjar jag med att leta efter vad jag har sett är de allra vanligaste: injektioner, korssajtskriptning, begärandeförfalskningar mellan sajter och ovaliderade omdirigeringar.  Efter att ha letat efter de vanligaste börjar jag leta djupare in i programmen för att hitta logiska fel, felmeddelanden, etc. som kan hjälpa till att upptäcka andra säkerhetsfel."
 
 #: data/content/using/life/stevemilner.html:53
 msgid ""
 "Tell us which 3 applications in Fedora you find most helpful for security "
 "auditing work?"
-msgstr ""
+msgstr "Berätta för oss vilka 3 program i Fedora du tycker hjälper till mest med arbetet med en säkerhetsrevsion?"
 
 #: data/content/using/life/stevemilner.html:54
 msgid "Nmap, ratproxy and python."
-msgstr ""
+msgstr "Nmap, ratproxy och python."
 
 #: data/content/using/life/stevemilner.html:56
 msgid ""
 "Python? How do you use python to test out the security of web applications?"
-msgstr ""
+msgstr "Python?  Hur använder du python för att testa säkerheten hos webbprogram?"
 
 #: data/content/using/life/stevemilner.html:57
 msgid ""
 "When doing an audit it's important to be able to write up quick proof-of-"
 "concept attacks. Python has a plethora of modules which make doing POC "
 "attacks a joy. To list a few:"
-msgstr ""
+msgstr "När man gör en säkerhetsrevsion är det viktigt att kunna skriva ihop ett idébevis [proof of concept] på attacken.  Python har en mängd moduler som gör det till ett nöje att göra ett idébevis av attacken.  För att räkna upp några:"
 
 #: data/content/using/life/stevemilner.html:65
 msgid ""
@@ -5391,7 +5280,7 @@ msgid ""
 "quick variations on POC attacks. Using Python's modules as well as general "
 "security tools being controlled by Python easily make the programming "
 "language an indispensable tool."
-msgstr ""
+msgstr "ipython och bpython är också förträffliga miljöer för att koda löpande för att prova snabba variationer av idébevis av attacker.  Att kunna använda Pythons moduler såväl som allmänna säkerhetsverktyg som lätt styrs av Python gör programmeringsspråket till ett oundgängligt verktyg."
 
 #: data/content/using/life/stevemilner.html:67
 msgid ""
@@ -5399,7 +5288,7 @@ msgid ""
 "machines that are not running Fedora? Is it something that you "
 "automatically, constantly run to check for issues, or do you run it manually"
 " to answer specific questions?"
-msgstr ""
+msgstr "Berätta lite för oss om nmap.  Hur fungerar det?  Kan man använda det för att analysera maskiner som inte kör Fedora?  Är det något som man kör automatiskt, konstand för att leta efter fel, eller kör man det manuellt för att svara på specifika frågor?"
 
 #: data/content/using/life/stevemilner.html:68
 #, python-format
@@ -5407,13 +5296,13 @@ msgid ""
 "Nmap (<a href=\"%s\">http://nmap.org/</a>) is a network exploration tool. "
 "Nmap scans a host or set of hosts and responds back with information. It is "
 "commonly used as a general portscanner."
-msgstr ""
+msgstr "Nmap (<a href=\"%s\">http://nmap.org/</a>) är ett verktyg för att utforska nätverk.  Nmap skannar en värd eller uppsättning värdar och återkommer med information.  Det används ofta som en allmän portskanner."
 
 #: data/content/using/life/stevemilner.html:69
 msgid ""
 "Nmap can find or scan pretty much any machine on the network. I've used it "
 "in the past when auditing Windows or OS X based machines as well."
-msgstr ""
+msgstr "Nmap kan hitta eller skanna i stort sett vilken maskin som helst på nätverket.  Jag har tidigare använt det när jag reviderade Windows- eller OS X-baserade maskiner också."
 
 #: data/content/using/life/stevemilner.html:70
 msgid ""
@@ -5421,14 +5310,14 @@ msgid ""
 "scripts most of which come directly from the Nmap project itself. I usually "
 "use it to check firewall status, open services of a system along with said "
 "service versions. It helps get a recon baseline."
-msgstr ""
+msgstr "Jag använder Nmap som en del i mina revisioner tillsammans med skript i NSE (Nmap scripting engine, Nmaps skriptmotor) där de flesta kommer direkt från själva Nmapprojektet.  Jag använder det vanligen för att kontrollera status på brandväggar, öppna tjänster på ett system tillsammans med de tjänsternas versioner.  Det hjälper utgångspunkt för spaningen."
 
 #: data/content/using/life/stevemilner.html:72
 msgid ""
 "What does ratproxy do? Can it analyze systems that aren't running Fedora? "
 "Can it analyze systems that don't run Linux? Is it a program you run "
 "manually or does it constantly run in the background?"
-msgstr ""
+msgstr "Vad gör ratproxy?  Kan det analysera system som inte kör Fedora?  Kan det analysera system som inte kör Linux?  Är det ett program man kör manuellt eller kör det konstant i bakgrunden?"
 
 #: data/content/using/life/stevemilner.html:73
 #, python-format
@@ -5439,13 +5328,13 @@ msgid ""
 "through the site. It can analyze most any web application no matter what OS "
 "it's running on. Since Ratproxy is passive it can be used with ajax "
 "applications."
-msgstr ""
+msgstr "Ratproxy (<a href=\"%s\">http://code.google.com/p/ratproxy/</a>) är en passiv webbprogramsrevidieringsproxy.  Det sitter mellan ens webbläsare och webbprogrammet man reviderar och spelar in information allteftersom man man rör sig igenom sajten.  Det kan analysera de i stort sett alla webbprogram oavsett vilket OS det kör på.  Eftersom Ratproxy är passiv kan den användas med ajax-program."
 
 #: data/content/using/life/stevemilner.html:75
 msgid ""
 "Tell us about some interesting desktop customizations you've done to your "
 "Fedora desktop to help your security auditing workflow."
-msgstr ""
+msgstr "Berätta för oss om några intressanta skrivbordsanpassningar du har gjort i ditt Fedoraskrivbord för att hjälpa till i arbetsflöded i dina säkerhetsrevisioner."
 
 #: data/content/using/life/stevemilner.html:76
 msgid ""
@@ -5454,155 +5343,155 @@ msgid ""
 "personal machines and love it! If I can, I try to run most everything "
 "through the terminal. I find using terminal applications much easier "
 "especially since I can run it all through byobu/screen."
-msgstr ""
+msgstr "Jag använder en uppsättning med två maskiner/tre monitorer med GNOME och synergy.  Jag ser verkligen fram emot att GNOME Shell skall anses stabilt.  Jag använder det på mina personliga maskiner och älskar det!  Im jag kan försöker jag köra i stort sett allt via terminalen.  Jag tycker det är mycket enklare att använda terminalprogram särskilt eftersom jag kan köra alltihop via byobu/screen."
 
 #: data/content/using/life/stevemilner.html:78
 msgid "Can you tell us about an exploit you recently uncovered using Fedora?"
-msgstr ""
+msgstr "Kan du berätta om någon utnyttjande av fel som du nyligen har hittat med hjälp av Fedora?"
 
 #: data/content/using/life/stevemilner.html:79
 msgid ""
 "Chaining together an unvalidated redirect and a cross-site request forgery I"
 " crafted a link which would do the following:"
-msgstr ""
+msgstr "Genom att koppla ihop en ovaliderad omdirigering och en begärandeförfalskning mellan sajter skapade jag en länk som kunde göra följande:"
 
 #: data/content/using/life/stevemilner.html:81
 msgid "Allow the user to login normally"
-msgstr ""
+msgstr "Tillåt användaren att logga in normalt"
 
 #: data/content/using/life/stevemilner.html:82
 msgid "After login, user would be forwarded to my 'malicious' site"
-msgstr ""
+msgstr "Efter inloggningen skulle användaren vidarebefodras till men ”skadliga” sajt"
 
 #: data/content/using/life/stevemilner.html:83
 msgid ""
 "The site would do a javascript post into the original application and "
 "perform actions as the user which could include things such as adding or "
 "modifying accounts."
-msgstr ""
+msgstr "Sajten skulle göra en javaskript-postning in i orginalprogrammet och utföra åtgärder som användaren vilket kan innefatta saker såsom att lägga till eller skapa konton."
 
 #: data/content/using/life/stevemilner.html:84
 msgid ""
 "The user would then be forwarded back to the original application as if "
 "nothing happened."
-msgstr ""
+msgstr "Användaren skulle sedan vidarebefodras tillbaka till orginalprogrammet som om inget hade hänt."
 
 #: data/content/using/life/stevemilner.html:87
 msgid ""
 "From your experience discovering security holes in applications, do you have"
 " any single trick or tip for developers looking to avoid having security "
 "exploits in their code?"
-msgstr ""
+msgstr "Baserat på din erfarenhet i att upptäcka säkerhetshål i program, har du något särskilt trick eller tips för utvecklare som försöker undvika att utnyttjande av säkerhetsfel i sin kod?"
 
 #: data/content/using/life/stevemilner.html:88
 msgid ""
 "Don't trust your users! You should write code with expectation that there "
 "will be at least one malicious user who will stop at nothing to find issues "
 "in your application."
-msgstr ""
+msgstr "Lita inte på dina användare!  Man skall skriva kod med antagandet att det kommer finnas åtminstone en användare med ont uppsåt som inte kommer väja för något för att hitta fel i ens program."
 
 #: data/content/using/life/stevemilner.html:90
 msgid "Do you have any tips for Fedora users in keeping their systems safe?"
-msgstr ""
+msgstr "Har du några tips till Fedoraanvändare i att hålla sina system säkra?"
 
 #: data/content/using/life/stevemilner.html:91
 msgid ""
 "Don't forget the basics! Keep updated, use sane firewall rules (and use the "
 "firewall), turn off services you don't need and use sane passwords."
-msgstr ""
+msgstr "Glöm inte grunderna!  Håll allt uppdaterat, använd vettiga brandväggsregler (och använd brandväggen, slå av tjänster du inte behöver och använd vettiga lösenord."
 
 #: data/content/using/life/stevemilner.html:93
 msgid "Thanks, Steve!"
-msgstr ""
+msgstr "Tack, Steve!"
 
 #: data/content/using/life/thomascameron.html:7
 msgid "Fedora Project - Interview with Thomas Cameron."
-msgstr ""
+msgstr "Fedoraprojektet — intervju med Thomas Cameron."
 
 #: data/content/using/life/thomascameron.html:19
 msgid ""
 "Did you know there's an educational version of Fedora, just for kids? Learn "
 "more."
-msgstr ""
+msgstr "Visste du att det finns en utbildningsverion av Fedora, bara för barn?  Ta reda på mer."
 
 #: data/content/using/life/thomascameron.html:34
 msgid "Where are you and your daughter from?"
-msgstr ""
+msgstr "Var kommer du och din dotter ifrån?"
 
 #: data/content/using/life/thomascameron.html:35
 msgid "We're from Austin, Texas!"
-msgstr ""
+msgstr "Vi kommer från Austin i Texas!"
 
 #: data/content/using/life/thomascameron.html:37
 msgid "What does your daughter want to be when she grows up?"
-msgstr ""
+msgstr "Vad vill din dotter bli när hon blir stor?"
 
 #: data/content/using/life/thomascameron.html:38
 msgid "An artist."
-msgstr ""
+msgstr "En artist."
 
 #: data/content/using/life/thomascameron.html:40
 msgid "Do you think she'll use Fedora when she grows up?"
-msgstr ""
+msgstr "Tror du hon kommer använda Fedora när hon blir stor?"
 
 #: data/content/using/life/thomascameron.html:41
 msgid "Yes!"
-msgstr ""
+msgstr "Ja!"
 
 #: data/content/using/life/thomascameron.html:43
 msgid "When did your daughter first start using Fedora?"
-msgstr ""
+msgstr "När började din dotter använda Fedora för första gången?"
 
 #: data/content/using/life/thomascameron.html:44
 msgid "Around the time she was three years old."
-msgstr ""
+msgstr "När hon var ungefär tre år gammal."
 
 #: data/content/using/life/thomascameron.html:46
 msgid "What are your daughter's favorite things to do in Fedora?"
-msgstr ""
+msgstr "Vad är din dotters favoriter att göra i Fedora?"
 
 #: data/content/using/life/thomascameron.html:47
 #, python-format
 msgid ""
 "She has a lot of fun painting in Tux Paint and watching videos on <a "
 "href=\"%s\">YouTube</a>."
-msgstr ""
+msgstr "Hon har mycket roligt med att måla i Tux Paint och titta på videor på <a href=\"%s\">YouTube</a>."
 
 #: data/content/using/life/thomascameron.html:49
 msgid "What are your daughter's picks for the best games in Fedora?"
-msgstr ""
+msgstr "Vilka är din dotters val av de bästa spelen i Fedora?"
 
 #: data/content/using/life/thomascameron.html:50
 msgid "Here's her top 5 list!"
-msgstr ""
+msgstr "Här är hennes topp-5-lista!"
 
 #: data/content/using/life/thomascameron.html:52
 msgid "AisleRiot Solitaire"
-msgstr ""
+msgstr "AisleRiot patiens"
 
 #: data/content/using/life/thomascameron.html:53
 msgid "KFourInline (it's similar to the Connect-Four board game.)"
-msgstr ""
+msgstr "KFourInline (det liknar brädspelet fyra-i-rad.)"
 
 #: data/content/using/life/thomascameron.html:54
 msgid "Kolf (mini-golf!)"
-msgstr ""
+msgstr "Kolf (minigolf!)"
 
 #: data/content/using/life/thomascameron.html:55
 msgid "SameGnome (a color-based puzzle game.)"
-msgstr ""
+msgstr "SameGnome (ett färgbaserat pusselspel.)"
 
 #: data/content/using/life/thomascameron.html:56
 msgid "Potato Guy (a dress-up doll game.)"
-msgstr ""
+msgstr "Potato Guy (ett klä-på-en-docka-spel.)"
 
 #: data/content/using/life/thomascameron.html:58
 msgid "Her favorite is SameGnome."
-msgstr ""
+msgstr "Hennes favorit är SameGnome."
 
 #: data/content/using/life/thomascameron.html:61
 msgid "What are some of the online games she plays in Fedora?"
-msgstr ""
+msgstr "Vilka är några av nätspelen hon spelar med Fedora?"
 
 #: data/content/using/life/thomascameron.html:62
 #, python-format
@@ -5611,51 +5500,51 @@ msgid ""
 "web games for girls. She also likes a game called 'Max Damage 2' at <a "
 "href=\"%s\">PlayHub.com</a>, where you shoot these little green balls. She's"
 " stuck on level 37!"
-msgstr ""
+msgstr "Hon gillar verkligen <a href=\"%s\">GirlGames.com</a> — de har webbspel av hög kvalitet för flickor.  Hon gillar också ett spel som kallas ”Max Damage 2” på <a href=\"%s\">PlayHub.com</a>, där man skjuter små gröna bollar.  Hon har fastnat på nivå 37!"
 
 #: data/content/using/life/thomascameron.html:64
 msgid ""
 "Your daughter seems very interested in art - what drawing applications in "
 "Fedora would you recommend to kids based on her experience?"
-msgstr ""
+msgstr "Din dotter verkar väldigt intresserad av konst — vilka ritprogram i Fedora skulle du rekommendera för barn utgående från hennes erfarenheter?"
 
 #: data/content/using/life/thomascameron.html:65
 msgid "Yeah! She uses TuxPaint."
-msgstr ""
+msgstr "Ja!  Hon använder TuxPaint."
 
 #: data/content/using/life/thomascameron.html:67
 msgid ""
 "What applications in Fedora does your daughter show to her friends who don't"
 " use Fedora?"
-msgstr ""
+msgstr "Vilka program i Fedora visar din dotter för sina vänner som inte använder Fedora?"
 
 #: data/content/using/life/thomascameron.html:68
 msgid "SameGnome or Solitaire!"
-msgstr ""
+msgstr "SameGnome eller patiens!"
 
 #: data/content/using/life/thomascameron.html:71
 msgid "Thanks, Thomas!"
-msgstr ""
+msgstr "Tack, Thomas!"
 
 #: data/content/using/tutorials/cheese.html:7
 msgid "Fedora Project - Using Cheese for photo tricks."
-msgstr ""
+msgstr "Fedoraprojektet — använda Cheese för fototrick."
 
 #: data/content/using/tutorials/cheese.html:17
 msgid ""
 "Did you know you can use your webcam in Fedora to have video chats over "
 "GTalk as well? Learn more."
-msgstr ""
+msgstr "Visste du att du kan använda din webbkamera i Fedora för att ha videosamtal via GTalk också?  Ta reda på mer."
 
 #: data/content/using/tutorials/cheese.html:29
 msgid "The perfect setup for your party"
-msgstr ""
+msgstr "Det perfekta arrangemanget för din fest"
 
 #: data/content/using/tutorials/cheese.html:31
 msgid ""
 "You've got a big party planned, and want something fun & unique to offer "
 "your guests. Why not set up a photobooth with Fedora?"
-msgstr ""
+msgstr "Du har planerat en stor fest, och vill ha något roligt och unikt att erbjuda dina gäster.  Varför inte göra i ordning ett fotobås med Fedora?"
 
 #: data/content/using/tutorials/cheese.html:32
 #, python-format
@@ -5666,20 +5555,20 @@ msgid ""
 "href=\"%s\">here is one list</a>, and <a href=\"%s\">here is another</a>. If"
 " you don't have a webcam, you want to be careful to buy a supported model "
 "when you go to the store and these lists are great resources."
-msgstr ""
+msgstr "Programmet vi kommer använda för att göra detta kallas <a href=\"%s\">Cheese</a>.  Du behöver också ha en webbkamera ansluten till din dator.  Det finns många webbkameror som fungerar direkt i Fedora; <a href=\"%s\">här är en lista</a> och <a href=\"%s\">här är en annan</a>.  Om du inte har en webbkamera bör du vara noggrann att köpa en modell som stödjs när du går till affären och dessa listor är utmärkta resurser."
 
 #: data/content/using/tutorials/cheese.html:33
 msgid ""
-"You can open Cheese up by going to <strong>Applications → Sounds & Video → "
-"Cheese Webcam Booth</strong> in the main desktop menu. In the "
-"<strong>Cheese</strong> application window, select the <strong>Cheese → "
-"Fullscreen</strong> menu item to set Cheese fullscreen. Leave cheese set up "
-"this way at your party and let folks have fun!"
+"You can open <strong>Cheese</strong>up by simply typing "
+"<strong>'cheese'</strong> in the <strong>Activities menu search "
+"box</strong>. In the <strong>top panel</strong>, select the <strong>Cheese →"
+" Fullscreen</strong> menu item to set Cheese fullscreen. Leave cheese set up"
+" this way at your party and let folks have fun!"
 msgstr ""
 
 #: data/content/using/tutorials/cheese.html:35
 msgid "The basics"
-msgstr ""
+msgstr "Grunderna"
 
 #: data/content/using/tutorials/cheese.html:36
 msgid ""
@@ -5687,7 +5576,7 @@ msgid ""
 "<strong>video</strong>. You can switch between these two modes in the lower "
 "left corner of the screen - the photo icon is for photos, the movie reel "
 "icon for video."
-msgstr ""
+msgstr "Cheese låter dig både ta <strong>kort</strong> och <strong>video</strong>.  Du kan växla mellan dessa två lägen i det nedre vänstra hörnet på skärmen — fotoikonen är för kort, och filmrullen är för video."
 
 #: data/content/using/tutorials/cheese.html:37
 msgid ""
@@ -5696,11 +5585,11 @@ msgid ""
 "snapshot (or to start recording a video.) Thumbnails of all the photos and "
 "videos you've created appear in the little strip along the bottom of the "
 "camera view (see the screen on the right.)"
-msgstr ""
+msgstr "Du kan trycka på mellanslagstangenten på ditt tangentbord eller knappen ”Ta ett kort” (eller ”Börja inspelning” för video) mitt på skärmen för att ta ett kort (eller påbörja inspelning av en video.)  Miniatyrbilder av alla foton och videor du har skapat dyker upp i den lilla remsan längs nederkanten av kameravyn (se skärmen till höger.)"
 
 #: data/content/using/tutorials/cheese.html:39
 msgid "Sharing your photos and videos"
-msgstr ""
+msgstr "Dela dina foton och videor"
 
 #: data/content/using/tutorials/cheese.html:40
 msgid ""
@@ -5710,111 +5599,111 @@ msgid ""
 "'Move to Trash'. You can save a photo or video from Cheese onto your hard "
 "drive or a USB key by right-clicking its thumbnail in the bottom strip and "
 "selecting 'Save As' in the menu..."
-msgstr ""
+msgstr "När du har tagit en uppsättning kort, kanske vid slutet av din fest, kan du titta på bilderna genom att dubbelklicka på varje för att se det i helskärm.  Om du skulle vilja radera ett kort eller en video kan du högerklicka på det och välja ”Flytta till papperskorgen”.  Du kan spara ett kort eller en video från Cheese på din hårddisk eller en USB-nyckel genom att högerklicka på dess miniatyrbild i remsan längst ner och välja ”Spara som” i menyn …"
 
 #: data/content/using/tutorials/cheese.html:41
 #, python-format
 msgid ""
-"Sharing the photos and videos you've taken is really easy. Right click the "
-"photo or video you'd like to send in the strip along the bottom of cheese, "
-"and select 'Send to' to email it, or 'Export to Flickr' to upload it to a <a"
-" href=\"%s\">Flickr account</a>."
+"Sharing the photos and videos you've taken is really easy. You can use "
+"<strong>Shotwell</strong> to enhance/edit and then upload your photos to "
+"your <a href=\"%s\">Flickr</a>, <a href=\"%s\">Facebook</a>, <a "
+"href=\"%s\">Google Photos</a> or <a href=\"%s\">Piwigo account</a>. "
 msgstr ""
 
 #: data/content/using/tutorials/cheese.html:43
 msgid "Apply crazy effects to your photos!"
-msgstr ""
+msgstr "Använd galna effekter på dina kort!"
 
 #: data/content/using/tutorials/cheese.html:45
 msgid ""
 "What makes Cheese really fun is its set of effects. You can use and even "
 "combine these to add a bit of fun and sparkle to your photos! Here's the "
 "full list:"
-msgstr ""
+msgstr "Det som gör Cheese riktig roligt är dess uppsättning av effekter.  Du kan använda och till och med kombinera dessa för att lägga till en del kul och glitter till dina kort!  Här är den fullständiga listan:"
 
 #: data/content/using/tutorials/cheese.html:47
 msgid ""
 "<strong>No Effect</strong> - this clears any applied effects for a normal, "
 "boring photo."
-msgstr ""
+msgstr "<strong>Ingen effekt</strong> — detta nollställer alla tidigare använda effekter för att få ett vanligt, tråkigt kort."
 
 #: data/content/using/tutorials/cheese.html:48
 msgid ""
 "<strong>Mauve</strong> - as you might guess, this tints people in the photos"
 " to a nice mauve / pink color!"
-msgstr ""
+msgstr "<strong>Lila</strong> — som du kanske gissar färgar detta folk på korten med en trevlig lila / skär färg!"
 
 #: data/content/using/tutorials/cheese.html:49
 msgid ""
 "<strong>Noir/Blanc</strong> - star in your own black & white movie using "
 "this effect!"
-msgstr ""
+msgstr "<strong>Noir/Blanc</strong> — var en stjärna i din egen svartvita film med denna effekt!"
 
 #: data/content/using/tutorials/cheese.html:50
 msgid ""
 "<strong>Saturation</strong> - the saturation effect amps up the color in the"
 " photo, making the colors in the photo much bolder and vibrant."
-msgstr ""
+msgstr "<strong>Mättnad</strong> — mättnadseffekten förstärker färgerna i kortet, den gör färgerna i kortet mycket starkare och mer levande."
 
 #: data/content/using/tutorials/cheese.html:51
 msgid ""
 "<strong>Hulk</strong> - This effect will turn you and your friends into the "
 "Incredible Hulk! Hulk smash!!!! Don't smash the camera though, the green is "
 "only an effect!"
-msgstr ""
+msgstr "<strong>Hulk</strong> — denna effekt gör dig och dina vänner till den otroliga Huken!  Hulk krossa!!!  Slå dock inte sönder kameran, det gröna är bara en effekt!"
 
 #: data/content/using/tutorials/cheese.html:52
 msgid ""
 "<strong>Vertical Flip</strong> - dance on the ceiling with this fun effect."
-msgstr ""
+msgstr "<strong>Vertikal vändning</strong> — dansa på taket med denna roliga effekt."
 
 #: data/content/using/tutorials/cheese.html:53
 msgid ""
 "<strong>Horizontal Flip</strong> - make a mirror image of what the camera "
 "sees!"
-msgstr ""
+msgstr "<strong>Horisontell vändning</strong> — gör en spegelbild av det kameran ser!"
 
 #: data/content/using/tutorials/cheese.html:54
 msgid ""
 "<strong>Shagadelic</strong> - everything is spinning... and colorful... is "
 "this a dream?"
-msgstr ""
+msgstr "<strong>Grällt</strong> — allting snurrar … och är färgrikt … är det en dröm?"
 
 #: data/content/using/tutorials/cheese.html:55
 msgid ""
 "<strong>Vertigo</strong> - with this effect, your movements leave ghostly "
 "trails in the final image."
-msgstr ""
+msgstr "<strong>Yrsel</strong> — med denna effekt lämnar dina rörelser spöklika spår i den slutliga bilden."
 
 #: data/content/using/tutorials/cheese.html:56
 msgid ""
 "<strong>Edge</strong> - this effect makes everyone seems as if they are thin"
 " neon, or drawn in chalk on a chalkboard."
-msgstr ""
+msgstr "<strong>Kant</strong> — denna effekt gör att alla ser ut som om de är tunt neon, eller ritade med krita på en griffeltavla."
 
 #: data/content/using/tutorials/cheese.html:57
 msgid ""
 "<strong>Dice</strong> - as if you were looking through patterned glass, this"
 " effect dices up your image!"
-msgstr ""
+msgstr "<strong>Stycka</strong> — som om du tittade genom mönstrat glas delar denna effekt upp din bild!"
 
 #: data/content/using/tutorials/cheese.html:58
 msgid ""
 "<strong>Warp</strong> - my, what a big nose you have - one false move and "
 "your nose disappears and your eyes grow huge! This effect warps your image."
-msgstr ""
+msgstr "<strong>Vräng</strong> — oj, vilken stor näsa du har — ett snedsteg och din näsa försvinner och dina ögon blir jättelika!  Denna effekt förvränger din bild."
 
 #: data/content/using/tutorials/cheese.html:62
 #: data/content/using/tutorials/gnote.html:91
 #: data/content/using/tutorials/launcher.html:49
 msgid "Enjoy and share!"
-msgstr ""
+msgstr "Njut och dela!"
 
 #: data/content/using/tutorials/cheese.html:64
 msgid ""
 "Now you have a fun idea to try out for your next party! Have fun, and be "
 "sure to share these tips you learned with others!"
-msgstr ""
+msgstr "Nu har du en rolig idé att prova på din nästa fest!  Ha roligt, och se till att dela dessa tips du fått med andra!"
 
 #: data/content/using/tutorials/cheese.html:66
 #: data/content/using/tutorials/gnote.html:96
@@ -5824,13 +5713,13 @@ msgstr "&#8592; Läs om fler sätt att använda Fedora!"
 
 #: data/content/using/tutorials/gnote.html:7
 msgid "Fedora Project - Using Gnote to unclutter your life."
-msgstr ""
+msgstr "Fedoraprojektet — att använda Gnote för att ordna upp ditt liv."
 
 #: data/content/using/tutorials/gnote.html:17
 msgid ""
 "Did you know you can use the Hamster time-tracking tool in Fedora to help "
 "manage the time you spend on tasks? Learn more."
-msgstr ""
+msgstr "Visste du att du kan använda tidloggningsverktyget Hamster i Fedora för att hjälpa till att hantera tiden du lägger på uppgifter?  Ta reda på mer."
 
 #: data/content/using/tutorials/gnote.html:28
 msgid ""
@@ -5838,11 +5727,11 @@ msgid ""
 "included installation instructions here. To start using Gnote, simply click "
 "on the yellow post-it note icon that appears in your desktop panel, as shown"
 " here."
-msgstr ""
+msgstr "Gnote bör komma förinstallerat i din Fedorainstallation, så vi har inte tagit med några installationsinstruktioner här.  För att börja använda Gnote klickar man helt enkelt på den gula post-it-lapp-ikonen som dyker upp i din skrivbordspanel, som syns här."
 
 #: data/content/using/tutorials/gnote.html:30
 msgid "1. Keep daily and master To-Do lists"
-msgstr ""
+msgstr "1. Ha dagliga och övergripande att-göra-listor"
 
 #: data/content/using/tutorials/gnote.html:31
 msgid ""
@@ -5852,7 +5741,7 @@ msgid ""
 "advocated in <em>Getting Things Done</em> is that you end up with a few very"
 " long lists that can be really de-motivating to look at - all that stuff in "
 "a big, long list can be overwhelming."
-msgstr ""
+msgstr "Du kanske har läst några böcker om att organisera sig, som <em>Gettings Things Done</em> av David Allen, som rekommenderar att ha listor över alla saker man har att ta  hand om.  Ett problem jag upplevt när jag använt systemet som förespråkas i <em>Getting Things Done</em> är att du slutar med några få väldigt långa listor som kan vara väldigt demotivierande att titta på — alla de grejorna i en stor, lång lista kan vara överväldigande."
 
 #: data/content/using/tutorials/gnote.html:32
 msgid ""
@@ -5864,11 +5753,11 @@ msgid ""
 "whole lot less de-motivating, because you're accomplishing tasks off of your"
 " separately-stored master list, but in a way that shelters you from the "
 "overwhelming amount of tasks you haven't slated to work on today!"
-msgstr ""
+msgstr "Dock, genom att använda Gnote kan man lagra en fullständig (och lång) ”att-göra”-huvudlista, en fullständig ”väntar-på”-lista över saker som du väntar att någon annan skall göra något med, och en ”någon-gång”- eller ”knepigt”-lista över saker man skulle vilja göra någon gång — och man kan också lagra dagliga ”att-göra”-listor som separerar ut en väldigt liten, hanterbar grupp från dina längre huvudlistor.  Detta kan vara mycket mindre demotivierande, för man åstadkommer saker från ens separat lagrade huvudlista, men på ett sätt som skyddar en från den överväldigande mängden uppgifter man inte har planerat att arbeta med idag!"
 
 #: data/content/using/tutorials/gnote.html:33
 msgid "Setting up your 3 main master to-do lists"
-msgstr ""
+msgstr "Att sätta upp dina 3 övergripande huvud-att-göra-listor"
 
 #: data/content/using/tutorials/gnote.html:34
 msgid ""
@@ -5876,7 +5765,7 @@ msgid ""
 "waiting on / someday tasks lists from your current filing system - perhaps a"
 " paper notebook - and create a Gnote note for each. If you don't have any "
 "pre-existing lists, here's a basic process for creating them:"
-msgstr ""
+msgstr "Det du vill göra först är att skriva in alla dina övergripande att-göra- / väntar-på- / någon-dag-listor över uppgifter från ditt nuvarande registersystem — kanske en anteckningsbok på papper — och skapa en Gnote-anteckning för varje.  OM du inte har några befintliga listor följer här den grundläggande processen för att skapa dem:"
 
 #: data/content/using/tutorials/gnote.html:36
 msgid ""
@@ -5886,13 +5775,13 @@ msgid ""
 "the note \"Master To-Do List.\" I recommend using a bulleted list format - "
 "simply add a \"*\" character before your first entry in the note, and hit "
 "enter to continue on to the next bulleted item."
-msgstr ""
+msgstr "Gå igenom alla anteckningar, e-brev och papper du kan tänkas ha, och din hjärna, och skriv ner allt du behöver göra.  Matvaror, projekt på jobbet, telefonsamtal att ringa — allt är tillåtet.  Krafsa ner det i en Gnote-anteckning; ge anteckningen rubriken ”Övergripande att-göra-lista.”  Jag rekommenderar att du gör en i punktlisteformat — skriv helt enkelt tecknet ”*” före första posten i anteckningen, och tryck vagnretur för att fortsätta med nästa punkt."
 
 #: data/content/using/tutorials/gnote.html:37
 msgid ""
 "Create two more Gnote notes, one titled, \"Someday To-Do List,\" and one "
 "titled \"Waiting On To-Do List.\""
-msgstr ""
+msgstr "Skapa två eller flera Gnote-anteckningar, en med rubriken ”Att-göra-någon-dag-lista,” och en med rubriken ”Väntar-på-att-göra-lista.”"
 
 #: data/content/using/tutorials/gnote.html:38
 msgid ""
@@ -5900,45 +5789,45 @@ msgid ""
 "something you need to do in the immediate future, something that you'd like "
 "to get done but have no immediate plans to get done, and things you're "
 "involved with but are in someone else's hands now."
-msgstr ""
+msgstr "Gå igenom dina listor punkt för punkt.  Bestäm för varje punkt om det är något du behöver göra med en gång, något du skulle vilja få gjort men inte har några omedelbara planer på att få gjorda och saker du är inblandad i men som någon annan har hand om just nu."
 
 #: data/content/using/tutorials/gnote.html:39
 msgid ""
 "For items that you have no immediate plans to get done, remove them from the"
 " \"Master To-Do List\" Gnote and paste them into the \"Someday To-Do List\" "
 "note."
-msgstr ""
+msgstr "Saker som du inte har några omedelbara planer på att få gjorda tar du bort från Gnote:n ”Övergripande att-göra-lista” och klistrar in dem i anteckningen ”Att-göra-någon-dag-lista”."
 
 #: data/content/using/tutorials/gnote.html:40
 msgid ""
 "For items that you are waiting on someone else to continue on, remove them "
 "from the \"Master To-Do List\" Gnote and paste them into the \"Waiting On "
 "To-Do List\" note."
-msgstr ""
+msgstr "Saker som du väntar på att någon annan skall fortsätta med tar du bort från Gnote:n ”Övergripande att-göra-lista” och klistrar in dem i anteckningen ”Väntar-på-att-göra-lista”."
 
 #: data/content/using/tutorials/gnote.html:42
 msgid "Now you have three main master to-do lists!"
-msgstr ""
+msgstr "Nu har du tre övergripande att-göra-listor!"
 
 #: data/content/using/tutorials/gnote.html:43
 msgid "Daily workflow"
-msgstr ""
+msgstr "Dagligt arbetsflöde"
 
 #: data/content/using/tutorials/gnote.html:44
 msgid "Here's a daily workflow you can use to make this system work!"
-msgstr ""
+msgstr "Detta är ett dagligt arbetsflöde du kan använda för att få detta system att fungera!"
 
 #: data/content/using/tutorials/gnote.html:46
 msgid ""
 "At the beginning of the day, create a new note and put the date in it. E.g, "
 "the naming format I like to use is, \"To Do: 8 Nov 2010.\""
-msgstr ""
+msgstr "I början på dagen skapar du en ny anteckning och skriver in datumet i den.  T.ex. kan du använda ett format som detta ”Att göra: 8 nov 2010.”"
 
 #: data/content/using/tutorials/gnote.html:47
 msgid ""
 "Open up your \"Master To-Do List\" note and pick one or two items you think "
 "you can accomplish today. Copy them into today's To Do note."
-msgstr ""
+msgstr "Öppna din anteckning ”Övergripande att-göra-lista” och välj en eller två saker du tror du kan klara av idag.  Kopiera dem till dagens att-göra-anteckning."
 
 #: data/content/using/tutorials/gnote.html:48
 msgid ""
@@ -5946,21 +5835,21 @@ msgid ""
 "think you could follow up on today. If Joe's had that proposal on his desk "
 "for two weeks, now might be a good time to remind him that you're waiting "
 "for him to review it!"
-msgstr ""
+msgstr "Öppna din anteckning ”Väntar-på-att-göra-lista” och välj en eller två sakder du tror du kan följa upp under dagen.  Om Johan har haft det där förslaget på sitt bord i två veckor kan det vara dags att påminna honom nu att du väntar på att han skall granska det!"
 
 #: data/content/using/tutorials/gnote.html:49
 msgid ""
 "As your day progresses, try to work on the items you set out for yourself. "
 "As you complete items, highlight the item and press <strong>Ctrl+S</strong> "
 "to cross it off of your list."
-msgstr ""
+msgstr "Försök allteftersom dagen går att ägna dig åt punkterna du har valt ut åt dig.  Allteftersom du avslutar saker, markera punkten och tryck <strong>Ctrl+S</strong> för att stryka den från din lista."
 
 #: data/content/using/tutorials/gnote.html:50
 msgid ""
 "Things outside of our daily plans always come up, and sometimes we have to "
 "give up on our plan and attend to these more urgent, unpredictable issues. "
 "Don't worry about it!"
-msgstr ""
+msgstr "Saker vid sidan våra dagliga planer inträffar alltid, och ibland måste vi ge upp vår plan och ta hand om dessa mer akuta, oförutsedda händelserna.  Bekymra dig inte om det!"
 
 #: data/content/using/tutorials/gnote.html:51
 msgid ""
@@ -5969,7 +5858,7 @@ msgid ""
 " fresh To-Do note for tomorrow, and copy any items you didn't accomplish "
 "today into it for your plan tomorrow. For any items you completed today, "
 "cross them off your \"Master To-Do List\" as well."
-msgstr ""
+msgstr "Skriv när dagen är slut ner allt du har åstadkommit eller ägnat tid åt vid sidan av de att-göran du planerade för dagen.  Skapa en ny att-göra-anteckning för morgondagen, och kopiera eventuella saker du inte fick gjord idag till din nya plan för imorgon.  Saker som du fick gjort idag stryker du även på din ”Övergripande att-göra-lista”."
 
 #: data/content/using/tutorials/gnote.html:54
 msgid ""
@@ -5978,11 +5867,11 @@ msgid ""
 "to-do lists using Gnote is a great way to review what you've accomplished at"
 " the end of the week, and makes it easy to write weekly status reports if "
 "your job requires that."
-msgstr ""
+msgstr "Du kan ha alla dessa listor synliga hela tiden i Gnotes anteckningslista genom att klicka på den lilla häftstiftsikonen intill dem i listan.  Att sköta dagliga att-göra-listor med Gnote är ett bra sätt att se vad du har gjort när veckan är slut, och gör det enklare att skriva veckovisa statusrapporter om ditt jobb kräver det."
 
 #: data/content/using/tutorials/gnote.html:56
 msgid "2. Clean up those sticky-notes all over your desk!"
-msgstr ""
+msgstr "2. Rensa upp alla dessa klisterlappar på skrivbordet!"
 
 #: data/content/using/tutorials/gnote.html:57
 msgid ""
@@ -5991,22 +5880,22 @@ msgid ""
 "one, go through each piece of paper and transcribe it into a new digital "
 "Gnote. Now your desk is much neater, and you can search across all of your "
 "notes."
-msgstr ""
+msgstr "Riv ner allihop!  Just det!  Samla alla dina klisterlappar, papperslappar, anteckningar skrivna på baksidan av andra papper, och gör en hög.  Gå igenom varje papperslapp en och en och skriv in den i din digitala Gnote.  Nu är dit skrivbord mycket renare, och du kan söka bland alla dina anteckningar."
 
 #: data/content/using/tutorials/gnote.html:58
 msgid "Searching across your notes"
-msgstr ""
+msgstr "Söka bland dina anteckningar"
 
 #: data/content/using/tutorials/gnote.html:59
 msgid ""
 "Click on the Gnote icon in your desktop panel, and select <strong>Search All"
 " Notes</strong> in the menu. You can search across all of your notes or just"
 " notes in a specific 'Notebook.'"
-msgstr ""
+msgstr "Klicka på Gnote-ikonen i din skrivbordspanel, och välj <strong>Sök bland alla anteckningar</strong> i menyn.  Du kan söka bland alla dina anteckningar eller bara bland anteckningar i en viss ”anteckningsbok”."
 
 #: data/content/using/tutorials/gnote.html:61
 msgid "3. Keep great meeting minutes and send them out!"
-msgstr ""
+msgstr "3. Skapa fina mötesanteckningar och skicka ut dem!"
 
 #: data/content/using/tutorials/gnote.html:62
 msgid ""
@@ -6014,81 +5903,81 @@ msgid ""
 "attend and you'll soon have a database of all the meetings you've attended. "
 "I recommend you use the meeting's subject and the date of the meeting in the"
 " title of the note."
-msgstr ""
+msgstr "Gör det till en vana att öppna en ny Gnote för varje möte du är med i och du kommer snart ha en databas över alla möten du varit med om.  Jag rekommenderar att du använder mötets rubrik och datum i titeln på anteckningen."
 
 #: data/content/using/tutorials/gnote.html:63
 msgid ""
 "Want to be a hero to your fellow meeting-goers? You can easily export your "
 "meeting minutes to html or PDF and send them out in an email."
-msgstr ""
+msgstr "Vill du bli en hjälte bland dina mötesdeltagare?  Du kan enkelt exportera dina mötesanteckningar till html eller PDF och skicka ut dem i ett e-brev."
 
 #: data/content/using/tutorials/gnote.html:64
 msgid "Exporting to HTML"
-msgstr ""
+msgstr "Exportera till HTML"
 
 #: data/content/using/tutorials/gnote.html:66
 #: data/content/using/tutorials/gnote.html:74
 msgid "Open up your meeting minutes note."
-msgstr ""
+msgstr "Öppna dina mötesanteckningar."
 
 #: data/content/using/tutorials/gnote.html:67
 #: data/content/using/tutorials/gnote.html:75
 msgid ""
 "Click on the 'gears' icon in the note's toolbar towards the top of the note."
-msgstr ""
+msgstr "Klicka på ”kugghjulsikonen” i anteckningens verktygsrad i äverkanten av anteckningen."
 
 #: data/content/using/tutorials/gnote.html:68
 msgid "Select 'Export to HTML' in the menu."
-msgstr ""
+msgstr "Välj ”Exportera till HTML” i menyn."
 
 #: data/content/using/tutorials/gnote.html:70
 msgid ""
 "I recommend saving the HTML export to your desktop, then going to your "
 "desktop, right-clicking the document, and selecting \"Send To\" in the menu "
 "to email it out."
-msgstr ""
+msgstr "Jag rekommenderar att spara HTML-exporten till skrivbordet, och sedan gå till ditt skrivbord, högerklicka på dokumentet, och välja ”Skicka till” i menyn för att skicka ut den."
 
 #: data/content/using/tutorials/gnote.html:72
 msgid "Saving your note as a PDF"
-msgstr ""
+msgstr "Att spara dina anteckningar som en PDF"
 
 #: data/content/using/tutorials/gnote.html:76
 msgid "Select 'Print' in the menu."
-msgstr ""
+msgstr "Välj ”Skriv ut” i menyn."
 
 #: data/content/using/tutorials/gnote.html:77
 msgid ""
 "In the <strong>Print</strong> dialog that appears, select \"Print to File\" "
 "at the top of the list of printers."
-msgstr ""
+msgstr "I dialogen <strong>Print</strong> som dyker upp, välj ”Skriv ut till fil” längst upp i listan över skrivare."
 
 #: data/content/using/tutorials/gnote.html:78
 msgid ""
 "Fill in a name for your PDF in the \"Name:\" field, and click on the \"PDF\""
 " radio button towards the right."
-msgstr ""
+msgstr "Fyll i ett namn på din PDF i fältet ”Namn:”, och klicka på alternativet ”PDF” på höger sida."
 
 #: data/content/using/tutorials/gnote.html:79
 msgid ""
 "Choose a folder to save the PDF to in the \"Save in Folder:\" dialog and "
 "click the \"Print\" button to create the PDF."
-msgstr ""
+msgstr "Välj en mapp att spara PDF:en till i dialogen ”Spara i mapp:” och klicka på knappen ”Skriv ut” för att skapa PDF:en."
 
 #: data/content/using/tutorials/gnote.html:81
 msgid ""
 "For emailing the PDF, I similarly recommend that you save it to your "
 "desktop, go to your desktop, right-click the document, and select \"Send "
 "To\" in the menu to email it out."
-msgstr ""
+msgstr "För att skicka ut PDF:en, rekommenderar jag på samma sätt att du sparat den på skrivbordet, går till skrivbordet, högerklickar på dokumentet, och väljer \"Skicka till\" i menyn för att skicka ut den."
 
 #: data/content/using/tutorials/gnote.html:83
 msgid "More Gnote tips"
-msgstr ""
+msgstr "Fler Gnote-tips"
 
 #: data/content/using/tutorials/gnote.html:84
 msgid ""
 "Here's some more suggestions for ways to organize your life with Gnote:"
-msgstr ""
+msgstr "Här är ytterligare några förslag på sätt att organisera ditt liv med Gnote:"
 
 #: data/content/using/tutorials/gnote.html:86
 msgid ""
@@ -6098,7 +5987,7 @@ msgid ""
 "places, gather their phone numbers and web addresses together in one place, "
 "and as you call each place you can take notes inline inside the note and "
 "have quick and easy access to their website to review as you talk."
-msgstr ""
+msgstr "<strong>Planering av arrangemang:</strong> Alla webbadresser eller epostadresser du klistrar in i en anteckning kommer bli klickbara länkar.  Om du, till exempel, försöker boka en mottagningslokal för ett arrangemang kan du skapa en anteckning med möjliga platser, samla deras telefonnummer och webbadresser samlat på ett ställe, och allteftersom du ringer varje ställe kan du göra anteckningar i anslutning till ställets adress i din anteckning och ha snabb och enkel åtkomst till deras webbsajt för att titta medan du talar."
 
 #: data/content/using/tutorials/gnote.html:87
 msgid ""
@@ -6106,7 +5995,7 @@ msgid ""
 "you'll run out of or items you need for recipes you want to try, add them to"
 " a running 'shopping list' note. When you're ready to go to the supermarket,"
 " simply print off the list and bring it with you."
-msgstr ""
+msgstr "<strong>Inköpslistor:</strong> När du under veckan upptäcker att saker kommer ta slut eller saker du behöver för recept du vill prova, lägg till dem til en löpande ”inköpsliste”-anteckning.  När du skall till livsmedelsaffären, skriv helt enkelt ut listan och ta den med dig."
 
 #: data/content/using/tutorials/gnote.html:88
 msgid ""
@@ -6117,17 +6006,17 @@ msgid ""
 "of categories in Gnote - restaurants, books, movies, travel destinations, "
 "recipes, music albums - and during those moments where I'm not sure what to "
 "try I bring up one of these lists."
-msgstr ""
+msgstr "<strong>Spara rekommendationer:</strong> Vänner rekommenderar alltid resturanger att prova, böcker att läsa, filmer att se — men när det är dags att äta, gå till biblioteket, eller välja en film, verkar jag aldrig komma ihåg dessa förslag.  Inte nu längre!  Jag har en löpande ”Att prova”-lista med ett flertal kategorier i Gnote — restauranger, böcker, filmer, resmål, recept, skivor — och när jag är i situationen att jag inte vet vad jag skall välja plockar jag fram en av dessa listor."
 
 #: data/content/using/tutorials/gnote.html:93
 msgid ""
 "Now you have a plan to get and stay organized using Gnote. Have fun, and be "
 "sure to share these tips you learned with others!"
-msgstr ""
+msgstr "Nu har du en plan för att bli och hålla ordning med Gnote.  Ha det så roligt, och se till att dela dessa tips du fick med andra!"
 
 #: data/content/using/tutorials/launcher.html:7
 msgid "Fedora Project - Creating custom app launchers."
-msgstr "Fedora Project - Skapa anpassade programstartare."
+msgstr "Fedoraprojektet — skapa anpassade programstartare."
 
 #: data/content/using/tutorials/launcher.html:17
 msgid ""
@@ -6230,39 +6119,39 @@ msgstr "Nu kan du ett snyggt trick som hjälper dig anpassa ditt skrivbord på d
 #: data/templates/cloud-tab.html:9 data/templates/cloud-tab.html:42
 #, python-format
 msgid "Fedora %s "
-msgstr ""
+msgstr "Fedora %s "
 
 #: data/templates/cloud-tab.html:13
 msgid "Region"
-msgstr ""
+msgstr "Område"
 
 #: data/templates/cloud-tab.html:14
 msgid "Architecture"
-msgstr ""
+msgstr "Arkitektur"
 
 #: data/templates/cloud-tab.html:15
 msgid "Root store"
-msgstr ""
+msgstr "Rotlagring"
 
 #: data/templates/cloud-tab.html:16
 msgid "AMI ID"
-msgstr ""
+msgstr "AMI ID"
 
 #: data/templates/cloud-tab.html:17
 msgid "Launch"
-msgstr ""
+msgstr "Starta"
 
 #: data/templates/cloud-tab.html:29
 msgid "Launch AMI instance"
-msgstr ""
+msgstr "Starta AMI-instans"
 
 #: data/templates/cloud-tab.html:44
 msgid "Select the nearest region"
-msgstr ""
+msgstr "Välj närmsta område"
 
 #: data/templates/cloud-tab.html:55
 msgid "Launch it!"
-msgstr ""
+msgstr "Starta den!"
 
 #: data/templates/content-export-regulations.html:9
 msgid "Export Regulations"
@@ -6270,7 +6159,7 @@ msgstr "Exportbegränsning"
 
 #: data/templates/content-export-regulations.html:11
 msgid "Read full export regulations"
-msgstr ""
+msgstr "Läs fullständiga exportregler"
 
 #: data/templates/foot.html:11
 msgid "Planet Fedora"
@@ -6278,10 +6167,10 @@ msgstr "Planet Fedora"
 
 #: data/templates/foot.html:12
 msgid "Fedora Magazine"
-msgstr ""
+msgstr "Fedoratidningen"
 
-#: data/templates/foot.html:13 data/templates/foot.html:32
-#: data/templates/foot.html:47
+#: data/templates/foot.html:13 data/templates/foot.html:33
+#: data/templates/foot.html:48
 msgid "Documentation"
 msgstr "Dokumentation"
 
@@ -6318,91 +6207,95 @@ msgid "Mailing List Help"
 msgstr "Hjälp på epostlistor"
 
 #: data/templates/foot.html:31
+msgid "Ask Fedora"
+msgstr ""
+
+#: data/templates/foot.html:32
 msgid "Forums"
 msgstr "Forum"
 
-#: data/templates/foot.html:37
+#: data/templates/foot.html:38
 msgid "Join"
 msgstr "Gå med"
 
-#: data/templates/foot.html:38
+#: data/templates/foot.html:39
 msgid "Join Fedora"
 msgstr "Gå med i Fedora"
 
-#: data/templates/foot.html:39
+#: data/templates/foot.html:40
 msgid "Fedora SIGs"
 msgstr "Fedora SIG"
 
-#: data/templates/foot.html:40
+#: data/templates/foot.html:41
 msgid "Fedora Account System"
 msgstr "Fedoras kontosystem"
 
-#: data/templates/foot.html:41
+#: data/templates/foot.html:42
 msgid "Fedora Community"
 msgstr "Fedoragemenskapen"
 
-#: data/templates/foot.html:46
+#: data/templates/foot.html:47
 msgid "Subprojects"
 msgstr "Underprojekt"
 
-#: data/templates/foot.html:48
+#: data/templates/foot.html:49
 msgid "Translation"
 msgstr "Översättning"
 
-#: data/templates/foot.html:49
+#: data/templates/foot.html:50
 msgid "Marketing"
 msgstr "Marknadsföring"
 
-#: data/templates/foot.html:50
+#: data/templates/foot.html:51
 msgid "Ambassadors"
 msgstr "Ambassadörer"
 
-#: data/templates/foot.html:51
+#: data/templates/foot.html:52
 msgid "Design"
 msgstr "Design"
 
-#: data/templates/foot.html:52
+#: data/templates/foot.html:53
 msgid "Infrastructure"
 msgstr "Infrastruktur"
 
-#: data/templates/foot.html:58
+#: data/templates/foot.html:59
 msgid "Websites"
 msgstr "Webbplatser"
 
-#: data/templates/foot.html:59
+#: data/templates/foot.html:60
 msgid "Internationalization"
 msgstr "Internationalisering"
 
-#: data/templates/foot.html:60
+#: data/templates/foot.html:61
 msgid "News"
 msgstr "Nyheter"
 
-#: data/templates/foot.html:66
+#: data/templates/foot.html:67
 msgid "Fedora is sponsored by Red Hat."
 msgstr "Fedora är sponsrat av Red Hat."
 
-#: data/templates/foot.html:67
+#: data/templates/foot.html:68
 msgid "Learn more about the relationship between Red Hat and Fedora >"
 msgstr "Läs mer om förhållandet mellan Red Hat och Fedora >"
 
-#: data/templates/foot.html:68
+#: data/templates/foot.html:69
 #, python-format
 msgid "© %(year)s Red Hat, Inc. and others."
-msgstr ""
+msgstr "© %(year)s Red Hat, Inc. med flera."
 
-#: data/templates/foot.html:71
+#: data/templates/foot.html:72
 msgid "Sponsors"
 msgstr "Sponsorer"
 
-#: data/templates/foot.html:72
+#: data/templates/foot.html:73
 msgid "Legal"
 msgstr "Juridik"
 
-#: data/templates/foot.html:73
+#: data/templates/foot.html:74
 msgid "Trademark Guidelines"
 msgstr "Riktlinjer för varumärket"
 
-#: data/templates/foot.html:75
+#: data/templates/foot.html:76
 msgid ""
 "The Fedora Project is maintained and driven by the community. This is a "
 "community maintained site. Red Hat is not responsible for content."
