@@ -340,7 +340,7 @@
                         <div class="clear"></div>
 
                         <div class="grid_10 prefix_2 alpha omega">
-                            <p class="help" style="clear: both;"><img class="support-icon" src="${path}/static/images/icon-support.png" alt="support-icon" />${Markup(_('For help determining what architecture your system is, &lt;a href="%s"&gt;please view our architecture help guide&lt;/a&gt;.') % 'http://docs.fedoraproject.org/en-US/Fedora/%s/html/Installation_Guide/ch-new-users.html#sn-which-arch' % (global_variables.release['prev_id']))}</p>
+                            <p class="help" style="clear: both;"><img class="support-icon" src="${path}/static/images/icon-support.png" alt="support-icon" />${Markup(_('For help determining what architecture your system is, &lt;a href="%s"&gt;please view our architecture help guide&lt;/a&gt;.') % 'http://docs.fedoraproject.org/en-US/Fedora/%s/html/Installation_Guide/ch-new-users.html#sn-which-arch' % (global_variables.release['curr_id']))}</p>
                         </div>
                         <div class="clear"></div>
 			</div>
@@ -698,14 +698,14 @@
             <ul class="checkmark-list">
                 <li>${_('First,')} <a class="download-splash" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso">${_('download a Fedora ISO image')}</a>.</li>
 
-                <li>${_('To install Fedora using a USB stick')},  <a href="${global_variables.path['doc']}/${global_variables.release['prev_id']}/html/Installation_Guide/Making_USB_Media.html">${_('follow these instructions.')}</a></li>
-                <li>${_('To install Fedora using a blank CD or DVD')},  <a href="${global_variables.path['doc']}/${global_variables.release['prev_id']}/html/Installation_Guide/sn-making-media.html#sn-making-disc-media">${_('follow these instructions.')}</a></li>
+                <li>${_('To install Fedora using a USB stick')},  <a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Installation_Guide/Making_USB_Media.html">${_('follow these instructions.')}</a></li>
+                <li>${_('To install Fedora using a blank CD or DVD')},  <a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Installation_Guide/sn-making-media.html#sn-making-disc-media">${_('follow these instructions.')}</a></li>
             </ul>
 
 
                 <h4>${_('Handy Resources')}</h4>
                 <ul>
-                    <li class="guide-list"><a href="${global_variables.path['doc']}/${global_variables.release['prev_id']}/html/Installation_Guide/index.html">${_('Installation Guide')}</a></li>
+                    <li class="guide-list"><a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Installation_Guide/index.html">${_('Installation Guide')}</a></li>
                     <li class="guide-list"><a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Release_Notes/index.html">${_('Release Notes')}</a></li>
                     <li class="webpage-list"><a href="https://fedoraproject.org/wiki/Common_F${global_variables.release['curr_id']}_bugs">${_('Common Bugs')}</a></li>
                     <li class="webpage-list"><a href="http://fedoraproject.org/wiki/Upgrading">${_('Upgrading Fedora')}</a></li>
