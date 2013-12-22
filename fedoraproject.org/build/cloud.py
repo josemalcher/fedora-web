@@ -40,22 +40,22 @@ ec2_f20_Beta = [
 ]
 
 ec2_f20 = [
-			{'region':'Asia Pacific (Tokyo)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-51bc3550'},
-			{'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-33b23b32'},
-			{'region':'Asia Pacific (Singapore)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-f8357baa'},
-			{'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-4c327c1e'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-f5d340cf'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-33d24109'},
-			{'region':'EU (Ireland)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-2d819059'},
-			{'region':'EU (Ireland)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-43809137'},
-			{'region':'South America (Sao Paulo)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-d2e84dcf'},
-			{'region':'South America (Sao Paulo)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-08eb4e15'},
-			{'region':'US East (Northern Virginia)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-6f640c06'},
-			{'region':'US East (Northern Virginia)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-b71078de'},
-			{'region':'US West (Northern California)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-634f6126'},
-			{'region':'US West (Northern California)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-674f6122'},
-			{'region':'US West (Oregon)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-67930257'},
-			{'region':'US West (Oregon)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-fd9302cd'}
+			{'region':'Asia Pacific (Tokyo)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-7dd7b47c'},
+			{'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-8fd0b38e'},
+			{'region':'Asia Pacific (Singapore)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-bccd99ee'},
+			{'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-92cd99c0'},
+			{'region':'Asia Pacific (Sydney)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-374bd40d'},
+			{'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-eb4cd3d1'},
+			{'region':'EU (Ireland)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-3401e843'},
+			{'region':'EU (Ireland)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-c00fe6b7'},
+			{'region':'South America (Sao Paulo)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-6f6ecf72'},
+			{'region':'South America (Sao Paulo)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-056ecf18'},
+			{'region':'US East (Northern Virginia)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-3b361952'},
+			{'region':'US East (Northern Virginia)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-1337187a'},
+			{'region':'US West (Northern California)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-68e3d32d'},
+			{'region':'US West (Northern California)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-54e3d311'},
+			{'region':'US West (Oregon)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-56771366'},
+			{'region':'US West (Oregon)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-ea7612da'}
 ]
 
 ec2_f19 = [
@@ -121,7 +121,7 @@ def gen_js(*args):
 		js+="\n\tif (is_form_" + release[0] + " != 'undefined') {\n"
 		js+="\n\t\tif (form_" + release[0] + ".region_" + release[0] + ".value != 'null') {\n"
 		js+="\t\t\tvar ami_id = id_" + release[0] + "[form_" + release[0] + ".region_" + release[0] + ".value][form_" + release[0] + ".arch_" + release[0] + ".value];\n"
-		js+="\t\t\tvar url = 'https://console.aws.amazon.com/ec2/home?region=' + region_name[form_" + release[0] + ".region_" + release[0] + ".value] + '#launchAmi=' + ami_id;\n"
+		js+="\t\t\tvar url = 'https://console.aws.amazon.com/ec2/v2/home?region=' + region_name[form_" + release[0] + ".region_" + release[0] + ".value] + '#LaunchInstanceWizard:ami=' + ami_id;\n"
 		js+="\t\t\tdocument.getElementById('amihref_" + release[0] + "').href = url;\n"
 		js+="\t\t\tdocument.getElementById('amihref_" + release[0] + "').style.visibility='visible';\n"
 		js+="\t\t\tdocument.getElementById('label_" + release[0] + "').innerHTML = ami_id;\n"
@@ -131,7 +131,6 @@ def gen_js(*args):
 		js+="\t\t\tdocument.getElementById('label_" + release[0] + "').innerHTML = '';\n"
 		js+="\t\t}\n"
 		js+="\t}\n"
-
 	js+="}\n"
 	f = open(OUTPUT, 'w+')
 	f.write(js)

@@ -1,6 +1,9 @@
 import os
 import cPickle
 import feedparser
+import socket
+import sys
+
 
 def feedparse(url):
     # TODO: Should the directory be hardcoded like this? 
@@ -25,7 +28,14 @@ def feedparse(url):
 
     # Ok, the url was not in the cache, process it
     main_feed = dict()
+    timeout = socket.getdefaulttimeout()
+    socket.setdefaulttimeout(3)
     main_feed = feedparser.parse(url)
+    socket.setdefaulttimeout(timeout)
+    if len(main_feed['entries']) < 1:
+        print 'ERROR: ' + str(main_feed['bozo_exception'])
+        print 'Could not load ' + url
+        sys.exit(1)
     entry = [{}]
     for feed in main_feed["entries"]:
         '''We only need to save the link, title and date of blog posts'''

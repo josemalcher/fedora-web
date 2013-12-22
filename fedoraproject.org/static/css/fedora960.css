@@ -775,6 +775,9 @@ h4.main-section-hl { font-size: small; }
 
 #get-formats .purchase-options { margin-top: 1em; }
 
+#main .format-block {
+  margin-bottom: 2em;
+}
 
 .spin-row:hover { background-color: #dcdcdc !important; }
 
@@ -827,7 +830,9 @@ a.interactive-section, .bugs-section a { font-weight: normal; }
 .interactive-section p, .bugs-section p {
     margin-bottom:0px;
 }
-
+.grid_3.interactive-section {
+height: 200px;
+}
 /* community page */
 
 .community-dates { font-size: small; }
@@ -1614,7 +1619,7 @@ li.slide { width: 100% !important; }
 }
 
 .slides #fedora-download {
-  background: url(../images/banners/f19_banner_background.jpg) no-repeat top center #012643;
+  background: url(../images/banners/f20_banner_background.jpg) no-repeat top center #0e285e;
 }
 .slides #fedora-download .content, .slides #fedora-download p.small {
 	color: white;
@@ -1630,9 +1635,9 @@ li.slide { width: 100% !important; }
 /* Fedora feature slide */
 
 .slideShow #feature1 .content {
-  left: 0px;
-  width: 440px !important;
-  height: 210px !important;
+  right: 0px;
+  width: 370px !important;
+  height: 200px !important;
   margin: 1em;
   padding: 1em;
 }
@@ -1653,27 +1658,30 @@ li.slide { width: 100% !important; }
 }
 
 .slides #feature1 {
-  background: #555;
-  background-image: url(../images/banners/3d_printing.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;}
-
-.slides #feature1 .content {
-  left: 0px;
-  height: 200px;
-  width: 475px !important;
+  background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(center top , #FFFFFF 1%, #FFFFFF 36%, #AAAAAA 100%) repeat scroll 0 0 transparent;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(255,255,255,1)), color-stop(36%,rgba(255,255,255,1)), color-stop(100%,rgba(170,170,170,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 1%,rgba(255,255,255,1) 36%,rgba(170,170,170,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 1%,rgba(255,255,255,1) 36%,rgba(170,170,170,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(3255,255,255,1) 1%,rgba(255,255,255,1) 36%,rgba(170,170,170,1) 100%); /* IE10+ */
+background: linear-gradient(top,  rgba(3255,255,255,1) 1%,rgba(255,255,255,1) 36%,rgba(170,170,170,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#AAAAAA',GradientType=0 ); /* IE6-9 */
 }
 
-.slides #feature .content {
-  width: 350px;
-  padding-top: 0px !important;
-  margin-top: 0px !important;
-  margin-left: -50px;
+.slides #feature1 .content,
+.slides #feature1 .content h2 {
+  right: 0px;
+  color: #000;
 }
 
-.slides #feature .content h3,
-.slides #feature .content p {
-  color: #444;
+.slides #feature1 .content a {
+  color: #3c6eb4;
+}
+
+.slides #feature1 img.balloons {
+  float: left;
+  position: absolute;
+  top: 52px;
 }
 
 /* Fedora spin slide */
@@ -1702,7 +1710,6 @@ background: url(../images/banners/f20_cloud_bg.png) no-repeat top center #65aef3
 
 
 .slides #group-photo .content,
-.slides #feature1 .content,
 .slides #spin .content {
   /* For browsers that don't support RGBa */
   background: rgb(0, 0, 0);
@@ -1850,108 +1857,3 @@ div.news a.news_relnotes, div.news a.news_download  {
 	color: white;
 }
 
-/*get fedora download boxes*/
-
-#button-box {
-  position: relative;
-  background: url("../images/bg_main-download-section.png") repeat-x scroll left bottom #FFFFFF;
-  margin: 2em 0 3em 0;
-  height: 335px;
-}
-
-#button-box a {
-  background-image: url("../images/banners/random/sprite.png");
-}
-
-#button-box a.button-formats {
-  position: absolute;
-  top: 40px;
-  left: 120px;
-  display: block;
-  width: 200px;
-  height: 75px;
-  background-position:0px 0px;
-}
-
-#button-box a:hover.button-formats {
-  background-position:0px -75px;
-}
-
-#button-box a.button-desktop {
-  position: absolute;
-  top: 40px;
-  right: 120px;
-  display: block;
-  width: 200px;
-  height: 75px;
-  background-position:400px 0px;
-}
-
-#button-box a:hover.button-desktop {
-  background-position:400px -75px;
-}
-
-#button-box a.button-spins {
-  position: absolute;
-  top: 140px;
-  left: 15px;
-  display: block;
-  width: 200px;
-  height: 75px;
-  background-position:200px 0px;
-}
-
-#button-box a:hover.button-spins {
-  background-position:200px -75px;
-}
-
-#button-box img.logo {
-  position: absolute;
-  top: 143px;
-  left: 318px;
-  display: block;
-}
-
-#button-box a.button-cloud {
-  position: absolute;
-  top: 140px;
-  right: 15px;
-  display: block;
-  width: 200px;
-  height: 75px;
-  background-position:0px -150px;
-}
-
-#button-box a:hover.button-cloud {
-  background-position:0px -225px;
-}
-
-#button-box a.button-arm {
-  position: absolute;
-  top: 240px;
-  left: 120px;
-  display: block;
-  width: 200px;
-  height: 75px;
-  background-position:400px -150px;
-}
-
-#button-box a:hover.button-arm {
-  background-position:400px -225px;
-}
-
-#button-box a.button-2ndarch {
-  position: absolute;
-  top: 240px;
-  right: 120px;
-  display: block;
-  width: 200px;
-  height: 75px;
-  background-position:200px -150px;
-}
-
-#button-box a:hover.button-2ndarch {
-  background-position:200px -225px;
-}
-
-/* End download boxes*/
