@@ -13,15 +13,15 @@ release={
     'curr_s390_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'prev_arm_id': '19',
-    'prev_ppc64_id': '18',
+    'prev_ppc64_id': '19',
     'prev_s390_id': '18',
     'prev_cloud_id': '19',
     'curr_arm_id': '20',
-    'curr_ppc64_id': '19',
+    'curr_ppc64_id': '20',
     'curr_s390_id': '19',
     'curr_cloud_id': '20',
     'next_arm_id': '21',
-    'next_ppc64_id': '20',
+    'next_ppc64_id': '21',
     'next_s390_id': '20',
     'next_cloud_id': '21',
     'cloud_composedate': '20131211',
@@ -73,7 +73,7 @@ iso_size={
     'i686_Live_Mate':      '715',       # In MB
     'x86_64_Live_Mate':    '750',       # In MB
     'PPC64_DVD':           '4.3',       # In GB
-    'PPC64_Netinstall':    '333',       # In MB
+    'PPC64_Netinstall':    '340',       # In MB
     's390_DVD':            '4.0',       # In GB
     'i686_sda.qcow2':      '201',       # In MB
     'x86_64_sda.qcow2':    '204',       # In MB
