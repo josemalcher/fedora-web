@@ -30,7 +30,7 @@
         <td class="desccol"><a href="${project['url']}">${id}</a><py:if test="project['desc'] and id != project['desc']"> (<em>${project['desc']}</em>)</py:if></td>
         <td class="vcscol"><img py:if="'vcs' in project and project['vcs']" class="vcsimg" src="static/images/vcs/${project['vcs']}.png" alt="[${project['vcs']}]" title="${project['vcs']}"/></td>
         <td class="vcscol"><a py:if="'vcsweburl' in project and project['vcsweburl']" href="${project['vcsweburl']}" target="_blank"><img src="static/images/web.png" alt="browse"/></a></td>
-        <td class="vcscol"><a py:if="'vcs' in project" href="${'http://%(vcs)s.fedorahosted.org/%(vcs)s/%(vcsbase)s' % project}" onClick="javascript:return false;"><img src="static/images/copy.png" alt="anon" title="${_('Right-click and copy the anonymous VCS URI to your clipboard')}" /></a></td>
+        <td class="vcscol"><a py:if="'vcs' in project" href="${'https://%(vcs)s.fedorahosted.org/%(vcs)s/%(vcsbase)s' % project}" onClick="javascript:return false;"><img src="static/images/copy.png" alt="anon" title="${_('Right-click and copy the anonymous VCS URI to your clipboard')}" /></a></td>
         <td class="vcscol"><a py:if="'vcs' in project" href="${'ssh://%(vcs)s.fedorahosted.org/%(vcs)s/%(vcsbase)s' % project}" onClick="javascript:return false;"><img src="static/images/edit.png" alt="auth" title="${_('Right-click and copy the authorized VCS URI to your clipboard')}" /></a></td>
       </tr>
       <tr id="nodata">
