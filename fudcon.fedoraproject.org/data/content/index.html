@@ -3,7 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>FUDCon</title>
-<link href="${path}/static/css/fudcon.css" rel="stylesheet" type="text/css" />
+<link href="${path}/static/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="${path}/static/css/jumbotron.css" rel="stylesheet" type="text/css" />
+
 </head>
 <script type="text/javascript">
   var rpxJsHost = (("https:" == document.location.protocol) ? "https://" : "http://static.");
@@ -27,85 +29,72 @@
 
 
 <body>
-<div class="container">
-  <div class="header_bar">
-    <div class="header">
-      <div class="logo_top"><img src="${path}/static/images/logo.png" width="214" height="82" /></div>
-      <ul class="top_menu">
-        <li class="top_menu_element">APAC</li>
-        <li class="top_menu_element"><a href="http://www.flocktofedora.org/">EMEA</a></li>
-        <li class="top_menu_element"><a href="http://fudconlatam.org">LATAM</a></li>
-        <li class="top_menu_element"><a href="http://www.flocktofedora.org/">NA</a></li>
-      </ul>
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="logo_top"><img src="${path}/static/images/logo.png" width="214" height="82" /></div>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">APAC</a></li>
+            <li><a href="http://www.flocktofedora.org/">EMEA</a></li>
+            <li><a href="http://fudconlatam.org">LATAM</a></li>
+            <li><a href="http://www.flocktofedora.org/">NA</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
     </div>
-  </div>
-  <div class="flag_row_container">
-    <div class="flag_first_color"></div>
-    <div class="flag_second_color"></div>
-    <div class="flag_third_color"></div>
-  </div>
-  <div class="splash_container" id="index_splash">
-    <div class="splash_content">
-      <div class="splash_text">
-        <h1>FUDCon 2013</h1>
-        <h2>FUDCon is the Fedora Users and Developers Conference, a major free software event held in various regions around the world, usually annually per region.<br />
+  <div class="fill">
+    <div class="container">
+      <div class="col-md-5">
+        <h1><strong>FUDCon 2013</strong></h1>
+        <h4>FUDCon is the Fedora Users and Developers Conference, a major free software event held in various regions around the world, usually annually per region.<br />
         FUDCon is a combination of sessions, talks, workshops, and hackfests in which project participants can work on specific initiatives.<br />
-        FUDCon is always free to attend for anyone.</h2>
+        FUDCon is always free to attend for anyone.</h4>
        </div>
-      <div class="splash_img">
-
-    <div id="slider">
-        <ul id="sliderContent">
-            <li class="sliderImage">
-                <a href=""><img src="${path}/static/images/1.jpg" alt="1" /></a>
-                <span class="top"><strong>FUDCon Panamá 2011</strong></span>
-            </li>
-            <li class="sliderImage">
-                <a href=""><img src="${path}/static/images/2.jpg" alt="2" /></a>
-                <span class="top"><strong>FUDCon Panamá 2011</strong></span>
-            </li>
-            <li class="sliderImage">
-                <img src="${path}/static/images/3.jpg" alt="3" />
-                <span class="top"><strong>FUDCon Tempe 2011</strong></span>
-            </li>
-            <li class="sliderImage">
-                <img src="${path}/static/images/4.jpg" alt="4" />
-                <span class="top"><strong>FUDCon Zurich 2010</strong></span>
-            </li>
-            <div class="clear sliderImage"></div>
-        </ul>
-    </div>
-
-
+      <div class="col-md-7 splash_img">
+        <div id="slider">
+            <ul id="sliderContent">
+                <li class="sliderImage">
+                    <a href=""><img src="${path}/static/images/1.jpg" alt="1" /></a>
+                    <span class="top"><strong>FUDCon Panamá 2011</strong></span>
+                </li>
+                <li class="sliderImage">
+                    <a href=""><img src="${path}/static/images/2.jpg" alt="2" /></a>
+                    <span class="top"><strong>FUDCon Panamá 2011</strong></span>
+                </li>
+                <li class="sliderImage">
+                    <img src="${path}/static/images/3.jpg" alt="3" />
+                    <span class="top"><strong>FUDCon Tempe 2011</strong></span>
+                </li>
+                <li class="sliderImage">
+                    <img src="${path}/static/images/4.jpg" alt="4" />
+                    <span class="top"><strong>FUDCon Zurich 2010</strong></span>
+                </li>
+                <div class="clear sliderImage"></div>
+            </ul>
+        </div>
       </div>
     </div>
   </div>
-  <div class="central_container">
-    <div class="central_content" id="home">
-      <div class="one_column_division">
-        <div id="column_one">
-          <h4><a href="http://www.flocktofedora.org/">NA - EMEA: Flock Charleston 2013</a></h4>
+  
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6 pager">
+          <h3><strong><a href="http://www.flocktofedora.org/">NA - EMEA: Flock Charleston 2013</a></strong></h3>
           <h3><a href="http://www.flocktofedora.org/"> Charleston-SC-USA - August 9 through 12, 2013</a></h3>
 				  <div id="imgbox"><a href="http://www.flocktofedora.org/"><img style="padding-top:60px" src="${path}/static/images/flock_logo.png" width="249px" height="161px" class="center" /></a></div>
           <p><a href="http://www.flocktofedora.org/"><strong>know more about Flock Charleston 2013 Here</strong></a></p>
 				</div>
-        <div id="column_two">
-          <h4><a href="http://www.fudconlatam.org/">LATAM: FUDCon Cusco 2013</a></h4>
+        <div class="col-md-6 pager">
+          <h3><strong><a href="http://www.fudconlatam.org/">LATAM: FUDCon Cusco 2013</a></strong></h3>
           <h3><a href="http://www.fudconlatam.org/"> Cusco-Peru - September 26 through 29, 2013</a></h3>
 					<div id="imgbox"><a href="http://www.fudconlatam.org/"><img src="${path}/static/images/cusco_logo.png" width="300px" height="222px" class="center" /></a></div>
           <p><a href="http://www.fudconlatam.org/"><strong>know more about FUDCon Cusco 2013 Here</strong></a></p>
 				</div>
-      </div>
     </div>
-    <div class="central_content">
         <p>Read the <a href="http://fedoraproject.org/wiki/FUDCon#Past_FUDCons"><strong>wiki</strong></a> to find the past FUDCons</p>
-    </div>
-  </div>
-  <div class="flag_row_container">
-    <div class="flag_first_color"></div>
-    <div class="flag_second_color"></div>
-    <div class="flag_third_color"></div>
-  </div>
+
   <div class="footer_container">
     <div class="footer_content">
       <div class="footer_contact_item"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
@@ -114,6 +103,6 @@
       <!--<div class="button_container"><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><script type="in/share"></script></div>-->
     </div>
   </div>
-</div>
+  </div>
 </body>
 </html>
