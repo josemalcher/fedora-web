@@ -1,5 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -95,16 +97,88 @@
           <p><a href="http://www.fudconlatam.org/"><strong>know more about FUDCon Cusco 2013 Here</strong></a></p>
 				</div>
     </div>
-        <p>Read the <a href="http://fedoraproject.org/wiki/FUDCon#Past_FUDCons"><strong>wiki</strong></a> to find the past FUDCons</p>
+        <p class="pager">Read the <a href="http://fedoraproject.org/wiki/FUDCon#Past_FUDCons"><strong>wiki</strong></a> to find the past FUDCons</p>
+  </div>
 
-  <div class="footer_container">
-    <div class="footer_content">
-      <div class="footer_contact_item"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
-      <div class="footer_contact_item"><iframe src="http://www.facebook.com/plugins/like.php?href&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=lucida+grande&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></div>
-      <div class="footer_contact_item"><script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script></div>
-      <!--<div class="button_container"><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><script type="in/share"></script></div>-->
+  <!-- bottom -->
+    <div id="bottom">
+        <div class="container">
+        <div class="col-xs-2">
+            <dl>
+                <dt>Fedora</dt>
+                <dd><a href="${path}/${lang}/about-fedora">${_('About Fedora')}</a></dd>
+                <dd><a href="http://planet.fedoraproject.org/">${_('Planet Fedora')}</a></dd>
+                <dd><a href="http://fedoramagazine.org">${_('Fedora Magazine')}</a></dd>
+                <dd><a href="http://docs.fedoraproject.org/">${_('Documentation')}</a></dd>
+                <dd><a href="https://fedoraproject.org/wiki/Fedora_Project_Wiki">${_('Fedora Wiki')}</a></dd>
+                <dd><a href="http://fedoraproject.org/wiki/FedoraEvents">${_('Events')}</a></dd>
+            </dl>
+        </div>
+        <div class="col-xs-2">
+            <dl>
+                <dt>${_('Download')}</dt>
+                <dd><a href="http://fedoraproject.org/${lang}/get-fedora">${_('Get Fedora')}</a></dd>
+                <dd><a href="http://fedoraproject.org/${lang}/get-fedora-all">${_('Full Download List')}</a></dd>
+            </dl>
+        </div>
+        <div class="col-xs-2">
+            <dl>
+                <dt>${_('Support')}</dt>
+                <dd><a href="http://fedoraproject.org/${lang}/get-help">${_('Get Help')}</a></dd>
+                <dd><a href="irc://irc.freenode.org/#fedora">${_('IRC Help')}</a></dd>
+                <dd><a href="https://admin.fedoraproject.org/mailman/listinfo/users">${_('Mailing List Help')}</a></dd>
+                <dd><a href="http://ask.fedoraproject.org/">${_('Ask Fedora')}</a></dd>
+                <dd><a href="http://www.fedoraforum.org/">${_('Forums')}</a></dd>
+                <dd><a href="http://docs.fedoraproject.org/">${_('Documentation')}</a></dd>
+            </dl>
+        </div>
+        <div class="col-xs-2">
+                <dl>
+                    <dt>${_('Join')}</dt>
+                    <dd><a href="http://fedoraproject.org/${lang}/join-fedora">${_('Join Fedora')}</a></dd>
+                    <dd><a href="http://fedoraproject.org/wiki/SIGs">${_('Fedora SIGs')}</a></dd>
+                    <dd><a href="https://admin.fedoraproject.org/accounts/">${_('Fedora Account System')}</a></dd>
+                    <dd><a href="http://www.fedoracommunity.org/">${_('Fedora Community')}</a></dd>
+                </dl>
+        </div>
+        <div class="col-xs-2">
+            <dl>
+                <dt>${_('Subprojects')}</dt>
+                <dd><a href="http://fedoraproject.org/wiki/DocsProject">${_('Documentation')}</a></dd>
+                <dd><a href="http://fedoraproject.org/wiki/L10N">${_('Translation')}</a></dd>
+                <dd><a href="http://fedoraproject.org/wiki/Marketing">${_('Marketing')}</a></dd>
+                <dd><a href="http://fedoraproject.org/wiki/Ambassadors">${_('Ambassadors')}</a></dd>
+                <dd><a href="http://fedoraproject.org/wiki/Design">${_('Design')}</a></dd>
+                <dd><a href="http://fedoraproject.org/wiki/Infrastructure">${_('Infrastructure')}</a></dd>
+            </dl>             
+        </div>
+        <div class="col-xs-2">
+            <dl>
+                <dt>&nbsp;</dt>
+                <dd><a href="http://fedoraproject.org/wiki/Websites">${_('Websites')}</a></dd>
+                <dd><a href="http://fedoraproject.org/wiki/I18N">${_('Internationalization')}</a></dd>
+                <dd><a href="http://fedoraproject.org/wiki/NewsProject">${_('News')}</a></dd>
+            </dl>       
+        </div>
+        <div class="clear"></div>
+        <div id="footer" class="grid_12">
+            <a href="http://www.redhat.com/"><img class="rh-logo" src="${path}/static/images/sponsors/sidebar/redhat.png" alt="Red Hat Logo" /></a>
+            <p class="sponsor">${_('Fedora is sponsored by Red Hat.')}</p>
+            <p class="sponsor"><a href="http://www.redhat.com/resourcelibrary/articles/relationship-between-fedora-and-rhel">${_('Learn more about the relationship between Red Hat and Fedora &gt;')}</a></p>
+            <p class="copy">${_('&copy; %(year)s Red Hat, Inc. and others.') % {'year':'2014'}}</p>
+            <dt>&nbsp;</dt>
+            <p class="disclaimer">${_('The Fedora Project is maintained and driven by the community. This is a community maintained site. Red Hat is not responsible for content.')}</p>
+            <ul>
+                <li class="first"><a href="${path}/${lang}/contact">${_('Contact')}</a></li>
+                <li><a href="/sponsors">${_('Sponsors')}</a></li>
+                <li><a href="http://fedoraproject.org/wiki/Legal:Main">${_('Legal')}</a></li>
+                <li><a href="http://fedoraproject.org/wiki/Legal:Trademark_guidelines">${_('Trademark Guidelines')}</a></li>
+                <li><a href="http://fedoraproject.org/wiki/Legal:Licenses?rd=Legal/Licenses#This_Website">${_('Content License')}</a></li>
+            </ul>
+        </div>
+        <div class="clear">&nbsp;</div>
     </div>
   </div>
-  </div>
+        <!-- /bottom -->
 </body>
 </html>
