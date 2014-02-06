@@ -105,7 +105,7 @@
   <!-- bottom -->
     <div id="bottom">
         <div class="container">
-        <div class="row">
+        <div class="row sitelinks">
         <div class="col-xs-2">
             <dl>
                 <dt>Fedora</dt>
@@ -165,15 +165,21 @@
         </div>
         </div>
         <div class="clear"></div>
-        <div id="footer" class="grid_12">
-            <a href="http://www.redhat.com/"><img class="rh-logo" src="${path}/static/images/sponsors/sidebar/redhat.png" alt="Red Hat Logo" /></a>
-            <p class="sponsor">${_('Fedora is sponsored by Red Hat.')}</p>
-            <p class="sponsor"><a href="http://www.redhat.com/resourcelibrary/articles/relationship-between-fedora-and-rhel">${_('Learn more about the relationship between Red Hat and Fedora &gt;')}</a></p>
-            <p class="copy">${_('&copy; %(year)s Red Hat, Inc. and others.') % {'year':'2014'}}</p>
+        <div class="row">
+        <div class="col-xs-2">
+            <a href="http://www.redhat.com/"><img class="rh-logo" src="${path}/static/images/redhat.png" alt="Red Hat Logo" /></a>
+        </div>
+        <div class="col-xs-6">
+            ${_('Fedora is sponsored by Red Hat.')}<br />
+            <a href="http://www.redhat.com/resourcelibrary/articles/relationship-between-fedora-and-rhel">${_('Learn more about the relationship between Red Hat and Fedora &gt;')}</a><br />
+            ${_('&copy; %(year)s Red Hat, Inc. and others.') % {'year':'2014'}}<br />
             <dt>&nbsp;</dt>
-            <p class="disclaimer">${_('The Fedora Project is maintained and driven by the community. This is a community maintained site. Red Hat is not responsible for content.')}</p>
+        </div>
+        </div>
+
+            ${_('The Fedora Project is maintained and driven by the community. This is a community maintained site. Red Hat is not responsible for content.')}<br />
             <ul>
-                <li class="first"><a href="${path}/${lang}/contact">${_('Contact')}</a></li>
+                <li><a href="${path}/${lang}/contact">${_('Contact')}</a></li>
                 <li><a href="/sponsors">${_('Sponsors')}</a></li>
                 <li><a href="http://fedoraproject.org/wiki/Legal:Main">${_('Legal')}</a></li>
                 <li><a href="http://fedoraproject.org/wiki/Legal:Trademark_guidelines">${_('Trademark Guidelines')}</a></li>
@@ -182,7 +188,6 @@
         </div>
         <div class="clear">&nbsp;</div>
     </div>
-  </div>
-        <!-- /bottom -->
+       <!-- /bottom -->
 </body>
 </html>
