@@ -3,7 +3,10 @@
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
     <head py:match="head" py:attrs="select('@*')">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <link rel="shortcut icon" href="${path}/static/images/favicon.ico" />
         <xi:include href="css.html" />
         <meta py:replace="select('*|text()')" />
     </head>
