@@ -71,18 +71,19 @@ xmlns:xi="http://www.w3.org/2001/XInclude">
           </p>
           <div id="ec2">
             <code>
-              ${Markup(_('''
-              export AWS_CREDENTIAL_FILE=~/.iamrc
-              export EC2_URL=https://ec2.amazonaws.com/
-              export S3_URL=https://s3.amazonaws.com/
-              export EUARE_URL=https://iam.amazonaws.com/
-
-              source "$AWS_CREDENTIAL_FILE"
-              export EC2_ACCESS_KEY=$AWSAccessKeyId
-              export EC2_SECRET_KEY=$AWSSecretKey
-              export AWS_ACCESS_KEY=$AWSAccessKeyId
-              export AWS_SECRET_ACCESS_KEY=$AWSSecretKey
-              '''))}
+              <dl>
+                <dd>export AWS_CREDENTIAL_FILE=~/.iamrc</dd>
+                <dd>export EC2_URL=https://ec2.amazonaws.com/</dd>
+                <dd>export S3_URL=https://s3.amazonaws.com/</dd>
+                <dd>export EUARE_URL=https://iam.amazonaws.com/</dd>
+              </dl>
+              <dl>
+                <dd>${Markup(_('''source "$AWS_CREDENTIAL_FILE"'''))}</dd>
+                <dd>${Markup(_('''export EC2_ACCESS_KEY=$AWSAccessKeyId'''))}</dd>
+                <dd>${Markup(_('''export EC2_SECRET_KEY=$AWSSecretKey'''))}</dd>
+                <dd>${Markup(_('''export AWS_ACCESS_KEY=$AWSAccessKeyId'''))}</dd>
+                <dd>${Markup(_('''export AWS_SECRET_ACCESS_KEY=$AWSSecretKey'''))}</dd>
+              </dl>
             </code>
           </div>
           <p>
@@ -98,11 +99,28 @@ xmlns:xi="http://www.w3.org/2001/XInclude">
             ${Markup(_('Choose an EC2 region to use. Things to consider when choosing a region include its geographic location, the pricing for instances in that region, and whether the image you wish to use is available in that region. You can get a list of regions by running &lt;code&gt;euca-describe-regions&lt;/code&gt;, which results in a list such as this:'))}
           <div id="ec2">
             <code>
-              eu-west-1       ec2.eu-west-1.amazonaws.com<br />
-              us-east-1       ec2.us-east-1.amazonaws.com<br />
-              ap-northeast-1  ec2.ap-northeast-1.amazonaws.com<br />
-              us-west-1       ec2.us-west-1.amazonaws.com<br />
-              ap-southeast-1  ec2.ap-southeast-1.amazonaws.com<br />
+              <table>
+                <tr>
+                <td>eu-west-1</td>
+                <td>ec2.eu-west-1.amazonaws.com</td>
+                </tr>
+                <tr>
+                <td>us-east-1</td>
+                <td>ec2.us-east-1.amazonaws.com</td>
+                </tr>
+                <tr>
+                <td>ap-northeast-1</td>
+                <td>ec2.ap-northeast-1.amazonaws.com</td>
+                </tr>
+                <tr>
+                <td>us-west-1</td>
+                <td>ec2.us-west-1.amazonaws.com</td>
+                </tr>
+                <tr>
+                <td>ap-southeast-1</td>
+                <td>ec2.ap-southeast-1.amazonaws.com</td>
+                </tr>
+              </table>
             </code>
           </div>
           </p>
