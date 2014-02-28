@@ -3,20 +3,22 @@ from time import gmtime, strftime
 buildtime = strftime("%a, %d %b %Y %H:%M:%S +0000", gmtime())
 buildstring = '<!-- build time: %s -->' % buildtime
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
   xmlns:py="http://genshi.edgewall.org/"
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
     <head py:match="head" py:attrs="select('@*')">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <xi:include href="css.html" />
         <meta py:replace="select('*|text()')" />
     </head>
     <py:match path="body" once="true">
     <body py:attrs="select('@*')">
         <!-- header -->
-            <xi:include href="head.html" />
         <!-- /header -->
         <!-- site-content -->
         <div id="site-content">
@@ -25,7 +27,7 @@ buildstring = '<!-- build time: %s -->' % buildtime
         <!-- /site-content -->
         <!-- bottom -->
         <div id="bottom">
-            <xi:include href="foot.html" />
+            <xi:include href="footer.html" />
         </div>
         <!-- /bottom -->
         <xi:include href="js.html" />

@@ -1,230 +1,50 @@
-<?python
-import random
-story_paths = [
-#	['filename', 'link', 'thumnail', 'intro_info']
-	['../content/using/life/chrisbredesen_short.html', '/using/life/thomascameron.html'],
-	['../content/using/life/fabianscherschel_short.html', '/using/life/fabianscherschel.html'],
-	['../content/using/life/mairinduffy_short.html', '/using/life/mairinduffy.html'],
-	['../content/using/life/michelsalim_short.html', '/using/life/michelsalim.html'],
-	['../content/using/life/robynbergeron_short.html', '/using/life/robynbergeron.html'],
-	['../content/using/life/stevemilner_short.html', '/using/life/stevemilner.html'],
-	['../content/using/life/thomascameron_short.html', '/using/life/thomascameron.html'],
-	['../content/using/life/ericchristensen_short.html', '/using/life/ericchristensen.html']
-]
-
-story_info = story_paths[random.randint(0, len(story_paths)-1)]
-#print '--- Story ---';
-#print story_info[0];
-
-# banner countdown, only available for beta
-if global_variables.release['curr_state'] == "Beta":
-  from datetime import datetime
-  from calendar import timegm
-  import os
-  from time import strftime, strptime
-
-  today = datetime.utcnow()
-  release_date = strptime(schedule['final_us'], "%Y-%b-%d")
-  release = datetime.fromtimestamp(timegm(release_date)+50400) # + 14h
-
-  difference = release - today
-  days = difference.days
-  if difference.seconds > 0 or difference.minutes > 0 or difference.hours > 0: days += 1
-  if days < 0: days = 0
-  days = str(days)
-
-  image_lang = 'en'
-  available_languages = os.walk('static/images/counter/').next()[1]
-  if lang in available_languages:
-    image_lang = lang
-  image = '/static/images/counter/' + image_lang + '/fedora-' + global_variables.release['next_id'] + '.' + image_lang + '.' + days + '.png'
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
   xmlns:py="http://genshi.edgewall.org/"
   xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="../templates/master.html" />
   <head>
     <title>${Markup(_('Fedora Project Homepage'))}</title>
   </head>
-	<body id="fedoraproject-org" class="lang-${lang}">
-        <div class="container_16">
-            <div class="grid_16">
- <!--               <div class="global-notice"><a href="http://lists.fedoraproject.org/pipermail/announce/2010-July/002843.html">${Markup(_('Not getting notified about software updates? &lt;em&gt;Read this notice &amp;rarr;&lt;/em&gt;'))}</a></div> -->
+	<body>
+    <xi:include href="../templates/navbar.html" />
+    <div class="container fill">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="${path}/static/images/test1.jpg" alt="..." />
+            <div class="caption">
+              <h3>Workstation</h3>
+              <p>In quis ligula at odio tincidunt semper. Praesent auctor id neque eu blandit. Duis ac dignissim ante. Aenean quis dui in nisl sollicitudin porttitor non in purus. Vivamus tempus vitae quam varius commodo. Integer quis venenatis lacus, in vestibulum diam. Mauris quis sem velit.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Download</a></p>
             </div>
+          </div>
         </div>
-            <div class="clear"></div>
-				<div class="simpleSlideShow slideShow">
-					<ul class="slides">
-						<li class="slide" id="fedora-download">
-						  <div class="slide-canvas">
-							<div class="content">
-								<h2>${_('Free your desktop with Fedora.')}</h2>
-								<p>${_('Fedora is a fast, stable, and powerful operating system for everyday use built by a worldwide community of friends. It\'s completely free to use, study, and share.')}</p>
-								<ul>
-									<li><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" id="download-button" class="download-splash">${_('Download Now!')}</a></li>
-									<li><a href="${path}/${lang}/get-fedora">${_('Learn More')}</a></li>
-								</ul>
-								<p class="small">${_('%(size)sMB, ISO image for %(arch)s-bit PCs') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}} <br /><a href="${path}/${lang}/get-fedora#desktops">${Markup(_('More options &gt;'))}</a></p>
-                                <ul py:if="global_variables.release['curr_state']">
-                                    <li class="getalpha"><a href="${path}/${lang}/get-prerelease">${_('Try Fedora %(release)s %(state)s Now!') % {'release':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</a></li>
-                                </ul>
-							</div>
-							<img src="${path}/static/images/f20_fpo_screenshot.png" alt="screenshot" />
-						  </div>
-						</li>
-            <li class="slide" id="feature1">
-						  <div class="slide-canvas">
-							<div class="content">
-								<h2>${_('Celebrating 10 years')}</h2>
-								<p>${_('Fedora recently celebrated its 10th anniversary. It\'s been a decade of freedom, friends, features, and first! Join in on the festivities by watching our 10 year anniversary video, interviewing our current and some past Fedora Project leaders to talk about Fedora\'s history!')}</p>
-								<p><a href="https://www.redhat.com/resourcelibrary/videos/ten-years-of-fedora">${Markup(_('Learn More &gt;'))}</a></p>
-							</div>
-              <img class="logo" src="${path}/static/images/banners/10years-banner_logo.png" alt="10 years logo" />
-              <img class="balloons" src="${path}/static/images/banners/10years-banner_balloons.png" alt="Fedora balloons" />
-						  </div>
-						</li>
-            <li class="slide" id="spin">
-					          <div class="slide-canvas">
-							<div class="content">
-						    <h2>${_('Cloud Computing with Fedora')}</h2>
-								<p>${_('The Fedora Project provides images for public and private clouds that provide a perfect foundation for fast-moving cloud projects. Fedora is available on Amazon EC2 and other public cloud providers. For private clouds, you can download Fedora in a format suitable for OpenStack, CloudStack, and Eucalyptus.')}</p>
-								<p><a href="${path}/${lang}/get-fedora#clouds">${Markup(_('Learn More &gt;'))}</a></p>
-							</div>
-              <img class="screenshot" src="${path}/static/images/banners/f20_balloons.png" alt="Cloud balloons" />
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="${path}/static/images/test1.jpg" alt="..." />
+          <div class="caption">
+            <h3>Server</h3>
+            <p>In quis ligula at odio tincidunt semper. Praesent auctor id neque eu blandit. Duis ac dignissim ante. Aenean quis dui in nisl sollicitudin porttitor non in purus. Vivamus tempus vitae quam varius commodo. Integer quis venenatis lacus, in vestibulum diam. Mauris quis sem velit.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Download</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="${path}/static/images/test1.jpg" alt="..." />
+          <div class="caption">
+            <h3>Cloud</h3>
+            <p>In quis ligula at odio tincidunt semper. Praesent auctor id neque eu blandit. Duis ac dignissim ante. Aenean quis dui in nisl sollicitudin porttitor non in purus. Vivamus tempus vitae quam varius commodo. Integer quis venenatis lacus, in vestibulum diam. Mauris quis sem velit.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Download</a></p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
 
-						  </div>
-						</li>
-						<li class="slide" id="group-photo">
-						  <div class="slide-canvas">
-							<div class="content">
-								<h2>${_('A worldwide community of friends.')}</h2>
-								<p>${_('Fedora is a Linux-based operating system that showcases the latest in free software. Fedora is always free for anyone to use, modify, and distribute. It is built by people across the globe who work together as a community: the Fedora Project.')}</p>
-								<p><a href="${path}/${lang}/join-fedora">${Markup(_('Learn more &gt;'))}</a></p>
-							</div>
-						  </div>
-						</li>
-					</ul>
-						<ul class="navigation">
-							<li><a href="javascript:void(0);" class="page">1</a></li>
-							<li><a href="javascript:void(0);" class="page">2</a></li>
-							<li><a href="javascript:void(0);" class="page">3</a></li>
-							<li><a href="javascript:void(0);" class="page">4</a></li>
-						</ul>
-
-				</div>
-
-		<div class="clear"></div>
-
-<!--        <div class="news"><span class="news_title">${_('news')}</span>${_('Fedora 20 released on December 17, 2013!')}<a class="news_relnotes" href="${_('http://docs.fedoraproject.org/en-US/Fedora/20/html/Release_Notes/index.html')}">${_('Read the release notes')}</a><a class="news_download" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso">${_('Download now')}</a></div>
--->
-		<div class="container_16">
-            <div class="grid_12 alpha">
-                <xi:include href="quotes.html" />
-                <div class="clear"></div>
-		<div id="big-links-bar">
-		  <div class="grid_4 alpha omega">
-                    <a href="${path}/${lang}/get-help">
-                        <h4>${_('Need help?')}</h4>
-                        <p>${_('Get it here.')}</p>
-                    </a>
-		  </div>
-		  <div class="grid_4 alpha omega middle">
-                    <a href="${path}/${lang}/about-fedora">
-                        <h4>${_('About Fedora')}</h4>
-                        <p>${_('What is Fedora, anyway?')}</p>
-                    </a>
-		  </div>
-		  <div class="grid_4 alpha omega">
-                    <a href="${path}/${lang}/join-fedora">
-                        <h4>${_('Join us!')}</h4>
-                        <p>${_('Help make Fedora!')}</p>
-                    </a>
-		  </div>
-		    <div class="clear"></div>
-                </div>
-                <div class="clear"></div>
-		<div class="main-page-section" id="four-fs">
-                  <h2>${_('What makes Fedora great?')}</h2>
-                  <div class="clear"></div>
-
-                  <div class="grid_3 alpha">
-		      <img src="${path}/static/images/4f-freedom.png" alt="freedom" />
-                      <h4>${_('Freedom is key')}</h4>
-                      <p>${_('Advancing software and content freedom is a key goal of the Fedora Project.')}</p>
-                      <p><a href="${path}/${lang}/about-fedora#freedom">${Markup(_('Learn how software freedom benefits you &gt;'))}</a></p>
-                  </div>
-                  <div class="grid_3">
-                    <img src="${path}/static/images/4f-friends.png" alt="friends" />
-                    <h4>${_('Our Community')}</h4>
-                    <p>${_('People world-wide work together in Fedora to advance free software.')}</p>
-                    <p><a href="${path}/${lang}/about-fedora#friends">${Markup(_('Discover your role in Fedora\'s community &gt;'))}</a></p>
-                  </div>
-                  <div class="grid_3">
-                      <img src="${path}/static/images/4f-features.png" alt="features" />
-                      <h4>${_('We share')}</h4>
-                      <p>${_('Many features that benefit all Linux distributions start in Fedora.')}</p>
-                      <p><a href="${path}/${lang}/about-fedora#features">${Markup(_('See how we share our features for all to use &gt;'))}</a></p>
-                  </div>
-                  <div class="grid_3 omega">
-                    <img src="${path}/static/images/4f-first.png" alt="first" />
-                    <h4>${_('The best tech')}</h4>
-                      <p>${_('The future of Linux is built into Fedora.')} </p>
-			          <p><a href="${path}/${lang}/about-fedora#first">${Markup(_('Learn how Fedora innovates &gt;'))}</a></p>
-                  </div>
-                  <div class="clear"></div>
-                </div>
-               <div class="clear"></div>
-            </div>
-
-            <!-- start sidebar -->
-            <div class="grid_4 omega" id="right-sidebar">
-                <h4>${_('Recommended installation requirements')}</h4>
-                <ul class="checkmark-list">
-                    <li>${_('64-bit Intel-compatible PC')}</li>
-                    <li>${_('%sGB memory (RAM)') % '1'}</li>
-                    <li>${_('%sGB disk space / storage') % '10'}</li>
-                </ul>
-                <p><a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Release_Notes/sect-Release_Notes-Welcome_to_Fedora_.html#hardware_overview">${Markup(_('More about requirements &gt;'))}</a></p>
-                <p><a href="${path}/${lang}/get-fedora">${Markup(_('Full set of download options &gt;'))}</a></p>
-
-                <div id="fedora-banners">
-									<py:choose>
-										<py:when test="global_variables.release['curr_state'] == 'Alpha'">
-											<a href="${path}/${lang}/get-prerelease"><img alt="Fedora ${global_variables.release['next_id']} Alpha ${global_variables.release['next_name']} is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}alpha.png" /></a>
-										</py:when>
-										<py:when test="global_variables.release['curr_state'] == 'Beta'">
-											<a href="http://fedoraproject.org/wiki/Releases/${global_variables.release['next_id']}/Schedule"><img alt="Fedora ${global_variables.release['next_id']} Beta ${global_variables.release['next_name']} is here! Final release in ${days} days" src="${image}" /></a>
-											<br /><a style="text-decoration: none; font-size: 1.6ex; color: #99AABB;" href="${path}/${lang}/counter">${Markup(_('Add a counter to your own site!'))}</a>
-										</py:when>
-                    <py:when test="global_variables.release['curr_state'] == 'Beta'">
-                      <a href="${path}/${lang}/get-prerelease"><img alt="Fedora ${global_variables.release['next_id']} Beta ${global_variables.release['next_name']} is here!" src="${path}/static/images/banners/f${global_variables.release['next_id']}beta.png" /></a>
-                    </py:when>
-										<py:otherwise>
-											<a href="${path}/${lang}/get-fedora"><img alt="Fedora ${global_variables.release['curr_id']} ${global_variables.release['curr_name']} is here!" src="${path}/static/images/banners/f${global_variables.release['curr_id']}release.png" /></a>
-										</py:otherwise>
-									</py:choose>
-                </div>
-
-                <h4>${_('Upcoming Events')}</h4>
-                <ul class="webpage-list">
-		   <li><a href="http://fedoraproject.org/wiki/Events#North_America_.28NA.29">${_('North American')}</a></li>
-		   <li><a href="http://fedoraproject.org/wiki/Events#Central_.26_South_America_.28LATAM.29">${Markup(_('Central &amp; South American'))}</a></li>
-		   <li><a href="http://fedoraproject.org/wiki/Events#Europe.2C_Middle_East.2C_and_Africa_.28EMEA.29">${Markup(_('European, Middle Eastern, &amp; African'))}</a></li>
-		   <li><a href="http://fedoraproject.org/wiki/Events#India.2C_Asia.2C_and_Australia_.28India.2FAPAC.29">${Markup(_('Indian, Asian, &amp; Australian'))}</a></li>
-		</ul>
-
-                <h4>${_('Hosting Sponsor')}</h4>
-                <div id="hosting-sponsor">
-                    <a href=""><img style="border: 0px none transparent;" alt="" src=""/></a>
-                </div>
 				<!-- Let's verify our G+ page -->
 				<p style="display:none"><a href="https://plus.google.com/112917221531140868607" rel="publisher"></a></p>
-
-            </div>
-            <!-- /start sidebar -->
-            <div class="clear"></div>
-        </div>
-
 	</body>
 </html>
