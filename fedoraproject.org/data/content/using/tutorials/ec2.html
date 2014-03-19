@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:py="http://genshi.edgewall.org/"
+xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../../../templates/master.html" />
+  <head>
+    <title>
+      ${Markup(_('Fedora Project - Creating an EC2 Fedora Instance.'))}
+    </title>
+  </head>
+  <body id="fedoraproject-org" class="lang-${lang}">
+    <div class="container_16 page-header" id="header-using">
+      <div class="container_16">
+        <div class="grid_11">
+          <h2>
+            <a href="${path}/${lang}/using">
+              ${_('Using Fedora')}
+            </a>
+          </h2>
+          <p>
+            <a href="${path}/${lang}/using">
+              ${_('Tutorials, tips &amp; tricks to make your Fedora experience awesome!')}
+            </a>
+          </p>
+        </div>
+        <div class="grid_5 page-header-sidebar">
+          <p>
+            <a href="https://fedoraproject.org/wiki/F14_Artwork_Supplemental_Wallpapers_Winners">
+              ${_('Love customizing your desktop? Fedora comes with extra wallpapers. Learn more.')}
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container_16" id="tutorial_content">
+      <div class="grid_16">
+        <p id="section-nav-top">
+          <a href="${path}/${lang}/using">
+            ${Markup(_('&amp;#8592; Back to the main \'Using Fedora\' page.'))}
+          </a>
+        </p>
+        <h3>
+          ${_('Create an Fedora Amazon EC2 Instance')}
+        </h3>
+        <em>
+          ${_('This quick and easy tutorial will show you how to create a Fedora EC2 instance.')}
+        </em>
+        <h4>
+          ${_('Preparations')}
+        </h4>
+          <p>${Markup(_('This tutorial assumes you already have an AWS account. AWS is not a free service - it is designed as a pay-as-you-go online service. You can learn more about pricing at &lt;a href="%s"&gt;http://aws.amazon.com/ec2/pricing/&lt;/a&gt;') % 'http://aws.amazon.com/ec2/pricing/')}</p>
+          <p>${_('In this tutorial, we will use euca2ools, a suite of command line tools designed for services like EC2. You can install it simply by typing:')}
+          <div id="ec2">
+            <code>yum install euca2ools</code>
+          </div>
+          </p>
+          <p>
+            ${_('To use the command line tools you first need to obtain access keys for your account.')}
+            ${Markup(_('You can find them by going to the AWS management console on the web, clicking your name on the top, followed by &lt;strong&gt;Security Credentials&lt;/strong&gt;, and scrolling down to the section titled &lt;strong&gt;Access Credentials&lt;/strong&gt;.'))}<br />
+            ${Markup(_('Make note of the &lt;strong&gt;Access Key ID&lt;/strong&gt; and the &lt;strong&gt;Secret Access Key&lt;/strong&gt; that appears beside it.  Both of them should be long sets of alphanumeric characters.  Create a file called &lt;code&gt;.iamrc&lt;/code&gt; in your &lt;strong&gt;home directory&lt;/strong&gt; that contains those keys in this format:'))}
+            <div id="ec2">
+            <code>
+              AWSAccessKeyId=${_('your_access_key_id')}<br />
+              AWSSecretKey=${_('your_secret_key')}
+            </code>
+          </div>
+          </p>
+          <p>
+            ${Markup(_('Since euca2ools is designed to work with all AWS-compatible clouds, not just AWS itself, it needs to know which cloud to contact. Create a file called &lt;code&gt;.eucarc&lt;/code&gt; in your home directory with the following content to point it toward AWS:'))}
+          </p>
+          <div id="ec2">
+            <code>
+              <dl>
+                <dd>export AWS_CREDENTIAL_FILE=~/.iamrc</dd>
+                <dd>export EC2_URL=https://ec2.amazonaws.com/</dd>
+                <dd>export S3_URL=https://s3.amazonaws.com/</dd>
+                <dd>export EUARE_URL=https://iam.amazonaws.com/</dd>
+              </dl>
+              <dl>
+                <dd>${Markup(_('''source "$AWS_CREDENTIAL_FILE"'''))}</dd>
+                <dd>${Markup(_('''export EC2_ACCESS_KEY=$AWSAccessKeyId'''))}</dd>
+                <dd>${Markup(_('''export EC2_SECRET_KEY=$AWSSecretKey'''))}</dd>
+                <dd>${Markup(_('''export AWS_ACCESS_KEY=$AWSAccessKeyId'''))}</dd>
+                <dd>${Markup(_('''export AWS_SECRET_ACCESS_KEY=$AWSSecretKey'''))}</dd>
+              </dl>
+            </code>
+          </div>
+          <p>
+            ${_('Finally, add these settings to your shell\'s environment by running:')}
+          <div id="ec2">
+            <code>$ source ~/.eucarc</code>
+          </div>
+          </p>
+        <h4>
+          ${_('Choose an EC2 server')}
+        </h4>
+          <p>
+            ${Markup(_('Choose an EC2 region to use. Things to consider when choosing a region include its geographic location, the pricing for instances in that region, and whether the image you wish to use is available in that region. You can get a list of regions by running &lt;code&gt;euca-describe-regions&lt;/code&gt;, which results in a list such as this:'))}
+          <div id="ec2">
+            <code>
+              <table>
+                <tr>
+                <td>eu-west-1</td>
+                <td>ec2.eu-west-1.amazonaws.com</td>
+                </tr>
+                <tr>
+                <td>us-east-1</td>
+                <td>ec2.us-east-1.amazonaws.com</td>
+                </tr>
+                <tr>
+                <td>ap-northeast-1</td>
+                <td>ec2.ap-northeast-1.amazonaws.com</td>
+                </tr>
+                <tr>
+                <td>us-west-1</td>
+                <td>ec2.us-west-1.amazonaws.com</td>
+                </tr>
+                <tr>
+                <td>ap-southeast-1</td>
+                <td>ec2.ap-southeast-1.amazonaws.com</td>
+                </tr>
+              </table>
+            </code>
+          </div>
+          </p>
+          <p>
+            ${Markup(_('When you choose an EC2 region you can make euca2ools start using it by editing the line that contains &lt;code&gt;EC2_URL&lt;/code&gt; in your &lt;code&gt;.eucarc&lt;/code&gt; file.'))}
+          <div id="ec2">
+            <code>$ export EC2_URL=https://ec2.us-east-1.amazonaws.com/</code>
+          </div>
+          </p>
+          <p>${Markup(_('...and then re-set the settings in your shell\'s environment:'))}<br />
+          <div id="ec2">
+            <code>$ source ~/.eucarc</code>
+          </div>
+          </p>
+        <h4>
+          ${_('Creating a key pair')}
+        </h4>
+          <p>
+            ${Markup(_('The primary way of logging into Fedora instances is via SSH. Since Fedora instances have no passwords, you need a SSH &lt;em&gt;key pair&lt;/em&gt; to log in to them. The private half of this key pair is stored on your computer, while the public half is stored in EC2 so instances can download them as they start. This allows you to securely log into your instances without a password.'))}
+          </p>
+          <p>
+            ${_('You can have multiple key pairs. Each key pair has its own name. Key pairs are specific to each EC2 region.')}
+          </p>
+          <p>
+            ${Markup(_('Choose a name for a new key pair and then use the &lt;code&gt;euca-create-keypair&lt;/code&gt; command to create it and write the private key to a file. Be sure to choose a name that is easy to remember.'))}
+            <div id="ec2">
+            <code>$ euca-create-keypair mykey > mykey.pem</code>
+          </div>
+          </p>
+          <p>
+            <strong>${_('Note:')}</strong> ${Markup(_('Key pairs are irreplaceable|EC2 does not store the private halves of key pairs. The time you run &lt;code&gt;euca-create-keypair&lt;/code&gt; is the only chance you will have to save a copy of the private key. There is no way to recover a lost private key from EC2.'))}
+          </p>
+          <p>
+            ${Markup(_('You can use &lt;code&gt;euca-describe-keypairs&lt;/code&gt; to display a list of your keypairs.'))}
+          <div id="ec2">
+            <code>
+              $ euca-describe-keypairs<br />
+              KEYPAIR mykey1  7b:9b:33:cf:bf:12:4d:62:b6:7c:fa:02:f2:f7:bc:59:e3:7e:40:fb<br />
+              KEYPAIR mykey2  f9:93:1e:73:4b:2e:c1:0d:7f:79:e1:bc:c0:d0:7c:95:32:55:b7:dd<br />
+            </code>
+          </div>
+          </p>
+          <p>
+            ${Markup(_('You can use &lt;code&gt;euca-delete-keypairs&lt;/code&gt; to delete a keypair. Deleting a keypair does not remove it from instances that are already running; it merely prevents new instances from using it.'))}
+            <div id="ec2">
+            <code>$ euca-delete-keypair mykey1</code>
+          </div>
+          </p>
+        <h4>
+          ${_('Run an instance')}
+        </h4>
+          <p>
+            ${Markup(_('Run a new instance of the image and instance type you chose with &lt;code&gt;euca-run-instances&lt;/code&gt;. To be able to log into the new instance, you must also specify the name of the key pair you created earlier. For example, to run a &lt;code&gt;t1.micro&lt;/code&gt; instance of the image &lt;code&gt;ami-7f5a063a&lt;/code&gt; with a key pair named &lt;code&gt;mykey&lt;/code&gt;, run the following command:'))}
+            <div id="ec2">
+              <code>
+                $ euca-run-instances ami-7f5a063a -t t1.micro -k mykey<br />
+                RESERVATION  r-4d5ea00a  0123456789ab  default<br />
+                INSTANCE     i-910fbbd6  ami-7f5a063a  pending  0  mykey  t1.micro  2011-10-11T00:00:00.000Z us-east-1c  aki-9ba0f1de
+              </code>
+            </div>
+          </p>
+          <p>
+            ${Markup(_('The output of &lt;code&gt;euca-run-instances&lt;/code&gt; contains the ID of the instance you just started. In the example above, the instance\'s ID is &lt;code&gt;i-910fbbd6&lt;/code&gt;. You will need this ID to use tools that need to refer to the instance.'))}<br />
+            ${Markup(_('You can also find the various AMI-IDs for Fedora images for all regions &lt;a href="http://fedoraproject.org/get-fedora#clouds"&gt;here&lt;/a&gt;.'))}
+          </p>
+          <p>
+            ${Markup(_('The instance starts in the &lt;code&gt;pending&lt;/code&gt; state. When it finished booting it changes to the &lt;code&gt;running&lt;/code&gt; state. When you terminate it it changes to the &lt;code&gt;shutting-down&lt;/code&gt; and finally &lt;code&gt;terminated&lt;/code&gt; states.'))}
+          </p>
+        <h4>
+          ${_('Log into the instance')}
+        </h4>
+          <p>
+            ${Markup(_('As the instance starts it obtains an IP address from EC2 and changes to the &lt;code&gt;running&lt;/code&gt; state. You can check on your instances by running &lt;code&gt;euca-describe-instances&lt;/code&gt;, optionally with the ID of the instance in question.  When the instance is ready (or nearly ready) to use, &lt;code&gt;euca-describe-instances&lt;/code&gt; will display the address you can use to log into it:'))}
+          <div id="ec2">
+            <code>
+              $ euca-describe-instances<br />
+              RESERVATION  r-4d5ea00a  0123456789ab  default<br />
+              INSTANCE     i-910fbbd6  ami-7f5a063a  ec2-204-236-168-22.us-east-1.compute.amazonaws.com  ip-10-170-15-23.us-east-1.compute.internal \<br />
+              running  0  mykey  t1.micro  2011-10-11T00:00:00.000Z us-east-1c  aki-9ba0f1de
+            </code>
+          </div>
+          </p>
+          <p>
+            ${Markup(_('The public address of the instance in this example is &lt;code&gt;ec2-204-236-168-22.us-east-1.compute.amazonaws.com&lt;/code&gt;.  Other useful bits of information from this command include the availability zone in which the instance is running (&lt;code&gt;us-east-1c&lt;/code&gt;) and the time that the instance started.'))}
+          </p>
+          <p>
+            ${Markup(_('Once the instance is &lt;code&gt;running&lt;/code&gt; you can log into it with &lt;code&gt;ssh&lt;/code&gt;. On Fedora\'s images you should log in as &lt;strong&gt;fedora&lt;/strong&gt; user:'))}
+          <div id="ec2">
+            <code>
+              $ ssh -i mykey.pem fedora@ec2-204-236-168-22.us-east-1.compute.amazonaws.com<br />
+              [fedora@i-910fbbd6 ~]$ cat /etc/fedora-release<br />
+              Fedora ${_('release 20 (Heisenbug)')}<br />
+            </code>
+          </div>
+          </p>
+          <p>
+            ${_('You can now use the instance as you would use any other computer running Fedora.')}
+          </p>
+          <p>
+            ${Markup(_('When you finish using the instance you should terminate it with &lt;code&gt;euca-terminate-instances&lt;/code&gt; to free up resources and reduce costs:'))}
+            <div id="ec2">
+            <code>$ euca-terminate-instances i-910fbbd6</code>
+          </div>
+          </p>
+        <h4>
+          ${_('Enjoy and share!')}
+        </h4>
+          <p>
+            ${_('Now you know how to setup a Fedora EC2 Instance! Have fun, and be sure to share these tips you learned with others!')}
+          </p>
+          <p id="section-nav-bottom">
+            <a href="${path}/${lang}/using">${Markup(_('&amp;#8592; Read about more ways to use Fedora!'))}
+            </a>
+          </p>
+      </div>
+    </div>
+      <div class="clear"></div>
+  </body>
+</html>
