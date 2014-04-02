@@ -1,14 +1,14 @@
 # Translations template for PROJECT.
-# Copyright (C) 2013 ORGANIZATION
+# Copyright (C) 2014 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-12-18 16:42+0100\n"
+"POT-Creation-Date: 2014-04-02 13:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -286,7 +286,7 @@ msgstr ""
 msgid "Contact list of various projects and groups."
 msgstr ""
 
-#: data/content/contact.html:27 data/templates/foot.html:71
+#: data/content/contact.html:27 data/templates/foot.html:73
 msgid "Contact"
 msgstr ""
 
@@ -1721,11 +1721,19 @@ msgid ""
 "multiple languages."
 msgstr ""
 
-#: data/content/get-help.html:72
-msgid "Email support"
+#: data/content/get-help.html:72 data/templates/foot.html:31
+msgid "Ask Fedora"
 msgstr ""
 
 #: data/content/get-help.html:74
+msgid "Community knowledge base and support forum."
+msgstr ""
+
+#: data/content/get-help.html:77
+msgid "Email support"
+msgstr ""
+
+#: data/content/get-help.html:79
 msgid ""
 "Ask your own question on one of the many multi-lingual Fedora email-based"
 " mailing lists available."
@@ -2049,28 +2057,6 @@ msgstr ""
 #: data/content/join-fedora.html:100 data/content/join-fedora.html:108
 #: data/content/join-fedora.html:116
 msgid "Learn more >"
-msgstr ""
-
-#: data/content/index.html:119
-msgid "news"
-msgstr ""
-
-#: data/content/index.html:119
-msgid "Fedora 20 released on December 17, 2013!"
-msgstr ""
-
-#: data/content/index.html:119
-msgid ""
-"http://docs.fedoraproject.org/en-"
-"US/Fedora/20/html/Release_Notes/index.html"
-msgstr ""
-
-#: data/content/index.html:119
-msgid "Read the release notes"
-msgstr ""
-
-#: data/content/index.html:119
-msgid "Download now"
 msgstr ""
 
 #: data/content/index.html:128
@@ -2606,14 +2592,6 @@ msgid ""
 "the latest and greatest Linux has to offer.\""
 msgstr ""
 
-#: data/content/rss.html:7
-msgid "Fedora Project - RSS Feeds"
-msgstr ""
-
-#: data/content/rss.html:12
-msgid "RSS Feed Test"
-msgstr ""
-
 #: data/content/sponsors.html:7
 msgid "Fedora Project - List of sponsors."
 msgstr ""
@@ -2953,7 +2931,7 @@ msgstr ""
 #: data/content/features/index.html:114 data/content/features/index.html:174
 #: data/content/features/index.html:246 data/content/features/index.html:325
 #: data/content/features/index.html:394 data/content/features/index.html:463
-#: data/content/using/index.html:86 data/content/using/index.html:156
+#: data/content/using/index.html:85 data/content/using/index.html:155
 msgid "Back to top"
 msgstr ""
 
@@ -3563,6 +3541,7 @@ msgstr ""
 #: data/content/using/life/stevemilner.html:15
 #: data/content/using/life/thomascameron.html:15
 #: data/content/using/tutorials/cheese.html:13
+#: data/content/using/tutorials/ec2.html:17
 #: data/content/using/tutorials/gnote.html:13
 #: data/content/using/tutorials/launcher.html:13 data/templates/head.html:36
 msgid "Using Fedora"
@@ -3604,27 +3583,22 @@ msgstr ""
 msgid "Learn how to do it yourself!"
 msgstr ""
 
-#: data/content/using/index.html:39 data/content/using/tutorials/gnote.html:25
+#: data/content/using/index.html:39
+msgid "Launch a Fedora EC2 Instance!"
+msgstr ""
+
+#: data/content/using/index.html:40
+msgid "Learn how to launch your own Fedora instance on Amazon EC2!"
+msgstr ""
+
+#: data/content/using/index.html:45 data/content/using/tutorials/gnote.html:25
 msgid "3 ways to unclutter your life using Gnote"
 msgstr ""
 
-#: data/content/using/index.html:40 data/content/using/tutorials/gnote.html:26
+#: data/content/using/index.html:46 data/content/using/tutorials/gnote.html:26
 msgid ""
 "Get organized! Here are 3 ways to unclutter your life and build a "
 "personal database with Gnote."
-msgstr ""
-
-#: data/content/using/index.html:45
-#: data/content/using/tutorials/launcher.html:25
-msgid "Create custom app launchers"
-msgstr ""
-
-#: data/content/using/index.html:46
-#: data/content/using/tutorials/launcher.html:27
-msgid ""
-"This quick and easy tutorial will show you how to create custom app "
-"launchers, on your desktop or on your panel, using any icon you like. "
-"Keep the apps you use the most close at hand!"
 msgstr ""
 
 #: data/content/using/index.html:55
@@ -3671,23 +3645,23 @@ msgid ""
 " Guide</a>."
 msgstr ""
 
-#: data/content/using/index.html:92
+#: data/content/using/index.html:91
 msgid "Your life on Fedora"
 msgstr ""
 
-#: data/content/using/index.html:93
+#: data/content/using/index.html:92
 msgid ""
 "Sit down and enjoy a chat with a current Fedora user, and learn about "
 "their favorite apps and tips and tricks for using Fedora!"
 msgstr ""
 
-#: data/content/using/index.html:99
+#: data/content/using/index.html:98
 #: data/content/using/life/ericchristensen.html:27
 #: data/content/using/life/ericchristensen_short.html:6
 msgid "Eric, Amateur Radio Hobbyist"
 msgstr ""
 
-#: data/content/using/index.html:101
+#: data/content/using/index.html:100
 #: data/content/using/life/ericchristensen_short.html:8
 msgid ""
 "Eric \"Sparks\" Christensen, a computer security expert from North "
@@ -3697,20 +3671,20 @@ msgid ""
 " started using Fedora!"
 msgstr ""
 
-#: data/content/using/index.html:102 data/content/using/index.html:108
-#: data/content/using/index.html:116 data/content/using/index.html:122
-#: data/content/using/index.html:130 data/content/using/index.html:136
-#: data/content/using/index.html:144 data/content/using/index.html:150
+#: data/content/using/index.html:101 data/content/using/index.html:107
+#: data/content/using/index.html:115 data/content/using/index.html:121
+#: data/content/using/index.html:129 data/content/using/index.html:135
+#: data/content/using/index.html:143 data/content/using/index.html:149
 msgid "Read more >"
 msgstr ""
 
-#: data/content/using/index.html:106
+#: data/content/using/index.html:105
 #: data/content/using/life/robynbergeron.html:28
 #: data/content/using/life/robynbergeron_short.html:6
 msgid "Robyn, Community Marketeer"
 msgstr ""
 
-#: data/content/using/index.html:107
+#: data/content/using/index.html:106
 #: data/content/using/life/robynbergeron.html:29
 #: data/content/using/life/robynbergeron_short.html:8
 msgid ""
@@ -3720,14 +3694,14 @@ msgid ""
 " giving conference presentations. Learn how she does it in this chat!"
 msgstr ""
 
-#: data/content/using/index.html:114
+#: data/content/using/index.html:113
 #: data/content/using/life/chrisbredesen_short.html:6
 #: data/content/using/life/thomascameron.html:30
 #: data/content/using/life/thomascameron_short.html:6
 msgid "Thomas, Doting Dad"
 msgstr ""
 
-#: data/content/using/index.html:115
+#: data/content/using/index.html:114
 #: data/content/using/life/chrisbredesen_short.html:8
 #: data/content/using/life/thomascameron.html:31
 #: data/content/using/life/thomascameron_short.html:8
@@ -3738,13 +3712,13 @@ msgid ""
 " kids? Check this interview out!"
 msgstr ""
 
-#: data/content/using/index.html:120
+#: data/content/using/index.html:119
 #: data/content/using/life/stevemilner.html:28
 #: data/content/using/life/stevemilner_short.html:6
 msgid "Steve, Information Security Analyst"
 msgstr ""
 
-#: data/content/using/index.html:121
+#: data/content/using/index.html:120
 #: data/content/using/life/stevemilner.html:29
 #: data/content/using/life/stevemilner_short.html:8
 msgid ""
@@ -3754,13 +3728,13 @@ msgid ""
 "tips for you in keeping your systems safe, too!"
 msgstr ""
 
-#: data/content/using/index.html:128
+#: data/content/using/index.html:127
 #: data/content/using/life/fabianscherschel.html:27
 #: data/content/using/life/fabianscherschel_short.html:6
 msgid "Fab, Linux Outlaws Podcaster"
 msgstr ""
 
-#: data/content/using/index.html:129
+#: data/content/using/index.html:128
 #: data/content/using/life/fabianscherschel_short.html:8
 msgid ""
 "Fabian A. Scherschel, a university student from Bonn, Germany, is well-"
@@ -3770,11 +3744,11 @@ msgid ""
 "post-production."
 msgstr ""
 
-#: data/content/using/index.html:134
+#: data/content/using/index.html:133
 msgid "Michel, Social Media and Web Researcher"
 msgstr ""
 
-#: data/content/using/index.html:135
+#: data/content/using/index.html:134
 #: data/content/using/life/michelsalim.html:28
 #: data/content/using/life/michelsalim_short.html:8
 msgid ""
@@ -3785,11 +3759,11 @@ msgid ""
 "to use with Fedora."
 msgstr ""
 
-#: data/content/using/index.html:142
+#: data/content/using/index.html:141
 msgid "Máirín, Artist and Designer"
 msgstr ""
 
-#: data/content/using/index.html:143
+#: data/content/using/index.html:142
 #: data/content/using/life/mairinduffy.html:29
 #: data/content/using/life/mairinduffy_short.html:8
 msgid ""
@@ -3799,12 +3773,12 @@ msgid ""
 "creative itch? Máirín recommends a ton of apps in Fedora for you!"
 msgstr ""
 
-#: data/content/using/index.html:148
+#: data/content/using/index.html:147
 #: data/content/using/life/chrisbredesen.html:26
 msgid "Chris, Java Web Application Developer"
 msgstr ""
 
-#: data/content/using/index.html:149
+#: data/content/using/index.html:148
 #: data/content/using/life/chrisbredesen.html:27
 msgid ""
 "Chris Bredesen is a Java developer from Ft. Lauderdale who uses Fedora as"
@@ -3826,6 +3800,7 @@ msgstr ""
 #: data/content/using/life/stevemilner.html:16
 #: data/content/using/life/thomascameron.html:16
 #: data/content/using/tutorials/cheese.html:14
+#: data/content/using/tutorials/ec2.html:22
 #: data/content/using/tutorials/gnote.html:14
 #: data/content/using/tutorials/launcher.html:14
 msgid "Tutorials, tips & tricks to make your Fedora experience awesome!"
@@ -3842,6 +3817,7 @@ msgstr ""
 #: data/content/using/life/stevemilner.html:26
 #: data/content/using/life/thomascameron.html:27
 #: data/content/using/tutorials/cheese.html:24
+#: data/content/using/tutorials/ec2.html:40
 #: data/content/using/tutorials/gnote.html:24
 #: data/content/using/tutorials/launcher.html:24
 msgid "&#8592; Back to the main 'Using Fedora' page."
@@ -5748,6 +5724,7 @@ msgid ""
 msgstr ""
 
 #: data/content/using/tutorials/cheese.html:62
+#: data/content/using/tutorials/ec2.html:229
 #: data/content/using/tutorials/gnote.html:91
 #: data/content/using/tutorials/launcher.html:49
 msgid "Enjoy and share!"
@@ -5760,9 +5737,277 @@ msgid ""
 msgstr ""
 
 #: data/content/using/tutorials/cheese.html:66
+#: data/content/using/tutorials/ec2.html:235
 #: data/content/using/tutorials/gnote.html:96
 #: data/content/using/tutorials/launcher.html:53
 msgid "&#8592; Read about more ways to use Fedora!"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:8
+msgid "Fedora Project - Creating an EC2 Fedora Instance."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:29
+#: data/content/using/tutorials/launcher.html:17
+msgid ""
+"Love customizing your desktop? Fedora comes with extra wallpapers. Learn "
+"more."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:44
+msgid "Create an Fedora Amazon EC2 Instance"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:47
+msgid ""
+"This quick and easy tutorial will show you how to create a Fedora EC2 "
+"instance."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:50
+msgid "Preparations"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:52
+#, python-format
+msgid ""
+"This tutorial assumes you already have an AWS account. AWS is not a free "
+"service - it is designed as a pay-as-you-go online service. You can learn"
+" more about pricing at <a "
+"href=\"%s\">http://aws.amazon.com/ec2/pricing/</a>"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:53
+msgid ""
+"In this tutorial, we will use euca2ools, a suite of command line tools "
+"designed for services like EC2. You can install it simply by typing:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:59
+msgid ""
+"To use the command line tools you first need to obtain access keys for "
+"your account."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:60
+msgid ""
+"You can find them by going to the AWS management console on the web, "
+"clicking your name on the top, followed by <strong>Security "
+"Credentials</strong>, and scrolling down to the section titled "
+"<strong>Access Credentials</strong>."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:61
+msgid ""
+"Make note of the <strong>Access Key ID</strong> and the <strong>Secret "
+"Access Key</strong> that appears beside it.  Both of them should be long "
+"sets of alphanumeric characters.  Create a file called "
+"<code>.iamrc</code> in your <strong>home directory</strong> that contains"
+" those keys in this format:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:64
+msgid "your_access_key_id"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:65
+msgid "your_secret_key"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:70
+msgid ""
+"Since euca2ools is designed to work with all AWS-compatible clouds, not "
+"just AWS itself, it needs to know which cloud to contact. Create a file "
+"called <code>.eucarc</code> in your home directory with the following "
+"content to point it toward AWS:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:81
+msgid "source \"$AWS_CREDENTIAL_FILE\""
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:82
+msgid "export EC2_ACCESS_KEY=$AWSAccessKeyId"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:83
+msgid "export EC2_SECRET_KEY=$AWSSecretKey"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:84
+msgid "export AWS_ACCESS_KEY=$AWSAccessKeyId"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:85
+msgid "export AWS_SECRET_ACCESS_KEY=$AWSSecretKey"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:90
+msgid "Finally, add these settings to your shell's environment by running:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:96
+msgid "Choose an EC2 server"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:99
+msgid ""
+"Choose an EC2 region to use. Things to consider when choosing a region "
+"include its geographic location, the pricing for instances in that "
+"region, and whether the image you wish to use is available in that "
+"region. You can get a list of regions by running <code>euca-describe-"
+"regions</code>, which results in a list such as this:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:128
+msgid ""
+"When you choose an EC2 region you can make euca2ools start using it by "
+"editing the line that contains <code>EC2_URL</code> in your "
+"<code>.eucarc</code> file."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:133
+msgid "...and then re-set the settings in your shell's environment:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:139
+msgid "Creating a key pair"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:142
+msgid ""
+"The primary way of logging into Fedora instances is via SSH. Since Fedora"
+" instances have no passwords, you need a SSH <em>key pair</em> to log in "
+"to them. The private half of this key pair is stored on your computer, "
+"while the public half is stored in EC2 so instances can download them as "
+"they start. This allows you to securely log into your instances without a"
+" password."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:145
+msgid ""
+"You can have multiple key pairs. Each key pair has its own name. Key "
+"pairs are specific to each EC2 region."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:148
+msgid ""
+"Choose a name for a new key pair and then use the <code>euca-create-"
+"keypair</code> command to create it and write the private key to a file. "
+"Be sure to choose a name that is easy to remember."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:154
+msgid "Note:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:154
+msgid ""
+"Key pairs are irreplaceable|EC2 does not store the private halves of key "
+"pairs. The time you run <code>euca-create-keypair</code> is the only "
+"chance you will have to save a copy of the private key. There is no way "
+"to recover a lost private key from EC2."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:157
+msgid ""
+"You can use <code>euca-describe-keypairs</code> to display a list of your"
+" keypairs."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:167
+msgid ""
+"You can use <code>euca-delete-keypairs</code> to delete a keypair. "
+"Deleting a keypair does not remove it from instances that are already "
+"running; it merely prevents new instances from using it."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:173
+msgid "Run an instance"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:176
+msgid ""
+"Run a new instance of the image and instance type you chose with <code"
+">euca-run-instances</code>. To be able to log into the new instance, you "
+"must also specify the name of the key pair you created earlier. For "
+"example, to run a <code>t1.micro</code> instance of the image <code>ami-"
+"7f5a063a</code> with a key pair named <code>mykey</code>, run the "
+"following command:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:186
+msgid ""
+"The output of <code>euca-run-instances</code> contains the ID of the "
+"instance you just started. In the example above, the instance's ID is "
+"<code>i-910fbbd6</code>. You will need this ID to use tools that need to "
+"refer to the instance."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:187
+msgid ""
+"You can also find the various AMI-IDs for Fedora images for all regions "
+"<a href=\"http://fedoraproject.org/get-fedora#clouds\">here</a>."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:190
+msgid ""
+"The instance starts in the <code>pending</code> state. When it finished "
+"booting it changes to the <code>running</code> state. When you terminate "
+"it it changes to the <code>shutting-down</code> and finally "
+"<code>terminated</code> states."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:193
+msgid "Log into the instance"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:196
+msgid ""
+"As the instance starts it obtains an IP address from EC2 and changes to "
+"the <code>running</code> state. You can check on your instances by "
+"running <code>euca-describe-instances</code>, optionally with the ID of "
+"the instance in question.  When the instance is ready (or nearly ready) "
+"to use, <code>euca-describe-instances</code> will display the address you"
+" can use to log into it:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:207
+msgid ""
+"The public address of the instance in this example is "
+"<code>ec2-204-236-168-22.us-east-1.compute.amazonaws.com</code>.  Other "
+"useful bits of information from this command include the availability "
+"zone in which the instance is running (<code>us-east-1c</code>) and the "
+"time that the instance started."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:210
+msgid ""
+"Once the instance is <code>running</code> you can log into it with "
+"<code>ssh</code>. On Fedora's images you should log in as "
+"<strong>fedora</strong> user:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:215
+msgid "release 20 (Heisenbug)"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:220
+msgid ""
+"You can now use the instance as you would use any other computer running "
+"Fedora."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:223
+msgid ""
+"When you finish using the instance you should terminate it with <code"
+">euca-terminate-instances</code> to free up resources and reduce costs:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:232
+msgid ""
+"Now you know how to setup a Fedora EC2 Instance! Have fun, and be sure to"
+" share these tips you learned with others!"
 msgstr ""
 
 #: data/content/using/tutorials/gnote.html:7
@@ -6074,10 +6319,15 @@ msgstr ""
 msgid "Fedora Project - Creating custom app launchers."
 msgstr ""
 
-#: data/content/using/tutorials/launcher.html:17
+#: data/content/using/tutorials/launcher.html:25
+msgid "Create custom app launchers"
+msgstr ""
+
+#: data/content/using/tutorials/launcher.html:27
 msgid ""
-"Love customizing your desktop? Fedora comes with extra wallpapers. Learn "
-"more."
+"This quick and easy tutorial will show you how to create custom app "
+"launchers, on your desktop or on your panel, using any icon you like. "
+"Keep the apps you use the most close at hand!"
 msgstr ""
 
 #: data/content/using/tutorials/launcher.html:28
@@ -6260,10 +6510,6 @@ msgstr ""
 msgid "Mailing List Help"
 msgstr ""
 
-#: data/templates/foot.html:31
-msgid "Ask Fedora"
-msgstr ""
-
 #: data/templates/foot.html:32
 msgid "Forums"
 msgstr ""
@@ -6337,22 +6583,26 @@ msgstr ""
 msgid "© %(year)s Red Hat, Inc. and others."
 msgstr ""
 
-#: data/templates/foot.html:72
-msgid "Sponsors"
-msgstr ""
-
-#: data/templates/foot.html:73
-msgid "Legal"
-msgstr ""
-
-#: data/templates/foot.html:74
-msgid "Trademark Guidelines"
-msgstr ""
-
-#: data/templates/foot.html:76
+#: data/templates/foot.html:71
 msgid ""
 "The Fedora Project is maintained and driven by the community. This is a "
 "community maintained site. Red Hat is not responsible for content."
+msgstr ""
+
+#: data/templates/foot.html:74
+msgid "Sponsors"
+msgstr ""
+
+#: data/templates/foot.html:75
+msgid "Legal"
+msgstr ""
+
+#: data/templates/foot.html:76
+msgid "Trademark Guidelines"
+msgstr ""
+
+#: data/templates/foot.html:77
+msgid "Content License"
 msgstr ""
 
 #: data/templates/head.html:13
