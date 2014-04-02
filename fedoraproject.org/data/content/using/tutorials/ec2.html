@@ -41,7 +41,7 @@ xmlns:xi="http://www.w3.org/2001/XInclude">
           </a>
         </p>
         <h3>
-          ${_('Create an Fedora Amazon EC2 Instance')}
+          ${_('Create a Fedora Amazon EC2 Instance')}
         </h3>
         <em>
           ${_('This quick and easy tutorial will show you how to create a Fedora EC2 instance.')}
@@ -78,11 +78,11 @@ xmlns:xi="http://www.w3.org/2001/XInclude">
                 <dd>export EUARE_URL=https://iam.amazonaws.com/</dd>
               </dl>
               <dl>
-                <dd>${Markup(_('''source "$AWS_CREDENTIAL_FILE"'''))}</dd>
-                <dd>${Markup(_('''export EC2_ACCESS_KEY=$AWSAccessKeyId'''))}</dd>
-                <dd>${Markup(_('''export EC2_SECRET_KEY=$AWSSecretKey'''))}</dd>
-                <dd>${Markup(_('''export AWS_ACCESS_KEY=$AWSAccessKeyId'''))}</dd>
-                <dd>${Markup(_('''export AWS_SECRET_ACCESS_KEY=$AWSSecretKey'''))}</dd>
+                <dd>source "$$AWS_CREDENTIAL_FILE"</dd>
+                <dd>export EC2_ACCESS_KEY=$$AWSAccessKeyId</dd>
+                <dd>export EC2_SECRET_KEY=$$AWSSecretKey</dd>
+                <dd>export AWS_ACCESS_KEY=$$AWSAccessKeyId</dd>
+                <dd>export AWS_SECRET_ACCESS_KEY=$$AWSSecretKey</dd>
               </dl>
             </code>
           </div>
