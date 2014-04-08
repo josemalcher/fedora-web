@@ -24,7 +24,7 @@ release={
     'next_ppc64_id': '21',
     'next_s390_id': '21',
     'next_cloud_id': '21',
-    'cloud_composedate': '20131211',
+    'cloud_composedate': '20140407',
     'pre_cloud_composedate': '20131106',
     'RC_gold': '5'                      # insert the number of the RC version declared GOLD
 }
@@ -33,6 +33,7 @@ path={
     'torrent':         'http://torrent.fedoraproject.org/torrents',
     'torrent_spins':   'http://torrent.fedoraproject.org/torrents',
     'download':        'http://download.fedoraproject.org/pub/fedora/linux/releases',
+    'dl':              'http://dl.fedoraproject.org/pub/fedora/linux/updates',
     'download_spins':  'http://download.fedoraproject.org/pub/alt/releases',
     'download_arch':   'http://download.fedoraproject.org/pub/fedora-secondary/releases',
     'mirrors':         'http://mirrors.fedoraproject.org/metalink?path=pub/fedora/linux/releases',
@@ -75,8 +76,8 @@ iso_size={
     'PPC64_DVD':           '4.3',       # In GB
     'PPC64_Netinstall':    '340',       # In MB
     's390_DVD':            '4.6',       # In GB
-    'i686_sda.qcow2':      '201',       # In MB
-    'x86_64_sda.qcow2':    '204',       # In MB
-    'i686_raw':            '114',       # In MB
-    'x86_64_raw':          '116'        # In MB
+    'i686_sda.qcow2':      '199',       # In MB
+    'x86_64_sda.qcow2':    '201',       # In MB
+    'i686_raw':            '115',       # In MB
+    'x86_64_raw':          '117'        # In MB
 }
