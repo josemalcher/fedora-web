@@ -17,64 +17,53 @@ def sorted_region(arr):
 	return(sorted(set(list), key=lambda  item: (int(item.partition(' ')[0]) if item[0].isdigit() else float('inf'), item)))
 
 # Generated using the following:
-# :%s#^| \([a-zA-Z*-9]*\)[ |]*\(i386\|x86_64\)[ |]*\(EBS-backed\)[ |]* \(ami.*\)#{'region':'\1', 'arch':'\2', 'store':'\3', 'id':'\4'},#g
+# :%s#^\(ami-[0-9a-z]*\) : \([a-zA-Z0-9-]*\) image for \([xi].*\)#{'region':'\2', 'arch':'\3', 'store':'\EBS-Backed', 'id': '\1'},#g
+# :%s/us-east-1/US East (Northern Virginia)/g
+# :%s/us-west-1/US West (Northern California)/g
+# :%s/us-west-2/US West (Oregon)/g
+# :%s/eu-west-1/EU (Ireland)/g
+# :%s/ap-southeast-1/Asia Pacific (Singapore)/g
+# :%s/ap-southeast-2/Asia Pacific (Sydney)/g
+# :%s/ap-northeast-1/Asia Pacific (Tokyo)/g
+# :%s/sa-east-1/South America (Sao Paulo)/g
 
 # Get the list at: https://dl.fedoraproject.org/pub/alt/stage/20-Beta-RC2/Images/x86_64/
-ec2_f20_Beta = [
-			{'region':'US East (Northern Virginia)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-2f421946'},
-			{'region':'US East (Northern Virginia)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-8b4219e2'},
-			{'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-0ab2e758'},
-			{'region':'Asia Pacific (Singapore)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-0eb2e75c'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-e163ffdb'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-db63ffe1'},
-			{'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-dd5135dc'},
-			{'region':'Asia Pacific (Tokyo)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-e15135e0'},
-			{'region':'US West (Northern California)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-56d0e613'},
-			{'region':'US West (Northern California)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-00d0e645'},
-			{'region':'US West (Oregon)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-5cca516c'},
-			{'region':'US West (Oregon)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-48ca5178'},
-			{'region':'EU (Ireland)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-ad7b99da'},
-			{'region':'EU (Ireland)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-897b99fe'},
-			{'region':'South America (Sao Paulo)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-4d5cfa50'},
-			{'region':'South America (Sao Paulo)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-4b5cfa56'}
-]
-
 ec2_f20 = [
-			{'region':'Asia Pacific (Tokyo)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-7dd7b47c'},
-			{'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-8fd0b38e'},
-			{'region':'Asia Pacific (Singapore)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-bccd99ee'},
-			{'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-92cd99c0'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'i386',   'store':'EBS-backed', 'id':'ami-374bd40d'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-eb4cd3d1'},
-			{'region':'EU (Ireland)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-3401e843'},
-			{'region':'EU (Ireland)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-c00fe6b7'},
-			{'region':'South America (Sao Paulo)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-6f6ecf72'},
-			{'region':'South America (Sao Paulo)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-056ecf18'},
-			{'region':'US East (Northern Virginia)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-3b361952'},
-			{'region':'US East (Northern Virginia)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-1337187a'},
-			{'region':'US West (Northern California)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-68e3d32d'},
-			{'region':'US West (Northern California)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-54e3d311'},
-			{'region':'US West (Oregon)',      'arch':'i386',   'store':'EBS-backed', 'id':'ami-56771366'},
-			{'region':'US West (Oregon)',      'arch':'x86_64', 'store':'EBS-backed', 'id':'ami-ea7612da'}
+                        {'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-9583fd94'},
+                        {'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-6ceebe3e'},
+                        {'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-eba038d1'},
+                        {'region':'EU (Ireland)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-a5ad56d2'},
+                        {'region':'South America (Sao Paulo)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-2345e73e'},
+                        {'region':'US East (Northern Virginia)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-21362b48'},
+                        {'region':'US West (Northern California)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-f8f1c8bd'},
+                        {'region':'US West (Oregon)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-cc8de6fc'},
+                        {'region':'Asia Pacific (Tokyo)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-db83fdda'},
+                        {'region':'Asia Pacific (Singapore)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-30eebe62'},
+                        {'region':'Asia Pacific (Sydney)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-d9a038e3'},
+                        {'region':'EU (Ireland)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-0bac577c'},
+                        {'region':'South America (Sao Paulo)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-4b45e756'},
+                        {'region':'US East (Northern Virginia)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-81302de8'},
+                        {'region':'US West (Northern California)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-a0f1c8e5'},
+                        {'region':'US West (Oregon)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-768ce746'}
 ]
 
 ec2_f19 = [
-			{'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-da450c88'},
-			{'region':'Asia Pacific (Singapore)', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-fe450cac'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-5565f66f'},
-			{'region':'Asia Pacific (Sydney)', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-bb65f681'},
-			{'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-95b52094'},
-			{'region':'Asia Pacific (Tokyo)', 'arch':'i386',   'store':'EBS-Backed', 'id':'ami-abb520aa'},
-			{'region':'US East (Northern Virginia)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-b22e5cdb'},
-			{'region':'US East (Northern Virginia)',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-182f5d71'},
-			{'region':'US West (Northern California)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-10cce555'},
-			{'region':'US West (Northern California)',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-50cce515'},
-			{'region':'US West (Oregon)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-9727b7a7'},
-			{'region':'US West (Oregon)',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-c327b7f3'},
-			{'region':'EU (Ireland)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-f1031e85'},
-			{'region':'EU (Ireland)',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-9f031eeb'},
-			{'region':'South America (Sao Paulo)',      'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-b055f0ad'},
-			{'region':'South America (Sao Paulo)',      'arch':'i386',   'store':'EBS-Backed', 'id':'ami-a255f0bf'}
+                        {'region':'Asia Pacific (Tokyo)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-5bff815a'},
+                        {'region':'Asia Pacific (Singapore)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-e2eebeb0'},
+                        {'region':'Asia Pacific (Sydney)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-7fa13945'},
+                        {'region':'EU (Ireland)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-e7a25990'},
+                        {'region':'South America (Sao Paulo)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-ad45e7b0'},
+                        {'region':'US East (Northern Virginia)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-812439e8'},
+                        {'region':'US West (Northern California)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-1cf3ca59'},
+                        {'region':'US West (Oregon)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-e882e9d8'},
+                        {'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-ebfe80ea'},
+                        {'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-deeebe8c'},
+                        {'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-27a1391d'},
+                        {'region':'EU (Ireland)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-29a2595e'},
+                        {'region':'South America (Sao Paulo)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-8145e79c'},
+                        {'region':'US East (Northern Virginia)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-f525389c'},
+                        {'region':'US West (Northern California)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-46f3ca03'},
+                        {'region':'US West (Oregon)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-9682e9a6'}
 ]
 
 # The idea is to get something similar to http://jsfiddle.net/shaiton/wChSv/5/
