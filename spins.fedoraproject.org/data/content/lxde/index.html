@@ -86,13 +86,13 @@ docs_url = [
 				<span class="download-option" id="opt1">
 					<h4>${_('32-bit PC Edition')}</h4>
 					<p><img class="download-media" alt="${_('%s-bit PC Edition' % '32')}" src="/static/images/media-cd.png" />${_('This edition is for the highest compatibility; it will work on both 32-bit and 64-bit computers.')}</p>
-					<a class="download-button" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/i386/Fedora-Live-LXDE-i686-${global_variables.release['curr_id']}-1.iso">${_('Download Now!')}</a>
+					<a class="download-button" href="${global_variables.path['dl']}/${global_variables.release['curr_id']}/Live/i386/Fedora-Live-LXDE-i686-${global_variables.release['curr_id']}-${global_variables.release['composedate']}.iso">${_('Download Now!')}</a>
 					<p class="fine-print">${_('%(size)sMB for %(arch)s PC ISO') % {'size':global_variables.iso_size['i686_Live_LXDE'], 'arch':'32-bit'}}<br /> <a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
 				</span>
 				<span class="download-option" id="opt2">
 					<h4>${_('64-bit PC Edition')}</h4>
 					<p><img class="download-media" alt="${_('%s-bit PC Edition' % '64')}" src="/static/images/media-cd.png" />${_('Enjoy the full power and speed of a 64-bit computer. Not compatible with 32-bit computers.')}</p>
-					<a class="download-button" href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-LXDE-x86_64-${global_variables.release['curr_id']}-1.iso">${_('Download Now!')}</a>
+					<a class="download-button" href="${global_variables.path['dl']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-LXDE-x86_64-${global_variables.release['curr_id']}-${global_variables.release['composedate']}.iso">${_('Download Now!')}</a>
 					<p class="fine-print">${_('%(size)sMB for %(arch)s PC ISO') % {'size':global_variables.iso_size['x86_64_Live_LXDE'], 'arch':'64-bit'}}<br /> <a href="${global_variables.path['doc']}/${global_variables.release['curr_id']}/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
 				</span>
                 <xi:include href="../../templates/download-tab.html" />
