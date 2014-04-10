@@ -62,7 +62,7 @@ if global_variables.release['curr_state'] == "Beta":
 								<h2>${_('Free your desktop with Fedora.')}</h2>
 								<p>${_('Fedora is a fast, stable, and powerful operating system for everyday use built by a worldwide community of friends. It\'s completely free to use, study, and share.')}</p>
 								<ul>
-									<li><a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" id="download-button" class="download-splash">${_('Download Now!')}</a></li>
+									<li><a href="${global_variables.path['dl']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-${global_variables.release['composedate']}.iso" id="download-button" class="download-splash">${_('Download Now!')}</a></li>
 									<li><a href="${path}/${lang}/get-fedora">${_('Learn More')}</a></li>
 								</ul>
 								<p class="small">${_('%(size)sMB, ISO image for %(arch)s-bit PCs') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}} <br /><a href="${path}/${lang}/get-fedora#desktops">${Markup(_('More options &gt;'))}</a></p>
