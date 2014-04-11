@@ -33,7 +33,7 @@ path={
     'torrent':         'http://torrent.fedoraproject.org/torrents',
     'torrent_spins':   'http://torrent.fedoraproject.org/torrents',
     'download':        'http://download.fedoraproject.org/pub/fedora/linux/releases',
-    'dl':              'http://dl.fedoraproject.org/pub/fedora/linux/updates',
+    'dl':              'http://download.fedoraproject.org/pub/fedora/linux/updates',
     'download_spins':  'http://download.fedoraproject.org/pub/alt/releases',
     'download_arch':   'http://download.fedoraproject.org/pub/fedora-secondary/releases',
     'mirrors':         'http://mirrors.fedoraproject.org/metalink?path=pub/fedora/linux/releases',
