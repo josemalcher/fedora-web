@@ -137,7 +137,6 @@ $(document).ready(function(){
             var valid = false;
             var allowed_prefixes = [
                 'http://download.fedoraproject.org/',
-                'http://dl.fedoraproject.org/',
                 'http://torrent.fedoraproject.org/',
                 'http://mirrors.fedoraproject.org/'
             ]
