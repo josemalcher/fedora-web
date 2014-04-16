@@ -65,7 +65,7 @@ if global_variables.release['curr_state'] == "Beta":
 									<li><a href="${global_variables.path['dl']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-${global_variables.release['composedate']}.iso" id="download-button" class="download-splash">${_('Download Now!')}</a></li>
 									<li><a href="${path}/${lang}/get-fedora">${_('Learn More')}</a></li>
 								</ul>
-								<p class="small">${_('%(size)sGB, ISO image for %(arch)s-bit PCs') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}} <br /><a href="${path}/${lang}/get-fedora#desktops">${Markup(_('More options &gt;'))}</a></p>
+								<p class="small">${_('%(size)sMB, ISO image for %(arch)s-bit PCs') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}} <br /><a href="${path}/${lang}/get-fedora#desktops">${Markup(_('More options &gt;'))}</a></p>
                                 <ul py:if="global_variables.release['curr_state']">
                                     <li class="getalpha"><a href="${path}/${lang}/get-prerelease">${_('Try Fedora %(release)s %(state)s Now!') % {'release':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</a></li>
                                 </ul>

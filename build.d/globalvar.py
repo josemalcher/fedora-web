@@ -45,10 +45,10 @@ iso_size={
     'x86_64_DVD':          '4.3',       # In GB
     'i386_DVD':            '4.4',       # In GB
     'source_DVD':          '9.2',       # In GB
-    'i686_Live_Desktop':   '1.0',       # In GB
-    'x86_64_Live_Desktop': '1.0',       # In GB, default download from F18
+    'i686_Live_Desktop':   '1000',       # In MB
+    'x86_64_Live_Desktop': '1000',       # In MB, default download from F18
     'i686_Live_KDE':       '953',       # In MB
-    'x86_64_Live_KDE':     '1.0',       # In GB
+    'x86_64_Live_KDE':     '1000',       # In MB
     'i686_Live_LXDE':      '660',       # In MB
     'x86_64_Live_LXDE':    '698',       # In MB
     'i686_Live_Xfce':      '675',       # In MB

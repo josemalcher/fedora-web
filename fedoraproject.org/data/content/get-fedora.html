@@ -55,7 +55,7 @@
                     <div class="grid_10 omega">
                         <p>${_('This is the latest version of the Fedora Linux operating system\'s Desktop Edition. It\'s everything you need to try out Fedora — you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop.')}</p>
                         <a href="${global_variables.path['dl']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-${global_variables.release['composedate']}.iso" class="big-button download-splash">${_('Download Now!')}</a>
-                        <p class="small">${_('%(size)sGB, ISO format image for Intel-compatible PCs (%(arch)s-bit)') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}}<br /></p>
+                        <p class="small">${_('%(size)sMB, ISO format image for Intel-compatible PCs (%(arch)s-bit)') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}}<br /></p>
                     </div>
                     </div>
                 <div class="clear"></div>
@@ -123,12 +123,12 @@
                             <div class="grid_3 prefix_2 alpha">
                                 <h5>${_('32-bit')}</h5>
                                 <a class="download-button-mini download-splash" href="${global_variables.path['dl']}/${global_variables.release['curr_id']}/Live/i386/Fedora-Live-Desktop-i686-${global_variables.release['curr_id']}-${global_variables.release['composedate']}.iso">${_('Download Now!')}</a>
-                                <p class="fine-print">${_('%sGB ISO Image') % global_variables.iso_size['i686_Live_Desktop']}</p>
+                                <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['i686_Live_Desktop']}</p>
                             </div>
                             <div class="grid_3 suffix_4 omega">
                                 <h5>${_('64-bit')}</h5>
                                 <a class="download-button-mini download-splash" href="${global_variables.path['dl']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-${global_variables.release['composedate']}.iso">${_('Download Now!')}</a>
-                                <p class="fine-print">${_('%sGB ISO Image') % global_variables.iso_size['x86_64_Live_Desktop']}</p>
+                                <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['x86_64_Live_Desktop']}</p>
                             </div>
                             <div class="clear"></div>
 
@@ -154,7 +154,7 @@
                             <div class="grid_3 suffix_4 omega">
                                 <h5>${_('64-bit')}</h5>
                                 <a class="download-button-mini download-splash" href="${global_variables.path['dl']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-KDE-x86_64-${global_variables.release['curr_id']}-${global_variables.release['composedate']}.iso">${_('Download Now!')}</a>
-                                <p class="fine-print">${_('%sGB ISO Image') % global_variables.iso_size['x86_64_Live_KDE']}</p>
+                                <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['x86_64_Live_KDE']}</p>
                             </div>
                             <div class="clear"></div>
 
