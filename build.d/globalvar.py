@@ -24,7 +24,7 @@ release={
     'next_ppc64_id': '21',
     'next_s390_id': '21',
     'next_cloud_id': '21',
-    'cloud_composedate': '20140407',
+    'composedate': '20140407',
     'pre_cloud_composedate': '20131106',
     'RC_gold': '5'                      # insert the number of the RC version declared GOLD
 }
@@ -33,7 +33,7 @@ path={
     'torrent':         'http://torrent.fedoraproject.org/torrents',
     'torrent_spins':   'http://torrent.fedoraproject.org/torrents',
     'download':        'http://download.fedoraproject.org/pub/fedora/linux/releases',
-    'dl':              'http://dl.fedoraproject.org/pub/alt/stage',
+    'dl':              'http://download.fedoraproject.org/pub/fedora/linux/updates',
     'download_spins':  'http://download.fedoraproject.org/pub/alt/releases',
     'download_arch':   'http://download.fedoraproject.org/pub/fedora-secondary/releases',
     'mirrors':         'http://mirrors.fedoraproject.org/metalink?path=pub/fedora/linux/releases',
