@@ -206,6 +206,23 @@ $(document).ready(function(){
     $("#hosting-sponsor img").attr("alt", sponsor_banner[1]);
     $("#hosting-sponsor a").attr("href", sponsor_banner[2]);
 
+    // bootstrap function
+
+    $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
 
 /* Not actually used anywhere.
 	// main site banners
