@@ -5,13 +5,13 @@ release={
     'prev_id':     '19',
     'curr_id':     '20',
     'next_id':     '21',
-    'curr_name':   'Heisenbug',
+    'curr_name':   '',
     'next_name':   '',
-    'curr_state':  '',             # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_ppc64_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_s390_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_state':  'Alpha',             # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  'Alpha',         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_ppc64_state':  'Alpha',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_s390_state':  'Alpha',        # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  'Alpha',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'prev_arm_id': '19',
     'prev_ppc64_id': '19',
     'prev_s390_id': '19',
@@ -24,7 +24,7 @@ release={
     'next_ppc64_id': '21',
     'next_s390_id': '21',
     'next_cloud_id': '21',
-    'composedate': '20140407',
+    'composedate': '20140626',
     'pre_cloud_composedate': '20131106',
     'RC_gold': '5'                      # insert the number of the RC version declared GOLD
 }
