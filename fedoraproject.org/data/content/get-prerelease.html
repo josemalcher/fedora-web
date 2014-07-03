@@ -336,6 +336,7 @@ l_code = l_map.get(lang, dflt_language)
                                             <py:when test="global_variables.release['curr_state'] == 'Beta'">${_('Upcoming Final Release is planned for')}&nbsp;${schedule['final']}
                                             </py:when>
                                         </py:choose>
+                                </p>
 
                         <div class="grid_16 alpha omega" id="main-download-section">
                         <h3>${Markup(_('Fedora %(rel)s %(state)s Workstation')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
@@ -356,43 +357,75 @@ l_code = l_map.get(lang, dflt_language)
                         </div>
                         <div class="clear"></div>
 
+                        <div id="get-formats">
+                        <h4>${Markup(_('Get your Workstation Spin'))}</h4>
 
+                        <div class="grid_2 alpha"><img alt="" src="${path}/static/images/arm-icon-kde-download.png" /></div>
+                        <div class="grid_10 omega format-block">
+                            <div class="grid_3 alpha">
+                                <h5>${_('64 bit Image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['dl']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-KDE-VFAT-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['composedate']}-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
+                            <div class="grid_3 suffix_4 omega">
+                                <h5>${_('32 bit Image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['dl']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-KDE-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['composedate']}-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
 
-                                </p>
-                        <h4>${Markup(_('Fedora Cloud Images'))}</h4>
-                <ul class="downloadbox cloudimage">
-                    <li>
-                        <h5>${Markup(_('64 bit'))}</h5>
-                        <ul>
-                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/x86_64/Fedora-x86_64-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
-                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}/Images/x86_64/Fedora-x86_64-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('32 bit'))}</h5>
-                        <ul>
-                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/i386/Fedora-i386-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
-                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/i386/Fedora-i386-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                        <h4>${Markup(_('Fedora EC2 Images'))}</h4>
-                <ul class="downloadbox cloudimage">
-<!-- Specific AMI selector -->
-					<ul>
-						<xi:include href="../templates/cloud-tab.html" />
-						<noscript>
-						${printrelease('20_Beta')}
-						</noscript>
+                        <div class="grid_2 alpha"><img alt="" src="${path}/static/images/arm-icon-xfce-download.png" /></div>
+                        <div class="grid_10 omega format-block">
+                            <div class="grid_3 alpha">
+                                <h5>${_('64 bit Image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['dl']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-Xfce-VFAT-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['composedate']}-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
+                            <div class="grid_3 suffix_4 omega">
+                                <h5>${_('32 bit Image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['dl']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-Xfce-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['composedate']}-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
 
-						<!-- If JS enabled -->
-						${printform('20_Beta')}
-						<!-- /end If JS enabled -->
-<!-- /Specific AMI selector -->
-					</ul>
-                </ul>
+                        <div class="grid_2 alpha"><img alt="" src="${path}/static/images/arm-icon-lxde-download.png" /></div>
+                        <div class="grid_10 omega format-block">
+                            <div class="grid_3 alpha">
+                                <h5>${_('64 bit Image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['dl']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-LXDE-VFAT-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['composedate']}-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
+                            <div class="grid_3 suffix_4 omega">
+                                <h5>${_('32 bit Image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['dl']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-LXDE-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['composedate']}-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
 
-                <div class="clear"></div>
+                        <div class="grid_2 alpha"><img alt="" src="${path}/static/images/arm-icon-mate-download.png" /></div>
+                        <div class="grid_10 omega format-block">
+                            <div class="grid_3 alpha">
+                                <h5>${_('64 bit Image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['dl']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-Mate-VFAT-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['composedate']}-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
+                            <div class="grid_3 suffix_4 omega">
+                                <h5>${_('32 bit Image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['dl']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-Mate-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['composedate']}-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+                        <div class="grid_2 alpha"><img alt="" src="${path}/static/images/arm-icon-soas-download.png" /></div>
+                        <div class="grid_10 omega format-block">
+                            <div class="grid_3 alpha">
+                                <h5>${_('64 bit Image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['dl']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-SoaS-VFAT-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['composedate']}-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
+                            <div class="grid_3 suffix_4 omega">
+                                <h5>${_('32 bit Image')}</h5>
+                                <a class="download-button-mini download-arm-splash" href="${global_variables.path['dl']}/${global_variables.release['curr_arm_id']}/Images/armhfp/Fedora-SoaS-armhfp-${global_variables.release['curr_arm_id']}-${global_variables.release['composedate']}-sda.raw.xz">${_('Download Now!')}</a>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="clear"></div>
+
                 <xi:include href="../templates/content-export-regulations.html" />
                 </div>
 
@@ -418,7 +451,7 @@ l_code = l_map.get(lang, dflt_language)
                                         </py:choose>
                                 </p>
 
-                        
+
                     <div class="grid_16 alpha omega" id="main-download-section">
                         <h3>${Markup(_('Fedora %(rel)s %(state)s Cloud')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
                         <div class="grid_4 alpha">
@@ -436,7 +469,40 @@ l_code = l_map.get(lang, dflt_language)
                             <p class="small">${_('%(size)sMB, ISO format image for Intel-compatible PCs (%(arch)s-bit)') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}}<br /></p>
                         </div>
                         </div>
-                        <div class="clear"></div>        
+                        <div class="clear"></div>
+
+                                                <h4>${Markup(_('Fedora Cloud Images'))}</h4>
+                <ul class="downloadbox cloudimage">
+                    <li>
+                        <h5>${Markup(_('64 bit'))}</h5>
+                        <ul>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/x86_64/Fedora-x86_64-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}/Images/x86_64/Fedora-x86_64-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>${Markup(_('32 bit'))}</h5>
+                        <ul>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/i386/Fedora-i386-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/i386/Fedora-i386-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                        <h4>${Markup(_('Fedora EC2 Images'))}</h4>
+                <ul class="downloadbox cloudimage">
+<!-- Specific AMI selector -->
+                    <ul>
+                        <xi:include href="../templates/cloud-tab.html" />
+                        <noscript>
+                        ${printrelease('20_Beta')}
+                        </noscript>
+
+                        <!-- If JS enabled -->
+                        ${printform('20_Beta')}
+                        <!-- /end If JS enabled -->
+<!-- /Specific AMI selector -->
+                    </ul>
+                </ul>
 
 
 
