@@ -156,6 +156,26 @@ l_code = l_map.get(lang, dflt_language)
                                             </py:when>
                                         </py:choose>
                                 </p>
+
+                        <div class="grid_16 alpha omega" id="main-download-section">
+                        <h3>${Markup(_('Fedora %(rel)s %(state)s Server')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+                        <div class="grid_4 alpha">
+                            <img src="${path}/static/images/color-server.png" alt="Server Product" />
+                        </div>
+                        <div class="grid_12 omega">
+                            <h4>${_('Server Images')}</h4>
+                            <p>${_('This is the latest version of the Fedora Linux operating system\'s Desktop Edition. It\'s everything you need to try out Fedora — you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop.')}</p>
+                            <div class="grid_5 prefix_1">
+                            <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" class="big-button download-splash">${_('Download 64bit!')}</a>
+                            </div>
+                            <div class="grid_5">
+                            <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" class="big-button download-splash">${_('Download 32bit!')}</a>
+                            </div>
+                            <p class="small">${_('%(size)sMB, ISO format image for Intel-compatible PCs (%(arch)s-bit)') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}}<br /></p>
+                        </div>
+                        </div>
+                        <div class="clear"></div>
+
                         <div class="image-des">
                         <p>${Markup(_('Fedora Spins are alternative versions of Fedora, tailored for various types of users via hand-picked application sets or customizations. Desktop specific Spins are available in the &lt;a href="%s"&gt;Desktops section&lt;/a&gt;.') % '#desktops')}</p>
                         </div>
@@ -316,6 +336,28 @@ l_code = l_map.get(lang, dflt_language)
                                             <py:when test="global_variables.release['curr_state'] == 'Beta'">${_('Upcoming Final Release is planned for')}&nbsp;${schedule['final']}
                                             </py:when>
                                         </py:choose>
+
+                        <div class="grid_16 alpha omega" id="main-download-section">
+                        <h3>${Markup(_('Fedora %(rel)s %(state)s Workstation')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+                        <div class="grid_5 alpha">
+                            <img src="${path}/static/images/color-workstation.png" alt="Workstation Product" />
+                        </div>
+                        <div class="grid_11 omega">
+                            <h4>${_('Workstation Images')}</h4>
+                            <p>${_('This is the latest version of the Fedora Linux operating system\'s Desktop Edition. It\'s everything you need to try out Fedora — you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop.')}</p>
+                            <div class="grid_5">
+                            <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" class="big-button download-splash">${_('Download 64bit!')}</a>
+                            </div>
+                            <div class="grid_5">
+                            <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" class="big-button download-splash">${_('Download 32bit!')}</a>
+                            </div>
+                            <p class="small">${_('%(size)sMB, ISO format image for Intel-compatible PCs (%(arch)s-bit)') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}}<br /></p>
+                        </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
                                 </p>
                         <h4>${Markup(_('Fedora Cloud Images'))}</h4>
                 <ul class="downloadbox cloudimage">
@@ -375,6 +417,30 @@ l_code = l_map.get(lang, dflt_language)
                                             </py:when>
                                         </py:choose>
                                 </p>
+
+                        
+                    <div class="grid_16 alpha omega" id="main-download-section">
+                        <h3>${Markup(_('Fedora %(rel)s %(state)s Cloud')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+                        <div class="grid_4 alpha">
+                            <img src="${path}/static/images/color-cloud.png" alt="Cloud Product" />
+                        </div>
+                        <div class="grid_12 omega">
+                            <h4>${_('Cloud Images')}</h4>
+                            <p>${_('This is the latest version of the Fedora Linux operating system\'s Desktop Edition. It\'s everything you need to try out Fedora — you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop.')}</p>
+                            <div class="grid_5 prefix_1">
+                            <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" class="big-button download-splash">${_('Download 64bit!')}</a>
+                            </div>
+                            <div class="grid_5">
+                            <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" class="big-button download-splash">${_('Download 32bit!')}</a>
+                            </div>
+                            <p class="small">${_('%(size)sMB, ISO format image for Intel-compatible PCs (%(arch)s-bit)') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}}<br /></p>
+                        </div>
+                        </div>
+                        <div class="clear"></div>        
+
+
+
+
 					 <div class="image-des">
 						<p>${_('Fedora for ARM includes two image types–one for use with platforms requiring a VFAT partition (Pandaboard), the other for use with devices that boot from an EXT partition (Trimslice). For each of these there are a number of desktop choices including MATE, KDE, Xfce, LXDE, SOAS and a minimal image that does not include the desktop. Any of these images can be used with QEMU.')}</p>
 						<p>${Markup(_('To get more information, read the &lt;a href="%s"&gt;installation instructions&lt;/a&gt;.') % 'https://fedoraproject.org/wiki/Architectures/ARM/F20/Installation')}</p>
