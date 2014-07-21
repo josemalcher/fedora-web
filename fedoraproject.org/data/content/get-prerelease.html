@@ -177,6 +177,77 @@ l_code = l_map.get(lang, dflt_language)
                         </div>
                         <div class="clear"></div>
 
+                     <div class="image-des">
+                        <p>${_('Fedora for ARM includes two image types–one for use with platforms requiring a VFAT partition (Pandaboard), the other for use with devices that boot from an EXT partition (Trimslice). For each of these there are a number of desktop choices including MATE, KDE, Xfce, LXDE, SOAS and a minimal image that does not include the desktop. Any of these images can be used with QEMU.')}</p>
+                        <p>${Markup(_('To get more information, read the &lt;a href="%s"&gt;installation instructions&lt;/a&gt;.') % 'https://fedoraproject.org/wiki/Architectures/ARM/F20/Installation')}</p>
+                    </div>
+
+                        <h4>${Markup(_('Fedora ARM Images'))}</h4>
+                <ul class="downloadbox armimage">
+                    <li>
+                        <h5>${Markup(_('KDE'))}</h5>
+                        <ul>
+                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-KDE-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
+                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-KDE-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>${Markup(_('Minimal'))}</h5>
+                        <ul>
+                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Minimal-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
+                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
+                        </ul>
+                    </li>
+                    <!-- experimental -->
+                    <li>
+                        <h5>PXE</h5>
+                        <ul>
+                            <li><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Fedora/armhfp/os/images/pxeboot/">${_('PXE tree')}</a></li>
+                            <li><a href="http://docs.fedoraproject.org/en-US/Fedora/19/html/Installation_Guide/ap-install-server.html">${Markup(_('Setup your PXE server'))}</a></li>
+                        </ul>
+                    </li>
+                    <!-- /experimental -->
+                </ul>
+
+                        <h4>${Markup(_('Fedora ARM Desktop Spins'))}</h4>
+                <ul class="downloadbox armimage">
+                    <li>
+                        <h5>${Markup(_('Desktop'))}</h5>
+                        <ul>
+                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Desktop-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
+                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Desktop-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>${Markup(_('Xfce'))}</h5>
+                        <ul>
+                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-XFCE-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
+                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-XFCE-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>${Markup(_('LXDE'))}</h5>
+                        <ul>
+                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-LXDE-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
+                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-LXDE-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>${Markup(_('Mate'))}</h5>
+                        <ul>
+                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Mate-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
+                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Mate-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>${Markup(_('SoaS'))}</h5>
+                        <ul>
+                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-SoaS-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
+                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-SoaS-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+
                 <h4>${Markup(_('Let me look around...'))}</h4>
                 <ul class="download">
                     <li><a href="http://torrent.fedoraproject.org/">${Markup(_('See all torrents'))}</a></li>
@@ -326,80 +397,6 @@ l_code = l_map.get(lang, dflt_language)
                         </ul>
                     </li>
                 </ul>
-
-
-
-
-					 <div class="image-des">
-						<p>${_('Fedora for ARM includes two image types–one for use with platforms requiring a VFAT partition (Pandaboard), the other for use with devices that boot from an EXT partition (Trimslice). For each of these there are a number of desktop choices including MATE, KDE, Xfce, LXDE, SOAS and a minimal image that does not include the desktop. Any of these images can be used with QEMU.')}</p>
-						<p>${Markup(_('To get more information, read the &lt;a href="%s"&gt;installation instructions&lt;/a&gt;.') % 'https://fedoraproject.org/wiki/Architectures/ARM/F20/Installation')}</p>
-					</div>
-
-                        <h4>${Markup(_('Fedora ARM Images'))}</h4>
-                <ul class="downloadbox armimage">
-                    <li>
-                        <h5>${Markup(_('KDE'))}</h5>
-                        <ul>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-KDE-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-KDE-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Minimal'))}</h5>
-                        <ul>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Minimal-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
-                        </ul>
-                    </li>
-                    <!-- experimental -->
-                    <li>
-                        <h5>PXE</h5>
-                        <ul>
-                            <li><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Fedora/armhfp/os/images/pxeboot/">${_('PXE tree')}</a></li>
-                            <li><a href="http://docs.fedoraproject.org/en-US/Fedora/19/html/Installation_Guide/ap-install-server.html">${Markup(_('Setup your PXE server'))}</a></li>
-                        </ul>
-                    </li>
-                    <!-- /experimental -->
-                </ul>
-
-                        <h4>${Markup(_('Fedora ARM Desktop Spins'))}</h4>
-                <ul class="downloadbox armimage">
-                    <li>
-                        <h5>${Markup(_('Desktop'))}</h5>
-                        <ul>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Desktop-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Desktop-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Xfce'))}</h5>
-                        <ul>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-XFCE-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-XFCE-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('LXDE'))}</h5>
-                        <ul>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-LXDE-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-LXDE-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Mate'))}</h5>
-                        <ul>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Mate-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Mate-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('SoaS'))}</h5>
-                        <ul>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-SoaS-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-SoaS-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
-                        </ul>
-                    </li>
-					</ul>
 
                 <div class="clear"></div>
                 <xi:include href="../templates/content-export-regulations.html" />
