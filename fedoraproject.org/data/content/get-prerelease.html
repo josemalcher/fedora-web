@@ -262,18 +262,20 @@ l_code = l_map.get(lang, dflt_language)
                         <div class="grid_12 omega">
                             <h4>${_('Cloud Images')}</h4>
                             <p>${_('This is the latest version of the Fedora Linux operating system\'s Desktop Edition. It\'s everything you need to try out Fedora — you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop.')}</p>
-                            <div class="grid_5 prefix_1">
-                            <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" class="big-button download-splash">${_('Download 64bit!')}</a>
+                            <div class="grid_3 prefix_1">
+                            <a href="#cloud-base" class="big-button">${_('Cloud Base')}</a>
                             </div>
-                            <div class="grid_5">
-                            <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" class="big-button download-splash">${_('Download 32bit!')}</a>
+                            <div class="grid_3">
+                            <a href="#atomic" class="big-button">${_('F%s Atomic') % global_variables.release['next_id']}</a>
                             </div>
-                            <p class="small">${_('%(size)sMB, ISO format image for Intel-compatible PCs (%(arch)s-bit)') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}}<br /></p>
+                            <div class="grid_3">
+                            <a href="#big-data" class="big-button">${_('Big Data')}</a>
+                            </div>
                         </div>
                         </div>
                         <div class="clear"></div>
 
-                                                <h4>${Markup(_('Fedora Cloud Images'))}</h4>
+                <h4 id="cloud-base">${Markup(_('Fedora Cloud Images'))}</h4>
                 <ul class="downloadbox cloudimage">
                     <li>
                         <h5>${Markup(_('64 bit'))}</h5>
@@ -290,7 +292,8 @@ l_code = l_map.get(lang, dflt_language)
                         </ul>
                     </li>
                 </ul>
-                        <h4>${Markup(_('Fedora EC2 Images'))}</h4>
+
+                <h4 id="atomic">${_('F%s Atomic') % global_variables.release['next_id']}</h4>
                 <ul class="downloadbox cloudimage">
 <!-- Specific AMI selector -->
                     <ul>
@@ -304,6 +307,24 @@ l_code = l_map.get(lang, dflt_language)
                         <!-- /end If JS enabled -->
 <!-- /Specific AMI selector -->
                     </ul>
+                </ul>
+
+                <h4 id="big-data">${Markup(_('Big Data Images'))}</h4>
+                <ul class="downloadbox cloudimage">
+                    <li>
+                        <h5>${Markup(_('64 bit'))}</h5>
+                        <ul>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/x86_64/Fedora-x86_64-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}/Images/x86_64/Fedora-x86_64-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>${Markup(_('32 bit'))}</h5>
+                        <ul>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/i386/Fedora-i386-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/i386/Fedora-i386-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
+                        </ul>
+                    </li>
                 </ul>
 
 
