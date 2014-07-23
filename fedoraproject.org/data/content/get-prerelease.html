@@ -119,6 +119,8 @@ l_code = l_map.get(lang, dflt_language)
                                 </p>
 
                 <h4>${Markup(_('Choose your Fedora Prerelease Product'))}</h4>
+                <p>${Markup(_('What would you like to accomplish with Fedora? Are you looking for a server platform to host applications and infrastructure services? Are you looking for a powerful desktop workstation? Do you need an image for building a cloud-based application?'))}</p>
+                <p>${Markup(_('Fedora offers three separate products for you that are streamlined and configured out-of-the-box for these key uses of Fedora.'))}</p>
                 <div class="product-box">
                         <a class="product-server" href="#server" alt="Server"></a>
                         <a class="product-workstation" href="#workstation" alt="Workstation"></a>
@@ -165,7 +167,7 @@ l_code = l_map.get(lang, dflt_language)
                         </div>
                         <div class="grid_12 omega">
                             <h4>${_('Server Images')}</h4>
-                            <p>${_('This is the latest version of the Fedora Linux operating system\'s Desktop Edition. It\'s everything you need to try out Fedora — you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop.')}</p>
+                            <p>${_('Do you need an operating platform for important infrastructure tasks (such as DNS and DHCP) and server applications, such as file/storage servers, databases, or web applications? Do you need a platform for deploying an Infrastructure-as-a-Service system to support cloud deployments? Do you need a platform to run an entire data center? The Fedora server product is made to support all of these important server use cases.')}</p>
                             <div class="grid_5 prefix_1">
                             <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" class="big-button download-splash">${_('Download 64bit!')}</a>
                             </div>
@@ -332,7 +334,7 @@ l_code = l_map.get(lang, dflt_language)
                         </div>
                         <div class="grid_12 omega">
                             <h4>${_('Cloud Images')}</h4>
-                            <p>${_('This is the latest version of the Fedora Linux operating system\'s Desktop Edition. It\'s everything you need to try out Fedora — you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop.')}</p>
+                            <p>${_('The Fedora Cloud product consists of several images based on your needs - a base image for full control, an atomic image ready to deploy Docker containers, and a ready-to-deploy Big Data storage application.')}</p>
                             <div class="grid_3 prefix_1">
                             <a href="#cloud-base" class="big-button">${_('Cloud Base')}</a>
                             </div>
