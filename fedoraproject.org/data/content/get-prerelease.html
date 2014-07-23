@@ -170,11 +170,12 @@ l_code = l_map.get(lang, dflt_language)
                             <p>${_('Do you need an operating platform for important infrastructure tasks (such as DNS and DHCP) and server applications, such as file/storage servers, databases, or web applications? Do you need a platform for deploying an Infrastructure-as-a-Service system to support cloud deployments? Do you need a platform to run an entire data center? The Fedora server product is made to support all of these important server use cases.')}</p>
                             <div class="grid_5 prefix_1">
                             <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" class="big-button download-splash">${_('Download 64bit!')}</a>
+                            <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['x86_64_Live_KDE']}</p>
                             </div>
                             <div class="grid_5">
                             <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" class="big-button download-splash">${_('Download 32bit!')}</a>
+                            <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['x86_64_Live_KDE']}</p>
                             </div>
-                            <p class="small">${_('%(size)sMB, ISO format image for Intel-compatible PCs (%(arch)s-bit)') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}}<br /></p>
                         </div>
                         </div>
                         <div class="clear"></div>
@@ -254,7 +255,6 @@ l_code = l_map.get(lang, dflt_language)
                 <ul class="download">
                     <li><a href="http://torrent.fedoraproject.org/">${Markup(_('See all torrents'))}</a></li>
                     <li><a href="http://mirrors.fedoraproject.org/publiclist/Fedora/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/">${Markup(_('See all mirrors'))}</a></li>
-                    <li><a href="http://spins.fedoraproject.org/">${Markup(_('See all custom spins'))}</a></li>
                 </ul>
                     <div class="clear"></div>
                     <xi:include href="../templates/content-export-regulations.html" />
@@ -292,11 +292,12 @@ l_code = l_map.get(lang, dflt_language)
                             <p>${_('This is the latest version of the Fedora Linux operating system\'s Desktop Edition. It\'s everything you need to try out Fedora — you don\'t have to erase anything on your current system to try it out, and it won\'t put your files at risk. Take Fedora for a test drive, and if you like it, you can install Fedora directly to your hard drive straight from the Live Media desktop.')}</p>
                             <div class="grid_5">
                             <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" class="big-button download-splash">${_('Download 64bit!')}</a>
+                            <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['x86_64_Live_KDE']}</p>
                             </div>
                             <div class="grid_5">
                             <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['curr_id']}-1.iso" class="big-button download-splash">${_('Download 32bit!')}</a>
+                            <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['x86_64_Live_KDE']}</p>
                             </div>
-                            <p class="small">${_('%(size)sMB, ISO format image for Intel-compatible PCs (%(arch)s-bit)') % {'size':global_variables.iso_size['x86_64_Live_Desktop'], 'arch':'64'}}<br /></p>
                         </div>
                         </div>
                         <div class="clear"></div>
