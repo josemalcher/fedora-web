@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${Markup(_('Fedora Project - Download next steps.'))}</title>
+  </head>
+	<body id="fedoraproject-org" class="lang-${lang}">
+        <div class="page-header" id="header-splash">
+            <div class="container_16">
+                <div class="grid_11">
+                    <h2>${_('Thanks for downloading Fedora!')}</h2>
+                    <p>${_('We know you\'ll love it!')}</p>
+                </div>
+                <div class="grid_5 page-header-sidebar">
+                    <p>${_('Fedora is built by people across the globe. Everyone is welcome to join!')}</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="container_12">
+            <div class="grid_12">
+             <h4>${_('You are downloading the')} ${global_variables.release['curr_state']} ${_('release of Fedora')} ${global_variables.release['next_id']} ${_('Workstation Edition')}  ${_('download should begin in a few seconds. If not, click the link below')}</h4>
+             <p class="download-path"></p>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_4">
+                <div class="download-hl-box callout-style1">
+                    <h5>${_('What should I do with this ISO file?')}</h5>
+                    <p>${_('An Iso file is an image of a disk. You\'ll need to burn it to a USB Stick or DVD in order to use it.')}</p>
+                    <p>${Markup(_('Not to worry, &lt;a href="../verify"&gt;verify&lt;/a&gt; your download and &lt;a href="%s"&gt;just follow our step-by-step instructions&lt;/a&gt;.') % 'http://docs.fedoraproject.org/en-US/Fedora/%s/html/Installation_Guide/sn-making-media.html#sn-making-disc-media' % (global_variables.release['curr_id']))}</p>
+                </div>
+            </div>
+            <div class="grid_4">
+                <div class="download-hl-box callout-style1">
+                    <h5>${_('I need help running or installing Fedora.')}</h5>
+                    <p>${_('There\'s several ways you can get help with Fedora, from forums to live chat to mailing lists.')}</p>
+                    <p><a href="${path}/${lang}/get-help">${_('Get help with Fedora')}</a>.</p>
+                </div>
+            </div>
+            <div class="grid_4">
+                <div class="download-hl-box callout-style1">
+                    <h5>${_('I want to learn more about Fedora.')}</h5>
+                    <p>${_('Fedora is more than an operating system - it\'s a vibrant community focused on freedom and innovation.')}</p>
+                    <p><a href="${path}/${lang}/join-fedora">${_('Learn more about Fedora')}</a>.</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_12 download-pandas">
+                <div class="grid_4 alpha"><img src="${path}/static/images/panda-list.png" alt="" /></div>
+                <div class="grid_4"><img src="${path}/static/images/panda-question.png" alt="" /></div>
+                <div class="grid_4 omega"><img src="${path}/static/images/panda-wave.png" alt="" /></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+	</body>
+</html>
