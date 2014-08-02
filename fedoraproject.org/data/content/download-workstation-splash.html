@@ -22,7 +22,7 @@
 
         <div class="container_12">
             <div class="grid_12">
-             <h4>${_('You are downloading the')} ${global_variables.release['curr_state']} ${_('release of Fedora')} ${global_variables.release['next_id']} ${_('Workstation Edition')}  ${_('download should begin in a few seconds. If not, click the link below')}</h4>
+             <h4>${Markup(_('Your download of the %(state)s release of Fedora %(rel)s Workstation should begin in a few seconds. If not, click the link below')) % {'state':global_variables.release['curr_state'], 'rel':global_variables.release['next_id']}}</h4>
              <p class="download-path"></p>
             </div>
             <div class="clear"></div>
