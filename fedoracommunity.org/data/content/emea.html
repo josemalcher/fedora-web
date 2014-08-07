@@ -3,7 +3,6 @@ import math
 from operator import itemgetter
 # see http://en.wikipedia.org/wiki/List_of_countries_and_capitals_in_native_languages
 contries = [
-            {'name':'Belgium',         'title':_('Fedora Belgium Community'),                  'url':'http://be.fedoracommunity.org'},
             {'name':'Česká republika', 'title':_('Fedora Czech Republic Community'),           'url':'http://www.fedora.cz'},
             {'name':'France',          'title':_('Fedora French Community'),                   'url':'http://www.fedora-fr.org'},
             {'name':'Deutschland',     'title':_('Fedora unofficial German Fedora Portal'),    'url':'http://www.fedorausers.de'},
@@ -41,7 +40,7 @@ index=math.ceil(len(contries)/float(2))
 						<h3>${_('Region-Wide Resources')}</h3>
 						<div class="prefix_1">
 						${Markup(_('The EMEA region, including Europe, the Middle East, &amp; Africa, is served by the &lt;a href="http://fedoraproject.org/wiki/Ambassadors/EMEA"&gt;Fedora Ambassadors EMEA group&lt;/a&gt;.'))}
-			
+
 						<table>
 							<tr>
 								<th>${_('Website')}</th>
