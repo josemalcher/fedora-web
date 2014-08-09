@@ -8,147 +8,131 @@
     <title>Fedora</title>
   </head>
 
-  <body>
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron-head">
-      <div class="container-fluid">
-        <img src="${path}/static/images/logo.png" class="img-responsive pull-left" />
-
-
-<div id='navmenu' class="pull-right">
-    <nav role="navigation" class="navbar navbar-default">
-        <!-- Toggle for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <!-- Collection of nav links, forms, and other content for toggling -->
-        <div id="navbarCollapse" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Workstation <b class="caret"></b></a>
-                    <ul role="menu" class="dropdown-menu">
-                        <li><a href="#">Overview</a></li>
-                        <li><a href="#">More Downloads</a></li>
-                        <li><a href="#">Spins</a></li>
-                        <li><a href="#">Verify</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Cloud <b class="caret"></b></a>
-                    <ul role="menu" class="dropdown-menu">
-                        <li><a href="#">Overview</a></li>
-                        <li><a href="#">Public Services</a></li>
-                        <li><a href="#">EC2 tutorial</a></li>
-                        <li><a href="#">Verify</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Server <b class="caret"></b></a>
-                    <ul role="menu" class="dropdown-menu">
-                        <li><a href="#">Overview</a></li>
-                        <li><a href="#">ARM</a></li>
-                        <li><a href="#">Verify</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Community <b class="caret"></b></a>
-                    <ul role="menu" class="dropdown-menu">
-                        <li><a href="#">Design</a></li>
-                        <li><a href="#">Marketing</a></li>
-                        <li><a href="#">Ambassadors</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Login</a></li>
-            </ul>
-        </div>
-    </nav>
-</div>
-</div>
-</div>
-
-
-
-    <div class="jumbotron overview-the-three text-center darkbackground">
-      <div class="container">
-        <h1>one distribution for the <br/><strong><a href="#workstation">workstation</a></strong>, <strong><a href="#server">server</a></strong>, and <strong><a href="#cloud">cloud</a></strong></h1>
-<img src="${path}/static/images/3-image.png" class="img-responsive center-block" />
-      </div>
-    </div>
-
-
-    <div class="jumbotron server text-center bigimage darkbackground" id="server">
-      <div class="container">
-      <h1>Fedora for Servers</h1>
-      <p class="displaybox">Fedora Server is a community-built platform for system administrators and developers seeking to deploy applications and services that use the latest technology and run on a stable foundation with effective resource utilization. </p>
-      <a class="btn btn-primary" href="#" role="button">Download Fedora Server</a> <a class="btn btn-link		" href="server.html" role="button">Learn More</a>
-      </div>
-    </div>
-
-    <div class="jumbotron workstation text-left" id="workstation">
-      <div class="container">
-            <div class="row">
-              <div class="col-md-5">
-                      <img src="${path}/static/images/monitor.png" class="img-responsive center-block"/>
-              </div>
-              <div class="col-md-6 col-md-offset-1">
-                <h1>Fedora Workstation</h1>
-                  <p>A reliable, user-friendly and powerful operating system for laptop and PC hardware. Fedora features a stable, integrated, and polished interface that allows for efficient software development. Fedora is great for beginners as well - with an easy-to-use Gnome desktop, plenty of features, and great stability that anyone can enjoy. </p>
-                  <a class="btn btn-primary" href="#" role="button">Download Fedora 21 Workstation</a> <a class="btn btn-link" href="#" role="button">Learn More</a>
-              </div>
-            </div>
-      </div>
-    </div>
-
-    <div class="jumbotron server text-center bigimage darkbackground" id="cloud">
-      <div class="container">
-      <h1>Fedora for the Cloud</h1>
-      <p class="displaybox">Fedora Cloud is the community platform for system administrators and developers seeking to deploy applications and services in the cloud while using the latest technology and effective resource management. </p>
-      <a class="btn btn-primary" href="#" role="button">Download Fedora Cloud</a> <a class="btn btn-link		" href="#" role="button">Learn More</a>
-      </div>
-    </div>
-
-
-
-    <div class="jumbotron community bigimage text-center darkbackground">
-      <div class="container">
-      <p class="displaybox">Fedora is and always will be free for anyone to use, modify, and distribute. It is built by an international community of developers that strive to advance free software while maintaining its fundamental values:</p>
-      <h1>Freedom. Friends. Features. First. </h1>
-      <a class="btn btn-primary" href="#" role="button">Join the Community</a>
-      </div>
-    </div>
-
-
-
-
+  <body class="home">
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top headroom" >
     <div class="container">
-      <!-- Example row of columns -->
+      <div class="navbar-header">
+        <!-- Button for smallest screens -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Fedora Logo" /></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Download<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="sidebar-left.html">Workstation</a></li>
+              <li><a href="sidebar-right.html">Cloud</a></li>
+              <li><a href="sidebar-right.html">Server</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Design</a></li>
+                          <li><a href="#">Marketing</a></li>
+                          <li><a href="#">Ambassadors</a></li>
+            </ul>
+          </li>
+          <li><a class="btn" href="signin.html">SIGN IN / SIGN UP</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  <!-- /.navbar -->
+
+  <!-- Header -->
+  <header id="head">
+    <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <img src="assets/images/3-image.png" class="img-responsive center-block" />
+        <h1 class="lead">FREEDOM, FRIENDS, FEATURES, FIRST.</h1>
+        <p class="tagline">FEDORA NEXT: one distribution for <a href="http://www.gettemplate.com/?utm_source=progressus&amp;utm_medium=template&amp;utm_campaign=progressus">Workstation</a>, <a href="http://www.gettemplate.com/?utm_source=progressus&amp;utm_medium=template&amp;utm_campaign=progressus">Server</a> and <a href="http://www.gettemplate.com/?utm_source=progressus&amp;utm_medium=template&amp;utm_campaign=progressus">Cloud</a>.</p>
+        <p><a class="btn btn-default btn-lg" role="button">MORE INFO</a> <a href="#Products" class="btn btn-action btn-lg" role="button">GET YOUR FEDORA 21</a></p>
+      </div>
+    </div>
+  </header>
+  <!-- /Header -->
+
+  <!-- Intro -->
+  <div class="container text-center">
+    <h2 class="thin">Fedora has become more flexible, choose your favorite product.</h2>
+    <p class="text-muted">
+      What would you like to accomplish with Fedora? Are you looking for a server platform to host applications and infrastructure services? Are you looking for a powerful desktop workstation? Do you need an image for building a cloud-based application? Fedora offers three separate products for you that are streamlined and configured out-of-the-box for these key uses of Fedora.
+    </p>
+  </div>
+  <!-- /Intro-->
+
+  <!-- Highlights - jumbotron -->
+  <div class="jumbotron top-space" id="Products">
+    <div class="container">
+
+      <h3 class="text-center thin">Which Fedora Product do you want today?</h3>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-6 highlight">
+          <div class="h-caption"><img src="assets/images/color-workstation.png" class="img-responsive center-block" /></div>
+          <div class="h-body text-justify">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aliquid adipisci aspernatur. Soluta quisquam dignissimos earum quasi voluptate. Amet, dignissimos, tenetur vitae dolor quam iusto assumenda hic reprehenderit?</p>
+            <div class="text-center"><a href="#Workstation" class="btn btn-action btn-success active" role="button">GET IT NOW!</a></div>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <div class="col-md-4 col-sm-6 highlight">
+          <div class="h-caption"><img src="assets/images/color-server.png" class="img-responsive center-block" /></div>
+          <div class="h-body text-justify">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, commodi, sequi quis ad fugit omnis cumque a libero error nesciunt molestiae repellat quos perferendis numquam quibusdam rerum repellendus laboriosam reprehenderit! </p>
+            <div class="text-center"><a href="#Server" class="btn btn-action" role="button">GET IT NOW!</a></div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 highlight">
+          <div class="h-caption"><img src="assets/images/color-cloud.png" class="img-responsive center-block" /></div>
+          <div class="h-body text-justify">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, vitae, perferendis, perspiciatis nobis voluptate quod illum soluta minima ipsam ratione quia numquam eveniet eum reprehenderit dolorem dicta nesciunt corporis?</p>
+            <div class="text-center"><a href="#Cloud" class="btn btn-action btn-primary active" role="button">GET IT NOW!</a></div>
+          </div>
         </div>
       </div>
+    </div> <!-- /row  -->
 
-    </div> <!-- /container -->
+  </div>
+  <!-- /Highlights -->
 
-  </body>
+  <!-- container -->
+  <div class="container">
+
+    <h2 class="text-center top-space">More Fedora Informations</h2>
+    <div class="row">
+      <div class="col-sm-6">
+        <h3>Looking for Fedora Spins?</h3>
+        <p>If you are looking for official Fedora Spins you should refer to our <a href="http://spins.fedoraproject.org/">Spins Website</a>, where you can find find many images.</p>
+      </div>
+      <div class="col-sm-6">
+        <h3>Need help? Check out our Support Channels!</h3>
+        <ul>
+          <li><a href="http://ask.fedoraproject.org/">Ask Fedora</a></li>
+          <li><a href="http://fedoraproject.org/wiki/Communicate#IRC_for_interactive_community_support">IRC Channels</a></li>
+          <li><a href="http://fedoraproject.org/wiki/Communicate#Mailing_Lists">Mailing List</a></li>
+        </ul>
+      </div>
+    </div> <!-- /row -->
+
+    <div class="row">
+      <div class="col-sm-6">
+        <h3>What is happening in Fedora? Fedora Magazine!</h3>
+        <p>Stay tuned with Fedora and get all the Latest News and Reports on <a href="http://fedoramagazine.org/">Fedora Magazine</a>.</p>
+      </div>
+      <div class="col-sm-6">
+        <h3>Fedora Docs: Learn all the Fedora you need.</h3>
+        <p>If you want to learn how to use Fedora, its System Requirements, Features and User Guides, please refer to our <a href="http://docs.fedoraproject.org/">Official Documentation</a>.</p>
+      </div>
+    </div> <!-- /row -->
+
+    <div class="jumbotron top-space">
+      <h4>Looking for the next Fedora Release?</h4>
+      </div>
+
+</div>  <!-- /container -->
+</body>
 </html>
-
