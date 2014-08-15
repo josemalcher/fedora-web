@@ -1,43 +1,41 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
+<!DOCTYPE html>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
   xmlns:py="http://genshi.edgewall.org/"
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
-<div id="header">
-    <div class="container_16">
-		<div class="grid_6 prefix_10">
-			<form action="" method="GET" class="lang-dropdown">
-				<select name="lang">
-				<xi:include href="translations.html" />
-				</select>
-				<input type="submit" value="${_('OK')}" />
-			</form>
-		</div>
-        <div class="clear"></div>
-        <div class="grid_9" id="site-heading">
-            <a href="/"><h1><span id="logo">Fedora Project</span></h1></a>
-            <h2>Freedom. Friends. Features. First.</h2>
-        </div>
-        <div class="grid_1">&nbsp;<!-- search filler --></div>
-        <div class="grid_6" id="site-heading-rh">
-            <a href="http://www.redhat.com">${_('A Red Hat-Sponsored Community Project')}&nbsp;&nbsp;<img id="rh-community" src="/static/images/sponsors/redhat-community.png" alt="" /></a>
-        </div>
-        <div class="clear"></div>
-    </div>
-</div>
 
-<div id="main-nav">
-    <div class="container_16">
-        <ul id="nav-menu">
-            <li><a href="${path}/${lang}/">${_('Home')}</a></li>
-            <li><a href="${path}/${lang}/features/">${Markup(_('Features &amp; Screenshots'))}</a></li>
-            <li><a href="${path}/${lang}/get-fedora">${_('Download')}</a></li>
-            <li><a href="${path}/${lang}/join-fedora">${_('Community')}</a></li>
-            <li><a href="${path}/${lang}/using/">${_('Using Fedora')}</a></li>
-            <li><a href="${path}/${lang}/get-help">${_('Help')}</a></li>
-            <li><a href="/wiki" id="nav-special">${_('Contributors')}</a></li>
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top headroom" >
+    <div class="container">
+      <div class="navbar-header">
+        <!-- Button for smallest screens -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html"><img src="${path}/static/images/logo.png" alt="Fedora Logo" /></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Download<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="sidebar-left.html">Workstation</a></li>
+              <li><a href="sidebar-right.html">Cloud</a></li>
+              <li><a href="sidebar-right.html">Server</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Design</a></li>
+                          <li><a href="#">Marketing</a></li>
+                          <li><a href="#">Ambassadors</a></li>
+            </ul>
+          </li>
         </ul>
+      </div><!--/.nav-collapse -->
     </div>
-</div>
+  </div>
+  <!-- /.navbar -->
 
 </html>
