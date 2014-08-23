@@ -162,17 +162,17 @@ $(document).ready(function(){
     }
 
      // redirect download links to Workstation splash page
-    $("a.download-workstation-splash").click(function(event){
+    $("a.download-prerelease-splash").click(function(event){
         event.preventDefault();
         linkLocation = this.href;
 
         // this passes the URL path to the splash page
-        window.location = 'download-workstation-splash?file='+linkLocation;
+        window.location = 'download-prerelease-splash?file='+linkLocation;
 	});
 
 
     // splash download page stuff
-    if (/.*download-workstation-splash.*/i.test(window.location.href)) {
+    if (/.*download-prerelease-splash.*/i.test(window.location.href)) {
         $("p.download-path").ready(function(){
             // get file path from URL, then display it
             var valid = false;
