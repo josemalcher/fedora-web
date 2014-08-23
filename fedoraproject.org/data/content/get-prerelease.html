@@ -178,7 +178,23 @@ l_code = l_map.get(lang, dflt_language)
                             </div>
                         </div>
                         </div>
-                        <div class="clear"></div>
+
+                        <h4>${Markup(_('Fedora %(rel)s %(state)s Network Install Image')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                            <p>${_('The Network Install Image of Fedora is useful if you have a fast Internet connection available. When you boot from this media, you will be running the installation program and you get the selected packages directly from the repositories. The Image ensures you having the latest stable versions of the packages installed.')}</p>
+                        <div class="alpha omega"><hr /></div>
+                            <div class="grid_6 prefix_2 alpha">
+                                <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Fedora/i386/iso/Fedora-${global_variables.release['curr_id']}-i386-netinst.iso" class="download-button-mini download-prerelease-splash">${_('Download 64bit!')}</a>
+                                <p class="fine-print">${_('%(size)sMB ISO Image') % {'size':global_variables.iso_size['i386_Netinstall']}}</p>
+                            </div>
+                            <div class="grid_6 prefix_2 omega">
+                                <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Fedora/x86_64/iso/Fedora-${global_variables.release['curr_id']}-x86_64-netinst.iso" class="download-button-mini download-prerelease-splash">${_('Download 32bit!')}</a>
+                                <p class="fine-print">${_('%(size)sMB ISO Image') % {'size':global_variables.iso_size['x86_64_Netinstall']}}</p>
+                            </div>
+                        <div class="alpha omega"><hr /></div>
+
+
+
+<!-- Keep this for eventual ARM images, delete before merging!!!
 
                      <div class="image-des">
                         <p>${_('Fedora for ARM includes two image types–one for use with platforms requiring a VFAT partition (Pandaboard), the other for use with devices that boot from an EXT partition (Trimslice). For each of these there are a number of desktop choices including MATE, KDE, Xfce, LXDE, SOAS and a minimal image that does not include the desktop. Any of these images can be used with QEMU.')}</p>
@@ -201,7 +217,6 @@ l_code = l_map.get(lang, dflt_language)
                             <li><a class="download-prerelease-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
                         </ul>
                     </li>
-                    <!-- experimental -->
                     <li>
                         <h5>PXE</h5>
                         <ul>
@@ -209,7 +224,6 @@ l_code = l_map.get(lang, dflt_language)
                             <li><a href="http://docs.fedoraproject.org/en-US/Fedora/19/html/Installation_Guide/ap-install-server.html">${Markup(_('Setup your PXE server'))}</a></li>
                         </ul>
                     </li>
-                    <!-- /experimental -->
                 </ul>
 
                         <h4>${Markup(_('Fedora ARM Desktop Spins'))}</h4>
@@ -249,7 +263,7 @@ l_code = l_map.get(lang, dflt_language)
                             <li><a class="download-prerelease-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-SoaS-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
                         </ul>
                     </li>
-                    </ul>
+                    </ul>    -->
 
                 <h4>${Markup(_('Let me look around...'))}</h4>
                 <ul class="download">
