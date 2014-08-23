@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:py="http://genshi.edgewall.org/"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../templates/master.html" />
+  <head>
+    <title>${Markup(_('Fedora Project - Verify your download'))}</title>
+  </head>
+        <body id="fedoraproject-org" class="lang-${lang}">
+
+        <div class="page-header" id="header-verify">
+            <div class="container_16">
+                <div class="grid_16">
+                    <div class="grid_11 alpha">
+                        <h2>${Markup(_('Verify your Fedora %(rel)s %(state)s ISO')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h2>
+                        <p>${_('Make sure the iso downloaded is correct.')}</p>
+                    </div>
+                    <div class="grid_5 omega page-header-sidebar">
+                        <p><!-- blank space --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_16">
+            <div class="grid_16">
+
+                <p id="section-nav-top"><a href="${path}/${lang}/get-prerelease">${Markup(_('&amp;#8592; Back to the main "Get Fedora Prerelease" page'))}.</a></p>
+
+                <p class="note">${Markup(_('Windows user? Follow &lt;a href="%s"&gt;these instructions&lt;/a&gt; instead.')
+						% 'http://docs.fedoraproject.org/en-US/Fedora/%s/html/Burning_ISO_images_to_disc/sect-Burning_ISO_images_to_disc-Validating_the_Files.html' % (global_variables.release['curr_id']))}</p>
+                <p>${Markup(_('Once you have downloaded an ISO, verify it for security and integrity.  To verify your ISO, start by downloading the proper CHECKSUM file into the same directory as the ISO:'))}</p>
+
+                <table class="verify-install-media">
+                    <thead>
+                        <tr>
+                            <th colspan="4">${Markup(_('Fedora Products'))}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="install-media-arch">Server</th>
+                            <td><a href="./static/checksums/Server-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-CHECKSUM">x86_64</a></td>
+                            <td><a href="./static/checksums/Server-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i386-CHECKSUM">i386</a></td>
+                        </tr>
+                        <tr>
+                            <th class="install-media-arch">Workstation</th>
+                            <td><a href="./static/checksums/Workstation-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-CHECKSUM">x86_64</a></td>
+                            <td><a href="./static/checksums/Workstation-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i386-CHECKSUM">i386</a></td>
+                        </tr>
+                        <tr>
+                            <th class="install-media-arch">Cloud</th>
+                            <td><a href="./static/checksums/Cloud-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-CHECKSUM">x86_64</a></td>
+                            <td><a href="./static/checksums/Cloud-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i386-CHECKSUM">i386</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <table class="verify-live-media">
+                    <thead>
+                        <tr>
+                            <th colspan="4">${Markup(_('Desktop Spins'))}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="install-media-arch"><acronym title="${_('Live Images are KDE, LXDE, Xfce, MATE-Compiz and SoaS.')}">Live ISO</acronym></th>
+                            <td><a href="./static/checksums/Fedora-Live-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-CHECKSUM">x86_64</a></td>
+                            <td><a href="./static/checksums/Fedora-Live-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-CHECKSUM">i386</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="verify-install-media">
+                    <thead>
+                        <tr>
+                            <th colspan="4">${Markup(_('Other Spins'))}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="install-media-arch"><acronym title="${_('Spins are Design, Electronic-Lab, Games, Jam-KDE, Robotics, Scientific-KDE and Security.')}">Spins</acronym></th>
+                            <td><a href="./static/checksums/Fedora-Spins-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-CHECKSUM">x86_64</a></td>
+                            <td><a href="./static/checksums/Fedora-Spins-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-CHECKSUM">i386</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>${Markup(_('Next, import Fedora\'s GPG key(s):'))}</p>
+                <pre class="command">$ curl https://fedoraproject.org/static/fedora.gpg | gpg --import</pre>
+                <p>${Markup(_('You can verify the details of the GPG key(s) &lt;a href="%s/%s/keys"&gt;here&lt;/a&gt;.') % (path, lang))}</p>
+                <p>${Markup(_('Now, verify that the CHECKSUM file is valid:'))}</p>
+                <pre class="command">$ gpg --verify-files *-CHECKSUM</pre>
+                <p>${Markup(_('The CHECKSUM file should have a good signature from one of the following keys:'))}</p>
+                <ul>
+                    <li><code>95A43F54</code> - Fedora 21</li>
+                    <li><code>A0A7BADB</code> - Fedora 21 secondary arches (aarch64, PPC64, PPC64le, s390 and s390x)</li>
+                    <li><code>246110C1</code> - Fedora 20</li>
+                    <li><code>EFE550F5</code> - Fedora 20 secondary arches (ARM, PPC64, s390)</li>
+                    <li><code>FB4B18E6</code> - Fedora 19</li>
+                    <li><code>BA094068</code> - Fedora 19 secondary arches (ARM, PPC64, s390)</li>
+                </ul>
+                <p>${Markup(_('Finally, now that the CHECKSUM file has been verified, check that the ISO\'s checksum matches:'))}</p>
+                <pre class="command">$ sha256sum -c *-CHECKSUM</pre>
+                <p>${Markup(_('If the output states that the file is valid, then you\'re good to go!'))}</p>
+
+                <p id="section-nav-bottom"><a href="${path}/${lang}/get-prerelease">${Markup(_('&amp;#8592; Back to the main "Get Fedora Prerelease" page'))}.</a></p>
+           </div>
+        </div>
+        <div class="clear"></div>
+        </body>
+</html>
