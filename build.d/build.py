@@ -144,6 +144,11 @@ def process_dir(dirpath, filenames):
             beta_us = time.strftime("%Y-%b-%d", beta)
             final_us = time.strftime("%Y-%b-%d", final)
 
+            # Let's slice the US date for the calendar png
+
+            beta_cal = beta_us[-2:]
+            final_cal = final_us[-2:]
+
             # Move to the right locale (if known)
             try:
                 locale.setlocale(locale.LC_ALL, locale.locale_alias[options.lang.lower()])
@@ -156,7 +161,7 @@ def process_dir(dirpath, filenames):
             final = convert_date(final)
 
             locale.setlocale(locale.LC_ALL, 'en_US')
-            release_date = {'alpha':alpha, 'beta':beta, 'final':final, 'alpha_us':alpha_us, 'beta_us':beta_us, 'final_us':final_us}
+            release_date = {'alpha':alpha, 'beta':beta, 'final':final, 'alpha_us':alpha_us, 'beta_us':beta_us, 'final_us':final_us, 'beta_cal':beta_cal, 'final_cal':final_cal}
 
         ec2 = None
         if get_amis is not None:
