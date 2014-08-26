@@ -1,6 +1,6 @@
 <?python
 # Planet
-fpp = feedparse('http://planet.fedoraproject.org/atom.xml')
+fpp = feedparse('http://fedoramagazine.org/feed/')
 
 # Announce List
 fda = feedparse('https://lists.fedoraproject.org/rss/announce.xml')
@@ -18,13 +18,8 @@ fda = feedparse('https://lists.fedoraproject.org/rss/announce.xml')
         <div class="clear"></div>
         <div class="container_12">
             <div class="grid_6" id="announcement">
-                <h4>${_('Latest Announcements')}</h4>
-
-                <ul class="feed">
-                    <li py:for="entry in fda[:5]" py:if="'title' in entry" >
-                        <a href="${entry['link']}">${entry["title"]}</a>
-                    </li>
-                </ul>
+                <h4>${_('FIXME')}</h4>
+                <p>FIXME</p>
                 <div id="subscribe">
                 <h6>${_('Stay up to date — subscribe!')}</h6>
                 <ul>
@@ -34,24 +29,24 @@ fda = feedparse('https://lists.fedoraproject.org/rss/announce.xml')
                 </div>
             </div>
             <div class="grid_6" id="planet">
-                <h4>${_('Planet Fedora')}</h4>
+                <h4>${_('Fedora Magazine')}</h4>
                 <ul>
                     <li class="planet_feed" py:for="entry in fpp[:8]" py:if="'title' in entry" >
                         <a href="${entry['link']}">${entry["title"]}</a><br />
-						<span class="post_author">${entry['source']}</span>
+                        <span class="post_date">${entry['date']}</span>
                     </li>
                 </ul>
             </div>
             <div class="grid_6" id="links">
                 <h4>${_('Useful Links')}</h4>
                 <ul>
+                    <li><a href="http://fedoraproject.org/join-fedora">${_('Join Fedora')}</a></li>
+                    <li><a href="http://docs.fedoraproject.org/">${_('Documentation')}</a></li>
+                    <li><a href="http://fedoramagazine.org/">${_('Fedora Magazine')}</a></li>
+                    <li><a href="https://fedoraproject.org/en/get-help">${_('Get Help')}</a></li>
                     <li><a href="https://fedoraproject.org/wiki/Fedora_Project_Wiki">${_('Fedora Wiki')}</a></li>
                     <li><a href="http://ask.fedoraproject.org/">${_('Ask Fedora')}</a></li>
                     <li><a href="http://planet.fedoraproject.org/">${_('Planet Fedora')}</a></li>
-                    <li><a href="http://fedoramagazine.org/">${_('Fedora Magazine')}</a></li>
-                    <li><a href="http://fedoraproject.org/join-fedora">${_('Join Fedora')}</a></li>
-                    <li><a href="https://fedoraproject.org/en/get-help">${_('Get Help')}</a></li>
-                    <li><a href="http://docs.fedoraproject.org/">${_('Fedora Documentation')}</a></li>
                 </ul>
                 <img src="http://www.fedoraproject.org/static/images/panda-wave.png" alt="" />
             </div>
