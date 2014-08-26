@@ -43,7 +43,7 @@ def feedparse(url):
         source = ''
         if "updated" in feed:
             date = feed["date"]
-        if 'author' in feed:
+        if 'source' in feed:
             source = feed['source']['title']
         entry.append({'link':feed["link"], 'title':feed["title"], 'date':date, 'source':source})
     url_entries = [{}]
