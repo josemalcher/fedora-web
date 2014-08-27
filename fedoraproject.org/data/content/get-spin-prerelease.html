@@ -106,7 +106,7 @@ l_code = l_map.get(lang, dflt_language)
                                             </py:otherwise>
                                         </py:choose>
                                 </p>
-                                <p class="rel_sched">
+                                <p class="rel_sched" style="background: #fcf7d5 url('${path}/static/images/schedule/${schedule['beta_cal']}.png') no-repeat 10px center">
                                         <py:choose>
                                             <py:when test="global_variables.release['curr_state'] == 'Alpha'">${_('Upcoming Beta Release is planned for')}&nbsp;${schedule['beta']}
                                             </py:when>
@@ -231,7 +231,7 @@ l_code = l_map.get(lang, dflt_language)
                                             </py:otherwise>
                                         </py:choose>
                                 </p>
-                                <p class="rel_sched">
+                                <p class="rel_sched" style="background: #fcf7d5 url('${path}/static/images/schedule/${schedule['beta_cal']}.png') no-repeat 10px center">
                                         <py:choose>
                                             <py:when test="global_variables.release['curr_state'] == 'Alpha'">${_('Upcoming Beta Release is planned for')}&nbsp;${schedule['beta']}
                                             </py:when>
