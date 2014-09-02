@@ -402,7 +402,7 @@ l_code = l_map.get(lang, dflt_language)
                         </div>
                         <div class="grid_12 omega">
                             <h4>${_('Cloud Images')}</h4>
-                            <p>${_('The Fedora Cloud product consists of several images based on your needs - a base image for full control, an atomic image ready to deploy Docker containers, and a ready-to-deploy Big Data storage application.')}</p>
+                            <p>${_('The Fedora Cloud product consists of several images based on your needs - a base image for full control, an atomic image ready to deploy Docker containers or a Public Cloud EC2 image to run your virtual machine in the cloud.')}</p>
                             <div class="grid_3 prefix_1">
                             <a href="#cloud-base" class="big-button">${_('Cloud Base')}</a>
                             </div>
@@ -434,7 +434,9 @@ l_code = l_map.get(lang, dflt_language)
                     </li>
                 </ul>
 
-                <h4 id="atomic">${_('F%s Atomic') % global_variables.release['next_id']}</h4>
+                <h4 id="atomic">${Markup(_('Fedora %(rel)s %(state)s Atomic Docker Base Image')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                <p>${Markup(_('The Fedora Docker base image is a minimal set of Fedora packages that compose a starter image for use as a Docker container. &lt;a href="%s"&gt;Read more&lt;/a&gt; about Docker Container Images.') % 'https://fedoraproject.org/wiki/Changes/Docker_Container_Image')}</p>
+
                 <ul class="downloadbox cloudimage">
 <!-- Specific AMI selector -->
                     <ul>
