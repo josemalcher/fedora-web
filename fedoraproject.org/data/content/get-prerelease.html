@@ -332,11 +332,11 @@ l_code = l_map.get(lang, dflt_language)
                             <p>${_('The Fedora Cloud product consists of several images based on your needs - a base image for full control, an atomic image ready to deploy Docker containers and a Public Cloud EC2 image to run your virtual machine in the cloud.')}</p>
                             <div class="grid_5">
                             <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Cloud/x86_64/Fedora-Cloud-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="big-button download-prerelease-splash">${_('Download Base 64bit!')}</a>
-                            <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['x86_64_workstation']}</p>
+                            <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['x86_64_cloud']}</p>
                             </div>
                             <div class="grid_5">
                             <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Cloud/i386/Fedora-Cloud-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="big-button download-prerelease-splash">${_('Download Base 32bit!')}</a>
-                            <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['i386_workstation']}</p>
+                            <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['i386_cloud']}</p>
                             </div>
                         </div>
                         </div>
@@ -346,11 +346,11 @@ l_code = l_map.get(lang, dflt_language)
                             <p>${_('The Network Install Image of Fedora Cloud Base is useful if you have a fast Internet connection available. When you boot from this media, you will be running the installation program and you get the selected packages directly from the repositories. The Image ensures you having the latest stable versions of the packages installed.')}</p>
                             <div class="grid_6 prefix_2 alpha">
                                 <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Cloud/x86_64/Fedora-Cloud-netinstall-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="download-button-mini download-prerelease-splash">${_('Download 64bit!')}</a>
-                                <p class="fine-print">${_('%(size)sMB ISO Image') % {'size':global_variables.iso_size['x86_64_server_net']}}</p>
+                                <p class="fine-print">${_('%(size)sMB ISO Image') % {'size':global_variables.iso_size['x86_64_cloud_net']}}</p>
                             </div>
                             <div class="grid_6 prefix_2 omega">
                                 <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Cloud/i386/Fedora-Cloud-netinstall-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="download-button-mini download-prerelease-splash">${_('Download 32bit!')}</a>
-                                <p class="fine-print">${_('%(size)sMB ISO Image') % {'size':global_variables.iso_size['i386_server_net']}}</p>
+                                <p class="fine-print">${_('%(size)sMB ISO Image') % {'size':global_variables.iso_size['i386_cloud_net']}}</p>
                             </div>
                         <div class="alpha omega"><hr /></div>
 

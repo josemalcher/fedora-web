@@ -85,5 +85,9 @@ iso_size={
     'x86_64_server_net':   '399',       # In MB
     'i386_server_net':     '459',       # In MB
     'x86_64_workstation':  '1.3',       # In GB
-    'i386_workstation':    '1.2'        # In GB
+    'i386_workstation':    '1.2',       # In GB
+    'x86_64_cloud':        '1.9',       # In GB
+    'i386_cloud':          '2.0',       # In GB
+    'x86_64_cloud_net':    '399',       # In MB
+    'i386_cloud_net':      '459'        # In MB
 }
