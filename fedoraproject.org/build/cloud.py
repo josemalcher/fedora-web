@@ -28,7 +28,7 @@ def sorted_region(arr):
 # :%s/sa-east-1/South America (Sao Paulo)/g
 
 # Get the list at: https://dl.fedoraproject.org/pub/alt/stage/20-Beta-RC2/Images/x86_64/
-ec2_f20_Beta = [
+ec2_f21_Alpha = [
                         {'region':'US East (Northern Virginia)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-2f421946'},
                         {'region':'US East (Northern Virginia)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-8b4219e2'},
                         {'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-0ab2e758'},
@@ -145,7 +145,7 @@ def gen_js(*args):
 	f.close()
 
 def get_amis():
-    ec2_f20_Beta_regions = sorted_region(ec2_f20_Beta)
+    ec2_f21_Alpha_regions = sorted_region(ec2_f21_Alpha)
     ec2_f20_regions = sorted_region(ec2_f20)
     ec2_f19_regions = sorted_region(ec2_f19)
     
@@ -153,11 +153,11 @@ def get_amis():
         gen_js(
         	['20',ec2_f20],
             ['19',ec2_f19],
-            ['20_Beta',ec2_f20_Beta])
+            ['21_Alpha',ec2_f21_Alpha])
 
     return {
         'f20':ec2_f20, 'f20_regions':ec2_f20_regions,
         'f19':ec2_f19, 'f19_regions':ec2_f19_regions,
-        'f20_Beta':ec2_f20_Beta, 'f20_Beta_regions':ec2_f20_Beta_regions
+        'f21_Alpha':ec2_f21_Alpha, 'f21_Alpha_regions':ec2_f21_Alpha_regions
            }
 

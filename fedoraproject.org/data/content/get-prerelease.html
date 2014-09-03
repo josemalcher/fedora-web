@@ -427,7 +427,8 @@ l_code = l_map.get(lang, dflt_language)
                             </div>
                         <div class="alpha omega"><hr /></div>
 
-                <h4 id="cloud-base">${Markup(_('Cloud Base Images'))}</h4>
+                <h4 id="atomic">${Markup(_('Fedora %(rel)s %(state)s Atomic Docker Base Image')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                <p>${Markup(_('The Fedora Docker base image is a minimal set of Fedora packages that compose a starter image for use as a Docker container. &lt;a href="%s"&gt;Read more&lt;/a&gt; about Docker Container Images.') % 'https://fedoraproject.org/wiki/Changes/Docker_Container_Image')}</p>
                 <ul class="downloadbox cloudimage">
                     <li>
                         <h5>${Markup(_('64 bit'))}</h5>
@@ -445,19 +446,19 @@ l_code = l_map.get(lang, dflt_language)
                     </li>
                 </ul>
 
-                <h4 id="atomic">${Markup(_('Fedora %(rel)s %(state)s Atomic Docker Base Image')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
-                <p>${Markup(_('The Fedora Docker base image is a minimal set of Fedora packages that compose a starter image for use as a Docker container. &lt;a href="%s"&gt;Read more&lt;/a&gt; about Docker Container Images.') % 'https://fedoraproject.org/wiki/Changes/Docker_Container_Image')}</p>
+                <h4 id="atomic">${Markup(_('Fedora %(rel)s %(state)s Public Cloud EC2 Images')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                <p>${_('Choose the region and machine architecture and just click to launch in your Amazon Web Services account. Or, copy the AMI ID and use that to launch from the AWS Console or command-line tools.')}</p>
 
                 <ul class="downloadbox cloudimage">
 <!-- Specific AMI selector -->
                     <ul>
                         <xi:include href="../templates/cloud-tab.html" />
                         <noscript>
-                        ${printrelease('20_Beta')}
+                        ${printrelease('21_Alpha')}
                         </noscript>
 
                         <!-- If JS enabled -->
-                        ${printform('20_Beta')}
+                        ${printform('21_Alpha')}
                         <!-- /end If JS enabled -->
 <!-- /Specific AMI selector -->
                     </ul>
