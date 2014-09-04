@@ -169,7 +169,7 @@ l_code = l_map.get(lang, dflt_language)
                             <p>${_('Do you need an operating platform for important infrastructure tasks (such as a domain controller) and server applications, such as file/storage servers, databases, or web applications? Do you need a platform for deploying an Infrastructure-as-a-Service system to support cloud deployments? Do you need a platform to run an entire data center? The Fedora server product is made to support all of these important server use cases.')}</p>
                             <div class="grid_5 prefix_1">
                             <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/x86_64/Fedora-Server-DVD-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="big-button download-prerelease-splash">${_('Download 64bit!')}</a>
-                            <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['x86_64_server_DVD']}<span class="star-fedora-default">Default</span></p>
+                            <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['x86_64_server_DVD']}<span class="star-fedora-default">${_('Default')}</span></p>
                             </div>
                             <div class="grid_5">
                             <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/i386/Fedora-Server-DVD-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="big-button download-prerelease-splash">${_('Download 32bit!')}</a>
@@ -195,13 +195,13 @@ l_code = l_map.get(lang, dflt_language)
                             <div class="grid_6 prefix_2 alpha">
                                 <a href="${global_variables.path['torrent']}/Fedora-Server-DVD-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.iso" class="download-button-mini download-prerelease-splash">${_('Download 64bit!')}</a>
                                 <p class="fine-print pre-print">
-                                    <a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">How do I use this file?</a>
+                                    <a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a>
                                 </p>
                             </div>
                             <div class="grid_6 prefix_2 omega">
                                 <a href="${global_variables.path['torrent']}/Fedora-Server-DVD-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.iso" class="download-button-mini download-prerelease-splash">${_('Download 32bit!')}</a>
                                 <p class="fine-print pre-print">
-                                    <a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">How do I use this file?</a>
+                                    <a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a>
                                 </p>
                             </div>
                         <div class="alpha omega"><hr /></div>
