@@ -169,11 +169,11 @@ l_code = l_map.get(lang, dflt_language)
                             <p>${_('Do you need an operating platform for important infrastructure tasks (such as a domain controller) and server applications, such as file/storage servers, databases, or web applications? Do you need a platform for deploying an Infrastructure-as-a-Service system to support cloud deployments? Do you need a platform to run an entire data center? The Fedora server product is made to support all of these important server use cases.')}</p>
                             <div class="grid_5 prefix_1">
                             <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/x86_64/Fedora-Server-DVD-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="big-button download-prerelease-splash">${_('Download 64bit!')}</a>
-                            <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['x86_64_server_DVD']}<span class="star-fedora-default">${_('Default')}</span></p>
+                            <p class="fine-print">${_('%sGB ISO Image') % global_variables.iso_size['x86_64_server_DVD']}<span class="star-fedora-default">${_('Default')}</span></p>
                             </div>
                             <div class="grid_5">
                             <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/i386/Fedora-Server-DVD-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="big-button download-prerelease-splash">${_('Download 32bit!')}</a>
-                            <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['i386_server_DVD']}</p>
+                            <p class="fine-print">${_('%sGB ISO Image') % global_variables.iso_size['i386_server_DVD']}</p>
                             </div>
                         </div>
                         </div>
@@ -248,11 +248,11 @@ l_code = l_map.get(lang, dflt_language)
                             <p>${_('Workstation is the new name for Fedora\'s desktop edition for laptops and PCs. Its downloadable live install image can be used to try Fedora without modifing anything on your hard drive, and is also suitable for installation.')}</p>
                             <div class="grid_5">
                             <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Workstation/x86_64/Fedora-Live-Workstation-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="big-button download-prerelease-splash">${_('Download 64bit!')}</a>
-                            <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['x86_64_workstation']}</p>
+                            <p class="fine-print">${_('%sGB ISO Image') % global_variables.iso_size['x86_64_workstation']}</p>
                             </div>
                             <div class="grid_5">
                             <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Workstation/i386/Fedora-Live-Workstation-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="big-button download-prerelease-splash">${_('Download 32bit!')}</a>
-                            <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['i386_workstation']}</p>
+                            <p class="fine-print">${_('%sGB ISO Image') % global_variables.iso_size['i386_workstation']}</p>
                             </div>
                         </div>
                         </div>
@@ -342,7 +342,7 @@ l_code = l_map.get(lang, dflt_language)
                         </div>
                         <div class="clear"></div>
 
-<!-- Hide netinstall image for now                        
+<!-- Hide netinstall image for now
 
                     <h4>${Markup(_('Fedora %(rel)s %(state)s Base Network Install Image')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
                             <p>${_('The Network Install Image of Fedora Cloud Base is useful if you have a fast Internet connection available. When you boot from this media, you will be running the installation program and you get the selected packages directly from the repositories. The Image ensures you having the latest stable versions of the packages installed.')}</p>
