@@ -28,7 +28,7 @@ def sorted_region(arr):
 # :%s/sa-east-1/South America (Sao Paulo)/g
 
 # Get the list at: https://dl.fedoraproject.org/pub/alt/stage/20-Beta-RC2/Images/x86_64/
-ec2_f21_Alpha = [
+ec2_f21_Alpha_Base = [
                         {'region':'US East (Northern Virginia)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-2f421946'},
                         {'region':'US East (Northern Virginia)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-8b4219e2'},
                         {'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-0ab2e758'},
@@ -45,6 +45,25 @@ ec2_f21_Alpha = [
                         {'region':'EU (Ireland)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-897b99fe'},
                         {'region':'South America (Sao Paulo)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-4d5cfa50'},
                         {'region':'South America (Sao Paulo)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-4b5cfa56'}
+]
+
+ec2_f21_Alpha_Atomic = [
+                        {'region':'Asia Pacific (Tokyo)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-5bff815a'},
+                        {'region':'Asia Pacific (Singapore)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-e2eebeb0'},
+                        {'region':'Asia Pacific (Sydney)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-7fa13945'},
+                        {'region':'EU (Ireland)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-e7a25990'},
+                        {'region':'South America (Sao Paulo)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-ad45e7b0'},
+                        {'region':'US East (Northern Virginia)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-812439e8'},
+                        {'region':'US West (Northern California)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-1cf3ca59'},
+                        {'region':'US West (Oregon)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-e882e9d8'},
+                        {'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-ebfe80ea'},
+                        {'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-deeebe8c'},
+                        {'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-27a1391d'},
+                        {'region':'EU (Ireland)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-29a2595e'},
+                        {'region':'South America (Sao Paulo)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-8145e79c'},
+                        {'region':'US East (Northern Virginia)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-f525389c'},
+                        {'region':'US West (Northern California)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-46f3ca03'},
+                        {'region':'US West (Oregon)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-9682e9a6'}
 ]
 
 ec2_f20 = [
@@ -145,7 +164,8 @@ def gen_js(*args):
 	f.close()
 
 def get_amis():
-    ec2_f21_Alpha_regions = sorted_region(ec2_f21_Alpha)
+    ec2_f21_Alpha_Base_regions = sorted_region(ec2_f21_Alpha_Base)
+    ec2_f21_Alpha_Atomic_regions = sorted_region(ec2_f21_Alpha_Atomic)
     ec2_f20_regions = sorted_region(ec2_f20)
     ec2_f19_regions = sorted_region(ec2_f19)
     
@@ -153,11 +173,13 @@ def get_amis():
         gen_js(
         	['20',ec2_f20],
             ['19',ec2_f19],
-            ['21_Alpha',ec2_f21_Alpha])
+            ['21_Alpha_Base',ec2_f21_Alpha_Base],
+            ['21_Alpha_Atomic',ec2_f21_Alpha_Atomic])
 
     return {
         'f20':ec2_f20, 'f20_regions':ec2_f20_regions,
         'f19':ec2_f19, 'f19_regions':ec2_f19_regions,
-        'f21_Alpha':ec2_f21_Alpha, 'f21_Alpha_regions':ec2_f21_Alpha_regions
+        'f21_Alpha_Base':ec2_f21_Alpha_Base, 'f21_Alpha_Base_regions':ec2_f21_Alpha_Base_regions,
+        'f21_Alpha_Atomic':ec2_f21_Alpha_Atomic, 'f21_Alpha_Atomic_regions':ec2_f21_Alpha_Atomic_regions
            }
 
