@@ -343,6 +343,8 @@ l_code = l_map.get(lang, dflt_language)
                         </div>
                         <div class="clear"></div>
 
+<!-- Hide netinstall image for now                        
+
                     <h4>${Markup(_('Fedora %(rel)s %(state)s Base Network Install Image')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
                             <p>${_('The Network Install Image of Fedora Cloud Base is useful if you have a fast Internet connection available. When you boot from this media, you will be running the installation program and you get the selected packages directly from the repositories. The Image ensures you having the latest stable versions of the packages installed.')}</p>
                             <div class="grid_6 prefix_2 alpha">
@@ -354,6 +356,8 @@ l_code = l_map.get(lang, dflt_language)
                                 <p class="fine-print">${_('%(size)sMB ISO Image') % {'size':global_variables.iso_size['i386_cloud_net']}}</p>
                             </div>
                         <div class="alpha omega"><hr /></div>
+
+-->
 
                 <h4 id="atomic">${Markup(_('Fedora %(rel)s %(state)s Atomic Docker Base Image')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
                 <p>${Markup(_('The Fedora Docker base image is a minimal set of Fedora packages that compose a starter image for use as a Docker container. &lt;a href="%s"&gt;Read more&lt;/a&gt; about Docker Container Images.') % 'https://fedoraproject.org/wiki/Changes/Docker_Container_Image')}</p>
