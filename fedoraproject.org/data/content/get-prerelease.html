@@ -246,13 +246,9 @@ l_code = l_map.get(lang, dflt_language)
                         <div class="grid_11 omega">
                             <h4>${_('Workstation Images')}</h4>
                             <p>${_('Workstation is the new name for Fedora\'s desktop edition for laptops and PCs. Its downloadable live install image can be used to try Fedora without modifing anything on your hard drive, and is also suitable for installation.')}</p>
-                            <div class="grid_5">
-                            <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Workstation/x86_64/Fedora-Live-Workstation-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="big-button download-prerelease-splash">${_('Download 64bit!')}</a>
-                            <p class="fine-print">${_('%sGB ISO Image') % global_variables.iso_size['x86_64_workstation']}</p>
-                            </div>
-                            <div class="grid_5">
-                            <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Workstation/i386/Fedora-Live-Workstation-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="big-button download-prerelease-splash">${_('Download 32bit!')}</a>
-                            <p class="fine-print">${_('%sGB ISO Image') % global_variables.iso_size['i386_workstation']}</p>
+                            <div class="grid_6">
+                            <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Workstation/x86_64/Fedora-Live-Workstation-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="big-button download-prerelease-splash">${_('Download now!')}</a>
+                            <p class="fine-print">${_('%(size)sGB, ISO format image for %(arch)sbit-compatible PCs') % {'size':global_variables.iso_size['x86_64_workstation'], 'arch':'64'}}</p>
                             </div>
                         </div>
                         </div>
@@ -273,21 +269,35 @@ l_code = l_map.get(lang, dflt_language)
 
                         -->
 
-                        <h4>${Markup(_('Fedora %(rel)s %(state)s Torrent')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                        <h4>${Markup(_('Fedora %(rel)s %(state)s alternative Downloads')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                        <h5>${_('Torrent Images')}</h5>
                             <p>${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}</p>
-                            <div class="grid_6 prefix_2 alpha">
-                                <a href="${global_variables.path['torrent']}/Fedora-Workstation-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.iso" class="download-button-mini download-prerelease-splash">${_('Download 64bit!')}</a>
-                                <p class="fine-print pre-print">
-                                    <a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">How do I use this file?</a>
-                                </p>
+                            <div class="grid_2 alpha"><img alt="" src="${path}/static/images/media.png" /></div>
+                            <div class="grid_10 omega format-block">
+                                <div class="grid_3 alpha">
+                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['torrent']}/Fedora-Live-Workstation-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.iso">${_('Torrent 64bit!')}</a>
+                                    <p class="fine-print pre-print"><a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">How do I use this file?</a></p>
+                                </div>
+                                <div class="grid_3 suffix_4 omega">
+                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['torrent']}/Fedora-Live-Workstation-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.iso">${_('Torrent 32bit!')}</a>
+                                    <p class="fine-print pre-print"><a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">How do I use this file?</a></p>
+                                </div>
                             </div>
-                            <div class="grid_6 prefix_2 omega">
-                                <a href="${global_variables.path['torrent']}/Fedora-Workstation-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.iso" class="download-button-mini download-prerelease-splash">${_('Download 32bit!')}</a>
-                                <p class="fine-print pre-print">
-                                    <a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">How do I use this file?</a>
-                                </p>
-                            </div>
+                        <div class="clear"></div>
                         <div class="alpha omega"><hr /></div>
+
+                        <h5>${_('32bit Image')}</h5>
+                            <p>${_('The Workstation Working Group recommends the 64bit Image. If you don\'t have a 64bit compatible hardware you can download the 32bit image.')}</p>
+                            <div class="grid_2 alpha"><img alt="" src="${path}/static/images/media.png" /></div>
+                            <div class="grid_10 omega format-block">
+                                <div class="grid_3 alpha">
+                                    <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Workstation/i386/Fedora-Live-Workstation-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="download-button-mini download-prerelease-splash">${_('Download 32bit!')}</a>
+                                    <p class="fine-print">${_('%sGB ISO Image') % global_variables.iso_size['i386_workstation']}</p>
+                                </div>
+                            </div>
+                        <div class="clear"></div>
+                        <div class="alpha omega"><hr /></div>
+
                         <p class="help" style="clear: both;"><img class="support-icon" src="${path}/static/images/icon-support.png" alt="support-icon" />${Markup(_('Fedora Workstation does also support the &lt;a href="%s"&gt;ARM architecture&lt;/a&gt;.') % 'get-spin-prerelease#arm')}</p>
 
                         <h4>${Markup(_('Let me look around...'))}</h4>
@@ -332,10 +342,10 @@ l_code = l_map.get(lang, dflt_language)
                             <h4>${_('Cloud Images')}</h4>
                             <p>${_('The Fedora Cloud product consists of different sub-product images based on your needs - a Base image for full control and an Atomic image ready to deploy Docker containers.')}</p>
                             <p>${_('Both are available either to download in several formats or to launch in public clouds.')}</p>
-                            <div class="grid_5">
+                            <div class="grid_5 prefix_1">
                             <a href="#base" class="big-button">${_('F%s Cloud Base') % global_variables.release['next_id']}</a>
                             </div>
-                            <div class="grid_5">
+                            <div class="grid_5 prefix_1">
                             <a href="#atomic" class="big-button">${_('F%s Atomic') % global_variables.release['next_id']}</a>
                             </div>
                         </div>
