@@ -330,14 +330,13 @@ l_code = l_map.get(lang, dflt_language)
                         </div>
                         <div class="grid_12 omega">
                             <h4>${_('Cloud Images')}</h4>
-                            <p>${_('The Fedora Cloud product consists of several images based on your needs - a base image for full control, an atomic image ready to deploy Docker containers and a Public Cloud EC2 image to run your virtual machine in the cloud.')}</p>
+                            <p>${_('The Fedora Cloud product consists of different sub-product images based on your needs - a Base image for full control and an Atomic image ready to deploy Docker containers.')}</p>
+                            <p>${_('Both are available either to download in several formats or to launch in public clouds.')}</p>
                             <div class="grid_5">
-                            <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Cloud/x86_64/Fedora-Cloud-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="big-button download-prerelease-splash">${_('Download Base 64bit!')}</a>
-                            <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['x86_64_cloud']}</p>
+                            <a href="#base" class="big-button">${_('F%s Cloud Base') % global_variables.release['next_id']}</a>
                             </div>
                             <div class="grid_5">
-                            <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Cloud/i386/Fedora-Cloud-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="big-button download-prerelease-splash">${_('Download Base 32bit!')}</a>
-                            <p class="fine-print">${_('%sMB ISO Image') % global_variables.iso_size['i386_cloud']}</p>
+                            <a href="#atomic" class="big-button">${_('F%s Atomic') % global_variables.release['next_id']}</a>
                             </div>
                         </div>
                         </div>
@@ -359,8 +358,28 @@ l_code = l_map.get(lang, dflt_language)
 
 -->
 
-                <h4 id="atomic">${Markup(_('Fedora %(rel)s %(state)s Atomic Docker Base Image')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
-                <p>${Markup(_('The Fedora Docker base image is a minimal set of Fedora packages that compose a starter image for use as a Docker container. &lt;a href="%s"&gt;Read more&lt;/a&gt; about Docker Container Images.') % 'https://fedoraproject.org/wiki/Changes/Docker_Container_Image')}</p>
+                <h3 id="base">${Markup(_('Fedora %(rel)s %(state)s Cloud Base')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+                <p>${_('The Fedora Cloud Base image is the standard cloud image, which gives you full control over your cloud instance.')}</p>
+                <p>${Markup(_('Fedora Cloud Base images are available in Amazon EC2 and for direct download. The downloadable images are available in compressed raw image format and in qcow2 for immediate use with &lt;a href="%s"&gt;OpenStack&lt;/a&gt;. The images are configured with cloud-init, and so will take advantage of ec2-compatible metadata services for provisioning ssh keys.') % 'http://openstack.redhat.com/')}</p>
+
+                                <h4>${_('Currently supported EC2 Images')}</h4>
+                                <p>${_('Choose the region and machine architecture and just click to launch in your Amazon Web Services account. Or, copy the AMI ID and use that to launch from the AWS Console or command-line tools.')}</p>
+<!-- Specific AMI selector -->
+                                <xi:include href="../templates/cloud-tab.html" />
+                                <noscript>
+                                ${printrelease('20')}
+                                </noscript>
+
+                                <!-- If JS enabled -->
+                                ${printform('20')}
+                                <!-- /end If JS enabled -->
+
+<!-- /Specific AMI selector -->
+
+                <h4>${Markup(_('Fedora %(rel)s %(state)s Downloadable Cloud Images')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                <p>${Markup(_('Download these images for use with your local private cloud, or to modify and upload to a public cloud. The qcow2 images can be used directly by &lt;a href="%s"&gt;Openstack&lt;/a&gt;. The raw.xz images can be used by other cloud infrastructure software but will need to be uncompressed first.') % 'http://openstack.redhat.com/Running_an_instance')}
+                </p>
+
                 <ul class="downloadbox cloudimage">
                     <li>
                         <h5>${Markup(_('64 bit'))}</h5>
@@ -378,23 +397,48 @@ l_code = l_map.get(lang, dflt_language)
                     </li>
                 </ul>
 
-                <h4 id="atomic">${Markup(_('Fedora %(rel)s %(state)s Public Cloud EC2 Images')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
-                <p>${_('Choose the region and machine architecture and just click to launch in your Amazon Web Services account. Or, copy the AMI ID and use that to launch from the AWS Console or command-line tools.')}</p>
+                <div class="alpha omega"><hr /></div>
+
+                <h3 id="atomic">${Markup(_('Fedora %(rel)s %(state)s Atomic')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+                <p>${Markup(_('The Fedora Atomic Base image is a minimal set of Fedora packages that compose a starter image for use as a Docker container. &lt;a href="%s"&gt;Read more&lt;/a&gt; about Docker Container Images.') % 'https://fedoraproject.org/wiki/Changes/Docker_Container_Image')}</p>
+                <p>${Markup(_('Fedora Atomic images are available in Amazon EC2 and for direct download. The downloadable images are available in compressed raw image format and in qcow2 for immediate use with &lt;a href="%s"&gt;OpenStack&lt;/a&gt;. The images are configured with cloud-init, and so will take advantage of ec2-compatible metadata services for provisioning ssh keys.') % 'http://openstack.redhat.com/')}</p>
+
+                                <h4>${_('Currently supported EC2 Images')}</h4>
+                                <p>${_('Choose the region and machine architecture and just click to launch in your Amazon Web Services account. Or, copy the AMI ID and use that to launch from the AWS Console or command-line tools.')}</p>
+<!-- Specific AMI selector -->
+                                <xi:include href="../templates/cloud-tab.html" />
+                                <noscript>
+                                ${printrelease('19')}
+                                </noscript>
+
+                                <!-- If JS enabled -->
+                                ${printform('19')}
+                                <!-- /end If JS enabled -->
+
+<!-- /Specific AMI selector -->
+
+                <h4>${Markup(_('Fedora %(rel)s %(state)s Downloadable Cloud Images')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                <p>${Markup(_('Download these images for use with your local private cloud, or to modify and upload to a public cloud. The qcow2 images can be used directly by &lt;a href="%s"&gt;Openstack&lt;/a&gt;. The raw.xz images can be used by other cloud infrastructure software but will need to be uncompressed first.') % 'http://openstack.redhat.com/Running_an_instance')}
+                </p>
 
                 <ul class="downloadbox cloudimage">
-<!-- Specific AMI selector -->
-                    <ul>
-                        <xi:include href="../templates/cloud-tab.html" />
-                        <noscript>
-                        ${printrelease('21_Alpha')}
-                        </noscript>
-
-                        <!-- If JS enabled -->
-                        ${printform('21_Alpha')}
-                        <!-- /end If JS enabled -->
-<!-- /Specific AMI selector -->
-                    </ul>
+                    <li>
+                        <h5>${Markup(_('64 bit'))}</h5>
+                        <ul>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/x86_64/Fedora-x86_64-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}/Images/x86_64/Fedora-x86_64-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>${Markup(_('32 bit'))}</h5>
+                        <ul>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/i386/Fedora-i386-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/i386/Fedora-i386-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
+                        </ul>
+                    </li>
                 </ul>
+
+                <div class="alpha omega"><hr /></div>
 
                 <h4>${Markup(_('Let me look around...'))}</h4>
                 <ul class="download">
