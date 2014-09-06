@@ -167,46 +167,58 @@ l_code = l_map.get(lang, dflt_language)
                         <div class="grid_12 omega">
                             <h4>${_('Server Images')}</h4>
                             <p>${_('Do you need an operating platform for important infrastructure tasks (such as a domain controller) and server applications, such as file/storage servers, databases, or web applications? Do you need a platform for deploying an Infrastructure-as-a-Service system to support cloud deployments? Do you need a platform to run an entire data center? The Fedora server product is made to support all of these important server use cases.')}</p>
-                            <div class="grid_5 prefix_1">
+                            <div class="grid_6">
                             <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/x86_64/Fedora-Server-DVD-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="big-button download-prerelease-splash">${_('Download 64bit!')}</a>
-                            <p class="fine-print">${_('%sGB ISO Image') % global_variables.iso_size['x86_64_server_DVD']}<span class="star-fedora-default">${_('Default')}</span></p>
-                            </div>
-                            <div class="grid_5">
-                            <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/i386/Fedora-Server-DVD-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="big-button download-prerelease-splash">${_('Download 32bit!')}</a>
-                            <p class="fine-print">${_('%sGB ISO Image') % global_variables.iso_size['i386_server_DVD']}</p>
+                            <p class="fine-print">${_('%(size)sGB, ISO format image for %(arch)sbit-compatible PCs') % {'size':global_variables.iso_size['x86_64_server_DVD'], 'arch':'64'}}</p>
                             </div>
                         </div>
                         </div>
 
-                        <h4>${Markup(_('Fedora %(rel)s %(state)s Network Install Image')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
-                            <p>${_('The Network Install Image of Fedora is useful if you have a fast Internet connection available. When you boot from this media, you will be running the installation program and you get the selected packages directly from the repositories. The Image ensures you having the latest stable versions of the packages installed.')}</p>
-                            <div class="grid_6 prefix_2 alpha">
-                                <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/x86_64/Fedora-Server-netinst-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="download-button-mini download-prerelease-splash">${_('Download 64bit!')}</a>
-                                <p class="fine-print">${_('%(size)sMB ISO Image') % {'size':global_variables.iso_size['x86_64_server_net']}}</p>
-                            </div>
-                            <div class="grid_6 prefix_2 omega">
-                                <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/i386/Fedora-Server-netinst-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="download-button-mini download-prerelease-splash">${_('Download 32bit!')}</a>
-                                <p class="fine-print">${_('%(size)sMB ISO Image') % {'size':global_variables.iso_size['i386_server_net']}}</p>
-                            </div>
-                        <div class="alpha omega"><hr /></div>
-
-                        <h4>${Markup(_('Fedora %(rel)s %(state)s Torrent')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                        <h4>${Markup(_('Fedora %(rel)s %(state)s alternative Downloads')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                        <h5>${_('Torrent Images')}</h5>
                             <p>${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}</p>
-                            <div class="grid_6 prefix_2 alpha">
-                                <a href="${global_variables.path['torrent']}/Fedora-Server-DVD-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent" class="download-button-mini download-prerelease-splash">${_('Download 64bit!')}</a>
-                                <p class="fine-print pre-print">
-                                    <a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a>
-                                </p>
+                            <div class="grid_2 alpha"><img alt="" src="${path}/static/images/media.png" /></div>
+                            <div class="grid_10 omega format-block">
+                                <div class="grid_3 alpha">
+                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['torrent']}/Fedora-Server-DVD-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${_('Torrent 64bit!')}</a>
+                                    <p class="fine-print pre-print"><a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">How do I use this file?</a></p>
+                                </div>
+                                <div class="grid_3 suffix_4 omega">
+                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['torrent']}/Fedora-Server-DVD-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${_('Torrent 32bit!')}</a>
+                                    <p class="fine-print pre-print"><a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">How do I use this file?</a></p>
+                                </div>
                             </div>
-                            <div class="grid_6 prefix_2 omega">
-                                <a href="${global_variables.path['torrent']}/Fedora-Server-DVD-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent" class="download-button-mini download-prerelease-splash">${_('Download 32bit!')}</a>
-                                <p class="fine-print pre-print">
-                                    <a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a>
-                                </p>
-                            </div>
+                        <div class="clear"></div>
                         <div class="alpha omega"><hr /></div>
 
-                <h4>${Markup(_('Let me look around...'))}</h4>
+                        <h5>${_('32bit Image')}</h5>
+                            <p>${_('The Server Working Group recommends the 64bit Image. If you don\'t have a 64bit compatible hardware you can download the 32bit image.')}</p>
+                            <div class="grid_2 alpha"><img alt="" src="${path}/static/images/media.png" /></div>
+                            <div class="grid_10 omega format-block">
+                                <div class="grid_3 alpha">
+                                    <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/i386/Fedora-Server-DVD-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="download-button-mini download-prerelease-splash">${_('Download 32bit!')}</a>
+                                    <p class="fine-print">${_('%sGB ISO Image') % global_variables.iso_size['i386_server_DVD']}</p>
+                                </div>
+                            </div>
+                        <div class="clear"></div>
+                        <div class="alpha omega"><hr /></div>
+
+                        <h5>${_('Network Install Image')}</h5>
+                            <p>${_('The Network Install Image of Fedora is useful if you have a fast Internet connection available. When you boot from this media, you will be running the installation program and you get the selected packages directly from the repositories. The Image ensures you having the latest stable versions of the packages installed.')}</p>
+                            <div class="grid_2 alpha"><img alt="" src="${path}/static/images/media.png" /></div>
+                            <div class="grid_10 omega format-block">
+                                <div class="grid_3 alpha">
+                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/x86_64/Fedora-Server-netinst-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${_('Download 64bit!')}</a>
+                                    <p class="fine-print">${_('%(size)sMB ISO Image') % {'size':global_variables.iso_size['x86_64_server_net']}}</p>
+                                </div>
+                                <div class="grid_3 suffix_4 omega">
+                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/i386/Fedora-Server-netinst-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${_('Download 32bit!')}</a>
+                                    <p class="fine-print">${_('%(size)sMB ISO Image') % {'size':global_variables.iso_size['i386_server_net']}}</p>
+                                </div>
+                            </div>
+                        <div class="clear"></div>
+
+                    <h4>${Markup(_('Let me look around...'))}</h4>
                 <ul class="download">
                     <li><a href="http://torrent.fedoraproject.org/">${Markup(_('See all torrents'))}</a></li>
                     <li><a href="http://mirrors.fedoraproject.org/publiclist/Fedora/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/">${Markup(_('See all mirrors'))}</a></li>
