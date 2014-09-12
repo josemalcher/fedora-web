@@ -352,7 +352,7 @@ l_code = l_map.get(lang, dflt_language)
                         </div>
                         <div class="grid_12 omega">
                             <h4>${_('Cloud Images')}</h4>
-                            <p>${_('The Fedora Cloud product consists of different sub-product images based on your needs - a Base image for full control and an Atomic image ready to deploy Docker containers.')}</p>
+                            <p>${_('The Fedora Cloud SIG offers two variants for different use cases. The Base image is suitable for anyone who wants to run Fedora in the AWS public cloud, or in a private cloud like OpenStack. It can be customized to fit your needs by adding additional packages. The Atomic image is generated using rpm-ostree tools to allow true "atomic" updates, and is optimized to run Docker containers.')}</p>
                             <p>${_('Both are available either to download in several formats or to launch in public clouds.')}</p>
                             <div class="grid_5">
                             <a href="#base" class="big-button">${_('F%s Cloud Base') % global_variables.release['next_id']}</a>
@@ -381,7 +381,7 @@ l_code = l_map.get(lang, dflt_language)
 -->
 
                 <h3 id="base">${Markup(_('Fedora %(rel)s %(state)s Cloud Base')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
-                <p>${_('The Fedora Cloud Base image is the standard cloud image, which gives you full control over your cloud instance.')}</p>
+                <p>${_('The Fedora Cloud Base image is a tailored set of packages to run in a cloud environment, pre-made for popular public and private cloud offerings.')}</p>
                 <p>${Markup(_('Fedora Cloud Base images are available in Amazon EC2 and for direct download. The downloadable images are available in compressed raw image format and in qcow2 for immediate use with &lt;a href="%s"&gt;OpenStack&lt;/a&gt;. The images are configured with cloud-init, and so will take advantage of ec2-compatible metadata services for provisioning ssh keys.') % 'http://openstack.redhat.com/')}</p>
 
                                 <h4>${_('Currently supported EC2 Images')}</h4>
@@ -422,7 +422,7 @@ l_code = l_map.get(lang, dflt_language)
                 <div class="alpha omega"><hr /></div>
 
                 <h3 id="atomic">${Markup(_('Fedora %(rel)s %(state)s Atomic')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
-                <p>${Markup(_('The Fedora Atomic Base image is a minimal set of Fedora packages that compose a starter image for use as a Docker container. &lt;a href="%s"&gt;Read more&lt;/a&gt; about Docker Container Images.') % 'https://fedoraproject.org/wiki/Changes/Docker_Container_Image')}</p>
+                <p>${Markup(_('The Fedora Atomic Base image is a minimal set of Fedora packages optimized for use as a Docker container host. &lt;a href="%s"&gt;Read more&lt;/a&gt; about Docker Container Images.') % 'https://fedoraproject.org/wiki/Changes/Docker_Container_Image')}</p>
                 <p>${Markup(_('Fedora Atomic images are available in Amazon EC2 and for direct download. The downloadable images are available in compressed raw image format and in qcow2 for immediate use with &lt;a href="%s"&gt;OpenStack&lt;/a&gt;. The images are configured with cloud-init, and so will take advantage of ec2-compatible metadata services for provisioning ssh keys.') % 'http://openstack.redhat.com/')}</p>
 
                                 <h4>${_('Currently supported EC2 Images')}</h4>
@@ -449,13 +449,6 @@ l_code = l_map.get(lang, dflt_language)
                         <ul>
                             <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/x86_64/Fedora-x86_64-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
                             <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}/Images/x86_64/Fedora-x86_64-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('32 bit'))}</h5>
-                        <ul>
-                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/i386/Fedora-i386-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
-                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/i386/Fedora-i386-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
                         </ul>
                     </li>
                 </ul>
