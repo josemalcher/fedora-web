@@ -89,5 +89,6 @@ iso_size={
     'x86_64_cloud':        '1.9',       # In GB
     'i386_cloud':          '2.0',       # In GB
     'x86_64_cloud_net':    '399',       # In MB
-    'i386_cloud_net':      '459'        # In MB
+    'i386_cloud_net':      '459',       # In MB
+    'x86_64_docker':       '77'         # In MB
 }
