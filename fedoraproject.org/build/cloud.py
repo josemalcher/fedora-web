@@ -48,14 +48,6 @@ ec2_f21_Alpha_Base = [
 ]
 
 ec2_f21_Alpha_Atomic = [
-                        {'region':'Asia Pacific (Tokyo)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-5bff815a'},
-                        {'region':'Asia Pacific (Singapore)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-e2eebeb0'},
-                        {'region':'Asia Pacific (Sydney)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-7fa13945'},
-                        {'region':'EU (Ireland)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-e7a25990'},
-                        {'region':'South America (Sao Paulo)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-ad45e7b0'},
-                        {'region':'US East (Northern Virginia)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-812439e8'},
-                        {'region':'US West (Northern California)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-1cf3ca59'},
-                        {'region':'US West (Oregon)', 'arch':'i386', 'store':'BS-Backed', 'id':'ami-e882e9d8'},
                         {'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-ebfe80ea'},
                         {'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-deeebe8c'},
                         {'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-27a1391d'},
