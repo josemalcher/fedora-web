@@ -34,40 +34,14 @@
                 <table class="verify-install-media">
                     <thead>
                         <tr>
-                            <th colspan="4">${Markup(_('Fedora Products'))}</th>
+                            <th colspan="3">${Markup(_('Fedora Server'))}</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th class="install-media-arch">Server</th>
-                            <td><a href="./static/checksums/Server-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-CHECKSUM">x86_64</a></td>
-                            <td><a href="./static/checksums/Server-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i386-CHECKSUM">i386</a></td>
-                        </tr>
-                        <tr>
-                            <th class="install-media-arch">Workstation</th>
-                            <td><a href="./static/checksums/Workstation-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-CHECKSUM">x86_64</a></td>
-                            <td><a href="./static/checksums/Workstation-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i386-CHECKSUM">i386</a></td>
-                        </tr>
-                        <tr>
-                            <th class="install-media-arch">Cloud</th>
-                            <td><a href="./static/checksums/Cloud-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-CHECKSUM">x86_64</a></td>
-                            <td><a href="./static/checksums/Cloud-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i386-CHECKSUM">i386</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-
-                <table class="verify-live-media">
-                    <thead>
-                        <tr>
-                            <th colspan="4">${Markup(_('Desktop Spins'))}</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th class="install-media-arch"><acronym title="${_('Live Images are KDE, LXDE, Xfce, MATE-Compiz and SoaS.')}">Live ISO</acronym></th>
-                            <td><a href="./static/checksums/Fedora-Live-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-CHECKSUM">x86_64</a></td>
-                            <td><a href="./static/checksums/Fedora-Live-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-CHECKSUM">i386</a></td>
+                            <th class="install-media-arch">ISO</th>
+                            <td><a href="./static/checksums/Fedora-Server-${global_variables.release['next_id']}_${global_variables.release['curr_state']}_${global_variables.release['RC_gold']}-x86_64-CHECKSUM">x86_64</a></td>
+                            <td><a href="./static/checksums/Fedora-Server-${global_variables.release['next_id']}_${global_variables.release['curr_state']}_${global_variables.release['RC_gold']}-i386-CHECKSUM">i386</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -75,14 +49,84 @@
                 <table class="verify-install-media">
                     <thead>
                         <tr>
-                            <th colspan="4">${Markup(_('Other Spins'))}</th>
+                            <th colspan="3">${Markup(_('Fedora Workstation'))}</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th class="install-media-arch"><acronym title="${_('Spins are Design, Electronic-Lab, Games, Jam-KDE, Robotics, Scientific-KDE and Security.')}">Spins</acronym></th>
-                            <td><a href="./static/checksums/Fedora-Spins-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-CHECKSUM">x86_64</a></td>
-                            <td><a href="./static/checksums/Fedora-Spins-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-CHECKSUM">i386</a></td>
+                            <th class="install-media-arch">ISO</th>
+                            <td><a href="./static/checksums/Fedora-Workstation-${global_variables.release['next_id']}_${global_variables.release['curr_state']}_${global_variables.release['RC_gold']}-x86_64-CHECKSUM">x86_64</a></td>
+                            <td><a href="./static/checksums/Fedora-Workstation-${global_variables.release['next_id']}_${global_variables.release['curr_state']}_${global_variables.release['RC_gold']}-i386-CHECKSUM">i386</a></td>
+                        </tr>
+                        <tr>
+                            <th class="install-media-arch">ARM</th>
+                            <td><a href="./static/checksums/Fedora-Workstation-armhfp-${global_variables.release['next_id']}_${global_variables.release['curr_state']}_${global_variables.release['RC_gold']}-CHECKSUM">HFP</a></td>
+                            <td>n/a</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="verify-install-media">
+                    <thead>
+                        <tr>
+                            <th colspan="3">${Markup(_('Fedora Cloud'))}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="install-media-arch">qcow2/raw</th>
+                            <td><a href="./static/checksums/Fedora-Cloud-Images-${global_variables.release['next_id']}_${global_variables.release['curr_state']}_${global_variables.release['RC_gold']}-x86_64-CHECKSUM">x86_64</a></td>
+                            <td><a href="./static/checksums/Fedora-Cloud-Images-${global_variables.release['next_id']}_${global_variables.release['curr_state']}_${global_variables.release['RC_gold']}-i386-CHECKSUM">i386</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="verify-install-media">
+                    <thead>
+                        <tr>
+                            <th colspan="3">${Markup(_('Docker'))}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="install-media-arch">tar.gz</th>
+                            <td><a href="./static/checksums/Fedora-Docker-${global_variables.release['next_id']}_${global_variables.release['curr_state']}_${global_variables.release['RC_gold']}-x86_64-CHECKSUM">x86_64</a></td>
+                            <td>&nbsp;n/a&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="verify-live-media">
+                    <thead>
+                        <tr>
+                            <th colspan="3">${Markup(_('Spins'))}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="install-media-arch"><acronym title="${_('Desktop Live Images are KDE, LXDE, Xfce, MATE-Compiz and SoaS.')}">${_('Desktop Spins')}</acronym></th>
+                            <td><a href="./static/checksums/Fedora-Live-${global_variables.release['next_id']}_${global_variables.release['curr_state']}_${global_variables.release['RC_gold']}-x86_64-CHECKSUM">x86_64</a></td>
+                            <td><a href="./static/checksums/Fedora-Live-${global_variables.release['next_id']}_${global_variables.release['curr_state']}_${global_variables.release['RC_gold']}-i386-CHECKSUM">i386</a></td>
+                        </tr>
+                        <tr>
+                            <th class="install-media-arch"><acronym title="${_('Spins are Design, Electronic-Lab, Games, Jam-KDE, Robotics, Scientific-KDE and Security.')}">${_('Other Spins')}</acronym></th>
+                            <td><a href="./static/checksums/Fedora-Spins-${global_variables.release['next_id']}_${global_variables.release['curr_state']}_${global_variables.release['RC_gold']}-x86_64-CHECKSUM">x86_64</a></td>
+                            <td><a href="./static/checksums/Fedora-Spins-${global_variables.release['next_id']}_${global_variables.release['curr_state']}_${global_variables.release['RC_gold']}-i386-CHECKSUM">i386</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="verify-install-media">
+                    <thead>
+                        <tr>
+                            <th colspan="3">${Markup(_('ARM Desktop Spins'))}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="install-media-arch">ARMv7</th>
+                            <td><a href="./static/checksums/Fedora-Images-armhfp-${global_variables.release['next_id']}_${global_variables.release['curr_state']}_${global_variables.release['RC_gold']}-CHECKSUM">&nbsp;HFP&nbsp;</a></td>
+                            <td>n/a</td>
                         </tr>
                     </tbody>
                 </table>
