@@ -168,7 +168,7 @@ l_code = l_map.get(lang, dflt_language)
                             <h4>${_('Server Images')}</h4>
                             <p>${_('Do you need an operating platform for important infrastructure tasks (such as a domain controller) and server applications, such as file/storage servers, databases, or web applications? Do you need a platform for deploying an Infrastructure-as-a-Service system to support cloud deployments? Do you need a platform to run an entire data center? The Fedora server product is made to support all of these important server use cases.')}</p>
                             <div class="grid_6">
-                            <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/x86_64/Fedora-Server-DVD-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="big-button download-prerelease-splash">${_('Download now!')}</a>
+                            <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/x86_64/iso/Fedora-Server-DVD-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.iso" class="big-button download-prerelease-splash">${_('Download now!')}</a>
                             <p class="fine-print">${_('%(size)sGB, ISO format image for %(arch)sbit-compatible PCs') % {'size':global_variables.iso_size['x86_64_server_DVD'], 'arch':'64'}}</p>
                             </div>
                         </div>
@@ -180,11 +180,11 @@ l_code = l_map.get(lang, dflt_language)
                             <div class="grid_2 alpha"><img alt="" src="${path}/static/images/media.png" /></div>
                             <div class="grid_10 omega format-block">
                                 <div class="grid_3 alpha">
-                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['torrent']}/Fedora-Server-DVD-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${_('Torrent 64bit!')}</a>
+                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['torrent']}/Fedora-Server-DVD-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.torrent">${_('Torrent 64bit!')}</a>
                                     <p class="fine-print pre-print"><a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">How do I use this file?</a></p>
                                 </div>
                                 <div class="grid_3 suffix_4 omega">
-                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['torrent']}/Fedora-Server-DVD-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${_('Torrent 32bit!')}</a>
+                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['torrent']}/Fedora-Server-DVD-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.torrent">${_('Torrent 32bit!')}</a>
                                     <p class="fine-print pre-print"><a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">How do I use this file?</a></p>
                                 </div>
                             </div>
@@ -196,7 +196,7 @@ l_code = l_map.get(lang, dflt_language)
                             <div class="grid_2 alpha"><img alt="" src="${path}/static/images/media.png" /></div>
                             <div class="grid_10 omega format-block">
                                 <div class="grid_3 alpha">
-                                    <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/i386/Fedora-Server-DVD-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="download-button-mini download-prerelease-splash">${_('Download 32bit!')}</a>
+                                    <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/i386/iso/Fedora-Server-DVD-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.iso" class="download-button-mini download-prerelease-splash">${_('Download 32bit!')}</a>
                                     <p class="fine-print">${_('%sGB ISO Image') % global_variables.iso_size['i386_server_DVD']}</p>
                                 </div>
                             </div>
@@ -208,11 +208,11 @@ l_code = l_map.get(lang, dflt_language)
                             <div class="grid_2 alpha"><img alt="" src="${path}/static/images/media.png" /></div>
                             <div class="grid_10 omega format-block">
                                 <div class="grid_3 alpha">
-                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/x86_64/Fedora-Server-netinst-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${_('Download 64bit!')}</a>
+                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/x86_64/iso/Fedora-Server-netinst-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.iso">${_('Download 64bit!')}</a>
                                     <p class="fine-print">${_('%(size)sMB ISO Image') % {'size':global_variables.iso_size['x86_64_server_net']}}</p>
                                 </div>
                                 <div class="grid_3 suffix_4 omega">
-                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/i386/Fedora-Server-netinst-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${_('Download 32bit!')}</a>
+                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/i386/iso/Fedora-Server-netinst-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.iso">${_('Download 32bit!')}</a>
                                     <p class="fine-print">${_('%(size)sMB ISO Image') % {'size':global_variables.iso_size['i386_server_net']}}</p>
                                 </div>
                             </div>
@@ -259,7 +259,7 @@ l_code = l_map.get(lang, dflt_language)
                             <h4>${_('Workstation Images')}</h4>
                             <p>${_('Workstation is the new name for Fedora\'s desktop edition for laptops and PCs. Its downloadable live install image can be used to try Fedora without modifing anything on your hard drive, and is also suitable for installation.')}</p>
                             <div class="grid_6">
-                            <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Workstation/x86_64/Fedora-Live-Workstation-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="big-button download-prerelease-splash">${_('Download now!')}</a>
+                            <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Live-Workstation-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="big-button download-prerelease-splash">${_('Download now!')}</a>
                             <p class="fine-print">${_('%(size)sGB, ISO format image for %(arch)sbit-compatible PCs') % {'size':global_variables.iso_size['x86_64_workstation'], 'arch':'64'}}</p>
                             </div>
                         </div>
@@ -287,11 +287,11 @@ l_code = l_map.get(lang, dflt_language)
                             <div class="grid_2 alpha"><img alt="" src="${path}/static/images/media.png" /></div>
                             <div class="grid_10 omega format-block">
                                 <div class="grid_3 alpha">
-                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['torrent']}/Fedora-Live-Workstation-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${_('Torrent 64bit!')}</a>
+                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['torrent']}/Fedora-Live-Workstation-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.torrent">${_('Torrent 64bit!')}</a>
                                     <p class="fine-print pre-print"><a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">How do I use this file?</a></p>
                                 </div>
                                 <div class="grid_3 suffix_4 omega">
-                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['torrent']}/Fedora-Live-Workstation-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${_('Torrent 32bit!')}</a>
+                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['torrent']}/Fedora-Live-Workstation-i686-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.torrent">${_('Torrent 32bit!')}</a>
                                     <p class="fine-print pre-print"><a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">How do I use this file?</a></p>
                                 </div>
                             </div>
@@ -303,7 +303,7 @@ l_code = l_map.get(lang, dflt_language)
                             <div class="grid_2 alpha"><img alt="" src="${path}/static/images/media.png" /></div>
                             <div class="grid_10 omega format-block">
                                 <div class="grid_3 alpha">
-                                    <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Workstation/i386/Fedora-Live-Workstation-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="download-button-mini download-prerelease-splash">${_('Download 32bit!')}</a>
+                                    <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Workstation/i386/iso/Fedora-Live-Workstation-i686-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="download-button-mini download-prerelease-splash">${_('Download 32bit!')}</a>
                                     <p class="fine-print">${_('%sGB ISO Image') % global_variables.iso_size['i386_workstation']}</p>
                                 </div>
                             </div>
@@ -406,15 +406,15 @@ l_code = l_map.get(lang, dflt_language)
                     <li>
                         <h5>${Markup(_('64 bit'))}</h5>
                         <ul>
-                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/x86_64/Fedora-x86_64-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
-                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}/Images/x86_64/Fedora-x86_64-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Cloud/Images/x86_64/Fedora-Cloud-Base-${global_variables.release['pre_cloud_composedate']}-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}.x86_64.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}/Cloud/Images/x86_64/Fedora-Cloud-Base-${global_variables.release['pre_cloud_composedate']}-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}.x86_64.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
                         </ul>
                     </li>
                     <li>
                         <h5>${Markup(_('32 bit'))}</h5>
                         <ul>
-                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/i386/Fedora-i386-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
-                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/i386/Fedora-i386-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Cloud/Images/i386/Fedora-Cloud-Base-${global_variables.release['pre_cloud_composedate']}-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}.i386.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Cloud/Images/i386/Fedora-Cloud-Base-${global_variables.release['pre_cloud_composedate']}-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}.i386.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -447,8 +447,8 @@ l_code = l_map.get(lang, dflt_language)
                     <li>
                         <h5>${Markup(_('64 bit'))}</h5>
                         <ul>
-                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/x86_64/Fedora-x86_64-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
-                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}/Images/x86_64/Fedora-x86_64-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Cloud/Images/x86_64/Fedora-Cloud-Atomic-${global_variables.release['pre_cloud_composedate']}-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}.x86_64.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}/Cloud/Images/x86_64/Fedora-Cloud-Atomic-${global_variables.release['pre_cloud_composedate']}-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}.x86_64.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
                         </ul>
                     </li>
                 </ul>
