@@ -76,19 +76,17 @@ iso_size={
     'PPC64_DVD':           '4.3',       # In GB
     'PPC64_Netinstall':    '340',       # In MB
     's390_DVD':            '4.6',       # In GB
-    'i686_sda.qcow2':      '199',       # In MB
-    'x86_64_sda.qcow2':    '201',       # In MB
-    'i686_raw':            '115',       # In MB
+    'i686_sda.qcow2':      '212',       # In MB
+    'x86_64_sda.qcow2':    '207',       # In MB
+    'i686_raw':            '122',       # In MB
     'x86_64_raw':          '117',       # In MB
     'x86_64_server_DVD':   '1.9',       # In GB
     'i386_server_DVD':     '2.0',       # In GB
-    'x86_64_server_net':   '399',       # In MB
-    'i386_server_net':     '459',       # In MB
+    'x86_64_server_net':   '400',       # In MB
+    'i386_server_net':     '460',       # In MB
     'x86_64_workstation':  '1.3',       # In GB
-    'i386_workstation':    '1.2',       # In GB
-    'x86_64_cloud':        '1.9',       # In GB
-    'i386_cloud':          '2.0',       # In GB
-    'x86_64_cloud_net':    '399',       # In MB
-    'i386_cloud_net':      '459',       # In MB
+    'i386_workstation':    '1.3',       # In GB
+    'x86_64_cloud_net':    '400',       # In MB
+    'i386_cloud_net':      '460',       # In MB
     'x86_64_docker':       '77'         # In MB
 }
