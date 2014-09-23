@@ -1,5 +1,5 @@
 # Translations template for PROJECT.
-# Copyright (C) 2013 ORGANIZATION
+# Copyright (C) 2014 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # 
 # Translators:
@@ -10,15 +10,15 @@
 # Gianluca Sforna <giallu@gmail.com>, 2013
 # neb <nick@bebout.net>, 2011
 # Silvio Pierro <perplesso82@gmail.com>, 2011, 2012
-# Fabio Tavano <tavano.fabio@gmail.com>, 2013
+# tavanofabio <tavano.fabio@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Fedora Websites\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-12-16 10:36+0100\n"
-"PO-Revision-Date: 2013-12-17 11:30+0000\n"
-"Last-Translator: Gianluca Sforna <giallu@gmail.com>\n"
-"Language-Team: Italian (http://www.transifex.com/projects/p/fedora/language/it/)\n"
+"POT-Creation-Date: 2014-09-20 21:40+0200\n"
+"PO-Revision-Date: 2014-09-20 20:00+0000\n"
+"Last-Translator: Robert Mayr <robyduck@fedoraproject.org>\n"
+"Language-Team: Italian (http://www.transifex.com/projects/p/fedora-web/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -216,7 +216,7 @@ msgid "Report a new bug or request a change"
 msgstr "Segnala un nuovo bug o richiedi una modifica"
 
 #: data/content/about-fedora.html:80 data/content/code-of-conduct.html:31
-#: data/content/sponsors.html:63
+#: data/content/sponsors.html:76
 msgid "Return to the main Fedora website."
 msgstr "Ritorna al sito principale di Fedora."
 
@@ -289,7 +289,7 @@ msgstr "Contatti Fedora"
 msgid "Contact list of various projects and groups."
 msgstr "Lista dei contatti di vari progetti e gruppi."
 
-#: data/content/contact.html:27 data/templates/foot.html:71
+#: data/content/contact.html:27 data/templates/foot.html:73
 msgid "Contact"
 msgstr "Contatto"
 
@@ -469,24 +469,28 @@ msgstr "Il parametro width può essere usato per scalare il banner. Questo è va
 
 #: data/content/download-arm-splash.html:7
 #: data/content/download-cloud-splash.html:7
+#: data/content/download-prerelease-splash.html:7
 #: data/content/download-splash.html:7
 msgid "Fedora Project - Download next steps."
 msgstr "Fedora Project - Scarica "
 
 #: data/content/download-arm-splash.html:13
 #: data/content/download-cloud-splash.html:13
+#: data/content/download-prerelease-splash.html:13
 #: data/content/download-splash.html:13
 msgid "Thanks for downloading Fedora!"
 msgstr "Grazie per aver scaricato Fedora!"
 
 #: data/content/download-arm-splash.html:14
 #: data/content/download-cloud-splash.html:14
+#: data/content/download-prerelease-splash.html:14
 #: data/content/download-splash.html:14
 msgid "We know you'll love it!"
 msgstr "Sappiamo che l'amerai!"
 
 #: data/content/download-arm-splash.html:17
 #: data/content/download-cloud-splash.html:17
+#: data/content/download-prerelease-splash.html:17
 #: data/content/download-splash.html:17
 msgid ""
 "Fedora is built by people across the globe. Everyone is welcome to join!"
@@ -517,12 +521,14 @@ msgstr "Non preoccuparti, <a href=\"../verify\">verifica</a> il tuo download pri
 
 #: data/content/download-arm-splash.html:38
 #: data/content/download-cloud-splash.html:39
+#: data/content/download-prerelease-splash.html:38
 #: data/content/download-splash.html:38
 msgid "I need help running or installing Fedora."
 msgstr "Ho bisogno di aiuto per installare Fedora."
 
 #: data/content/download-arm-splash.html:39
 #: data/content/download-cloud-splash.html:40
+#: data/content/download-prerelease-splash.html:39
 #: data/content/download-splash.html:39
 msgid ""
 "There's several ways you can get help with Fedora, from forums to live chat "
@@ -531,18 +537,21 @@ msgstr "Ci sono diversi modi per ottenere aiuto con Fedora, dai forum alle chat 
 
 #: data/content/download-arm-splash.html:40
 #: data/content/download-cloud-splash.html:41
+#: data/content/download-prerelease-splash.html:40
 #: data/content/download-splash.html:40
 msgid "Get help with Fedora"
 msgstr "Ottenere aiuto con Fedora"
 
 #: data/content/download-arm-splash.html:45
 #: data/content/download-cloud-splash.html:46
+#: data/content/download-prerelease-splash.html:45
 #: data/content/download-splash.html:45
 msgid "I want to learn more about Fedora."
 msgstr "Voglio saperne di più su Fedora."
 
 #: data/content/download-arm-splash.html:46
 #: data/content/download-cloud-splash.html:47
+#: data/content/download-prerelease-splash.html:46
 #: data/content/download-splash.html:46
 msgid ""
 "Fedora is more than an operating system - it's a vibrant community focused "
@@ -551,6 +560,7 @@ msgstr "Fedora è più di un sistema operativo - è una fervida comunità focali
 
 #: data/content/download-arm-splash.html:47
 #: data/content/download-cloud-splash.html:48
+#: data/content/download-prerelease-splash.html:47
 #: data/content/download-splash.html:47
 msgid "Learn more about Fedora"
 msgstr "Impara più cose su Fedora"
@@ -578,15 +588,31 @@ msgid ""
 "it."
 msgstr "Non preoccuparti, <a href=\"../verify\">verifica</a> ciò che hai scaricato prima di usarlo."
 
+#: data/content/download-prerelease-splash.html:25
+#, python-format
+msgid ""
+"Your download of Fedora %(rel)s %(state)s should begin in a few seconds. If "
+"not, click the link below"
+msgstr ""
+
+#: data/content/download-prerelease-splash.html:31
 #: data/content/download-splash.html:31
 msgid "What should I do with this ISO file?"
 msgstr "Cosa devo farci con questo file ISO?"
 
+#: data/content/download-prerelease-splash.html:32
 #: data/content/download-splash.html:32
 msgid ""
 "An Iso file is an image of a disk. You'll need to burn it to a USB Stick or "
 "DVD in order to use it."
 msgstr "Un file ISO è l'immagine di un disco. Devi masterizzarla su un CD o DVD vuoto per poterla usare."
+
+#: data/content/download-prerelease-splash.html:33
+#, python-format
+msgid ""
+"Not to worry, <a href=\"../verify-prerelease\">verify</a> your download and "
+"<a href=\"%s\">just follow our step-by-step instructions</a>."
+msgstr ""
 
 #: data/content/download-splash.html:33
 #, python-format
@@ -606,18 +632,20 @@ msgstr "Ottenere Fedora"
 
 #: data/content/get-fedora-all.html:16 data/content/get-fedora.html:16
 #: data/content/get-prerelease.html:76
+#: data/content/get-spin-prerelease.html:75
 #, python-format
 msgid "Fedora is 100%% free for you to enjoy and share."
 msgstr "Fedora è 100%% libera per il tuo divertimento e condivisione."
 
 #: data/content/get-fedora-all.html:19 data/content/get-fedora.html:19
 #: data/content/get-prerelease.html:79
+#: data/content/get-spin-prerelease.html:78
 msgid "Fedora isn't just free-of-charge. It's free as in freedom. Learn more."
 msgstr "Fedora non è solo gratuita. Essa è libera. Approfondisci."
 
 #: data/content/get-fedora-all.html:28 data/content/get-fedora-all.html:143
-#: data/content/keys.html:28 data/content/keys.html:394
-#: data/content/verify.html:28 data/content/verify.html:257
+#: data/content/keys.html:28 data/content/keys.html:422
+#: data/content/verify.html:28 data/content/verify.html:233
 msgid "&#8592; Back to the main \"Get Fedora\" page"
 msgstr "&#8592; Torna alla pagina principale \"Ottieni Fedora\""
 
@@ -633,7 +661,7 @@ msgid ""
 "href=\"https://fedoraproject.org%s/%s/verify\">verify</a> it."
 msgstr "Dopo aver scaricato una ISO, <a href=\"https://fedoraproject.org%s/%s/verify\">verificatela</a>."
 
-#: data/content/get-fedora-all.html:32 data/content/get-prerelease.html:120
+#: data/content/get-fedora-all.html:32
 msgid "Install Media"
 msgstr "Media di installazione"
 
@@ -644,22 +672,23 @@ msgstr "BitTorrent"
 
 #: data/content/get-fedora-all.html:37 data/content/get-fedora-all.html:45
 #: data/content/get-fedora-all.html:47 data/content/get-fedora-all.html:54
-#: data/content/get-prerelease.html:125 data/content/get-prerelease.html:132
-#: data/content/get-prerelease.html:139 data/content/get-prerelease.html:168
-#: data/content/get-prerelease.html:186 data/content/get-prerelease.html:204
-#: data/content/get-prerelease.html:221 data/content/get-prerelease.html:238
-#: data/content/get-prerelease.html:255 data/content/get-prerelease.html:307
-#: data/content/get-prerelease.html:325 data/content/get-prerelease.html:343
-#: data/content/get-prerelease.html:361 data/content/get-prerelease.html:379
-#: data/content/get-prerelease.html:397 data/content/get-prerelease.html:415
+#: data/content/get-spin-prerelease.html:139
+#: data/content/get-spin-prerelease.html:157
+#: data/content/get-spin-prerelease.html:174
+#: data/content/get-spin-prerelease.html:209
+#: data/content/get-spin-prerelease.html:265
+#: data/content/get-spin-prerelease.html:283
+#: data/content/get-spin-prerelease.html:301
+#: data/content/get-spin-prerelease.html:319
+#: data/content/get-spin-prerelease.html:337
+#: data/content/get-spin-prerelease.html:355
+#: data/content/get-spin-prerelease.html:373
 msgid "i386"
 msgstr "i386"
 
 #: data/content/get-fedora-all.html:37 data/content/get-fedora-all.html:38
 #: data/content/get-fedora-all.html:45 data/content/get-fedora-all.html:46
 #: data/content/get-fedora-all.html:54 data/content/get-fedora-all.html:55
-#: data/content/get-prerelease.html:125 data/content/get-prerelease.html:126
-#: data/content/get-prerelease.html:132 data/content/get-prerelease.html:133
 msgid "Install DVD"
 msgstr "DVD di installazione"
 
@@ -668,33 +697,44 @@ msgstr "DVD di installazione"
 #: data/content/get-fedora-all.html:72 data/content/get-fedora-all.html:79
 #: data/content/get-fedora-all.html:86 data/content/get-fedora-all.html:98
 #: data/content/get-fedora-all.html:105 data/content/get-fedora-all.html:112
-#: data/content/get-prerelease.html:126 data/content/get-prerelease.html:133
-#: data/content/get-prerelease.html:140 data/content/get-prerelease.html:162
-#: data/content/get-prerelease.html:169 data/content/get-prerelease.html:180
-#: data/content/get-prerelease.html:187 data/content/get-prerelease.html:198
-#: data/content/get-prerelease.html:205 data/content/get-prerelease.html:215
-#: data/content/get-prerelease.html:222 data/content/get-prerelease.html:232
-#: data/content/get-prerelease.html:239 data/content/get-prerelease.html:249
-#: data/content/get-prerelease.html:256 data/content/get-prerelease.html:301
-#: data/content/get-prerelease.html:308 data/content/get-prerelease.html:319
-#: data/content/get-prerelease.html:326 data/content/get-prerelease.html:337
-#: data/content/get-prerelease.html:344 data/content/get-prerelease.html:355
-#: data/content/get-prerelease.html:362 data/content/get-prerelease.html:373
-#: data/content/get-prerelease.html:380 data/content/get-prerelease.html:391
-#: data/content/get-prerelease.html:398 data/content/get-prerelease.html:409
-#: data/content/get-prerelease.html:416
+#: data/content/get-spin-prerelease.html:133
+#: data/content/get-spin-prerelease.html:140
+#: data/content/get-spin-prerelease.html:151
+#: data/content/get-spin-prerelease.html:158
+#: data/content/get-spin-prerelease.html:168
+#: data/content/get-spin-prerelease.html:175
+#: data/content/get-spin-prerelease.html:203
+#: data/content/get-spin-prerelease.html:210
+#: data/content/get-spin-prerelease.html:259
+#: data/content/get-spin-prerelease.html:266
+#: data/content/get-spin-prerelease.html:277
+#: data/content/get-spin-prerelease.html:284
+#: data/content/get-spin-prerelease.html:295
+#: data/content/get-spin-prerelease.html:302
+#: data/content/get-spin-prerelease.html:313
+#: data/content/get-spin-prerelease.html:320
+#: data/content/get-spin-prerelease.html:331
+#: data/content/get-spin-prerelease.html:338
+#: data/content/get-spin-prerelease.html:349
+#: data/content/get-spin-prerelease.html:356
+#: data/content/get-spin-prerelease.html:367
+#: data/content/get-spin-prerelease.html:374
 msgid "x86_64"
 msgstr "x86_64"
 
 #: data/content/get-fedora-all.html:43 data/content/get-fedora-all.html:76
-#: data/content/get-fedora-all.html:102 data/content/get-prerelease.html:130
-#: data/content/get-prerelease.html:166 data/content/get-prerelease.html:184
-#: data/content/get-prerelease.html:202 data/content/get-prerelease.html:219
-#: data/content/get-prerelease.html:236 data/content/get-prerelease.html:253
-#: data/content/get-prerelease.html:305 data/content/get-prerelease.html:323
-#: data/content/get-prerelease.html:341 data/content/get-prerelease.html:359
-#: data/content/get-prerelease.html:377 data/content/get-prerelease.html:395
-#: data/content/get-prerelease.html:413
+#: data/content/get-fedora-all.html:102
+#: data/content/get-spin-prerelease.html:137
+#: data/content/get-spin-prerelease.html:155
+#: data/content/get-spin-prerelease.html:172
+#: data/content/get-spin-prerelease.html:207
+#: data/content/get-spin-prerelease.html:263
+#: data/content/get-spin-prerelease.html:281
+#: data/content/get-spin-prerelease.html:299
+#: data/content/get-spin-prerelease.html:317
+#: data/content/get-spin-prerelease.html:335
+#: data/content/get-spin-prerelease.html:353
+#: data/content/get-spin-prerelease.html:371
 msgid "Direct Download"
 msgstr "Download diretto"
 
@@ -707,7 +747,7 @@ msgstr "CD di installazione da rete"
 msgid "Metalinks"
 msgstr "Metalink"
 
-#: data/content/get-fedora-all.html:59 data/content/get-prerelease.html:145
+#: data/content/get-fedora-all.html:59
 msgid "gPXE"
 msgstr "gPXE"
 
@@ -715,20 +755,24 @@ msgstr "gPXE"
 msgid "BFO"
 msgstr "BFO"
 
-#: data/content/get-fedora-all.html:66 data/content/get-prerelease.html:156
+#: data/content/get-fedora-all.html:66
 msgid "Fedora Desktop Live Media"
 msgstr "Disco Live di Fedora Desktop"
 
 #: data/content/get-fedora-all.html:71 data/content/get-fedora-all.html:78
 #: data/content/get-fedora-all.html:85 data/content/get-fedora-all.html:97
 #: data/content/get-fedora-all.html:104 data/content/get-fedora-all.html:111
-#: data/content/get-prerelease.html:161 data/content/get-prerelease.html:179
-#: data/content/get-prerelease.html:197 data/content/get-prerelease.html:214
-#: data/content/get-prerelease.html:231 data/content/get-prerelease.html:248
-#: data/content/get-prerelease.html:300 data/content/get-prerelease.html:318
-#: data/content/get-prerelease.html:336 data/content/get-prerelease.html:354
-#: data/content/get-prerelease.html:372 data/content/get-prerelease.html:390
-#: data/content/get-prerelease.html:408
+#: data/content/get-spin-prerelease.html:132
+#: data/content/get-spin-prerelease.html:150
+#: data/content/get-spin-prerelease.html:167
+#: data/content/get-spin-prerelease.html:202
+#: data/content/get-spin-prerelease.html:258
+#: data/content/get-spin-prerelease.html:276
+#: data/content/get-spin-prerelease.html:294
+#: data/content/get-spin-prerelease.html:312
+#: data/content/get-spin-prerelease.html:330
+#: data/content/get-spin-prerelease.html:348
+#: data/content/get-spin-prerelease.html:366
 msgid "i686"
 msgstr "i686"
 
@@ -738,36 +782,55 @@ msgstr "i686"
 #: data/content/get-fedora-all.html:97 data/content/get-fedora-all.html:98
 #: data/content/get-fedora-all.html:104 data/content/get-fedora-all.html:105
 #: data/content/get-fedora-all.html:111 data/content/get-fedora-all.html:112
-#: data/content/get-prerelease.html:161 data/content/get-prerelease.html:162
-#: data/content/get-prerelease.html:168 data/content/get-prerelease.html:169
-#: data/content/get-prerelease.html:179 data/content/get-prerelease.html:180
-#: data/content/get-prerelease.html:186 data/content/get-prerelease.html:187
-#: data/content/get-prerelease.html:197 data/content/get-prerelease.html:198
-#: data/content/get-prerelease.html:204 data/content/get-prerelease.html:205
-#: data/content/get-prerelease.html:214 data/content/get-prerelease.html:215
-#: data/content/get-prerelease.html:221 data/content/get-prerelease.html:222
-#: data/content/get-prerelease.html:231 data/content/get-prerelease.html:232
-#: data/content/get-prerelease.html:238 data/content/get-prerelease.html:239
-#: data/content/get-prerelease.html:248 data/content/get-prerelease.html:249
-#: data/content/get-prerelease.html:255 data/content/get-prerelease.html:256
-#: data/content/get-prerelease.html:300 data/content/get-prerelease.html:301
-#: data/content/get-prerelease.html:307 data/content/get-prerelease.html:308
-#: data/content/get-prerelease.html:318 data/content/get-prerelease.html:319
-#: data/content/get-prerelease.html:325 data/content/get-prerelease.html:326
-#: data/content/get-prerelease.html:336 data/content/get-prerelease.html:337
-#: data/content/get-prerelease.html:343 data/content/get-prerelease.html:344
-#: data/content/get-prerelease.html:354 data/content/get-prerelease.html:355
-#: data/content/get-prerelease.html:361 data/content/get-prerelease.html:362
-#: data/content/get-prerelease.html:372 data/content/get-prerelease.html:373
-#: data/content/get-prerelease.html:379 data/content/get-prerelease.html:380
-#: data/content/get-prerelease.html:390 data/content/get-prerelease.html:391
-#: data/content/get-prerelease.html:397 data/content/get-prerelease.html:398
-#: data/content/get-prerelease.html:408 data/content/get-prerelease.html:409
-#: data/content/get-prerelease.html:415 data/content/get-prerelease.html:416
+#: data/content/get-spin-prerelease.html:132
+#: data/content/get-spin-prerelease.html:133
+#: data/content/get-spin-prerelease.html:139
+#: data/content/get-spin-prerelease.html:140
+#: data/content/get-spin-prerelease.html:150
+#: data/content/get-spin-prerelease.html:151
+#: data/content/get-spin-prerelease.html:157
+#: data/content/get-spin-prerelease.html:158
+#: data/content/get-spin-prerelease.html:167
+#: data/content/get-spin-prerelease.html:168
+#: data/content/get-spin-prerelease.html:174
+#: data/content/get-spin-prerelease.html:175
+#: data/content/get-spin-prerelease.html:202
+#: data/content/get-spin-prerelease.html:203
+#: data/content/get-spin-prerelease.html:209
+#: data/content/get-spin-prerelease.html:210
+#: data/content/get-spin-prerelease.html:258
+#: data/content/get-spin-prerelease.html:259
+#: data/content/get-spin-prerelease.html:265
+#: data/content/get-spin-prerelease.html:266
+#: data/content/get-spin-prerelease.html:276
+#: data/content/get-spin-prerelease.html:277
+#: data/content/get-spin-prerelease.html:283
+#: data/content/get-spin-prerelease.html:284
+#: data/content/get-spin-prerelease.html:294
+#: data/content/get-spin-prerelease.html:295
+#: data/content/get-spin-prerelease.html:301
+#: data/content/get-spin-prerelease.html:302
+#: data/content/get-spin-prerelease.html:312
+#: data/content/get-spin-prerelease.html:313
+#: data/content/get-spin-prerelease.html:319
+#: data/content/get-spin-prerelease.html:320
+#: data/content/get-spin-prerelease.html:330
+#: data/content/get-spin-prerelease.html:331
+#: data/content/get-spin-prerelease.html:337
+#: data/content/get-spin-prerelease.html:338
+#: data/content/get-spin-prerelease.html:348
+#: data/content/get-spin-prerelease.html:349
+#: data/content/get-spin-prerelease.html:355
+#: data/content/get-spin-prerelease.html:356
+#: data/content/get-spin-prerelease.html:366
+#: data/content/get-spin-prerelease.html:367
+#: data/content/get-spin-prerelease.html:373
+#: data/content/get-spin-prerelease.html:374
 msgid "Live Image"
 msgstr "Immagine Live"
 
-#: data/content/get-fedora-all.html:92 data/content/get-prerelease.html:174
+#: data/content/get-fedora-all.html:92
+#: data/content/get-spin-prerelease.html:127
 msgid "Fedora KDE Live Media"
 msgstr "Disco Live di Fedora KDE"
 
@@ -775,18 +838,27 @@ msgstr "Disco Live di Fedora KDE"
 msgid "Alternative Downloads"
 msgstr "Scarica versioni alternative"
 
-#: data/content/get-fedora-all.html:119 data/content/get-prerelease.html:262
-#: data/content/get-prerelease.html:423
+#: data/content/get-fedora-all.html:119 data/content/get-prerelease.html:133
+#: data/content/get-prerelease.html:223 data/content/get-prerelease.html:317
+#: data/content/get-prerelease.html:460
+#: data/content/get-spin-prerelease.html:217
+#: data/content/get-spin-prerelease.html:381
+#: data/content/get-spin-prerelease.html:467
+#: data/content/get-spin-prerelease.html:523
 msgid "See all torrents"
 msgstr "Mostra tutti i torrent"
 
-#: data/content/get-fedora-all.html:120 data/content/get-prerelease.html:263
-#: data/content/get-prerelease.html:424
+#: data/content/get-fedora-all.html:120 data/content/get-prerelease.html:134
+#: data/content/get-prerelease.html:224 data/content/get-prerelease.html:318
+#: data/content/get-prerelease.html:461
+#: data/content/get-spin-prerelease.html:218
+#: data/content/get-spin-prerelease.html:382
+#: data/content/get-spin-prerelease.html:468
+#: data/content/get-spin-prerelease.html:524
 msgid "See all mirrors"
 msgstr "Mostra tutti i mirror"
 
-#: data/content/get-fedora-all.html:121 data/content/get-prerelease.html:264
-#: data/content/get-prerelease.html:425
+#: data/content/get-fedora-all.html:121
 msgid "See all custom spins"
 msgstr "Mostra tutte le spin personalizzate"
 
@@ -794,7 +866,8 @@ msgstr "Mostra tutte le spin personalizzate"
 msgid "See old versions of Fedora"
 msgstr "Guarda le vecchie versioni di Fedora"
 
-#: data/content/get-fedora-all.html:123 data/content/verify.html:182
+#: data/content/get-fedora-all.html:123 data/content/get-prerelease.html:354
+#: data/content/verify.html:163
 msgid "Cloud Images"
 msgstr "Immagini Cloud"
 
@@ -847,7 +920,7 @@ msgstr "Fedora Project - Ottenere Fedora: Desktop, Altri Formati, Spin, Immagini
 msgid "Main"
 msgstr "Principale"
 
-#: data/content/get-fedora.html:29 data/content/get-prerelease.html:87
+#: data/content/get-fedora.html:29
 msgid "Desktops"
 msgstr "I desktop"
 
@@ -855,20 +928,20 @@ msgstr "I desktop"
 msgid "Formats"
 msgstr "Formati"
 
-#: data/content/get-fedora.html:31 data/content/get-prerelease.html:88
-#: data/content/verify.html:160
+#: data/content/get-fedora.html:31 data/content/verify-prerelease.html:102
+#: data/content/verify.html:143
 msgid "Spins"
 msgstr "Spin"
 
-#: data/content/get-fedora.html:32 data/content/get-prerelease.html:89
+#: data/content/get-fedora.html:32 data/content/get-prerelease.html:90
 msgid "Cloud"
 msgstr "Cloud"
 
-#: data/content/get-fedora.html:33 data/content/get-prerelease.html:90
+#: data/content/get-fedora.html:33 data/content/get-spin-prerelease.html:88
 msgid "ARM"
 msgstr "ARM"
 
-#: data/content/get-fedora.html:34 data/content/verify.html:220
+#: data/content/get-fedora.html:34 data/content/verify.html:198
 msgid "Secondary Arches"
 msgstr "Arch Secondarie"
 
@@ -891,26 +964,26 @@ msgid ""
 "desktop."
 msgstr "Questa è l'ultima versione del sistema operativo Linux Fedora edizione Desktop. È tutto ciò che serve per provare Fedora — non devi cancellare nulla dal tuo sistema corrente per provarla e non metterai a rischio i tuoi file. Fai un giro di prova con Fedora, e se ti piacerà potrai installarla sul disco rigido direttamente dal desktop del media Live."
 
-#: data/content/get-fedora.html:57 data/content/get-fedora.html:119
-#: data/content/get-fedora.html:124 data/content/get-fedora.html:145
-#: data/content/get-fedora.html:150 data/content/get-fedora.html:171
-#: data/content/get-fedora.html:176 data/content/get-fedora.html:197
-#: data/content/get-fedora.html:202 data/content/get-fedora.html:223
-#: data/content/get-fedora.html:228 data/content/get-fedora.html:249
-#: data/content/get-fedora.html:254 data/content/get-fedora.html:290
-#: data/content/get-fedora.html:299 data/content/get-fedora.html:321
-#: data/content/get-fedora.html:330 data/content/get-fedora.html:460
-#: data/content/get-fedora.html:462 data/content/get-fedora.html:467
-#: data/content/get-fedora.html:469 data/content/get-fedora.html:505
-#: data/content/get-fedora.html:509 data/content/get-fedora.html:518
-#: data/content/get-fedora.html:522 data/content/get-fedora.html:531
-#: data/content/get-fedora.html:535 data/content/get-fedora.html:544
-#: data/content/get-fedora.html:548 data/content/get-fedora.html:557
-#: data/content/get-fedora.html:561 data/content/get-fedora.html:570
-#: data/content/get-fedora.html:574 data/content/get-fedora.html:583
-#: data/content/get-fedora.html:587 data/content/get-fedora.html:616
-#: data/content/get-fedora.html:621 data/content/get-fedora.html:634
-#: data/content/index.html:65
+#: data/content/get-fedora.html:57 data/content/get-fedora.html:125
+#: data/content/get-fedora.html:130 data/content/get-fedora.html:151
+#: data/content/get-fedora.html:156 data/content/get-fedora.html:177
+#: data/content/get-fedora.html:182 data/content/get-fedora.html:203
+#: data/content/get-fedora.html:208 data/content/get-fedora.html:229
+#: data/content/get-fedora.html:234 data/content/get-fedora.html:255
+#: data/content/get-fedora.html:260 data/content/get-fedora.html:296
+#: data/content/get-fedora.html:305 data/content/get-fedora.html:327
+#: data/content/get-fedora.html:336 data/content/get-fedora.html:466
+#: data/content/get-fedora.html:468 data/content/get-fedora.html:473
+#: data/content/get-fedora.html:475 data/content/get-fedora.html:511
+#: data/content/get-fedora.html:515 data/content/get-fedora.html:524
+#: data/content/get-fedora.html:528 data/content/get-fedora.html:537
+#: data/content/get-fedora.html:541 data/content/get-fedora.html:550
+#: data/content/get-fedora.html:554 data/content/get-fedora.html:563
+#: data/content/get-fedora.html:567 data/content/get-fedora.html:576
+#: data/content/get-fedora.html:580 data/content/get-fedora.html:589
+#: data/content/get-fedora.html:593 data/content/get-fedora.html:622
+#: data/content/get-fedora.html:627 data/content/get-fedora.html:640
+#: data/content/get-spin-prerelease.html:508 data/content/index.html:65
 msgid "Download Now!"
 msgstr "Scarica ora!"
 
@@ -926,20 +999,36 @@ msgstr "Devi aggiornare Fedora?"
 #: data/content/get-fedora.html:64
 msgid ""
 "Live Media can't be used to upgrade Fedora installations. Instead, you can "
-"upgrade Fedora right from your desktop. Do this by using Fedup - it  will  "
+"upgrade Fedora right from your desktop. Do this by using Fedup - it will "
 "install the packages you need and upgrade your version of Fedora."
-msgstr "I supporti Live non sono utilizzabili per aggiornare le installazioni di Fedora. Al loro posto, è possbile aggiornare Fedora direttamente dal desktop. Per fare questo si usa Fedup, che installerà i pacchetti necessari, aggiornando la versione di Fedora."
+msgstr "I supporti Live non sono utilizzabili per aggiornare le installazioni di Fedora. Al loro posto, è possbile aggiornare Fedora direttamente dal desktop. Per fare questo si usa Fedup, che installerà i pacchetti necessari aggiornando la versione di Fedora."
 
 #: data/content/get-fedora.html:65
 #, python-format
 msgid "<a href=\"%s\">Learn more about upgrading Fedora...</a>"
 msgstr "<a href=\"%s\">Per saperne di più sull'aggiornamento di Fedora...</a>"
 
-#: data/content/get-fedora.html:99
+#: data/content/get-fedora.html:69
+msgid "Looking for Cloud Computing?"
+msgstr "Interessato al Cloud Computing?"
+
+#: data/content/get-fedora.html:70
+msgid ""
+"Fedora is available on Amazon EC2 and other public cloud providers. For "
+"private clouds, you can download Fedora in a format suitable for OpenStack, "
+"CloudStack, and Eucalyptus."
+msgstr "Fedora è disponibile su Amazon EC2 e in altri provider cloud pubblici. Per cloud privati, è possibile scaricare Fedora in un formato adatto ad OpenStack, CloudStack ed Eucalyptus."
+
+#: data/content/get-fedora.html:71
+#, python-format
+msgid "<a href=\"%s\">Learn more about Fedora in the Cloud...</a>"
+msgstr "<a href=\"%s\">Per saperne di più su Fedora nel Cloud...</a>"
+
+#: data/content/get-fedora.html:105
 msgid "Fedora Desktops"
 msgstr "I desktop di Fedora"
 
-#: data/content/get-fedora.html:100
+#: data/content/get-fedora.html:106
 msgid ""
 "There are multiple desktops available for use with Fedora. Each has a "
 "slightly different look and feel and offers varying levels of customization."
@@ -948,172 +1037,173 @@ msgid ""
 "figure out which one is best for you!"
 msgstr "Ci sono molteplici desktop disponibili per l'uso con Fedora. Ciascuno di essi ha una visualizzazione ed approccio che offrono vari livelli di personalizzazione. Il desktop influisce su come si comportano finestre, icone, menu e varie interfacce di base. Potresti volerne provare alcuni per vedere qual'è meglio per te!"
 
-#: data/content/get-fedora.html:102
+#: data/content/get-fedora.html:108
 #, python-format
 msgid "Fedora %(release)s Desktop Edition"
 msgstr "Edizione Desktop Fedora %(release)s"
 
-#: data/content/get-fedora.html:102
+#: data/content/get-fedora.html:108
 msgid "Fedora Default"
 msgstr "Versione predefinita di Fedora"
 
-#: data/content/get-fedora.html:106 data/content/get-fedora.html:265
-#: data/content/get-fedora.html:277 data/content/get-fedora.html:308
-#: data/content/get-fedora.html:344
+#: data/content/get-fedora.html:112 data/content/get-fedora.html:271
+#: data/content/get-fedora.html:283 data/content/get-fedora.html:314
+#: data/content/get-fedora.html:350 data/content/get-spin-prerelease.html:501
 msgid "32-bit PC Edition"
 msgstr "Edizione PC 32-bit"
 
-#: data/content/get-fedora.html:109
+#: data/content/get-fedora.html:115
 msgid "The GNOME-based default Fedora Desktop."
 msgstr "Il desktop predefinito di Fedora basato su GNOME."
 
-#: data/content/get-fedora.html:111
+#: data/content/get-fedora.html:117
 msgid "Fedora Desktop spin homepage"
 msgstr "Pagina della spin Fedora Desktop"
 
-#: data/content/get-fedora.html:112
+#: data/content/get-fedora.html:118
 msgid "GNOME.org website"
 msgstr "sito web GNOME.org"
 
-#: data/content/get-fedora.html:118 data/content/get-fedora.html:144
-#: data/content/get-fedora.html:170 data/content/get-fedora.html:196
-#: data/content/get-fedora.html:222 data/content/get-fedora.html:248
-#: data/content/get-fedora.html:287 data/content/get-fedora.html:318
+#: data/content/get-fedora.html:124 data/content/get-fedora.html:150
+#: data/content/get-fedora.html:176 data/content/get-fedora.html:202
+#: data/content/get-fedora.html:228 data/content/get-fedora.html:254
+#: data/content/get-fedora.html:293 data/content/get-fedora.html:324
 msgid "32-bit"
 msgstr "32-bit"
 
-#: data/content/get-fedora.html:120 data/content/get-fedora.html:125
-#: data/content/get-fedora.html:146 data/content/get-fedora.html:151
-#: data/content/get-fedora.html:172 data/content/get-fedora.html:177
-#: data/content/get-fedora.html:198 data/content/get-fedora.html:203
-#: data/content/get-fedora.html:224 data/content/get-fedora.html:229
-#: data/content/get-fedora.html:250 data/content/get-fedora.html:255
+#: data/content/get-fedora.html:126 data/content/get-fedora.html:131
+#: data/content/get-fedora.html:152 data/content/get-fedora.html:157
+#: data/content/get-fedora.html:178 data/content/get-fedora.html:183
+#: data/content/get-fedora.html:204 data/content/get-fedora.html:209
+#: data/content/get-fedora.html:230 data/content/get-fedora.html:235
+#: data/content/get-fedora.html:256 data/content/get-fedora.html:261
 #, python-format
 msgid "%sMB ISO Image"
 msgstr "Immagine ISO %sMB"
 
-#: data/content/get-fedora.html:123 data/content/get-fedora.html:149
-#: data/content/get-fedora.html:175 data/content/get-fedora.html:201
-#: data/content/get-fedora.html:227 data/content/get-fedora.html:253
-#: data/content/get-fedora.html:296 data/content/get-fedora.html:327
+#: data/content/get-fedora.html:129 data/content/get-fedora.html:155
+#: data/content/get-fedora.html:181 data/content/get-fedora.html:207
+#: data/content/get-fedora.html:233 data/content/get-fedora.html:259
+#: data/content/get-fedora.html:302 data/content/get-fedora.html:333
+#: data/content/get-spin-prerelease.html:507
 msgid "64-bit"
 msgstr "64-bit"
 
-#: data/content/get-fedora.html:130
+#: data/content/get-fedora.html:136
 #, python-format
 msgid "Fedora %(release)s KDE Spin"
 msgstr "Spin KDE Fedora %(release)s"
 
-#: data/content/get-fedora.html:136
+#: data/content/get-fedora.html:142
 msgid "KDE-based Fedora desktop."
 msgstr "Fedora desktop basata su KDE."
 
-#: data/content/get-fedora.html:138
+#: data/content/get-fedora.html:144
 msgid "Fedora KDE Spin homepage"
 msgstr "Pagina della spin Fedora KDE"
 
-#: data/content/get-fedora.html:139
+#: data/content/get-fedora.html:145
 msgid "KDE.org website"
 msgstr "sito web KDE.org"
 
-#: data/content/get-fedora.html:156
+#: data/content/get-fedora.html:162
 #, python-format
 msgid "Fedora %(release)s LXDE Spin"
 msgstr "Spin LXDE Fedora %(release)s"
 
-#: data/content/get-fedora.html:162
+#: data/content/get-fedora.html:168
 msgid "LXDE-based Fedora desktop."
 msgstr "Fedora desktop basata su LXDE"
 
-#: data/content/get-fedora.html:164
+#: data/content/get-fedora.html:170
 msgid "Fedora LXDE Spin homepage"
 msgstr "Pagina della spin Fedora LXDE"
 
-#: data/content/get-fedora.html:165
+#: data/content/get-fedora.html:171
 msgid "LXDE.org website"
 msgstr "sito web LXDE.org"
 
-#: data/content/get-fedora.html:182
+#: data/content/get-fedora.html:188
 #, python-format
 msgid "Fedora %(release)s Xfce Spin"
 msgstr "Spin Xfce Fedora %(release)s"
 
-#: data/content/get-fedora.html:188
+#: data/content/get-fedora.html:194
 msgid "Xfce-based Fedora desktop."
 msgstr "Xfce-based Fedora desktop."
 
-#: data/content/get-fedora.html:190
+#: data/content/get-fedora.html:196
 msgid "Fedora Xfce Spin homepage"
 msgstr "Pagina della spin Fedora Xfce"
 
-#: data/content/get-fedora.html:191
+#: data/content/get-fedora.html:197
 msgid "Xfce.org website"
 msgstr "Xfce.org website"
 
-#: data/content/get-fedora.html:208
+#: data/content/get-fedora.html:214
 #, python-format
 msgid "Fedora %(release)s MATE-Compiz Spin"
 msgstr "Spin Fedora %(release)s MATE-Compiz"
 
-#: data/content/get-fedora.html:214
+#: data/content/get-fedora.html:220
 msgid "MATE-Compiz-based Fedora desktop."
 msgstr "Desktop Fedora basato su MATE-Compiz"
 
-#: data/content/get-fedora.html:216
+#: data/content/get-fedora.html:222
 msgid "Fedora MATE-Compiz Spin homepage"
 msgstr "Home page della spin Fedora MATE-Compiz"
 
-#: data/content/get-fedora.html:217
+#: data/content/get-fedora.html:223
 msgid "Mate-desktop.org website"
 msgstr "Sito web Mate-desktop.org"
 
-#: data/content/get-fedora.html:234
+#: data/content/get-fedora.html:240
 #, python-format
 msgid "Fedora %(release)s SoaS Spin"
 msgstr "Spin Fedora %(release)s SoaS"
 
-#: data/content/get-fedora.html:240
+#: data/content/get-fedora.html:246
 msgid "SoaS-based Fedora desktop."
 msgstr "Desktop Fedora basato su SoaS"
 
-#: data/content/get-fedora.html:242
+#: data/content/get-fedora.html:248
 msgid "Fedora SoaS Spin homepage"
 msgstr "Home page spin Fedora SoaS"
 
-#: data/content/get-fedora.html:243
+#: data/content/get-fedora.html:249
 msgid "Sugarlabs website"
 msgstr "Sito web Sugarlabs"
 
-#: data/content/get-fedora.html:263
+#: data/content/get-fedora.html:269
 msgid "Fedora Downloads by Format"
 msgstr "Scaricare Fedora per formato"
 
-#: data/content/get-fedora.html:268
+#: data/content/get-fedora.html:274
 #, python-format
 msgid "Fedora %(release)s Live Media / Spins"
 msgstr "Fedora %(release)s live media / spin"
 
-#: data/content/get-fedora.html:269
+#: data/content/get-fedora.html:275
 msgid ""
 "Fedora Live Media images may be used via bootable CD, DVD, or USB drives, "
 "and also may be used to install Fedora to hard disk. They are a great way to"
 " give Fedora a try, low-risk."
 msgstr "Le immagini Live di Fedora possono essere utilizzate mediante CD, DVD o dischi USB avviabili, inoltre possono essere utilizzate per installare Fedora sul disco rigido. Sono un ottimo sistema per provare Fedora, con pochi rischi."
 
-#: data/content/get-fedora.html:270
+#: data/content/get-fedora.html:276
 msgid "A directory of alternate Fedora images called Spins may be found at:"
 msgstr "Una lista di immagini Fedora alternative chiamate Spin è disponibile su:"
 
-#: data/content/get-fedora.html:272
+#: data/content/get-fedora.html:278
 msgid "Go to Spins Directory"
 msgstr "Vai alla lista delle spin"
 
-#: data/content/get-fedora.html:280
+#: data/content/get-fedora.html:286
 #, python-format
 msgid "Fedora %(release)s DVD"
 msgstr "Fedora %(release)s DVD"
 
-#: data/content/get-fedora.html:281
+#: data/content/get-fedora.html:287
 msgid ""
 "The DVD edition of Fedora is not Live Media, but it is bootable.  When you "
 "boot from this media, you will be running the installation program.  The DVD"
@@ -1122,22 +1212,22 @@ msgid ""
 "connected to the Internet."
 msgstr "L'edizione DVD di Fedora non è un media Live, ma è avviabile.  Quando parti da questo media, verrà eseguito il programma di installazione.  Il DVD richiede meno memoria (RAM) sul tuo computer e contiene più software. Questo media potrebbe esserti utile se la macchina su cui installi Fedora non è connessa ad Internet."
 
-#: data/content/get-fedora.html:286 data/content/get-fedora.html:295
-#: data/content/get-fedora.html:317 data/content/get-fedora.html:326
+#: data/content/get-fedora.html:292 data/content/get-fedora.html:301
+#: data/content/get-fedora.html:323 data/content/get-fedora.html:332
 msgid "Intel & AMD / PC compatible"
 msgstr "Intel & AMD / PC compatibili"
 
-#: data/content/get-fedora.html:291 data/content/get-fedora.html:300
+#: data/content/get-fedora.html:297 data/content/get-fedora.html:306
 #, python-format
 msgid "%(size)sGB ISO disk image for %(arch)s PC"
 msgstr "%(size)sGB immagine disco ISO per %(arch)s PC"
 
-#: data/content/get-fedora.html:311
+#: data/content/get-fedora.html:317
 #, python-format
 msgid "Fedora %(release)s Network Install CD"
 msgstr "CD di installazione da rete Fedora %(release)s"
 
-#: data/content/get-fedora.html:312
+#: data/content/get-fedora.html:318
 msgid ""
 "The Network Install CD edition of Fedora is useful if you have a fast "
 "Internet connection available.  When you boot from this media, you will be "
@@ -1146,148 +1236,148 @@ msgid ""
 "of the packages installed."
 msgstr "Il CD di installazione da rete di Fedora è utile se si possiede una connessione Internet veloce. Quando si fa il boot da questo media, si entra nel programma di installazione e si possono ottenere direttamente i pacchetti dai repositori. Il CD assicura di ottenere le ultime versioni stabili dei pacchetti installati."
 
-#: data/content/get-fedora.html:322 data/content/get-fedora.html:331
+#: data/content/get-fedora.html:328 data/content/get-fedora.html:337
 #, python-format
 msgid "%(size)sMB ISO disk image for %(arch)s PC"
 msgstr "%(size)sMB immagine ISO per %(arch)s PC"
 
-#: data/content/get-fedora.html:337
+#: data/content/get-fedora.html:343
 #, python-format
 msgid ""
 "For help determining what architecture your system is, <a href=\"%s\">please"
 " view our architecture help guide</a>."
 msgstr "Per aiutarti a sapere quale architettura di sistema possiedi, <a href=\"%s\">fai riferimento alla nostra guida sulle architetture</a>."
 
-#: data/content/get-fedora.html:347
+#: data/content/get-fedora.html:353
 #, python-format
 msgid "Fedora %(release)s Media by Mail"
 msgstr "Fedora %(release)s Media via Mail"
 
-#: data/content/get-fedora.html:348
+#: data/content/get-fedora.html:354
 msgid ""
 "No internet connection? You can get a copy of Fedora media sent via postal "
 "mail through local and online vendors, as well as via the Fedora Free Media "
 "program."
 msgstr "Niente internet? Puoi avere una copia dei media Fedora spedita per posta da uno dei nostri rivenditori online, oppure attraverso il programma Fedora Free Media."
 
-#: data/content/get-fedora.html:352
+#: data/content/get-fedora.html:358
 msgid "Purchase Fedora Media from a Vendor"
 msgstr "Acquista un media Fedora da un rivenditore"
 
-#: data/content/get-fedora.html:358
+#: data/content/get-fedora.html:364
 msgid "Locate a Vendor in Your Area"
 msgstr "Trova un rivenditore nella tua zona"
 
-#: data/content/get-fedora.html:359
+#: data/content/get-fedora.html:365
 msgid ""
 "Select vendors worldwide carry copies of Fedora media at a reasonable price."
 " If a vendor exists in your area and you'd rather not wait for shipping, "
 "this may be a good option for you."
 msgstr "Seleziona i rivenditori nel mondo che consegnano copie dei media di Fedora ad un prezzo ragionevole. Se esiste un rivenditore nella tua area e non desideri attendere troppo per la spedizione, questa è una buona occasione."
 
-#: data/content/get-fedora.html:360
+#: data/content/get-fedora.html:366
 msgid "View Local Vendor Directory"
 msgstr "Guarda la lista dei rivenditori locali"
 
-#: data/content/get-fedora.html:363
+#: data/content/get-fedora.html:369
 msgid "Online Vendors"
 msgstr "Rivenditori online"
 
-#: data/content/get-fedora.html:364
+#: data/content/get-fedora.html:370
 msgid ""
 "Numerous vendors worldwide offer Fedora media for online purchase. Select "
 "the vendor closest to you to keep your shipping costs lower."
 msgstr "Numerosi rivenditori in tutto il mondo offrono media di Fedora per l'acquisto online. Seleziona il rivenditore più vicino a te per mantenere bassi i costi di spedizione."
 
-#: data/content/get-fedora.html:365
+#: data/content/get-fedora.html:371
 msgid "View Online Vendor Directory"
 msgstr "Guarda la lista dei rivenditori online"
 
-#: data/content/get-fedora.html:371
+#: data/content/get-fedora.html:377
 msgid "Fedora Free Media Program"
 msgstr "Fedora Free Media Program"
 
-#: data/content/get-fedora.html:372
+#: data/content/get-fedora.html:378
 msgid ""
 "Can't afford the price of installation media? Request Fedora installation "
 "media from the Fedora Free Media Program."
 msgstr "Non puoi permetterti il costo del media di installazione? Richiedi un media di installazione Fedora dal Fedora Free Media Program."
 
-#: data/content/get-fedora.html:373 data/content/index.html:66
+#: data/content/get-fedora.html:379 data/content/index.html:66
 msgid "Learn More"
 msgstr "Approfondisci"
 
-#: data/content/get-fedora.html:384
+#: data/content/get-fedora.html:390
 msgid "Fedoras that do what you need."
 msgstr "Le Fedora che fanno ciò che ti serve."
 
-#: data/content/get-fedora.html:385
+#: data/content/get-fedora.html:391
 msgid ""
 "Fedora spins are alternate versions of Fedora, tailored for various types of"
 " users via hand-picked application sets and other customizations."
 msgstr "Le spin di Fedora sono versioni alternative di Fedora, adattate a diverse tipologie di utenti mediante la scelta di particolari gruppi di applicazioni e altre personalizzazioni."
 
-#: data/content/get-fedora.html:385
+#: data/content/get-fedora.html:391
 msgid "Learn more about spins >"
-msgstr "Approfondisci ancora sulle spin >"
+msgstr "Per saperne di più sulle spin >"
 
-#: data/content/get-fedora.html:386
+#: data/content/get-fedora.html:392
 msgid ""
 "Below is just a sampling of the Fedora spins that are available. Visit "
 msgstr "Il seguente è solo un esempio delle spin disponibili di Fedora. Visita "
 
-#: data/content/get-fedora.html:386
+#: data/content/get-fedora.html:392
 msgid " for a full listing of all available Fedora spins."
 msgstr " per un elenco completo di tutte le spin di Fedora."
 
-#: data/content/get-fedora.html:391
+#: data/content/get-fedora.html:397
 msgid "Fedora Security Lab"
 msgstr "Laboratorio di sicurezza Fedora"
 
-#: data/content/get-fedora.html:391
+#: data/content/get-fedora.html:397
 msgid "Security analysis tools."
 msgstr "Strumenti di analisi della sicurezza."
 
-#: data/content/get-fedora.html:391 data/content/get-fedora.html:395
-#: data/content/get-fedora.html:399 data/content/get-fedora.html:403
+#: data/content/get-fedora.html:397 data/content/get-fedora.html:401
+#: data/content/get-fedora.html:405 data/content/get-fedora.html:409
 msgid "More details at spins.fedoraproject.org >"
 msgstr "Ulteriori dettagli su spin.fedoraproject.org >"
 
-#: data/content/get-fedora.html:395
+#: data/content/get-fedora.html:401
 msgid "Fedora Design Suite"
 msgstr "Suite Fedora Design"
 
-#: data/content/get-fedora.html:395
+#: data/content/get-fedora.html:401
 msgid "Open Creativity."
 msgstr "Creatività aperta."
 
-#: data/content/get-fedora.html:399 data/content/get-prerelease.html:313
+#: data/content/get-fedora.html:405 data/content/get-spin-prerelease.html:271
 msgid "Fedora Scientific-KDE Spin"
 msgstr "Spin "
 
-#: data/content/get-fedora.html:399
+#: data/content/get-fedora.html:405
 msgid "Open Source Scientific Computing."
 msgstr "Calcolo scientifico open source."
 
-#: data/content/get-fedora.html:403
+#: data/content/get-fedora.html:409
 msgid "Fedora Electronic Lab"
 msgstr "Laboratorio elettronico Fedora"
 
-#: data/content/get-fedora.html:403
+#: data/content/get-fedora.html:409
 msgid "Fedora's high-end hardware design and simulation platform."
 msgstr "Piattaforma di disegno e simulazione hardware ad alto livello di Fedora."
 
-#: data/content/get-fedora.html:407
+#: data/content/get-fedora.html:413
 msgid ""
 "Get these and more at <a "
 "href=\"https://spins.fedoraproject.org\">spins.fedoraproject.org</a>."
 msgstr "Prendile su <a href=\"https://spins.fedoraproject.org\">spins.fedoraproject.org</a>."
 
-#: data/content/get-fedora.html:418
+#: data/content/get-fedora.html:424
 msgid "Fedora In The Cloud"
 msgstr "Fedora sulla Nuvola"
 
-#: data/content/get-fedora.html:423
+#: data/content/get-fedora.html:429
 #, python-format
 msgid ""
 "Fedora provides ready-to-run cloud images for each supported Fedora release."
@@ -1298,7 +1388,7 @@ msgid ""
 "services for provisioning ssh keys."
 msgstr "Fedora fornisce immagini cloud pronte all'uso per ogni rilascio Fedora supportato. Sono disponibili in Amazon EC2 e per il download diretto. Le immagini scaricabili sono disponibili in formato raw compresso ed in qcow2 per l'uso immediato con <a href=\"%s\">OpenStack</a>. Le immagini sono configurate con cloud-init e quindi potranno usufruire di metadata services compatibili con ec2 per il provisioning delle chiavi ssh."
 
-#: data/content/get-fedora.html:425
+#: data/content/get-fedora.html:431
 #, python-format
 msgid ""
 "Note that the root account is disabled, but sudo access is granted to a "
@@ -1306,49 +1396,51 @@ msgid ""
 "<strong>%s</strong>."
 msgstr "Nota che l'account root è disabilitato, ma l'accesso a sudo è garantito ad un speciale login utente. Per Fedora 19 e successive, tale utente è <strong>%s</strong>."
 
-#: data/content/get-fedora.html:426
+#: data/content/get-fedora.html:432
 #, python-format
 msgid "For Fedora 18 and older releases the user is <strong>%s</strong>."
 msgstr "Per Fedora 18 e precedenti, l'utente è <strong>%s</strong>."
 
-#: data/content/get-fedora.html:428
+#: data/content/get-fedora.html:434
 #, python-format
 msgid ""
 "Not familiar with EC2? <a href=\"%s\">Read more about the terminology and "
 "concepts ></a>"
 msgstr "Non si è familiari con EC2? <a href=\"%s\">Leggi di più a proposito di terminologia e concetti ></a>"
 
-#: data/content/get-fedora.html:429
+#: data/content/get-fedora.html:435
 #, python-format
 msgid ""
 "Full documentation for interacting with EC2 is available from <a "
 "href=\"%s\">Amazon Web Services ></a>"
 msgstr "La documentazione completa per interagire con EC2 è disponibile su  <a href=\"%s\">Amazon Web Services ></a>"
 
-#: data/content/get-fedora.html:430
+#: data/content/get-fedora.html:436
 #, python-format
 msgid ""
 "Need help, or have a great idea? <a href=\"%s\">Join the Fedora Cloud SIG "
 "></a>"
 msgstr "Serve aiuto oppure hai qualche bella idea? <a href=\"%s\">Unisciti al SIG Fedora Cloud ></a>"
 
-#: data/content/get-fedora.html:434
+#: data/content/get-fedora.html:440 data/content/get-prerelease.html:387
+#: data/content/get-prerelease.html:428
 msgid "Currently supported EC2 Images"
 msgstr "Immagini EC2 attualmente supportate"
 
-#: data/content/get-fedora.html:435
+#: data/content/get-fedora.html:441 data/content/get-prerelease.html:388
+#: data/content/get-prerelease.html:429
 msgid ""
 "Choose the region and machine architecture and just click to launch in your "
 "Amazon Web Services account. Or, copy the AMI ID and use that to launch from"
 " the AWS Console or command-line tools."
 msgstr "Scegli il paese e l'architettura, poi basterà un click per lanciarla nel proprio account Amazon Web Services. Oppure, copia l'AMI ID ed usalo per lanciarla dalla Console AWS o dagli strumenti a riga di comando."
 
-#: data/content/get-fedora.html:453
+#: data/content/get-fedora.html:459
 #, python-format
 msgid "Fedora %(release)s Downloadable Cloud Images"
 msgstr "Fedora %(release)s Immagini Cloud Scaricabili"
 
-#: data/content/get-fedora.html:456
+#: data/content/get-fedora.html:462
 msgid ""
 "Download these images for use with your local private cloud, or to modify "
 "and upload to a public cloud. The qcow2 images can be used directly by "
@@ -1356,38 +1448,38 @@ msgid ""
 "software but will need to be uncompressed first."
 msgstr "Scarica queste immagini per usarle con il tuo cloud locale privato oppure per modificare e caricarle su un cloud pubblico. Le immagini qcow2 possono essere usate direttamente da OpenStack. Le immagini raw.xz possono essere usate da altri software di infrastruttura cloud ma prima necessitano di essere scompattate."
 
-#: data/content/get-fedora.html:457
+#: data/content/get-fedora.html:463
 #, python-format
 msgid ""
 "For any doubts about running Instances on OpenStack read the <a "
 "href=\"%s\">documentation</a>."
 msgstr "Per qualsiasi dubbio sull'avvìo di istanze su OpenStack, leggere la <a href=\"%s\">documentazione</a>."
 
-#: data/content/get-fedora.html:461 data/content/get-fedora.html:468
+#: data/content/get-fedora.html:467 data/content/get-fedora.html:474
 #, python-format
 msgid "%(size)sMB qcow2 image"
 msgstr "%(size)sMB qcow2 image"
 
-#: data/content/get-fedora.html:463 data/content/get-fedora.html:470
+#: data/content/get-fedora.html:469 data/content/get-fedora.html:476
 #, python-format
 msgid "%(size)sMB Raw image"
 msgstr "%(size)sMB Raw image"
 
-#: data/content/get-fedora.html:481
+#: data/content/get-fedora.html:487
 msgid "Fedora ARM"
 msgstr "Fedora ARM"
 
-#: data/content/get-fedora.html:483 data/content/get-fedora.html:606
-#: data/content/get-fedora.html:627
+#: data/content/get-fedora.html:489 data/content/get-fedora.html:612
+#: data/content/get-fedora.html:633
 msgid "ARM architecture"
 msgstr "Architettura ARM"
 
-#: data/content/get-fedora.html:488
+#: data/content/get-fedora.html:494
 #, python-format
 msgid "Fedora %(release)s ARM"
 msgstr "Fedora %(release)s ARM"
 
-#: data/content/get-fedora.html:489
+#: data/content/get-fedora.html:495
 msgid ""
 "ARM chips are the most widely-produced processor family in the world; they "
 "have historically been used in cell phones and embedded applications, and "
@@ -1396,29 +1488,29 @@ msgid ""
 "family."
 msgstr "I chip ARM appartengono alla famiglia di prodotti più diffusa al mondo; storicamente, sono stati utilizzati in telefoni cellulari e applicazioni embedded, e sono sempre più spesso usati in tablet e server a basso consumo. Il progetto Fedora-ARM è una iniziativa che mira a portare Fedora su questa famiglia di processori"
 
-#: data/content/get-fedora.html:490
+#: data/content/get-fedora.html:496
 msgid ""
 "For more informations about changes and new features please read the <a "
-"href=\"http://fedoraproject.org/wiki/Architectures/ARM/F19_Release_Announcement#Release_Notes/\">Release"
+"href=\"http://fedoraproject.org/wiki/Architectures/ARM/F20_Release_Announcement#Release_Notes/\">Release"
 " Notes</a>."
-msgstr "Per maggiori informazioni sulle modifiche e nuove caratteristiche, leggere le <a href=\"http://fedoraproject.org/wiki/Architectures/ARM/F19_Release_Announcement#Release_Notes/\">Note di Rilascio</a>."
+msgstr "Per maggiori informazioni su modifiche e nuove caratteristiche, leggere le  <a href=\"http://fedoraproject.org/wiki/Architectures/ARM/F20_Release_Announcement#Release_Notes/\">Note di Rilascio</a>."
 
-#: data/content/get-fedora.html:491
+#: data/content/get-fedora.html:497
 msgid "Note for Raspberry Pi users"
 msgstr "Nota per gli utenti del Raspberry Pi"
 
-#: data/content/get-fedora.html:491
+#: data/content/get-fedora.html:497
 msgid ""
 "Raspberry Pi support is now included in <a "
 "href=\"http://pidora.ca/\">Pidora</a>, an optimized Fedora Remix which "
 "includes additional Pi-modules."
 msgstr "Il supporto a Raspberry Pi è ora incluso in <a href=\"http://pidora.ca/\">Pidora</a>, una Fedora Remix ottimizzata che include moduli Pi addizionali."
 
-#: data/content/get-fedora.html:495
+#: data/content/get-fedora.html:501
 msgid "Available images and instructions:"
 msgstr "Immagini disponibili e istruzioni:"
 
-#: data/content/get-fedora.html:496
+#: data/content/get-fedora.html:502
 msgid ""
 "Fedora for ARM includes two image types–one for use with platforms requiring"
 " a VFAT partition (BeagleBone Black), the other for use with devices that "
@@ -1428,32 +1520,32 @@ msgid ""
 "with QEMU."
 msgstr "Fedora per ARM include due tipi di immagine - uno per l'uso con piattaforme che richiedono una partizione VFAT (BeagleBone Black), l'altro per l'uso con dispositivi che si avviano da una partizione EXT (Trimslice). Per ognuno di questi ci sono un certo numero di desktop fra cui scegliere incluso MATE, KDE, Xfce, LXDE, SOAS oltre ad una immagine minimale che non include il desktop. Tutte le immagini possono essere usate con QEMU."
 
-#: data/content/get-fedora.html:497
+#: data/content/get-fedora.html:503
 msgid "All images are ARMv7 32bit specific."
 msgstr "Tutte le immagini sono specifiche per ARMv7 32bit."
 
-#: data/content/get-fedora.html:504 data/content/get-fedora.html:517
-#: data/content/get-fedora.html:530 data/content/get-fedora.html:543
-#: data/content/get-fedora.html:556 data/content/get-fedora.html:569
-#: data/content/get-fedora.html:582
+#: data/content/get-fedora.html:510 data/content/get-fedora.html:523
+#: data/content/get-fedora.html:536 data/content/get-fedora.html:549
+#: data/content/get-fedora.html:562 data/content/get-fedora.html:575
+#: data/content/get-fedora.html:588
 msgid "VFAT ARMv7 image"
 msgstr "immagine VFAT ARMv7"
 
-#: data/content/get-fedora.html:508 data/content/get-fedora.html:521
-#: data/content/get-fedora.html:534 data/content/get-fedora.html:547
-#: data/content/get-fedora.html:560 data/content/get-fedora.html:573
-#: data/content/get-fedora.html:586
+#: data/content/get-fedora.html:514 data/content/get-fedora.html:527
+#: data/content/get-fedora.html:540 data/content/get-fedora.html:553
+#: data/content/get-fedora.html:566 data/content/get-fedora.html:579
+#: data/content/get-fedora.html:592
 msgid "ARMv7 image"
 msgstr "immagine "
 
-#: data/content/get-fedora.html:593
+#: data/content/get-fedora.html:599
 #, python-format
 msgid ""
 "For specific install instructions on the compatible boards please read the "
 "<a href=\"%s\">Installation Notes</a>."
 msgstr "Per istruzioni di installazione specifiche delle schede compatibili, leggere le <a href=\"%s\">Note d'Installazione</a>."
 
-#: data/content/get-fedora.html:594
+#: data/content/get-fedora.html:600
 #, python-format
 msgid ""
 "If you want to install Fedora directly from the <a href=\"%s\">PXE tree</a>,"
@@ -1462,142 +1554,146 @@ msgid ""
 "your PXE server</a>."
 msgstr "Se vuoi installare Fedora direttamente dal <a href=\"%s\">PXE tree</a>, vedi <a href=\"http://docs.fedoraproject.org/en-US/Fedora/19/html/Installation_Guide/ap-install-server.html\">come configurare un server PXE</a>."
 
-#: data/content/get-fedora.html:603
+#: data/content/get-fedora.html:609
 msgid "Fedora Secondary Architectures"
 msgstr "Architetture Secondarie Fedora"
 
-#: data/content/get-fedora.html:610
+#: data/content/get-fedora.html:616
 #, python-format
 msgid "Fedora %(release)s PPC64"
 msgstr "Fedora %(release)s PPC64"
 
-#: data/content/get-fedora.html:611
+#: data/content/get-fedora.html:617
 msgid ""
 "Fedora Releases for PowerPC have been most extensively tested on IBM Power "
 "systems, but is also known to work on Apple Mac G5 systems."
 msgstr "Le release di Fedora per PowerPC sono state testate più estensivamente su sistemi IBM Power, ma è noto che funzionano anche su Apple Mac G5."
 
-#: data/content/get-fedora.html:615 data/content/get-fedora.html:633
+#: data/content/get-fedora.html:621 data/content/get-fedora.html:639
 msgid "DVD Image"
 msgstr "Immagine DVD"
 
-#: data/content/get-fedora.html:617 data/content/get-fedora.html:635
+#: data/content/get-fedora.html:623 data/content/get-fedora.html:641
 #, python-format
 msgid "%sGB DVD ISO"
 msgstr "%sGB DVD ISO"
 
-#: data/content/get-fedora.html:620 data/content/get-prerelease.html:139
-#: data/content/get-prerelease.html:140
+#: data/content/get-fedora.html:626
 msgid "Netinstall CD"
 msgstr "Netinstall CD"
 
-#: data/content/get-fedora.html:622
+#: data/content/get-fedora.html:628
 #, python-format
 msgid "%sMB CD ISO"
 msgstr "%sMB CD ISO"
 
-#: data/content/get-fedora.html:631
+#: data/content/get-fedora.html:637
 #, python-format
 msgid "Fedora %(release)s s390"
 msgstr "Fedora %(release)s s390"
 
-#: data/content/get-fedora.html:632
+#: data/content/get-fedora.html:638
 msgid "Fedora Release Image based on the s390x architecture."
 msgstr "Immagine della release di Fedora basata sulla architettura s390x"
 
-#: data/content/get-fedora.html:680
+#: data/content/get-fedora.html:686
 msgid "What will I need?"
 msgstr "Che cosa mi occorre?"
 
-#: data/content/get-fedora.html:682
+#: data/content/get-fedora.html:688
 msgid "A blank CD or DVD"
 msgstr "Un CD o DVD vuoto"
 
-#: data/content/get-fedora.html:682
+#: data/content/get-fedora.html:688
 msgid " or "
 msgstr " o "
 
-#: data/content/get-fedora.html:682
+#: data/content/get-fedora.html:688
 #, python-format
 msgid "a blank %sGB+ USB stick."
 msgstr "un disco USB da %sGB+."
 
-#: data/content/get-fedora.html:683 data/content/index.html:184
+#: data/content/get-fedora.html:689 data/content/index.html:184
 msgid "64-bit Intel-compatible PC"
 msgstr "PC 64-bit Intel compatibile"
 
-#: data/content/get-fedora.html:684 data/content/index.html:185
+#: data/content/get-fedora.html:690 data/content/index.html:185
 #, python-format
 msgid "%sGB memory (RAM)"
 msgstr "%sGB memoria (RAM)"
 
-#: data/content/get-fedora.html:685
+#: data/content/get-fedora.html:691
 #, python-format
 msgid "At least %s GB hard drive space (only required for installation)"
 msgstr "Almeno %s GB di spazio disco (necessari esclusivamente per l'installazione)"
 
-#: data/content/get-fedora.html:691
+#: data/content/get-fedora.html:697
 msgid "What do I do?"
 msgstr "Che devo fare?"
 
-#: data/content/get-fedora.html:693
+#: data/content/get-fedora.html:699
 msgid "First,"
 msgstr "Primo,"
 
-#: data/content/get-fedora.html:693
+#: data/content/get-fedora.html:699
 msgid "download a Fedora ISO image"
 msgstr "Scarica un immagine ISO Fedora"
 
-#: data/content/get-fedora.html:695
+#: data/content/get-fedora.html:701
 msgid "To install Fedora using a USB stick"
 msgstr "Per installare Fedora usando una chiavetta USB"
 
-#: data/content/get-fedora.html:695 data/content/get-fedora.html:696
+#: data/content/get-fedora.html:701 data/content/get-fedora.html:702
 msgid "follow these instructions."
 msgstr "segui queste istruzioni."
 
-#: data/content/get-fedora.html:696
+#: data/content/get-fedora.html:702
 msgid "To install Fedora using a blank CD or DVD"
 msgstr "Per installare Fedora utilizzando un CD o DVD vuoto"
 
-#: data/content/get-fedora.html:700
+#: data/content/get-fedora.html:706
 msgid "Handy Resources"
 msgstr "Risorse utili"
 
-#: data/content/get-fedora.html:702
+#: data/content/get-fedora.html:708
 msgid "Installation Guide"
 msgstr "Guida all'installazione"
 
-#: data/content/get-fedora.html:703
+#: data/content/get-fedora.html:709
 msgid "Release Notes"
 msgstr "Note di rilascio"
 
-#: data/content/get-fedora.html:704
+#: data/content/get-fedora.html:710
 msgid "Common Bugs"
 msgstr "Errori comuni"
 
-#: data/content/get-fedora.html:705
+#: data/content/get-fedora.html:711
 msgid "Upgrading Fedora"
 msgstr "Aggiornare Fedora"
 
-#: data/content/get-fedora.html:706
+#: data/content/get-fedora.html:712
 msgid "Help & Support"
 msgstr "Aiuto & Supporto"
 
-#: data/content/get-fedora.html:707
+#: data/content/get-fedora.html:713 data/content/get-prerelease.html:225
+#: data/content/get-prerelease.html:319 data/content/get-prerelease.html:462
+#: data/content/get-spin-prerelease.html:219
+#: data/content/get-spin-prerelease.html:383
+#: data/content/get-spin-prerelease.html:469
+#: data/content/get-spin-prerelease.html:525
 msgid "Verify Download"
 msgstr "Verifica il download"
 
-#: data/content/get-fedora.html:710
+#: data/content/get-fedora.html:716
 msgid "Other ways to get Fedora"
 msgstr "Altri modi per ottenere Fedora"
 
-#: data/content/get-fedora.html:712
+#: data/content/get-fedora.html:718
 msgid ""
 "We offer several alternative Fedora download methods, including torrents:"
 msgstr "Offriamo diversi metodi di download di Fedora, inclusi i torrent:"
 
-#: data/content/get-fedora.html:714
+#: data/content/get-fedora.html:720
 msgid "All download methods"
 msgstr "Tutti i metodi di scaricamento"
 
@@ -1618,7 +1714,7 @@ msgstr "Ti senti perso? Segui questi passi per trovare le risposte alle tue doma
 msgid ""
 "For support in other languages than English, have a look at "
 "fedoracommunity.org!"
-msgstr "Per supporto in lingue diverse dall'inglese, da un occhiata su fedoracommunity.org!"
+msgstr "Per supporto in lingue diverse dall'inglese, dai un'occhiata su fedoracommunity.org!"
 
 #: data/content/get-help.html:26
 msgid "Check the Frequently Asked Questions"
@@ -1710,25 +1806,51 @@ msgid ""
 "languages."
 msgstr "Ottieni supporto istantaneo sul canale IRC Fedora. Esistono canali in molte lingue."
 
-#: data/content/get-help.html:72
+#: data/content/get-help.html:72 data/templates/foot.html:31
+msgid "Ask Fedora"
+msgstr "Ask Fedora"
+
+#: data/content/get-help.html:74
+msgid "Community knowledge base and support forum."
+msgstr ""
+
+#: data/content/get-help.html:77
 msgid "Email support"
 msgstr "Supporto email"
 
-#: data/content/get-help.html:74
+#: data/content/get-help.html:79
 msgid ""
 "Ask your own question on one of the many multi-lingual Fedora email-based "
 "mailing lists available."
 msgstr "Fa la tua domanda su una delle molte mailing list multi lingua di Fedora disponibili."
 
 #: data/content/get-prerelease.html:68
+#: data/content/get-spin-prerelease.html:67
 msgid "Fedora Project - Get the next Fedora"
 msgstr "Fedora Project - Scarica la prossima Fedora"
 
 #: data/content/get-prerelease.html:75
+#: data/content/get-spin-prerelease.html:74
 msgid "Get the next Fedora, right now."
 msgstr "Ottieni la prossima Fedora, adesso."
 
-#: data/content/get-prerelease.html:101 data/content/get-prerelease.html:272
+#: data/content/get-prerelease.html:87 data/content/features/index.html:27
+#: data/content/features/index.html:48
+msgid "Overview"
+msgstr "Anteprima"
+
+#: data/content/get-prerelease.html:88
+msgid "Server"
+msgstr ""
+
+#: data/content/get-prerelease.html:89
+#: data/content/get-spin-prerelease.html:421
+msgid "Workstation"
+msgstr ""
+
+#: data/content/get-prerelease.html:101
+#: data/content/get-spin-prerelease.html:101
+#: data/content/get-spin-prerelease.html:227
 #, python-format
 msgid ""
 "This is pre-release software and is supported by the <a "
@@ -1736,8 +1858,12 @@ msgid ""
 "or %(team_irc)s on freenode."
 msgstr "Questo è software pre-release ed è supportato dal <a href=\"%(team_url)s\">team QA</a>. Per contattare il team usare la %(team_list)s o il canale %(team_irc)s di freenode."
 
-#: data/content/get-prerelease.html:102 data/content/get-prerelease.html:273
-#: data/content/get-prerelease.html:434 data/content/get-prerelease.html:492
+#: data/content/get-prerelease.html:102 data/content/get-prerelease.html:143
+#: data/content/get-prerelease.html:234 data/content/get-prerelease.html:328
+#: data/content/get-spin-prerelease.html:102
+#: data/content/get-spin-prerelease.html:228
+#: data/content/get-spin-prerelease.html:392
+#: data/content/get-spin-prerelease.html:478
 #, python-format
 msgid ""
 "All issues or bugs should be reported via the <a href=\"%s\">Red Hat "
@@ -1746,11 +1872,23 @@ msgid ""
 msgstr "Eventuali problemi o bug devono essere riportati nel <a href=\"%s\">Bugzilla di Red Hat</a>. Il progetto Fedora non ne garantisce la idoneità o utilità."
 
 #: data/content/get-prerelease.html:104 data/content/get-prerelease.html:106
-#: data/content/get-prerelease.html:108 data/content/get-prerelease.html:275
-#: data/content/get-prerelease.html:277 data/content/get-prerelease.html:279
-#: data/content/get-prerelease.html:436 data/content/get-prerelease.html:438
-#: data/content/get-prerelease.html:440 data/content/get-prerelease.html:494
-#: data/content/get-prerelease.html:496 data/content/get-prerelease.html:498
+#: data/content/get-prerelease.html:108 data/content/get-prerelease.html:145
+#: data/content/get-prerelease.html:147 data/content/get-prerelease.html:149
+#: data/content/get-prerelease.html:236 data/content/get-prerelease.html:238
+#: data/content/get-prerelease.html:240 data/content/get-prerelease.html:330
+#: data/content/get-prerelease.html:332 data/content/get-prerelease.html:334
+#: data/content/get-spin-prerelease.html:104
+#: data/content/get-spin-prerelease.html:106
+#: data/content/get-spin-prerelease.html:108
+#: data/content/get-spin-prerelease.html:230
+#: data/content/get-spin-prerelease.html:232
+#: data/content/get-spin-prerelease.html:234
+#: data/content/get-spin-prerelease.html:394
+#: data/content/get-spin-prerelease.html:396
+#: data/content/get-spin-prerelease.html:398
+#: data/content/get-spin-prerelease.html:480
+#: data/content/get-spin-prerelease.html:482
+#: data/content/get-spin-prerelease.html:484
 #, python-format
 msgid ""
 "Read the <a href=\"%(relnotes_url)s\">Release Notes</a> for more information"
@@ -1759,67 +1897,370 @@ msgid ""
 "them."
 msgstr "Leggere le <a href=\"%(relnotes_url)s\">Release Notes</a> per conoscere maggiori informazioni su cambiamenti e nuove caratteristiche introdotte, e la pagina <a href=\"%(commonbugs_url)s\">Common Bugs</a> per conoscere le informazioni su problemi comuni riscontrati e su come risolverli."
 
-#: data/content/get-prerelease.html:114 data/content/get-prerelease.html:285
-#: data/content/get-prerelease.html:446 data/content/get-prerelease.html:504
+#: data/content/get-prerelease.html:114 data/content/get-prerelease.html:155
+#: data/content/get-prerelease.html:246 data/content/get-prerelease.html:340
+#: data/content/get-spin-prerelease.html:114
+#: data/content/get-spin-prerelease.html:240
+#: data/content/get-spin-prerelease.html:404
+#: data/content/get-spin-prerelease.html:490
 msgid "Upcoming Beta Release is planned for"
 msgstr "La prossima Beta release è pianificata per"
 
-#: data/content/get-prerelease.html:116 data/content/get-prerelease.html:287
-#: data/content/get-prerelease.html:448 data/content/get-prerelease.html:506
+#: data/content/get-prerelease.html:116 data/content/get-prerelease.html:157
+#: data/content/get-prerelease.html:248 data/content/get-prerelease.html:342
+#: data/content/get-spin-prerelease.html:116
+#: data/content/get-spin-prerelease.html:242
+#: data/content/get-spin-prerelease.html:406
+#: data/content/get-spin-prerelease.html:492
 msgid "Upcoming Final Release is planned for"
 msgstr "La prossima release finale è pianificata per"
 
-#: data/content/get-prerelease.html:123 data/content/get-prerelease.html:159
-#: data/content/get-prerelease.html:177 data/content/get-prerelease.html:195
-#: data/content/get-prerelease.html:212 data/content/get-prerelease.html:229
-#: data/content/get-prerelease.html:246 data/content/get-prerelease.html:298
-#: data/content/get-prerelease.html:316 data/content/get-prerelease.html:334
-#: data/content/get-prerelease.html:352 data/content/get-prerelease.html:370
-#: data/content/get-prerelease.html:388 data/content/get-prerelease.html:406
+#: data/content/get-prerelease.html:121
+msgid "Choose your Fedora Prerelease Product"
+msgstr ""
+
+#: data/content/get-prerelease.html:122
+msgid ""
+"What would you like to accomplish with Fedora? Are you looking for a server "
+"platform to host applications and infrastructure services? Are you looking "
+"for a powerful desktop workstation? Do you need an image for building a "
+"cloud-based application?"
+msgstr ""
+
+#: data/content/get-prerelease.html:123
+msgid ""
+"Fedora offers three separate products for you that are streamlined and "
+"configured out-of-the-box for these key uses of Fedora."
+msgstr ""
+
+#: data/content/get-prerelease.html:130 data/content/get-prerelease.html:221
+#: data/content/get-prerelease.html:315 data/content/get-prerelease.html:458
+#: data/content/get-spin-prerelease.html:215
+#: data/content/get-spin-prerelease.html:379
+#: data/content/get-spin-prerelease.html:465
+#: data/content/get-spin-prerelease.html:521
+msgid "Let me look around..."
+msgstr "Fammi dare un'occhiata..."
+
+#: data/content/get-prerelease.html:132
+msgid "Alternative Download Images: Spins, ARM and Docker!"
+msgstr ""
+
+#: data/content/get-prerelease.html:142
+#, python-format
+msgid ""
+"This is pre-release software and is supported by the <a "
+"href=\"%(team_url)s\">Server Working Group</a>. Please direct questions to "
+"%(team_list)s or %(team_irc)s on freenode."
+msgstr ""
+
+#: data/content/get-prerelease.html:163
+#, python-format
+msgid "Fedora %(rel)s %(state)s Server"
+msgstr ""
+
+#: data/content/get-prerelease.html:168
+msgid "Server Images"
+msgstr ""
+
+#: data/content/get-prerelease.html:169
+msgid ""
+"Do you need an operating platform for important infrastructure tasks (such "
+"as a domain controller) and server applications, such as file/storage "
+"servers, databases, or web applications? Do you need a platform for "
+"deploying an Infrastructure-as-a-Service system to support cloud "
+"deployments? Do you need a platform to run an entire data center? The Fedora"
+" server product is made to support all of these important server use cases."
+msgstr ""
+
+#: data/content/get-prerelease.html:171 data/content/get-prerelease.html:262
+msgid "Download now!"
+msgstr ""
+
+#: data/content/get-prerelease.html:172 data/content/get-prerelease.html:263
+#, python-format
+msgid "%(size)sGB, ISO format image for %(arch)sbit-compatible PCs"
+msgstr ""
+
+#: data/content/get-prerelease.html:177 data/content/get-prerelease.html:284
+#, python-format
+msgid "Fedora %(rel)s %(state)s alternative Downloads"
+msgstr ""
+
+#: data/content/get-prerelease.html:178 data/content/get-prerelease.html:285
+msgid "Torrent Images"
+msgstr ""
+
+#: data/content/get-prerelease.html:179 data/content/get-prerelease.html:286
+#: data/content/get-spin-prerelease.html:130
+#: data/content/get-spin-prerelease.html:148
+#: data/content/get-spin-prerelease.html:165
+#: data/content/get-spin-prerelease.html:200
+#: data/content/get-spin-prerelease.html:256
+#: data/content/get-spin-prerelease.html:274
+#: data/content/get-spin-prerelease.html:292
+#: data/content/get-spin-prerelease.html:310
+#: data/content/get-spin-prerelease.html:328
+#: data/content/get-spin-prerelease.html:346
+#: data/content/get-spin-prerelease.html:364
 msgid ""
 "BitTorrent is a protocol allowing you to download files quickly by allowing "
 "people downloading the file to upload (distribute) parts of it at the same "
 "time."
 msgstr "BitTorrent è un protocollo che ti permette di scaricare file velocemente permettendo, allo stesso tempo, ad altre persone di scaricare parti del medesimo file (distribuire)."
 
-#: data/content/get-prerelease.html:137
-msgid "Netinstall"
-msgstr "Netinstall"
+#: data/content/get-prerelease.html:183 data/content/get-prerelease.html:290
+msgid "Torrent 64bit!"
+msgstr ""
 
-#: data/content/get-prerelease.html:145
-msgid "gPXE is an open source (GPL) network bootloader."
-msgstr "gPXE è un bootloader di rete open source (GPL)."
+#: data/content/get-prerelease.html:184 data/content/get-prerelease.html:188
+#: data/content/get-prerelease.html:291 data/content/get-prerelease.html:295
+msgid "How do I use this file?"
+msgstr "Come uso questo file?"
 
-#: data/content/get-prerelease.html:148
+#: data/content/get-prerelease.html:187 data/content/get-prerelease.html:294
+msgid "Torrent 32bit!"
+msgstr ""
+
+#: data/content/get-prerelease.html:194 data/content/get-prerelease.html:301
+msgid "32bit Image"
+msgstr ""
+
+#: data/content/get-prerelease.html:195
+msgid ""
+"The Server Working Group recommends the 64bit Image. If you don't have a "
+"64bit compatible hardware you can download the 32bit image."
+msgstr ""
+
+#: data/content/get-prerelease.html:199 data/content/get-prerelease.html:215
+#: data/content/get-prerelease.html:306
+msgid "Download 32bit!"
+msgstr ""
+
+#: data/content/get-prerelease.html:200 data/content/get-prerelease.html:307
 #, python-format
-msgid "gPXE tree: <a href=\"%(32b)s\"> i386</a> / <a href=\"%(64b)s\"> x86_64</a>"
-msgstr "gPXE tree: <a href=\"%(32b)s\"> i386</a> / <a href=\"%(64b)s\"> x86_64</a>"
+msgid "%sGB ISO Image"
+msgstr ""
 
-#: data/content/get-prerelease.html:150 data/content/get-prerelease.html:536
-msgid "Setup your PXE server"
-msgstr "Configura il tuo server PXE"
+#: data/content/get-prerelease.html:206
+msgid "Network Install Image"
+msgstr ""
 
-#: data/content/get-prerelease.html:192
+#: data/content/get-prerelease.html:207
+msgid ""
+"The Network Install Image of Fedora is useful if you have a fast Internet "
+"connection available. When you boot from this media, you will be running the"
+" installation program and you get the selected packages directly from the "
+"repositories. The Image ensures you having the latest stable versions of the"
+" packages installed."
+msgstr ""
+
+#: data/content/get-prerelease.html:211
+msgid "Download 64bit!"
+msgstr ""
+
+#: data/content/get-prerelease.html:212 data/content/get-prerelease.html:216
+#, python-format
+msgid "%(size)sMB ISO Image"
+msgstr ""
+
+#: data/content/get-prerelease.html:233
+#, python-format
+msgid ""
+"This is pre-release software and is supported by the <a "
+"href=\"%(team_url)s\">Workstation Working Group</a>. Please direct questions"
+" to %(team_list)s or %(team_irc)s on freenode."
+msgstr ""
+
+#: data/content/get-prerelease.html:254
+#, python-format
+msgid "Fedora %(rel)s %(state)s Workstation"
+msgstr ""
+
+#: data/content/get-prerelease.html:259
+msgid "Workstation Images"
+msgstr ""
+
+#: data/content/get-prerelease.html:260
+msgid ""
+"Workstation is the new name for Fedora's desktop edition for laptops and "
+"PCs. Its downloadable live install image can be used to try Fedora without "
+"modifing anything on your hard drive, and is also suitable for installation."
+msgstr ""
+
+#: data/content/get-prerelease.html:302
+msgid ""
+"The Workstation Working Group recommends the 64bit Image. If you don't have "
+"a 64bit compatible hardware you can download the 32bit image."
+msgstr ""
+
+#: data/content/get-prerelease.html:313
+#, python-format
+msgid ""
+"Fedora Workstation does also support the <a href=\"%s\">ARM "
+"architecture</a>."
+msgstr ""
+
+#: data/content/get-prerelease.html:327
+#: data/content/get-spin-prerelease.html:477
+#, python-format
+msgid ""
+"This is pre-release software and is supported by the <a "
+"href=\"%(team_url)s\">Cloud Working Group</a>. Please direct questions to "
+"%(team_list)s or %(team_irc)s on freenode."
+msgstr ""
+
+#: data/content/get-prerelease.html:349
+#, python-format
+msgid "Fedora %(rel)s %(state)s Cloud"
+msgstr ""
+
+#: data/content/get-prerelease.html:355
+msgid ""
+"The Fedora Cloud Working Group offers two variants for different use cases. "
+"The Base image is suitable for anyone who wants to run Fedora in the AWS "
+"public cloud, or in a private cloud like OpenStack. It can be customized to "
+"fit your needs by adding additional packages. The Atomic image is generated "
+"using rpm-ostree tools to allow true \"atomic\" updates, and is optimized to"
+" run Docker containers."
+msgstr ""
+
+#: data/content/get-prerelease.html:356
+msgid ""
+"Both are available either to download in several formats or to launch in "
+"public clouds."
+msgstr ""
+
+#: data/content/get-prerelease.html:358
+#, python-format
+msgid "F%s Cloud Base"
+msgstr ""
+
+#: data/content/get-prerelease.html:361
+#, python-format
+msgid "F%s Atomic"
+msgstr ""
+
+#: data/content/get-prerelease.html:383
+#, python-format
+msgid "Fedora %(rel)s %(state)s Cloud Base"
+msgstr ""
+
+#: data/content/get-prerelease.html:384
+msgid ""
+"The Fedora Cloud Base image is a tailored set of packages to run in a cloud "
+"environment, pre-made for popular public and private cloud offerings."
+msgstr ""
+
+#: data/content/get-prerelease.html:385
+#, python-format
+msgid ""
+"Fedora Cloud Base images are available in Amazon EC2 and for direct "
+"download. The downloadable images are available in compressed raw image "
+"format and in qcow2 for immediate use with <a href=\"%s\">OpenStack</a>. The"
+" images are configured with cloud-init, and so will take advantage of "
+"ec2-compatible metadata services for provisioning ssh keys."
+msgstr ""
+
+#: data/content/get-prerelease.html:401 data/content/get-prerelease.html:442
+#, python-format
+msgid "Fedora %(rel)s %(state)s Downloadable Cloud Images"
+msgstr ""
+
+#: data/content/get-prerelease.html:402 data/content/get-prerelease.html:443
+#, python-format
+msgid ""
+"Download these images for use with your local private cloud, or to modify "
+"and upload to a public cloud. The qcow2 images can be used directly by <a "
+"href=\"%s\">Openstack</a>. The raw.xz images can be used by other cloud "
+"infrastructure software but will need to be uncompressed first."
+msgstr ""
+
+#: data/content/get-prerelease.html:407 data/content/get-prerelease.html:448
+msgid "64 bit"
+msgstr "64 bit"
+
+#: data/content/get-prerelease.html:409 data/content/get-prerelease.html:416
+#: data/content/get-prerelease.html:450
+msgid "Raw Disk Image"
+msgstr "Immagine disco Raw"
+
+#: data/content/get-prerelease.html:410 data/content/get-prerelease.html:417
+#: data/content/get-prerelease.html:451
+msgid "qcow2 Disk Image"
+msgstr "Immagine disco qcow2"
+
+#: data/content/get-prerelease.html:414
+msgid "32 bit"
+msgstr "32 bit"
+
+#: data/content/get-prerelease.html:424
+#, python-format
+msgid "Fedora %(rel)s %(state)s Atomic"
+msgstr ""
+
+#: data/content/get-prerelease.html:425
+#, python-format
+msgid ""
+"The Fedora Atomic Base image is a minimal set of Fedora packages optimized "
+"for use as a Docker container host. <a href=\"%s\">Read more</a> about "
+"Docker Container Images."
+msgstr ""
+
+#: data/content/get-prerelease.html:426
+#, python-format
+msgid ""
+"Fedora Atomic images are available in Amazon EC2 and for direct download. "
+"The downloadable images are available in compressed raw image format and in "
+"qcow2 for immediate use with <a href=\"%s\">OpenStack</a>. The images are "
+"configured with cloud-init, and so will take advantage of ec2-compatible "
+"metadata services for provisioning ssh keys."
+msgstr ""
+
+#: data/content/get-spin-prerelease.html:86
+#: data/content/verify-prerelease.html:107
+msgid "Desktop Spins"
+msgstr ""
+
+#: data/content/get-spin-prerelease.html:87
+msgid "More Spins"
+msgstr ""
+
+#: data/content/get-spin-prerelease.html:89
+#: data/content/verify-prerelease.html:87
+msgid "Docker"
+msgstr ""
+
+#: data/content/get-spin-prerelease.html:97
+#: data/content/verify-prerelease.html:28
+#: data/content/verify-prerelease.html:154
+msgid "&#8592; Back to the main \"Get Fedora Prerelease\" page"
+msgstr ""
+
+#: data/content/get-spin-prerelease.html:121
+#, python-format
+msgid "Fedora %(rel)s %(state)s Desktop Spins"
+msgstr ""
+
+#: data/content/get-spin-prerelease.html:124
+msgid ""
+"Fedora Spins are alternative versions of Fedora, tailored for various types "
+"of users via hand-picked application sets or customizations."
+msgstr ""
+
+#: data/content/get-spin-prerelease.html:145
 msgid "Fedora XFCE Live Media"
 msgstr "Fedora XFCE Live Media"
 
-#: data/content/get-prerelease.html:209
+#: data/content/get-spin-prerelease.html:162
 msgid "Fedora LXDE Live Media"
 msgstr "Fedora LXDE Live Media"
 
-#: data/content/get-prerelease.html:226
-msgid "Fedora MATE-Compiz Live Media"
-msgstr "Live media Fedora MATE-Compiz"
-
-#: data/content/get-prerelease.html:243
+#: data/content/get-spin-prerelease.html:197
 msgid "Fedora SoaS Live Media"
 msgstr "Live Media Fedora SoaS"
 
-#: data/content/get-prerelease.html:260 data/content/get-prerelease.html:421
-msgid "Let me look around..."
-msgstr "Fammi dare un occhiata..."
-
-#: data/content/get-prerelease.html:292
+#: data/content/get-spin-prerelease.html:248
 #, python-format
 msgid ""
 "Fedora Spins are alternative versions of Fedora, tailored for various types "
@@ -1827,63 +2268,36 @@ msgid ""
 "specific Spins are available in the <a href=\"%s\">Desktops section</a>."
 msgstr "Le spin sono versioni alternative di Fedora, adattate a diversi tipi di utenti ricorrendo ad un insieme selezionato di applicazioni e ad altre personalizzazioni. Le spin specifiche per desktop sono disponibili nella <a href=\"%s\">sezione desktop</a>."
 
-#: data/content/get-prerelease.html:295
+#: data/content/get-spin-prerelease.html:251
+#, python-format
+msgid "More Fedora %(rel)s %(state)s Spins"
+msgstr ""
+
+#: data/content/get-spin-prerelease.html:253
 msgid "Fedora Security Spin"
 msgstr "Spin Fedora Security"
 
-#: data/content/get-prerelease.html:331
+#: data/content/get-spin-prerelease.html:289
 msgid "Fedora Electronic Lab Spin"
 msgstr "Spin "
 
-#: data/content/get-prerelease.html:349
+#: data/content/get-spin-prerelease.html:307
 msgid "Fedora Jam-KDE Spin"
 msgstr "Spin "
 
-#: data/content/get-prerelease.html:367
+#: data/content/get-spin-prerelease.html:325
 msgid "Fedora Design-suite Spin"
 msgstr "Spin "
 
-#: data/content/get-prerelease.html:385
+#: data/content/get-spin-prerelease.html:343
 msgid "Fedora Games Spin"
 msgstr "Spin Fedora Games"
 
-#: data/content/get-prerelease.html:403
+#: data/content/get-spin-prerelease.html:361
 msgid "Fedora Robotics Spin"
 msgstr "Spin "
 
-#: data/content/get-prerelease.html:433
-#, python-format
-msgid ""
-"This is pre-release software and is supported by the <a "
-"href=\"%(team_url)s\">Cloud team</a>. Please direct questions to "
-"%(team_list)s or %(team_irc)s on freenode."
-msgstr "Questo è software pre-release ed è supportato dal <a href=\"%(team_url)s\">team Cloud</a>. Per contattare il team usare la %(team_list)s o il canale %(team_irc)s di freenode."
-
-#: data/content/get-prerelease.html:452
-msgid "Fedora Cloud Images"
-msgstr "Immagine Fedora Cloud"
-
-#: data/content/get-prerelease.html:455
-msgid "64 bit"
-msgstr "64 bit"
-
-#: data/content/get-prerelease.html:457 data/content/get-prerelease.html:464
-msgid "Raw Disk Image"
-msgstr "Immagine disco Raw"
-
-#: data/content/get-prerelease.html:458 data/content/get-prerelease.html:465
-msgid "qcow2 Disk Image"
-msgstr "Immagine disco qcow2"
-
-#: data/content/get-prerelease.html:462
-msgid "32 bit"
-msgstr "32 bit"
-
-#: data/content/get-prerelease.html:469
-msgid "Fedora EC2 Images"
-msgstr "Immagini Fedora EC2"
-
-#: data/content/get-prerelease.html:491
+#: data/content/get-spin-prerelease.html:391
 #, python-format
 msgid ""
 "This is pre-release software and is supported by the <a "
@@ -1891,76 +2305,86 @@ msgid ""
 " or %(team_irc)s on freenode."
 msgstr "Questo è software pre-release ed è supportato dal <a href=\"%(team_url)s\">team Cloud</a>. Per contattare il team usare la %(team_list)s o il canale %(team_irc)s di freenode."
 
-#: data/content/get-prerelease.html:511
+#: data/content/get-spin-prerelease.html:412
 msgid ""
-"Fedora for ARM includes two image types–one for use with platforms requiring"
-" a VFAT partition (Pandaboard), the other for use with devices that boot "
-"from an EXT partition (Trimslice). For each of these there are a number of "
-"desktop choices including MATE, KDE, Xfce, LXDE, SOAS and a minimal image "
-"that does not include the desktop. Any of these images can be used with "
-"QEMU."
-msgstr "Fedora per ARM include due tipi di immagine - uno per l'uso con piattaforme che richiedono una partizione VFAT (Pandaboard), l'altro per l'uso con dispositivi che si avviano da una partizione EXT (Trimslice). Per ognuno di questi ci sono un certo numero di scelte desktop incluso MATE, KDE, Xfce, LXDE, SOAS oltre ad una immagine minimale che non include il desktop. Tutte le immagini possono essere usate con QEMU."
+"Fedora for ARM includes a number of desktop choices including Workstation, "
+"MATE, KDE, Xfce, LXDE, SOAS and a minimal image that does not include the "
+"desktop. Any of these images can be used with QEMU."
+msgstr ""
 
-#: data/content/get-prerelease.html:512
+#: data/content/get-spin-prerelease.html:413
 #, python-format
 msgid ""
 "To get more information, read the <a href=\"%s\">installation "
 "instructions</a>."
 msgstr "Per maggiori informazioni, leggi le <a href=\"%s\">istruzioni di installazione</a>."
 
-#: data/content/get-prerelease.html:515
-msgid "Fedora ARM Images"
-msgstr "Immagini Fedora ARM"
+#: data/content/get-spin-prerelease.html:416
+#, python-format
+msgid "Fedora %(rel)s %(state)s ARM Images"
+msgstr ""
 
-#: data/content/get-prerelease.html:518
-msgid "KDE"
-msgstr "KDE"
-
-#: data/content/get-prerelease.html:520 data/content/get-prerelease.html:527
-#: data/content/get-prerelease.html:547 data/content/get-prerelease.html:554
-#: data/content/get-prerelease.html:561 data/content/get-prerelease.html:568
-#: data/content/get-prerelease.html:575
-msgid "VFAT HFP"
-msgstr "VFAT HFP"
-
-#: data/content/get-prerelease.html:521 data/content/get-prerelease.html:528
-#: data/content/get-prerelease.html:548 data/content/get-prerelease.html:555
-#: data/content/get-prerelease.html:562 data/content/get-prerelease.html:569
-#: data/content/get-prerelease.html:576
-msgid "HFP"
-msgstr "HFP"
-
-#: data/content/get-prerelease.html:525
-msgid "Minimal"
-msgstr "Minimale"
-
-#: data/content/get-prerelease.html:535
-msgid "PXE tree"
-msgstr "PXE tree"
-
-#: data/content/get-prerelease.html:542
+#: data/content/get-spin-prerelease.html:418
 msgid "Fedora ARM Desktop Spins"
 msgstr "Spin Desktop Fedora ARM"
 
-#: data/content/get-prerelease.html:545
-msgid "Desktop"
-msgstr "Desktop"
+#: data/content/get-spin-prerelease.html:423
+#: data/content/get-spin-prerelease.html:429
+#: data/content/get-spin-prerelease.html:435
+#: data/content/get-spin-prerelease.html:448
+#: data/content/get-spin-prerelease.html:454
+#: data/content/get-spin-prerelease.html:460
+msgid "HFP Image"
+msgstr "Immagine HFP"
 
-#: data/content/get-prerelease.html:552
+#: data/content/get-spin-prerelease.html:427
+msgid "KDE"
+msgstr "KDE"
+
+#: data/content/get-spin-prerelease.html:433
 msgid "Xfce"
 msgstr "Xfce"
 
-#: data/content/get-prerelease.html:559
-msgid "LXDE"
-msgstr "LXDE"
-
-#: data/content/get-prerelease.html:566
+#: data/content/get-spin-prerelease.html:446
 msgid "Mate"
 msgstr "Mate"
 
-#: data/content/get-prerelease.html:573
+#: data/content/get-spin-prerelease.html:452
 msgid "SoaS"
 msgstr "SoaS"
+
+#: data/content/get-spin-prerelease.html:458
+msgid "Minimal"
+msgstr "Minimale"
+
+#: data/content/get-spin-prerelease.html:497
+#, python-format
+msgid "Fedora %(rel)s %(state)s Docker Base Image"
+msgstr ""
+
+#: data/content/get-spin-prerelease.html:503
+msgid ""
+"The Fedora Docker Base Image is a minimal Fedora install which can be "
+"spawned as a Docker container. It contains basic tools which can be used as "
+"a foundation for building Docker Layered Images - bash, vi and yum (and it's"
+" dependencies)."
+msgstr ""
+
+#: data/content/get-spin-prerelease.html:509
+#, python-format
+msgid "%sMB Image"
+msgstr ""
+
+#: data/content/get-spin-prerelease.html:513
+msgid ""
+"You can easily load this Docker image into your running Docker daemon using "
+"command:"
+msgstr ""
+
+#: data/content/get-spin-prerelease.html:517
+msgid ""
+"Following command can be used to spawn a container running bash inside:"
+msgstr ""
 
 #: data/content/index.html:48
 msgid "Fedora Project Homepage"
@@ -1992,20 +2416,19 @@ msgid "Try Fedora %(release)s %(state)s Now!"
 msgstr "Prova Fedora %(release)s %(state)s ora!"
 
 #: data/content/index.html:79
-msgid "Celebrating 10 years"
-msgstr "Celebriamo 10 anni"
+msgid "Fedora Magazine: All the News That's Fit to print()"
+msgstr ""
 
 #: data/content/index.html:80
 msgid ""
-"Fedora recently celebrated it's 10th anniversary. It's been a decade of "
-"freedom, friends, features, and first! Join in on the festivities by "
-"watching our 10 year anniversary video, interviewing our current and some "
-"past Fedora Project leaders to talk about Fedora's history!"
-msgstr "Fedora ha recentemente celebrato il suo decimo anniversario. È stato un decennio di libertà, amicizia, feature e primati! Unisciti a noi nei festeggiamenti guardando il video del decimo anniversario, con interviste ad alcuni dei passati leader del progetto Fedora che parlano della nostra storia!"
+"Fedora Magazine is your ultimate source of information for everything "
+"Fedora-related. You'll find news, reviews and regular updates about Fedora "
+"releases and the Fedora community."
+msgstr ""
 
-#: data/content/index.html:81 data/content/index.html:92
-msgid "Learn More >"
-msgstr "Per saperne di più >"
+#: data/content/index.html:81
+msgid "Read now >"
+msgstr ""
 
 #: data/content/index.html:90
 msgid "Cloud Computing with Fedora"
@@ -2019,6 +2442,10 @@ msgid ""
 "clouds, you can download Fedora in a format suitable for OpenStack, "
 "CloudStack, and Eucalyptus."
 msgstr "Il progetto Fedora fornisce immagini per cloud pubblici e privati che sono la base perfetta per i progetti cloud agili. Fedora è disponibile su Amazon EC2 e in altri provider cloud pubblici. Per cloud privati, è possibile scaricare Fedora in un formato adatto ad OpenStack, CloudStack ed Eucalyptus."
+
+#: data/content/index.html:92
+msgid "Learn More >"
+msgstr "Per saperne di più >"
 
 #: data/content/index.html:101
 msgid "A worldwide community of friends."
@@ -2038,27 +2465,6 @@ msgstr "Fedora è un sistema operativo basato su Linux che presenta gli ultimiss
 #: data/content/join-fedora.html:116
 msgid "Learn more >"
 msgstr "Per saperne di più >"
-
-#: data/content/index.html:119
-msgid "news"
-msgstr "notizie"
-
-#: data/content/index.html:119
-msgid "Fedora 20 released on December 17, 2013!"
-msgstr "Fedora 20 rilasciata il 17 Dicembre 2013!"
-
-#: data/content/index.html:119
-msgid ""
-"http://docs.fedoraproject.org/en-US/Fedora/20/html/Release_Notes/index.html"
-msgstr "http://docs.fedoraproject.org/en-US/Fedora/20/html/Release_Notes/index.html"
-
-#: data/content/index.html:119
-msgid "Read the release notes"
-msgstr "Leggi le note di rilascio"
-
-#: data/content/index.html:119
-msgid "Download now"
-msgstr "Scarica ora"
 
 #: data/content/index.html:128
 msgid "Need help?"
@@ -2478,47 +2884,49 @@ msgid "Currently used keys"
 msgstr "Chiavi attualmente usate"
 
 #: data/content/keys.html:67 data/content/keys.html:81
-#: data/content/keys.html:94 data/content/keys.html:108
+#: data/content/keys.html:95 data/content/keys.html:109
+#: data/content/keys.html:122 data/content/keys.html:136
 #, python-format
 msgid "Download: <a href=\"%s\">Fedora Project</a>"
 msgstr "Scarica: <a href=\"%s\">Fedora Project</a>"
 
-#: data/content/keys.html:68 data/content/keys.html:95
-#: data/content/keys.html:109
+#: data/content/keys.html:68 data/content/keys.html:82
+#: data/content/keys.html:96 data/content/keys.html:123
+#: data/content/keys.html:137
 #, python-format
 msgid "Download: <a href=\"%s\">keys.gnupg.net</a>"
 msgstr "Scarica: <a href=\"%s\">keys.gnupg.net</a>"
 
-#: data/content/keys.html:121 data/content/keys.html:132
-#: data/content/keys.html:144 data/content/keys.html:158
-#: data/content/keys.html:209 data/content/keys.html:221
-#: data/content/keys.html:233 data/content/keys.html:245
-#: data/content/keys.html:256 data/content/keys.html:267
-#: data/content/keys.html:278 data/content/keys.html:289
-#: data/content/keys.html:301 data/content/keys.html:312
-#: data/content/keys.html:324 data/content/keys.html:338
-#: data/content/keys.html:350 data/content/keys.html:361
+#: data/content/keys.html:150 data/content/keys.html:164
+#: data/content/keys.html:215 data/content/keys.html:227
+#: data/content/keys.html:239 data/content/keys.html:251
+#: data/content/keys.html:262 data/content/keys.html:273
+#: data/content/keys.html:284 data/content/keys.html:295
+#: data/content/keys.html:307 data/content/keys.html:318
+#: data/content/keys.html:330 data/content/keys.html:344
+#: data/content/keys.html:356 data/content/keys.html:367
+#: data/content/keys.html:378 data/content/keys.html:389
 #, python-format
 msgid "Get it from the <a href=\"%s\">Fedora Project</a>"
 msgstr "Scarica: <a href=\"%s\">Fedora Project</a>"
 
-#: data/content/keys.html:162
+#: data/content/keys.html:168
 msgid "Obsolete keys"
 msgstr "Chiavi obsolete"
 
-#: data/content/keys.html:173
+#: data/content/keys.html:179
 msgid "Fedora Core (version 6 and earlier)"
 msgstr "Fedora Core (versione 6 e precedenti)"
 
-#: data/content/keys.html:174
+#: data/content/keys.html:180
 msgid "Fedora (version 7, 8, and 9)"
 msgstr "Fedora (versione 7, 8 e 9)"
 
-#: data/content/keys.html:175
+#: data/content/keys.html:181
 msgid "Both GA and updates"
 msgstr "GA e aggiornamenti"
 
-#: data/content/keys.html:178
+#: data/content/keys.html:184
 msgid ""
 "Packages on installation media are signed with this key.  The relevant yum "
 "repositories are <strong>fedora</strong>, <strong>fedora-updates</strong> "
@@ -2530,17 +2938,17 @@ msgid ""
 "is obsolete."
 msgstr "I pacchetti sul media di installazione sono firmati con questa chiave.  I repository yum più importanti sono <strong>fedora</strong>, <strong>fedora-updates</strong> per Fedora 7-9, e <strong>core</strong> e <strong>core-updates</strong> per Fedora Core (Versione 6 e precedenti).  Vedere <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> per sapere perché questa chiave è obsoleta."
 
-#: data/content/keys.html:180 data/content/keys.html:197
-#: data/content/keys.html:376
+#: data/content/keys.html:186 data/content/keys.html:203
+#: data/content/keys.html:404
 #, python-format
 msgid "Path: %s"
 msgstr "Percorso: %s"
 
-#: data/content/keys.html:192
+#: data/content/keys.html:198
 msgid "Fedora (version 7 and newer) testing updates"
 msgstr "Aggiornamenti test di Fedora (versione 7 e successive)"
 
-#: data/content/keys.html:195
+#: data/content/keys.html:201
 msgid ""
 "If you participate in testing of the packages, this is the key you will use "
 "to verify the testing packages.  This key signs the packages that are in "
@@ -2551,7 +2959,7 @@ msgid ""
 "is obsolete."
 msgstr "Se si partecipa al collaudo dei pacchetti, questa è la chiave da usare per verificare i pacchetti sotto test. Questa chiave firma i pacchetti contenuti nel repository <strong>fedora-testing</strong>.  Vedere <a href=\"http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html\">http://www.redhat.com/archives/fedora-announce-list/2008-August/msg00012.html</a> per sapere perché questa chiave è obsoleta."
 
-#: data/content/keys.html:374
+#: data/content/keys.html:402
 msgid ""
 "If you are using Fedora Extras with Fedora Core 6, use this package from "
 "<strong>extras</strong> repository.  This key will no longer be used after "
@@ -2560,7 +2968,7 @@ msgid ""
 "later releases."
 msgstr "Se si sta usando Fedora Extras con Fedora Core 6, usare questo pacchetto dal repositorio <strong>extras</strong>.  Questa chiave non verrà più usata dopo che Fedora Core 6 e gli Extra raggiungeranno la EOL (7 dicembre 2007).  Questa chiave non è inclusa nel pacchetto <strong>fedora-release</strong> di Fedora 7 e versioni successive."
 
-#: data/content/keys.html:392
+#: data/content/keys.html:420
 msgid ""
 "This key was used for packages that were released by Fedora Legacy project "
 "to update releases that reached their official EOL.  The Fedora Legacy "
@@ -2588,14 +2996,6 @@ msgid ""
 "\"It's a treasure trove for the curious Linux user who wants to explore the "
 "latest and greatest Linux has to offer.\""
 msgstr "\"E' un vero e proprio tesoro per l'utente curioso di Linux che vuole esplorare le ultime novità ed il meglio che Linux ha da offrire. \""
-
-#: data/content/rss.html:7
-msgid "Fedora Project - RSS Feeds"
-msgstr "Fedora Project - Feed RSS"
-
-#: data/content/rss.html:12
-msgid "RSS Feed Test"
-msgstr "Prova RSS Feed"
 
 #: data/content/sponsors.html:7
 msgid "Fedora Project - List of sponsors."
@@ -2630,86 +3030,163 @@ msgid ""
 "substantial support:"
 msgstr "Il Fedora Project ringrazia inoltre i seguenti sponsor per l'aiuto sostanziale:"
 
-#: data/content/sponsors.html:60
+#: data/content/sponsors.html:59
+msgid ""
+"Fedora Infrastructure would like to thank the following open-source projects"
+" for their software (alphabetically ordered):"
+msgstr ""
+
+#: data/content/sponsors.html:61
+msgid "Askbot"
+msgstr ""
+
+#: data/content/sponsors.html:62
+msgid "Ansible"
+msgstr ""
+
+#: data/content/sponsors.html:63
+msgid "Git"
+msgstr ""
+
+#: data/content/sponsors.html:64
+msgid "Nagios"
+msgstr ""
+
+#: data/content/sponsors.html:65
+msgid "GNU Mailman"
+msgstr ""
+
+#: data/content/sponsors.html:66
+msgid "Mediawiki"
+msgstr ""
+
+#: data/content/sponsors.html:67
+msgid "Python"
+msgstr ""
+
+#: data/content/sponsors.html:68
+msgid "Trac"
+msgstr ""
+
+#: data/content/sponsors.html:69
+msgid "TurboGears"
+msgstr ""
+
+#: data/content/sponsors.html:73
 msgid "Interested in sponsoring something for Fedora?"
 msgstr "Sei interessato a sponsorizzare qualcosa per Fedora?"
 
-#: data/content/sponsors.html:61
+#: data/content/sponsors.html:74
 msgid "Interested in sponsoring something for Fedora? Contact "
 msgstr "Sei interessato a sponsorizzare qualcosa per Fedora? Contattaci "
 
-#: data/content/sponsors.html:61
+#: data/content/sponsors.html:74
 msgid ""
 "or stop by <strong>#fedora-admin</strong> on "
 "<strong>irc.freenode.net</strong>."
 msgstr "o passa per <strong>#fedora-admin</strong> su <strong>irc.freenode.net</strong>."
 
-#: data/content/verify.html:7
+#: data/content/verify-prerelease.html:7 data/content/verify.html:7
 msgid "Fedora Project - Verify your download"
 msgstr "Fedora Project - Verifica il tuo downlaod"
 
-#: data/content/verify.html:15
-msgid "Verify your ISO Download"
-msgstr "Verifica il download della ISO."
+#: data/content/verify-prerelease.html:15
+#, python-format
+msgid "Verify your Fedora %(rel)s %(state)s ISO"
+msgstr ""
 
-#: data/content/verify.html:16
+#: data/content/verify-prerelease.html:16 data/content/verify.html:16
 msgid "Make sure the iso downloaded is correct."
 msgstr "Assicurati che l'iso che hai scaricato sia corretta."
 
-#: data/content/verify.html:30
+#: data/content/verify-prerelease.html:30 data/content/verify.html:30
 #, python-format
 msgid "Windows user? Follow <a href=\"%s\">these instructions</a> instead."
 msgstr "Utente Windows ? Segui invece <a href=\"%s\">queste istruzioni</a>."
 
-#: data/content/verify.html:32
+#: data/content/verify-prerelease.html:32 data/content/verify.html:32
 msgid ""
 "Once you have downloaded an ISO, verify it for security and integrity.  To "
 "verify your ISO, start by downloading the proper CHECKSUM file into the same"
 " directory as the ISO:"
 msgstr "Una volta scaricata una ISO, verificala per sicurezza ed integrità.  Per verificare l'ISO, scaricate il file di CHECKSUM appropriato nella stessa directory della ISO:"
 
-#: data/content/verify.html:37
-msgid "Install DVD / Rescue CD"
-msgstr "DVD di installazione / CD di emergenza"
+#: data/content/verify-prerelease.html:37
+msgid "Fedora Server"
+msgstr ""
 
-#: data/content/verify.html:78
-msgid "Desktop Live Media"
-msgstr "Media Live Desktop"
+#: data/content/verify-prerelease.html:52
+msgid "Fedora Workstation"
+msgstr ""
 
-#: data/content/verify.html:204
-msgid "ARM Images"
-msgstr "Immagini ARM"
+#: data/content/verify-prerelease.html:72
+msgid "Fedora Cloud"
+msgstr ""
 
-#: data/content/verify.html:239
+#: data/content/verify-prerelease.html:107
+msgid "Desktop Live Images are KDE, LXDE, Xfce, MATE-Compiz and SoaS."
+msgstr ""
+
+#: data/content/verify-prerelease.html:112
+msgid ""
+"Spins are Design, Electronic-Lab, Games, Jam-KDE, Robotics, Scientific-KDE "
+"and Security."
+msgstr ""
+
+#: data/content/verify-prerelease.html:112
+msgid "Other Spins"
+msgstr ""
+
+#: data/content/verify-prerelease.html:122
+msgid "ARM Desktop Spins"
+msgstr ""
+
+#: data/content/verify-prerelease.html:134 data/content/verify.html:215
 msgid "Next, import Fedora's GPG key(s):"
 msgstr "Quindi, importa la chiave GPG di Fedora:"
 
-#: data/content/verify.html:241
+#: data/content/verify-prerelease.html:136 data/content/verify.html:217
 #, python-format
 msgid ""
 "You can verify the details of the GPG key(s) <a "
 "href=\"%s/%s/keys\">here</a>."
 msgstr "Puoi verificare i dettagli delle chiavi GPG <a href=\"%s/%s/keys\">qui</a>."
 
-#: data/content/verify.html:242
+#: data/content/verify-prerelease.html:137 data/content/verify.html:218
 msgid "Now, verify that the CHECKSUM file is valid:"
 msgstr "Ora, verifica che il file CHECKSUM sia valido:"
 
-#: data/content/verify.html:244
+#: data/content/verify-prerelease.html:139 data/content/verify.html:220
 msgid ""
 "The CHECKSUM file should have a good signature from one of the following "
 "keys:"
 msgstr "Il file CHECKSUM dovrebbe avere una firma verificata da una delle seguenti chiavi:"
 
-#: data/content/verify.html:253
+#: data/content/verify-prerelease.html:150 data/content/verify.html:229
 msgid ""
 "Finally, now that the CHECKSUM file has been verified, check that the ISO's "
 "checksum matches:"
 msgstr "In fine, ora che il file CHECKSUM è stato verificato, controlla che il checksum della ISO coincida:"
 
-#: data/content/verify.html:255
+#: data/content/verify-prerelease.html:152 data/content/verify.html:231
 msgid "If the output states that the file is valid, then you're good to go!"
 msgstr "Se il risultato indica che il file è valido, allora si è pronti per procedere!"
+
+#: data/content/verify.html:15
+msgid "Verify your ISO Download"
+msgstr "Verifica il download della ISO."
+
+#: data/content/verify.html:37
+msgid "Install DVD / Rescue CD"
+msgstr "DVD di installazione / CD di emergenza"
+
+#: data/content/verify.html:73
+msgid "Desktop Live Media"
+msgstr "Media Live Desktop"
+
+#: data/content/verify.html:183
+msgid "ARM Images"
+msgstr "Immagini ARM"
 
 #: data/content/e/404.html:7
 msgid "Fedora Project - Page Not Found"
@@ -2775,10 +3252,6 @@ msgid ""
 "Fedora is built by a community of contributors from around the world. Learn "
 "more."
 msgstr "Fedora è creata da una comunità di collaboratori da tutto il mondo. Per saperne di più."
-
-#: data/content/features/index.html:27 data/content/features/index.html:48
-msgid "Overview"
-msgstr "Anteprima"
 
 #: data/content/features/index.html:28
 msgid "Collaboration"
@@ -2879,7 +3352,7 @@ msgstr "Creata da una comunità di collaboratori globale, c'è un sito localizza
 
 #: data/content/features/index.html:80
 msgid "Take a look"
-msgstr "Da un occhiata"
+msgstr "Dai un'occhiata"
 
 #: data/content/features/index.html:84
 msgid "An Amazingly Powerful OS"
@@ -2932,7 +3405,7 @@ msgstr "Le nostre statistiche"
 #: data/content/features/index.html:114 data/content/features/index.html:174
 #: data/content/features/index.html:246 data/content/features/index.html:325
 #: data/content/features/index.html:394 data/content/features/index.html:463
-#: data/content/using/index.html:86 data/content/using/index.html:156
+#: data/content/using/index.html:85 data/content/using/index.html:155
 msgid "Back to top"
 msgstr "Torna su"
 
@@ -2975,7 +3448,7 @@ msgstr "Puoi aggiungere molteplici account ad Evolution e cercare fra essi il me
 msgid ""
 "Learn more about Evolution at <a "
 "href=\"http://projects.gnome.org/evolution/\">the Evolution website</a>."
-msgstr "Per saperne di più su Evolution leggete <a href=\"http://projects.gnome.org/evolution/\">il sito web di Evolution</a>."
+msgstr "Per saperne di più su Evolution visita il <a href=\"http://projects.gnome.org/evolution/\">sito web di Evolution</a>."
 
 #: data/content/features/index.html:146
 msgid "Empathy Video & Text chat"
@@ -3152,7 +3625,7 @@ msgstr "Cheese Webcam Booth fa fotografie e video con la tua webcam. Avrai una p
 msgid ""
 "Learn more about Cheese at <a href=\"http://projects.gnome.org/cheese/\">the"
 " Cheese website</a>."
-msgstr "Per saperne di più su Cheese leggi <a href=\"http://projects.gnome.org/cheese/\">la pagina web di Cheese</a>."
+msgstr "Per saperne di più su Cheese visita il<a href=\"http://projects.gnome.org/cheese/\">sito web di Cheese</a>."
 
 #: data/content/features/index.html:239
 msgid "Shotwell Photo Manager"
@@ -3199,7 +3672,7 @@ msgstr "The Gimp è un editor di immagini bitmap completo. Usalo semplicemente p
 msgid ""
 "Learn more about Gimp and find tutorials and more <a "
 "href=\"http://gimp.org\">at the Gimp homepage</a>."
-msgstr "Per saperne di più su Gimp e trovare guide ed altro leggete <a href=\"http://gimp.org\">la pagina web di Gimp</a>."
+msgstr "Per saperne di più su Gimp e trovare guide ed altro visita la <a href=\"http://gimp.org\">homepage di Gimp</a>."
 
 #: data/content/features/index.html:272
 msgid "Inkscape Vector Graphics Editor"
@@ -3217,7 +3690,7 @@ msgstr "Inkscape è un programma di qualità professionale per la modifica e la 
 msgid ""
 "Learn more about Inkscape and find more resources and tutorials at <a "
 "href=\"http://inkscape.org\">the Inkscape homepage</a>."
-msgstr "Per saperne di più su Inkscape e trovare guide ed altro leggete <a href=\"http://inkscape.org\">la pagina web di Inkscape</a>."
+msgstr "Per saperne di più su Inkscape e trovare guide ed altro visita la <a href=\"http://inkscape.org\">homepage di Inkscape</a>."
 
 #: data/content/features/index.html:280
 msgid "Scribus"
@@ -3254,7 +3727,7 @@ msgstr "Sei un fan dei giochi o film 3D e vorresti crearne uno tuo? Prova Blende
 msgid ""
 "Learn more about Blender <a href=\"http://blender.org\">on Blender's "
 "homepage</a>."
-msgstr "Per saperne di più su Blender <a href=\"http://blender.org\">la pagina web di Blender</a>."
+msgstr "Per saperne di più su Blender visita la <a href=\"http://blender.org\">homepage di Blender</a>."
 
 #: data/content/features/index.html:302
 msgid "MyPaint Digital Sketchbook"
@@ -3271,7 +3744,7 @@ msgstr "Crea bellissimi schizzi con MyPaint, un applicazione tipo blocco da dise
 msgid ""
 "Learn more about MyPaint on <a href=\"http://mypaint.intilinux.com/\">the "
 "MyPaint homepage</a>."
-msgstr "Per saperne di più su MyPaint leggi <a href=\"http://mypaint.intilinux.com\">la pagina web di MyPaint</a>."
+msgstr "Per saperne di più su MyPaint visita la <a href=\"http://mypaint.intilinux.com\">hompage di MyPaint</a>."
 
 #: data/content/features/index.html:311
 msgid "PiTiVi Video Editor"
@@ -3287,7 +3760,7 @@ msgstr "PiTiVi è uno strumento di video editing lineare. Importa file video dal
 msgid ""
 "Learn more about PiTiVi on <a href=\"http://www.pitivi.org/\">the PiTiVi "
 "homepage</a>."
-msgstr "Per saperne di più su PiTiVi leggei <a href=\"http://www.pitivi.org/\">la pagina web di PiTiVi</a>."
+msgstr "Per saperne di più su PiTiVi visita la <a href=\"http://www.pitivi.org/\">homepage di PiTiVi</a>."
 
 #: data/content/features/index.html:318
 msgid "Audacity Sound Editor"
@@ -3303,7 +3776,7 @@ msgstr "Audacity è un editor per file sonori multi traccia. Registra, modifica,
 msgid ""
 "Learn more about Audacity on <a "
 "href=\"http://audacity.sourceforge.net/\">the Audacity homepage</a>."
-msgstr "Per saperne di più su Audacity leggei <a href=\"http://audacity.sourceforge.net/\">la pagina web di Audacity</a>."
+msgstr "Per saperne di più su Audacity visita la <a href=\"http://audacity.sourceforge.net/\">homepage di Audacity</a>."
 
 #: data/content/features/index.html:332
 msgid "Office & Productivity Features"
@@ -3364,7 +3837,7 @@ msgstr "LibreOffice Writer è un editor di testo che ti permette di aprire, crea
 msgid ""
 "Learn more about LibreOffice on <a href=\"https://www.libreoffice.org/\">the"
 " LibreOffice homepage</a>."
-msgstr "Informati su LibreOffice su <a href=\"https://www.libreoffice.org/\">the LibreOffice homepage</a>."
+msgstr "Per saperne di più su LibreOffice visita la <a href=\"https://www.libreoffice.org/\">homepage di LibreOffice</a>."
 
 #: data/content/features/index.html:367
 msgid "LibreOffice Impress"
@@ -3538,6 +4011,7 @@ msgstr "Fedora Project - Consiglie e suggerimenti su come usare Fedora."
 #: data/content/using/life/stevemilner.html:15
 #: data/content/using/life/thomascameron.html:15
 #: data/content/using/tutorials/cheese.html:13
+#: data/content/using/tutorials/ec2.html:17
 #: data/content/using/tutorials/gnote.html:13
 #: data/content/using/tutorials/launcher.html:13 data/templates/head.html:36
 msgid "Using Fedora"
@@ -3581,28 +4055,23 @@ msgstr "Tutto ciò che ti serve è una webcam e Fedora e potrai fare qualsiasi s
 msgid "Learn how to do it yourself!"
 msgstr "Per saperne di più su come fare da soli"
 
-#: data/content/using/index.html:39 data/content/using/tutorials/gnote.html:25
+#: data/content/using/index.html:39
+msgid "Launch a Fedora EC2 Instance!"
+msgstr ""
+
+#: data/content/using/index.html:40
+msgid "Learn how to launch your own Fedora instance on Amazon EC2!"
+msgstr ""
+
+#: data/content/using/index.html:45 data/content/using/tutorials/gnote.html:25
 msgid "3 ways to unclutter your life using Gnote"
 msgstr "3 modi per mettere ordine nella tua vita usando Gnote"
 
-#: data/content/using/index.html:40 data/content/using/tutorials/gnote.html:26
+#: data/content/using/index.html:46 data/content/using/tutorials/gnote.html:26
 msgid ""
 "Get organized! Here are 3 ways to unclutter your life and build a personal "
 "database with Gnote."
 msgstr "Organizzati! Ecco 3 modi per mettere ordine nella tua vita e creare un database personale con Gnote."
-
-#: data/content/using/index.html:45
-#: data/content/using/tutorials/launcher.html:25
-msgid "Create custom app launchers"
-msgstr "Create scorciatoie personalizzate"
-
-#: data/content/using/index.html:46
-#: data/content/using/tutorials/launcher.html:27
-msgid ""
-"This quick and easy tutorial will show you how to create custom app "
-"launchers, on your desktop or on your panel, using any icon you like. Keep "
-"the apps you use the most close at hand!"
-msgstr "Questa veloce e semplice guida ti mostrerà come creare collegamenti sul desktop, o sul pannello, usando qualsiasi icona ti piace. Tieni le applicazioni che usi più sottomano!"
 
 #: data/content/using/index.html:55
 msgid "More Tutorials!"
@@ -3648,23 +4117,23 @@ msgid ""
 "Guide</a>."
 msgstr "Buttati nel fantastico mondo delle battaglie medievali di Battle for Wesnoth, un gioco di rete di avventura tattica, con <a href=\"%s\">La guida ufficiale al gioco</a>."
 
-#: data/content/using/index.html:92
+#: data/content/using/index.html:91
 msgid "Your life on Fedora"
 msgstr "La tua vita su Fedora"
 
-#: data/content/using/index.html:93
+#: data/content/using/index.html:92
 msgid ""
 "Sit down and enjoy a chat with a current Fedora user, and learn about their "
 "favorite apps and tips and tricks for using Fedora!"
 msgstr "Siediti a chiacchierare con altri utenti Fedora, e scopri quali sono le loro applicazioni preferite oltre a suggerimenti e trucchi per usare Fedora!"
 
-#: data/content/using/index.html:99
+#: data/content/using/index.html:98
 #: data/content/using/life/ericchristensen.html:27
 #: data/content/using/life/ericchristensen_short.html:6
 msgid "Eric, Amateur Radio Hobbyist"
 msgstr "Eric, hobby radio amatore"
 
-#: data/content/using/index.html:101
+#: data/content/using/index.html:100
 #: data/content/using/life/ericchristensen_short.html:8
 msgid ""
 "Eric \"Sparks\" Christensen, a computer security expert from North Carolina,"
@@ -3674,20 +4143,20 @@ msgid ""
 "Fedora!"
 msgstr "Eric \"Sparks\" Christensen, un esperto della sicurezza dei computer dal North Carolina, è stato un entusiasta radio amatore da quando era alle superiori. Oggi Eric usa Fedora per connettersi alle persone di tutto il mondo attraverso la sua radio amatoriale. Scopri maggiori informazioni sulla radio amatoriale e su come puoi cominciare ad usare Fedora!"
 
-#: data/content/using/index.html:102 data/content/using/index.html:108
-#: data/content/using/index.html:116 data/content/using/index.html:122
-#: data/content/using/index.html:130 data/content/using/index.html:136
-#: data/content/using/index.html:144 data/content/using/index.html:150
+#: data/content/using/index.html:101 data/content/using/index.html:107
+#: data/content/using/index.html:115 data/content/using/index.html:121
+#: data/content/using/index.html:129 data/content/using/index.html:135
+#: data/content/using/index.html:143 data/content/using/index.html:149
 msgid "Read more >"
 msgstr "Per saperne di più >"
 
-#: data/content/using/index.html:106
+#: data/content/using/index.html:105
 #: data/content/using/life/robynbergeron.html:28
 #: data/content/using/life/robynbergeron_short.html:6
 msgid "Robyn, Community Marketeer"
 msgstr "Robyn, rivenditore della comunità"
 
-#: data/content/using/index.html:107
+#: data/content/using/index.html:106
 #: data/content/using/life/robynbergeron.html:29
 #: data/content/using/life/robynbergeron_short.html:8
 msgid ""
@@ -3697,14 +4166,14 @@ msgid ""
 "conference presentations. Learn how she does it in this chat!"
 msgstr "Robyn Bergeron è una mamma di Flagstaff, Arizona con esperienza in ricerche di mercato. Lei usa Fedora per assolvere alle sue esigenze quotidiane ed il suo lavoro di mercato  per il Fedora Project - incluse presentazioni per per conferenze. Scopri come fa in questa chat!"
 
-#: data/content/using/index.html:114
+#: data/content/using/index.html:113
 #: data/content/using/life/chrisbredesen_short.html:6
 #: data/content/using/life/thomascameron.html:30
 #: data/content/using/life/thomascameron_short.html:6
 msgid "Thomas, Doting Dad"
 msgstr "Thomas, adorato papà"
 
-#: data/content/using/index.html:115
+#: data/content/using/index.html:114
 #: data/content/using/life/chrisbredesen_short.html:8
 #: data/content/using/life/thomascameron.html:31
 #: data/content/using/life/thomascameron_short.html:8
@@ -3715,13 +4184,13 @@ msgid ""
 "Check this interview out!"
 msgstr "Thomas Cameron, dal Texas, è un papà, utente Fedora da tanto tempo, ci da un resoconto dei giochi e delle applicazioni per bambini provati ed approvati da sua figlia di sette anni. Non sei sicuro di quali applicazioni installare su Fedora per i tuoi bambini? Guarda questa intervista!"
 
-#: data/content/using/index.html:120
+#: data/content/using/index.html:119
 #: data/content/using/life/stevemilner.html:28
 #: data/content/using/life/stevemilner_short.html:6
 msgid "Steve, Information Security Analyst"
 msgstr "Steve, analista della sicurezza e delle informazioni"
 
-#: data/content/using/index.html:121
+#: data/content/using/index.html:120
 #: data/content/using/life/stevemilner.html:29
 #: data/content/using/life/stevemilner_short.html:8
 msgid ""
@@ -3731,13 +4200,13 @@ msgid ""
 "for you in keeping your systems safe, too!"
 msgstr "Steve Milner è un analista della sicurezza e delle informazioni dal Nord Carolina. Lui usa Fedora per l'audit di applicazioni web per scoprire problemi di sicurezza. Steve ci mostra alcune grandi applicazioni in Fedora per l'analisi della sicurezza e ci da anche alcuni suggerimenti su come tenere sicuri i nostri sistemi!"
 
-#: data/content/using/index.html:128
+#: data/content/using/index.html:127
 #: data/content/using/life/fabianscherschel.html:27
 #: data/content/using/life/fabianscherschel_short.html:6
 msgid "Fab, Linux Outlaws Podcaster"
 msgstr "Fab, Linux Outlaws Podcaster"
 
-#: data/content/using/index.html:129
+#: data/content/using/index.html:128
 #: data/content/using/life/fabianscherschel_short.html:8
 msgid ""
 "Fabian A. Scherschel, a university student from Bonn, Germany, is well-known"
@@ -3746,11 +4215,11 @@ msgid ""
 "tools available in it for the podcast's recording and post-production."
 msgstr "Fabian A. Scherschel, è uno studente universitario di Bonn, Germania, nella comunità Linux è ben conosciuto nel suo ruolo di gestore del Linux Outlaws podcast con Dan Lynch. Fab rivela in questa intervista che usa Fedora e gli strumenti audio disponibili in essa per la registrazione e post-produzione del podcast."
 
-#: data/content/using/index.html:134
+#: data/content/using/index.html:133
 msgid "Michel, Social Media and Web Researcher"
 msgstr "Michel, ricercatore web e social media"
 
-#: data/content/using/index.html:135
+#: data/content/using/index.html:134
 #: data/content/using/life/michelsalim.html:28
 #: data/content/using/life/michelsalim_short.html:8
 msgid ""
@@ -3761,11 +4230,11 @@ msgid ""
 "with Fedora."
 msgstr "Michel Alexandre Salim, originario dell'Indonesia, sta conseguendo il suo dottorato in Germania. Gli obbiettivi del suo gruppo di ricerca sono focalizzati sugli strumenti di sviluppo  delle wiki. Michel è un utente Fedora da lungo tempo e ci mostra una carrellata di strumenti scelti per lo sviluppo del web ed i social media da utilizzare con Fedora."
 
-#: data/content/using/index.html:142
+#: data/content/using/index.html:141
 msgid "Máirín, Artist and Designer"
 msgstr "Máirín, disegnatore ed artista"
 
-#: data/content/using/index.html:143
+#: data/content/using/index.html:142
 #: data/content/using/life/mairinduffy.html:29
 #: data/content/using/life/mairinduffy_short.html:8
 msgid ""
@@ -3775,12 +4244,12 @@ msgid ""
 "creative itch? Máirín recommends a ton of apps in Fedora for you!"
 msgstr "Máirín Duffy, una disegnatrice ed artista di grafica di Boston, usa Fedora esclusivamente per tutti i suoi lavori di disegno. Siti Web, GUI mockup, T-shirt, poster, prove di usabilità - lei usa Fedora per fare tutto. Hai un prurito creativo? Máirín ti suggerisce una tonnellata di applicazioni Fedora!"
 
-#: data/content/using/index.html:148
+#: data/content/using/index.html:147
 #: data/content/using/life/chrisbredesen.html:26
 msgid "Chris, Java Web Application Developer"
 msgstr "Chris, sviluppatore applicazioni web java"
 
-#: data/content/using/index.html:149
+#: data/content/using/index.html:148
 #: data/content/using/life/chrisbredesen.html:27
 msgid ""
 "Chris Bredesen is a Java developer from Ft. Lauderdale who uses Fedora as "
@@ -3802,6 +4271,7 @@ msgstr "Fedora Project - Intervista con Chris Bredesen."
 #: data/content/using/life/stevemilner.html:16
 #: data/content/using/life/thomascameron.html:16
 #: data/content/using/tutorials/cheese.html:14
+#: data/content/using/tutorials/ec2.html:22
 #: data/content/using/tutorials/gnote.html:14
 #: data/content/using/tutorials/launcher.html:14
 msgid "Tutorials, tips & tricks to make your Fedora experience awesome!"
@@ -3819,6 +4289,7 @@ msgstr "Fedora ha una estesa pagina wiki su Java e Java in Fedora. Impara di pi�
 #: data/content/using/life/stevemilner.html:26
 #: data/content/using/life/thomascameron.html:27
 #: data/content/using/tutorials/cheese.html:24
+#: data/content/using/tutorials/ec2.html:40
 #: data/content/using/tutorials/gnote.html:24
 #: data/content/using/tutorials/launcher.html:24
 msgid "&#8592; Back to the main 'Using Fedora' page."
@@ -5694,6 +6165,7 @@ msgid ""
 msgstr "<strong>Distorsione</strong> - cara, che grande naso che hai - una mossa falsa ed il tuo naso sparisce ed i tuoi occhi diventano enormi! Questo effetto deforma la tua immagine."
 
 #: data/content/using/tutorials/cheese.html:62
+#: data/content/using/tutorials/ec2.html:229
 #: data/content/using/tutorials/gnote.html:91
 #: data/content/using/tutorials/launcher.html:49
 msgid "Enjoy and share!"
@@ -5706,10 +6178,256 @@ msgid ""
 msgstr "Adesso hai un idea divertente da provare per la tua prossima festa! Divertiti, ed assicurati di condividere questi suggerimenti con i tuoi amici!"
 
 #: data/content/using/tutorials/cheese.html:66
+#: data/content/using/tutorials/ec2.html:235
 #: data/content/using/tutorials/gnote.html:96
 #: data/content/using/tutorials/launcher.html:53
 msgid "&#8592; Read about more ways to use Fedora!"
 msgstr "&#8592; Leggi di più sui modi per usare Fedora!"
+
+#: data/content/using/tutorials/ec2.html:8
+msgid "Fedora Project - Creating an EC2 Fedora Instance."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:29
+#: data/content/using/tutorials/launcher.html:17
+msgid ""
+"Love customizing your desktop? Fedora comes with extra wallpapers. Learn "
+"more."
+msgstr "Ami personalizzare il desktop? Fedora è distribuita con sfondi extra. Per saperne di più."
+
+#: data/content/using/tutorials/ec2.html:44
+msgid "Create a Fedora Amazon EC2 Instance"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:47
+msgid ""
+"This quick and easy tutorial will show you how to create a Fedora EC2 "
+"instance."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:50
+msgid "Preparations"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:52
+#, python-format
+msgid ""
+"This tutorial assumes you already have an AWS account. AWS is not a free "
+"service - it is designed as a pay-as-you-go online service. You can learn "
+"more about pricing at <a href=\"%s\">http://aws.amazon.com/ec2/pricing/</a>"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:53
+msgid ""
+"In this tutorial, we will use euca2ools, a suite of command line tools "
+"designed for services like EC2. You can install it simply by typing:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:59
+msgid ""
+"To use the command line tools you first need to obtain access keys for your "
+"account."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:60
+msgid ""
+"You can find them by going to the AWS management console on the web, "
+"clicking your name on the top, followed by <strong>Security "
+"Credentials</strong>, and scrolling down to the section titled "
+"<strong>Access Credentials</strong>."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:61
+msgid ""
+"Make note of the <strong>Access Key ID</strong> and the <strong>Secret "
+"Access Key</strong> that appears beside it.  Both of them should be long "
+"sets of alphanumeric characters.  Create a file called <code>.iamrc</code> "
+"in your <strong>home directory</strong> that contains those keys in this "
+"format:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:64
+msgid "your_access_key_id"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:65
+msgid "your_secret_key"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:70
+msgid ""
+"Since euca2ools is designed to work with all AWS-compatible clouds, not just"
+" AWS itself, it needs to know which cloud to contact. Create a file called "
+"<code>.eucarc</code> in your home directory with the following content to "
+"point it toward AWS:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:90
+msgid "Finally, add these settings to your shell's environment by running:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:96
+msgid "Choose an EC2 server"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:99
+msgid ""
+"Choose an EC2 region to use. Things to consider when choosing a region "
+"include its geographic location, the pricing for instances in that region, "
+"and whether the image you wish to use is available in that region. You can "
+"get a list of regions by running <code>euca-describe-regions</code>, which "
+"results in a list such as this:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:128
+msgid ""
+"When you choose an EC2 region you can make euca2ools start using it by "
+"editing the line that contains <code>EC2_URL</code> in your "
+"<code>.eucarc</code> file."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:133
+msgid "...and then re-set the settings in your shell's environment:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:139
+msgid "Creating a key pair"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:142
+msgid ""
+"The primary way of logging into Fedora instances is via SSH. Since Fedora "
+"instances have no passwords, you need a SSH <em>key pair</em> to log in to "
+"them. The private half of this key pair is stored on your computer, while "
+"the public half is stored in EC2 so instances can download them as they "
+"start. This allows you to securely log into your instances without a "
+"password."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:145
+msgid ""
+"You can have multiple key pairs. Each key pair has its own name. Key pairs "
+"are specific to each EC2 region."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:148
+msgid ""
+"Choose a name for a new key pair and then use the <code>euca-create-"
+"keypair</code> command to create it and write the private key to a file. Be "
+"sure to choose a name that is easy to remember."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:154
+msgid "Note:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:154
+msgid ""
+"Key pairs are irreplaceable|EC2 does not store the private halves of key "
+"pairs. The time you run <code>euca-create-keypair</code> is the only chance "
+"you will have to save a copy of the private key. There is no way to recover "
+"a lost private key from EC2."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:157
+msgid ""
+"You can use <code>euca-describe-keypairs</code> to display a list of your "
+"keypairs."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:167
+msgid ""
+"You can use <code>euca-delete-keypairs</code> to delete a keypair. Deleting "
+"a keypair does not remove it from instances that are already running; it "
+"merely prevents new instances from using it."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:173
+msgid "Run an instance"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:176
+msgid ""
+"Run a new instance of the image and instance type you chose with <code>euca-"
+"run-instances</code>. To be able to log into the new instance, you must also"
+" specify the name of the key pair you created earlier. For example, to run a"
+" <code>t1.micro</code> instance of the image <code>ami-7f5a063a</code> with "
+"a key pair named <code>mykey</code>, run the following command:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:186
+msgid ""
+"The output of <code>euca-run-instances</code> contains the ID of the "
+"instance you just started. In the example above, the instance's ID is "
+"<code>i-910fbbd6</code>. You will need this ID to use tools that need to "
+"refer to the instance."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:187
+msgid ""
+"You can also find the various AMI-IDs for Fedora images for all regions <a "
+"href=\"http://fedoraproject.org/get-fedora#clouds\">here</a>."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:190
+msgid ""
+"The instance starts in the <code>pending</code> state. When it finished "
+"booting it changes to the <code>running</code> state. When you terminate it "
+"it changes to the <code>shutting-down</code> and finally "
+"<code>terminated</code> states."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:193
+msgid "Log into the instance"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:196
+msgid ""
+"As the instance starts it obtains an IP address from EC2 and changes to the "
+"<code>running</code> state. You can check on your instances by running <code"
+">euca-describe-instances</code>, optionally with the ID of the instance in "
+"question.  When the instance is ready (or nearly ready) to use, <code>euca-"
+"describe-instances</code> will display the address you can use to log into "
+"it:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:207
+msgid ""
+"The public address of the instance in this example is "
+"<code>ec2-204-236-168-22.us-east-1.compute.amazonaws.com</code>.  Other "
+"useful bits of information from this command include the availability zone "
+"in which the instance is running (<code>us-east-1c</code>) and the time that"
+" the instance started."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:210
+msgid ""
+"Once the instance is <code>running</code> you can log into it with "
+"<code>ssh</code>. On Fedora's images you should log in as "
+"<strong>fedora</strong> user:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:215
+msgid "release 20 (Heisenbug)"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:220
+msgid ""
+"You can now use the instance as you would use any other computer running "
+"Fedora."
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:223
+msgid ""
+"When you finish using the instance you should terminate it with <code>euca-"
+"terminate-instances</code> to free up resources and reduce costs:"
+msgstr ""
+
+#: data/content/using/tutorials/ec2.html:232
+msgid ""
+"Now you know how to setup a Fedora EC2 Instance! Have fun, and be sure to "
+"share these tips you learned with others!"
+msgstr ""
 
 #: data/content/using/tutorials/gnote.html:7
 msgid "Fedora Project - Using Gnote to unclutter your life."
@@ -6018,11 +6736,16 @@ msgstr "Ora hai un piano per essere organizzato con Gnote. Divertiti, ed accerta
 msgid "Fedora Project - Creating custom app launchers."
 msgstr "Fedora Project - Creare collegamenti per applicazioni personalizzate."
 
-#: data/content/using/tutorials/launcher.html:17
+#: data/content/using/tutorials/launcher.html:25
+msgid "Create custom app launchers"
+msgstr "Create scorciatoie personalizzate"
+
+#: data/content/using/tutorials/launcher.html:27
 msgid ""
-"Love customizing your desktop? Fedora comes with extra wallpapers. Learn "
-"more."
-msgstr "Ami personalizzare il desktop? Fedora è distribuita con sfondi extra. Per saperne di più."
+"This quick and easy tutorial will show you how to create custom app "
+"launchers, on your desktop or on your panel, using any icon you like. Keep "
+"the apps you use the most close at hand!"
+msgstr "Questa veloce e semplice guida ti mostrerà come creare collegamenti sul desktop, o sul pannello, usando qualsiasi icona ti piace. Tieni le applicazioni che usi più sottomano!"
 
 #: data/content/using/tutorials/launcher.html:28
 msgid "Basic Launcher Creation"
@@ -6149,6 +6872,14 @@ msgstr "Lancio della istanza AMI"
 msgid "Select the nearest region"
 msgstr "Seleziona la regione più vicina"
 
+#: data/templates/cloud-tab.html:50
+msgid "64 bit (x86_64)"
+msgstr ""
+
+#: data/templates/cloud-tab.html:51
+msgid "32 bit (i386)"
+msgstr ""
+
 #: data/templates/cloud-tab.html:55
 msgid "Launch it!"
 msgstr "Avvia!"
@@ -6205,10 +6936,6 @@ msgstr "Aiuto via IRC"
 #: data/templates/foot.html:30
 msgid "Mailing List Help"
 msgstr "Aiuto via mailing list"
-
-#: data/templates/foot.html:31
-msgid "Ask Fedora"
-msgstr "Ask Fedora"
 
 #: data/templates/foot.html:32
 msgid "Forums"
@@ -6283,23 +7010,27 @@ msgstr "Per saperne di più sulla relazione fra Red Hat e Fedora >"
 msgid "© %(year)s Red Hat, Inc. and others."
 msgstr "© %(year)s Red Hat, Inc. ed altri."
 
-#: data/templates/foot.html:72
-msgid "Sponsors"
-msgstr "Sponsor"
-
-#: data/templates/foot.html:73
-msgid "Legal"
-msgstr "Legale"
-
-#: data/templates/foot.html:74
-msgid "Trademark Guidelines"
-msgstr "Linee guida sui marchi"
-
-#: data/templates/foot.html:76
+#: data/templates/foot.html:71
 msgid ""
 "The Fedora Project is maintained and driven by the community. This is a "
 "community maintained site. Red Hat is not responsible for content."
 msgstr "Il Fedora Project è mantenuto e guidato dalla comunità. Questo è un sito web mantenuto dalla comunità.  Red Hat non è responsabile dei suoi contenuti."
+
+#: data/templates/foot.html:74
+msgid "Sponsors"
+msgstr "Sponsor"
+
+#: data/templates/foot.html:75
+msgid "Legal"
+msgstr "Legale"
+
+#: data/templates/foot.html:76
+msgid "Trademark Guidelines"
+msgstr "Linee guida sui marchi"
+
+#: data/templates/foot.html:77
+msgid "Content License"
+msgstr ""
 
 #: data/templates/head.html:13
 msgid "OK"
