@@ -47,8 +47,8 @@
 					</py:for>
                 </select>
                 <select id="arch_${release}" onchange="getval();">
-					<option value="x86_64" py:if="any(a.get('arch', False) == 'x86_64' for a in ec2_ami['f' + release])">64 bit (x86_64)</option>
-					<option value="i386" py:if="any(a.get('arch', False) == 'i386' for a in ec2_ami['f' + release])">32 bit (i386)</option>
+					<option value="x86_64" py:if="any(a.get('arch', False) == 'x86_64' for a in ec2_ami['f' + release])">${_('64 bit (x86_64)')}</option>
+					<option value="i386" py:if="any(a.get('arch', False) == 'i386' for a in ec2_ami['f' + release])">${_('32 bit (i386)')}</option>
                 </select>
 				<input type="hidden" id="amiid_${release}" />
                 <label for="amiid_${release}" id="label_${release}" class="ami-label"></label>

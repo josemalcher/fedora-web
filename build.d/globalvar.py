@@ -7,11 +7,11 @@ release={
     'next_id':     '21',
     'curr_name':   'Heisenbug',
     'next_name':   '',
-    'curr_state':  '',             # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_arm_state':  '',         # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_state':  'Alpha',             # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_arm_state':  'Alpha',         # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_ppc64_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'curr_s390_state':  '',        # either 'Alpha', 'Beta' or '' (i.e empty)
-    'curr_cloud_state':  '',       # either 'Alpha', 'Beta' or '' (i.e empty)
+    'curr_cloud_state':  'Alpha',       # either 'Alpha', 'Beta' or '' (i.e empty)
     'prev_arm_id': '19',
     'prev_ppc64_id': '19',
     'prev_s390_id': '19',
@@ -25,8 +25,8 @@ release={
     'next_s390_id': '21',
     'next_cloud_id': '21',
     'composedate': '20140407',
-    'pre_cloud_composedate': '20131106',
-    'RC_gold': '5'                      # insert the number of the RC version declared GOLD
+    'pre_cloud_composedate': '20140915',
+    'RC_gold': '1'                      # insert the number of the RC version declared GOLD
 }
 
 path={
@@ -76,8 +76,17 @@ iso_size={
     'PPC64_DVD':           '4.3',       # In GB
     'PPC64_Netinstall':    '340',       # In MB
     's390_DVD':            '4.6',       # In GB
-    'i686_sda.qcow2':      '199',       # In MB
-    'x86_64_sda.qcow2':    '201',       # In MB
-    'i686_raw':            '115',       # In MB
-    'x86_64_raw':          '117'        # In MB
+    'i686_sda.qcow2':      '212',       # In MB
+    'x86_64_sda.qcow2':    '207',       # In MB
+    'i686_raw':            '122',       # In MB
+    'x86_64_raw':          '117',       # In MB
+    'x86_64_server_DVD':   '1.9',       # In GB
+    'i386_server_DVD':     '2.0',       # In GB
+    'x86_64_server_net':   '400',       # In MB
+    'i386_server_net':     '460',       # In MB
+    'x86_64_workstation':  '1.3',       # In GB
+    'i386_workstation':    '1.3',       # In GB
+    'x86_64_cloud_net':    '400',       # In MB
+    'i386_cloud_net':      '460',       # In MB
+    'x86_64_docker':       '77'         # In MB
 }

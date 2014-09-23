@@ -793,6 +793,12 @@ div.image-des
   font-size: 120%;
 }
 
+div.docker-des
+{
+  margin: 30px 15px 10px 15px;
+  font-size: 120%;
+}
+
 /* support/help pages */
 .bugs-section {
     background:url("../images/support-bugs.png") no-repeat top right;
@@ -1057,7 +1063,6 @@ p.warning {
 p.rel_sched {
     padding: .7em 4em;
     color: #000000;
-    background: #fcf7d5 url('../images/schedule.png') no-repeat 10px center;
     border-radius: 8px;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -1074,6 +1079,8 @@ pre.command {
 }
 
 .fine-print { font-style: italic; color: #888; }
+.pre-print a {font-weight: normal; }
+
 .back-to-top a {
     border-radius: 1.5ex;
     -webkit-border-radius: 1.5ex;
@@ -1149,8 +1156,9 @@ ul.kdelive { background-image: url(../images/kdelive.png); }
 ul.xfcelive { background-image: url(../images/xfcelive.png); }
 ul.lxdelive { background-image: url(../images/lxdelive.png); }
 ul.livemedia { background-image: url(../images/livemedia.png); }
-ul.cloudimage { background-image: url(../images/cloudicontrans.png); }
+ul.cloudimage { background-image: url(../images/color-cloud-icon.png); }
 ul.armimage { background-image: url(../images/arm.png); }
+ul.dockerimage { background-image: url(../images/docker.png); }
 
 .downloadbox li {
     width: 27ex;
@@ -1291,6 +1299,9 @@ li.resource-download
   list-style: disc url("/static/images/icon-signed-verified.png") outside;
 }
 
+li.verify-list {
+  list-style: disc url("/static/images/icon-signed-verified.png") outside;
+}
 
 /* export regulations */
 .export-regulations {
@@ -1856,3 +1867,60 @@ div.news a.news_relnotes, div.news a.news_download  {
 #ec2 code {
   font-size: 8pt;
 }
+
+/* Product Sprite Image */
+
+.product-box {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 131px;
+}
+
+.product-box a {
+  background-image: url("../images/product-sprite.png");
+}
+
+.product-box a.product-server {
+  position: absolute;
+  top: 35px;
+  left: 50px;
+  display: block;
+  width: 162px;
+  height: 71px;
+  background-position: 0px 0px;
+}
+
+.product-box a:hover.product-server {
+  background-position: 0px -72px;
+}
+
+.product-box a.product-workstation {
+  position: absolute;
+  top: 35px;
+  left: 390px;
+  display: block;
+  width: 229px;
+  height: 71px;
+  background-position: -163px 0px;
+}
+
+.product-box a:hover.product-workstation {
+  background-position: -163px -72px;
+}
+
+.product-box a.product-cloud {
+  position: absolute;
+  top: 35px;
+  right: 50px;
+  display: block;
+  width: 152px;
+  height: 71px;
+  background-position: -393px 0px;
+}
+
+.product-box a:hover.product-cloud {
+  background-position: -393px -72px;
+}
+
+/* end Product Image */

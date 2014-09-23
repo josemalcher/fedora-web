@@ -28,23 +28,34 @@ def sorted_region(arr):
 # :%s/sa-east-1/South America (Sao Paulo)/g
 
 # Get the list at: https://dl.fedoraproject.org/pub/alt/stage/20-Beta-RC2/Images/x86_64/
-ec2_f20_Beta = [
-                        {'region':'US East (Northern Virginia)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-2f421946'},
-                        {'region':'US East (Northern Virginia)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-8b4219e2'},
-                        {'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-0ab2e758'},
-                        {'region':'Asia Pacific (Singapore)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-0eb2e75c'},
-                        {'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-e163ffdb'},
-                        {'region':'Asia Pacific (Sydney)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-db63ffe1'},
-                        {'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-dd5135dc'},
-                        {'region':'Asia Pacific (Tokyo)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-e15135e0'},
-                        {'region':'US West (Northern California)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-56d0e613'},
-                        {'region':'US West (Northern California)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-00d0e645'},
-                        {'region':'US West (Oregon)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-5cca516c'},
-                        {'region':'US West (Oregon)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-48ca5178'},
-                        {'region':'EU (Ireland)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-ad7b99da'},
-                        {'region':'EU (Ireland)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-897b99fe'},
-                        {'region':'South America (Sao Paulo)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-4d5cfa50'},
-                        {'region':'South America (Sao Paulo)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-4b5cfa56'}
+ec2_f21_Alpha_Base = [
+                        {'region':'US East (Northern Virginia)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-20268848'},
+#                        {'region':'US East (Northern Virginia)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-8b4219e2'},
+                        {'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-820f2bd0'},
+#                        {'region':'Asia Pacific (Singapore)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-0eb2e75c'},
+                        {'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-7b6c0f41'},
+#                        {'region':'Asia Pacific (Sydney)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-db63ffe1'},
+                        {'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-cf644bce'},
+#                        {'region':'Asia Pacific (Tokyo)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-e15135e0'},
+                        {'region':'US West (Northern California)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-b58b82f0'},
+#                        {'region':'US West (Northern California)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-00d0e645'},
+                        {'region':'US West (Oregon)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-af57179f'},
+#                        {'region':'US West (Oregon)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-48ca5178'},
+                        {'region':'EU (Ireland)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-bac760cd'},
+#                        {'region':'EU (Ireland)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-897b99fe'},
+                        {'region':'South America (Sao Paulo)', 'arch':'x86_64', 'store':'EBS-Backed', 'id':'ami-ab9f35b6'}
+#                        {'region':'South America (Sao Paulo)', 'arch':'i386', 'store':'EBS-Backed', 'id':'ami-4b5cfa56'}
+]
+
+ec2_f21_Alpha_Atomic = [
+                        {'region':'Asia Pacific (Tokyo)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-ebfe80ea'},
+                        {'region':'Asia Pacific (Singapore)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-deeebe8c'},
+                        {'region':'Asia Pacific (Sydney)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-27a1391d'},
+                        {'region':'EU (Ireland)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-29a2595e'},
+                        {'region':'South America (Sao Paulo)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-8145e79c'},
+                        {'region':'US East (Northern Virginia)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-f525389c'},
+                        {'region':'US West (Northern California)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-46f3ca03'},
+                        {'region':'US West (Oregon)', 'arch':'x86_64', 'store':'BS-Backed', 'id':'ami-9682e9a6'}
 ]
 
 ec2_f20 = [
@@ -145,7 +156,8 @@ def gen_js(*args):
 	f.close()
 
 def get_amis():
-    ec2_f20_Beta_regions = sorted_region(ec2_f20_Beta)
+    ec2_f21_Alpha_Base_regions = sorted_region(ec2_f21_Alpha_Base)
+    ec2_f21_Alpha_Atomic_regions = sorted_region(ec2_f21_Alpha_Atomic)
     ec2_f20_regions = sorted_region(ec2_f20)
     ec2_f19_regions = sorted_region(ec2_f19)
     
@@ -153,11 +165,13 @@ def get_amis():
         gen_js(
         	['20',ec2_f20],
             ['19',ec2_f19],
-            ['20_Beta',ec2_f20_Beta])
+            ['21_Alpha_Base',ec2_f21_Alpha_Base],
+            ['21_Alpha_Atomic',ec2_f21_Alpha_Atomic])
 
     return {
         'f20':ec2_f20, 'f20_regions':ec2_f20_regions,
         'f19':ec2_f19, 'f19_regions':ec2_f19_regions,
-        'f20_Beta':ec2_f20_Beta, 'f20_Beta_regions':ec2_f20_Beta_regions
+        'f21_Alpha_Base':ec2_f21_Alpha_Base, 'f21_Alpha_Base_regions':ec2_f21_Alpha_Base_regions,
+        'f21_Alpha_Atomic':ec2_f21_Alpha_Atomic, 'f21_Alpha_Atomic_regions':ec2_f21_Alpha_Atomic_regions
            }
 

@@ -84,10 +84,10 @@ l_code = l_map.get(lang, dflt_language)
             <div class="container_16" id="get-nav">
                 <!-- tabs -->
                 <ul class="tabs grid_16">
-                    <li><a id="t1" href="#desktops">${_('Desktops')}</a></li>
-                    <li><a id="t1" href="#spins">${_('Spins')}</a></li>
-                    <li><a id="t2" href="#cloud">${_('Cloud')}</a></li>
-                    <li><a id="t3" href="#arm">${_('ARM')}</a></li>
+                    <li><a id="t1" href="#overview">${_('Overview')}</a></li>
+                    <li><a id="t1" href="#server">${_('Server')}</a></li>
+                    <li><a id="t2" href="#workstation">${_('Workstation')}</a></li>
+                    <li><a id="t3" href="#cloud">${_('Cloud')}</a></li>
                 </ul>
             </div>
             <div class="clear"></div>
@@ -97,19 +97,19 @@ l_code = l_map.get(lang, dflt_language)
                 <div class="grid_16 panes">
                 <!-- tab "panes" -->
                     <div id="desktop-versions">
-                        <noscript><a name="desktops"><hr /></a></noscript>
+                        <noscript><a name="overview"><hr /></a></noscript>
                         <p class="warning">${Markup(_('This is pre-release software and is supported by the &lt;a href="%(team_url)s"&gt;QA team&lt;/a&gt;. Please direct questions to %(team_list)s or %(team_irc)s on freenode.') % {'team_url':'http://fedoraproject.org/wiki/QA', 'team_list':'test@lists.fedoraproject.org', 'team_irc':'#fedora-qa'})}
  											${Markup(_('All issues or bugs should be reported via the &lt;a href="%s"&gt;Red Hat Bugzilla&lt;/a&gt;. The Fedora Project makes no guarantees as to its suitability or usefulness.') % 'https://bugzilla.redhat.com/')}
                                         <py:choose>
-                                            <py:when test="global_variables.release['curr_state'] == 'Alpha'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'http://fedoraproject.org/wiki/Fedora_%s_Alpha_release_notes' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
+                                            <py:when test="global_variables.release['curr_state'] == 'Alpha'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'https://fedoraproject.org/wiki/Fedora_%s_Alpha_release_notes' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
                                             </py:when>
-                                            <py:when test="global_variables.release['curr_state'] == 'Beta'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'http://fedoraproject.org/wiki/F%s_Beta_release_announcement' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
+                                            <py:when test="global_variables.release['curr_state'] == 'Beta'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'https://fedoraproject.org/wiki/F%s_Beta_release_announcement' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
                                             </py:when>
                                             <py:otherwise>${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url': 'http://fedorapeople.org/groups/docs/release-notes/%s/' % (l_code), 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
                                             </py:otherwise>
                                         </py:choose>
                                 </p>
-                                <p class="rel_sched">
+                                <p class="rel_sched" style="background: #fcf7d5 url('${path}/static/images/schedule/${schedule['beta_cal']}.png') no-repeat 10px center">
                                         <py:choose>
                                             <py:when test="global_variables.release['curr_state'] == 'Alpha'">${_('Upcoming Beta Release is planned for')}&nbsp;${schedule['beta']}
                                             </py:when>
@@ -117,170 +117,40 @@ l_code = l_map.get(lang, dflt_language)
                                             </py:when>
                                         </py:choose>
                                 </p>
-                        <h4>${Markup(_('Install Media'))}</h4>
-                <ul class="downloadbox installdvd">
-                    <li>
-                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i386-DVD.torrent">${Markup(_('i386'))}</a> - ${Markup(_('Install DVD'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-DVD.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Install DVD'))}</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Direct Download'))}</h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Fedora/i386/iso/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i386-DVD.iso">${Markup(_('i386'))}</a> - ${Markup(_('Install DVD'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Fedora/x86_64/iso/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-DVD.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Install DVD'))}</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Netinstall'))}</h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Fedora/i386/iso/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-i386-netinst.iso">${Markup(_('i386'))}</a> - ${Markup(_('Netinstall CD'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Fedora/x86_64/iso/Fedora-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-x86_64-netinst.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Netinstall CD'))}</li>
-                        </ul>
-                    </li>
-                    <!-- experimental -->
-                    <li>
-                        <h5><acronym title="${_('gPXE is an open source (GPL) network bootloader.')}">${_('gPXE')}</acronym></h5>
-                        <ul>
-                            <li><a href="http://boot.fedoraproject.org/">BFO</a></li>
-							<li>${Markup(_('gPXE tree: &lt;a href="%(32b)s"&gt; i386&lt;/a&gt; / &lt;a href="%(64b)s"&gt; x86_64&lt;/a&gt;') % {'32b':global_variables.path['download']+'/test/'+global_variables.release['next_id']+'-'+global_variables.release['curr_state']+'/Fedora/i386/os/images/pxeboot/', '64b':global_variables.path['download']+'/test/'+global_variables.release['next_id']+'-'+global_variables.release['curr_state']+'/Fedora/x86_64/os/images/pxeboot/'})}
-								</li>
-                            <li><a href="http://docs.fedoraproject.org/en-US/Fedora/19/html/Installation_Guide/ap-install-server.html">${Markup(_('Setup your PXE server'))}</a></li>
-                        </ul>
-                    </li>
-                    <!-- /experimental -->
-                </ul>
 
-                <h4>${Markup(_('Fedora Desktop Live Media'))}</h4>
-                <ul class="downloadbox gnomelive">
-                    <li>
-                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-Desktop-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-Desktop-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Direct Download'))}</h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/i386/Fedora-Live-Desktop-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/x86_64/Fedora-Live-Desktop-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                </ul>
+                <h4>${Markup(_('Choose your Fedora Prerelease Product'))}</h4>
+                <p>${Markup(_('What would you like to accomplish with Fedora? Are you looking for a server platform to host applications and infrastructure services? Are you looking for a powerful desktop workstation? Do you need an image for building a cloud-based application?'))}</p>
+                <p>${Markup(_('Fedora offers three separate products for you that are streamlined and configured out-of-the-box for these key uses of Fedora.'))}</p>
+                <div class="product-box">
+                        <a class="product-server" href="#server" alt="Server"></a>
+                        <a class="product-workstation" href="#workstation" alt="Workstation"></a>
+                        <a class="product-cloud" href="#cloud" alt="Cloud"></a>
+                </div>
 
-                <h4>${Markup(_('Fedora KDE Live Media'))}</h4>
-                <ul class="downloadbox kdelive">
-                    <li>
-                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-KDE-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-KDE-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Direct Download'))}</h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/i386/Fedora-Live-KDE-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/x86_64/Fedora-Live-KDE-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <h4>${Markup(_('Fedora XFCE Live Media'))}</h4>
-                <ul class="downloadbox xfcelive">
-                    <li>
-                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-XFCE-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-XFCE-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Direct Download'))}</h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/i386/Fedora-Live-XFCE-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/x86_64/Fedora-Live-XFCE-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                </ul>
-                <h4>${Markup(_('Fedora LXDE Live Media'))}</h4>
-                <ul class="downloadbox lxdelive">
-                    <li>
-                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-LXDE-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-LXDE-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Direct Download'))}</h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/i386/Fedora-Live-LXDE-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/x86_64/Fedora-Live-LXDE-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                </ul>
-                <h4>${Markup(_('Fedora MATE-Compiz Live Media'))}</h4>
-                <ul class="downloadbox livemedia">
-                    <li>
-                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-MATE-Compiz-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-MATE-Compiz-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Direct Download'))}</h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/i386/Fedora-Live-MATE-Compiz-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/x86_64/Fedora-Live-MATE-Compiz-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                </ul>
-                <h4>${Markup(_('Fedora SoaS Live Media'))}</h4>
-                <ul class="downloadbox lxdelive">
-                    <li>
-                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-SoaS-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['torrent']}/Fedora-Live-SoaS-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Direct Download'))}</h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/i386/Fedora-Live-SoaS-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Live/x86_64/Fedora-Live-SoaS-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                </ul>
                 <h4>${Markup(_('Let me look around...'))}</h4>
                 <ul class="download">
+                    <li><a href="get-spin-prerelease">${Markup(_('Alternative Download Images: Spins, ARM and Docker!'))}</a></li>
                     <li><a href="http://torrent.fedoraproject.org/">${Markup(_('See all torrents'))}</a></li>
                     <li><a href="http://mirrors.fedoraproject.org/publiclist/Fedora/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/">${Markup(_('See all mirrors'))}</a></li>
-                    <li><a href="http://spins.fedoraproject.org/">${Markup(_('See all custom spins'))}</a></li>
                 </ul>
                     <div class="clear"></div>
                     <xi:include href="../templates/content-export-regulations.html" />
                     </div>
 
                     <div id="desktop-versions">
-                        <noscript><a name="spins"><hr /></a></noscript>
-                        <p class="warning">${Markup(_('This is pre-release software and is supported by the &lt;a href="%(team_url)s"&gt;QA team&lt;/a&gt;. Please direct questions to %(team_list)s or %(team_irc)s on freenode.') % {'team_url':'http://fedoraproject.org/wiki/QA', 'team_list':'test@lists.fedoraproject.org', 'team_irc':'#fedora-qa'})}
+                        <noscript><a name="server"><hr /></a></noscript>
+                        <p class="warning">${Markup(_('This is pre-release software and is supported by the &lt;a href="%(team_url)s"&gt;Server Working Group&lt;/a&gt;. Please direct questions to %(team_list)s or %(team_irc)s on freenode.') % {'team_url':'http://fedoraproject.org/wiki/Server', 'team_list':'server@lists.fedoraproject.org', 'team_irc':'#fedora-server'})}
                                             ${Markup(_('All issues or bugs should be reported via the &lt;a href="%s"&gt;Red Hat Bugzilla&lt;/a&gt;. The Fedora Project makes no guarantees as to its suitability or usefulness.') % 'https://bugzilla.redhat.com/')}
                                         <py:choose>
-                                            <py:when test="global_variables.release['curr_state'] == 'Alpha'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'http://fedoraproject.org/wiki/Fedora_%s_Alpha_release_notes' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
+                                            <py:when test="global_variables.release['curr_state'] == 'Alpha'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'https://fedoraproject.org/wiki/Fedora_%s_Alpha_release_notes' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
                                             </py:when>
-                                            <py:when test="global_variables.release['curr_state'] == 'Beta'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'http://fedoraproject.org/wiki/F%s_Beta_release_announcement' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
+                                            <py:when test="global_variables.release['curr_state'] == 'Beta'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'https://fedoraproject.org/wiki/F%s_Beta_release_announcement' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
                                             </py:when>
                                             <py:otherwise>${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url': 'http://fedorapeople.org/groups/docs/release-notes/%s/' % (l_code), 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
                                             </py:otherwise>
                                         </py:choose>
                                 </p>
-                                <p class="rel_sched">
+                                <p class="rel_sched" style="background: #fcf7d5 url('${path}/static/images/schedule/${schedule['beta_cal']}.png') no-repeat 10px center">
                                         <py:choose>
                                             <py:when test="global_variables.release['curr_state'] == 'Alpha'">${_('Upcoming Beta Release is planned for')}&nbsp;${schedule['beta']}
                                             </py:when>
@@ -288,160 +158,90 @@ l_code = l_map.get(lang, dflt_language)
                                             </py:when>
                                         </py:choose>
                                 </p>
-                        <div class="image-des">
-                        <p>${Markup(_('Fedora Spins are alternative versions of Fedora, tailored for various types of users via hand-picked application sets or customizations. Desktop specific Spins are available in the &lt;a href="%s"&gt;Desktops section&lt;/a&gt;.') % '#desktops')}</p>
+
+                        <div class="grid_16 alpha omega" id="main-download-section">
+                        <h3>${Markup(_('Fedora %(rel)s %(state)s Server')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+                        <div class="grid_4 alpha">
+                            <img src="${path}/static/images/color-server.png" alt="Server Product" />
+                        </div>
+                        <div class="grid_12 omega">
+                            <h4>${_('Server Images')}</h4>
+                            <p>${_('Do you need an operating platform for important infrastructure tasks (such as a domain controller) and server applications, such as file/storage servers, databases, or web applications? Do you need a platform for deploying an Infrastructure-as-a-Service system to support cloud deployments? Do you need a platform to run an entire data center? The Fedora server product is made to support all of these important server use cases.')}</p>
+                            <div class="grid_6">
+                            <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/x86_64/iso/Fedora-Server-DVD-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.iso" class="big-button download-prerelease-splash">${_('Download now!')}</a>
+                            <p class="fine-print">${_('%(size)sGB, ISO format image for %(arch)sbit-compatible PCs') % {'size':global_variables.iso_size['x86_64_server_DVD'], 'arch':'64'}}</p>
+                            </div>
+                        </div>
                         </div>
 
-                <h4>${Markup(_('Fedora Security Spin'))}</h4>
-                <ul class="downloadbox gnomelive">
-                    <li>
-                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['torrent_spins']}/Fedora-Live-Security-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['torrent_spins']}/Fedora-Live-Security-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Direct Download'))}</h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Spins/i386/Fedora-Live-Security-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Spins/x86_64/Fedora-Live-Security-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                </ul>
+                        <h4>${Markup(_('Fedora %(rel)s %(state)s alternative Downloads')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                        <h5>${_('Torrent Images')}</h5>
+                            <p>${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}</p>
+                            <div class="grid_2 alpha"><img alt="" src="${path}/static/images/media.png" /></div>
+                            <div class="grid_10 omega format-block">
+                                <div class="grid_3 alpha">
+                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['torrent']}/Fedora-Server-DVD-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.torrent">${_('Torrent 64bit!')}</a>
+                                    <p class="fine-print pre-print"><a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+                                </div>
+                                <div class="grid_3 suffix_4 omega">
+                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['torrent']}/Fedora-Server-DVD-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.torrent">${_('Torrent 32bit!')}</a>
+                                    <p class="fine-print pre-print"><a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+                                </div>
+                            </div>
+                        <div class="clear"></div>
+                        <div class="alpha omega"><hr /></div>
 
-                <h4>${Markup(_('Fedora Scientific-KDE Spin'))}</h4>
-                <ul class="downloadbox gnomelive">
-                    <li>
-                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['torrent_spins']}/Fedora-Live-Scientific-KDE-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['torrent_spins']}/Fedora-Live-Scientific-KDE-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Direct Download'))}</h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Spins/i386/Fedora-Live-Scientific-KDE-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Spins/x86_64/Fedora-Live-Scientific-KDE-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                </ul>
+                        <h5>${_('32bit Image')}</h5>
+                            <p>${_('The Server Working Group recommends the 64bit Image. If you don\'t have a 64bit compatible hardware you can download the 32bit image.')}</p>
+                            <div class="grid_2 alpha"><img alt="" src="${path}/static/images/media.png" /></div>
+                            <div class="grid_10 omega format-block">
+                                <div class="grid_3 alpha">
+                                    <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/i386/iso/Fedora-Server-DVD-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.iso" class="download-button-mini download-prerelease-splash">${_('Download 32bit!')}</a>
+                                    <p class="fine-print">${_('%sGB ISO Image') % global_variables.iso_size['i386_server_DVD']}</p>
+                                </div>
+                            </div>
+                        <div class="clear"></div>
+                        <div class="alpha omega"><hr /></div>
 
-                <h4>${Markup(_('Fedora Electronic Lab Spin'))}</h4>
-                <ul class="downloadbox gnomelive">
-                    <li>
-                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['torrent_spins']}/Fedora-Live-Electronic-Lab-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['torrent_spins']}/Fedora-Live-Electronic-Lab-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Direct Download'))}</h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Spins/i386/Fedora-Live-Electronic-Lab-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Spins/x86_64/Fedora-Live-Electronic-Lab-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                </ul>
+                        <h5>${_('Network Install Image')}</h5>
+                            <p>${_('The Network Install Image of Fedora is useful if you have a fast Internet connection available. When you boot from this media, you will be running the installation program and you get the selected packages directly from the repositories. The Image ensures you having the latest stable versions of the packages installed.')}</p>
+                            <div class="grid_2 alpha"><img alt="" src="${path}/static/images/media.png" /></div>
+                            <div class="grid_10 omega format-block">
+                                <div class="grid_3 alpha">
+                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/x86_64/iso/Fedora-Server-netinst-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.iso">${_('Download 64bit!')}</a>
+                                    <p class="fine-print">${_('%(size)sMB ISO Image') % {'size':global_variables.iso_size['x86_64_server_net']}}</p>
+                                </div>
+                                <div class="grid_3 suffix_4 omega">
+                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Server/i386/iso/Fedora-Server-netinst-i386-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.iso">${_('Download 32bit!')}</a>
+                                    <p class="fine-print">${_('%(size)sMB ISO Image') % {'size':global_variables.iso_size['i386_server_net']}}</p>
+                                </div>
+                            </div>
+                        <div class="clear"></div>
 
-                <h4>${Markup(_('Fedora Jam-KDE Spin'))}</h4>
-                <ul class="downloadbox gnomelive">
-                    <li>
-                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['torrent_spins']}/Fedora-Live-Jam-KDE-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['torrent_spins']}/Fedora-Live-Jam-KDE-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Direct Download'))}</h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Spins/i386/Fedora-Live-Jam-KDE-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Spins/x86_64/Fedora-Live-Jam-KDE-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <h4>${Markup(_('Fedora Design-suite Spin'))}</h4>
-                <ul class="downloadbox gnomelive">
-                    <li>
-                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['torrent_spins']}/Fedora-Live-Design-suite-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['torrent_spins']}/Fedora-Live-Design-suite-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Direct Download'))}</h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Spins/i386/Fedora-Live-Design-suite-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Spins/x86_64/Fedora-Live-Design-suite-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <h4>${Markup(_('Fedora Games Spin'))}</h4>
-                <ul class="downloadbox gnomelive">
-                    <li>
-                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['torrent_spins']}/Fedora-Live-Games-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['torrent_spins']}/Fedora-Live-Games-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Direct Download'))}</h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Spins/i386/Fedora-Live-Games-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Spins/x86_64/Fedora-Live-Games-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <h4>${Markup(_('Fedora Robotics Spin'))}</h4>
-                <ul class="downloadbox gnomelive">
-                    <li>
-                        <h5><acronym title="${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}">BitTorrent</acronym></h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['torrent_spins']}/Fedora-Live-Robotics-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('i686'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['torrent_spins']}/Fedora-Live-Robotics-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}.torrent">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Direct Download'))}</h5>
-                        <ul>
-                            <li><a class="download-splash" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Spins/i386/Fedora-Live-Robotics-i686-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('i386'))}</a> - ${Markup(_('Live Image'))}</li>
-                            <li><a class="download-splash" href="${global_variables.path['download_spins']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Spins/x86_64/Fedora-Live-Robotics-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso">${Markup(_('x86_64'))}</a> - ${Markup(_('Live Image'))}</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <h4>${Markup(_('Let me look around...'))}</h4>
+                    <h4>${Markup(_('Let me look around...'))}</h4>
                 <ul class="download">
                     <li><a href="http://torrent.fedoraproject.org/">${Markup(_('See all torrents'))}</a></li>
                     <li><a href="http://mirrors.fedoraproject.org/publiclist/Fedora/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/">${Markup(_('See all mirrors'))}</a></li>
-                    <li><a href="http://spins.fedoraproject.org/">${Markup(_('See all custom spins'))}</a></li>
+                    <li class="verify-list"><a href="${path}/${lang}/verify-prerelease">${_('Verify Download')}</a></li>
                 </ul>
                     <div class="clear"></div>
                     <xi:include href="../templates/content-export-regulations.html" />
                     </div>
 
                     <div id="desktop-versions">
-                        <noscript> <a name="cloud"><hr /></a> </noscript>
-                        <p class="warning">${Markup(_('This is pre-release software and is supported by the &lt;a href="%(team_url)s"&gt;Cloud team&lt;/a&gt;. Please direct questions to %(team_list)s or %(team_irc)s on freenode.') % {'team_url':'http://fedoraproject.org/wiki/Cloud_SIG', 'team_list':'cloud@lists.fedoraproject.org', 'team_irc':'#fedora-cloud'})}
+                        <noscript> <a name="workstation"><hr /></a> </noscript>
+                        <p class="warning">${Markup(_('This is pre-release software and is supported by the &lt;a href="%(team_url)s"&gt;Workstation Working Group&lt;/a&gt;. Please direct questions to %(team_list)s or %(team_irc)s on freenode.') % {'team_url':'http://fedoraproject.org/wiki/Workstation', 'team_list':'desktop@lists.fedoraproject.org', 'team_irc':'#fedora-workstation'})}
                                             ${Markup(_('All issues or bugs should be reported via the &lt;a href="%s"&gt;Red Hat Bugzilla&lt;/a&gt;. The Fedora Project makes no guarantees as to its suitability or usefulness.') % 'https://bugzilla.redhat.com/')}
                                         <py:choose>
-                                            <py:when test="global_variables.release['curr_state'] == 'Alpha'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'http://fedoraproject.org/wiki/Fedora_%s_Alpha_release_notes' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
+                                            <py:when test="global_variables.release['curr_state'] == 'Alpha'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'https://fedoraproject.org/wiki/Fedora_%s_Alpha_release_notes' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
                                             </py:when>
-                                            <py:when test="global_variables.release['curr_state'] == 'Beta'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'http://fedoraproject.org/wiki/F%s_Beta_release_announcement' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
+                                            <py:when test="global_variables.release['curr_state'] == 'Beta'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'https://fedoraproject.org/wiki/F%s_Beta_release_announcement' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
                                             </py:when>
                                             <py:otherwise>${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url': 'http://fedorapeople.org/groups/docs/release-notes/%s/' % (l_code), 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
                                             </py:otherwise>
                                         </py:choose>
                                 </p>
-                                <p class="rel_sched">
+                                <p class="rel_sched" style="background: #fcf7d5 url('${path}/static/images/schedule/${schedule['beta_cal']}.png') no-repeat 10px center">
                                         <py:choose>
                                             <py:when test="global_variables.release['curr_state'] == 'Alpha'">${_('Upcoming Beta Release is planned for')}&nbsp;${schedule['beta']}
                                             </py:when>
@@ -449,135 +249,204 @@ l_code = l_map.get(lang, dflt_language)
                                             </py:when>
                                         </py:choose>
                                 </p>
-                        <h4>${Markup(_('Fedora Cloud Images'))}</h4>
+
+                        <div class="grid_16 alpha omega" id="main-download-section">
+                        <h3>${Markup(_('Fedora %(rel)s %(state)s Workstation')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+                        <div class="grid_5 alpha">
+                            <img src="${path}/static/images/color-workstation.png" alt="Workstation Product" />
+                        </div>
+                        <div class="grid_11 omega">
+                            <h4>${_('Workstation Images')}</h4>
+                            <p>${_('Workstation is the new name for Fedora\'s desktop edition for laptops and PCs. Its downloadable live install image can be used to try Fedora without modifing anything on your hard drive, and is also suitable for installation.')}</p>
+                            <div class="grid_6">
+                            <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Workstation/x86_64/iso/Fedora-Live-Workstation-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="big-button download-prerelease-splash">${_('Download now!')}</a>
+                            <p class="fine-print">${_('%(size)sGB, ISO format image for %(arch)sbit-compatible PCs') % {'size':global_variables.iso_size['x86_64_workstation'], 'arch':'64'}}</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Workstation WG wants to hide the netinstall image, let's hide this paragraph for now.
+
+                        <h4>${Markup(_('Fedora %(rel)s %(state)s Network Install Image')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                            <p>${_('The Network Install Image of Fedora is useful if you have a fast Internet connection available. When you boot from this media, you will be running the installation program and you get the selected packages directly from the repositories. The Image ensures you having the latest stable versions of the packages installed.')}</p>
+                            <div class="grid_6 prefix_2 alpha">
+                                <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Fedora/i386/iso/Fedora-${global_variables.release['curr_id']}-i386-netinst.iso" class="download-button-mini download-prerelease-splash">${_('Download 64bit!')}</a>
+                                <p class="fine-print">${_('%(size)sMB ISO Image') % {'size':global_variables.iso_size['i386_Netinstall']}}</p>
+                            </div>
+                            <div class="grid_6 prefix_2 omega">
+                                <a href="${global_variables.path['download']}/${global_variables.release['curr_id']}/Fedora/x86_64/iso/Fedora-${global_variables.release['curr_id']}-x86_64-netinst.iso" class="download-button-mini download-prerelease-splash">${_('Download 32bit!')}</a>
+                                <p class="fine-print">${_('%(size)sMB ISO Image') % {'size':global_variables.iso_size['x86_64_Netinstall']}}</p>
+                            </div>
+                        <div class="alpha omega"><hr /></div>
+
+                        -->
+
+                        <h4>${Markup(_('Fedora %(rel)s %(state)s alternative Downloads')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                        <h5>${_('Torrent Images')}</h5>
+                            <p>${_('BitTorrent is a protocol allowing you to download files quickly by allowing people downloading the file to upload (distribute) parts of it at the same time.')}</p>
+                            <div class="grid_2 alpha"><img alt="" src="${path}/static/images/media.png" /></div>
+                            <div class="grid_10 omega format-block">
+                                <div class="grid_3 alpha">
+                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['torrent']}/Fedora-Live-Workstation-x86_64-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.torrent">${_('Torrent 64bit!')}</a>
+                                    <p class="fine-print pre-print"><a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+                                </div>
+                                <div class="grid_3 suffix_4 omega">
+                                    <a class="download-button-mini download-prerelease-splash" href="${global_variables.path['torrent']}/Fedora-Live-Workstation-i686-${global_variables.release['next_id']}_${global_variables.release['curr_state']}.torrent">${_('Torrent 32bit!')}</a>
+                                    <p class="fine-print pre-print"><a href="http://docs.fedoraproject.org/en-US/Fedora/20/html/Installation_Guide/ch-new-users.html#sn-which-download-bt">${_('How do I use this file?')}</a></p>
+                                </div>
+                            </div>
+                        <div class="clear"></div>
+                        <div class="alpha omega"><hr /></div>
+
+                        <h5>${_('32bit Image')}</h5>
+                            <p>${_('The Workstation Working Group recommends the 64bit Image. If you don\'t have a 64bit compatible hardware you can download the 32bit image.')}</p>
+                            <div class="grid_2 alpha"><img alt="" src="${path}/static/images/media.png" /></div>
+                            <div class="grid_10 omega format-block">
+                                <div class="grid_3 alpha">
+                                    <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Workstation/i386/iso/Fedora-Live-Workstation-i686-${global_variables.release['next_id']}_${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="download-button-mini download-prerelease-splash">${_('Download 32bit!')}</a>
+                                    <p class="fine-print">${_('%sGB ISO Image') % global_variables.iso_size['i386_workstation']}</p>
+                                </div>
+                            </div>
+                        <div class="clear"></div>
+                        <div class="alpha omega"><hr /></div>
+
+                        <p class="help" style="clear: both;"><img class="support-icon" src="${path}/static/images/icon-support.png" alt="support-icon" />${Markup(_('Fedora Workstation does also support the &lt;a href="%s"&gt;ARM architecture&lt;/a&gt;.') % 'get-spin-prerelease#arm')}</p>
+
+                        <h4>${Markup(_('Let me look around...'))}</h4>
+                <ul class="download">
+                    <li><a href="http://torrent.fedoraproject.org/">${Markup(_('See all torrents'))}</a></li>
+                    <li><a href="http://mirrors.fedoraproject.org/publiclist/Fedora/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/">${Markup(_('See all mirrors'))}</a></li>
+                    <li class="verify-list"><a href="${path}/${lang}/verify-prerelease">${_('Verify Download')}</a></li>
+                </ul>
+                    <div class="clear"></div>
+                <xi:include href="../templates/content-export-regulations.html" />
+                </div>
+
+                        <div id="desktop-versions">
+                        <noscript><a name="cloud"><hr /></a></noscript>
+                        <p class="warning">${Markup(_('This is pre-release software and is supported by the &lt;a href="%(team_url)s"&gt;Cloud Working Group&lt;/a&gt;. Please direct questions to %(team_list)s or %(team_irc)s on freenode.') % {'team_url':'http://fedoraproject.org/wiki/Cloud', 'team_list':'cloud@lists.fedoraproject.org', 'team_irc':'#fedora-cloud'})}
+                                            ${Markup(_('All issues or bugs should be reported via the &lt;a href="%s"&gt;Red Hat Bugzilla&lt;/a&gt;. The Fedora Project makes no guarantees as to its suitability or usefulness.') % 'https://bugzilla.redhat.com/')}
+                                        <py:choose>
+                                            <py:when test="global_variables.release['curr_state'] == 'Alpha'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'https://fedoraproject.org/wiki/Fedora_%s_Alpha_release_notes' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
+                                            </py:when>
+                                            <py:when test="global_variables.release['curr_state'] == 'Beta'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'https://fedoraproject.org/wiki/F%s_Beta_release_announcement' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
+                                            </py:when>
+                                            <py:otherwise>${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url': 'http://fedorapeople.org/groups/docs/release-notes/%s/' % (l_code), 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
+                                            </py:otherwise>
+                                        </py:choose>
+                                </p>
+                                <p class="rel_sched" style="background: #fcf7d5 url('${path}/static/images/schedule/${schedule['beta_cal']}.png') no-repeat 10px center">
+                                        <py:choose>
+                                            <py:when test="global_variables.release['curr_state'] == 'Alpha'">${_('Upcoming Beta Release is planned for')}&nbsp;${schedule['beta']}
+                                            </py:when>
+                                            <py:when test="global_variables.release['curr_state'] == 'Beta'">${_('Upcoming Final Release is planned for')}&nbsp;${schedule['final']}
+                                            </py:when>
+                                        </py:choose>
+                                </p>
+
+
+                    <div class="grid_16 alpha omega" id="main-download-section">
+                        <h3>${Markup(_('Fedora %(rel)s %(state)s Cloud')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+                        <div class="grid_4 alpha">
+                            <img src="${path}/static/images/color-cloud.png" alt="Cloud Product" />
+                        </div>
+                        <div class="grid_12 omega">
+                            <h4>${_('Cloud Images')}</h4>
+                            <p>${_('The Fedora Cloud Working Group offers two variants for different use cases. The Base image is suitable for anyone who wants to run Fedora in the AWS public cloud, or in a private cloud like OpenStack. It can be customized to fit your needs by adding additional packages. The Atomic image is generated using rpm-ostree tools to allow true "atomic" updates, and is optimized to run Docker containers.')}</p>
+                            <p>${_('Both are available either to download in several formats or to launch in public clouds.')}</p>
+                            <div class="grid_5">
+                            <a href="#base" class="big-button">${_('F%s Cloud Base') % global_variables.release['next_id']}</a>
+                            </div>
+                            <div class="grid_5">
+                            <a href="#atomic" class="big-button">${_('F%s Atomic') % global_variables.release['next_id']}</a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="clear"></div>
+
+<!-- Hide netinstall image for now
+
+                    <h4>${Markup(_('Fedora %(rel)s %(state)s Base Network Install Image')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                            <p>${_('The Network Install Image of Fedora Cloud Base is useful if you have a fast Internet connection available. When you boot from this media, you will be running the installation program and you get the selected packages directly from the repositories. The Image ensures you having the latest stable versions of the packages installed.')}</p>
+                            <div class="grid_6 prefix_2 alpha">
+                                <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Cloud/x86_64/Fedora-Cloud-netinstall-x86_64-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="download-button-mini download-prerelease-splash">${_('Download 64bit!')}</a>
+                                <p class="fine-print">${_('%(size)sMB ISO Image') % {'size':global_variables.iso_size['x86_64_cloud_net']}}</p>
+                            </div>
+                            <div class="grid_6 prefix_2 omega">
+                                <a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Cloud/i386/Fedora-Cloud-netinstall-i386-${global_variables.release['next_id']}-${global_variables.release['curr_state']}-${global_variables.release['RC_gold']}.iso" class="download-button-mini download-prerelease-splash">${_('Download 32bit!')}</a>
+                                <p class="fine-print">${_('%(size)sMB ISO Image') % {'size':global_variables.iso_size['i386_cloud_net']}}</p>
+                            </div>
+                        <div class="alpha omega"><hr /></div>
+
+-->
+
+                <h3 id="base">${Markup(_('Fedora %(rel)s %(state)s Cloud Base')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+                <p>${_('The Fedora Cloud Base image is a tailored set of packages to run in a cloud environment, pre-made for popular public and private cloud offerings.')}</p>
+                <p>${Markup(_('Fedora Cloud Base images are available in Amazon EC2 and for direct download. The downloadable images are available in compressed raw image format and in qcow2 for immediate use with &lt;a href="%s"&gt;OpenStack&lt;/a&gt;. The images are configured with cloud-init, and so will take advantage of ec2-compatible metadata services for provisioning ssh keys.') % 'http://openstack.redhat.com/')}</p>
+
+                                <h4>${_('Currently supported EC2 Images')}</h4>
+                                <p>${_('Choose the region and machine architecture and just click to launch in your Amazon Web Services account. Or, copy the AMI ID and use that to launch from the AWS Console or command-line tools.')}</p>
+<!-- Specific AMI selector -->
+                                <xi:include href="../templates/cloud-tab.html" />
+                                <noscript>
+                                ${printrelease('21_Alpha_Base')}
+                                </noscript>
+
+                                <!-- If JS enabled -->
+                                ${printform('21_Alpha_Base')}
+                                <!-- /end If JS enabled -->
+
+<!-- /Specific AMI selector -->
+
+                <h4>${Markup(_('Fedora %(rel)s %(state)s Downloadable Cloud Images')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                <p>${Markup(_('Download these images for use with your local private cloud, or to modify and upload to a public cloud. The qcow2 images can be used directly by &lt;a href="%s"&gt;Openstack&lt;/a&gt;. The raw.xz images can be used by other cloud infrastructure software but will need to be uncompressed first.') % 'http://openstack.redhat.com/Running_an_instance')}
+                </p>
+
                 <ul class="downloadbox cloudimage">
                     <li>
                         <h5>${Markup(_('64 bit'))}</h5>
                         <ul>
-                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/x86_64/Fedora-x86_64-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
-                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}/Images/x86_64/Fedora-x86_64-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Cloud/Images/x86_64/Fedora-Cloud-Base-${global_variables.release['pre_cloud_composedate']}-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}.x86_64.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}/Cloud/Images/x86_64/Fedora-Cloud-Base-${global_variables.release['pre_cloud_composedate']}-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}.x86_64.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
                         </ul>
                     </li>
                     <li>
                         <h5>${Markup(_('32 bit'))}</h5>
                         <ul>
-                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/i386/Fedora-i386-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
-                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/i386/Fedora-i386-${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}-${global_variables.release['pre_cloud_composedate']}-sda.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Cloud/Images/i386/Fedora-Cloud-Base-${global_variables.release['pre_cloud_composedate']}-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}.i386.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Cloud/Images/i386/Fedora-Cloud-Base-${global_variables.release['pre_cloud_composedate']}-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}.i386.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
                         </ul>
                     </li>
                 </ul>
-                        <h4>${Markup(_('Fedora EC2 Images'))}</h4>
+
+                <div class="alpha omega"><hr /></div>
+
+                <h3 id="atomic">${Markup(_('Fedora %(rel)s %(state)s Atomic')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h3>
+                <p>${Markup(_('The Fedora Atomic Base image is a minimal set of Fedora packages optimized for use as a Docker container host. &lt;a href="%s"&gt;Read more&lt;/a&gt; about Docker Container Images.') % 'https://fedoraproject.org/wiki/Changes/Docker_Container_Image')}</p>
+                <p>${Markup(_('Fedora Atomic images are available in Amazon EC2 and for direct download. The downloadable images are available in compressed raw image format and in qcow2 for immediate use with &lt;a href="%s"&gt;OpenStack&lt;/a&gt;. The images are configured with cloud-init, and so will take advantage of ec2-compatible metadata services for provisioning ssh keys.') % 'http://openstack.redhat.com/')}</p>
+
+                <h4>${Markup(_('Fedora %(rel)s %(state)s Downloadable Cloud Images')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
+                <p>${Markup(_('Download these images for use with your local private cloud, or to modify and upload to a public cloud. The qcow2 images can be used directly by &lt;a href="%s"&gt;Openstack&lt;/a&gt;. The raw.xz images can be used by other cloud infrastructure software but will need to be uncompressed first.') % 'http://openstack.redhat.com/Running_an_instance')}
+                </p>
+
                 <ul class="downloadbox cloudimage">
-<!-- Specific AMI selector -->
-					<ul>
-						<xi:include href="../templates/cloud-tab.html" />
-						<noscript>
-						${printrelease('20_Beta')}
-						</noscript>
-
-						<!-- If JS enabled -->
-						${printform('20_Beta')}
-						<!-- /end If JS enabled -->
-<!-- /Specific AMI selector -->
-					</ul>
+                    <li>
+                        <h5>${Markup(_('64 bit'))}</h5>
+                        <ul>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Cloud/Images/x86_64/Fedora-Cloud-Atomic-${global_variables.release['pre_cloud_composedate']}-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}.x86_64.raw.xz">${Markup(_('Raw Disk Image'))}</a></li>
+                            <li><a class="download-cloud-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_cloud_id']}-${global_variables.release['curr_cloud_state']}/Cloud/Images/x86_64/Fedora-Cloud-Atomic-${global_variables.release['pre_cloud_composedate']}-${global_variables.release['next_cloud_id']}_${global_variables.release['curr_cloud_state']}.x86_64.qcow2">${Markup(_('qcow2 Disk Image'))}</a></li>
+                        </ul>
+                    </li>
                 </ul>
 
-                <div class="clear"></div>
-                <xi:include href="../templates/content-export-regulations.html" />
-                </div>
+                <div class="alpha omega"><hr /></div>
 
-                        <div id="desktop-versions">
-                        <noscript><a name="arm"><hr /></a></noscript>
-                        <p class="warning">${Markup(_('This is pre-release software and is supported by the &lt;a href="%(team_url)s"&gt;ARM team&lt;/a&gt;. Please direct questions to %(team_list)s or %(team_irc)s on freenode.') % {'team_url':'http://fedoraproject.org/wiki/Architectures/ARM', 'team_list':'arm@lists.fedoraproject.org', 'team_irc':'#fedora-arm'})}
-                                            ${Markup(_('All issues or bugs should be reported via the &lt;a href="%s"&gt;Red Hat Bugzilla&lt;/a&gt;. The Fedora Project makes no guarantees as to its suitability or usefulness.') % 'https://bugzilla.redhat.com/')}
-                                        <py:choose>
-                                            <py:when test="global_variables.release['curr_state'] == 'Alpha'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'http://fedoraproject.org/wiki/Fedora_%s_Alpha_release_notes' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
-                                            </py:when>
-                                            <py:when test="global_variables.release['curr_state'] == 'Beta'">${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url':'http://fedoraproject.org/wiki/F%s_Beta_release_announcement' % global_variables.release['next_id'], 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
-                                            </py:when>
-                                            <py:otherwise>${Markup(_('Read the &lt;a href="%(relnotes_url)s"&gt;Release Notes&lt;/a&gt; for more information on changes and new features, and the &lt;a href="%(commonbugs_url)s"&gt;Common Bugs&lt;/a&gt; page for information on commonly-encountered bugs and how to avoid them.') % {'relnotes_url': 'http://fedorapeople.org/groups/docs/release-notes/%s/' % (l_code), 'commonbugs_url': 'https://fedoraproject.org/wiki/Common_F%s_bugs' % (global_variables.release['next_id'])})}
-                                            </py:otherwise>
-                                        </py:choose>
-                                </p>
-                                <p class="rel_sched">
-                                        <py:choose>
-                                            <py:when test="global_variables.release['curr_state'] == 'Alpha'">${_('Upcoming Beta Release is planned for')}&nbsp;${schedule['beta']}
-                                            </py:when>
-                                            <py:when test="global_variables.release['curr_state'] == 'Beta'">${_('Upcoming Final Release is planned for')}&nbsp;${schedule['final']}
-                                            </py:when>
-                                        </py:choose>
-                                </p>
-					 <div class="image-des">
-						<p>${_('Fedora for ARM includes two image types–one for use with platforms requiring a VFAT partition (Pandaboard), the other for use with devices that boot from an EXT partition (Trimslice). For each of these there are a number of desktop choices including MATE, KDE, Xfce, LXDE, SOAS and a minimal image that does not include the desktop. Any of these images can be used with QEMU.')}</p>
-						<p>${Markup(_('To get more information, read the &lt;a href="%s"&gt;installation instructions&lt;/a&gt;.') % 'https://fedoraproject.org/wiki/Architectures/ARM/F20/Installation')}</p>
-					</div>
-
-                        <h4>${Markup(_('Fedora ARM Images'))}</h4>
-                <ul class="downloadbox armimage">
-                    <li>
-                        <h5>${Markup(_('KDE'))}</h5>
-                        <ul>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-KDE-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-KDE-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Minimal'))}</h5>
-                        <ul>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Minimal-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Minimal-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
-                        </ul>
-                    </li>
-                    <!-- experimental -->
-                    <li>
-                        <h5>PXE</h5>
-                        <ul>
-                            <li><a href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Fedora/armhfp/os/images/pxeboot/">${_('PXE tree')}</a></li>
-                            <li><a href="http://docs.fedoraproject.org/en-US/Fedora/19/html/Installation_Guide/ap-install-server.html">${Markup(_('Setup your PXE server'))}</a></li>
-                        </ul>
-                    </li>
-                    <!-- /experimental -->
+                <h4>${Markup(_('Let me look around...'))}</h4>
+                <ul class="download">
+                    <li><a href="http://torrent.fedoraproject.org/">${Markup(_('See all torrents'))}</a></li>
+                    <li><a href="http://mirrors.fedoraproject.org/publiclist/Fedora/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/">${Markup(_('See all mirrors'))}</a></li>
+                    <li class="verify-list"><a href="${path}/${lang}/verify-prerelease">${_('Verify Download')}</a></li>
                 </ul>
-
-                        <h4>${Markup(_('Fedora ARM Desktop Spins'))}</h4>
-                <ul class="downloadbox armimage">
-                    <li>
-                        <h5>${Markup(_('Desktop'))}</h5>
-                        <ul>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Desktop-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Desktop-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Xfce'))}</h5>
-                        <ul>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-XFCE-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-XFCE-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('LXDE'))}</h5>
-                        <ul>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-LXDE-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-LXDE-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('Mate'))}</h5>
-                        <ul>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Mate-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-Mate-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h5>${Markup(_('SoaS'))}</h5>
-                        <ul>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-SoaS-VFAT-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('VFAT HFP'))}</a></li>
-                            <li><a class="download-arm-splash" href="${global_variables.path['download']}/test/${global_variables.release['next_id']}-${global_variables.release['curr_state']}/Images/armhfp/Fedora-SoaS-armhfp-${global_variables.release['next_arm_id']}-${global_variables.release['curr_arm_state']}-${global_variables.release['RC_gold']}-sda.raw.xz">${Markup(_('HFP'))}</a></li>
-                        </ul>
-                    </li>
-					</ul>
-
                 <div class="clear"></div>
                 <xi:include href="../templates/content-export-regulations.html" />
             </div>
