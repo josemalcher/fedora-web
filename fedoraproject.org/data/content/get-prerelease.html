@@ -425,20 +425,6 @@ l_code = l_map.get(lang, dflt_language)
                 <p>${Markup(_('The Fedora Atomic Base image is a minimal set of Fedora packages optimized for use as a Docker container host. &lt;a href="%s"&gt;Read more&lt;/a&gt; about Docker Container Images.') % 'https://fedoraproject.org/wiki/Changes/Docker_Container_Image')}</p>
                 <p>${Markup(_('Fedora Atomic images are available in Amazon EC2 and for direct download. The downloadable images are available in compressed raw image format and in qcow2 for immediate use with &lt;a href="%s"&gt;OpenStack&lt;/a&gt;. The images are configured with cloud-init, and so will take advantage of ec2-compatible metadata services for provisioning ssh keys.') % 'http://openstack.redhat.com/')}</p>
 
-                                <h4>${_('Currently supported EC2 Images')}</h4>
-                                <p>${_('Choose the region and machine architecture and just click to launch in your Amazon Web Services account. Or, copy the AMI ID and use that to launch from the AWS Console or command-line tools.')}</p>
-<!-- Specific AMI selector -->
-                                <xi:include href="../templates/cloud-tab.html" />
-                                <noscript>
-                                ${printrelease('21_Alpha_Atomic')}
-                                </noscript>
-
-                                <!-- If JS enabled -->
-                                ${printform('21_Alpha_Atomic')}
-                                <!-- /end If JS enabled -->
-
-<!-- /Specific AMI selector -->
-
                 <h4>${Markup(_('Fedora %(rel)s %(state)s Downloadable Cloud Images')) % {'rel':global_variables.release['next_id'], 'state':global_variables.release['curr_state']}}</h4>
                 <p>${Markup(_('Download these images for use with your local private cloud, or to modify and upload to a public cloud. The qcow2 images can be used directly by &lt;a href="%s"&gt;Openstack&lt;/a&gt;. The raw.xz images can be used by other cloud infrastructure software but will need to be uncompressed first.') % 'http://openstack.redhat.com/Running_an_instance')}
                 </p>
