@@ -6,14 +6,27 @@
   py:strip="">
 
   <!-- Fixed navbar -->
-  <div class="navbar navbar-inverse navbar-fixed-top headroom" >
+  <div class="navbar navbar-inverse headroom" >
     <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="index.html">
+            <img src="${path}/static/images/workstation-logo.png" alt="Fedora Logo" />
+          </a>
+        </div>
+        <div class="col-md-6 text-right">
+          <a href="index.html">
+            <img src="${path}/static/images/fedora-logotext.png" alt="Fedora Logo" />
+          </a>
+        </div>
+      </div>
+
       <div class="navbar-header">
         <!-- Button for smallest screens -->
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="index.html"><img src="${path}/static/images/logo.png" alt="Fedora Logo" /></a>
+       
       </div>
-      <div class="navbar-collapse collapse">
+      <!--<div class="navbar-collapse collapse">
         <ul class="nav navbar-nav pull-right">
           <li class="active"><a href="#">Home</a></li>
           <li class="dropdown">
@@ -33,7 +46,7 @@
             </ul>
           </li>
         </ul>
-      </div><!--/.nav-collapse -->
+      </div>--> <!--/.nav-collapse -->
     </div>
   </div>
   <!-- /.navbar -->
